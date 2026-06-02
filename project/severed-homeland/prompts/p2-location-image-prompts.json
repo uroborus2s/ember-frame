@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "P2 secondary location image generation prompts",
+  "status": "ready_for_image_generation",
+  "source_designs": "art/p2-secondary-location-designs.json",
+  "global_prompt_rules": [
+    "Vertical 9:16 location concept board for an AI short drama production package.",
+    "Grounded eastern epic fantasy, realistic worn materials, cinematic production design, restrained low-magic.",
+    "No readable text labels, no watermarks, no modern objects, no UI, no high-saturation game fantasy.",
+    "Use local set zones and detail callouts rather than a single broad panorama.",
+    "Old Zhaoming fused Sun-Moon marks and Sumin white-wing black-sun marks must follow bible/visual-style.md when visible."
+  ],
+  "location_prompts": [
+    {
+      "prompt_id": "loc_jinhe_grainmill_v01_board_prompt",
+      "asset_id": "loc_jinhe_grainmill_v01",
+      "name": "金河粮磨区",
+      "output_path": "assets/locations/v01/loc_jinhe_grainmill_v01_board.png",
+      "purpose": "P2 reusable steam grainmill location board",
+      "composition": "Vertical 9:16 production design board with four readable zones: river-side steam mill yard, water pump and gear detail, sealed weapon cellar hatch, ground-away cannon-mount measurement marks; no readable labels.",
+      "prompt": "Jinhe Grainmill District location board for Severed Homeland, grounded eastern epic fantasy short drama, Sumin-controlled productive steam facility along a river granary belt. Show a humid industrial mill yard with a steam mill wheel, water pump, grain track, grain sacks, oil-blackened gears, and white steam layers. Include a sealed weapon cellar under ordinary production machinery, close-up of old cannon-mount interfaces and measurement marks deliberately ground flat, and insect grain-tax plaque shapes without readable text. Palette iron gray, steam white, oil black, grain brown. The mood must show production technology preserved while military use is erased. Practical local industrial scale, not modern factory, not clean advanced machinery.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_jinhe_grainmill_v01",
+        "bible/scenes.md:金河粮磨区",
+        "bible/visual-style.md:金河粮磨"
+      ],
+      "negative_prompt_notes": [
+        "no working cannons",
+        "no modern factory",
+        "no clean advanced machinery",
+        "no colorful market festival",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 04 grainmill infiltration, disarmament-order exposition, sealed weapon cellar reference, and steam chase blocking."
+    },
+    {
+      "prompt_id": "loc_ashen_academy_v01_board_prompt",
+      "asset_id": "loc_ashen_academy_v01",
+      "name": "灰烬书院",
+      "output_path": "assets/locations/v01/loc_ashen_academy_v01_board.png",
+      "purpose": "P2 reusable burned academy and star-chart archive board",
+      "composition": "Vertical 9:16 production design board with burned arcade, black shelf corridor, broken star-chart disk, wax seal detail, scorched page fragments, and ash lighting study; no readable labels.",
+      "prompt": "Ashen Academy location board for Severed Homeland, grounded eastern epic fantasy short drama, burned human academy and star-chart archive. Show charred arcade arches, collapsed roof daylight, blackened shelf rows, scorched page fragments, falling ash, insect-wax seals, and a broken star-chart disk with only small moon-white residual glints. Palette charcoal black, ash gray, paper yellow, moon-white glint. The space should feel like destroyed historical memory where knowledge survives as fragments, songs, and scorched devices. Include intimate hiding corners for one or two institutional child identifiers only as small unsettling traces, not a crowd. Not an intact library, not a bright academy campus, not wizard-school fantasy.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_ashen_academy_v01",
+        "bible/scenes.md:灰烬书院",
+        "bible/visual-style.md:灰烬书院"
+      ],
+      "negative_prompt_notes": [
+        "no intact library",
+        "no bright scholarly campus",
+        "no large classroom crowd",
+        "no gothic torture dungeon",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 05 burned archive exploration, forbidden song clues, identifier child staging, and star-chart clue frames."
+    },
+    {
+      "prompt_id": "loc_wallfoot_market_v01_board_prompt",
+      "asset_id": "loc_wallfoot_market_v01",
+      "name": "墙下集市",
+      "output_path": "assets/locations/v01/loc_wallfoot_market_v01_board.png",
+      "purpose": "P2 reusable wallfoot market and stateless mixed-heritage settlement board",
+      "composition": "Vertical 9:16 production design board with cramped low alley, gray cloth awning stalls, kiln cave doors, food-token close-up, broken flag strip wall, and exit blocking study; no readable labels.",
+      "prompt": "Wallfoot Market location board for Severed Homeland, grounded eastern epic fantasy short drama, market of stateless mixed people under the southern foot of the border wall. Show a cramped low alley under a huge wall shadow, gray cloth awnings, kiln cave doorways, patched baskets, food tokens, dark wood black-market passes, broken flag strips, shard pottery charms, and suspicious practical stall layouts with many narrow exits and blocked passages. Palette gray blue, clay brown, patched cloth brown, dull yellow. Lived-in, poor, practical, locally organized, dusty side light. Mixed-heritage signs are subtle and non-exoticized. Not a colorful festive market, not a clean fantasy bazaar, not a large crowd spectacle.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_wallfoot_market_v01",
+        "bible/scenes.md:墙下集市",
+        "bible/visual-style.md:墙下混裔"
+      ],
+      "negative_prompt_notes": [
+        "no colorful festive market",
+        "no clean fantasy bazaar",
+        "no large crowd spectacle",
+        "no exoticized mixed-heritage display",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 07 wallfoot arrival, food-token bargaining, Lu Qingli betrayal/rescue blocking, and new-homeland theme staging."
+    },
+    {
+      "prompt_id": "loc_minggu_ling_v01_board_prompt",
+      "asset_id": "loc_minggu_ling_v01",
+      "name": "鸣骨岭",
+      "output_path": "assets/locations/v01/loc_minggu_ling_v01_board.png",
+      "purpose": "P2 reusable snow ridge, bone holes, and northern disaster-source location board",
+      "composition": "Vertical 9:16 production design board with snow ridge, wind-carved bone-hole detail, snow pit rescue area, half-buried weapons, low ice-blue fire, distant herd-shadow silhouette, and sparse lighting study; no readable labels.",
+      "prompt": "Minggu Ling location board for Severed Homeland, grounded eastern epic fantasy short drama, sparse snow ridge outside the border wall where half-buried bones make flute tones in the wind. Show wind-scoured bone holes, snow pits, half-buried old weapons, rust-dark metal, a small ice-blue fire shelter for close faces, and distant herd shadows barely visible through overcast snow. Palette snow white, bone white, ice blue, rust dark. The board should be sound-driven and intimate, focused on rescue-scale staging and disaster memory, not a heroic battlefield. Northern presence is limited and subtle. No tribe camp, no large northern army, no lush forest.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_minggu_ling_v01",
+        "bible/scenes.md:鸣骨岭",
+        "bible/visual-style.md:北境寻灾源派"
+      ],
+      "negative_prompt_notes": [
+        "no full tribe camp",
+        "no large northern army",
+        "no lush forest",
+        "no heroic battlefield panorama",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 09 ridge crossing, Lu Mi rescue encounter, bone-flute sound motif, and enemy-as-disaster theme frames."
+    },
+    {
+      "prompt_id": "loc_hanya_fort_v01_board_prompt",
+      "asset_id": "loc_hanya_fort_v01",
+      "name": "寒鸦堡",
+      "output_path": "assets/locations/v01/loc_hanya_fort_v01_board.png",
+      "purpose": "P2 reusable occupied fortress, insect membrane corridor, and wax archive board",
+      "composition": "Vertical 9:16 production design board with black-stone fortress fragment, insect membrane corridor, interrogation hall, wax archive wall, abstract Sumin insignia checkpoint, and cold interior lighting study; no readable labels.",
+      "prompt": "Hanya Fort location board for Severed Homeland, grounded eastern epic fantasy short drama, old human fortress converted into insect military office. Show black stone fortress walls and old human stone seams beneath occupation layers, a wet insect membrane corridor with cold reflections, an interrogation hall with old iron, a wax-sealed archive wall, dark green shell accents, and a checkpoint with abstract Sumin white wings covering a haloed black sun, not literal insect wings. Palette black stone, cold wax white, dark green shell, old iron. It must feel like human architecture occupied by insect governance, with archives sealed in wax as a key clue. Partial fortress and interior zones only, not a siege, not a pure cave hive, not a clean palace.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_hanya_fort_v01",
+        "bible/scenes.md:寒鸦堡",
+        "bible/visual-style.md:肃明国与清明院"
+      ],
+      "negative_prompt_notes": [
+        "no pure cave hive",
+        "no clean palace",
+        "no full battle siege",
+        "no warm torch fantasy hall",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 10 Hanya Fort infiltration, Shen Jiheng archive reveal, Li Tang threat staging, and Bai Yi confrontation frames."
+    },
+    {
+      "prompt_id": "loc_collapsed_beacon_v01_board_prompt",
+      "asset_id": "loc_collapsed_beacon_v01",
+      "name": "坍塌烽燧",
+      "output_path": "assets/locations/v01/loc_collapsed_beacon_v01_board.png",
+      "purpose": "P2 reusable finale broken beacon, snow escape, and incomplete value-choice board",
+      "composition": "Vertical 9:16 production design board with broken tower interior, snow escape slope, gold-red residual beacon fire, white pursuer silhouette, flag cloth pressed into snow mud, treaty fragment, and storm lighting study; no readable labels.",
+      "prompt": "Collapsed Beacon location board for Severed Homeland, grounded eastern epic fantasy short drama, broken old imperial beacon tower connected to the relay escape route. Show broken tower stones, unstable interior collapse, snow escape slope, storm snow, black smoke, brief gold-red residual beacon fire cracks, a distant white-clad pursuer silhouette through snow, a damaged treaty page fragment, and a fused Sun-Moon flag cloth pressed into snow mud rather than raised triumphantly: moon-white crescent inside worn golden sun wheel as one old Zhaoming badge on torn cloth. Palette snow white, stone gray, gold-red ember, black smoke. The finale location feels unstable, stormy, and morally incomplete, escape with fragments rather than restored imperial victory. No clean heroic platform, no sunny ending, no complete imperial restoration.",
+      "continuity_references": [
+        "bible/location-visual-locks.json:loc_collapsed_beacon_v01",
+        "bible/scenes.md:坍塌烽燧",
+        "bible/visual-style.md:昭明旧帝国遗产"
+      ],
+      "negative_prompt_notes": [
+        "no clean heroic victory platform",
+        "no sunny ending",
+        "no complete restoration of old empire",
+        "no pristine full imperial flag triumph",
+        "no readable text"
+      ],
+      "downstream_usage": "Episode 12 relay escape exit, snow confrontation, broken-flag value choice, and season-one final action reference."
+    }
+  ],
+  "blocked_assets": [],
+  "handoff": {
+    "source_designs": "art/p2-secondary-location-designs.json",
+    "thread_plan": "art/p2-location-thread-plan.json",
+    "expected_output_directory": "assets/locations/v01/"
+  }
+}
