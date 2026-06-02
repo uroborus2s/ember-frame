@@ -5,129 +5,150 @@
   "status": "draft_ready_for_review",
   "note": "These prompts are intentionally tool-neutral. Prompt Room should later convert them into ComfyUI-ready prompts with model, sampler, node, and resolution details.",
   "global_prompt_prefix": "Vertical 9:16 cinematic reference image for a grounded eastern epic fantasy short drama, restrained magic, worn materials, controlled lighting, realistic fabric and stone texture, no modern objects, no neon, no xianxia immortal glamour.",
-  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama",
+  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama, ambiguous similar flags, separated side-by-side sun and moon icons for Zhaoming, neutral black sun without white insect-wing coverage for Sumin, literal realistic insect wings on Sumin flag, ragged torn beggar clothing for Yan Nanzhi",
   "style_prompts": [
     {
       "prompt_id": "style_global_mood_v01_prompt",
       "asset_id": "style_global_mood_v01",
-      "output_path": "assets/style/style_global_mood_v01.png",
+      "output_path": "assets/style/v01/style_global_mood_v01.png",
       "purpose": "overall mood and material board",
       "prompt": "A vertical mood board showing the visual world of Severed Homeland: old white stone relics partly covered by insect wax, Qingming white register and pale needle, burned village ash, gray-brown hunter cloth, black stone border wall in snow, moon-white treaty platform, short gold-red residual route lines. Grounded cinematic, restrained, weathered, tragic."
     },
     {
       "prompt_id": "style_qingming_court_v01_prompt",
       "asset_id": "style_qingming_court_v01",
-      "output_path": "assets/style/style_qingming_court_v01.png",
+      "output_path": "assets/style/v01/style_qingming_court_v01.png",
       "purpose": "Qingming Court material and color reference",
-      "prompt": "A clean cold visual board for Sumin Qingming Court: insect-wax white walls, black sun insignia, honeycomb memory cells, white register, translucent wing membrane fabric, pale wax needle tray, symmetrical corridor, bureaucratic violence, cold gray shadows."
+      "prompt": "A clean cold visual board for Sumin Qingming Court: insect-wax white walls, abstract white wing-forms covering a black sun insignia with cold pale halo and erased moon trace, honeycomb memory cells, white register, translucent wing membrane fabric, pale wax needle tray, symmetrical corridor, bureaucratic violence, cold gray shadows."
     },
     {
       "prompt_id": "style_border_wall_v01_prompt",
       "asset_id": "style_border_wall_v01",
-      "output_path": "assets/style/style_border_wall_v01.png",
+      "output_path": "assets/style/v01/style_border_wall_v01.png",
       "purpose": "border wall material and color reference",
-      "prompt": "A rough cold visual board for the northern border wall: black stone gate, old iron, bone bell, gray repaired cloth, snow and wind, dry dark blood marks, reversed torn Sun-Moon cloth, exhausted human military household atmosphere."
+      "prompt": "A rough cold visual board for the northern border wall: black stone gate, old iron, bone bell, gray repaired cloth, snow and wind, dry dark blood marks, reversed torn cloth with fused Sun-Moon emblem, exhausted human military household atmosphere."
+    },
+    {
+      "prompt_id": "style_faction_flags_v02_prompt",
+      "asset_id": "style_faction_flags_v02",
+      "output_path": "assets/style/v02/style_faction_flags_v02.png",
+      "purpose": "clear faction flag and emblem distinction reference",
+      "prompt": "A vertical cinematic faction flag comparison board with two clearly different banners and emblem fragments, no readable text. Left: Zhaoming old human empire flag, warm dark vermilion long silk banner, old gold woven border, frayed and smoke-damaged. The central emblem must be one fused Sun-Moon badge: a worn golden sun wheel containing and supporting a moon-white crescent inside the sun, not separate sun and moon symbols. Beneath it show carved fragments from city gate, relay station, border stele, military hardware, shipyard plank, star-chart platform, and border-wall array base, all carrying the same fused Sun-Moon double seal. Mood: old imperial protection, old blood, old oath. Right: Sumin Qingming state flag, cold wax-white vertical official banner. Its central emblem must show white insect wings covering and pressing down on a black sun disk; the old moon mark is intentionally erased, scraped away, painted white, or left as a blank wound. The meaning is clean insect order covering the old human Sun-Moon flag. Mood: cleansing, coverage, bureaucratic replacement, cold violence. The two flags must be unmistakably different in color, shape, and emotion."
+    },
+    {
+      "prompt_id": "style_faction_flags_v03_prompt",
+      "asset_id": "style_faction_flags_v03",
+      "output_path": "assets/style/v03/style_faction_flags_v03.png",
+      "purpose": "corrected faction flag reference with abstract Sumin white wings and black-sun halo",
+      "prompt": "A vertical cinematic faction flag comparison board with two clearly different banners and emblem fragments, no readable text. Left: Zhaoming old human empire flag, warm dark vermilion long silk banner, old gold woven border, frayed and smoke-damaged. The central emblem is one fused Sun-Moon badge: worn golden sun wheel containing and supporting a moon-white crescent inside the sun, not separate sun and moon symbols. Right: Sumin Qingming state flag, cold wax-white vertical official banner. Its central emblem must show a black sun disk with a clear cold white or dark-gray halo, then abstract white wings covering and pressing down on the black haloed sun. The white wings should be symbolic and graphic: geometric clean wing-bands, folded white order-strips, angular ritual coverage, or simplified wing-bone arcs, not literal realistic insect wings or feathered wings. The old moon mark is erased, scraped away, painted white, or left as a blank wound. Mood: clean order covering old human Sun-Moon rule, bureaucratic erasure, cold violence. The two flags must be unmistakably different in color, shape, and emotion."
     }
   ],
   "character_prompts": [
     {
       "prompt_id": "char_shen_weisang_v01_sheet_prompt",
       "asset_id": "char_shen_weisang_v01",
-      "output_path": "assets/characters/char_shen_weisang_v01_sheet.png",
+      "output_path": "assets/characters/v02/char_shen_weisang_v02_sheet.png",
       "purpose": "main character design sheet",
-      "prompt": "Shen Weisang, 17-year-old lean hunter and fugitive guide, gray-brown worn hunter clothing, leather wrist guards, short boots, hunter bow and short knife, half broken Sun-Moon relay token in hand, left shoulder old injury, charred hem after village fire, guarded eyes, gold-red residual marks only faintly at eye corner and shoulder blade. Front, side, three-quarter, full body design sheet."
+      "prompt": "Shen Weisang, clearly 17-year-old boy with strong youthfulness, sword-like eyebrows, clear starry but guarded eyes, lean wiry hunter and fugitive guide, gray-brown worn hunter clothing, leather wrist guards, short boots, hunter bow and short knife, half broken old relay token in hand showing a fused Sun-Moon emblem with moon-white crescent inside a worn golden sun wheel, left shoulder old injury, charred hem after village fire, gold-red residual marks only faintly at eye corner and shoulder blade. Front, side, three-quarter, full body design sheet, same young identity across views."
     },
     {
       "prompt_id": "char_yan_nanzhi_v01_sheet_prompt",
       "asset_id": "char_yan_nanzhi_v01",
-      "output_path": "assets/characters/char_yan_nanzhi_v01_sheet.png",
+      "output_path": "assets/characters/v02/char_yan_nanzhi_v02_sheet.png",
       "purpose": "dual lead design sheet",
-      "prompt": "Yan Nanzhi, 18-year-old old imperial branch bloodline escapee, black hair tied with southern red cord, coarse travel robe over hidden fine Sun-Moon patterned inner layer, moon-white jade piece, oil-paper wrapped blood treaty fragments, calm disciplined eyes, restrained noble posture under fugitive disguise. Front, side, three-quarter, full body design sheet."
+      "prompt": "Yan Nanzhi, 18-year-old female exiled royal princess of the old imperial branch bloodline, high-cold noble composure even in flight, black hair tied with southern red cord in restrained Zhou-Qin inspired royal simplicity, coarse damaged travel outer robe over a hidden structured old-imperial female dress layer inspired by Chinese Zhou and Qin dynasty silhouettes, fine Sun-Moon patterned inner edge visible in fragments, moon-white jade piece, oil-paper wrapped blood treaty fragments, calm intelligent eyes, upright court-trained posture under fugitive disguise. Front, side, three-quarter, full body design sheet, unmistakably female."
+    },
+    {
+      "prompt_id": "char_yan_nanzhi_v03_sheet_prompt",
+      "asset_id": "char_yan_nanzhi_v03",
+      "output_path": "assets/characters/v03/char_yan_nanzhi_v03_sheet.png",
+      "purpose": "revised dual lead design sheet with clean coarse-cloth exile wardrobe",
+      "prompt": "Yan Nanzhi, 18-year-old female exiled royal princess of the old imperial branch bloodline, high-cold noble composure, calm intelligent eyes, slim female figure, upright court-trained posture. Clothing must be coarse cloth but clean, cold, orderly, and restrained: plain dark travel outer robe, neatly wrapped layers, intact repaired edges, slight dust and wear only, no rags, no holes, no shredded hem, no beggar-like torn clothing. Beneath the plain outer layer, show a controlled glimpse of structured old-imperial female dress inspired by Chinese Zhou and Qin dynasty silhouettes, with a fine fused Sun-Moon patterned inner edge: moon-white crescent inside a worn golden sun wheel. Black hair tied with southern red cord, moon-white jade piece visible, oil-paper wrapped blood treaty fragments. Front, side, three-quarter, full body design sheet, unmistakably female, royal bearing in exile without crown or complete court regalia."
     },
     {
       "prompt_id": "char_bai_yi_v01_sheet_prompt",
       "asset_id": "char_bai_yi_v01",
-      "output_path": "assets/characters/char_bai_yi_v01_sheet.png",
+      "output_path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
       "purpose": "main antagonist design sheet",
-      "prompt": "Bai Yi, Sumin Qingming inspector, tall still silhouette, spotless white official robe, translucent insect-wing shoulder mantle, pale expressionless face mask with dark compound-eye texture near the eyes, small black sun insignia, insect-wax needle and white register, clean cold bureaucratic menace, partial insect traits only. Front, side, three-quarter, inspection pose."
+      "prompt": "Bai Yi, Sumin Qingming inspector, tall still silhouette, spotless white official robe, translucent insect-wing shoulder mantle, pale expressionless face mask with dark compound-eye texture near the eyes, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace, partial insect traits only. Front, side, three-quarter, inspection pose."
     },
     {
       "prompt_id": "char_shen_zhaomian_v01_sheet_prompt",
       "asset_id": "char_shen_zhaomian_v01",
-      "output_path": "assets/characters/char_shen_zhaomian_v01_sheet.png",
+      "output_path": "assets/characters/v01/char_shen_zhaomian_v01_sheet.png",
       "purpose": "two-state child character design sheet",
       "prompt": "Shen Zhaomian child character sheet with two states: village child with simple gray cloth, small herb pouch, burned hair cord; Qingming identifier state with white child robe, insect-wax wrist ring, same childhood anchor retained, sensitive eyes with brief memory flicker. Institutional trauma, not villain glamour."
     },
     {
       "prompt_id": "char_lu_qingli_v01_sheet_prompt",
       "asset_id": "char_lu_qingli_v01",
-      "output_path": "assets/characters/char_lu_qingli_v01_sheet.png",
+      "output_path": "assets/characters/v01/char_lu_qingli_v01_sheet.png",
       "purpose": "wallfoot mixed-heritage character design sheet",
       "prompt": "Lu Qingli, teenage wallfoot mixed-heritage girl, compact fast survivor, gray-blue short jacket, patched underlayers, rope belt, shard pottery charm, hidden narrow knife, black market wood pass, subtle insect-scale trace behind ear only visible in close-up, wary half-smile, always near exits. Front, side, full body, knife action."
     },
     {
       "prompt_id": "char_xue_linqiang_v01_sheet_prompt",
       "asset_id": "char_xue_linqiang_v01",
-      "output_path": "assets/characters/char_xue_linqiang_v01_sheet.png",
+      "output_path": "assets/characters/v01/char_xue_linqiang_v01_sheet.png",
       "purpose": "border wall mentor design sheet",
-      "prompt": "Xue Linqiang, old border wall master, broad worn soldier posture, gray-stone old armor pieces, coarse repaired wall cloth, frost-cracked fingers, bone whistle, worn long spear, reversed old Sun-Moon cloth strip at waist, practical and exhausted, not noble. Front, side, full body, wall guard pose."
+      "prompt": "Xue Linqiang, old border wall master, broad worn soldier posture, gray-stone old armor pieces, coarse repaired wall cloth, frost-cracked fingers, bone whistle, worn long spear, reversed old cloth strip at waist with fused Sun-Moon emblem, practical and exhausted, not noble. Front, side, full body, wall guard pose."
     }
   ],
   "location_prompts": [
     {
       "prompt_id": "loc_canyang_ao_v01_board_prompt",
       "asset_id": "loc_canyang_ao_v01",
-      "output_path": "assets/locations/loc_canyang_ao_v01_board.png",
+      "output_path": "assets/locations/v01/loc_canyang_ao_v01_board.png",
       "purpose": "village location board",
       "prompt": "Canyang Ao old relay village board: low earth walls, old well, village medicine house, hunter bow rack, sunset valley, insect-wax sealed door plaque, hidden relay sign under ordinary life, later fire ash and burned beams. Show village gate, medicine house interior, old well, burned aftermath."
     },
     {
       "prompt_id": "loc_old_relay_tunnel_v01_board_prompt",
       "asset_id": "loc_old_relay_tunnel_v01",
-      "output_path": "assets/locations/loc_old_relay_tunnel_v01_board.png",
+      "output_path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png",
       "purpose": "old relay tunnel board",
-      "prompt": "Old imperial relay tunnel board: narrow underground white stone archway, peeled Sun-Moon seals, route grid carvings, torch darkness, short broken gold-red residual light lines on the floor, practical hidden infrastructure, not grand palace."
+      "prompt": "Old imperial relay tunnel board: narrow underground white stone archway, peeled fused Sun-Moon double seals with a moon-white crescent inside a worn golden sun wheel, route grid carvings, torch darkness, short broken gold-red residual light lines on the floor, practical hidden infrastructure, not grand palace."
     },
     {
       "prompt_id": "loc_qingming_outer_office_v01_board_prompt",
       "asset_id": "loc_qingming_outer_office_v01",
-      "output_path": "assets/locations/loc_qingming_outer_office_v01_board.png",
+      "output_path": "assets/locations/v01/loc_qingming_outer_office_v01_board.png",
       "purpose": "Qingming office board",
       "prompt": "Qingming Court outer office board: spotless white corridors, white register desk, pale insect-wax needle tray, honeycomb memory cells, children in white training robes, cold symmetrical bureaucratic violence, black ink and bone-white materials."
     },
     {
       "prompt_id": "loc_suohou_pass_v01_board_prompt",
       "asset_id": "loc_suohou_pass_v01",
-      "output_path": "assets/locations/loc_suohou_pass_v01_board.png",
+      "output_path": "assets/locations/v01/loc_suohou_pass_v01_board.png",
       "purpose": "border pass board",
-      "prompt": "Suohou Pass board: black stone border wall gate in snow, peeling Sumin black-sun insignia revealing old Sun-Moon array base underneath, bone bell, old iron gate, snow-night torchlight, distant giant beast impact shown through shadow and gate vibration."
+      "prompt": "Suohou Pass board: black stone border wall gate in snow, peeling Sumin white-insect-wings-over-black-sun insignia revealing an old fused Sun-Moon array base underneath, moon-white crescent inside worn golden sun wheel carved into the black stone foundation, bone bell, old iron gate, snow-night torchlight, distant giant beast impact shown through shadow and gate vibration."
     },
     {
       "prompt_id": "loc_moon_oath_relay_v01_board_prompt",
       "asset_id": "loc_moon_oath_relay_v01",
-      "output_path": "assets/locations/loc_moon_oath_relay_v01_board.png",
+      "output_path": "assets/locations/v01/loc_moon_oath_relay_v01_board.png",
       "purpose": "season finale treaty chamber board",
-      "prompt": "Moon Oath old relay chamber board: underground star-chart hall, moon-white stone treaty platform, damaged treaty pages, multiple faction seals, cracked Sun-Moon mark, deep shadow, dust and collapse cracks, victory incomplete after main scroll burns."
+      "prompt": "Moon Oath old relay chamber board: underground star-chart hall, moon-white stone treaty platform, damaged treaty pages, multiple faction seals, cracked fused Sun-Moon mark with a moon-white crescent inside worn golden sun wheel, deep shadow, dust and collapse cracks, victory incomplete after main scroll burns."
     }
   ],
   "prop_prompts": [
     {
       "prompt_id": "prop_core_set_v01_prompt",
       "asset_id": "prop_core_set_v01",
-      "output_path": "assets/props/prop_core_set_v01.png",
+      "output_path": "assets/props/v01/prop_core_set_v01.png",
       "purpose": "core recurring prop board",
-      "prompt": "Core prop board for Severed Homeland: half broken Sun-Moon relay token in worn bronze and old white stone, moon-white jade shard on red cord, Qingming white register, pale insect-wax needle, thin Qingming incense smoke trace, torn old relay map, oil-paper blood treaty fragments, burned Moon Oath treaty page with multiple faction seals. Each prop isolated and labeled visually by material."
+      "prompt": "Core prop board for Severed Homeland: half broken old relay token in worn bronze and old white stone with fused Sun-Moon emblem, moon-white crescent set inside worn golden sun wheel, moon-white jade shard on red cord, Qingming white register, pale insect-wax needle, thin Qingming incense smoke trace, torn old relay map, oil-paper blood treaty fragments with fine fused Sun-Moon pattern, burned Moon Oath treaty page with multiple faction seals. Each prop isolated and labeled visually by material."
     },
     {
       "prompt_id": "prop_border_set_v01_prompt",
       "asset_id": "prop_border_set_v01",
-      "output_path": "assets/props/prop_border_set_v01.png",
+      "output_path": "assets/props/v01/prop_border_set_v01.png",
       "purpose": "border and wallfoot prop board",
-      "prompt": "Border wall and wallfoot prop board: bone whistle, longer northern bone flute, dull yellow-gray food token, dark wood black-market pass with route notch, reversed torn Sun-Moon cloth strip, shard pottery charm, old iron gate token. Weathered, practical, cold, no shiny treasure."
+      "prompt": "Border wall and wallfoot prop board: bone whistle, longer northern bone flute, dull yellow-gray food token, dark wood black-market pass with route notch, reversed torn cloth strip with fused Sun-Moon emblem, shard pottery charm, old iron gate token. Weathered, practical, cold, no shiny treasure."
     }
   ],
   "blocked": {
-    "image_generation": true,
-    "reason": "User requested the project-level visual unity package. Actual image generation has not been requested and should wait for approval or director-room outputs."
+    "image_generation": false,
+    "reason": "Limited project-level global reference images are now approved and in progress. Full episode-specific assets still wait for director-room outputs."
   }
 }

@@ -25,8 +25,12 @@
   ],
   "highlight_colors": {
     "gold_red": {
-      "usage": "Shen Weisang spirit-wing residual marks, old relay light routes, firelight reflections",
+      "usage": "Zhaoming old imperial banner accents, Shen Weisang spirit-wing residual marks, old relay light routes, firelight reflections",
       "approx_hex": "#B45A2A"
+    },
+    "zhaoming_vermilion": {
+      "usage": "Zhaoming flag ground and old imperial cloth fragments",
+      "approx_hex": "#8F2E20"
     },
     "moon_white": {
       "usage": "Yan Nanzhi jade, treaty platform, broken star charts",
@@ -41,20 +45,22 @@
     {
       "id": "faction_zhaoming_relic",
       "name": "昭明旧帝国遗产",
-      "symbols": ["日轮托白月", "日月双印", "旧驿路线刻痕", "月下盟书多族印记"],
-      "palette": ["旧白石", "磨损金", "月白", "金赤裂纹"],
+      "symbols": ["日轮托白月", "日月合徽", "日月双印", "旧驿路线刻痕", "月下盟书多族印记", "朱赤长幅旧战旗"],
+      "palette": ["朱赤旗底", "旧白石", "磨损金", "月白", "金赤裂纹"],
       "materials": ["white stone", "worn bronze", "old gold inlay", "cracked route carvings"],
-      "shape_language": ["circle", "crescent", "arch", "star chart disk", "route grid"],
-      "continuity_rule": "Relics must look damaged, covered, partial, or rediscovered; never pristine imperial glory in season 01."
+      "shape_language": ["golden sun wheel containing moon-white crescent", "integrated sun-moon emblem", "arch", "star chart disk", "route grid", "warm long banner"],
+      "flag_design": "Warm human imperial banner: dark vermilion long cloth, worn golden sun wheel with a moon-white crescent placed inside the sun wheel as one fused Sun-Moon emblem, old gold woven border, frayed and smoke-damaged. Never draw the sun and moon as separate side-by-side symbols.",
+      "continuity_rule": "Relics must look damaged, covered, partial, or rediscovered; never pristine imperial glory in season 01. City gates, relay stations, border steles, military hardware, shipyards, star-chart platforms, and border-wall array bases may carry the old fused Sun-Moon double seal."
     },
     {
       "id": "faction_suming_qingming",
       "name": "肃明国与清明院",
-      "symbols": ["白翅覆黑日", "抹去的月纹", "清明白册", "虫蜡封条"],
+      "symbols": ["白翅覆黑日", "黑日日晕", "被抹去的月纹", "清明白册", "虫蜡封条", "冷白竖幅官旗"],
       "palette": ["虫蜡白", "冷灰", "骨白", "黑日"],
       "materials": ["insect wax", "white plaster", "thin wing membrane", "black lacquer", "clean paper"],
-      "shape_language": ["symmetry", "straight corridor", "honeycomb holes", "sealed circular sun"],
-      "continuity_rule": "Always clean, cold, and bureaucratic; insect traits are controlled and partial."
+      "shape_language": ["symmetry", "straight corridor", "honeycomb holes", "black sun with cold pale halo pressed under abstract white wings", "cold vertical banner", "erased moon scar"],
+      "flag_design": "Cold bureaucratic banner: wax-white vertical flag, black sun disk with a cold white or dark-gray halo, visibly covered or pressed down by abstract white wings. The wings should feel like geometric order bands, folded white wing-bones, or ritualized clean coverage, not literal insect specimen wings. The old moon mark is intentionally scraped away, painted over, or left as a blank scar. The meaning is insect order covering the old human Sun-Moon flag, not a neutral black-sun emblem.",
+      "continuity_rule": "Always clean, cold, and bureaucratic; insect traits are controlled and partial. Sumin marks must show coverage, erasure, and replacement of the old fused Sun-Moon order."
     },
     {
       "id": "faction_border_wall",
@@ -92,7 +98,8 @@
   },
   "state_continuity": {
     "shen_weisang_after_ep02": "charred hem must remain visible or implied in every outfit state",
-    "yan_nanzhi_all_season": "red hair cord and moon-white jade must remain visible unless temporarily hidden for disguise",
+    "shen_weisang_identity": "must read as a 17-year-old boy with youthful sword-like eyebrows and clear guarded eyes, not a mature war hero",
+    "yan_nanzhi_all_season": "female exiled royal princess; red hair cord and moon-white jade must remain visible unless temporarily hidden for disguise; coarse travel clothes must stay plain, cold, clean, and controlled, preserving noble bearing inspired by Zhou-Qin female dress structure",
     "bai_yi_all_scenes": "white robe, wing-membrane shoulder layer, insect-wax needle or Qingming register anchor",
     "shen_zhaomian_after_capture": "Qingming white clothing plus a remaining childhood anchor such as burned hair cord or herb pouch",
     "magic_effects": "spirit-wing residual marks are short gold-red lines at eye corner, shoulder blade, wrist, or old relay ground route"

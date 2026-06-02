@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "limited global reference asset pass",
+  "versioning_scheme": "Assets are grouped by category and version folder: assets/{category}/v01, v02, v03. Root category folders keep only placeholders or shared indexes.",
+  "current_recommendations": {
+    "faction_flags": "assets/style/v03/style_faction_flags_v03.png",
+    "yan_nanzhi": "assets/characters/v03/char_yan_nanzhi_v03_sheet.png",
+    "shen_weisang": "assets/characters/v02/char_shen_weisang_v02_sheet.png",
+    "bai_yi": "assets/characters/v01/char_bai_yi_v01_sheet.png",
+    "shen_zhaomian": "assets/characters/v01/char_shen_zhaomian_v01_sheet.png",
+    "lu_qingli": "assets/characters/v01/char_lu_qingli_v01_sheet.png",
+    "xue_linqiang": "assets/characters/v01/char_xue_linqiang_v01_sheet.png"
+  },
+  "style_assets": [
+    {
+      "asset_id": "style_global_mood_v01",
+      "path": "assets/style/v01/style_global_mood_v01.png",
+      "status": "usable_v01"
+    },
+    {
+      "asset_id": "style_qingming_court_v01",
+      "path": "assets/style/v01/style_qingming_court_v01.png",
+      "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"
+    },
+    {
+      "asset_id": "style_border_wall_v01",
+      "path": "assets/style/v01/style_border_wall_v01.png",
+      "status": "usable_v01"
+    },
+    {
+      "asset_id": "style_faction_flags_v01",
+      "path": "assets/style/v01/style_faction_flags_v01.png",
+      "status": "superseded",
+      "reason": "Zhaoming and Sumin flags were not distinctive enough."
+    },
+    {
+      "asset_id": "style_faction_flags_v02",
+      "path": "assets/style/v02/style_faction_flags_v02.png",
+      "status": "partial_superseded",
+      "reason": "Zhaoming fused Sun-Moon emblem is acceptable; Sumin white wings were still too literal."
+    },
+    {
+      "asset_id": "style_faction_flags_v03",
+      "path": "assets/style/v03/style_faction_flags_v03.png",
+      "status": "recommended",
+      "reason": "Uses fused Zhaoming Sun-Moon emblem, Sumin black-sun halo, and more abstract white-wing coverage."
+    }
+  ],
+  "character_assets": [
+    {
+      "asset_id": "char_shen_weisang_v01",
+      "path": "assets/characters/v01/char_shen_weisang_v01_sheet.png",
+      "status": "superseded",
+      "reason": "Insufficient 17-year-old youthfulness."
+    },
+    {
+      "asset_id": "char_shen_weisang_v02",
+      "path": "assets/characters/v02/char_shen_weisang_v02_sheet.png",
+      "status": "recommended_for_character_body",
+      "note": "Youthful face and hunter silhouette are acceptable. If the relay token is featured in close-up, regenerate or use a dedicated prop sheet with the fused Sun-Moon emblem."
+    },
+    {
+      "asset_id": "char_yan_nanzhi_v01",
+      "path": "assets/characters/v01/char_yan_nanzhi_v01_sheet.png",
+      "status": "superseded",
+      "reason": "Identity and gender direction needed correction."
+    },
+    {
+      "asset_id": "char_yan_nanzhi_v02",
+      "path": "assets/characters/v02/char_yan_nanzhi_v02_sheet.png",
+      "status": "superseded",
+      "reason": "Wardrobe read too ragged."
+    },
+    {
+      "asset_id": "char_yan_nanzhi_v03",
+      "path": "assets/characters/v03/char_yan_nanzhi_v03_sheet.png",
+      "status": "recommended",
+      "reason": "Reads as female exiled royal princess with clean coarse cloth and cold restraint."
+    },
+    {
+      "asset_id": "char_bai_yi_v01",
+      "path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
+      "status": "usable_v01_but_symbol_should_follow_v03_when_regenerated"
+    },
+    {
+      "asset_id": "char_shen_zhaomian_v01",
+      "path": "assets/characters/v01/char_shen_zhaomian_v01_sheet.png",
+      "status": "usable_v01"
+    },
+    {
+      "asset_id": "char_lu_qingli_v01",
+      "path": "assets/characters/v01/char_lu_qingli_v01_sheet.png",
+      "status": "usable_v01"
+    },
+    {
+      "asset_id": "char_xue_linqiang_v01",
+      "path": "assets/characters/v01/char_xue_linqiang_v01_sheet.png",
+      "status": "usable_v01"
+    }
+  ],
+  "location_assets": [
+    {"asset_id": "loc_canyang_ao_v01", "path": "assets/locations/v01/loc_canyang_ao_v01_board.png", "status": "usable_v01"},
+    {"asset_id": "loc_old_relay_tunnel_v01", "path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png", "status": "usable_v01_but_old_emblems_should_follow_fused_Sun-Moon_when_regenerated"},
+    {"asset_id": "loc_qingming_outer_office_v01", "path": "assets/locations/v01/loc_qingming_outer_office_v01_board.png", "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"},
+    {"asset_id": "loc_suohou_pass_v01", "path": "assets/locations/v01/loc_suohou_pass_v01_board.png", "status": "usable_v01_but_overlay_symbols_should_follow_v03_when_regenerated"}
+  ],
+  "missing_or_deferred": [
+    "assets/locations/v01/loc_moon_oath_relay_v01_board.png",
+    "assets/props/v01/prop_core_set_v01.png",
+    "assets/props/v01/prop_border_set_v01.png",
+    "episode-specific reference frames under director-room outputs"
+  ]
+}

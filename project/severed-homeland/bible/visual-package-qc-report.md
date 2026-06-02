@@ -14,12 +14,14 @@
 - `assets/props/.gitkeep`
 - `assets/costumes/.gitkeep`
 - `assets/style/.gitkeep`
+- `assets/asset-index.json`
+- `assets/asset-qc-report.md`
 
 ## 结论
 
-状态：pass。
+状态：pass，且已完成有限全局参考资产生成。
 
-项目级视觉统一包已经可以作为后续角色设定图、场景概念图、道具板、分镜参考帧和 Prompt Room 的统一输入。
+项目级视觉统一包已经可以作为后续角色设定图、场景概念图、道具板、分镜参考帧和 Prompt Room 的统一输入。本轮已生成有限全局参考资产，但不是完整全量资产。
 
 ## 已锁定内容
 
@@ -32,12 +34,21 @@
 7. 资产 ID：所有首批角色、地点、道具和风格板都有稳定 ID，可供后续引用。
 8. 项目级图片提示词：已生成工具中立 prompt，不含 ComfyUI 节点、采样器或模型参数。
 
+## 已生成参考资产
+
+1. 版本化资产目录：`assets/style/v01`、`assets/style/v02`、`assets/style/v03`、`assets/characters/v01`、`assets/characters/v02`、`assets/characters/v03`、`assets/locations/v01`。
+2. 推荐旗帜/徽记版本：`assets/style/v03/style_faction_flags_v03.png`。
+3. 推荐晏南枝版本：`assets/characters/v03/char_yan_nanzhi_v03_sheet.png`。
+4. 推荐沈维桑人物体态版本：`assets/characters/v02/char_shen_weisang_v02_sheet.png`。
+5. 全局推荐关系记录：`assets/asset-index.json`。
+
 ## 未完成内容
 
-1. 未生成实际图片资产。
+1. 未生成完整全量图片资产。
 2. 未生成第01集专属参考帧。
 3. 未生成 director-room 镜头表、storyboard 或 shot-list。
 4. 未生成 ComfyUI-ready prompt。
+5. 未生成核心道具板和月下盟书旧驿场景板。
 
 ## 风险与控制
 
@@ -49,9 +60,11 @@
 
 沈维桑、晏南枝、白翳是最高风险角色。生成图片时必须遵守：
 
-1. 沈维桑不穿英雄铠甲。
-2. 晏南枝不穿完整公主/皇室礼服。
+1. 沈维桑不穿英雄铠甲，保持17岁少年感。
+2. 晏南枝不穿完整公主/皇室礼服，也不衣衫褴褛；她是粗布清冷整洁的流亡皇族公主。
 3. 白翳不变成全虫怪物。
+4. 昭明日月徽使用“日轮托白月”合徽，不画成日/月并列。
+5. 肃明“白翅覆黑日”必须有黑日日晕，白翅应抽象化，不画成写实虫翼标本。
 
 ### warning：边墙大场景容易超出 AI 生成控制
 

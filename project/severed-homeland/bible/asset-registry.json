@@ -7,11 +7,12 @@
     "locations": "assets/locations/",
     "props": "assets/props/",
     "costumes": "assets/costumes/",
-    "style": "assets/style/"
+    "style": "assets/style/",
+    "versioning": "Use category/version folders such as assets/characters/v01/, assets/style/v02/, and assets/style/v03/. Root category folders keep only placeholders or shared indexes."
   },
   "characters": [
     {"id": "char_shen_weisang_v01", "name": "沈维桑", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "injured_state"]},
-    {"id": "char_yan_nanzhi_v01", "name": "晏南枝", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "travel_disguise"]},
+    {"id": "char_yan_nanzhi_v01", "name": "晏南枝", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "travel_disguise"], "current_recommended_version": "v03_clean_coarse_cloth"},
     {"id": "char_bai_yi_v01", "name": "白翳", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "inspection_pose"]},
     {"id": "char_shen_zhaomian_v01", "name": "沈照眠", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["village_child_state", "qingming_identifier_state"]},
     {"id": "char_lu_qingli_v01", "name": "陆青砾", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "knife_action"]},
@@ -52,11 +53,14 @@
     {"id": "style_global_mood_v01", "name": "全剧总风格板", "priority": 1, "source": "bible/visual-style.md"},
     {"id": "style_zhaoming_relic_v01", "name": "昭明旧物材质板", "priority": 1, "source": "bible/style-continuity-bible.json"},
     {"id": "style_qingming_court_v01", "name": "清明院材质板", "priority": 1, "source": "bible/style-continuity-bible.json"},
-    {"id": "style_border_wall_v01", "name": "边墙雪线材质板", "priority": 1, "source": "bible/style-continuity-bible.json"}
+    {"id": "style_border_wall_v01", "name": "边墙雪线材质板", "priority": 1, "source": "bible/style-continuity-bible.json"},
+    {"id": "style_faction_flags_v01", "name": "昭明/肃明旗帜徽记对照板（旧草案，待废弃）", "priority": 1, "source": "bible/visual-style.md", "output_path": "assets/style/v01/style_faction_flags_v01.png", "status": "superseded"},
+    {"id": "style_faction_flags_v02", "name": "昭明/肃明旗帜徽记对照板（日月合徽修订版）", "priority": 1, "source": "bible/visual-style.md", "output_path": "assets/style/v02/style_faction_flags_v02.png", "status": "zhaoming_ok_suming_needs_abstract_wing_revision"},
+    {"id": "style_faction_flags_v03", "name": "昭明/肃明旗帜徽记对照板（抽象白翅与黑日日晕修订版）", "priority": 1, "source": "bible/visual-style.md", "output_path": "assets/style/v03/style_faction_flags_v03.png", "status": "generated_recommended"}
   ],
   "generation_status": {
     "planning": "ready",
-    "image_generation": "not_started",
-    "reason": "Project-level visual locks are prepared; actual image assets should wait for approved reference-generation pass or episode director-room outputs."
+    "image_generation": "limited_global_reference_pass_ready",
+    "reason": "Generated reference images are organized by version folders. Full episode-specific assets still wait for director-room outputs."
   }
 }
