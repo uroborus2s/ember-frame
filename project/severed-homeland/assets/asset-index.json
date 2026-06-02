@@ -17,8 +17,6 @@
     "zhaoming_relic_material": "assets/style/v03/style_zhaoming_relic_v03.png",
     "old_relay_tunnel": "assets/locations/v03/loc_old_relay_tunnel_v03_board.png",
     "qingming_outer_office": "assets/locations/v02/loc_qingming_outer_office_v02_board.png",
-    "suohou_pass": "assets/locations/v03/loc_suohou_pass_v03_board.png",
-    "moon_oath_relay": "assets/locations/v03/loc_moon_oath_relay_v03_board.png",
     "border_props": "assets/props/v03/prop_border_set_v03.png",
     "shen_zhaomian": "assets/characters/v01/char_shen_zhaomian_v01_sheet.png",
     "lu_qingli": "assets/characters/v01/char_lu_qingli_v01_sheet.png",
@@ -163,14 +161,60 @@
     }
   ],
   "location_assets": [
-    {"asset_id": "loc_canyang_ao_v01", "path": "assets/locations/v01/loc_canyang_ao_v01_board.png", "status": "usable_v01"},
-    {"asset_id": "loc_old_relay_tunnel_v01", "path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png", "status": "usable_v01_but_old_emblems_should_follow_fused_Sun-Moon_when_regenerated"},
-    {"asset_id": "loc_old_relay_tunnel_v03", "path": "assets/locations/v03/loc_old_relay_tunnel_v03_board.png", "status": "recommended"},
-    {"asset_id": "loc_qingming_outer_office_v01", "path": "assets/locations/v01/loc_qingming_outer_office_v01_board.png", "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"},
-    {"asset_id": "loc_qingming_outer_office_v02", "path": "assets/locations/v02/loc_qingming_outer_office_v02_board.png", "status": "recommended"},
-    {"asset_id": "loc_suohou_pass_v01", "path": "assets/locations/v01/loc_suohou_pass_v01_board.png", "status": "usable_v01_but_overlay_symbols_should_follow_v03_when_regenerated"},
-    {"asset_id": "loc_suohou_pass_v03", "path": "assets/locations/v03/loc_suohou_pass_v03_board.png", "status": "usable_composited_v03", "reason": "Sumin layer and exposed Zhaoming array use v3 symbols; compositing is visible and needs later polish."},
-    {"asset_id": "loc_moon_oath_relay_v03", "path": "assets/locations/v03/loc_moon_oath_relay_v03_board.png", "status": "usable_composited_v03", "reason": "Key Sun-Moon emblems replaced with deterministic v3 symbol; compositing needs later polish."}
+    {
+      "asset_id": "loc_canyang_ao_v01",
+      "path": "assets/locations/v01/loc_canyang_ao_v01_board.png",
+      "status": "usable_v01"
+    },
+    {
+      "asset_id": "loc_old_relay_tunnel_v01",
+      "path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png",
+      "status": "usable_v01_but_old_emblems_should_follow_fused_Sun-Moon_when_regenerated"
+    },
+    {
+      "asset_id": "loc_old_relay_tunnel_v03",
+      "path": "assets/locations/v03/loc_old_relay_tunnel_v03_board.png",
+      "status": "recommended"
+    },
+    {
+      "asset_id": "loc_qingming_outer_office_v01",
+      "path": "assets/locations/v01/loc_qingming_outer_office_v01_board.png",
+      "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"
+    },
+    {
+      "asset_id": "loc_qingming_outer_office_v02",
+      "path": "assets/locations/v02/loc_qingming_outer_office_v02_board.png",
+      "status": "recommended"
+    },
+    {
+      "asset_id": "loc_suohou_pass_v01",
+      "path": "assets/locations/v01/loc_suohou_pass_v01_board.png",
+      "status": "usable_v01_but_overlay_symbols_should_follow_v03_when_regenerated"
+    },
+    {
+      "asset_id": "loc_suohou_pass_v03",
+      "path": "assets/locations/v03/loc_suohou_pass_v03_board.png",
+      "status": "rejected_for_scene_use_symbol_overlay_only",
+      "reason": "Deterministic v3 symbols were pasted as non-diegetic overlays. This is useful only as a record of the emblem-correction failure, not as a location board."
+    },
+    {
+      "asset_id": "loc_suohou_pass_v04",
+      "path": "assets/locations/v04/loc_suohou_pass_v04_board.png",
+      "status": "missing_needs_regeneration",
+      "reason": "Regenerate with v3 emblems naturally carved, painted, weathered, or partially covered in the black-stone gate and exposed old array; no floating or pasted symbols."
+    },
+    {
+      "asset_id": "loc_moon_oath_relay_v03",
+      "path": "assets/locations/v03/loc_moon_oath_relay_v03_board.png",
+      "status": "rejected_for_scene_use_symbol_overlay_only",
+      "reason": "Deterministic v3 symbols were pasted as non-diegetic overlays. This breaks scene logic and must not be used as final location reference."
+    },
+    {
+      "asset_id": "loc_moon_oath_relay_v04",
+      "path": "assets/locations/v04/loc_moon_oath_relay_v04_board.png",
+      "status": "missing_needs_regeneration",
+      "reason": "Regenerate as an underground star-chart treaty chamber where the fused Sun-Moon mark is engraved into stone, broken relief, treaty pages, or multi-faction seals; no floating or pasted symbols."
+    }
   ],
   "prop_assets": [
     {
@@ -226,6 +270,8 @@
   ],
   "missing_or_deferred": [
     "natural-blended final versions of composited v3 boards",
+    "loc_moon_oath_relay_v04 natural-integrated board",
+    "loc_suohou_pass_v04 natural-integrated board",
     "natural-blended Bai Yi v4 final sheet",
     "natural-blended core props v5 or equivalent final board",
     "episode-specific reference frames under director-room outputs"
