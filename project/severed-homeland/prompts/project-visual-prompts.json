@@ -5,7 +5,7 @@
   "status": "draft_ready_for_review",
   "note": "These prompts are intentionally tool-neutral. Prompt Room should later convert them into ComfyUI-ready prompts with model, sampler, node, and resolution details.",
   "global_prompt_prefix": "Vertical 9:16 cinematic reference image for a grounded eastern epic fantasy short drama, restrained magic, worn materials, controlled lighting, realistic fabric and stone texture, no modern objects, no neon, no xianxia immortal glamour.",
-  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama, ambiguous similar flags, separated side-by-side sun and moon icons for Zhaoming, neutral black sun without white insect-wing coverage for Sumin, literal realistic insect wings on Sumin flag, ragged torn beggar clothing for core human characters, identical generic refugee outfits, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde",
+  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama, ambiguous similar flags, separated side-by-side sun and moon icons for Zhaoming, neutral black sun without white insect-wing coverage for Sumin, literal realistic insect wings on Sumin flag, ragged torn beggar clothing for core human characters, identical generic refugee outfits, visible old-imperial insignia on Yan Nanzhi exile clothing, human hair or real human face for Bai Yi, obvious waist cloth Sun-Moon insignia for Xue Linqiang, subtle-only animal jewelry for northern half-beasts, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde",
   "style_prompts": [
     {
       "prompt_id": "style_global_mood_v01_prompt",
@@ -15,11 +15,25 @@
       "prompt": "A vertical mood board showing the visual world of Severed Homeland: old white stone relics partly covered by insect wax, Qingming white register and pale needle, burned village ash, gray-brown hunter cloth, black stone border wall in snow, moon-white treaty platform, short gold-red residual route lines. Grounded cinematic, restrained, weathered, tragic."
     },
     {
+      "prompt_id": "style_regional_color_system_v01_prompt",
+      "asset_id": "style_regional_color_system_v01",
+      "output_path": "assets/style/v01/style_regional_color_system_v01.png",
+      "purpose": "global regional costume and scene color-system board",
+      "prompt": "A vertical regional color-system board for Severed Homeland, no readable labels, divided into filmable material zones rather than flat swatches: human life centers with earth brown, wheat gold, herb green, old wood and intact work clothes; human ruling centers with old white stone, vermilion, peacock blue, ivory, worn gold and humid southern formal silk; battlefields and grain-tax lines with iron gray, char black, dry blood red, smoke yellow and bone white; Jinhe great river navigation with deep river blue-green, fog gray, steam white, wet timber and oil-black machinery; riverside steam town with brick red, wet wood, grain yellow, small chimneys and repair sheds; wheat-hill countryside with golden wheat waves and low villages; Juejing Mountains with towering black stone, snow white and ice blue; northern wasteland grassland and bald hills with dry grass yellow, frozen earth gray and wind-eroded brown; Sumin ruling center with insect-wax white, pearl gray, black sun, dark green carapace and cold gold. Grounded cinematic production design, restrained magic, clear costume silhouettes."
+    },
+    {
       "prompt_id": "style_qingming_court_v01_prompt",
       "asset_id": "style_qingming_court_v01",
       "output_path": "assets/style/v01/style_qingming_court_v01.png",
       "purpose": "Qingming Court material and color reference",
       "prompt": "A clean cold visual board for Sumin Qingming Court: insect-wax white walls, abstract white wing-forms covering a black sun insignia with cold pale halo and erased moon trace, honeycomb memory cells, white register, translucent wing membrane fabric, pale wax needle tray, symmetrical corridor, bureaucratic violence, cold gray shadows."
+    },
+    {
+      "prompt_id": "style_northern_half_beasts_v01_prompt",
+      "asset_id": "style_northern_half_beasts_v01",
+      "output_path": "assets/style/v01/style_northern_half_beasts_v01.png",
+      "purpose": "northern half-beast material and social-rank reference",
+      "prompt": "A vertical northern half-beast visual board for Severed Homeland: human-form northern beastfolk with clear deer ears, wolf ears, bear ears and raven feather crests, luxurious rare fur for nobles, functional fur and leather for scouts, bone-gold clasps, jade buttons, ice-blue brocade, black iron, snow-gray leather, aurora-green bead accents. Human-form bodies with obvious localized beast traits, not full animals and not ordinary humans with tiny jewelry."
     },
     {
       "prompt_id": "style_border_wall_v01_prompt",
@@ -70,14 +84,14 @@
       "asset_id": "char_yan_nanzhi_v03",
       "output_path": "assets/characters/v03/char_yan_nanzhi_v03_sheet.png",
       "purpose": "revised dual lead design sheet with clean coarse-cloth exile wardrobe",
-      "prompt": "Yan Nanzhi, 18-year-old female exiled royal princess of the old imperial branch bloodline, high-cold noble composure, calm intelligent eyes, slim female figure, upright court-trained posture. Clothing must be coarse cloth but clean, cold, orderly, and restrained: plain dark travel outer robe, neatly wrapped layers, intact repaired edges, slight dust and wear only, no rags, no holes, no shredded hem, no beggar-like torn clothing. Beneath the plain outer layer, show a controlled glimpse of structured old-imperial female dress inspired by Chinese Zhou and Qin dynasty silhouettes, with a fine fused Sun-Moon patterned inner edge: moon-white crescent inside a worn golden sun wheel. Black hair tied with southern red cord, moon-white jade piece visible, oil-paper wrapped blood treaty fragments. Front, side, three-quarter, full body design sheet, unmistakably female, royal bearing in exile without crown or complete court regalia."
+      "prompt": "Yan Nanzhi, 18-year-old female exiled royal princess of the old imperial branch bloodline, high-cold noble composure, calm intelligent eyes, slim female figure, upright court-trained posture. Show concealed exile state and formal memory/reveal state. Exile clothing must be mist purple, dark violet or cold gray coarse cloth, clean, orderly, intact and restrained, with no visible old-imperial insignia on the exterior; moon-white jade, oil-paper blood treaty fragments and Sun-Moon marks are hidden in inner pockets or under-collar details. Formal old-imperial state uses vivid Chinese Ming-style Hanfu reference: vermilion wide sleeves, peacock blue inner layer, moon-white middle garment, purple-crimson accent and woven gold court pattern. Black hair tied with southern red cord. Front, side, three-quarter, full body design sheet, hidden-prop close-up, formal textile detail, unmistakably female, royal bearing without active-exile crown."
     },
     {
       "prompt_id": "char_bai_yi_v01_sheet_prompt",
       "asset_id": "char_bai_yi_v01",
       "output_path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
       "purpose": "main antagonist design sheet",
-      "prompt": "Bai Yi, Sumin upper intellectual ruler-form insectoid Qingming inspector, tall still vertical silhouette, spotless wax-white official robe, bone-white high collar, cylindrical Qingming crown or integrated head casing, translucent wing-membrane shoulder mantle, integrated pale chitin faceplate, large dark compound-eye structures, dark neck membrane, slightly jointed or carapace-like fingers, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace. He is not a human wearing a mask; preserve upper insectoid official traits without turning him into a lower-force beast monster. Front, side, three-quarter, inspection pose."
+      "prompt": "Bai Yi, Sumin upper intellectual ruler-form insectoid Qingming inspector, tall still vertical silhouette, spotless wax-white official robe, bone-white high collar, cylindrical Qingming crown or integrated head casing, translucent wing-membrane shoulder mantle, integrated pale chitin faceplate, large dark compound-eye structures, dark neck membrane, slightly jointed or carapace-like fingers, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace. He is insectoid and can only disguise as a human ruler; no human hair, no real human face and no skin texture. Hair-like forms must be crown, shell crest or chitin ornament. Front, side, three-quarter, inspection pose and human-ruler-disguise pose."
     },
     {
       "prompt_id": "char_shen_zhaomian_v01_sheet_prompt",
@@ -98,7 +112,7 @@
       "asset_id": "char_xue_linqiang_v01",
       "output_path": "assets/characters/v01/char_xue_linqiang_v01_sheet.png",
       "purpose": "border wall mentor design sheet",
-      "prompt": "Xue Linqiang, old border wall master, broad worn soldier posture, gray-stone old armor pieces, coarse repaired wall cloth, frost-cracked fingers, bone whistle, worn long spear, reversed old cloth strip at waist with fused Sun-Moon emblem, practical and exhausted, not noble. Front, side, full body, wall guard pose."
+      "prompt": "Xue Linqiang, old border wall master, broad worn soldier posture, patched padded undercoat, ancestral gray-stone old armor pieces, coarse repaired wall cloth, frost-cracked fingers, bone whistle, worn long spear, practical and exhausted, not noble. The old fused Sun-Moon mark appears only as a nearly erased physical imprint on ancestral armor breastplate or inner shoulder plate, damaged by rust, snow, blade cuts and time; no waist cloth emblem or obvious banner. Front, side, full body, wall guard pose, worn armor emblem close-up."
     },
     {
       "prompt_id": "char_li_tang_v01_sheet_prompt",
@@ -129,6 +143,55 @@
       "output_path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png",
       "purpose": "old relay tunnel board",
       "prompt": "Old imperial relay tunnel board: narrow underground white stone archway, peeled fused Sun-Moon double seals with a moon-white crescent inside a worn golden sun wheel, route grid carvings, torch darkness, short broken gold-red residual light lines on the floor, practical hidden infrastructure, not grand palace."
+    },
+    {
+      "prompt_id": "loc_jinhe_great_river_v01_board_prompt",
+      "asset_id": "loc_jinhe_great_river_v01",
+      "output_path": "assets/locations/v01/loc_jinhe_great_river_v01_board.png",
+      "purpose": "regional great river and ferry crossing board",
+      "prompt": "Jinhe Great River and ferry crossing location board for Severed Homeland: wide deep blue-green river, humid fog, wet timber pier, dock piles, grain boat convoy, old relay water marker with damaged fused Sun-Moon trace, wax-sealed grain-token checkpoint, river pump house in the distance, restrained steam layers. Include boat workers in intact tied-sleeve workwear, oil-cloth capes, waist ropes and wet shoes, plus a small Sumin shell-soldier inspection presence. Broad navigable river, not a decorative stream, not modern harbor, no luxury ship."
+    },
+    {
+      "prompt_id": "loc_riverside_steam_town_v01_board_prompt",
+      "asset_id": "loc_riverside_steam_town_v01",
+      "output_path": "assets/locations/v01/loc_riverside_steam_town_v01_board.png",
+      "purpose": "regional riverside steam town board",
+      "prompt": "Riverside steam town location board for Severed Homeland: low river-port houses, brick red and wet timber, small chimneys, pump house, repair shed, track carts, grain warehouse door, steam valves, oil-black gears, river-fog alley and wax-white Sumin inspection seals. Human livelihood and production control must coexist: warm practical town life pressed under cold grain registers. Not a modern industrial city, not joyful amusement steampunk, not a clean advanced factory."
+    },
+    {
+      "prompt_id": "loc_steam_ferry_v01_board_prompt",
+      "asset_id": "loc_steam_ferry_v01",
+      "output_path": "assets/locations/v01/loc_steam_ferry_v01_board.png",
+      "purpose": "regional river steam ferry board",
+      "prompt": "Steam ferry board for Severed Homeland: practical flat-bottom river ferry crossing Jinhe, side wheel or stern wheel, low chimney, deck grain sacks, steam valve, wet wooden rail, oil-black engine hatch, wax inspection seal, river fog obscuring faces. Show hands on ropes, wet shoes, oil-cloth hidden packets, waist belts and tied sleeves. Used for grain, fugitives, inspections and secret letters. Not a modern ship, not a luxury passenger boat, not science-fiction machinery."
+    },
+    {
+      "prompt_id": "loc_wheat_hills_countryside_v01_board_prompt",
+      "asset_id": "loc_wheat_hills_countryside_v01",
+      "output_path": "assets/locations/v01/loc_wheat_hills_countryside_v01_board.png",
+      "purpose": "regional wheat-field hill countryside board",
+      "prompt": "Wheat-hill countryside board for Severed Homeland: rolling golden wheat waves, light earth roads, drying yard, low hill village, water wheel or wind wheel, old relay stele, distant blue-gray hills and a glint of river. Livable homeland under pressure, restrained warm natural light, maintained tools, grain bags and repaired shoes. Farmers wear intact work clothes with tied cuffs and practical patches. Not modern rural tourism, not saturated dream farmland, not a rich manor."
+    },
+    {
+      "prompt_id": "loc_juejing_mountains_v01_board_prompt",
+      "asset_id": "loc_juejing_mountains_v01",
+      "output_path": "assets/locations/v01/loc_juejing_mountains_v01_board.png",
+      "purpose": "regional Juejing Mountains board",
+      "prompt": "Juejing Mountains board for Severed Homeland: monumental black-stone mountain system around the border wall, towering cliffs, snow line, cliff road, frozen old bridge, shattered stone slope, distant border-wall fold and blue shadowed mountain faces. Compose with tiny travelers under huge vertical pressure. Costumes add wind capes, gloves, leggings and rope buckles while keeping hunter, royal exile, border soldier and northern half-beast silhouettes distinct. Not soft immortal mountains, not a gentle snowy hill, not a clean postcard."
+    },
+    {
+      "prompt_id": "loc_northern_grassland_bald_hills_v01_board_prompt",
+      "asset_id": "loc_northern_grassland_bald_hills_v01",
+      "output_path": "assets/locations/v01/loc_northern_grassland_bald_hills_v01_board.png",
+      "purpose": "regional northern wasteland, grassland and bald hills board",
+      "prompt": "Northern grassland and bald hills board for Severed Homeland: dry grass waves, frozen earth gray, wind-eroded brown ridges, cracked frozen stream, bone markers, low campfire, migration ruts, distant herd shadows and wind-scoured stones under low-saturation sky blue. Northern lands are not only snow; they are empty, dry, cold, windy and inhabited by migrating half-beast groups. Use small silhouettes with clear beast-ear profiles and travel gear, not a full tribe spectacle, not lush green grassland."
+    },
+    {
+      "prompt_id": "loc_suming_ruling_center_v01_board_prompt",
+      "asset_id": "loc_suming_ruling_center_v01",
+      "output_path": "assets/locations/v01/loc_suming_ruling_center_v01_board.png",
+      "purpose": "regional Sumin central ruling authority board",
+      "prompt": "Sumin ruling center board for Severed Homeland: majestic alien bureaucracy, spotless wax-white square, high white walls, straight corridors, honeycomb tower, central abstract white wings covering a haloed black sun with erased moon trace, memory well, insect membrane arch, Qingming incense columns, pearl gray and bone white surfaces, dark green carapace guards and cold gold details. Upper ruler-form insects wear white bureaucratic robes with chitin faceplates, compound eyes and wing mantles; lower guards are non-humanoid black-green carapace bodies. Not ordinary human palace, not warm temple, not dirty monster cave, no swarm."
     },
     {
       "prompt_id": "loc_qingming_outer_office_v01_board_prompt",
