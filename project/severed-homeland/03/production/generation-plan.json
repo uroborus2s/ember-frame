@@ -1,0 +1,1234 @@
+{
+  "version": "1.0",
+  "episode_id": "03",
+  "title": "半枚驿令",
+  "strategy_summary": "第03集采用低光可读、局部压迫和可控特效分层策略。优先锁定旧驿空间参考帧、沈维桑左臂失力、南左下北右上的路线方向、血牒四拍、三门观察、检修缝低石、塌门门线和图室金河接口；追兵只以局部甲壳、螳刃、刮痕、火星和声音压力出现。",
+  "global_dependencies": [
+    "ART_REF_SHEN_WEISANG_E03_LEFT_ARM_DISABLED",
+    "ART_REF_YAN_NANZHI_E03_CONCEALED_BLOOD_RECORD",
+    "ART_REF_OLD_RELAY_LOW_LIGHT_COLOR_SYSTEM",
+    "FX_LAYER_GOLD_RED_RELAY_LINE",
+    "FX_LAYER_QINGMING_INCENSE",
+    "FX_LAYER_WHITE_WAX_INSECT_MARK",
+    "FX_LAYER_PARTIAL_PURSUER_BLACK_GREEN",
+    "FX_LAYER_SPARKS_AND_STONE_SCRATCHES"
+  ],
+  "batching": [
+    {
+      "batch_id": "B01_BLACK_STONE_ENTRY",
+      "shots": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003",
+        "SC001-SH004",
+        "SC001-SH005"
+      ],
+      "goal": "锁定黑石凹槽、一掌宽门缝、半枚驿令、清明香回卷和门外螳刃局部压力。"
+    },
+    {
+      "batch_id": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "shots": [
+        "SC002-SH001",
+        "SC002-SH002",
+        "SC002-SH003",
+        "SC002-SH004",
+        "SC002-SH005",
+        "SC002-SH006"
+      ],
+      "goal": "锁定白石拱道南北线、北线车轴印、烧焦发绳和血牒四拍微距。"
+    },
+    {
+      "batch_id": "B03_NARROW_CORRIDOR",
+      "shots": [
+        "SC003-SH001",
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "goal": "用窄廊追压和摸弓失败确认动作能力降级，转入地面湿痕观察。"
+    },
+    {
+      "batch_id": "B04_MAPPING_GALLERY",
+      "shots": [
+        "SC004-SH001",
+        "SC004-SH002",
+        "SC004-SH003",
+        "SC004-SH004",
+        "SC004-SH005",
+        "SC004-SH006"
+      ],
+      "goal": "锁定三门左中右透视，先拍物理观察，再给灵翼残纹短促残响和检修缝发现。"
+    },
+    {
+      "batch_id": "B05_MAINTENANCE_SLIT",
+      "shots": [
+        "SC005-SH001",
+        "SC005-SH002",
+        "SC005-SH003",
+        "SC005-SH004",
+        "SC005-SH005"
+      ],
+      "goal": "贴地压缩身体，拍清晏南枝先钻、沈维桑最后过、刃肢只探半尺和北线粉末证据。"
+    },
+    {
+      "batch_id": "B06_COLLAPSE_GATE",
+      "shots": [
+        "SC006-SH001",
+        "SC006-SH002",
+        "SC006-SH003",
+        "SC006-SH004",
+        "SC006-SH005",
+        "SC006-SH006"
+      ],
+      "goal": "用固定门线透视完成塌门因果：上下栓、窄口、右肩抵门、半寸松栓、短刀撬动、斜落隔刃。"
+    },
+    {
+      "batch_id": "B07_MAP_ROOM_INTERFACE",
+      "shots": [
+        "SC007-SH001",
+        "SC007-SH002",
+        "SC007-SH003",
+        "SC007-SH004",
+        "SC007-SH005"
+      ],
+      "goal": "锁定图室刻线、南线短亮、北线金河、北境边墙光点、止血和车辙不能断的第04集接口。"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "method": "I2V",
+      "rationale": "同框钩子需要从锁定的黑石凹槽参考帧出发，保持驿令断月纹、鼻血清明香和上沿螳刃的空间关系，只做右手短推、烟线打旋和刃尖逼近。",
+      "required_assets": [
+        "黑石凹槽与半枚日月驿令微距参考",
+        "沈维桑右手旧皮护腕与血灰",
+        "清明香贴鼻血烟线",
+        "螳刃局部黑绿刃影"
+      ],
+      "continuity_locks": [
+        "沈维桑只露右手，左臂不参与开门",
+        "驿令未打开前不持续发光",
+        "清明香是灰白烟线，螳刃只局部入画"
+      ],
+      "risks": [
+        "极近景信息过密，断月纹、鼻血和刃影可能互相抢焦",
+        "清明香容易被误生成触手"
+      ],
+      "batching": "B01_BLACK_STONE_ENTRY",
+      "dependencies": [
+        "ART_REF_BLACK_STONE_CLEFT_SLOT",
+        "ART_REF_HALF_RELAY_TOKEN"
+      ],
+      "first_frame": "驿令断边刚抵入黑石凹槽，鼻血和清明香在画面下沿。",
+      "last_frame": "右手发抖停住，螳刃从上沿刮近凹槽。",
+      "redraw_regions": [
+        "断月纹错位边缘",
+        "鼻血旁灰白烟线",
+        "上沿螳刃刮痕"
+      ],
+      "notes": "保持竖屏上下夹逼构图，金赤只给驿令微弱反跳。"
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "method": "I2V",
+      "rationale": "近景手部动作以角色参考图保证晏南枝衣襟、隐藏血牒和沈维桑右拇指补血灰的同屏关系，视频只需小幅移焦和手部动作。",
+      "required_assets": [
+        "晏南枝冷灰旅装与隐藏油纸血牒按压姿势",
+        "沈维桑右拇指血灰",
+        "黑石凹槽局部"
+      ],
+      "continuity_locks": [
+        "血牒只显示衣内油纸包轮廓",
+        "沈维桑使用右手补血灰",
+        "晏南枝催促但不外露皇室正装符号"
+      ],
+      "risks": [
+        "血牒容易露成完整圣物",
+        "双手近景可能误接成同一人的手"
+      ],
+      "batching": "B01_BLACK_STONE_ENTRY",
+      "dependencies": [
+        "ART_REF_YAN_NANZHI_CONCEALED_BLOOD_RECORD",
+        "SC001-SH001"
+      ],
+      "first_frame": "晏南枝左侧按住衣内血牒，沈维桑右手靠近凹槽。",
+      "last_frame": "血灰被右拇指抹进断月纹缺口。",
+      "notes": "台词压力交给音频，画面只保留按压和补缺两组动作。"
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "method": "FLF2V",
+      "rationale": "门缝从未开到只错开一掌宽必须有明确起止帧，用首尾帧控制金赤线疾走和门缝停止位置，避免生成成大门全开。",
+      "required_assets": [
+        "黑石门缝一掌宽参考",
+        "半枚驿令嵌槽状态",
+        "金赤残缺日月线特效层",
+        "门内冷白石暗道轮廓"
+      ],
+      "continuity_locks": [
+        "石门只向内错开一掌宽",
+        "驿令只触发入口，不照亮全场",
+        "清明香被冷风吹散半寸但未消失"
+      ],
+      "risks": [
+        "FLF 插值可能把门缝扩大成完整开启",
+        "金赤线可能扩散成地图式光效"
+      ],
+      "batching": "B01_BLACK_STONE_ENTRY",
+      "dependencies": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "ART_REF_ONE_PALM_DOOR_GAP"
+      ],
+      "first_frame": "驿令和血灰压住凹槽，石门仍闭合。",
+      "last_frame": "石门内错一掌宽，冷风压出，金赤线停在门缝边。",
+      "redraw_regions": [
+        "金赤线沿石缝滑移轨迹",
+        "一掌宽门缝边缘"
+      ],
+      "notes": "不写成机关奇观，门内只露窄冷空间。"
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "method": "I2V",
+      "rationale": "门缝内反打需要角色伤势和烟线连续，从锁定人物伤势参考帧生成冷风、清明香回卷和沈维桑视线变化。",
+      "required_assets": [
+        "沈维桑惨白少年脸",
+        "浸血左肩与垂落左臂",
+        "一掌宽门缝内侧",
+        "清明香回卷烟线"
+      ],
+      "continuity_locks": [
+        "左臂完全垂落，不抬起",
+        "右半身支撑身体",
+        "清明香被风吹散后从门外卷回"
+      ],
+      "risks": [
+        "低光下左肩血布可能不可读",
+        "烟线回卷容易遮挡脸和门缝宽度"
+      ],
+      "batching": "B01_BLACK_STONE_ENTRY",
+      "dependencies": [
+        "SC001-SH003",
+        "ART_REF_SHEN_WEISANG_INJURY"
+      ],
+      "first_frame": "冷光照出沈维桑脸和左肩血布。",
+      "last_frame": "清明香从门外回卷，沈维桑准备右肩侧身入门。",
+      "redraw_regions": [
+        "左肩血布",
+        "下沿回卷清明香"
+      ],
+      "notes": "左臂失力是后续动作能力降级的首个清晰锁。"
+    },
+    {
+      "shot_id": "SC001-SH005",
+      "method": "FLF2V",
+      "rationale": "从凹槽撤回驿令、把烧焦发绳塞进右腕、侧身钻入门缝是一段连续因果动作，需要首尾帧锁右腕发绳和门缝压缩。",
+      "required_assets": [
+        "烧焦发绳右腕参考",
+        "半枚驿令回收动作",
+        "门外螳刃刮石局部",
+        "一掌宽门缝侧身通过参考"
+      ],
+      "continuity_locks": [
+        "发绳塞在右腕，不换成新饰品",
+        "沈维桑用右肩侧身入门",
+        "左臂贴身拖在暗部"
+      ],
+      "risks": [
+        "侧身入门可能让左臂误变成支撑动作",
+        "刃肢和火星容易变成完整战斗展示"
+      ],
+      "batching": "B01_BLACK_STONE_ENTRY",
+      "dependencies": [
+        "SC001-SH003",
+        "ART_REF_BURNT_HAIR_RIBBON"
+      ],
+      "first_frame": "右手从凹槽收回驿令，门外刃肢第二次刮近。",
+      "last_frame": "发绳压在右腕，沈维桑右肩挤入一掌宽门缝。",
+      "notes": "门外压力带入暗道，追兵不完整露脸。"
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "method": "REFERENCE_IMAGE",
+      "rationale": "白石拱道、剥落日月双印和南左下北右上的方向锁是本场后续的地理母版，先产出稳定参考图供后续 I2V/FLF2V 复用。",
+      "required_assets": [
+        "白石旧驿拱道低窄空间",
+        "剥落日月双印",
+        "南线左下与北线右上路线刻痕",
+        "两人挤入暗道姿态"
+      ],
+      "continuity_locks": [
+        "北线固定偏右上，南线固定偏左下",
+        "暗道低窄冷灰，不是地下宫殿",
+        "沈维桑右肩前引，左臂不可用"
+      ],
+      "risks": [
+        "空间建立容易被生成得过大过华丽",
+        "南北线方向若错会影响后续全场"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "ART_REF_RELAY_ENTRANCE",
+        "SC001-SH005"
+      ],
+      "first_frame": "两人从黑石缝后进入白石拱道，脚步拖擦灰尘。",
+      "last_frame": "镜头停在南左下、北右上的分叉线。",
+      "notes": "本镜作为入口空间方向锁，后续反打先回到这个方向。"
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "method": "I2V",
+      "rationale": "北线车轴旧印到右腕发绳的焦点转换需要保持救妹妹动机和路线方向，用 I2V 控制短焦点拉动即可。",
+      "required_assets": [
+        "北线车轴旧印特写",
+        "烧焦发绳右腕",
+        "沈维桑急促眼神",
+        "白石入口北线右上方向"
+      ],
+      "continuity_locks": [
+        "北线在右上",
+        "发绳牵引沈照眠但沈照眠不出场",
+        "金赤线只轻扫刻痕边"
+      ],
+      "risks": [
+        "车轴印可能被误生成为新鲜车轮",
+        "发绳焦点不足会削弱动机"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "SC002-SH001",
+        "ART_REF_NORTH_LINE_AXLE_MARK"
+      ],
+      "first_frame": "北线断处车轴旧印被金赤残线轻扫。",
+      "last_frame": "焦点落到沈维桑攥紧的右腕发绳和眼神。",
+      "notes": "避免把北线拍成完整发光地图。"
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "method": "REDRAW",
+      "rationale": "血牒四拍之一二集中在油纸边缘局部，最适合在锁定微距底图上局部重绘清明香贴衣和白蜡虫纹顶出，避免血牒整体外露。",
+      "required_assets": [
+        "晏南枝衣襟与隐藏油纸血牒微距底图",
+        "灰白清明香贴衣烟线",
+        "虫蜡白细足状白蜡虫纹",
+        "晏南枝按紧血牒的手指"
+      ],
+      "continuity_locks": [
+        "血牒只露油纸边缘",
+        "清明香贴衣上爬，不是实体攻击",
+        "白蜡虫纹像细足从纸里顶出"
+      ],
+      "risks": [
+        "虫纹容易被误绘成藤蔓符文",
+        "微距重绘若范围过大可能露出完整血牒"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "ART_REF_BLOOD_RECORD_MICRO_BASE",
+        "FX_LAYER_QINGMING_INCENSE",
+        "FX_LAYER_WHITE_WAX_INSECT_MARK"
+      ],
+      "redraw_regions": [
+        "衣襟下沿灰白烟线",
+        "油纸边缘鼓起处",
+        "细足状虫蜡白纹理"
+      ],
+      "notes": "只完成四拍中的香贴衣和虫纹顶出，不提前出血纹亮。"
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "method": "REDRAW",
+      "rationale": "血纹被逼亮和指甲刮除出血都发生在极小区域，应在上一镜同一微距资产上局部重绘，保证血牒三层未满且动作可读。",
+      "required_assets": [
+        "油纸血牒边缘局部",
+        "残缺日月血纹局部",
+        "晏南枝指甲与指尖血",
+        "可刮除白蜡虫纹"
+      ],
+      "continuity_locks": [
+        "残缺日月血纹只短亮一瞬",
+        "晏南枝用指甲刮掉虫纹并指尖出血",
+        "血牒不正面展开，污染未满三层"
+      ],
+      "risks": [
+        "金赤血纹和虫蜡白可能混色",
+        "指尖血若不清楚会削弱规则可信度"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "SC002-SH003",
+        "ART_REF_BLOOD_RECORD_MICRO_BASE"
+      ],
+      "redraw_regions": [
+        "残缺血纹短亮区域",
+        "指甲刮除路径",
+        "指尖血珠"
+      ],
+      "notes": "本镜完成血牒四拍之三四，禁止生成满三层白册。"
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "method": "I2V",
+      "rationale": "双人近景承担规则解释和克制表演，用 I2V 保持角色身份、指尖血、血牒按回衣内和背景路线分叉的连续性。",
+      "required_assets": [
+        "晏南枝指尖血与按回血牒姿态",
+        "沈维桑肩后近景",
+        "白石南北线背景",
+        "衣襟残留清明香"
+      ],
+      "continuity_locks": [
+        "晏南枝保血牒与旧名证据相关，不显得弃活人",
+        "血牒被压回衣内",
+        "沈维桑左臂仍不可用"
+      ],
+      "risks": [
+        "台词镜头易站定解释过久",
+        "血牒可能被误生成正面展开"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "SC002-SH004",
+        "ART_REF_RELAY_ENTRANCE"
+      ],
+      "first_frame": "沈维桑看见晏南枝指尖血和衣内异样。",
+      "last_frame": "晏南枝把血牒压回衣内，视线回到北线压力。",
+      "notes": "用手部按压和指血承担解释，不新增视觉化白册。"
+    },
+    {
+      "shot_id": "SC002-SH006",
+      "method": "FLF2V",
+      "rationale": "南北线冲突需要发绳、两人站位和路线同屏，首尾帧可锁沈维桑从发绳压向北线再回到分叉的运动。",
+      "required_assets": [
+        "南左下北右上线刻同屏参考",
+        "沈维桑右手举发绳",
+        "晏南枝护血牒站位",
+        "清明香渐浓低位烟线"
+      ],
+      "continuity_locks": [
+        "北线救人与南线旧名证据同时成立",
+        "清明香压力加重但不攻击人物",
+        "沈维桑左臂不可用"
+      ],
+      "risks": [
+        "路线方向可能在双人反打中混乱",
+        "冲突容易误读为晏南枝冷漠"
+      ],
+      "batching": "B02_RELAY_ENTRANCE_BLOOD_RECORD",
+      "dependencies": [
+        "SC002-SH001",
+        "SC002-SH005"
+      ],
+      "first_frame": "沈维桑右手举起发绳，身体朝北线右上。",
+      "last_frame": "两人和南北线同屏，追兵声逼近，准备进入窄廊。",
+      "notes": "保持发绳在中心偏右，血牒只在衣内轮廓。"
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "method": "I2V",
+      "rationale": "白石窄廊追压依赖稳定场景参考和局部追兵层，I2V 可控制后退跟拍、刃影交叉和白石新刮痕。",
+      "required_assets": [
+        "白石窄廊低光参考",
+        "两人逃亡背影",
+        "螳刃黑影交叉",
+        "白石墙新刮痕"
+      ],
+      "continuity_locks": [
+        "追兵只以刃影和黑绿局部出现",
+        "沈维桑靠后且左臂垂落",
+        "窄廊只够错身，不展开战斗"
+      ],
+      "risks": [
+        "追兵局部呈现可能威胁不足",
+        "后退跟拍可能丢失低光路线层次"
+      ],
+      "batching": "B03_NARROW_CORRIDOR",
+      "dependencies": [
+        "ART_REF_NARROW_CORRIDOR",
+        "FX_LAYER_PARTIAL_PURSUER_BLACK_GREEN"
+      ],
+      "first_frame": "两人沿窄廊前行，墙脚断续亮纹微弱。",
+      "last_frame": "两道螳刃影交叉追上，刃尖在白石墙划出新痕。",
+      "redraw_regions": [
+        "墙面新白痕",
+        "后方螳刃影高光"
+      ],
+      "notes": "刃肢刮石声成为本段节拍器。"
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "method": "FLF2V",
+      "rationale": "摸弓失败是动作能力降级核心，需要首尾帧严格锁定左臂只抬一寸、弓弦擦手和箭落地，避免生成成功拉弓。",
+      "required_assets": [
+        "沈维桑左肩血布",
+        "失效猎弓与箭",
+        "窄廊侧后近景",
+        "箭落地特写"
+      ],
+      "continuity_locks": [
+        "左臂抬一寸后失力",
+        "不能拉满弓，不能战斗脱困",
+        "箭落地为右手短刺做准备"
+      ],
+      "risks": [
+        "生成模型可能自动补成英雄式拉弓",
+        "左臂伤势若不清楚会破坏全集锁"
+      ],
+      "batching": "B03_NARROW_CORRIDOR",
+      "dependencies": [
+        "ART_REF_SWS_BOW_DISABLED",
+        "ART_REF_SHEN_WEISANG_INJURY"
+      ],
+      "first_frame": "沈维桑本能反手摸弓，左肩血布在侧后近景中清楚。",
+      "last_frame": "左臂失力下坠，箭掉到地面下沿。",
+      "notes": "本镜禁止任何满弓、射箭或战斗胜利姿态。"
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "method": "I2V",
+      "rationale": "右手抓箭成短刺是低角近景动作，使用同一窄廊角色资产生成抓取、上提和攥紧即可。",
+      "required_assets": [
+        "地面箭矢和石粉",
+        "沈维桑右手旧皮护腕",
+        "晏南枝短刀横身",
+        "窄廊追兵虚焦压力"
+      ],
+      "continuity_locks": [
+        "沈维桑改用右手攥箭短刺",
+        "晏南枝点破他拉不了弓",
+        "左臂仍不可用"
+      ],
+      "risks": [
+        "箭可能被生成成新武器或长枪",
+        "右手短刺动作若不清楚会影响后续拨灰"
+      ],
+      "batching": "B03_NARROW_CORRIDOR",
+      "dependencies": [
+        "SC003-SH002",
+        "ART_REF_RIGHT_HAND_ARROW_SPIKE"
+      ],
+      "first_frame": "箭矢横在地面，右手从上方抓入。",
+      "last_frame": "沈维桑用右手把箭攥成短刺收向胸前。",
+      "notes": "短刀在晏南枝身前作为护路，不抢短刺焦点。"
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "method": "FLF2V",
+      "rationale": "黑绿甲壳掠影到地面湿痕观察是本集从追压转推理的动作转场，需要首尾帧控制拉焦方向和右指触湿痕。",
+      "required_assets": [
+        "黑绿甲壳拐角掠影",
+        "晏南枝短刀横身",
+        "地面湿痕冷灰边光",
+        "沈维桑右指观察"
+      ],
+      "continuity_locks": [
+        "追兵只局部掠过",
+        "沈维桑先观察地面，不靠能力导航",
+        "左臂垂在身侧不撑地"
+      ],
+      "risks": [
+        "掠影可能生成完整怪物",
+        "湿痕低光不可读会影响三门推理入口"
+      ],
+      "batching": "B03_NARROW_CORRIDOR",
+      "dependencies": [
+        "ART_REF_NARROW_CORRIDOR",
+        "FX_LAYER_PARTIAL_PURSUER_BLACK_GREEN"
+      ],
+      "first_frame": "黑绿甲壳从拐角上右侧一闪，晏南枝短刀横身。",
+      "last_frame": "焦点落到地面湿痕和沈维桑右指。",
+      "redraw_regions": [
+        "湿痕冷灰反光",
+        "甲壳掠影高光"
+      ],
+      "notes": "以“别挡光”的观察姿态接三门段。"
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "method": "REFERENCE_IMAGE",
+      "rationale": "三门正面透视是观察段母版，需要先生成锁定左中右三门、三短一长测线和人物低位站位的参考图。",
+      "required_assets": [
+        "旧驿测绘廊三道矮门正面透视",
+        "三短一长测线",
+        "沈维桑右手箭短刺低垂",
+        "晏南枝左后警戒"
+      ],
+      "continuity_locks": [
+        "左中右三门等距可读",
+        "观察发生在灵翼残纹之前",
+        "无金赤导航光"
+      ],
+      "risks": [
+        "三门透视若不稳会破坏后续证据方位",
+        "人物可能遮挡门和测线"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "ART_REF_MAPPING_GALLERY_THREE_DOORS"
+      ],
+      "first_frame": "测绘廊三门正面建立，沈维桑停下先看地。",
+      "last_frame": "镜头静止锁定左中右门和上方测线。",
+      "notes": "这是三门观察段的 LOCK-FRAME，后续插入镜头必须回到此方向。"
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "method": "I2V",
+      "rationale": "水、灰、磨痕、新刮痕的低角横移需要在三门母版上生成连续证据扫描，I2V 方便保持证据顺序和半档亮度差。",
+      "required_assets": [
+        "左门倒渗湿痕",
+        "中门灰线被吸入",
+        "右门石栓向外磨痕",
+        "右门新刮痕"
+      ],
+      "continuity_locks": [
+        "证据顺序从左到右：水、灰、磨痕、新刮痕",
+        "沈维桑只用眼神和右手指向",
+        "不触发灵翼残纹"
+      ],
+      "risks": [
+        "横移可能混淆左中右门",
+        "低光中灰线和磨痕可能不可读"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "SC004-SH001"
+      ],
+      "first_frame": "低角贴地从左门湿痕开始扫描。",
+      "last_frame": "镜头停在右门石栓磨痕和新刮痕。",
+      "redraw_regions": [
+        "水珠倒渗反光",
+        "中门细灰线",
+        "右门刮痕冷硬白线"
+      ],
+      "notes": "物理观察必须比残纹更先被观众看懂。"
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "method": "FLF2V",
+      "rationale": "吹灰、直坠、风卷回是因果运动，首尾帧可控制灰尘轨迹从中门坠落到右门回卷，避免生成成魔法指路。",
+      "required_assets": [
+        "沈维桑右侧脸吹灰",
+        "中门空坠灰尘",
+        "右门细风卷灰",
+        "右门后低刮声暗部"
+      ],
+      "continuity_locks": [
+        "沈维桑用口吹灰、右手遮光",
+        "灰进中门直坠，右门被风卷回",
+        "仍无路线光导航"
+      ],
+      "risks": [
+        "灰尘轨迹复杂，可能不可读",
+        "风卷灰可能被误生成为发光能力"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "SC004-SH001",
+        "SC004-SH002"
+      ],
+      "first_frame": "沈维桑贴近门前吹出灰尘。",
+      "last_frame": "灰尘在右门被细风卷回，沈维桑视线跟随到右门。",
+      "redraw_regions": [
+        "灰尘坠落轨迹",
+        "右门回风轨迹"
+      ],
+      "notes": "灰尘只靠冷灰边光可读，不给金赤光。"
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "method": "I2V",
+      "rationale": "双人判断和伸手触石栓需要保持右门侧前方空间、台词节奏和将触未触的悬念，I2V 足以处理小幅推近。",
+      "required_assets": [
+        "右门旧石栓",
+        "沈维桑右手将触未触",
+        "晏南枝侧脸",
+        "中门暗空和左门湿痕背景"
+      ],
+      "continuity_locks": [
+        "判断来自水、灰、风、磨痕和刮痕",
+        "沈维桑右手触石栓，左臂不撑墙",
+        "灵翼残纹尚未出现"
+      ],
+      "risks": [
+        "观众可能误以为他靠能力选门",
+        "右手箭短刺位置可能与触栓动作冲突"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "SC004-SH002",
+        "SC004-SH003"
+      ],
+      "first_frame": "晏南枝问哪边，右门石栓在前景。",
+      "last_frame": "沈维桑右手伸向旧石栓，动作悬停在触发前。",
+      "notes": "台词短促，不增加神秘解释。"
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "method": "REDRAW",
+      "rationale": "灵翼残纹只应是局部短闪和鼻血复发，适合在锁定人物近景上局部重绘眼角、肩胛方向金赤纹和鼻血，防止扩散成路线光。",
+      "required_assets": [
+        "沈维桑右手触石栓近景",
+        "沈维桑眼角金赤残纹",
+        "左肩血布痛感",
+        "鼻血复发"
+      ],
+      "continuity_locks": [
+        "残纹只回应旧驿断裂结构",
+        "金赤短闪不导航、不标敌",
+        "左肩痛感和鼻血是代价"
+      ],
+      "risks": [
+        "残纹容易被扩生成能力导航或全身光效",
+        "闪切过短可能看不清伤势代价"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "SC004-SH004",
+        "FX_LAYER_SPIRIT_WING_REMNANT"
+      ],
+      "redraw_regions": [
+        "眼角金赤短纹",
+        "肩胛方向残光",
+        "鼻血落点",
+        "石栓触碰点"
+      ],
+      "notes": "旧铜针回音交给音频，画面不能出现路线答案。"
+    },
+    {
+      "shot_id": "SC004-SH006",
+      "method": "I2V",
+      "rationale": "检修缝露出是贴地插入动作，在右门母版上生成箭尖拨灰和低缝显形即可，保证过渡到身体压缩段。",
+      "required_assets": [
+        "右门下低缝",
+        "箭尖拨灰",
+        "灰土和细石",
+        "测绘廊右门门槛"
+      ],
+      "continuity_locks": [
+        "沈维桑用右手持箭拨灰",
+        "残纹已经退去",
+        "检修缝是右门下方入口"
+      ],
+      "risks": [
+        "低缝可能被生成过宽，削弱贴地压缩",
+        "箭尖拨灰可能误变成攻击动作"
+      ],
+      "batching": "B04_MAPPING_GALLERY",
+      "dependencies": [
+        "SC004-SH005",
+        "ART_REF_MAINTENANCE_SLIT"
+      ],
+      "first_frame": "箭尖抵住右门下灰土。",
+      "last_frame": "灰土被拨开，贴地检修缝轮廓露出。",
+      "redraw_regions": [
+        "低缝黑暗边缘",
+        "箭尖刮灰路径"
+      ],
+      "notes": "慢推入低缝，接检修缝贴地视角。"
+    },
+    {
+      "shot_id": "SC005-SH001",
+      "method": "FLF2V",
+      "rationale": "晏南枝先钻、沈维桑最后过和左臂拖血是严格顺序动作，用首尾帧锁身体进入缝内和血线位置。",
+      "required_assets": [
+        "检修缝贴地侧面参考",
+        "晏南枝压胸口护血牒",
+        "沈维桑右手撑地",
+        "左臂拖血细线"
+      ],
+      "continuity_locks": [
+        "晏南枝先钻，沈维桑最后过",
+        "血牒压在胸口不外露",
+        "沈维桑左臂拖行不可用，右手撑地"
+      ],
+      "risks": [
+        "低角过缝可能生成身体变形",
+        "左臂容易被自动用于撑地"
+      ],
+      "batching": "B05_MAINTENANCE_SLIT",
+      "dependencies": [
+        "ART_REF_MAINTENANCE_SLIT",
+        "SC004-SH006"
+      ],
+      "first_frame": "晏南枝贴地先钻入检修缝，胸口压住血牒。",
+      "last_frame": "沈维桑最后过，右手撑地，左臂在石缝上擦出血线。",
+      "redraw_regions": [
+        "石缝血线",
+        "衣料擦石边缘"
+      ],
+      "notes": "空间必须低到只能贴地钻，不可变成普通通道。"
+    },
+    {
+      "shot_id": "SC005-SH002",
+      "method": "FLF2V",
+      "rationale": "刃肢只探半尺被低石卡住、火星溅靴跟和右脚蹬出是高风险动作，首尾帧能锁距离和因果，避免追兵钻入。",
+      "required_assets": [
+        "检修缝低石卡点",
+        "黑绿刃肢局部",
+        "沈维桑靴跟",
+        "火星短亮特效层"
+      ],
+      "continuity_locks": [
+        "刃肢只能探入半尺，被低石卡住",
+        "火星溅到靴跟，沈维桑右脚一蹬滚出",
+        "左臂不参与逃脱"
+      ],
+      "risks": [
+        "动作复杂，刃肢可能穿过低石限制",
+        "火星可能照亮全缝，破坏低光"
+      ],
+      "batching": "B05_MAINTENANCE_SLIT",
+      "dependencies": [
+        "SC005-SH001",
+        "FX_LAYER_PARTIAL_PURSUER_BLACK_GREEN",
+        "FX_LAYER_SPARKS_AND_STONE_SCRATCHES"
+      ],
+      "first_frame": "靴跟在右下，刃肢从缝口探入半尺。",
+      "last_frame": "刃肢卡在低石处，火星溅靴跟，右脚蹬出画面。",
+      "redraw_regions": [
+        "低石卡点",
+        "火星飞溅",
+        "刃尖刮石皮"
+      ],
+      "notes": "本镜解释追兵为何不能进入，不得省略低石卡点。"
+    },
+    {
+      "shot_id": "SC005-SH003",
+      "method": "I2V",
+      "rationale": "断栓岔路建立和粉末插入需要延续检修缝出口，用 I2V 保持两人落地、南线完整和北线封灰的地理关系。",
+      "required_assets": [
+        "断栓岔路低角参考",
+        "南线完整刻痕",
+        "北线封灰",
+        "新鲜车轮震落粉末"
+      ],
+      "continuity_locks": [
+        "南线在左下完整，北线在右上被封灰",
+        "粉末来自新鲜车轮震落，不是路线光指示",
+        "塌门方向压力从缝口延续"
+      ],
+      "risks": [
+        "北线粉末颗粒在低光下可能不可读",
+        "南北线方向可能和入口段不一致"
+      ],
+      "batching": "B05_MAINTENANCE_SLIT",
+      "dependencies": [
+        "SC005-SH002",
+        "ART_REF_BROKEN_BOLT_FORK"
+      ],
+      "first_frame": "两人从检修缝后落到断栓岔路。",
+      "last_frame": "镜头转向北线封灰上的新鲜车轮粉末。",
+      "redraw_regions": [
+        "封灰颗粒",
+        "车轮震落粉末"
+      ],
+      "notes": "驿令不参与北线判断。"
+    },
+    {
+      "shot_id": "SC005-SH004",
+      "method": "I2V",
+      "rationale": "右指抹粉到两人半脸的拉焦用 I2V 可控，重点是让北线判断来自物理粉末而不是能力。",
+      "required_assets": [
+        "沈维桑右指粉末特写",
+        "断栓岔路北线封灰",
+        "晏南枝质疑半脸",
+        "右腕发绳边缘"
+      ],
+      "continuity_locks": [
+        "沈维桑用右指抹粉",
+        "晏南枝提醒陷阱风险",
+        "新灰盖不住车震是判断理由"
+      ],
+      "risks": [
+        "粉末判断可能不够直观",
+        "角色半脸低光可能丢失表演"
+      ],
+      "batching": "B05_MAINTENANCE_SLIT",
+      "dependencies": [
+        "SC005-SH003"
+      ],
+      "first_frame": "右指抹起北线封灰上的粉末。",
+      "last_frame": "焦点抬到两人半脸，视线回到北线右上。",
+      "redraw_regions": [
+        "指腹粉末",
+        "北线封灰断点"
+      ],
+      "notes": "发绳可在右腕边缘露出，持续牵引照眠。"
+    },
+    {
+      "shot_id": "SC005-SH005",
+      "method": "FLF2V",
+      "rationale": "晏南枝抓右腕、旧名证据台词、裂声打断和反握短刀接塌门，需要首尾帧锁右腕发绳与短刀动作转向。",
+      "required_assets": [
+        "右腕发绳被抓握特写",
+        "晏南枝短刀反握",
+        "断栓岔路开裂缝口",
+        "两人低光近景"
+      ],
+      "continuity_locks": [
+        "晏南枝抓右腕，不碰左肩",
+        "旧名证据与北线救人并存",
+        "血牒仍隐藏，短刀转为塌门行动工具"
+      ],
+      "risks": [
+        "情绪冲突可能压过空间裂声转场",
+        "抓腕动作可能遮住发绳"
+      ],
+      "batching": "B05_MAINTENANCE_SLIT",
+      "dependencies": [
+        "SC005-SH004",
+        "ART_REF_YNZ_SHORT_KNIFE"
+      ],
+      "first_frame": "晏南枝抓住沈维桑右腕，发绳压在指间。",
+      "last_frame": "缝口开裂，她放开右腕反握短刀，准备过塌门。",
+      "notes": "未答满沈照眠问题，不新增秘密解释。"
+    },
+    {
+      "shot_id": "SC006-SH001",
+      "method": "REFERENCE_IMAGE",
+      "rationale": "塌门门线、追兵廊、右侧图室窄口和上下栓是高风险空间因果，必须先产出锁定透视参考图供本组所有镜头继承。",
+      "required_assets": [
+        "半塌石门门线透视",
+        "门外追兵廊黑绿暗影",
+        "门内右侧图室窄口",
+        "裂开的上栓和旧灰咬死的下栓"
+      ],
+      "continuity_locks": [
+        "门线外是追兵廊，门线内右侧是图室窄口",
+        "上栓裂、下栓死必须同组可读",
+        "石门斜向追兵廊落下"
+      ],
+      "risks": [
+        "塌门空间若不锁透视，后续动作会混乱",
+        "上下栓可能被生成成现代机械结构"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "ART_REF_COLLAPSE_GATE_LOCK_FRAME"
+      ],
+      "first_frame": "门内侧斜角建立门线、追兵廊和右侧窄口。",
+      "last_frame": "镜头扫过上栓裂纹和下栓死灰。",
+      "notes": "本镜是塌门段母版，不生成大机关奇观。"
+    },
+    {
+      "shot_id": "SC006-SH002",
+      "method": "FLF2V",
+      "rationale": "正确站位要从晏南枝进右侧窄口到沈维桑右肩抵门连续成立，用首尾帧控制人物位置和左臂垂落。",
+      "required_assets": [
+        "晏南枝挤入右侧窄口",
+        "短刀插入下栓缝",
+        "沈维桑右肩抵门",
+        "塌门门线母版"
+      ],
+      "continuity_locks": [
+        "晏南枝先入右侧窄口",
+        "沈维桑跨门线后用右肩抵门",
+        "左臂完全垂着，不推门"
+      ],
+      "risks": [
+        "人物站位若错会破坏后续撬栓因果",
+        "左臂可能被自动补成扶门"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "SC006-SH001",
+        "ART_REF_YNZ_SHORT_KNIFE"
+      ],
+      "first_frame": "晏南枝挤入右侧图室窄口，短刀靠近下栓缝。",
+      "last_frame": "短刀插入下栓缝，沈维桑右肩抵住门内侧，左臂垂落。",
+      "notes": "横移过程中门线必须始终可见。"
+    },
+    {
+      "shot_id": "SC006-SH003",
+      "method": "FLF2V",
+      "rationale": "只松下栓半寸的动作极易被误生成为爆发砸门，必须用首尾帧限定右掌根短促吐劲、灰落和半寸缝。",
+      "required_assets": [
+        "右掌根顶下栓尾端",
+        "追兵刃肢压墙局部",
+        "石栓半寸缝",
+        "鼻血和左肩洇血"
+      ],
+      "continuity_locks": [
+        "沈维桑只松栓半寸，不蛮力砸门",
+        "右掌根、右肩、右脚发力",
+        "左臂不可用，鼻血滴下"
+      ],
+      "risks": [
+        "模型可能扩大动作成超能力震门",
+        "半寸缝不清楚会影响下一镜撬动"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "SC006-SH002",
+        "FX_LAYER_PARTIAL_PURSUER_BLACK_GREEN"
+      ],
+      "first_frame": "追兵刃肢交错探出，右掌根贴住下栓尾端。",
+      "last_frame": "灰尘震落，石栓只松半寸，鼻血垂直滴下。",
+      "redraw_regions": [
+        "下栓半寸缝",
+        "灰落颗粒",
+        "鼻血滴线",
+        "刃肢局部高光"
+      ],
+      "notes": "轻震即可，禁止爆光和力量升级。"
+    },
+    {
+      "shot_id": "SC006-SH004",
+      "method": "FLF2V",
+      "rationale": "短刀撬下栓、下栓脱槽、上栓裂断是一条上下因果链，首尾帧可以锁动作方向和裂纹传导。",
+      "required_assets": [
+        "晏南枝短刀反手撬栓",
+        "下栓脱槽",
+        "上栓裂纹咬断",
+        "石粉和栓缝侧光"
+      ],
+      "continuity_locks": [
+        "晏南枝借半寸缝撬动",
+        "短刀是工具，不是机关钥匙",
+        "下栓脱槽后上栓裂纹跟着咬断"
+      ],
+      "risks": [
+        "撬动因果可能被生成成短刀发光开门",
+        "上摇裂纹如果不连贯会丢失塌门原因"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "SC006-SH003",
+        "ART_REF_COLLAPSE_GATE_LOCK_FRAME"
+      ],
+      "first_frame": "短刀插在下栓半寸缝，晏南枝手指抓紧。",
+      "last_frame": "下栓脱槽，上栓裂纹咬断，石门开始失重。",
+      "redraw_regions": [
+        "短刀撬动接触点",
+        "下栓脱槽缝",
+        "上栓裂纹扩大"
+      ],
+      "notes": "没有金赤能力参与塌门。"
+    },
+    {
+      "shot_id": "SC006-SH005",
+      "method": "FLF2V",
+      "rationale": "石门斜向追兵廊砸下且只隔住刃肢是全集空间因果高潮，必须首尾帧锁落门方向、右侧窄口和门外刮擦不止。",
+      "required_assets": [
+        "半塌石门斜落轨迹",
+        "门外刃肢被隔住局部",
+        "右侧图室窄口",
+        "门缝火星和石粉"
+      ],
+      "continuity_locks": [
+        "石门斜向追兵廊落下",
+        "不震飞追兵，只隔住刃肢",
+        "晏南枝在右侧窄口避让，沈维桑右肩脱力后退"
+      ],
+      "risks": [
+        "大动作可能生成成击败追兵的战果",
+        "落门方向若错会破坏图室入口关系"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "SC006-SH004",
+        "ART_REF_COLLAPSE_GATE_LOCK_FRAME",
+        "FX_LAYER_SPARKS_AND_STONE_SCRATCHES"
+      ],
+      "first_frame": "石门开始失重，右侧图室窄口仍在画面右边。",
+      "last_frame": "石门斜落到追兵廊，刃肢隔在外侧，火星从缝里溅入。",
+      "redraw_regions": [
+        "石门斜落边缘",
+        "门缝火星",
+        "外侧刃肢刮擦"
+      ],
+      "notes": "轰响后门外刮擦继续，危机未解除。"
+    },
+    {
+      "shot_id": "SC006-SH006",
+      "method": "I2V",
+      "rationale": "塌门后的跪倒咳血和护发绳是表演近景，用 I2V 保持伤势、发绳和门外持续火星压力。",
+      "required_assets": [
+        "沈维桑跪倒咳血沫",
+        "右手护右腕发绳",
+        "晏南枝伸手扶右肩",
+        "塌门缝外刮擦火星"
+      ],
+      "continuity_locks": [
+        "晏南枝不碰左肩",
+        "沈维桑先护发绳并说别碰左肩",
+        "塌门只是暂时隔住追兵"
+      ],
+      "risks": [
+        "血沫和发绳同屏低光可读性不足",
+        "扶人动作可能误碰左肩"
+      ],
+      "batching": "B06_COLLAPSE_GATE",
+      "dependencies": [
+        "SC006-SH005",
+        "ART_REF_SHEN_WEISANG_INJURY"
+      ],
+      "first_frame": "沈维桑跪倒低角，血沫在下中轴。",
+      "last_frame": "右手护住发绳，视线抬向图室窄口。",
+      "redraw_regions": [
+        "血沫湿亮",
+        "右腕发绳",
+        "门外火星偶闪"
+      ],
+      "notes": "以灰风和图室空冷声转入接口段。"
+    },
+    {
+      "shot_id": "SC007-SH001",
+      "method": "REFERENCE_IMAGE",
+      "rationale": "旧驿图室是第04集接口母版，先锁定窄小图室、密集刻线、塌门后景和右掌驿令靠近但不按墙的参考帧。",
+      "required_assets": [
+        "旧驿图室密集刻线墙",
+        "塌门后灰风和门外刮擦后景",
+        "沈维桑右掌半枚驿令",
+        "晏南枝隐蔽血牒站位"
+      ],
+      "continuity_locks": [
+        "图室是逃亡接口，不是解谜终点",
+        "驿令靠近图墙但不按墙、不当手电",
+        "沈维桑左臂垂落"
+      ],
+      "risks": [
+        "图室可能被生成成华丽地图厅",
+        "驿令容易被误扩展成完整发光地图"
+      ],
+      "batching": "B07_MAP_ROOM_INTERFACE",
+      "dependencies": [
+        "SC006-SH006",
+        "ART_REF_MAP_ROOM_LOCK_FRAME"
+      ],
+      "first_frame": "灰风吹开，露出窄小图室和密集刻线。",
+      "last_frame": "半枚驿令在右掌发热，沈维桑靠近图墙但不按上去。",
+      "notes": "塌门外刮石声持续保留在后景。"
+    },
+    {
+      "shot_id": "SC007-SH002",
+      "method": "REDRAW",
+      "rationale": "南线短亮、北线分段亮到金河磨盘小印是图墙局部路线信息，适合在锁定图墙底图上重绘金赤路线和残字，防止全室亮起。",
+      "required_assets": [
+        "图墙南左下北右上刻线底图",
+        "金河磨盘形小印",
+        "金赤路线分段亮特效",
+        "残字金河局部"
+      ],
+      "continuity_locks": [
+        "南线先亮到隐歌后迅速暗下",
+        "北线向右上分段亮，穿过金河磨盘小印",
+        "路线光不变成完整地图"
+      ],
+      "risks": [
+        "南北方向若反会破坏全集路线锁",
+        "重绘范围过大可能照亮全图室"
+      ],
+      "batching": "B07_MAP_ROOM_INTERFACE",
+      "dependencies": [
+        "SC007-SH001",
+        "FX_LAYER_GOLD_RED_RELAY_LINE"
+      ],
+      "redraw_regions": [
+        "南线短亮段",
+        "北线分段亮路径",
+        "金河磨盘小印和残字"
+      ],
+      "notes": "本镜为第04集金河止血接口的核心视觉资产。"
+    },
+    {
+      "shot_id": "SC007-SH003",
+      "method": "REDRAW",
+      "rationale": "北境边墙光点、雪线刻痕和黑墙纹应在图墙局部短促显现，再接晏南枝红线手部反应，局部重绘可限制光点规模。",
+      "required_assets": [
+        "图墙更北处光点底图",
+        "雪线刻痕和黑墙纹",
+        "晏南枝束发红线手部",
+        "指节发白细节"
+      ],
+      "continuity_locks": [
+        "北境只作为路线接口，不抵达不解释",
+        "晏南枝血牒不外露，只收紧红线",
+        "金赤光点只刺一点"
+      ],
+      "risks": [
+        "北境光点可能被扩成完整地图或新场景",
+        "红线反应若丢失会削弱晏南枝秘密压力"
+      ],
+      "batching": "B07_MAP_ROOM_INTERFACE",
+      "dependencies": [
+        "SC007-SH002",
+        "ART_REF_YAN_NANZHI_RED_HAIR_THREAD"
+      ],
+      "redraw_regions": [
+        "北境光点",
+        "雪线刻痕",
+        "黑墙纹",
+        "红线勒紧指节"
+      ],
+      "notes": "保持图墙右上方向一致，切手部时不改变南北轴。"
+    },
+    {
+      "shot_id": "SC007-SH004",
+      "method": "FLF2V",
+      "rationale": "沈维桑艰难站起、左臂垂落、肩血滴到金河小印下是第04集接口动作，需要首尾帧锁站起重心和血滴落点。",
+      "required_assets": [
+        "沈维桑左臂完全垂落中近景",
+        "金河磨盘小印",
+        "肩血滴落特写",
+        "图墙北线右上余亮"
+      ],
+      "continuity_locks": [
+        "左臂完全垂落，不恢复可用",
+        "肩血滴到金河小印下",
+        "金河、北境和止血压力合成接口"
+      ],
+      "risks": [
+        "站起动作可能让左臂参与支撑",
+        "血滴落点若不在金河小印下会削弱接口"
+      ],
+      "batching": "B07_MAP_ROOM_INTERFACE",
+      "dependencies": [
+        "SC007-SH002",
+        "SC007-SH003",
+        "ART_REF_SHEN_WEISANG_INJURY"
+      ],
+      "first_frame": "沈维桑靠图墙艰难站起，左臂完全垂落。",
+      "last_frame": "肩血滴到金河磨盘小印下方，北线右上仍有余亮。",
+      "redraw_regions": [
+        "左肩血迹",
+        "血滴落点",
+        "金河小印边缘金赤残光"
+      ],
+      "notes": "两句台词后放大血滴声，不新增补给解释。"
+    },
+    {
+      "shot_id": "SC007-SH005",
+      "method": "FLF2V",
+      "rationale": "结尾需要牙齿和右手系紧发绳、眼神钉住北线并落黑，首尾帧可锁右腕动作、晏南枝按右肩和北线右上光点。",
+      "required_assets": [
+        "牙齿咬住烧焦发绳",
+        "右手系右腕发绳",
+        "晏南枝按右肩",
+        "图墙北线右上光点"
+      ],
+      "continuity_locks": [
+        "进金河前先止血",
+        "沈维桑用牙齿和右手系发绳，左臂不可用",
+        "北线车辙不能断，门外刮石和北境光点持续到黑场"
+      ],
+      "risks": [
+        "手口动作复杂，可能遮住发绳",
+        "落黑前北线光点若过亮会像胜利结局"
+      ],
+      "batching": "B07_MAP_ROOM_INTERFACE",
+      "dependencies": [
+        "SC007-SH004",
+        "ART_REF_BURNT_HAIR_RIBBON"
+      ],
+      "first_frame": "晏南枝按右肩提醒止血，沈维桑牙齿咬住发绳。",
+      "last_frame": "发绳系紧右腕，沈维桑眼神钉住右上北线，画面落黑。",
+      "redraw_regions": [
+        "发绳打结位置",
+        "右上北线小光点",
+        "晏南枝按右肩的手"
+      ],
+      "notes": "第03集以金河、止血、车辙不能断收束，不让追兵危机完全解除。"
+    }
+  ]
+}
