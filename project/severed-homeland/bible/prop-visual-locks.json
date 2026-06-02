@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "usage": "Stable prop, symbol, and costume-anchor locks for recurring visual continuity.",
+  "props": [
+    {
+      "id": "prop_riyue_yiling_v01",
+      "name": "半枚日月驿令",
+      "category": "hero prop",
+      "description": "broken half-token made of worn bronze and old white stone inlay, one side shows partial sun wheel and missing moon edge, route notch along broken side",
+      "scale": "fits in palm",
+      "palette": ["worn bronze", "old white", "gold-red glow only during activation"],
+      "usage": "opens partial old relay routes and identifies Shen family lineage",
+      "continuity_locks": ["always half, never complete in season 01", "glow is short and broken", "surface must be worn and scratched"],
+      "forbidden": ["complete imperial medal", "large magical key", "clean new coin"]
+    },
+    {
+      "id": "prop_moon_jade_v01",
+      "name": "月白玉片",
+      "category": "hero prop",
+      "description": "small moon-white jade shard carried by Yan Nanzhi, smooth edge on one side, broken ritual edge on the other",
+      "scale": "thumb-sized to small pendant",
+      "palette": ["moon white", "pale blue shadow", "worn red cord"],
+      "usage": "reacts near old star charts and treaty platform",
+      "continuity_locks": ["stays with Yan Nanzhi", "subtle glow only near old relics"],
+      "forbidden": ["large necklace jewel", "royal crown gem"]
+    },
+    {
+      "id": "prop_blood_treaty_fragments_v01",
+      "name": "日月血牒残段",
+      "category": "document prop",
+      "description": "oil-paper wrapped strips of old treaty/bloodline text, red-brown seal lines and fine Sun-Moon pattern visible only when unfolded",
+      "scale": "several folded strips",
+      "palette": ["aged paper", "dark red seal", "worn gold ink"],
+      "usage": "proves Yan Nanzhi's branch bloodline and points toward Moon Oath clues",
+      "continuity_locks": ["fragmented, never complete", "kept hidden under coarse travel clothing"],
+      "forbidden": ["single pristine royal decree", "modern printed document"]
+    },
+    {
+      "id": "prop_qingming_register_v01",
+      "name": "清明白册",
+      "category": "antagonist document prop",
+      "description": "spotless white register book with insect-wax edge seal, black ink entries appearing or being written in cold formal script",
+      "scale": "official ledger size",
+      "palette": ["Qingming white", "black ink", "wax pale yellow"],
+      "usage": "records suspected old blood, identifiers, and purge orders",
+      "continuity_locks": ["must be unnervingly clean", "paired with Bai Yi or Qingming office"],
+      "forbidden": ["ragged old notebook", "bright magical spellbook"]
+    },
+    {
+      "id": "prop_insect_wax_needle_v01",
+      "name": "虫蜡针",
+      "category": "antagonist tool",
+      "description": "thin pale needle held in a small sterile tray, translucent insect-wax body, black dot at the tip",
+      "scale": "finger-length",
+      "palette": ["pale wax", "cold white", "black tip"],
+      "usage": "bloodline screening and intimidation during inspection",
+      "continuity_locks": ["Bai Yi wipes it before use", "not a huge weapon", "medical cleanliness makes it frightening"],
+      "forbidden": ["sword-like spike", "dirty torture needle"]
+    },
+    {
+      "id": "prop_qingming_incense_v01",
+      "name": "清明香",
+      "category": "tracking effect prop",
+      "description": "thin white smoke thread that clings low to fabric, doorframes, wells, and corridors; scent marker rather than visible spell cloud",
+      "scale": "environmental trace",
+      "palette": ["thin white", "cold gray"],
+      "usage": "tracking fugitives and marking purge zones",
+      "continuity_locks": ["subtle white line, not thick fantasy fog", "Bai Yi can read or smell it"],
+      "forbidden": ["colorful smoke", "large magical explosion"]
+    },
+    {
+      "id": "prop_old_relay_map_v01",
+      "name": "残缺大陆驿道图",
+      "category": "map prop",
+      "description": "torn old route map with relay marks, missing corners, smoky edge, route nodes that briefly shine when relay token is near",
+      "scale": "foldable travel map",
+      "palette": ["aged cloth paper", "ink brown", "gold-red route flicker"],
+      "usage": "guides route toward border wall and old relay network",
+      "continuity_locks": ["incomplete and hard to read", "cannot reveal all geography at once"],
+      "forbidden": ["modern precise map", "complete glowing GPS-like display"]
+    },
+    {
+      "id": "prop_moon_oath_page_v01",
+      "name": "月下盟书残页",
+      "category": "season finale prop",
+      "description": "partly burned old treaty page with multiple faction seals, moon-white fibers and dark scorch edge",
+      "scale": "folded page fragment",
+      "palette": ["aged paper", "moon white fiber", "burn black", "faded seal colors"],
+      "usage": "surviving proof after Bai Yi burns the main scroll",
+      "continuity_locks": ["fragment only", "multi-faction seals must be visible", "not a royal-only decree"],
+      "forbidden": ["complete scroll", "single imperial seal"]
+    },
+    {
+      "id": "prop_bone_whistle_v01",
+      "name": "骨哨/骨笛",
+      "category": "border and northern prop",
+      "description": "small bone whistle for Xue Linqiang, longer bone flute for Lu Mi; both have wind holes and weathered cord",
+      "scale": "handheld",
+      "palette": ["bone white", "old cord brown", "ice-blue accent for Lu Mi variant"],
+      "usage": "wind reading, border alarm, northern beast pact signal",
+      "continuity_locks": ["Xue's bone whistle and Lu Mi's bone flute are related but distinguishable"],
+      "forbidden": ["polished musical instrument", "gold ceremonial horn"]
+    },
+    {
+      "id": "prop_food_token_v01",
+      "name": "边墙粮牌",
+      "category": "social control prop",
+      "description": "dull yellow-gray stamped token used to exchange food at border wall, chipped and handled often",
+      "scale": "small token",
+      "palette": ["dull yellow", "old gray", "finger-worn edge"],
+      "usage": "shows Gray Wall survival economy and Sumin control",
+      "continuity_locks": ["ugly practical token, not coin treasure"],
+      "forbidden": ["shiny gold money"]
+    },
+    {
+      "id": "prop_black_market_wood_pass_v01",
+      "name": "黑市通行木牌",
+      "category": "route access prop",
+      "description": "small dark wood pass with scratched market sign and old route notch on the back",
+      "scale": "palm-sized",
+      "palette": ["dark wood", "soot black", "carved pale line"],
+      "usage": "Lu Qingli's access tool for wallfoot market and old route entry",
+      "continuity_locks": ["carved notch on back matters", "belongs visually to Lu Qingli and wallfoot market"],
+      "forbidden": ["official clean pass", "metal badge"]
+    }
+  ],
+  "costume_anchors": [
+    {
+      "id": "costume_shen_weisang_base_v01",
+      "linked_character": "char_shen_weisang_v01",
+      "description": "gray-brown hunter clothing, worn leather wrist guards, charred hem after episode 02, practical short boots"
+    },
+    {
+      "id": "costume_yan_nanzhi_travel_v01",
+      "linked_character": "char_yan_nanzhi_v01",
+      "description": "coarse travel robe over hidden fine Sun-Moon patterned inner layer, southern red hair cord"
+    },
+    {
+      "id": "costume_bai_yi_qingming_v01",
+      "linked_character": "char_bai_yi_v01",
+      "description": "spotless white official robe, thin translucent wing membrane mantle, small black sun insignia"
+    },
+    {
+      "id": "costume_shen_zhaomian_identifier_v01",
+      "linked_character": "char_shen_zhaomian_v01",
+      "description": "Qingming white child robe, insect-wax wrist ring, childhood herb pouch or burned hair cord retained"
+    },
+    {
+      "id": "costume_border_wall_common_v01",
+      "linked_faction": "faction_border_wall",
+      "description": "coarse gray layers, repaired cloth, old iron, bone fasteners, snow dampness, no polished uniformity"
+    }
+  ]
+}

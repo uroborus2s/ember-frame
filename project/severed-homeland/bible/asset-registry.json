@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "project-level reusable visual assets",
+  "asset_roots": {
+    "characters": "assets/characters/",
+    "locations": "assets/locations/",
+    "props": "assets/props/",
+    "costumes": "assets/costumes/",
+    "style": "assets/style/"
+  },
+  "characters": [
+    {"id": "char_shen_weisang_v01", "name": "沈维桑", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "injured_state"]},
+    {"id": "char_yan_nanzhi_v01", "name": "晏南枝", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "travel_disguise"]},
+    {"id": "char_bai_yi_v01", "name": "白翳", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "inspection_pose"]},
+    {"id": "char_shen_zhaomian_v01", "name": "沈照眠", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["village_child_state", "qingming_identifier_state"]},
+    {"id": "char_lu_qingli_v01", "name": "陆青砾", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "knife_action"]},
+    {"id": "char_xue_linqiang_v01", "name": "薛临墙", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "wall_guard_pose"]},
+    {"id": "char_luo_qinghe_v01", "name": "罗青禾", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["village_medic_half_body", "deathbed_prop_reference"]},
+    {"id": "char_meng_guicang_v01", "name": "孟归藏", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["half_body", "burned_bookbox_reference"]},
+    {"id": "char_lu_mi_v01", "name": "鹿弥", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["half_body", "bone_flute_pose"]},
+    {"id": "char_li_tang_v01", "name": "厉螳", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "mantis_blade_shadow"]},
+    {"id": "char_gu_huaizhang_v01", "name": "顾怀章", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["memory_reference"]}
+  ],
+  "locations": [
+    {"id": "loc_canyang_ao_v01", "name": "残阳坳", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["village_gate", "medicine_house", "old_well", "burned_aftermath"]},
+    {"id": "loc_old_relay_tunnel_v01", "name": "旧驿暗道", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["stone_gate", "narrow_tunnel", "route_carving"]},
+    {"id": "loc_qingming_outer_office_v01", "name": "清明院外署", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["white_corridor", "memory_cells", "register_room"]},
+    {"id": "loc_suohou_pass_v01", "name": "锁喉关", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["black_stone_gate", "wall_top_snow", "exposed_old_array"]},
+    {"id": "loc_moon_oath_relay_v01", "name": "月下盟书旧驿", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["star_chart_hall", "treaty_platform", "collapse_exit"]},
+    {"id": "loc_jinhe_grainmill_v01", "name": "金河粮磨区", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["steam_mill", "sealed_weapon_cellar"]},
+    {"id": "loc_ashen_academy_v01", "name": "灰烬书院", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["burned_arcade", "broken_star_chart"]},
+    {"id": "loc_wallfoot_market_v01", "name": "墙下集市", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["market_alley", "kiln_cave"]},
+    {"id": "loc_minggu_ling_v01", "name": "鸣骨岭", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["bone_snowfield", "snow_pit"]},
+    {"id": "loc_hanya_fort_v01", "name": "寒鸦堡", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["insect_membrane_corridor", "interrogation_room", "archive_wall"]},
+    {"id": "loc_collapsed_beacon_v01", "name": "坍塌烽燧", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["broken_tower", "snow_escape_slope"]}
+  ],
+  "props": [
+    {"id": "prop_riyue_yiling_v01", "name": "半枚日月驿令", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_moon_jade_v01", "name": "月白玉片", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_qingming_register_v01", "name": "清明白册", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_insect_wax_needle_v01", "name": "虫蜡针", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_qingming_incense_v01", "name": "清明香", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_old_relay_map_v01", "name": "残缺大陆驿道图", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_blood_treaty_fragments_v01", "name": "日月血牒残段", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_moon_oath_page_v01", "name": "月下盟书残页", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_bone_whistle_v01", "name": "骨哨/骨笛", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_food_token_v01", "name": "边墙粮牌", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_black_market_wood_pass_v01", "name": "黑市通行木牌", "priority": 2, "lock_file": "bible/prop-visual-locks.json"}
+  ],
+  "style_boards": [
+    {"id": "style_global_mood_v01", "name": "全剧总风格板", "priority": 1, "source": "bible/visual-style.md"},
+    {"id": "style_zhaoming_relic_v01", "name": "昭明旧物材质板", "priority": 1, "source": "bible/style-continuity-bible.json"},
+    {"id": "style_qingming_court_v01", "name": "清明院材质板", "priority": 1, "source": "bible/style-continuity-bible.json"},
+    {"id": "style_border_wall_v01", "name": "边墙雪线材质板", "priority": 1, "source": "bible/style-continuity-bible.json"}
+  ],
+  "generation_status": {
+    "planning": "ready",
+    "image_generation": "not_started",
+    "reason": "Project-level visual locks are prepared; actual image assets should wait for approved reference-generation pass or episode director-room outputs."
+  }
+}

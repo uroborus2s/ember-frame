@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "scope": "project-level visual unity package",
+  "format": {
+    "aspect_ratio": "9:16",
+    "medium": "AI vertical short drama",
+    "visual_style": "grounded cinematic eastern epic fantasy with restrained magic"
+  },
+  "global_principles": [
+    "Preserve continuity over isolated image beauty.",
+    "Use grounded materials, worn surfaces, controlled lighting, and visible story props.",
+    "Keep magic effects short, residual, and tied to old infrastructure or bloodline reaction.",
+    "Show large events through close-ups, sound cues, shadows, partial silhouettes, smoke, snow, and aftermath."
+  ],
+  "global_negative_rules": [
+    "no xianxia immortal glamour",
+    "no full heroic armor for Shen Weisang in season 01",
+    "no modern weapons or modern tactical gear",
+    "no neon cyberpunk lighting",
+    "no clean fantasy palace beauty for ruined Zhaoming relics",
+    "no full monster-only insect villains for Sumin officials",
+    "no large-scale battlefield crowd unless specifically required by later director-room outputs"
+  ],
+  "highlight_colors": {
+    "gold_red": {
+      "usage": "Shen Weisang spirit-wing residual marks, old relay light routes, firelight reflections",
+      "approx_hex": "#B45A2A"
+    },
+    "moon_white": {
+      "usage": "Yan Nanzhi jade, treaty platform, broken star charts",
+      "approx_hex": "#D9E2E6"
+    },
+    "qingming_white": {
+      "usage": "Bai Yi, Qingming Court, registers, insect wax, cleansing authority",
+      "approx_hex": "#E9E6DA"
+    }
+  },
+  "faction_systems": [
+    {
+      "id": "faction_zhaoming_relic",
+      "name": "昭明旧帝国遗产",
+      "symbols": ["日轮托白月", "日月双印", "旧驿路线刻痕", "月下盟书多族印记"],
+      "palette": ["旧白石", "磨损金", "月白", "金赤裂纹"],
+      "materials": ["white stone", "worn bronze", "old gold inlay", "cracked route carvings"],
+      "shape_language": ["circle", "crescent", "arch", "star chart disk", "route grid"],
+      "continuity_rule": "Relics must look damaged, covered, partial, or rediscovered; never pristine imperial glory in season 01."
+    },
+    {
+      "id": "faction_suming_qingming",
+      "name": "肃明国与清明院",
+      "symbols": ["白翅覆黑日", "抹去的月纹", "清明白册", "虫蜡封条"],
+      "palette": ["虫蜡白", "冷灰", "骨白", "黑日"],
+      "materials": ["insect wax", "white plaster", "thin wing membrane", "black lacquer", "clean paper"],
+      "shape_language": ["symmetry", "straight corridor", "honeycomb holes", "sealed circular sun"],
+      "continuity_rule": "Always clean, cold, and bureaucratic; insect traits are controlled and partial."
+    },
+    {
+      "id": "faction_border_wall",
+      "name": "边墙与灰墙军",
+      "symbols": ["骨钟", "灰墙军牌", "反面旧日月布条", "黑石裂门"],
+      "palette": ["黑石", "雪白", "灰麻", "旧铁", "干血暗红"],
+      "materials": ["black stone", "frozen wood", "old iron", "coarse hemp", "bone"],
+      "shape_language": ["vertical wall", "heavy gate", "long spear line", "wind-bent flag"],
+      "continuity_rule": "Border people must look exhausted, repaired, and practical, not like clean imperial soldiers."
+    },
+    {
+      "id": "faction_wallfoot_mixed",
+      "name": "墙下混裔",
+      "symbols": ["碎陶护符", "黑市木牌", "粮牌", "切碎旗布"],
+      "palette": ["灰蓝", "陶土", "布褐", "暗黄"],
+      "materials": ["patched cloth", "clay shard", "wood token", "rope", "soot"],
+      "shape_language": ["low doorway", "narrow alley", "cloth awning", "kiln cave"],
+      "continuity_rule": "Mixed heritage traits should be subtle and lived-in, not decorative spectacle."
+    },
+    {
+      "id": "faction_northern_seekers",
+      "name": "北境寻灾源派",
+      "symbols": ["骨笛", "鹿角短饰", "雪地药草袋", "冰蓝火"],
+      "palette": ["冰蓝", "皮毛灰", "骨白", "极光绿点缀"],
+      "materials": ["fur", "bone", "hide cord", "ice crack texture", "rough iron"],
+      "shape_language": ["bone holes", "migration marks", "horn curve", "snow track"],
+      "continuity_rule": "Only partial presence in season 01; avoid turning episode 09 into a full northern tribe showcase."
+    }
+  ],
+  "camera_rules": {
+    "default": ["medium close-up", "close-up on hands and props", "low-angle pressure", "narrow-space tracking"],
+    "qingming_court": ["static symmetry", "frontal inspection", "cold white negative space"],
+    "escape_sequences": ["handheld feeling", "foreground obstruction", "smoke or snow layers"],
+    "border_wall": ["low angle", "vertical wall dominance", "wind and snow masking scale"]
+  },
+  "state_continuity": {
+    "shen_weisang_after_ep02": "charred hem must remain visible or implied in every outfit state",
+    "yan_nanzhi_all_season": "red hair cord and moon-white jade must remain visible unless temporarily hidden for disguise",
+    "bai_yi_all_scenes": "white robe, wing-membrane shoulder layer, insect-wax needle or Qingming register anchor",
+    "shen_zhaomian_after_capture": "Qingming white clothing plus a remaining childhood anchor such as burned hair cord or herb pouch",
+    "magic_effects": "spirit-wing residual marks are short gold-red lines at eye corner, shoulder blade, wrist, or old relay ground route"
+  }
+}

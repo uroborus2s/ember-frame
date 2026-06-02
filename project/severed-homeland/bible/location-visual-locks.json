@@ -1,0 +1,139 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "usage": "Stable location identity locks for reusable concept art, reference frames, and scene continuity.",
+  "locations": [
+    {
+      "id": "loc_canyang_ao_v01",
+      "name": "残阳坳",
+      "priority": 1,
+      "episodes": ["01", "02", "03"],
+      "geography": "old relay village in central-southern mainland, hidden relay structure under ordinary village",
+      "core_visuals": ["low earth walls", "old well", "medicine house", "hunter bow rack", "sunset valley", "insect-wax sealed door plaque"],
+      "palette": ["earth brown", "herb green", "sunset orange", "fire black", "ash gray"],
+      "lighting": "warm sunset before purge; firelight and smoke during purge; cold ash after purge",
+      "continuity_locks": ["old well remains route anchor", "medicine cabinet has hidden relay sign", "after episode 02 ash and charred marks persist in memory shots"],
+      "forbidden": ["large wealthy town", "clean fantasy village", "modern buildings"]
+    },
+    {
+      "id": "loc_old_relay_tunnel_v01",
+      "name": "旧驿暗道",
+      "priority": 1,
+      "episodes": ["03", "11", "12"],
+      "geography": "underground old imperial relay route, white stone and route carvings",
+      "core_visuals": ["white stone arch", "peeled Sun-Moon seal", "route grid carvings", "narrow torch corridor", "gold-red residual light on floor"],
+      "palette": ["old white stone", "torch amber", "gold-red residual light", "shadow black"],
+      "lighting": "low torchlight plus short old-array glows",
+      "continuity_locks": ["half relay token activates only partial routes", "light lines are residual and broken", "space stays narrow and practical"],
+      "forbidden": ["grand magical palace", "complex moving mechanical maze", "neon light tunnel"]
+    },
+    {
+      "id": "loc_jinhe_grainmill_v01",
+      "name": "金河粮磨区",
+      "priority": 2,
+      "episodes": ["04"],
+      "geography": "Sumin-controlled productive steam facility along river granary belt",
+      "core_visuals": ["steam mill wheel", "water pump", "grain track", "flattened cannon-mount marks", "sealed weapon cellar"],
+      "palette": ["iron gray", "steam white", "oil black", "grain brown"],
+      "lighting": "humid industrial side light, white steam layers",
+      "continuity_locks": ["steam technology exists for production only", "all military interfaces must look ground away or sealed"],
+      "forbidden": ["working cannons", "modern factory", "clean advanced machinery"]
+    },
+    {
+      "id": "loc_ashen_academy_v01",
+      "name": "灰烬书院",
+      "priority": 2,
+      "episodes": ["05"],
+      "geography": "burned human academy and star-chart archive",
+      "core_visuals": ["charred arcade", "black shelves", "broken star chart disk", "falling ash", "insect-wax seals"],
+      "palette": ["charcoal black", "ash gray", "paper yellow", "moon-white glint"],
+      "lighting": "dim gray daylight through broken roof, occasional moon-white star-chart glow",
+      "continuity_locks": ["knowledge survives as fragments, songs, and scorched devices", "children identifiers should feel institutional and unsettling"],
+      "forbidden": ["intact library", "bright scholarly campus", "large classroom crowd"]
+    },
+    {
+      "id": "loc_qingming_outer_office_v01",
+      "name": "清明院外署",
+      "priority": 1,
+      "episodes": ["06", "12"],
+      "geography": "local Qingming Court screening office with white walls and underground memory rooms",
+      "core_visuals": ["spotless white corridor", "Qingming register desk", "honeycomb memory cells", "insect-wax needle tray", "children in white"],
+      "palette": ["insect-wax white", "cold gray", "bone white", "black ink"],
+      "lighting": "cold even light, low shadow, bureaucratic stillness",
+      "continuity_locks": ["must contrast with dirty escape world", "symmetry and cleanliness show violence as order"],
+      "forbidden": ["dirty dungeon", "gothic torture chamber", "warm healing clinic"]
+    },
+    {
+      "id": "loc_wallfoot_market_v01",
+      "name": "墙下集市",
+      "priority": 2,
+      "episodes": ["07"],
+      "geography": "market of stateless mixed people under the southern foot of the border wall",
+      "core_visuals": ["gray cloth awnings", "kiln caves", "food tokens", "broken flag strips", "low alleys"],
+      "palette": ["gray blue", "clay brown", "patched cloth brown", "dull yellow"],
+      "lighting": "dusty side light, cramped and layered",
+      "continuity_locks": ["should feel lived-in, poor, practical, and suspicious", "exits and wall backs matter for blocking"],
+      "forbidden": ["colorful festive market", "clean fantasy bazaar", "large crowd spectacle"]
+    },
+    {
+      "id": "loc_suohou_pass_v01",
+      "name": "锁喉关",
+      "priority": 1,
+      "episodes": ["08"],
+      "geography": "narrowest pass of Juejing Mountains, black stone border-wall gate",
+      "core_visuals": ["black stone gate", "peeling Sumin insignia", "exposed old Sun-Moon array base", "bone bell", "snow on wall top"],
+      "palette": ["black stone", "snow white", "old iron", "dry blood red"],
+      "lighting": "snow-night contrast, cold torches, harsh side wind",
+      "continuity_locks": ["giant beast attack shown through shadow, impact, and gate vibration", "old array remains under Sumin overlay"],
+      "forbidden": ["open sunny battlefield", "polished fortress", "large CG monster close-up by default"]
+    },
+    {
+      "id": "loc_minggu_ling_v01",
+      "name": "鸣骨岭",
+      "priority": 2,
+      "episodes": ["09"],
+      "geography": "snow ridge outside wall, bones half-buried and wind making flute tones",
+      "core_visuals": ["bone holes", "snow pits", "half-buried weapons", "ice-blue small fire", "distant herd shadows"],
+      "palette": ["snow white", "bone white", "ice blue", "rust dark"],
+      "lighting": "overcast snow light, low blue fire for close faces",
+      "continuity_locks": ["use sparse detail and sound identity", "northern presence remains limited and intimate"],
+      "forbidden": ["full tribe camp", "large northern army", "lush forest"]
+    },
+    {
+      "id": "loc_hanya_fort_v01",
+      "name": "寒鸦堡",
+      "priority": 2,
+      "episodes": ["10"],
+      "geography": "old human fortress converted into insect military office",
+      "core_visuals": ["black stone walls", "insect membrane corridor", "interrogation hall", "archive wall sealed in wax", "white-wing black-sun insignia"],
+      "palette": ["black stone", "cold wax white", "dark green shell", "old iron"],
+      "lighting": "low cold interior light with wet membrane reflections",
+      "continuity_locks": ["must feel like human architecture occupied by insect governance", "archives sealed in wax are key visual clue"],
+      "forbidden": ["pure cave hive", "clean palace", "full battle siege"]
+    },
+    {
+      "id": "loc_moon_oath_relay_v01",
+      "name": "月下盟书旧驿",
+      "priority": 1,
+      "episodes": ["11", "12"],
+      "geography": "old relay core behind border wall, treaty chamber with multi-faction marks",
+      "core_visuals": ["underground star-chart hall", "moon-white stone platform", "damaged treaty pages", "multi-faction seals", "cracked Sun-Moon mark"],
+      "palette": ["moon white", "old white stone", "gold-red residual line", "deep shadow"],
+      "lighting": "moon-white platform glow, residual gold-red route lines, collapse dust",
+      "continuity_locks": ["treaty is not imperial throne room", "multi-faction seals must be visible", "victory remains incomplete after main scroll burns"],
+      "forbidden": ["single imperial coronation chamber", "perfect glowing library", "full clean treaty scroll after Bai Yi burns it"]
+    },
+    {
+      "id": "loc_collapsed_beacon_v01",
+      "name": "坍塌烽燧",
+      "priority": 2,
+      "episodes": ["12"],
+      "geography": "broken old imperial beacon tower connected to relay escape route",
+      "core_visuals": ["broken tower", "snow slope", "gold-red residual fire", "white-clad pursuer silhouette", "flag cloth pressed into snow mud"],
+      "palette": ["snow white", "stone gray", "gold-red ember", "black smoke"],
+      "lighting": "stormy snow with fire flashes",
+      "continuity_locks": ["final choice uses broken flag cloth and treaty page, not triumphant full flag"],
+      "forbidden": ["clean heroic victory platform", "sunny ending", "complete restoration of old empire"]
+    }
+  ]
+}

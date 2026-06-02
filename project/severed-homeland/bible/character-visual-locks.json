@@ -1,0 +1,202 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "usage": "Stable character identity locks for design sheets, reference images, storyboards, and prompt-room conversion.",
+  "characters": [
+    {
+      "id": "char_shen_weisang_v01",
+      "name": "沈维桑",
+      "priority": 1,
+      "age": 17,
+      "role": "protagonist, hunter and old relay guide",
+      "silhouette": "lean, wiry, slightly hunched from travel and old left shoulder injury",
+      "face": "young, weathered but not mature, guarded eyes, narrow jaw, smoke and dust often on skin",
+      "hair": "dark, practical tied-back or loose from escape, never styled as noble",
+      "base_wardrobe": "gray-brown hunter clothing, worn leather wrist guards, short boots, patched travel layers",
+      "fixed_props": ["hunter bow", "short knife", "half Sun-Moon relay token", "charred hem after episode 02"],
+      "marks": ["old left shoulder injury", "short gold-red spirit-wing residual marks at eye corner or shoulder blade only under stress"],
+      "palette": ["gray brown", "old leather", "ash black", "gold-red residual light"],
+      "state_variants": [
+        {"id": "village_hunter", "episodes": ["01"], "notes": "cleaner but still worn hunter state before fire"},
+        {"id": "burned_escape", "episodes": ["02", "03", "04"], "notes": "charred hem, soot, blood, torn sleeve"},
+        {"id": "snow_border", "episodes": ["08", "09", "10", "11", "12"], "notes": "added gray cloak or rough wall cloth, still keeps charred hem visible"}
+      ],
+      "performance_anchors": ["observes wind and ground before moving", "presses left shoulder when hurt", "keeps promises with short direct speech"],
+      "continuity_locks": ["must look 17", "no heroic armor", "no full wings", "no clean noble costume", "bow and short knife remain practical not ornate"]
+    },
+    {
+      "id": "char_yan_nanzhi_v01",
+      "name": "晏南枝",
+      "priority": 1,
+      "age": 18,
+      "role": "old imperial branch bloodline, escapee and treaty clue holder",
+      "silhouette": "slim, upright posture even in disguise, trained restraint",
+      "face": "calm eyes, controlled expression, fatigue hidden behind discipline",
+      "hair": "black hair tied with a southern red cord",
+      "base_wardrobe": "coarse travel outer robe over hidden fine Sun-Moon patterned inner layer",
+      "fixed_props": ["moon-white jade piece", "oil-paper wrapped blood treaty fragments", "red hair cord"],
+      "marks": ["subtle old imperial pattern inside clothing, not visible in every shot"],
+      "palette": ["dark cloth", "southern red cord", "moon white", "worn old gold detail"],
+      "state_variants": [
+        {"id": "escape_disguise", "episodes": ["01", "02", "03"], "notes": "rough outer layer, concealed noble pattern"},
+        {"id": "travel_worn", "episodes": ["04", "05", "06", "07"], "notes": "dust, torn edges, red cord remains"},
+        {"id": "border_resolve", "episodes": ["08", "09", "10", "11", "12"], "notes": "darker cold-weather layer, jade visible during treaty scenes"}
+      ],
+      "performance_anchors": ["touches old inscriptions with fingertips", "tightens red cord when pressured", "uses restrained posture before emotional admission"],
+      "continuity_locks": ["red cord stays", "moon-white jade stays", "not a princess gown", "no crown or complete imperial regalia in season 01"]
+    },
+    {
+      "id": "char_bai_yi_v01",
+      "name": "白翳",
+      "priority": 1,
+      "age": "adult",
+      "role": "Qingming register inspector and primary antagonist",
+      "silhouette": "tall, vertical, clean, still, white robe with thin wing-membrane shoulder layer",
+      "face": "covered or partially covered by pale expressionless face mask; dark compound-eye texture visible near eyes",
+      "hair": "hidden under hood or formal head covering",
+      "base_wardrobe": "spotless white official robe, translucent insect-wing mantle, black sun insignia kept small and precise",
+      "fixed_props": ["insect-wax needle", "Qingming white register", "clean cloth for wiping needle", "Qingming incense trace"],
+      "marks": ["subtle insect joint or wing membrane, never full monster body"],
+      "palette": ["insect-wax white", "cold gray", "bone white", "black sun"],
+      "state_variants": [
+        {"id": "inspection", "episodes": ["01", "02", "06"], "notes": "white register and wax needle prominent"},
+        {"id": "pursuit", "episodes": ["04", "10", "11", "12"], "notes": "robe remains clean even in dirty environments"}
+      ],
+      "performance_anchors": ["never raises voice", "wipes needle before interrogation", "pauses when smelling Qingming incense trail"],
+      "continuity_locks": ["must remain clean and controlled", "partial insect traits only", "no rage expression", "no heavy black armor"]
+    },
+    {
+      "id": "char_shen_zhaomian_v01",
+      "name": "沈照眠",
+      "priority": 1,
+      "age": "child",
+      "role": "Shen Weisang's sister, later Qingming identifier",
+      "silhouette": "small, quick, alert, later unnaturally still in Qingming training",
+      "face": "sensitive child face; memory flicker visible in eyes after capture",
+      "hair": "simple village child hair with burned hair cord anchor after episode 02",
+      "base_wardrobe": "village child cloth before capture; Qingming white child robe after capture",
+      "fixed_props": ["small herb pouch", "burned hair cord", "insect-wax identifier ring after capture"],
+      "marks": ["no overt insect mutation; the violence is institutional, not physical transformation"],
+      "palette": ["village cloth gray", "herb green", "Qingming white", "burn mark dark brown"],
+      "state_variants": [
+        {"id": "village_child", "episodes": ["01", "02"], "notes": "herb pouch and simple village clothing"},
+        {"id": "qingming_identifier", "episodes": ["06", "12"], "notes": "white robe, wrist ring, old child anchor retained"}
+      ],
+      "performance_anchors": ["recites herb names quickly", "after capture speaks like reading from a register", "eyes briefly lose focus when hearing family relay signs"],
+      "continuity_locks": ["must remain childlike", "do not make her villainous or glamorous", "Qingming state keeps one childhood anchor"]
+    },
+    {
+      "id": "char_lu_qingli_v01",
+      "name": "陆青砾",
+      "priority": 1,
+      "age": "teenage",
+      "role": "wallfoot mixed-heritage girl and new-homeland mirror",
+      "silhouette": "compact, fast, always near walls or exits",
+      "face": "sharp, wary, half-smile used defensively",
+      "hair": "short practical hair or tightly tied to avoid being grabbed",
+      "base_wardrobe": "gray-blue short jacket, patched underlayers, rope belt",
+      "fixed_props": ["shard pottery charm", "narrow hidden knife", "black market wood pass"],
+      "marks": ["subtle insect-scale trace behind ear, visible only in close-up"],
+      "palette": ["gray blue", "clay brown", "soot black", "dull token yellow"],
+      "state_variants": [
+        {"id": "market_survivor", "episodes": ["07"], "notes": "dry dust and market tokens"},
+        {"id": "border_escape", "episodes": ["08", "11", "12"], "notes": "snow damp cloth, same charm and knife"}
+      ],
+      "performance_anchors": ["stands with back near wall", "checks exits before answering", "cuts marker rope in decisive moments"],
+      "continuity_locks": ["mixed trait must stay subtle", "no decorative fantasy beast features", "gray-blue jacket and pottery charm stay"]
+    },
+    {
+      "id": "char_xue_linqiang_v01",
+      "name": "薛临墙",
+      "priority": 1,
+      "age": "older adult",
+      "role": "old wall master and Gray Wall Army realist",
+      "silhouette": "broad but worn down, old soldier posture, stable feet",
+      "face": "creased, wind-burned, tired eyes, not noble",
+      "hair": "gray or frost-streaked, practical, partly hidden by wall cloth",
+      "base_wardrobe": "gray-stone old armor pieces, coarse wall cloth, repaired cold-weather layers",
+      "fixed_props": ["bone whistle", "worn long spear", "reversed old Sun-Moon cloth strip at waist"],
+      "marks": ["frost-cracked fingers", "old scars"],
+      "palette": ["gray stone", "old iron", "snow white", "dry blood dark red"],
+      "state_variants": [
+        {"id": "wall_guard", "episodes": ["08", "09", "11"], "notes": "spear and bone whistle visible"},
+        {"id": "covert_helper", "episodes": ["12"], "notes": "darker cloak, same reversed cloth strip"}
+      ],
+      "performance_anchors": ["checks wall cracks first", "uses bone whistle to read wind", "speaks in short practical sentences"],
+      "continuity_locks": ["no clean imperial officer look", "no polished armor", "reversed old cloth strip remains"]
+    },
+    {
+      "id": "char_luo_qinghe_v01",
+      "name": "罗青禾",
+      "priority": 2,
+      "age": "adult",
+      "role": "village medic and old relay sign keeper",
+      "silhouette": "calm village healer, protective posture",
+      "face": "tired warmth, practical concentration",
+      "hair": "covered or tied with blue-green cloth",
+      "base_wardrobe": "plain village medic clothing, blue-green head cloth",
+      "fixed_props": ["herb basket", "medicine cabinet with hidden relay signs", "half relay token handoff"],
+      "palette": ["herb green", "plain gray", "earth brown"],
+      "performance_anchors": ["uses herb names as cover for old relay signs", "shields others before explaining"],
+      "continuity_locks": ["must feel grounded and local, not mystic priestess"]
+    },
+    {
+      "id": "char_meng_guicang_v01",
+      "name": "孟归藏",
+      "priority": 2,
+      "age": "adult",
+      "role": "Old Book Society witness and burned archive keeper",
+      "silhouette": "thin, protective around book box, suspicious posture",
+      "face": "one burned brow, ash stains, sharp archival eyes",
+      "hair": "messy, smoke-dried",
+      "base_wardrobe": "dark patched scholar-traveler clothing",
+      "fixed_props": ["burned book box", "bone clips for pages", "charred manuscript scraps"],
+      "palette": ["ash black", "burned brown", "paper yellow"],
+      "performance_anchors": ["protects pages before people, then regrets it", "speaks through fragments and evidence"],
+      "continuity_locks": ["not elegant scholar, must show fire damage"]
+    },
+    {
+      "id": "char_lu_mi_v01",
+      "name": "鹿弥",
+      "priority": 2,
+      "age": "young adult",
+      "role": "northern frost-hoof shaman, disaster-source seeker",
+      "silhouette": "slender, alert, built for snow travel",
+      "face": "cold-weather marks, wary but not savage",
+      "hair": "braided or tied under fur hood",
+      "base_wardrobe": "fur-gray and ice-blue northern travel layers",
+      "fixed_props": ["short antler ornament", "bone flute", "snow herb pouch"],
+      "palette": ["ice blue", "fur gray", "bone white"],
+      "performance_anchors": ["listens to wind through bone flute", "protects injured young beast first"],
+      "continuity_locks": ["do not over-design into full deer person; use cultural signs and subtle features"]
+    },
+    {
+      "id": "char_li_tang_v01",
+      "name": "厉螳",
+      "priority": 2,
+      "age": "adult",
+      "role": "Mantis military officer of the Armor Army Office",
+      "silhouette": "hard angular shoulders, forward-leaning military threat",
+      "face": "severe, partial mantis lines or shadow",
+      "base_wardrobe": "black-green shell shoulder armor, military cloak, iron gate token",
+      "fixed_props": ["short spear", "iron gate order token"],
+      "marks": ["mantis blade shadow rather than constant full blade exposure"],
+      "palette": ["black green", "old iron", "military dark"],
+      "performance_anchors": ["uses direct force, cuts through bureaucracy", "stands too close when threatening"],
+      "continuity_locks": ["distinct from Bai Yi: darker, martial, less clean, more physical"]
+    },
+    {
+      "id": "char_gu_huaizhang_v01",
+      "name": "顾怀章",
+      "priority": 3,
+      "age": "older adult",
+      "role": "southern teacher and pressure voice for Yan Nanzhi",
+      "silhouette": "upright old ritual scholar",
+      "base_wardrobe": "fragmented old imperial ritual robe, southern red cord scroll case",
+      "fixed_props": ["southern red cord scroll", "old imperial robe fragment"],
+      "palette": ["aged white", "southern red", "worn gold"],
+      "performance_anchors": ["places duty above safety", "appears through memory, letter, or blood-treaty instruction in season 01"],
+      "continuity_locks": ["do not overuse as present character unless series route is revised"]
+    }
+  ]
+}
