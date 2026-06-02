@@ -1,0 +1,59 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "season": "season-01",
+  "source_bible": "背景.md",
+  "current_status": "outline_package_ready",
+  "created_at": "2026-06-02",
+  "format": {
+    "type": "AI竖屏短剧",
+    "episode_count": 12,
+    "episode_duration": "2分30秒-3分钟",
+    "season_runtime": "约34分钟",
+    "target_audience": "喜欢东方史诗奇幻、逃亡护送、身份反转和强钩子短剧的观众"
+  },
+  "normalized_request": {
+    "seed": "以《背景.md》中的六域大陆、昭明帝国遗民、肃明国虫族统治、清明籍和护送旅程为基础，规划第一季剧情大纲。",
+    "requested_outputs": [
+      "剧情大纲",
+      "每集出场人物",
+      "每集新增设定",
+      "每集场景概要",
+      "每集故事梗概",
+      "AI短剧单集长度"
+    ],
+    "genre": "史诗奇幻逃亡短剧",
+    "tone": "冷峻、紧迫、带历史伤口与故土重释",
+    "video_readiness": "控制角色数量、集中场景、使用明确视觉锚点和可生成动作",
+    "revision_budget": 1
+  },
+  "assumptions": [
+    "第一季只覆盖主线第一阶段：残阳坳屠村到断脊边墙地下旧驿发现月下盟书线索。",
+    "完整剧本、对白、分镜和 ComfyUI 提示词暂不在本轮生成，本轮交付开发大纲包。",
+    "每集采用竖屏短剧结构：前5秒钩子，中段升级，结尾反转或悬念。",
+    "每集主要角色控制在3到5人，主要场景控制在2到4个，方便AI视频保持一致性。"
+  ],
+  "planned_agent_sequence": [
+    "showrunner-agent",
+    "story-architect-agent",
+    "character-agent",
+    "scene-agent",
+    "continuity-agent",
+    "script-evaluator-agent"
+  ],
+  "artifacts": {
+    "series_outline": "outline/series-outline.md",
+    "story_synopsis": "synopsis/story-synopsis.md",
+    "characters": "bible/characters.md",
+    "scenes": "bible/scenes.md",
+    "continuity": "bible/continuity.md",
+    "episode_briefs": "01-12/brief/episode-brief.md",
+    "episode_outlines": "01-12/script/episode-outline.md",
+    "outline_continuity_report": "01/reports/continuity-report.md",
+    "outline_score": "01/reports/script-score.md"
+  },
+  "warnings": [
+    "本轮为季级策划和分集大纲，不含最终剧本。",
+    "第一季结尾保留南林、东海、瀛洲、海族和矮人线作为后续季展开空间。"
+  ]
+}
