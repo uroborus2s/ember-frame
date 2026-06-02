@@ -5,7 +5,7 @@
   "status": "draft_ready_for_review",
   "note": "These prompts are intentionally tool-neutral. Prompt Room should later convert them into ComfyUI-ready prompts with model, sampler, node, and resolution details.",
   "global_prompt_prefix": "Vertical 9:16 cinematic reference image for a grounded eastern epic fantasy short drama, restrained magic, worn materials, controlled lighting, realistic fabric and stone texture, no modern objects, no neon, no xianxia immortal glamour.",
-  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama, ambiguous similar flags, separated side-by-side sun and moon icons for Zhaoming, neutral black sun without white insect-wing coverage for Sumin, literal realistic insect wings on Sumin flag, ragged torn beggar clothing for Yan Nanzhi",
+  "global_negative_prompt": "modern clothing, modern weapons, sci-fi neon, clean game armor, overpowered magic, full angel wings, pristine palace fantasy, cute cartoon style, excessive crowd, complete battlefield panorama, ambiguous similar flags, separated side-by-side sun and moon icons for Zhaoming, neutral black sun without white insect-wing coverage for Sumin, literal realistic insect wings on Sumin flag, ragged torn beggar clothing for core human characters, identical generic refugee outfits, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde",
   "style_prompts": [
     {
       "prompt_id": "style_global_mood_v01_prompt",
@@ -77,7 +77,7 @@
       "asset_id": "char_bai_yi_v01",
       "output_path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
       "purpose": "main antagonist design sheet",
-      "prompt": "Bai Yi, Sumin insectoid Qingming inspector, tall still silhouette, spotless white official robe, translucent wing-membrane shoulder mantle, integrated pale chitin faceplate, large dark compound-eye structures, dark neck membrane, slightly jointed or carapace-like fingers, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace. He is not a human wearing a mask; preserve insectoid official traits without turning him into a beast monster. Front, side, three-quarter, inspection pose."
+      "prompt": "Bai Yi, Sumin upper intellectual ruler-form insectoid Qingming inspector, tall still vertical silhouette, spotless wax-white official robe, bone-white high collar, cylindrical Qingming crown or integrated head casing, translucent wing-membrane shoulder mantle, integrated pale chitin faceplate, large dark compound-eye structures, dark neck membrane, slightly jointed or carapace-like fingers, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace. He is not a human wearing a mask; preserve upper insectoid official traits without turning him into a lower-force beast monster. Front, side, three-quarter, inspection pose."
     },
     {
       "prompt_id": "char_shen_zhaomian_v01_sheet_prompt",
@@ -99,6 +99,20 @@
       "output_path": "assets/characters/v01/char_xue_linqiang_v01_sheet.png",
       "purpose": "border wall mentor design sheet",
       "prompt": "Xue Linqiang, old border wall master, broad worn soldier posture, gray-stone old armor pieces, coarse repaired wall cloth, frost-cracked fingers, bone whistle, worn long spear, reversed old cloth strip at waist with fused Sun-Moon emblem, practical and exhausted, not noble. Front, side, full body, wall guard pose."
+    },
+    {
+      "prompt_id": "char_li_tang_v01_sheet_prompt",
+      "asset_id": "char_li_tang_v01",
+      "output_path": "assets/characters/v01/char_li_tang_v01_sheet.png",
+      "purpose": "non-humanoid Armor Army mantis combat-caste officer design sheet",
+      "prompt": "Li Tang, Sumin lower-force mantis combat-caste officer, non-humanoid and physically brutal, not a human in mantis armor. 2.4 to 2.7 meter black-green insect warrior, broad forward-leaning thorax, hardened carapace shoulders and abdomen, reverse-jointed rear legs, triangular chitin head, narrow compound eyes, hard mandible guard, no human face. Two folding forearm blade limbs, secondary gripping arms holding short spear and iron gate order token, old iron command harness, bone-white insect-wax seal bands, small Sumin command plate with abstract white wings over haloed black sun. Front, side, back, low-angle threat pose, blade-arm detail."
+    },
+    {
+      "prompt_id": "char_suming_shell_soldier_v01_sheet_prompt",
+      "asset_id": "char_suming_shell_soldier_v01",
+      "output_path": "assets/characters/v01/char_suming_shell_soldier_v01_sheet.png",
+      "purpose": "Sumin lower-rank non-humanoid insect infantry design sheet",
+      "prompt": "Sumin shell soldiers, low-rank non-humanoid insect infantry, filmable small group reference, not humans wearing insect helmets and not a shapeless monster horde. 2.0 to 2.3 meter low-crouched black-green or dark-brown shell bodies, hardened chest and back shell, narrow compound-eye strip, bone-white mandible guard, forearm folding short blades, short spear or hook cord, powerful reverse-jointed rear legs, degenerated hard wing plates on back, old iron gate plate, bone-white insect-wax rank bands, small white-wing-over-haloed-black-sun mark. Show front, side, back, crossed blade-arms blocking a door, and patrol group of three."
     }
   ],
   "location_prompts": [

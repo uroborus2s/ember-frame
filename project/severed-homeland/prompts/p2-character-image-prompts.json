@@ -5,7 +5,7 @@
   "status": "ready_for_image_generation",
   "source_designs": "art/p2-secondary-character-designs.json",
   "global_prompt_prefix": "Vertical 9:16 cinematic character design sheet, grounded eastern epic fantasy short drama, realistic worn fabric and prop texture, restrained low-magic, neutral dark studio backdrop, multiple views on one sheet, no readable text labels, no modern objects, no neon, no xianxia glamour.",
-  "global_negative_prompt": "modern clothing, modern weapons, polished heroic armor, pristine palace fantasy, overpowered magic, full angel wings, cute cartoon style, game UI, readable text labels, watermark, ragged beggar clothing unless specified, shredded hems, generic refugees with identical outfits, vague fantasy wizard robes, excessive glowing spell effects",
+  "global_negative_prompt": "modern clothing, modern weapons, polished heroic armor, pristine palace fantasy, overpowered magic, full angel wings, cute cartoon style, game UI, readable text labels, watermark, ragged beggar clothing unless specified, shredded hems, generic refugees with identical outfits, vague fantasy wizard robes, excessive glowing spell effects, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde",
   "symbol_references": {
     "zhaoming": {
       "asset_id": "symbol_zhaoming_sunmoon_v03",
@@ -60,14 +60,28 @@
       "prompt_id": "char_li_tang_v01_sheet_prompt",
       "asset_id": "char_li_tang_v01",
       "output_path": "assets/characters/v01/char_li_tang_v01_sheet.png",
-      "purpose": "Armor Army Office mantis military officer character sheet",
+      "purpose": "Armor Army Office non-humanoid mantis combat-caste officer character sheet",
       "continuity_references": [
         "bible/characters.md#厉螳",
         "bible/character-visual-locks.json:char_li_tang_v01",
-        "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png"
+        "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png",
+        "bible/characters.md#肃明虫族小兵"
       ],
       "downstream_usage": "Armor Army Office pursuit, Hanya Fort control, direct martial threat frames.",
-      "prompt": "Li Tang, adult Mantis military officer of the Armor Army Office, direct physical military threat, hard angular shoulders, forward-leaning posture, severe face with partial mantis lines or dark chitin shadow. Black-green shell shoulder armor, dark military cloak, practical command belt, old iron fasteners, field-worn martial layers. Include short spear, iron gate order token, black-green armor side view, threat pose standing too close, token close-up, and a mantis blade shadow study rather than constant exposed giant blade arms. Distinct from Bai Yi: darker, martial, less clean, more physical, no spotless white Qingming robe, no calm bureaucrat stillness, no oversized fantasy scythe arms, no polished heroic armor."
+      "prompt": "Li Tang, non-humanoid adult mantis combat-caste officer of the Armor Army Office, a lower-force Sumin ruler body, direct physical military threat. He must not be a human in mantis armor. Show a 2.4 to 2.7 meter tall insect warrior with broad forward-leaning thorax, powerful hardened abdomen and shoulder shell, reverse-jointed rear legs, triangular chitin head, narrow compound eyes, hard mandible guard, no human face. Black-green hardened carapace with old blade scars, old iron command harness, dark green military order straps, bone-white insect-wax seal bands, short black command drape. Two main scythe-like forearm blade limbs fold into carapace grooves; secondary gripping arms hold a short spear, iron gate order token, and small Sumin command plate with abstract white wings over a haloed black sun. Include full-body front, side, back, low-angle threat pose, blade-arm folded/open detail, command token close-up and shell texture close-up. Distinct from Bai Yi: darker, martial, non-humanoid, physically brutal, less clean, no spotless white Qingming robe, no calm bureaucrat stillness, no normal human officer silhouette."
+    },
+    {
+      "prompt_id": "char_suming_shell_soldier_v01_sheet_prompt",
+      "asset_id": "char_suming_shell_soldier_v01",
+      "output_path": "assets/characters/v01/char_suming_shell_soldier_v01_sheet.png",
+      "purpose": "Sumin low-rank insect infantry and small soldier group reference sheet",
+      "continuity_references": [
+        "bible/characters.md#肃明虫族小兵",
+        "bible/character-visual-locks.json:char_suming_shell_soldier_v01",
+        "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png"
+      ],
+      "downstream_usage": "Village sealing, grain escort, wall patrol, Hanya Fort door guards, snow pursuit silhouettes.",
+      "prompt": "Sumin shell soldiers, low-rank non-humanoid insect infantry for Severed Homeland. Show a clear filmable soldier type, not a shapeless monster horde and not humans wearing insect helmets. Each soldier is 2.0 to 2.3 meters tall with low-crouched strong body, black-green or dark-brown hardened chest shell and back shell, narrow compound-eye strip, bone-white mandible guard, two main arms holding short spear or hook cord, forearm folding short blades, powerful reverse-jointed rear legs, degenerated hard wing plates on back. Equipment is disciplined and clean but not ornate: old iron spear tips, grain lock, gate plate, bone-white insect-wax rank bands, small burned-in Sumin white-wing-over-haloed-black-sun mark. Show one front view, side view, back view, crossed blade-arms blocking a door, grain escort pose, and a small group of three soldiers in patrol formation. Palette black green, dark brown shell, bone white wax, old iron, cold black sun mark."
     },
     {
       "prompt_id": "char_gu_huaizhang_v01_memory_sheet_prompt",
@@ -92,7 +106,7 @@
         "bible/character-visual-locks.json"
       ],
       "downstream_usage": "Prompt Room and Director Room quick reference for profession/faction differentiation.",
-      "prompt": "P2 secondary character lineup board for Severed Homeland, five simplified full-body character references on one vertical 9:16 sheet, no readable text labels. Show clear role differentiation: Luo Qinghe as a beautiful 37-year-old grounded Canyang Ao village medic with blue-green head cloth and herb basket, not elderly; Meng Guicang as ash-damaged burned archive witness guarding a blackened book box with bone page clips; Lu Mi as northern frost-hoof shaman in fur-gray and ice-blue snow layers with short antler ornament and bone flute, subtle deer-clan signs only; Li Tang as dark black-green mantis military officer with shell shoulder armor, short spear, iron gate token and blade shadow, distinct from Bai Yi; Gu Huaizhang as older southern ritual scholar in fragmented aged-white old imperial robe with southern red cord scroll, memory/edict presence. All silhouettes, professions, palettes, and props must be distinguishable at a glance."
+      "prompt": "P2 secondary character lineup board for Severed Homeland, six simplified full-body character references on one vertical 9:16 sheet, no readable text labels. Show clear role differentiation: Luo Qinghe as a beautiful 37-year-old grounded Canyang Ao village medic with blue-green head cloth and herb basket, not elderly; Meng Guicang as ash-damaged burned archive witness guarding a blackened book box with bone page clips; Lu Mi as northern frost-hoof shaman in fur-gray and ice-blue snow layers with short antler ornament and bone flute, subtle deer-clan signs only; Li Tang as a tall non-humanoid black-green mantis combat-caste officer with hardened carapace, reverse-jointed legs, folding blade arms, short spear and iron gate token, distinct from Bai Yi and not a human officer; one Sumin shell soldier as lower-rank non-humanoid insect infantry with short spear, forearm blade, bone-white wax bands and gate plate; Gu Huaizhang as older southern ritual scholar in fragmented aged-white old imperial robe with southern red cord scroll, memory/edict presence. All silhouettes, professions, palettes, and props must be distinguishable at a glance."
     }
   ],
   "blocked": {
