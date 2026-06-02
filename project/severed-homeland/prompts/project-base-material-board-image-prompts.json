@@ -1,0 +1,204 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "asset_batch": "project_base_material_boards_v01",
+  "date": "2026-06-02",
+  "status": "prompt_plan_ready_pending_image_generation",
+  "output_dir": "project/severed-homeland/assets/style/base-material-boards",
+  "emblem_reference_policy": {
+    "use_current_emblems_only": true,
+    "current_emblem_paths": [
+      "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png"
+    ],
+    "rules": [
+      "Use the current stable emblem PNG files only as visual references for material and faction-mark language.",
+      "Do not redesign, redraw, replace, or overwrite faction emblem files.",
+      "Do not use historical emblem files under assets/style/faction-emblems/history/.",
+      "Any faction mark inside a material board must appear as partial carved, cracked, sealed, cropped, reflected, or obstructed material detail rather than a new standalone emblem."
+    ]
+  },
+  "source_request": {
+    "mode": "design_project_base_material_boards",
+    "requested_boards": [
+      "昭明旧物",
+      "清明院虫蜡白",
+      "边墙黑石雪线",
+      "金河蒸汽生产",
+      "北境骨木皮草"
+    ],
+    "delivery_rule": "Create auditable tool-neutral image prompts and stable output paths, then generate only these five new raster assets."
+  },
+  "shared_generation_rules": {
+    "format": "vertical 9:16 cinematic production material board, high-density tactile still-life, no visible text labels, no captions, no watermark",
+    "visual_quality": "film still concept art, realistic worn material closeups, low-magic eastern epic production reference, readable at mobile size",
+    "continuity_priority": [
+      "match the existing project material palette board's tactile realism and low saturation",
+      "each board must have a distinct material logic rather than one generic gray palette",
+      "all materials must look ancient, used, role-specific, and physically grounded",
+      "low magic appears only as tiny glints, cold incense lines, wax reflections, broken gold-red traces, or survival fire",
+      "current faction emblem language may appear only as partial material marks and must not be redrawn as new standalone emblems"
+    ],
+    "must_have": [
+      "9:16 vertical composition",
+      "cinematic macro and close-up material fragments",
+      "clear tactile texture",
+      "low saturation with faction and region-specific color differences",
+      "no text",
+      "no letters",
+      "no UI labels",
+      "no watermark",
+      "no modern technology"
+    ],
+    "negative_prompt": "text, captions, Chinese characters, letters, watermark, UI labels, color swatch labels, product catalog labels, modern typography, modern plastic, modern weapons, modern machinery interface, sci-fi UI, cyberpunk neon, high-magic spell circle, xianxia flying sword, saturated mobile game fantasy, clean treasure pile, coins, gemstone fantasy, hospital laboratory white, cheerful steampunk, cute mascot, anime chibi"
+  },
+  "prompts": [
+    {
+      "prompt_id": "base_material_prompt_zhaoming_relic_v01",
+      "asset_id": "material_zhaoming_relic_v01",
+      "name_cn": "昭明旧物",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "base_material_board",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "global tactile material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "current Zhaoming material and shape language reference only"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+          "role": "Southern Old Empire color and moisture reference"
+        }
+      ],
+      "continuity_references": [
+        "project/severed-homeland/art/project-base-material-boards.md#昭明旧物",
+        "project/severed-homeland/art/project-regional-color-system.md#南方旧帝国",
+        "project/severed-homeland/prompts/project-faction-emblem-prompts-v02.json"
+      ],
+      "design_lock": "Zhaoming relics are advanced, maritime, astronomical, expensive, ancient, worn, and morally complex. They are not flawless righteous restoration icons.",
+      "image_prompt": "Create one vertical 9:16 cinematic base material board for Zhaoming relic objects. No text labels. Build a tactile still-life of worn old civilization fragments: chipped old white stone with a partial sun-and-moon line engraving, aged gold maritime astrolabe or compass ring with star-map scratches, deep worn vermilion lacquer splinter, moon-white ceramic jade edge, faded sapphire-blue imperial textile cord, tarnished gold route-measure strip, damp moss at a stone seam, salt corrosion, wax-covered old seal edge, cracked relay token, and a small broken gold-red route line only partly visible under dust. Use the current Zhaoming emblem only as material direction for gold sun rays, moon-white ring, and nautical astrolabe precision; do not recreate the emblem as a standalone logo. Mood: preserved high civilization, old debt, hidden remnant, expensive but damaged. Cinematic macro closeups, low saturation, cool restrained light with one tiny ember reflection. No readable writing, no palace, no modern UI.",
+      "negative_prompt": "perfect golden palace, flawless holy imperial relic, bright court drama, treasure pile, coins, gemstones, modern compass UI, sci-fi star map interface, readable text, labels, Chinese characters, full standalone emblem redraw, clean new logo, high saturation gold, watermark"
+    },
+    {
+      "prompt_id": "base_material_prompt_qingming_insect_wax_white_v01",
+      "asset_id": "material_qingming_insect_wax_white_v01",
+      "name_cn": "清明院虫蜡白",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "base_material_board",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "global tactile material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "role": "current Qingming emblem shape reference only"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+          "role": "Qingming Institution material and color reference"
+        }
+      ],
+      "continuity_references": [
+        "project/severed-homeland/art/project-base-material-boards.md#清明院虫蜡白",
+        "project/severed-homeland/art/project-regional-color-system.md#清明院",
+        "project/severed-homeland/bible/characters.md#白翳"
+      ],
+      "design_lock": "Qingming white is clean insect-wax institutional violence. It must feel ancient and procedural, not modern hospital, sci-fi laboratory, holy sanctuary, or dirty monster nest.",
+      "image_prompt": "Create one vertical 9:16 cinematic base material board for Qingming Institution insect-wax white. No text labels. Arrange close tactile fragments: glossy insect-wax white seal strips, bone-white honeycomb wall cells, pearl-gray old council stone, translucent wing membrane sheet, blank white registry pages with no readable writing, wax needle tray, bone-white identification ring, cold-gold official pin, dark green chitin shard at the edge, black sun disk partly reflected in wax, angular white wing-blade geometry as a cropped cracked wall mark, and one tiny dry blood-red mark on a sleeve edge or page corner. Lighting is cold top light, hard-edged, sterile but ancient. Use the current Suming/Qingming emblem only for partial shape language; do not redraw it as a standalone emblem. The board should feel clean, oppressive, ritual-procedural, and tactile.",
+      "negative_prompt": "modern hospital, blue sci-fi lab, medical equipment, surgical room, clean plastic, digital UI, readable registry writing, labels, Chinese characters, gore, dungeon, monster cave, warm cathedral, angelic holy glow, full standalone emblem redraw, watermark"
+    },
+    {
+      "prompt_id": "base_material_prompt_border_wall_blackstone_snowline_v01",
+      "asset_id": "material_border_wall_blackstone_snowline_v01",
+      "name_cn": "边墙黑石雪线",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "base_material_board",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "global tactile material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "border wall and north transition reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "partial old Zhaoming array material reference only"
+        }
+      ],
+      "continuity_references": [
+        "project/severed-homeland/art/project-base-material-boards.md#边墙黑石雪线",
+        "project/severed-homeland/art/project-regional-color-system.md#边墙",
+        "project/severed-homeland/bible/scenes.md"
+      ],
+      "design_lock": "Border Wall material must be heavy, vertical, engineered, cold, and carceral. Gold-red old arrays appear only as tiny exposed traces inside damaged blackstone.",
+      "image_prompt": "Create one vertical 9:16 cinematic base material board for Border Wall blackstone and snowline. No text labels. Build a close-up material collage: dark blackstone wall blocks with deep cracks, snow crust packed into stone seams, shadow-blue ice reflection, old iron gate hinge and rivet, gray wall-soldier cloth strip, snowline leg wrapping fabric, bone bell or bone whistle, cold insect-wax grain seal partly stuck over old masonry, dry blood-dark red scrape, and a peeled crack exposing a very short worn gold-red Zhaoming array line beneath the surface. Include frost, chipped edges, weight, and vertical pressure. It should feel like old imperial engineering now used as a prison and defense line. No wide battle, no pure snowfield, no blue-purple magic.",
+      "negative_prompt": "soft immortal snow mountain, pure white snow-only scene, shiny heroic fortress, full army poster, giant monster swarm, glowing spell wall, large magic circle, bright blue-purple battle light, readable text, labels, fantasy map, watermark"
+    },
+    {
+      "prompt_id": "base_material_prompt_jinhe_steam_production_v01",
+      "asset_id": "material_jinhe_steam_production_v01",
+      "name_cn": "金河蒸汽生产",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_jinhe_steam_production_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "base_material_board",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "global tactile material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+          "role": "Jinhe color transition reference"
+        }
+      ],
+      "continuity_references": [
+        "project/severed-homeland/art/project-base-material-boards.md#金河蒸汽生产",
+        "project/severed-homeland/art/project-regional-color-system.md#金河",
+        "project/severed-homeland/bible/scenes.md"
+      ],
+      "design_lock": "Jinhe production materials are wet, working, grain-controlled, and non-playful. Steam must reveal machinery and labor traces instead of becoming a decorative fog.",
+      "image_prompt": "Create one vertical 9:16 cinematic base material board for Jinhe steam production. No text labels. Arrange wet and working fragments: deep river green-blue water stains on wood, damp dock post grain, soaked grain sack fabric, official grain-yellow tag with no readable writing, iron-gray waterwheel tooth, millstone edge, oil-black bearing, dark gear with ground-off old military marking, wet rope, riveted pipe joint, translucent steam condensation, worn copper-gold measurement mark, and a small broken gold-red line on an old water marker. The board should feel like civilization preserved as production infrastructure under grain control, not cheerful steampunk. Keep the steam semi-transparent so oil, hand wear, and mechanics remain readable.",
+      "negative_prompt": "modern harbor, modern ship, sci-fi machine UI, orange cheerful steampunk amusement park, bright polished brass fantasy machine, clean factory catalog, luxury gold light, readable labels, text, color chips, tiny decorative creek, watermark"
+    },
+    {
+      "prompt_id": "base_material_prompt_northern_bonewood_fur_v01",
+      "asset_id": "material_northern_bonewood_fur_v01",
+      "name_cn": "北境骨木皮草",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "base_material_board",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "global tactile material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "role": "current Wanshou bonewood material reference only"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "north ecology and color reference"
+        }
+      ],
+      "continuity_references": [
+        "project/severed-homeland/art/project-base-material-boards.md#北境骨木皮草",
+        "project/severed-homeland/art/project-regional-color-system.md#北境",
+        "project/severed-homeland/bible/characters.md#北境兽族与半兽人建模角色"
+      ],
+      "design_lock": "Northern material language uses bone, wood, bark, rawhide, fur, ash, ochre, and survival fire. It must not use metal, advanced technology, gemstones, or a single animal mascot logic.",
+      "image_prompt": "Create one vertical 9:16 cinematic base material board for Northern bone, wood, and fur. No text labels. Build a tactile still-life of low-technology cold-survival craft: carved bone plates, antler branches, tooth crescents, old wind-eroded wood, bark strips, rawhide cord, sinew knots, layered white deer fur, silver fox or snow-leopard fur edge, dark brown hide, frozen earth grains, dry yellow grass, ash-black burn marks, ochre pigment scratches, dark blood-red oath cord, bone flute hole detail, and a tiny ice-blue survival fire reflection on bone. Use the current Wanshou emblem only as material language for bonewood knots and multi-clan carved signs; do not recreate it as a standalone emblem. Mood: sacred, practical, cold, noble, handmade, no metal.",
+      "negative_prompt": "metal, iron, brass, gold, silver, machinery, advanced technology, gemstones, polished jewelry fantasy, game orc camp, single wolf mascot, cute animal, full monster swarm, pure white snowfield, blue-purple magic, readable text, labels, watermark"
+    }
+  ]
+}

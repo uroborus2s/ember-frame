@@ -2,7 +2,7 @@
 
 Date: 2026-06-02
 
-Scope: Maintain one current public art reference emblem per faction for the Zhaoming Empire, Suming State / Qingming Court, and Northern Beastfolk Tribal Alliance. Zhaoming and Northern Beastfolk use the accepted v02 revisions as current images; Suming keeps the approved v01 image. Earlier v03/v04 faction flag sheets were not used as source images or redraw bases.
+Scope: Maintain one current public art reference emblem per faction for the Zhaoming Empire, Suming State / Qingming Court, and Northern Beastfolk Tribal Alliance. Zhaoming and Northern Beastfolk use the accepted v02 revisions as current images; Suming uses the user-corrected angular white wing-blade v01 image. Earlier v03/v04 faction flag sheets were not used as source images or redraw bases.
 
 ## Deliverables
 
@@ -16,6 +16,8 @@ Scope: Maintain one current public art reference emblem per faction for the Zhao
   - Current v02 background thread plan and thread IDs.
 - `project/severed-homeland/art/project-faction-emblem-thread-results.json`
   - Historical v01 thread outputs, generation IDs, and asset paths.
+- `project/severed-homeland/art/project-faction-emblem-thread-results-v02.json`
+  - Current v02 results for Zhaoming and Northern revisions, with Suming locked to the user-confirmed v01 image.
 - `project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png`
   - Current Zhaoming Empire emblem, v02.
 - `project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png`
@@ -36,7 +38,7 @@ Scope: Maintain one current public art reference emblem per faction for the Zhao
 | Asset | Current Version | Result | Notes |
 | --- | --- | --- | --- |
 | Zhaoming Empire | v02 | PASS | Single centered maritime sun-and-moon emblem. The current image reads as an advanced imperial astrolabe/compass seal with gold sun rays, moon-white ring, and deep vermilion craft language. |
-| Suming State / Qingming Court | v01 | PASS | Single centered emblem. The outer insect motif is thin and subordinate, not oversized. The black sun's white halo contains visible black seepage, soot cracks, and overflow. |
+| Suming State / Qingming Court | v01 corrected | PASS | User-corrected current image from the 2026-06-02 message: angular white wing-blade geometry over a black sun disk, cracked white halo, black seepage, and no oversized insect body. |
 | Northern Beastfolk Tribal Alliance | v02 | PASS | Single centered Wanshou alliance emblem. The current image uses bone, antler, old wood, hide cord, ash, and pigment, with no metal or advanced technology cues. |
 
 ## Technical Verification

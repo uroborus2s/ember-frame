@@ -1,0 +1,120 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "season": "season-01",
+  "asset_batch": "project_base_material_boards_v01",
+  "date": "2026-06-02",
+  "status": "planning_ready_pending_image_generation",
+  "scope": "project-level base material boards for faction, region, prop, costume, and location continuity",
+  "source_inputs": [
+    "project/severed-homeland/背景.md",
+    "project/severed-homeland/bible/characters.md",
+    "project/severed-homeland/bible/scenes.md",
+    "project/severed-homeland/bible/continuity.md",
+    "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+    "project/severed-homeland/art/project-regional-color-system.md",
+    "project/severed-homeland/art/project-faction-emblem-asset-qc-report.md"
+  ],
+  "style_lock": {
+    "core_sentence": "把全剧低魔冷峻东方史诗的材质语言拆成五个可复用材质世界：昭明旧物、清明院虫蜡白、边墙黑石雪线、金河蒸汽生产、北境骨木皮草。",
+    "image_family": "vertical 9:16 cinematic tactile still-life material boards",
+    "continuity_priority": [
+      "material differentiation must stay stronger than isolated image beauty",
+      "current faction emblems are references only and must not be redesigned or overwritten",
+      "Zhaoming old objects are advanced, maritime, astronomical, worn, and morally complex",
+      "Qingming white is insect-wax institutional violence, not hospital white",
+      "Border Wall blackstone and snowline must feel heavy, cold, engineered, and carceral",
+      "Jinhe steam production must remain wet, grain-controlled, and non-playful",
+      "Northern material language uses bone, wood, fur, rawhide, ash, ochre, and survival fire without metal technology"
+    ]
+  },
+  "emblem_reference_policy": {
+    "use_current_emblems_only": true,
+    "current_emblem_paths": [
+      "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png"
+    ],
+    "rules": [
+      "Use current emblem PNGs only as shape, material, and faction-mark references.",
+      "Do not redesign, redraw, replace, or overwrite any faction emblem file.",
+      "When emblem language appears inside a material board, it must be partial, cropped, carved, reflected, cracked, sealed, or obstructed as environmental material detail.",
+      "Do not reference historical emblem files unless explicitly comparing old versions."
+    ]
+  },
+  "planned_assets": [
+    {
+      "asset_id": "material_zhaoming_relic_v01",
+      "prompt_id": "base_material_prompt_zhaoming_relic_v01",
+      "name_cn": "昭明旧物",
+      "type": "base_material_board_image",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "aspect_ratio": "9:16",
+      "status": "not_generated",
+      "downstream_usage": "Zhaoming relics, sun-moon tokens, old relay road props, Southern Old Empire remnants"
+    },
+    {
+      "asset_id": "material_qingming_insect_wax_white_v01",
+      "prompt_id": "base_material_prompt_qingming_insect_wax_white_v01",
+      "name_cn": "清明院虫蜡白",
+      "type": "base_material_board_image",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "aspect_ratio": "9:16",
+      "status": "not_generated",
+      "downstream_usage": "Qingming Institution interiors, Bai Yi official material system, registries, wax needles, identification rings"
+    },
+    {
+      "asset_id": "material_border_wall_blackstone_snowline_v01",
+      "prompt_id": "base_material_prompt_border_wall_blackstone_snowline_v01",
+      "name_cn": "边墙黑石雪线",
+      "type": "base_material_board_image",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+      "aspect_ratio": "9:16",
+      "status": "not_generated",
+      "downstream_usage": "Border Wall, Suohou Pass, Hanya Fort, wall soldiers, old engineering scars"
+    },
+    {
+      "asset_id": "material_jinhe_steam_production_v01",
+      "prompt_id": "base_material_prompt_jinhe_steam_production_v01",
+      "name_cn": "金河蒸汽生产",
+      "type": "base_material_board_image",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_jinhe_steam_production_v01.png",
+      "aspect_ratio": "9:16",
+      "status": "not_generated",
+      "downstream_usage": "Jinhe grain mill district, docks, production machinery, grain control props"
+    },
+    {
+      "asset_id": "material_northern_bonewood_fur_v01",
+      "prompt_id": "base_material_prompt_northern_bonewood_fur_v01",
+      "name_cn": "北境骨木皮草",
+      "type": "base_material_board_image",
+      "expected_output_path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+      "aspect_ratio": "9:16",
+      "status": "not_generated",
+      "downstream_usage": "Northern beastfolk alliance, Luming line, Minggu Ridge, tribal props, noble fur costume language"
+    }
+  ],
+  "negative_style_locks": [
+    "visible text labels",
+    "color card names",
+    "modern product catalog",
+    "clean plastic",
+    "sci-fi user interface",
+    "high-magic spell circles",
+    "blue-purple xianxia glow",
+    "single gray-blue palette flattening",
+    "luxury treasure pile",
+    "modern military hardware",
+    "hospital laboratory white",
+    "cheerful steampunk",
+    "game orc camp",
+    "cute animal mascot"
+  ],
+  "image_generation": {
+    "status": "not_started",
+    "reason": "Prompt plan and output paths are prepared; background image-generation thread has not been launched yet.",
+    "prompt_source": "project/severed-homeland/prompts/project-base-material-board-image-prompts.json",
+    "thread_plan": "project/severed-homeland/art/project-base-material-board-thread-plan.json",
+    "thread_results": "project/severed-homeland/art/project-base-material-board-thread-results.json"
+  }
+}

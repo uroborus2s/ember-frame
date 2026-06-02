@@ -6,7 +6,7 @@
     "mode": "revise_selected_emblems_with_new_threads",
     "historical_image_policy": "Do not use historical v03/v04 faction flag sheets. Use only the user's new Zhaoming reference image and the written art direction below.",
     "current_image_policy": "Active references use stable unversioned PNG paths under project/severed-homeland/assets/style/faction-emblems/. Before accepting a regenerated image, archive the previous current PNG under project/severed-homeland/assets/style/faction-emblems/history/ with the next _vNN filename, then overwrite the stable current path.",
-    "reuse_policy": "Reuse the existing Suming State / Qingming Court emblem from v01; do not regenerate it.",
+    "reuse_policy": "Use the user-corrected Suming State / Qingming Court emblem from v01; do not regenerate it. The user explicitly corrected the target to the angular white wing-blade emblem over the black sun on 2026-06-02.",
     "delivery_rule": "Each faction emblem remains one standalone current image with a stable unversioned output path."
   },
   "reference_images": [
@@ -40,7 +40,7 @@
     {
       "id": "emblem_suming_qingming_state_v01",
       "faction": "Suming State / Qingming Court",
-      "status": "reuse_existing_current",
+      "status": "user_locked_current",
       "output_file": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png"
     },
     {

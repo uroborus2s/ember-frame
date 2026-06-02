@@ -2,7 +2,7 @@
   "project": "severed-homeland",
   "asset_batch": "project_faction_emblems_v02",
   "date": "2026-06-02",
-  "project_root": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland",
+  "project_root": "project/severed-homeland",
   "mode": "new background threads for selected revisions; reuse approved Suming emblem",
   "prompt_source": "project/severed-homeland/prompts/project-faction-emblem-prompts-v02.json",
   "output_dir": "project/severed-homeland/assets/style/faction-emblems",
@@ -35,9 +35,9 @@
     {
       "faction": "Suming State / Qingming Court",
       "asset_id": "emblem_suming_qingming_state_v01",
-      "status": "reuse_existing",
+      "status": "user_locked_current",
       "output_file": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
-      "reason": "User approved the previous Suming design and requested no redesign."
+      "reason": "User corrected the target to the angular white wing-blade emblem over the black sun on 2026-06-02. Use this exact stable current image and do not regenerate."
     }
   ],
   "acceptance_checks": [
@@ -45,7 +45,7 @@
     "Zhaoming v02 has higher craft value and nautical feeling than v01.",
     "Wanshou v02 contains no metal, gold, iron, brass, machinery, or technology-tree cues.",
     "Wanshou v02 uses bone, wood, antler, tooth, bark, hide cord, and carved natural pigments as its primary material language.",
-    "Suming remains the approved v01 image without regeneration.",
+    "Suming uses the user-corrected angular white wing-blade v01 image without regeneration.",
     "Each final asset is one independent faction emblem image with no text or multi-panel sheet layout.",
     "Current asset references remain on stable unversioned paths; any replaced image is archived under the history directory with a versioned filename."
   ]

@@ -1,0 +1,134 @@
+{
+  "project": "severed-homeland",
+  "asset_batch": "project_faction_symbol_system_v01",
+  "date": "2026-06-02",
+  "source_art_direction": "project/severed-homeland/art/project-faction-symbol-system.md",
+  "purpose": "PNG concept boards for faction symbol systems, using existing completed faction emblems as direct image references where available.",
+  "shared_rules": {
+    "format": "single PNG concept board, production art reference, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile materials, realistic prop and environment symbol design, readable in 9:16 close-ups",
+    "must_have": [
+      "no visible text inside image",
+      "no UI layout",
+      "no watermark",
+      "no modern logo treatment",
+      "symbols shown as physical marks on cloth, wax, stone, paper, metal, bone, wood, ceramic, leather, or cord",
+      "clear continuity with project style board and regional color system"
+    ],
+    "negative_prompt": "visible text, captions, letters, Chinese characters, watermark, UI mockup, modern logo sheet, sports logo, neon, cyberpunk, sci-fi interface, high-magic glowing spell circle, character portrait, fashion model sheet"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_symbol_zhaoming_sunmoon_system_v01",
+      "asset_id": "symbol_zhaoming_sunmoon_system_v01",
+      "faction": "Zhaoming Empire",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "required root emblem reference; preserve maritime astrolabe, sun-moon, gold, vermilion, moon-white ring direction"
+        }
+      ],
+      "image_prompt": "Create one PNG concept board for the Zhaoming Empire sun-and-moon symbol system. Use the provided current Zhaoming emblem image as the direct root reference. Extend it into physical production motifs: an old imperial sun-moon astrolabe seal, a half-broken relay token mark, gold-red route lines on old white stone, moon-white jade inlay, dry blood-writ edge marks, and a torn vermilion flag fragment pressed into snow mud. Materials: aged gold, deep vermilion lacquer, moon-white ceramic or jade, old white stone, worn textile, cracked enamel. Mood: advanced old maritime and astronomical empire, expensive but ancient, beautiful but morally weathered. The board should contain no labels, no visible text, no captions, and no UI. Keep every symbol visibly worn, cracked, obscured, or partially erased; avoid perfect sacred victory emblem.",
+      "negative_prompt": "perfect holy emblem, modern national flag, sports logo, generic sun icon, bright divine gold blast, clean victory banner, readable text, Chinese characters, watermark, UI labels"
+    },
+    {
+      "prompt_id": "prompt_symbol_suming_qingming_system_v01",
+      "asset_id": "symbol_suming_qingming_system_v01",
+      "faction": "Suming State / Qingming Court",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "role": "required user-locked root emblem reference; preserve angular white wing-blade over black sun"
+        }
+      ],
+      "image_prompt": "Create one PNG concept board for the Suming State and Qingming Court white-wing black-sun symbol system. Use the provided current Suming/Qingming emblem image as the direct root reference and do not replace it with another emblem. Extend it into physical institutional marks: full white wing-blades covering a black sun for central offices, black sun stamp inside a white register frame, insect-wax white seal strips covering scraped Zhaoming sun-moon marks, cold white Qingming incense thread on cloth, insect-wax needle line, and a small military chitin plaque for the Armor Army Office. Materials: insect-wax white, bone white, pearl grey cracked glaze, black ink disk, cold gold pins, black-green chitin, old iron. Mood: clean, cold, bureaucratic, inhuman, no dust, no warmth. The board should contain no labels, no visible text, no captions, and no UI.",
+      "negative_prompt": "large insect body as logo, soft angel wings, dirty monster nest, blood laboratory, warm temple halo, blue-white hospital sci-fi, modern national flag, readable text, Chinese characters, watermark"
+    },
+    {
+      "prompt_id": "prompt_symbol_northern_wanshou_system_v01",
+      "asset_id": "symbol_northern_wanshou_system_v01",
+      "faction": "Northern Beastfolk Tribal Alliance",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "role": "required root emblem reference; preserve bone, antler, old wood, rawhide, ash, ochre, multi-clan oath direction"
+        }
+      ],
+      "image_prompt": "Create one PNG concept board for the Northern Beastfolk Tribal Alliance Wanshou symbol system. Use the provided current Northern Wanshou emblem image as the direct root reference. Extend it into physical multi-clan oath motifs: bone-and-wood central oath knot, antler branch marks, wolf-ear cuts, bear claw notches, ram horn curves, raven feather wood chips, boar tusk crescents, turtle-shell oath ring, rawhide cord knots, ash-black burn marks, ochre pigment, and a tiny ice-blue survival fire accent. The design must represent many beast clans united, not one animal mascot. Materials only: carved bone, antler, tooth, old wood, bark, rawhide cord, sinew, ash, ochre, worn hide. The board should contain no labels, no visible text, no captions, and no UI.",
+      "negative_prompt": "metal, gold, silver, iron, bronze, polished brass, gemstones, machinery, mechanical symmetry, single wolf head, single lion mascot, cute animal, monster horde, readable text, Chinese characters, watermark"
+    },
+    {
+      "prompt_id": "prompt_symbol_grey_wall_army_system_v01",
+      "asset_id": "symbol_grey_wall_army_system_v01",
+      "faction": "Grey Wall Army",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_grey_wall_army_system_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material language reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "border wall palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "old inherited mark reference only; use as almost-erased pressure mark, not as a clean Grey Wall emblem"
+        }
+      ],
+      "image_prompt": "Create one PNG concept board for the Grey Wall Army symbol system. This faction has no clean official emblem; do not design a new national crest. Build a practical worn guard-wall mark system from black stone wall blocks, old iron spear-wall lines, grey wall cloth, bone whistle holes, snow mud, dried dark red battle wear, ration-board cuts, and inherited armor plates with almost-erased sun-moon pressure marks. The Zhaoming reference image may only inform the faint old pressure mark on armor, never a full clean emblem. Show marks as they appear on wall scarves, armor plates, gate boards, bone whistles, spear racks, and grain-control boards. Mood: organized, cold, worn, survival-driven, military but not heroic. The board should contain no labels, no visible text, no captions, and no UI.",
+      "negative_prompt": "new official crest, shiny heroic army emblem, complete Zhaoming emblem, Qingming white-wing black-sun allegiance mark, ragged beggar militia, modern military patch, readable text, Chinese characters, watermark"
+    },
+    {
+      "prompt_id": "prompt_symbol_wallfoot_hybrids_system_v01",
+      "asset_id": "symbol_wallfoot_hybrids_system_v01",
+      "faction": "Wallfoot Hybrids",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_wallfoot_hybrids_system_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material language reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "wallfoot and border palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "torn flag scrap reference only; do not create a clean official hybrid emblem"
+        }
+      ],
+      "image_prompt": "Create one PNG concept board for the Wallfoot Hybrids symbol system. This group has no official national emblem; do not design a formal crest. Build a hidden, tradeable, survivable mark system from grey-blue market cloth, terracotta pottery shards, black wood pass tags, old yellow cloth, rope knots, hidden pocket stitching, tiny dark-green scale arcs, and a torn sun-moon flag scrap pressed under grey-blue cord. Show marks as practical objects: a pottery shard charm with two holes and a broken path line, a black wood pass tag with one shaved corner, a stall cloth knot, a hidden garment stitch, a black-market doorway token, and an open new-blood broken-path mark. Mood: mixed, cautious, lived-in, organized, unofficial. The board should contain no labels, no visible text, no captions, and no UI.",
+      "negative_prompt": "formal national crest, holy alliance emblem, modern gang logo, beggar slum sign, monsterized hybrid mark, full bright sun-moon flag, readable text, Chinese characters, watermark"
+    },
+    {
+      "prompt_id": "prompt_style_faction_symbol_systems_overview_v01",
+      "asset_id": "style_faction_symbol_systems_overview_v01",
+      "faction": "Project overview",
+      "output_file": "project/severed-homeland/assets/style/faction-symbol-boards/style_faction_symbol_systems_overview_v01.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "Zhaoming root emblem reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "role": "Suming/Qingming root emblem reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "role": "Northern Wanshou root emblem reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "project material palette reference"
+        }
+      ],
+      "image_prompt": "Create one PNG overview board comparing five faction symbol systems for internal art direction: Zhaoming sun-moon old empire, Suming/Qingming white-wing black-sun institution, Northern Wanshou bone-wood multi-clan oath, Grey Wall Army worn guard-wall marks, and Wallfoot Hybrid hidden trade marks. Use the three completed faction emblem images directly as root references for the first three systems. Keep Grey Wall and Wallfoot as object-based symbol systems rather than new crests. Arrange five distinct material zones with physical symbol samples, no text, no labels, no captions, no UI. The board should feel cohesive with the low-magic eastern epic style board and regional palette.",
+      "negative_prompt": "visible labels, captions, letters, Chinese characters, UI layout, modern presentation board, modern logo sheet, overbright magic, character portraits, watermark, replacing the existing emblems"
+    }
+  ]
+}

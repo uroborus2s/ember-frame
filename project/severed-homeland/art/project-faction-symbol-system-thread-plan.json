@@ -1,0 +1,51 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_faction_symbol_system_v01",
+  "date": "2026-06-02",
+  "status": "ready_for_background_generation",
+  "prompt_source": "project/severed-homeland/prompts/project-faction-symbol-system-image-prompts.json",
+  "art_direction": "project/severed-homeland/art/project-faction-symbol-system.md",
+  "output_dir": "project/severed-homeland/assets/style/faction-symbol-boards",
+  "batches": [
+    {
+      "batch_id": "faction-symbol-boards",
+      "thread_title": "断航故土 阵营符号系统 PNG 资源板 v01",
+      "output_dir": "project/severed-homeland/assets/style/faction-symbol-boards",
+      "prompt_ids": [
+        "prompt_symbol_zhaoming_sunmoon_system_v01",
+        "prompt_symbol_suming_qingming_system_v01",
+        "prompt_symbol_northern_wanshou_system_v01",
+        "prompt_symbol_grey_wall_army_system_v01",
+        "prompt_symbol_wallfoot_hybrids_system_v01",
+        "prompt_style_faction_symbol_systems_overview_v01"
+      ],
+      "expected_files": [
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_grey_wall_army_system_v01.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_wallfoot_hybrids_system_v01.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/style_faction_symbol_systems_overview_v01.png"
+      ],
+      "reference_inputs": [
+        "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+        "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png"
+      ],
+      "retry_policy": {
+        "max_parent_retry_without_user_approval": 1,
+        "retry_on": [
+          "visible text, captions, watermarks, or UI labels in image",
+          "first three systems do not visibly derive from completed current emblems",
+          "Grey Wall Army is treated as a clean new national crest",
+          "Wallfoot Hybrids is treated as a clean new national crest",
+          "Northern system collapses into a single animal mascot",
+          "high-magic glowing sigil or modern logo style appears"
+        ]
+      }
+    }
+  ]
+}

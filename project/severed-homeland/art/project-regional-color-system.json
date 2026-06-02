@@ -115,19 +115,19 @@
     {
       "region_id": "qingming_institution",
       "name_cn": "清明院",
-      "narrative_function": "洁净制度暴力；白色吞掉人的生活色。",
+      "narrative_function": "旧帝国议会大厦被清明制度接管；威严旧建筑外壳内长出虫蜡、蜂巢与洁净制度暴力。",
       "episode_scope": ["01", "05", "06", "12"],
       "palette": {
         "primary": [
-          {"name_cn": "虫蜡白", "hex": "#DDD8C8", "usage": "墙面、封条、针具托盘、走廊反光"},
-          {"name_cn": "骨白", "hex": "#CFC6B4", "usage": "桌面、门洞、识别环、儿童白衣"}
+          {"name_cn": "虫蜡白", "hex": "#DDD8C8", "usage": "覆盖旧议会墙面、封条、针具托盘、走廊反光、膜帘"},
+          {"name_cn": "骨白", "hex": "#CFC6B4", "usage": "旧议会桌面、门洞、识别环、儿童白衣、蜂巢壁龛"}
         ],
         "secondary": [
-          {"name_cn": "珍珠灰", "hex": "#B8B9B3", "usage": "地砖、灯槽、白册阴影"},
+          {"name_cn": "珍珠灰", "hex": "#B8B9B3", "usage": "旧白石地砖、灯槽、白册阴影、议会穹顶冷反光"},
           {"name_cn": "冷金", "hex": "#9C8C5F", "usage": "官制小钉、边角金属、白翳高阶标识"}
         ],
         "power_overlay": [
-          {"name_cn": "黑日", "hex": "#101111", "usage": "白翅覆黑日徽记、册封印、门心"},
+          {"name_cn": "黑日", "hex": "#101111", "usage": "白翅覆黑日徽记、册封印、主厅墙心、门心"},
           {"name_cn": "暗绿甲壳", "hex": "#1B2B24", "usage": "门卫复眼、护颚、刃肢局部"}
         ],
         "accents": [
@@ -136,17 +136,23 @@
         ]
       },
       "lighting": "冷白顶光、硬边阴影、无尘长廊反光；少量血色越少越刺眼。",
-      "material_keys": ["白册", "虫蜡针", "蜂巢孔", "记忆室门洞", "白翅覆黑日", "半透明虫膜"],
+      "architectural_origin": "昭明旧帝国议会大厦；外观和主厅仍保留高大威严的旧议会轴线、白石柱列和大厅尺度。",
+      "insectoid_conversion": "肃明/清明改造集中在内部表皮：虫蜡白膜、蜂巢孔壁龛、半透明虫膜帘、白册架、虫蜡针具、黑日权力标记。",
+      "material_keys": ["旧帝国议会白石", "白册", "虫蜡针", "蜂巢孔", "记忆室门洞", "白翅覆黑日", "半透明虫膜", "虫蜡膜帘"],
       "camera_rules": [
-        "Compress characters with repeated white doorways and top-down light.",
+        "Preserve the grand imperial council axis and high hall scale, then show insect-wax and honeycomb conversion inside that old shell.",
+        "Compress characters with high white-stone walls, old council columns, honeycomb niches, repeated white doorways, and top-down light.",
         "Keep human identity colors visible but desaturated under the institutional white.",
-        "Bai Yi carries this palette into other regions as an inserted power slice."
+        "Bai Yi carries this palette into other regions as an inserted power slice.",
+        "Honeycomb cells, insect-wax membrane curtains, blank registries, and tool closeups may form a production-board collage, but must not contain readable inscriptions."
       ],
       "forbidden": [
         "modern hospital white",
         "science-fiction blue UI",
         "dirty monster cave",
-        "warm religious sanctuary"
+        "warm religious sanctuary",
+        "ordinary plain white corridor",
+        "erasing all old imperial council architecture"
       ]
     },
     {
