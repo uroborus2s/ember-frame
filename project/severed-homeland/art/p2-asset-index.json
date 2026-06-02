@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "P2 secondary character asset index",
+  "status": "completed",
+  "source_designs": "art/p2-secondary-character-designs.json",
+  "source_prompts": "prompts/p2-character-image-prompts.json",
+  "thread_results": "art/p2-thread-results.json",
+  "assets": [
+    {
+      "asset_id": "char_luo_qinghe_v01",
+      "name": "罗青禾",
+      "type": "character_sheet",
+      "priority": "P2-secondary",
+      "prompt_id": "char_luo_qinghe_v01_sheet_prompt",
+      "path": "assets/characters/v01/char_luo_qinghe_v01_sheet.png",
+      "status": "generated_ready",
+      "qc_notes": "Regenerated after user feedback; now reads as a beautiful 37-year-old mother rather than elderly.",
+      "downstream_usage": "Episode 01 medicine-house blocking, deathbed handoff, Shen family memory references."
+    },
+    {
+      "asset_id": "char_meng_guicang_v01",
+      "name": "孟归藏",
+      "type": "character_sheet",
+      "priority": "P2-secondary",
+      "prompt_id": "char_meng_guicang_v01_sheet_prompt",
+      "path": "assets/characters/v01/char_meng_guicang_v01_sheet.png",
+      "status": "generated_ready",
+      "downstream_usage": "Archive witness scenes, burned book evidence, Qingming identifier exposition."
+    },
+    {
+      "asset_id": "char_lu_mi_v01",
+      "name": "鹿弥",
+      "type": "character_sheet",
+      "priority": "P2-secondary",
+      "prompt_id": "char_lu_mi_v01_sheet_prompt",
+      "path": "assets/characters/v01/char_lu_mi_v01_sheet.png",
+      "status": "generated_ready",
+      "downstream_usage": "Northern snowfield contact, frost-hoof cultural continuity, bone flute and snow herb prop references."
+    },
+    {
+      "asset_id": "char_li_tang_v01",
+      "name": "厉螳",
+      "type": "character_sheet",
+      "priority": "P2-secondary",
+      "prompt_id": "char_li_tang_v01_sheet_prompt",
+      "path": "assets/characters/v01/char_li_tang_v01_sheet.png",
+      "status": "generated_ready",
+      "downstream_usage": "Armor Army Office pursuit, Hanya Fort control, direct martial threat frames."
+    },
+    {
+      "asset_id": "char_gu_huaizhang_v01",
+      "name": "顾怀章",
+      "type": "memory_character_sheet",
+      "priority": "P2-secondary-requested",
+      "registry_priority": 3,
+      "prompt_id": "char_gu_huaizhang_v01_memory_sheet_prompt",
+      "path": "assets/characters/v01/char_gu_huaizhang_v01_sheet.png",
+      "status": "generated_ready",
+      "downstream_usage": "Yan Nanzhi memory inserts, blood-treaty command frames, southern teacher pressure voice continuity."
+    },
+    {
+      "asset_id": "p2_secondary_character_lineup_v01",
+      "name": "P2 次级角色区分总板",
+      "type": "lineup_board",
+      "priority": "P2-secondary",
+      "prompt_id": "p2_secondary_character_lineup_v01_prompt",
+      "path": "assets/characters/v01/p2_secondary_character_lineup_v01.png",
+      "status": "generated_ready",
+      "qc_notes": "Regenerated after Luo Qinghe age feedback; Luo now reads younger than the first lineup version.",
+      "downstream_usage": "Prompt Room and Director Room quick reference for profession/faction differentiation."
+    }
+  ],
+  "blocked_assets": [],
+  "qc_summary": {
+    "prompt_traceability": "pass",
+    "expected_paths": "pass",
+    "image_file_presence": "pass",
+    "continuity_risk": [
+      "Lu Mi can drift into a literal deer-person; keep features cultural and subtle.",
+      "Li Tang can drift too close to Bai Yi; keep dark military physicality and avoid Qingming white official styling.",
+      "Gu Huaizhang is registry priority 3 but included because the user explicitly requested him in this P2 batch."
+    ]
+  }
+}

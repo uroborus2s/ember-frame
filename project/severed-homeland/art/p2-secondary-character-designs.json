@@ -1,0 +1,259 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "P2 secondary character reusable character design specs",
+  "status": "ready_for_image_generation",
+  "source_files": [
+    "bible/characters.md",
+    "bible/character-visual-locks.json",
+    "bible/asset-registry.json",
+    "assets/asset-index.json"
+  ],
+  "requested_asset_ids": [
+    "char_luo_qinghe_v01",
+    "char_meng_guicang_v01",
+    "char_lu_mi_v01",
+    "char_li_tang_v01",
+    "char_gu_huaizhang_v01"
+  ],
+  "global_continuity_rules": [
+    "Grounded eastern epic fantasy; restrained low-magic; worn but readable materials.",
+    "P2 characters should be distinct by profession and faction at first glance, without overpowering P1 leads.",
+    "Poor or field-worn clothing may be dusty, patched, burned, or repaired, but should not become shredded beggar rags unless explicitly required.",
+    "Zhaoming symbols, when visible, use symbol_zhaoming_sunmoon_v03: a moon-white crescent inside a worn golden sun wheel as one fused badge.",
+    "Sumin symbols, when visible, use symbol_suming_whitewing_blackhalo_v03: abstract white wings covering a haloed black sun."
+  ],
+  "characters": [
+    {
+      "asset_id": "char_luo_qinghe_v01",
+      "name": "罗青禾",
+      "registry_priority": 2,
+      "batch_priority": "P2-secondary",
+      "role": "37-year-old village medic, Shen Weisang's mother, old relay sign keeper",
+      "design_goal": "Make her feel like a grounded Canyang Ao healer and the beautiful, resilient 37-year-old emotional source of the escort promise, not a mystic priestess or an old woman.",
+      "silhouette": "graceful 37-year-old village healer, compact practical layers, protective forward lean when shielding a child or patient, mature beauty without old-woman frailty",
+      "face_hair": "beautiful 37-year-old mother, warm but resilient eyes, practical concentration, light village-work fatigue but not elderly; hair covered or tied under a blue-green cloth head wrap",
+      "wardrobe": "plain intact village medic clothing in muted gray and earth brown, blue-green head cloth, patched apron or medicine-house work layer, herb stains and smoke dust",
+      "fixed_props": [
+        "herb basket",
+        "medicine cabinet drawer or plank with hidden relay signs",
+        "half Sun-Moon relay token handoff prop"
+      ],
+      "palette": ["herb green", "blue-green cloth", "plain gray", "earth brown", "old bronze"],
+      "pose_and_expression_anchors": [
+        "uses herb names as cover for old relay signs",
+        "shields others before explaining",
+        "deathbed handoff posture should be intimate and restrained"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_luo_qinghe_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_luo_qinghe_v01_sheet.png",
+          "layout": "vertical character sheet with half-body, full-body, protective pose, herb basket close-up, hidden relay sign detail, relay token handoff detail"
+        }
+      ],
+      "continuity_locks": [
+        "beautiful 37-year-old grounded local medic",
+        "no priestess glamour",
+        "must not read as an old woman",
+        "head cloth and herb basket must remain",
+        "old relay signs should be hidden in ordinary medicine-house material rather than displayed as magic"
+      ],
+      "negative_notes": [
+        "no clean court robe",
+        "no ornate healer staff",
+        "no glowing spell circle",
+        "no ragged beggar styling"
+      ],
+      "downstream_usage": "Used for episode 01 memory/deathbed references, Canyang Ao medicine-house blocking, and Shen Weisang family continuity."
+    },
+    {
+      "asset_id": "char_meng_guicang_v01",
+      "name": "孟归藏",
+      "registry_priority": 2,
+      "batch_priority": "P2-secondary",
+      "role": "Old Book Society witness and burned archive keeper",
+      "design_goal": "Make him an ash-damaged witness who protects evidence, not an elegant scholar or generic beggar.",
+      "silhouette": "thin adult scholar-traveler, hunched protectively around a burned book box, suspicious shoulders and quick hands",
+      "face_hair": "one burned brow, ash stains, sharp archival eyes, smoke-dried messy hair",
+      "wardrobe": "dark patched scholar-traveler clothing, scorched sleeve edge, soot-stained travel wrap, paper and bone-clip utility ties",
+      "fixed_props": [
+        "burned book box",
+        "bone clips for charred pages",
+        "charred manuscript scraps"
+      ],
+      "palette": ["ash black", "burned brown", "paper yellow", "bone white", "dull ember"],
+      "pose_and_expression_anchors": [
+        "protects pages before people, then regrets it",
+        "speaks through fragments and evidence",
+        "turns his unburned side toward threat while guarding the book box"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_meng_guicang_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_meng_guicang_v01_sheet.png",
+          "layout": "vertical character sheet with half-body, full-body, page-guarding pose, burned brow close-up, book box and bone clip detail"
+        }
+      ],
+      "continuity_locks": [
+        "must show fire damage",
+        "not elegant scholar",
+        "book box and bone clips must remain",
+        "burn scars and ash should be specific but not horror-gore"
+      ],
+      "negative_notes": [
+        "no pristine academy robe",
+        "no court official look",
+        "no fantasy wizard beard",
+        "no clean library backdrop"
+      ],
+      "downstream_usage": "Used for gray-ash archive witness scenes, exposition about book burning and Qingming identifier history, and prop close-ups of charred documents."
+    },
+    {
+      "asset_id": "char_lu_mi_v01",
+      "name": "鹿弥",
+      "registry_priority": 2,
+      "batch_priority": "P2-secondary",
+      "role": "northern frost-hoof shaman and disaster-source seeker",
+      "design_goal": "Make them culturally northern and snow-travel ready, with subtle deer-clan signs instead of a full deer-person fantasy design.",
+      "silhouette": "slender young adult built for snow travel, alert stance, compact layered cloak, light-footed posture",
+      "face_hair": "cold-weather marks, wary but not savage expression, braided or tied hair under fur hood",
+      "wardrobe": "fur-gray and ice-blue northern travel layers, practical snow wraps, weathered cloak, small ritual ties and herb pouches",
+      "fixed_props": [
+        "short antler ornament",
+        "bone flute",
+        "snow herb pouch"
+      ],
+      "palette": ["ice blue", "fur gray", "bone white", "snow shadow", "dry herb green"],
+      "pose_and_expression_anchors": [
+        "listens to wind through bone flute",
+        "protects injured young beast first",
+        "keeps body angled as if reading snow and wind"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_lu_mi_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_lu_mi_v01_sheet.png",
+          "layout": "vertical character sheet with full-body, half-body, flute-listening pose, antler ornament close-up, snow herb pouch detail"
+        }
+      ],
+      "continuity_locks": [
+        "do not over-design into a full deer person",
+        "use cultural signs and subtle features",
+        "bone flute and short antler ornament must remain",
+        "should read as northern disaster-source seeker, not generic forest druid"
+      ],
+      "negative_notes": [
+        "no full antlers growing from skull",
+        "no animal muzzle",
+        "no savage fur bikini",
+        "no glowing nature magic"
+      ],
+      "downstream_usage": "Used for northern tribe contact, frost-hoof cultural continuity, snowfield blocking, and bone flute prop continuity."
+    },
+    {
+      "asset_id": "char_li_tang_v01",
+      "name": "厉螳",
+      "registry_priority": 2,
+      "batch_priority": "P2-secondary",
+      "role": "Mantis military officer of the Armor Army Office",
+      "design_goal": "Make him the direct physical military threat, clearly separate from Bai Yi's clean bureaucratic Qingming menace.",
+      "silhouette": "hard angular shoulders, black-green shell shoulder armor, forward-leaning military threat, short spear line cutting across the body",
+      "face_hair": "severe adult face with partial mantis lines or hard chitin shadow; no calm Qingming mask stillness",
+      "wardrobe": "black-green shell shoulder armor, dark military cloak, practical command belt, old iron fasteners, field-worn martial layers",
+      "fixed_props": [
+        "short spear",
+        "iron gate order token"
+      ],
+      "marks": [
+        "mantis blade shadow rather than constant full blade exposure",
+        "dark chitin accent lines on armor and face edge"
+      ],
+      "palette": ["black green", "old iron", "military dark", "dry mud", "cold shadow"],
+      "pose_and_expression_anchors": [
+        "uses direct force and cuts through bureaucracy",
+        "stands too close when threatening",
+        "occupies doorways and gates like a weapon"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_li_tang_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_li_tang_v01_sheet.png",
+          "layout": "vertical character sheet with full-body, side view, threat pose, short spear detail, iron gate token close-up, mantis blade shadow study"
+        }
+      ],
+      "continuity_locks": [
+        "distinct from Bai Yi: darker, martial, less clean, more physical",
+        "mantis elements are armor and shadow language, not constant exposed giant blades",
+        "must not become polished heroic armor"
+      ],
+      "negative_notes": [
+        "no spotless white Qingming robe",
+        "no bureaucrat stillness",
+        "no oversized fantasy scythe arms",
+        "no protagonist-coded noble armor"
+      ],
+      "downstream_usage": "Used for Armor Army Office pursuit, Hanya Fort control, martial threat boards, and direct confrontation frames."
+    },
+    {
+      "asset_id": "char_gu_huaizhang_v01",
+      "name": "顾怀章",
+      "registry_priority": 3,
+      "batch_priority": "P2-secondary-requested",
+      "role": "southern teacher and pressure voice for Yan Nanzhi",
+      "design_goal": "Make him a memory/edict presence who pressures Yan Nanzhi through ritual duty, not a present frontline fighter.",
+      "silhouette": "upright older ritual scholar, narrow vertical poise, old court discipline, mostly still and frontal as if appearing in memory",
+      "face_hair": "older adult with controlled severity, tired eyes, restrained southern teacher authority; hair and beard neat but travel-faded or memory-softened",
+      "wardrobe": "fragmented old imperial ritual robe, aged white layers, worn gold edging, southern red cord scroll case, robe fragment rather than full imperial regalia",
+      "fixed_props": [
+        "southern red cord scroll",
+        "old imperial robe fragment",
+        "blood-treaty instruction slip"
+      ],
+      "palette": ["aged white", "southern red", "worn gold", "dry ink", "memory shadow"],
+      "pose_and_expression_anchors": [
+        "places duty above safety",
+        "appears through memory, letter, or blood-treaty instruction in season 01",
+        "holds a scroll like an accusation rather than an ornament"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_gu_huaizhang_v01_memory_sheet_prompt",
+          "output_path": "assets/characters/v01/char_gu_huaizhang_v01_sheet.png",
+          "layout": "vertical memory-reference sheet with half-body, full-body, scroll-instruction pose, robe fragment detail, red cord scroll close-up"
+        }
+      ],
+      "continuity_locks": [
+        "do not overuse as present character unless series route is revised",
+        "should read as pressure voice from memory and blood-treaty instruction",
+        "old imperial marks should be fragmented and worn, not triumphant regalia"
+      ],
+      "negative_notes": [
+        "no crown",
+        "no complete palace costume",
+        "no battlefield commander armor",
+        "no warm mentor softness dominating the design"
+      ],
+      "downstream_usage": "Used for Yan Nanzhi memory inserts, blood-treaty command frames, and southern teacher visual continuity."
+    }
+  ],
+  "lineup_board": {
+    "asset_id": "p2_secondary_character_lineup_v01",
+    "prompt_id": "p2_secondary_character_lineup_v01_prompt",
+    "output_path": "assets/characters/v01/p2_secondary_character_lineup_v01.png",
+    "purpose": "One board comparing the five requested secondary characters so their faction, profession, age, and material language stay distinct.",
+    "layout": "vertical lineup board with five simplified full-body figures and prop callouts, no readable text labels"
+  },
+  "handoff": {
+    "main_output": "art/p2-secondary-character-designs.json",
+    "assumptions": [
+      "The user-requested P2 batch includes char_gu_huaizhang_v01 even though the registry currently marks him priority 3.",
+      "This is a project-level reusable asset pass, matching existing P1 files, not a detached episode-specific art-room run."
+    ],
+    "quality_notes": [
+      "Each character has a stable output path under assets/characters/v01 and prompt traceability.",
+      "The batch intentionally avoids new story beats or revised priority metadata in bible/character-visual-locks.json."
+    ],
+    "blocked_questions": []
+  }
+}

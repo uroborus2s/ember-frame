@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "project_id": "severed-homeland",
+  "scope": "P2 secondary character image prompt briefs",
+  "status": "ready_for_image_generation",
+  "source_designs": "art/p2-secondary-character-designs.json",
+  "global_prompt_prefix": "Vertical 9:16 cinematic character design sheet, grounded eastern epic fantasy short drama, realistic worn fabric and prop texture, restrained low-magic, neutral dark studio backdrop, multiple views on one sheet, no readable text labels, no modern objects, no neon, no xianxia glamour.",
+  "global_negative_prompt": "modern clothing, modern weapons, polished heroic armor, pristine palace fantasy, overpowered magic, full angel wings, cute cartoon style, game UI, readable text labels, watermark, ragged beggar clothing unless specified, shredded hems, generic refugees with identical outfits, vague fantasy wizard robes, excessive glowing spell effects",
+  "symbol_references": {
+    "zhaoming": {
+      "asset_id": "symbol_zhaoming_sunmoon_v03",
+      "path": "assets/style/v03/symbol_zhaoming_sunmoon_v03.png",
+      "rule": "moon-white crescent must sit inside a worn golden sun wheel as one fused badge"
+    },
+    "suming": {
+      "asset_id": "symbol_suming_whitewing_blackhalo_v03",
+      "path": "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png",
+      "rule": "abstract white wings cover a black sun with cold halo; old moon mark erased"
+    }
+  },
+  "prompts": [
+    {
+      "prompt_id": "char_luo_qinghe_v01_sheet_prompt",
+      "asset_id": "char_luo_qinghe_v01",
+      "output_path": "assets/characters/v01/char_luo_qinghe_v01_sheet.png",
+      "purpose": "Canyang Ao village medic and old relay sign keeper character sheet",
+      "continuity_references": [
+        "bible/characters.md#罗青禾",
+        "bible/character-visual-locks.json:char_luo_qinghe_v01",
+        "assets/style/v03/symbol_zhaoming_sunmoon_v03.png"
+      ],
+      "downstream_usage": "Episode 01 medicine-house blocking, deathbed handoff, Shen family memory references.",
+      "prompt": "Luo Qinghe, beautiful 37-year-old village medic and Shen Weisang's mother, grounded Canyang Ao healer, warm but resilient eyes, graceful mature beauty, practical concentration, protective posture, light fatigue from village work but clearly not elderly. Plain intact village medic clothing in muted gray and earth brown, blue-green cloth head wrap, patched medicine-house apron, herb stains and smoke dust, poor but not ragged. Include herb basket, ordinary medicine cabinet plank or drawer with hidden old relay signs carved underneath, and a close-up of half old Sun-Moon relay token being handed off: moon-white crescent inside worn golden sun wheel, one fused Zhaoming badge. Show half-body, full-body, protective shielding pose, herb basket detail, hidden relay sign detail, restrained deathbed handoff pose. She must feel local and practical, not a mystic priestess, not an old woman."
+    },
+    {
+      "prompt_id": "char_meng_guicang_v01_sheet_prompt",
+      "asset_id": "char_meng_guicang_v01",
+      "output_path": "assets/characters/v01/char_meng_guicang_v01_sheet.png",
+      "purpose": "Old Book Society witness and burned archive keeper character sheet",
+      "continuity_references": [
+        "bible/characters.md#孟归藏",
+        "bible/character-visual-locks.json:char_meng_guicang_v01"
+      ],
+      "downstream_usage": "Archive witness scenes, burned book evidence, Qingming identifier exposition.",
+      "prompt": "Meng Guicang, adult Old Book Society witness and burned archive keeper, thin scholar-traveler silhouette hunched protectively around a burned book box, suspicious posture, sharp archival eyes. One eyebrow burned away, ash stains on face, smoke-dried messy hair. Dark patched scholar-traveler clothing with scorched sleeve edge, soot-stained travel wrap, paper and bone-clip utility ties, field damaged but not elegant and not generic beggar rags. Include burned book box, bone clips holding charred pages, charred manuscript scraps, close-up of fire damage on brow, page-guarding pose, half-body and full-body views. He must show fire damage and evidence-keeper anxiety, not a clean academy scholar."
+    },
+    {
+      "prompt_id": "char_lu_mi_v01_sheet_prompt",
+      "asset_id": "char_lu_mi_v01",
+      "output_path": "assets/characters/v01/char_lu_mi_v01_sheet.png",
+      "purpose": "Northern frost-hoof shaman and disaster-source seeker character sheet",
+      "continuity_references": [
+        "bible/characters.md#鹿弥",
+        "bible/character-visual-locks.json:char_lu_mi_v01"
+      ],
+      "downstream_usage": "Northern snowfield contact, frost-hoof cultural continuity, bone flute and snow herb prop references.",
+      "prompt": "Lu Mi, young adult northern frost-hoof shaman and disaster-source seeker, slender alert body built for snow travel, wary but not savage face with cold-weather marks, braided or tied hair under a fur hood. Fur-gray and ice-blue northern travel layers, practical snow wraps, weathered cloak, small ritual ties, snow herb pouch. Include short antler ornament as a cultural accessory, bone flute held near the wind, snow herb pouch close-up, full-body and half-body views, flute-listening pose, protective posture toward an injured young beast implied through body language. Subtle deer-clan signs only; do not turn into a full deer person, no animal muzzle, no full antlers growing from skull, no glowing nature magic."
+    },
+    {
+      "prompt_id": "char_li_tang_v01_sheet_prompt",
+      "asset_id": "char_li_tang_v01",
+      "output_path": "assets/characters/v01/char_li_tang_v01_sheet.png",
+      "purpose": "Armor Army Office mantis military officer character sheet",
+      "continuity_references": [
+        "bible/characters.md#厉螳",
+        "bible/character-visual-locks.json:char_li_tang_v01",
+        "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png"
+      ],
+      "downstream_usage": "Armor Army Office pursuit, Hanya Fort control, direct martial threat frames.",
+      "prompt": "Li Tang, adult Mantis military officer of the Armor Army Office, direct physical military threat, hard angular shoulders, forward-leaning posture, severe face with partial mantis lines or dark chitin shadow. Black-green shell shoulder armor, dark military cloak, practical command belt, old iron fasteners, field-worn martial layers. Include short spear, iron gate order token, black-green armor side view, threat pose standing too close, token close-up, and a mantis blade shadow study rather than constant exposed giant blade arms. Distinct from Bai Yi: darker, martial, less clean, more physical, no spotless white Qingming robe, no calm bureaucrat stillness, no oversized fantasy scythe arms, no polished heroic armor."
+    },
+    {
+      "prompt_id": "char_gu_huaizhang_v01_memory_sheet_prompt",
+      "asset_id": "char_gu_huaizhang_v01",
+      "output_path": "assets/characters/v01/char_gu_huaizhang_v01_sheet.png",
+      "purpose": "Yan Nanzhi's southern teacher memory-reference sheet",
+      "continuity_references": [
+        "bible/characters.md#顾怀章",
+        "bible/character-visual-locks.json:char_gu_huaizhang_v01",
+        "assets/style/v03/symbol_zhaoming_sunmoon_v03.png"
+      ],
+      "downstream_usage": "Yan Nanzhi memory inserts, blood-treaty command frames, southern teacher pressure voice continuity.",
+      "prompt": "Gu Huaizhang, older southern teacher and pressure voice for Yan Nanzhi, upright old ritual scholar, narrow vertical poise, old court discipline, appears as memory or edict presence rather than present fighter. Controlled severe older face, tired eyes, neat but faded hair and beard. Fragmented old imperial ritual robe in aged white, worn gold edging, southern red cord scroll case, robe fragment rather than complete regalia. Include southern red cord scroll, old imperial robe fragment, blood-treaty instruction slip with worn fused Zhaoming Sun-Moon mark: moon-white crescent inside worn golden sun wheel. Show half-body, full-body, scroll-instruction pose, robe fragment detail, red cord scroll close-up. No crown, no complete palace costume, no battlefield commander armor, no warm mentor softness dominating the design."
+    },
+    {
+      "prompt_id": "p2_secondary_character_lineup_v01_prompt",
+      "asset_id": "p2_secondary_character_lineup_v01",
+      "output_path": "assets/characters/v01/p2_secondary_character_lineup_v01.png",
+      "purpose": "single board proving requested P2 secondary characters are visually distinct",
+      "continuity_references": [
+        "art/p2-secondary-character-designs.json",
+        "bible/character-visual-locks.json"
+      ],
+      "downstream_usage": "Prompt Room and Director Room quick reference for profession/faction differentiation.",
+      "prompt": "P2 secondary character lineup board for Severed Homeland, five simplified full-body character references on one vertical 9:16 sheet, no readable text labels. Show clear role differentiation: Luo Qinghe as a beautiful 37-year-old grounded Canyang Ao village medic with blue-green head cloth and herb basket, not elderly; Meng Guicang as ash-damaged burned archive witness guarding a blackened book box with bone page clips; Lu Mi as northern frost-hoof shaman in fur-gray and ice-blue snow layers with short antler ornament and bone flute, subtle deer-clan signs only; Li Tang as dark black-green mantis military officer with shell shoulder armor, short spear, iron gate token and blade shadow, distinct from Bai Yi; Gu Huaizhang as older southern ritual scholar in fragmented aged-white old imperial robe with southern red cord scroll, memory/edict presence. All silhouettes, professions, palettes, and props must be distinguishable at a glance."
+    }
+  ],
+  "blocked": {
+    "image_generation": false,
+    "reason": "Ready for Codex background thread generation into fixed project paths."
+  }
+}
