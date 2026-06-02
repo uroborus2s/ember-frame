@@ -19,9 +19,9 @@
 
 ## 结论
 
-状态：pass，且已完成有限全局参考资产生成。
+状态：pass_with_warnings。项目级视觉统一包可作为后续生产输入，但全局美术资源尚未完整完成。
 
-项目级视觉统一包已经可以作为后续角色设定图、场景概念图、道具板、分镜参考帧和 Prompt Room 的统一输入。本轮已生成有限全局参考资产，但不是完整全量资产。
+项目级视觉统一包已经可以作为后续角色设定图、场景概念图、道具板、分镜参考帧和 Prompt Room 的统一输入。本轮已生成有限全局参考资产，并新增 v3 徽章锁定资产；但部分 AI 图存在旧徽章漂移或合成痕迹，只能作为规则参考，不能直接视为自然融合完成稿。
 
 ## 已锁定内容
 
@@ -36,11 +36,14 @@
 
 ## 已生成参考资产
 
-1. 版本化资产目录：`assets/style/v01`、`assets/style/v02`、`assets/style/v03`、`assets/characters/v01`、`assets/characters/v02`、`assets/characters/v03`、`assets/locations/v01`。
-2. 推荐旗帜/徽记版本：`assets/style/v03/style_faction_flags_v03.png`。
+1. 版本化资产目录：`assets/style/v01`、`assets/style/v02`、`assets/style/v03`、`assets/style/v04`、`assets/characters/v01`、`assets/characters/v02`、`assets/characters/v03`、`assets/locations/v01`。
+2. 推荐旗帜/徽记锁定版本：`assets/style/v04/style_faction_flags_v04.png`。
 3. 推荐晏南枝版本：`assets/characters/v03/char_yan_nanzhi_v03_sheet.png`。
 4. 推荐沈维桑人物体态版本：`assets/characters/v02/char_shen_weisang_v02_sheet.png`。
-5. 全局推荐关系记录：`assets/asset-index.json`。
+5. 白翳外形基准：`assets/characters/v01/char_bai_yi_v01_sheet.png`；白翳徽章规则参考：`assets/characters/v03/char_bai_yi_v03_sheet.png`。
+6. 核心道具徽章规则参考：`assets/props/v04/prop_core_set_v04.png`。
+7. 全局推荐关系记录：`assets/asset-index.json`。
+8. 全局美术资源审计表：`assets/global-art-resource-audit.md`。
 
 ## 未完成内容
 
@@ -48,7 +51,8 @@
 2. 未生成第01集专属参考帧。
 3. 未生成 director-room 镜头表、storyboard 或 shot-list。
 4. 未生成 ComfyUI-ready prompt。
-5. 未生成核心道具板和月下盟书旧驿场景板。
+5. 已生成核心道具和月下盟书旧驿的规则参考版本，但仍需自然融合精修。
+6. 第二批角色、第二批场景和 P1 服装状态板尚未生成。
 
 ## 风险与控制
 

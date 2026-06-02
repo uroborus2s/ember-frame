@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="oldGold" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#f0c56e"/>
+      <stop offset="58%" stop-color="#a96c28"/>
+      <stop offset="100%" stop-color="#533015"/>
+    </radialGradient>
+    <radialGradient id="moonWhite" cx="42%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#eef6f4"/>
+      <stop offset="100%" stop-color="#b7c4c2"/>
+    </radialGradient>
+    <filter id="stoneWear" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="3" seed="42"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#221813"/>
+  <g transform="translate(512 512)">
+    <g fill="#9c6428" stroke="#3a210e" stroke-width="10">
+      <path d="M0-448 L28-318 L0-292 L-28-318 Z"/>
+      <path d="M0 448 L28 318 L0 292 L-28 318 Z"/>
+      <path d="M448 0 L318 28 L292 0 L318-28 Z"/>
+      <path d="M-448 0 L-318 28 L-292 0 L-318-28 Z"/>
+      <path d="M317-317 L228-220 L188-226 L220-228 Z" transform="rotate(0)"/>
+      <path d="M317 317 L228 220 L188 226 L220 228 Z"/>
+      <path d="M-317 317 L-228 220 L-188 226 L-220 228 Z"/>
+      <path d="M-317-317 L-228-220 L-188-226 L-220-228 Z"/>
+    </g>
+    <g fill="none" stroke="#b4762d" stroke-width="16">
+      <circle r="304"/>
+      <circle r="244"/>
+      <circle r="164"/>
+    </g>
+    <circle r="282" fill="url(#oldGold)" filter="url(#stoneWear)"/>
+    <circle r="226" fill="#27190d" opacity="0.42"/>
+    <circle r="190" fill="none" stroke="#d6ad62" stroke-width="18"/>
+    <path d="M92-162
+             A204 204 0 1 0 92 162
+             A132 132 0 1 1 92-162 Z"
+          fill="url(#moonWhite)" stroke="#efe7cf" stroke-width="9"/>
+    <circle r="62" fill="#8b5521" stroke="#f0c56e" stroke-width="16"/>
+    <g stroke="#f0c56e" stroke-width="9" opacity="0.9">
+      <line x1="0" y1="-196" x2="0" y2="-100"/>
+      <line x1="0" y1="100" x2="0" y2="196"/>
+      <line x1="-196" y1="0" x2="-100" y2="0"/>
+      <line x1="100" y1="0" x2="196" y2="0"/>
+      <line x1="139" y1="-139" x2="72" y2="-72"/>
+      <line x1="-139" y1="139" x2="-72" y2="72"/>
+      <line x1="-139" y1="-139" x2="-72" y2="-72"/>
+      <line x1="139" y1="139" x2="72" y2="72"/>
+    </g>
+  </g>
+</svg>

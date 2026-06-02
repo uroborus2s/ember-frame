@@ -39,8 +39,15 @@
       "prompt_id": "style_faction_flags_v03_prompt",
       "asset_id": "style_faction_flags_v03",
       "output_path": "assets/style/v03/style_faction_flags_v03.png",
-      "purpose": "corrected faction flag reference with abstract Sumin white wings and black-sun halo",
+      "purpose": "superseded AI-rendered material mood reference; not the exact emblem standard",
       "prompt": "A vertical cinematic faction flag comparison board with two clearly different banners and emblem fragments, no readable text. Left: Zhaoming old human empire flag, warm dark vermilion long silk banner, old gold woven border, frayed and smoke-damaged. The central emblem is one fused Sun-Moon badge: worn golden sun wheel containing and supporting a moon-white crescent inside the sun, not separate sun and moon symbols. Right: Sumin Qingming state flag, cold wax-white vertical official banner. Its central emblem must show a black sun disk with a clear cold white or dark-gray halo, then abstract white wings covering and pressing down on the black haloed sun. The white wings should be symbolic and graphic: geometric clean wing-bands, folded white order-strips, angular ritual coverage, or simplified wing-bone arcs, not literal realistic insect wings or feathered wings. The old moon mark is erased, scraped away, painted white, or left as a blank wound. Mood: clean order covering old human Sun-Moon rule, bureaucratic erasure, cold violence. The two flags must be unmistakably different in color, shape, and emotion."
+    },
+    {
+      "prompt_id": "style_faction_flags_v04_lock_reference",
+      "asset_id": "style_faction_flags_v04",
+      "output_path": "assets/style/v04/style_faction_flags_v04.png",
+      "purpose": "deterministic v3 faction flag and emblem lock; use as exact standard instead of AI generation",
+      "prompt": "Do not regenerate this with an image model when exact faction insignia is required. Use the deterministic SVG/PNG lock: Zhaoming is one fused Sun-Moon badge with a moon-white crescent inside a worn golden sun wheel; Sumin is abstract white wings covering a black sun disk with cold halo and erased moon trace."
     }
   ],
   "character_prompts": [
@@ -70,7 +77,7 @@
       "asset_id": "char_bai_yi_v01",
       "output_path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
       "purpose": "main antagonist design sheet",
-      "prompt": "Bai Yi, Sumin Qingming inspector, tall still silhouette, spotless white official robe, translucent insect-wing shoulder mantle, pale expressionless face mask with dark compound-eye texture near the eyes, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace, partial insect traits only. Front, side, three-quarter, inspection pose."
+      "prompt": "Bai Yi, Sumin insectoid Qingming inspector, tall still silhouette, spotless white official robe, translucent wing-membrane shoulder mantle, integrated pale chitin faceplate, large dark compound-eye structures, dark neck membrane, slightly jointed or carapace-like fingers, small abstract-white-wing-over-black-haloed-sun insignia with erased moon trace, insect-wax needle and white register, clean cold bureaucratic menace. He is not a human wearing a mask; preserve insectoid official traits without turning him into a beast monster. Front, side, three-quarter, inspection pose."
     },
     {
       "prompt_id": "char_shen_zhaomian_v01_sheet_prompt",

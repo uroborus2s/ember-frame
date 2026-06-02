@@ -12,17 +12,17 @@
       "silhouette": "lean, wiry, slightly hunched from travel and old left shoulder injury",
       "face": "young 17-year-old boy, sword-like eyebrows, clear starry but guarded eyes, narrow jaw, smoke and dust often on skin, youthful sharpness rather than adult hardness",
       "hair": "dark, practical tied-back or loose from escape, never styled as noble",
-      "base_wardrobe": "gray-brown hunter clothing, worn leather wrist guards, short boots, patched travel layers",
-      "fixed_props": ["hunter bow", "short knife", "half fused Sun-Moon relay token", "charred hem after episode 02"],
+      "base_wardrobe": "intact gray-brown hunter clothing made from coarse hemp and old leather, visible hand patches and reinforced seams, fitted for forest movement; worn leather wrist guards, short boots, quiver strap, utility cord, small route pouch and trap cord; poor but not ragged, no shredded beggar hems",
+      "fixed_props": ["hunter bow", "short knife", "half fused Sun-Moon relay token using the v3 Zhaoming emblem: moon-white crescent inside a worn golden sun wheel", "charred but intact hem after episode 02"],
       "marks": ["old left shoulder injury", "short gold-red spirit-wing residual marks at eye corner or shoulder blade only under stress"],
       "palette": ["gray brown", "old leather", "ash black", "gold-red residual light"],
       "state_variants": [
         {"id": "village_hunter", "episodes": ["01"], "notes": "cleaner but still worn hunter state before fire"},
-        {"id": "burned_escape", "episodes": ["02", "03", "04"], "notes": "charred hem, soot, blood, torn sleeve"},
-        {"id": "snow_border", "episodes": ["08", "09", "10", "11", "12"], "notes": "added gray cloak or rough wall cloth, still keeps charred hem visible"}
+        {"id": "burned_escape", "episodes": ["02", "03", "04"], "notes": "charred hem, soot, blood, patched tear repairs; damaged but still wearable and not shredded"},
+        {"id": "snow_border", "episodes": ["08", "09", "10", "11", "12"], "notes": "added gray hunter cloak or wall cloth over the same intact hunter silhouette, still keeps charred hem visible"}
       ],
       "performance_anchors": ["observes wind and ground before moving", "presses left shoulder when hurt", "keeps promises with short direct speech"],
-      "continuity_locks": ["must look 17 with strong youthfulness", "sword eyebrows and bright guarded eyes are required", "no heroic armor", "no full wings", "no clean noble costume", "bow and short knife remain practical not ornate"]
+      "continuity_locks": ["must look 17 with strong youthfulness", "sword eyebrows and bright guarded eyes are required", "must read as a common hunter, not generic poor refugee", "clothing can be coarse, patched, dusty, and scorched but must not be ragged or beggar-like", "no heroic armor", "no full wings", "no clean noble costume", "bow and short knife remain practical not ornate", "relay token emblem must follow symbol_zhaoming_sunmoon_v03 when visible"]
     },
     {
       "id": "char_yan_nanzhi_v01",
@@ -34,7 +34,7 @@
       "silhouette": "slim female figure, upright court-trained posture even in plain travel disguise, cold noble restraint",
       "face": "young female face, high-cold royal composure, calm intelligent eyes, fatigue hidden behind discipline",
       "hair": "black hair tied with a southern red cord, controlled Zhou-Qin inspired royal simplicity rather than loose fantasy styling",
-      "base_wardrobe": "coarse but clean and orderly travel outer robe over hidden structured old-imperial female dress layer inspired by Zhou and Qin dynasty silhouettes; plain cloth may be worn, dusted, and lightly frayed at edges, but never ragged; fine fused Sun-Moon patterned inner edge visible in controlled fragments",
+      "base_wardrobe": "coarse but clean and orderly travel outer robe over hidden structured old-imperial female dress layer inspired by Zhou and Qin dynasty silhouettes; plain cloth may be worn, dusted, neatly patched, and lightly abraded at edges, but never ragged; fine fused Sun-Moon patterned inner edge follows the v3 Zhaoming emblem and appears only in controlled fragments",
       "fixed_props": ["moon-white jade piece", "oil-paper wrapped blood treaty fragments", "red hair cord"],
       "marks": ["subtle old imperial pattern inside clothing, not visible in every shot"],
       "palette": ["dark cloth", "southern red cord", "moon white", "worn old gold detail"],
@@ -44,27 +44,27 @@
         {"id": "border_resolve", "episodes": ["08", "09", "10", "11", "12"], "notes": "darker cold-weather layer, jade visible during treaty scenes"}
       ],
       "performance_anchors": ["touches old inscriptions with fingertips", "tightens red cord when pressured", "uses restrained posture before emotional admission"],
-      "continuity_locks": ["must read as female", "must read as exiled royal princess even in coarse cloth", "clothing is plain, cold, clean, and controlled, not ragged or beggar-like", "inspired by Zhou-Qin female clothing structure, not generic fantasy dress", "red cord stays", "moon-white jade stays", "not a clean court gown", "no crown or complete imperial regalia in season 01"]
+      "continuity_locks": ["must read as female", "must read as exiled royal princess even in coarse cloth", "clothing is plain, cold, clean, controlled, and intact; patched is acceptable, ragged or beggar-like is forbidden", "inspired by Zhou-Qin female clothing structure, not generic fantasy dress", "red cord stays", "moon-white jade stays", "not a clean court gown", "no crown or complete imperial regalia in season 01", "visible Sun-Moon pattern must follow symbol_zhaoming_sunmoon_v03"]
     },
     {
       "id": "char_bai_yi_v01",
       "name": "白翳",
       "priority": 1,
       "age": "adult",
-      "role": "Qingming register inspector and primary antagonist",
-      "silhouette": "tall, vertical, clean, still, white robe with thin wing-membrane shoulder layer",
-      "face": "covered or partially covered by pale expressionless face mask; dark compound-eye texture visible near eyes",
-      "hair": "hidden under hood or formal head covering",
-      "base_wardrobe": "spotless white official robe, translucent insect-wing mantle, white-wing-over-black-sun insignia kept small and precise, moon trace erased",
+      "role": "Sumin insectoid Qingming register inspector and primary antagonist",
+      "silhouette": "tall, vertical, clean, still, white robe with thin wing-membrane shoulder layer; should feel like an insectoid official body inside bureaucratic robes, not a human wearing a mask",
+      "face": "integrated pale chitin faceplate and large dark compound-eye structures; the face is biological insectoid carapace, not a removable human mask",
+      "hair": "none visible; head is covered by ceremonial Qingming headpiece or chitin-like crown structure, not human hair styling",
+      "base_wardrobe": "spotless white official robe, translucent insect-wing mantle, v3 Sumin insignia kept small and precise: abstract white wings covering a black sun with cold halo, old moon trace erased",
       "fixed_props": ["insect-wax needle", "Qingming white register", "clean cloth for wiping needle", "Qingming incense trace"],
-      "marks": ["subtle insect joint or wing membrane, never full monster body"],
+      "marks": ["integrated chitin faceplate", "compound eyes", "subtle dark neck membrane", "thin translucent wing membrane mantle", "slightly jointed or carapace-like fingers; controlled insectoid traits without turning into a beast"],
       "palette": ["insect-wax white", "cold gray", "bone white", "black sun"],
       "state_variants": [
         {"id": "inspection", "episodes": ["01", "02", "06"], "notes": "white register and wax needle prominent"},
         {"id": "pursuit", "episodes": ["04", "10", "11", "12"], "notes": "robe remains clean even in dirty environments"}
       ],
       "performance_anchors": ["never raises voice", "wipes needle before interrogation", "pauses when smelling Qingming incense trail"],
-      "continuity_locks": ["must remain clean and controlled", "partial insect traits only", "no rage expression", "no heavy black armor"]
+      "continuity_locks": ["must remain clean and controlled", "must not read as a human wearing a mask", "must retain visible insectoid traits from char_bai_yi_v01", "no ordinary human hair or human face behind the mask", "no rage expression", "no heavy black armor", "Sumin insignia must follow symbol_suming_whitewing_blackhalo_v03 when visible"]
     },
     {
       "id": "char_shen_zhaomian_v01",
@@ -75,16 +75,16 @@
       "silhouette": "small, quick, alert, later unnaturally still in Qingming training",
       "face": "sensitive child face; memory flicker visible in eyes after capture",
       "hair": "simple village child hair with burned hair cord anchor after episode 02",
-      "base_wardrobe": "village child cloth before capture; Qingming white child robe after capture",
-      "fixed_props": ["small herb pouch", "burned hair cord", "insect-wax identifier ring after capture"],
+      "base_wardrobe": "intact village child clothing before capture: short patched hemp jacket, small apron or tied overskirt for helping in the medicine house, simple cloth shoes; poor and dusty but not ragged. Qingming white child robe after capture, clean institutional cut, small v3 Sumin identifier mark kept restrained",
+      "fixed_props": ["small herb pouch", "burned hair cord", "medicine-house thread charm", "insect-wax identifier ring after capture"],
       "marks": ["no overt insect mutation; the violence is institutional, not physical transformation"],
       "palette": ["village cloth gray", "herb green", "Qingming white", "burn mark dark brown"],
       "state_variants": [
-        {"id": "village_child", "episodes": ["01", "02"], "notes": "herb pouch and simple village clothing"},
-        {"id": "qingming_identifier", "episodes": ["06", "12"], "notes": "white robe, wrist ring, old child anchor retained"}
+        {"id": "village_child", "episodes": ["01", "02"], "notes": "herb pouch, apron/short jacket, intact child clothing with patches, distinct from adult refugee rags"},
+        {"id": "qingming_identifier", "episodes": ["06", "12"], "notes": "clean white robe, wrist ring, small Sumin identifier mark, old child anchor retained"}
       ],
       "performance_anchors": ["recites herb names quickly", "after capture speaks like reading from a register", "eyes briefly lose focus when hearing family relay signs"],
-      "continuity_locks": ["must remain childlike", "do not make her villainous or glamorous", "Qingming state keeps one childhood anchor"]
+      "continuity_locks": ["must remain childlike", "do not make her villainous or glamorous", "village state is poor but intact and child-specific, not miniature adult rags", "Qingming state keeps one childhood anchor", "Sumin identifier mark must follow symbol_suming_whitewing_blackhalo_v03 when visible"]
     },
     {
       "id": "char_lu_qingli_v01",
@@ -95,7 +95,7 @@
       "silhouette": "compact, fast, always near walls or exits",
       "face": "sharp, wary, half-smile used defensively",
       "hair": "short practical hair or tightly tied to avoid being grabbed",
-      "base_wardrobe": "gray-blue short jacket, patched underlayers, rope belt",
+      "base_wardrobe": "wallfoot mixed-heritage survival clothing with a distinct gray-blue short jacket, intact patched underlayers, rope belt, hidden pocket seams, black-market utility loops, and kiln-dust cuffs; poor but deliberately practical, not ragged, not the same silhouette as Shen Weisang's hunter clothes",
       "fixed_props": ["shard pottery charm", "narrow hidden knife", "black market wood pass"],
       "marks": ["subtle insect-scale trace behind ear, visible only in close-up"],
       "palette": ["gray blue", "clay brown", "soot black", "dull token yellow"],
@@ -104,7 +104,7 @@
         {"id": "border_escape", "episodes": ["08", "11", "12"], "notes": "snow damp cloth, same charm and knife"}
       ],
       "performance_anchors": ["stands with back near wall", "checks exits before answering", "cuts marker rope in decisive moments"],
-      "continuity_locks": ["mixed trait must stay subtle", "no decorative fantasy beast features", "gray-blue jacket and pottery charm stay"]
+      "continuity_locks": ["mixed trait must stay subtle", "no decorative fantasy beast features", "gray-blue short jacket, shard pottery charm, black-market wood pass, and hidden knife stay", "clothing may be patched and dusty but must not be shredded", "must read as wallfoot market survivor rather than generic poor villager or hunter"]
     },
     {
       "id": "char_xue_linqiang_v01",
@@ -115,8 +115,8 @@
       "silhouette": "broad but worn down, old soldier posture, stable feet",
       "face": "creased, wind-burned, tired eyes, not noble",
       "hair": "gray or frost-streaked, practical, partly hidden by wall cloth",
-      "base_wardrobe": "gray-stone old armor pieces, coarse wall cloth, repaired cold-weather layers",
-      "fixed_props": ["bone whistle", "worn long spear", "reversed old fused Sun-Moon cloth strip at waist"],
+      "base_wardrobe": "border-wall military household clothing: intact patched padded undercoat, gray-stone old armor plates, coarse wall cloth scarf, repaired cold-weather layers, old iron fasteners and snow wraps; worn and field-repaired but not ragged, visibly different from hunter and wallfoot clothing",
+      "fixed_props": ["bone whistle", "worn long spear", "reversed old fused Sun-Moon cloth strip at waist using symbol_zhaoming_sunmoon_v03"],
       "marks": ["frost-cracked fingers", "old scars"],
       "palette": ["gray stone", "old iron", "snow white", "dry blood dark red"],
       "state_variants": [
@@ -124,22 +124,22 @@
         {"id": "covert_helper", "episodes": ["12"], "notes": "darker cloak, same reversed cloth strip"}
       ],
       "performance_anchors": ["checks wall cracks first", "uses bone whistle to read wind", "speaks in short practical sentences"],
-      "continuity_locks": ["no clean imperial officer look", "no polished armor", "reversed old cloth strip remains", "old cloth strip uses fused Sun-Moon emblem"]
+      "continuity_locks": ["no clean imperial officer look", "no polished armor", "border soldier silhouette must be armor-and-padded-cloth, not generic poor refugee", "field repairs and patches are allowed but shredded hems are not", "reversed old cloth strip remains", "old cloth strip uses symbol_zhaoming_sunmoon_v03"]
     },
     {
       "id": "char_luo_qinghe_v01",
       "name": "罗青禾",
       "priority": 2,
-      "age": "adult",
+      "age": 37,
       "role": "village medic and old relay sign keeper",
-      "silhouette": "calm village healer, protective posture",
-      "face": "tired warmth, practical concentration",
+      "silhouette": "37-year-old graceful village healer, composed and protective posture, mature beauty without old-woman frailty",
+      "face": "beautiful 37-year-old mother, warm but resilient eyes, practical concentration, light fatigue from village work but not elderly",
       "hair": "covered or tied with blue-green cloth",
       "base_wardrobe": "plain village medic clothing, blue-green head cloth",
       "fixed_props": ["herb basket", "medicine cabinet with hidden relay signs", "half relay token handoff"],
       "palette": ["herb green", "plain gray", "earth brown"],
       "performance_anchors": ["uses herb names as cover for old relay signs", "shields others before explaining"],
-      "continuity_locks": ["must feel grounded and local, not mystic priestess"]
+      "continuity_locks": ["must feel grounded and local, not mystic priestess", "must read as a beautiful 37-year-old mother, not an old woman"]
     },
     {
       "id": "char_meng_guicang_v01",

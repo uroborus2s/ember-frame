@@ -2,17 +2,55 @@
   "version": "1.0",
   "project_id": "severed-homeland",
   "scope": "limited global reference asset pass",
-  "versioning_scheme": "Assets are grouped by category and version folder: assets/{category}/v01, v02, v03. Root category folders keep only placeholders or shared indexes.",
+  "versioning_scheme": "Assets are grouped by category and version folder: assets/{category}/v01, v02, v03, v04 as needed. Root category folders keep only placeholders or shared indexes.",
   "current_recommendations": {
-    "faction_flags": "assets/style/v03/style_faction_flags_v03.png",
+    "emblem_lock": "assets/style/v03/style_emblem_lock_v03.png",
+    "zhaoming_symbol": "assets/style/v03/symbol_zhaoming_sunmoon_v03.png",
+    "suming_symbol": "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png",
+    "faction_flags": "assets/style/v04/style_faction_flags_v04.png",
+    "core_props": "assets/props/v04/prop_core_set_v04.png",
     "yan_nanzhi": "assets/characters/v03/char_yan_nanzhi_v03_sheet.png",
     "shen_weisang": "assets/characters/v02/char_shen_weisang_v02_sheet.png",
     "bai_yi": "assets/characters/v01/char_bai_yi_v01_sheet.png",
+    "bai_yi_symbol_locked_reference": "assets/characters/v03/char_bai_yi_v03_sheet.png",
+    "qingming_court_material": "assets/style/v02/style_qingming_court_v02.png",
+    "zhaoming_relic_material": "assets/style/v03/style_zhaoming_relic_v03.png",
+    "old_relay_tunnel": "assets/locations/v03/loc_old_relay_tunnel_v03_board.png",
+    "qingming_outer_office": "assets/locations/v02/loc_qingming_outer_office_v02_board.png",
+    "suohou_pass": "assets/locations/v03/loc_suohou_pass_v03_board.png",
+    "moon_oath_relay": "assets/locations/v03/loc_moon_oath_relay_v03_board.png",
+    "border_props": "assets/props/v03/prop_border_set_v03.png",
     "shen_zhaomian": "assets/characters/v01/char_shen_zhaomian_v01_sheet.png",
     "lu_qingli": "assets/characters/v01/char_lu_qingli_v01_sheet.png",
     "xue_linqiang": "assets/characters/v01/char_xue_linqiang_v01_sheet.png"
   },
   "style_assets": [
+    {
+      "asset_id": "style_emblem_lock_v03",
+      "path": "assets/style/v03/style_emblem_lock_v03.png",
+      "source_svg": "assets/style/v03/style_emblem_lock_v03.svg",
+      "status": "recommended",
+      "reason": "Deterministic symbol lock. Use this as the standard for exact Zhaoming and Sumin emblems."
+    },
+    {
+      "asset_id": "symbol_zhaoming_sunmoon_v03",
+      "path": "assets/style/v03/symbol_zhaoming_sunmoon_v03.png",
+      "source_svg": "assets/style/v03/symbol_zhaoming_sunmoon_v03.svg",
+      "status": "recommended"
+    },
+    {
+      "asset_id": "symbol_suming_whitewing_blackhalo_v03",
+      "path": "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.png",
+      "source_svg": "assets/style/v03/symbol_suming_whitewing_blackhalo_v03.svg",
+      "status": "recommended"
+    },
+    {
+      "asset_id": "style_faction_flags_v04",
+      "path": "assets/style/v04/style_faction_flags_v04.png",
+      "source_svg": "assets/style/v04/style_faction_flags_v04.svg",
+      "status": "recommended",
+      "reason": "Deterministic v3 faction flag lock. Use this instead of AI-rendered v03 flag art when exact faction insignia matters."
+    },
     {
       "asset_id": "style_global_mood_v01",
       "path": "assets/style/v01/style_global_mood_v01.png",
@@ -22,6 +60,18 @@
       "asset_id": "style_qingming_court_v01",
       "path": "assets/style/v01/style_qingming_court_v01.png",
       "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"
+    },
+    {
+      "asset_id": "style_qingming_court_v02",
+      "path": "assets/style/v02/style_qingming_court_v02.png",
+      "status": "recommended",
+      "reason": "Uses Sumin black-sun halo with abstract white-wing coverage."
+    },
+    {
+      "asset_id": "style_zhaoming_relic_v03",
+      "path": "assets/style/v03/style_zhaoming_relic_v03.png",
+      "status": "usable_composited_v03",
+      "reason": "Deterministic v3 Sun-Moon symbols are composited over AI material board. Emblem accuracy is high; visual blending needs later polish."
     },
     {
       "asset_id": "style_border_wall_v01",
@@ -43,8 +93,8 @@
     {
       "asset_id": "style_faction_flags_v03",
       "path": "assets/style/v03/style_faction_flags_v03.png",
-      "status": "recommended",
-      "reason": "Uses fused Zhaoming Sun-Moon emblem, Sumin black-sun halo, and more abstract white-wing coverage."
+      "status": "superseded_by_v04",
+      "reason": "AI-rendered flag board remains useful for material mood, but exact emblem/flag standard now comes from deterministic v04."
     }
   ],
   "character_assets": [
@@ -81,7 +131,20 @@
     {
       "asset_id": "char_bai_yi_v01",
       "path": "assets/characters/v01/char_bai_yi_v01_sheet.png",
-      "status": "usable_v01_but_symbol_should_follow_v03_when_regenerated"
+      "status": "preferred_base_needs_v3_symbol_revision",
+      "reason": "User selected v01 as the correct insectoid Qingming inspector direction. It keeps integrated insect traits; only the Sumin insignia needs v3 correction."
+    },
+    {
+      "asset_id": "char_bai_yi_v03",
+      "path": "assets/characters/v03/char_bai_yi_v03_sheet.png",
+      "status": "usable_symbol_locked_composite",
+      "reason": "Uses the v01 insectoid base with deterministic v3 Sumin insignia overlays. Emblem rule is visible; natural blending still needs a proper regeneration pass."
+    },
+    {
+      "asset_id": "char_bai_yi_v02",
+      "path": "assets/characters/v02/char_bai_yi_v02_sheet.png",
+      "status": "superseded_rejected",
+      "reason": "Rejected by user feedback: reads as a human wearing a mask and loses the necessary insectoid traits."
     },
     {
       "asset_id": "char_shen_zhaomian_v01",
@@ -102,13 +165,69 @@
   "location_assets": [
     {"asset_id": "loc_canyang_ao_v01", "path": "assets/locations/v01/loc_canyang_ao_v01_board.png", "status": "usable_v01"},
     {"asset_id": "loc_old_relay_tunnel_v01", "path": "assets/locations/v01/loc_old_relay_tunnel_v01_board.png", "status": "usable_v01_but_old_emblems_should_follow_fused_Sun-Moon_when_regenerated"},
+    {"asset_id": "loc_old_relay_tunnel_v03", "path": "assets/locations/v03/loc_old_relay_tunnel_v03_board.png", "status": "recommended"},
     {"asset_id": "loc_qingming_outer_office_v01", "path": "assets/locations/v01/loc_qingming_outer_office_v01_board.png", "status": "usable_v01_but_sumin_symbol_should_follow_v03_when_regenerated"},
-    {"asset_id": "loc_suohou_pass_v01", "path": "assets/locations/v01/loc_suohou_pass_v01_board.png", "status": "usable_v01_but_overlay_symbols_should_follow_v03_when_regenerated"}
+    {"asset_id": "loc_qingming_outer_office_v02", "path": "assets/locations/v02/loc_qingming_outer_office_v02_board.png", "status": "recommended"},
+    {"asset_id": "loc_suohou_pass_v01", "path": "assets/locations/v01/loc_suohou_pass_v01_board.png", "status": "usable_v01_but_overlay_symbols_should_follow_v03_when_regenerated"},
+    {"asset_id": "loc_suohou_pass_v03", "path": "assets/locations/v03/loc_suohou_pass_v03_board.png", "status": "usable_composited_v03", "reason": "Sumin layer and exposed Zhaoming array use v3 symbols; compositing is visible and needs later polish."},
+    {"asset_id": "loc_moon_oath_relay_v03", "path": "assets/locations/v03/loc_moon_oath_relay_v03_board.png", "status": "usable_composited_v03", "reason": "Key Sun-Moon emblems replaced with deterministic v3 symbol; compositing needs later polish."}
+  ],
+  "prop_assets": [
+    {
+      "asset_id": "prop_core_set_v03",
+      "path": "assets/props/v03/prop_core_set_v03.png",
+      "status": "superseded_by_v04",
+      "reason": "Composition is useful, but several AI-rendered old relic marks still read like legacy sun wheels."
+    },
+    {
+      "asset_id": "prop_core_set_v04",
+      "path": "assets/props/v04/prop_core_set_v04.png",
+      "status": "usable_symbol_locked_composite",
+      "reason": "Major Zhaoming relic marks are corrected with deterministic v3 fused Sun-Moon overlays. Use for symbol rule reference; natural blending still needs polish."
+    },
+    {
+      "asset_id": "prop_border_set_v03",
+      "path": "assets/props/v03/prop_border_set_v03.png",
+      "status": "usable_composited_v03",
+      "reason": "Border material board with deterministic v3 cloth emblem overlay; compositing needs later polish."
+    }
+  ],
+  "rejected_assets": [
+    {
+      "asset_id": "style_zhaoming_relic_v01_failed_emblem_drift",
+      "path": "assets/rejected/emblem-drift/style_zhaoming_relic_v01_failed_emblem_drift.png",
+      "status": "rejected",
+      "reason": "AI-generated emblems drifted toward plain old sun wheels or weak moon arcs."
+    },
+    {
+      "asset_id": "loc_moon_oath_relay_v01_failed_emblem_drift",
+      "path": "assets/rejected/emblem-drift/loc_moon_oath_relay_v01_failed_emblem_drift.png",
+      "status": "rejected",
+      "reason": "AI-generated chamber board did not reliably show the v3 fused Sun-Moon emblem."
+    },
+    {
+      "asset_id": "prop_core_set_v01_failed_emblem_drift",
+      "path": "assets/rejected/emblem-drift/prop_core_set_v01_failed_emblem_drift.png",
+      "status": "rejected",
+      "reason": "Relay token split sun and moon into separate pieces."
+    },
+    {
+      "asset_id": "prop_border_set_v01_failed_emblem_drift",
+      "path": "assets/rejected/emblem-drift/prop_border_set_v01_failed_emblem_drift.png",
+      "status": "rejected",
+      "reason": "Useful as material atmosphere only, not accepted as emblem-accurate v3 board."
+    },
+    {
+      "asset_id": "loc_suohou_pass_v03_failed_zhaoming_emblem_drift",
+      "path": "assets/rejected/emblem-drift/loc_suohou_pass_v03_failed_zhaoming_emblem_drift.png",
+      "status": "rejected",
+      "reason": "Sumin mark was acceptable, but exposed Zhaoming array drifted into plain sun-wheel marks before compositing fix."
+    }
   ],
   "missing_or_deferred": [
-    "assets/locations/v01/loc_moon_oath_relay_v01_board.png",
-    "assets/props/v01/prop_core_set_v01.png",
-    "assets/props/v01/prop_border_set_v01.png",
+    "natural-blended final versions of composited v3 boards",
+    "natural-blended Bai Yi v4 final sheet",
+    "natural-blended core props v5 or equivalent final board",
     "episode-specific reference frames under director-room outputs"
   ]
 }
