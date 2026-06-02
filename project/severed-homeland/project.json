@@ -3,7 +3,7 @@
   "title": "断航故土",
   "season": "season-01",
   "source_bible": "背景.md",
-  "current_status": "limited_global_visual_reference_assets_ready",
+  "current_status": "episode_02_final_script_passed_with_limited_global_visual_assets_ready",
   "created_at": "2026-06-02",
   "updated_at": "2026-06-02",
   "format": {
@@ -23,7 +23,9 @@
       "每集故事梗概",
       "AI短剧单集长度",
       "第01集完整剧情与最终剧本",
-      "第01集剧本诊断、连续性报告与评分"
+      "第01集剧本诊断、连续性报告与评分",
+      "第02集完整剧情与最终剧本",
+      "第02集剧本诊断、连续性报告、评分与记忆沉淀"
     ],
     "genre": "史诗奇幻逃亡短剧",
     "tone": "冷峻、紧迫、带历史伤口与故土重释",
@@ -33,6 +35,7 @@
   "assumptions": [
     "第一季只覆盖主线第一阶段：残阳坳屠村到断脊边墙地下旧驿发现月下盟书线索。",
     "本轮已完成第01集完整剧本；分镜、镜头表和 ComfyUI 提示词仍等待 director-room 或后续部门生成。",
+    "第02集完整剧本已完成并通过质量门禁；分镜、镜头表和 ComfyUI 提示词仍等待 director-room 或后续部门生成。",
     "每集采用竖屏短剧结构：前30秒内建立钩子或时代危机，中段升级，结尾反转或悬念。",
     "每集主要角色控制在3到5人，主要场景控制在2到4个，方便AI视频保持一致性。"
   ],
@@ -75,13 +78,25 @@
     "episode_01_memory_state": "01/memory/current-state.md",
     "episode_01_failure_patterns": "01/memory/failure-patterns.json",
     "episode_01_evolution_notes": "01/memory/evolution-notes.md",
-    "episode_01_agent_log": "01/logs/writer-room-agent-calls.jsonl"
+    "episode_01_agent_log": "01/logs/writer-room-agent-calls.jsonl",
+    "episode_02_script_v01": "02/script/script-v01.md",
+    "episode_02_final_script": "02/script/final-script.md",
+    "episode_02_critique": "02/reports/critique-v01.md",
+    "episode_02_continuity_report": "02/reports/continuity-report.md",
+    "episode_02_score": "02/reports/script-score.md",
+    "episode_02_memory_state": "02/memory/current-state.md",
+    "episode_02_failure_patterns": "02/memory/failure-patterns.json",
+    "episode_02_evolution_notes": "02/memory/evolution-notes.md",
+    "episode_02_agent_log": "02/logs/writer-room-agent-calls.jsonl"
   },
   "warnings": [
     "第01集最终剧本已通过，但分镜不得提前正面露出月白玉片。",
     "第01集第8场需要在 director-room 阶段明确药屋、后院、水缸、旧井和短矛封锁线的空间关系。",
     "第01集新增时代背景蒙太奇需控制在30秒以内，不要扩展北境战场、征粮队或南方密室临时人物支线。",
     "第一季结尾保留南林、东海、瀛洲、海族和矮人线作为后续季展开空间。",
-    "项目级视觉统一包已完成，且已生成有限全局参考资产；完整全量资产和分集专属参考帧仍应等待 director-room 输出。"
+    "项目级视觉统一包已完成，且已生成有限全局参考资产；完整全量资产和分集专属参考帧仍应等待 director-room 输出。",
+    "第02集最终剧本通过评分 91/100；第03集必须把石门点亮作为新事件，而不是延续第02集末尾已经亮起的状态。",
+    "第03集需延续沈维桑左肩撕裂、鼻血、左臂失力，避免恢复满弓战力。",
+    "第03集路线冲突应升级为追北线车辙/旧驿线索与南下避清明香保血牒的战略选择，避免重复第02集一句南北分歧。"
   ]
 }
