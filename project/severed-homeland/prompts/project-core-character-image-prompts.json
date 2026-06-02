@@ -1,0 +1,103 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_core_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-core-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-core-character-designs.json",
+  "purpose": "Tool-neutral image prompts for project-level Shen Weisang and Yan Nanzhi character reference boards.",
+  "shared_rules": {
+    "format": "single vertical PNG production character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic costume and material rendering, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. Do not create a new personal crest for Shen Weisang or Yan Nanzhi. Existing Zhaoming sun-moon language may appear only as partial worn traces, hidden proof objects, inherited formal embroidery, or locked symbol-language echoes.",
+    "must_have": [
+      "Shen Weisang must read as a 17-year-old lean hunter and guide",
+      "Yan Nanzhi must read as an 18-year-old trained aristocratic fugitive",
+      "three states must preserve one continuous identity",
+      "clothing must stay complete, fitted, functional, and role-specific",
+      "low magic must remain small and local",
+      "no readable text, no labels, no UI, no watermark"
+    ],
+    "negative_prompt": "adult warlord, king, prince, general, knight armor, heroic armor, palace costume, clean full badge, new personal emblem, full Zhaoming crest on chest, banner, spell circle, large glowing wings, angel wings, superhero aura, beggar rags, shredded clothes, full-body mud, unreadable refugee silhouette, readable text, captions, Chinese characters, Latin letters, UI, watermark, over-saturated game art, cyberpunk, sci-fi"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_shen_weisang_multi_state_board_v01",
+      "asset_id": "character_shen_weisang_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_shen_weisang_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/costumes/costume_shen_weisang_states.png",
+          "role": "locked Shen Weisang costume states reference; preserve silhouette, clothing logic, and prop hang-points"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+          "role": "Canyang Ao color reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+          "role": "border snowline overlay material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "locked Zhaoming emblem reference; partial worn trace only, not a badge redesign"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+          "role": "old empire fragmented object-symbol reference"
+        }
+      ],
+      "image_prompt": "Create one vertical PNG production character reference board for Shen Weisang from the series Severed Homeland. Use the visible project references and preserve the existing Shen Weisang costume-board logic. The board shows the same 17-year-old lean hunter and guide in three continuous states: 1) Canyang Ao hunter state before the fire, clean but worn grey-brown short hunter layers with washed herb-green inner garment, old leather wrist guards, bow, quiver, trap cord, route pouch, water bag, short knife; 2) post-fire fugitive state with the same silhouette, smoke-dulled cloth, localized charred lower hem, shoulder and elbow repair stitching, lighter route pack, no ragged destruction; 3) border snowline state with grey hemp cloak, old leather shoulder protection, wrapped lower legs, snow dust, still clearly a hunter and not a soldier. Include detail panels for youthful guarded face, left-shoulder asymmetry and old injury, belt and route system, back view with bow and quiver, charred hem stitching, half Sun-Moon relay-token pouch with only a tiny partial worn sun-moon trace, and low-magic spirit-wing residue as short broken gold-red lines near one eye and one shoulder blade. Keep all clothing complete, fitted, practical, and role-specific. Low-magic eastern epic, tactile realistic cloth, leather, soot, frost, old wood and stone mood, restrained cinematic lighting. No visible labels, no captions, no readable text, no UI, no watermark.",
+      "negative_prompt": "adult warlord, mature king, prince, general, knight, heroic armor, military officer armor, palace costume, clean full Zhaoming badge, new personal crest, full sun-moon emblem on chest or cloak, banner, divine aura, large wings, angel wings, spell circle, high fantasy magic blast, shredded clothing, beggar rags, full-body mud, zombie refugee, unreadable silhouette, modern tactical gear, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, oversaturated game art"
+    },
+    {
+      "prompt_id": "prompt_character_yan_nanzhi_multi_state_board_v01",
+      "asset_id": "character_yan_nanzhi_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/costumes/costume_yan_nanzhi_states.png",
+          "role": "locked Yan Nanzhi costume states reference; preserve silhouette, color logic, hair cord, and hidden identity treatment"
+        },
+        {
+          "path": "project/severed-homeland/assets/props/prop_yan_nanzhi_carry_board.png",
+          "role": "locked carry-prop reference for moon-white jade, blood-writ packet, black lacquer case, and hidden proof objects"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+          "role": "southern old empire reveal palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+          "role": "border snowline overlay material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "role": "locked Zhaoming emblem reference; do not redesign; use only as inherited hidden or formal pattern language"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+          "role": "locked old empire symbol system reference for fragmented or inherited ornamental use"
+        }
+      ],
+      "image_prompt": "Create one vertical PNG production character reference board for Yan Nanzhi from the series Severed Homeland. Use the visible project references and preserve the existing Yan Nanzhi costume-board and carry-prop logic. The board shows the same 18-year-old trained aristocratic fugitive in three continuous states: 1) fugitive concealment travel state, mist-purple or cold-grey clean coarse travel robe, deep ink-blue inner structure, black hair tied with a red cord, controlled upright posture, hidden moon-white jade and blood-writ packet carried close to the body in an inner pouch or small black lacquer case, no visible Sun-Moon badge on the front layer; 2) old empire formal reveal state for memory or identity reveal only, Ming-style Hanfu reference with vermilion wide sleeves, royal blue or peacock-blue layered front, moon-white inner garment, worn gold embroidery, old silk folds, dark inherited sun-moon pattern language copied from the locked Zhaoming references but not redesigned as a new emblem; 3) border snowline state with dark grey cloak over the fugitive structure, snow dust, hidden moon-white lining visible only as a brief inner edge, red hair cord subdued but present, proof objects still concealed. Include detail panels for the 18-year-old controlled face, black hair and red cord, collar and inner-pocket hiding system, guarded hands protecting an old paper packet, moon-white jade fragment and black lacquer case, formal worn-gold embroidery with inherited sun-moon dark pattern, and snowline cloak clasp with hidden lining. Keep all clothing complete, fitted, dignified, and role-specific. Low-magic eastern epic, tactile realistic silk, coarse travel cloth, leather, old paper, moon-white jade, snow and worn gold, restrained cinematic lighting. No visible labels, no captions, no readable text, no UI, no watermark.",
+      "negative_prompt": "redesigned Zhaoming badge, new Yan Nanzhi crest, visible royal emblem on fugitive chest or cloak or belt front, full clean sun-moon logo on travel outfit, banner, modern princess, tiara, crown, ballroom gown, idol costume, disheveled collapse, beggar rags, shredded travel wear, full-body mud, overexposed glamour portrait, mature queen, childlike girl, readable blood-written text, captions, Chinese characters, Latin letters, UI, watermark, giant magical aura, wings, spell circle, prophecy tableau, oversaturated game art, cyberpunk, sci-fi"
+    }
+  ]
+}

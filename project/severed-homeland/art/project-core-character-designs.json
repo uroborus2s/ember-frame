@@ -1,0 +1,302 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_core_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-core-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-core-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_shen_weisang_multi_state_board_v01",
+      "name_cn": "沈维桑多状态角色板",
+      "character": "Shen Weisang",
+      "identity": "17-year-old Canyang Ao hunter, guide, and descendant of old relay-road surveyors",
+      "image_type": "multi-state character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_shen_weisang_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Clearly 17, with youth in jawline and eyes; not a mature hard-edged warlord.",
+        "build": "Lean, wiry, long-term hunter strength rather than armored bulk.",
+        "posture": "Slight left-shoulder asymmetry from old injury and long-term archery.",
+        "expression": "Guarded, quiet, observant; eyes read wind, ground, and exits before people."
+      },
+      "constant_anchors": [
+        "grey-brown hunter outer layer",
+        "washed herb-green inner garment",
+        "old leather wrist guards",
+        "hunting bow and quiver",
+        "short knife sheath",
+        "trap cord",
+        "route pouch",
+        "small water bag",
+        "half Sun-Moon relay-token pouch",
+        "left shoulder old-injury asymmetry"
+      ],
+      "state_designs": [
+        {
+          "state_id": "shen_weisang_canyang_hunter",
+          "name_cn": "残阳坳猎户状态",
+          "episode_range": "01",
+          "silhouette": "Short practical hunter layers, clean but worn, agile and village-rooted.",
+          "materials": [
+            "grey-brown coarse cloth",
+            "washed herb-green inner robe",
+            "old leather wrist guards",
+            "trap cord",
+            "simple route pouch",
+            "well-used boots"
+          ],
+          "color_logic": "Canyang Ao grey-brown and herb green dominate; old leather brown grounds the equipment.",
+          "damage_level": "Minor wear, no fire damage yet.",
+          "required_details": [
+            "bow visible",
+            "short knife accessible",
+            "water bag and cord practical",
+            "left shoulder sits slightly guarded"
+          ]
+        },
+        {
+          "state_id": "shen_weisang_post_fire_fugitive",
+          "name_cn": "火后逃亡状态",
+          "episode_range": "02-09",
+          "silhouette": "Same hunter structure, slightly tightened for running and hiding.",
+          "materials": [
+            "smoke-dulled grey-brown cloth",
+            "charred lower hem",
+            "repair stitches at shoulder and elbow",
+            "lighter route pack",
+            "old leather wrist guards",
+            "short knife sheath"
+          ],
+          "color_logic": "Grey-brown and herb green become smoke-dulled; soot black and fire-dark red remain focal marks.",
+          "damage_level": "Visible but controlled fire aftermath; never shredded or muddy all over.",
+          "required_details": [
+            "charred hem remains the focal continuity anchor",
+            "clothes stay complete and fitted",
+            "route pouch looks lighter than village state",
+            "no heroic badge or full crest"
+          ]
+        },
+        {
+          "state_id": "shen_weisang_border_snowline",
+          "name_cn": "边墙雪线状态",
+          "episode_range": "07-12",
+          "silhouette": "Hunter structure under border survival overlay, not military armor.",
+          "materials": [
+            "grey hemp cloak",
+            "old leather shoulder protection",
+            "snow-dusted fabric edge",
+            "wrapped lower legs",
+            "same bow and quiver hang-points",
+            "same knife and pouch logic"
+          ],
+          "color_logic": "Snowline greys overlay the core grey-brown and herb green; charred hem can still show at the lower edge.",
+          "damage_level": "Frost and travel wear only.",
+          "required_details": [
+            "cloak must not hide the hunter identity completely",
+            "no officer armor",
+            "no grey-wall official badge",
+            "bow remains practical rather than ceremonial"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_age_lock",
+          "purpose": "Keep face as a guarded 17-year-old youth.",
+          "notes": "Black hair, clear wary eyes, not a beard, not adult kingly severity."
+        },
+        {
+          "detail_id": "left_shoulder_and_wrist_guard",
+          "purpose": "Show old injury and hunter craft.",
+          "notes": "Slight asymmetry, old leather guard, reinforced shoulder cloth."
+        },
+        {
+          "detail_id": "belt_and_route_system",
+          "purpose": "Make guide/hunter function readable.",
+          "notes": "Trap cord, route pouch, small water bag, short knife sheath."
+        },
+        {
+          "detail_id": "back_bow_quiver",
+          "purpose": "Lock ranged-hunter silhouette.",
+          "notes": "Bow and quiver hang-points visible without heroic display."
+        },
+        {
+          "detail_id": "charred_hem",
+          "purpose": "Carry post-episode-02 continuity.",
+          "notes": "Localized soot and stitching, not ragged costume destruction."
+        },
+        {
+          "detail_id": "half_token_pouch",
+          "purpose": "Carry old relay-road identity without redesigning Zhaoming badge.",
+          "notes": "Small pouch or half-token edge, partial worn sun-moon trace only."
+        },
+        {
+          "detail_id": "spirit_wing_residue",
+          "purpose": "Show low-magic boundary.",
+          "notes": "Short broken gold-red lines near one eye and one shoulder blade; no full wings."
+        }
+      ],
+      "negative_rules": [
+        "adult warlord",
+        "kingly hero pose",
+        "full armor",
+        "palace prince costume",
+        "beggar rags",
+        "shredded clothing",
+        "full-body mud",
+        "clean complete Zhaoming badge",
+        "new personal crest",
+        "large magical wings",
+        "spell circle",
+        "visible text or labels"
+      ]
+    },
+    {
+      "asset_id": "character_yan_nanzhi_multi_state_board_v01",
+      "name_cn": "晏南枝多状态角色板",
+      "character": "Yan Nanzhi",
+      "identity": "18-year-old fugitive collateral royal of the old Zhaoming imperial line, carrying blood-writ proof and Moon-White jade clues",
+      "image_type": "multi-state character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Clearly 18, trained aristocratic restraint, tired only through subtle eye shadow and taut fingers.",
+        "build": "Slender, controlled, upright, with formal training visible in neck, shoulders, and hand placement.",
+        "posture": "Straight-backed even while fugitive; controlled distance rather than open fragility.",
+        "expression": "Calm, guarded, calculating; noble distance under pressure, never messy collapse."
+      },
+      "constant_anchors": [
+        "black hair tied with red cord",
+        "mist-purple or cold-grey fugitive outer robe",
+        "deep ink-blue inner garment structure",
+        "moon-white jade hidden close to body",
+        "blood-writ packet and old paper hidden in inner pouch or case",
+        "small black lacquer proof case",
+        "controlled aristocratic hand posture",
+        "old-imperial vermilion, royal blue, moon white, and worn gold reveal palette",
+        "dark grey snowline cloak with hidden moon-white lining"
+      ],
+      "state_designs": [
+        {
+          "state_id": "yan_nanzhi_fugitive_concealment",
+          "name_cn": "流亡遮蔽状态",
+          "episode_range": "02-06",
+          "silhouette": "Clean travel robe with restrained noble verticality; identity hidden under practical fugitive layers.",
+          "materials": [
+            "mist-purple coarse travel cloth",
+            "cold-grey outer robe option",
+            "deep ink-blue inner layer",
+            "red hair cord",
+            "hidden inner pouch",
+            "small black lacquer case",
+            "oil paper wrapping"
+          ],
+          "color_logic": "Mist purple and cold grey conceal the figure; deep ink blue, moon white, and red cord reveal controlled old-imperial memory only in small details.",
+          "damage_level": "Travel dust and tiny repair lines only; clean, complete, and controlled.",
+          "required_details": [
+            "no visible Sun-Moon badge on front layer",
+            "moon-white jade hidden or only glimpsed near inner pocket",
+            "blood-writ packet protected, not readable",
+            "red hair cord must remain visible"
+          ]
+        },
+        {
+          "state_id": "yan_nanzhi_old_empire_formal_reveal",
+          "name_cn": "旧帝国正装揭示状态",
+          "episode_range": "memory, reveal, ritual imagination",
+          "silhouette": "Ming-style Hanfu reference with wide sleeves, layered front, formal waist structure, and inherited imperial dignity.",
+          "materials": [
+            "vermilion wide outer sleeves",
+            "royal-blue or peacock-blue layered front",
+            "moon-white inner garment",
+            "worn gold embroidery",
+            "dark sun-moon brocade pattern language",
+            "old silk with cracks and preserved folds"
+          ],
+          "color_logic": "Formal reveal raises vermilion, royal blue, moon white, and worn gold, but treats them as inherited memory with old debt rather than a clean triumphal badge.",
+          "damage_level": "Preserved ceremonial wear with subtle age, creases, and worn gold; no battlefield damage.",
+          "required_details": [
+            "may echo locked Zhaoming symbol language as inherited embroidery",
+            "must not invent a new emblem or personal crest",
+            "formal state is separate from active fugitive travel",
+            "royal display remains solemn rather than glamorous"
+          ]
+        },
+        {
+          "state_id": "yan_nanzhi_border_snowline",
+          "name_cn": "边墙雪线状态",
+          "episode_range": "07-12",
+          "silhouette": "Fugitive structure under dark grey cloak, upright posture preserved under snow pressure.",
+          "materials": [
+            "dark grey snowline cloak",
+            "snow-dusted edge",
+            "hidden moon-white lining",
+            "cold-grey travel cloth",
+            "deep ink-blue inner layer",
+            "small protected proof pouch"
+          ],
+          "color_logic": "Snowline dark grey suppresses the fugitive palette; moon white appears only as a hidden lining edge in motion.",
+          "damage_level": "Frost, snow dust, and travel wear only.",
+          "required_details": [
+            "old empire symbols still hidden",
+            "cloak must not become military armor",
+            "red hair cord may be subdued but visible",
+            "proof objects remain close to the body"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_age_lock",
+          "purpose": "Keep Yan Nanzhi as an 18-year-old noble fugitive, not a mature queen or decorative princess.",
+          "notes": "Black hair, restrained eyes, slight fatigue, clean face, no crown."
+        },
+        {
+          "detail_id": "red_hair_cord",
+          "purpose": "Lock the emotional and identity anchor carried through all states.",
+          "notes": "Red cord tied into black hair; tension visible when she is under pressure."
+        },
+        {
+          "detail_id": "hidden_inner_pouch",
+          "purpose": "Show how royal proof objects are concealed in travel states.",
+          "notes": "Inner collar, dark pouch, oil paper, or small case; no front-facing badge."
+        },
+        {
+          "detail_id": "moon_white_jade_and_case",
+          "purpose": "Connect to the existing carry-prop board without over-explaining the object.",
+          "notes": "Moon-white jade fragment and black lacquer case, close-up only, no readable inscriptions."
+        },
+        {
+          "detail_id": "blood_writ_packet",
+          "purpose": "Carry the blood-writ continuity clue.",
+          "notes": "Old paper packet protected by hand or pouch; red traces abstract, not readable text."
+        },
+        {
+          "detail_id": "formal_embroidery",
+          "purpose": "Use locked Zhaoming symbol language as inherited fabric ornament, not a new crest.",
+          "notes": "Worn gold, dark sun-moon pattern, cracked ceremonial fabric, no clean logo redesign."
+        },
+        {
+          "detail_id": "snowline_cloak_lining",
+          "purpose": "Show hidden identity under border survival layer.",
+          "notes": "Dark grey cloak clasp, snow-dusted edge, brief moon-white lining reveal."
+        }
+      ],
+      "negative_rules": [
+        "redesigned Zhaoming badge",
+        "new Yan Nanzhi crest",
+        "visible royal emblem on fugitive or snowline front layer",
+        "modern princess styling",
+        "tiara or crown",
+        "ballroom gown",
+        "dirty collapsed refugee look",
+        "beggar rags",
+        "shredded travel wear",
+        "readable blood-written text",
+        "large magic aura",
+        "wings",
+        "spell circle",
+        "visible text or labels"
+      ]
+    }
+  ]
+}

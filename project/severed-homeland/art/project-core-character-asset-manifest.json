@@ -1,0 +1,104 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_core_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable character reference assets. This pass covers Shen Weisang and Yan Nanzhi as the two core protagonist identity boards.",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "role": "Canyang Ao and Jinhe route palette reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+      "role": "border snowline material overlay reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/costumes/costume_shen_weisang_states.png",
+      "role": "locked Shen Weisang costume-state reference; extend into character identity board, do not replace"
+    },
+    {
+      "path": "project/severed-homeland/assets/costumes/costume_yan_nanzhi_states.png",
+      "role": "locked Yan Nanzhi costume-state reference; extend into character identity board, do not replace"
+    },
+    {
+      "path": "project/severed-homeland/assets/props/prop_yan_nanzhi_carry_board.png",
+      "role": "locked Yan Nanzhi carry-prop reference for moon-white jade, blood writ packet, black lacquer case, and hidden proof objects"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+      "role": "southern old empire palette reference for reveal-state color balance"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "role": "locked Zhaoming emblem reference; partial worn trace only"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+      "role": "locked old empire symbol extension reference; hidden or fragmented use only"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_shen_weisang_multi_state_board_v01",
+      "name_cn": "沈维桑多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "planned",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_shen_weisang_multi_state_board.png",
+      "source_prompt_id": "prompt_character_shen_weisang_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#沈维桑",
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md"
+      ],
+      "downstream_usage": [
+        "Prompt Room character identity lock",
+        "ComfyUI character reference input",
+        "episode 01-12 shot continuity reference",
+        "wardrobe and prop handoff for Shen Weisang"
+      ]
+    },
+    {
+      "asset_id": "character_yan_nanzhi_multi_state_board_v01",
+      "name_cn": "晏南枝多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "planned",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
+      "source_prompt_id": "prompt_character_yan_nanzhi_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#晏南枝",
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md",
+        "project/severed-homeland/art/project-core-prop-costume-designs.json#costume_yan_nanzhi_states_v01"
+      ],
+      "downstream_usage": [
+        "Prompt Room character identity lock",
+        "ComfyUI character reference input",
+        "episode 02-12 shot continuity reference",
+        "wardrobe and prop handoff for Yan Nanzhi"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems or create a new Shen Weisang crest.",
+    "Do not redesign the locked Zhaoming emblem or create a new Yan Nanzhi crest.",
+    "Preserve Shen Weisang as a 17-year-old hunter and guide, not an adult general.",
+    "Preserve Yan Nanzhi as an 18-year-old trained aristocratic fugitive whose royal proof objects remain hidden in travel states.",
+    "Yan Nanzhi fugitive and snowline states must not expose a clean royal badge on the chest, cloak, belt front, or background.",
+    "Distress clothing only through smoke, soot, focal charred hem, repair stitches, frost, and wear while preserving complete functional structure.",
+    "Use low magic only as small gold-red broken residue near eye and shoulder blade.",
+    "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."
+  ]
+}

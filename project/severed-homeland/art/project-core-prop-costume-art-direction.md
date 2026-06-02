@@ -93,11 +93,11 @@
 
 道具图输出到：
 
-`project/severed-homeland/assets/props/project-core/v01/`
+`project/severed-homeland/assets/props/`
 
 服装图输出到：
 
-`project/severed-homeland/assets/costumes/project-core/v01/`
+`project/severed-homeland/assets/costumes/`
 
 设计、提示词、线程计划和 QC 输出到：
 
