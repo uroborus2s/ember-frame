@@ -1,0 +1,100 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "asset_batch": "project_style_board_low_magic_eastern_epic_v01",
+  "date": "2026-06-02",
+  "status": "prompt_plan_ready_pending_image_generation",
+  "output_dir": "project/severed-homeland/assets/style/project-style-board",
+  "source_request": {
+    "mode": "design_project_global_style_board_first",
+    "style_keywords": [
+      "低魔",
+      "冷峻东方史诗",
+      "9:16短剧质感"
+    ],
+    "delivery_rule": "Create auditable tool-neutral image prompts and stable output paths first. Do not launch image-generation threads until the plan is reviewed."
+  },
+  "shared_generation_rules": {
+    "format": "vertical 9:16 high-end fantasy production style board image, cinematic realism, no visible text labels, no captions, no watermark",
+    "visual_quality": "film still concept art, restrained low-magic eastern epic, production design reference, readable at mobile size",
+    "continuity_priority": [
+      "low magic stays subtle, physical, and costly",
+      "human clothes are worn but complete and role-specific",
+      "Suming institutional spaces are clean, pale, and procedural, not generic monster caves",
+      "Zhaoming relics feel advanced, maritime, astronomical, old, and morally complex",
+      "9:16 composition favors close-ups, occlusion, vertical pressure, and prop anchors"
+    ],
+    "must_have": [
+      "9:16 vertical composition",
+      "cinematic lighting",
+      "low saturation but regional color variation",
+      "clear material language",
+      "no text, no letters, no UI labels, no watermark",
+      "no multi-character hero poster",
+      "no modern technology"
+    ],
+    "negative_prompt": "text, captions, Chinese characters, letters, watermark, UI labels, modern poster typography, high magic explosion, glowing spell circle, xianxia flying swords, immortal palace clouds, saturated game fantasy, sci-fi, cyberpunk neon, modern city, modern military uniform, modern guns, clean superhero costume, ragged beggar crowd, mud-covered indistinct refugees, full monster swarm, human soldier wearing insect helmet, cute mascot, comedy, anime chibi, mobile game interface"
+  },
+  "prompts": [
+    {
+      "prompt_id": "style_prompt_global_mood_v01",
+      "asset_id": "style_global_mood_low_magic_eastern_epic_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "global_mood_style_board",
+      "continuity_references": [
+        "project/severed-homeland/背景.md",
+        "project/severed-homeland/bible/scenes.md",
+        "project/severed-homeland/outline/series-outline.md",
+        "project/severed-homeland/01/director/director-brief.md"
+      ],
+      "design_lock": "This is the master mood board for the whole show: low-magic, cold eastern epic, vertical short-drama realism. Epic scale must come from civilization layers, institutional pressure, old roads, border walls, and visible props, not from high-magic spectacle.",
+      "image_prompt": "Create one vertical 9:16 cinematic production style board for a low-magic cold eastern epic short drama. The world is an old white-stone human civilization conquered by a clean insectoid bureaucracy. Show a restrained composite mood, not a poster: dusk earthen village lane with an old well and medicine house, a pale white-robed insectoid official presence suggested by a clean sleeve, white register book, wax needle, and black sun emblem, broken Zhaoming sun-and-moon marks half covered by insect wax, a narrow old relay tunnel with only a broken gold-red line at the wall base, distant black stone border wall under snow, smoke and red fire glow held low in the background. Use cinematic realism, muted colors with regional variation: earth brown, medicine green, old white stone, insect wax white, black-green chitin, vermilion lacquer, moon-white glint, iron gray, snow blue. Low magic only as tiny residual lines and reflections. Vertical pressure, close-up prop anchors, occluding doorframes and spears. No text, no labels, no character hero lineup, no high fantasy magic burst.",
+      "negative_prompt": "high magic spell circle, flying immortals, sword riding, clean palace fantasy, bright blue-purple magic, game splash art, superhero pose, modern poster text, full battle panorama, giant monster crowd, ragged beggar slum, mud-covered refugees, sci-fi, cyberpunk, modern city, readable writing, watermark"
+    },
+    {
+      "prompt_id": "style_prompt_vertical_composition_v01",
+      "asset_id": "style_vertical_composition_9x16_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "vertical_composition_style_board",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md",
+        "project/severed-homeland/01/shots/shot-list.json"
+      ],
+      "design_lock": "The board must teach the 9:16 visual grammar: close-ups, medium close-ups, prop macro, low-angle pressure, narrow occlusion, and vertical hierarchy. It must not look like a horizontal epic matte painting.",
+      "image_prompt": "Create one vertical 9:16 cinematic composition reference board for a short drama. It should feel like several cleanly arranged film still studies without text labels: a low-angle close-up of short spears crossing a village threshold, a hand holding a white register book and wax needle, a medicine cabinet towering vertically behind a mother figure silhouette, a teenage hunter's old leather bracer and bow cropped in close-up, an old well rim with one moon-white glint, a black stone border wall rising above small human silhouettes, a white institutional corridor compressing a child in frame. Use strong vertical lines, doorframes, shelves, spears, wall faces, book edges, and body blocking. Color remains low saturation: earth brown, old wood, bone white, pearl gray, iron gray, snow blue, restrained ember red. No readable text, no labels, no UI, no poster typography.",
+      "negative_prompt": "horizontal widescreen panorama, huge army battlefield, symmetrical poster layout, text labels, subtitles, UI panels, comic panels with borders, high fantasy glow, floating magic circles, glamour portrait, modern cinematic camera diagram, modern phone interface, watermark"
+    },
+    {
+      "prompt_id": "style_prompt_material_palette_v01",
+      "asset_id": "style_material_palette_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "material_palette_style_board",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md",
+        "project/severed-homeland/bible/scenes.md",
+        "project/severed-homeland/prompts/project-faction-emblem-prompts-v02.json"
+      ],
+      "design_lock": "Material language must separate Zhaoming old civilization, Suming institutional overlay, human survival craft, and border/northern harshness. It must avoid flattening the whole show into one gray palette.",
+      "image_prompt": "Create one vertical 9:16 production material and color style board for a low-magic eastern epic. No text labels. Arrange tactile material swatches and environmental fragments in a cinematic still-life: old white stone with scraped sun-and-moon mark, worn vermilion lacquer, moon-white ceramic jade edge, aged gold compass or astrolabe detail, clean insect wax seal, pearl-gray white official fabric, black-green chitin plate, translucent wing membrane, old wood medicine cabinet, grass-green medicinal cloth, gray-brown hunter fabric, old leather bracer, grain sack, oil-black gear with ground-off military marking, black border stone, old iron, snow-crusted bone whistle, weathered antler and rawhide knot. Lighting is cool and restrained, with one small ember red accent and one moon-white glint. Everything feels practical for production reference, ancient, used, and role-specific. No modern objects, no UI labels, no fantasy inventory sheet.",
+      "negative_prompt": "text labels, material names, UI inventory grid, modern product photography, glossy luxury catalog, neon, sci-fi material, clean plastic, modern weapons, high saturation rainbow palette, generic beige-only palette, dirty mud-only palette, treasure pile, coins, gemstone fantasy, watermark"
+    },
+    {
+      "prompt_id": "style_prompt_low_magic_vfx_v01",
+      "asset_id": "style_low_magic_vfx_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "low_magic_vfx_style_board",
+      "continuity_references": [
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/01/director/director-brief.md",
+        "project/severed-homeland/01/director/camera-plan.md"
+      ],
+      "design_lock": "Low magic must be subtle, short, physically grounded, and costly. Effects should look like residues, tracking tools, sealed evidence, or old relay memory, never like combat spells.",
+      "image_prompt": "Create one vertical 9:16 low-magic visual effects boundary board for a restrained eastern epic. No text labels. Show subtle physical close-up studies: a teenage hunter's eye corner and shoulder edge with a short broken gold-red wing-vein glow, not a full wing; a cold white Qingming incense thread crawling slowly along dark cloth and stopping at a burned hem; pale insect wax sealing a door plaque and evidence edge, glossy but slow and procedural; dark red blood-thread marks on a wrist and oil paper, restrained and dry; a broken sun-and-moon mark on old stone with only a tiny moon-white reflection in wet moss; a relay tunnel floor where a thin interrupted gold-red line runs along the wall base. Effects are small, dim, physically blocked by cloth, stone, water, smoke, and shadow. Cinematic macro close-ups, muted palette, visible cost and pain, no combat spell.",
+      "negative_prompt": "large glowing magic circle, blue-purple spell blast, lightning attack, fireball, angel wings, full-body aura, energy sword, superhero VFX, colorful particles, fantasy portal, xianxia immortal glow, clean game skill icon, UI labels, text, watermark"
+    }
+  ]
+}
