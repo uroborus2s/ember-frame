@@ -1,0 +1,117 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "asset_batch": "project_regional_color_system_v01",
+  "date": "2026-06-02",
+  "status": "prompt_plan_ready_pending_image_generation",
+  "output_dir": "project/severed-homeland/assets/style/regional-color-system",
+  "source_request": {
+    "mode": "design_project_regional_color_system",
+    "requested_regions": [
+      "残阳坳",
+      "金河",
+      "清明院",
+      "边墙",
+      "北境",
+      "南方旧帝国"
+    ],
+    "delivery_rule": "Create auditable tool-neutral image prompts and stable output paths first. Do not launch image-generation threads until the plan is reviewed."
+  },
+  "shared_generation_rules": {
+    "format": "vertical 9:16 cinematic production design color board, no visible text labels, no captions, no watermark",
+    "visual_quality": "film still concept art, regional color system reference, restrained low-magic eastern epic, readable at mobile size",
+    "continuity_priority": [
+      "each region has a distinct local base palette",
+      "Suming/Qingming institutional overlay remains clean and procedural without erasing local color",
+      "Zhaoming old empire accents are worn, hidden, cracked, or partially covered",
+      "human survival spaces keep role-specific order instead of ragged poverty",
+      "low magic appears only as tiny local glints, broken lines, incense threads, or wax seals"
+    ],
+    "must_have": [
+      "9:16 vertical composition",
+      "cinematic realism",
+      "low saturation with clear regional variation",
+      "clear material and lighting differences",
+      "no text",
+      "no letters",
+      "no UI labels",
+      "no watermark",
+      "no modern technology"
+    ],
+    "negative_prompt": "text, captions, Chinese characters, letters, watermark, UI labels, poster typography, color swatch labels, modern palette chart, high magic explosion, glowing spell circle, xianxia flying swords, immortal palace clouds, saturated mobile game fantasy, sci-fi, cyberpunk neon, modern city, modern hospital, modern harbor, modern machinery UI, ragged beggar crowd, mud-covered indistinct refugees, full monster swarm, cute animal mascot, comedy, anime chibi"
+  },
+  "prompts": [
+    {
+      "prompt_id": "regional_color_prompt_route_map_v01",
+      "asset_id": "style_regional_color_route_map_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_regional_color_route_map_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "regional_route_color_map",
+      "continuity_references": [
+        "project/severed-homeland/art/project-regional-color-system.md",
+        "project/severed-homeland/bible/scenes.md",
+        "project/severed-homeland/outline/series-outline.md"
+      ],
+      "design_lock": "This image is a visual route color board for season one, showing regional progression without labels. It must not become a literal map with text.",
+      "image_prompt": "Create one vertical 9:16 cinematic regional color route board for a low-magic eastern epic short drama. No text labels, no map labels. Arrange the season-one route as a flowing visual progression of environmental fragments: an earthen dusk village threshold and old well for Canyang Ao, a deep green-blue river with steam mill gears and grain tags for Jinhe, a burned academy fragment with ash and cracked copper star map, a clean white Qingming corridor with black sun emblem and wax needle, a gray-blue wallfoot market with pottery charms, a black-stone border wall under snow, a wind-eroded northern bone marker with dry grass and ice-blue survival fire, and a moon-white old relay stone with broken gold-red route line. Make each region distinct but connected by the same worn human clothing, insect-wax overlays, and tiny Zhaoming sun-moon remnants. Cinematic realism, low saturation, mobile-readable 9:16, no text, no UI.",
+      "negative_prompt": "literal map, labels, color names, text, letters, fantasy poster montage with hero poses, huge magic, glowing route map, saturated rainbow palette, modern infographic, UI panels, modern roads, modern city, watermark"
+    },
+    {
+      "prompt_id": "regional_color_prompt_canyang_to_jinhe_v01",
+      "asset_id": "style_canyang_to_jinhe_palette_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "regional_transition_palette",
+      "continuity_references": [
+        "project/severed-homeland/art/project-regional-color-system.md#残阳坳",
+        "project/severed-homeland/art/project-regional-color-system.md#金河"
+      ],
+      "design_lock": "Show the transition from local home warmth under threat to river production control. Canyang Ao must not look idyllic; Jinhe must not look steampunk-fun.",
+      "image_prompt": "Create one vertical 9:16 cinematic production color board showing the transition from Canyang Ao to Jinhe. Top or foreground: earthen brown village wall, old wood medicine cabinet edge, herb-green basket, late wheat-gold dusk rim, cold white Qingming incense crawling near a door threshold, black-green insectoid guard leg silhouette, one moon-white glint on an old well. Lower or background transition: deep river green-blue water, fog gray air, wet wooden pier posts, iron-gray waterwheel and oil-black gear, grain-yellow official tag, translucent steam, worn copper mark where an old military interface has been ground away. The two regions should feel connected by escape and pursuit, but keep distinct color temperature and material language. No text, no labels, no modern harbor, no clean steampunk fantasy.",
+      "negative_prompt": "idyllic golden village, poverty slum, modern harbor, luxury steamboat, cheerful steampunk, bright orange factory, text labels, color chips with names, high magic glow, full monster crowd, watermark"
+    },
+    {
+      "prompt_id": "regional_color_prompt_qingming_institution_v01",
+      "asset_id": "style_qingming_institution_palette_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "regional_institution_palette",
+      "continuity_references": [
+        "project/severed-homeland/art/project-regional-color-system.md#清明院",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md"
+      ],
+      "design_lock": "Qingming Institution is clean procedural violence. White must be insect-wax and bone-white, not hospital sci-fi or holy light.",
+      "image_prompt": "Create one vertical 9:16 cinematic Qingming Institution color and material board. No text labels. Show a clean pale corridor with insect-wax white walls, bone-white registry table, pearl-gray floor, repeated hive-like door holes, a black sun disk half covered by white wing geometry as an emblem-like shape without readable writing, a white register book with blank pages, a wax needle on a tray, thin cold-white incense thread crawling along the floor, a tiny dry blood-red mark at a sleeve edge, dark green chitin guard silhouette in a doorway, and a white child's garment compressed by the architecture. Lighting is cold top light with hard edges, sterile but ancient, procedural and oppressive. No modern hospital, no sci-fi UI, no monster cave, no warm temple.",
+      "negative_prompt": "modern hospital, laboratory blue light, sci-fi interface, text, letters, signage, medical equipment, gore, dungeon, monster nest, warm cathedral, angelic glow, colorful magic, watermark"
+    },
+    {
+      "prompt_id": "regional_color_prompt_border_to_north_v01",
+      "asset_id": "style_border_to_north_palette_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "regional_transition_palette",
+      "continuity_references": [
+        "project/severed-homeland/art/project-regional-color-system.md#边墙",
+        "project/severed-homeland/art/project-regional-color-system.md#北境"
+      ],
+      "design_lock": "Show the border wall as engineered defense and prison, then the north as disaster ecology, not a monster land.",
+      "image_prompt": "Create one vertical 9:16 cinematic regional transition color board from the Border Wall to the North. Foreground: towering black stone wall rising through the frame, snow-white ledges, shadow-blue mountain darkness, old iron gate hardware, gray wall-soldier cloth, bone bell, cold insect-wax grain seal on a gate, a small broken gold-red Zhaoming array line visible only in a peeled crack. Beyond the wall: wind-eroded brown hills, frozen gray earth, dry yellow grass, bone markers with weathered holes, dark hide rope, a tiny ice-blue survival fire, distant beast silhouette barely visible in storm haze. The mood should say the enemy is also surviving a cold disaster. No huge battle, no full monster swarm, no pure white snowfield, no blue-purple magic.",
+      "negative_prompt": "soft immortal mountain, pure white snow-only scene, shiny heroic army, giant monster swarm, game orc camp, colorful battle magic, glowing spell wall, text labels, fantasy map, watermark"
+    },
+    {
+      "prompt_id": "regional_color_prompt_southern_old_empire_v01",
+      "asset_id": "style_southern_old_empire_palette_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "future_region_palette",
+      "continuity_references": [
+        "project/severed-homeland/art/project-regional-color-system.md#南方旧帝国",
+        "project/severed-homeland/背景.md",
+        "project/severed-homeland/outline/series-outline.md"
+      ],
+      "design_lock": "Southern Old Empire is preserved, hidden, humid, and morally complex. It is not a perfect golden palace or bright court-drama world.",
+      "image_prompt": "Create one vertical 9:16 cinematic future-facing regional color board for the Southern Old Empire remnant. No text labels. Show a damp hidden chamber near rainforest protection: old white stone wall with cracks and moss moisture, worn vermilion lacquer screen edge, deep sapphire-blue fabric cord around a sealed scroll, moon-white jade reflection on wet stone, tarnished gold sun-and-moon line partly hidden under a medicine packet, dark brown waterproof table, low covered ember spark in a palm, rain-forest vine green entering from the edge, faint moon-moss glow kept subtle. The space should feel like preserved civilization and old debt, hidden from Qingming power, human and restrained. No flawless palace, no bright court drama, no tropical fantasy saturation, no modern secret office.",
+      "negative_prompt": "perfect imperial palace, golden throne room, court-drama glamour, tropical neon jungle, fairy forest, high magic glow, modern office, conspiracy board with text, readable writing, UI labels, watermark"
+    }
+  ]
+}

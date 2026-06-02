@@ -1,0 +1,406 @@
+{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "season": "season-01",
+  "asset_batch": "project_regional_color_system_v01",
+  "date": "2026-06-02",
+  "status": "planning_ready_pending_image_generation",
+  "scope": "project-level regional color system for first-season route and major future-facing regions",
+  "source_inputs": [
+    "project/severed-homeland/背景.md",
+    "project/severed-homeland/bible/scenes.md",
+    "project/severed-homeland/bible/continuity.md",
+    "project/severed-homeland/outline/series-outline.md",
+    "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md"
+  ],
+  "global_rules": {
+    "ratio": {
+      "local_base_color": "60-75%",
+      "power_overlay_color": "15-25%",
+      "old_memory_or_low_magic_accent": "5-10%"
+    },
+    "continuity_locks": [
+      "Regional color is not a full-scene LUT; it is a local material, power overlay, and story-memory system.",
+      "Suming/Qingming overlay may enter every region, but it must not erase local regional identity.",
+      "Zhaoming colors must appear worn, hidden, cracked, wet, or partially covered, not as flawless restoration imagery.",
+      "Human clothing can be old, cold, soot-marked, or repaired, but must retain profession and role identity.",
+      "Low-magic colors are brief localized clues, never combat spell spectacle."
+    ],
+    "forbidden_global": [
+      "single gray-blue show-wide LUT",
+      "single warm yellow historical-drama LUT",
+      "high-saturation xianxia blue-purple glow",
+      "large spell circles",
+      "modern medical white",
+      "cyberpunk neon",
+      "muddy ragged refugee crowds",
+      "full monster swarms",
+      "flawless righteous imperial palace"
+    ]
+  },
+  "regions": [
+    {
+      "region_id": "canyang_ao",
+      "name_cn": "残阳坳",
+      "narrative_function": "可被夺走的小家；农猎生活秩序被清明制度切开。",
+      "episode_scope": ["01", "02", "03"],
+      "palette": {
+        "primary": [
+          {"name_cn": "夯土褐", "hex": "#6E563E", "usage": "土墙、村道、门槛、旧井边泥土"},
+          {"name_cn": "晚麦金", "hex": "#B08A3C", "usage": "黄昏、麦束、晒谷场、残阳边缘"}
+        ],
+        "secondary": [
+          {"name_cn": "草药青", "hex": "#4F6B4A", "usage": "罗家药屋、药篮、沈家生活锚点"},
+          {"name_cn": "旧木褐", "hex": "#3A2B21", "usage": "药柜、弓架、门框、水桶"}
+        ],
+        "power_overlay": [
+          {"name_cn": "虫蜡白", "hex": "#D8D0BC", "usage": "封门牌、虫蜡针、白册边缘"},
+          {"name_cn": "黑绿甲", "hex": "#1E2A22", "usage": "螳刃小兵局部甲壳、门口剪影"}
+        ],
+        "accents": [
+          {"name_cn": "月白一线", "hex": "#C8D7D8", "usage": "井口、水面、玉片未命名反光"},
+          {"name_cn": "火场暗红", "hex": "#7F2D22", "usage": "第02集火场、焦痕衣角、灰烬边缘"}
+        ]
+      },
+      "lighting": "黄昏侧逆光，室内木色压暗；清明香进入时用冷白细线压低本地暖土色。",
+      "material_keys": ["夯土", "旧木", "草药篮", "陶罐", "洗旧布帘", "虫蜡封门牌"],
+      "camera_rules": [
+        "Use the old well, medicine cabinet, bow rack, and threshold as stable vertical anchors.",
+        "After the fire, keep recognizable silhouettes of the original home space.",
+        "The sunset should rim objects, not turn the village into idyllic golden farmland."
+      ],
+      "forbidden": [
+        "over-saturated golden pastoral look",
+        "undifferentiated black ash fire scene",
+        "ragged beggar village"
+      ]
+    },
+    {
+      "region_id": "jinhe",
+      "name_cn": "金河",
+      "narrative_function": "文明被保留为生产工具；水路开阔感与征粮控制并存。",
+      "episode_scope": ["01-montage", "04"],
+      "palette": {
+        "primary": [
+          {"name_cn": "深河青", "hex": "#214C4E", "usage": "河面、河雾阴影、水标倒影"},
+          {"name_cn": "雾灰", "hex": "#9FAAA6", "usage": "清晨河雾、远岸、湿空气"}
+        ],
+        "secondary": [
+          {"name_cn": "湿木褐", "hex": "#4E3A2A", "usage": "码头桩、粮船、修船棚"},
+          {"name_cn": "铁灰", "hex": "#4D5353", "usage": "水泵、轨车、磨盘、齿轮"}
+        ],
+        "power_overlay": [
+          {"name_cn": "粮牌暗黄", "hex": "#A88435", "usage": "征粮木牌、粮袋标签、检查口"},
+          {"name_cn": "油黑", "hex": "#171817", "usage": "轴承、磨平接口、地窖机械阴影"}
+        ],
+        "accents": [
+          {"name_cn": "磨损铜金", "hex": "#8A6A3C", "usage": "被磨平炮架刻度、旧水标残痕"},
+          {"name_cn": "金赤断纹", "hex": "#B35A2B", "usage": "半枚驿令与旧水标短促共鸣"}
+        ]
+      },
+      "lighting": "河雾漫反射与蒸汽白低光；齿轮和手部必须从蒸汽中可读。",
+      "material_keys": ["宽阔河面", "码头桩", "粮船", "水轮", "油黑齿轮", "虫蜡粮牌"],
+      "camera_rules": [
+        "Use piers, low chimneys, waterwheels, and granary doors to preserve vertical pressure in 9:16.",
+        "Steam must be translucent enough to reveal production control details.",
+        "Gold comes from grain, wet wood, and old copper, not luxury shine."
+      ],
+      "forbidden": [
+        "modern harbor",
+        "luxury steamboat",
+        "playful steampunk amusement look",
+        "decorative small creek"
+      ]
+    },
+    {
+      "region_id": "qingming_institution",
+      "name_cn": "清明院",
+      "narrative_function": "洁净制度暴力；白色吞掉人的生活色。",
+      "episode_scope": ["01", "05", "06", "12"],
+      "palette": {
+        "primary": [
+          {"name_cn": "虫蜡白", "hex": "#DDD8C8", "usage": "墙面、封条、针具托盘、走廊反光"},
+          {"name_cn": "骨白", "hex": "#CFC6B4", "usage": "桌面、门洞、识别环、儿童白衣"}
+        ],
+        "secondary": [
+          {"name_cn": "珍珠灰", "hex": "#B8B9B3", "usage": "地砖、灯槽、白册阴影"},
+          {"name_cn": "冷金", "hex": "#9C8C5F", "usage": "官制小钉、边角金属、白翳高阶标识"}
+        ],
+        "power_overlay": [
+          {"name_cn": "黑日", "hex": "#101111", "usage": "白翅覆黑日徽记、册封印、门心"},
+          {"name_cn": "暗绿甲壳", "hex": "#1B2B24", "usage": "门卫复眼、护颚、刃肢局部"}
+        ],
+        "accents": [
+          {"name_cn": "干血红", "hex": "#6E1F1E", "usage": "验血、血纹、白册边缘极小痕迹"},
+          {"name_cn": "清明冷白", "hex": "#E6ECE7", "usage": "清明香、虫蜡针反光、记忆室冷光"}
+        ]
+      },
+      "lighting": "冷白顶光、硬边阴影、无尘长廊反光；少量血色越少越刺眼。",
+      "material_keys": ["白册", "虫蜡针", "蜂巢孔", "记忆室门洞", "白翅覆黑日", "半透明虫膜"],
+      "camera_rules": [
+        "Compress characters with repeated white doorways and top-down light.",
+        "Keep human identity colors visible but desaturated under the institutional white.",
+        "Bai Yi carries this palette into other regions as an inserted power slice."
+      ],
+      "forbidden": [
+        "modern hospital white",
+        "science-fiction blue UI",
+        "dirty monster cave",
+        "warm religious sanctuary"
+      ]
+    },
+    {
+      "region_id": "border_wall",
+      "name_cn": "边墙",
+      "narrative_function": "旧帝国工程、防灾防线和肃明牢笼叠合。",
+      "episode_scope": ["01-montage", "08", "10", "11", "12"],
+      "palette": {
+        "primary": [
+          {"name_cn": "黑石", "hex": "#22262A", "usage": "城墙、锁喉关、寒鸦堡外墙"},
+          {"name_cn": "雪白", "hex": "#DADDDD", "usage": "墙顶雪、风雪反光、雪泥高光"}
+        ],
+        "secondary": [
+          {"name_cn": "阴影蓝", "hex": "#2F4658", "usage": "山体阴影、夜雪、远墙层次"},
+          {"name_cn": "旧铁", "hex": "#4B4C49", "usage": "城门、骨钟钩、旧甲片、兵器"}
+        ],
+        "power_overlay": [
+          {"name_cn": "灰墙布", "hex": "#696B62", "usage": "军户厚衬袄、墙巾、绑腿"},
+          {"name_cn": "冷蜡白", "hex": "#C9C6B8", "usage": "粮仓封条、肃明军令、虫蜡覆盖层"}
+        ],
+        "accents": [
+          {"name_cn": "干血暗红", "hex": "#5C2622", "usage": "撞击坑、旧伤布、墙缝血痕"},
+          {"name_cn": "阵基金赤", "hex": "#B65A2C", "usage": "剥落处露出的旧日月阵基"}
+        ]
+      },
+      "lighting": "雪面冷反光、墙体深阴影、夜战时火光只低量照出裂纹和骨钟。",
+      "material_keys": ["黑石", "旧铁", "雪泥", "骨钟", "旧甲片", "虫蜡粮仓封条"],
+      "camera_rules": [
+        "Make wall surfaces rise through the vertical frame to keep humans small.",
+        "Use giant-beast pressure through shadow, horn shape, cracks, and falling snow dust.",
+        "Gold-red array light appears only where the overlay has peeled away."
+      ],
+      "forbidden": [
+        "soft immortal snow mountain",
+        "shiny heroic border army",
+        "blue-purple battle magic"
+      ]
+    },
+    {
+      "region_id": "north",
+      "name_cn": "北境",
+      "narrative_function": "敌人也是寒灾中的活人；不是纯白雪原也不是怪物潮。",
+      "episode_scope": ["01-montage", "09"],
+      "palette": {
+        "primary": [
+          {"name_cn": "枯草黄", "hex": "#9A8243", "usage": "草原、帐外干草、迁徙车辙边缘"},
+          {"name_cn": "冻土灰", "hex": "#5F625D", "usage": "冻裂地、雪下土、荒原阴影"}
+        ],
+        "secondary": [
+          {"name_cn": "风蚀褐", "hex": "#6A4D35", "usage": "秃山、兽皮、木桩、骨笛谷岩面"},
+          {"name_cn": "冰蓝", "hex": "#6F9AA8", "usage": "冰湖、寒风边缘、雪坑冷光"}
+        ],
+        "power_overlay": [
+          {"name_cn": "骨白", "hex": "#C8C1AE", "usage": "骨标、骨饰、鸣骨岭风孔"},
+          {"name_cn": "兽皮暗棕", "hex": "#3F2F25", "usage": "皮帐、护腕、驭兽绳"}
+        ],
+        "accents": [
+          {"name_cn": "冰蓝火", "hex": "#7CAEB5", "usage": "北境营火、萨满火、雪坑救援"},
+          {"name_cn": "暗血红", "hex": "#73302B", "usage": "血誓绳结、骨笛刻痕、战鼓旧染"}
+        ]
+      },
+      "lighting": "干冷天光、低矮营火、风蚀阴影；暴雪是天气层而不是唯一底色。",
+      "material_keys": ["枯草", "冻土", "骨标", "兽皮绳", "骨笛", "冰蓝火"],
+      "camera_rules": [
+        "Use migration tracks, low fire, bone markers, and distant beast silhouettes as readable story anchors.",
+        "Keep Luming's bone and hide palette distinct from border-wall gray.",
+        "Treat ice-blue fire as survival light, not attack magic."
+      ],
+      "forbidden": [
+        "pure white snow-only north",
+        "romantic pastoral grassland",
+        "game orc camp",
+        "cute animal mascot logic"
+      ]
+    },
+    {
+      "region_id": "southern_old_empire",
+      "name_cn": "南方旧帝国",
+      "narrative_function": "被保存、被伪装、也背负旧债的文明残片；第二季接口。",
+      "episode_scope": ["01-montage", "season-02-interface"],
+      "palette": {
+        "primary": [
+          {"name_cn": "旧白石", "hex": "#C8C0AA", "usage": "密室墙、旧臣馆署、驿图压石"},
+          {"name_cn": "朱赤旧漆", "hex": "#8E342A", "usage": "封存旗匣、旧屏风、南方暗火边缘"}
+        ],
+        "secondary": [
+          {"name_cn": "宝蓝", "hex": "#1F3F63", "usage": "旧帝国织物、晏南枝身份记忆、卷轴绳"},
+          {"name_cn": "月白", "hex": "#D1D8D3", "usage": "玉片、月下旧印、潮湿石面反光"},
+          {"name_cn": "雨林藤绿", "hex": "#355A3B", "usage": "隐歌谷、藤桥、药包外层、庇护线索"}
+        ],
+        "power_overlay": [
+          {"name_cn": "磨损金", "hex": "#9A7A3A", "usage": "日月纹、星图铜线、旧礼器边角"},
+          {"name_cn": "防潮暗褐", "hex": "#3B2A22", "usage": "密室桌、药包底、木匣、暗格"}
+        ],
+        "accents": [
+          {"name_cn": "暗火星", "hex": "#B35A32", "usage": "第01集南方密室火星、被盖住的起事暗流"}
+        ]
+      },
+      "lighting": "潮湿低暖火、密林冷绿反光、月白石面短反射；华丽必须有裂纹和潮气。",
+      "material_keys": ["旧白石", "朱赤漆", "宝蓝织物", "月白陶玉", "磨损金", "藤桥", "药包"],
+      "camera_rules": [
+        "Use preserved traces and hidden compartments instead of flawless palace space.",
+        "Do not allow vermilion and sapphire blue to cover the whole frame at once.",
+        "Increase southern imperial color only when the story moves toward Hidden Song Valley."
+      ],
+      "forbidden": [
+        "perfect golden imperial palace",
+        "bright court-drama look",
+        "tropical high-saturation fantasy",
+        "modern secret-organization office"
+      ]
+    },
+    {
+      "region_id": "ashen_academy",
+      "name_cn": "灰烬书院",
+      "narrative_function": "失史具象化。",
+      "episode_scope": ["05"],
+      "palette": {
+        "primary": [
+          {"name_cn": "焦黑", "hex": "#1C1A18", "usage": "焦黑拱廊、书架残骸"},
+          {"name_cn": "书灰", "hex": "#6F6A62", "usage": "灰烬、碎纸、地面尘"}
+        ],
+        "secondary": [
+          {"name_cn": "裂铜", "hex": "#7B5A36", "usage": "碎星图盘、旧铜轴"},
+          {"name_cn": "灰白尘", "hex": "#B7B0A5", "usage": "塌顶光、飞尘"}
+        ],
+        "power_overlay": [
+          {"name_cn": "虫蜡封条", "hex": "#D8D0BC", "usage": "封条、证据覆盖"},
+          {"name_cn": "识别者白衣", "hex": "#CFC6B4", "usage": "儿童背影、袖口"}
+        ],
+        "accents": [
+          {"name_cn": "月白星图残光", "hex": "#C7D2D1", "usage": "碎星图台、裂缝冷光"}
+        ]
+      },
+      "lighting": "灰黑底色中只留少量塌顶冷光和月白星图残光。",
+      "material_keys": ["炭化木", "碎纸灰", "裂铜星图盘", "虫蜡封条"],
+      "camera_rules": [
+        "Use burnt shelves, star-map fragments, and child silhouettes as local anchors.",
+        "Keep the scene about lost history, not horror-dungeon spectacle."
+      ],
+      "forbidden": ["gore dungeon", "generic haunted school", "large magical archive glow"]
+    },
+    {
+      "region_id": "wallfoot_market",
+      "name_cn": "墙下集市",
+      "narrative_function": "无姓人与混裔的生活秩序；正统叙事被质疑。",
+      "episode_scope": ["07"],
+      "palette": {
+        "primary": [
+          {"name_cn": "灰蓝棚布", "hex": "#596B78", "usage": "棚布、短袄、墙下阴影"},
+          {"name_cn": "陶土", "hex": "#8A5F45", "usage": "窑洞、陶器、地面"}
+        ],
+        "secondary": [
+          {"name_cn": "旧布黄", "hex": "#A38B58", "usage": "粮袋、旧旗残片、摊布"},
+          {"name_cn": "黑木牌", "hex": "#27221D", "usage": "通行牌、黑市牌、暗门"}
+        ],
+        "power_overlay": [
+          {"name_cn": "烟灰", "hex": "#6C675E", "usage": "火盆、墙根、摊位阴影"},
+          {"name_cn": "巡逻甲绿", "hex": "#1E2A22", "usage": "远处虫族巡逻背影"}
+        ],
+        "accents": [
+          {"name_cn": "碎陶暗红", "hex": "#7D3D32", "usage": "陆青砾护符、旧陶裂面"},
+          {"name_cn": "碎陶土青", "hex": "#4E665F", "usage": "混裔护符、隐藏身份线索"}
+        ]
+      },
+      "lighting": "墙根阴影、火盆低暖和灰蓝棚布冷光混杂。",
+      "material_keys": ["灰布棚", "窑洞", "粮牌", "碎陶护符", "黑木牌", "旧旗残片"],
+      "camera_rules": [
+        "Keep the market crowded through fixed stalls and narrow lanes rather than large extras.",
+        "Make the palette mixed but organized, matching the social mixture.",
+        "Sun-and-moon colors should appear faded, torn, or traded."
+      ],
+      "forbidden": ["beggar camp", "colorful fairground", "holy rebel market"]
+    },
+    {
+      "region_id": "old_relay_moon_oath",
+      "name_cn": "旧驿与月下盟书",
+      "narrative_function": "故土从血统转为承诺。",
+      "episode_scope": ["03", "11", "12"],
+      "palette": {
+        "primary": [
+          {"name_cn": "旧白石", "hex": "#BDB7A5", "usage": "拱道、石门、盟书石台"},
+          {"name_cn": "湿石灰", "hex": "#777B75", "usage": "低拱墙、地砖、潮气"}
+        ],
+        "secondary": [
+          {"name_cn": "黑影", "hex": "#161817", "usage": "暗道深处、坍塌缝隙"},
+          {"name_cn": "月白", "hex": "#D6DAD5", "usage": "月下石台、玉片反光、湿苔冷光"}
+        ],
+        "power_overlay": [
+          {"name_cn": "清明香弱白", "hex": "#DDE4E0", "usage": "被潮气压弱的追踪线"}
+        ],
+        "accents": [
+          {"name_cn": "金赤断线", "hex": "#B85B2C", "usage": "驿令共鸣、路线残纹"},
+          {"name_cn": "多族旧印低饱和残色", "hex": "#7A6B58", "usage": "盟书石刻与旧墨综合色"}
+        ]
+      },
+      "lighting": "火把低暖、月白冷反光和墙脚金赤断线并存，但都必须微弱。",
+      "material_keys": ["旧白石低拱", "剥落日月双印", "湿石", "盟书石台", "多族旧印"],
+      "camera_rules": [
+        "Keep the relay tunnel practical and narrow, not a magical palace.",
+        "Use broken lines along the wall base and floor rather than full glowing arrays.",
+        "Multispecies marks should look worn into stone, not colorful alliance badges."
+      ],
+      "forbidden": ["large fantasy temple", "full magical route map", "clean sacred restoration"]
+    }
+  ],
+  "route_progression": [
+    {"episode_range": "01-03", "stage": "残阳坳与旧驿暗道", "color_shift": "土褐/麦金被虫蜡白与火场暗红切开，转入旧白石和金赤断纹", "emotional_shift": "小家被毁，旧路被迫开启"},
+    {"episode_range": "04", "stage": "金河粮磨", "color_shift": "河青、蒸汽白、油黑和粮牌黄替代火场红", "emotional_shift": "发现文明被选择性保留"},
+    {"episode_range": "05", "stage": "灰烬书院", "color_shift": "焦黑、书灰、裂铜、月白残光", "emotional_shift": "失史从背景变成证据"},
+    {"episode_range": "06", "stage": "清明院", "color_shift": "虫蜡白、骨白、黑日、干血红极小点", "emotional_shift": "制度暴力直接压到亲人"},
+    {"episode_range": "07", "stage": "墙下集市", "color_shift": "灰蓝、陶土、旧布黄、碎陶色", "emotional_shift": "正统叙事被无姓人质疑"},
+    {"episode_range": "08-10", "stage": "边墙与寒鸦堡", "color_shift": "黑石、雪白、阴影蓝、旧铁、冷蜡白", "emotional_shift": "防线也是牢笼"},
+    {"episode_range": "09", "stage": "北境外缘", "color_shift": "枯草黄、冻土灰、骨白、冰蓝火", "emotional_shift": "敌我边界松动"},
+    {"episode_range": "11-12", "stage": "月下盟书与雪岭", "color_shift": "月白、金赤断线、雪泥黑、旧旗暗红", "emotional_shift": "血统旗帜让位于活人承诺"},
+    {"episode_range": "season-02-interface", "stage": "南方隐歌谷", "color_shift": "藤绿、旧白石、朱赤旧漆、宝蓝、月白", "emotional_shift": "寻找能读懂盟书的人"}
+  ],
+  "planned_image_assets": [
+    {
+      "asset_id": "style_regional_color_route_map_v01",
+      "prompt_id": "regional_color_prompt_route_map_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_regional_color_route_map_v01.png",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "style_canyang_to_jinhe_palette_v01",
+      "prompt_id": "regional_color_prompt_canyang_to_jinhe_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "style_qingming_institution_palette_v01",
+      "prompt_id": "regional_color_prompt_qingming_institution_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "style_border_to_north_palette_v01",
+      "prompt_id": "regional_color_prompt_border_to_north_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "style_southern_old_empire_palette_v01",
+      "prompt_id": "regional_color_prompt_southern_old_empire_v01",
+      "expected_output_path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+      "status": "not_generated"
+    }
+  ],
+  "handoff": {
+    "prompt_room_rule": "Write regional palette as local base color + power overlay + old memory accent + forbidden list, not as loose color names.",
+    "primary_markdown": "project/severed-homeland/art/project-regional-color-system.md",
+    "image_prompt_source": "project/severed-homeland/prompts/project-regional-color-system-image-prompts.json",
+    "thread_plan": "project/severed-homeland/art/project-regional-color-system-thread-plan.json",
+    "thread_results": "project/severed-homeland/art/project-regional-color-system-thread-results.json"
+  }
+}

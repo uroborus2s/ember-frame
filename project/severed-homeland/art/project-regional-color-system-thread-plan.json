@@ -1,0 +1,60 @@
+{
+  "project_id": "severed-homeland",
+  "asset_batch": "project_regional_color_system_v01",
+  "date": "2026-06-02",
+  "status": "not_started_pending_prompt_audit",
+  "reason": "This pass designs the regional color system and stabilizes prompts/output paths first. Image-generation background threads should start only after the user reviews the prompt plan.",
+  "prompt_source": "project/severed-homeland/prompts/project-regional-color-system-image-prompts.json",
+  "output_dir": "project/severed-homeland/assets/style/regional-color-system",
+  "thread_strategy": {
+    "recommended_thread_count": 1,
+    "batching_reason": "The five regional color-system boards must read as one coherent palette family while preserving regional differences.",
+    "worker_requirements": [
+      "Use available image generation capability for raster assets.",
+      "Write images exactly to the assigned project paths.",
+      "Do not edit existing project style-board images or faction emblem images.",
+      "Do not generate text labels, captions, UI, letters, or watermarks inside images.",
+      "Return a compact manifest of created files and any failures."
+    ]
+  },
+  "planned_threads": [
+    {
+      "thread_key": "project_regional_color_system_v01",
+      "status": "not_started",
+      "assigned_prompt_ids": [
+        "regional_color_prompt_route_map_v01",
+        "regional_color_prompt_canyang_to_jinhe_v01",
+        "regional_color_prompt_qingming_institution_v01",
+        "regional_color_prompt_border_to_north_v01",
+        "regional_color_prompt_southern_old_empire_v01"
+      ],
+      "expected_output_paths": [
+        "project/severed-homeland/assets/style/regional-color-system/style_regional_color_route_map_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png"
+      ],
+      "worker_prompt": "Generate the five raster regional color-system board images defined in project/severed-homeland/prompts/project-regional-color-system-image-prompts.json for asset_batch project_regional_color_system_v01. Preserve the written regional color design in project/severed-homeland/art/project-regional-color-system.md and the machine-readable palette in project/severed-homeland/art/project-regional-color-system.json. Write each image to its exact expected_output_path under project/severed-homeland/assets/style/regional-color-system/. Do not modify existing project style-board images, faction emblems, or historical assets. The images must contain no visible text labels, captions, letters, UI, or watermarks. Return a compact manifest listing generated files, dimensions, and any blocked items."
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "project/severed-homeland/art/project-regional-color-system.md",
+      "required": true
+    },
+    {
+      "path": "project/severed-homeland/art/project-regional-color-system.json",
+      "required": true
+    },
+    {
+      "path": "project/severed-homeland/prompts/project-regional-color-system-image-prompts.json",
+      "required": true
+    }
+  ],
+  "launch_policy": {
+    "auto_launch_in_this_pass": false,
+    "approval_needed": "Review prompt source and output paths, then launch the planned Codex background thread.",
+    "result_file": "project/severed-homeland/art/project-regional-color-system-thread-results.json"
+  }
+}
