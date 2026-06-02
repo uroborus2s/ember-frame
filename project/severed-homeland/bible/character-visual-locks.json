@@ -34,37 +34,38 @@
       "silhouette": "slim female figure, upright court-trained posture even in plain travel disguise, cold noble restraint",
       "face": "young female face, high-cold royal composure, calm intelligent eyes, fatigue hidden behind discipline",
       "hair": "black hair tied with a southern red cord, controlled Zhou-Qin inspired royal simplicity rather than loose fantasy styling",
-      "base_wardrobe": "coarse but clean and orderly travel outer robe over hidden structured old-imperial female dress layer inspired by Zhou and Qin dynasty silhouettes; plain cloth may be worn, dusted, neatly patched, and lightly abraded at edges, but never ragged; fine fused Sun-Moon patterned inner edge follows the v3 Zhaoming emblem and appears only in controlled fragments",
-      "fixed_props": ["moon-white jade piece", "oil-paper wrapped blood treaty fragments", "red hair cord"],
-      "marks": ["subtle old imperial pattern inside clothing, not visible in every shot"],
-      "palette": ["dark cloth", "southern red cord", "moon white", "worn old gold detail"],
+      "base_wardrobe": "clean concealed exile wardrobe: mist-purple, dark violet or cold-gray coarse travel robe with orderly collar, cuffs and belt; no visible old-imperial insignia on the exterior. Old imperial identity items are hidden in inner pockets, under-collar knots, oil-paper packets or body-close cases. Separate formal memory/reveal wardrobe uses vivid old-imperial Ming-style Hanfu reference: vermilion, peacock blue, moon white, purple-crimson, woven gold, wide sleeves, ordered skirt lines and luxurious court layering.",
+      "fixed_props": ["hidden moon-white jade piece", "oil-paper wrapped blood treaty fragments hidden inside travel layers", "southern red hair cord with inner knot"],
+      "marks": ["old imperial patterns are hidden during exile and visible only in controlled close-ups or formal-memory wardrobe"],
+      "palette": ["mist purple", "cold gray", "dark violet", "southern red cord", "moon white", "vermilion", "peacock blue", "woven gold"],
       "state_variants": [
-        {"id": "escape_disguise", "episodes": ["01", "02", "03"], "notes": "rough outer layer, concealed noble pattern"},
-        {"id": "travel_worn", "episodes": ["04", "05", "06", "07"], "notes": "dust, torn edges, red cord remains"},
-        {"id": "border_resolve", "episodes": ["08", "09", "10", "11", "12"], "notes": "darker cold-weather layer, jade visible during treaty scenes"}
+        {"id": "exile_concealment", "episodes": ["01", "02", "03", "04", "05", "06", "07"], "notes": "mist-purple or cold-gray travel robe, clean and intact, no visible old-imperial insignia; jade, treaty and Sun-Moon marks hidden"},
+        {"id": "old_imperial_formal", "episodes": ["memory", "identity_reveal"], "notes": "vivid Ming-style Hanfu reference with vermilion, peacock blue, moon white and woven gold; courtly, bright and ornate but carrying old-imperial cracks and debt"},
+        {"id": "border_resolve", "episodes": ["08", "09", "10", "11", "12"], "notes": "cold gray cloak over exile layers, moon-white lining visible only in motion; old-imperial marks remain concealed unless deliberately revealed"}
       ],
       "performance_anchors": ["touches old inscriptions with fingertips", "tightens red cord when pressured", "uses restrained posture before emotional admission"],
-      "continuity_locks": ["must read as female", "must read as exiled royal princess even in coarse cloth", "clothing is plain, cold, clean, controlled, and intact; patched is acceptable, ragged or beggar-like is forbidden", "inspired by Zhou-Qin female clothing structure, not generic fantasy dress", "red cord stays", "moon-white jade stays", "not a clean court gown", "no crown or complete imperial regalia in season 01", "visible Sun-Moon pattern must follow symbol_zhaoming_sunmoon_v03"]
+      "continuity_locks": ["must read as female", "must read as exiled royal princess even in concealed coarse cloth", "exile clothing is mist-purple/cold-gray, clean, controlled and intact; patched is acceptable, ragged or beggar-like is forbidden", "no visible old-imperial insignia on exile exterior", "old-imperial props must be hidden unless the scene explicitly reveals them", "formal old-imperial wardrobe must be vivid and luxurious with Ming-style Hanfu reference", "red cord stays", "moon-white jade stays but is usually hidden", "no crown or complete imperial regalia in active exile scenes", "visible Sun-Moon pattern must follow symbol_zhaoming_sunmoon_v03"]
     },
     {
       "id": "char_bai_yi_v01",
       "name": "白翳",
       "priority": 1,
-      "age": "adult upper-ruler form, human-age impression 35-45 if needed",
+      "age": "adult upper-ruler insect form, human-ruler impression 35-45 only when disguised",
       "role": "Sumin upper intellectual ruler-form insectoid Qingming register inspector and primary antagonist",
-      "silhouette": "tall, vertical, clean, still, white ruler silhouette with thin wing-membrane shoulder layer and ceremonial headpiece; should feel like an insectoid official body inside bureaucratic robes, not a human wearing a mask",
+      "silhouette": "tall, vertical, clean, still, white ruler silhouette with thin wing-membrane shoulder layer and ceremonial headpiece; should feel like an insectoid body impersonating human authority, not a real human wearing a mask",
       "face": "integrated pale chitin faceplate and large dark compound-eye structures; the face is biological insectoid carapace, not a removable human mask",
-      "hair": "none visible; head is covered by ceremonial Qingming headpiece or chitin-like crown structure, not human hair styling",
+      "hair": "no human hair under any circumstance; any hair-like shape must be ceremonial crown, false-hair-like shell ornament, head casing or chitin crest",
       "base_wardrobe": "spotless white official robe inspired by a clean ruler figure: wax-white long robe, bone-white high collar, cylindrical Qingming crown or integrated head casing, translucent insect-wing mantle, pearl-gray cracked chitin texture, small v3 Sumin insignia kept small and precise: abstract white wings covering a black sun with cold halo, old moon trace erased",
       "fixed_props": ["insect-wax needle", "Qingming white register", "clean cloth for wiping needle", "Qingming incense trace"],
       "marks": ["integrated chitin faceplate", "compound eyes", "subtle dark neck membrane", "thin translucent wing membrane mantle", "slightly jointed or carapace-like fingers; controlled upper-ruler insectoid traits without turning into a beast"],
       "palette": ["insect-wax white", "cold gray", "bone white", "black sun", "pearl gray", "cold worn gold"],
       "state_variants": [
-        {"id": "inspection", "episodes": ["01", "02", "06"], "notes": "white register and wax needle prominent"},
-        {"id": "pursuit", "episodes": ["04", "10", "11", "12"], "notes": "robe remains clean even in dirty environments"}
+        {"id": "inspection", "episodes": ["01", "02", "06"], "notes": "white register and wax needle prominent, insectoid authority visible"},
+        {"id": "human_ruler_disguise", "episodes": ["official_public_appearance"], "notes": "cold white human-ruler silhouette conceals insect traits under crown and robe; no human hair, no real skin, subtle compound-eye reflection and segmented fingers remain"},
+        {"id": "pursuit", "episodes": ["04", "10", "11", "12"], "notes": "narrower robe and gathered wing mantle for movement; remains clean even in dirty environments"}
       ],
       "performance_anchors": ["never raises voice", "wipes needle before interrogation", "pauses when smelling Qingming incense trail"],
-      "continuity_locks": ["must remain clean and controlled", "must read as upper intellectual ruler-form insectoid authority", "must not read as a human wearing a mask", "must retain visible insectoid traits from char_bai_yi_v01", "no ordinary human hair or human face behind the mask", "no rage expression", "no heavy black armor", "do not turn into a lower-force monster body", "Sumin insignia must follow symbol_suming_whitewing_blackhalo_v03 when visible"]
+      "continuity_locks": ["must remain clean and controlled", "must read as upper intellectual ruler-form insectoid authority", "can only disguise as a human ruler, never become human", "must not read as a human wearing a mask", "must retain visible insectoid traits from char_bai_yi_v01", "no ordinary human hair or human face behind the mask", "no real skin texture", "no rage expression", "no heavy black armor", "do not turn into a lower-force monster body", "Sumin insignia must follow symbol_suming_whitewing_blackhalo_v03 when visible"]
     },
     {
       "id": "char_shen_zhaomian_v01",
@@ -115,16 +116,17 @@
       "silhouette": "broad but worn down, old soldier posture, stable feet",
       "face": "creased, wind-burned, tired eyes, not noble",
       "hair": "gray or frost-streaked, practical, partly hidden by wall cloth",
-      "base_wardrobe": "border-wall military household clothing: intact patched padded undercoat, gray-stone old armor plates, coarse wall cloth scarf, repaired cold-weather layers, old iron fasteners and snow wraps; worn and field-repaired but not ragged, visibly different from hunter and wallfoot clothing",
-      "fixed_props": ["bone whistle", "worn long spear", "reversed old fused Sun-Moon cloth strip at waist using symbol_zhaoming_sunmoon_v03"],
+      "base_wardrobe": "border-wall military household clothing: intact patched padded undercoat, ancestral gray-stone old armor plates, coarse wall cloth scarf, repaired cold-weather layers, old iron fasteners and snow wraps; the fused Sun-Moon mark survives only as a heavily worn imprint on an ancestral breastplate or inner shoulder plate, almost erased by rust, snow, blade cuts and time; worn and field-repaired but not ragged",
+      "fixed_props": ["bone whistle", "worn long spear", "ancestral old armor plate with nearly erased fused Sun-Moon imprint using symbol_zhaoming_sunmoon_v03"],
       "marks": ["frost-cracked fingers", "old scars"],
-      "palette": ["gray stone", "old iron", "snow white", "dry blood dark red"],
+      "palette": ["gray stone", "old iron", "snow white", "dry blood dark red", "nearly erased old gold imprint"],
       "state_variants": [
-        {"id": "wall_guard", "episodes": ["08", "09", "11"], "notes": "spear and bone whistle visible"},
-        {"id": "covert_helper", "episodes": ["12"], "notes": "darker cloak, same reversed cloth strip"}
+        {"id": "wall_guard", "episodes": ["08", "09", "11"], "notes": "spear, bone whistle, patched padded undercoat and old armor visible; ancestral emblem remains subtle and nearly unreadable"},
+        {"id": "ancestral_armor_reveal", "episodes": ["08", "11", "12"], "notes": "close-up or action reveals worn breastplate/shoulder plate with half sun wheel and cracked moon-white scar"},
+        {"id": "covert_helper", "episodes": ["12"], "notes": "darker cloak covers armor; old emblem appears only if cloak opens or armor is handled"}
       ],
       "performance_anchors": ["checks wall cracks first", "uses bone whistle to read wind", "speaks in short practical sentences"],
-      "continuity_locks": ["no clean imperial officer look", "no polished armor", "border soldier silhouette must be armor-and-padded-cloth, not generic poor refugee", "field repairs and patches are allowed but shredded hems are not", "reversed old cloth strip remains", "old cloth strip uses symbol_zhaoming_sunmoon_v03"]
+      "continuity_locks": ["no clean imperial officer look", "no polished armor", "border soldier silhouette must be armor-and-padded-cloth, not generic poor refugee", "field repairs and patches are allowed but shredded hems are not", "do not use an obvious waist cloth as the Sun-Moon anchor", "old fused Sun-Moon mark must be on ancestral armor and severely worn", "old armor imprint uses symbol_zhaoming_sunmoon_v03 only as damaged physical relief"]
     },
     {
       "id": "char_luo_qinghe_v01",
@@ -132,14 +134,19 @@
       "priority": 2,
       "age": 37,
       "role": "village medic and old relay sign keeper",
-      "silhouette": "37-year-old graceful village healer, composed and protective posture, mature beauty without old-woman frailty",
-      "face": "beautiful 37-year-old mother, warm but resilient eyes, practical concentration, light fatigue from village work but not elderly",
+      "silhouette": "37-year-old graceful village healer, composed and protective posture, mature beauty that plain cloth cannot hide, no old-woman frailty",
+      "face": "strikingly beautiful 37-year-old mother, warm bright eyes, graceful features, practical concentration, light fatigue from village work but not elderly; coarse village fabric frames rather than erases her beauty",
       "hair": "covered or tied with blue-green cloth",
-      "base_wardrobe": "plain village medic clothing, blue-green head cloth",
+      "base_wardrobe": "plain but clean village medic clothing, blue-green head cloth, herb-green apron and earth-brown cloth; coarse fabric and smoke dust must not hide her graceful face and beauty",
       "fixed_props": ["herb basket", "medicine cabinet with hidden relay signs", "half relay token handoff"],
-      "palette": ["herb green", "plain gray", "earth brown"],
+      "palette": ["herb green", "plain gray", "earth brown", "blue-green cloth", "old copper"],
+      "state_variants": [
+        {"id": "medicine_house_daily", "episodes": ["01"], "notes": "blue-green head cloth, herb-green apron, plain earth-brown clothing; beautiful face remains the visual focus"},
+        {"id": "relay_keeper_hidden", "episodes": ["01"], "notes": "same medic clothing with narrow hidden old-pattern belt and relay sign tools concealed under ordinary healer work"},
+        {"id": "fire_deathbed", "episodes": ["01", "02"], "notes": "smoke-stained apron and loosened head cloth, still dignified and beautiful"}
+      ],
       "performance_anchors": ["uses herb names as cover for old relay signs", "shields others before explaining"],
-      "continuity_locks": ["must feel grounded and local, not mystic priestess", "must read as a beautiful 37-year-old mother, not an old woman"]
+      "continuity_locks": ["must feel grounded and local, not mystic priestess", "must read as a beautiful 37-year-old mother, not an old woman", "plain brown cloth cannot hide her beauty"]
     },
     {
       "id": "char_meng_guicang_v01",
@@ -161,15 +168,85 @@
       "name": "鹿弥",
       "priority": 2,
       "age": "around 20",
-      "role": "northern frost-hoof shaman, disaster-source seeker",
-      "silhouette": "slender, alert, built for snow travel",
-      "face": "cold-weather marks, wary but not savage",
-      "hair": "braided or tied under fur hood",
-      "base_wardrobe": "fur-gray and ice-blue northern travel layers, clean layered cold-weather clothing with bone-white short antler ornament and hide-cord ties; frosted and repaired but not ragged",
-      "fixed_props": ["short antler ornament", "bone flute", "snow herb pouch"],
-      "palette": ["ice blue", "fur gray", "bone white"],
+      "role": "northern frost-hoof noble half-beast shaman and disaster-source seeker",
+      "silhouette": "beautiful noble half-beast woman, human-form body with clearly visible soft deer ears, slender neck, elegant snow-travel posture and aristocratic restraint",
+      "face": "very beautiful northern noble face, clear pale eyes, cold-weather glow, wary but not savage; visible deer ears and optional small antler ornament are identity anchors",
+      "hair": "braided or tied under a fur hood with deer ears deliberately visible, not hidden as a mere ornament",
+      "base_wardrobe": "luxurious northern noble layers: rare white deer, silver fox or snow-leopard fur mantle, ice-blue brocade inner robe, bone-white long skirt or robe panels, silver thread, bone-gold clasps, jade buttons and aurora-green beads; heavy and ornate but practical for snow, not ragged",
+      "fixed_props": ["visible deer ears", "short antler ornament or bone-gold hornlet accessory", "bone flute", "snow herb pouch", "jade clasp"],
+      "marks": ["clear half-beast ears", "subtle frost-hoof noble markings", "no full animal muzzle"],
+      "palette": ["snow-white rare fur", "ice blue", "silver gray", "bone white", "bone gold", "aurora green"],
+      "state_variants": [
+        {"id": "northern_noble_snow", "episodes": ["09"], "notes": "thick rare fur mantle, visible deer ears, silver and ice-blue noble layers"},
+        {"id": "disaster_seeker_travel", "episodes": ["09"], "notes": "fur gathered into shorter cloak for movement, bone flute and herb pouch prominent"},
+        {"id": "shaman_ritual", "episodes": ["memory", "later_season"], "notes": "bone-gold headpiece, ice-blue mantle and aurora-green beads more ceremonial"}
+      ],
       "performance_anchors": ["listens to wind through bone flute", "protects injured young beast first"],
-      "continuity_locks": ["do not over-design into full deer person; use cultural signs and subtle features"]
+      "continuity_locks": ["must be a visible half-beast woman, not a normal human with small jewelry", "must have clear deer ears", "very beautiful northern noble", "luxurious rare fur and ice-blue noble clothing required", "keep human facial beauty and humanoid body; do not add deer muzzle or full animal body"]
+    },
+    {
+      "id": "char_helian_xuedai_v01",
+      "name": "赫连雪岱",
+      "priority": 3,
+      "age": "around 24",
+      "role": "Frost-hoof deer noble guard and ritual enforcer for Lu Mi",
+      "silhouette": "tall beautiful female half-beast guard, visible deer ears, small antlers, long neck, snow-riding posture",
+      "face": "aristocratic northern beauty, pale brown and ice-blue eyes, calm guard focus",
+      "hair": "braided under a fur guard hood, ears and short antlers visible",
+      "base_wardrobe": "white deer fur long shoulder mantle, silver-gray hard leather chest guard, ice-blue riding clothes, bone-gold bracers, jade clasp and deer-pattern belt; heavy but tailored for mounted snow travel",
+      "fixed_props": ["deer-pattern belt", "bone-gold bracers", "short ritual spear", "jade clasp"],
+      "marks": ["clear deer ears", "short antlers", "subtle frost-hoof noble markings"],
+      "palette": ["snow white", "silver gray", "ice blue", "bone gold", "jade green"],
+      "performance_anchors": ["stands one step behind Lu Mi", "checks etiquette before violence", "moves like a mounted archer"],
+      "continuity_locks": ["must be half-beast with clear deer ears", "must read as noble guard not village hunter", "luxury northern fur and bone-gold details required"]
+    },
+    {
+      "id": "char_wulan_v01",
+      "name": "乌岚",
+      "priority": 3,
+      "age": "19-25",
+      "role": "black-wolf snow scout and disaster-source messenger",
+      "silhouette": "lean agile half-beast scout with visible black wolf ears and low wolf tail, ready to run",
+      "face": "sharp cheekbones, golden eyes, restrained alert expression, small wolf-clan facial tattoo",
+      "hair": "dark tied hair blending with wolf ears and short mane-like back line",
+      "base_wardrobe": "black-gray wolf fur short cloak, dark blue fitted snow-travel clothes, leather knee guards, bone whistle, short bow, snow claw foot gear and dark silver wolf-tooth clasp",
+      "fixed_props": ["short bow", "bone whistle", "wolf-tooth clasp", "snow claw foot gear"],
+      "marks": ["black wolf ears", "low wolf tail", "golden eyes"],
+      "palette": ["black gray", "dark blue", "silver white", "golden eye accent"],
+      "performance_anchors": ["reads tracks before speaking", "keeps body angled toward exits", "moves through snow in low quick bursts"],
+      "continuity_locks": ["must be half-beast with obvious wolf ears/tail", "not a savage beast", "clean functional scout clothing, not ragged pelt"]
+    },
+    {
+      "id": "char_tuoba_yanxiong_v01",
+      "name": "拓跋砚熊",
+      "priority": 3,
+      "age": "30-40",
+      "role": "white-bear shield guard and snow-forge craftsman",
+      "silhouette": "large powerful half-beast body, broad shoulders, bear ears, heavy shield-bearing stance",
+      "face": "human expressive face with white bear fur at sideburns and jaw edge, steady craftsman eyes",
+      "hair": "thick pale hair under heavy fur cap, bear ears visible",
+      "base_wardrobe": "white bear fur heavy cloak, black iron chest strap, leather smith apron, bronze bracers, bone-iron shield and snow-forge tool chain",
+      "fixed_props": ["bone-iron shield", "snow-forge hammer", "tool chain", "bronze bracers"],
+      "marks": ["round bear ears", "white bear side fur", "large hands"],
+      "palette": ["white bear fur", "black iron", "bronze", "deep brown leather", "dark red forge accent"],
+      "performance_anchors": ["plants shield before speaking", "repairs bone-iron tools", "treats supply and survival as sacred duties"],
+      "continuity_locks": ["must be half-beast with obvious bear ears", "must be heavy northern craft/guard silhouette", "not a generic barbarian"]
+    },
+    {
+      "id": "char_qingling_yajian_v01",
+      "name": "青翎鸦见",
+      "priority": 3,
+      "age": "18-30",
+      "role": "snow-raven half-beast courier and border message carrier",
+      "silhouette": "slender quick half-beast courier, feather-ear or feather-crest silhouette, short feather mantle, narrow shoulders",
+      "face": "bright black eyes, alert expression, wind-cut cheek lines",
+      "hair": "dark hair with black feather crest or feather ears clearly visible",
+      "base_wardrobe": "black feather short mantle, gray-white light leather armor, blue-black message tube, fine bone rings, wind-snow eye guard and short boots",
+      "fixed_props": ["blue-black message tube", "bone rings", "wind-snow eye guard", "short knife"],
+      "marks": ["black feather ears or crest", "short feather mantle", "raven-bright eyes"],
+      "palette": ["raven black", "snow gray", "blue black", "bone white"],
+      "performance_anchors": ["arrives with wind and snow", "checks message tube seals", "watches from high broken stone"],
+      "continuity_locks": ["must be half-beast with visible feather-ear/crest identity", "light courier silhouette, not heavy noble or warrior", "not a full bird person"]
     },
     {
       "id": "char_li_tang_v01",
@@ -210,14 +287,19 @@
       "id": "char_gu_huaizhang_v01",
       "name": "顾怀章",
       "priority": 3,
-      "age": "older adult",
+      "age": "older adult, around 60",
       "role": "southern teacher and pressure voice for Yan Nanzhi",
-      "silhouette": "upright old ritual scholar",
-      "base_wardrobe": "fragmented old imperial ritual robe, southern red cord scroll case",
+      "silhouette": "upright old southern ritual scholar with humid-climate layered elegance",
+      "base_wardrobe": "southern-evolved old imperial luxury clothing: light silk-hemp, breathable gauze, short outer robe, wide sleeves, vermilion and peacock-blue layers, vine green or ivory summer lining, oxidized old-gold trim, lacquer-red waterproof scroll tube; preserves imperial magnificence after 1200 years in humid heat",
       "fixed_props": ["southern red cord scroll", "old imperial robe fragment"],
-      "palette": ["aged white", "southern red", "worn gold"],
+      "palette": ["vermilion", "peacock blue", "vine green", "ivory white", "oxidized old gold", "lacquer red"],
+      "state_variants": [
+        {"id": "southern_edict", "episodes": ["memory"], "notes": "light vermilion outer layer, peacock-blue inner layer, old-gold trim and red cord scroll case"},
+        {"id": "imperial_ritual_scholar", "episodes": ["memory", "formal_instruction"], "notes": "more complete Ming-style Hanfu reference with wide sleeves, woven gold, hanging ribbons and humid-climate breathable silk"},
+        {"id": "secret_letter_travel", "episodes": ["memory"], "notes": "luxury outer layers gathered, waterproof lacquer scroll tube and red cord prominent"}
+      ],
       "performance_anchors": ["places duty above safety", "appears through memory, letter, or blood-treaty instruction in season 01"],
-      "continuity_locks": ["do not overuse as present character unless series route is revised"]
+      "continuity_locks": ["do not overuse as present character unless series route is revised", "must preserve old imperial magnificence rather than ragged robe fragments", "clothing must show southern humid-climate evolution: light, breathable, layered, damp-resistant but ornate"]
     }
   ]
 }

@@ -12,17 +12,21 @@
   },
   "characters": [
     {"id": "char_shen_weisang_v01", "name": "沈维桑", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "injured_state"]},
-    {"id": "char_yan_nanzhi_v01", "name": "晏南枝", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "travel_disguise"], "current_recommended_version": "v03_clean_coarse_cloth"},
+    {"id": "char_yan_nanzhi_v01", "name": "晏南枝", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "exile_concealment", "old_imperial_formal", "border_resolve"], "current_recommended_version": "v05_purple_gray_concealed_exile_and_imperial_formal"},
     {"id": "char_bai_yi_v01", "name": "白翳", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "three_quarter", "full_body", "inspection_pose"], "current_preferred_base": "v01_insectoid_official", "discarded_version": "v02_masked_human_direction"},
     {"id": "char_shen_zhaomian_v01", "name": "沈照眠", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["village_child_state", "qingming_identifier_state"]},
     {"id": "char_lu_qingli_v01", "name": "陆青砾", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "knife_action"]},
-    {"id": "char_xue_linqiang_v01", "name": "薛临墙", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "wall_guard_pose"]},
+    {"id": "char_xue_linqiang_v01", "name": "薛临墙", "priority": 1, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "full_body", "wall_guard_pose", "ancestral_armor_reveal", "worn_armor_emblem_closeup"]},
     {"id": "char_luo_qinghe_v01", "name": "罗青禾", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["village_medic_half_body", "deathbed_prop_reference"]},
     {"id": "char_meng_guicang_v01", "name": "孟归藏", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["half_body", "burned_bookbox_reference"]},
-    {"id": "char_lu_mi_v01", "name": "鹿弥", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["half_body", "bone_flute_pose"]},
+    {"id": "char_lu_mi_v01", "name": "鹿弥", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "northern_noble_snow", "disaster_seeker_travel", "shaman_ritual", "deer_ear_closeup", "bone_flute_pose"]},
+    {"id": "char_helian_xuedai_v01", "name": "赫连雪岱", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "guard_pose", "deer_ear_antler_detail"]},
+    {"id": "char_wulan_v01", "name": "乌岚", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "scout_pose", "wolf_ear_tail_detail"]},
+    {"id": "char_tuoba_yanxiong_v01", "name": "拓跋砚熊", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "shield_guard_pose", "snow_forge_tools"]},
+    {"id": "char_qingling_yajian_v01", "name": "青翎鸦见", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "courier_pose", "feather_crest_detail"]},
     {"id": "char_li_tang_v01", "name": "厉螳", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["full_body", "blade_arm_detail", "shell_texture", "command_token"]},
     {"id": "char_suming_shell_soldier_v01", "name": "肃明壳卒", "priority": 2, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["front", "side", "back", "door_blocking_pose", "patrol_group"]},
-    {"id": "char_gu_huaizhang_v01", "name": "顾怀章", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["memory_reference"]}
+    {"id": "char_gu_huaizhang_v01", "name": "顾怀章", "priority": 3, "lock_file": "bible/character-visual-locks.json", "planned_outputs": ["memory_reference", "southern_edict", "imperial_ritual_scholar", "secret_letter_travel"]}
   ],
   "locations": [
     {"id": "loc_canyang_ao_v01", "name": "残阳坳", "priority": 1, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["village_gate", "medicine_house", "old_well", "burned_aftermath"]},
@@ -38,17 +42,17 @@
     {"id": "loc_collapsed_beacon_v01", "name": "坍塌烽燧", "priority": 2, "lock_file": "bible/location-visual-locks.json", "planned_outputs": ["broken_tower", "snow_escape_slope"]}
   ],
   "props": [
-    {"id": "prop_riyue_yiling_v01", "name": "半枚日月驿令", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_moon_jade_v01", "name": "月白玉片", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_qingming_register_v01", "name": "清明白册", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_insect_wax_needle_v01", "name": "虫蜡针", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_qingming_incense_v01", "name": "清明香", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_old_relay_map_v01", "name": "残缺大陆驿道图", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_blood_treaty_fragments_v01", "name": "日月血牒残段", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_moon_oath_page_v01", "name": "月下盟书残页", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_bone_whistle_v01", "name": "骨哨/骨笛", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_food_token_v01", "name": "边墙粮牌", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
-    {"id": "prop_black_market_wood_pass_v01", "name": "黑市通行木牌", "priority": 2, "lock_file": "bible/prop-visual-locks.json"}
+    {"id": "prop_riyue_yiling_v01", "name": "半枚日月驿令", "description": "掌心大小的破半驿令，以旧铜和月白石镶嵌构成，断口切过昭明日轮托白月合徽，是沈家血脉与旧驿路线的核心识别物。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_moon_jade_v01", "name": "月白玉片", "description": "晏南枝随身隐藏的月白玉残片，一侧温润、一侧带祭礼断口，用红绳贴身收纳，接近旧星图和盟书旧址时才有克制微光。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_qingming_register_v01", "name": "清明白册", "description": "清明院用于登记旧血嫌疑与肃清命令的无尘白册，虫蜡封边、黑墨冷字，视觉上必须干净到令人不安。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_insect_wax_needle_v01", "name": "虫蜡针", "description": "指长的半透明虫蜡细针，针尖带黑点，常置于洁白小托盘中；用于血脉筛查和压迫式验身，不能画成粗大武器。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_qingming_incense_v01", "name": "清明香", "description": "贴地、贴衣、贴门缝游走的清冷白烟线，是追踪与标记肃清区的气味痕迹，不应表现为浓雾或彩色法术云。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_old_relay_map_v01", "name": "残缺大陆驿道图", "description": "可折叠的残旧布纸驿道图，边角缺失、烟痕明显，半枚日月驿令靠近时仅有断续金红路线微亮。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_blood_treaty_fragments_v01", "name": "日月血牒残段", "description": "油纸包裹的旧盟约与血脉文字残条，带暗红封线和细密日月合徽纹，只能作为残证出现，不能成为完整诏书。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_moon_oath_page_v01", "name": "月下盟书残页", "description": "半焦的旧盟书残页，留有月白纸纤维、烧黑边缘和多派系残印，是主卷被焚后仍能保留下来的季终证据。", "priority": 1, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_bone_whistle_v01", "name": "骨哨/骨笛", "description": "边墙与北境共用的骨质讯号道具：薛临墙使用短骨哨，鹿弥使用较长骨笛，二者都带风孔和旧绳但形制需可区分。", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_food_token_v01", "name": "边墙粮牌", "description": "暗黄灰色的边墙换粮牌，边缘磕碰、手汗磨旧，用于呈现灰墙生存经济与肃明制度控制，不是金银货币。", "priority": 2, "lock_file": "bible/prop-visual-locks.json"},
+    {"id": "prop_black_market_wood_pass_v01", "name": "黑市通行木牌", "description": "陆青砾出入墙下集市和旧路入口的深色木牌，正面刻有磨损市记，背面藏旧路线缺口，质感应烟熏、粗糙、非官方。", "priority": 2, "lock_file": "bible/prop-visual-locks.json"}
   ],
   "symbol_locks": [
     {"id": "style_emblem_lock_v03", "name": "v3派系徽章锁定图", "priority": 0, "source": "bible/visual-style.md", "output_path": "assets/style/v03/style_emblem_lock_v03.png", "source_svg": "assets/style/v03/style_emblem_lock_v03.svg", "status": "generated_recommended"},

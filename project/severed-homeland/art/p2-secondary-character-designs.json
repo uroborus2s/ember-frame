@@ -1,25 +1,35 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "project_id": "severed-homeland",
-  "scope": "P2 secondary character reusable character design specs",
+  "scope": "P2 secondary and northern half-beast reusable character design specs",
   "status": "ready_for_image_generation",
   "source_files": [
     "bible/characters.md",
+    "bible/visual-style.md",
     "bible/character-visual-locks.json",
     "bible/asset-registry.json",
-    "assets/asset-index.json"
+    "assets/asset-index.json",
+    "prompts/p2-character-image-prompts.json"
   ],
   "requested_asset_ids": [
     "char_luo_qinghe_v01",
     "char_meng_guicang_v01",
     "char_lu_mi_v01",
     "char_li_tang_v01",
-    "char_gu_huaizhang_v01"
+    "char_gu_huaizhang_v01",
+    "char_helian_xuedai_v01",
+    "char_wulan_v01",
+    "char_tuoba_yanxiong_v01",
+    "char_qingling_yajian_v01"
   ],
   "global_continuity_rules": [
     "Grounded eastern epic fantasy; restrained low-magic; worn but readable materials.",
     "P2 characters should be distinct by profession and faction at first glance, without overpowering P1 leads.",
-    "Poor or field-worn clothing may be dusty, patched, burned, or repaired, but should not become shredded beggar rags unless explicitly required.",
+    "Field-worn clothing may be dusty, patched, burned, or repaired, but it should remain clean, purposeful, and modelable rather than shredded beggar rags.",
+    "Requested main or recurring characters need at least two readable costume states when used for modeling.",
+    "Northern beast and half-beast characters are humanoid people with clear animal ears or localized beast traits, noble textiles, and practical winter construction; they are not ordinary humans with animal jewelry and not full animals.",
+    "Northern noble costumes use thick rare furs, bone-gold fittings, jade or aurora beads, and cold-region embroidery to show rank and culture.",
+    "Lower Qingming insect military characters such as Li Tang are not human-shaped officers; they need large non-human insect anatomy, hardened shell skin, arm blades, and caste-specific combat bodies.",
     "Zhaoming symbols, when visible, use symbol_zhaoming_sunmoon_v03: a moon-white crescent inside a worn golden sun wheel as one fused badge.",
     "Sumin symbols, when visible, use symbol_suming_whitewing_blackhalo_v03: abstract white wings covering a haloed black sun."
   ],
@@ -30,16 +40,29 @@
       "registry_priority": 2,
       "batch_priority": "P2-secondary",
       "role": "37-year-old village medic, Shen Weisang's mother, old relay sign keeper",
-      "design_goal": "Make her feel like a grounded Canyang Ao healer and the beautiful, resilient 37-year-old emotional source of the escort promise, not a mystic priestess or an old woman.",
+      "design_goal": "Make her feel like a grounded Canyang Ao healer and the beautiful, resilient 37-year-old emotional source of the escort promise; plain cloth and smoke dust cannot hide her striking beauty.",
       "silhouette": "graceful 37-year-old village healer, compact practical layers, protective forward lean when shielding a child or patient, mature beauty without old-woman frailty",
-      "face_hair": "beautiful 37-year-old mother, warm but resilient eyes, practical concentration, light village-work fatigue but not elderly; hair covered or tied under a blue-green cloth head wrap",
-      "wardrobe": "plain intact village medic clothing in muted gray and earth brown, blue-green head cloth, patched apron or medicine-house work layer, herb stains and smoke dust",
+      "face_hair": "strikingly beautiful 37-year-old mother, clear bone structure, warm but resilient eyes, practical concentration, light village-work fatigue but not elderly; hair covered or tied under a blue-green cloth head wrap",
+      "wardrobe_states": [
+        {
+          "state_id": "medicine_house_daily",
+          "description": "clean plain medic clothing in muted gray, herb green, blue-green, and restrained earth brown; intact apron, rolled cuffs, herb stains, and smoke dust, never ragged"
+        },
+        {
+          "state_id": "relay_keeper_hidden",
+          "description": "same village silhouette with a darker blue-green outer wrap, hidden relay marks on medicine drawer planks, and a half Sun-Moon token concealed in ordinary healer objects"
+        },
+        {
+          "state_id": "fire_deathbed",
+          "description": "smoke-dusted and wounded final state with scorched but still coherent clothing, beauty and dignity still visible through ash and exhaustion"
+        }
+      ],
       "fixed_props": [
         "herb basket",
         "medicine cabinet drawer or plank with hidden relay signs",
         "half Sun-Moon relay token handoff prop"
       ],
-      "palette": ["herb green", "blue-green cloth", "plain gray", "earth brown", "old bronze"],
+      "palette": ["herb green", "blue-green cloth", "plain gray", "soft earth brown", "old bronze"],
       "pose_and_expression_anchors": [
         "uses herb names as cover for old relay signs",
         "shields others before explaining",
@@ -49,11 +72,12 @@
         {
           "prompt_id": "char_luo_qinghe_v01_sheet_prompt",
           "output_path": "assets/characters/v01/char_luo_qinghe_v01_sheet.png",
-          "layout": "vertical character sheet with half-body, full-body, protective pose, herb basket close-up, hidden relay sign detail, relay token handoff detail"
+          "layout": "vertical character sheet with half-body, full-body, medicine-house daily state, relay-keeper hidden state, fire deathbed state, herb basket close-up, hidden relay sign detail, relay token handoff detail"
         }
       ],
       "continuity_locks": [
         "beautiful 37-year-old grounded local medic",
+        "plain or coarse cloth must not hide her beauty",
         "no priestess glamour",
         "must not read as an old woman",
         "head cloth and herb basket must remain",
@@ -63,7 +87,8 @@
         "no clean court robe",
         "no ornate healer staff",
         "no glowing spell circle",
-        "no ragged beggar styling"
+        "no ragged beggar styling",
+        "no dull face hidden by brown cloth"
       ],
       "downstream_usage": "Used for episode 01 memory/deathbed references, Canyang Ao medicine-house blocking, and Shen Weisang family continuity."
     },
@@ -76,7 +101,16 @@
       "design_goal": "Make him an ash-damaged witness who protects evidence, not an elegant scholar or generic beggar.",
       "silhouette": "thin adult scholar-traveler, hunched protectively around a burned book box, suspicious shoulders and quick hands",
       "face_hair": "one burned brow, ash stains, sharp archival eyes, smoke-dried messy hair",
-      "wardrobe": "dark patched scholar-traveler clothing, scorched sleeve edge, soot-stained travel wrap, paper and bone-clip utility ties",
+      "wardrobe_states": [
+        {
+          "state_id": "archive_keeper",
+          "description": "dark patched scholar-traveler clothing with clean structure, paper-yellow lining, bone-clip utility ties, and a guarded book-box harness"
+        },
+        {
+          "state_id": "burned_witness",
+          "description": "same silhouette after archive fire, with scorched sleeve edge, soot-stained wrap, and carefully bound manuscript scraps"
+        }
+      ],
       "fixed_props": [
         "burned book box",
         "bone clips for charred pages",
@@ -92,12 +126,13 @@
         {
           "prompt_id": "char_meng_guicang_v01_sheet_prompt",
           "output_path": "assets/characters/v01/char_meng_guicang_v01_sheet.png",
-          "layout": "vertical character sheet with half-body, full-body, page-guarding pose, burned brow close-up, book box and bone clip detail"
+          "layout": "vertical character sheet with half-body, full-body, archive-keeper state, burned-witness state, page-guarding pose, burned brow close-up, book box and bone clip detail"
         }
       ],
       "continuity_locks": [
         "must show fire damage",
         "not elegant scholar",
+        "not a beggar despite patched clothing",
         "book box and bone clips must remain",
         "burn scars and ash should be specific but not horror-gore"
       ],
@@ -105,7 +140,8 @@
         "no pristine academy robe",
         "no court official look",
         "no fantasy wizard beard",
-        "no clean library backdrop"
+        "no clean library backdrop",
+        "no shredded homeless styling"
       ],
       "downstream_usage": "Used for gray-ash archive witness scenes, exposition about book burning and Qingming identifier history, and prop close-ups of charred documents."
     },
@@ -114,86 +150,122 @@
       "name": "鹿弥",
       "registry_priority": 2,
       "batch_priority": "P2-secondary",
-      "role": "northern frost-hoof shaman and disaster-source seeker",
-      "design_goal": "Make them culturally northern and snow-travel ready, with subtle deer-clan signs instead of a full deer-person fantasy design.",
-      "silhouette": "slender young adult built for snow travel, alert stance, compact layered cloak, light-footed posture",
-      "face_hair": "cold-weather marks, wary but not savage expression, braided or tied hair under fur hood",
-      "wardrobe": "fur-gray and ice-blue northern travel layers, practical snow wraps, weathered cloak, small ritual ties and herb pouches",
-      "fixed_props": [
-        "short antler ornament",
-        "bone flute",
-        "snow herb pouch"
+      "role": "beautiful northern Frosthoof noble half-beast shaman and disaster-source seeker",
+      "design_goal": "Make her a visibly half-beast northern noble: very beautiful, clear deer ears, rare fur luxury, and high-status Frosthoof culture rather than a plain traveler with understated clan hints.",
+      "silhouette": "slender young noble built for snow travel, elegant neck line, clear deer ears rising from the hood or hair, thick fur shoulder volume, light-footed but aristocratic posture",
+      "face_hair": "very beautiful young northern noble woman, bright cold eyes, clear deer ears with fine inner fur, braided dark hair or pale-brown hair threaded with jade and bone-gold beads; optional small ritual antler crown worn as ornament, not grown full antlers",
+      "wardrobe_states": [
+        {
+          "state_id": "northern_noble_snow",
+          "description": "ice-blue brocade inner robe, silver-gray riding skirt or fitted snow layers, white deer and silver fox fur mantle, bone-gold clasps, jade or aurora beads, clean thick boots"
+        },
+        {
+          "state_id": "disaster_seeker_travel",
+          "description": "more practical snow-travel version with fur-lined hood cut around visible deer ears, layered gray-blue cloak, herb pouches, bone flute, and weatherproof bindings"
+        },
+        {
+          "state_id": "shaman_ritual",
+          "description": "ceremonial northern state with moon-white fur cape, antler-shaped headdress jewelry, cold-blue embroidery, ritual tassels, and bone flute presented with restrained sacred authority"
+        }
       ],
-      "palette": ["ice blue", "fur gray", "bone white", "snow shadow", "dry herb green"],
+      "fixed_props": [
+        "visible deer ears",
+        "bone flute",
+        "snow herb pouch",
+        "rare white deer or silver fox fur mantle",
+        "bone-gold and jade noble fittings"
+      ],
+      "palette": ["ice blue", "silver gray", "moon white fur", "bone gold", "jade green", "aurora bead color"],
       "pose_and_expression_anchors": [
         "listens to wind through bone flute",
         "protects injured young beast first",
-        "keeps body angled as if reading snow and wind"
+        "keeps body angled as if reading snow and wind",
+        "noble composure should remain even in travel clothing"
       ],
       "required_image_outputs": [
         {
           "prompt_id": "char_lu_mi_v01_sheet_prompt",
           "output_path": "assets/characters/v01/char_lu_mi_v01_sheet.png",
-          "layout": "vertical character sheet with full-body, half-body, flute-listening pose, antler ornament close-up, snow herb pouch detail"
+          "layout": "vertical character sheet with noble snow full-body, disaster-seeker travel full-body, shaman ritual state, deer-ear close-up, fur mantle detail, bone flute and snow herb pouch detail"
         }
       ],
       "continuity_locks": [
-        "do not over-design into a full deer person",
-        "use cultural signs and subtle features",
-        "bone flute and short antler ornament must remain",
+        "must be a northern half-beast woman with clear deer ears",
+        "must be very beautiful",
+        "must read as northern nobility through rare fur, bone-gold, jade, and brocade",
+        "bone flute must remain",
         "should read as northern disaster-source seeker, not generic forest druid"
       ],
       "negative_notes": [
-        "no full antlers growing from skull",
-        "no animal muzzle",
+        "no ordinary human with only antler jewelry",
+        "no full animal muzzle",
+        "no cheap ragged fur",
         "no savage fur bikini",
-        "no glowing nature magic"
+        "no glowing nature magic",
+        "no subtle-only deer signs"
       ],
-      "downstream_usage": "Used for northern tribe contact, frost-hoof cultural continuity, snowfield blocking, and bone flute prop continuity."
+      "downstream_usage": "Used for northern tribe contact, frost-hoof cultural continuity, snowfield blocking, shaman ritual boards, and bone flute prop continuity."
     },
     {
       "asset_id": "char_li_tang_v01",
       "name": "厉螳",
       "registry_priority": 2,
       "batch_priority": "P2-secondary",
-      "role": "Mantis military officer of the Armor Army Office",
-      "design_goal": "Make him the direct physical military threat, clearly separate from Bai Yi's clean bureaucratic Qingming menace.",
-      "silhouette": "hard angular shoulders, black-green shell shoulder armor, forward-leaning military threat, short spear line cutting across the body",
-      "face_hair": "severe adult face with partial mantis lines or hard chitin shadow; no calm Qingming mask stillness",
-      "wardrobe": "black-green shell shoulder armor, dark military cloak, practical command belt, old iron fasteners, field-worn martial layers",
+      "role": "lower Qingming mantis combat-caste enforcer of the Armor Army Office",
+      "design_goal": "Make him the direct physical military threat: tall, strong, non-human, and heavily insectoid, clearly separate from Bai Yi's clean human-ruler disguise and upper-caste bureaucratic menace.",
+      "silhouette": "towering non-human mantis caste body, forward-heavy thorax, long bent digitigrade legs, hard shoulder shell, two primary arm blades plus secondary grasping limbs, head lowered like a cutting weapon",
+      "face_hair": "no human hair and no normal human face; triangular mantis head, faceted black-green eyes, mandible plates, scarred chitin ridges, aggressive predatory stillness",
+      "wardrobe_states": [
+        {
+          "state_id": "armor_office_enforcer",
+          "description": "black-green hardened shell skin with old iron command clamps, dark military mantle strapped around the thorax, gate-order token fixed to chest harness"
+        },
+        {
+          "state_id": "combat_pursuit",
+          "description": "arm blades exposed and polished at the edge, mud-streaked lower legs, reinforced chitin plates, practical pursuit harness, no decorative heroic armor"
+        }
+      ],
       "fixed_props": [
-        "short spear",
-        "iron gate order token"
+        "paired mantis arm blades",
+        "hardened black-green chitin skin",
+        "iron gate order token",
+        "old iron command clamps"
       ],
       "marks": [
-        "mantis blade shadow rather than constant full blade exposure",
-        "dark chitin accent lines on armor and face edge"
+        "lower-caste Qingming military shell pattern",
+        "blade scratches and field dents across chitin plates",
+        "not a human in armor"
       ],
       "palette": ["black green", "old iron", "military dark", "dry mud", "cold shadow"],
       "pose_and_expression_anchors": [
         "uses direct force and cuts through bureaucracy",
         "stands too close when threatening",
-        "occupies doorways and gates like a weapon"
+        "occupies doorways and gates like a weapon",
+        "arm blades should define the threat line in silhouette"
       ],
       "required_image_outputs": [
         {
           "prompt_id": "char_li_tang_v01_sheet_prompt",
           "output_path": "assets/characters/v01/char_li_tang_v01_sheet.png",
-          "layout": "vertical character sheet with full-body, side view, threat pose, short spear detail, iron gate token close-up, mantis blade shadow study"
+          "layout": "vertical creature-character sheet with full-body, side view, threat pose, arm blade close-up, hardened shell skin study, iron gate token close-up, combat pursuit state"
         }
       ],
       "continuity_locks": [
+        "non-human insectoid mantis combat caste",
         "distinct from Bai Yi: darker, martial, less clean, more physical",
-        "mantis elements are armor and shadow language, not constant exposed giant blades",
+        "must have arm blades and hardened skin",
+        "must not become a human officer with mantis-themed armor",
         "must not become polished heroic armor"
       ],
       "negative_notes": [
+        "no human face",
+        "no human hair",
         "no spotless white Qingming robe",
         "no bureaucrat stillness",
-        "no oversized fantasy scythe arms",
+        "no ordinary spear replacing the arm blades",
         "no protagonist-coded noble armor"
       ],
-      "downstream_usage": "Used for Armor Army Office pursuit, Hanya Fort control, martial threat boards, and direct confrontation frames."
+      "downstream_usage": "Used for Armor Army Office pursuit, Hanya Fort control, martial threat boards, direct confrontation frames, and lower Qingming combat-caste modeling."
     },
     {
       "asset_id": "char_gu_huaizhang_v01",
@@ -201,58 +273,288 @@
       "registry_priority": 3,
       "batch_priority": "P2-secondary-requested",
       "role": "southern teacher and pressure voice for Yan Nanzhi",
-      "design_goal": "Make him a memory/edict presence who pressures Yan Nanzhi through ritual duty, not a present frontline fighter.",
-      "silhouette": "upright older ritual scholar, narrow vertical poise, old court discipline, mostly still and frontal as if appearing in memory",
-      "face_hair": "older adult with controlled severity, tired eyes, restrained southern teacher authority; hair and beard neat but travel-faded or memory-softened",
-      "wardrobe": "fragmented old imperial ritual robe, aged white layers, worn gold edging, southern red cord scroll case, robe fragment rather than full imperial regalia",
+      "design_goal": "Make him a southern old-imperial scholar whose clothing preserves imperial luxury after 1200 years while adapting to humid heat; he pressures Yan Nanzhi through ritual duty, not frontline combat.",
+      "silhouette": "upright older ritual scholar, narrow vertical poise, layered but breathable southern robe volume, old court discipline, mostly still and frontal as if appearing in memory or edict",
+      "face_hair": "older adult with controlled severity, tired eyes, restrained southern teacher authority; hair and beard neat, humidity-softened at the edges but not careless",
+      "wardrobe_states": [
+        {
+          "state_id": "southern_edict",
+          "description": "light silk-hemp and gauze layers in vermilion, peacock blue, vine green, ivory, and old gold; open sleeve vents and breathable collar construction for humid southern weather"
+        },
+        {
+          "state_id": "imperial_ritual_scholar",
+          "description": "brighter old-imperial ritual robe with Ming-style broad-sleeve memory, woven gold edging, lacquered rain-resistant scroll case, and controlled court geometry"
+        },
+        {
+          "state_id": "secret_letter_travel",
+          "description": "darker travel state with light rain cloak, sealed red cord scroll, folded imperial robe fragment hidden inside waterproof lacquer tube"
+        }
+      ],
       "fixed_props": [
         "southern red cord scroll",
         "old imperial robe fragment",
-        "blood-treaty instruction slip"
+        "blood-treaty instruction slip",
+        "waterproof lacquer scroll tube"
       ],
-      "palette": ["aged white", "southern red", "worn gold", "dry ink", "memory shadow"],
+      "palette": ["vermilion", "peacock blue", "vine green", "ivory", "old gold", "rain-dark lacquer"],
       "pose_and_expression_anchors": [
         "places duty above safety",
         "appears through memory, letter, or blood-treaty instruction in season 01",
-        "holds a scroll like an accusation rather than an ornament"
+        "holds a scroll like an accusation rather than an ornament",
+        "southern heat adaptation should be visible in fabric weight and sleeve construction"
       ],
       "required_image_outputs": [
         {
           "prompt_id": "char_gu_huaizhang_v01_memory_sheet_prompt",
           "output_path": "assets/characters/v01/char_gu_huaizhang_v01_sheet.png",
-          "layout": "vertical memory-reference sheet with half-body, full-body, scroll-instruction pose, robe fragment detail, red cord scroll close-up"
+          "layout": "vertical memory-reference sheet with southern edict state, imperial ritual scholar state, secret-letter travel state, scroll-instruction pose, robe construction detail, red cord scroll and lacquer tube close-up"
         }
       ],
       "continuity_locks": [
         "do not overuse as present character unless series route is revised",
         "should read as pressure voice from memory and blood-treaty instruction",
-        "old imperial marks should be fragmented and worn, not triumphant regalia"
+        "must preserve old-imperial luxury but adapt it to humid southern climate",
+        "old imperial marks may appear in memory or formal state, but travel props keep sensitive marks hidden"
       ],
       "negative_notes": [
         "no crown",
-        "no complete palace costume",
         "no battlefield commander armor",
-        "no warm mentor softness dominating the design"
+        "no plain dry northern robe",
+        "no warm mentor softness dominating the design",
+        "no complete palace costume that ignores southern humidity"
       ],
-      "downstream_usage": "Used for Yan Nanzhi memory inserts, blood-treaty command frames, and southern teacher visual continuity."
+      "downstream_usage": "Used for Yan Nanzhi memory inserts, blood-treaty command frames, southern teacher visual continuity, and old-imperial southern costume references."
+    },
+    {
+      "asset_id": "char_helian_xuedai_v01",
+      "name": "赫连雪岱",
+      "registry_priority": 3,
+      "batch_priority": "P2-northern-modeling",
+      "role": "Frosthoof deer half-beast noble guard and Lu Mi's household retainer",
+      "design_goal": "Provide a northern noble guard model who shows how Frosthoof deer half-beasts differ from Lu Mi while sharing rank culture, rare fur, and visible beast traits.",
+      "silhouette": "tall young female guard, strong straight posture, clear deer ears, small polished antler stubs or antler-shaped guard ornaments, broad white fur shoulder mantle over fitted riding armor",
+      "face_hair": "beautiful severe northern face, clear deer ears, high cheekbones, dark braided hair threaded with bone-gold rings, calm watchful eyes",
+      "wardrobe_states": [
+        {
+          "state_id": "noble_guard_court",
+          "description": "silver-gray leather riding armor under moon-white deer fur, ice-blue sash, bone-gold clasp, jade rank beads, clean ceremonial boots"
+        },
+        {
+          "state_id": "snow_patrol",
+          "description": "heavier hooded fur cloak cut around deer ears, reinforced bracers, short spear, snow goggles lifted to brow, weather-stained but well-maintained layers"
+        }
+      ],
+      "fixed_props": [
+        "visible deer ears",
+        "white deer fur shoulder mantle",
+        "short spear",
+        "jade rank beads"
+      ],
+      "palette": ["moon white", "silver gray", "ice blue", "bone gold", "dark leather"],
+      "pose_and_expression_anchors": [
+        "stands between Lu Mi and threat without theatrical aggression",
+        "keeps spear vertical in court state",
+        "snow patrol stance lowers the center of gravity"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_helian_xuedai_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_helian_xuedai_v01_sheet.png",
+          "layout": "vertical character sheet with noble guard court state, snow patrol state, deer-ear close-up, white fur mantle detail, spear and jade rank bead close-up"
+        }
+      ],
+      "continuity_locks": [
+        "visible deer ears required",
+        "must read as northern noble guard, not generic hunter",
+        "rare fur and bone-gold fittings show status",
+        "distinct from Lu Mi by guard armor and severe stance"
+      ],
+      "negative_notes": [
+        "no ordinary human guard with horn jewelry only",
+        "no cheap pelt scraps",
+        "no full deer muzzle",
+        "no southern silk robe"
+      ],
+      "downstream_usage": "Used as Frosthoof noble guard reference, northern court lineup contrast, and secondary half-beast modeling sample."
+    },
+    {
+      "asset_id": "char_wulan_v01",
+      "name": "乌岚",
+      "registry_priority": 3,
+      "batch_priority": "P2-northern-modeling",
+      "role": "black-wolf half-beast snow scout and border messenger",
+      "design_goal": "Provide a wolf-line northern scout with clear animal ears, agile winter gear, and a darker palette that contrasts with Frosthoof nobility.",
+      "silhouette": "lean adult scout, black wolf ears, low tail visible under cloak split, compact bow line, crouched wind-reading posture",
+      "face_hair": "sharp golden eyes, wind-burned face, black wolf ears, dark hair braided close to head, alert but not savage expression",
+      "wardrobe_states": [
+        {
+          "state_id": "border_scout",
+          "description": "dark blue and charcoal fitted snow layers, black wolf fur collar, leather chest straps, short bow, bone signal whistle"
+        },
+        {
+          "state_id": "hidden_messenger",
+          "description": "muted gray-blue cloak with message tube under the arm, ear-covering hood partly pushed back so wolf ears still read clearly"
+        }
+      ],
+      "fixed_props": [
+        "black wolf ears",
+        "low visible tail",
+        "short bow",
+        "bone signal whistle",
+        "sealed message tube"
+      ],
+      "palette": ["charcoal", "dark blue", "black fur", "bone white", "wolf-eye gold"],
+      "pose_and_expression_anchors": [
+        "reads tracks with one hand near the snow",
+        "turns one ear toward off-screen sound",
+        "keeps messages hidden but accessible"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_wulan_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_wulan_v01_sheet.png",
+          "layout": "vertical character sheet with border scout state, hidden messenger state, wolf-ear close-up, tail and cloak split detail, short bow and message tube close-up"
+        }
+      ],
+      "continuity_locks": [
+        "visible wolf ears required",
+        "low tail should be visible without turning the design into a full wolf",
+        "must read as scout and messenger rather than noble guard",
+        "winter clothing stays clean and maintained"
+      ],
+      "negative_notes": [
+        "no werewolf monster body",
+        "no ordinary human with a wolf necklace",
+        "no ragged bandit fur",
+        "no southern court colors"
+      ],
+      "downstream_usage": "Used as northern scout reference, border messenger blocking, and wolf half-beast modeling sample."
+    },
+    {
+      "asset_id": "char_tuoba_yanxiong_v01",
+      "name": "拓跋砚熊",
+      "registry_priority": 3,
+      "batch_priority": "P2-northern-modeling",
+      "role": "white-bear half-beast shield guard and snow-forge craftsman",
+      "design_goal": "Provide a heavier northern beast-line body type for modeling: protective, strong, and materially distinct from deer and wolf half-beasts.",
+      "silhouette": "broad powerful adult, rounded white-bear ears, thick neck, heavy fur side cape, large shield and forge hammer silhouette, steady protective stance",
+      "face_hair": "wide calm face, white-bear ears, short frost-pale hair and beard, scarred nose bridge, kind but immovable gaze",
+      "wardrobe_states": [
+        {
+          "state_id": "shield_guard",
+          "description": "white bear fur side cape, black iron lamellar plates, dark teal padded winter tunic, bone-iron shield, clean heavy boots"
+        },
+        {
+          "state_id": "snow_forge",
+          "description": "fur-lined leather apron over winter tunic, forge gloves, hammer, soot at cuffs, bear ears still visible above tied head wrap"
+        }
+      ],
+      "fixed_props": [
+        "rounded white-bear ears",
+        "white bear fur side cape",
+        "bone-iron shield",
+        "forge hammer",
+        "fur-lined leather apron"
+      ],
+      "palette": ["white fur", "black iron", "dark teal", "bone iron", "soot gray"],
+      "pose_and_expression_anchors": [
+        "uses body as a wall",
+        "rests one hand on shield rim",
+        "forge state should show craft skill, not brute stupidity"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_tuoba_yanxiong_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_tuoba_yanxiong_v01_sheet.png",
+          "layout": "vertical character sheet with shield guard state, snow forge state, bear-ear close-up, shield detail, forge hammer and apron detail"
+        }
+      ],
+      "continuity_locks": [
+        "visible bear ears required",
+        "broad half-beast body type distinct from deer and wolf characters",
+        "must read as protective guard and craftsman",
+        "white fur should be rare and well-kept, not dirty ragged pelt"
+      ],
+      "negative_notes": [
+        "no full bear head",
+        "no comic barbarian",
+        "no cheap torn fur",
+        "no southern official robe"
+      ],
+      "downstream_usage": "Used as bear half-beast body-type reference, northern shield guard blocking, and snow-forge prop continuity."
+    },
+    {
+      "asset_id": "char_qingling_yajian_v01",
+      "name": "青翎鸦见",
+      "registry_priority": 3,
+      "batch_priority": "P2-northern-modeling",
+      "role": "snow-raven half-beast courier and omen reader",
+      "design_goal": "Provide an avian northern half-beast with readable localized traits, refined courier clothing, and a different movement language from the mammal-line characters.",
+      "silhouette": "slim adult courier, raven-feather ear crests, short layered feather mantle, narrow cloak, light climbing boots, message tube at the ribs",
+      "face_hair": "pale face with black-blue eye makeup or natural dark feather markings, raven-feather ear crests instead of normal animal ears, glossy black hair tied high, quick assessing eyes",
+      "wardrobe_states": [
+        {
+          "state_id": "courier_formal",
+          "description": "black-blue feather mantle, silver-thread gray tunic, bone clasp, narrow waterproof cloak, polished message tube"
+        },
+        {
+          "state_id": "storm_runner",
+          "description": "hooded wind cloak shaped around feather crests, strapped climbing boots, sealed message tubes, snow-darkened lower hem but intact clothing"
+        }
+      ],
+      "fixed_props": [
+        "raven-feather ear crests",
+        "short feather mantle",
+        "waterproof message tube",
+        "bone clasp",
+        "climbing boots"
+      ],
+      "palette": ["raven black", "blue sheen", "storm gray", "bone white", "cold silver"],
+      "pose_and_expression_anchors": [
+        "tilts head as if hearing distant storm changes",
+        "keeps one hand on message tube seal",
+        "movement should feel quick and precise rather than mystical floating"
+      ],
+      "required_image_outputs": [
+        {
+          "prompt_id": "char_qingling_yajian_v01_sheet_prompt",
+          "output_path": "assets/characters/v01/char_qingling_yajian_v01_sheet.png",
+          "layout": "vertical character sheet with courier formal state, storm runner state, feather-crest close-up, short feather mantle detail, message tube and boot detail"
+        }
+      ],
+      "continuity_locks": [
+        "visible raven-feather ear crests required",
+        "must remain humanoid half-beast rather than winged monster",
+        "must read as courier and omen reader through props and movement",
+        "clothing remains refined and practical"
+      ],
+      "negative_notes": [
+        "no giant wings",
+        "no bird beak face",
+        "no ordinary human with feather earrings only",
+        "no tattered crow costume"
+      ],
+      "downstream_usage": "Used as avian half-beast modeling sample, northern courier reference, and message-route blocking continuity."
     }
   ],
   "lineup_board": {
     "asset_id": "p2_secondary_character_lineup_v01",
     "prompt_id": "p2_secondary_character_lineup_v01_prompt",
     "output_path": "assets/characters/v01/p2_secondary_character_lineup_v01.png",
-    "purpose": "One board comparing the five requested secondary characters so their faction, profession, age, and material language stay distinct.",
-    "layout": "vertical lineup board with five simplified full-body figures and prop callouts, no readable text labels"
+    "purpose": "One board comparing P2 secondary characters and northern beast or half-beast modeling samples so their faction, profession, age, anatomy, costume states, and material language stay distinct.",
+    "layout": "vertical lineup board with nine simplified full-body figures, two-state costume thumbnails for recurring characters, beast-trait callouts, and prop callouts; no readable text labels"
   },
   "handoff": {
     "main_output": "art/p2-secondary-character-designs.json",
     "assumptions": [
       "The user-requested P2 batch includes char_gu_huaizhang_v01 even though the registry currently marks him priority 3.",
+      "Northern beast and half-beast additions are project-level modeling references, not necessarily all episode-01 speaking roles.",
       "This is a project-level reusable asset pass, matching existing P1 files, not a detached episode-specific art-room run."
     ],
     "quality_notes": [
       "Each character has a stable output path under assets/characters/v01 and prompt traceability.",
-      "The batch intentionally avoids new story beats or revised priority metadata in bible/character-visual-locks.json."
+      "The batch now matches the updated character locks for Lu Mi as a visible northern deer half-beast noble and Li Tang as a non-human mantis combat caste.",
+      "Costume states are explicit enough for model sheets while leaving shot-specific pose and lighting to downstream art-room prompts."
     ],
     "blocked_questions": []
   }

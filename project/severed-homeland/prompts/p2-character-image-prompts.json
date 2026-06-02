@@ -5,7 +5,7 @@
   "status": "ready_for_image_generation",
   "source_designs": "art/p2-secondary-character-designs.json",
   "global_prompt_prefix": "Vertical 9:16 cinematic character design sheet, grounded eastern epic fantasy short drama, realistic worn fabric and prop texture, restrained low-magic, neutral dark studio backdrop, multiple views on one sheet, no readable text labels, no modern objects, no neon, no xianxia glamour.",
-  "global_negative_prompt": "modern clothing, modern weapons, polished heroic armor, pristine palace fantasy, overpowered magic, full angel wings, cute cartoon style, game UI, readable text labels, watermark, ragged beggar clothing unless specified, shredded hems, generic refugees with identical outfits, vague fantasy wizard robes, excessive glowing spell effects, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde",
+  "global_negative_prompt": "modern clothing, modern weapons, polished heroic armor, pristine palace fantasy, overpowered magic, full angel wings, cute cartoon style, game UI, readable text labels, watermark, ragged beggar clothing unless specified, shredded hems, generic refugees with identical outfits, vague fantasy wizard robes, excessive glowing spell effects, human officer body for Li Tang, human soldiers wearing insect helmets, shapeless monster horde, subtle-only animal jewelry for northern half-beasts, full animal bodies, cheap ragged fur for northern nobles",
   "symbol_references": {
     "zhaoming": {
       "asset_id": "symbol_zhaoming_sunmoon_v03",
@@ -30,7 +30,7 @@
         "assets/style/v03/symbol_zhaoming_sunmoon_v03.png"
       ],
       "downstream_usage": "Episode 01 medicine-house blocking, deathbed handoff, Shen family memory references.",
-      "prompt": "Luo Qinghe, beautiful 37-year-old village medic and Shen Weisang's mother, grounded Canyang Ao healer, warm but resilient eyes, graceful mature beauty, practical concentration, protective posture, light fatigue from village work but clearly not elderly. Plain intact village medic clothing in muted gray and earth brown, blue-green cloth head wrap, patched medicine-house apron, herb stains and smoke dust, poor but not ragged. Include herb basket, ordinary medicine cabinet plank or drawer with hidden old relay signs carved underneath, and a close-up of half old Sun-Moon relay token being handed off: moon-white crescent inside worn golden sun wheel, one fused Zhaoming badge. Show half-body, full-body, protective shielding pose, herb basket detail, hidden relay sign detail, restrained deathbed handoff pose. She must feel local and practical, not a mystic priestess, not an old woman."
+      "prompt": "Luo Qinghe, strikingly beautiful 37-year-old village medic and Shen Weisang's mother, grounded Canyang Ao healer, warm bright resilient eyes, graceful mature beauty, practical concentration, protective posture, light fatigue from village work but clearly not elderly. Her plain cloth cannot hide her beauty; coarse village fabric frames rather than erases her graceful face. Plain intact village medic clothing in muted gray and earth brown, blue-green cloth head wrap, herb-green patched medicine-house apron, herb stains and smoke dust, poor but not ragged. Include herb basket, ordinary medicine cabinet plank or drawer with hidden old relay signs carved underneath, narrow hidden old-pattern belt, and a close-up of half old Sun-Moon relay token being handed off: moon-white crescent inside worn golden sun wheel, one fused Zhaoming badge. Show half-body, full-body, protective shielding pose, herb basket detail, hidden relay sign detail, restrained deathbed handoff pose. She must feel local and practical, not a mystic priestess, not an old woman."
     },
     {
       "prompt_id": "char_meng_guicang_v01_sheet_prompt",
@@ -48,13 +48,13 @@
       "prompt_id": "char_lu_mi_v01_sheet_prompt",
       "asset_id": "char_lu_mi_v01",
       "output_path": "assets/characters/v01/char_lu_mi_v01_sheet.png",
-      "purpose": "Northern frost-hoof shaman and disaster-source seeker character sheet",
+      "purpose": "Northern frost-hoof noble half-beast shaman and disaster-source seeker character sheet",
       "continuity_references": [
         "bible/characters.md#鹿弥",
         "bible/character-visual-locks.json:char_lu_mi_v01"
       ],
       "downstream_usage": "Northern snowfield contact, frost-hoof cultural continuity, bone flute and snow herb prop references.",
-      "prompt": "Lu Mi, young adult northern frost-hoof shaman and disaster-source seeker, slender alert body built for snow travel, wary but not savage face with cold-weather marks, braided or tied hair under a fur hood. Fur-gray and ice-blue northern travel layers, practical snow wraps, weathered cloak, small ritual ties, snow herb pouch. Include short antler ornament as a cultural accessory, bone flute held near the wind, snow herb pouch close-up, full-body and half-body views, flute-listening pose, protective posture toward an injured young beast implied through body language. Subtle deer-clan signs only; do not turn into a full deer person, no animal muzzle, no full antlers growing from skull, no glowing nature magic."
+      "prompt": "Lu Mi, very beautiful young adult northern frost-hoof noble half-beast shaman and disaster-source seeker, human-form body with clearly visible soft deer ears, elegant slender neck, pale clear eyes, aristocratic restraint, wary but not savage. She is not a normal human with small jewelry; visible deer ears are required, optional small antler ornament or bone-gold hornlet accessory, no animal muzzle and no full deer head. Clothing is thick and luxurious northern noble snow wear: rare white deer, silver fox or snow-leopard fur mantle, ice-blue brocade inner robe, bone-white skirt or robe panels, silver thread, bone-gold clasps, jade buttons, aurora-green beads, snow herb pouch. Show three states on one sheet: northern noble snow outfit, disaster-seeker travel outfit with gathered fur and bone flute, shaman ritual outfit with bone-gold headpiece and ice-blue mantle. Include deer-ear close-up, bone flute near the wind, jade clasp detail, full-body and half-body views. Heavy, ornate and practical for snow, not ragged fur, not savage tribe costume."
     },
     {
       "prompt_id": "char_li_tang_v01_sheet_prompt",
@@ -94,7 +94,55 @@
         "assets/style/v03/symbol_zhaoming_sunmoon_v03.png"
       ],
       "downstream_usage": "Yan Nanzhi memory inserts, blood-treaty command frames, southern teacher pressure voice continuity.",
-      "prompt": "Gu Huaizhang, older southern teacher and pressure voice for Yan Nanzhi, upright old ritual scholar, narrow vertical poise, old court discipline, appears as memory or edict presence rather than present fighter. Controlled severe older face, tired eyes, neat but faded hair and beard. Fragmented old imperial ritual robe in aged white, worn gold edging, southern red cord scroll case, robe fragment rather than complete regalia. Include southern red cord scroll, old imperial robe fragment, blood-treaty instruction slip with worn fused Zhaoming Sun-Moon mark: moon-white crescent inside worn golden sun wheel. Show half-body, full-body, scroll-instruction pose, robe fragment detail, red cord scroll close-up. No crown, no complete palace costume, no battlefield commander armor, no warm mentor softness dominating the design."
+      "prompt": "Gu Huaizhang, older southern teacher and pressure voice for Yan Nanzhi, upright old ritual scholar, narrow vertical poise, old court discipline, appears as memory or edict presence rather than present fighter. Controlled severe older face, tired eyes, neat but faded hair and beard. Clothing preserves old imperial magnificence after 1200 years in humid southern heat: light silk-hemp, breathable gauze, short outer robe, wide sleeves, vermilion and peacock-blue layers, vine-green or ivory summer lining, oxidized old-gold trim, damp-resistant lacquer-red scroll tube and southern red cord. Ornate, climate-adapted, old and dignified, not ragged robe fragments. Include blood-treaty instruction slip with worn fused Zhaoming Sun-Moon mark: moon-white crescent inside worn golden sun wheel. Show half-body, full-body, southern edict pose, imperial ritual scholar state, secret-letter travel state, scroll tube detail, textile detail. No crown, no battlefield commander armor, no warm mentor softness dominating the design."
+    },
+    {
+      "prompt_id": "char_helian_xuedai_v01_sheet_prompt",
+      "asset_id": "char_helian_xuedai_v01",
+      "output_path": "assets/characters/v01/char_helian_xuedai_v01_sheet.png",
+      "purpose": "Northern frost-hoof deer noble guard half-beast character sheet",
+      "continuity_references": [
+        "bible/characters.md#赫连雪岱",
+        "bible/character-visual-locks.json:char_helian_xuedai_v01"
+      ],
+      "downstream_usage": "Northern noble guard modeling, Lu Mi status reference, later northern line visual package.",
+      "prompt": "Helian Xuedai, frost-hoof deer noble female guard and ritual enforcer, tall beautiful half-beast with clear deer ears, short small antlers, long neck, pale brown and ice-blue eyes, calm guard focus, snow-riding posture. White deer fur long shoulder mantle, silver-gray hard leather chest guard, ice-blue riding clothes, bone-gold bracers, jade clasp, deer-pattern belt, short ritual spear. Heavy tailored northern noble guard clothing, not hunter rags and not full animal body. Show front, side, back, guard pose, deer-ear/antler close-up, jade clasp and bracer detail."
+    },
+    {
+      "prompt_id": "char_wulan_v01_sheet_prompt",
+      "asset_id": "char_wulan_v01",
+      "output_path": "assets/characters/v01/char_wulan_v01_sheet.png",
+      "purpose": "Northern black-wolf scout half-beast character sheet",
+      "continuity_references": [
+        "bible/characters.md#乌岚",
+        "bible/character-visual-locks.json:char_wulan_v01"
+      ],
+      "downstream_usage": "Northern scout modeling, snowfield intelligence frames, later northern line movement reference.",
+      "prompt": "Wulan, black-wolf snow scout half-beast, lean agile human-form body with visible black wolf ears and low wolf tail, golden eyes, sharp cheekbones, restrained alert expression, small wolf-clan facial tattoo. Black-gray wolf fur short cloak, dark blue fitted snow-travel clothing, leather knee guards, bone whistle, short bow, snow claw foot gear, dark silver wolf-tooth clasp. Clean functional scout clothing, not savage pelt, not full wolf. Show front, side, back, low running pose, track-reading pose, wolf-ear/tail close-up and short bow detail."
+    },
+    {
+      "prompt_id": "char_tuoba_yanxiong_v01_sheet_prompt",
+      "asset_id": "char_tuoba_yanxiong_v01",
+      "output_path": "assets/characters/v01/char_tuoba_yanxiong_v01_sheet.png",
+      "purpose": "Northern white-bear shield guard and snow-forge craftsman half-beast sheet",
+      "continuity_references": [
+        "bible/characters.md#拓跋砚熊",
+        "bible/character-visual-locks.json:char_tuoba_yanxiong_v01"
+      ],
+      "downstream_usage": "Northern heavy guard and craftsman modeling, supply negotiation reference.",
+      "prompt": "Tuoba Yanxiong, white-bear half-beast shield guard and snow-forge craftsman, large powerful human-form body, broad shoulders, obvious round bear ears, white bear side fur at jaw and sideburns, steady craftsman eyes, large hands. White bear fur heavy cloak, black iron chest strap, leather smith apron, bronze bracers, bone-iron shield, snow-forge hammer, tool chain. Heavy northern craft/guard silhouette, not generic barbarian, not full bear. Show front, side, back, shield planted pose, smith tool pose, bear-ear/fur detail and shield close-up."
+    },
+    {
+      "prompt_id": "char_qingling_yajian_v01_sheet_prompt",
+      "asset_id": "char_qingling_yajian_v01",
+      "output_path": "assets/characters/v01/char_qingling_yajian_v01_sheet.png",
+      "purpose": "Northern snow-raven half-beast courier character sheet",
+      "continuity_references": [
+        "bible/characters.md#青翎鸦见",
+        "bible/character-visual-locks.json:char_qingling_yajian_v01"
+      ],
+      "downstream_usage": "Northern courier and message carrier modeling, later communication frames.",
+      "prompt": "Qingling Yajian, snow-raven half-beast courier, slender quick human-form body with visible black feather ears or feather crest, short feather mantle, raven-bright black eyes, alert expression, wind-cut cheek lines. Black feather short mantle, gray-white light leather armor, blue-black message tube, fine bone rings, wind-snow eye guard, short boots and short knife. Light courier silhouette, not heavy warrior, not full bird person. Show front, side, back, arriving-with-snow pose, high-perch watching pose, feather-crest close-up and message tube detail."
     },
     {
       "prompt_id": "p2_secondary_character_lineup_v01_prompt",
@@ -106,7 +154,7 @@
         "bible/character-visual-locks.json"
       ],
       "downstream_usage": "Prompt Room and Director Room quick reference for profession/faction differentiation.",
-      "prompt": "P2 secondary character lineup board for Severed Homeland, six simplified full-body character references on one vertical 9:16 sheet, no readable text labels. Show clear role differentiation: Luo Qinghe as a beautiful 37-year-old grounded Canyang Ao village medic with blue-green head cloth and herb basket, not elderly; Meng Guicang as ash-damaged burned archive witness guarding a blackened book box with bone page clips; Lu Mi as northern frost-hoof shaman in fur-gray and ice-blue snow layers with short antler ornament and bone flute, subtle deer-clan signs only; Li Tang as a tall non-humanoid black-green mantis combat-caste officer with hardened carapace, reverse-jointed legs, folding blade arms, short spear and iron gate token, distinct from Bai Yi and not a human officer; one Sumin shell soldier as lower-rank non-humanoid insect infantry with short spear, forearm blade, bone-white wax bands and gate plate; Gu Huaizhang as older southern ritual scholar in fragmented aged-white old imperial robe with southern red cord scroll, memory/edict presence. All silhouettes, professions, palettes, and props must be distinguishable at a glance."
+      "prompt": "P2 secondary character lineup board for Severed Homeland, several simplified full-body character references on one vertical 9:16 sheet, no readable text labels. Show clear role differentiation: Luo Qinghe as a strikingly beautiful 37-year-old grounded Canyang Ao village medic whose plain cloth cannot hide her beauty, blue-green head cloth and herb basket, not elderly; Meng Guicang as ash-damaged burned archive witness guarding a blackened book box with bone page clips; Lu Mi as beautiful northern frost-hoof noble half-beast with clear deer ears, luxurious rare fur, ice-blue noble layers and bone flute; Li Tang as a tall non-humanoid black-green mantis combat-caste officer with hardened carapace, reverse-jointed legs, folding blade arms, short spear and iron gate token, distinct from Bai Yi and not a human officer; one Sumin shell soldier as lower-rank non-humanoid insect infantry with short spear, forearm blade, bone-white wax bands and gate plate; Gu Huaizhang as older southern ritual scholar in humid-climate old-imperial luxury with vermilion, peacock blue, light gauze and lacquer-red scroll tube. Include small northern half-beast modeling samples: deer noble guard, wolf scout, bear shield craftsman, raven courier. All silhouettes, professions, palettes, beast traits and props must be distinguishable at a glance."
     }
   ],
   "blocked": {
