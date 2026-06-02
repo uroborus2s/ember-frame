@@ -3,7 +3,7 @@
 版本：v01  
 日期：2026-06-03  
 范围：第01集《清明香入村》在残阳坳主场景资产完成后的剩余场景/镜头参考图需求  
-状态：待设计提示词与线程任务
+状态：已完成 5 张 canonical 参考图
 
 ## 1. 当前完成状态
 
@@ -101,3 +101,21 @@ Asset ID：`ref_ep01_sc008_final_spear_line_well_glint_v01`
 2. `episode01-canyangao-shot-reference-v01`：药屋门口失言、结尾封锁线井沿反光两张。
 
 所有图片使用 `project/severed-homeland/01/assets/reference-frames/` 作为 canonical output directory；中间图进入同级 `history/`，使用 `.v001` 后缀，不创建版本目录。
+
+## 6. 完成登记
+
+本轮已完成上述 5 张 canonical PNG：
+
+- `project/severed-homeland/01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png`
+- `project/severed-homeland/01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png`
+- `project/severed-homeland/01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png`
+- `project/severed-homeland/01/assets/reference-frames/sc005_zhaomian_threshold_identification.png`
+- `project/severed-homeland/01/assets/reference-frames/sc008_final_spear_line_well_glint.png`
+
+生成提示词、线程计划、结果登记和 QC 见：
+
+- `project/severed-homeland/01/prompts/reference-frame-image-prompts.json`
+- `project/severed-homeland/01/art/reference-frame-thread-plan.json`
+- `project/severed-homeland/01/art/reference-frame-thread-results.json`
+- `project/severed-homeland/01/art/reference-frame-asset-index.json`
+- `project/severed-homeland/01/art/reference-frame-asset-qc-report.md`

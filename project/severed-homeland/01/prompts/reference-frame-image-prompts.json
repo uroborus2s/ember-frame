@@ -1,0 +1,174 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "asset_batch": "episode01_missing_reference_frames_v01",
+  "title": "《断航故土》第01集缺失场景参考图提示词",
+  "date": "2026-06-03",
+  "status": "completed",
+  "output_dir": "project/severed-homeland/01/assets/reference-frames",
+  "history_dir": "project/severed-homeland/01/assets/reference-frames/history",
+  "shared_generation_rules": [
+    "Generate one vertical 9:16 cinematic production reference PNG per prompt.",
+    "Use low-saturation realistic low-magic eastern epic style with tactile old wood, packed earth, iron, insect wax, snow, ash, herb fibers, and restrained fire or moon-white highlights.",
+    "Keep all text areas blank or unreadable; no Chinese characters, Latin letters, UI, labels, captions, subtitles, or watermark.",
+    "Do not redesign locked faction emblems. Any Zhaoming trace must be partial, worn, hidden, or broken; any Qingming/Suming mark must be a small physical seal, wax mark, register edge, or procedural object.",
+    "No high-magic glow, spell circle, heroic battlefield panorama, sci-fi technology, modern vehicles, modern signs, or clean fantasy festival mood.",
+    "Avoid recognizable new character faces in montage references; use hands, backs, silhouettes, partial bodies, and object-driven storytelling."
+  ],
+  "locked_reference_images": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png",
+      "role": "vertical mobile-readable composition reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "material realism and surface language"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "role": "Canyang Ao to Jinhe regional palette reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+      "role": "southern old empire dark red and worn gold reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+      "role": "northern snowline palette reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "role": "partial old Zhaoming relic material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "role": "Qingming insect-wax material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "role": "locked Zhaoming emblem shape reference; use only broken or covered traces"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "role": "locked Suming/Qingming emblem shape reference; use only as a small seal or physical mark"
+    }
+  ],
+  "prompts": [
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh002_northern_battle_fragment_v01",
+      "asset_id": "ref_ep01_sc001_sh002_northern_battle_fragment_v01",
+      "expected_output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "shot_reference_frame",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md#SC001",
+        "project/severed-homeland/01/storyboard/storyboard-plan.md#SC001-SH002",
+        "project/severed-homeland/01/memory/current-state.md"
+      ],
+      "input_images": [
+        "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+        "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png"
+      ],
+      "design_lock": "Low camera on snow. Show only fragments of a northern war year, never a full heroic battlefield.",
+      "image_prompt": "Create one vertical 9:16 cinematic production reference frame for Episode 01 SC001-SH002, northern battle fragment. Low camera almost touching broken snow and trampled ice. Foreground: iron horseshoe, churned snow, half-buried old spearhead, a gloved human hand gripping the snow. Midground: human military household backs carrying a wounded soldier toward a dark border-wall shadow, faces hidden. Background: partial torn beast-tribe flag shadow and a cropped white-wing-over-black-sun institutional banner shape, both distorted by smoke and firelight, not clean emblems. Palette: cold white snow, blue-black shadow, blackstone wall, old iron gray, very small dry dark-red blood marks. Realistic tactile snow, old iron, torn cloth, restrained ash. Mobile-readable vertical composition, bleak and historical, no hero pose, no monster tide, no readable text.",
+      "negative_prompt": "wide heroic battle panorama, cavalry charge spectacle, clean fantasy banner, complete redesigned emblem, visible new character face, monster horde, gore, body horror, high magic glow, spell circle, modern weapon, modern vehicle, readable text, Chinese characters, Latin letters, UI, labels, watermark"
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh003_jinhe_grain_levy_road_v01",
+      "asset_id": "ref_ep01_sc001_sh003_jinhe_grain_levy_road_v01",
+      "expected_output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "shot_reference_frame",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md#SC001",
+        "project/severed-homeland/01/storyboard/storyboard-plan.md#SC001-SH003",
+        "project/severed-homeland/01/memory/current-state.md"
+      ],
+      "input_images": [
+        "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+        "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png"
+      ],
+      "design_lock": "Object-driven grain levy pressure. Hands, bowls, door, grain sacks, ruts, wax seals; no readable writing.",
+      "image_prompt": "Create one vertical 9:16 cinematic production reference frame for Episode 01 SC001-SH003, Jinhe grain levy road. Close to mid-close composition built from three readable object actions in one frame: a rough official grain-levy wooden plaque slammed against an old door with its surface blank and unreadable; a half-filled grain sack dragged across wet packed-earth road, leaving heavy cart ruts; a child's empty bowl at the lower foreground holding only a small water reflection. People appear only as hands, sleeves, straw shoes, backs, and cropped shoulders; no identifiable faces. Add small cold insect-wax seals on rope and plaque edge copied from Qingming institutional material language, not a new logo. Palette: earth-yellow road, damp old wood, dark grain cloth, muted straw, insect-wax white pressure marks. Low-magic eastern epic realism, hungry and procedural, no festival mood, no readable text.",
+      "negative_prompt": "happy harvest, market festival, steampunk cart, modern road, modern vehicle, clean official sign, readable words, Chinese characters, Latin letters, full emblem, redesigned badge, visible new character face, comic exaggeration, high magic, UI, labels, watermark"
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh004_southern_secret_room_relay_table_v01",
+      "asset_id": "ref_ep01_sc001_sh004_southern_secret_room_relay_table_v01",
+      "expected_output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "shot_reference_frame",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md#SC001",
+        "project/severed-homeland/01/storyboard/storyboard-plan.md#SC001-SH004",
+        "project/severed-homeland/01/memory/current-state.md"
+      ],
+      "input_images": [
+        "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+        "project/severed-homeland/assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+        "project/severed-homeland/assets/props/prop_half_sunmoon_relay_token.png"
+      ],
+      "design_lock": "Tabletop secrecy. Only hands, old route map, medicine packet, red thread, fire ember, broken Sun-Moon trace.",
+      "image_prompt": "Create one vertical 9:16 cinematic production reference frame for Episode 01 SC001-SH004, southern secret room relay table. Tight tabletop close shot from high oblique angle, no faces. A worn old relay-route map lies under a medicine packet and rough cloth wraps; red thread loops across route scratches; one hand presses a tiny ember or fire spark under the palm, preparing a match cut to incense smoke. Include a broken, partially covered sun-and-moon relic trace on wood or token edge: dull antique gold, old vermilion lacquer, moon-white sliver, but incomplete and not a full clean emblem. Palette: dim warm ember, blackened wood, muted vermilion, worn gold, medicine-paper beige, deep shadow. Low-magic realism, clandestine and tactile. No readable map labels or text.",
+      "negative_prompt": "complete Zhaoming emblem, clean imperial badge, readable map text, Chinese characters, Latin letters, magic explosion, glowing spell map, modern desk, sci-fi control panel, visible face, heroic council scene, UI, labels, watermark"
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc005_zhaomian_threshold_identification_v01",
+      "asset_id": "ref_ep01_sc005_zhaomian_threshold_identification_v01",
+      "expected_output_path": "project/severed-homeland/01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "shot_reference_frame",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md#SC005",
+        "project/severed-homeland/01/storyboard/storyboard-plan.md#SC005",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png"
+      ],
+      "input_images": [
+        "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+        "project/severed-homeland/assets/props/prop_qingming_white_register.png",
+        "project/severed-homeland/assets/props/prop_shen_zhaomian_child_relics.png"
+      ],
+      "design_lock": "Child-low view at Luo medicine house threshold. Leave blank register corner for later text layer; do not generate readable words.",
+      "image_prompt": "Create one vertical 9:16 cinematic production reference frame for Episode 01 SC005, Zhaomian threshold identification. Use the existing Luo medicine house exterior geography as continuity: old wooden threshold, herb bundles, medicine-name wooden tags, repaired village doorframe, packed earth. Low child-height camera. Lower foreground: a small worn child herb pouch and trembling small hands near the threshold; medicine tags form a vertical row but have no readable text. Midground: a protective older figure edge partially blocks the child, only torso/arm visible. Background/right edge: Bai Yi's cold clean white robe and a Qingming white register corner entering frame, with a blank unreadable mark area reserved for post-production text. A short spear shadow cuts across the threshold. The pressure is procedural and quiet, not theatrical. Palette: Canyang packed earth and herb green, old wood, cold insect-wax white, restrained moon-gray shadow.",
+      "negative_prompt": "readable words, Chinese characters, Latin letters, clear register text, labels, subtitles, UI, watermark, villain pose, screaming antagonist, magical aura, redesigned Qingming badge, large emblem, modern props, cute cartoon child, clean palace interior"
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint_v01",
+      "asset_id": "ref_ep01_sc008_final_spear_line_well_glint_v01",
+      "expected_output_path": "project/severed-homeland/01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "aspect_ratio": "9:16",
+      "prompt_type": "shot_reference_frame",
+      "continuity_references": [
+        "project/severed-homeland/01/director/camera-plan.md#SC008",
+        "project/severed-homeland/01/storyboard/storyboard-plan.md#SC008",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_old_well_courtyard.png"
+      ],
+      "input_images": [
+        "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+        "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
+        "project/severed-homeland/assets/props/prop_qingming_white_register.png"
+      ],
+      "design_lock": "Final spatial lock: short spear line blocks medicine house and rear courtyard at once; well glint is only one narrow moon-white line.",
+      "image_prompt": "Create one vertical 9:16 cinematic production reference frame for Episode 01 SC008, final spear line and old-well glint. Use Canyang Ao geography continuity: Luo medicine house threshold in the near-midground, rear courtyard axis visible through a narrow blocked passage, old well in the far background or side gap. A line of insect-institution short spears drops diagonally across the composition, clearly cutting off both the medicine house entrance and the route to the rear courtyard. Villagers are compressed into backs, shoulders, hands, and partial silhouettes; Shen-related figures are protected behind the line but not portrait-clear. Bai Yi stands slightly higher on the step in clean white robe, closing or holding the white register, procedural not triumphant. Qingming incense smoke crawls low across the threshold toward the old well. At the well edge, show only a single thin moon-white glint line, no person below, no full jade, no door outline. Palette: packed earth brown, herb green, old wood, insect-wax white, smoke gray, one moon-white glint, restrained dark red.",
+      "negative_prompt": "well interior reveal, visible person under well, complete jade token, stone door outline, victory pose, heroic standoff, readable register text, Chinese characters, Latin letters, redesigned badge, huge emblem, high magic beam, spell effect, modern UI, labels, watermark"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "asset_batch": "episode01_missing_reference_frames_v01",
+  "date": "2026-06-03",
+  "status": "completed_direct_imagegen",
+  "output_dir": "project/severed-homeland/01/assets/reference-frames",
+  "history_dir": "project/severed-homeland/01/assets/reference-frames/history",
+  "threads": [
+    {
+      "thread_key": "episode01-intro-montage-reference-v01",
+      "thread_title": "断航故土 第01集序幕蒙太奇参考图",
+      "prompt_ids": [
+        "prompt_ref_ep01_sc001_sh002_northern_battle_fragment_v01",
+        "prompt_ref_ep01_sc001_sh003_jinhe_grain_levy_road_v01",
+        "prompt_ref_ep01_sc001_sh004_southern_secret_room_relay_table_v01"
+      ],
+      "expected_output_paths": [
+        "project/severed-homeland/01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+        "project/severed-homeland/01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+        "project/severed-homeland/01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png"
+      ],
+      "worker_instruction": "Use the matching prompt exactly, preserve locked badge rules and montage no-face rules, generate one vertical raster PNG per output path, archive retained rejected candidates in the sibling history directory with .v001 suffixes, then return final files and QC notes."
+    },
+    {
+      "thread_key": "episode01-canyangao-shot-reference-v01",
+      "thread_title": "断航故土 第01集残阳坳镜头参考图",
+      "prompt_ids": [
+        "prompt_ref_ep01_sc005_zhaomian_threshold_identification_v01",
+        "prompt_ref_ep01_sc008_final_spear_line_well_glint_v01"
+      ],
+      "expected_output_paths": [
+        "project/severed-homeland/01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+        "project/severed-homeland/01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "worker_instruction": "Use the matching prompt exactly, preserve Canyang Ao geography and existing location continuity, generate one vertical raster PNG per output path, avoid readable text, archive retained rejected candidates in the sibling history directory with .v001 suffixes, then return final files and QC notes."
+    }
+  ]
+}

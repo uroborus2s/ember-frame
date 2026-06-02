@@ -1,0 +1,70 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "asset_batch": "episode01_missing_reference_frames_v01",
+  "date": "2026-06-03",
+  "status": "completed",
+  "generation_mode": "built_in_image_gen_direct",
+  "output_dir": "project/severed-homeland/01/assets/reference-frames",
+  "history_dir": "project/severed-homeland/01/assets/reference-frames/history",
+  "history_files": [],
+  "threads": [
+    {
+      "thread_key": "episode01-intro-montage-reference-v01",
+      "thread_id": null,
+      "status": "completed_direct_imagegen",
+      "created_files": [
+        {
+          "asset_id": "ref_ep01_sc001_sh002_northern_battle_fragment_v01",
+          "prompt_id": "prompt_ref_ep01_sc001_sh002_northern_battle_fragment_v01",
+          "output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+          "source_generated_path": "/Users/uroborus/.codex/generated_images/019e895c-b9f1-7fc1-80b3-5ea3ef656569/ig_03911f87edbfd044016a1f23ee62288197bf66ac1f4fa76694.png",
+          "qc_note": "Safety-adjusted to a non-violent northern war-pressure aftermath frame: snowline, border wall, supply backs, torn banners, no blood, injuries, or readable text."
+        },
+        {
+          "asset_id": "ref_ep01_sc001_sh003_jinhe_grain_levy_road_v01",
+          "prompt_id": "prompt_ref_ep01_sc001_sh003_jinhe_grain_levy_road_v01",
+          "output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+          "source_generated_path": "/Users/uroborus/.codex/generated_images/019e895c-b9f1-7fc1-80b3-5ea3ef656569/ig_03911f87edbfd044016a1f243a91f081979aabddff4b084219.png",
+          "qc_note": "Object-driven levy image: blank plaque, grain sack, empty bowl, ruts, wax pressure marks, cropped bodies only, no readable text."
+        },
+        {
+          "asset_id": "ref_ep01_sc001_sh004_southern_secret_room_relay_table_v01",
+          "prompt_id": "prompt_ref_ep01_sc001_sh004_southern_secret_room_relay_table_v01",
+          "output_path": "project/severed-homeland/01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
+          "source_generated_path": "/Users/uroborus/.codex/generated_images/019e895c-b9f1-7fc1-80b3-5ea3ef656569/ig_03911f87edbfd044016a1f2500cacc8197929859b1ea34aded.png",
+          "qc_note": "Tabletop secrecy frame: hands, map, medicine packet, red thread, ember, partial worn Sun-Moon relic trace, no faces or readable map text."
+        }
+      ],
+      "blocked_items": []
+    },
+    {
+      "thread_key": "episode01-canyangao-shot-reference-v01",
+      "thread_id": null,
+      "status": "completed_direct_imagegen",
+      "created_files": [
+        {
+          "asset_id": "ref_ep01_sc005_zhaomian_threshold_identification_v01",
+          "prompt_id": "prompt_ref_ep01_sc005_zhaomian_threshold_identification_v01",
+          "output_path": "project/severed-homeland/01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+          "source_generated_path": "/Users/uroborus/.codex/generated_images/019e895c-b9f1-7fc1-80b3-5ea3ef656569/ig_03911f87edbfd044016a1f256774848197a4370ba603d37dd3.png",
+          "qc_note": "Medicine-house threshold frame: child-low view, herb pouch, protective body edge, blank register corner, spear shadow, no readable text."
+        },
+        {
+          "asset_id": "ref_ep01_sc008_final_spear_line_well_glint_v01",
+          "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint_v01",
+          "output_path": "project/severed-homeland/01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+          "source_generated_path": "/Users/uroborus/.codex/generated_images/019e895c-b9f1-7fc1-80b3-5ea3ef656569/ig_03911f87edbfd044016a1f264b5cb8819786e2a1d180c6c29a.png",
+          "qc_note": "Final lockdown frame: spear line blocks threshold/courtyard route, white register remains unreadable, old-well glint appears as a narrow moon-white line."
+        }
+      ],
+      "blocked_items": []
+    }
+  ],
+  "validation": [
+    "Copied all five selected built-in image generation outputs into project/severed-homeland/01/assets/reference-frames/.",
+    "Verified with file that all five canonical PNGs are 941 x 1672, 8-bit RGB, non-interlaced.",
+    "Visually inspected generation outputs during creation for composition, no readable text, and continuity constraints."
+  ]
+}
