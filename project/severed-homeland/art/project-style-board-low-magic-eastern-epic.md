@@ -22,6 +22,21 @@
 - `project/severed-homeland/01/director/camera-plan.md`
 - `project/severed-homeland/prompts/project-faction-emblem-prompts-v02.json`
 - `project/severed-homeland/art/project-faction-emblem-asset-qc-report.md`
+- `project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png`
+- `project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png`
+- `project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png`
+
+## 2.1 徽章引用硬规则
+
+全剧总风格板不得重新设计阵营徽章。所有肃明/清明、昭明、北境万兽联盟的徽章、印记、封蜡、残纹、刺绣、石刻、旗帜和道具压印，必须以当前稳定 PNG 为原始视觉参考：
+
+| 阵营 | 当前稳定徽章 | 使用规则 |
+| --- | --- | --- |
+| 肃明国 / 清明院 | `assets/style/faction-emblems/emblem_suming_qingming_state.png` | 保留“白色角形翼刃压住黑日”的核心形体，不得画成通用黑日、星芒、虫形或花纹。 |
+| 昭明旧帝国 | `assets/style/faction-emblems/emblem_zhaoming_empire.png` | 保留朱赤底、磨损金、航海星盘/日月导航环的核心形体，不得画成普通太阳纹。 |
+| 北境万兽联盟 | `assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png` | 保留骨、角、齿、木、皮绳构成的联盟印，不得画成单一动物吉祥物。 |
+
+图片生成时应把这些徽章作为原始参考图参与整图重生成，使其自然成为道具、封印、浮雕、刺绣、材质样片或破损残印。禁止用后期贴图、方框样片、平面卡片或 sticker overlay 修正最终图。
 
 ## 3. 方案比较
 

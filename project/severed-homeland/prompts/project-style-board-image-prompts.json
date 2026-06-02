@@ -3,7 +3,7 @@
   "title": "断航故土",
   "asset_batch": "project_style_board_low_magic_eastern_epic_v01",
   "date": "2026-06-02",
-  "status": "prompt_plan_ready_pending_image_generation",
+  "status": "prompt_plan_updated_after_emblem_reference_correction",
   "output_dir": "project/severed-homeland/assets/style/project-style-board",
   "emblem_references": [
     {
@@ -32,7 +32,7 @@
       "冷峻东方史诗",
       "9:16短剧质感"
     ],
-    "delivery_rule": "Create auditable tool-neutral image prompts and stable output paths first. Image generation must reference the current stable faction emblem PNGs instead of creating new emblem variants."
+    "delivery_rule": "Image generation must use the current stable faction emblem PNGs as original visual references and regenerate the style-board images natively. Do not correct emblem drift by pasting flat emblem cards or sticker overlays onto finished images."
   },
   "shared_generation_rules": {
     "format": "vertical 9:16 high-end fantasy production style board image, cinematic realism, no visible text labels, no captions, no watermark",
@@ -44,13 +44,14 @@
       "Zhaoming relics feel advanced, maritime, astronomical, old, and morally complex",
       "9:16 composition favors close-ups, occlusion, vertical pressure, and prop anchors"
     ],
-    "emblem_reference_policy": "Before generating or editing any style-board image, inspect and use only the current stable faction emblem PNGs listed in emblem_references. Emblems may appear as physical props, plaques, seals, embroidery, material swatches, or damaged fragments, but their core silhouettes must remain faithful to those PNGs. Do not redraw, simplify into generic symbols, or invent alternate faction marks.",
+    "emblem_reference_policy": "Before generating or editing any style-board image, inspect and use only the current stable faction emblem PNGs listed in emblem_references as original visual references. Regenerate the full image natively so emblems become physical props, plaques, seals, embroidery, material swatches, or damaged fragments inside the scene. Do not paste flat square emblem cards or sticker overlays onto the image. Do not redraw, simplify into generic symbols, or invent alternate faction marks.",
     "must_have": [
       "9:16 vertical composition",
       "cinematic lighting",
       "low saturation but regional color variation",
       "clear material language",
       "faithful references to current stable faction emblem PNGs whenever an emblem or faction mark appears",
+      "native integration of emblem references into the image, not post-hoc sticker compositing",
       "no text, no letters, no UI labels, no watermark",
       "no multi-character hero poster",
       "no modern technology"

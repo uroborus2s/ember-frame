@@ -12,7 +12,9 @@
     "worker_requirements": [
       "Use available image generation capability for raster assets.",
       "Write images exactly to the assigned project paths.",
+      "Use current stable faction emblem PNGs as original visual references: project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png, project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png, and project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png.",
       "Do not edit existing faction emblem images or historical assets.",
+      "Do not correct emblem drift by pasting flat square emblem cards or sticker overlays onto finished style boards; regenerate the full image natively with emblem references integrated as props, seals, reliefs, embroidery, material samples, or damaged fragments.",
       "Do not generate text labels inside images.",
       "Return a compact manifest of created files and any failures."
     ]
@@ -33,7 +35,7 @@
         "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
         "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png"
       ],
-      "worker_prompt": "Generate the four raster style-board images defined in project/severed-homeland/prompts/project-style-board-image-prompts.json for asset_batch project_style_board_low_magic_eastern_epic_v01. Preserve the written art direction in project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md. Write each image to its exact expected_output_path under project/severed-homeland/assets/style/project-style-board/. Do not modify existing faction emblems or historical assets. The images must contain no visible text labels, captions, letters, UI, or watermarks. Return a compact manifest listing generated files, dimensions, and any blocked items."
+      "worker_prompt": "Generate the four raster style-board images defined in project/severed-homeland/prompts/project-style-board-image-prompts.json for asset_batch project_style_board_low_magic_eastern_epic_v01. Preserve the written art direction in project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md. Use the current stable faction emblem PNGs as original visual references: project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png, project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png, and project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png. Regenerate full images natively so the emblems become props, seals, reliefs, embroidery, material samples, or damaged fragments inside the world. Do not paste flat square emblem cards or sticker overlays onto finished images. Write each image to its exact expected_output_path under project/severed-homeland/assets/style/project-style-board/. Do not modify existing faction emblems or historical assets. The images must contain no visible text labels, captions, letters, UI, or watermarks. Return a compact manifest listing generated files, dimensions, source reference images used, and any blocked items."
     }
   ],
   "dependencies": [

@@ -2,16 +2,33 @@
   "project_id": "severed-homeland",
   "asset_batch": "project_style_board_low_magic_eastern_epic_v01",
   "date": "2026-06-02",
-  "status": "completed",
-  "reason": "All four planned project style-board PNG assets were generated, visually checked, and delivered into stable project output paths.",
+  "status": "completed_native_regenerated_with_emblem_references",
+  "reason": "All four planned project style-board PNG assets were regenerated natively using the current stable faction emblem PNGs as reference images. The final stable outputs are not sticker composites or pasted emblem sample cards.",
   "thread_plan": "project/severed-homeland/art/project-style-board-thread-plan.json",
   "prompt_source": "project/severed-homeland/prompts/project-style-board-image-prompts.json",
+  "emblem_references": [
+    {
+      "asset_id": "emblem_suming_qingming_state",
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "policy": "current stable emblem reference only; do not redraw as a generic black sun or starburst"
+    },
+    {
+      "asset_id": "emblem_zhaoming_empire",
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "policy": "current stable emblem reference only; do not redraw as a generic sun-and-moon mark"
+    },
+    {
+      "asset_id": "emblem_northern_beastfolk_alliance_wanshou",
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+      "policy": "current stable emblem reference only; do not redraw as a single-animal mascot or random tribal mark"
+    }
+  ],
   "threads": [
     {
       "thread_key": "project_style_board_v01",
       "thread_id": "019e88ad-4d88-7283-99f5-26b7125431f1",
       "title": "断航故土全剧总风格板图片生成",
-      "status": "delivered_partial_then_supplemented",
+      "status": "superseded_by_native_emblem_reference_regeneration",
       "launched_at": "2026-06-02T22:12:00+08:00",
       "assigned_prompt_ids": [
         "style_prompt_global_mood_v01",
@@ -25,13 +42,13 @@
         "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
         "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png"
       ],
-      "notes": "Background Codex thread launched from the audited project style-board thread plan. The accepted global mood image came from this thread. The remaining deliverables were finalized through supplemental single-image threads after the batch thread did not provide all stable outputs quickly enough."
+      "notes": "The initial batch and supplemental outputs established the low-magic eastern-epic style direction, but they did not sufficiently lock the current faction-emblem PNG references. They were replaced by a parent-coordinated native regeneration pass using the current stable emblem images as input references."
     },
     {
       "thread_key": "project_style_board_vertical_composition_retry_v01",
       "thread_id": "019e88b3-479b-7473-8bc7-88fd1d3bf60b",
       "title": "断航故土风格板补生成：9:16构图",
-      "status": "generated_asset_delivered",
+      "status": "superseded_by_native_emblem_reference_regeneration",
       "launched_at": "2026-06-02T22:19:00+08:00",
       "assigned_prompt_ids": [
         "style_prompt_vertical_composition_v01"
@@ -39,13 +56,13 @@
       "expected_output_paths": [
         "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png"
       ],
-      "notes": "Supplemental single-image thread delivered the accepted 9:16 composition style-board asset."
+      "notes": "Superseded because the style-board package now requires current stable faction-emblem image references as hard visual inputs."
     },
     {
       "thread_key": "project_style_board_material_palette_retry_v01",
       "thread_id": "019e88b3-50bd-7b70-bcf8-fd6d218f91fc",
       "title": "断航故土风格板补生成：材质色彩",
-      "status": "generated_asset_delivered",
+      "status": "superseded_by_native_emblem_reference_regeneration",
       "launched_at": "2026-06-02T22:19:00+08:00",
       "assigned_prompt_ids": [
         "style_prompt_material_palette_v01"
@@ -53,13 +70,13 @@
       "expected_output_paths": [
         "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png"
       ],
-      "notes": "Supplemental single-image thread delivered the accepted material and color palette board. The final stable output was written after the cache candidate and does not match that cache file byte-for-byte."
+      "notes": "Superseded because the style-board package now requires current stable faction-emblem image references as hard visual inputs."
     },
     {
       "thread_key": "project_style_board_low_magic_vfx_retry_v01",
       "thread_id": "019e88b3-5cff-74a3-8703-69570e4f789b",
       "title": "断航故土风格板补生成：低魔特效",
-      "status": "generated_asset_delivered",
+      "status": "superseded_by_native_emblem_reference_regeneration",
       "launched_at": "2026-06-02T22:19:00+08:00",
       "assigned_prompt_ids": [
         "style_prompt_low_magic_vfx_v01"
@@ -67,79 +84,92 @@
       "expected_output_paths": [
         "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png"
       ],
-      "notes": "Supplemental single-image thread delivered the accepted low-magic VFX texture board."
+      "notes": "Superseded because the style-board package now requires current stable faction-emblem image references as hard visual inputs."
     }
   ],
+  "native_regeneration_pass": {
+    "status": "completed",
+    "completed_at": "2026-06-03T00:16:47+08:00",
+    "method": "image generation using visible source style-board images plus the current stable faction emblem PNGs as reference images",
+    "important_constraint": "No deterministic sticker compositing, no pasted square emblem sample cards, and no post-hoc flat overlays were used for the final stable outputs.",
+    "notes": [
+      "The prior deterministic overlay attempt was discarded from the stable project paths after user feedback.",
+      "The accepted stable paths now contain native regenerated images. Emblems are integrated as props, seals, reliefs, embroidery, and damaged material marks.",
+      "Model-side materialization can still simplify fine emblem details; any future pass that requires pixel-level emblem fidelity should continue with reference-image editing iterations rather than post-compositing."
+    ]
+  },
   "image_assets_created": [
     {
       "asset_id": "style_global_mood_low_magic_eastern_epic_v01",
       "prompt_id": "style_prompt_global_mood_v01",
       "output_path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
-      "source_cache_path": "<generated-image-cache>/ig_0fefd3e593f722dd016a1ee4d1953081989fa984820e23c86a.png",
-      "status": "created",
+      "source_cache_path": "/Users/uroborus/.codex/generated_images/019e88a2-4570-76a1-8fcf-bdd08fbf9879/ig_095fca2b134a28e3016a1ef59de4b88195a3ad984f3dafd517.png",
+      "status": "created_native_regenerated",
       "dimensions": {
         "width": 941,
         "height": 1672
       },
-      "sha256": "16ede2cc2f49e5bd6cf41c48fa28888572165410861152a547dfdf086bdf0d74",
-      "notes": "Generated by the primary background thread and copied into the stable project asset path."
+      "sha256": "75336de4133e89a27fa82fa1a2e7dcfc0cd17950639b1f9cdcc47f9071a2f805",
+      "notes": "Regenerated natively using the global mood board base plus current stable faction emblem reference images."
     },
     {
       "asset_id": "style_vertical_composition_9x16_v01",
       "prompt_id": "style_prompt_vertical_composition_v01",
       "output_path": "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png",
-      "source_cache_path": "<generated-image-cache>/ig_07674a75ea4f3cb6016a1ee6545f54819a891bf8dc23e9ec14.png",
-      "status": "created",
+      "source_cache_path": "/Users/uroborus/.codex/generated_images/019e88a2-4570-76a1-8fcf-bdd08fbf9879/ig_095fca2b134a28e3016a1ef80ec8e481959859a0ed555c90da.png",
+      "status": "created_native_regenerated",
       "dimensions": {
         "width": 941,
         "height": 1672
       },
-      "sha256": "303fe04982774cc6a012eb27a769dec1b8ae7aa445972862074e4411f38a5c0d",
-      "notes": "Generated by a supplemental single-image thread and copied into the stable project asset path."
+      "sha256": "e739d7415c4d9ec6cbccb8fe6a5a2b7e26f3017c8b0279dcfb2039c606180f1d",
+      "notes": "Regenerated natively using the vertical composition base plus current stable faction emblem reference images."
     },
     {
       "asset_id": "style_material_palette_v01",
       "prompt_id": "style_prompt_material_palette_v01",
       "output_path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
-      "source_cache_path": null,
-      "cache_candidate_path": "<generated-image-cache>/ig_0e6adbc2c2eb2548016a1ee661a778819a89b09de0fba97759.png",
-      "status": "created",
+      "source_cache_path": "/Users/uroborus/.codex/generated_images/019e88a2-4570-76a1-8fcf-bdd08fbf9879/ig_095fca2b134a28e3016a1efaa101f08195860cd7b19e3f5459.png",
+      "status": "created_native_regenerated",
       "dimensions": {
-        "width": 1080,
-        "height": 1920
+        "width": 941,
+        "height": 1672
       },
-      "sha256": "89451fa1d7f20c10365906d907f61498c1afc3d75f803c68664434d29e9aa5c2",
-      "notes": "Final accepted asset was written directly to the stable project path by the supplemental thread. A 941x1672 cache candidate exists but is not the accepted file."
+      "sha256": "9df54cbff546d2a2b38c06df6a9e7907449969eedb6dcb6df31cd4cb3e2464a2",
+      "notes": "Regenerated natively using the material palette base plus current stable faction emblem reference images."
     },
     {
       "asset_id": "style_low_magic_vfx_v01",
       "prompt_id": "style_prompt_low_magic_vfx_v01",
       "output_path": "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png",
-      "source_cache_path": "<generated-image-cache>/ig_02cfebed49f612f6016a1ee6f8a98c8199b044c11496447e6b.png",
-      "status": "created",
+      "source_cache_path": "/Users/uroborus/.codex/generated_images/019e88a2-4570-76a1-8fcf-bdd08fbf9879/ig_095fca2b134a28e3016a1efc4f50208195970fefbfb61884da.png",
+      "status": "created_native_regenerated",
       "dimensions": {
         "width": 941,
         "height": 1672
       },
-      "sha256": "a05663057b592aa835ba813897c358210dd7c8e11663d5c79ba125b4157d77a3",
-      "notes": "Generated by a supplemental single-image thread and delivered into the stable project asset path."
+      "sha256": "6900eb572c593eac432dfa3fa6d261b5b76191bb3887d81503928d9275672bc0",
+      "notes": "Regenerated natively using the low-magic VFX base plus current stable faction emblem reference images."
     }
   ],
   "image_assets_pending": [],
   "blocked_items": [],
   "retry_notes": [
-    "The primary batch thread produced the global mood image first, but the parent coordinator launched three supplemental single-image threads to avoid waiting on the remaining batch outputs.",
-    "All four accepted outputs were checked with sips, file, sha256, and direct visual inspection."
+    "Initial generated style boards were rejected for insufficient faction-emblem locking.",
+    "A deterministic overlay correction attempt was discarded after user feedback because it read as pasted reference cards instead of production art.",
+    "The final stable outputs were regenerated natively with the current stable faction emblem PNGs visible as reference images."
   ],
   "validation": {
-    "validated_at": "2026-06-02T22:27:04+08:00",
-    "result": "passed",
+    "validated_at": "2026-06-03T00:16:47+08:00",
+    "result": "passed_with_reference_fidelity_note",
     "checks": [
       "stable project output paths exist",
       "vertical 9:16 PNG dimensions verified",
       "RGB non-interlaced PNG metadata verified",
       "sha256 recorded for accepted files",
-      "direct visual inspection completed"
-    ]
+      "direct visual inspection completed",
+      "final stable outputs are native regenerations, not post-hoc sticker composites"
+    ],
+    "reference_fidelity_note": "The current stable emblem references are used as image inputs and are visible as integrated prop/material motifs. Fine geometry may still be model-simplified; future revisions should continue with reference-image generation/editing rather than pasted overlays."
   }
 }

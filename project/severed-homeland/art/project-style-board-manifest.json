@@ -4,7 +4,7 @@
   "season": "season-01",
   "asset_batch": "project_style_board_low_magic_eastern_epic_v01",
   "date": "2026-06-02",
-  "status": "planning_ready_pending_image_generation",
+  "status": "generated_native_emblem_reference_corrected",
   "scope": "project-level global style board",
   "style_lock": {
     "primary_keywords": [
@@ -32,7 +32,10 @@
     "project/severed-homeland/01/director/director-brief.md",
     "project/severed-homeland/01/director/camera-plan.md",
     "project/severed-homeland/prompts/project-faction-emblem-prompts-v02.json",
-    "project/severed-homeland/art/project-faction-emblem-asset-qc-report.md"
+    "project/severed-homeland/art/project-faction-emblem-asset-qc-report.md",
+    "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+    "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+    "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png"
   ],
   "planning_artifacts": [
     {
@@ -79,7 +82,7 @@
       "type": "style_board_image",
       "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
       "aspect_ratio": "9:16",
-      "status": "not_generated",
+      "status": "generated_native_regenerated_with_emblem_references",
       "continuity_references": [
         "series global tone",
         "Zhaoming old civilization",
@@ -96,7 +99,7 @@
       "type": "style_board_image",
       "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png",
       "aspect_ratio": "9:16",
-      "status": "not_generated",
+      "status": "generated_native_regenerated_with_emblem_references",
       "continuity_references": [
         "01/director/camera-plan.md",
         "9:16 vertical short drama",
@@ -110,7 +113,7 @@
       "type": "style_board_image",
       "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
       "aspect_ratio": "9:16",
-      "status": "not_generated",
+      "status": "generated_native_regenerated_with_emblem_references",
       "continuity_references": [
         "bible/scenes.md regional color system",
         "bible/characters.md costume material locks",
@@ -124,7 +127,7 @@
       "type": "style_board_image",
       "expected_output_path": "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png",
       "aspect_ratio": "9:16",
-      "status": "not_generated",
+      "status": "generated_native_regenerated_with_emblem_references",
       "continuity_references": [
         "灵翼残纹",
         "清明香",
@@ -151,8 +154,8 @@
     "全剧统一青灰滤镜"
   ],
   "image_generation": {
-    "status": "not_started",
-    "reason": "Prompt plan and output paths are prepared for audit; no Codex image-generation background thread has been launched in this pass.",
+    "status": "completed_native_regenerated_with_emblem_references",
+    "reason": "The stable project style-board PNGs were regenerated natively using the current stable faction emblem PNGs as visual references. Final outputs are not flat sticker composites or pasted emblem sample cards.",
     "thread_plan": "project/severed-homeland/art/project-style-board-thread-plan.json",
     "thread_results": "project/severed-homeland/art/project-style-board-thread-results.json"
   }
