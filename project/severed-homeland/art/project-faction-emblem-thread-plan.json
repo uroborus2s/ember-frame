@@ -1,0 +1,48 @@
+{
+  "project": "severed-homeland",
+  "asset_batch": "project_faction_emblems_v01",
+  "date": "2026-06-02",
+  "project_root": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland",
+  "mode": "new background threads, one faction emblem per thread",
+  "prompt_source": "project/severed-homeland/prompts/project-faction-emblem-prompts.json",
+  "output_dir": "project/severed-homeland/assets/style/faction-emblems",
+  "history_dir": "project/severed-homeland/assets/style/faction-emblems/history",
+  "current_image_policy": "Current faction emblem references must point to stable unversioned PNGs in output_dir. Superseded images go to history_dir with _vNN filenames.",
+  "threads": [
+    {
+      "faction": "Zhaoming Empire",
+      "asset_id": "emblem_zhaoming_empire_v01",
+      "thread_title": "断航故土 昭明帝国徽章 v01",
+      "thread_id": "019e8875-4634-7601-afe2-646d67301cba",
+      "status": "completed",
+      "output_file": "project/severed-homeland/assets/style/faction-emblems/history/emblem_zhaoming_empire_v01.png",
+      "task": "Generate one new standalone square emblem image for the approved Zhaoming sun-and-moon identity."
+    },
+    {
+      "faction": "Suming State / Qingming Court",
+      "asset_id": "emblem_suming_qingming_state_v01",
+      "thread_title": "断航故土 肃明国清明院徽章 v01",
+      "thread_id": "019e8875-4c3b-7f41-94d3-31eece585e12",
+      "status": "completed",
+      "output_file": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "task": "Generate one new standalone square emblem image with a smaller outer insect motif and black overflow inside the white sun halo."
+    },
+    {
+      "faction": "Northern Beastfolk Tribal Alliance",
+      "asset_id": "emblem_northern_beastfolk_alliance_wanshou_v01",
+      "thread_title": "断航故土 北境万兽徽章 v01",
+      "thread_id": "019e8875-51a1-7f32-b1e2-b0af5f6b44ec",
+      "status": "completed",
+      "output_file": "project/severed-homeland/assets/style/faction-emblems/history/emblem_northern_beastfolk_alliance_wanshou_v01.png",
+      "task": "Generate one new standalone square emblem image for the Wanshou banner/alliance mark, using many beast-clan signs rather than one mascot."
+    }
+  ],
+  "acceptance_checks": [
+    "Three PNG files exist at the declared current or archived output paths.",
+    "Each PNG is one independent faction emblem image.",
+    "No generated image uses text, captions, or a multi-panel flag sheet layout.",
+    "Suming emblem has a small subordinate insect motif and black contamination bleeding into the white halo.",
+    "Northern alliance emblem reads as many beast tribes united, not a single-animal mascot.",
+    "Historical v03/v04 faction flag sheets are not used as source images."
+  ]
+}
