@@ -28,8 +28,10 @@
         "trap cord",
         "route pouch",
         "small water bag",
-        "half Sun-Moon relay-token pouch",
-        "left shoulder old-injury asymmetry"
+        "plain unmarked pouch hiding the half Sun-Moon relay token",
+        "left shoulder old-injury asymmetry",
+        "abstract gold-red dark thread and residue that never forms an emblem",
+        "dormant-to-activated gold-red crack behavior during short old-relay or martial-vein trigger"
       ],
       "state_designs": [
         {
@@ -45,7 +47,7 @@
             "simple route pouch",
             "well-used boots"
           ],
-          "color_logic": "Canyang Ao grey-brown and herb green dominate; old leather brown grounds the equipment.",
+          "color_logic": "Canyang Ao grey-brown and herb green dominate; old leather brown grounds the equipment; gold-red appears only as faint abstract seam or eye-corner residue, never as an insignia.",
           "damage_level": "Minor wear, no fire damage yet.",
           "required_details": [
             "bow visible",
@@ -67,13 +69,13 @@
             "old leather wrist guards",
             "short knife sheath"
           ],
-          "color_logic": "Grey-brown and herb green become smoke-dulled; soot black and fire-dark red remain focal marks.",
+          "color_logic": "Grey-brown and herb green become smoke-dulled; soot black, fire-dark red, and tiny gold-red ember thread remain focal marks.",
           "damage_level": "Visible but controlled fire aftermath; never shredded or muddy all over.",
           "required_details": [
             "charred hem remains the focal continuity anchor",
             "clothes stay complete and fitted",
             "route pouch looks lighter than village state",
-            "no heroic badge or full crest"
+            "no heroic badge, old-empire insignia, or full crest"
           ]
         },
         {
@@ -89,7 +91,7 @@
             "same bow and quiver hang-points",
             "same knife and pouch logic"
           ],
-          "color_logic": "Snowline greys overlay the core grey-brown and herb green; charred hem can still show at the lower edge.",
+          "color_logic": "Snowline greys overlay the core grey-brown and herb green; charred hem and very small gold-red residue can still show at the lower edge.",
           "damage_level": "Frost and travel wear only.",
           "required_details": [
             "cloak must not hide the hunter identity completely",
@@ -127,13 +129,13 @@
         },
         {
           "detail_id": "half_token_pouch",
-          "purpose": "Carry old relay-road identity without redesigning Zhaoming badge.",
-          "notes": "Small pouch or half-token edge, partial worn sun-moon trace only."
+          "purpose": "Carry old relay-road identity as hidden contraband without redesigning or displaying a Zhaoming badge.",
+          "notes": "Small plain pouch with no exterior insignia; token remains concealed or almost fully covered by cloth."
         },
         {
           "detail_id": "spirit_wing_residue",
           "purpose": "Show low-magic boundary.",
-          "notes": "Short broken gold-red lines near one eye and one shoulder blade; no full wings."
+          "notes": "Dormant: faint dark-gold cracks under skin, cloth, or leather. Activated: the same cracks briefly light up warm gold-red near one eye, one shoulder blade, hidden inner seam, and charred hem edge. No full wings and no symbolic sun/moon/compass shape."
         }
       ],
       "negative_rules": [
@@ -145,6 +147,9 @@
         "shredded clothing",
         "full-body mud",
         "clean complete Zhaoming badge",
+        "visible old-empire insignia on clothing or equipment",
+        "sun, moon, crescent, compass, badge, medallion, or crest mark on shoulder guard, chest strap, cloak, bow case, pouch exterior, belt front, or background",
+        "gold-red dark pattern resolving into an old-empire insignia",
         "new personal crest",
         "large magical wings",
         "spell circle",
@@ -159,10 +164,11 @@
       "image_type": "multi-state character identity board",
       "output_path": "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
       "body_and_face": {
-        "age_lock": "Clearly 18, trained aristocratic restraint, tired only through subtle eye shadow and taut fingers.",
-        "build": "Slender, controlled, upright, with formal training visible in neck, shoulders, and hand placement.",
-        "posture": "Straight-backed even while fugitive; controlled distance rather than open fragility.",
-        "expression": "Calm, guarded, calculating; noble distance under pressure, never messy collapse."
+        "age_lock": "Clearly 18 and unmistakably female, a breathtakingly beautiful young woman with cold noble presence; not masculine, not androgynous, not a mature queen.",
+        "build": "Tall, slender, elegant female silhouette with long neck, narrow shoulders, slim waist, graceful hands, and formal training visible in every controlled gesture.",
+        "face": "Refined oval face, delicate jaw, luminous guarded eyes, elegant nose and lips, black hair framing the face; beauty should feel unforgettable and impossible to ignore.",
+        "posture": "Straight-backed even while fugitive; controlled distance and royal training, but with distinctly feminine shoulder, waist, and hand proportions.",
+        "expression": "Calm, guarded, calculating, coldly beautiful; noble distance under pressure, never messy collapse."
       },
       "constant_anchors": [
         "black hair tied with red cord",
@@ -173,14 +179,15 @@
         "small black lacquer proof case",
         "controlled aristocratic hand posture",
         "old-imperial vermilion, royal blue, moon white, and worn gold reveal palette",
-        "dark grey snowline cloak with hidden moon-white lining"
+        "dark grey snowline cloak with hidden moon-white lining",
+        "unmistakably female facial anatomy, narrow shoulders, slim waist, graceful hands, and cold noble beauty"
       ],
       "state_designs": [
         {
           "state_id": "yan_nanzhi_fugitive_concealment",
           "name_cn": "流亡遮蔽状态",
           "episode_range": "02-06",
-          "silhouette": "Clean travel robe with restrained noble verticality; identity hidden under practical fugitive layers.",
+          "silhouette": "Clean travel robe with restrained noble verticality and unmistakable female proportions; identity hidden under practical fugitive layers.",
           "materials": [
             "mist-purple coarse travel cloth",
             "cold-grey outer robe option",
@@ -193,6 +200,7 @@
           "color_logic": "Mist purple and cold grey conceal the figure; deep ink blue, moon white, and red cord reveal controlled old-imperial memory only in small details.",
           "damage_level": "Travel dust and tiny repair lines only; clean, complete, and controlled.",
           "required_details": [
+            "face and body must read as an exceptionally beautiful 18-year-old woman",
             "no visible Sun-Moon badge on front layer",
             "moon-white jade hidden or only glimpsed near inner pocket",
             "blood-writ packet protected, not readable",
@@ -203,7 +211,7 @@
           "state_id": "yan_nanzhi_old_empire_formal_reveal",
           "name_cn": "旧帝国正装揭示状态",
           "episode_range": "memory, reveal, ritual imagination",
-          "silhouette": "Ming-style Hanfu reference with wide sleeves, layered front, formal waist structure, and inherited imperial dignity.",
+          "silhouette": "Elegant female Ming-style Hanfu reference with wide sleeves, layered front, formal waist structure, slender waist, graceful neckline, and inherited imperial dignity.",
           "materials": [
             "vermilion wide outer sleeves",
             "royal-blue or peacock-blue layered front",
@@ -215,6 +223,7 @@
           "color_logic": "Formal reveal raises vermilion, royal blue, moon white, and worn gold, but treats them as inherited memory with old debt rather than a clean triumphal badge.",
           "damage_level": "Preserved ceremonial wear with subtle age, creases, and worn gold; no battlefield damage.",
           "required_details": [
+            "formal state must be a stunning female imperial reveal, not a male ceremonial robe",
             "may echo locked Zhaoming symbol language as inherited embroidery",
             "must not invent a new emblem or personal crest",
             "formal state is separate from active fugitive travel",
@@ -225,7 +234,7 @@
           "state_id": "yan_nanzhi_border_snowline",
           "name_cn": "边墙雪线状态",
           "episode_range": "07-12",
-          "silhouette": "Fugitive structure under dark grey cloak, upright posture preserved under snow pressure.",
+          "silhouette": "Fugitive feminine structure under dark grey cloak, upright posture preserved under snow pressure; cloak must not broaden her into a male silhouette.",
           "materials": [
             "dark grey snowline cloak",
             "snow-dusted edge",
@@ -237,6 +246,7 @@
           "color_logic": "Snowline dark grey suppresses the fugitive palette; moon white appears only as a hidden lining edge in motion.",
           "damage_level": "Frost, snow dust, and travel wear only.",
           "required_details": [
+            "snowline state must remain recognizably the same beautiful woman",
             "old empire symbols still hidden",
             "cloak must not become military armor",
             "red hair cord may be subdued but visible",
@@ -247,8 +257,8 @@
       "detail_panels": [
         {
           "detail_id": "face_age_lock",
-          "purpose": "Keep Yan Nanzhi as an 18-year-old noble fugitive, not a mature queen or decorative princess.",
-          "notes": "Black hair, restrained eyes, slight fatigue, clean face, no crown."
+          "purpose": "Keep Yan Nanzhi as an exceptionally beautiful 18-year-old female noble fugitive, not a male model, mature queen, or decorative princess.",
+          "notes": "Refined oval face, delicate jaw, luminous guarded eyes, elegant lips and nose, black hair, slight fatigue, clean face, no crown."
         },
         {
           "detail_id": "red_hair_cord",
@@ -285,6 +295,13 @@
         "redesigned Zhaoming badge",
         "new Yan Nanzhi crest",
         "visible royal emblem on fugitive or snowline front layer",
+        "masculine face",
+        "androgynous model",
+        "broad jaw",
+        "thick neck",
+        "wide shoulders",
+        "heavy male hands",
+        "male boots-and-robe silhouette",
         "modern princess styling",
         "tiara or crown",
         "ballroom gown",
@@ -295,6 +312,164 @@
         "large magic aura",
         "wings",
         "spell circle",
+        "visible text or labels"
+      ]
+    },
+    {
+      "asset_id": "character_shen_zhaomian_multi_state_board_v01",
+      "name_cn": "沈照眠多状态角色板",
+      "character": "Shen Zhaomian",
+      "identity": "Shen Weisang's 8-10-year-old younger sister, village herb child later trained by Qingming Court as an old-relay phrase identifier",
+      "image_type": "multi-state child character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_shen_zhaomian_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Clearly 8-10 years old with child proportions, small face, thin child wrists, and quick child posture; never a teenager or adult woman.",
+        "build": "Small, agile village child; practical movement from helping in the medicine house and memorizing herb names.",
+        "posture": "Village state is quick and alert; post-fire state shrinks at the shoulders under fear; Qingming state becomes unnervingly still but remains a child.",
+        "expression": "Village anxiety and curiosity shift into quiet institutional dissociation; emotion is precise and restrained, not horror spectacle."
+      },
+      "constant_anchors": [
+        "child proportions around 8-10 years old",
+        "small guarded face",
+        "light grey short village garment",
+        "herb-green small apron or tied skirt",
+        "small herb pouch",
+        "simple cloth shoes",
+        "burnt hair cord as family-memory anchor",
+        "blank herb-name wooden tags with no readable writing",
+        "clean Qingming white child robe in institutional state",
+        "insect-wax identification ring on wrist",
+        "no visible faction badge or newly designed crest"
+      ],
+      "state_designs": [
+        {
+          "state_id": "shen_zhaomian_village_herb_child",
+          "name_cn": "村中草药童状态",
+          "episode_range": "01-02 opening",
+          "silhouette": "Small quick child in simple village layers, practical and close to the medicine-house world.",
+          "materials": [
+            "light grey short ru or village garment",
+            "herb-green small apron or tied skirt",
+            "simple cloth shoes",
+            "small herb pouch",
+            "plain hair cord",
+            "blank herb tags"
+          ],
+          "color_logic": "Canyang Ao light grey and herb green dominate; warm wood and dry herb tones make the family-memory props readable.",
+          "damage_level": "Clean but worn village use; no fire damage in the base state.",
+          "required_details": [
+            "child face and body proportions",
+            "small herb pouch carried close",
+            "hair tied plainly",
+            "blank herb-name tags must not contain readable text"
+          ]
+        },
+        {
+          "state_id": "shen_zhaomian_post_fire_missing_anchor",
+          "name_cn": "火后失踪锚点状态",
+          "episode_range": "02",
+          "silhouette": "Same village-child structure under smoke and fear, shoulders slightly drawn inward while still mobile.",
+          "materials": [
+            "smoke-dulled light grey cloth",
+            "slightly sooted herb-green apron",
+            "burnt brown hair cord",
+            "small herb pouch",
+            "faint wrist identification trace",
+            "mud and ash only at limited contact points"
+          ],
+          "color_logic": "Smoke grey and burnt brown mute the village palette, but herb green remains the recognition anchor.",
+          "damage_level": "Localized smoke, soot, and damp ash only; clothing stays complete and readable, not shredded.",
+          "required_details": [
+            "burnt hair cord visible",
+            "small herb pouch retained or recently dropped",
+            "child fear shown without torture spectacle",
+            "no gore or horror victim tableau"
+          ]
+        },
+        {
+          "state_id": "shen_zhaomian_qingming_child_identifier",
+          "name_cn": "清明院白衣识别者状态",
+          "episode_range": "06-12",
+          "silhouette": "Clean white institutional child robe with narrow sleeves and controlled stillness, not adult official clothing.",
+          "materials": [
+            "Qingming white child robe",
+            "narrow sleeve cuffs",
+            "pale insect-wax identification ring",
+            "retained burnt hair cord",
+            "small herb pouch tucked close",
+            "bone-white cloth layers"
+          ],
+          "color_logic": "Qingming white and pale insect-wax yellow suppress the village palette; the burnt hair cord and herb pouch preserve family-memory continuity.",
+          "damage_level": "No damage; the state is too clean and institutional.",
+          "required_details": [
+            "wrist insect-wax ring",
+            "white child robe must remain child-sized",
+            "burnt hair cord or herb pouch must carry over",
+            "institutional coldness without monsterizing the child"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_age_lock",
+          "purpose": "Keep Shen Zhaomian visibly 8-10 years old.",
+          "notes": "Small face, guarded eyes, child jaw and wrist proportions; no adult or teenage styling."
+        },
+        {
+          "detail_id": "burnt_hair_cord",
+          "purpose": "Carry the family-memory clue from fire and vehicle tracks.",
+          "notes": "Plain cord with burnt brown edge; intimate object, not jewelry."
+        },
+        {
+          "detail_id": "small_herb_pouch",
+          "purpose": "Anchor her medicine-house memory and relationship to Luo Qinghe and Shen Weisang.",
+          "notes": "Herb-green child-sized pouch; practical and worn, never toy-like."
+        },
+        {
+          "detail_id": "blank_herb_name_tags",
+          "purpose": "Show memorization of herb names without in-image readable text.",
+          "notes": "Wooden tags can be visible but must remain blank or abstractly scratched."
+        },
+        {
+          "detail_id": "insect_wax_identification_ring",
+          "purpose": "Show Qingming Court conversion pressure as a physical institutional mark.",
+          "notes": "Pale translucent wax ring on child wrist; no new logo or badge."
+        },
+        {
+          "detail_id": "white_child_robe_cuff",
+          "purpose": "Define the clean institutional child state.",
+          "notes": "Narrow sleeve, bone-white cloth, too orderly but not adult official costume."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Lock palette for downstream prompts.",
+          "notes": "Light grey, herb green, burnt brown, Qingming white, pale insect-wax yellow, smoke grey."
+        }
+      ],
+      "negative_rules": [
+        "adult woman",
+        "teenager",
+        "glamour styling",
+        "sexualized child",
+        "cute toy mascot",
+        "anime chibi",
+        "horror victim tableau",
+        "gore",
+        "torture display",
+        "monster child",
+        "possessed glowing eyes",
+        "ghost child",
+        "doll styling",
+        "princess costume",
+        "school uniform",
+        "modern clothing",
+        "fantasy armor",
+        "redesigned faction badge",
+        "new personal crest",
+        "Sun-Moon emblem",
+        "black-sun logo",
+        "large Qingming badge",
+        "readable herb tags",
         "visible text or labels"
       ]
     }
