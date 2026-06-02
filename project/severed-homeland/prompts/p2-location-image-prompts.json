@@ -4,12 +4,21 @@
   "scope": "P2 secondary location image generation prompts",
   "status": "ready_for_image_generation",
   "source_designs": "art/p2-secondary-location-designs.json",
+  "scene_image_delivery_contract": {
+    "source_spec": "bible/scene-image-spec.md",
+    "source_spec_json": "bible/scene-image-spec.json",
+    "coverage_tier": "L1_secondary_reusable_location",
+    "required_image_type": "location_board",
+    "upgrade_rule": "Only add mid_staging, reverse_or_side_angle, lighting_or_weather_variant or shot_reference_frame when a later director-room shot-list requires concrete blocking, movement, weather state or first/last video frame control.",
+    "direct_video_frame_rule": "P2 location boards are reusable design references and are not direct video first frames unless cropped or regenerated as a single 9:16 shot_reference_frame."
+  },
   "global_prompt_rules": [
     "Vertical 9:16 location concept board for an AI short drama production package.",
     "Grounded eastern epic fantasy, realistic worn materials, cinematic production design, restrained low-magic.",
     "No readable text labels, no watermarks, no modern objects, no UI, no high-saturation game fantasy.",
     "Use local set zones and detail callouts rather than a single broad panorama.",
-    "Old Zhaoming fused Sun-Moon marks and Sumin white-wing black-sun marks must follow bible/visual-style.md when visible."
+    "Old Zhaoming fused Sun-Moon marks and Sumin white-wing black-sun marks must follow bible/visual-style.md when visible.",
+    "Follow bible/scene-image-spec.md: P2 secondary locations require a location_board first; close, medium, wide, reverse and shot-specific reference frames are generated only when the location is upgraded by shot-list needs."
   ],
   "location_prompts": [
     {
