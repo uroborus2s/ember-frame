@@ -28,6 +28,7 @@ Scope: Project-level regional color system for 《断航故土》第一季《残
 | Source continuity | PASS | Direction references project background, scenes bible, continuity bible, series outline, and current global style board. |
 | Requested regions covered | PASS | Includes 残阳坳、金河、清明院、边墙、北境、南方旧帝国, plus 灰烬书院、墙下集市、旧驿/月下盟书. |
 | Regional differentiation | PASS | Each region has a local base palette, power overlay, old-memory/low-magic accents, lighting rules, and forbidden looks. |
+| Current faction emblem references | PASS | Prompt and thread plan now require the stable current emblem PNGs under `assets/style/faction-emblems/` and forbid `history/` emblem references. |
 | Low-magic boundary | PASS | Accents stay as small glints, broken route lines, incense threads, wax seals, and dry blood marks. |
 | 9:16 short-drama fit | PASS | Prompt plan keeps mobile-readable vertical composition and avoids literal map labels. |
 | Existing asset safety | PASS | No existing style-board image, faction emblem, or historical asset path is overwritten. |
@@ -47,7 +48,7 @@ Scope: Project-level regional color system for 《断航故土》第一季《残
 
 - The current global style-board image-generation thread is already in progress in `project-style-board-thread-results.json`; this regional system does not alter that thread.
 - The repository has many pre-existing deletions, modifications, and untracked project files unrelated to this regional color-system batch. They are not part of this QC scope.
-- Future image generation should inspect outputs for accidental text labels, literal color charts, over-unified grading, high-magic glow, modern industrial/medical cues, and loss of regional differentiation.
+- Future image generation should inspect outputs for accidental text labels, literal color charts, over-unified grading, high-magic glow, modern industrial/medical cues, loss of regional differentiation, and any newly invented faction-emblem geometry that conflicts with the current PNG references.
 
 ## Handoff
 

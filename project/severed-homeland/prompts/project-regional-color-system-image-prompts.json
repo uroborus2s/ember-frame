@@ -5,6 +5,20 @@
   "date": "2026-06-02",
   "status": "prompt_plan_ready_pending_image_generation",
   "output_dir": "project/severed-homeland/assets/style/regional-color-system",
+  "emblem_reference_policy": {
+    "use_current_emblems_only": true,
+    "current_emblem_paths": [
+      "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png"
+    ],
+    "rules": [
+      "Use the existing current emblem PNG files as visual references for emblem shapes, material language, and faction marks.",
+      "Do not redesign, redraw, replace, or overwrite any faction emblem file.",
+      "Do not reference historical emblem files under assets/style/faction-emblems/history/ unless explicitly comparing old versions.",
+      "When a regional board includes Zhaoming, Suming/Qingming, or Northern faction marks, echo the established emblem language as worn, partial, cropped, carved, reflected, or obstructed environmental details rather than a new standalone emblem."
+    ]
+  },
   "source_request": {
     "mode": "design_project_regional_color_system",
     "requested_regions": [
@@ -24,6 +38,7 @@
       "each region has a distinct local base palette",
       "Suming/Qingming institutional overlay remains clean and procedural without erasing local color",
       "Zhaoming old empire accents are worn, hidden, cracked, or partially covered",
+      "faction marks must reference the already-designed current emblem PNGs, not newly invented emblem designs",
       "human survival spaces keep role-specific order instead of ragged poverty",
       "low magic appears only as tiny local glints, broken lines, incense threads, or wax seals"
     ],

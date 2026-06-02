@@ -13,6 +13,8 @@
       "Use available image generation capability for raster assets.",
       "Write images exactly to the assigned project paths.",
       "Do not edit existing project style-board images or faction emblem images.",
+      "Use the current stable faction emblem PNGs as references when faction marks appear: project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png, project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png, and project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png.",
+      "Do not redesign, redraw, replace, or overwrite the current faction emblem PNGs, and do not reference history/ emblem files.",
       "Do not generate text labels, captions, UI, letters, or watermarks inside images.",
       "Return a compact manifest of created files and any failures."
     ]
@@ -35,7 +37,7 @@
         "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
         "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png"
       ],
-      "worker_prompt": "Generate the five raster regional color-system board images defined in project/severed-homeland/prompts/project-regional-color-system-image-prompts.json for asset_batch project_regional_color_system_v01. Preserve the written regional color design in project/severed-homeland/art/project-regional-color-system.md and the machine-readable palette in project/severed-homeland/art/project-regional-color-system.json. Write each image to its exact expected_output_path under project/severed-homeland/assets/style/regional-color-system/. Do not modify existing project style-board images, faction emblems, or historical assets. The images must contain no visible text labels, captions, letters, UI, or watermarks. Return a compact manifest listing generated files, dimensions, and any blocked items."
+      "worker_prompt": "Generate the five raster regional color-system board images defined in project/severed-homeland/prompts/project-regional-color-system-image-prompts.json for asset_batch project_regional_color_system_v01. Preserve the written regional color design in project/severed-homeland/art/project-regional-color-system.md and the machine-readable palette in project/severed-homeland/art/project-regional-color-system.json. Reference the already-designed current faction emblem PNGs when faction marks appear: project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png, project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png, and project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png. Use those files for shape/material language only; do not redesign, redraw, replace, or overwrite them, and do not use history/ emblem files. Write each image to its exact expected_output_path under project/severed-homeland/assets/style/regional-color-system/. Do not modify existing project style-board images, faction emblems, or historical assets. The images must contain no visible text labels, captions, letters, UI, or watermarks. Return a compact manifest listing generated files, dimensions, and any blocked items."
     }
   ],
   "dependencies": [
@@ -53,8 +55,8 @@
     }
   ],
   "launch_policy": {
-    "auto_launch_in_this_pass": false,
-    "approval_needed": "Review prompt source and output paths, then launch the planned Codex background thread.",
+    "auto_launch_in_this_pass": true,
+    "approval_needed": "User requested launch on 2026-06-02; launch the planned Codex background thread after recording the current emblem reference policy.",
     "result_file": "project/severed-homeland/art/project-regional-color-system-thread-results.json"
   }
 }
