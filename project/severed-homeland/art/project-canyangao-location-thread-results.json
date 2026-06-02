@@ -1,0 +1,99 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_canyangao_location_v01",
+  "date": "2026-06-03",
+  "status": "completed",
+  "reason": "Three disjoint image-generation background threads completed. All 13 canonical Canyang Ao location PNG assets exist under project/severed-homeland/assets/locations/canyangao. One rejected hidden-compartment candidate is retained in history with a .v001 suffix.",
+  "thread_plan": "project/severed-homeland/art/project-canyangao-location-thread-plan.json",
+  "threads": [
+    {
+      "batch_id": "project-canyangao-master-plates-v01",
+      "thread_id": "019e8968-2c4d-7bf0-a59f-bde45423a460",
+      "thread_title": "断航故土 残阳坳主场景状态图 v01",
+      "status": "completed",
+      "expected_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_dusk.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_fire.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_aftermath.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_material_dressing_board.png"
+      ],
+      "created_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_dusk.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_fire.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_aftermath.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_material_dressing_board.png"
+      ],
+      "history_files": [],
+      "warnings": [],
+      "qc_notes": [
+        "All four images are 941x1672 vertical PNG files.",
+        "Worker visual QC reported no readable text, labels, UI, or watermarks.",
+        "Dusk, fire, and aftermath plates preserve readable Canyang Ao geography."
+      ],
+      "git_commit": "e2520ed"
+    },
+    {
+      "batch_id": "project-canyangao-core-sets-v01",
+      "thread_id": "019e8968-7483-7070-be03-ab85330c40a8",
+      "thread_title": "断航故土 残阳坳村口药屋旧井场景图 v01",
+      "status": "completed",
+      "expected_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_old_well_courtyard.png"
+      ],
+      "created_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_old_well_courtyard.png"
+      ],
+      "history_files": [
+        "project/severed-homeland/assets/locations/canyangao/history/loc_canyangao_hidden_relay_compartment.v001.png"
+      ],
+      "warnings": [],
+      "qc_notes": [
+        "All five canonical images and the retained history image are 941x1672 vertical PNG files.",
+        "Worker visual QC reported no readable text, labels, UI, or watermarks.",
+        "Medicine-house interior does not reveal the hidden relay compartment; final hidden-compartment image does not form a complete Zhaoming emblem; old well image does not expose a full jade piece."
+      ],
+      "git_commit": "c8cbb00"
+    },
+    {
+      "batch_id": "project-canyangao-chase-callback-v01",
+      "thread_id": "019e8968-bc00-71d1-9dc8-683a9c33287e",
+      "thread_title": "断航故土 残阳坳逃亡出口与回望场景图 v01",
+      "status": "completed",
+      "expected_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_well_escape_door.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_side_lane_wooden_cart.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_valley_trap.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_outer_slope_rut.png"
+      ],
+      "created_files": [
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_well_escape_door.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_side_lane_wooden_cart.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_valley_trap.png",
+        "project/severed-homeland/assets/locations/canyangao/loc_canyangao_outer_slope_rut.png"
+      ],
+      "history_files": [],
+      "warnings": [],
+      "qc_notes": [
+        "All four images are 941x1672 vertical PNG files.",
+        "Worker visual QC reported no readable text, labels, UI, or watermarks.",
+        "Route direction from well escape to side lane, valley trap, and outer slope callback remains readable; the black-stone gap is not opened as a door."
+      ],
+      "git_commit": null
+    }
+  ],
+  "blocked_jobs": [],
+  "planned_batches": [
+    "project-canyangao-master-plates-v01",
+    "project-canyangao-core-sets-v01",
+    "project-canyangao-chase-callback-v01"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_canyangao_location_v01",
+  "date": "2026-06-03",
+  "source_manifest": "project/severed-homeland/art/project-canyangao-location-asset-manifest.json",
+  "spatial_layout": {
+    "summary": "Canyang Ao is a small old relay-road farming and hunting village. The village road and blood-check gate lead to the Luo medicine house threshold; the medicine house, rear entrance, water vat, and old well form one courtyard; the side lane leads to a ditch, insect cart ruts, the narrow valley trap, and the outer slope facing the north black-stone gap.",
+    "screen_direction_rules": [
+      "Village road and crowd pressure extend upward in vertical compositions.",
+      "The spear line cuts across the medicine house threshold and rear-yard access.",
+      "The old well, water vat, and medicine house door must stay readable as one courtyard cluster.",
+      "The insect wooden cart tracks lead toward the north-side mountain road.",
+      "The valley trap leads into the beast-path slit, then out to the outer slope.",
+      "The outer slope callback must let the viewer look back down toward the burning well and medicine house while sensing the north black-stone gap ahead."
+    ],
+    "practical_lights": [
+      "pre-fire dusk side backlight",
+      "medicine-house warm doorway dimmed by wood cabinets",
+      "Qingming cold-white incense line close to the ground",
+      "night fire dark red rim light and smoke",
+      "moon-white glint only as a tiny reflection on water, oil paper, or relay-token edge"
+    ]
+  },
+  "shared_design_rules": [
+    "Low-saturation cinematic realism, low-magic eastern epic, 9:16 vertical production reference.",
+    "Human living spaces are poor and pressured but orderly: maintained bow rack, stacked herb baskets, intact work clothes, useful repairs.",
+    "Qingming pressure appears through white register, insect-wax seals, cold incense, short spears, and partial dark-green chitin limbs, not through monster crowds.",
+    "Zhaoming old-imperial traces are partial, worn, hidden, or covered: broken sun-moon lines, old relay scratches, moon-white glints, and dull gold-red fragments.",
+    "No visible text, labels, captions, UI panels, letters, watermarks, or readable writing inside images.",
+    "Use current stable faction emblem PNGs only as shape/material references. Do not redesign or overwrite emblem files."
+  ],
+  "locations": [
+    {
+      "asset_id": "loc_canyangao_master_dusk_v01",
+      "name_cn": "残阳坳火前主场景总览",
+      "scene_state": "pre-fire dusk",
+      "set_zones": ["village road", "blood-check gate", "medicine house threshold", "rear courtyard", "old well", "distant valley mouth", "north hillside"],
+      "hero_props": ["old well", "medicine house", "hunter bow rack", "water vat", "insect-wax door plate"],
+      "camera_facing_details": "Use a vertical high three-quarter view or compressed long-lens village threshold view, readable on mobile, with the medicine house and old well aligned as the emotional center.",
+      "continuity_locks": ["not a golden pastoral village", "not a slum", "spatial relationship must support episodes 01 and 02"]
+    },
+    {
+      "asset_id": "loc_canyangao_master_fire_v01",
+      "name_cn": "残阳坳夜火主场景总览",
+      "scene_state": "night fire",
+      "set_zones": ["medicine house front", "old well rim", "burning roof edges", "rear courtyard smoke", "spear line shadows"],
+      "hero_props": ["rolling bowl", "broken door latch", "blackened window paper", "fire-hit beam", "Qingming register edge"],
+      "camera_facing_details": "Use smoke and fire as edge pressure, not as a full-screen blaze; old well and medicine house silhouette remain recognizable.",
+      "continuity_locks": ["no mass slaughter panorama", "fire is shown through objects and structure collapse", "Bai Yi and Qingming marks stay clean/cold against warm fire"]
+    },
+    {
+      "asset_id": "loc_canyangao_master_aftermath_v01",
+      "name_cn": "残阳坳火后回望总览",
+      "scene_state": "after fire callback",
+      "set_zones": ["outer slope foreground", "cart rut", "burning village below", "old well rim", "medicine house collapsed beam", "north black-stone gap"],
+      "hero_props": ["burnt hair cord trace", "white register paper ash", "charred beam", "distant old well", "black-stone gap"],
+      "camera_facing_details": "Foreground mud and ruts lead eye toward the black-stone gap while the background keeps the burning village identifiable.",
+      "continuity_locks": ["does not open the old relay door", "only direction and cold wind hint toward north slope", "after-fire Canyang Ao must not return to intact village"]
+    },
+    {
+      "asset_id": "loc_canyangao_gate_blood_check_v01",
+      "name_cn": "残阳坳村口验血席",
+      "scene_state": "Qingming inspection",
+      "set_zones": ["crowded village gate", "spear line", "blood-check stool/table", "medicine house approach", "ground incense path"],
+      "hero_props": ["Qingming white register", "insect-wax needle", "short spears", "small herb pouch", "hunter bow edge"],
+      "camera_facing_details": "A vertical mid-close set reference with shoulders and spear shafts cutting the frame; Qingming tools readable but no text.",
+      "continuity_locks": ["blood pattern is inspection effect, not Shen Weisang's Ling Wing trace", "Qingming soldiers appear only in partial chitin details"]
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_exterior_v01",
+      "name_cn": "罗家药屋外景",
+      "scene_state": "dusk to night threshold",
+      "set_zones": ["medicine house door", "steps", "wall bow rack", "side rear entrance", "mud threshold"],
+      "hero_props": ["herb basket", "old wooden door frame", "hunter bow rack", "insect-wax sealed door plate", "cloth curtain"],
+      "camera_facing_details": "Keep the doorway vertically framed and practical; it must work for both pre-fire interrogation and later fire-lit escape.",
+      "continuity_locks": ["doctor's house is orderly and used", "door plate may carry Qingming seal but no readable lettering"]
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_interior_v01",
+      "name_cn": "罗家药屋内景",
+      "scene_state": "interior pressure set",
+      "set_zones": ["vertical medicine cabinet", "door light", "basket work area", "floor-board zone", "back wall shadow"],
+      "hero_props": ["medicine cabinet", "herb basket", "empty water jar", "small herb pouch", "Qingming register", "incense line entering near floor"],
+      "camera_facing_details": "The medicine cabinet dominates the vertical frame; warm dusk is suppressed by old wood and Qingming cold white.",
+      "continuity_locks": ["hidden relay traces not visible in this general interior plate", "keep Luo Qinghe's practical medical order even under pressure"]
+    },
+    {
+      "asset_id": "loc_canyangao_hidden_relay_compartment_v01",
+      "name_cn": "药柜暗格与旧驿痕",
+      "scene_state": "hidden relay reveal",
+      "set_zones": ["pried floor-board", "cabinet base", "old relay groove", "insect-wax crawling seal", "dark interior edge"],
+      "hero_props": ["broken sun-moon line", "old route scratch", "insect-wax seal", "wood splinters", "cloth touch barrier"],
+      "camera_facing_details": "Close tactile detail reference. Show first clear old relay evidence but keep it worn, partial, and being covered.",
+      "continuity_locks": ["no complete clean Zhaoming emblem", "no readable inscription", "wax covers evidence instead of attacking like magic"]
+    },
+    {
+      "asset_id": "loc_canyangao_old_well_courtyard_v01",
+      "name_cn": "后院旧井与水缸",
+      "scene_state": "dusk courtyard clue",
+      "set_zones": ["old well", "water vat", "medicine house rear door", "wall root", "short spear shadow"],
+      "hero_props": ["well rope", "wet moss", "new scrape mark", "water vat", "mud patch covering incense"],
+      "camera_facing_details": "First read the water vat and well together, then show sightline back to medicine house doorway.",
+      "continuity_locks": ["moon-white glint only as a line reflection", "do not reveal full jade piece", "well is connected to medicine-house courtyard"]
+    },
+    {
+      "asset_id": "loc_canyangao_well_escape_door_v01",
+      "name_cn": "井下暗门与药屋后门",
+      "scene_state": "night smoke escape route",
+      "set_zones": ["well edge", "hidden door", "wet moss stone", "rear wall path", "smoke-thick wall root"],
+      "hero_props": ["dark hidden door", "short knife silhouette", "oil-paper packet edge", "wet moss stone", "kicked well rope"],
+      "camera_facing_details": "Compact route reference with smoke used to hide traces but not destroy spatial readability.",
+      "continuity_locks": ["Shen Weisang handles smoke and traces by hunter experience", "Yan Nanzhi remains guarded, not trusting yet", "no old relay mastery"]
+    },
+    {
+      "asset_id": "loc_canyangao_side_lane_wooden_cart_v01",
+      "name_cn": "药屋侧巷与虫族木车",
+      "scene_state": "abduction action set",
+      "set_zones": ["side door", "ditch mouth", "wooden cart", "north road rut", "smoke wall", "mud foreground"],
+      "hero_props": ["insect wooden cart", "cart rut", "small herb pouch in mud", "broken arrow", "wax wrist ring", "medicine-name wooden tags without readable text"],
+      "camera_facing_details": "A vertical action set plate that keeps the water ditch, cart, and northward rut in one readable direction.",
+      "continuity_locks": ["Zhaomian abduction is a visible fact, not extended suffering display", "white child worker is institutional executor, not new subplot lead"]
+    },
+    {
+      "asset_id": "loc_canyangao_valley_trap_v01",
+      "name_cn": "残阳坳谷口猎人陷阱",
+      "scene_state": "night valley chase",
+      "set_zones": ["narrow valley throat", "burnt grass pile", "rolling log trap", "rope latch", "stone groove", "beast-path slit"],
+      "hero_props": ["old hemp rope", "rolling log", "ash ground", "stone groove", "broken knife gap", "partial chitin leg/forearm blade"],
+      "camera_facing_details": "Keep the trap mechanics readable: rope latch, log path, stone wall, and beast slit. Mantis Blade pursuers appear as partial limbs and shadows.",
+      "continuity_locks": ["trap works by hunter setup, not magic", "Ling Wing trace is only a short pain flash", "Mingjin does not become a shockwave"]
+    },
+    {
+      "asset_id": "loc_canyangao_outer_slope_rut_v01",
+      "name_cn": "残阳坳外山坡车辙旁",
+      "scene_state": "episode 02 ending callback",
+      "set_zones": ["muddy cart rut", "outer slope", "burning village below", "old well glow", "medicine house beam collapse", "north black-stone gap"],
+      "hero_props": ["burnt hair cord with small herb knot", "half Sun-Moon relay token edge", "white register ash", "cart rut", "black-stone gap wind"],
+      "camera_facing_details": "Foreground evidence should lead the emotional read; background fire is secondary but recognizable.",
+      "continuity_locks": ["half relay token warms and briefly glints only", "no stone door opening", "Bai Yi remains distant through register action and incense trace"]
+    },
+    {
+      "asset_id": "loc_canyangao_material_dressing_board_v01",
+      "name_cn": "残阳坳材质陈设板",
+      "scene_state": "reusable material board",
+      "set_zones": ["dirt wall samples", "old wood", "herb baskets", "well moss", "insect-wax seal", "fire ash", "cloth curtain", "bow rack detail"],
+      "hero_props": ["packed earth", "herb-green cloth", "old wooden medicine drawer", "ceramic jar", "hemp rope", "insect wax strip", "charred beam fragment"],
+      "camera_facing_details": "Dense practical material board with no labels or UI. All objects should feel photographed in the same Canyang Ao set.",
+      "continuity_locks": ["not a product catalog", "not an infographic", "no text labels", "keeps human order rather than ruin-only texture"]
+    }
+  ]
+}

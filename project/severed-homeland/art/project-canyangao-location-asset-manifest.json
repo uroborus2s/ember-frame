@@ -1,0 +1,197 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_canyangao_location_v01",
+  "title": "《断航故土》残阳坳主场景资产清单",
+  "date": "2026-06-03",
+  "status": "ready_for_prompt_audit",
+  "scope": "Project-level location assets for Canyang Ao, the main opening homeland location used across episodes 01, 02, and episode 03 distant callback.",
+  "source_art_direction": "project/severed-homeland/art/project-canyangao-location-art-direction.md",
+  "continuity_sources": [
+    "project/severed-homeland/bible/scenes.md#残阳坳",
+    "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+    "project/severed-homeland/art/project-regional-color-system.md#残阳坳",
+    "project/severed-homeland/art/project-faction-symbol-system.md",
+    "project/severed-homeland/art/project-base-material-boards.md",
+    "project/severed-homeland/01/director/camera-plan.md",
+    "project/severed-homeland/01/shots/scene-breakdown.json",
+    "project/severed-homeland/02/shots/scene-breakdown.json",
+    "project/severed-homeland/02/continuity/visual-continuity-bible.json"
+  ],
+  "locked_references": {
+    "style_boards": [
+      "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "project/severed-homeland/assets/style/project-style-board/style_vertical_composition_9x16_v01.png",
+      "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "project/severed-homeland/assets/style/project-style-board/style_low_magic_vfx_v01.png",
+      "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png"
+    ],
+    "material_boards": [
+      "project/severed-homeland/assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png"
+    ],
+    "faction_emblems": [
+      "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png"
+    ],
+    "existing_props": [
+      "project/severed-homeland/assets/props/prop_half_sunmoon_relay_token.png",
+      "project/severed-homeland/assets/props/prop_qingming_white_register.png",
+      "project/severed-homeland/assets/props/prop_qingming_court_tool_board.png",
+      "project/severed-homeland/assets/props/prop_shen_zhaomian_child_relics.png"
+    ],
+    "existing_characters": [
+      "project/severed-homeland/assets/characters/character_shen_weisang_multi_state_board.png",
+      "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
+      "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png"
+    ]
+  },
+  "image_output_dirs": [
+    "project/severed-homeland/assets/locations/canyangao"
+  ],
+  "assets": [
+    {
+      "asset_id": "loc_canyangao_master_dusk_v01",
+      "type": "location",
+      "name_cn": "残阳坳火前主场景总览",
+      "priority": 1,
+      "recommended_granularity": "establishing plate",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_dusk.png",
+      "source_scenes": ["01.SC002", "01.SC004", "01.SC006", "01.SC008"],
+      "continuity_refs": ["bible/scenes.md#残阳坳", "01/director/camera-plan.md#空间与轴线"],
+      "downstream_usage": "Master geography reference for all Canyang Ao pre-fire shots."
+    },
+    {
+      "asset_id": "loc_canyangao_master_fire_v01",
+      "type": "location",
+      "name_cn": "残阳坳夜火主场景总览",
+      "priority": 1,
+      "recommended_granularity": "state-change establishing plate",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_fire.png",
+      "source_scenes": ["02.SC001", "02.SC003", "02.SC004"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC001", "02/continuity/visual-continuity-bible.json"],
+      "downstream_usage": "Night fire state reference; preserve old well and medicine house readability."
+    },
+    {
+      "asset_id": "loc_canyangao_master_aftermath_v01",
+      "type": "location",
+      "name_cn": "残阳坳火后回望总览",
+      "priority": 1,
+      "recommended_granularity": "aftermath establishing plate",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_master_aftermath.png",
+      "source_scenes": ["02.SC008", "03.SC001"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC008", "03/brief/episode-brief.md"],
+      "downstream_usage": "Aftermath callback plate for the emotional end of episode 02 and episode 03 transition."
+    },
+    {
+      "asset_id": "loc_canyangao_gate_blood_check_v01",
+      "type": "location",
+      "name_cn": "残阳坳村口验血席",
+      "priority": 1,
+      "recommended_granularity": "set reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+      "source_scenes": ["01.SC002", "01.SC003"],
+      "continuity_refs": ["01/shots/scene-breakdown.json#SC002", "art/project-faction-symbol-system.md#肃明国"],
+      "downstream_usage": "Set reference for blood-check blocking, spear line, Qingming register, and incense path."
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_exterior_v01",
+      "type": "location",
+      "name_cn": "罗家药屋外景",
+      "priority": 1,
+      "recommended_granularity": "set exterior reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+      "source_scenes": ["01.SC005", "02.SC001"],
+      "continuity_refs": ["bible/scenes.md#残阳坳", "01/director/camera-plan.md#药屋门口失言"],
+      "downstream_usage": "Exterior set reference for medicine house threshold, hunter bow rack, and sealed door plate."
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_interior_v01",
+      "type": "location",
+      "name_cn": "罗家药屋内景",
+      "priority": 1,
+      "recommended_granularity": "interior set reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
+      "source_scenes": ["01.SC004", "02.SC004"],
+      "continuity_refs": ["01/shots/scene-breakdown.json#SC004", "02/shots/scene-breakdown.json#SC004"],
+      "downstream_usage": "Interior reference for cabinet pressure composition and fire-smoke reuse."
+    },
+    {
+      "asset_id": "loc_canyangao_hidden_relay_compartment_v01",
+      "type": "location_detail",
+      "name_cn": "药柜暗格与旧驿痕",
+      "priority": 1,
+      "recommended_granularity": "detail reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
+      "source_scenes": ["01.SC007", "02.SC001"],
+      "continuity_refs": ["01/shots/scene-breakdown.json#SC007", "art/project-faction-symbol-system.md#昭明帝国"],
+      "downstream_usage": "Close reference for hidden relay traces, insect-wax cover, and first clear old-road reveal."
+    },
+    {
+      "asset_id": "loc_canyangao_old_well_courtyard_v01",
+      "type": "location",
+      "name_cn": "后院旧井与水缸",
+      "priority": 1,
+      "recommended_granularity": "set reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
+      "source_scenes": ["01.SC006", "02.SC002"],
+      "continuity_refs": ["01/shots/scene-breakdown.json#SC006", "01/director/camera-plan.md#后院旧井"],
+      "downstream_usage": "Courtyard reference for old well, water vat, sightline to medicine house, and moon-white glint rule."
+    },
+    {
+      "asset_id": "loc_canyangao_well_escape_door_v01",
+      "type": "location_detail",
+      "name_cn": "井下暗门与药屋后门",
+      "priority": 1,
+      "recommended_granularity": "action route reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_well_escape_door.png",
+      "source_scenes": ["02.SC003"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC003"],
+      "downstream_usage": "Escape route reference for the hidden door, wet moss stone, smoke cover, and rear wall path."
+    },
+    {
+      "asset_id": "loc_canyangao_side_lane_wooden_cart_v01",
+      "type": "location",
+      "name_cn": "药屋侧巷与虫族木车",
+      "priority": 1,
+      "recommended_granularity": "action set reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_side_lane_wooden_cart.png",
+      "source_scenes": ["02.SC005"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC005", "assets/props/prop_shen_zhaomian_child_relics.png"],
+      "downstream_usage": "Reference for Zhaomian abduction set, cart ruts, water ditch, and northward road."
+    },
+    {
+      "asset_id": "loc_canyangao_valley_trap_v01",
+      "type": "location",
+      "name_cn": "残阳坳谷口猎人陷阱",
+      "priority": 1,
+      "recommended_granularity": "action set reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_valley_trap.png",
+      "source_scenes": ["02.SC006", "02.SC007"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC006"],
+      "downstream_usage": "Action geography reference for rolling log trap, rope latch, beast path slit, and partial Mantis Blade pursuers."
+    },
+    {
+      "asset_id": "loc_canyangao_outer_slope_rut_v01",
+      "type": "location",
+      "name_cn": "残阳坳外山坡车辙旁",
+      "priority": 1,
+      "recommended_granularity": "emotional callback reference",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_outer_slope_rut.png",
+      "source_scenes": ["02.SC008", "03.SC001"],
+      "continuity_refs": ["02/shots/scene-breakdown.json#SC008", "assets/props/prop_half_sunmoon_relay_token.png"],
+      "downstream_usage": "End-of-episode callback reference for burnt hair cord, cart rut, half relay token, and black-stone gap direction."
+    },
+    {
+      "asset_id": "loc_canyangao_material_dressing_board_v01",
+      "type": "location_style",
+      "name_cn": "残阳坳材质陈设板",
+      "priority": 2,
+      "recommended_granularity": "material and dressing board",
+      "output_path": "project/severed-homeland/assets/locations/canyangao/loc_canyangao_material_dressing_board.png",
+      "source_scenes": ["01.SC002", "01.SC004", "02.SC001", "02.SC008"],
+      "continuity_refs": ["art/project-regional-color-system.md#残阳坳", "art/project-base-material-boards.md"],
+      "downstream_usage": "Reusable local material board for Canyang Ao dirt walls, old wood, herb baskets, well moss, insect wax, and fire ash."
+    }
+  ]
+}
