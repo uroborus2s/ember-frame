@@ -3,8 +3,9 @@
   "title": "断航故土",
   "season": "season-01",
   "source_bible": "背景.md",
-  "current_status": "visual_unity_package_ready",
+  "current_status": "episode_01_final_script_passed",
   "created_at": "2026-06-02",
+  "updated_at": "2026-06-02",
   "format": {
     "type": "AI竖屏短剧",
     "episode_count": 12,
@@ -20,7 +21,9 @@
       "每集新增设定",
       "每集场景概要",
       "每集故事梗概",
-      "AI短剧单集长度"
+      "AI短剧单集长度",
+      "第01集完整剧情与最终剧本",
+      "第01集剧本诊断、连续性报告与评分"
     ],
     "genre": "史诗奇幻逃亡短剧",
     "tone": "冷峻、紧迫、带历史伤口与故土重释",
@@ -29,7 +32,7 @@
   },
   "assumptions": [
     "第一季只覆盖主线第一阶段：残阳坳屠村到断脊边墙地下旧驿发现月下盟书线索。",
-    "完整剧本、对白、分镜和 ComfyUI 提示词暂不在本轮生成，本轮交付开发大纲包。",
+    "本轮已完成第01集完整剧本；分镜、镜头表和 ComfyUI 提示词仍等待 director-room 或后续部门生成。",
     "每集采用竖屏短剧结构：前5秒钩子，中段升级，结尾反转或悬念。",
     "每集主要角色控制在3到5人，主要场景控制在2到4个，方便AI视频保持一致性。"
   ],
@@ -38,8 +41,13 @@
     "story-architect-agent",
     "character-agent",
     "scene-agent",
+    "dialogue-agent",
+    "script-doctor-agent",
+    "rewrite-agent",
     "continuity-agent",
-    "script-evaluator-agent"
+    "script-evaluator-agent",
+    "memory-librarian",
+    "learning-evolution-agent"
   ],
   "artifacts": {
     "series_outline": "outline/series-outline.md",
@@ -57,11 +65,19 @@
     "visual_package_qc": "bible/visual-package-qc-report.md",
     "episode_briefs": "01-12/brief/episode-brief.md",
     "episode_outlines": "01-12/script/episode-outline.md",
-    "outline_continuity_report": "01/reports/continuity-report.md",
-    "outline_score": "01/reports/script-score.md"
+    "episode_01_script_v01": "01/script/script-v01.md",
+    "episode_01_final_script": "01/script/final-script.md",
+    "episode_01_critique": "01/reports/critique-v01.md",
+    "episode_01_continuity_report": "01/reports/continuity-report.md",
+    "episode_01_score": "01/reports/script-score.md",
+    "episode_01_memory_state": "01/memory/current-state.md",
+    "episode_01_failure_patterns": "01/memory/failure-patterns.json",
+    "episode_01_evolution_notes": "01/memory/evolution-notes.md",
+    "episode_01_agent_log": "01/logs/writer-room-agent-calls.jsonl"
   },
   "warnings": [
-    "本轮为季级策划和分集大纲，不含最终剧本。",
+    "第01集最终剧本已通过，但分镜不得提前正面露出月白玉片。",
+    "第01集第7场需要在 director-room 阶段明确药屋、后院、水缸、旧井和短矛封锁线的空间关系。",
     "第一季结尾保留南林、东海、瀛洲、海族和矮人线作为后续季展开空间。",
     "项目级视觉统一包已完成，但尚未生成实际图片资产；图片生成应等待用户确认或分集 director-room 输出。"
   ]
