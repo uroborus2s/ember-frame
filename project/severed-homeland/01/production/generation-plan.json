@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "episode_id": "01",
+  "strategy_summary": "第01集以参考资产驱动角色一致性，以局部T2V处理序幕大背景，以REDRAW处理清明香、血纹、虫蜡封条和月白反光等精细效果。全片不生成完整大战、完整月白玉片或晏南枝正面。",
+  "production_groups": [
+    {
+      "group_id": "G01_intro_montage",
+      "shots": ["SC001-SH001", "SC001-SH002", "SC001-SH003", "SC001-SH004"],
+      "approach": "局部T2V和参考图结合，避免临时角色身份化。"
+    },
+    {
+      "group_id": "G02_village_gate_inspection",
+      "shots": ["SC002-SH001", "SC002-SH002", "SC002-SH003", "SC002-SH004", "SC002-SH005", "SC003-SH001", "SC003-SH002", "SC003-SH003", "SC003-SH004"],
+      "approach": "使用沈维桑、白翳、沈照眠、罗青禾和残阳坳村口参考图；血纹与白册文字用REDRAW或后期层修正。"
+    },
+    {
+      "group_id": "G03_medicine_house",
+      "shots": ["SC004-SH001", "SC004-SH002", "SC004-SH003", "SC004-SH004", "SC004-SH005", "SC005-SH001", "SC005-SH002", "SC005-SH003", "SC005-SH004", "SC007-SH001", "SC007-SH002", "SC007-SH003", "SC007-SH004", "SC007-SH005"],
+      "approach": "使用药屋参考图和角色参考图；药柜遮挡、白册识句、暗格刻痕需在关键帧中锁定。"
+    },
+    {
+      "group_id": "G04_old_well_and_final_lockdown",
+      "shots": ["SC006-SH001", "SC006-SH002", "SC006-SH003", "SC006-SH004", "SC006-SH005", "SC008-SH001", "SC008-SH002", "SC008-SH003", "SC008-SH004"],
+      "approach": "使用后院水缸旧井空间参考；月白反光必须用REDRAW压成窄线，不能生成完整玉片。"
+    }
+  ],
+  "shots": [
+    {"shot_id": "SC001-SH001", "method": "T2V", "rationale": "黑场字幕和声音为主，不依赖角色资产。", "required_assets": ["style_global_mood_v01"], "continuity_locks": ["STYLE_GROUNDED_EPIC"], "risks": ["字幕需后期添加以保证可读性"]},
+    {"shot_id": "SC001-SH002", "method": "T2V", "rationale": "北境战场为局部氛围镜头，不需要稳定角色身份。", "required_assets": ["style_border_wall_v01"], "continuity_locks": ["FACTION_BORDER_WALL", "no_named_faces"], "risks": ["易生成过大场面；限制为铁蹄、旗影、伤兵背影"]},
+    {"shot_id": "SC001-SH003", "method": "T2V", "rationale": "征粮压迫可由手部和道具局部动作完成。", "required_assets": ["prop_food_token_v01"], "continuity_locks": ["no_named_faces"], "risks": ["粮吏和农户不得形成可追踪角色"]},
+    {"shot_id": "SC001-SH004", "method": "FLF2V", "rationale": "需要从火星到清明香的匹配转场，首尾帧控制更稳。", "required_assets": ["prop_old_relay_map_v01", "prop_qingming_incense_v01", "style_zhaoming_relic_v01"], "continuity_locks": ["PROP_OLD_RELAY_MAP", "PROP_QINGMING_INCENSE"], "risks": ["不得露密谋者正脸；火星不要变魔法爆光"]},
+    {"shot_id": "SC002-SH001", "method": "I2V", "rationale": "沈维桑首次出场需要角色一致性。", "required_assets": ["char_shen_weisang_v01", "loc_canyang_ao_v01"], "continuity_locks": ["CHAR_SHEN_WEISANG", "LOC_CANYANG_GATE"], "risks": ["不要英雄化正面亮相"]},
+    {"shot_id": "SC002-SH002", "method": "REDRAW", "rationale": "清明香细烟线需在地面参考帧上精修。", "required_assets": ["prop_qingming_incense_v01", "loc_canyang_ao_v01"], "continuity_locks": ["PROP_QINGMING_INCENSE"], "risks": ["烟线不得变浓雾"]},
+    {"shot_id": "SC002-SH003", "method": "REFERENCE_IMAGE", "rationale": "虫蜡针和手腕特写更适合用道具参考锁形。", "required_assets": ["prop_insect_wax_needle_v01", "prop_qingming_register_v01"], "continuity_locks": ["PROP_INSECT_WAX_NEEDLE"], "risks": ["针不能变成粗大武器"]},
+    {"shot_id": "SC002-SH004", "method": "REDRAW", "rationale": "血纹和白册浮字需要可读性，后期/局部重绘更可靠。", "required_assets": ["prop_qingming_register_v01"], "continuity_locks": ["PROP_QINGMING_REGISTER", "readable_text"], "risks": ["文字必须后期确认：旧污疑似"]},
+    {"shot_id": "SC002-SH005", "method": "I2V", "rationale": "白翳、沈照眠、罗青禾和村口封锁需要角色与场景参考。", "required_assets": ["char_bai_yi_v01", "char_shen_zhaomian_v01", "char_luo_qinghe_v01", "loc_canyang_ao_v01", "prop_insect_wax_needle_v01"], "continuity_locks": ["CHAR_BAI_YI", "LOC_CANYANG_GATE"], "risks": ["群演用肩背和短矛，不生成过多清晰脸"]},
+    {"shot_id": "SC003-SH001", "method": "I2V", "rationale": "沈维桑验血需要角色一致性和白布空间。", "required_assets": ["char_shen_weisang_v01", "prop_insect_wax_needle_v01"], "continuity_locks": ["CHAR_SHEN_WEISANG"], "risks": ["沈维桑不能显得主动对抗"]},
+    {"shot_id": "SC003-SH002", "method": "I2V", "rationale": "罗青禾和沈维桑眼神反打需要角色身份稳定。", "required_assets": ["char_luo_qinghe_v01", "char_shen_weisang_v01"], "continuity_locks": ["CHAR_LUO_QINGHE", "CHAR_SHEN_WEISANG_RESTRAINT"], "risks": ["摇头动作需轻，不要夸张"]},
+    {"shot_id": "SC003-SH003", "method": "REDRAW", "rationale": "白册文字山籍猎户和短血纹需要局部可读修正。", "required_assets": ["char_bai_yi_v01", "prop_qingming_register_v01"], "continuity_locks": ["PROP_QINGMING_REGISTER", "readable_text"], "risks": ["文字需后期确认：山籍猎户"]},
+    {"shot_id": "SC003-SH004", "method": "I2V", "rationale": "护妹动作需要沈维桑和沈照眠稳定身份。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "char_luo_qinghe_v01", "prop_herb_pouch_episode01"], "continuity_locks": ["PROP_HERB_POUCH", "CHAR_SHEN_WEISANG_PROTECTS_SISTER"], "risks": ["草药袋必须在妹妹手中清楚"]},
+    {"shot_id": "SC004-SH001", "method": "I2V", "rationale": "药屋空间和白翳、罗青禾站位需要参考图。", "required_assets": ["loc_canyang_ao_v01", "char_bai_yi_v01", "char_luo_qinghe_v01"], "continuity_locks": ["LOC_MEDICINE_HOUSE", "CHAR_BAI_YI"], "risks": ["药柜要压迫，不要变豪华药铺"]},
+    {"shot_id": "SC004-SH002", "method": "I2V", "rationale": "人物对答需要角色一致性和药柜背景。", "required_assets": ["char_bai_yi_v01", "char_luo_qinghe_v01", "loc_canyang_ao_v01"], "continuity_locks": ["CHAR_BAI_YI_NO_RAISED_VOICE", "CHAR_LUO_QINGHE"], "risks": ["表演保持低声克制"]},
+    {"shot_id": "SC004-SH003", "method": "REFERENCE_IMAGE", "rationale": "遮手动作和草药篮可用静帧参考，避免露出旧驿刻痕。", "required_assets": ["char_luo_qinghe_v01", "prop_herb_basket_episode01"], "continuity_locks": ["RULE_HIDE_RELAY_MARKS"], "risks": ["不得生成可见刻痕"]},
+    {"shot_id": "SC004-SH004", "method": "I2V", "rationale": "母子暗示链需要连续手部动作和沈维桑视线。", "required_assets": ["char_shen_weisang_v01", "char_luo_qinghe_v01", "prop_herb_pouch_episode01", "prop_water_jar_episode01"], "continuity_locks": ["CHAR_SHEN_WEISANG_READS_SIGNS", "PROP_WATER_JAR"], "risks": ["敲罐沿动作需清楚但不夸张"]},
+    {"shot_id": "SC004-SH005", "method": "REDRAW", "rationale": "清明香回流和白册微翻页是精细效果，建议局部重绘。", "required_assets": ["char_bai_yi_v01", "prop_qingming_incense_v01", "prop_qingming_register_v01"], "continuity_locks": ["PROP_QINGMING_INCENSE", "CHAR_BAI_YI"], "risks": ["烟线方向必须从门边回流"]},
+    {"shot_id": "SC005-SH001", "method": "I2V", "rationale": "沈照眠儿童状态和草药袋需要角色/道具一致。", "required_assets": ["char_shen_zhaomian_v01", "prop_herb_pouch_episode01"], "continuity_locks": ["CHAR_SHEN_ZHAOMIAN", "PROP_HERB_POUCH"], "risks": ["不要让孩子状态成人化"]},
+    {"shot_id": "SC005-SH002", "method": "I2V", "rationale": "罗青禾按嘴和白翳回头需要角色反应稳定。", "required_assets": ["char_luo_qinghe_v01", "char_shen_zhaomian_v01", "char_bai_yi_v01"], "continuity_locks": ["CHAR_BAI_YI_NO_RAISED_VOICE"], "risks": ["白翳回头要慢，不要惊吓式夸张"]},
+    {"shot_id": "SC005-SH003", "method": "REDRAW", "rationale": "白册识句记号需要局部可读，护妹动作由参考帧保持。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "prop_qingming_register_v01"], "continuity_locks": ["PROP_QINGMING_REGISTER", "PROP_HERB_POUCH"], "risks": ["识句文字需后期确认"]},
+    {"shot_id": "SC005-SH004", "method": "I2V", "rationale": "三人反应和沈维桑护妹状态需要角色连续性。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "char_luo_qinghe_v01", "char_bai_yi_v01"], "continuity_locks": ["CHAR_SHEN_WEISANG_RESTRAINT", "CHAR_SHEN_ZHAOMIAN"], "risks": ["沈照眠不能大哭抢戏"]},
+    {"shot_id": "SC006-SH001", "method": "REFERENCE_IMAGE", "rationale": "后院水缸与旧井空间关系必须先用锁定参考。", "required_assets": ["loc_canyang_ao_v01", "prop_water_jar_episode01"], "continuity_locks": ["LOC_OLD_WELL", "RULE_SPATIAL_GEOGRAPHY"], "risks": ["水缸和旧井必须同框"]},
+    {"shot_id": "SC006-SH002", "method": "I2V", "rationale": "沈维桑按母亲警告行动，需要角色与空间参考。", "required_assets": ["char_shen_weisang_v01", "loc_canyang_ao_v01"], "continuity_locks": ["CHAR_SHEN_WEISANG_READS_SIGNS", "LOC_OLD_WELL"], "risks": ["不能碰井绳"]},
+    {"shot_id": "SC006-SH003", "method": "REDRAW", "rationale": "井沿擦痕和清明香烟线需精细控制。", "required_assets": ["loc_canyang_ao_v01", "prop_qingming_incense_v01"], "continuity_locks": ["LOC_OLD_WELL", "PROP_QINGMING_INCENSE"], "risks": ["不拍井下"]},
+    {"shot_id": "SC006-SH004", "method": "FLF2V", "rationale": "沈维桑回头视线到药屋门口的空间关系需要首尾帧锁定。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "char_luo_qinghe_v01", "loc_canyang_ao_v01"], "continuity_locks": ["RULE_SPATIAL_GEOGRAPHY"], "risks": ["药屋门口和后院方位不能混乱"]},
+    {"shot_id": "SC006-SH005", "method": "REDRAW", "rationale": "湿泥压烟线和月白窄线反光都需后期/局部重绘控制。", "required_assets": ["char_shen_weisang_v01", "prop_qingming_incense_v01"], "continuity_locks": ["RULE_MOON_WHITE_GLINT_ONLY", "PROP_QINGMING_INCENSE"], "risks": ["不得生成完整月白玉片"]},
+    {"shot_id": "SC007-SH001", "method": "I2V", "rationale": "地板撬开动作基于药屋参考和监察局部动作。", "required_assets": ["loc_canyang_ao_v01", "char_inspector_generic_v01"], "continuity_locks": ["LOC_MEDICINE_HOUSE"], "risks": ["动作不要过大破坏低成本可拍性"]},
+    {"shot_id": "SC007-SH002", "method": "REDRAW", "rationale": "日月纹、方向痕和虫蜡封条需要可读与边界控制。", "required_assets": ["style_zhaoming_relic_v01", "prop_insect_wax_needle_v01"], "continuity_locks": ["RULE_FIRST_CLEAR_RELAY_REVEAL"], "risks": ["这是第一次清楚露出，不能模糊"]},
+    {"shot_id": "SC007-SH003", "method": "I2V", "rationale": "白翳与罗青禾对暗格反应需要角色一致。", "required_assets": ["char_bai_yi_v01", "char_luo_qinghe_v01", "loc_canyang_ao_v01"], "continuity_locks": ["CHAR_BAI_YI", "PROP_HIDDEN_RELAY_COMPARTMENT"], "risks": ["白翳保持干净和冷静"]},
+    {"shot_id": "SC007-SH004", "method": "I2V", "rationale": "沈照眠被逼退、草药袋掉落、沈维桑碰刀柄需要角色连续。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "prop_herb_pouch_episode01"], "continuity_locks": ["PROP_HERB_POUCH", "CHAR_SHEN_WEISANG_RESTRAINT"], "risks": ["草药袋位置要与下一镜连续"]},
+    {"shot_id": "SC007-SH005", "method": "I2V", "rationale": "罗青禾视线和沈维桑藏刀捡袋属于关键表演镜头。", "required_assets": ["char_shen_weisang_v01", "char_luo_qinghe_v01", "prop_herb_pouch_episode01"], "continuity_locks": ["CHAR_LUO_QINGHE", "LOC_OLD_WELL"], "risks": ["无声潜台词不可变成实际对白"]},
+    {"shot_id": "SC008-SH001", "method": "I2V", "rationale": "白翳台阶、村民、清明香和白册合上需要场景与角色参考。", "required_assets": ["char_bai_yi_v01", "loc_canyang_ao_v01", "prop_qingming_register_v01", "prop_qingming_incense_v01"], "continuity_locks": ["CHAR_BAI_YI_SYSTEMIC_THREAT"], "risks": ["不要拍成胜利姿态"]},
+    {"shot_id": "SC008-SH002", "method": "FLF2V", "rationale": "短矛落地封锁线和沈维桑视线需要运动与空间连续。", "required_assets": ["char_shen_weisang_v01", "char_shen_zhaomian_v01", "loc_canyang_ao_v01"], "continuity_locks": ["RULE_SPATIAL_GEOGRAPHY", "CHAR_SHEN_WEISANG_PROTECTS_SISTER"], "risks": ["封锁线必须同时阻断药屋与后院"]},
+    {"shot_id": "SC008-SH003", "method": "REDRAW", "rationale": "清明香触井沿和月白一线反光必须精修，避免剧透。", "required_assets": ["loc_canyang_ao_v01", "prop_qingming_incense_v01"], "continuity_locks": ["RULE_MOON_WHITE_GLINT_ONLY", "LOC_OLD_WELL"], "risks": ["不露井下人，不露完整玉片"]},
+    {"shot_id": "SC008-SH004", "method": "T2V", "rationale": "黑场和声音断点可后期完成。", "required_assets": [], "continuity_locks": ["RULE_NO_YAN_NANZHI_REVEAL", "RULE_NO_MOON_JADE_FULL_REVEAL"], "risks": ["黑场前后不要补任何解释性画面"]}
+  ]
+}

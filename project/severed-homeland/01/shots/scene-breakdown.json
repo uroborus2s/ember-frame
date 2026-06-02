@@ -1,0 +1,192 @@
+{
+  "version": "1.0",
+  "episode_id": "01",
+  "source_artifacts": [
+    "01/script/final-script.md",
+    "01/reports/continuity-report.md",
+    "01/reports/script-score.md",
+    "bible/characters.md",
+    "bible/scenes.md",
+    "bible/visual-style.md"
+  ],
+  "scenes": [
+    {
+      "scene_id": "SC001",
+      "source_reference": "final-script scene 1, 0:00-0:28",
+      "location": "帝国历1226年序幕蒙太奇：北境战场、金河征粮道、南方密室",
+      "time_of_day": "压缩蒙太奇，黑场到战火、寒光、昏暗室内",
+      "characters": ["人族军户", "虫族粮吏", "南方人族密谋者"],
+      "visible_actions": [
+        "冷白年份字幕浮出",
+        "北境战场中人族军户抬伤兵退入边墙阴影",
+        "征粮木牌拍在农户门上，粮袋被拖走，空碗留下",
+        "南方人族把旧驿图压入药包底下，掌心盖住火星",
+        "火星切成残阳坳村口瓷盂里的清明香"
+      ],
+      "props": ["旧驿图", "征粮木牌", "空碗", "断裂日月纹", "清明香"],
+      "wardrobe": ["军户粗布与残甲", "虫族粮吏局部甲片", "南方密谋者粗布袖口"],
+      "continuity_anchors": ["LOC_INTRO_MONTAGE", "PROP_OLD_RELAY_MAP", "PROP_QINGMING_INCENSE", "STYLE_GROUNDED_EPIC"],
+      "risks": [
+        "不得超过30秒",
+        "不要给临时人物正脸或姓名",
+        "战场只用局部、声音和影子表现"
+      ]
+    },
+    {
+      "scene_id": "SC002",
+      "source_reference": "final-script scene 2, 0:28-0:54",
+      "location": "残阳坳村口验血席",
+      "time_of_day": "黄昏，残阳偏红",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队", "被验血孩子", "孩子母亲", "村民"],
+      "visible_actions": [
+        "沈维桑在人群后观察风向和泥印",
+        "清明香贴地爬过草鞋、猎靴和门槛",
+        "虫蜡针刺破孩子手腕，血纹沁向清明白册",
+        "清明白册浮出旧污疑似",
+        "孩子母亲被短矛拦住，白翳擦针后说下一个",
+        "村口短矛交叉封路，沈照眠躲在罗青禾身后"
+      ],
+      "props": ["虫蜡针", "清明白册", "清明香", "短矛", "小草药袋", "猎弓"],
+      "wardrobe": ["沈维桑灰褐猎衣", "白翳无尘白袍", "沈照眠村童布衣", "罗青禾医者素衣"],
+      "continuity_anchors": ["CHAR_SHEN_WEISANG", "CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "PROP_INSECT_WAX_NEEDLE", "PROP_QINGMING_REGISTER", "LOC_CANYANG_GATE"],
+      "risks": [
+        "旧污疑似必须可读",
+        "血纹是验血效果，不是沈维桑灵翼残纹",
+        "虫族监察不需要完整怪物化"
+      ]
+    },
+    {
+      "scene_id": "SC003",
+      "source_reference": "final-script scene 3, 0:54-1:14",
+      "location": "残阳坳村口验血处",
+      "time_of_day": "黄昏",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队", "村民"],
+      "visible_actions": [
+        "村民排队伸腕",
+        "沈维桑被推上前接受虫蜡针验血",
+        "血纹只短短一线，白册浮字山籍猎户",
+        "白翳问年龄和识路，沈维桑用短句回答",
+        "沈维桑退回后第一时间把沈照眠护到身后",
+        "白翳宣布去药屋，罗青禾手指收紧"
+      ],
+      "props": ["虫蜡针", "清明白册", "小草药袋", "草药篮", "猎弓", "旧皮护腕"],
+      "wardrobe": ["沈维桑旧皮护腕特写", "白翳白袍与薄翼披肩", "罗青禾青布头巾"],
+      "continuity_anchors": ["CHAR_SHEN_WEISANG_PROTECTS_SISTER", "PROP_HERB_POUCH", "PROP_QINGMING_REGISTER"],
+      "risks": [
+        "沈维桑不能显得主动挑衅",
+        "护妹妹动作要清楚但克制"
+      ]
+    },
+    {
+      "scene_id": "SC004",
+      "source_reference": "final-script scene 4, 1:14-1:44",
+      "location": "罗家药屋内",
+      "time_of_day": "黄昏，室内偏暗，门外残阳",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队"],
+      "visible_actions": [
+        "药柜形成竖屏压迫构图",
+        "白翳询问南来的女子，罗青禾用药名回避",
+        "罗青禾指尖在旧木边停半息并用草药篮遮住手",
+        "沈维桑看见妹妹草药袋和母亲手势",
+        "罗青禾递出水罐并暗示后院水缸和井边潮味",
+        "白翳闻到清明香回流，追问后院有井"
+      ],
+      "props": ["药柜", "草药篮", "空水罐", "小草药袋", "清明白册", "清明香"],
+      "wardrobe": ["罗青禾医者素衣", "白翳白袍未沾尘"],
+      "continuity_anchors": ["LOC_MEDICINE_HOUSE", "PROP_WATER_JAR", "PROP_HERB_BASKET", "RULE_HIDE_RELAY_MARKS"],
+      "risks": [
+        "镜头不得露出罗青禾挡住的具体旧驿痕迹",
+        "沈维桑明白母亲暗示需通过视线和手部动作表达"
+      ]
+    },
+    {
+      "scene_id": "SC005",
+      "source_reference": "final-script scene 5, 1:44-2:05",
+      "location": "罗家药屋门口",
+      "time_of_day": "黄昏",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队"],
+      "visible_actions": [
+        "沈照眠在门槛边排列药名牌并小声背药歌",
+        "罗青禾猛地按住沈照眠的嘴",
+        "白翳缓慢回头并要求再背一遍",
+        "沈维桑挡到妹妹前面替她遮掩",
+        "白翳在清明白册边添下识句记号",
+        "沈维桑把妹妹再次往身后压半步"
+      ],
+      "props": ["小草药袋", "药名牌", "清明白册", "短矛影子"],
+      "wardrobe": ["沈照眠村童布衣", "沈维桑灰褐猎衣", "白翳白袍"],
+      "continuity_anchors": ["CHAR_SHEN_ZHAOMIAN_HERB_RECITES", "PROP_HERB_POUCH", "PROP_QINGMING_REGISTER", "CHAR_BAI_YI_NO_RAISED_VOICE"],
+      "risks": [
+        "沈照眠台词必须清楚可听",
+        "白翳威胁要像登记，不像咆哮"
+      ]
+    },
+    {
+      "scene_id": "SC006",
+      "source_reference": "final-script scene 6, 2:05-2:27",
+      "location": "罗家后院旧井",
+      "time_of_day": "暮色",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队", "井下未露面者"],
+      "visible_actions": [
+        "后院水缸和旧井建立空间关系",
+        "沈维桑按母亲指示先走向水缸，不碰井绳",
+        "井下传来极轻气声，井沿有新擦痕",
+        "沈维桑回头确认药屋方向和妹妹处境",
+        "沈维桑握刀又松开，用湿泥压住清明香烟线",
+        "油纸边缘一线月白反光闪过"
+      ],
+      "props": ["水罐", "水缸", "旧井", "井绳", "清明香", "短刀", "油纸包月白反光"],
+      "wardrobe": ["沈维桑灰褐猎衣", "远处白翳白袍", "沈照眠小草药袋"],
+      "continuity_anchors": ["LOC_OLD_WELL", "RULE_SPATIAL_GEOGRAPHY", "RULE_MOON_WHITE_GLINT_ONLY", "PROP_QINGMING_INCENSE"],
+      "risks": [
+        "不得露出完整月白玉片",
+        "必须让观众理解沈维桑为何不能喊",
+        "后院和药屋门口视线关系必须清楚"
+      ]
+    },
+    {
+      "scene_id": "SC007",
+      "source_reference": "final-script scene 7, 2:27-2:51",
+      "location": "罗家药屋内",
+      "time_of_day": "暮色",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队"],
+      "visible_actions": [
+        "虫族监察撬开药柜前地板",
+        "暗格边缘第一次清楚露出残缺日月纹和旧驿方向痕",
+        "虫蜡封条沿刻痕爬开",
+        "白翳隔帕触摸刻痕并判断残阳坳不只是村",
+        "沈照眠被短矛逼退，小草药袋掉地",
+        "沈维桑冲到门口，碰刀柄后被罗青禾眼神压住",
+        "沈维桑藏刀并捡起妹妹的小草药袋"
+      ],
+      "props": ["药柜地板", "暗格", "残缺日月纹", "旧驿方向痕", "虫蜡封条", "短刀", "小草药袋"],
+      "wardrobe": ["白翳无尘白袍", "罗青禾青布头巾", "沈维桑灰褐猎衣"],
+      "continuity_anchors": ["PROP_HIDDEN_RELAY_COMPARTMENT", "RULE_FIRST_CLEAR_RELAY_REVEAL", "CHAR_SHEN_WEISANG_RESTRAINT", "PROP_HERB_POUCH"],
+      "risks": [
+        "这是旧驿痕迹第一次清楚露出",
+        "沈维桑克制的可见代价必须明确"
+      ]
+    },
+    {
+      "scene_id": "SC008",
+      "source_reference": "final-script scene 8, 2:51-3:00",
+      "location": "药屋外与旧井同院落",
+      "time_of_day": "暮色入夜",
+      "characters": ["沈维桑", "沈照眠", "罗青禾", "白翳", "虫族监察队", "村民", "井下未露面者"],
+      "visible_actions": [
+        "村民被赶到药屋外，清明香盖过门槛并朝旧井爬去",
+        "白翳合上清明白册并宣布残阳坳全村复查",
+        "短矛落地封住药屋与后院",
+        "沈维桑护住沈照眠并看向旧井",
+        "井下极轻呼吸再次出现，井壁月白反光一闪后黑场"
+      ],
+      "props": ["清明白册", "清明香", "短矛", "旧井", "月白反光"],
+      "wardrobe": ["白翳白袍台阶站位", "沈维桑灰褐猎衣", "沈照眠村童布衣"],
+      "continuity_anchors": ["RULE_SPATIAL_GEOGRAPHY", "RULE_MOON_WHITE_GLINT_ONLY", "CHAR_BAI_YI_SYSTEMIC_THREAT", "PROP_QINGMING_REGISTER"],
+      "risks": [
+        "空间关系必须说明沈维桑能看见井沿反光",
+        "结尾只给呼吸与反光，不揭示井下人"
+      ]
+    }
+  ]
+}
