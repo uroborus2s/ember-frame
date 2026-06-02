@@ -1,0 +1,65 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_luo_qinghe_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable Luo Qinghe multi-state character reference board.",
+  "source_art_direction": "project/severed-homeland/art/project-luo-qinghe-character-art-direction.md",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "role": "Canyang Ao palette reference for medicine-room earth, herb, old wood, smoke, and fire accents"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "role": "locked Zhaoming emblem continuity reference only; do not redesign or display as a clean public badge"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+      "role": "locked old empire symbol extension reference for hidden partial old-relay marks only"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_luo_qinghe_multi_state_board_v01",
+      "name_cn": "罗青禾多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "generated",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_luo_qinghe_multi_state_board.png",
+      "source_prompt_id": "prompt_character_luo_qinghe_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#罗青禾",
+        "project/severed-homeland/bible/continuity.md#半枚日月驿令",
+        "project/severed-homeland/01/director/director-brief.md",
+        "project/severed-homeland/01/shots/shot-list.json",
+        "project/severed-homeland/02/script/script-v01.md",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md"
+      ],
+      "downstream_usage": [
+        "Prompt Room character identity lock for Luo Qinghe",
+        "ComfyUI character reference input",
+        "episode 01 medicine-room continuity reference",
+        "episode 02 fire farewell continuity reference",
+        "wardrobe, prop, and performance reference for Luo Qinghe"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "Luo Qinghe's old relay identity is hidden inside the medicine-room system and cannot appear as a clean public badge.",
+    "Preserve her as a beautiful 37-year-old woman and village physician, not an elderly woman or mystic priestess.",
+    "Clothing must stay complete, clean enough to show construction, role-specific, and practical.",
+    "Distress clothing only through herb stains, smoke, soot, singed edges, small repairs, and limited fire-state damage.",
+    "No visible text, labels, captions, Chinese characters, Latin letters, UI, or watermark inside generated images."
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_luo_qinghe_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-luo-qinghe-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-luo-qinghe-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_luo_qinghe_multi_state_board_v01",
+      "name_cn": "罗青禾多状态角色板",
+      "character": "Luo Qinghe",
+      "identity": "37-year-old Canyang Ao village physician, Shen Weisang's mother, and quiet keeper of old relay-road code",
+      "image_type": "multi-state supporting-character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_luo_qinghe_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Clearly 37, a beautiful adult woman with warmth and resilience; not elderly and not girlish.",
+        "build": "Medium-height, practical village-physician build with soft maternal steadiness and labor-trained hands.",
+        "face": "Refined, warm, beautiful features; gentle bright eyes, calm brows, dignified mouth, sun-and-smoke-warmed skin.",
+        "hair": "Work hair wrapped under a blue-green cloth head scarf, with only small controlled strands visible.",
+        "posture": "Protective and steady; she blocks danger through hand placement, stance, cabinet shielding, and quiet resolve."
+      },
+      "constant_anchors": [
+        "blue-green cloth head scarf",
+        "herb-green apron",
+        "earth-brown or grey-white medicine-room top",
+        "narrow sleeves for grabbing herbs",
+        "herb basket",
+        "waist-hung small copper scissors",
+        "herb thread",
+        "cloth pouch and medicine packets",
+        "old wood medicine cabinet",
+        "mortar, water jar, and herb bundles",
+        "hidden old-relay cabinet-bottom mark",
+        "half Sun-Moon relay token mostly covered by palm or cloth in fire farewell state"
+      ],
+      "state_designs": [
+        {
+          "state_id": "luo_qinghe_medicine_room_daily",
+          "name_cn": "药屋日常状态",
+          "episode_range": "01 before inspection escalation",
+          "silhouette": "Village physician in complete practical layers: head scarf, narrow-sleeved medicine top, herb-green apron, waist tools, herb basket.",
+          "materials": [
+            "blue-green coarse head-scarf cloth",
+            "herb-green apron cloth",
+            "earth-brown coarse medicine-room top",
+            "grey-white underlayer",
+            "old copper scissors",
+            "old wood basket and medicine cabinet"
+          ],
+          "color_logic": "Canyang Ao earth brown and old wood ground the figure; herb green and blue-green identify the medicine room; late-wheat warmth touches skin and basket edges.",
+          "damage_level": "Clean work wear with herb stains, smoke dust, and small repairs only.",
+          "required_details": [
+            "must read as a beautiful 37-year-old mother and physician",
+            "head scarf and apron must remain clear",
+            "herb basket and waist copper scissors must be visible",
+            "no public Zhaoming badge or clean sun-moon emblem"
+          ]
+        },
+        {
+          "state_id": "luo_qinghe_old_relay_code",
+          "name_cn": "旧驿暗语状态",
+          "episode_range": "01 medicine-room search and hidden-code moments",
+          "silhouette": "Same physician costume, but with more guarded hands and hidden old-relay tool logic; no external transformation.",
+          "materials": [
+            "same blue-green scarf",
+            "same herb-green apron",
+            "concealed narrow old-pattern waist tape",
+            "small cabinet-key and tool kit",
+            "cloth-wrapped medicine packet",
+            "old wood cabinet bottom with worn partial route scratch"
+          ],
+          "color_logic": "Medicine-room greens and browns dominate; worn-gold old-relay scratch appears only as a tiny hidden under-cabinet detail.",
+          "damage_level": "Normal daily wear.",
+          "required_details": [
+            "identity remains hidden under physician surface",
+            "one hand or herb basket may partially block a cabinet-bottom secret",
+            "old relay mark must be partial, worn, concealed, and non-readable",
+            "no secret-order robe, no priestess silhouette, no clean badge"
+          ]
+        },
+        {
+          "state_id": "luo_qinghe_fire_farewell",
+          "name_cn": "火场临终状态",
+          "episode_range": "02 fire farewell",
+          "silhouette": "Same mother-physician silhouette in smoke, head scarf loosened, apron soot-darkened, hand passing the half token.",
+          "materials": [
+            "smoke-darkened herb apron",
+            "loosened blue-green head scarf",
+            "singed earth-brown sleeve edge",
+            "soot-stained grey-white cloth",
+            "old copper tool catching firelight",
+            "half relay token mostly covered in palm or cloth"
+          ],
+          "color_logic": "Canyang herb green and earth brown are dulled by soot; fire-dark red and ember warmth appear as limited edge accents; the half-token remains a small worn gold and moon-white object, not a public emblem.",
+          "damage_level": "Smoke, soot, loosened scarf, singed apron edge, and small shoulder-side wound indication; no gore or ragged collapse.",
+          "required_details": [
+            "mother and physician dignity must remain",
+            "beauty and age lock must survive distress",
+            "half-token pass-off is readable but mostly covered",
+            "no blood-soaked death tableau"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_age_and_beauty_lock",
+          "purpose": "Prevent age drift or generic peasant anonymity.",
+          "notes": "Beautiful 37-year-old face, warm eyes, calm resolve, smoke-warmed skin, not elderly."
+        },
+        {
+          "detail_id": "head_scarf_and_work_hair",
+          "purpose": "Lock medicine-room labor identity.",
+          "notes": "Blue-green cloth wraps practical hair; no court hairpiece or priestess veil."
+        },
+        {
+          "detail_id": "apron_and_narrow_sleeves",
+          "purpose": "Make her a working physician.",
+          "notes": "Herb-green apron, narrow sleeves, herb stains, clean complete construction."
+        },
+        {
+          "detail_id": "waist_tool_system",
+          "purpose": "Show physician craft and action readiness.",
+          "notes": "Small copper scissors, herb thread, cloth pouch, medicine packets, simple cord knots."
+        },
+        {
+          "detail_id": "hands_and_token_pass",
+          "purpose": "Carry the episode-02 contract source.",
+          "notes": "Hand passing the half token almost covered by palm or cloth; no clean full emblem."
+        },
+        {
+          "detail_id": "medicine_basket_and_cabinet",
+          "purpose": "Tie Luo Qinghe to Canyang Ao medicine-room geography.",
+          "notes": "Herb basket, mortar, water jar, old wood cabinet, no readable labels."
+        },
+        {
+          "detail_id": "concealed_old_relay_mark",
+          "purpose": "Show relay-code identity without public faction display.",
+          "notes": "Tiny worn-gold route scratch or partial old mark under cabinet board, hidden and incomplete."
+        },
+        {
+          "detail_id": "fire_state_dignity",
+          "purpose": "Lock farewell distress without gore.",
+          "notes": "Soot, loosened scarf, singed apron edge, firm protective hand, dignity under pain."
+        }
+      ],
+      "negative_rules": [
+        "elderly woman",
+        "old crone",
+        "witch",
+        "sorceress",
+        "priestess",
+        "court noble",
+        "empress",
+        "princess",
+        "modern nurse",
+        "generic peasant anonymity",
+        "redesigned Zhaoming badge",
+        "new Luo Qinghe crest",
+        "clean public sun-moon emblem",
+        "full Zhaoming badge on scarf, apron, chest, sleeve, basket, belt front, medicine cabinet face, wall, or background",
+        "readable text or labels",
+        "high magic aura",
+        "spell circle",
+        "glowing ritual",
+        "beggar rags",
+        "shredded clothing",
+        "full-body mud",
+        "gore",
+        "blood-soaked death tableau",
+        "horror burn makeup"
+      ]
+    }
+  ]
+}
