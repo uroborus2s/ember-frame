@@ -1,0 +1,181 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_low_official_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-suming-low-official-character-art-direction.md",
+  "character_designs": [
+    {
+      "asset_id": "character_suming_low_official_clerk_multi_state_board_v01",
+      "name_cn": "肃明基层虫吏多状态角色板",
+      "character": "Suming Lower Insect Official and White-Register Clerk",
+      "identity": "Lower-tier Suming insect bureaucrats, white-register clerks, and granary-tax petty officials who order registration, grain levy, village sealing, wax stamping, scent marking, and slave-soldier deployment",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_suming_low_official_clerk_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Low-ranking insect bureaucrat with near-upright official silhouette; never a human scholar, human magistrate, masked man, Bai Yi duplicate, or combat infantry.",
+        "scale": "Approximately 1.8 to 2.1 meters tall in-world, lower and less elegant than Bai Yi, more upright and bureaucratic than insect infantry.",
+        "build": "Near-upright but slightly forward-leaning shoulders, stiff office posture, narrow chest under short official robe, no reverse-jointed pursuit stance.",
+        "face": "Dark brown or obsidian compound eyes with no sclera, iris, or ordinary human pupil; bone-white cheek shells or small jaw plates; dark-green neck membrane visible above the hard collar.",
+        "head_hair": "No full human hair, topknot, sideburns, beard, or cloth headwrap. A low insect-wax cap, half-round clerk hat, or bone-white short cap covers the top; a single thin rear money-tail insect-whisker queue or two to three trimmed short antenna bundles exit from under the back edge.",
+        "hands": "Elongated segmented fingers with small chitin plates, used for pressing register pages, wax stamping, scent tags, and abacus beads."
+      },
+      "constant_anchors": [
+        "low insect-wax official cap or half-round clerk hat",
+        "rear money-tail insect-whisker queue or trimmed short antenna bundles",
+        "dark compound eyes with no human eye details",
+        "bone-white cheek shell",
+        "dark-green neck membrane",
+        "wax-grey-white short official robe",
+        "pearl-grey or bone-white robe shell",
+        "dark green-black inner layer at collar, cuffs, and side slits",
+        "bone-white insect-wax sleeve bindings",
+        "old iron ledger belt and account tags",
+        "tiny locked black-sun or white-wing-over-black-sun physical tag",
+        "white-register board with no readable text",
+        "insect-wax seal box",
+        "scent tag",
+        "bone abacus or grain-tax tally object"
+      ],
+      "state_designs": [
+        {
+          "state_id": "suming_low_insect_official_village_order",
+          "name_cn": "虫族底层官员",
+          "episode_range": "village sealing, purge-team arrival, outer-office order scenes",
+          "silhouette": "Short stiff official robe, low cylindrical insect-wax cap, one hand holding a wax order slip or sealing mallet, the other hand gesturing slave soldiers forward.",
+          "materials": [
+            "wax-grey-white short official robe",
+            "bone-white low cap",
+            "dark green-black hard collar",
+            "old iron belt",
+            "tiny black-sun plate",
+            "insect-wax order slip",
+            "wax sealing mallet"
+          ],
+          "color_logic": "Wax grey-white and bone white dominate with dark green-black inner pressure and old iron low-rank authority.",
+          "damage_level": "Clean but not dustless; cuffs show wax cracks and travel grit, unlike Bai Yi's impossible cleanliness.",
+          "required_details": [
+            "rear insect-whisker queue must be visible from the cap edge",
+            "compound eyes and cheek shells must prevent human-official reading",
+            "short robe must not become Bai Yi's long robe",
+            "gesture must read as ordering others, not doing combat"
+          ]
+        },
+        {
+          "state_id": "suming_white_register_clerk_name_check",
+          "name_cn": "白册官吏",
+          "episode_range": "Qingming white-register, checkpoint, child-identifier, and old-name suspect scenes",
+          "silhouette": "Narrower clerk robe, half-round ledger hat, register board against chest, segmented fingers pressing the blank page and wax seal.",
+          "materials": [
+            "pearl-grey short robe",
+            "bone-white sleeve bindings",
+            "half-round clerk hat",
+            "white-register board",
+            "insect-wax stylus needle",
+            "small seal box",
+            "scent tag"
+          ],
+          "color_logic": "Pearl grey and bone white make the clerk bureaucratic, while dark compound eyes, green-black neck membrane, and old iron tags keep insect identity visible.",
+          "damage_level": "Orderly, lightly wax-smeared, no blood or ragged cloth.",
+          "required_details": [
+            "no readable writing on the register",
+            "two or three trimmed antenna bundles may replace the single rear queue",
+            "hands must look segmented while performing clerical work",
+            "must not look like a human scholar or scribe"
+          ]
+        },
+        {
+          "state_id": "suming_granary_tax_petty_clerk",
+          "name_cn": "粮税小吏",
+          "episode_range": "Jinhe granary, mill district, convoy levy, border granary gate scenes",
+          "silhouette": "Wax-grey-blue field clerk robe with side-slit mobility, ledger belt crowded with grain tags, bone abacus, old iron scale hook, and wax-seal pouch.",
+          "materials": [
+            "wax-grey-blue robe variation",
+            "dark green-black inner cloth",
+            "old iron scale hook",
+            "grain tally tags",
+            "bone abacus",
+            "wax seal pouch",
+            "scent marker strip"
+          ],
+          "color_logic": "Granary state lowers the white into wax-grey-blue and old iron while keeping bone-white cuffs and dark-green insect undertone.",
+          "damage_level": "Work-scuffed but institutional; flour dust, wax smears, and iron scratches only.",
+          "required_details": [
+            "grain and tax function must read through tally objects, abacus, and scale hook",
+            "still visibly insect through compound eyes, cheek shell, neck membrane, and rear queue",
+            "not a human accountant, not a merchant, not a granary worker",
+            "no warm human-clerk palette"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "low_cap_and_rear_queue",
+          "purpose": "Lock the insect official hairstyle and head hierarchy.",
+          "notes": "Low insect-wax cap, half-round clerk hat, or bone-white short cap with one rear money-tail insect-whisker queue or trimmed short antenna bundles. No human hair or topknot."
+        },
+        {
+          "detail_id": "compound_eyes_cheek_shell_neck_membrane",
+          "purpose": "Prevent human official drift.",
+          "notes": "Dark compound eyes with no sclera or iris, bone-white cheek shell, dark-green neck membrane under hard collar."
+        },
+        {
+          "detail_id": "segmented_clerk_hand",
+          "purpose": "Make clerical action insectoid.",
+          "notes": "Long segmented fingers pressing blank register page, wax seal, scent tag, or abacus bead."
+        },
+        {
+          "detail_id": "short_official_robe_layering",
+          "purpose": "Differentiate lower official from Bai Yi.",
+          "notes": "Wax-grey-white knee-to-calf robe, dark green-black inner layer, bone-white sleeve binding, no long dustless robe."
+        },
+        {
+          "detail_id": "institutional_tool_cluster",
+          "purpose": "Clarify bureaucratic function.",
+          "notes": "White-register board, wax seal box, stylus needle, old iron ledger tag, scent tag, bone abacus, grain tally, scale hook."
+        },
+        {
+          "detail_id": "tiny_locked_emblem_reference",
+          "purpose": "Carry faction continuity without redesign.",
+          "notes": "Small copied black-sun or white-wing-over-black-sun physical tag on belt, seal, cap button, or register corner only."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project color logic.",
+          "notes": "Wax-grey-white, bone white, pearl grey, dark green-black, old iron, black sun black, cold-gold pin, insect-wax pale yellow."
+        }
+      ],
+      "negative_rules": [
+        "human scholar",
+        "human magistrate",
+        "ordinary human clerk",
+        "county yamen servant",
+        "masked human official",
+        "full human hair",
+        "topknot",
+        "sideburns",
+        "beard",
+        "ordinary human eyes",
+        "sclera",
+        "iris",
+        "warm human skin",
+        "blue scholar robe",
+        "brown linen robe",
+        "red mandarin robe",
+        "Bai Yi duplicate",
+        "high cylindrical Qingming hat",
+        "floor-length dustless white robe",
+        "wing membrane shoulder cape",
+        "insect infantry body",
+        "reverse-jointed legs",
+        "mandible guard",
+        "forearm blades",
+        "short spear",
+        "Li Tang mantis commander",
+        "redesigned Qingming badge",
+        "new insect logo",
+        "readable text or labels"
+      ]
+    }
+  ]
+}

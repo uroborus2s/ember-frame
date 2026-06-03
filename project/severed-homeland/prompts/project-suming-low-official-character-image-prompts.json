@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_low_official_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-suming-low-official-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-suming-low-official-character-designs.json",
+  "purpose": "Tool-neutral image prompt for the project-level Suming lower insect official and white-register clerk multi-state character reference board.",
+  "shared_rules": {
+    "format": "single vertical PNG production character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic insect-wax official cloth, chitin, old iron, white register tools, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. The locked Suming/Qingming white-wing-over-black-sun system may appear only as a tiny copied physical belt tag, seal mark, register corner mark, cap button, or wax stamp.",
+    "must_have": [
+      "The subject must read as lower-tier insect bureaucrats, not human clerks, not Bai Yi, not combat infantry",
+      "low insect-wax cap or half-round clerk hat, rear money-tail insect-whisker queue or trimmed short antenna bundles, dark compound eyes, bone-white cheek shell, dark-green neck membrane, wax-grey-white short official robe, dark green-black inner layer, bone-white sleeve bindings, old iron account tags, white-register board, wax seal box, scent tag, and grain-tax tools must be visible",
+      "three states must preserve one visual layer: lower insect official, white-register clerk, and granary-tax petty clerk",
+      "no full human hair, no topknot, no sideburns, no beard, no ordinary human eyes, no human scholar robe",
+      "no readable text, no labels, no UI, no watermark"
+    ],
+    "negative_prompt": "human scholar, human magistrate, ordinary human clerk, county yamen servant, yamen runner, human accountant, merchant, masked human official, full human hair, topknot, sideburns, beard, cloth headwrap, ordinary human eyes, sclera, iris, human pupils, warm human skin, blue scholar robe, brown linen robe, red mandarin robe, loose literati robe, Bai Yi duplicate, high cylindrical Qingming hat, floor-length dustless white robe, translucent wing cape, elegant upper-caste official, insect infantry body, reverse-jointed legs, clawed feet, mandible guard, forearm blades, short spear, hook sickle, Li Tang mantis commander, elite boss insect, slave soldier catcher, human shame expression, redesigned Suming emblem, redesigned Qingming badge, new insect logo, large badge, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, modern police uniform, modern office uniform, sci-fi armor, cyberpunk, high magic spell circle, gore, blood, oversaturated game art"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_suming_low_official_clerk_multi_state_board_v01",
+      "asset_id": "character_suming_low_official_clerk_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_suming_low_official_clerk_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "role": "locked Suming/Qingming emblem reference; use only as tiny copied physical belt tag, cap button, seal mark, register corner mark, or wax stamp"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+          "role": "locked institutional symbol system for seals, white-register marks, account tags, wax stamps, and scent tags"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+          "role": "Qingming institutional palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+          "role": "insect-wax, bone-white, membrane, wax seal, and institutional material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+          "role": "upper-caste official contrast; lower officials must not inherit high hat, long robe, dustless elegance, or wing cape"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/character_suming_insect_infantry_multi_state_board.png",
+          "role": "combat infantry contrast; lower officials must not become non-humanoid weapon units"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/character_suming_slave_soldier_multi_state_board.png",
+          "role": "enslaved soldier contrast; lower officials order and record, they do not do rope capture as coerced human-hand labor"
+        }
+      ],
+      "image_prompt": "Create one single extra-tall vertical PNG production character reference board for Suming lower insect officials and white-register clerks from the series Severed Homeland. Use the project references for low-magic eastern epic style, Qingming institutional wax materials, the locked white-wing-over-black-sun visual system, insect-wax white, wax-grey-white, bone white, pearl grey, dark green-black, old iron, black sun black, and tiny cold-gold pins. Do not redesign any badge. The subject is a lower-tier insect bureaucratic layer used by local Suming offices, Qingming outer offices, village purge teams, granaries, and checkpoints. They open registers, call names, levy grain, wax-stamp pages, scent-mark suspects, seal doors, and order slave soldiers forward. They are not Bai Yi, not upper-caste elegant inspectors, not combat insect infantry, not human clerks, not human magistrates, and not masked humans.\n\nThe species design must clearly differ from humans. Every state needs visible dark brown or black obsidian compound eyes with no sclera, no iris, and no ordinary human pupils; bone-white cheek shell or small jaw plates; dark-green neck membrane above the collar; elongated segmented fingers with small chitin plates; and a head/hairstyle system that is insect official, not human hair. Use low insect-wax cap, half-round clerk hat, or bone-white short cap covering the top of the head. From under the rear cap edge show a single thin money-tail insect-whisker queue or two to three trimmed short antenna bundles. No full human hair, no topknot, no sideburns, no beard, no cloth headwrap, no normal human eyes.\n\nShow three full-body states with one consistent lower-insect-bureaucrat identity: 1) lower insect official for village orders, wearing a low cylindrical insect-wax cap, wax-grey-white short official robe ending around knee or calf, dark green-black hard collar and inner layer visible at collar and side slits, bone-white sleeve bindings, old iron belt, tiny locked black-sun or white-wing-over-black-sun physical plate, one hand holding a wax order slip or sealing mallet, the other gesturing slave soldiers forward; 2) white-register clerk, narrower pearl-grey short robe, half-round ledger hat, register board against the chest, segmented fingers pressing a blank register page, insect-wax stylus needle, small seal box, scent tag, two or three trimmed antenna bundles visible from the back of the cap, fast repetitive bureaucratic posture; 3) granary-tax petty clerk, wax-grey-blue field clerk robe with side-slit mobility, dark green-black inner cloth, ledger belt crowded with grain tally tags, bone abacus, old iron scale hook, wax-seal pouch, scent marker strip, flour dust and wax smears only, still visibly insect through compound eyes, cheek shell, neck membrane, and rear insect-whisker queue.\n\nInclude silent detail panels with no text: low insect-wax cap / half-round clerk hat / bone-white short cap; rear money-tail insect-whisker queue and trimmed antenna bundles; dark compound eyes, bone-white cheek shell, dark-green neck membrane; segmented clerk hand pressing blank register page, wax seal, scent tag, or abacus bead; wax-grey-white short official robe with dark green-black inner layer and bone-white sleeve binding; old iron account tag, tiny locked emblem belt tag, scent tag; white-register board, wax seal box, stylus needle, bone abacus, grain tally, old iron scale hook; material swatch strip for wax-grey-white, bone white, pearl grey, dark green-black, old iron, black sun black, cold-gold pin, and pale insect-wax yellow. Keep the board clean, bureaucratic, oppressive, tactile, and production-readable, not a poster and not a monster horde. No visible labels, no captions, no readable text, no UI, no watermark.",
+      "negative_prompt": "human scholar, human magistrate, ordinary human clerk, county yamen servant, yamen runner, human accountant, merchant, masked human official, full human hair, topknot, sideburns, beard, cloth headwrap, ordinary human eyes, sclera, iris, human pupils, warm human skin, blue scholar robe, brown linen robe, red mandarin robe, loose literati robe, Bai Yi duplicate, high cylindrical Qingming hat, floor-length dustless white robe, translucent wing cape, elegant upper-caste official, insect infantry body, reverse-jointed legs, clawed feet, mandible guard, forearm blades, short spear, hook sickle, Li Tang mantis commander, elite boss insect, slave soldier catcher, human shame expression, redesigned Suming emblem, redesigned Qingming badge, new insect logo, large badge, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, modern police uniform, modern office uniform, sci-fi armor, cyberpunk, high magic spell circle, gore, blood, oversaturated game art"
+    }
+  ]
+}
