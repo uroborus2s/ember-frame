@@ -1,0 +1,106 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_symbiotic_beasts_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable multi-state character creature board for Northern Beastfolk Alliance symbiotic beasts.",
+  "source_art_direction": "project/severed-homeland/art/project-northern-symbiotic-beasts-character-art-direction.md",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic style lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project tactile material and palette lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+      "role": "border-to-north blackstone snowline and Northern palette lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+      "role": "Northern bone, wood, fur, hide rope, oath cord, and frost material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+      "role": "locked existing Northern Beastfolk Alliance emblem reference; do not redesign"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+      "role": "Wanshou symbol material language reference only"
+    },
+    {
+      "path": "project/severed-homeland/assets/props/prop_bone_whistle_flute_comparison.png",
+      "role": "bone flute, bone whistle, oath cord, and handling reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
+      "role": "human handler, siege troop, and equipment scale contrast"
+    }
+  ],
+  "design_principles": [
+    "Treat Northern symbiotic beasts as covenant partners, not monster mounts or a beast horde.",
+    "Every beast type must include a readable human or beastfolk handler interaction: bone flute, blood salt, old scar touch, rope handling, pain soothing, refusal of wrong command, or hunting whistle.",
+    "Preserve the existing Wanshou emblem as a locked reference only; do not create a new animal crest or enlarged faction badge.",
+    "Keep low-magic effects physical and restrained: heat mist, short static arcs, survival fire reflection, bone flute handling, and dream-contract traces.",
+    "Use Northern palette and material logic: ochre grass, frozen earth grey, wind-eroded brown, dark hide, bone white, old wood, old iron, dark blood oath cord, blue heat mist, blackstone snow dust."
+  ],
+  "assets": [
+    {
+      "asset_id": "character_northern_symbiotic_beasts_multi_state_board_v01",
+      "name_cn": "北境共生兽通用多状态角色板",
+      "asset_type": "multi-state character creature reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_northern_symbiotic_beasts_multi_state_board.png",
+      "prompt_id": "prompt_character_northern_symbiotic_beasts_multi_state_board_v01",
+      "status": "generated_via_current_thread_image_gen",
+      "canonical": true,
+      "required_beast_models": [
+        "breakgate_mammoth",
+        "rockback_rhino",
+        "ice_lake_armored_turtle",
+        "armored_yak_herd",
+        "geothermal_ice_python",
+        "riftwind_wyvern",
+        "tundra_thunder_lizard",
+        "frost_wolf_pack"
+      ],
+      "required_interactions": [
+        "bone flute soothing",
+        "blood salt feeding",
+        "old scar touch",
+        "handler scale reference",
+        "rope or harness handling",
+        "beast pain response",
+        "refusal of wrong command",
+        "shared siege or hunting task"
+      ],
+      "downstream_usage": [
+        "episode 08 Lockthroat Pass snow-night siege",
+        "episode 09 Minggu Ridge rescue and enemy-reframing beats",
+        "episode 11-12 Moon Oath and border-wall alliance memory shots",
+        "project-level Prompt Room references for Northern beast interaction shots"
+      ],
+      "continuity_references": [
+        "project/severed-homeland/背景.md#北部诸族",
+        "project/severed-homeland/art/project-regional-color-system.md#北境",
+        "project/severed-homeland/art/project-faction-symbol-system.md#北境万兽联盟体系",
+        "project/severed-homeland/art/project-core-prop-costume-art-direction.md#骨哨/骨笛对照图",
+        "project/severed-homeland/art/project-northern-siege-troop-character-art-direction.md"
+      ],
+      "negative_rules": [
+        "redesigned Wanshou emblem",
+        "new animal crest",
+        "large faction badge",
+        "monster horde",
+        "generic fantasy mounts",
+        "pet-like cute animals",
+        "sci-fi electric beast",
+        "giant dragon",
+        "full-screen snake monster",
+        "high-magic blue-purple aura",
+        "readable text or labels"
+      ]
+    }
+  ]
+}
