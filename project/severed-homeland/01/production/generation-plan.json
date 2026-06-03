@@ -68,7 +68,9 @@
         "character_luo_qinghe_ep01",
         "character_bai_yi_ep01",
         "loc_canyangao_gate_blood_check_ep01",
-        "prop_qingming_white_register_ep01"
+        "prop_qingming_white_register_ep01",
+        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+        "costume_shen_weisang_ep01"
       ],
       "key_risks": [
         "清明香不可升雾",
@@ -206,14 +208,19 @@
     {
       "shot_id": "SC002-SH001",
       "scene_id": "SC002",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [
+        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+        "character_shen_weisang_ep01",
+        "costume_shen_weisang_ep01",
+        "loc_canyangao_gate_blood_check_ep01"
+      ],
+      "reference_frame": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
       "continuity_locks": [
         "CHAR_SHEN_WEISANG",
         "LOC_CANYANG_GATE"
       ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "risks": "Use SC002-SH001 first frame for Shen Weisang gate observation. Preserve episode-01 hunter state only; do not import glowing cracks, snowline cloak, or later-state costume. Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it."
     },
     {
       "shot_id": "SC002-SH002",
@@ -615,6 +622,7 @@
     "Uses the existing 36-shot director-room shot list without changing story or shot order.",
     "Five existing reference-frame PNGs are locked as canonical first-frame art references.",
     "SC008-SH003 has a dedicated shot override for old-well moon-white glint readability.",
-    "Readable story text must be supplied by post-production text layers rather than generated image text."
+    "Readable story text must be supplied by post-production text layers rather than generated image text.",
+    "SC002-SH001 now has a dedicated Shen Weisang gate-observation first frame for I2V production."
   ]
 }

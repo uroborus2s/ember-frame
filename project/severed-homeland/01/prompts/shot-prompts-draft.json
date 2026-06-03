@@ -67,15 +67,20 @@
     {
       "shot_id": "SC002-SH001",
       "scene_id": "SC002",
-      "generation_method": "I2V_WITH_ASSET_REFS",
-      "prompt": "Subject: 沈维桑在人群后观察风向和泥印. Visible action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Camera: medium close-up; eye-level through villagers' shoulders; movement subtle push-in; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "prompt": "Subject: 沈维桑在人群后观察风向和泥印. Visible action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Camera: medium close-up; eye-level through villagers' shoulders; movement subtle push-in; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Use first frame 01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png and keep episode-01 hunter state only. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Use the SC002-SH001 first frame for composition and identity lock. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Do not import Shen Weisang glowing cracks, snowline cloak, or later-state costume.",
       "continuity_refs": [
         "CHAR_SHEN_WEISANG",
         "LOC_CANYANG_GATE"
       ],
-      "required_assets": [],
-      "reference_frame": null
+      "required_assets": [
+        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+        "character_shen_weisang_ep01",
+        "costume_shen_weisang_ep01",
+        "loc_canyangao_gate_blood_check_ep01"
+      ],
+      "reference_frame": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png"
     },
     {
       "shot_id": "SC002-SH002",
@@ -507,6 +512,7 @@
     "Backfilled from director-room shot list because canonical shot-prompts-draft.json was missing.",
     "Prompts are tool-neutral and intentionally avoid ComfyUI sampler/node parameters.",
     "SC008-SH003 now uses the well-glint readability shot override as priority reference.",
-    "Readable story text for the white register, herb name tiles, levy wooden sign, and relay map labels must be handled as post-production text layers."
+    "Readable story text for the white register, herb name tiles, levy wooden sign, and relay map labels must be handled as post-production text layers.",
+    "SC002-SH001 now uses a dedicated Shen Weisang gate-observation first frame as priority reference."
   ]
 }

@@ -5,7 +5,7 @@
 - Mode: parent-only Prompt Room run. Child-agent delegation was not used in this thread because the current tool policy requires an explicit user request for sub-agent delegation.
 - Shots processed: 36
 - Status counts: needs_config=36
-- Workflow families: post_text_card=1, i2v_reference_frame=3, i2v_asset_refs=24, i2v_reference_frame_asset_assisted=8
+- Workflow families: post_text_card=1, i2v_reference_frame=3, i2v_asset_refs=23, i2v_reference_frame_asset_assisted=9
 - Feedback tuning: no feedback inputs found, tuning log written with `status=no_feedback`.
 
 ## Validation Performed
@@ -33,3 +33,10 @@ No missing assets were detected from declared reference frame paths and manifest
 ## Handoff Recommendation
 
 Send `SC001-SH002` to ComfyUI production first. If the motion test succeeds, continue the rest of `PG01-intro-montage`; if it fails, tune the I2V workflow before moving to character-heavy shots.
+
+
+## New First Frame: SC002-SH001
+
+- Added first frame: `01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png`.
+- Updated workflow family to `i2v_reference_frame_asset_assisted`.
+- Main risk: later-state Shen Weisang drift; keep glowing cracks and snowline cloak out of episode 01.

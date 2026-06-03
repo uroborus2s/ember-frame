@@ -12,7 +12,8 @@
       "prompt_id": "prompt_character_shen_weisang_ep01",
       "comfyui_role": "ipadapter",
       "usage": [
-        "第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。"
+        "第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。",
+        "SC002-SH001"
       ],
       "continuity_refs": [
         "CHAR_SHEN_WEISANG",
@@ -102,7 +103,8 @@
       "prompt_id": "prompt_costume_shen_weisang_ep01",
       "comfyui_role": "ipadapter",
       "usage": [
-        "新增服装板，第一集只用猎户状态。"
+        "新增服装板，第一集只用猎户状态。",
+        "SC002-SH001"
       ],
       "continuity_refs": [
         "CHAR_SHEN_WEISANG",
@@ -193,7 +195,8 @@
       "prompt_id": "prompt_loc_canyangao_gate_blood_check_ep01",
       "comfyui_role": "ipadapter",
       "usage": [
-        "村口验血、白布、短矛封锁和清明香参考。"
+        "村口验血、白布、短矛封锁和清明香参考。",
+        "SC002-SH001"
       ],
       "continuity_refs": [
         "LOC_CANYANG_GATE",
@@ -685,6 +688,25 @@
         "RULE_NO_MOON_JADE_FULL_REVEAL"
       ],
       "reference_weight_guidance": "primary first-frame override; use before generic reference frame"
+    },
+    {
+      "asset_id": "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
+      "status": "ready",
+      "prompt_id": "prompt_ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "comfyui_role": "first_frame",
+      "usage": [
+        "SC002-SH001"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "LOC_CANYANG_GATE"
+      ],
+      "reference_weight_guidance": "primary first-frame reference for SC002-SH001; use high 0.70-0.85 for I2V composition and identity lock",
+      "prompt_summary": "Use SC002-SH001 沈维桑村口观察首帧 as episode 01 shot reference. 9:16 vertical cinematic first frame, Canyangao village gate blood-check area at dusk, Shen Weisang standing behind villagers in grey-brown episode-01 hunter state, hunting bow on back, old leather wrist guards, seen through foreground villagers shoulders, eyes checking wind direction then lowering toward muddy footprints. Preserve CHAR_SHEN_WEISANG;CHAR_SHEN_WEISANG_RESTRAINT;LOC_CANYANG_GATE. No readable generated text, no heroic glamour, no glowing cracks, no snowline cloak, no future-state costume.",
+      "qc_note": "Use before generic character/location boards for SC002-SH001."
     }
   ]
 }

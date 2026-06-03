@@ -248,9 +248,15 @@
     },
     {
       "shot_id": "SC002-SH001",
-      "workflow_family": "i2v_asset_refs",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
       "generation_method": "I2V",
-      "asset_inputs": [],
+      "asset_inputs": [
+        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+        "character_shen_weisang_ep01",
+        "costume_shen_weisang_ep01",
+        "loc_canyangao_gate_blood_check_ep01",
+        "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png"
+      ],
       "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH001",
       "output_path": "comfyui/renders/SC002-SH001/SC002-SH001.mp4",
       "parameter_profile": {
@@ -260,12 +266,13 @@
         "steps": 1,
         "cfg": 0,
         "seed_policy": "fixed_per_shot_after_first_approved_render",
-        "denoise": 0.48,
+        "denoise": 0.4,
         "duration_seconds": 5,
         "fps": "16-24 needs_config",
         "frame_count": "derived_from_duration_and_fps_needs_config",
         "motion_strength": "low_to_medium",
-        "asset_reference_weight": "medium 0.45-0.65"
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
       },
       "status": "needs_config",
       "config_placeholders": [
@@ -274,7 +281,8 @@
         "sampler",
         "scheduler",
         "cfg",
-        "steps"
+        "steps",
+        "reference_adapter_or_ipadapter_nodes"
       ]
     },
     {

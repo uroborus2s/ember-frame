@@ -585,6 +585,28 @@
       "downstream_usage": [
         "Prompt Room 应优先作为 SC008-SH003 图生视频首帧/参考帧；原 SC008 reference frame 保留用于 SC008-SH001/SH002 的封锁线与空间气氛。"
       ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "asset_id": "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
+      "prompt": "Use SC002-SH001 沈维桑村口观察首帧 as episode 01 shot reference. 9:16 vertical cinematic first frame, Canyangao village gate blood-check area at dusk, Shen Weisang standing behind villagers in grey-brown episode-01 hunter state, hunting bow on back, old leather wrist guards, seen through foreground villagers shoulders, eyes checking wind direction then lowering toward muddy footprints. Preserve CHAR_SHEN_WEISANG;CHAR_SHEN_WEISANG_RESTRAINT;LOC_CANYANG_GATE. No readable generated text, no heroic glamour, no glowing cracks, no snowline cloak, no future-state costume.",
+      "negative_prompt_notes": "No readable generated text, subtitles, UI, watermark, modern clothing, hero lighting, monster crowd, high-magic spectacle, glowing cracks, snowline cloak, Yan Nanzhi reveal, complete moon-jade object, or continuity drift. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "LOC_CANYANG_GATE"
+      ],
+      "source_refs": [
+        "SC002-SH001",
+        "character_shen_weisang_ep01",
+        "costume_shen_weisang_ep01",
+        "loc_canyangao_gate_blood_check_ep01"
+      ],
+      "downstream_usage": [
+        "SC002-SH001 图生视频首帧；沈维桑第一集猎户状态在人群后观察风向和村口泥印。"
+      ]
     }
   ]
 }

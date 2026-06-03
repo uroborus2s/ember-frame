@@ -221,12 +221,18 @@
       "shot_id": "SC002-SH001",
       "scene_id": "SC002",
       "order": 5,
-      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
       "generation_method": "I2V",
-      "workflow_family": "i2v_asset_refs",
-      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑在人群后观察风向和泥印. Action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: medium close-up, eye-level through villagers' shoulders, subtle push-in. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Draft intent: Subject: 沈维桑在人群后观察风向和泥印. Visible action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Camera: medium close-up; eye-level through villagers' shoulders; movement subtle push-in; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
-      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
-      "asset_refs": [],
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical image-to-video shot, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑在人群后观察风向和泥印. Action: 沈维桑站在人群后，灰褐猎衣背猎弓，旧皮护腕，眼睛先扫风向再落到村口泥印. Environment: 残阳坳村口验血席，黄昏残阳偏红，村民肩背遮挡，白布验血席和短矛封锁在背景中形成压迫. Camera: medium close-up, eye-level through villagers shoulders, subtle push-in. Lighting and color: mud brown, herb green, dusk red edge, smoke grey, low saturation. Continuity locks: CHAR_SHEN_WEISANG, CHAR_SHEN_WEISANG_RESTRAINT, LOC_CANYANG_GATE. Use first frame 01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png as composition and identity anchor; keep motion small and filmable, only slight crowd shift, smoke movement, and Shen Weisang eye movement toward muddy footprints.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; avoid first-frame drift, avoid changing Shen Weisang identity, avoid mixing later character states into episode 01, no glowing cracks, no snowline cloak, no heroic glamour, no oversized institutional symbols, no clear extra character faces",
+      "asset_refs": [
+        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+        "character_shen_weisang_ep01",
+        "costume_shen_weisang_ep01",
+        "loc_canyangao_gate_blood_check_ep01",
+        "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png"
+      ],
       "parameter_profile": {
         "resolution": "832x1472 or project-approved 9:16 profile",
         "sampler": "needs_config",
@@ -234,12 +240,13 @@
         "steps": 1,
         "cfg": 0,
         "seed_policy": "fixed_per_shot_after_first_approved_render",
-        "denoise": 0.48,
+        "denoise": 0.4,
         "duration_seconds": 5,
         "fps": "16-24 needs_config",
         "frame_count": "derived_from_duration_and_fps_needs_config",
         "motion_strength": "low_to_medium",
-        "asset_reference_weight": "medium 0.45-0.65"
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
       },
       "continuity_refs": [
         "STYLE_GROUNDED_EPIC",
@@ -248,7 +255,8 @@
         "RULE_NO_YAN_NANZHI_REVEAL",
         "RULE_NO_MOON_JADE_FULL_REVEAL",
         "CHAR_SHEN_WEISANG",
-        "LOC_CANYANG_GATE"
+        "LOC_CANYANG_GATE",
+        "CHAR_SHEN_WEISANG_RESTRAINT"
       ],
       "source_refs": [
         "production/generation-plan.json",
@@ -265,7 +273,7 @@
       "status": "needs_config",
       "tuning_notes": [
         "Resolve model/workflow template before marking ready.",
-        "Use listed asset references only as conditioning anchors; do not import later episode states."
+        "Use SC002-SH001 first frame as primary composition/identity lock; keep character board and costume board at lower weight."
       ]
     },
     {

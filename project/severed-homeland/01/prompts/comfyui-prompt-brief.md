@@ -32,3 +32,8 @@ Input frame: `01/assets/reference-frames/sc001_sh002_northern_battle_fragment.pn
 ## Configuration Still Needed
 
 Model checkpoint, I2V workflow template, sampler, scheduler, CFG, steps, FPS, and exact resolution are intentionally marked `needs_config`; no ComfyUI model IDs or node template IDs were invented in this run.
+
+
+## Added First Frame
+
+- `SC002-SH001` now has a dedicated first-frame reference: `01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png`. Use it with lower-weight Shen Weisang character/costume and Canyangao gate references for I2V production.
