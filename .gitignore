@@ -131,6 +131,30 @@ htmlcov/
 /screenshots/
 site/
 
+# Generated media and local ComfyUI cache
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.mp4.json
+*.mov.json
+*.mkv.json
+*.webm.json
+*.mp3.json
+*.wav.json
+*.m4a.json
+project/severed-homeland/**/comfyui/renders/**
+project/severed-homeland/**/comfyui/cache/**
+project/severed-homeland/**/assets/temp/**
+!project/severed-homeland/**/assets/temp/.gitkeep
+
 packages/crawler4j/vendor/macos/sparkle/
 !packages/crawler4j/vendor/macos/README.md
 
