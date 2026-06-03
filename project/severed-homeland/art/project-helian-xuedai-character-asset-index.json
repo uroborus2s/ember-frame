@@ -1,0 +1,38 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_helian_xuedai_character_v03",
+  "date": "2026-06-03",
+  "assets": [
+    {
+      "asset_id": "character_helian_xuedai_multi_state_board_v03",
+      "name_cn": "赫连雪岱多状态角色板",
+      "asset_type": "character reference board",
+      "status": "final",
+      "file": "project/severed-homeland/assets/characters/character_helian_xuedai_multi_state_board.png",
+      "history_files": [
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v001.png",
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v002.png"
+      ],
+      "source_prompt_id": "prompt_character_helian_xuedai_multi_state_board_v03",
+      "source_design": "project/severed-homeland/art/project-helian-xuedai-character-designs.json#character_helian_xuedai_multi_state_board_v03",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#赫连雪岱",
+        "project/severed-homeland/art/project-helian-xuedai-character-art-direction.md",
+        "project/severed-homeland/art/project-regional-color-system.md#北境",
+        "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png"
+      ],
+      "downstream_usage": [
+        "Prompt Room character reference input",
+        "ComfyUI character identity and wardrobe reference",
+        "episode 09 northern high-ranking guard continuity reference",
+        "Lu Mi escort-team scale contrast reference",
+        "High-ranking white-bear-clan female guard design lock",
+        "costume, prop, and northern material handoff for human round face, round bear ears, bear-clan facial markings, white bear fur mantle, silver-black bone-iron armor, bronze bracers, bone-iron shield, guard axe, jade clasp, red oath cord, and ice-stud boots"
+      ],
+      "qc_summary": "Pass: final board reads as a high-ranking white-bear-clan female guard with a human round face, bear ears, bear-clan facial markings, and elite heavy guard equipment. It avoids both rejected directions: v001 Frosthoof deer guard and v002 bear-face beast-head guard. The locked Wanshou emblem is not redesigned; northern symbol language remains object/material-based."
+    }
+  ]
+}

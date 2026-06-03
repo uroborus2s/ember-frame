@@ -1,0 +1,67 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_helian_xuedai_character_v03",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable multi-state character identity board for Helian Xuedai as a high-ranking white-bear-clan guard with a human face.",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/bible/characters.md#赫连雪岱",
+      "role": "user-corrected high-ranking white-bear-clan guard character lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/characters/character_lu_mi_multi_state_board.png",
+      "role": "contrast reference: Helian Xuedai must be heavier and bear-clan, not Frosthoof deer or Lu Mi in different clothes"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+      "role": "northern bonewood, fur, rawhide cord, and wind-worn bone material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+      "role": "locked Northern Beastfolk Alliance emblem reference only; do not redesign"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+      "role": "northern object-symbol extension reference; use bear-claw cuts, bonewood knots, rawhide cord, and oath-cord language without creating a new badge"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_helian_xuedai_multi_state_board_v03",
+      "name_cn": "赫连雪岱多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "generated",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_helian_xuedai_multi_state_board.png",
+      "source_prompt_id": "prompt_character_helian_xuedai_multi_state_board_v03",
+      "history_files": [
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v001.png",
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v002.png"
+      ],
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#赫连雪岱",
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/art/project-helian-xuedai-character-art-direction.md",
+        "project/severed-homeland/art/project-regional-color-system.md#北境",
+        "project/severed-homeland/art/project-faction-symbol-system.md#北境万兽联盟体系"
+      ],
+      "downstream_usage": [
+        "Prompt Room character reference input",
+        "ComfyUI character identity and wardrobe reference",
+        "episode 09 northern high-ranking guard continuity reference",
+        "Lu Mi escort-team scale contrast reference",
+        "High-ranking white-bear-clan female guard design lock"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "The Northern Beastfolk Alliance emblem is locked; do not create a new bear clan crest, personal Helian Xuedai logo, chest badge, shoulder patch, banner, or modern mark.",
+    "Helian Xuedai must read as a high-ranking white-bear-clan female guard with a human face, round face shape, bear ears, bear-clan facial markings, and heavy guard build.",
+    "Do not make her a bear-faced beast head, low-ranking tribesperson, Frosthoof deer, Lu Mi costume variant, shaman, or generic human with bear-ear decoration.",
+    "Preserve white bear fur mantle, silver-black bone-iron armor, bronze bracers, bone-iron shield, guard axe, jade clasp, red oath cord, large hands, short claws, and ice-stud boots.",
+    "No deer ears, deer antlers, deer markings, shaman flute, herb pouch, or ice-blue ritual fire focus.",
+    "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."
+  ]
+}
