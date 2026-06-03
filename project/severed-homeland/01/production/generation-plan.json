@@ -142,12 +142,13 @@
       "key_assets": [
         "ref_ep01_sc008_final_spear_line_well_glint",
         "character_bai_yi_ep01",
-        "loc_canyangao_old_well_courtyard_ep01"
+        "loc_canyangao_old_well_courtyard_ep01",
+        "shot_override_sc008_sh003_well_glint_readability"
       ],
       "key_risks": [
         "短矛封锁线需读清方向",
         "不展示井下人或完整玉片",
-        "SC008偏暗时需补覆盖帧"
+        "SC008-SH003 已补井沿可读性覆盖帧，生成时优先使用 override"
       ]
     }
   ],
@@ -585,14 +586,16 @@
       "shot_id": "SC008-SH003",
       "scene_id": "SC008",
       "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "required_assets": [
+        "shot_override_sc008_sh003_well_glint_readability"
+      ],
+      "reference_frame": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
       "continuity_locks": [
         "RULE_MOON_WHITE_GLINT_ONLY",
         "PROP_QINGMING_INCENSE",
         "LOC_OLD_WELL"
       ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "risks": "Use SC008-SH003 shot override for well-rim readability. Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi, a hand/body below the well, or the full moon-jade object in episode 01."
     },
     {
       "shot_id": "SC008-SH004",
@@ -610,6 +613,8 @@
   "validation_notes": [
     "Backfilled because episode 01 generation-plan.json was missing.",
     "Uses the existing 36-shot director-room shot list without changing story or shot order.",
-    "Five existing reference-frame PNGs are locked as canonical first-frame art references."
+    "Five existing reference-frame PNGs are locked as canonical first-frame art references.",
+    "SC008-SH003 has a dedicated shot override for old-well moon-white glint readability.",
+    "Readable story text must be supplied by post-production text layers rather than generated image text."
   ]
 }

@@ -563,6 +563,28 @@
       "downstream_usage": [
         "结尾封锁线和一线月白反光参考。"
       ]
+    },
+    {
+      "prompt_id": "prompt_shot_override_sc008_sh003_well_glint_readability",
+      "asset_id": "shot_override_sc008_sh003_well_glint_readability",
+      "asset_type": "shot_override",
+      "output_path": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
+      "prompt": "Use SC008-SH003 井沿月白反光可读性覆盖帧 as episode 01 shot override. Macro low-angle old well rim close-up, Qingming incense smoke touching damp mossy stone, one narrow moon-white glint line readable on the inner rim. Preserve RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_YAN_NANZHI_REVEAL;RULE_NO_MOON_JADE_FULL_REVEAL;PROP_QINGMING_INCENSE;LOC_OLD_WELL. No people, no hand, no full jade, no readable generated text, no UI, no watermark, no high-magic beam.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, full jade token, visible person below well, hands, faces, magical beam, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL"
+      ],
+      "source_refs": [
+        "SC008-SH003",
+        "ref_ep01_sc008_final_spear_line_well_glint"
+      ],
+      "downstream_usage": [
+        "Prompt Room 应优先作为 SC008-SH003 图生视频首帧/参考帧；原 SC008 reference frame 保留用于 SC008-SH001/SH002 的封锁线与空间气氛。"
+      ]
     }
   ]
 }

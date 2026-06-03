@@ -3,8 +3,8 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "date": "2026-06-03",
-  "status": "ready_but_not_dispatched",
-  "dispatch_note": "This run used direct main-thread image generation for four missing costume boards and audited existing canonical project assets. No new Codex background threads were created in this run.",
+  "status": "ready_with_direct_override",
+  "dispatch_note": "This run added a direct main-thread image generation shot override for SC008-SH003 and did not create a background Codex thread.",
   "batches": [
     {
       "batch_id": "ep01-characters",
@@ -112,6 +112,17 @@
         "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
       ],
       "thread_prompt": "Generate or verify reference-frames assets for severed-homeland episode 01. Final files must be written only to listed canonical output paths. Retained candidates must go to sibling history/<filename>.vNNN.png; never create version folders."
+    },
+    {
+      "batch_id": "ep01-shot-overrides",
+      "batch_type": "shot-overrides",
+      "prompt_ids": [
+        "prompt_shot_override_sc008_sh003_well_glint_readability"
+      ],
+      "output_paths": [
+        "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png"
+      ],
+      "thread_prompt": "Generate or verify SC008-SH003 shot override for severed-homeland episode 01. Final file must be written only to the listed canonical shot-overrides output path. Retained candidates must go to sibling history/<filename>.vNNN.png; never create version folders. The frame must keep one readable moon-white glint only and must not reveal Yan Nanzhi, a hand, a body, or a full jade object."
     }
   ]
 }

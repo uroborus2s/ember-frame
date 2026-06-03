@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "style_profiles": [
+    {
+      "profile_id": "episode01_grounded_low_magic_vertical",
+      "global_positive_prefix": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror, close and medium-close blocking, practical dusk/fire/cold-white lighting",
+      "global_positive_suffix": "preserve physical material carriers for all low-magic information, controlled handheld or static camera, no heroic glamour, no high-fantasy spectacle",
+      "global_negative": "modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, readable random text, high-magic spell circles, neon fantasy color, monster crowd, plastic CGI, overclean costumes, full Yan Nanzhi reveal, complete moon-jade object",
+      "continuity_rules": [
+        "STYLE_GROUNDED_EPIC",
+        "STYLE_LOW_SATURATION",
+        "STYLE_TACTILE_PERIOD_MATERIALS",
+        "STYLE_QINGMING_COLD_WHITE",
+        "STYLE_ZHAOMING_RELIC_PARTIAL",
+        "STYLE_CANYANG_DUSK_MUD_HERB",
+        "vertical 9:16",
+        "close and medium-close blocking",
+        "hand/prop inserts",
+        "low angle spear-line pressure",
+        "narrow medicine-house frames",
+        "old well geometry first, mystery second",
+        "no readable generated text in asset images",
+        "no full Yan Nanzhi reveal",
+        "no complete moon-jade object",
+        "no high-magic spell circles",
+        "no monster crowd",
+        "no version folders",
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL"
+      ],
+      "palette_rules": {
+        "canyang": "mud brown, herb green, dusk red edge, smoke grey",
+        "qingming": "bone white, insect-wax pearl, cold gold pins, black-green chitin",
+        "zhaoming": "dull gold, moon-white ceramic/jade, cracked lacquer, old paper",
+        "north_intro": "snow grey, wall blackstone, torn banner shadow, low ember"
+      },
+      "post_text_layer_policy": {
+        "status": "required",
+        "rule": "白册、药牌、征粮木牌、旧驿图等叙事文字必须在后期文字层或 Prompt Room 的精确文字资产中处理；生成图与视频帧只保留空白承载面或模糊不可读痕迹。"
+      },
+      "config_status": "needs_config"
+    }
+  ]
+}

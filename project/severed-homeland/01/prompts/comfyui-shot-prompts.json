@@ -1,0 +1,1895 @@
+{
+  "version": "1.0",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "title": "清明香入村",
+  "generated_by": "prompt-room parent-only run",
+  "style_profile_ref": "episode01_grounded_low_magic_vertical",
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "scene_id": "SC001",
+      "order": 1,
+      "original_generation_method": "POST_TEXT_CARD",
+      "generation_method": "REFERENCE_IMAGE",
+      "workflow_family": "post_text_card",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Black screen title card only, cold white editorial text layer planned in post, no generated decorative text, static frontal composition, empty black lower space for music and voiceover.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; do not generate stylized letters, particles, glowing runes, decorative calligraphy, or fake text artifacts",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "none",
+        "post_text_layer": "required"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "LOC_INTRO_MONTAGE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG01-intro-montage",
+      "duration_seconds": 6,
+      "audio_note": "音乐：低沉战鼓压残笛。旁白：帝国历一二二六年，北方十三部落联盟大举入寇。",
+      "dialogue_or_subtitle": "字幕：帝国历1226年",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "scene_id": "SC001",
+      "order": 2,
+      "original_generation_method": "REFERENCE_IMAGE",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 雪地铁蹄、兽旗、伤兵与边墙影子. Action: 铁蹄踏碎雪地，人族军户抬伤兵退入边墙阴影，兽旗与白翅黑日旗在火光里交错. Environment: 帝国历1226年序幕蒙太奇：北境战场、金河征粮道、南方密室; 压缩蒙太奇，黑场到战火、寒光、昏暗室内. Camera: partial wide to medium insert, low angle near snow, short handheld push through smoke. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: LOC_INTRO_MONTAGE, FACTION_BORDER_WALL, FACTION_SUMING_QINGMING. Draft intent: Subject: 雪地铁蹄、兽旗、伤兵与边墙影子. Visible action: 铁蹄踏碎雪地，人族军户抬伤兵退入边墙阴影，兽旗与白翅黑日旗在火光里交错. Camera: partial wide to medium insert; low angle near snow; movement short handheld push through smoke; vertical 9:16. Continuity anchors: LOC_INTRO_MONTAGE, FACTION_BORDER_WALL, FACTION_SUMING_QINGMING. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "LOC_INTRO_MONTAGE",
+        "FACTION_BORDER_WALL",
+        "FACTION_SUMING_QINGMING"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG01-intro-montage",
+      "duration_seconds": 7,
+      "audio_note": "旁白：边墙吃尽粮草，中央大陆再无安岁。音效：雪地踩踏、远处喊杀、火声。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "scene_id": "SC001",
+      "order": 3,
+      "original_generation_method": "REFERENCE_IMAGE",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 征粮木牌、半袋谷、老妇手臂、孩子空碗. Action: 虫族粮吏把征粮木牌拍在门上，半袋谷被拖走，孩子碗里只剩水. Environment: 帝国历1226年序幕蒙太奇：北境战场、金河征粮道、南方密室; 压缩蒙太奇，黑场到战火、寒光、昏暗室内. Camera: close-up montage, slightly high angle over hands, hard cuts between three inserts. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: LOC_INTRO_MONTAGE, PROP_FOOD_TAX_MARKER. Draft intent: Subject: 征粮木牌、半袋谷、老妇手臂、孩子空碗. Visible action: 虫族粮吏把征粮木牌拍在门上，半袋谷被拖走，孩子碗里只剩水. Camera: close-up montage; slightly high angle over hands; movement hard cuts between three inserts; vertical 9:16. Continuity anchors: LOC_INTRO_MONTAGE, PROP_FOOD_TAX_MARKER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "LOC_INTRO_MONTAGE",
+        "PROP_FOOD_TAX_MARKER"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG01-intro-montage",
+      "duration_seconds": 7,
+      "audio_note": "旁白：粮入军仓，税入清明院。活着的人，只剩欠条和饥声。音效：木牌闷响、粮袋拖地。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "scene_id": "SC001",
+      "order": 4,
+      "original_generation_method": "REFERENCE_IMAGE",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 旧驿图、药包、断裂日月纹、掌心火星. Action: 几只手把旧驿图压进药包底下，掌心盖住断裂日月纹旁的火星，火星切成村口瓷盂清明香. Environment: 帝国历1226年序幕蒙太奇：北境战场、金河征粮道、南方密室; 压缩蒙太奇，黑场到战火、寒光、昏暗室内. Camera: extreme close-up to match cut, top-down table insert, slow push then match cut. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_OLD_RELAY_MAP, FACTION_ZHAOMING_RELIC, PROP_QINGMING_INCENSE. Draft intent: Subject: 旧驿图、药包、断裂日月纹、掌心火星. Visible action: 几只手把旧驿图压进药包底下，掌心盖住断裂日月纹旁的火星，火星切成村口瓷盂清明香. Camera: extreme close-up to match cut; top-down table insert; movement slow push then match cut; vertical 9:16. Continuity anchors: PROP_OLD_RELAY_MAP, FACTION_ZHAOMING_RELIC, PROP_QINGMING_INCENSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 8,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG01-intro-montage",
+      "duration_seconds": 8,
+      "audio_note": "旁白：而南方，有人开始把被禁的路，重新叫作故土。音效：火星轻响，切入清明香低燃声。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "scene_id": "SC002",
+      "order": 5,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑在人群后观察风向和泥印. Action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: medium close-up, eye-level through villagers' shoulders, subtle push-in. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Draft intent: Subject: 沈维桑在人群后观察风向和泥印. Visible action: 沈维桑站在人群后，灰褐猎衣背猎弓，眼睛先扫风向再落到村口泥印. Camera: medium close-up; eye-level through villagers' shoulders; movement subtle push-in; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG, LOC_CANYANG_GATE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_WEISANG",
+        "LOC_CANYANG_GATE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "音乐转低，村民屏息。无对白。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "scene_id": "SC002",
+      "order": 6,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 清明香爬过草鞋、猎靴和门槛. Action: 白色细烟贴地穿过草鞋、猎靴、门槛边缘，不升成雾. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: macro low insert, ground-level, slow lateral crawl. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_QINGMING_INCENSE, RULE_QINGMING_SMOKE_LOW. Draft intent: Subject: 清明香爬过草鞋、猎靴和门槛. Visible action: 白色细烟贴地穿过草鞋、猎靴、门槛边缘，不升成雾. Camera: macro low insert; ground-level; movement slow lateral crawl; vertical 9:16. Continuity anchors: PROP_QINGMING_INCENSE, RULE_QINGMING_SMOKE_LOW. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 4,
+      "audio_note": "音效：极轻烟线摩擦声、远处虫甲摩擦。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "scene_id": "SC002",
+      "order": 7,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 孩子手腕、虫蜡针、白布. Action: 孩子发抖的手腕被按住，虫蜡针像活虫口器刺破皮肤. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: extreme close-up, top-down clinical angle, locked-off. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_INSECT_WAX_NEEDLE, PROP_QINGMING_REGISTER. Draft intent: Subject: 孩子手腕、虫蜡针、白布. Visible action: 孩子发抖的手腕被按住，虫蜡针像活虫口器刺破皮肤. Camera: extreme close-up; top-down clinical angle; movement locked-off; vertical 9:16. Continuity anchors: PROP_INSECT_WAX_NEEDLE, PROP_QINGMING_REGISTER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "音效：针入肉的轻响。无对白。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "scene_id": "SC002",
+      "order": 8,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 血纹爬向清明白册，白册浮字. Action: 血纹顺白布沁到清明白册页角，白册无风翻开，浮出冷白字旧污疑似. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: insert close-up, slight high angle, micro push to text. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_QINGMING_REGISTER, RULE_BLOODLINE_TEXT_READABLE. Draft intent: Subject: 血纹爬向清明白册，白册浮字. Visible action: 血纹顺白布沁到清明白册页角，白册无风翻开，浮出冷白字旧污疑似. Camera: insert close-up; slight high angle; movement micro push to text; vertical 9:16. Continuity anchors: PROP_QINGMING_REGISTER, RULE_BLOODLINE_TEXT_READABLE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_REGISTER",
+        "RULE_BLOODLINE_TEXT_READABLE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "音效：纸页翻动。四字定格半秒。",
+      "dialogue_or_subtitle": "白册浮字：旧污疑似",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "scene_id": "SC002",
+      "order": 9,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 白翳擦针、孩子母亲被拦、村口短矛封锁. Action: 孩子母亲扑上被短矛拦住，白翳用白帕擦净虫蜡针，残阳下短矛交叉封住村道. Environment: 残阳坳村口验血席; 黄昏，残阳偏红. Camera: medium shot to vertical reveal, low angle from behind white cloth, tilt up from needle to blocked road. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_BAI_YI, LOC_CANYANG_GATE, PROP_INSECT_WAX_NEEDLE. Draft intent: Subject: 白翳擦针、孩子母亲被拦、村口短矛封锁. Visible action: 孩子母亲扑上被短矛拦住，白翳用白帕擦净虫蜡针，残阳下短矛交叉封住村道. Camera: medium shot to vertical reveal; low angle from behind white cloth; movement tilt up from needle to blocked road; vertical 9:16. Continuity anchors: CHAR_BAI_YI, LOC_CANYANG_GATE, PROP_INSECT_WAX_NEEDLE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_BAI_YI",
+        "LOC_CANYANG_GATE",
+        "PROP_INSECT_WAX_NEEDLE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 6,
+      "audio_note": "白翳：下一个。白翳：按户验。无人离坳。音效：虫甲摩擦，村民屏息。",
+      "dialogue_or_subtitle": "白翳：下一个。 / 白翳：按户验。无人离坳。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "scene_id": "SC003",
+      "order": 10,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑被推上验血席. Action: 虫族监察摊开白布，沈维桑被推上前，虫蜡针悬在他腕上. Environment: 残阳坳村口验血处; 黄昏. Camera: medium close-up, slightly high institutional angle, slow push down to wrist. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG, PROP_INSECT_WAX_NEEDLE. Draft intent: Subject: 沈维桑被推上验血席. Visible action: 虫族监察摊开白布，沈维桑被推上前，虫蜡针悬在他腕上. Camera: medium close-up; slightly high institutional angle; movement slow push down to wrist; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG, PROP_INSECT_WAX_NEEDLE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_WEISANG",
+        "PROP_INSECT_WAX_NEEDLE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "人群压低呼吸。无对白。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "scene_id": "SC003",
+      "order": 11,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗青禾眼神、沈维桑手腕. Action: 罗青禾目光扫过沈维桑左肩并极轻摇头，沈维桑压住呼吸不动. Environment: 残阳坳村口验血处; 黄昏. Camera: reaction close-up / wrist insert, tight eye-line match, two short cuts. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_LUO_QINGHE, CHAR_SHEN_WEISANG_RESTRAINT. Draft intent: Subject: 罗青禾眼神、沈维桑手腕. Visible action: 罗青禾目光扫过沈维桑左肩并极轻摇头，沈维桑压住呼吸不动. Camera: reaction close-up / wrist insert; tight eye-line match; movement two short cuts; vertical 9:16. Continuity anchors: CHAR_LUO_QINGHE, CHAR_SHEN_WEISANG_RESTRAINT. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_WEISANG_RESTRAINT"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "音效：压低心跳感，针刺轻响。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "scene_id": "SC003",
+      "order": 12,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 短血纹、白册山籍猎户、白翳抬眼. Action: 血纹只短短一线被清明香压住，白册浮字山籍猎户，白翳看向旧皮护腕. Environment: 残阳坳村口验血处; 黄昏. Camera: insert to close-up, low from ledger edge, small rack focus from text to Bai Yi eyes. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_QINGMING_REGISTER, CHAR_BAI_YI, CHAR_SHEN_WEISANG. Draft intent: Subject: 短血纹、白册山籍猎户、白翳抬眼. Visible action: 血纹只短短一线被清明香压住，白册浮字山籍猎户，白翳看向旧皮护腕. Camera: insert to close-up; low from ledger edge; movement small rack focus from text to Bai Yi eyes; vertical 9:16. Continuity anchors: PROP_QINGMING_REGISTER, CHAR_BAI_YI, CHAR_SHEN_WEISANG. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_REGISTER",
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "白翳：十七？沈维桑：嗯。",
+      "dialogue_or_subtitle": "白翳：十七？ / 沈维桑：嗯。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "scene_id": "SC003",
+      "order": 13,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑护住沈照眠，罗青禾草药篮青黛散粉. Action: 沈维桑把小草药袋塞回妹妹怀里并把她带到身后，白翳说药屋，罗青禾手指收紧. Environment: 残阳坳村口验血处; 黄昏. Camera: medium close-up with hand insert, eye-level behind Shen Zhaomian, static with hand action cutaway. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_ZHAOMIAN, PROP_HERB_POUCH, PROP_HERB_BASKET. Draft intent: Subject: 沈维桑护住沈照眠，罗青禾草药篮青黛散粉. Visible action: 沈维桑把小草药袋塞回妹妹怀里并把她带到身后，白翳说药屋，罗青禾手指收紧. Camera: medium close-up with hand insert; eye-level behind Shen Zhaomian; movement static with hand action cutaway; vertical 9:16. Continuity anchors: CHAR_SHEN_ZHAOMIAN, PROP_HERB_POUCH, PROP_HERB_BASKET. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_HERB_BASKET"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG02-gate-blood-check",
+      "duration_seconds": 5,
+      "audio_note": "白翳：猎户识路。沈维桑：只认山路。白翳：药屋。",
+      "dialogue_or_subtitle": "白翳：猎户识路。 / 沈维桑：只认山路。 / 白翳：药屋。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "scene_id": "SC004",
+      "order": 14,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗家药屋药柜、白翳入内、罗青禾挡柜. Action: 竖屏药柜高压画面，白翳白袍未沾尘走入，罗青禾挡在柜前. Environment: 罗家药屋内; 黄昏，室内偏暗，门外残阳. Camera: vertical medium wide, slightly low, cabinet towering, slow inward dolly. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: LOC_MEDICINE_HOUSE, CHAR_BAI_YI, CHAR_LUO_QINGHE. Draft intent: Subject: 罗家药屋药柜、白翳入内、罗青禾挡柜. Visible action: 竖屏药柜高压画面，白翳白袍未沾尘走入，罗青禾挡在柜前. Camera: vertical medium wide; slightly low, cabinet towering; movement slow inward dolly; vertical 9:16. Continuity anchors: LOC_MEDICINE_HOUSE, CHAR_BAI_YI, CHAR_LUO_QINGHE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "LOC_MEDICINE_HOUSE",
+        "CHAR_BAI_YI",
+        "CHAR_LUO_QINGHE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 6,
+      "audio_note": "木门轻响，白袍摩擦几乎无声。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "scene_id": "SC004",
+      "order": 15,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗青禾与白翳对答. Action: 罗青禾打开药柜，白翳盯着她的手而不是脸. Environment: 罗家药屋内; 黄昏，室内偏暗，门外残阳. Camera: shot/reverse close-up, compressed eye-level, minimal. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_LUO_QINGHE, CHAR_BAI_YI, RULE_DIALOGUE_AS_COVER. Draft intent: Subject: 罗青禾与白翳对答. Visible action: 罗青禾打开药柜，白翳盯着她的手而不是脸. Camera: shot/reverse close-up; compressed eye-level; movement minimal; vertical 9:16. Continuity anchors: CHAR_LUO_QINGHE, CHAR_BAI_YI, RULE_DIALOGUE_AS_COVER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_LUO_QINGHE",
+        "CHAR_BAI_YI",
+        "RULE_DIALOGUE_AS_COVER"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 7,
+      "audio_note": "罗青禾：乡下药屋，只有伤寒药。白翳：近日有南来的女子？罗青禾：南星有毒，女贞苦寒。用错了，会死人。",
+      "dialogue_or_subtitle": "罗青禾：乡下药屋，只有伤寒药。 / 白翳：近日有南来的女子？ / 罗青禾：南星有毒，女贞苦寒。用错了，会死人。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "scene_id": "SC004",
+      "order": 16,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗青禾指尖、旧木边、草药篮. Action: 罗青禾指尖在旧木边停半息，草药篮放低挡住手，镜头不露被挡内容. Environment: 罗家药屋内; 黄昏，室内偏暗，门外残阳. Camera: hand close-up, tight side angle, locked-off. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_HIDE_RELAY_MARKS, PROP_HERB_BASKET. Draft intent: Subject: 罗青禾指尖、旧木边、草药篮. Visible action: 罗青禾指尖在旧木边停半息，草药篮放低挡住手，镜头不露被挡内容. Camera: hand close-up; tight side angle; movement locked-off; vertical 9:16. Continuity anchors: RULE_HIDE_RELAY_MARKS, PROP_HERB_BASKET. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "RULE_HIDE_RELAY_MARKS",
+        "PROP_HERB_BASKET"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 5,
+      "audio_note": "白翳：你答的不是我的话。罗青禾：监察使问药，我只懂药。",
+      "dialogue_or_subtitle": "白翳：你答的不是我的话。 / 罗青禾：监察使问药，我只懂药。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "scene_id": "SC004",
+      "order": 17,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑视线、小草药袋、空水罐、罗青禾敲罐沿. Action: 沈维桑看妹妹草药袋和母亲压篮沿的手，罗青禾递水罐并敲罐沿两下. Environment: 罗家药屋内; 黄昏，室内偏暗，门外残阳. Camera: close-up sequence, eye-line match from Shen to hands, three insert cuts. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_WATER_JAR, PROP_HERB_POUCH, CHAR_SHEN_WEISANG_READS_SIGNS. Draft intent: Subject: 沈维桑视线、小草药袋、空水罐、罗青禾敲罐沿. Visible action: 沈维桑看妹妹草药袋和母亲压篮沿的手，罗青禾递水罐并敲罐沿两下. Camera: close-up sequence; eye-line match from Shen to hands; movement three insert cuts; vertical 9:16. Continuity anchors: PROP_WATER_JAR, PROP_HERB_POUCH, CHAR_SHEN_WEISANG_READS_SIGNS. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_WATER_JAR",
+        "PROP_HERB_POUCH",
+        "CHAR_SHEN_WEISANG_READS_SIGNS"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 7,
+      "audio_note": "罗青禾：后院水缸。井边那股潮味，别碰。",
+      "dialogue_or_subtitle": "罗青禾：后院水缸。井边那股潮味，别碰。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "scene_id": "SC004",
+      "order": 18,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 白翳停步、袖中白册、门外清明香回流. Action: 白翳停住，清明香从门边回流，袖中白册微翻页. Environment: 罗家药屋内; 黄昏，室内偏暗，门外残阳. Camera: medium close-up, slightly low on Bai Yi stillness, subtle push. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_BAI_YI, PROP_QINGMING_INCENSE, PROP_QINGMING_REGISTER. Draft intent: Subject: 白翳停步、袖中白册、门外清明香回流. Visible action: 白翳停住，清明香从门边回流，袖中白册微翻页. Camera: medium close-up; slightly low on Bai Yi stillness; movement subtle push; vertical 9:16. Continuity anchors: CHAR_BAI_YI, PROP_QINGMING_INCENSE, PROP_QINGMING_REGISTER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_BAI_YI",
+        "PROP_QINGMING_INCENSE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 5,
+      "audio_note": "白翳：后院有井？罗青禾：废井，水涩。白翳：涩水也记路。",
+      "dialogue_or_subtitle": "白翳：后院有井？ / 罗青禾：废井，水涩。 / 白翳：涩水也记路。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC005-SH001",
+      "scene_id": "SC005",
+      "order": 19,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈照眠门槛边排列药名牌. Action: 沈照眠蹲在门槛边，把小草药袋里的药名牌按顺序摆好并小声背诵. Environment: 罗家药屋门口; 黄昏. Camera: child close-up, slightly high, intimate, gentle downward hold. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_ZHAOMIAN, PROP_HERB_POUCH, PROP_HERB_NAME_TILES. Draft intent: Subject: 沈照眠门槛边排列药名牌. Visible action: 沈照眠蹲在门槛边，把小草药袋里的药名牌按顺序摆好并小声背诵. Camera: child close-up; slightly high, intimate; movement gentle downward hold; vertical 9:16. Continuity anchors: CHAR_SHEN_ZHAOMIAN, PROP_HERB_POUCH, PROP_HERB_NAME_TILES. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_HERB_NAME_TILES"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 5,
+      "audio_note": "沈照眠：青黛三钱向西，白芷两钱避井，月过旧驿，门听三息……",
+      "dialogue_or_subtitle": "沈照眠：青黛三钱向西，白芷两钱避井，月过旧驿，门听三息……",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC005-SH002",
+      "scene_id": "SC005",
+      "order": 20,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗青禾按住沈照眠的嘴，白翳回头. Action: 罗青禾猛地按住沈照眠的嘴，药屋内静住，白翳慢慢回头. Environment: 罗家药屋门口; 黄昏. Camera: two-shot to reaction close-up, doorframe split composition, short handheld jolt then still. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_LUO_QINGHE, CHAR_BAI_YI_NO_RAISED_VOICE, CHAR_SHEN_ZHAOMIAN. Draft intent: Subject: 罗青禾按住沈照眠的嘴，白翳回头. Visible action: 罗青禾猛地按住沈照眠的嘴，药屋内静住，白翳慢慢回头. Camera: two-shot to reaction close-up; doorframe split composition; movement short handheld jolt then still; vertical 9:16. Continuity anchors: CHAR_LUO_QINGHE, CHAR_BAI_YI_NO_RAISED_VOICE, CHAR_SHEN_ZHAOMIAN. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_LUO_QINGHE",
+        "CHAR_BAI_YI_NO_RAISED_VOICE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 6,
+      "audio_note": "白翳：再背一遍。环境声骤停。",
+      "dialogue_or_subtitle": "白翳：再背一遍。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC005-SH003",
+      "scene_id": "SC005",
+      "order": 21,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑挡妹妹，白翳看草药袋并写识句. Action: 沈维桑挡到妹妹前，白翳看向草药袋，在清明白册边添下识句记号. Environment: 罗家药屋门口; 黄昏. Camera: medium close-up with insert, over Shen shoulder to ledger, rack focus from Shen back to ledger mark. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG_PROTECTS_SISTER, PROP_QINGMING_REGISTER, PROP_HERB_POUCH. Draft intent: Subject: 沈维桑挡妹妹，白翳看草药袋并写识句. Visible action: 沈维桑挡到妹妹前，白翳看向草药袋，在清明白册边添下识句记号. Camera: medium close-up with insert; over Shen shoulder to ledger; movement rack focus from Shen back to ledger mark; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG_PROTECTS_SISTER, PROP_QINGMING_REGISTER, PROP_HERB_POUCH. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_WEISANG_PROTECTS_SISTER",
+        "PROP_QINGMING_REGISTER",
+        "PROP_HERB_POUCH"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 6,
+      "audio_note": "沈维桑：小孩乱背药歌。白翳：药歌不会提旧驿。",
+      "dialogue_or_subtitle": "沈维桑：小孩乱背药歌。 / 白翳：药歌不会提旧驿。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC005-SH004",
+      "scene_id": "SC005",
+      "order": 22,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈照眠泪眼、罗青禾变脸、沈维桑手背绷紧. Action: 白翳像登记粮数一样评价孩子记性，沈维桑把沈照眠再往身后压半步. Environment: 罗家药屋门口; 黄昏. Camera: reaction close-up triptych, tight vertical stack, three quick cuts. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_ZHAOMIAN, CHAR_SHEN_WEISANG_RESTRAINT, CHAR_BAI_YI_SYSTEMIC_THREAT. Draft intent: Subject: 沈照眠泪眼、罗青禾变脸、沈维桑手背绷紧. Visible action: 白翳像登记粮数一样评价孩子记性，沈维桑把沈照眠再往身后压半步. Camera: reaction close-up triptych; tight vertical stack; movement three quick cuts; vertical 9:16. Continuity anchors: CHAR_SHEN_ZHAOMIAN, CHAR_SHEN_WEISANG_RESTRAINT, CHAR_BAI_YI_SYSTEMIC_THREAT. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "CHAR_BAI_YI_SYSTEMIC_THREAT"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG03-medicine-house-pressure",
+      "duration_seconds": 4,
+      "audio_note": "白翳：孩子记性好。清明院会喜欢。",
+      "dialogue_or_subtitle": "白翳：孩子记性好。清明院会喜欢。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC006-SH001",
+      "scene_id": "SC006",
+      "order": 23,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑带水罐进入后院. Action: 沈维桑拎水罐走入后院，画面同时交代墙边水缸和旁边旧井. Environment: 罗家后院旧井; 暮色. Camera: vertical establishing medium wide, from medicine-house doorway, slow pan from water jar to well. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: LOC_OLD_WELL, PROP_WATER_JAR, RULE_SPATIAL_GEOGRAPHY. Draft intent: Subject: 沈维桑带水罐进入后院. Visible action: 沈维桑拎水罐走入后院，画面同时交代墙边水缸和旁边旧井. Camera: vertical establishing medium wide; from medicine-house doorway; movement slow pan from water jar to well; vertical 9:16. Continuity anchors: LOC_OLD_WELL, PROP_WATER_JAR, RULE_SPATIAL_GEOGRAPHY. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "LOC_OLD_WELL",
+        "PROP_WATER_JAR",
+        "RULE_SPATIAL_GEOGRAPHY"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 4,
+      "audio_note": "远处药屋低声对峙仍在，后院声压降低。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC006-SH002",
+      "scene_id": "SC006",
+      "order": 24,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑走向水缸、不碰井绳. Action: 沈维桑先走向水缸，旧井绳在旁晃动但他没有碰. Environment: 罗家后院旧井; 暮色. Camera: medium close-up, side profile, locked-off with shallow depth. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG_READS_SIGNS, LOC_OLD_WELL. Draft intent: Subject: 沈维桑走向水缸、不碰井绳. Visible action: 沈维桑先走向水缸，旧井绳在旁晃动但他没有碰. Camera: medium close-up; side profile; movement locked-off with shallow depth; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG_READS_SIGNS, LOC_OLD_WELL. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_WEISANG_READS_SIGNS",
+        "LOC_OLD_WELL"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 4,
+      "audio_note": "井下极轻气声第一次擦过。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC006-SH003",
+      "scene_id": "SC006",
+      "order": 25,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 旧井井沿灰尘新擦痕. Action: 竖屏俯拍井沿，新擦痕切开灰尘，清明香烟线从墙根慢慢爬来. Environment: 罗家后院旧井; 暮色. Camera: top-down insert, bird's-eye over well rim, slow creep with smoke line. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_QINGMING_INCENSE, LOC_OLD_WELL, RULE_MOON_WHITE_GLINT_ONLY. Draft intent: Subject: 旧井井沿灰尘新擦痕. Visible action: 竖屏俯拍井沿，新擦痕切开灰尘，清明香烟线从墙根慢慢爬来. Camera: top-down insert; bird's-eye over well rim; movement slow creep with smoke line; vertical 9:16. Continuity anchors: PROP_QINGMING_INCENSE, LOC_OLD_WELL, RULE_MOON_WHITE_GLINT_ONLY. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL",
+        "RULE_MOON_WHITE_GLINT_ONLY"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "音效：井下低呼吸，清明香贴地爬行。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC006-SH004",
+      "scene_id": "SC006",
+      "order": 26,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑回头看药屋方向、短矛影逼沈照眠. Action: 沈维桑回头，门口沈照眠被短矛影子逼退，罗青禾眼神不许他喊. Environment: 罗家后院旧井; 暮色. Camera: over-shoulder sightline, from well side toward medicine-house door, rack focus from Shen shoulder to doorway. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_SPATIAL_GEOGRAPHY, CHAR_SHEN_ZHAOMIAN, CHAR_LUO_QINGHE. Draft intent: Subject: 沈维桑回头看药屋方向、短矛影逼沈照眠. Visible action: 沈维桑回头，门口沈照眠被短矛影子逼退，罗青禾眼神不许他喊. Camera: over-shoulder sightline; from well side toward medicine-house door; movement rack focus from Shen shoulder to doorway; vertical 9:16. Continuity anchors: RULE_SPATIAL_GEOGRAPHY, CHAR_SHEN_ZHAOMIAN, CHAR_LUO_QINGHE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "RULE_SPATIAL_GEOGRAPHY",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_LUO_QINGHE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "远处木板轻响，空气紧住。无对白。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC006-SH005",
+      "scene_id": "SC006",
+      "order": 27,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈维桑压住清明香，油纸边缘月白反光. Action: 沈维桑握刀又松开，用湿泥压住爬向井沿的清明香，低声警告井下人；油纸包边缘一线月白反光闪过. Environment: 罗家后院旧井; 暮色. Camera: close-up sequence, low by well rim, slow push to glint then cut away. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_SHEN_WEISANG_RESTRAINT, RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE. Draft intent: Subject: 沈维桑压住清明香，油纸边缘月白反光. Visible action: 沈维桑握刀又松开，用湿泥压住爬向井沿的清明香，低声警告井下人；油纸包边缘一线月白反光闪过. Camera: close-up sequence; low by well rim; movement slow push to glint then cut away; vertical 9:16. Continuity anchors: CHAR_SHEN_WEISANG_RESTRAINT, RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 4,
+      "audio_note": "沈维桑低声：别出声。音效：井下呼吸骤停，远处药屋木板被撬闷响。",
+      "dialogue_or_subtitle": "沈维桑：别出声。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC007-SH001",
+      "scene_id": "SC007",
+      "order": 28,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 虫族监察撬开药柜前地板. Action: 木板被撬开，地板下露出暗格边缘. Environment: 罗家药屋内; 暮色. Camera: low insert, floor-level, short handheld jolt. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_HIDDEN_RELAY_COMPARTMENT, LOC_MEDICINE_HOUSE. Draft intent: Subject: 虫族监察撬开药柜前地板. Visible action: 木板被撬开，地板下露出暗格边缘. Camera: low insert; floor-level; movement short handheld jolt; vertical 9:16. Continuity anchors: PROP_HIDDEN_RELAY_COMPARTMENT, LOC_MEDICINE_HOUSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_HIDDEN_RELAY_COMPARTMENT",
+        "LOC_MEDICINE_HOUSE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "音效：木板被撬开的闷响延续。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC007-SH002",
+      "scene_id": "SC007",
+      "order": 29,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 残缺日月纹、旧驿方向痕、虫蜡封条. Action: 暗格边缘第一次清楚显出残缺日月纹和旧驿方向痕，虫蜡封条沿刻痕爬开. Environment: 罗家药屋内; 暮色. Camera: macro insert, top-down, slow push across carving. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_FIRST_CLEAR_RELAY_REVEAL, FACTION_ZHAOMING_RELIC. Draft intent: Subject: 残缺日月纹、旧驿方向痕、虫蜡封条. Visible action: 暗格边缘第一次清楚显出残缺日月纹和旧驿方向痕，虫蜡封条沿刻痕爬开. Camera: macro insert; top-down; movement slow push across carving; vertical 9:16. Continuity anchors: RULE_FIRST_CLEAR_RELAY_REVEAL, FACTION_ZHAOMING_RELIC. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "RULE_FIRST_CLEAR_RELAY_REVEAL",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "音效：虫蜡沿木痕细爬声。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC007-SH003",
+      "scene_id": "SC007",
+      "order": 30,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 白翳隔帕触摸刻痕，罗青禾站定. Action: 白翳用干净帕子隔着手指摸刻痕，罗青禾不辩解. Environment: 罗家药屋内; 暮色. Camera: medium close-up, slightly low on Bai Yi, static institutional stillness. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_BAI_YI, CHAR_LUO_QINGHE, PROP_HIDDEN_RELAY_COMPARTMENT. Draft intent: Subject: 白翳隔帕触摸刻痕，罗青禾站定. Visible action: 白翳用干净帕子隔着手指摸刻痕，罗青禾不辩解. Camera: medium close-up; slightly low on Bai Yi; movement static institutional stillness; vertical 9:16. Continuity anchors: CHAR_BAI_YI, CHAR_LUO_QINGHE, PROP_HIDDEN_RELAY_COMPARTMENT. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_BAI_YI",
+        "CHAR_LUO_QINGHE",
+        "PROP_HIDDEN_RELAY_COMPARTMENT"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "白翳：残阳坳，不只是村。罗青禾：旧木头，什么痕都有。白翳：旧木头不会藏在地板下。",
+      "dialogue_or_subtitle": "白翳：残阳坳，不只是村。 / 罗青禾：旧木头，什么痕都有。 / 白翳：旧木头不会藏在地板下。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC007-SH004",
+      "scene_id": "SC007",
+      "order": 31,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 沈照眠被逼退、小草药袋掉地、沈维桑碰刀柄. Action: 沈照眠被短矛逼到门框上，小草药袋掉地；沈维桑冲到门口看见暗格，手碰刀柄. Environment: 罗家药屋内; 暮色. Camera: medium close-up with prop insert, doorframe split, low on fallen pouch, quick cut to hand on knife. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: PROP_HERB_POUCH, CHAR_SHEN_WEISANG_RESTRAINT, CHAR_SHEN_ZHAOMIAN. Draft intent: Subject: 沈照眠被逼退、小草药袋掉地、沈维桑碰刀柄. Visible action: 沈照眠被短矛逼到门框上，小草药袋掉地；沈维桑冲到门口看见暗格，手碰刀柄. Camera: medium close-up with prop insert; doorframe split, low on fallen pouch; movement quick cut to hand on knife; vertical 9:16. Continuity anchors: PROP_HERB_POUCH, CHAR_SHEN_WEISANG_RESTRAINT, CHAR_SHEN_ZHAOMIAN. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_HERB_POUCH",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 5,
+      "audio_note": "沈照眠哭声被压住。无对白。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC007-SH005",
+      "scene_id": "SC007",
+      "order": 32,
+      "original_generation_method": "I2V_WITH_ASSET_REFS",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_asset_refs",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 罗青禾目光落向后院旧井，沈维桑藏刀捡药袋. Action: 罗青禾看沈维桑一眼又看向后院旧井，沈维桑藏回短刀，弯腰捡起妹妹小草药袋. Environment: 罗家药屋内; 暮色. Camera: tight reaction and hand insert, eye-line match to doorway, subtle rack focus. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_LUO_QINGHE, CHAR_SHEN_WEISANG, LOC_OLD_WELL. Draft intent: Subject: 罗青禾目光落向后院旧井，沈维桑藏刀捡药袋. Visible action: 罗青禾看沈维桑一眼又看向后院旧井，沈维桑藏回短刀，弯腰捡起妹妹小草药袋. Camera: tight reaction and hand insert; eye-line match to doorway; movement subtle rack focus; vertical 9:16. Continuity anchors: CHAR_LUO_QINGHE, CHAR_SHEN_WEISANG, LOC_OLD_WELL. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid mixing later character states into episode 01, avoid clean heroic glamour, avoid oversized institutional symbols",
+      "asset_refs": [],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_WEISANG",
+        "LOC_OLD_WELL"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG04-old-well-relay",
+      "duration_seconds": 4,
+      "audio_note": "无声潜台词：别靠近。别说。护住照眠。",
+      "dialogue_or_subtitle": "无声潜台词：别靠近。别说。护住照眠。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed asset references only as conditioning anchors; do not import later episode states."
+      ]
+    },
+    {
+      "shot_id": "SC008-SH001",
+      "scene_id": "SC008",
+      "order": 33,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 白翳台阶上合上清明白册，村民被赶到药屋外. Action: 村民被赶到药屋外，清明香盖过门槛，白翳站台阶上合上白册. Environment: 药屋外与旧井同院落; 暮色入夜. Camera: vertical medium wide, low from crowd level, slow tilt from incense to Bai Yi. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: CHAR_BAI_YI, PROP_QINGMING_REGISTER, PROP_QINGMING_INCENSE. Draft intent: Subject: 白翳台阶上合上清明白册，村民被赶到药屋外. Visible action: 村民被赶到药屋外，清明香盖过门槛，白翳站台阶上合上白册. Camera: vertical medium wide; low from crowd level; movement slow tilt from incense to Bai Yi; vertical 9:16. Continuity anchors: CHAR_BAI_YI, PROP_QINGMING_REGISTER, PROP_QINGMING_INCENSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 1,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "CHAR_BAI_YI",
+        "PROP_QINGMING_REGISTER",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG05-lockdown-hook",
+      "duration_seconds": 1,
+      "audio_note": "白翳：残阳坳全村复查。",
+      "dialogue_or_subtitle": "白翳：残阳坳全村复查。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC008-SH002",
+      "scene_id": "SC008",
+      "order": 34,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 短矛落地，沈维桑护住沈照眠并看向旧井. Action: 短矛落地封住药屋与后院，沈维桑把沈照眠护在身后，视线越过封锁线看向旧井. Environment: 药屋外与旧井同院落; 暮色入夜. Camera: over-shoulder medium shot, from behind Shen toward spear line and well, small lateral reveal. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_SPATIAL_GEOGRAPHY, CHAR_SHEN_WEISANG_PROTECTS_SISTER. Draft intent: Subject: 短矛落地，沈维桑护住沈照眠并看向旧井. Visible action: 短矛落地封住药屋与后院，沈维桑把沈照眠护在身后，视线越过封锁线看向旧井. Camera: over-shoulder medium shot; from behind Shen toward spear line and well; movement small lateral reveal; vertical 9:16. Continuity anchors: RULE_SPATIAL_GEOGRAPHY, CHAR_SHEN_WEISANG_PROTECTS_SISTER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "RULE_SPATIAL_GEOGRAPHY",
+        "CHAR_SHEN_WEISANG_PROTECTS_SISTER"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG05-lockdown-hook",
+      "duration_seconds": 3,
+      "audio_note": "白翳：谁替旧路遮一寸，按旧污论。音效：短矛落地。",
+      "dialogue_or_subtitle": "白翳：谁替旧路遮一寸，按旧污论。",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC008-SH003",
+      "scene_id": "SC008",
+      "order": 35,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 清明香触旧井井沿，月白反光一线闪过. Action: 清明香触到井沿，井下极轻呼吸响起，井壁那线月白反光再次亮起. Environment: 药屋外与旧井同院落; 暮色入夜. Camera: macro well-rim close-up, low angle at rim, no view into well, locked-off, glint flicker. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE, LOC_OLD_WELL. Draft intent: Subject: 清明香触旧井井沿，月白反光一线闪过. Visible action: 清明香触到井沿，井下极轻呼吸响起，井壁那线月白反光再次亮起. Camera: macro well-rim close-up; low angle at rim, no view into well; movement locked-off, glint flicker; vertical 9:16. Continuity anchors: RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE, LOC_OLD_WELL. Use shot override 01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png as priority reference. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Use the shot override for well-rim readability. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi, any hand/body below the well, or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "shot_override_sc008_sh003_well_glint_readability",
+        "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG05-lockdown-hook",
+      "duration_seconds": 3,
+      "audio_note": "井下极轻呼吸。黑场前音效：白册啪地合死。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    },
+    {
+      "shot_id": "SC008-SH004",
+      "scene_id": "SC008",
+      "order": 36,
+      "original_generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "generation_method": "I2V",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "positive_prompt": "cinematic 9:16 vertical short-drama frame, grounded low-magic Eastern epic, realistic tactile period materials, low saturation, restrained institutional horror. Subject: 黑场. Action: 画面切黑，不展示井下人或玉片. Environment: 药屋外与旧井同院落; 暮色入夜. Camera: black screen, none, none. Lighting and color: mud brown, herb green, dusk red edge, smoke grey; maintain location-specific palette from continuity bible. Continuity locks: RULE_NO_YAN_NANZHI_REVEAL, RULE_NO_MOON_JADE_FULL_REVEAL. Draft intent: Subject: 黑场. Visible action: 画面切黑，不展示井下人或玉片. Camera: black screen; none; movement none; vertical 9:16. Continuity anchors: RULE_NO_YAN_NANZHI_REVEAL, RULE_NO_MOON_JADE_FULL_REVEAL. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.. Keep faces unnamed for temporary background figures, keep motion small and filmable, preserve first-frame composition when provided.",
+      "negative_prompt": "low quality, blurry faces, extra limbs, broken hands, duplicate bodies, melted anatomy, plastic skin, over-sharpened CGI, modern clothing, modern vehicles, UI overlays, watermarks, subtitles baked into generated frames, unreadable random text; do not reveal Yan Nanzhi, do not show full moon-jade object, no high-magic spell circles, no monster crowd, no bright fantasy palette; do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules; Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.; avoid first-frame drift, avoid camera teleporting, avoid changing banner placement or wall geometry, avoid identity drift from reference frame",
+      "asset_refs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOC_CANYANGAO_GEOGRAPHY",
+        "RULE_QINGMING_SMOKE_LOW",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL"
+      ],
+      "source_refs": [
+        "production/generation-plan.json",
+        "prompts/shot-prompts-draft.json",
+        "shots/shot-list.json",
+        "continuity/visual-continuity-bible.json",
+        "art/asset-manifest.json"
+      ],
+      "production_group": "PG05-lockdown-hook",
+      "duration_seconds": 3,
+      "audio_note": "白册合死余响结束，音乐断掉。",
+      "dialogue_or_subtitle": "",
+      "missing_assets": [],
+      "status": "needs_config",
+      "tuning_notes": [
+        "Resolve model/workflow template before marking ready.",
+        "Use listed first frame as composition anchor; keep motion minimal."
+      ]
+    }
+  ]
+}

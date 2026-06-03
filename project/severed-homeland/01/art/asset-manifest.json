@@ -515,6 +515,26 @@
       "usage": [
         "结尾封锁线和一线月白反光参考。"
       ]
+    },
+    {
+      "asset_id": "shot_override_sc008_sh003_well_glint_readability",
+      "asset_type": "shot_override",
+      "name": "SC008-SH003 井沿月白反光可读性覆盖帧",
+      "output_path": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
+      "source_refs": [
+        "SC008-SH003",
+        "ref_ep01_sc008_final_spear_line_well_glint"
+      ],
+      "continuity_refs": [
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL",
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL"
+      ],
+      "usage": [
+        "Prompt Room 应优先作为 SC008-SH003 图生视频首帧/参考帧；原 SC008 reference frame 保留用于 SC008-SH001/SH002 的封锁线与空间气氛。"
+      ]
     }
   ]
 }

@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "date": "2026-06-03",
-  "status": "warning",
+  "status": "ready_with_warnings",
   "threads": [
     {
       "batch_id": "ep01-characters",
@@ -93,12 +93,24 @@
       "warnings": [
         "Reference frames were generated in an earlier direct imagegen pass; SC008 is accepted but dark."
       ]
+    },
+    {
+      "batch_id": "ep01-shot-overrides",
+      "thread_id": "main-thread-direct-imagegen-sc008-shot-override",
+      "status": "completed",
+      "created_files": [
+        "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png"
+      ],
+      "history_files": [],
+      "warnings": []
     }
   ],
   "blocked_jobs": [],
   "validation": [
     "Created missing standard image output directories for 01/assets/shot-overrides and 01/assets/temp.",
     "Generated four episode-01 costume boards and copied them to assets/costumes canonical paths.",
-    "Audited existing character, location, prop, style, and reference-frame images for path hygiene and continuity use."
+    "Audited existing character, location, prop, style, and reference-frame images for path hygiene and continuity use.",
+    "Generated SC008-SH003 well-glint readability shot override and copied it to the canonical 01/assets/shot-overrides path.",
+    "Confirmed the SC008-SH003 override is 941x1672 PNG and contains no readable text, person, hand, or complete jade reveal."
   ]
 }

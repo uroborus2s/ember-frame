@@ -27,4 +27,6 @@
 
 - 本轮新增 4 张第一集独立服装板，补齐 assets/costumes/ 对核心角色的 canonical 参考。
 - 项目级角色、道具、场景和风格板继续作为共享资产，不复制版本目录。
-- 五张既有 reference-frame PNG 作为第一集关键镜头参考帧；SC008 偏暗，后续可做有针对性的井口可读性补帧。
+- 五张既有 reference-frame PNG 作为第一集关键镜头参考帧；原 SC008 继续服务封锁线和空间气氛。
+- `01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png` 是 SC008-SH003 井沿特写的优先覆盖帧：只读一线月白反光，不展示井下人、手或完整玉片。
+- 白册、药名牌、征粮木牌、旧驿图地名等叙事文字必须由 Prompt Room 或后期文字层精确叠加；图像和视频生成阶段只保留空白承载面、纸页、木牌、药牌和地图材质。

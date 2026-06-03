@@ -320,11 +320,21 @@
       "asset_id": "ref_ep01_sc008_final_spear_line_well_glint",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "status": "warning",
+      "status": "ready_with_override",
       "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint",
-      "score": 81,
+      "score": 86,
       "history_files": [],
-      "qc_note": "可用但有第一集使用边界，详见 QC 报告。"
+      "qc_note": "原图继续作为 SC008-SH001/SH002 封锁线与空间气氛参考；SC008-SH003 井沿特写改用新增 shot override。"
+    },
+    {
+      "asset_id": "shot_override_sc008_sh003_well_glint_readability",
+      "asset_type": "shot_override",
+      "file_path": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
+      "status": "ready",
+      "prompt_id": "prompt_shot_override_sc008_sh003_well_glint_readability",
+      "score": 94,
+      "history_files": [],
+      "qc_note": "新增 SC008-SH003 井沿可读性覆盖帧，月白反光清楚且未揭示井下人物、手或完整玉片。"
     }
   ]
 }

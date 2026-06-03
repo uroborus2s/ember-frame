@@ -42,7 +42,7 @@
       "scene_id": "SC001",
       "generation_method": "REFERENCE_IMAGE",
       "prompt": "Subject: 征粮木牌、半袋谷、老妇手臂、孩子空碗. Visible action: 虫族粮吏把征粮木牌拍在门上，半袋谷被拖走，孩子碗里只剩水. Camera: close-up montage; slightly high angle over hands; movement hard cuts between three inserts; vertical 9:16. Continuity anchors: LOC_INTRO_MONTAGE, PROP_FOOD_TAX_MARKER. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.",
       "continuity_refs": [
         "LOC_INTRO_MONTAGE",
         "PROP_FOOD_TAX_MARKER"
@@ -55,7 +55,7 @@
       "scene_id": "SC001",
       "generation_method": "REFERENCE_IMAGE",
       "prompt": "Subject: 旧驿图、药包、断裂日月纹、掌心火星. Visible action: 几只手把旧驿图压进药包底下，掌心盖住断裂日月纹旁的火星，火星切成村口瓷盂清明香. Camera: extreme close-up to match cut; top-down table insert; movement slow push then match cut; vertical 9:16. Continuity anchors: PROP_OLD_RELAY_MAP, FACTION_ZHAOMING_RELIC, PROP_QINGMING_INCENSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.",
       "continuity_refs": [
         "PROP_OLD_RELAY_MAP",
         "FACTION_ZHAOMING_RELIC",
@@ -258,7 +258,7 @@
       "scene_id": "SC005",
       "generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
       "prompt": "Subject: 沈照眠门槛边排列药名牌. Visible action: 沈照眠蹲在门槛边，把小草药袋里的药名牌按顺序摆好并小声背诵. Camera: child close-up; slightly high, intimate; movement gentle downward hold; vertical 9:16. Continuity anchors: CHAR_SHEN_ZHAOMIAN, PROP_HERB_POUCH, PROP_HERB_NAME_TILES. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.",
       "continuity_refs": [
         "CHAR_SHEN_ZHAOMIAN",
         "PROP_HERB_POUCH",
@@ -451,7 +451,7 @@
       "scene_id": "SC008",
       "generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
       "prompt": "Subject: 白翳台阶上合上清明白册，村民被赶到药屋外. Visible action: 村民被赶到药屋外，清明香盖过门槛，白翳站台阶上合上白册. Camera: vertical medium wide; low from crowd level; movement slow tilt from incense to Bai Yi; vertical 9:16. Continuity anchors: CHAR_BAI_YI, PROP_QINGMING_REGISTER, PROP_QINGMING_INCENSE. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01. Any readable register, plaque, herb tile, wooden sign, or map label must be supplied by post-production text layers, not generated inside the image.",
       "continuity_refs": [
         "CHAR_BAI_YI",
         "PROP_QINGMING_REGISTER",
@@ -477,15 +477,17 @@
       "shot_id": "SC008-SH003",
       "scene_id": "SC008",
       "generation_method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "prompt": "Subject: 清明香触旧井井沿，月白反光一线闪过. Visible action: 清明香触到井沿，井下极轻呼吸响起，井壁那线月白反光再次亮起. Camera: macro well-rim close-up; low angle at rim, no view into well; movement locked-off, glint flicker; vertical 9:16. Continuity anchors: RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE, LOC_OLD_WELL. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
-      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01.",
+      "prompt": "Subject: 清明香触旧井井沿，月白反光一线闪过. Visible action: 清明香触到井沿，井下极轻呼吸响起，井壁那线月白反光再次亮起. Camera: macro well-rim close-up; low angle at rim, no view into well; movement locked-off, glint flicker; vertical 9:16. Continuity anchors: RULE_MOON_WHITE_GLINT_ONLY, PROP_QINGMING_INCENSE, LOC_OLD_WELL. Use shot override 01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png as priority reference. Style: grounded low-magic Eastern epic, tactile period materials, restrained institutional horror.",
+      "negative_prompt_notes": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Use the shot override for well-rim readability. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi, any hand/body below the well, or the full moon-jade object in episode 01.",
       "continuity_refs": [
         "RULE_MOON_WHITE_GLINT_ONLY",
         "PROP_QINGMING_INCENSE",
         "LOC_OLD_WELL"
       ],
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      "required_assets": [
+        "shot_override_sc008_sh003_well_glint_readability"
+      ],
+      "reference_frame": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png"
     },
     {
       "shot_id": "SC008-SH004",
@@ -503,6 +505,8 @@
   ],
   "quality_notes": [
     "Backfilled from director-room shot list because canonical shot-prompts-draft.json was missing.",
-    "Prompts are tool-neutral and intentionally avoid ComfyUI sampler/node parameters."
+    "Prompts are tool-neutral and intentionally avoid ComfyUI sampler/node parameters.",
+    "SC008-SH003 now uses the well-glint readability shot override as priority reference.",
+    "Readable story text for the white register, herb name tiles, levy wooden sign, and relay map labels must be handled as post-production text layers."
   ]
 }

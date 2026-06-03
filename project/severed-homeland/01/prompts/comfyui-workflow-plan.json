@@ -1,0 +1,1267 @@
+{
+  "version": "1.0",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "workflow_families": [
+    {
+      "workflow_family": "post_text_card",
+      "generation_method": "REFERENCE_IMAGE",
+      "required_inputs": [
+        "black frame or editor timeline layer",
+        "post text layer"
+      ],
+      "node_binding_hints": [
+        "Do not rely on generative text; create black frame and add exact subtitle in editor/post layer.",
+        "If ComfyUI is used, bind positive/negative prompts only for plain black background generation."
+      ],
+      "parameter_defaults": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "frames": 1,
+        "denoise": 0,
+        "motion": "none"
+      },
+      "config_status": "needs_config",
+      "risks": [
+        "Text must be created in post, not generated."
+      ]
+    },
+    {
+      "workflow_family": "i2v_reference_frame",
+      "generation_method": "I2V",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "first_frame_image",
+        "video model checkpoint",
+        "I2V workflow template"
+      ],
+      "node_binding_hints": [
+        "Bind first frame to image/video input.",
+        "Bind positive prompt to video positive text node.",
+        "Bind negative prompt to video negative text node.",
+        "Use fixed seed after first approved render.",
+        "Export under comfyui/renders/{shot_id}/."
+      ],
+      "parameter_defaults": {
+        "resolution": "832x1472 or native 941x1672 downscaled by workflow",
+        "fps": "16-24 needs_config",
+        "duration_seconds": "from shot card",
+        "denoise": "0.35-0.45",
+        "motion_strength": "low-to-medium",
+        "cfg": "model-specific needs_config",
+        "steps": "model-specific needs_config"
+      },
+      "config_status": "needs_config",
+      "risks": [
+        "First-frame drift",
+        "unwanted symbol/text generation",
+        "too much war scale in intro montage."
+      ]
+    },
+    {
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "first_frame_image",
+        "asset reference images",
+        "video model checkpoint",
+        "I2V workflow template",
+        "reference adapter nodes if available"
+      ],
+      "node_binding_hints": [
+        "Use first frame as primary composition lock.",
+        "Use asset refs as lower-weight identity/material anchors.",
+        "Lower asset weights if they fight the first frame."
+      ],
+      "parameter_defaults": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "fps": "16-24 needs_config",
+        "duration_seconds": "from shot card",
+        "denoise": "0.35-0.45",
+        "first_frame_weight": "0.70-0.85",
+        "asset_weight": "0.45-0.60"
+      },
+      "config_status": "needs_config",
+      "risks": [
+        "Conditioning conflict between first frame and asset boards."
+      ]
+    },
+    {
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "asset reference images",
+        "video model checkpoint",
+        "I2V workflow template"
+      ],
+      "node_binding_hints": [
+        "Bind character/location/prop refs to IPAdapter or equivalent reference module if configured.",
+        "Keep motion simple; generate a still/first-frame first when identity or composition fails."
+      ],
+      "parameter_defaults": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "fps": "16-24 needs_config",
+        "duration_seconds": "from shot card",
+        "denoise": "0.45-0.55",
+        "asset_weight": "0.45-0.65"
+      },
+      "config_status": "needs_config",
+      "risks": [
+        "Missing first frame may cause composition drift; generate still reference if needed."
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "workflow_family": "post_text_card",
+      "generation_method": "REFERENCE_IMAGE",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC001-SH001",
+      "output_path": "comfyui/renders/SC001-SH001/SC001-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "none",
+        "post_text_layer": "required"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "workflow_family": "i2v_reference_frame",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC001-SH002",
+      "output_path": "comfyui/renders/SC001-SH002/SC001-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "workflow_family": "i2v_reference_frame",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC001-SH003",
+      "output_path": "comfyui/renders/SC001-SH003/SC001-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "workflow_family": "i2v_reference_frame",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC001-SH004",
+      "output_path": "comfyui/renders/SC001-SH004/SC001-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.38,
+        "duration_seconds": 8,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH001",
+      "output_path": "comfyui/renders/SC002-SH001/SC002-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH002",
+      "output_path": "comfyui/renders/SC002-SH002/SC002-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH003",
+      "output_path": "comfyui/renders/SC002-SH003/SC002-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH004",
+      "output_path": "comfyui/renders/SC002-SH004/SC002-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC002-SH005",
+      "output_path": "comfyui/renders/SC002-SH005/SC002-SH005.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC003-SH001",
+      "output_path": "comfyui/renders/SC003-SH001/SC003-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC003-SH002",
+      "output_path": "comfyui/renders/SC003-SH002/SC003-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC003-SH003",
+      "output_path": "comfyui/renders/SC003-SH003/SC003-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC003-SH004",
+      "output_path": "comfyui/renders/SC003-SH004/SC003-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC004-SH001",
+      "output_path": "comfyui/renders/SC004-SH001/SC004-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC004-SH002",
+      "output_path": "comfyui/renders/SC004-SH002/SC004-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC004-SH003",
+      "output_path": "comfyui/renders/SC004-SH003/SC004-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC004-SH004",
+      "output_path": "comfyui/renders/SC004-SH004/SC004-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 7,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC004-SH005",
+      "output_path": "comfyui/renders/SC004-SH005/SC004-SH005.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC005-SH001",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC005-SH001",
+      "output_path": "comfyui/renders/SC005-SH001/SC005-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC005-SH002",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC005-SH002",
+      "output_path": "comfyui/renders/SC005-SH002/SC005-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC005-SH003",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC005-SH003",
+      "output_path": "comfyui/renders/SC005-SH003/SC005-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 6,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC005-SH004",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC005-SH004",
+      "output_path": "comfyui/renders/SC005-SH004/SC005-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC006-SH001",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC006-SH001",
+      "output_path": "comfyui/renders/SC006-SH001/SC006-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC006-SH002",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC006-SH002",
+      "output_path": "comfyui/renders/SC006-SH002/SC006-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC006-SH003",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC006-SH003",
+      "output_path": "comfyui/renders/SC006-SH003/SC006-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC006-SH004",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC006-SH004",
+      "output_path": "comfyui/renders/SC006-SH004/SC006-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC006-SH005",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC006-SH005",
+      "output_path": "comfyui/renders/SC006-SH005/SC006-SH005.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC007-SH001",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC007-SH001",
+      "output_path": "comfyui/renders/SC007-SH001/SC007-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC007-SH002",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC007-SH002",
+      "output_path": "comfyui/renders/SC007-SH002/SC007-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC007-SH003",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC007-SH003",
+      "output_path": "comfyui/renders/SC007-SH003/SC007-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC007-SH004",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC007-SH004",
+      "output_path": "comfyui/renders/SC007-SH004/SC007-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 5,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC007-SH005",
+      "workflow_family": "i2v_asset_refs",
+      "generation_method": "I2V",
+      "asset_inputs": [],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC007-SH005",
+      "output_path": "comfyui/renders/SC007-SH005/SC007-SH005.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.48,
+        "duration_seconds": 4,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "asset_reference_weight": "medium 0.45-0.65"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC008-SH001",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC008-SH001",
+      "output_path": "comfyui/renders/SC008-SH001/SC008-SH001.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 1,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC008-SH002",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC008-SH002",
+      "output_path": "comfyui/renders/SC008-SH002/SC008-SH002.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC008-SH003",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "shot_override_sc008_sh003_well_glint_readability",
+        "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC008-SH003",
+      "output_path": "comfyui/renders/SC008-SH003/SC008-SH003.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    },
+    {
+      "shot_id": "SC008-SH004",
+      "workflow_family": "i2v_reference_frame_asset_assisted",
+      "generation_method": "I2V",
+      "asset_inputs": [
+        "01/assets/reference-frames/sc008_final_spear_line_well_glint.png"
+      ],
+      "prompt_ref": "prompts/comfyui-shot-prompts.json#SC008-SH004",
+      "output_path": "comfyui/renders/SC008-SH004/SC008-SH004.mp4",
+      "parameter_profile": {
+        "resolution": "832x1472 or project-approved 9:16 profile",
+        "sampler": "needs_config",
+        "scheduler": "needs_config",
+        "steps": 1,
+        "cfg": 0,
+        "seed_policy": "fixed_per_shot_after_first_approved_render",
+        "denoise": 0.4,
+        "duration_seconds": 3,
+        "fps": "16-24 needs_config",
+        "frame_count": "derived_from_duration_and_fps_needs_config",
+        "motion_strength": "low_to_medium",
+        "reference_weight": "high 0.70-0.85",
+        "asset_reference_weight": "medium 0.45-0.60"
+      },
+      "status": "needs_config",
+      "config_placeholders": [
+        "video_model_checkpoint",
+        "i2v_workflow_template",
+        "sampler",
+        "scheduler",
+        "cfg",
+        "steps"
+      ]
+    }
+  ]
+}

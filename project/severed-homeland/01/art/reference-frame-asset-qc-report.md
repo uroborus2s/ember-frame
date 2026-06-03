@@ -16,11 +16,12 @@
 - `sc001_sh003_jinhe_grain_levy_road.png`：金河征粮道，木牌、粮袋、空碗、车辙和虫蜡封牌明确。
 - `sc001_sh004_southern_secret_room_relay_table.png`：南方密室旧驿图桌，手、地图、药包、红线、火星和残缺日月痕明确。
 - `sc005_zhaomian_threshold_identification.png`：药屋门口失言与识句记号，白册区域留白，药牌不生成可读字。
-- `sc008_final_spear_line_well_glint.png`：终段封锁线与井沿月白反光，短矛线和旧井方向成立。
+- `sc008_final_spear_line_well_glint.png`：终段封锁线与井沿月白反光，短矛线和旧井方向成立；后续仅作为 SC008-SH001/SH002 的空间气氛参考。
+- `../shot-overrides/sc008_sh003_well_glint_readability_override.png`：SC008-SH003 井沿特写覆盖帧，月白反光更清楚，不展示井下人物、手或完整玉片。
 
 ## QC 结论
 
-- 规格：5 张 canonical PNG 均为 `941 x 1672`，RGB，竖屏 9:16 参考图。
+- 规格：5 张 reference-frame canonical PNG 与 1 张 shot override 均为 `941 x 1672`，RGB，竖屏 9:16 参考图。
 - 文字：未发现需要交付的可读文字；白册、药牌、木牌和地图文字位应在 Prompt Room 或后期阶段另行处理。
 - 徽章：未新增需要锁定的新徽章；昭明痕迹保持为残缺/旧物，清明标记保持为小型制度物件。
 - 连续性：SC005 和 SC008 延续残阳坳药屋、村口、旧井的既有空间和材质语言。
@@ -28,4 +29,5 @@
 ## 后续要求
 
 - Prompt Room 使用这些图作为镜头参考时，不要直接要求模型生成可读文字；白册和药牌文字建议由后期文字层完成。
+- SC008-SH003 生成时优先使用 shot override，不再使用原 SC008 广角帧作为井沿特写首帧。
 - SC001-SH002 如需更强战争感，应在制作阶段通过剪辑、音效、烟尘和旗影加强，不建议回到血迹或伤兵画面。
