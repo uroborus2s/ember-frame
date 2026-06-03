@@ -435,7 +435,7 @@
     {
       "shot_id": "SC005-SH002",
       "generation_method": "I2V",
-      "prompt": "Subject: 清明院白衣童役、肃明奴兵、虫族木车、白册小签. Visible action: 白衣童役从木车旁钻出，个子不高，袖口挂着白册小签；两名肃明奴兵守在车边，旧麻军袍外缝虫蜡白绑带，手握押车绳和叉矛 Camera: medium close-up; slightly low beside wooden cart wheel; small reveal from cart plank to child attendant and slave soldiers; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵脏白麻布和木车阴影，北偏车辙清楚。 Continuity anchors: 引入白衣童役和肃明奴兵的抓捕分工；保持 CHAR-QINGMING-CHILD-ATTENDANT-02, CHAR-SUMING-SLAVE-SOLDIERS-02, PROP-WOODEN-CART, PROP-WHITE-REGISTER-TAG 连续；generation method I2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
+      "prompt": "Subject: 清明院白衣童役、肃明奴兵、虫族木车、白册小签. Visible action: 白衣童役从木车旁钻出，个子不高，袖口挂着白册小签；两名肃明奴兵守在车边，蜡灰青短军袍被虫蜡压硬，外缠骨白制度绑带，暗绿黑内层从窄袖和分叉短摆露出，旧铁扣牌贴着黑日烙牌，手握押车绳和叉矛 Camera: medium close-up; slightly low beside wooden cart wheel; small reveal from cart plank to child attendant and slave soldiers; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵蜡灰青短军袍、骨白绑带、暗绿黑内层和木车阴影，北偏车辙清楚。 Continuity anchors: 引入白衣童役和肃明奴兵的抓捕分工；保持 CHAR-QINGMING-CHILD-ATTENDANT-02, CHAR-SUMING-SLAVE-SOLDIERS-02, PROP-WOODEN-CART, PROP-WHITE-REGISTER-TAG 连续；禁止把奴兵生成成麻布本色、土黄麻袋感或松垮粗袍；generation method I2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
       "negative_prompt_notes": "避免沈照眠调度跳位；箭数连续性需遮挡处理；扣腕不可延长为折磨展示；不要明确拍空箭囊。",
       "continuity_refs": [
         "CHAR-QINGMING-CHILD-ATTENDANT-02",
@@ -474,7 +474,7 @@
     {
       "shot_id": "SC005-SH004",
       "generation_method": "FLF2V",
-      "prompt": "Subject: 虫蜡环、沈照眠手腕、奴兵押车绳、小草药袋、泥地药牌. Visible action: 虫蜡环啪地扣住沈照眠手腕，她的小草药袋掉进泥里，药牌散开；奴兵的押车绳套住她肩侧 Camera: extreme close-up; top-down on wrist, rope and mud; locked-off impact insert; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵脏白麻布和木车阴影，北偏车辙清楚。 Continuity anchors: 完成沈照眠被扣腕、小草药袋掉落和奴兵押车动作；保持 PROP-INSECT-WAX-IDENTIFICATION-RING, PROP-SLAVE-SOLDIER-ROPE, PROP-ZHAOMIAN-HERB-BAG, PROP-HERB-NAME-TAGS 连续；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
+      "prompt": "Subject: 虫蜡环、沈照眠手腕、奴兵押车绳、小草药袋、泥地药牌. Visible action: 虫蜡环啪地扣住沈照眠手腕，她的小草药袋掉进泥里，药牌散开；奴兵的押车绳套住她肩侧，近景只露蜡灰青窄袖、骨白绑带和指节硬壳 Camera: extreme close-up; top-down on wrist, rope and mud; locked-off impact insert; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵蜡灰青窄袖、骨白绑带和木车阴影，北偏车辙清楚。 Continuity anchors: 完成沈照眠被扣腕、小草药袋掉落和奴兵押车动作；保持 PROP-INSECT-WAX-IDENTIFICATION-RING, PROP-SLAVE-SOLDIER-ROPE, PROP-ZHAOMIAN-HERB-BAG, PROP-HERB-NAME-TAGS 连续；禁止麻布本色、土黄麻袋感或松垮粗袍；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
       "negative_prompt_notes": "避免沈照眠调度跳位；箭数连续性需遮挡处理；扣腕不可延长为折磨展示；不要明确拍空箭囊。",
       "continuity_refs": [
         "PROP-INSECT-WAX-IDENTIFICATION-RING",
@@ -494,7 +494,7 @@
     {
       "shot_id": "SC005-SH005",
       "generation_method": "FLF2V",
-      "prompt": "Subject: 沈维桑猎弓、箭、虫蜡环、肃明奴兵、螳刃追兵. Visible action: 沈维桑搭箭射向扣环，奴兵继续拖人；螳刃追兵侧身一切，箭杆在半空断成两截，前半截钉进木车边板，离沈照眠手臂只差一寸 Camera: medium action shot with insert; over Shen's bow arm toward cart; fast arrow track then hard cut to cart board; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵脏白麻布和木车阴影，北偏车辙清楚。 Continuity anchors: 拍清沈维桑射箭救妹失败且没有切断扣环，并区分奴兵押车与螳刃切箭；保持 PROP-HUNTER-BOW, PROP-WOODEN-CART, CHAR-SUMING-SLAVE-SOLDIERS-02, CHAR-MANTIS-PURSUERS-02, WATCH-ARROW-COUNT 连续；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
+      "prompt": "Subject: 沈维桑猎弓、箭、虫蜡环、肃明奴兵、螳刃追兵. Visible action: 沈维桑搭箭射向扣环，奴兵继续拖人；螳刃追兵侧身一切，箭杆在半空断成两截，前半截钉进木车边板，离沈照眠手臂只差一寸 Camera: medium action shot with insert; over Shen's bow arm toward cart; fast arrow track then hard cut to cart board; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵蜡灰青短军袍、暗绿黑内层、骨白绑带和木车阴影，北偏车辙清楚。 Continuity anchors: 拍清沈维桑射箭救妹失败且没有切断扣环，并区分奴兵押车与螳刃切箭；保持 PROP-HUNTER-BOW, PROP-WOODEN-CART, CHAR-SUMING-SLAVE-SOLDIERS-02, CHAR-MANTIS-PURSUERS-02, WATCH-ARROW-COUNT 连续；禁止把奴兵生成成麻布本色、土黄麻袋感或松垮粗袍；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
       "negative_prompt_notes": "避免沈照眠调度跳位；箭数连续性需遮挡处理；扣腕不可延长为折磨展示；不要明确拍空箭囊。",
       "continuity_refs": [
         "PROP-HUNTER-BOW",
@@ -515,7 +515,7 @@
     {
       "shot_id": "SC005-SH006",
       "generation_method": "FLF2V",
-      "prompt": "Subject: 沈维桑、被奴兵推上车的沈照眠、晏南枝短刀. Visible action: 沈照眠缩肩被奴兵推上车；沈维桑摸向背后箭羽又停住，车板、妹妹、奴兵和螳刃追兵叠在一条线上，他没有干净救援线，转身要冲过去时追兵刃肢横扫，晏南枝以短刀硬挡，刀口崩缺并被震到墙上 Camera: medium close-up action beat; from Shen's shoulder toward cart and wall; handheld snap from arrow hand to Yanzhi impact; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵脏白麻布和木车阴影，北偏车辙清楚。 Continuity anchors: 保留救妹失败但避免箭囊完全空尽的可见矛盾，并保持奴兵押车与螳刃外圈武力分工；保持 CHAR-SHEN-ZHAOMIAN-02, CHAR-SUMING-SLAVE-SOLDIERS-02, PROP-HUNTER-BOW, PROP-SHORT-KNIFE-YNZ-CHIPPED, WATCH-ARROW-COUNT 连续；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
+      "prompt": "Subject: 沈维桑、被奴兵推上车的沈照眠、晏南枝短刀. Visible action: 沈照眠缩肩被奴兵推上车；沈维桑摸向背后箭羽又停住，车板、妹妹、奴兵和螳刃追兵叠在一条线上，他没有干净救援线，转身要冲过去时追兵刃肢横扫，晏南枝以短刀硬挡，刀口崩缺并被震到墙上 Camera: medium close-up action beat; from Shen's shoulder toward cart and wall; handheld snap from arrow hand to Yanzhi impact; 9:16竖屏. Lighting: 侧巷脏暖火光、冷白制度衣、奴兵蜡灰青短军袍、骨白绑带、旧铁扣牌和木车阴影，北偏车辙清楚。 Continuity anchors: 保留救妹失败但避免箭囊完全空尽的可见矛盾，并保持奴兵押车与螳刃外圈武力分工；保持 CHAR-SHEN-ZHAOMIAN-02, CHAR-SUMING-SLAVE-SOLDIERS-02, PROP-HUNTER-BOW, PROP-SHORT-KNIFE-YNZ-CHIPPED, WATCH-ARROW-COUNT 连续；禁止把奴兵生成成麻布本色、土黄麻袋感或松垮粗袍；generation method FLF2V follows production plan. Style constraints: 写实电影质感，低魔东方史诗奇幻，火场/烟尘局部化，不输出 ComfyUI 节点图、sampler、seed 或最终工程参数.",
       "negative_prompt_notes": "避免沈照眠调度跳位；箭数连续性需遮挡处理；扣腕不可延长为折磨展示；不要明确拍空箭囊。",
       "continuity_refs": [
         "CHAR-SHEN-ZHAOMIAN-02",
