@@ -128,11 +128,11 @@
       "image_type": "multi-state character reference board",
       "output_path": "project/severed-homeland/assets/characters/character_suming_heavy_carapace_general_multi_state_board.png",
       "body_and_face": {
-        "species_lock": "Clearly non-human heavy combat insect general; never a human warlord in giant armor and never a Li Tang duplicate.",
+        "species_lock": "Clearly non-human heavy combat insect general with a semi-anthropomorphic command face; never a human warlord in giant armor, never an ordinary human face, and never a Li Tang duplicate.",
         "scale": "Approximately 2.7 to 3.1 meters tall in-world, broader and heavier than Li Tang.",
         "build": "Massive chest and back carapace with extremely thick lower body: broad abdomen plates, heavy pelvic carapace, oversized hind limbs, large clawed feet, and low center of gravity.",
         "lower_body_rule": "The abdomen, pelvic armor, hind legs, support limbs, and clawed feet must be visibly thicker, wider, and more stable than Li Tang's lower body.",
-        "head": "Low-set armored head, deep narrow compound eyes, thick bone-white mandible guard, neck nearly buried in chest armor, no human face or hair."
+        "head": "Low-set armored semi-anthropomorphic command face with heavy brow ridge, broad nose-like chitin ridge, massive cheek plates, heavy jaw carapace, deep narrow compound eyes placed near human eye positions, thick bone-white mandible guard, and neck nearly buried in chest armor. No sclera, iris, normal pupils, human skin, human hair, or fully human face."
       },
       "constant_anchors": [
         "lower body broader and heavier than Li Tang",
@@ -214,7 +214,7 @@
       ],
       "detail_panels": [
         {"detail_id": "heavy_lower_body_comparison", "purpose": "Lock the requested difference from Li Tang.", "notes": "Abdomen, pelvic armor, hind limbs, support claws, and feet are visibly wider and heavier than Li Tang."},
-        {"detail_id": "low_armored_head", "purpose": "Prevent human warlord drift.", "notes": "Low head, narrow compound eyes, thick bone-white mandible guard, neck buried in chest armor."},
+        {"detail_id": "low_armored_head", "purpose": "Prevent human warlord drift while keeping general-level facial readability.", "notes": "Low armored command face, heavy brow ridge, broad nose-like chitin ridge, massive cheek plates, heavy jaw carapace, narrow compound eyes, thick bone-white mandible guard, neck buried in chest armor."},
         {"detail_id": "old_iron_heavy_harness", "purpose": "Show War-Armor Office control gear.", "notes": "Old iron heavy harness, dark-green command belt, seal rings, small locked rank plaque."},
         {"detail_id": "siege_tool_cluster", "purpose": "Clarify gate and bridge function.", "notes": "Black iron gate shield, ram hammer, heavy short halberd, iron chain hooks."},
         {"detail_id": "material_swatch_strip", "purpose": "Carry project material continuity.", "notes": "Black-green heavy carapace, deep-brown abdomen armor, old iron, bone-white wax rings, dark-green belt, blackstone snow, muted dark-red impact mark."}
@@ -226,7 +226,10 @@
         "Li Tang duplicate",
         "slender mantis legs",
         "forearm blade focus",
-        "human face",
+        "fully human face",
+        "ordinary human face",
+        "human skin",
+        "human eyes with sclera or iris",
         "human hair",
         "human boots",
         "Northern beast",
