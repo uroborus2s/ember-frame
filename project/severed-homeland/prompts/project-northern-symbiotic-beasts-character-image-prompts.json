@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_symbiotic_beasts_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-northern-symbiotic-beasts-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-northern-symbiotic-beasts-character-designs.json",
+  "purpose": "Tool-neutral image prompt for the project-level Northern symbiotic beasts multi-state character reference board.",
+  "shared_rules": {
+    "format": "single extra-tall vertical PNG production creature and character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic creature anatomy, bone, old wood, fur, hide rope, old iron, frozen earth, blackstone snow dust, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. Do not create, draw, carve, paint, enlarge, or imply any new faction emblem, animal crest, banner logo, shield emblem, saddle logo, sticker mark, or decorative symbol. The locked Northern Beastfolk Alliance bonewood language may appear only as a tiny physical oath knot, small rope charm, tiny tool-carved sliver, small blood-salt pouch tag, or partially obscured old wood tag no larger than a palm, never as a readable emblem.",
+    "must_have": [
+      "Eight identifiable Northern symbiotic beast models must appear: breakgate mammoth, rockback rhino, ice lake armored turtle, armored yak herd, geothermal ice python, riftwind wyvern, tundra thunder lizard, and frost wolf pack.",
+      "Every beast model must include a handler, rider, shaman, shield soldier, snake guide, Snowfeather signaler, wolfkin whistle cue, or other human/beastfolk scale and interaction reference.",
+      "Show bone flute soothing, blood salt feeding, old scar touching, rope handling, pain soothing, refusal or correction of wrong command, or shared task behavior across the board.",
+      "Shared Northern covenant material system must show rawhide rope, blood-salt bags, bone-flute cords, dark blood oath cord, old wood yokes or rails, old iron caps, blackstone snow dust, frozen mud, worn fur, and practical harnesses.",
+      "The board must read as a practical multi-state modeling sheet, not a battle poster, beast horde, or monster catalogue.",
+      "No readable text, no labels, no UI, no watermark."
+    ],
+    "negative_prompt": "large faction emblem, redesigned Northern emblem, redesigned Wanshou badge, new animal crest, wolf-head logo, lion logo, painted shield symbol, saddle logo, banner mark, sticker overlay, readable emblem, monster horde, generic fantasy mounts, cute pet sheet, game boss lineup, all creatures same body with swapped horns, full-screen snake monster, giant dragon, dragon army, large air force, sci-fi electric beast, neon lightning, high-magic blue-purple aura, spell circle, modern military saddle, polished fantasy armor, cyberpunk, science fiction, gore, blood-soaked horror, romantic pure snowfield, readable text, Chinese characters, Latin letters, captions, UI, watermark"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_northern_symbiotic_beasts_multi_state_board_v01",
+      "asset_id": "character_northern_symbiotic_beasts_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_northern_symbiotic_beasts_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "role": "locked Northern Beastfolk Alliance emblem reference; do not redesign, redraw, enlarge, or place as a visible shield/saddle/wall emblem"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+          "role": "locked Wanshou symbol system reference for material language only: bonewood oath knots, rawhide ties, horn-branch material, claw-tooth cuts, feather wood pieces, and blue survival fire points"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "border-to-north palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+          "role": "Northern bone, old wood, fur, hide rope, oath cord, and frost material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/props/prop_bone_whistle_flute_comparison.png",
+          "role": "bone flute, bone whistle, oath cord, wind holes, and handling reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
+          "role": "Northern siege troop handler scale and equipment contrast"
+        }
+      ],
+      "image_prompt": "Create one single extra-tall vertical PNG production creature reference board for the Northern Beastfolk Alliance symbiotic beasts from the series Severed Homeland. Use low-magic eastern epic style, border-to-north palette, Northern bonewood-fur materials, blackstone snowline, frozen earth, ochre grass, wind-eroded brown, dark hide, bone white, old wood, old iron, rawhide rope, dark blood oath cord, blackstone snow dust, frozen mud, restrained blue heat mist, and tactile realistic creature anatomy. Do not redesign any badge. Do not create, draw, carve, paint, enlarge, or imply any new faction emblem, animal crest, banner logo, shield emblem, saddle logo, sticker mark, or decorative symbol. If faction identity appears at all, it must be only a tiny physical bonewood oath knot, small rope charm, tiny tool-carved sliver, small blood-salt pouch tag, or partially obscured old wood tag no larger than a palm, never a readable emblem. The board is a practical multi-state modeling sheet for reusable covenant beast archetypes, not a poster, not a monster horde, and not a generic mount catalogue. Show eight identifiable beast models with distinct anatomy, scale, harness logic, and handler interaction: 1) Breakgate mammoth, shoulder height 3.8 to 4.5 meters, massive woolly mammoth with very thick brow bone and shoulder ridge, short powerful neck, old iron wrapped giant tusks, forehead bone flute cord, blood-salt bag, rawhide head and chest ropes, blackstone snow dust; include small human or Blackfang axemen at knee-to-belly scale, one bone-flute handler touching an old forehead scar or feeding blood salt after impact. 2) Rockback rhino, shoulder height 2.6 to 3.2 meters, low wide unstoppable rhinoceros-like beast with natural blackstone armor back, blunt short horn with old iron wrap, thick nearly immobile neck, Ironhorn shield soldiers guarding both sides, and a shaman soothing neck pain with bone flute, herb smoke, and palm pressure after a door strike. 3) Ice lake armored turtle, shell height 1.8 to 2.4 meters and shell width 4 to 6 meters, huge low turtle whose thick flat black-ice shell reads as a moving shield wall and bridge platform; show old wood rail, rawhide lashings, old iron tie rings, shield soldiers or small ballista or injured fighters on top, handler tapping shell side and using short bone-flute tones. 4) Armored yak herd, two or three frost-covered long-haired yaks with leather forehead armor and breast armor, low heads, heavy necks, rawhide drag ropes, old wood yokes, dragging siege timber, grain sacks, ice bridge boards, or wounded stretcher; show rope pressure marks, white breath vapor, deep hoof prints, and Ironhorn logistics handlers checking wounds or feeding blood salt. 5) Geothermal ice python, only partial body and close details, length implied 8 to 14 meters, blue-black scales with faint heat mist between scale seams, rubbed belly marks, coils and head edge entering a foundation crack or drainage channel, vibrating blackstone blocks and wet stone dust; include an Ice-scale snake handler listening to wall vibration and guiding with low bone-flute notes and blood-salt grains. 6) Riftwind wyvern, body length 3 to 4 meters, wingspan 6 to 9 meters, bigger than humans but not a giant dragon, light-boned body, lean chest, patched smoke-grey wing membranes, wing-edge leather rope rings, old wound patches, thin rawhide rope, small fire pot rig, and Snowfeather signaler using rope ring and short whistle commands for rope dropping and scouting; show one or two only, no air force spectacle. 7) Tundra thunder lizard, body length 4 to 6 meters, low crawling lizard with wet-snow reflective scales, dorsal fins storing static, old iron chain or iron gate hardware nearby, tiny short static arcs near wet metal, blackstone slush under claws, and handlers keeping distance with bonewood poles and blood-salt pouches; it must feel low-magic and physical, not sci-fi. 8) Frost wolf pack, three disciplined wolves shoulder height 0.9 to 1.2 meters, larger than normal wolves but not horse monsters, long legs, deep chests, sharp muzzles, white mane ridge from neck to tail root, rawhide collars, tracking ropes, and White-mane wolfkin rider or whistle handler assigned to each visible wolf; show eye contact, old scar touch, or short whistle cue before night raid or beacon interception. Include silent detail panels with no text: mammoth iron tusk cap, forehead bone flute cord, blood salt bag, and old scar; rhino blackstone back plate, blunt horn, and neck soothing point; turtle shell platform, rail, tie rings, shield and ballista load points; yak forehead armor, breast armor, drag rope pressure marks, grain bags, ice bridge planks, and stretcher; python scale close-up, heat mist, rubbed belly, and foundation crack; wyvern wing rings, membrane patches, rope loops, and fire-pot rig; thunder lizard dorsal fins, wet snow scales, old iron chain, and tiny static arc; frost wolf white mane, bone whistle, rawhide collar, rope knot, old scar touch; a scale strip with human, Blackfang axeman, Ironhorn shield soldier, shaman, Snowfeather signaler, wolfkin handler, and the eight beast relative silhouettes; material swatch strip for ochre grass, frozen earth grey, wind-eroded brown, dark hide, bone white, old wood, old iron, dark blood red, blue heat mist, and blackstone snow dust. Keep the image restrained, tactile, realistic, cold, worn, low-magic, and production-readable for mobile vertical reference. No visible labels, no captions, no readable text, no UI, no watermark.",
+      "negative_prompt": "large faction emblem, redesigned Northern emblem, redesigned Wanshou badge, new animal crest, wolf-head logo, lion logo, painted shield symbol, saddle logo, banner mark, sticker overlay, readable emblem, monster horde, generic fantasy mounts, cute pet sheet, game boss lineup, all creatures same body with swapped horns, full-screen snake monster, giant dragon, dragon army, large air force, sci-fi electric beast, neon lightning, high-magic blue-purple aura, spell circle, modern military saddle, polished fantasy armor, cyberpunk, science fiction, gore, blood-soaked horror, romantic pure snowfield, readable text, Chinese characters, Latin letters, captions, UI, watermark"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_symbiotic_beasts_character_v01",
+  "date": "2026-06-03",
+  "source_manifest": "project/severed-homeland/art/project-northern-symbiotic-beasts-character-asset-manifest.json",
+  "source_designs": "project/severed-homeland/art/project-northern-symbiotic-beasts-character-designs.json",
+  "source_prompts": "project/severed-homeland/prompts/project-northern-symbiotic-beasts-character-image-prompts.json",
+  "assets": [
+    {
+      "asset_id": "character_northern_symbiotic_beasts_multi_state_board_v01",
+      "name_cn": "北境共生兽通用多状态角色板",
+      "asset_type": "multi-state character creature reference board",
+      "canonical_output_path": "project/severed-homeland/assets/characters/character_northern_symbiotic_beasts_multi_state_board.png",
+      "current_status": "generated_via_current_thread_image_gen",
+      "source_prompt_id": "prompt_character_northern_symbiotic_beasts_multi_state_board_v01",
+      "covers": [
+        "破门猛犸",
+        "岩背犀",
+        "冰湖甲龟",
+        "披甲牦牛群",
+        "地热冰蟒",
+        "裂风飞龙",
+        "冻原雷蜥",
+        "霜狼群"
+      ],
+      "continuity_locks": [
+        "existing Wanshou emblem is not redesigned",
+        "every beast has handler interaction",
+        "bone flute and blood salt covenant logic is visible",
+        "low-magic effects stay local and physical",
+        "Northern palette and bonewood-fur material language are preserved"
+      ],
+      "downstream_usage": "Use as the project-level modeling lock for Northern symbiotic beast shots before Prompt Room creates shot-level ComfyUI prompts."
+    }
+  ]
+}

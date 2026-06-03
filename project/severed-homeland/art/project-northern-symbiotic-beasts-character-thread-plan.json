@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_symbiotic_beasts_character_v01",
+  "date": "2026-06-03",
+  "source_prompts": "project/severed-homeland/prompts/project-northern-symbiotic-beasts-character-image-prompts.json",
+  "thread_policy": {
+    "preferred_mode": "codex_background_thread",
+    "status": "not_used_current_thread_image_gen_completed",
+    "note": "Current Codex thread tools are available, but create_thread is restricted to explicit user requests for a new or separate thread. The canonical image was generated in the current thread with the built-in image_gen tool and copied into the project path; no background thread was created."
+  },
+  "threads": [
+    {
+      "thread_key": "northern_symbiotic_beasts_character_board",
+      "thread_title": "断航故土 北境共生兽通用角色板 v01",
+      "status": "not_started_current_thread_image_gen_completed",
+      "prompt_ids": [
+        "prompt_character_northern_symbiotic_beasts_multi_state_board_v01"
+      ],
+      "assigned_assets": [
+        {
+          "asset_id": "character_northern_symbiotic_beasts_multi_state_board_v01",
+          "output_path": "project/severed-homeland/assets/characters/character_northern_symbiotic_beasts_multi_state_board.png",
+          "history_dir": "project/severed-homeland/assets/characters/history"
+        }
+      ],
+      "worker_instructions": [
+        "Use available image generation capability for the assigned raster asset.",
+        "Do not redesign the existing Northern Beastfolk Alliance emblem.",
+        "Write the final confirmed PNG to the canonical output_path only.",
+        "Move retained rejected or superseded images into the sibling history directory with .v001, .v002, etc. suffixes.",
+        "Return a compact manifest of final files, history files, issues, and QC notes."
+      ]
+    }
+  ]
+}

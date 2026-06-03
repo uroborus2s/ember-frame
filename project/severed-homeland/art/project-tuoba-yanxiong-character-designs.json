@@ -1,0 +1,220 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_tuoba_yanxiong_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-tuoba-yanxiong-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-tuoba-yanxiong-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_tuoba_yanxiong_multi_state_board_v01",
+      "name_cn": "拓跋砚熊多状态角色板",
+      "character": "Tuoba Yanxiong",
+      "identity": "White Bear clan shield-guard and snow-forge craftsman responsible for repairing Northern bone-iron gear",
+      "image_type": "multi-state character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_tuoba_yanxiong_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "30 to 40, adult male or gender-neutral sturdy beastfolk artisan; not young, not elderly.",
+        "tier_lock": "Lower craft and military artisan tier, mostly upright bear-bodied beastfolk with readable emotion; not a noble humanoid with decorative ears.",
+        "scale": "About 2.18-2.28 m tall and 210-260 kg, visually two to three times the mass of an ordinary human heavy soldier.",
+        "build": "Shield-like chest, very broad shoulders and back, short thick neck, thick waist without obesity, extremely thick forearms, huge hands larger than a human face, visible short claws.",
+        "face": "White bear face with round ears, short wide muzzle, heavy brow, broad nose bridge, wide jaw, sideburn and chin down, and deep brown eyes with restrained cold-blue catchlight.",
+        "posture": "Steady, grounded, protective, shoulders move first; suitable for holding a shield with one hand and repairing gear with the other.",
+        "expression": "Calm, patient, alert, craft-focused, protective without monster rage."
+      },
+      "constant_anchors": [
+        "round white bear ears",
+        "short wide bear muzzle",
+        "heavy brow and broad nose bridge",
+        "white bear down around sideburns and chin",
+        "huge forearms and oversized hands with short claws",
+        "white bear fur mantle hanging from shoulders to rear waist",
+        "broad black iron chest band",
+        "heavy deep-brown leather apron with ember scorch marks",
+        "snow-forge tool chain",
+        "iron file",
+        "bone hammer",
+        "rivet pouch",
+        "blackstone wedges",
+        "old iron tongs",
+        "rawhide repair cord",
+        "bronze bracers",
+        "beast-bone toggles",
+        "thick hemp waist rope",
+        "small snow-forge ember seed jar",
+        "large plain repaired bone-iron or wood-iron shield",
+        "heavy boots with ice studs and bear-claw tread",
+        "northern bonewood, fur, old iron, rawhide cord, oath-cord, frozen earth, and restrained ember material language without redesigning the locked Wanshou emblem"
+      ],
+      "state_designs": [
+        {
+          "state_id": "tuoba_yanxiong_snow_forge_craftsman",
+          "name_cn": "雪炉工匠常态",
+          "episode_range": "Reusable northern migration camp, siege repair, and beastfolk logistics shots",
+          "silhouette": "Massive upright white bear artisan in fur mantle, black iron chest band, scorched leather apron, tool chain, and repair stance beside a low work block.",
+          "materials": [
+            "white bear fur",
+            "black iron chest band",
+            "deep brown leather apron",
+            "iron file",
+            "bone hammer",
+            "rivet pouch",
+            "old iron tongs",
+            "ember seed jar"
+          ],
+          "color_logic": "White fur, black iron, dark leather, bone white, frozen grey, and small ember dark red dominate; no bright magic.",
+          "damage_level": "Wind wear, tool wear, and apron ember scorching only; no beggar rags or monster gore.",
+          "required_details": [
+            "bear face and round ears must remain clear",
+            "tool chain must read before weapon identity",
+            "apron scorch marks must stay local and controlled",
+            "fire-seed jar must be small and physical, not a spell focus"
+          ]
+        },
+        {
+          "state_id": "tuoba_yanxiong_shield_guard_battle_ready",
+          "name_cn": "骨铁盾卫战备态",
+          "episode_range": "Reusable guard, shield-wall repair, escort, and northern defensive shots",
+          "silhouette": "Same heavy bear body with fur mantle tightened, black iron chest band exposed, great repaired shield forward, short guard axe or hammer at side.",
+          "materials": [
+            "plain repaired bone-iron or wood-iron great shield",
+            "old iron rivets",
+            "rawhide shield repair straps",
+            "bronze bracers",
+            "black iron chest band",
+            "heavy leather apron strapped for movement",
+            "short guard axe or hammer"
+          ],
+          "color_logic": "Black iron and shield bone/wood surfaces become more visible; white fur remains species anchor; dark red oath cord remains tiny.",
+          "damage_level": "Dents, scratches, old repairs, and snow grit; no painted shield symbol and no clean fantasy plate armor.",
+          "required_details": [
+            "great shield must read large enough to cover an ordinary human",
+            "shield surface must be practical and mostly unmarked",
+            "same face, ears, fur, chest band, apron, and tool logic must remain continuous",
+            "pose is protective and stable, not a berserker charge"
+          ]
+        },
+        {
+          "state_id": "tuoba_yanxiong_migration_repair_field_maintenance",
+          "name_cn": "迁徙修补行装",
+          "episode_range": "Reusable frozen migration camp, field repair, logistics, and post-siege shots",
+          "silhouette": "Same bear artisan traveling with shield on back or at side, compact tool chain, rivet pouch, blackstone wedge bag, rawhide repair cords, old wood braces, and protected ember seed jar.",
+          "materials": [
+            "compressed tool chain",
+            "blackstone wedge bag",
+            "rawhide repair cord",
+            "old wood brace pieces",
+            "protected ember seed jar",
+            "fur mantle back mass",
+            "heavy snow boots"
+          ],
+          "color_logic": "Frozen earth grey, blackstone, deep brown leather, white fur, old wood, and ember red show travel pressure and craft function.",
+          "damage_level": "Snow dust, rubbed leather, worn tools, and small ember scars only; no refugee collapse.",
+          "required_details": [
+            "tools must be compacted for travel rather than absent",
+            "shield must remain visible as guard function",
+            "fire-seed jar must be protected as practical survival equipment",
+            "do not make him a noble ceremonial guard or generic siege breacher"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "bear_face_round_ears",
+          "purpose": "Lock Tuoba Yanxiong as a White Bear clan beastfolk artisan, not a human wearing fur.",
+          "notes": "Round bear ears, short wide muzzle, heavy brow, broad nose bridge, white bear down, deep brown eyes, calm expression."
+        },
+        {
+          "detail_id": "oversized_paw_and_iron_file",
+          "purpose": "Show craft identity and physical scale.",
+          "notes": "Huge hand with short claws holding an iron file, hammer, tongs, or repair tool."
+        },
+        {
+          "detail_id": "black_iron_chest_band",
+          "purpose": "Create a stable costume anchor across all states.",
+          "notes": "Horizontal black iron chest band over white fur and shield-like chest mass."
+        },
+        {
+          "detail_id": "snow_forge_tool_chain",
+          "purpose": "Make his profession readable at medium distance.",
+          "notes": "Iron file, bone hammer, rivet pouch, old iron tongs, blackstone wedges, rawhide repair cord."
+        },
+        {
+          "detail_id": "scorched_leather_apron_edge",
+          "purpose": "Distinguish snow-forge labor from ragged poverty.",
+          "notes": "Deep brown heavy leather apron, local ember scorch marks along edge, intact garment structure."
+        },
+        {
+          "detail_id": "large_plain_repaired_shield",
+          "purpose": "Lock shield-guard function without creating a new badge.",
+          "notes": "Great repaired shield with old iron rivets, rawhide straps, dents, scratches, and no emblem."
+        },
+        {
+          "detail_id": "ember_seed_jar",
+          "purpose": "Carry snow-forge survival and craft identity.",
+          "notes": "Small physical jar or cup with restrained ember-dark red glow, tied to belt, not attack magic."
+        },
+        {
+          "detail_id": "bronze_bracer_bone_toggle_hemp_rope",
+          "purpose": "Tie costume to Northern low-technology craft materials.",
+          "notes": "Bronze bracer, beast-bone toggles, thick hemp waist rope, dark red oath cord as tiny accent."
+        },
+        {
+          "detail_id": "ice_studded_boot_bear_tread",
+          "purpose": "Make the bear-bodied scale plausible on frozen ground.",
+          "notes": "Heavy boot sole, ice studs, bear-claw tread and blackstone snow dust."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project material continuity.",
+          "notes": "White bear fur, black iron, bronze, deep brown leather, bone white, old wood, frozen earth grey, blackstone snow dust, dark red oath cord, ember dark red."
+        }
+      ],
+      "negative_rules": [
+        "redesigned Northern Beastfolk Alliance emblem",
+        "new bear clan crest",
+        "personal Tuoba Yanxiong logo",
+        "large shield emblem",
+        "painted shield symbol",
+        "large chest badge",
+        "shoulder patch",
+        "banner",
+        "flag",
+        "modern logo",
+        "ordinary human wearing bear ears",
+        "human with costume ears only",
+        "cute bear mascot",
+        "teddy bear",
+        "full animal on all fours",
+        "monster beast",
+        "generic orc",
+        "blacksmith dwarf",
+        "noble shaman",
+        "Lu Mi costume clone",
+        "Helian Xuedai costume clone",
+        "generic siege troop body swap",
+        "polished fantasy plate armor",
+        "samurai armor",
+        "sci-fi armor",
+        "modern military uniform",
+        "ragged beggar fur",
+        "full-body mud",
+        "blood gore",
+        "high-magic aura",
+        "large spell circle",
+        "blue-purple xianxia glow",
+        "attack magic",
+        "floating weapons",
+        "Qingming white official costume",
+        "Grey Wall human soldier costume",
+        "Zhaoming vermilion-blue formal robe",
+        "readable text",
+        "visible labels",
+        "Chinese characters",
+        "Latin letters",
+        "UI",
+        "watermark"
+      ]
+    }
+  ]
+}
