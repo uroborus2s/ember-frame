@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_bai_yi_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable Bai Yi / 白翳 multi-state character identity board.",
+  "source_art_direction": "project/severed-homeland/art/project-bai-yi-character-art-direction.md",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "role": "Qingming Institution palette reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "role": "insect-wax white, bone-white, membrane, white-register, and cold-gold material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "role": "locked Suming / Qingming root emblem; do not redesign, overwrite, or replace"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+      "role": "locked Qingming symbol extension system for white-register, seal, collar, and robe usage"
+    },
+    {
+      "path": "project/severed-homeland/assets/props/prop_qingming_white_register.png",
+      "role": "Qingming white register prop reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/props/prop_qingming_court_tool_board.png",
+      "role": "insect-wax needle, incense thread, tray, wax seal, and official tool reference"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_bai_yi_multi_state_board_v01",
+      "name_cn": "白翳多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "planned",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+      "source_prompt_id": "prompt_character_bai_yi_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#白翳",
+        "project/severed-homeland/bible/continuity.md#白翳",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md#清明院",
+        "project/severed-homeland/art/project-core-prop-costume-designs.json#costume_bai_yi_states_v01",
+        "project/severed-homeland/art/project-faction-symbol-system.md#肃明国-清明院白翅覆黑日体系"
+      ],
+      "downstream_usage": [
+        "Prompt Room antagonist identity lock",
+        "ComfyUI character reference input",
+        "episode 01-12 Bai Yi shot continuity reference",
+        "Qingming upper-intelligence insect hierarchy and wardrobe handoff"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems or create a new Bai Yi crest.",
+    "Use the locked Suming / Qingming emblem only as institutional usage on robe, collar, white-register, wax seal, or back seal.",
+    "Bai Yi must read as a highly human-like upper-intelligence insectoid official, not an ugly insect head, skull mask, or human wearing a mask.",
+    "No human hair and no ordinary human pupils; his near-human face should keep dark compound eyes.",
+    "Preserve Bai Yi's over-2-meter height, extremely slender vertical body, elongated hands, and restrained insect-caste body language.",
+    "Preserve the Qingming palette: insect-wax white, bone white, pearl grey, black sun, cold gold, translucent wing membrane, dark compound-eye black, and tiny dry-blood red only at needle risk points.",
+    "The pursuit state remains official and white, not black armor or lower-tier combat insect anatomy.",
+    "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."
+  ]
+}

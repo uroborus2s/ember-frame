@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "title": "清明香入村",
+  "date": "2026-06-03",
+  "derivation": "Backfilled from episode 01 script, director brief, camera plan, storyboard, scene breakdown, shot list, character bible, and scene bible because the canonical visual-continuity-bible.json was missing.",
+  "source_artifacts": [
+    "bible/characters.md",
+    "bible/scenes.md",
+    "01/script/final-script.md",
+    "01/director/director-brief.md",
+    "01/director/camera-plan.md",
+    "01/shots/scene-breakdown.json",
+    "01/shots/shot-list.json",
+    "01/storyboard/storyboard-plan.md"
+  ],
+  "character_locks": [
+    {
+      "id": "CHAR_SHEN_WEISANG",
+      "rule": "17岁山籍猎户；灰褐猎衣、旧皮护腕、猎弓、短刀、路线袋；先看风向和地面，再行动；第一集不英雄化。"
+    },
+    {
+      "id": "CHAR_SHEN_ZHAOMIAN",
+      "rule": "8-10岁村童；小草药袋、空白药名牌、烧焦发绳；第一集保持儿童脆弱感，不用清明白衣状态。"
+    },
+    {
+      "id": "CHAR_LUO_QINGHE",
+      "rule": "本地医者；青布头巾、草药篮、药柜守密手势；不像祭司或贵族。"
+    },
+    {
+      "id": "CHAR_BAI_YI",
+      "rule": "清明监察使；无尘白袍、虫蜡白、膜翼、冷白虫族脸、暗色复眼纹、虫蜡针和清明白册；平稳低声。"
+    }
+  ],
+  "location_locks": [
+    {
+      "id": "LOC_CANYANGAO_GEOGRAPHY",
+      "rule": "村口封锁线 -> 药屋门口 -> 药屋内药柜 -> 后院水缸 -> 旧井。SC008 必须能理解药屋门口能看向后院旧井。"
+    },
+    {
+      "id": "LOC_INTRO_MONTAGE",
+      "rule": "序幕只用北境战后压力、金河征粮、南方密室桌面三类局部碎片；不建立临时人物支线。"
+    }
+  ],
+  "prop_locks": [
+    {
+      "id": "PROP_QINGMING_INCENSE",
+      "rule": "冷白细烟贴地爬行，不升雾、不攻击、不变成追踪 UI。"
+    },
+    {
+      "id": "PROP_QINGMING_REGISTER",
+      "rule": "生成图不直接生成可读文字；旧污疑似等文字由后期或 prompt-room 控制。"
+    },
+    {
+      "id": "PROP_ZHAOMING_RELAY",
+      "rule": "残缺日月纹、旧驿图、半枚驿令只作为旧物痕迹；第一集不出现完整徽章或完整钥匙。"
+    }
+  ],
+  "reveal_rules": [
+    {
+      "id": "RULE_NO_YAN_NANZHI_REVEAL",
+      "rule": "第一集不正面露出晏南枝，不展示井下人身体、手或身份物归属。"
+    },
+    {
+      "id": "RULE_NO_MOON_JADE_FULL_REVEAL",
+      "rule": "月白物只是一线反光、油纸边缘或湿苔间闪光；不得拍完整玉片。"
+    }
+  ],
+  "style_locks": [
+    "9:16竖屏短剧",
+    "写实电影质感",
+    "低魔东方史诗奇幻",
+    "低饱和",
+    "局部战争与局部制度恐怖"
+  ]
+}

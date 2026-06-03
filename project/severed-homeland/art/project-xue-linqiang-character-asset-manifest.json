@@ -1,0 +1,90 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_xue_linqiang_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable multi-state character identity board for Xue Linqiang.",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/bible/characters.md#薛临墙",
+      "role": "character bible lock"
+    },
+    {
+      "path": "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+      "role": "global style and character boundary lock"
+    },
+    {
+      "path": "project/severed-homeland/art/project-regional-color-system.md",
+      "role": "border palette and character carry-color rules"
+    },
+    {
+      "path": "project/severed-homeland/art/project-faction-symbol-system.md#灰墙军体系",
+      "role": "Grey Wall Army symbol rule; no formal badge"
+    },
+    {
+      "path": "project/severed-homeland/art/project-core-prop-costume-designs.json#costume_xue_linqiang_states_v01",
+      "role": "planned Xue Linqiang costume-state system"
+    },
+    {
+      "path": "project/severed-homeland/prompts/project-core-prop-costume-image-prompts.json#prompt_costume_xue_linqiang_states_v01",
+      "role": "planned costume prompt; costume image not yet generated"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+      "role": "border wall blackstone, snowline, old iron, bone whistle material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_grey_wall_army_system_v01.png",
+      "role": "Grey Wall visual extension reference, not an official emblem"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "role": "locked Zhaoming emblem reference for almost-erased inherited armor pressure mark only"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_xue_linqiang_multi_state_board_v01",
+      "name_cn": "薛临墙多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "generated",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_xue_linqiang_multi_state_board.png",
+      "source_prompt_id": "prompt_character_xue_linqiang_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#薛临墙",
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md",
+        "project/severed-homeland/art/project-faction-symbol-system.md#灰墙军体系",
+        "project/severed-homeland/art/project-core-prop-costume-designs.json#costume_xue_linqiang_states_v01"
+      ],
+      "downstream_usage": [
+        "Prompt Room character reference input",
+        "ComfyUI character identity and wardrobe reference",
+        "episode 08-12 Xue Linqiang continuity reference",
+        "Grey Wall Army human wall-master design lock",
+        "costume and prop handoff for bone whistle, worn spear, inherited old armor plates, and hidden pressure mark"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "Grey Wall Army has no formal badge; do not invent a Grey Wall logo, shoulder patch, crest, banner, or rank plaque.",
+    "The locked Zhaoming emblem may appear only as an almost-erased pressure mark on inherited old armor, hidden inside or along the edge of a plate.",
+    "The pressure mark must be extremely worn by snow, rust, blade scratches, and age; it must not read as a clean complete badge.",
+    "Xue Linqiang must read as a weather-bent old wall soldier around 50, not a palace general, imperial commander, or immortal martial master.",
+    "Preserve broad but bent shoulders, frost-cracked hands, wind-cracked face, old scar, bone whistle, worn long spear, coarse hemp wall scarf, old iron buckles, and snowline leg wraps.",
+    "Clothing can be repaired, old, cold, and hard-worn, but not ragged, filthy, or visually homeless.",
+    "Use low magic only as body discipline and impact memory; no spell circle, aura, or glowing martial power display.",
+    "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."
+  ]
+}

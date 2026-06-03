@@ -1,0 +1,520 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "title": "清明香入村",
+  "date": "2026-06-03",
+  "source_artifacts": [
+    "bible/characters.md",
+    "bible/scenes.md",
+    "01/script/final-script.md",
+    "01/director/director-brief.md",
+    "01/director/camera-plan.md",
+    "01/shots/scene-breakdown.json",
+    "01/shots/shot-list.json",
+    "01/storyboard/storyboard-plan.md",
+    "01/continuity/visual-continuity-bible.json",
+    "01/production/generation-plan.json",
+    "01/prompts/shot-prompts-draft.json"
+  ],
+  "assets": [
+    {
+      "asset_id": "character_shen_weisang_ep01",
+      "asset_type": "character",
+      "name": "沈维桑第一集角色板",
+      "output_path": "assets/characters/character_shen_weisang_multi_state_board.png",
+      "source_refs": [
+        "沈维桑"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_SHEN_WEISANG_RESTRAINT"
+      ],
+      "usage": [
+        "第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。"
+      ]
+    },
+    {
+      "asset_id": "character_shen_zhaomian_ep01",
+      "asset_type": "character",
+      "name": "沈照眠第一集角色板",
+      "output_path": "assets/characters/character_shen_zhaomian_multi_state_board.png",
+      "source_refs": [
+        "沈照眠"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH"
+      ],
+      "usage": [
+        "第一集只取村童草药袋状态，清明白衣为后续威胁状态。"
+      ]
+    },
+    {
+      "asset_id": "character_luo_qinghe_ep01",
+      "asset_type": "character",
+      "name": "罗青禾第一集角色板",
+      "output_path": "assets/characters/character_luo_qinghe_multi_state_board.png",
+      "source_refs": [
+        "罗青禾"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "RULE_DIALOGUE_AS_COVER"
+      ],
+      "usage": [
+        "本地医者、青布头巾、草药篮、药柜手势。"
+      ]
+    },
+    {
+      "asset_id": "character_bai_yi_ep01",
+      "asset_type": "character",
+      "name": "白翳第一集角色板",
+      "output_path": "assets/characters/character_bai_yi_multi_state_board.png",
+      "source_refs": [
+        "白翳"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "FACTION_SUMING_QINGMING"
+      ],
+      "usage": [
+        "上层清明监察虫族官制，无尘白袍、膜翼、虫蜡针、白册。"
+      ]
+    },
+    {
+      "asset_id": "character_suming_inspector_background_ep01",
+      "asset_type": "character",
+      "name": "虫族监察队背景参考",
+      "output_path": "assets/characters/character_suming_insect_infantry_multi_state_board.png",
+      "source_refs": [
+        "虫族监察队"
+      ],
+      "continuity_refs": [
+        "FACTION_SUMING_QINGMING",
+        "RULE_LIMIT_INSECT_CROWD"
+      ],
+      "usage": [
+        "仅作短矛、局部甲片和剪影参考，不形成怪物潮。"
+      ]
+    },
+    {
+      "asset_id": "costume_shen_weisang_ep01",
+      "asset_type": "costume",
+      "name": "沈维桑第一集服装板",
+      "output_path": "assets/costumes/costume_shen_weisang_states.png",
+      "source_refs": [
+        "沈维桑服装"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "COSTUME_COMPLETE_NOT_RAGGED"
+      ],
+      "usage": [
+        "新增服装板，第一集只用猎户状态。"
+      ]
+    },
+    {
+      "asset_id": "costume_shen_zhaomian_ep01",
+      "asset_type": "costume",
+      "name": "沈照眠第一集服装板",
+      "output_path": "assets/costumes/costume_shen_zhaomian_states.png",
+      "source_refs": [
+        "沈照眠服装"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHILD_SAFETY_RESTRAINT"
+      ],
+      "usage": [
+        "新增服装板，第一集只用村童状态。"
+      ]
+    },
+    {
+      "asset_id": "costume_luo_qinghe_ep01",
+      "asset_type": "costume",
+      "name": "罗青禾第一集服装板",
+      "output_path": "assets/costumes/costume_luo_qinghe_states.png",
+      "source_refs": [
+        "罗青禾服装"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "LOC_MEDICINE_HOUSE"
+      ],
+      "usage": [
+        "新增服装板，药屋医者服装和工具清楚。"
+      ]
+    },
+    {
+      "asset_id": "costume_bai_yi_ep01",
+      "asset_type": "costume",
+      "name": "白翳第一集服装板",
+      "output_path": "assets/costumes/costume_bai_yi_states.png",
+      "source_refs": [
+        "白翳服装"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "COSTUME_QINGMING_UPPER_OFFICIAL"
+      ],
+      "usage": [
+        "新增服装板，清明监察官制白参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_master_dusk_ep01",
+      "asset_type": "location",
+      "name": "残阳坳黄昏总场景",
+      "output_path": "assets/locations/canyangao/loc_canyangao_master_dusk.png",
+      "source_refs": [
+        "残阳坳"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANG_GATE",
+        "LOC_MEDICINE_HOUSE",
+        "LOC_OLD_WELL"
+      ],
+      "usage": [
+        "总空间和区域色参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_gate_blood_check_ep01",
+      "asset_type": "location",
+      "name": "残阳坳村口验血席",
+      "output_path": "assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+      "source_refs": [
+        "村口验血"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANG_GATE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "usage": [
+        "村口验血、白布、短矛封锁和清明香参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_exterior_ep01",
+      "asset_type": "location",
+      "name": "罗家药屋外景/门槛",
+      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+      "source_refs": [
+        "药屋门槛"
+      ],
+      "continuity_refs": [
+        "LOC_MEDICINE_HOUSE",
+        "RULE_SPATIAL_GEOGRAPHY"
+      ],
+      "usage": [
+        "门槛失言、药屋门口和后院方向参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_medicine_house_interior_ep01",
+      "asset_type": "location",
+      "name": "罗家药屋内景/药柜",
+      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
+      "source_refs": [
+        "药屋内景"
+      ],
+      "continuity_refs": [
+        "LOC_MEDICINE_HOUSE",
+        "RULE_HIDE_RELAY_MARKS"
+      ],
+      "usage": [
+        "药柜压迫构图、罗青禾手势、白翳入内参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_old_well_courtyard_ep01",
+      "asset_type": "location",
+      "name": "罗家后院旧井",
+      "output_path": "assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
+      "source_refs": [
+        "旧井"
+      ],
+      "continuity_refs": [
+        "LOC_OLD_WELL",
+        "RULE_MOON_WHITE_GLINT_ONLY"
+      ],
+      "usage": [
+        "水缸、旧井、墙根清明香和井沿擦痕参考。"
+      ]
+    },
+    {
+      "asset_id": "loc_canyangao_hidden_relay_compartment_ep01",
+      "asset_type": "location",
+      "name": "药屋暗格与旧驿刻痕",
+      "output_path": "assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
+      "source_refs": [
+        "暗格"
+      ],
+      "continuity_refs": [
+        "PROP_HIDDEN_RELAY_COMPARTMENT",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "usage": [
+        "暗格暴露、残缺日月纹、虫蜡封条参考。"
+      ]
+    },
+    {
+      "asset_id": "prop_qingming_white_register_ep01",
+      "asset_type": "prop",
+      "name": "清明白册",
+      "output_path": "assets/props/prop_qingming_white_register.png",
+      "source_refs": [
+        "清明白册"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_REGISTER",
+        "RULE_BLOODLINE_TEXT_READABLE"
+      ],
+      "usage": [
+        "白册页角、浮字后期文字位、结尾合册参考。"
+      ]
+    },
+    {
+      "asset_id": "prop_qingming_court_tool_board_ep01",
+      "asset_type": "prop",
+      "name": "虫蜡针/清明香/清明工具板",
+      "output_path": "assets/props/prop_qingming_court_tool_board.png",
+      "source_refs": [
+        "清明工具"
+      ],
+      "continuity_refs": [
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "usage": [
+        "虫蜡针、香线、针盘、封条参考。"
+      ]
+    },
+    {
+      "asset_id": "prop_fragmented_continent_relay_map_ep01",
+      "asset_type": "prop",
+      "name": "旧驿图/残缺大陆驿道图",
+      "output_path": "assets/props/prop_fragmented_continent_relay_map.png",
+      "source_refs": [
+        "旧驿图"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "usage": [
+        "序幕南方密室旧驿图和药包遮蔽参考。"
+      ]
+    },
+    {
+      "asset_id": "prop_half_sunmoon_relay_token_ep01",
+      "asset_type": "prop",
+      "name": "半枚日月驿令/一线月白反光规则",
+      "output_path": "assets/props/prop_half_sunmoon_relay_token.png",
+      "source_refs": [
+        "半枚日月驿令"
+      ],
+      "continuity_refs": [
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_MOON_JADE_FULL_REVEAL"
+      ],
+      "usage": [
+        "第一集只作井沿一线月白反光参考，不展示全貌。"
+      ]
+    },
+    {
+      "asset_id": "prop_shen_zhaomian_child_relics_ep01",
+      "asset_type": "prop",
+      "name": "沈照眠小草药袋/药名牌",
+      "output_path": "assets/props/prop_shen_zhaomian_child_relics.png",
+      "source_refs": [
+        "沈照眠小物"
+      ],
+      "continuity_refs": [
+        "PROP_HERB_POUCH",
+        "PROP_HERB_NAME_TILES"
+      ],
+      "usage": [
+        "小草药袋、空白药名牌、烧焦发绳参考。"
+      ]
+    },
+    {
+      "asset_id": "style_global_mood_ep01",
+      "asset_type": "style",
+      "name": "低魔东方史诗总风格",
+      "output_path": "assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "source_refs": [
+        "总风格"
+      ],
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOW_MAGIC_RESTRAINT"
+      ],
+      "usage": [
+        "低饱和、局部叙事、现实材质参考。"
+      ]
+    },
+    {
+      "asset_id": "style_material_palette_ep01",
+      "asset_type": "style",
+      "name": "材质与低魔调色板",
+      "output_path": "assets/style/project-style-board/style_material_palette_v01.png",
+      "source_refs": [
+        "材质调色板"
+      ],
+      "continuity_refs": [
+        "STYLE_MATERIAL_TACTILITY"
+      ],
+      "usage": [
+        "布、旧木、黑石、虫蜡白、旧金、烟尘材质参考。"
+      ]
+    },
+    {
+      "asset_id": "style_canyang_to_jinhe_palette_ep01",
+      "asset_type": "style",
+      "name": "残阳坳/金河区域色",
+      "output_path": "assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "source_refs": [
+        "区域色"
+      ],
+      "continuity_refs": [
+        "REGION_CANYANG_JINHE",
+        "LOC_INTRO_MONTAGE"
+      ],
+      "usage": [
+        "残阳坳黄昏、金河征粮和旧村材质色。"
+      ]
+    },
+    {
+      "asset_id": "style_qingming_institution_palette_ep01",
+      "asset_type": "style",
+      "name": "清明制度白色系统",
+      "output_path": "assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "source_refs": [
+        "清明制度白"
+      ],
+      "continuity_refs": [
+        "FACTION_SUMING_QINGMING",
+        "STYLE_QINGMING_WHITE"
+      ],
+      "usage": [
+        "白翳、白册、虫蜡针、清明香参考。"
+      ]
+    },
+    {
+      "asset_id": "style_zhaoming_relic_material_ep01",
+      "asset_type": "style",
+      "name": "昭明旧物材质",
+      "output_path": "assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "source_refs": [
+        "昭明旧物"
+      ],
+      "continuity_refs": [
+        "FACTION_ZHAOMING_RELIC",
+        "RULE_FIRST_CLEAR_RELAY_REVEAL"
+      ],
+      "usage": [
+        "残缺日月纹、旧驿图、半枚驿令参考。"
+      ]
+    },
+    {
+      "asset_id": "style_qingming_wax_material_ep01",
+      "asset_type": "style",
+      "name": "清明虫蜡/白册材质",
+      "output_path": "assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "source_refs": [
+        "虫蜡白材质"
+      ],
+      "continuity_refs": [
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "usage": [
+        "虫蜡针、封条、白册、白翳衣料参考。"
+      ]
+    },
+    {
+      "asset_id": "ref_ep01_sc001_sh002",
+      "asset_type": "reference_frame",
+      "name": "SC001-SH002 北境战后压力碎片",
+      "output_path": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+      "source_refs": [
+        "北境参考帧"
+      ],
+      "continuity_refs": [
+        "LOC_INTRO_MONTAGE",
+        "FACTION_BORDER_WALL"
+      ],
+      "usage": [
+        "序幕北境压力参考，无血腥全景。"
+      ]
+    },
+    {
+      "asset_id": "ref_ep01_sc001_sh003",
+      "asset_type": "reference_frame",
+      "name": "SC001-SH003 金河征粮道",
+      "output_path": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+      "source_refs": [
+        "金河征粮参考帧"
+      ],
+      "continuity_refs": [
+        "LOC_INTRO_MONTAGE",
+        "PROP_FOOD_TAX_MARKER"
+      ],
+      "usage": [
+        "征粮木牌、半袋谷、空碗参考。"
+      ]
+    },
+    {
+      "asset_id": "ref_ep01_sc001_sh004",
+      "asset_type": "reference_frame",
+      "name": "SC001-SH004 南方密室旧驿图",
+      "output_path": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
+      "source_refs": [
+        "南方密室参考帧"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "usage": [
+        "旧驿图、药包、断裂日月纹参考。"
+      ]
+    },
+    {
+      "asset_id": "ref_ep01_sc005_threshold_identification",
+      "asset_type": "reference_frame",
+      "name": "SC005 药屋门槛失言/识句",
+      "output_path": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "source_refs": [
+        "药屋门槛参考帧"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "usage": [
+        "沈照眠门槛失言、白册识句标记参考。"
+      ]
+    },
+    {
+      "asset_id": "ref_ep01_sc008_final_spear_line_well_glint",
+      "asset_type": "reference_frame",
+      "name": "SC008 结尾短矛封锁/井沿月白反光",
+      "output_path": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "source_refs": [
+        "结尾参考帧"
+      ],
+      "continuity_refs": [
+        "RULE_SPATIAL_GEOGRAPHY",
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_YAN_NANZHI_REVEAL"
+      ],
+      "usage": [
+        "结尾封锁线和一线月白反光参考。"
+      ]
+    }
+  ]
+}

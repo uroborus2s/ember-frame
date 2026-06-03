@@ -1,0 +1,76 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_infantry_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable multi-state character reference board for the lower-tier Suming insect infantry soldier.",
+  "source_art_direction": "project/severed-homeland/art/project-suming-infantry-character-art-direction.md",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "role": "Qingming institutional palette reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "role": "insect-wax, bone-white, membrane, and institutional material reference"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "role": "locked Suming/Qingming emblem reference; do not redesign"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+      "role": "locked symbol extension board for wax seals, iron tags, and carapace brand logic"
+    },
+    {
+      "path": "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+      "role": "upper-intelligence insect official contrast; infantry must not inherit Bai Yi official silhouette"
+    },
+    {
+      "path": "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png",
+      "role": "high-ranking combat insect contrast; infantry must remain lower-tier and mass-reusable"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_suming_insect_infantry_multi_state_board_v01",
+      "name_cn": "肃明虫族小兵多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "final",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_suming_insect_infantry_multi_state_board.png",
+      "source_prompt_id": "prompt_character_suming_insect_infantry_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#肃明虫族小兵",
+        "project/severed-homeland/bible/characters.md#厉螳",
+        "project/severed-homeland/bible/characters.md#白翳",
+        "project/severed-homeland/art/project-faction-symbol-system.md",
+        "project/severed-homeland/art/project-regional-color-system.md"
+      ],
+      "downstream_usage": [
+        "Prompt Room lower-tier Suming infantry identity lock",
+        "ComfyUI character and crowd reference input",
+        "village-seal, convoy, gate-guard, pursuit, granary patrol, and doorway blockade shots",
+        "costume and prop handoff for Qingming lower military binding differences"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "Use the locked Suming/Qingming white-wing-over-black-sun system only as a tiny copied physical plaque, wax stamp, carapace brand, or door tag.",
+    "The infantry must be clearly non-human and non-humanoid: no human face, hair, boots, normal legs, cloth uniform, or helmeted human anatomy.",
+    "Keep the infantry lower-tier than Li Tang: smaller, more mass-produced, no command token, no high-rank back-carapace marks, no commander posture.",
+    "Keep the infantry separate from Bai Yi: no official white robe, no high cylindrical Qingming hat, no white register, no insect-wax needle, no upper-caste near-human official face.",
+    "Status differences are shown through spear or hook-sickle, wax binding count, old iron harness, dark-green cord, and patrol/pursuit body language.",
+    "No visible text, labels, captions, Chinese characters, Latin letters, UI, or watermark inside generated images."
+  ]
+}
+

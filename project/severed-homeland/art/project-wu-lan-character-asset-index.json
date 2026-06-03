@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_wu_lan_character_v01",
+  "date": "2026-06-03",
+  "assets": [
+    {
+      "asset_id": "character_wu_lan_multi_state_board_v01",
+      "name_cn": "乌岚多状态角色板",
+      "asset_type": "character reference board",
+      "status": "final",
+      "file": "project/severed-homeland/assets/characters/character_wu_lan_multi_state_board.png",
+      "history_files": [],
+      "source_prompt_id": "prompt_character_wu_lan_multi_state_board_v01",
+      "source_design": "project/severed-homeland/art/project-wu-lan-character-designs.json#character_wu_lan_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#乌岚",
+        "project/severed-homeland/art/project-wu-lan-character-art-direction.md",
+        "project/severed-homeland/art/project-regional-color-system.md#北境",
+        "project/severed-homeland/art/project-regional-color-system.md#边墙",
+        "project/severed-homeland/art/project-base-material-boards.md#北境骨木皮草",
+        "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png"
+      ],
+      "downstream_usage": [
+        "Prompt Room character reference input",
+        "ComfyUI character identity and wardrobe reference",
+        "episode 09 and later northern snowline scout continuity reference",
+        "Blackwolf scout and peripheral liaison design lock",
+        "costume, prop, and northern material handoff for black-grey short wolf pelt, dark-blue fitted snow-runner clothing, leather guards, bone whistle, short bow, three short javelins, snow claw footgear, dark-silver wolf-tooth buckle, bonewood liaison token, rawhide cord, and oath cord"
+      ],
+      "qc_summary": "Pass: final board reads as an upright Blackwolf snowline scout and peripheral liaison rather than a human with wolf ears, noble deer character, heavy siege troop, or mascot. It preserves three-state continuity, wolf muzzle, black ears, golden vertical pupils, low black-grey tail, wolf facial tattooing, dark-blue snow-runner clothing, leather forearm and knee guards, bone whistle, short bow, three short javelins, snow claw footgear, and dark-silver wolf-tooth object language. The locked Wanshou emblem is not redesigned; northern symbol language remains object/material-based. Note for downstream prompts: keep the pelt short and scout-specific, not a heavy mantle."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_lu_mi_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-lu-mi-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-lu-mi-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_lu_mi_multi_state_board_v01",
+      "name_cn": "鹿弥多状态角色板",
+      "character": "Lu Mi",
+      "identity": "young adult Frosthoof deer noble shaman from the northern beastfolk, representative of the disaster-source-seeking faction",
+      "image_type": "multi-state character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_lu_mi_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Around 20, visibly young adult and noble; not a child, not a teenage mascot, not a mature queen.",
+        "species_lock": "Humanoid-dominant Frosthoof deer beastfolk noble with clear soft deer ears and short antlers or bone-gold antler ornaments; never just a normal human wearing antler jewelry and never a full animal creature.",
+        "beauty_lock": "Very beautiful, clear pale eyes, refined face, long neck and shoulder line, restrained northern noble poise, alert and clean under wind and snow.",
+        "build": "Slender, graceful, and practical for snow travel; the silhouette is lengthened by fur cape, robe, and shaman objects rather than exposed skin.",
+        "posture": "Noble restraint and shaman stillness, with wary attention toward human strangers and disaster signs.",
+        "expression": "Clear, guarded, compassionate but not soft; she reads as someone carrying evidence of the northern disaster."
+      },
+      "constant_anchors": [
+        "soft deer ears",
+        "short antlers or bone-gold antler ornaments",
+        "pale clear eyes",
+        "rare white deer, silver fox, or snow leopard fur layers",
+        "ice-blue thick woven inner garment",
+        "bone-white long robe or skirt",
+        "silver thread",
+        "bone-gold ornaments",
+        "jade clasps",
+        "aurora-green small beads",
+        "bone flute",
+        "snow herb pouch",
+        "rawhide or dark blood oath cord",
+        "small ice-blue survival or shaman fire",
+        "northern antler-branch and bonewood-knot symbol language without redesigning the locked Wanshou emblem"
+      ],
+      "state_designs": [
+        {
+          "state_id": "lu_mi_northern_noble_snowwear",
+          "name_cn": "北境贵族雪装",
+          "episode_range": "09 and reusable northern line",
+          "silhouette": "Tall graceful noble snowwear, layered rare fur shoulder cape over ice-blue woven inner garment and bone-white robe or skirt.",
+          "materials": [
+            "rare white deer fur",
+            "silver fox or snow leopard trim",
+            "ice-blue thick woven cloth",
+            "bone-white robe fabric",
+            "silver thread",
+            "jade clasps",
+            "aurora-green beads",
+            "refined fur-edge tribal pattern"
+          ],
+          "color_logic": "Snow-white fur and bone-white robe dominate; ice-blue inner layer and silver grey carry northern cold; jade green and aurora-green beads stay small and aristocratic.",
+          "damage_level": "Wind and snow wear only; fur remains refined and noble, not ragged.",
+          "required_details": [
+            "deer ears and short antler ornaments must be clear",
+            "face must be very beautiful and adult",
+            "fur cape must feel expensive and carefully trimmed",
+            "bone flute and herb pouch remain present even in formal snowwear",
+            "no new deer crest or redesigned Wanshou emblem"
+          ]
+        },
+        {
+          "state_id": "lu_mi_disaster_source_travel",
+          "name_cn": "寻灾源行装",
+          "episode_range": "09 field travel and rescue",
+          "silhouette": "The noble fur system is tightened into a short cape and travel wrap, allowing snow movement while keeping shaman and noble identity readable.",
+          "materials": [
+            "shortened white fur cape",
+            "rawhide ties",
+            "dark blood oath cord",
+            "wind-worn bone flute",
+            "snow herb pouch",
+            "frozen grasses",
+            "ice-blue woven sleeve and collar",
+            "dark brown hide belt"
+          ],
+          "color_logic": "Northern local base colors enter through straw yellow, frozen earth grey, wind-eroded brown, and hide dark brown, while Lu Mi keeps ice-blue, bone white, and refined fur as identity colors.",
+          "damage_level": "Snow dust, travel compression, and small field wear; never beggar rags or poor shaman styling.",
+          "required_details": [
+            "bone flute must be immediately readable and functional",
+            "snow herb pouch should show frozen grass stems or sealed herb knots",
+            "the same deer ears, face, and antler ornaments must remain identifiable",
+            "short cape should preserve noble fur edge pattern",
+            "small ice-blue fire may appear as rescue/survival light, not attack magic"
+          ]
+        },
+        {
+          "state_id": "lu_mi_frosthoof_ritual",
+          "name_cn": "霜蹄祭仪装",
+          "episode_range": "ritual, memory, disaster explanation",
+          "silhouette": "Ritual version heightens bone-gold forehead ornaments, short antler jewelry, ice-blue shoulder cloth, aurora-green bead strings, and layered bone-white robe.",
+          "materials": [
+            "bone-gold headpiece",
+            "short antler ornaments",
+            "ice-blue ritual shoulder cloth",
+            "aurora-green bead strings",
+            "bone-white carved pendants",
+            "silver thread",
+            "small fire bowl or bone cup with ice-blue survival flame",
+            "antler-branch embroidery"
+          ],
+          "color_logic": "Bone white, ice blue, silver grey, jade green, and tiny ice-blue fire become more visible, but the ritual palette remains restrained and tactile.",
+          "damage_level": "Ceremonial but wind-aged; no battlefield damage and no perfect palace polish.",
+          "required_details": [
+            "ritual elements must come from bone, antler, jade, beads, fur, and rawhide rather than metal luxury",
+            "ice-blue flame stays small and localized",
+            "antler-branch motifs do not become a new crest",
+            "the locked Wanshou emblem is not redrawn",
+            "the character remains the same young adult noble shaman"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_age_species_lock",
+          "purpose": "Lock Lu Mi as a very beautiful young adult Frosthoof deer noble shaman.",
+          "notes": "Clear pale eyes, refined face, soft deer ears visible, short antlers or bone-gold antler ornaments; not childlike, not ordinary human, not full beast."
+        },
+        {
+          "detail_id": "deer_ears_and_antler_ornament",
+          "purpose": "Prevent the design from becoming a human in generic hair jewelry.",
+          "notes": "Soft deer ears grow naturally from the head or hairline; short antlers or noble bone-gold antler ornaments sit at the forehead or sides."
+        },
+        {
+          "detail_id": "rare_fur_cape_edge",
+          "purpose": "Show noble rank and northern material language.",
+          "notes": "White deer, silver fox, or snow leopard fur, carefully trimmed, with refined antler-branch edge pattern and limited wind wear."
+        },
+        {
+          "detail_id": "bone_flute",
+          "purpose": "Lock shaman and episode 09 rescue function.",
+          "notes": "Wind-worn bone flute with holes, rawhide tie, dark blood oath cord or small bead; no polished concert instrument."
+        },
+        {
+          "detail_id": "snow_herb_pouch",
+          "purpose": "Show disaster-source-seeking and healer/shaman function.",
+          "notes": "Dark hide or bone-white pouch with frozen grass stems, dried herbs, jade clasp, rawhide knot, and snow grit."
+        },
+        {
+          "detail_id": "jade_beads_and_bone_gold",
+          "purpose": "Distinguish noble Frosthoof costume from poor northern survival wear.",
+          "notes": "Jade clasps, aurora-green beads, silver thread, bone-gold ornaments, all small and integrated into practical clothing."
+        },
+        {
+          "detail_id": "ritual_ice_blue_fire",
+          "purpose": "Define low-magic boundary.",
+          "notes": "Small ice-blue survival or shaman fire in a bone cup or shallow bowl; it lights hands and fabric edges but is not attack magic."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project material continuity.",
+          "notes": "Snow-white fur, ice-blue thick weave, bone-white cloth, silver grey, jade green, bone-gold, straw yellow, hide dark brown, dark blood oath cord, ice-blue fire."
+        }
+      ],
+      "negative_rules": [
+        "redesigned Northern Beastfolk Alliance emblem",
+        "new deer clan crest",
+        "personal Lu Mi logo",
+        "large chest badge",
+        "modern logo",
+        "ordinary human with antler headband",
+        "full animal creature",
+        "cute mascot",
+        "childlike girl",
+        "generic elf princess",
+        "southern palace princess",
+        "sexy exposed costume",
+        "poor ragged shaman",
+        "torn dirty fur",
+        "beggar rags",
+        "mud-covered refugee",
+        "game orc camp",
+        "monster beastfolk",
+        "high-saturation xianxia blue-purple glow",
+        "large spell circle",
+        "attack magic",
+        "floating weapon",
+        "Qingming white official costume",
+        "Grey Wall soldier grey cloth",
+        "Zhaoming vermilion-blue formal robe",
+        "readable text or labels"
+      ]
+    }
+  ]
+}

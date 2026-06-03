@@ -1,0 +1,163 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_li_tang_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-li-tang-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-li-tang-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_li_tang_multi_state_board_v01",
+      "name_cn": "厉螳多状态角色板",
+      "character": "Li Tang",
+      "identity": "Hanwubao military controller, border commander of the Suming War-Armor Office, high-ranking lower-caste combat insect",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Clearly non-human and non-humanoid combat insect, never a human general in armor.",
+        "scale": "Approximately 2.4 to 2.7 meters tall in-world, towering over humans while built for forward lunges.",
+        "build": "Broad heavy chest and back carapace, forward-leaning torso, compact predatory waist, long reverse-jointed legs.",
+        "head": "Mantis-like triangular head with narrow compound eyes, bone-white mandible guard, dark soft neck membrane, and no human hair or human face.",
+        "expression": "Emotion reads through head angle, compound-eye glint, mandible tension, and blade posture rather than human facial acting."
+      },
+      "constant_anchors": [
+        "black-green hardened carapace across shoulders, chest, and back",
+        "old iron harness crossing chest and back",
+        "dark-green military command belt",
+        "bone-white insect-wax seal strips over carapace seams",
+        "black short mantle attached to one shoulder and upper back",
+        "folding forearm blades stored in carapace grooves",
+        "short spear as secondary weapon",
+        "iron gate command token",
+        "rank markings carved into back carapace",
+        "small locked Suming/Qingming white-wing-over-black-sun plaque used only as physical rank tag"
+      ],
+      "state_designs": [
+        {
+          "state_id": "li_tang_hanwubao_command",
+          "name_cn": "寒鸦堡军控常态",
+          "episode_range": "08-10",
+          "silhouette": "Tall forward-leaning combat insect at controlled stillness, blades folded into forearm grooves, old iron harness and command belt readable.",
+          "materials": [
+            "black-green hardened chitin",
+            "old iron bindings",
+            "dark-green command belt",
+            "bone-white insect-wax seal strips",
+            "black short mantle",
+            "small institutional plaque"
+          ],
+          "color_logic": "Black-green carapace dominates; old iron and bone-white wax provide rank and control contrast; dark red remains almost absent.",
+          "damage_level": "Disciplined military wear, small scratches and wax cracks only.",
+          "required_details": [
+            "folded blade seams visible on both forearms",
+            "iron gate command token hangs from command belt",
+            "small white-wing-over-black-sun plaque must look copied from the locked emblem, not redesigned",
+            "no human face, hair, boots, robes, or complete armor suit"
+          ]
+        },
+        {
+          "state_id": "li_tang_blades_deployed",
+          "name_cn": "臂刀展开战斗态",
+          "episode_range": "combat shots",
+          "silhouette": "Lower and wider predatory lunge, forearm blades deployed like mantis blade-limbs, reverse-jointed legs braced for a high-speed strike.",
+          "materials": [
+            "wet dark chitin blade edges",
+            "old iron hinge bindings",
+            "scratched black-green carapace",
+            "tensed dark neck membrane",
+            "bone-white wax cracks"
+          ],
+          "color_logic": "Black-green and old iron stay dominant; restrained dark-red blade scratches mark threat without gore.",
+          "damage_level": "Visible blade wear and small dark-red cuts, no bloody monster tableau.",
+          "required_details": [
+            "folding mechanism must be readable",
+            "blades grow from forearm structure rather than being held swords",
+            "short spear is secondary and must not replace blade-limb identity",
+            "body remains insectoid and non-human from every angle"
+          ]
+        },
+        {
+          "state_id": "li_tang_border_snowline_patrol",
+          "name_cn": "边墙雪线巡压态",
+          "episode_range": "08-12",
+          "silhouette": "Same combat insect under border-wall frost and blackstone lighting, short mantle tightened, command gear still visible through snow dust.",
+          "materials": [
+            "frosted black-green carapace",
+            "old iron rim frost",
+            "blackstone snow dust",
+            "cold insect-wax strips",
+            "dark cloth short mantle",
+            "scratched iron token"
+          ],
+          "color_logic": "Border blackstone, snow white, and shadow blue overlay the Suming black-green and bone-white system.",
+          "damage_level": "Frost, snow dust, and old iron wear only.",
+          "required_details": [
+            "must not become Grey Wall Army or Northern beastfolk",
+            "rank plaque and command token remain small but readable",
+            "reverse-jointed legs and claw feet must be visible",
+            "snow must not hide the non-human body plan"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "triangular_head_and_compound_eyes",
+          "purpose": "Lock Li Tang as a mantis-like lower-caste combat insect.",
+          "notes": "Triangular head, narrow dark compound eyes, bone-white mandible guard, no human face."
+        },
+        {
+          "detail_id": "folding_forearm_blades",
+          "purpose": "Explain the retracted and deployed blade-limb mechanism.",
+          "notes": "Grooves, old iron hinge bands, chitin blade edge; not handheld swords."
+        },
+        {
+          "detail_id": "old_iron_harness_and_command_belt",
+          "purpose": "Make War-Armor Office control gear distinct from human armor.",
+          "notes": "Harness restrains and ranks the insect body; dark-green belt carries command objects."
+        },
+        {
+          "detail_id": "rank_plaque_and_back_carapace_marks",
+          "purpose": "Show hierarchy without redesigning the Suming/Qingming emblem.",
+          "notes": "Small physical white-wing-over-black-sun plaque based on the locked emblem, plus carved back-carapace rank marks."
+        },
+        {
+          "detail_id": "short_spear_and_iron_gate_token",
+          "purpose": "Lock commander props.",
+          "notes": "Short spear as secondary weapon; iron gate token as Hanwubao military authority object."
+        },
+        {
+          "detail_id": "reverse_joint_leg_and_claw_foot",
+          "purpose": "Prevent humanoid regression.",
+          "notes": "Long reverse-jointed lower limb, clawed foot, frost and blackstone scuffing."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project material continuity.",
+          "notes": "Black-green carapace, old iron, bone-white insect wax, dark-green belt cloth, black short mantle, restrained dark-red blade mark, snowline blackstone."
+        }
+      ],
+      "negative_rules": [
+        "human general",
+        "humanoid warrior",
+        "man in black-green armor",
+        "knight armor",
+        "samurai armor",
+        "martial-arts villain robe",
+        "complete human cape",
+        "human face",
+        "human hair",
+        "human boots",
+        "helmeted soldier",
+        "mecha insect",
+        "cyberpunk insect",
+        "generic monster",
+        "gore tableau",
+        "redesigned Suming emblem",
+        "new insect logo",
+        "large banner badge",
+        "readable text",
+        "visible labels"
+      ]
+    }
+  ]
+}

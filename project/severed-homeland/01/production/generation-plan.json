@@ -1,0 +1,615 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "title": "清明香入村",
+  "date": "2026-06-03",
+  "source_artifacts": [
+    "01/script/final-script.md",
+    "01/director/director-brief.md",
+    "01/director/camera-plan.md",
+    "01/shots/scene-breakdown.json",
+    "01/shots/shot-list.json",
+    "01/storyboard/storyboard-plan.md",
+    "01/continuity/visual-continuity-bible.json",
+    "01/prompts/shot-prompts-draft.json"
+  ],
+  "method_values": {
+    "POST_TEXT_CARD": "editorial title/black-screen card",
+    "REFERENCE_IMAGE": "locked first-frame reference",
+    "REFERENCE_IMAGE_ASSISTED_I2V": "reference frame plus I2V/FLF control",
+    "I2V_WITH_ASSET_REFS": "image-to-video using listed art references"
+  },
+  "global_continuity_locks": [
+    "STYLE_GROUNDED_EPIC",
+    "LOC_CANYANGAO_GEOGRAPHY",
+    "RULE_QINGMING_SMOKE_LOW",
+    "RULE_NO_YAN_NANZHI_REVEAL",
+    "RULE_NO_MOON_JADE_FULL_REVEAL"
+  ],
+  "production_groups": [
+    {
+      "group_id": "PG01-intro-montage",
+      "name": "序幕年景压迫蒙太奇",
+      "shot_ids": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003",
+        "SC001-SH004"
+      ],
+      "key_assets": [
+        "ref_ep01_sc001_sh002",
+        "ref_ep01_sc001_sh003",
+        "ref_ep01_sc001_sh004"
+      ],
+      "key_risks": [
+        "不得超过30秒",
+        "不要给临时人物正脸或姓名",
+        "北境战争只用局部和声音"
+      ]
+    },
+    {
+      "group_id": "PG02-gate-blood-check",
+      "name": "村口验血与沈维桑入场",
+      "shot_ids": [
+        "SC002-SH001",
+        "SC002-SH002",
+        "SC002-SH003",
+        "SC002-SH004",
+        "SC002-SH005",
+        "SC003-SH001",
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "key_assets": [
+        "character_shen_weisang_ep01",
+        "character_shen_zhaomian_ep01",
+        "character_luo_qinghe_ep01",
+        "character_bai_yi_ep01",
+        "loc_canyangao_gate_blood_check_ep01",
+        "prop_qingming_white_register_ep01"
+      ],
+      "key_risks": [
+        "清明香不可升雾",
+        "白册文字避免直接生成",
+        "沈维桑不能英雄化出场"
+      ]
+    },
+    {
+      "group_id": "PG03-medicine-house-pressure",
+      "name": "药屋对答与门槛失言",
+      "shot_ids": [
+        "SC004-SH001",
+        "SC004-SH002",
+        "SC004-SH003",
+        "SC004-SH004",
+        "SC004-SH005",
+        "SC005-SH001",
+        "SC005-SH002",
+        "SC005-SH003",
+        "SC005-SH004"
+      ],
+      "key_assets": [
+        "loc_canyangao_medicine_house_interior_ep01",
+        "loc_canyangao_medicine_house_exterior_ep01",
+        "costume_luo_qinghe_ep01",
+        "costume_shen_zhaomian_ep01",
+        "ref_ep01_sc005_threshold_identification"
+      ],
+      "key_risks": [
+        "SC004不露旧驿刻痕",
+        "沈照眠失言不可恐怖化",
+        "白翳不提高音量"
+      ]
+    },
+    {
+      "group_id": "PG04-old-well-relay",
+      "name": "后院旧井与暗格暴露",
+      "shot_ids": [
+        "SC006-SH001",
+        "SC006-SH002",
+        "SC006-SH003",
+        "SC006-SH004",
+        "SC006-SH005",
+        "SC007-SH001",
+        "SC007-SH002",
+        "SC007-SH003",
+        "SC007-SH004",
+        "SC007-SH005"
+      ],
+      "key_assets": [
+        "loc_canyangao_old_well_courtyard_ep01",
+        "loc_canyangao_hidden_relay_compartment_ep01",
+        "prop_half_sunmoon_relay_token_ep01",
+        "prop_fragmented_continent_relay_map_ep01"
+      ],
+      "key_risks": [
+        "井下人不露身份",
+        "月白反光只是一线",
+        "暗格第一次清楚暴露在SC007"
+      ]
+    },
+    {
+      "group_id": "PG05-lockdown-hook",
+      "name": "全村复查与井沿钩子",
+      "shot_ids": [
+        "SC008-SH001",
+        "SC008-SH002",
+        "SC008-SH003",
+        "SC008-SH004"
+      ],
+      "key_assets": [
+        "ref_ep01_sc008_final_spear_line_well_glint",
+        "character_bai_yi_ep01",
+        "loc_canyangao_old_well_courtyard_ep01"
+      ],
+      "key_risks": [
+        "短矛封锁线需读清方向",
+        "不展示井下人或完整玉片",
+        "SC008偏暗时需补覆盖帧"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "scene_id": "SC001",
+      "method": "POST_TEXT_CARD",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "LOC_INTRO_MONTAGE",
+        "STYLE_GROUNDED_EPIC"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "scene_id": "SC001",
+      "method": "REFERENCE_IMAGE",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+      "continuity_locks": [
+        "LOC_INTRO_MONTAGE",
+        "FACTION_BORDER_WALL",
+        "FACTION_SUMING_QINGMING"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "scene_id": "SC001",
+      "method": "REFERENCE_IMAGE",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+      "continuity_locks": [
+        "LOC_INTRO_MONTAGE",
+        "PROP_FOOD_TAX_MARKER"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "scene_id": "SC001",
+      "method": "REFERENCE_IMAGE",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
+      "continuity_locks": [
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "scene_id": "SC002",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_SHEN_WEISANG",
+        "LOC_CANYANG_GATE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "scene_id": "SC002",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_QINGMING_INCENSE",
+        "RULE_QINGMING_SMOKE_LOW"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "scene_id": "SC002",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "scene_id": "SC002",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_QINGMING_REGISTER",
+        "RULE_BLOODLINE_TEXT_READABLE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "scene_id": "SC002",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_BAI_YI",
+        "LOC_CANYANG_GATE",
+        "PROP_INSECT_WAX_NEEDLE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "scene_id": "SC003",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_INSECT_WAX_NEEDLE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "scene_id": "SC003",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_WEISANG_RESTRAINT"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "scene_id": "SC003",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_QINGMING_REGISTER",
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "scene_id": "SC003",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_HERB_BASKET"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "scene_id": "SC004",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "LOC_MEDICINE_HOUSE",
+        "CHAR_BAI_YI",
+        "CHAR_LUO_QINGHE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "scene_id": "SC004",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_BAI_YI",
+        "RULE_DIALOGUE_AS_COVER"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "scene_id": "SC004",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "RULE_HIDE_RELAY_MARKS",
+        "PROP_HERB_BASKET"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "scene_id": "SC004",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_WATER_JAR",
+        "PROP_HERB_POUCH",
+        "CHAR_SHEN_WEISANG_READS_SIGNS"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "scene_id": "SC004",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_BAI_YI",
+        "PROP_QINGMING_INCENSE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC005-SH001",
+      "scene_id": "SC005",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "continuity_locks": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_HERB_NAME_TILES"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC005-SH002",
+      "scene_id": "SC005",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "continuity_locks": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_BAI_YI_NO_RAISED_VOICE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC005-SH003",
+      "scene_id": "SC005",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "continuity_locks": [
+        "CHAR_SHEN_WEISANG_PROTECTS_SISTER",
+        "PROP_QINGMING_REGISTER",
+        "PROP_HERB_POUCH"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC005-SH004",
+      "scene_id": "SC005",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "continuity_locks": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "CHAR_BAI_YI_SYSTEMIC_THREAT"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC006-SH001",
+      "scene_id": "SC006",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "LOC_OLD_WELL",
+        "PROP_WATER_JAR",
+        "RULE_SPATIAL_GEOGRAPHY"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC006-SH002",
+      "scene_id": "SC006",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_SHEN_WEISANG_READS_SIGNS",
+        "LOC_OLD_WELL"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC006-SH003",
+      "scene_id": "SC006",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL",
+        "RULE_MOON_WHITE_GLINT_ONLY"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC006-SH004",
+      "scene_id": "SC006",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "RULE_SPATIAL_GEOGRAPHY",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_LUO_QINGHE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC006-SH005",
+      "scene_id": "SC006",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC007-SH001",
+      "scene_id": "SC007",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_HIDDEN_RELAY_COMPARTMENT",
+        "LOC_MEDICINE_HOUSE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC007-SH002",
+      "scene_id": "SC007",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "RULE_FIRST_CLEAR_RELAY_REVEAL",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC007-SH003",
+      "scene_id": "SC007",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_BAI_YI",
+        "CHAR_LUO_QINGHE",
+        "PROP_HIDDEN_RELAY_COMPARTMENT"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC007-SH004",
+      "scene_id": "SC007",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "PROP_HERB_POUCH",
+        "CHAR_SHEN_WEISANG_RESTRAINT",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC007-SH005",
+      "scene_id": "SC007",
+      "method": "I2V_WITH_ASSET_REFS",
+      "required_assets": [],
+      "reference_frame": null,
+      "continuity_locks": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_WEISANG",
+        "LOC_OLD_WELL"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC008-SH001",
+      "scene_id": "SC008",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "continuity_locks": [
+        "CHAR_BAI_YI",
+        "PROP_QINGMING_REGISTER",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC008-SH002",
+      "scene_id": "SC008",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "continuity_locks": [
+        "RULE_SPATIAL_GEOGRAPHY",
+        "CHAR_SHEN_WEISANG_PROTECTS_SISTER"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC008-SH003",
+      "scene_id": "SC008",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "continuity_locks": [
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "PROP_QINGMING_INCENSE",
+        "LOC_OLD_WELL"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    },
+    {
+      "shot_id": "SC008-SH004",
+      "scene_id": "SC008",
+      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
+      "required_assets": [],
+      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "continuity_locks": [
+        "RULE_NO_YAN_NANZHI_REVEAL",
+        "RULE_NO_MOON_JADE_FULL_REVEAL"
+      ],
+      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+    }
+  ],
+  "validation_notes": [
+    "Backfilled because episode 01 generation-plan.json was missing.",
+    "Uses the existing 36-shot director-room shot list without changing story or shot order.",
+    "Five existing reference-frame PNGs are locked as canonical first-frame art references."
+  ]
+}

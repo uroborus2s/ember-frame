@@ -1,0 +1,58 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_li_tang_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-li-tang-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-li-tang-character-designs.json",
+  "purpose": "Tool-neutral image prompt for the project-level Li Tang multi-state character reference board.",
+  "shared_rules": {
+    "format": "single vertical PNG production character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic chitin, old iron, insect-wax, blackstone, snowline frost, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. The locked Suming/Qingming white-wing-over-black-sun emblem may appear only as a small physical plaque, wax seal, carapace brand, or military tag copied from the established design language, never as a new insect logo, banner, or large redesigned badge.",
+    "must_have": [
+      "Li Tang must be clearly non-human and non-humanoid",
+      "2.4 to 2.7 meter in-world scale must read through towering proportions",
+      "triangular mantis head, narrow compound eyes, mandible guard, broad black-green carapace, reverse-jointed legs, and folding forearm blades must all be visible",
+      "costume system is old iron harness, dark-green command belt, bone-white insect-wax seal strips, black short mantle, short spear, and iron gate command token",
+      "three states must preserve one continuous body identity",
+      "no readable text, no labels, no UI, no watermark"
+    ],
+    "negative_prompt": "human general, humanoid warrior, man in black-green armor, armored human, helmeted soldier, knight armor, samurai armor, martial arts villain, human face, human hair, human boots, full human robe, complete human cloak, broad human shoulders under armor, handheld dual swords replacing blade limbs, mecha insect, cyberpunk, sci-fi armor, generic monster, gore, bloody horror, giant new logo, redesigned Suming emblem, redesigned Qingming badge, new insect crest, large banner badge, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, over-saturated game art, high-magic aura, spell circle"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_li_tang_multi_state_board_v01",
+      "asset_id": "character_li_tang_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "role": "locked Suming/Qingming emblem reference; use only as small physical rank plaque or wax seal, do not redesign"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+          "role": "locked symbol system reference for institutional plaque, wax seal, carapace brand, and military tag logic"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+          "role": "insect-wax, bone-white, membrane, and institutional material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+          "role": "border-wall blackstone, old iron, snowline, and frost material reference"
+        }
+      ],
+      "image_prompt": "Create one vertical PNG production character reference board for Li Tang from the series Severed Homeland. Use the visible project references for low-magic eastern epic style, Suming/Qingming institutional materials, the locked white-wing-over-black-sun emblem, black-green chitin, old iron, insect-wax, blackstone, and snowline frost. Li Tang is a high-ranking lower-caste Suming combat insect commander, not a human. He must be obviously non-human and non-humanoid: 2.4 to 2.7 meter in-world scale, broad heavy chest and back carapace, forward-leaning predatory torso, compact waist, long reverse-jointed legs, clawed feet, triangular mantis-like head, narrow dark compound eyes, bone-white mandible guard, dark soft neck membrane, and no human face, hair, boots, or human armor suit. The board shows the same continuous insect identity in three full-body states: 1) Hanwubao command state, blades folded into forearm carapace grooves, controlled stillness, black-green shoulder and chest carapace, old iron harness across the body, dark-green command belt, bone-white insect-wax seal strips, black short mantle attached to one shoulder and upper back, short spear as secondary weapon, iron gate command token, carved back-carapace rank marks, and a small physical white-wing-over-black-sun plaque copied from the locked emblem style; 2) blades-deployed combat state, lower forward lunge, folding forearm blades opened like mantis blade-limbs, old iron hinge bands, reverse-jointed legs braced for speed, short spear secondary, restrained dark-red blade scratches only; 3) border snowline patrol state, same insect body and harness under blackstone and snowline frost, short mantle tightened, command belt, wax strips, rank plaque, iron token, reverse-jointed legs and claw feet still visible. Include silent detail panels with no text: triangular head and compound eyes, folded and deployed forearm blade mechanism, old iron harness and dark-green command belt, back carapace rank marks with small locked-emblem plaque, short spear and iron gate token, reverse-jointed leg and claw foot, and a material swatch strip for black-green carapace, old iron, bone-white insect wax, dark-green belt cloth, black mantle, restrained dark-red blade mark, and blackstone snow. Keep the image as a production reference board with clean readable arrangement but no visible labels, no captions, no typography, no UI, no watermark. Tactile realistic chitin, iron, wax, frost, and blackstone; restrained cinematic lighting; low-magic eastern epic; not glossy sci-fi, not high fantasy.",
+      "negative_prompt": "human general, humanoid warrior, man in black-green armor, armored human, helmeted soldier, knight armor, samurai armor, martial arts villain robe, human face, human hair, human boots, full human robe, complete human cloak, human hands holding dual swords, handheld dual swords replacing blade limbs, normal human legs, mecha insect, cyberpunk, sci-fi armor, generic monster, gore, blood-covered horror, oversized magic aura, spell circle, high fantasy summon, redesigned Suming emblem, redesigned Qingming badge, new insect logo, new personal crest, large banner badge, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, oversaturated game art"
+    }
+  ]
+}

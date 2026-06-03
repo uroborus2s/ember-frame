@@ -1,0 +1,568 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "date": "2026-06-03",
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_shen_weisang_ep01",
+      "asset_id": "character_shen_weisang_ep01",
+      "asset_type": "character",
+      "output_path": "assets/characters/character_shen_weisang_multi_state_board.png",
+      "prompt": "Use 沈维桑第一集角色板 as episode 01 art reference. 第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。 Preserve CHAR_SHEN_WEISANG;CHAR_SHEN_WEISANG_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_SHEN_WEISANG_RESTRAINT"
+      ],
+      "source_refs": [
+        "沈维桑"
+      ],
+      "downstream_usage": [
+        "第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_character_shen_zhaomian_ep01",
+      "asset_id": "character_shen_zhaomian_ep01",
+      "asset_type": "character",
+      "output_path": "assets/characters/character_shen_zhaomian_multi_state_board.png",
+      "prompt": "Use 沈照眠第一集角色板 as episode 01 art reference. 第一集只取村童草药袋状态，清明白衣为后续威胁状态。 Preserve CHAR_SHEN_ZHAOMIAN;PROP_HERB_POUCH. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH"
+      ],
+      "source_refs": [
+        "沈照眠"
+      ],
+      "downstream_usage": [
+        "第一集只取村童草药袋状态，清明白衣为后续威胁状态。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_character_luo_qinghe_ep01",
+      "asset_id": "character_luo_qinghe_ep01",
+      "asset_type": "character",
+      "output_path": "assets/characters/character_luo_qinghe_multi_state_board.png",
+      "prompt": "Use 罗青禾第一集角色板 as episode 01 art reference. 本地医者、青布头巾、草药篮、药柜手势。 Preserve CHAR_LUO_QINGHE;RULE_DIALOGUE_AS_COVER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "RULE_DIALOGUE_AS_COVER"
+      ],
+      "source_refs": [
+        "罗青禾"
+      ],
+      "downstream_usage": [
+        "本地医者、青布头巾、草药篮、药柜手势。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_character_bai_yi_ep01",
+      "asset_id": "character_bai_yi_ep01",
+      "asset_type": "character",
+      "output_path": "assets/characters/character_bai_yi_multi_state_board.png",
+      "prompt": "Use 白翳第一集角色板 as episode 01 art reference. 上层清明监察虫族官制，无尘白袍、膜翼、虫蜡针、白册。 Preserve CHAR_BAI_YI;FACTION_SUMING_QINGMING. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "FACTION_SUMING_QINGMING"
+      ],
+      "source_refs": [
+        "白翳"
+      ],
+      "downstream_usage": [
+        "上层清明监察虫族官制，无尘白袍、膜翼、虫蜡针、白册。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_character_suming_inspector_background_ep01",
+      "asset_id": "character_suming_inspector_background_ep01",
+      "asset_type": "character",
+      "output_path": "assets/characters/character_suming_insect_infantry_multi_state_board.png",
+      "prompt": "Use 虫族监察队背景参考 as episode 01 art reference. 仅作短矛、局部甲片和剪影参考，不形成怪物潮。 Preserve FACTION_SUMING_QINGMING;RULE_LIMIT_INSECT_CROWD. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "FACTION_SUMING_QINGMING",
+        "RULE_LIMIT_INSECT_CROWD"
+      ],
+      "source_refs": [
+        "虫族监察队"
+      ],
+      "downstream_usage": [
+        "仅作短矛、局部甲片和剪影参考，不形成怪物潮。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_costume_shen_weisang_ep01",
+      "asset_id": "costume_shen_weisang_ep01",
+      "asset_type": "costume",
+      "output_path": "assets/costumes/costume_shen_weisang_states.png",
+      "prompt": "Use 沈维桑第一集服装板 as episode 01 art reference. 新增服装板，第一集只用猎户状态。 Preserve CHAR_SHEN_WEISANG;COSTUME_COMPLETE_NOT_RAGGED. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "COSTUME_COMPLETE_NOT_RAGGED"
+      ],
+      "source_refs": [
+        "沈维桑服装"
+      ],
+      "downstream_usage": [
+        "新增服装板，第一集只用猎户状态。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_costume_shen_zhaomian_ep01",
+      "asset_id": "costume_shen_zhaomian_ep01",
+      "asset_type": "costume",
+      "output_path": "assets/costumes/costume_shen_zhaomian_states.png",
+      "prompt": "Use 沈照眠第一集服装板 as episode 01 art reference. 新增服装板，第一集只用村童状态。 Preserve CHAR_SHEN_ZHAOMIAN;CHILD_SAFETY_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHILD_SAFETY_RESTRAINT"
+      ],
+      "source_refs": [
+        "沈照眠服装"
+      ],
+      "downstream_usage": [
+        "新增服装板，第一集只用村童状态。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_costume_luo_qinghe_ep01",
+      "asset_id": "costume_luo_qinghe_ep01",
+      "asset_type": "costume",
+      "output_path": "assets/costumes/costume_luo_qinghe_states.png",
+      "prompt": "Use 罗青禾第一集服装板 as episode 01 art reference. 新增服装板，药屋医者服装和工具清楚。 Preserve CHAR_LUO_QINGHE;LOC_MEDICINE_HOUSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "LOC_MEDICINE_HOUSE"
+      ],
+      "source_refs": [
+        "罗青禾服装"
+      ],
+      "downstream_usage": [
+        "新增服装板，药屋医者服装和工具清楚。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_costume_bai_yi_ep01",
+      "asset_id": "costume_bai_yi_ep01",
+      "asset_type": "costume",
+      "output_path": "assets/costumes/costume_bai_yi_states.png",
+      "prompt": "Use 白翳第一集服装板 as episode 01 art reference. 新增服装板，清明监察官制白参考。 Preserve CHAR_BAI_YI;COSTUME_QINGMING_UPPER_OFFICIAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "COSTUME_QINGMING_UPPER_OFFICIAL"
+      ],
+      "source_refs": [
+        "白翳服装"
+      ],
+      "downstream_usage": [
+        "新增服装板，清明监察官制白参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_master_dusk_ep01",
+      "asset_id": "loc_canyangao_master_dusk_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_master_dusk.png",
+      "prompt": "Use 残阳坳黄昏总场景 as episode 01 art reference. 总空间和区域色参考。 Preserve LOC_CANYANG_GATE;LOC_MEDICINE_HOUSE;LOC_OLD_WELL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_CANYANG_GATE",
+        "LOC_MEDICINE_HOUSE",
+        "LOC_OLD_WELL"
+      ],
+      "source_refs": [
+        "残阳坳"
+      ],
+      "downstream_usage": [
+        "总空间和区域色参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_gate_blood_check_ep01",
+      "asset_id": "loc_canyangao_gate_blood_check_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
+      "prompt": "Use 残阳坳村口验血席 as episode 01 art reference. 村口验血、白布、短矛封锁和清明香参考。 Preserve LOC_CANYANG_GATE;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_CANYANG_GATE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "source_refs": [
+        "村口验血"
+      ],
+      "downstream_usage": [
+        "村口验血、白布、短矛封锁和清明香参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_medicine_house_exterior_ep01",
+      "asset_id": "loc_canyangao_medicine_house_exterior_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
+      "prompt": "Use 罗家药屋外景/门槛 as episode 01 art reference. 门槛失言、药屋门口和后院方向参考。 Preserve LOC_MEDICINE_HOUSE;RULE_SPATIAL_GEOGRAPHY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_MEDICINE_HOUSE",
+        "RULE_SPATIAL_GEOGRAPHY"
+      ],
+      "source_refs": [
+        "药屋门槛"
+      ],
+      "downstream_usage": [
+        "门槛失言、药屋门口和后院方向参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_medicine_house_interior_ep01",
+      "asset_id": "loc_canyangao_medicine_house_interior_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
+      "prompt": "Use 罗家药屋内景/药柜 as episode 01 art reference. 药柜压迫构图、罗青禾手势、白翳入内参考。 Preserve LOC_MEDICINE_HOUSE;RULE_HIDE_RELAY_MARKS. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_MEDICINE_HOUSE",
+        "RULE_HIDE_RELAY_MARKS"
+      ],
+      "source_refs": [
+        "药屋内景"
+      ],
+      "downstream_usage": [
+        "药柜压迫构图、罗青禾手势、白翳入内参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_old_well_courtyard_ep01",
+      "asset_id": "loc_canyangao_old_well_courtyard_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
+      "prompt": "Use 罗家后院旧井 as episode 01 art reference. 水缸、旧井、墙根清明香和井沿擦痕参考。 Preserve LOC_OLD_WELL;RULE_MOON_WHITE_GLINT_ONLY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_OLD_WELL",
+        "RULE_MOON_WHITE_GLINT_ONLY"
+      ],
+      "source_refs": [
+        "旧井"
+      ],
+      "downstream_usage": [
+        "水缸、旧井、墙根清明香和井沿擦痕参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_loc_canyangao_hidden_relay_compartment_ep01",
+      "asset_id": "loc_canyangao_hidden_relay_compartment_ep01",
+      "asset_type": "location",
+      "output_path": "assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
+      "prompt": "Use 药屋暗格与旧驿刻痕 as episode 01 art reference. 暗格暴露、残缺日月纹、虫蜡封条参考。 Preserve PROP_HIDDEN_RELAY_COMPARTMENT;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_HIDDEN_RELAY_COMPARTMENT",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "source_refs": [
+        "暗格"
+      ],
+      "downstream_usage": [
+        "暗格暴露、残缺日月纹、虫蜡封条参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_prop_qingming_white_register_ep01",
+      "asset_id": "prop_qingming_white_register_ep01",
+      "asset_type": "prop",
+      "output_path": "assets/props/prop_qingming_white_register.png",
+      "prompt": "Use 清明白册 as episode 01 art reference. 白册页角、浮字后期文字位、结尾合册参考。 Preserve PROP_QINGMING_REGISTER;RULE_BLOODLINE_TEXT_READABLE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_QINGMING_REGISTER",
+        "RULE_BLOODLINE_TEXT_READABLE"
+      ],
+      "source_refs": [
+        "清明白册"
+      ],
+      "downstream_usage": [
+        "白册页角、浮字后期文字位、结尾合册参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_prop_qingming_court_tool_board_ep01",
+      "asset_id": "prop_qingming_court_tool_board_ep01",
+      "asset_type": "prop",
+      "output_path": "assets/props/prop_qingming_court_tool_board.png",
+      "prompt": "Use 虫蜡针/清明香/清明工具板 as episode 01 art reference. 虫蜡针、香线、针盘、封条参考。 Preserve PROP_INSECT_WAX_NEEDLE;PROP_QINGMING_INCENSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "source_refs": [
+        "清明工具"
+      ],
+      "downstream_usage": [
+        "虫蜡针、香线、针盘、封条参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_prop_fragmented_continent_relay_map_ep01",
+      "asset_id": "prop_fragmented_continent_relay_map_ep01",
+      "asset_type": "prop",
+      "output_path": "assets/props/prop_fragmented_continent_relay_map.png",
+      "prompt": "Use 旧驿图/残缺大陆驿道图 as episode 01 art reference. 序幕南方密室旧驿图和药包遮蔽参考。 Preserve PROP_OLD_RELAY_MAP;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "source_refs": [
+        "旧驿图"
+      ],
+      "downstream_usage": [
+        "序幕南方密室旧驿图和药包遮蔽参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_prop_half_sunmoon_relay_token_ep01",
+      "asset_id": "prop_half_sunmoon_relay_token_ep01",
+      "asset_type": "prop",
+      "output_path": "assets/props/prop_half_sunmoon_relay_token.png",
+      "prompt": "Use 半枚日月驿令/一线月白反光规则 as episode 01 art reference. 第一集只作井沿一线月白反光参考，不展示全貌。 Preserve RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_MOON_JADE_FULL_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_MOON_JADE_FULL_REVEAL"
+      ],
+      "source_refs": [
+        "半枚日月驿令"
+      ],
+      "downstream_usage": [
+        "第一集只作井沿一线月白反光参考，不展示全貌。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_prop_shen_zhaomian_child_relics_ep01",
+      "asset_id": "prop_shen_zhaomian_child_relics_ep01",
+      "asset_type": "prop",
+      "output_path": "assets/props/prop_shen_zhaomian_child_relics.png",
+      "prompt": "Use 沈照眠小草药袋/药名牌 as episode 01 art reference. 小草药袋、空白药名牌、烧焦发绳参考。 Preserve PROP_HERB_POUCH;PROP_HERB_NAME_TILES. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_HERB_POUCH",
+        "PROP_HERB_NAME_TILES"
+      ],
+      "source_refs": [
+        "沈照眠小物"
+      ],
+      "downstream_usage": [
+        "小草药袋、空白药名牌、烧焦发绳参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_global_mood_ep01",
+      "asset_id": "style_global_mood_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "prompt": "Use 低魔东方史诗总风格 as episode 01 art reference. 低饱和、局部叙事、现实材质参考。 Preserve STYLE_GROUNDED_EPIC;LOW_MAGIC_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "STYLE_GROUNDED_EPIC",
+        "LOW_MAGIC_RESTRAINT"
+      ],
+      "source_refs": [
+        "总风格"
+      ],
+      "downstream_usage": [
+        "低饱和、局部叙事、现实材质参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_material_palette_ep01",
+      "asset_id": "style_material_palette_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/project-style-board/style_material_palette_v01.png",
+      "prompt": "Use 材质与低魔调色板 as episode 01 art reference. 布、旧木、黑石、虫蜡白、旧金、烟尘材质参考。 Preserve STYLE_MATERIAL_TACTILITY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "STYLE_MATERIAL_TACTILITY"
+      ],
+      "source_refs": [
+        "材质调色板"
+      ],
+      "downstream_usage": [
+        "布、旧木、黑石、虫蜡白、旧金、烟尘材质参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_canyang_to_jinhe_palette_ep01",
+      "asset_id": "style_canyang_to_jinhe_palette_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
+      "prompt": "Use 残阳坳/金河区域色 as episode 01 art reference. 残阳坳黄昏、金河征粮和旧村材质色。 Preserve REGION_CANYANG_JINHE;LOC_INTRO_MONTAGE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "REGION_CANYANG_JINHE",
+        "LOC_INTRO_MONTAGE"
+      ],
+      "source_refs": [
+        "区域色"
+      ],
+      "downstream_usage": [
+        "残阳坳黄昏、金河征粮和旧村材质色。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_qingming_institution_palette_ep01",
+      "asset_id": "style_qingming_institution_palette_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
+      "prompt": "Use 清明制度白色系统 as episode 01 art reference. 白翳、白册、虫蜡针、清明香参考。 Preserve FACTION_SUMING_QINGMING;STYLE_QINGMING_WHITE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "FACTION_SUMING_QINGMING",
+        "STYLE_QINGMING_WHITE"
+      ],
+      "source_refs": [
+        "清明制度白"
+      ],
+      "downstream_usage": [
+        "白翳、白册、虫蜡针、清明香参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_zhaoming_relic_material_ep01",
+      "asset_id": "style_zhaoming_relic_material_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/base-material-boards/material_zhaoming_relic_v01.png",
+      "prompt": "Use 昭明旧物材质 as episode 01 art reference. 残缺日月纹、旧驿图、半枚驿令参考。 Preserve FACTION_ZHAOMING_RELIC;RULE_FIRST_CLEAR_RELAY_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "FACTION_ZHAOMING_RELIC",
+        "RULE_FIRST_CLEAR_RELAY_REVEAL"
+      ],
+      "source_refs": [
+        "昭明旧物"
+      ],
+      "downstream_usage": [
+        "残缺日月纹、旧驿图、半枚驿令参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_style_qingming_wax_material_ep01",
+      "asset_id": "style_qingming_wax_material_ep01",
+      "asset_type": "style",
+      "output_path": "assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "prompt": "Use 清明虫蜡/白册材质 as episode 01 art reference. 虫蜡针、封条、白册、白翳衣料参考。 Preserve PROP_INSECT_WAX_NEEDLE;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "source_refs": [
+        "虫蜡白材质"
+      ],
+      "downstream_usage": [
+        "虫蜡针、封条、白册、白翳衣料参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh002",
+      "asset_id": "ref_ep01_sc001_sh002",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
+      "prompt": "Use SC001-SH002 北境战后压力碎片 as episode 01 art reference. 序幕北境压力参考，无血腥全景。 Preserve LOC_INTRO_MONTAGE;FACTION_BORDER_WALL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_INTRO_MONTAGE",
+        "FACTION_BORDER_WALL"
+      ],
+      "source_refs": [
+        "北境参考帧"
+      ],
+      "downstream_usage": [
+        "序幕北境压力参考，无血腥全景。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh003",
+      "asset_id": "ref_ep01_sc001_sh003",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
+      "prompt": "Use SC001-SH003 金河征粮道 as episode 01 art reference. 征粮木牌、半袋谷、空碗参考。 Preserve LOC_INTRO_MONTAGE;PROP_FOOD_TAX_MARKER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "LOC_INTRO_MONTAGE",
+        "PROP_FOOD_TAX_MARKER"
+      ],
+      "source_refs": [
+        "金河征粮参考帧"
+      ],
+      "downstream_usage": [
+        "征粮木牌、半袋谷、空碗参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc001_sh004",
+      "asset_id": "ref_ep01_sc001_sh004",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
+      "prompt": "Use SC001-SH004 南方密室旧驿图 as episode 01 art reference. 旧驿图、药包、断裂日月纹参考。 Preserve PROP_OLD_RELAY_MAP;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP",
+        "FACTION_ZHAOMING_RELIC"
+      ],
+      "source_refs": [
+        "南方密室参考帧"
+      ],
+      "downstream_usage": [
+        "旧驿图、药包、断裂日月纹参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc005_threshold_identification",
+      "asset_id": "ref_ep01_sc005_threshold_identification",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
+      "prompt": "Use SC005 药屋门槛失言/识句 as episode 01 art reference. 沈照眠门槛失言、白册识句标记参考。 Preserve CHAR_SHEN_ZHAOMIAN;PROP_HERB_POUCH;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_HERB_POUCH",
+        "PROP_QINGMING_REGISTER"
+      ],
+      "source_refs": [
+        "药屋门槛参考帧"
+      ],
+      "downstream_usage": [
+        "沈照眠门槛失言、白册识句标记参考。"
+      ]
+    },
+    {
+      "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint",
+      "asset_id": "ref_ep01_sc008_final_spear_line_well_glint",
+      "asset_type": "reference_frame",
+      "output_path": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
+      "prompt": "Use SC008 结尾短矛封锁/井沿月白反光 as episode 01 art reference. 结尾封锁线和一线月白反光参考。 Preserve RULE_SPATIAL_GEOGRAPHY;RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_YAN_NANZHI_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
+      "continuity_refs": [
+        "RULE_SPATIAL_GEOGRAPHY",
+        "RULE_MOON_WHITE_GLINT_ONLY",
+        "RULE_NO_YAN_NANZHI_REVEAL"
+      ],
+      "source_refs": [
+        "结尾参考帧"
+      ],
+      "downstream_usage": [
+        "结尾封锁线和一线月白反光参考。"
+      ]
+    }
+  ]
+}

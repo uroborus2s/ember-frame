@@ -1,0 +1,224 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_wu_lan_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-wu-lan-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-wu-lan-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_wu_lan_multi_state_board_v01",
+      "name_cn": "乌岚多状态角色板",
+      "character": "Wu Lan / 乌岚",
+      "identity": "19-25-year-old Blackwolf snowline scout and peripheral liaison for the Northern disaster-source-seeking faction",
+      "image_type": "multi-state character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_wu_lan_multi_state_board.png",
+      "body_and_face": {
+        "age_lock": "Adult 19-25; not a child, not an old veteran, not a romantic noble lead.",
+        "species_lock": "Medium-low anthropomorphism Blackwolf beastfolk, clearly an upright wolf-bodied subject with wolf muzzle, black wolf ears, long nose bridge, golden vertical pupils, canine teeth, black-grey layered tail, and wolf facial tattooing; never a normal human with costume ears and tail.",
+        "gender_lock": "Primary asset uses a restrained, non-noble adult scout presentation with no sexualized or strongly gender-coded costume. Future shots may adjust gender detail, but this board locks the same recognizable wolf anatomy, posture, and gear.",
+        "build": "About 1.82-1.90 m and 68-82 kg; close to a tall human in height but leaner, longer-legged, tighter-waisted, narrow-shouldered, and more explosive.",
+        "posture": "Low forward stance, ears angled back, tail low for balance, weight ready to drop into a sprint or crouched listening pose.",
+        "expression": "Alert, suspicious, hesitant to trust, always measuring wind, scent, snow, and exits before speaking."
+      },
+      "constant_anchors": [
+        "upright wolf-bodied anatomy, not human-with-ears",
+        "clear wolf muzzle",
+        "black wolf ears with high ear root and backward alert angle",
+        "long nose bridge and visible restrained canine teeth",
+        "golden vertical pupils",
+        "black-grey layered low wolf tail reaching the calf",
+        "wolf facial tattooing along muzzle, cheekbone, and nose bridge",
+        "black-grey short wolf pelt ending below the shoulder blades",
+        "dark-blue fitted snow-runner clothing, tight at waist, sleeve, and trouser cuffs",
+        "leather kneepads",
+        "forearm leather guards",
+        "claw-profile gloves",
+        "bone whistle",
+        "short bow",
+        "three short javelins",
+        "snow claw footgear that widens the landing area",
+        "dark-silver wolf-tooth buckle",
+        "small bonewood liaison token, rawhide cord, and dark red oath cord as object language only"
+      ],
+      "state_designs": [
+        {
+          "state_id": "wu_lan_snowline_patrol_scout",
+          "name_cn": "雪线巡哨轻装",
+          "episode_range": "09 and reusable northern snowline patrol shots",
+          "species_and_body": "Lean upright Blackwolf scout with long lower legs, narrow shoulders, tight waist, low tail, clear wolf muzzle, and gold vertical eyes.",
+          "silhouette": "Compact forward-leaning scout silhouette: short wolf pelt above the shoulder blades, fitted dark-blue snow-runner clothing, visible forearm guards, kneepads, short bow, and three short javelins.",
+          "materials": [
+            "black-grey wolf pelt",
+            "dark-blue thick woven snow cloth",
+            "wind-worn leather forearm guards",
+            "leather kneepads",
+            "bone whistle",
+            "short bow leather wrap",
+            "three short javelin shafts",
+            "snow claw footgear",
+            "frost powder"
+          ],
+          "color_logic": "Black-grey fur and dark-blue clothing dominate; silver-white frost defines edges; golden eyes are the only bright identity point.",
+          "damage_level": "Clean wind wear, frost, and rubbed leather only; no ragged savage styling.",
+          "required_details": [
+            "wolf muzzle and gold vertical pupils must be readable",
+            "short pelt must not become a heavy cloak",
+            "short bow and three short javelins must be present",
+            "low forward stance must show snowline scouting speed",
+            "no new wolf crest or visible badge"
+          ]
+        },
+        {
+          "state_id": "wu_lan_disaster_liaison_concealment",
+          "name_cn": "灾源联络遮蔽装",
+          "episode_range": "09-12 northern contact, warning, and cross-faction liaison shots",
+          "species_and_body": "Same Blackwolf body plan, with muzzle partly shadowed by a dark grey wind wrap while still clearly wolf-bodied.",
+          "silhouette": "Short pelt compressed close to the back, dark wind wrap around neck and lower muzzle, small side packet and bonewood liaison token at waist, bow kept close, tail low and still.",
+          "materials": [
+            "compressed black-grey wolf pelt",
+            "dark grey wind wrap",
+            "dark-blue fitted snow cloth",
+            "small folded message packet",
+            "bonewood liaison token",
+            "rawhide cord",
+            "dark red oath cord",
+            "dark-silver wolf-tooth buckle",
+            "frosted leather"
+          ],
+          "color_logic": "Dark grey and dark blue suppress the scout; bonewood and dark-silver objects are small readable liaison cues; gold eyes remain visible.",
+          "damage_level": "Snow dust and wind polish; clothing stays complete and precise.",
+          "required_details": [
+            "wind wrap must not erase the wolf muzzle",
+            "liaison authority must come from packet, token, cord, and posture, not a new emblem",
+            "short pelt and fitted snow clothing remain visible",
+            "bone whistle and dark-silver wolf-tooth buckle must remain present",
+            "no official banner, crest, or clan badge"
+          ]
+        },
+        {
+          "state_id": "wu_lan_night_pursuit_battle_ready",
+          "name_cn": "夜追战备装",
+          "episode_range": "night pursuit, beacon interception, frost-wolf guidance, and short skirmish shots",
+          "species_and_body": "Same lean long-limbed Blackwolf scout in a lower, more explosive crouch; tail compressed low for balance, ears back, claws and footgear exposed.",
+          "silhouette": "Long diagonal sprint-ready silhouette with the short bow angled back, three javelins over shoulder or side, forearm guards forward, kneepads and snow claw footgear dominant.",
+          "materials": [
+            "frost-crusted black-grey fur edge",
+            "dark-blue snow cloth",
+            "forearm leather guards",
+            "claw gloves",
+            "leather kneepads",
+            "snow claw footgear",
+            "short bow",
+            "three short javelins",
+            "old iron javelin tips",
+            "dark-silver wolf-tooth buckle"
+          ],
+          "color_logic": "Black, grey, and dark blue stay low-saturation; silver-white frost catches the moving edges; golden eyes and old iron tips are small focus points.",
+          "damage_level": "Active frost, snow scuff, and rubbed leather; no blood spectacle, no shredded costume.",
+          "required_details": [
+            "same face, wolf muzzle, gold eyes, and tail must remain continuous",
+            "snow claw footgear must clearly widen the landing area",
+            "short bow and three javelins must read as scout weapons, not heavy infantry tools",
+            "movement must feel like tracking and interception rather than heroic charge",
+            "no giant wolf spirit, high magic, or attack aura"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "face_species_identity_lock",
+          "purpose": "Lock Wu Lan as a medium-low anthropomorphism Blackwolf scout.",
+          "notes": "Clear wolf muzzle, black wolf ears, long nose bridge, cheekbone, restrained canine teeth, golden vertical pupils, alert and hesitant expression."
+        },
+        {
+          "detail_id": "ears_tail_and_wolf_tattooing",
+          "purpose": "Prevent the design from becoming a human wearing animal accessories.",
+          "notes": "High-root black ears angled backward, low black-grey layered wolf tail to calf, wolf facial tattooing along muzzle, cheekbone, and nose bridge."
+        },
+        {
+          "detail_id": "short_black_grey_wolf_pelt",
+          "purpose": "Lock non-noble scout warmth without losing agility.",
+          "notes": "Short pelt ends below shoulder blades; light, wind-worn, frost-dusted, never a heavy cloak."
+        },
+        {
+          "detail_id": "dark_blue_snow_runner_clothing",
+          "purpose": "Lock the scout silhouette.",
+          "notes": "Fitted waist, tied sleeve and trouser cuffs, clean cold-resistant cloth, no modern tactical fabric."
+        },
+        {
+          "detail_id": "forearm_guards_claw_gloves_and_kneepads",
+          "purpose": "Show low sprinting and snowline survival.",
+          "notes": "Wind-worn leather, claw profile visible under gloves, protective knees for crouch and crawl."
+        },
+        {
+          "detail_id": "bone_whistle_short_bow_three_javelins",
+          "purpose": "Lock the scouting and liaison equipment.",
+          "notes": "Bone whistle at chest or waist, compact short bow, exactly three short javelins, old iron tips, rawhide wraps."
+        },
+        {
+          "detail_id": "snow_claw_footgear",
+          "purpose": "Make the Blackwolf scout plausible on the snowline.",
+          "notes": "Foot claw snowshoe hybrid widens landing area without becoming modern crampons or sci-fi gear."
+        },
+        {
+          "detail_id": "dark_silver_wolf_tooth_buckle_and_bonewood_token",
+          "purpose": "Carry northern object-symbol continuity without a new badge.",
+          "notes": "Small dark-silver wolf-tooth buckle, bonewood liaison token, rawhide cord, and dark red oath cord are material objects, not a crest."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project material continuity.",
+          "notes": "Black-grey fur, dark-blue thick weave, silver-white frost, wind-worn leather, bone white, old iron, bonewood, dark red oath cord, frozen earth grey, golden eye color."
+        }
+      ],
+      "negative_rules": [
+        "redesigned Northern Beastfolk Alliance emblem",
+        "new Blackwolf clan crest",
+        "new wolf-head crest",
+        "new wolf-paw shield emblem",
+        "personal Wu Lan logo",
+        "large chest badge",
+        "shoulder patch",
+        "modern logo",
+        "banner or flag",
+        "ordinary human wearing wolf ears",
+        "human youth with wolf tail",
+        "wolf cosplay",
+        "cute wolf mascot",
+        "quadruped wolf",
+        "horror werewolf",
+        "bodybuilder werewolf",
+        "noble Frosthoof deer costume",
+        "Lu Mi costume clone",
+        "Helian Xuedai costume clone",
+        "white deer fur long mantle",
+        "ice-blue noble riding robe",
+        "jade noble ornaments as main focus",
+        "heavy siege troop armor",
+        "Blackfang breacher armor",
+        "Ironhorn shield-wall equipment",
+        "giant axe",
+        "tower shield",
+        "barbarian rags",
+        "torn dirty fur",
+        "beggar rags",
+        "full-body mud",
+        "blood spectacle",
+        "sexy exposed costume",
+        "modern tactical uniform",
+        "sci-fi goggles",
+        "firearms",
+        "high-magic wolf spirit",
+        "large blue flame",
+        "spell circle",
+        "floating weapon",
+        "Qingming white official costume",
+        "Suming insect visual language",
+        "Grey Wall soldier grey uniform",
+        "Zhaoming vermilion-blue formal robe",
+        "readable text or labels"
+      ]
+    }
+  ]
+}

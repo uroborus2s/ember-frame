@@ -108,7 +108,7 @@ The spirit-wing residue is low magic and short-lived. Show it as small gold-red 
 
 ## Yan Nanzhi Character Identity Lock
 
-Yan Nanzhi is an 18-year-old female fugitive old-imperial collateral royal and must be designed as a breathtakingly beautiful young woman. Her beauty is not decorative softness; it is cold, noble, unforgettable, and dangerous under restraint. Face and body must read unmistakably female: refined oval face, delicate jaw, clear luminous eyes, elegant nose and lips, long neck, narrow shoulders, slim waist, graceful hands, and a tall slender feminine silhouette. Her visual core is trained aristocratic restraint under active danger: upright posture, controlled gaze, black hair tied with a red cord, clean but travel-worn layers, and hidden proof objects rather than open royal display. Fatigue is allowed only as eye shadow, taut fingers, small travel dust, and restrained tension. She must never become masculine, androgynous, disheveled, modern princess-styled, or openly badged in the fugitive state.
+Yan Nanzhi is an 18-year-old female fugitive old-imperial collateral royal and must be designed as a breathtakingly beautiful young woman. Her beauty is not decorative softness; it is cold, noble, unforgettable, and dangerous under restraint. Face and body must read unmistakably female and should preserve the first-version v04 face-sheet identity while correcting the face shape into a true classical oval face rather than a melon-seed or V-line face. The face should have a softly rounded forehead, balanced midface width, fuller living cheeks, a gradual cheek-to-jaw transition, a short rounded non-pointed chin, and a smooth oval outer contour. Recognition should come from guarded eyes, believable eyelids, nose-lip shape, skin texture, stray hair, and cold distance, not from a sharp tapered jaw. She must keep clear guarded eyes, realistic heavier eyelids, elegant nose and lips, visible skin texture, long neck, narrow shoulders, slim waist, graceful hands, and a tall slender feminine silhouette. Her visual core is trained aristocratic restraint under active danger: upright posture, controlled gaze, black hair tied with a red cord, clean but travel-worn layers, and hidden proof objects rather than open royal display. Fatigue is allowed only as eye shadow, taut fingers, small travel dust, and restrained tension. She must never become masculine, androgynous, disheveled, modern princess-styled, openly badged in the fugitive state, reduced to a generic AI beauty face, or drawn with a guazi/melon-seed taper.
 
 Core visual anchors:
 
@@ -132,7 +132,7 @@ Create one vertical character board with no visible labels or readable text insi
    - Old empire formal reveal state: Ming-style Hanfu reference structure with vermilion wide sleeves, royal blue or peacock-blue layered front, moon-white inner garment, worn gold cloud and sun-moon dark pattern language. This is a memory/reveal state, not active travel wear.
    - Border snowline state: dark grey cloak over the fugitive structure, snow dust, only brief moon-white lining visibility during motion, old empire symbols still hidden.
 2. Detail panels:
-   - face age lock: 18, stunning female beauty, controlled noble distance, tired but not messy
+   - face age lock: 18, true classical oval face with rounded non-pointed chin, stunning female beauty, controlled noble distance, tired but not messy
    - black hair and red cord tension
    - collar/inner-pocket system hiding moon-white jade and blood writ
    - hands holding or protecting the old paper packet
@@ -169,6 +169,7 @@ Return to the fugitive structure under a dark grey snowline cloak. Snow and fros
 - no visible royal emblem on fugitive or snowline front layer
 - no modern princess styling
 - no masculine face, broad jaw, thick neck, wide shoulders, heavy hands, male boots-and-robe silhouette, or androgynous model
+- no guazi/melon-seed face, over-pointed V-line face, triangular lower face, sharp narrow chin, generic round AI oval face, porcelain doll face, plastic influencer face, or anime face
 - no loose fantasy tiara, crown, ballroom gown, or idol costume
 - no dirty collapse, beggar rags, shredded travel wear, or mud-covered refugee look
 - no open blood-written exposition page with readable characters

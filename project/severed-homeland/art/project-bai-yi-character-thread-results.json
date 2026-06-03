@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_bai_yi_character_v01",
+  "date": "2026-06-03",
+  "thread_plan": "project/severed-homeland/art/project-bai-yi-character-thread-plan.json",
+  "prompt_source": "project/severed-homeland/prompts/project-bai-yi-character-image-prompts.json",
+  "generation_method": "parent thread direct built-in image generation",
+  "background_threads": [],
+  "results": [
+    {
+      "thread_key": "project_bai_yi_character_v01",
+      "thread_id": null,
+      "status": "completed",
+      "reason": "Single-asset batch regenerated directly in the parent thread using the built-in image generation tool after adding the mandatory rear money-tail / rat-tail pigtail for bald insectoid designs.",
+      "prompt_ids": [
+        "prompt_character_bai_yi_multi_state_board_v01"
+      ],
+      "final_files": [
+        {
+          "asset_id": "character_bai_yi_multi_state_board_v01",
+          "path": "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+          "source_cache_path": "/Users/uroborus/.codex/generated_images/019e894f-bc55-75e1-a3ff-55cebe4d7f83/ig_0708c0f673b78908016a1f28f3eb1c8190b277d9794101d6ad.png",
+          "dimensions": {
+            "width": 863,
+            "height": 1822
+          },
+          "sha256": "66bb36c8a85c6f4e4182a150bc8345f019f3b1563808e81b6b68102cc792ae6d"
+        }
+      ],
+      "history_files": [
+        {
+          "path": "project/severed-homeland/assets/characters/history/character_bai_yi_multi_state_board.v001.png",
+          "reason": "Superseded first pass with overly inhuman/ugly face plate anatomy.",
+          "sha256": "f6411ebba3a6d719802bd7642424f4ef6d84cfb1f34b5aef98d08477f7af3e7a"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/history/character_bai_yi_multi_state_board.v002.png",
+          "reason": "Superseded near-human face pass because compound eyes needed stronger visual recognizability.",
+          "sha256": "372dfcac67c2c3b7b09fd411888bb7cae7f70b826b55612262bf0ba8bdf9b18f"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/history/character_bai_yi_multi_state_board.v003.png",
+          "reason": "Superseded stronger compound-eye pass because bald insectoid designs now require a rear money-tail / rat-tail pigtail.",
+          "sha256": "394434db41c795c5b992e91decbd70de663a0b262806a30e785e0901b588a5c5"
+        }
+      ],
+      "blocked_items": [],
+      "notes": [
+        "No existing faction emblem, symbol board, material board, prop board, or history asset was modified.",
+        "The first three generated Bai Yi boards were archived to character history before replacement.",
+        "The regenerated board is a vertical unlabeled production collage with three full-body states and detail panels.",
+        "The current board keeps near-human facial beauty, strong black compound-eye readability, and adds the mandatory single thin rear pigtail visible in the back-head detail."
+      ]
+    }
+  ]
+}

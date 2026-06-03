@@ -1,0 +1,41 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_infantry_character_v01",
+  "date": "2026-06-03",
+  "source_prompts": "project/severed-homeland/prompts/project-suming-infantry-character-image-prompts.json",
+  "execution_mode": "parent_direct_builtin_image_gen",
+  "reason": "Single project-level character board was generated directly in the parent thread for immediate visual supervision and QC; no background Codex thread was required.",
+  "threads": [],
+  "jobs": [
+    {
+      "job_id": "image_job_suming_infantry_character_board_v01",
+      "thread_title": "断航故土 肃明虫族小兵多状态角色板 v01",
+      "status": "completed_parent_direct",
+      "asset_ids": [
+        "character_suming_insect_infantry_multi_state_board_v01"
+      ],
+      "prompt_ids": [
+        "prompt_character_suming_insect_infantry_multi_state_board_v01"
+      ],
+      "expected_output_paths": [
+        "project/severed-homeland/assets/characters/character_suming_insect_infantry_multi_state_board.png"
+      ],
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#肃明虫族小兵",
+        "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+        "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+        "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+        "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png"
+      ],
+      "history_policy": "If future iterations supersede the canonical file, move retained intermediates into project/severed-homeland/assets/characters/history/ with a .vNNN filename suffix.",
+      "retry_rules": [
+        "Retry if the figure becomes a human soldier in insect armor.",
+        "Retry if the soldier duplicates Li Tang's commander silhouette or back-rank system.",
+        "Retry if the board redesigns the Suming/Qingming emblem or makes it a large badge.",
+        "Retry if visible text, labels, UI, or watermark appear."
+      ]
+    }
+  ]
+}
+

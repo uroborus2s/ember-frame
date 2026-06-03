@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_lu_qingli_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-lu-qingli-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-lu-qingli-character-designs.json",
+  "purpose": "Tool-neutral image prompt for the project-level Lu Qingli multi-state character reference board.",
+  "shared_rules": {
+    "format": "single vertical PNG production character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic costume and material rendering, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. Wallfoot hybrids have no formal badge; do not create a Wallfoot faction emblem, gang logo, sacred seal, or Lu Qingli personal crest. Use only object-based identity marks: black wood pass, broken pottery charm, grey-blue cord, old cloth, pocket stitching, narrow knife, and tiny ear-back scale arcs.",
+    "must_have": [
+      "Lu Qingli must read as a 15-16-year-old Wallfoot hybrid girl, petite, quick, wary, and close to walls",
+      "three states must preserve one continuous identity",
+      "grey-blue short jacket, terracotta inner layer, old yellow cloth, black wood pass, broken pottery charm, hidden pocket stitching, narrow hidden knife, and tiny dark-green scale arcs behind the ear must be present",
+      "clothing must stay complete, fitted, functional, repaired, and role-specific",
+      "no readable text, no labels, no UI, no watermark"
+    ],
+    "negative_prompt": "formal Wallfoot badge, new faction emblem, Lu Qingli personal crest, clean Zhaoming emblem, Qingming emblem, Northern emblem, Grey Wall badge, visible old-empire badge, official uniform, generic thief costume, assassin uniform, black leather rogue, ninja outfit, monsterized hybrid, reptile girl, full scales, horns, tail, claws, animal ears, animal-girl styling, adult femme-fatale, princess, noble rebel uniform, beggar rags, shredded poverty costume, full-body mud, slum caricature, oversized fantasy armor, military armor, high magic aura, spell circle, glowing tattoos, readable text, captions, Chinese characters, Latin letters, UI, watermark, oversaturated game art, cyberpunk, sci-fi"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_lu_qingli_multi_state_board_v01",
+      "asset_id": "character_lu_qingli_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_lu_qingli_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_wallfoot_hybrids_system_v01.png",
+          "role": "Wallfoot object-symbol reference; confirms no formal Wallfoot emblem"
+        },
+        {
+          "path": "project/severed-homeland/assets/props/prop_wallfoot_trade_tokens.png",
+          "role": "black-market wooden pass, broken pottery charm, grey-blue cord, old cloth, and hidden-pocket material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "Wallfoot, border, and snowline color reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "project material and tactile surface reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+          "role": "borrowed snowline scarf, leather knee protection, frost, and border material reference"
+        }
+      ],
+      "image_prompt": "Create one vertical PNG production character reference board for Lu Qingli / 陆青砾 from the series Severed Homeland. Use the visible project references for Wallfoot objects, trade tokens, grey-blue cloth, terracotta, old yellow cloth, border snowline material, and the low-magic eastern epic mood. The board must be an unlabeled production collage with blank panel divisions only: no labels, no captions, no Chinese characters, no Latin letters, no UI, no watermark.\n\nLu Qingli is a 15-16-year-old Wallfoot hybrid girl, petite and fast-moving, with sharp youthful features, wary calculating eyes, a sideways testing smile, and a body language that keeps her back near walls and one hand near exits or belt tools. She is not an adult thief, not a princess, not a monster girl, and not a uniformed rebel. Her hybrid identity is only tiny dark-green scale arcs behind one ear, visible in a close detail panel; do not add horns, tail, claws, animal ears, reptile face, or full scales.\n\nShow the same young girl in three full-body standing states: 1) Wallfoot market outfit: grey-blue short jacket, terracotta inner cloth, old yellow lining, narrow belt and rope knots, visible black-market wooden pass tag, broken pottery charm, hidden pocket stitching, sleeve-edge kiln dust, compact alert stance; 2) escape light outfit: same grey-blue and terracotta core tightened for running and hiding, deep grey short wrap or shoulder cloth, fewer exposed tokens pulled close to the body, narrow hidden knife accessible at belt or inner fold, still complete and practical; 3) borrowed snowline outfit: borrowed border scarf, short old leather knee protection, snow dust and frost grey edges over the same Wallfoot core, grey-blue jacket still visible, black wood pass and pottery charm still present, not a Grey Wall soldier and not military armor.\n\nInclude unlabeled detail panels for: youthful wary face and sideways testing smile; tiny dark-green scale arcs behind one ear; black-market wooden pass tag on grey-blue cord with shaved corner and no readable marks; broken pottery charm with cracks and two-hole or corded construction; hidden pocket stitching with old yellow cloth; narrow hidden knife close to belt; sleeve edge with kiln dust and repair stitches; borrowed snowline scarf and short leather knee protection. Add a small unlabeled material swatch strip showing grey-blue market cloth, terracotta inner cloth, old yellow cloth, black worn wood, broken pottery red-brown, dark green scale arcs, deep grey escape cloth, and frost-grey leather. Keep all clothing complete, fitted, repaired, compact, and role-specific; used hard but not ragged. Low-magic eastern epic, tactile realistic cloth, wood, pottery, leather, dust, frost, restrained cinematic lighting.",
+      "negative_prompt": "formal Wallfoot badge, new faction emblem, Lu Qingli personal crest, clean Zhaoming emblem, Suming Qingming emblem, Northern emblem, Grey Wall military badge, visible old-empire badge, official uniform, generic thief costume, assassin uniform, black leather rogue, ninja outfit, monsterized hybrid, reptile girl, full scales, horns, tail, claws, animal ears, animal-girl styling, adult femme-fatale, princess styling, noble rebel uniform, beggar rags, shredded poverty costume, full-body mud, slum caricature, oversized fantasy armor, military armor, clean hero armor, high magic aura, spell circle, glowing tattoo system, supernatural creature transformation, readable text, labels, captions, Chinese characters, Latin letters, UI, watermark, oversaturated game art, cyberpunk, sci-fi"
+    }
+  ]
+}

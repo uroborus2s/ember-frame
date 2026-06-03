@@ -1,0 +1,73 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_gu_huaizhang_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable Gu Huaizhang multi-state character reference board.",
+  "source_art_direction": "project/severed-homeland/art/project-gu-huaizhang-character-art-direction.md",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/regional-color-system/style_southern_old_empire_palette_v01.png",
+      "role": "Southern old empire palette reference for preserved old-court vermilion, royal blue, moon-white, vine green, worn gold, old white stone, and damp dark-brown lacquer"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+      "role": "locked Zhaoming emblem continuity reference only; do not redesign or replace"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+      "role": "locked Zhaoming symbol extension reference for partial inherited embroidery, scroll seals, and worn pressure marks"
+    },
+    {
+      "path": "project/severed-homeland/assets/characters/character_yan_nanzhi_multi_state_board.png",
+      "role": "Yan Nanzhi continuity reference; Gu Huaizhang's formal teaching state should explain her old-imperial pressure without copying her youthful silhouette"
+    },
+    {
+      "path": "project/severed-homeland/art/project-core-prop-costume-designs.json",
+      "role": "project costume-system rules: complete, functional, role-specific clothing; no new badges; old empire formal colors only where appropriate"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_gu_huaizhang_multi_state_board_v01",
+      "name_cn": "顾怀章多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "medium",
+      "status": "completed",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_gu_huaizhang_multi_state_board.png",
+      "source_prompt_id": "prompt_character_gu_huaizhang_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#顾怀章",
+        "project/severed-homeland/bible/scenes.md#南方旧帝国残脉地区",
+        "project/severed-homeland/bible/continuity.md",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md#南方旧帝国",
+        "project/severed-homeland/art/project-faction-symbol-system.md#昭明帝国日月体系",
+        "project/severed-homeland/art/project-core-prop-costume-designs.json"
+      ],
+      "downstream_usage": [
+        "Prompt Room character identity lock for Gu Huaizhang",
+        "ComfyUI character reference input for Yan Nanzhi memory and blood-writ instruction scenes",
+        "Southern old empire costume and archive-hall continuity reference",
+        "Fuyizhe political pressure visual reference",
+        "Reusable prop/costume reference for red-line scrolls, damp-proof scroll tubes, and old-court robe fragments"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "Zhaoming sun-moon visual language must derive from locked references and appear only as partial inherited embroidery, worn pressure marks, scroll seal fragments, or small old-court hardware.",
+    "Preserve Gu Huaizhang as an older southern teacher and Fuyizhe pressure figure, not an emperor, immortal, wizard, monk, or generic villain.",
+    "Clothing must stay complete, expensive, role-specific, and adapted to humid southern conditions through light gauze, thin brocade, short over-jackets, scroll tubes, and damp-proof storage.",
+    "Distress and history should appear as humidity, cracked lacquer, tarnished gold, thread wear, and old debt, not as refugee rags.",
+    "No visible text, labels, captions, Chinese characters, Latin letters, UI, or watermark inside generated images."
+  ]
+}

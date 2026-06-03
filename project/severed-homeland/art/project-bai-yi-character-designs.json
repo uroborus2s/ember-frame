@@ -1,0 +1,193 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_bai_yi_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-bai-yi-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-bai-yi-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_bai_yi_multi_state_board_v01",
+      "name_cn": "白翳多状态角色板",
+      "character": "Bai Yi",
+      "identity": "Upper-intelligence insectoid Suming central inspector and executor of the Qingming Register plan",
+      "image_type": "multi-state antagonist character identity board",
+      "output_path": "project/severed-homeland/assets/characters/character_bai_yi_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Highly human-like upper-intelligence insectoid official; insect identity is carried by compound eyes, height, slender proportions, elongated hands, a single thin rear money-tail / rat-tail pigtail, and restrained wing-membrane language.",
+        "height_and_build": "Over 2 meters tall, narrow, vertical, and unnervingly still; very slender official presence rather than muscular warrior mass.",
+        "face": "Cold handsome near-human official face with long refined proportions, narrow jaw, high bridge, thin lips, clean bone-white insect-wax complexion, and large almond-shaped black compound eyes in human eye positions. The eyes have no sclera, iris, or normal pupil; they read as wet black obsidian compound-eye surfaces with visible dense micro-lens dots, honeycomb-like grain, and granular highlights. No ugly insect head, skull mask, beak, mandibles, or white monster face plate.",
+        "head": "High cylindrical Qingming official hat covers the hair area, with vertical seams, wax fasteners, and cold-gold pins. A single thin low back money-tail / rat-tail pigtail must hang from the bald occiput or from under the rear edge of the official hat; no full human hair, bangs, side hair, or modern ponytail.",
+        "posture": "Ritual stillness, clean hands, controlled gestures, low emotional display."
+      },
+      "constant_anchors": [
+        "high cylindrical Qingming official hat",
+        "single thin rear money-tail / rat-tail pigtail",
+        "dustless insect-wax white official robe",
+        "bone-white hard collar",
+        "near-human cold handsome face",
+        "large almond-shaped black compound eyes with visible micro-lens dots",
+        "translucent wing-membrane shoulder cape",
+        "thin vertical white straps or bead chains",
+        "small locked Qingming institutional mark",
+        "cold-gold pins and wax fasteners",
+        "Qingming white register",
+        "insect-wax needle",
+        "cold-white Qingming incense thread"
+      ],
+      "state_designs": [
+        {
+          "state_id": "bai_yi_qingming_inspector_official",
+          "name_cn": "清明监察官服状态",
+          "episode_range": "01-03, 06",
+          "silhouette": "Full vertical white official silhouette with high hat, hard collar, broad but thin membrane shoulder cape, and long robe.",
+          "materials": [
+            "insect-wax white robe",
+            "bone-white hard collar",
+            "pearl-grey cracks",
+            "translucent wing membrane",
+            "cold-gold pins",
+            "white register paper and wax-bound cover"
+          ],
+          "color_logic": "Insect-wax white and bone white dominate; black sun and compound-eye black create authority contrast; cold gold is minimal and institutional.",
+          "damage_level": "No dust, no travel damage, no blood staining; pressure comes from impossible cleanliness.",
+          "required_details": [
+            "white register visible",
+            "insect-wax needle visible",
+            "small locked Qingming institutional mark visible",
+            "near-human face reads cold and handsome rather than monstrous",
+            "large black compound eyes clearly replace ordinary human eyes, with no sclera, iris, or pupil",
+            "compound-eye micro-lens texture is visible enough to read in close-up",
+            "height and body read over 2 meters and extremely slender",
+            "single thin rear pigtail visible from back or side",
+            "no full human hair"
+          ]
+        },
+        {
+          "state_id": "bai_yi_pseudo_human_ruler_formal",
+          "name_cn": "伪人统治者官服状态",
+          "episode_range": "public office, formal declaration, Qingming institutional scenes",
+          "silhouette": "Most human-official in outline: tall high hat, long robe, straight front placket, hanging white straps, ceremonial stillness.",
+          "materials": [
+            "smooth insect-wax white cloth-shell",
+            "bone-white collar plates",
+            "pearl-grey robe seams",
+            "cold-gold tiny studs",
+            "black institutional medallion fragment",
+            "thin white bead chains"
+          ],
+          "color_logic": "Near-monochrome Qingming palette with black sun authority and cold-gold hierarchy points.",
+          "damage_level": "Ceremonial and dustless.",
+          "required_details": [
+            "formal state must keep a near-human handsome face",
+            "large black compound-eye surfaces remain visible in normal eye positions",
+            "hat covers the hair area while a single thin rear pigtail remains visible",
+            "institutional badge usage is small and locked, not redesigned"
+          ]
+        },
+        {
+          "state_id": "bai_yi_pursuit_official",
+          "name_cn": "追捕官服状态",
+          "episode_range": "04-12 pursuit escalation",
+          "silhouette": "Narrowed official robe with membrane cape folded closer to arms and back; ready to walk, track, and screen but still not a fighter's armor.",
+          "materials": [
+            "narrow insect-wax white robe",
+            "folded translucent membrane cape",
+            "bone-white sleeve plates",
+            "dark neck membrane",
+            "cold-white incense thread",
+            "needle case and white-register slip"
+          ],
+          "color_logic": "White official slice inserted into any region; cold-white incense is a tracking line, not an attack effect.",
+          "damage_level": "No dirt or rips; travel only changes silhouette, not cleanliness.",
+          "required_details": [
+            "robe remains white and official",
+            "incense thread touches cloth edge or floats as a thin cold line",
+            "insect-wax needle remains a clean tool",
+            "no black armor, no lower-tier mantis anatomy"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "near_human_face_and_compound_eyes",
+          "purpose": "Prevent Bai Yi from becoming an ugly insect head while keeping his insect caste legible.",
+          "notes": "Cold handsome near-human face, long refined proportions, bone-white insect-wax complexion, large almond-shaped black compound eyes in human eye positions, visible micro-lens dots, wet obsidian highlights, granular reflections, no sclera, iris, or ordinary human pupils."
+        },
+        {
+          "detail_id": "official_hat_shell",
+          "purpose": "Lock the high Qingming official silhouette.",
+          "notes": "High cylindrical hat integrated with head shell, vertical seams, wax plates, cold-gold pins, one thin rear money-tail / rat-tail pigtail exiting under the back edge."
+        },
+        {
+          "detail_id": "rear_pigtail",
+          "purpose": "Lock the insect caste bald-head identifier requested for all bald insectoid designs.",
+          "notes": "Single thin low pigtail at the back of the bald head, like a money-tail / rat-tail queue; not loose hair, not full human hair, not a modern ponytail."
+        },
+        {
+          "detail_id": "collar_and_institutional_mark",
+          "purpose": "Use existing Qingming badge language without redesign.",
+          "notes": "Small institutional mark on collar, chest, seal, or register; no new crest."
+        },
+        {
+          "detail_id": "wing_membrane_cape",
+          "purpose": "Show upper-intelligence insect material language.",
+          "notes": "Transparent rigid membrane, vein texture, formal shoulder cape; not soft feather wings."
+        },
+        {
+          "detail_id": "needle_hand",
+          "purpose": "Connect Bai Yi to screening and memory interrogation.",
+          "notes": "Long clean hand, subtly insect-jointed fingers, insect-wax needle in tray or between fingers."
+        },
+        {
+          "detail_id": "white_register_and_wax_seal",
+          "purpose": "Carry Qingming Register continuity.",
+          "notes": "Book corner, wax seal, no readable names or text."
+        },
+        {
+          "detail_id": "qingming_incense_thread",
+          "purpose": "Lock pursuit tool as low magic.",
+          "notes": "Thin cold-white smoke thread clinging to cloth edge; no attack spell."
+        },
+        {
+          "detail_id": "dark_neck_membrane",
+          "purpose": "Keep the official figure visibly non-human in close-up.",
+          "notes": "Dark soft membrane between face plate, collar, and robe; hints at chitin beneath."
+        }
+      ],
+      "negative_rules": [
+        "full human hair",
+        "loose hair",
+        "modern ponytail",
+        "missing rear pigtail",
+        "ugly insect head",
+        "skull mask",
+        "white monster face plate",
+        "beak",
+        "mandibles",
+        "ordinary human pupils",
+        "sclera or iris",
+        "small normal human eye shape",
+        "short or broad human build",
+        "handsome masked man",
+        "ordinary human official wearing a mask",
+        "black armored warlord",
+        "knight armor",
+        "lower-tier insect monster anatomy",
+        "giant beetle body",
+        "mantis soldier body",
+        "spider silhouette",
+        "soft angel wings",
+        "feather wings",
+        "halo",
+        "divine priest costume",
+        "modern hospital lab",
+        "blue-white sci-fi laboratory",
+        "blood-soaked dungeon",
+        "redesigned Qingming badge",
+        "new personal crest",
+        "visible text or labels"
+      ]
+    }
+  ]
+}

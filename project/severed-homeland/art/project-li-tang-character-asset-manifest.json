@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_li_tang_character_v01",
+  "date": "2026-06-03",
+  "scope": "Project-level reusable multi-state character reference board for Li Tang, the high-ranking lower-caste Suming combat insect commander.",
+  "locked_references": [
+    {
+      "path": "project/severed-homeland/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+      "role": "locked Suming/Qingming white-wing-over-black-sun emblem reference; do not redesign"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+      "role": "locked Suming/Qingming symbol-extension reference for wax seals, plaques, carapace brands, and military tags"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+      "role": "global low-magic eastern epic mood lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+      "role": "project material and tactile surface lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
+      "role": "Qingming insect-wax, bone-white, membrane, and institutional material lock"
+    },
+    {
+      "path": "project/severed-homeland/assets/style/base-material-boards/material_border_wall_blackstone_snowline_v01.png",
+      "role": "border-wall blackstone, snowline, old iron, and frost material lock"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "character_li_tang_multi_state_board_v01",
+      "name_cn": "厉螳多状态角色板",
+      "asset_type": "character reference board",
+      "priority": "high",
+      "status": "planned",
+      "expected_output_path": "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png",
+      "source_prompt_id": "prompt_character_li_tang_multi_state_board_v01",
+      "continuity_references": [
+        "project/severed-homeland/bible/characters.md#厉螳",
+        "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
+        "project/severed-homeland/art/project-regional-color-system.md",
+        "project/severed-homeland/art/project-faction-symbol-system.md",
+        "project/severed-homeland/art/project-li-tang-character-art-direction.md"
+      ],
+      "downstream_usage": [
+        "Prompt Room character identity lock",
+        "ComfyUI character reference input",
+        "Hanwubao and border-wall combat continuity reference",
+        "Suming lower-caste combat insect hierarchy reference"
+      ]
+    }
+  ],
+  "batch_rules": [
+    "Do not redesign existing faction emblems.",
+    "Use the locked Suming/Qingming white-wing-over-black-sun emblem only as a small physical plaque, wax seal, carapace brand, or military tag.",
+    "Li Tang must be clearly non-human and non-humanoid: forward-leaning combat insect body, triangular mantis head, narrow compound eyes, mandible guard, broad hard carapace, reverse-jointed legs, and folding forearm blades.",
+    "Do not turn Li Tang into a human general, knight, armored warrior, martial-arts villain, or monster wearing a full robe.",
+    "Costume language is harness and military control gear: old iron bindings, dark-green command belt, bone-white insect-wax strips, black short mantle, short spear, and iron gate command token.",
+    "Distress surfaces through frost, old iron wear, blade scratches, wax cracks, and limited dark-red blade marks; avoid gore and monster-horror excess.",
+    "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."
+  ]
+}
