@@ -1,0 +1,30 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_qingling_yajian_character_v01",
+  "date": "2026-06-03",
+  "execution_mode": "parent_direct_builtin_image_gen",
+  "codex_threads": [],
+  "image_jobs": [
+    {
+      "job_id": "image_job_qingling_yajian_character_board_v01",
+      "status": "completed",
+      "thread_id": null,
+      "tool": "built-in image_gen",
+      "source_prompt_id": "prompt_character_qingling_yajian_multi_state_board_v01",
+      "asset_id": "character_qingling_yajian_multi_state_board_v01",
+      "generated_cache_file": "/Users/uroborus/.codex/generated_images/019e8b81-7122-7181-8a07-5de746d822a8/ig_04e220c4c97190c6016a1fa07a7518819386eb3611ea8d3989.png",
+      "final_file": "project/severed-homeland/assets/characters/character_qingling_yajian_multi_state_board.png",
+      "history_files": [],
+      "qc_status": "pass",
+      "notes": [
+        "Final image is 793 x 1983 PNG.",
+        "Board preserves one continuous named Snowfeather crow-scout identity across three full-body states.",
+        "The left-side teal feather, right-eye pale scar, corvid face, feather arm cape, bone grappling hook, rope spool, message tube, short blades, covered fire pot, and oath-cord/bone-ring details are visible enough for downstream modeling.",
+        "Final version does not show a large Wanshou badge, new Qingling emblem, crow crest, blue feather logo, wall emblem, shield emblem, readable text, UI, or watermark.",
+        "No background Codex thread was launched because this was a single supervised asset generated directly in the parent thread."
+      ]
+    }
+  ],
+  "blocked_items": []
+}
