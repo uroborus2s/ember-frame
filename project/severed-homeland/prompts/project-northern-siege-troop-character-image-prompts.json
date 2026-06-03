@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_siege_troop_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-northern-siege-troop-character-art-direction.md",
+  "source_designs": "project/severed-homeland/art/project-northern-siege-troop-character-designs.json",
+  "purpose": "Tool-neutral image prompt for the project-level Northern Beastfolk siege troop multi-state character reference board.",
+  "shared_rules": {
+    "format": "single extra-tall vertical PNG production character reference board, no visible labels or captions inside the image",
+    "style": "low-magic eastern epic, tactile realistic bone, old wood, fur, hide rope, old iron, frozen earth, blackstone snow dust, restrained cinematic lighting, readable for mobile vertical production reference",
+    "locked_badge_rule": "Do not redesign existing faction emblems. Do not create, draw, paint, carve, or imply any large faction emblem, wall emblem, shield emblem, banner logo, animal crest, logo mark, or decorative symbol. The locked Northern Beastfolk Alliance bonewood language may appear only as a tiny physical oath knot, small rope charm, tiny tool-carved sliver, or small drum-edge tag no larger than a palm and partially obscured by rope, never as a readable emblem, new animal crest, large badge, banner, logo, sticker, or altered emblem.",
+    "must_have": [
+      "Four full-body identifiable siege-role models must appear: Blackfang breacher, Ironhorn shield-wall soldier, Snowbadger tunneler, and Snowfeather wall-climber.",
+      "Each full-body model must have a distinct species proportion, face silhouette, body mass, weapon/tool system, and costume logic.",
+      "Shared Northern siege costume system must show bone lamellar plates, heavy fur or hide edges, rawhide rope, dark blood oath cord, old wood braces, old iron fasteners, blackstone snow dust, frozen mud, and ochre grass color.",
+      "The board must read as a practical siege troop modeling sheet, not a battle poster and not a monster horde.",
+      "No readable text, no labels, no UI, no watermark."
+    ],
+    "negative_prompt": "large wall symbol, wall emblem, shield emblem, painted shield symbol, banner mark, faction logo, redesigned Northern emblem, redesigned Wanshou badge, new animal crest, single wolf-head logo, single lion crest, large faction badge, banner logo, sticker overlay, cute animal mascot, generic orc army, monster horde, all four characters same body with swapped weapons, human soldiers, Grey Wall army uniforms, Suming insect infantry, black-green chitin insect bodies, Qingming white wax bindings, Bai Yi official robe, Luming noble shaman costume, polished fantasy plate armor, samurai armor, knight armor, sci-fi armor, cyberpunk, modern military uniform, romantic pure snowfield, high-magic blue-purple aura, spell circle, oversaturated game poster, gore, blood-soaked horror, readable text, captions, Chinese characters, Latin letters, UI, watermark"
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt_character_northern_siege_troop_multi_state_board_v01",
+      "asset_id": "character_northern_siege_troop_multi_state_board_v01",
+      "output_file": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
+      "input_images": [
+        {
+          "path": "project/severed-homeland/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "role": "locked Northern Beastfolk Alliance emblem reference; do not redesign, redraw, enlarge, or place as a visible shield/wall/battlefield emblem"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+          "role": "locked symbol system reference for material language only: bonewood oath knots, rawhide ties, horn-branch material, claw-tooth cuts, feather wood pieces, and blue survival fire points"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
+          "role": "global mood and texture reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/project-style-board/style_material_palette_v01.png",
+          "role": "material and palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/regional-color-system/style_border_to_north_palette_v01.png",
+          "role": "border-to-north palette reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/style/base-material-boards/material_northern_bonewood_fur_v01.png",
+          "role": "Northern bone, old wood, fur, hide rope, oath cord, and frost material reference"
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/character_lu_mi_multi_state_board.png",
+          "role": "Northern noble shaman contrast; siege troops must not inherit aristocratic or shamanic costume language"
+        }
+      ],
+      "image_prompt": "Create one single extra-tall vertical PNG production character reference board for the Northern Beastfolk Alliance generic siege troops from the series Severed Homeland. Use low-magic eastern epic style, border-to-north palette, Northern bonewood-fur materials, blackstone snowline, frozen earth, ochre grass, weathered fur, rawhide rope, dark blood oath cord, old wood, old iron, bone white, and tiny restrained blue survival fire. Do not redesign any badge. Do not create, draw, paint, carve, or imply any large faction emblem, wall emblem, shield emblem, banner logo, animal crest, logo mark, or decorative symbol. The background must be plain unmarked blackstone, snow, and frozen earth with no large painted or carved signs. Shields and armor must be practical and mostly unmarked, with scratches, dents, tied rawhide, and plain bone/wood construction only. If faction identity appears at all, it must be a tiny physical bonewood oath knot, small rope charm, tiny tool-carved sliver, or small drum-edge tag no larger than a palm, partially obscured by rope; never a readable emblem or new crest. The board is a practical multi-state modeling sheet for reusable siege troop archetypes, not a poster and not a monster horde. Show four full-body identifiable role models with distinct species proportions and costume systems: 1) Blackfang breach axeman, a tall orc-like beastfolk heavy infantry with exposed tusks, short thick neck, forward-heavy shoulders, thick fur upper back, giant horn helmet, hide shoulder mantle, bone shard shoulder armor, old wood chest board, blackstone snow-mud leg wraps, and two-handed bone-handled breach axe or battering hammer with old iron edge and door splinter scratches; his stance follows mammoth or rhino impact without showing a full beast. 2) Ironhorn shield-wall soldier, a broad bovine beastfolk with short blunt horns, heavy chest, thick neck, frost-coated muzzle, yak-fur neck guard, bone-white horn caps, half-person-height plain bone-and-old-iron shield with arrow dents, rawhide shield-back straps, old iron shield hoops, and a short-handled hammer behind the shield; shield has no emblem, no painted symbol, no crest. 3) Snowbadger tunnel sapper, a short dense badger-like beastfolk with broad hands, strong claws, thick forearms, squat torso, low crawling posture, short hide armor, knee and elbow hide patches, blackstone wedge pouch, bone shovel strapped to back, short chisel, coarse rope, and under-ice breathing bladder. 4) Snowfeather wall-climber, a light eagle or crow beastfolk with long arms, narrow torso, sharp watchful face, feather-pattern arm cape, clawed hands and feet, bone grappling hook, thin rawhide rope, light bone bracer, narrow tool pouch, short knife, and small fire pot; pose should be wall-climbing or rope-throwing, not flying heroically. Include silent detail panels with no text: horned helmet, tusks, and fur shoulder mantle; plain bone-and-old-iron shield front/back with no emblem; breach axe and battering hammer head; blackstone wedges, bone shovel, and under-ice breathing bladder; grappling hook, feather-pattern arm cape, rope spool, and short knife; tiny palm-sized bonewood oath knot or small tool-carved sliver partially hidden by rope, explicitly not an emblem; rawhide rope, dark blood oath cord, snow-mud leg wraps, old iron nails; material swatch strip for ochre grass, frozen earth grey, wind-eroded brown, dark hide, bone white, old wood, old iron, dark blood red, tiny blue survival fire, and blackstone snow dust. The four full-body models must not share the same body shape with swapped weapons; each must be recognizable as a separate siege-role model. Keep the image restrained, tactile, realistic, cold, worn, low-magic, and production-readable for mobile vertical reference. No visible labels, no captions, no readable text, no UI, no watermark.",
+      "negative_prompt": "large wall symbol, wall emblem, shield emblem, painted shield symbol, banner mark, faction logo, redesigned Northern emblem, redesigned Wanshou badge, new animal crest, single wolf-head logo, single lion crest, large faction badge, banner logo, sticker overlay, cute animal mascot, generic orc army, monster horde, all four characters same body with swapped weapons, human soldiers, Grey Wall army uniforms, Suming insect infantry, black-green chitin insect bodies, Qingming white wax bindings, Bai Yi official robe, Luming noble shaman costume, polished fantasy plate armor, samurai armor, knight armor, sci-fi armor, cyberpunk, modern military uniform, romantic pure snowfield, high-magic blue-purple aura, spell circle, oversaturated game poster, gore, blood-soaked horror, readable text, captions, Chinese characters, Latin letters, UI, watermark"
+    }
+  ]
+}

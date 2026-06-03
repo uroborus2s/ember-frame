@@ -1,0 +1,202 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_northern_siege_troop_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-northern-siege-troop-character-art-direction.md",
+  "source_manifest": "project/severed-homeland/art/project-northern-siege-troop-character-asset-manifest.json",
+  "character_designs": [
+    {
+      "asset_id": "character_northern_siege_troop_multi_state_board_v01",
+      "name_cn": "北境攻城兵种通用多状态角色板",
+      "character": "Northern Beastfolk Siege Troop Archetypes",
+      "identity": "Reusable Northern Beastfolk Alliance siege troop modeling board covering breacher, shield-wall, tunneler, and wall-climber roles",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "The board contains four recognizable beastfolk siege archetypes, each with explicit species proportion, facial traits, costume anchors, and tool logic.",
+        "shared_scale": "All are physically stronger than ordinary human soldiers, but their scale varies by species: Blackfang and Ironhorn are heavy, Snowbadger is short and dense, Snowfeather is light and long-limbed.",
+        "shared_costume_logic": "No uniform cloth army costume. Equipment is a practical siege system of cracked hide, heavy fur edge, bone lamellar plates, horn guards, old wood frames, rawhide rope, dark blood oath cord, blackstone snow dust, and old iron fasteners.",
+        "shared_expression": "Threat and hardship read through body language, worn gear, frost-bitten skin or fur, tired eyes, and siege tools rather than villainous monster faces.",
+        "badge_policy": "Existing Wanshou emblem language can only appear as a tiny bonewood oath knot, shield-back charm, drum-edge tag, or tool-carved wood sliver. It must not become a new badge, crest, logo, or banner."
+      },
+      "constant_anchors": [
+        "bone lamellar plates",
+        "heavy fur or hide edges",
+        "rawhide rope",
+        "dark blood oath cord",
+        "old wood braces",
+        "old iron nail and hoop fasteners",
+        "blackstone snow dust and frozen mud",
+        "ochre grass and wind-eroded brown palette",
+        "small restrained blue survival fire accent",
+        "tiny locked Wanshou bonewood emblem-language reference only as a physical object"
+      ],
+      "state_designs": [
+        {
+          "state_id": "blackfang_breach_axeman",
+          "name_cn": "黑牙破门斧兵 / 破门状态",
+          "episode_range": "08-10 border-wall siege and recurring Northern battle fragments",
+          "species_and_body": "Tall orc-like Blackfang beastfolk heavy infantry, exposed tusks, short thick neck, forward-heavy shoulders, thick fur across upper back, long powerful arms.",
+          "silhouette": "Triangular heavy breacher silhouette with horned helmet, broad shoulders, two-handed bone-handled axe or battering hammer, and low forward march.",
+          "materials": [
+            "giant horn helmet",
+            "thick hide shoulder mantle",
+            "bone shard shoulder armor",
+            "old wood chest board",
+            "rawhide rope",
+            "dark blood oath cord",
+            "blackstone snow-mud leg wraps",
+            "old iron blade edge"
+          ],
+          "color_logic": "Wind-eroded brown and beast-hide dark brown dominate; bone white and old iron define armor; dark blood red appears only in oath cord and worn weapon stains.",
+          "required_details": [
+            "tusks must be visible but not cartoonish",
+            "helmet must use horn and bone rather than polished metal",
+            "weapon must read as door-breaking siege tool",
+            "stance should imply following mammoth or rhino impact, without requiring the beast to appear"
+          ]
+        },
+        {
+          "state_id": "ironhorn_shield_wall_soldier",
+          "name_cn": "铁角盾墙兵 / 顶盾状态",
+          "episode_range": "08-10 siege shield wall, shaman escort, and siege-engine protection shots",
+          "species_and_body": "Broad Ironhorn bovine beastfolk, short blunt horns, heavy chest, thick neck, low center of gravity, frost-coated muzzle and shoulder fur.",
+          "silhouette": "Wide rectangular shield-wall silhouette; half-person-height bone-and-old-iron shield dominates, with a short-handled hammer visible behind it.",
+          "materials": [
+            "bone-and-old-iron shield",
+            "yak-fur neck guard",
+            "bone white horn caps",
+            "old iron shield hoops",
+            "shield-back rawhide straps",
+            "weathered wood frame",
+            "blackstone dust",
+            "small bonewood oath charm"
+          ],
+          "color_logic": "Bone white shield and frost edge contrast with dark hide, frozen earth grey, old iron, and ochre rope; any blue fire reflection is tiny and low.",
+          "required_details": [
+            "short blunt horns must read clearly",
+            "shield must feel heavy and practical, with arrow dents and scuffs",
+            "yak-fur neck guard differentiates the role from human wall soldiers",
+            "small Wanshou reference may hang on shield back only as physical charm"
+          ]
+        },
+        {
+          "state_id": "snowbadger_tunnel_sapper",
+          "name_cn": "雪獾掘地兵 / 破基状态",
+          "episode_range": "granary foundation, drainage ditch, snow pit, tunnel sabotage, and siege underside shots",
+          "species_and_body": "Short dense Snowbadger beastfolk with broad hands, strong claws, thick forearms, squat torso, and low crawling posture.",
+          "silhouette": "Low compact sapper silhouette with tool belt, blackstone wedge bag, bone shovel strapped to back, and inflated under-ice breathing bladder.",
+          "materials": [
+            "short hide armor",
+            "knee and elbow hide patches",
+            "blackstone wedge pouch",
+            "bone shovel",
+            "short chisel",
+            "coarse rope",
+            "under-ice breathing bladder",
+            "frozen mud"
+          ],
+          "color_logic": "Frozen earth grey, dark hide, blackstone, bone white tools, and small ochre grass fibers; no bright magic.",
+          "required_details": [
+            "short dense body proportion must be unmistakable",
+            "large claws and broad hands must read as functional digging anatomy",
+            "tool belt and breathing bladder must show the siege role",
+            "avoid making the model a cute animal mascot"
+          ]
+        },
+        {
+          "state_id": "snowfeather_wall_climber",
+          "name_cn": "雪羽攀墙斥候 / 攀墙状态",
+          "episode_range": "wall climb, rope throw, gate-flag cut, and inner-latch sabotage shots",
+          "species_and_body": "Light Snowfeather eagle or crow beastfolk, long arms, narrow torso, feather pattern cloak, clawed hands and feet, sharp watchful face.",
+          "silhouette": "Diagonal climbing silhouette with one arm extended by grappling hook, feathered arm cape trailing, light bone bracer and rope spool visible.",
+          "materials": [
+            "feather-pattern arm cape",
+            "bone grappling hook",
+            "thin rawhide rope",
+            "light bone bracer",
+            "narrow tool pouch",
+            "short knife",
+            "small fire pot",
+            "snow-dusted blackstone"
+          ],
+          "color_logic": "Dark feather brown and smoke grey with bone white hooks and restrained ice-blue edge light; no large glowing wings or air force spectacle.",
+          "required_details": [
+            "feather arm cape must be readable but not angelic",
+            "grappling hook and rope must dominate the role",
+            "pose should be wall-climbing or rope-throwing, not flying heroically",
+            "avoid turning the model into a noble shaman or fantasy ranger"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {
+          "detail_id": "horned_helmet_tusks_and_fur_shoulders",
+          "purpose": "Lock Blackfang breacher head and shoulder identity.",
+          "notes": "Giant horn helmet, visible tusks, thick fur shoulder mantle, and bone shard armor."
+        },
+        {
+          "detail_id": "bone_iron_shield_front_and_back",
+          "purpose": "Lock Ironhorn shield-wall equipment.",
+          "notes": "Half-person-height shield with bone plates, old iron hoops, arrow dents, and rawhide back straps."
+        },
+        {
+          "detail_id": "breach_axe_and_battering_hammer",
+          "purpose": "Keep breacher weapons as practical siege tools.",
+          "notes": "Bone handles, old iron edges, door-splinter scratches, no polished ceremonial blades."
+        },
+        {
+          "detail_id": "blackstone_wedges_bone_shovel_breathing_bladder",
+          "purpose": "Lock Snowbadger tunneler tool system.",
+          "notes": "Blackstone wedge pouch, bone shovel, short chisel, under-ice breathing bladder, coarse rope."
+        },
+        {
+          "detail_id": "grappling_hook_feather_cape_and_rope",
+          "purpose": "Lock Snowfeather wall-climber silhouette.",
+          "notes": "Bone grappling hook, feather-pattern arm cape, light bone bracer, thin rawhide rope, short knife."
+        },
+        {
+          "detail_id": "tiny_locked_wanshou_physical_reference",
+          "purpose": "Carry faction continuity without redesigning the badge.",
+          "notes": "Small bonewood oath knot, shield-back charm, drum-edge tag, or tool-carved sliver only."
+        },
+        {
+          "detail_id": "hide_rope_oath_cord_snow_wraps",
+          "purpose": "Unify the shared Northern siege costume layer.",
+          "notes": "Rawhide rope, dark blood oath cord, snow-mud leg wraps, old iron nails, weathered wood."
+        },
+        {
+          "detail_id": "material_swatch_strip",
+          "purpose": "Carry project material and color continuity.",
+          "notes": "Ochre grass, frozen earth grey, wind-eroded brown, dark hide, bone white, old wood, old iron, dark blood red, blue survival fire, blackstone snow dust."
+        }
+      ],
+      "negative_rules": [
+        "redesigned Northern emblem",
+        "new Wanshou badge",
+        "new animal crest",
+        "large faction logo",
+        "single wolf head emblem",
+        "single lion crest",
+        "cute animal mascot",
+        "generic orc army",
+        "all four models sharing the same body with swapped weapons",
+        "monster horde",
+        "human Grey Wall soldiers",
+        "Suming insect infantry",
+        "Bai Yi or Qingming visual language",
+        "Luming noble shaman costume",
+        "clean fantasy plate armor",
+        "sci-fi metal armor",
+        "modern military uniform",
+        "high-magic spell circle",
+        "oversaturated game art",
+        "romantic pure snowfield",
+        "gore tableau",
+        "readable text",
+        "visible labels"
+      ]
+    }
+  ]
+}
