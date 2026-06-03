@@ -1,0 +1,150 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_heavy_insect_soldier_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-suming-heavy-insect-soldier-character-art-direction.md",
+  "character_designs": [
+    {
+      "asset_id": "character_suming_heavy_insect_soldier_multi_state_board_v01",
+      "name_cn": "肃明重甲虫士兵多状态角色板",
+      "character": "Suming Heavy Insect Soldier",
+      "identity": "Mid-tier Suming War-Armor Office heavy infantry used for gate shielding, shield-wall pressure, heavy convoy escort, granary gates, and border-wall door defense",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_suming_heavy_insect_soldier_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Clearly non-human heavy insect infantry; never a human shield soldier, knight, or man in insect armor.",
+        "scale": "Approximately 2.2 to 2.6 meters tall in-world, broader than ordinary insect infantry but below heavy carapace generals.",
+        "build": "Thick chest and back carapace, short broad abdomen plates, outward pelvic carapace, stout hind limbs, heavy clawed feet, slow shield-wall posture.",
+        "lower_body_rule": "Lower body is heavier than ordinary infantry but must not become the super-wide siege lower body of the heavy carapace general.",
+        "head": "Low broad insect head with narrow compound eyes, thick bone-white mandible guard, dark-green neck membrane, no human face or hair.",
+        "back": "Degenerated hard wings compressed into thick layered back armor plates."
+      },
+      "constant_anchors": [
+        "deep black-green heavy carapace",
+        "deep-brown short broad abdominal plates",
+        "outward pelvic carapace",
+        "stout hind limbs and heavy clawed feet",
+        "thick bone-white mandible guard",
+        "bone-white insect-wax joint seal rings",
+        "old iron heavy straps",
+        "dark-green formation band",
+        "black iron gate shield",
+        "short heavy spear",
+        "heavy hook-sickle",
+        "gate fork",
+        "convoy chain",
+        "small locked Suming/Qingming physical tag"
+      ],
+      "state_designs": [
+        {
+          "state_id": "suming_heavy_soldier_gate_shield_guard",
+          "name_cn": "门盾守卫",
+          "silhouette": "Heavy insect body planted behind a black iron gate shield, short heavy spear tight to shield side, slow immovable guard posture.",
+          "materials": [
+            "deep black-green heavy carapace",
+            "black iron gate shield",
+            "bone-white wax joint rings",
+            "old iron heavy straps",
+            "dark-green formation band",
+            "small locked physical tag"
+          ],
+          "color_logic": "Black-green carapace and black iron shield dominate; bone-white seals mark Suming institutional control.",
+          "required_details": [
+            "shield must read as heavy gate shield, not knight shield",
+            "body must remain non-human behind the shield",
+            "lower body must stay visible enough to read stout insect legs",
+            "no commander rank marks"
+          ]
+        },
+        {
+          "state_id": "suming_heavy_soldier_shield_wall_push",
+          "name_cn": "盾墙推进",
+          "silhouette": "Forward pressure stance built for matching with two or three soldiers, shoulders, shield edge, and clawed feet forming a modular wall.",
+          "materials": [
+            "scratched black iron shield edge",
+            "deep-brown abdominal armor",
+            "bone-white seal rings",
+            "old iron shield brackets",
+            "dark-green formation strap",
+            "blackstone dust"
+          ],
+          "color_logic": "Dark shield and carapace mass create wall pressure, with restrained old iron and wax details.",
+          "required_details": [
+            "movement reads slow and compressive, not Li Tang-style lunge",
+            "clawed feet must brace against ground",
+            "shield wall geometry must be clear",
+            "no forearm blade focus"
+          ]
+        },
+        {
+          "state_id": "suming_heavy_soldier_heavy_convoy",
+          "name_cn": "押运重车",
+          "silhouette": "Clawed feet near wheel line, one limb bracing convoy chain, gate fork angled down, heavy body blocking the cart side.",
+          "materials": [
+            "convoy chain",
+            "gate fork",
+            "old iron wheel hook",
+            "wax-sealed joint rings",
+            "scuffed black-green carapace",
+            "dark-brown belly armor"
+          ],
+          "color_logic": "Old iron chain and gate fork add convoy function over the same black-green heavy infantry body.",
+          "required_details": [
+            "chain and gate fork must show heavy convoy control",
+            "soldier must not perform human-hand arrest actions",
+            "body remains a heavy insect guard, not a slave soldier",
+            "no readable tags"
+          ]
+        },
+        {
+          "state_id": "suming_heavy_soldier_snowline_gate",
+          "name_cn": "雪线守门",
+          "silhouette": "Gate shield and heavy clawed feet planted in blackstone snow, frost on old iron buckles and wax seal rings.",
+          "materials": [
+            "blackstone snow dust",
+            "frosted black iron shield",
+            "old iron frost",
+            "bone-white cracked wax rings",
+            "dark-green formation band",
+            "deep black-green carapace"
+          ],
+          "color_logic": "Snowline frost overlays the heavy Suming palette without turning the figure into Northern beastfolk.",
+          "required_details": [
+            "still reads as Suming heavy insect soldier",
+            "large clawed feet and short broad abdomen remain visible",
+            "no Northern beast silhouette",
+            "no general-scale siege body"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {"detail_id": "low_broad_head", "purpose": "Lock non-human heavy infantry identity.", "notes": "Low broad insect head, narrow compound eyes, thick bone-white mandible guard, dark-green neck membrane."},
+        {"detail_id": "heavy_body_and_abdomen", "purpose": "Differentiate from ordinary infantry.", "notes": "Deep black-green chest and back carapace, deep-brown short broad abdomen, outward pelvic carapace."},
+        {"detail_id": "stout_lower_limbs", "purpose": "Differentiate from Li Tang and heavy general.", "notes": "Stout hind limbs and heavy clawed feet: broader than infantry, not super-wide like a general."},
+        {"detail_id": "wax_rings_and_old_iron", "purpose": "Show institutional control and armor function.", "notes": "Bone-white insect-wax joint rings, old iron heavy straps, dark-green formation band."},
+        {"detail_id": "shield_and_gate_tools", "purpose": "Clarify battlefield role.", "notes": "Black iron gate shield, short heavy spear, heavy hook-sickle, gate fork, convoy chain."},
+        {"detail_id": "material_swatch_strip", "purpose": "Carry project material continuity.", "notes": "Deep black-green heavy carapace, deep-brown abdomen, bone-white guard, bone-white wax, old iron, dark-green band, blackstone snow, muted dark-red impact mark."}
+      ],
+      "negative_rules": [
+        "human shield soldier",
+        "knight",
+        "samurai",
+        "man in insect armor",
+        "helmeted human",
+        "heavy carapace general",
+        "Li Tang duplicate",
+        "slender mantis legs",
+        "forearm blade focus",
+        "human face",
+        "human hair",
+        "human boots",
+        "Northern beast",
+        "orc",
+        "modern riot shield",
+        "redesigned Suming emblem",
+        "readable text or labels"
+      ]
+    }
+  ]
+}
