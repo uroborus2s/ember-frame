@@ -4,7 +4,7 @@
   "asset_batch": "project_li_tang_character_v01",
   "date": "2026-06-03",
   "source_thread_plan": "project/severed-homeland/art/project-li-tang-character-thread-plan.json",
-  "execution_mode": "direct_parent_image_generation",
+  "execution_mode": "direct_parent_image_generation_with_face_revision",
   "threads": [],
   "results": [
     {
@@ -19,14 +19,18 @@
         "project/severed-homeland/assets/characters/character_li_tang_multi_state_board.png"
       ],
       "history_files": [
-        "project/severed-homeland/assets/characters/history/character_li_tang_multi_state_board.v001.png"
+        "project/severed-homeland/assets/characters/history/character_li_tang_multi_state_board.v001.png",
+        "project/severed-homeland/assets/characters/history/character_li_tang_multi_state_board.v002.png"
       ],
       "blocked_items": [],
       "retry_notes": [
         "First generated version established the three-state board but retained too much humanoid-warrior posture and minor pseudo-text-like marks on hanging strips.",
-        "Second version tightened non-human body language, suppressed pseudo-writing, kept the existing Suming/Qingming emblem as a small physical plaque, and was accepted as the canonical output."
+        "Second version tightened non-human body language, suppressed pseudo-writing, kept the existing Suming/Qingming emblem as a small physical plaque, and was accepted as the canonical output.",
+        "Face-anthropomorphism revision requested: raise Li Tang's commander facial readability while locking mantis-insect species traits.",
+        "First face revision candidate was rejected because it pushed the full body toward a humanoid armored warrior and enlarged the chest emblem beyond the small-plaque rule.",
+        "Accepted face revision used the original canonical board as edit target, preserved the non-human insect body plan and small rank plaque, and revised only the head/face planes toward semi-anthropomorphic brow, nose-ridge, cheek-plate, and jaw-armor readability."
       ],
-      "validation_summary": "Final PNG copied to the canonical asset path; first version retained as history. Visual review confirmed three states, mantis-like non-human head, black-green carapace, folding forearm blades, reverse-jointed legs, old iron harness, dark-green command belt, bone-white insect-wax strips, snowline state, and no readable text."
+      "validation_summary": "Final PNG copied to the canonical asset path; earlier canonical version retained as history v002. Visual review confirmed three states, non-human mantis-insect body plan, stronger semi-anthropomorphic command face, dark compound eyes, bone-white mandible guard, black-green carapace, folding forearm blades, reverse-jointed legs, old iron harness, dark-green command belt, bone-white insect-wax strips, snowline state, small locked-emblem rank plaque only, and no readable text."
     }
   ]
 }
