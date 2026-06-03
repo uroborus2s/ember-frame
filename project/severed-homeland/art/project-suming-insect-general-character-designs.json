@@ -1,0 +1,240 @@
+{
+  "version": "1",
+  "project": "severed-homeland",
+  "asset_batch": "project_suming_insect_general_character_v01",
+  "date": "2026-06-03",
+  "source_art_direction": "project/severed-homeland/art/project-suming-insect-general-character-art-direction.md",
+  "character_designs": [
+    {
+      "asset_id": "character_suming_flying_insect_general_multi_state_board_v01",
+      "name_cn": "肃明飞翼虫族将军多状态角色板",
+      "character": "Suming Flying Insect General",
+      "identity": "High-ranking Suming War-Armor Office airborne combat general used for wall dives, aerial reconnaissance, battlefield signaling, and vertical pursuit pressure",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_suming_flying_insect_general_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Clearly non-human airborne combat insect general; never a winged human, angel, bird-man, immortal, or human general wearing wings.",
+        "scale": "Approximately 2.3 to 2.6 meters tall in-world, high-rank but lighter and more vertical than Li Tang.",
+        "build": "Narrow hard chest and back, compressed abdomen, wing-root shoulders, jumping and perching lower limbs, clawed wall-gripping feet.",
+        "head": "Wide insect brow, dark compound eyes, bone-white mandible guard, short antenna bundle, dark-green neck membrane, no human face or hair.",
+        "wings": "Two pairs of translucent black-green membrane wings, or upper hard wing covers plus lower thin membrane wings, rooted in shoulder-back carapace with bone-white wax seals and old iron flight harness."
+      },
+      "constant_anchors": [
+        "two pairs of translucent black-green membrane wings",
+        "hard wing-cover fold lines",
+        "bone-white insect-wax wing-root seal strips",
+        "old iron flight harness",
+        "dark-green command belt",
+        "small locked Suming/Qingming rank plaque",
+        "short throwing spear",
+        "hook-claw cable",
+        "wing-edge bone spurs",
+        "messenger bone whistle",
+        "wall-gripping clawed feet",
+        "dark compound eyes and short antenna bundle"
+      ],
+      "state_designs": [
+        {
+          "state_id": "suming_flying_general_wall_perch",
+          "name_cn": "城墙停栖态",
+          "silhouette": "Half-folded wings, clawed feet gripping a blackstone parapet or roof edge, torso angled down like a command predator.",
+          "materials": [
+            "black-green membrane wing",
+            "deep-brown back carapace",
+            "old iron flight harness",
+            "bone-white wing-root wax seals",
+            "dark-green command belt",
+            "small rank plaque",
+            "short throwing spear"
+          ],
+          "color_logic": "Black-green wing membrane and deep carapace dominate; bone-white wing-root seals and old iron show military control.",
+          "required_details": [
+            "wings must attach to carapace, not cloak or human shoulders",
+            "clawed feet must visibly grip stone",
+            "rank plaque must stay tiny and physical",
+            "no feather wings or angel pose"
+          ]
+        },
+        {
+          "state_id": "suming_flying_general_dive_command",
+          "name_cn": "俯冲压阵态",
+          "silhouette": "Full wing spread in a downward dive, short spear or hook-claw cable leading the motion, body streamlined but insectoid.",
+          "materials": [
+            "stretched translucent wing membrane",
+            "old iron hinge rings",
+            "wing-edge bone spurs",
+            "dark chitin abdomen",
+            "restrained dark-red wing-edge scratches",
+            "wind-dusted wax seals"
+          ],
+          "color_logic": "Wing translucency carries the main shape; dark chitin and old iron keep it military rather than mystical.",
+          "required_details": [
+            "flight reads as physical wing movement, not magic aura",
+            "hook-claw cable or throwing spear must show battlefield role",
+            "body remains non-humanoid from every angle",
+            "no bird anatomy"
+          ]
+        },
+        {
+          "state_id": "suming_flying_general_snowline_signal",
+          "name_cn": "雪线传令态",
+          "silhouette": "Wings narrowed against wind, one clawed foot braced on blackstone, messenger bone whistle and command belt visible.",
+          "materials": [
+            "frosted black-green membrane",
+            "blackstone snow dust",
+            "old iron flight harness frost",
+            "bone whistle",
+            "dark-green command belt",
+            "cracked wing-root wax seals"
+          ],
+          "color_logic": "Snowline blue-grey overlays the black-green and bone-white system without turning the figure into Northern beastfolk.",
+          "required_details": [
+            "bone whistle or signal object must be visible",
+            "wing fold must remain readable",
+            "clawed perching foot must stay visible",
+            "no feather cloak"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {"detail_id": "wing_root_harness", "purpose": "Lock physical flight anatomy.", "notes": "Membrane wings rooted in shoulder-back carapace, old iron flight harness, bone-white wax seals."},
+        {"detail_id": "compound_eye_antenna_head", "purpose": "Prevent winged human drift.", "notes": "Dark compound eyes, bone-white mandible guard, short antenna bundle, no human face or hair."},
+        {"detail_id": "clawed_perching_foot", "purpose": "Show wall and roof use.", "notes": "Clawed feet gripping blackstone parapet, roof edge, or flagpole."},
+        {"detail_id": "airborne_weapons", "purpose": "Clarify battlefield function.", "notes": "Short throwing spear, hook-claw cable, wing-edge bone spurs, messenger bone whistle."},
+        {"detail_id": "material_swatch_strip", "purpose": "Carry project material continuity.", "notes": "Black-green membrane, deep-brown carapace, bone-white wax, old iron, dark-green belt, cold-gold pin, restrained dark-red scratch, blackstone snow."}
+      ],
+      "negative_rules": [
+        "winged human",
+        "angel",
+        "bird-man",
+        "immortal flying warrior",
+        "feather wings",
+        "human cloak wings",
+        "human general with wings",
+        "Bai Yi wing cape",
+        "Li Tang duplicate",
+        "magic flight aura",
+        "human face",
+        "human hair",
+        "redesigned Suming emblem",
+        "readable text or labels"
+      ]
+    },
+    {
+      "asset_id": "character_suming_heavy_carapace_general_multi_state_board_v01",
+      "name_cn": "肃明重甲虫族将军多状态角色板",
+      "character": "Suming Heavy Carapace General",
+      "identity": "High-ranking Suming War-Armor Office siege and gate-pressure general with a lower body heavier and broader than Li Tang",
+      "image_type": "multi-state character reference board",
+      "output_path": "project/severed-homeland/assets/characters/character_suming_heavy_carapace_general_multi_state_board.png",
+      "body_and_face": {
+        "species_lock": "Clearly non-human heavy combat insect general; never a human warlord in giant armor and never a Li Tang duplicate.",
+        "scale": "Approximately 2.7 to 3.1 meters tall in-world, broader and heavier than Li Tang.",
+        "build": "Massive chest and back carapace with extremely thick lower body: broad abdomen plates, heavy pelvic carapace, oversized hind limbs, large clawed feet, and low center of gravity.",
+        "lower_body_rule": "The abdomen, pelvic armor, hind legs, support limbs, and clawed feet must be visibly thicker, wider, and more stable than Li Tang's lower body.",
+        "head": "Low-set armored head, deep narrow compound eyes, thick bone-white mandible guard, neck nearly buried in chest armor, no human face or hair."
+      },
+      "constant_anchors": [
+        "lower body broader and heavier than Li Tang",
+        "massive segmented abdomen plates",
+        "heavy pelvic carapace",
+        "oversized hind limbs",
+        "large clawed feet",
+        "four to six thick support limbs or two huge hind limbs plus side support claws",
+        "black-green heavy carapace",
+        "deep-brown belly armor",
+        "old iron heavy harness",
+        "bone-white insect-wax seal rings",
+        "dark-green heavy command belt",
+        "black iron gate shield",
+        "ram hammer",
+        "small locked Suming/Qingming rank plaque"
+      ],
+      "state_designs": [
+        {
+          "state_id": "suming_heavy_general_gate_lock",
+          "name_cn": "闸门压阵态",
+          "silhouette": "Extremely wide lower body planted like a living gate, heavy shield or ram hammer vertical, head low under chest armor.",
+          "materials": [
+            "black-green heavy carapace",
+            "deep-brown abdominal plates",
+            "old iron heavy harness",
+            "bone-white wax seal rings",
+            "black iron gate shield",
+            "small rank plaque"
+          ],
+          "color_logic": "Deep black-green and old iron dominate, with bone-white seal rings marking Suming control.",
+          "required_details": [
+            "lower body must be broader than Li Tang",
+            "large clawed feet and pelvic armor must be visible",
+            "shield reads as gate pressure, not knight shield",
+            "no humanoid armor suit"
+          ]
+        },
+        {
+          "state_id": "suming_heavy_general_gate_break",
+          "name_cn": "冲门推进态",
+          "silhouette": "Head lowered, shoulder carapace forward, abdomen compressed downward, thick hind limbs pushing a ram hammer or shoulder impact.",
+          "materials": [
+            "scratched heavy shoulder carapace",
+            "old iron hinge bands",
+            "ram hammer",
+            "iron chain hooks",
+            "cracked insect-wax seal rings",
+            "restrained dark-red impact marks"
+          ],
+          "color_logic": "Impact wear appears as old iron scratches and muted dark-red marks, not gore.",
+          "required_details": [
+            "abdomen and pelvic carapace must carry impact load",
+            "hind limbs must look slow but unstoppable",
+            "ram hammer or shoulder impact must be fixed to insect body logic",
+            "no Li Tang-style forearm blade focus"
+          ]
+        },
+        {
+          "state_id": "suming_heavy_general_snowline_bulwark",
+          "name_cn": "边墙雪线重防态",
+          "silhouette": "Wide planted lower body under blackstone snow, gate shield angled against wind or attack, command belt and rank marks still readable.",
+          "materials": [
+            "frosted black-green carapace",
+            "blackstone snow dust",
+            "old iron heavy harness frost",
+            "bone-white seal rings",
+            "dark-green heavy command belt",
+            "scratched iron shield"
+          ],
+          "color_logic": "Snowline frost overlays the heavy Suming palette without turning the figure into a Northern beast or rock monster.",
+          "required_details": [
+            "large lower limbs and clawed feet must not be hidden by snow",
+            "rank plaque stays tiny and physical",
+            "body reads as insect siege general",
+            "no Northern beastfolk silhouette"
+          ]
+        }
+      ],
+      "detail_panels": [
+        {"detail_id": "heavy_lower_body_comparison", "purpose": "Lock the requested difference from Li Tang.", "notes": "Abdomen, pelvic armor, hind limbs, support claws, and feet are visibly wider and heavier than Li Tang."},
+        {"detail_id": "low_armored_head", "purpose": "Prevent human warlord drift.", "notes": "Low head, narrow compound eyes, thick bone-white mandible guard, neck buried in chest armor."},
+        {"detail_id": "old_iron_heavy_harness", "purpose": "Show War-Armor Office control gear.", "notes": "Old iron heavy harness, dark-green command belt, seal rings, small locked rank plaque."},
+        {"detail_id": "siege_tool_cluster", "purpose": "Clarify gate and bridge function.", "notes": "Black iron gate shield, ram hammer, heavy short halberd, iron chain hooks."},
+        {"detail_id": "material_swatch_strip", "purpose": "Carry project material continuity.", "notes": "Black-green heavy carapace, deep-brown abdomen armor, old iron, bone-white wax rings, dark-green belt, blackstone snow, muted dark-red impact mark."}
+      ],
+      "negative_rules": [
+        "human warlord",
+        "giant knight armor",
+        "humanoid boss",
+        "Li Tang duplicate",
+        "slender mantis legs",
+        "forearm blade focus",
+        "human face",
+        "human hair",
+        "human boots",
+        "Northern beast",
+        "orc",
+        "rock monster",
+        "redesigned Suming emblem",
+        "readable text or labels"
+      ]
+    }
+  ]
+}
