@@ -1,9 +1,9 @@
 {
   "version": "1",
   "project": "severed-homeland",
-  "asset_batch": "project_northern_siege_troop_character_v01",
+  "asset_batch": "project_northern_siege_troop_character_v02",
   "date": "2026-06-03",
-  "scope": "Project-level reusable multi-state character reference board for Northern Beastfolk Alliance siege troop archetypes.",
+  "scope": "Project-level reusable multi-state character reference board for eight Northern Beastfolk Alliance siege troop templates.",
   "source_art_direction": "project/severed-homeland/art/project-northern-siege-troop-character-art-direction.md",
   "locked_references": [
     {
@@ -37,13 +37,13 @@
   ],
   "assets": [
     {
-      "asset_id": "character_northern_siege_troop_multi_state_board_v01",
+      "asset_id": "character_northern_siege_troop_multi_state_board_v02",
       "name_cn": "北境攻城兵种通用多状态角色板",
       "asset_type": "character reference board",
       "priority": "high",
       "status": "final",
       "expected_output_path": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
-      "source_prompt_id": "prompt_character_northern_siege_troop_multi_state_board_v01",
+      "source_prompt_id": "prompt_character_northern_siege_troop_multi_state_board_v02",
       "continuity_references": [
         "project/severed-homeland/背景.md#北部攻城兵种",
         "project/severed-homeland/art/project-style-board-low-magic-eastern-epic.md",
@@ -53,9 +53,9 @@
         "project/severed-homeland/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png"
       ],
       "downstream_usage": [
-        "Prompt Room Northern siege troop identity and costume-system lock",
-        "ComfyUI reference input for siege, breach, shield-wall, tunneling, wall-climb, and blackstone border shots",
-        "Reusable crowd construction for small groups of identifiable Northern siege units",
+        "Prompt Room Northern siege troop identity and costume-system lock for all eight templates",
+        "ComfyUI reference input for siege, breach, shield-wall, wolf-rider scouting, tunneling, troll hauling, wall-climb, ritual support, and cavalry-overseer shots",
+        "Reusable crowd construction for small groups of identifiable Northern siege units without reducing them to a monster horde",
         "Prop and costume continuity reference for bone armor, fur, horn, hide rope, oath cord, old iron, and blackstone-snow wear"
       ]
     }
@@ -65,7 +65,7 @@
     "Use the locked Northern Beastfolk Alliance bonewood emblem language only as tiny physical oath knot, shield-back tag, drum-edge charm, tool tag, or wood-carved reference.",
     "Every full-body model must be identifiable by species proportion, silhouette, weapon, and costume function, not merely by swapped weapon props.",
     "Keep Northern siege troops as a disaster-driven political coalition with equipment and logistics, not a monster horde.",
-    "Preserve role distinctions: Blackfang breacher, Ironhorn shield-wall soldier, Snowbadger tunneler, and Snowfeather wall-climber.",
+    "Preserve role distinctions across all eight templates: Blackfang breacher, Ironhorn shield-wall soldier, White-mane snow wolf rider, Snowbadger tunneler, Greyskin siege-towing troll, Snowfeather wall-climber, Frosthoof dream-flute ritual soldier, and Redmane overseer cavalry.",
     "Do not make any model look like Luming's noble shaman costume, Grey Wall human soldiers, Suming insect infantry, or a new faction mascot.",
     "No visible text, labels, captions, Chinese characters, Latin letters, UI, or watermark inside generated images."
   ]

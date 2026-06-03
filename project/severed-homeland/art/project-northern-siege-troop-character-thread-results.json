@@ -1,32 +1,35 @@
 {
-  "version": "1",
+  "version": "2",
   "project": "severed-homeland",
-  "asset_batch": "project_northern_siege_troop_character_v01",
+  "asset_batch": "project_northern_siege_troop_character_v02",
   "date": "2026-06-03",
   "execution_mode": "parent_direct_builtin_image_gen",
   "codex_threads": [],
   "image_jobs": [
     {
-      "job_id": "image_job_northern_siege_troop_character_board_v01",
+      "job_id": "image_job_northern_siege_troop_character_board_v02",
       "status": "completed",
       "thread_id": null,
       "tool": "built-in image_gen",
-      "source_prompt_id": "prompt_character_northern_siege_troop_multi_state_board_v01",
-      "asset_id": "character_northern_siege_troop_multi_state_board_v01",
-      "generated_cache_file": "/Users/uroborus/.codex/generated_images/019e8b56-3c88-7102-ac61-d9d3aba920ac/ig_07ee11ed0cfdbe52016a1f96496ba481959c0103791778e4e8.png",
+      "source_prompt_id": "prompt_character_northern_siege_troop_multi_state_board_v02",
+      "asset_id": "character_northern_siege_troop_multi_state_board_v02",
+      "generated_cache_file": "/Users/uroborus/.codex/generated_images/019e8b56-3c88-7102-ac61-d9d3aba920ac/ig_07ee11ed0cfdbe52016a1f9d849798819588f6285be4cec21b.png",
       "final_file": "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png",
       "history_files": [
         {
           "path": "project/severed-homeland/assets/characters/history/character_northern_siege_troop_multi_state_board.v001.png",
-          "source_cache_file": "/Users/uroborus/.codex/generated_images/019e8b56-3c88-7102-ac61-d9d3aba920ac/ig_07ee11ed0cfdbe52016a1f9506c0ec8195b7c040f5c91013c8.png",
           "reason": "Rejected because a large wall mark and shield motifs could be misread as a newly designed Northern emblem."
+        },
+        {
+          "path": "project/severed-homeland/assets/characters/history/character_northern_siege_troop_multi_state_board.v002.png",
+          "reason": "Superseded four-template version; retained for audit after user clarified that all eight siege troop templates are required."
         }
       ],
       "qc_status": "pass",
       "notes": [
         "Final image is 864 x 1821 PNG.",
-        "Board preserves four identifiable siege troop models: Blackfang breacher, Ironhorn shield-wall soldier, Snowbadger tunneler, and Snowfeather wall-climber.",
-        "Final version removes large wall and shield symbols; faction continuity is limited to small physical bonewood, rope, tool, and material language.",
+        "Board includes all eight templates: Blackfang breach axeman, Ironhorn shield-wall soldier, White-mane snow wolf rider, Snowbadger tunnel sapper, Greyskin siege-towing troll, Snowfeather wall-climber scout, Frosthoof dream-flute ritual soldier, and Redmane overseer cavalry.",
+        "Final version avoids large wall, shield, banner, or chest emblem redesigns; faction continuity is limited to small material language and physical equipment details.",
         "No background Codex thread was launched because this was a single supervised asset generated directly in the parent thread."
       ]
     }

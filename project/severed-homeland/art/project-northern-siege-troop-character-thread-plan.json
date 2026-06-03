@@ -1,7 +1,7 @@
 {
   "version": "1",
   "project": "severed-homeland",
-  "asset_batch": "project_northern_siege_troop_character_v01",
+  "asset_batch": "project_northern_siege_troop_character_v02",
   "date": "2026-06-03",
   "source_prompts": "project/severed-homeland/prompts/project-northern-siege-troop-character-image-prompts.json",
   "execution_mode": "parent_direct_builtin_image_gen",
@@ -13,10 +13,10 @@
       "thread_title": "断航故土 北境攻城兵种通用多状态角色板 v01",
       "status": "completed_parent_direct",
       "asset_ids": [
-        "character_northern_siege_troop_multi_state_board_v01"
+        "character_northern_siege_troop_multi_state_board_v02"
       ],
       "prompt_ids": [
-        "prompt_character_northern_siege_troop_multi_state_board_v01"
+        "prompt_character_northern_siege_troop_multi_state_board_v02"
       ],
       "expected_output_paths": [
         "project/severed-homeland/assets/characters/character_northern_siege_troop_multi_state_board.png"
@@ -32,7 +32,8 @@
       "history_policy": "If future iterations supersede the canonical file, move retained intermediates into project/severed-homeland/assets/characters/history/ with a .vNNN filename suffix.",
       "retry_rules": [
         "Retry if the board redesigns the Northern Beastfolk Alliance emblem or makes it a large badge, new crest, or single-animal logo.",
-        "Retry if the four models collapse into the same generic orc body with swapped weapons.",
+        "Retry if the board contains only four templates or misses any of the eight required roles.",
+        "Retry if the eight models collapse into the same generic orc body with swapped weapons.",
         "Retry if any model becomes a human Grey Wall soldier, Suming insect infantry, Luming noble shaman, or modern/fantasy plate-armored unit.",
         "Retry if visible text, labels, UI, or watermark appear.",
         "Retry if the result reads as a monster horde instead of identifiable siege troop modeling."
