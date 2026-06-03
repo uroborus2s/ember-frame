@@ -1,9 +1,9 @@
 {
   "version": "1",
   "project": "severed-homeland",
-  "asset_batch": "project_helian_xuedai_character_v03",
+  "asset_batch": "project_helian_xuedai_character_v04",
   "date": "2026-06-03",
-  "scope": "Project-level reusable multi-state character identity board for Helian Xuedai as a high-ranking white-bear-clan guard with a human face.",
+  "scope": "Project-level reusable multi-state character identity board for Helian Xuedai as a high-ranking white-bear-clan female warrior guard with a human face, real biological bear ears, oppressive face structure, and sharp murderous eyes.",
   "locked_references": [
     {
       "path": "project/severed-homeland/bible/characters.md#赫连雪岱",
@@ -28,16 +28,17 @@
   ],
   "assets": [
     {
-      "asset_id": "character_helian_xuedai_multi_state_board_v03",
+      "asset_id": "character_helian_xuedai_multi_state_board_v04",
       "name_cn": "赫连雪岱多状态角色板",
       "asset_type": "character reference board",
       "priority": "high",
       "status": "generated",
       "expected_output_path": "project/severed-homeland/assets/characters/character_helian_xuedai_multi_state_board.png",
-      "source_prompt_id": "prompt_character_helian_xuedai_multi_state_board_v03",
+      "source_prompt_id": "prompt_character_helian_xuedai_multi_state_board_v04",
       "history_files": [
         "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v001.png",
-        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v002.png"
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v002.png",
+        "project/severed-homeland/assets/characters/history/character_helian_xuedai_multi_state_board.v003.png"
       ],
       "continuity_references": [
         "project/severed-homeland/bible/characters.md#赫连雪岱",
@@ -58,8 +59,10 @@
   "batch_rules": [
     "Do not redesign existing faction emblems.",
     "The Northern Beastfolk Alliance emblem is locked; do not create a new bear clan crest, personal Helian Xuedai logo, chest badge, shoulder patch, banner, or modern mark.",
-    "Helian Xuedai must read as a high-ranking white-bear-clan female guard with a human face, round face shape, bear ears, bear-clan facial markings, and heavy guard build.",
-    "Do not make her a bear-faced beast head, low-ranking tribesperson, Frosthoof deer, Lu Mi costume variant, shaman, or generic human with bear-ear decoration.",
+    "Helian Xuedai must read as a high-ranking white-bear-clan female warrior guard with a human face, oppressive brow-cheek-jaw structure, real biological bear ears, bear-clan facial markings, sharp murderous eyes, and heavy guard build.",
+    "Do not make her a bear-faced beast head, low-ranking tribesperson, Frosthoof deer, Lu Mi costume variant, shaman, generic human with bear-ear decoration, soft doll-faced noblewoman, or cute mascot.",
+    "Bear ears must have visible skull attachment, ear roots, inner ear structure, fur flow, and sideburn transition; never fake headband ears, pom-pom ears, hair-bun ears, or costume ears.",
+    "Face and eyes must preserve high-ranking female warrior pressure: heavy brow, compressed cheekbones, strong jawline, firm mouth, narrowed predatory eyes, and calm murderous restraint.",
     "Preserve white bear fur mantle, silver-black bone-iron armor, bronze bracers, bone-iron shield, guard axe, jade clasp, red oath cord, large hands, short claws, and ice-stud boots.",
     "No deer ears, deer antlers, deer markings, shaman flute, herb pouch, or ice-blue ritual fire focus.",
     "No visible text, labels, captions, UI, watermark, Chinese characters, or Latin letters inside generated images."

@@ -1,23 +1,23 @@
 {
   "version": "1",
   "project": "severed-homeland",
-  "asset_batch": "project_helian_xuedai_character_v03",
+  "asset_batch": "project_helian_xuedai_character_v04",
   "date": "2026-06-03",
   "source_prompts": "project/severed-homeland/prompts/project-helian-xuedai-character-image-prompts.json",
   "dispatch_policy": "Single project-level character board. Prefer direct parent image generation; if moved to background execution, use one Codex thread for the exact output path below.",
   "jobs": [
     {
-      "job_id": "thread_character_helian_xuedai_multi_state_board_v03",
-      "thread_title": "断航故土 赫连雪岱高级熊族护卫多状态角色板 v03",
+      "job_id": "thread_character_helian_xuedai_multi_state_board_v04",
+      "thread_title": "断航故土 赫连雪岱高级熊族护卫多状态角色板 v04",
       "status": "completed_direct_parent_generation",
-      "prompt_id": "prompt_character_helian_xuedai_multi_state_board_v03",
+      "prompt_id": "prompt_character_helian_xuedai_multi_state_board_v04",
       "asset_ids": [
-        "character_helian_xuedai_multi_state_board_v03"
+        "character_helian_xuedai_multi_state_board_v04"
       ],
       "expected_outputs": [
         "project/severed-homeland/assets/characters/character_helian_xuedai_multi_state_board.png"
       ],
-      "worker_instruction": "Use the image prompt exactly. Generate Helian Xuedai as a high-ranking white-bear-clan guard with a human round face, bear ears, and bear-clan facial markings. Do not generate a bear-face beast head, Frosthoof deer guard, low-ranking tribesperson, or shaman. Save the final PNG to the expected output path. Keep rejected attempts in history."
+      "worker_instruction": "Use the image prompt exactly. Generate Helian Xuedai as a high-ranking white-bear-clan female warrior guard with an oppressive human face, real biological bear ears rooted into the skull, bear-clan facial markings, and narrow murderous eyes. Do not generate fake headband ears, hair-bun ears, a soft doll face, bear-face beast head, Frosthoof deer guard, low-ranking tribesperson, or shaman. Save the final PNG to the expected output path. Keep rejected attempts in history."
     }
   ]
 }
