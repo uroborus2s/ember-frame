@@ -2,8 +2,8 @@
 
 更新时间：2026-06-05
 项目：`severed-homeland` / 《断航故土》
-生产模式：`season_01_writer_room_95_point_polish_complete`
-状态：第一季 01-12 集 detailed script 已完成，并完成 95 分目标精修 pass；尚未启动 director-room、art-room、ComfyUI、音频、剪辑、后期或渲染流程。
+生产模式：`season_01_writer_room_dialogue_polish_complete`
+状态：第一季 01-12 集 detailed script 已完成，并完成 95 分目标精修 pass 与词顺口润色 pass；尚未启动 director-room、art-room、ComfyUI、音频、剪辑、后期或渲染流程。
 
 ## 本轮已完成
 
@@ -103,7 +103,7 @@
 
 ## 下一步
 
-第一季 Writer Room 剧本与 95 分目标精修已完成。下一步如需继续，应从精修后的 `01`-`12` 集 `script/final-script.md` 进入 director-room；仍不得把 `legacy/`、旧 `art/`、旧 `assets/`、旧 `prompts/` 或旧生产内容作为 canon 输入。
+第一季 Writer Room 剧本、95 分目标精修与词顺口润色 pass 已完成。下一步如需继续，应从词顺口润色后的 `01`-`12` 集 `script/final-script.md` 进入 director-room；仍不得把 `legacy/`、旧 `art/`、旧 `assets/`、旧 `prompts/` 或旧生产内容作为 canon 输入。
 
 ## 本轮仍未做
 
@@ -124,3 +124,11 @@
 精修后评分：01=95，02=95，03=95，04=95，05=95，06=95，07=95，08=95，09=95，10=95，11=96，12=96；平均 95.2 / 100，全部 pass。
 
 本轮未生成镜头表、分镜、图像提示词、视频提示词、ComfyUI 参数、音频、剪辑、后期或渲染文件。后续部门必须从精修后的 final-script 重新拆解。
+
+## 2026-06-05 第一季词顺口润色 pass
+
+已完成第一季 01-12 集台词“词顺口润色 pass”。本轮重点处理清明籍、封名、旧姓旁注、旧污、旧誓、旧账、无姓人、残缺证据等容易谜语化的设定说明，将其嵌入族谱、户籍、疑名、粮牌、官蜡、账本、讨债、守边旧盟等中国式历史语义。
+
+润色后评分：01=96，02=96，03=96，04=96，05=96，06=96，07=96，08=96，09=96，10=96，11=97，12=97；平均 96.2 / 100，全部 pass，且每集对白项 15 / 15。
+
+本轮未生成镜头表、分镜、图像提示词、视频提示词、ComfyUI 参数、音频、剪辑、后期或渲染文件。后续部门必须从词顺口润色后的 final-script 重新拆解。
