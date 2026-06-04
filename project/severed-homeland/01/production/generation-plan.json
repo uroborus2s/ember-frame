@@ -1,628 +1,574 @@
 {
-  "version": "1",
+  "version": "1.0-director-room",
   "project": "severed-homeland",
   "episode_id": "01",
-  "title": "清明香入村",
-  "date": "2026-06-03",
-  "source_artifacts": [
-    "01/script/final-script.md",
-    "01/director/director-brief.md",
-    "01/director/camera-plan.md",
-    "01/shots/scene-breakdown.json",
-    "01/shots/shot-list.json",
-    "01/storyboard/storyboard-plan.md",
-    "01/continuity/visual-continuity-bible.json",
-    "01/prompts/shot-prompts-draft.json"
-  ],
+  "aspect_ratio": "9:16",
+  "fps": 24,
+  "status": "pre_asset",
   "method_values": {
-    "POST_TEXT_CARD": "editorial title/black-screen card",
-    "REFERENCE_IMAGE": "locked first-frame reference",
-    "REFERENCE_IMAGE_ASSISTED_I2V": "reference frame plus I2V/FLF control",
-    "I2V_WITH_ASSET_REFS": "image-to-video using listed art references"
+    "T2V": "text-to-video for low identity risk or simple environment motion",
+    "I2V": "image-to-video with character, costume, location or composition reference",
+    "FLF2V": "first-last-frame video for constrained motion endpoint or transition",
+    "REFERENCE_IMAGE": "still reference, insert plate, title card or exact-text/post plate",
+    "REDRAW": "masked redraw/inpaint for precise register text, marks or prop details"
   },
-  "global_continuity_locks": [
-    "STYLE_GROUNDED_EPIC",
-    "LOC_CANYANGAO_GEOGRAPHY",
-    "RULE_QINGMING_SMOKE_LOW",
-    "RULE_NO_YAN_NANZHI_REVEAL",
-    "RULE_NO_MOON_JADE_FULL_REVEAL"
-  ],
-  "production_groups": [
+  "batching_groups": [
     {
-      "group_id": "PG01-intro-montage",
-      "name": "序幕年景压迫蒙太奇",
-      "shot_ids": [
-        "SC001-SH001",
-        "SC001-SH002",
-        "SC001-SH003",
-        "SC001-SH004"
-      ],
-      "key_assets": [
-        "ref_ep01_sc001_sh002",
-        "ref_ep01_sc001_sh003",
-        "ref_ep01_sc001_sh004"
-      ],
-      "key_risks": [
-        "不得超过30秒",
-        "不要给临时人物正脸或姓名",
-        "北境战争只用局部和声音"
-      ]
+      "group_id": "G01_border_hook",
+      "shots": ["SC001-SH001", "SC001-SH002", "SC001-SH003"],
+      "dependency": "needs border wall, bone bell, Xue Linqiang and localized siege reference frames"
     },
     {
-      "group_id": "PG02-gate-blood-check",
-      "name": "村口验血与沈维桑入场",
-      "shot_ids": [
-        "SC002-SH001",
-        "SC002-SH002",
-        "SC002-SH003",
-        "SC002-SH004",
-        "SC002-SH005",
-        "SC003-SH001",
-        "SC003-SH002",
-        "SC003-SH003",
-        "SC003-SH004"
-      ],
-      "key_assets": [
-        "character_shen_weisang_ep01",
-        "character_shen_zhaomian_ep01",
-        "character_luo_qinghe_ep01",
-        "character_bai_yi_ep01",
-        "loc_canyangao_gate_blood_check_ep01",
-        "prop_qingming_white_register_ep01",
-        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
-        "costume_shen_weisang_ep01"
-      ],
-      "key_risks": [
-        "清明香不可升雾",
-        "白册文字避免直接生成",
-        "沈维桑不能英雄化出场"
-      ]
+      "group_id": "G02_jinhe_levy",
+      "shots": ["SC002-SH001", "SC002-SH002", "SC002-SH003", "SC002-SH004"],
+      "dependency": "needs Jinhe grain depot location plate, grain tax clerk, slave soldier and household prop boards"
     },
     {
-      "group_id": "PG03-medicine-house-pressure",
-      "name": "药屋对答与门槛失言",
-      "shot_ids": [
-        "SC004-SH001",
-        "SC004-SH002",
-        "SC004-SH003",
-        "SC004-SH004",
-        "SC004-SH005",
-        "SC005-SH001",
-        "SC005-SH002",
-        "SC005-SH003",
-        "SC005-SH004"
-      ],
-      "key_assets": [
-        "loc_canyangao_medicine_house_interior_ep01",
-        "loc_canyangao_medicine_house_exterior_ep01",
-        "costume_luo_qinghe_ep01",
-        "costume_shen_zhaomian_ep01",
-        "ref_ep01_sc005_threshold_identification"
-      ],
-      "key_risks": [
-        "SC004不露旧驿刻痕",
-        "沈照眠失言不可恐怖化",
-        "白翳不提高音量"
-      ]
+      "group_id": "G03_southern_room",
+      "shots": ["SC003-SH001", "SC003-SH002", "SC003-SH003", "SC003-SH004"],
+      "dependency": "needs southern red-line room, Gu Huaizhang, Yan Nanzhi shadow state and old relay map props"
     },
     {
-      "group_id": "PG04-old-well-relay",
-      "name": "后院旧井与暗格暴露",
-      "shot_ids": [
-        "SC006-SH001",
-        "SC006-SH002",
-        "SC006-SH003",
-        "SC006-SH004",
-        "SC006-SH005",
-        "SC007-SH001",
-        "SC007-SH002",
-        "SC007-SH003",
-        "SC007-SH004",
-        "SC007-SH005"
-      ],
-      "key_assets": [
-        "loc_canyangao_old_well_courtyard_ep01",
-        "loc_canyangao_hidden_relay_compartment_ep01",
-        "prop_half_sunmoon_relay_token_ep01",
-        "prop_fragmented_continent_relay_map_ep01"
-      ],
-      "key_risks": [
-        "井下人不露身份",
-        "月白反光只是一线",
-        "暗格第一次清楚暴露在SC007"
-      ]
+      "group_id": "G04_canyangao_gate",
+      "shots": ["SC004-SH001", "SC004-SH002", "SC004-SH003", "SC004-SH004", "SC004-SH005", "SC004-SH006", "SC004-SH007", "SC004-SH008", "SC004-SH009"],
+      "dependency": "needs Canyangao gate geography, Shen family, register clerk, wax flags and Qingming incense"
     },
     {
-      "group_id": "PG05-lockdown-hook",
-      "name": "全村复查与井沿钩子",
-      "shot_ids": [
-        "SC008-SH001",
-        "SC008-SH002",
-        "SC008-SH003",
-        "SC008-SH004"
-      ],
-      "key_assets": [
-        "ref_ep01_sc008_final_spear_line_well_glint",
-        "character_bai_yi_ep01",
-        "loc_canyangao_old_well_courtyard_ep01",
-        "shot_override_sc008_sh003_well_glint_readability"
-      ],
-      "key_risks": [
-        "短矛封锁线需读清方向",
-        "不展示井下人或完整玉片",
-        "SC008-SH003 已补井沿可读性覆盖帧，生成时优先使用 override"
-      ]
+      "group_id": "G05_medicine_house",
+      "shots": ["SC005-SH001", "SC005-SH002", "SC005-SH003", "SC005-SH004", "SC005-SH005"],
+      "dependency": "needs medicine house interior, cabinet compartment, Yan Nanzhi hidden state, Luo Qinghe and old relay mark"
+    },
+    {
+      "group_id": "G06_old_well_baiyi",
+      "shots": ["SC006-SH001", "SC006-SH002", "SC006-SH003", "SC006-SH004", "SC006-SH005", "SC006-SH006", "SC006-SH007", "SC006-SH008", "SC006-SH009", "SC006-SH010"],
+      "dependency": "needs old well/table geography, Bai Yi, insect-wax needle, precise register inserts and bowstring ending"
     }
   ],
   "shots": [
     {
       "shot_id": "SC001-SH001",
-      "scene_id": "SC001",
-      "method": "POST_TEXT_CARD",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "LOC_INTRO_MONTAGE",
-        "STYLE_GROUNDED_EPIC"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC001-SH001-A",
+      "method": "FLF2V",
+      "duration": "1.8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_start.png",
+      "last_frame_ref": "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_impact.png",
+      "audio_refs": ["voiceover:北墙五百年"],
+      "rationale": "需要把撞钟动作终点锁住，避免骨钟位置漂移。",
+      "required_assets": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL", "REF_siege_impact_snow"],
+      "continuity_locks": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL", "RULE_SIEGE_LOCAL_CAUSALITY"],
+      "risks": ["needs_asset", "needs_config", "high_motion"]
     },
     {
       "shot_id": "SC001-SH002",
-      "scene_id": "SC001",
-      "method": "REFERENCE_IMAGE",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
-      "continuity_locks": [
-        "LOC_INTRO_MONTAGE",
-        "FACTION_BORDER_WALL",
-        "FACTION_SUMING_QINGMING"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC001-SH002-A",
+      "method": "I2V",
+      "duration": "1.8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc001_sh002_frozen_blood_old_mark.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:broken_spear", "sfx:snow_wolf_distant"],
+      "rationale": "断矛、冻血和旧日月刻痕需要参考帧锁定可读性。",
+      "required_assets": ["PROP_BONE_BELL", "PROP_broken_spear", "REF_young_wall_soldier"],
+      "continuity_locks": ["PROP_BONE_BELL", "RULE_SIEGE_LOCAL_CAUSALITY"],
+      "risks": ["needs_asset", "needs_config", "blood_readability"]
     },
     {
       "shot_id": "SC001-SH003",
-      "scene_id": "SC001",
-      "method": "REFERENCE_IMAGE",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
-      "continuity_locks": [
-        "LOC_INTRO_MONTAGE",
-        "PROP_FOOD_TAX_MARKER"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC001-SH004",
-      "scene_id": "SC001",
-      "method": "REFERENCE_IMAGE",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
-      "continuity_locks": [
-        "PROP_OLD_RELAY_MAP",
-        "FACTION_ZHAOMING_RELIC",
-        "PROP_QINGMING_INCENSE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC001-SH003-A",
+      "method": "I2V",
+      "duration": "1.9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc001_sh003_xue_hand_wall_crack.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:Xue_Linqiang_001"],
+      "rationale": "薛临墙身份、冻裂手和旧墙师质感需要角色参考约束。",
+      "required_assets": ["CHAR_XUE_LINQIANG", "LOC_SUOHOU_GATE_OUTER_WALL"],
+      "continuity_locks": ["CHAR_XUE_LINQIANG", "LOC_SUOHOU_GATE_OUTER_WALL"],
+      "risks": ["needs_asset", "needs_config", "dialogue_sync"]
     },
     {
       "shot_id": "SC002-SH001",
-      "scene_id": "SC002",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [
-        "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
-        "character_shen_weisang_ep01",
-        "costume_shen_weisang_ep01",
-        "loc_canyangao_gate_blood_check_ep01"
-      ],
-      "reference_frame": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
-      "continuity_locks": [
-        "CHAR_SHEN_WEISANG",
-        "LOC_CANYANG_GATE"
-      ],
-      "risks": "Use SC002-SH001 first frame for Shen Weisang gate observation. Preserve episode-01 hunter state only; do not import glowing cracks, snowline cloak, or later-state costume. Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it."
+      "segment_id": "SC002-SH001-A",
+      "method": "I2V",
+      "duration": "6s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc002_sh001_jinhe_grain_wall.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:grain_abacus"],
+      "rationale": "粮袋墙、粮税小吏和村民层级需要地点与角色参考。",
+      "required_assets": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_GRAIN_TAX_CLERK", "PROP_WHITE_REGISTER"],
+      "continuity_locks": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_GRAIN_TAX_CLERK", "PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "crowd_layering"]
     },
     {
       "shot_id": "SC002-SH002",
-      "scene_id": "SC002",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_QINGMING_INCENSE",
-        "RULE_QINGMING_SMOKE_LOW"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC002-SH002-A",
+      "method": "I2V",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc002_sh002_threshold_handprint.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:grain_mud", "sfx:child_breath"],
+      "rationale": "儿童手印与祖牌小盒为敏感道具，需要参考帧避免误读。",
+      "required_assets": ["CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX", "PROP_insect_wax_seal"],
+      "continuity_locks": ["CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX"],
+      "risks": ["needs_asset", "needs_config", "child_sensitivity"]
     },
     {
       "shot_id": "SC002-SH003",
-      "scene_id": "SC002",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_INSECT_WAX_NEEDLE",
-        "PROP_QINGMING_REGISTER"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC002-SH003-A",
+      "method": "I2V",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc002_sh003_tax_clerk_register.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:grain_tax_clerk_001", "dialogue:woman_001"],
+      "rationale": "官吏开册、妇人被扣和封牌敲下要求层级清晰。",
+      "required_assets": ["CHAR_GRAIN_TAX_CLERK", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_WHITE_REGISTER"],
+      "continuity_locks": ["CHAR_GRAIN_TAX_CLERK", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "dialogue_sync"]
     },
     {
       "shot_id": "SC002-SH004",
-      "scene_id": "SC002",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_QINGMING_REGISTER",
-        "RULE_BLOODLINE_TEXT_READABLE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC002-SH005",
-      "scene_id": "SC002",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_BAI_YI",
-        "LOC_CANYANG_GATE",
-        "PROP_INSECT_WAX_NEEDLE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC002-SH004-A",
+      "method": "FLF2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc002_sh004_cart_start.png",
+      "last_frame_ref": "needs_asset:episode01/reference-frames/sc002_sh004_empty_threshold_end.png",
+      "audio_refs": ["voiceover:jinhe_household_erased"],
+      "rationale": "押车离开和家门留空需要终点构图锁定。",
+      "required_assets": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX"],
+      "continuity_locks": ["LOC_JINHE_GRAIN_DEPOT", "PROP_ANCESTRAL_TABLET_BOX"],
+      "risks": ["needs_asset", "needs_config", "emotion_overstatement"]
     },
     {
       "shot_id": "SC003-SH001",
-      "scene_id": "SC003",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_SHEN_WEISANG",
-        "PROP_INSECT_WAX_NEEDLE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC003-SH001-A",
+      "method": "I2V",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc003_sh001_redline_map.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:rain_oilcloth"],
+      "rationale": "旧驿图与红线方向必须准确，使用参考帧。",
+      "required_assets": ["LOC_SOUTHERN_REDLINE_ROOM", "PROP_old_relay_map_redline"],
+      "continuity_locks": ["LOC_SOUTHERN_REDLINE_ROOM", "PROP_BLOOD_GENEALOGY"],
+      "risks": ["needs_asset", "needs_config", "map_readability"]
     },
     {
       "shot_id": "SC003-SH002",
-      "scene_id": "SC003",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_LUO_QINGHE",
-        "CHAR_SHEN_WEISANG_RESTRAINT"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC003-SH002-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc003_sh002_gu_yan_twoshot.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:gu_huaizhang_001", "dialogue:yan_nanzhi_001"],
+      "rationale": "晏南枝遮面状态和顾怀章旧臣姿态需要角色参考。",
+      "required_assets": ["CHAR_GU_HUAIZHANG", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
+      "continuity_locks": ["CHAR_GU_HUAIZHANG", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
+      "risks": ["needs_asset", "needs_config", "face_reveal_control"]
     },
     {
       "shot_id": "SC003-SH003",
-      "scene_id": "SC003",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_QINGMING_REGISTER",
-        "CHAR_BAI_YI",
-        "CHAR_SHEN_WEISANG"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC003-SH003-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc003_sh003_blood_genealogy_hesitation.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:gu_huaizhang_002", "sfx:muffled_old_song"],
+      "rationale": "血牒、停住的手和旧歌声音是微表演，需要参考帧。",
+      "required_assets": ["PROP_BLOOD_GENEALOGY", "CHAR_YAN_NANZHI", "CHAR_GU_HUAIZHANG"],
+      "continuity_locks": ["PROP_BLOOD_GENEALOGY", "CHAR_YAN_NANZHI"],
+      "risks": ["needs_asset", "needs_config", "subtle_performance"]
     },
     {
       "shot_id": "SC003-SH004",
-      "scene_id": "SC003",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "PROP_HERB_POUCH",
-        "PROP_HERB_BASKET"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC003-SH004-A",
+      "method": "FLF2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc003_sh004_redline_north.png",
+      "last_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh001_checkpoint_line_start.png",
+      "audio_refs": ["voiceover:southern_road_not_throne"],
+      "rationale": "从红线到村口封锁线的匹配转场需锁起止帧。",
+      "required_assets": ["LOC_SOUTHERN_REDLINE_ROOM", "LOC_CANYANGAO_GATE"],
+      "continuity_locks": ["LOC_SOUTHERN_REDLINE_ROOM", "CHAR_YAN_NANZHI"],
+      "risks": ["needs_asset", "needs_config", "transition_timing"]
     },
     {
       "shot_id": "SC004-SH001",
-      "scene_id": "SC004",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "LOC_MEDICINE_HOUSE",
-        "CHAR_BAI_YI",
-        "CHAR_LUO_QINGHE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC004-SH001-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh001_canyangao_blockade_geography.png",
+      "last_frame_ref": "",
+      "audio_refs": ["subtitle:Suming_1226_Canyangao"],
+      "rationale": "村口、旧井、药屋和出口的相对位置必须准确。",
+      "required_assets": ["LOC_CANYANGAO_GATE", "LOC_CANYANGAO_WELL", "LOC_LUO_MEDICINE_HOUSE", "PROP_WHITE_WAX_FLAGS"],
+      "continuity_locks": ["LOC_CANYANGAO_GATE", "LOC_CANYANGAO_WELL", "LOC_LUO_MEDICINE_HOUSE", "PROP_WHITE_WAX_FLAGS"],
+      "risks": ["needs_asset", "needs_config", "geography_clarity"]
     },
     {
       "shot_id": "SC004-SH002",
-      "scene_id": "SC004",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_LUO_QINGHE",
-        "CHAR_BAI_YI",
-        "RULE_DIALOGUE_AS_COVER"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC004-SH002-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh002_register_procedure.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:baice_clerk_001"],
+      "rationale": "白册官吏和村民层级需要参考，避免官吏人类化。",
+      "required_assets": ["CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER", "LOC_CANYANGAO_GATE"],
+      "continuity_locks": ["CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER", "LOC_CANYANGAO_GATE"],
+      "risks": ["needs_asset", "needs_config", "hierarchy_clarity"]
     },
     {
       "shot_id": "SC004-SH003",
-      "scene_id": "SC004",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "RULE_HIDE_RELAY_MARKS",
-        "PROP_HERB_BASKET"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC004-SH003-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh003_shen_reads_exits.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:register_page"],
+      "rationale": "沈维桑体貌、左肩和眼线判断需要角色/地点参考。",
+      "required_assets": ["CHAR_SHEN_WEISANG", "PROP_WHITE_WAX_FLAGS", "LOC_CANYANGAO_GATE"],
+      "continuity_locks": ["CHAR_SHEN_WEISANG", "PROP_WHITE_WAX_FLAGS", "LOC_CANYANGAO_WELL"],
+      "risks": ["needs_asset", "needs_config", "eyeline_continuity"]
     },
     {
       "shot_id": "SC004-SH004",
-      "scene_id": "SC004",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_WATER_JAR",
-        "PROP_HERB_POUCH",
-        "CHAR_SHEN_WEISANG_READS_SIGNS"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC004-SH004-A",
+      "method": "I2V",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh004_zhaomian_song.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:zhaomian_001"],
+      "rationale": "儿童表演和草药袋亲情锚点需要参考约束。",
+      "required_assets": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "LOC_CANYANGAO_GATE"],
+      "continuity_locks": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG"],
+      "risks": ["needs_asset", "needs_config", "child_performance"]
     },
     {
       "shot_id": "SC004-SH005",
-      "scene_id": "SC004",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_BAI_YI",
-        "PROP_QINGMING_INCENSE",
-        "PROP_QINGMING_REGISTER"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC004-SH005-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh005_luo_covers_child.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:luo_001", "dialogue:baice_clerk_002"],
+      "rationale": "罗青禾挡身位和官吏复眼高度需要构图锁定。",
+      "required_assets": ["CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN", "CHAR_BAICE_CLERK"],
+      "continuity_locks": ["CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN", "CHAR_BAICE_CLERK"],
+      "risks": ["needs_asset", "needs_config", "blocking_precision"]
+    },
+    {
+      "shot_id": "SC004-SH006",
+      "segment_id": "SC004-SH006-A",
+      "method": "I2V",
+      "duration": "10s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh006_shen_half_truth.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:shen_weisang_001"],
+      "rationale": "沈维桑半真话、脚勾草药袋和压弓弦需要参考帧。",
+      "required_assets": ["CHAR_SHEN_WEISANG", "PROP_SHEN_BOW", "PROP_ZHAOMIAN_HERB_BAG"],
+      "continuity_locks": ["CHAR_SHEN_WEISANG", "PROP_SHEN_BOW", "PROP_ZHAOMIAN_HERB_BAG"],
+      "risks": ["needs_asset", "needs_config", "hand_detail"]
+    },
+    {
+      "shot_id": "SC004-SH007",
+      "segment_id": "SC004-SH007-A",
+      "method": "REDRAW",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh007_register_blank_plate.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:baice_clerk_003"],
+      "rationale": "白册文字和虫蜡纹必须精确，应用静帧/遮罩重绘或后期文字。",
+      "required_assets": ["PROP_WHITE_REGISTER", "MASK_register_side_note_area"],
+      "continuity_locks": ["PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "text_not_model_generated", "needs_redraw"]
+    },
+    {
+      "shot_id": "SC004-SH008",
+      "segment_id": "SC004-SH008-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh008_qingming_incense_countdown.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:baice_clerk_004"],
+      "rationale": "清明香、桌裂缝和三人反应需要参考帧保持空间关系。",
+      "required_assets": ["PROP_QINGMING_INCENSE", "CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN"],
+      "continuity_locks": ["PROP_QINGMING_INCENSE", "CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN"],
+      "risks": ["needs_asset", "needs_config", "countdown_readability"]
+    },
+    {
+      "shot_id": "SC004-SH009",
+      "segment_id": "SC004-SH009-A",
+      "method": "FLF2V",
+      "duration": "13s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc004_sh009_incense_smoke_start.png",
+      "last_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh001_medicine_door_feet_end.png",
+      "audio_refs": ["sfx:smoke_wind", "sfx:wood_door_muffle"],
+      "rationale": "村口到药屋的烟线转场需要起止空间一致。",
+      "required_assets": ["PROP_QINGMING_INCENSE", "PROP_WHITE_WAX_FLAGS", "LOC_LUO_MEDICINE_HOUSE"],
+      "continuity_locks": ["PROP_QINGMING_INCENSE", "PROP_WHITE_WAX_FLAGS", "LOC_LUO_MEDICINE_HOUSE"],
+      "risks": ["needs_asset", "needs_config", "transition_timing"]
     },
     {
       "shot_id": "SC005-SH001",
-      "scene_id": "SC005",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "continuity_locks": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "PROP_HERB_POUCH",
-        "PROP_HERB_NAME_TILES"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC005-SH001-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh001_cabinet_slit_yan.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:cabinet_breath", "sfx:insect_feet_stop"],
+      "rationale": "暗格构图、晏南枝遮面状态和门外爪足需要参考。",
+      "required_assets": ["LOC_LUO_MEDICINE_HOUSE_INTERIOR", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE", "PROP_MEDICINE_CABINET"],
+      "continuity_locks": ["LOC_LUO_MEDICINE_HOUSE_INTERIOR", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
+      "risks": ["needs_asset", "needs_config", "low_light_identity"]
     },
     {
       "shot_id": "SC005-SH002",
-      "scene_id": "SC005",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "continuity_locks": [
-        "CHAR_LUO_QINGHE",
-        "CHAR_BAI_YI_NO_RAISED_VOICE",
-        "CHAR_SHEN_ZHAOMIAN"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC005-SH002-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh002_luo_grabs_medicine.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:luo_002"],
+      "rationale": "罗青禾抓药动作和空间保护线需要参考。",
+      "required_assets": ["CHAR_LUO_QINGHE", "PROP_MEDICINE_CABINET", "LOC_LUO_MEDICINE_HOUSE_INTERIOR"],
+      "continuity_locks": ["CHAR_LUO_QINGHE", "PROP_MEDICINE_CABINET", "LOC_LUO_MEDICINE_HOUSE_INTERIOR"],
+      "risks": ["needs_asset", "needs_config", "prop_blocking"]
     },
     {
       "shot_id": "SC005-SH003",
-      "scene_id": "SC005",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "continuity_locks": [
-        "CHAR_SHEN_WEISANG_PROTECTS_SISTER",
-        "PROP_QINGMING_REGISTER",
-        "PROP_HERB_POUCH"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC005-SH003-A",
+      "method": "I2V",
+      "duration": "10s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh003_identity_cost_split.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:yan_nanzhi_002", "dialogue:luo_003"],
+      "rationale": "柜内外双层近景和低声对白需要身份参考。",
+      "required_assets": ["CHAR_YAN_NANZHI", "CHAR_LUO_QINGHE", "PROP_MOON_WHITE_JADE"],
+      "continuity_locks": ["CHAR_YAN_NANZHI", "CHAR_LUO_QINGHE", "PROP_MOON_WHITE_JADE"],
+      "risks": ["needs_asset", "needs_config", "face_reveal_control"]
     },
     {
       "shot_id": "SC005-SH004",
-      "scene_id": "SC005",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "continuity_locks": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "CHAR_SHEN_WEISANG_RESTRAINT",
-        "CHAR_BAI_YI_SYSTEMIC_THREAT"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC005-SH004-A",
+      "method": "REDRAW",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh004_relay_mark_board_plate.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:yan_nanzhi_003"],
+      "rationale": "旧驿暗号和日月残纹应精确绘制或遮罩重绘。",
+      "required_assets": ["PROP_OLD_RELAY_MARK", "PROP_MEDICINE_CABINET", "MASK_old_relay_mark_area"],
+      "continuity_locks": ["PROP_OLD_RELAY_MARK", "PROP_MEDICINE_CABINET"],
+      "risks": ["needs_asset", "needs_config", "needs_redraw"]
+    },
+    {
+      "shot_id": "SC005-SH005",
+      "segment_id": "SC005-SH005-A",
+      "method": "I2V",
+      "duration": "11s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc005_sh005_open_cabinet_shadow.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:luo_004", "dialogue:slave_soldier_001"],
+      "rationale": "叉矛影、药柜和罗青禾位置需要参考以保持门内外压力。",
+      "required_assets": ["CHAR_LUO_QINGHE", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_MEDICINE_CABINET"],
+      "continuity_locks": ["CHAR_LUO_QINGHE", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_MEDICINE_CABINET"],
+      "risks": ["needs_asset", "needs_config", "shadow_readability"]
     },
     {
       "shot_id": "SC006-SH001",
-      "scene_id": "SC006",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "LOC_OLD_WELL",
-        "PROP_WATER_JAR",
-        "RULE_SPATIAL_GEOGRAPHY"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC006-SH001-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh001_well_sealed_medicine_house.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:crowd_murmur_low"],
+      "rationale": "旧井、药屋封门牌和沈维桑视线需保持地理连续。",
+      "required_assets": ["LOC_CANYANGAO_WELL_TABLE", "LOC_LUO_MEDICINE_HOUSE", "CHAR_SHEN_WEISANG"],
+      "continuity_locks": ["LOC_CANYANGAO_WELL_TABLE", "LOC_LUO_MEDICINE_HOUSE", "CHAR_SHEN_WEISANG"],
+      "risks": ["needs_asset", "needs_config", "geography_clarity"]
     },
     {
       "shot_id": "SC006-SH002",
-      "scene_id": "SC006",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_SHEN_WEISANG_READS_SIGNS",
-        "LOC_OLD_WELL"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC006-SH002-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh002_old_mark_evidence_table.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:baice_clerk_005"],
+      "rationale": "旧驿暗号摆上桌和官吏层级必须可读。",
+      "required_assets": ["PROP_OLD_RELAY_MARK", "CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER"],
+      "continuity_locks": ["PROP_OLD_RELAY_MARK", "CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "prop_detail"]
     },
     {
       "shot_id": "SC006-SH003",
-      "scene_id": "SC006",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_QINGMING_INCENSE",
-        "LOC_OLD_WELL",
-        "RULE_MOON_WHITE_GLINT_ONLY"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC006-SH003-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh003_crowd_hierarchy.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:crowd_break", "sfx:hooks_block"],
+      "rationale": "人群炸开但层级必须清楚，使用参考帧。",
+      "required_assets": ["CHAR_SUMING_SLAVE_SOLDIER", "CHAR_SUMING_INSECT_INFANTRY", "CHAR_BAICE_CLERK", "LOC_CANYANGAO_WELL_TABLE"],
+      "continuity_locks": ["CHAR_SUMING_SLAVE_SOLDIER", "CHAR_SUMING_INSECT_INFANTRY", "CHAR_BAICE_CLERK"],
+      "risks": ["needs_asset", "needs_config", "crowd_layering"]
     },
     {
       "shot_id": "SC006-SH004",
-      "scene_id": "SC006",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "RULE_SPATIAL_GEOGRAPHY",
-        "CHAR_SHEN_ZHAOMIAN",
-        "CHAR_LUO_QINGHE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC006-SH004-A",
+      "method": "REDRAW",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh004_zhaomian_register_mark.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:baice_clerk_006"],
+      "rationale": "疑童白册标记和草药袋特写需要精确，建议参考帧加局部重绘。",
+      "required_assets": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER", "MASK_register_child_mark_area"],
+      "continuity_locks": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "needs_redraw", "child_sensitivity"]
     },
     {
       "shot_id": "SC006-SH005",
-      "scene_id": "SC006",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_SHEN_WEISANG_RESTRAINT",
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "PROP_QINGMING_INCENSE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "segment_id": "SC006-SH005-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh005_baiyi_entrance.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:qingming_bell"],
+      "rationale": "白翳极高、洁净和无尘入场必须使用角色参考。",
+      "required_assets": ["CHAR_BAI_YI", "LOC_CANYANGAO_GATE", "PROP_INSECT_WAX_NEEDLE"],
+      "continuity_locks": ["CHAR_BAI_YI", "LOC_CANYANGAO_GATE", "PROP_QINGMING_INCENSE"],
+      "risks": ["needs_asset", "needs_config", "identity_reference_needed"]
     },
     {
-      "shot_id": "SC007-SH001",
-      "scene_id": "SC007",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_HIDDEN_RELAY_COMPARTMENT",
-        "LOC_MEDICINE_HOUSE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "shot_id": "SC006-SH006",
+      "segment_id": "SC006-SH006-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh006_baiyi_wipes_needle.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:bai_yi_001"],
+      "rationale": "白翳擦针和制度推理是角色核心行为，需要参考。",
+      "required_assets": ["CHAR_BAI_YI", "PROP_INSECT_WAX_NEEDLE", "PROP_OLD_RELAY_MARK"],
+      "continuity_locks": ["CHAR_BAI_YI", "PROP_INSECT_WAX_NEEDLE", "PROP_OLD_RELAY_MARK"],
+      "risks": ["needs_asset", "needs_config", "dialogue_sync"]
     },
     {
-      "shot_id": "SC007-SH002",
-      "scene_id": "SC007",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "RULE_FIRST_CLEAR_RELAY_REVEAL",
-        "FACTION_ZHAOMING_RELIC"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "shot_id": "SC006-SH007",
+      "segment_id": "SC006-SH007-A",
+      "method": "REDRAW",
+      "duration": "7s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh007_shen_side_note_plate.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:bai_yi_002"],
+      "rationale": "白册旁注文字必须准确，不能交给视频模型随机生成。",
+      "required_assets": ["PROP_WHITE_REGISTER", "PROP_INSECT_WAX_NEEDLE", "MASK_register_shen_side_note_area"],
+      "continuity_locks": ["PROP_WHITE_REGISTER", "PROP_INSECT_WAX_NEEDLE", "CHAR_SHEN_WEISANG"],
+      "risks": ["needs_asset", "needs_config", "needs_redraw", "text_not_model_generated"]
     },
     {
-      "shot_id": "SC007-SH003",
-      "scene_id": "SC007",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_BAI_YI",
-        "CHAR_LUO_QINGHE",
-        "PROP_HIDDEN_RELAY_COMPARTMENT"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "shot_id": "SC006-SH008",
+      "segment_id": "SC006-SH008-A",
+      "method": "I2V",
+      "duration": "8s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh008_well_blockade_tightens.png",
+      "last_frame_ref": "",
+      "audio_refs": ["sfx:blockade_tightens"],
+      "rationale": "旧井封锁收紧需要地点和虫兵参考。",
+      "required_assets": ["LOC_CANYANGAO_WELL_TABLE", "CHAR_SUMING_INSECT_INFANTRY", "PROP_WHITE_WAX_FLAGS"],
+      "continuity_locks": ["LOC_CANYANGAO_WELL_TABLE", "PROP_WHITE_WAX_FLAGS", "CHAR_SUMING_INSECT_INFANTRY"],
+      "risks": ["needs_asset", "needs_config", "geography_clarity"]
     },
     {
-      "shot_id": "SC007-SH004",
-      "scene_id": "SC007",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "PROP_HERB_POUCH",
-        "CHAR_SHEN_WEISANG_RESTRAINT",
-        "CHAR_SHEN_ZHAOMIAN"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "shot_id": "SC006-SH009",
+      "segment_id": "SC006-SH009-A",
+      "method": "I2V",
+      "duration": "9s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh009_start_with_child.png",
+      "last_frame_ref": "",
+      "audio_refs": ["dialogue:bai_yi_003"],
+      "rationale": "白翳、沈照眠和沈维桑扣弦需要同一构图约束。",
+      "required_assets": ["CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_SHEN_BOW"],
+      "continuity_locks": ["CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_SHEN_BOW"],
+      "risks": ["needs_asset", "needs_config", "child_sensitivity"]
     },
     {
-      "shot_id": "SC007-SH005",
-      "scene_id": "SC007",
-      "method": "I2V_WITH_ASSET_REFS",
-      "required_assets": [],
-      "reference_frame": null,
-      "continuity_locks": [
-        "CHAR_LUO_QINGHE",
-        "CHAR_SHEN_WEISANG",
-        "LOC_OLD_WELL"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC008-SH001",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "continuity_locks": [
-        "CHAR_BAI_YI",
-        "PROP_QINGMING_REGISTER",
-        "PROP_QINGMING_INCENSE"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC008-SH002",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "continuity_locks": [
-        "RULE_SPATIAL_GEOGRAPHY",
-        "CHAR_SHEN_WEISANG_PROTECTS_SISTER"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC008-SH003",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [
-        "shot_override_sc008_sh003_well_glint_readability"
-      ],
-      "reference_frame": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
-      "continuity_locks": [
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "PROP_QINGMING_INCENSE",
-        "LOC_OLD_WELL"
-      ],
-      "risks": "Use SC008-SH003 shot override for well-rim readability. Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi, a hand/body below the well, or the full moon-jade object in episode 01."
-    },
-    {
-      "shot_id": "SC008-SH004",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE_ASSISTED_I2V",
-      "required_assets": [],
-      "reference_frame": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "continuity_locks": [
-        "RULE_NO_YAN_NANZHI_REVEAL",
-        "RULE_NO_MOON_JADE_FULL_REVEAL"
-      ],
-      "risks": "Do not rewrite plot, dialogue, geography, screen direction, wardrobe state, or reveal rules. Avoid readable generated text unless final post layer supplies it. Do not reveal Yan Nanzhi or the full moon-jade object in episode 01."
+      "shot_id": "SC006-SH010",
+      "segment_id": "SC006-SH010-A",
+      "method": "FLF2V",
+      "duration": "10s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_tensed.png",
+      "last_frame_ref": "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_released_black.png",
+      "audio_refs": ["sfx:bowstring_tension", "sfx:register_page_black"],
+      "rationale": "扣弦到松弦的动作终点是本集按钮，建议 FLF2V 锁定终点。",
+      "required_assets": ["CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "PROP_SHEN_BOW", "PROP_WHITE_REGISTER"],
+      "continuity_locks": ["CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "PROP_SHEN_BOW", "PROP_WHITE_REGISTER"],
+      "risks": ["needs_asset", "needs_config", "ending_timing", "hand_detail"]
     }
-  ],
-  "validation_notes": [
-    "Backfilled because episode 01 generation-plan.json was missing.",
-    "Uses the existing 36-shot director-room shot list without changing story or shot order.",
-    "Five existing reference-frame PNGs are locked as canonical first-frame art references.",
-    "SC008-SH003 has a dedicated shot override for old-well moon-white glint readability.",
-    "Readable story text must be supplied by post-production text layers rather than generated image text.",
-    "SC002-SH001 now has a dedicated Shen Weisang gate-observation first frame for I2V production."
   ]
 }
