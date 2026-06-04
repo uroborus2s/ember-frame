@@ -2,8 +2,8 @@
 
 更新时间：2026-06-05
 项目：`severed-homeland` / 《断航故土》
-生产模式：`series mode`，全剧基础模式
-状态：全剧基础已按“全剧基础通过后的清理规则”完成非规范文档清理，未启动 episode mode
+生产模式：`season_01_writer_room_95_point_polish_complete`
+状态：第一季 01-12 集 detailed script 已完成，并完成 95 分目标精修 pass；尚未启动 director-room、art-room、ComfyUI、音频、剪辑、后期或渲染流程。
 
 ## 本轮已完成
 
@@ -92,24 +92,21 @@
 - 场景 bible 是否足以支持后续超写实、电影级、可拍摄的视频制作。
 - 是否仍有任何旧剧本、旧分镜、旧资产提示词或 ComfyUI 参数被继承为 canon。
 
-## 清理后的准入限制
+## 清理后的历史准入限制
 
-清理完成后，仍未启动：
+以下为全剧基础清理完成、进入 episode mode 之前的历史限制；当前第一季 episode mode 与 95 分精修已经完成，但这些下游边界仍有效：
 
-- `episode mode`
 - `director-room`
 - `art-room`
 - ComfyUI 或任何视频提示词生成
 - 音频、剪辑、后期、渲染或 QC 流程
-- 单集 `01/brief`、`01/script`、`01/reports`、`01/memory` 等文件生成
 
 ## 下一步
 
-全剧基础非规范文档清理已完成。下一步如需继续，应进入第 `01` 集 episode mode；进入前仍不得把 `legacy/`、旧 `art/`、旧 `assets/`、旧 `prompts/` 或旧 `01`-`12` 生产内容作为 canon 输入。
+第一季 Writer Room 剧本与 95 分目标精修已完成。下一步如需继续，应从精修后的 `01`-`12` 集 `script/final-script.md` 进入 director-room；仍不得把 `legacy/`、旧 `art/`、旧 `assets/`、旧 `prompts/` 或旧生产内容作为 canon 输入。
 
-## 本轮未做
+## 本轮仍未做
 
-- 未生成任何单集 brief、单集大纲、剧本、评分或连续性报告。
 - 未生成角色卡、物品卡、场景卡、资产文件名或资产索引。
 - 未生成镜头表、分镜、视频提示词、图像提示词、ComfyUI 参数或后期交付物。
 - 未修改 `legacy/`、旧生产目录、旧资产目录或旧提示词目录。
@@ -119,3 +116,11 @@
 已进入并完成第一季 01-12 集 episode mode。每集均已生成 `brief/episode-brief.md`、`script/episode-outline.md`、`script/script-v01.md`、`script/final-script.md`、`reports/critique-v01.md`、`reports/continuity-report.md`、`reports/script-score.md`、`memory/current-state.md`、`memory/failure-patterns.json`、`memory/evolution-notes.md` 和 `logs/writer-room-agent-calls.jsonl`。
 
 第一季平均分高于通过阈值，所有剧本均为 pass。后续可进入 director-room，但不得把 legacy、旧资产、旧提示词或旧 ComfyUI 参数作为 canon 输入。
+
+## 2026-06-05 第一季95分目标精修 pass
+
+已完成第一季 01-12 集 95 分目标精修。精修范围限定在 Writer Room 故事侧：每集 final-script 局部增强开场钩子、即时动机、冲突代价、对白潜台词和可拍道具；同步更新 critique、continuity、score、memory、evolution notes 和 writer-room 日志。
+
+精修后评分：01=95，02=95，03=95，04=95，05=95，06=95，07=95，08=95，09=95，10=95，11=96，12=96；平均 95.2 / 100，全部 pass。
+
+本轮未生成镜头表、分镜、图像提示词、视频提示词、ComfyUI 参数、音频、剪辑、后期或渲染文件。后续部门必须从精修后的 final-script 重新拆解。
