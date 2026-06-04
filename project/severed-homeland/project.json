@@ -2,10 +2,9 @@
   "project_id": "severed-homeland",
   "title": "断航故土",
   "season": "season-01",
-  "source_bible": "背景.md",
-  "current_status": "remake_ready_for_writer_room_series_mode_only",
+  "current_status": "season_01_writer_room_episode_mode_complete",
   "created_at": "2026-06-02",
-  "updated_at": "2026-06-04",
+  "updated_at": "2026-06-05",
   "format": {
     "type": "AI竖屏短剧",
     "episode_count": 12,
@@ -14,21 +13,23 @@
     "target_audience": "喜欢东方史诗奇幻、逃亡护送、身份反转和强钩子短剧的观众"
   },
   "normalized_request": {
-    "seed": "保留《背景.md》、角色 Bible 和场景 Bible 中的世界观、地理、势力、主要角色、核心历史与视觉基调，废弃旧剧本、旧分镜、旧资产和旧提示词。本轮只使用 writer-room 的 series mode 重编全剧基础，审核通过后再进入单集开发。",
+    "seed": "全剧基础已从临时设定吸收并规范化为 bible/*、outline/* 和 synopsis/*。后续只以规范文件为 canon；旧剧本、旧分镜、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为 canon 读取或继承。",
     "requested_outputs": [
       "全剧基础 bible 重编",
       "第一季全剧大纲",
       "分集大纲索引",
       "全剧梗概",
-      "项目记忆状态"
+      "项目记忆状态",
+      "第一季12集详细剧本",
+      "每集 brief、outline、script、critique、continuity、score、memory、logs"
     ],
     "genre": "低魔东方史诗护送短剧",
     "tone": "冷峻、紧迫、制度压迫、政治阴谋、带历史伤口与故土重释；少量黑色幽默只作人物呼吸",
     "story_style": "低魔东方史诗护送剧 + 制度悬疑 + 政治阴谋 + 大陆战争阴影；不采用诙谐幽默作为主类型，不把大陆争霸取代第一季护送主线",
     "calendar_rule": "承接式纪年：旧时代用昭明历，新王朝用肃明历；旧王朝灭国于昭明历5249年，该年就是肃明历元年；第一季开端固定为肃明历1226年；不得再写帝国历1226年",
-    "video_readiness": "控制角色数量、集中场景、使用明确视觉锚点和可生成动作；后续整体风格为超写实、电影级质感、杜绝动作僵硬、极致逼真。",
+    "video_readiness": "Writer Room 只记录可拍摄的叙事约束：控制角色数量、集中场景、使用明确视觉锚点和可表演动作；不生成图像提示词、视频提示词、ComfyUI 参数或后期交付物。",
     "revision_budget": 2,
-    "current_stage": "series mode only",
+    "current_stage": "season 01 episode mode complete",
     "episode_duration_rule": "每集 3 分 30 秒到 5 分钟",
     "blocked_until_series_foundation_approved": [
       "episode mode",
@@ -39,27 +40,23 @@
     ]
   },
   "assumptions": [
-    "第一季旧剧本不再作为 canon。本轮只重编全剧基础层，具体覆盖范围由新的 series-outline 和 episode-outline-index 决定。",
-    "全剧基础审核通过前，不创建单集剧本、不生成分镜、不生成资产、不生成视频提示词。",
+    "第一季旧剧本不再作为 canon。全剧基础层以新的 series-outline、episode-outline-index、story-synopsis 和 bible 文件为准。",
+    "全剧基础清理已完成；进入第 01 集 episode mode 前，不读取 legacy/、旧 art/、旧 assets/、旧 prompts/ 或旧 01-12 生产内容作为 canon。",
     "每集采用竖屏短剧结构：前30秒内建立钩子或时代危机，中段升级，结尾反转或悬念；单集时长为3分30秒到5分钟。",
-    "每集主要角色控制在3到5人，主要场景控制在2到4个，方便AI视频保持一致性。"
+    "每集主要角色控制在3到5人，主要场景控制在2到4个，便于后续部门维持镜头和角色连续性。",
+    "本轮用户已确认基础剧情完成，允许从 series foundation 进入第一季全部 episode mode。",
+    "每集最终稿以3分30秒到5分钟竖屏短剧为目标，后续导演与美术部门需从 Writer Room 剧本重新拆分镜头与资产需求。"
   ],
   "planned_agent_sequence": [
     "showrunner-agent",
     "story-architect-agent",
     "character-agent",
     "scene-agent",
-    "dialogue-agent",
-    "script-doctor-agent",
-    "rewrite-agent",
     "continuity-agent",
-    "script-evaluator-agent",
     "memory-librarian",
     "learning-evolution-agent"
   ],
   "artifacts": {
-    "writer_room_input": "writer-room-input.md",
-    "source_bible": "背景.md",
     "world": "bible/world.md",
     "geography": "bible/geography.md",
     "factions": "bible/factions.md",
@@ -70,24 +67,150 @@
     "visual_style": "bible/visual-style.md",
     "series_outline": "outline/series-outline.md",
     "episode_outline_index": "outline/episode-outline-index.md",
-    "story_synopsis": "synopsis/story-synopsis.md"
+    "story_synopsis": "synopsis/story-synopsis.md",
+    "season_01_episode_outputs": {
+      "10": {
+        "brief": "10/brief/episode-brief.md",
+        "outline": "10/script/episode-outline.md",
+        "script_v01": "10/script/script-v01.md",
+        "final_script": "10/script/final-script.md",
+        "critique": "10/reports/critique-v01.md",
+        "continuity": "10/reports/continuity-report.md",
+        "score": "10/reports/script-score.md",
+        "log": "10/logs/writer-room-agent-calls.jsonl"
+      },
+      "11": {
+        "brief": "11/brief/episode-brief.md",
+        "outline": "11/script/episode-outline.md",
+        "script_v01": "11/script/script-v01.md",
+        "final_script": "11/script/final-script.md",
+        "critique": "11/reports/critique-v01.md",
+        "continuity": "11/reports/continuity-report.md",
+        "score": "11/reports/script-score.md",
+        "log": "11/logs/writer-room-agent-calls.jsonl"
+      },
+      "12": {
+        "brief": "12/brief/episode-brief.md",
+        "outline": "12/script/episode-outline.md",
+        "script_v01": "12/script/script-v01.md",
+        "final_script": "12/script/final-script.md",
+        "critique": "12/reports/critique-v01.md",
+        "continuity": "12/reports/continuity-report.md",
+        "score": "12/reports/script-score.md",
+        "log": "12/logs/writer-room-agent-calls.jsonl"
+      },
+      "01": {
+        "brief": "01/brief/episode-brief.md",
+        "outline": "01/script/episode-outline.md",
+        "script_v01": "01/script/script-v01.md",
+        "final_script": "01/script/final-script.md",
+        "critique": "01/reports/critique-v01.md",
+        "continuity": "01/reports/continuity-report.md",
+        "score": "01/reports/script-score.md",
+        "log": "01/logs/writer-room-agent-calls.jsonl"
+      },
+      "02": {
+        "brief": "02/brief/episode-brief.md",
+        "outline": "02/script/episode-outline.md",
+        "script_v01": "02/script/script-v01.md",
+        "final_script": "02/script/final-script.md",
+        "critique": "02/reports/critique-v01.md",
+        "continuity": "02/reports/continuity-report.md",
+        "score": "02/reports/script-score.md",
+        "log": "02/logs/writer-room-agent-calls.jsonl"
+      },
+      "03": {
+        "brief": "03/brief/episode-brief.md",
+        "outline": "03/script/episode-outline.md",
+        "script_v01": "03/script/script-v01.md",
+        "final_script": "03/script/final-script.md",
+        "critique": "03/reports/critique-v01.md",
+        "continuity": "03/reports/continuity-report.md",
+        "score": "03/reports/script-score.md",
+        "log": "03/logs/writer-room-agent-calls.jsonl"
+      },
+      "04": {
+        "brief": "04/brief/episode-brief.md",
+        "outline": "04/script/episode-outline.md",
+        "script_v01": "04/script/script-v01.md",
+        "final_script": "04/script/final-script.md",
+        "critique": "04/reports/critique-v01.md",
+        "continuity": "04/reports/continuity-report.md",
+        "score": "04/reports/script-score.md",
+        "log": "04/logs/writer-room-agent-calls.jsonl"
+      },
+      "05": {
+        "brief": "05/brief/episode-brief.md",
+        "outline": "05/script/episode-outline.md",
+        "script_v01": "05/script/script-v01.md",
+        "final_script": "05/script/final-script.md",
+        "critique": "05/reports/critique-v01.md",
+        "continuity": "05/reports/continuity-report.md",
+        "score": "05/reports/script-score.md",
+        "log": "05/logs/writer-room-agent-calls.jsonl"
+      },
+      "06": {
+        "brief": "06/brief/episode-brief.md",
+        "outline": "06/script/episode-outline.md",
+        "script_v01": "06/script/script-v01.md",
+        "final_script": "06/script/final-script.md",
+        "critique": "06/reports/critique-v01.md",
+        "continuity": "06/reports/continuity-report.md",
+        "score": "06/reports/script-score.md",
+        "log": "06/logs/writer-room-agent-calls.jsonl"
+      },
+      "07": {
+        "brief": "07/brief/episode-brief.md",
+        "outline": "07/script/episode-outline.md",
+        "script_v01": "07/script/script-v01.md",
+        "final_script": "07/script/final-script.md",
+        "critique": "07/reports/critique-v01.md",
+        "continuity": "07/reports/continuity-report.md",
+        "score": "07/reports/script-score.md",
+        "log": "07/logs/writer-room-agent-calls.jsonl"
+      },
+      "08": {
+        "brief": "08/brief/episode-brief.md",
+        "outline": "08/script/episode-outline.md",
+        "script_v01": "08/script/script-v01.md",
+        "final_script": "08/script/final-script.md",
+        "critique": "08/reports/critique-v01.md",
+        "continuity": "08/reports/continuity-report.md",
+        "score": "08/reports/script-score.md",
+        "log": "08/logs/writer-room-agent-calls.jsonl"
+      },
+      "09": {
+        "brief": "09/brief/episode-brief.md",
+        "outline": "09/script/episode-outline.md",
+        "script_v01": "09/script/script-v01.md",
+        "final_script": "09/script/final-script.md",
+        "critique": "09/reports/critique-v01.md",
+        "continuity": "09/reports/continuity-report.md",
+        "score": "09/reports/script-score.md",
+        "log": "09/logs/writer-room-agent-calls.jsonl"
+      }
+    }
   },
   "warnings": [
-    "本项目已进入重制模式。旧剧本、旧分镜、旧资产、旧提示词和旧 ComfyUI 参数均已移入 legacy/pre-remake-2026-06-04/，不作为 writer-room 的正式输入。",
-    "writer-room 重写全剧时只应读取根目录设定文件和 writer-room-input.md；不要读取 legacy/ 作为剧情 canon。",
-    "重写完成前不要启动 director-room、art-room 或 ComfyUI 生产。"
+    "临时输入文件 背景.md 与 writer-room-input.md 已按清理规则删除，后续不得作为正式输入引用。",
+    "legacy/ 只保留为归档，不作为 writer-room 或下游部门的剧情 canon。",
+    "当前未启动 episode mode、director-room、art-room、ComfyUI、音频、剪辑、后期或渲染流程。",
+    "第一季 Writer Room 剧本文字已完成，但尚未启动 director-room、art-room、ComfyUI、音频、剪辑或后期流程。"
   ],
-  "production_mode": "series_foundation_only",
+  "production_mode": "season_01_episode_mode_complete",
   "remake_policy": {
     "keep_as_canon_inputs": [
-      "背景.md",
-      "bible/characters.md",
-      "bible/scenes.md",
       "bible/world.md",
       "bible/geography.md",
       "bible/factions.md",
       "bible/timeline.md",
-      "bible/visual-style.md"
+      "bible/characters.md",
+      "bible/scenes.md",
+      "bible/continuity.md",
+      "bible/visual-style.md",
+      "outline/series-outline.md",
+      "outline/episode-outline-index.md",
+      "synopsis/story-synopsis.md"
     ],
     "discard_from_canon": [
       "旧剧本",
@@ -99,13 +222,12 @@
       "旧 ComfyUI 参数",
       "旧渲染结果"
     ],
-    "legacy_archive": "legacy/pre-remake-2026-06-04/",
-    "writer_room_prompt": "writer-room-input.md",
-    "series_foundation_approval_required": true,
-    "delete_after_series_foundation_approved": [
+    "legacy_archive": "legacy/",
+    "temporary_inputs_deleted": [
       "背景.md",
       "writer-room-input.md"
     ],
-    "cleanup_condition": "确认有效信息已完整吸收到 bible/*、outline/* 和 synopsis/* 规范文件后再删除。"
+    "cleanup_status": "completed_after_absorption_into_canonical_files",
+    "series_foundation_approval_required_before_episode_mode": true
   }
 }

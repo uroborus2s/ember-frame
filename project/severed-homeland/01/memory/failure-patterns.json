@@ -1,107 +1,12 @@
 {
-  "episode_id": "01",
-  "episode_title": "清明香入村",
-  "canonical_outputs": {
-    "final_script": "01/script/final-script.md",
-    "continuity_report": "01/reports/continuity-report.md",
-    "score_report": "01/reports/script-score.md"
-  },
-  "quality_gate": {
-    "target_score": 85,
-    "final_score": 89,
-    "decision": "pass",
-    "rewrite_needed": false
-  },
-  "patterns": [
-    {
-      "id": "p01_hook_information_density",
-      "severity": "medium",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "首5秒同时包含针刺、血纹、白册、母亲被拦、白翳擦针和台词，记忆点过多。",
-      "resolution": "最终稿将前5秒压成针刺、血纹、白册三拍，并让‘旧污疑似’定格半秒。",
-      "lesson": "短剧前5秒只保留一个核心恐惧信息，辅助动作移到5秒后。"
-    },
-    {
-      "id": "p02_protagonist_immediate_motivation_late",
-      "severity": "medium",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "沈维桑前半段多为被动反应，到旧井处目标才清晰。",
-      "resolution": "最终稿新增护妹妹、读懂母亲警告、旧井前不喊人并压住清明香的动作链。",
-      "lesson": "主角每场都需要可见的即时目标，尤其是保护对象、风险判断和克制选择。"
-    },
-    {
-      "id": "p03_clue_revealed_before_escalation",
-      "severity": "high",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "药屋前段已经明确露出旧驿刻痕，削弱后段暗格暴露。",
-      "resolution": "最终稿药屋前段只写罗青禾指尖停顿和遮手，不让镜头露出她挡住了什么；暗格处第一次清楚显出日月纹和旧驿方向痕。",
-      "lesson": "悬念证据应在升级节点首次清楚露出，前段只给行为异常或反应线索。"
-    },
-    {
-      "id": "p04_guardian_secret_too_explicit",
-      "severity": "medium",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "罗青禾用药名暗语、遮刻痕、阻止妹妹失言，旧驿知情程度过早过明。",
-      "resolution": "最终稿降低遮掩明确性，改为护药柜、遮手、水罐敲击、按草药袋等可解释动作。",
-      "lesson": "守密角色可以通过动作传递风险，但旁白和镜头不应过早确认她具体知道什么。"
-    },
-    {
-      "id": "p05_future_reveal_named_too_early",
-      "severity": "high",
-      "status": "fixed_with_retained_boundary",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "初稿两次明确写‘月白玉片’，与第02集才露出玉片的接口冲突。",
-      "resolution": "最终稿改为油纸包边缘的一线月白反光，不命名玉片。",
-      "retained_warning": "后续分镜不得拍出完整玉片、佩戴者或手部特写。",
-      "lesson": "跨集关键物件可以先给颜色、材质或反射线索，但不要提前命名或完整展示。"
-    },
-    {
-      "id": "p06_worldbuilding_terms_overloaded_in_dialogue",
-      "severity": "low",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "结尾台词同时抛出隐人、隐路、隐名、旧污等制度词，口播感偏强。",
-      "resolution": "最终稿压成‘谁替旧路遮一寸，按旧污论’，保留威胁核心。",
-      "lesson": "结尾威胁应优先让观众听懂危险，制度感靠少量关键词和角色口吻维持。"
-    },
-    {
-      "id": "p07_choice_without_visible_cost",
-      "severity": "medium",
-      "status": "fixed",
-      "found_in": "01/script/script-v01.md",
-      "evidence": "暗格暴露后沈维桑藏刀合理，但选择代价不够尖锐。",
-      "resolution": "最终稿加入沈照眠被短矛逼退、药袋掉地、沈维桑碰刀柄又藏刀捡药袋。",
-      "lesson": "主角克制不行动时，要给观众看见他放弃了什么。"
-    },
-    {
-      "id": "p08_spatial_blocking_risk",
-      "severity": "medium",
-      "status": "retained_warning",
-      "found_in": "01/reports/continuity-report.md",
-      "evidence": "第8场同时涉及药屋外与旧井，需要分镜明确药屋门口能看向旧井。",
-      "resolution": null,
-      "retained_warning": "导演分镜阶段必须锁定药屋、后院、水缸、旧井和短矛封锁线的空间关系。",
-      "lesson": "短剧多点位同场压迫需要先做空间图，否则悬念视线和封锁逻辑会变模糊。"
-    },
-    {
-      "id": "p09_background_intro_scope_control",
-      "severity": "medium",
-      "status": "retained_warning",
-      "found_in": "01/script/final-script.md",
-      "evidence": "新增时代背景蒙太奇包含北境战场、征粮队和南方密室，若分镜扩展过多会稀释沈维桑出场和残阳坳主线。",
-      "resolution": "最终稿将序幕控制为0:00-0:28，并在0:28切回沈维桑出场。",
-      "retained_warning": "序幕背景必须控制在30秒以内，不要给临时人物设置姓名或后续线索。",
-      "lesson": "背景介绍可以用旁白和少量视觉切片解决，不应扩展成新剧情线。"
-    }
+  "episode": "01",
+  "title": "白册进村",
+  "generated_at": "2026-06-05T00:00:00+08:00",
+  "failure_patterns": [],
+  "avoided_risks": [
+    "未读取 legacy 作为剧情 canon",
+    "未生成下游生产提示词",
+    "未把清明院层级混写成单一敌人"
   ],
-  "retained_warnings": [
-    "序幕背景必须控制在30秒以内，不要给北方战场、征粮队或南方密室中的临时人物设置姓名和后续线索。",
-    "月白反光必须继续保持为反射线索，不要在第01集正面露出月白玉片。",
-    "第8场应在分镜中明确药屋、后院、旧井的相对位置。"
-  ],
-  "recommended_next_action": "进入导演分镜前，先锁定序幕三镜头时长分配，再锁定残阳坳药屋院落空间图，并规定月白反光只以窄线反射出现。"
+  "status": "clean"
 }
