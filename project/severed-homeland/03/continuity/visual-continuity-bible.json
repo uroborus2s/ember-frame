@@ -1,205 +1,130 @@
 {
-  "version": "1.0",
+  "version": "director-room-v1-2026-06-05",
   "episode_id": "03",
-  "title": "半枚驿令",
-  "source_artifacts": [
-    "bible/characters.md",
-    "bible/scenes.md",
-    "03/script/final-script.md",
-    "03/reports/continuity-report.md",
-    "03/director/director-brief.md"
-  ],
   "characters": [
     {
-      "continuity_id": "CHAR_SHEN_WEISANG_E03",
+      "continuity_id": "CH_SHEN_WEISANG",
       "name": "沈维桑",
-      "appearance": "17岁少年猎户，瘦硬身形，脸色惨白但仍有少年感；左肩血布从开场到黑场持续浸血，鼻血在测绘廊和塌门后复发，左臂全程垂落或失力。",
-      "wardrobe": "灰褐猎户短打，草药青或烟灰内层，旧皮护腕，肩肘补片，焦黑衣角和重新缝合线；衣服旧而完整，不能破成布条。",
-      "state_changes": [
-        "开场左肩血布已浸透，左臂完全抬不起来。",
-        "白石窄廊反手摸弓失败，箭掉地，只能右手攥箭当短刺。",
-        "测绘廊触碰旧石栓时左肩如火针扎穿，眼角金赤残纹短闪，鼻血复发。",
-        "检修缝中过缝时左臂拖在身侧，血在石缝上擦出细线。",
-        "塌门后跪倒咳血沫，明确说别碰左肩。",
-        "图室结尾肩血滴到金河磨盘小印下，形成第04集止血接口。"
-      ],
-      "signature_props": [
-        "半枚日月驿令",
-        "沈照眠烧焦发绳",
-        "失效猎弓与箭"
-      ],
-      "behavior_locks": [
-        "先看地面、风、水痕、灰尘和磨痕，再判断路线。",
-        "动作只允许右手、右肩、右脚主导；左臂不得突然恢复。",
-        "救妹妹目标由烧焦发绳、北线车轴旧印和车辙粉末持续牵引。"
-      ],
-      "prohibited_visuals": [
-        "成年硬汉化",
-        "拉满弓或用弓脱困",
-        "左臂恢复可用",
-        "用灵翼残纹替代观察"
-      ]
+      "name_en": "Shen Weisang",
+      "appearance": "17岁人族猎户兼旧驿后裔，灰褐猎衣、草药青内层、旧皮护腕、猎弓、短刀、路线包；左肩旧伤必须持续可见。",
+      "wardrobe": "Grey-brown hunter clothing, herb-green inner layer, old leather wrist guards, bow, short knife and route pack; his injured left shoulder remains visible and limiting."
     },
     {
-      "continuity_id": "CHAR_YAN_NANZHI_E03",
+      "continuity_id": "CH_YAN_NANZHI",
       "name": "晏南枝",
-      "appearance": "18岁流亡皇室旁支，站姿挺直克制，眼下可有疲惫阴影，紧张时手指绷紧或收紧束发红线。",
-      "wardrobe": "雾紫或冷灰流亡遮蔽旅装，深墨蓝层次，整洁领口袖口和腰封，边角有细小补线和旅尘；旧帝国标识、月白玉片和日月血牒全部隐蔽携带。",
-      "state_changes": [
-        "入口处一手按住怀中油纸血牒，一手扣住石壁。",
-        "血牒虫纹段用指甲刮掉白蜡虫纹，指尖被割出血。",
-        "窄廊中短刀横在身前保护通路。",
-        "塌门段先挤入右侧窄口，用短刀插入下栓缝并反手撬动。",
-        "塌门后扶沈维桑，并提醒进金河前先止血。",
-        "图室结尾下意识把束发红线绕紧，勒得指节发白。"
-      ],
-      "signature_props": [
-        "隐藏日月血牒油纸包",
-        "短刀",
-        "束发红线"
-      ],
-      "behavior_locks": [
-        "说话克制，只透露推动当集行动的信息。",
-        "保血牒的理由必须与沈照眠旧名证据相关，不拍成只护纸不护活人。",
-        "旧帝国正装不得在逃亡正面行动中外露。"
-      ],
-      "prohibited_visuals": [
-        "旧帝国朱赤宝蓝正装",
-        "完整血牒正面展示",
-        "完整月白玉片外露",
-        "把南线与北线冲突在本集解决"
-      ]
+      "name_en": "Yan Nanzhi",
+      "appearance": "18岁人族旧帝国皇室旁支，黑发红线、冷灰/雾紫流亡外袍、隐藏月白玉片与血牒；逃亡中仍保持挺直礼法姿态。",
+      "wardrobe": "Human imperial remnant, black hair tied with a red thread, cold grey or mist-purple fugitive robe, hidden moon-white jade and blood record; upright ritual posture even while fleeing."
     },
     {
-      "continuity_id": "CHAR_PURSUERS_PARTIAL_E03",
-      "name": "追兵局部压迫",
-      "appearance": "不完整展示个体，只用螳刃刮石、黑绿甲壳掠过拐角、两道刃影交叉、刃肢探入低缝、火星和白石刮痕形成持续压迫。",
-      "wardrobe": "黑绿甲壳、旧铁刃、虫蜡白绑带或局部复眼反光；不得拍成完整人形武将或怪物潮。",
-      "behavior_locks": [
-        "刃肢刮石声从入口到塌门外持续升级。",
-        "追兵在检修缝被低石卡住，只能探入半尺。",
-        "塌门只隔住刃肢，门外刮擦继续，危机未解除。"
-      ]
+      "continuity_id": "CH_SUMING_SLAVE_SOLDIER",
+      "name": "奴兵",
+      "name_en": "Suming slave soldier",
+      "appearance": "混血奴兵，扣腕、缚网、押车与抓捕动作清楚；后脑低位金钱马尾式辫发是制度役使标记。",
+      "wardrobe": "Hybrid slave soldier used for wrist-locking, nets, carts and arrests; low rear queue marks institutional servitude."
+    },
+    {
+      "continuity_id": "CH_LUO_QINGHE",
+      "name": "罗青禾",
+      "name_en": "Luo Qinghe",
+      "appearance": "残阳坳医者，青布头巾、草药绿围裙、土褐药屋上衣、小铜剪、药线；火场中保留医者镇定。",
+      "wardrobe": "Canyangao healer with blue cloth headscarf, herb-green apron, earth-brown medicine-house blouse, small copper scissors and medicine thread; composed even in fire."
+    },
+    {
+      "continuity_id": "CH_BAI_YI",
+      "name": "白翳",
+      "name_en": "Bai Yi",
+      "appearance": "肃明清明院高阶监察官，两米以上高瘦虫族，虫蜡白官服、高筒官帽、黑日小徽、虫蜡针、清明白册。",
+      "wardrobe": "Tall thin Qingming Court inspector, insect-wax white official robes, high official hat, black-sun badge, insect-wax needle and Qingming white register."
     }
   ],
   "locations": [
     {
-      "continuity_id": "LOC_E03_BLACK_STONE_CLEFT",
-      "name": "北坡山腹黑石缝",
-      "spatial_layout": "外景夜未尽，黑石凹槽在竖屏中部，画面下方清明香贴鼻血打旋，画面上沿螳刃刮近黑石。石门只向内错开一掌宽。"
+      "continuity_id": "LOC_CANYANGAO_AFTER_FIRE",
+      "name": "火后残阳坳",
+      "name_en": "Canyangao after the fire",
+      "spatial_layout": "废井、焦梁、草药灰和井底旧刻痕保持位置连续。"
     },
     {
-      "continuity_id": "LOC_E03_RELAY_ENTRANCE",
-      "name": "废驿暗道入口",
-      "spatial_layout": "白石拱道窄而低，上方剥落日月双印，下方是拖伤腿脚步。南线偏左或下，刻有隐歌；北线偏右或上，断处有车轴形旧印。"
+      "continuity_id": "LOC_MOUNTAIN_REFUGEE_DITCH",
+      "name": "山道难民沟",
+      "name_en": "mountain refugee ditch",
+      "spatial_layout": "逃荒队、粮车、祖牌和复核条在山路窄沟中挤压。"
     },
     {
-      "continuity_id": "LOC_E03_NARROW_CORRIDOR",
-      "name": "白石窄廊",
-      "spatial_layout": "断续墙面亮纹沿白石墙脚和地面残缺延伸，后方追兵先以两道螳刃形黑影追上来，空间只够两人快速错身。"
+      "continuity_id": "LOC_OLD_WELL_RUINED_MOUTH",
+      "name": "旧井废口",
+      "name_en": "ruined old-well mouth",
+      "spatial_layout": "旧井另一侧与低矮暗门相连，井架和草绳陷阱可读。"
     },
     {
-      "continuity_id": "LOC_E03_MAPPING_GALLERY",
-      "name": "旧驿测绘廊",
-      "spatial_layout": "三道矮门并列，墙上旧刻痕被灰盖住，只露三短一长测线。左门前湿且水倒渗，中门灰尘直坠，右门石栓磨痕向外且有新刮痕。"
-    },
-    {
-      "continuity_id": "LOC_E03_MAINTENANCE_SLIT",
-      "name": "检修缝",
-      "spatial_layout": "低矮贴地的检修缝从右门下方进入，晏南枝先钻，沈维桑最后过。追兵刃肢只能探入半尺，被低石卡住。"
-    },
-    {
-      "continuity_id": "LOC_E03_BROKEN_BOLT_FORK",
-      "name": "断栓岔路",
-      "spatial_layout": "检修缝出口落到右门背后。南线刻痕完整，北线被石灰封过，封灰上有新鲜车轮震落粉末。"
-    },
-    {
-      "continuity_id": "LOC_E03_COLLAPSE_GATE",
-      "name": "塌门石栓",
-      "spatial_layout": "门线外是追兵廊，门线内右侧有通向图室的窄口。半塌石门有上栓裂、下栓死两个结构锚点；石门斜向追兵廊砸下，只隔住刃肢。"
-    },
-    {
-      "continuity_id": "LOC_E03_MAP_ROOM",
-      "name": "旧驿图室",
-      "spatial_layout": "塌门后灰风吹开，露出窄小图室。墙上是密集刻线和点位，南线短亮到隐歌后暗下，北线分段亮到金河磨盘小印，更北处亮出雪线刻痕和黑墙纹。"
+      "continuity_id": "LOC_OLD_RELAY_TUNNEL",
+      "name": "旧驿暗道",
+      "name_en": "old relay tunnel",
+      "spatial_layout": "低矮白石拱、断续日月印、岔路刻痕和金赤残纹。"
     }
   ],
   "props": [
     {
-      "continuity_id": "PROP_HALF_RELAY_TOKEN_E03",
+      "continuity_id": "PROP_HALF_RELAY_TOKEN",
       "name": "半枚日月驿令",
-      "description": "半枚旧帝国日月纹令牌，断月纹对不上；配合血灰和黑石凹槽打开入口，石门只错开一掌宽；在图室只点亮局部路线，不能变成万能钥匙、持续光源、攻击道具或完整地图。"
+      "description": "半枚日月驿令，只能触发断续旧驿残纹，不能完整开路或替代判断。",
+      "description_en": "half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment"
     },
     {
-      "continuity_id": "PROP_BLOOD_RECORD_HIDDEN_E03",
-      "name": "日月血牒油纸包",
-      "description": "藏在晏南枝衣内或怀中油纸包。只允许油纸边缘在清明香作用下短暂出现白蜡虫纹和残缺日月血纹亮起；三层白蜡虫纹未满。"
-    },
-    {
-      "continuity_id": "PROP_BURNT_HAIR_RIBBON_E03",
-      "name": "沈照眠烧焦发绳",
-      "description": "烧焦痕明确的旧发绳，先塞进沈维桑右腕，结尾用牙咬住系紧；是沈照眠不出场时的亲情和救援动机锚点。"
-    },
-    {
-      "continuity_id": "PROP_YNZ_SHORT_KNIFE_E03",
-      "name": "晏南枝短刀",
-      "description": "克制实用的流亡短刀，用于窄廊护身和塌门段撬下栓；不能拍成礼仪宝刀或神化机关钥匙。"
-    },
-    {
-      "continuity_id": "PROP_SWS_BOW_DISABLED_E03",
-      "name": "沈维桑猎弓与箭",
-      "description": "猎弓仍在但左臂失力无法拉弓；箭掉地后被右手攥成短刺，用来兑现动作能力降级。"
-    }
-  ],
-  "phenomena": [
-    {
-      "continuity_id": "FX_GOLD_RED_RELAY_LINE_E03",
-      "name": "旧驿金赤路线光",
-      "description": "断续、窄束、沿地面和墙脚亮起，像旧火从黑石或白石内部被点亮；不得照亮全场或自动导航。"
-    },
-    {
-      "continuity_id": "FX_SPIRIT_WING_REMNANT_E03",
-      "name": "灵翼残纹",
-      "description": "沈维桑眼角和肩胛方向短促金赤光纹，伴随旧铜针般回音与鼻血复发；只回应旧驿坏掉或断裂处，不找路、不标敌、不预知。"
-    },
-    {
-      "continuity_id": "FX_QINGMING_INCENSE_E03",
+      "continuity_id": "FX_QINGMING_INCENSE",
       "name": "清明香",
-      "description": "灰白烟线贴地、贴衣、贴血爬行；可被石门冷风吹散半寸，又从外面卷回更苦一缕；功能是嗅记和逼出白蜡虫纹，不是实体攻击。"
+      "description": "灰白清明香追踪气味，贴血、旧蜡或血牒反应。",
+      "description_en": "grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record"
     },
     {
-      "continuity_id": "FX_WHITE_WAX_INSECT_MARK_E03",
-      "name": "白蜡虫纹",
-      "description": "虫蜡白或骨白，像细足从油纸血牒边缘往外顶，细密、节肢、可刮除；被晏南枝刮除时指尖出血，不得拍成藤蔓符文或满三层污染。"
+      "continuity_id": "PROP_PRISON_CART",
+      "name": "押车",
+      "description": "缚网押车与铜环声，连接沈照眠失踪、外署换名和追捕线。",
+      "description_en": "prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office"
+    },
+    {
+      "continuity_id": "PROP_SCORCHED_HAIR_TIE",
+      "name": "烧焦发绳",
+      "description": "沈照眠亲情锚点，必须在追妹妹线保持连续。",
+      "description_en": "scorched hair tie as Shen Zhaomian family anchor"
+    },
+    {
+      "continuity_id": "PROP_QINGMING_SCENT_BELL",
+      "name": "清明香铃",
+      "description": "渡船或追捕线触发的清明香铃声。",
+      "description_en": "Qingming scent bell used to reveal pursuit on the ferry or road"
+    },
+    {
+      "continuity_id": "PROP_QINGMING_REGISTER",
+      "name": "清明白册",
+      "description": "清明院用于验名、追踪、错册和抹名的白册。",
+      "description_en": "Qingming white register used for name testing, tracking, false entries and erasure"
+    },
+    {
+      "continuity_id": "PROP_BLOOD_RECORD",
+      "name": "日月血牒",
+      "description": "油纸包裹的残缺血牒，不可展开成万能圣物；它会引发追踪风险。",
+      "description_en": "oil-paper wrapped damaged blood record; not a magic solution, and it carries tracking risk"
+    },
+    {
+      "continuity_id": "PROP_OLD_SURVEY_KNOT",
+      "name": "旧绳结",
+      "description": "沈季衡测绘手法残留，指向沈家旧驿血线。",
+      "description_en": "old survey knot left from Shen Jiheng's mapping method"
+    },
+    {
+      "continuity_id": "PROP_FRAGMENTED_ROUTE_MAP",
+      "name": "残缺驿道图",
+      "description": "被石灰封住的残缺驿道图，指向金河、灰烬书院、墙下集市、北境月下旧驿。",
+      "description_en": "fragmented relay-route map sealed under lime, pointing north through Jinhe, the Ash Academy and Wall-foot market"
     }
   ],
   "continuity_rules": [
-    "旧驿空间顺序固定：北坡山腹黑石缝 -> 废驿暗道入口 -> 白石窄廊 -> 旧驿测绘廊 -> 检修缝 -> 断栓岔路 -> 塌门石栓 -> 旧驿图室。",
-    "低光不是纯黑；南线、北线、门线、低缝、石栓、图墙刻线必须通过手指、脚步、光线方向或角色视线保持可读。",
-    "血牒规则拆成四拍：清明香贴衣襟、油纸虫纹顶出、血纹被逼亮、晏南枝刮掉虫纹并指尖出血。",
-    "三门判断必须先物理观察：湿痕倒渗、灰尘直坠、石栓磨痕、新刮痕、风卷灰；灵翼残纹只能在观察之后作为残响出现。",
-    "半枚日月驿令只打开废驿入口和在图室点亮局部路线，不能替代判断、攻击追兵或打开所有门。",
-    "灵翼残纹只回应旧驿断裂和坏掉处，不找路、不标敌、不提供战斗优势。",
-    "塌门因果必须完整：门线、追兵廊、图室窄口、上栓裂、下栓死、沈维桑右肩抵门并只松半寸、晏南枝短刀撬动、石门斜落隔住刃肢。",
-    "塌门只暂时隔住追兵，门外刃肢刮石声必须继续。",
-    "图室结尾只建立金河粮磨区和北境边墙路线接口；不抵达，不解释月下盟书真相。",
-    "第04集前沈维桑不能恢复满弓能力；金河开场需要补足止血或补给动机。"
-  ],
-  "warnings": [
-    {
-      "id": "WARN_E03_E04_SUPPLY_MOTIVE",
-      "severity": "medium",
-      "note": "第03集已明确金河和止血，但补给动机需要第04集用药布、止血草、粮牌、干粮或苦役伪装动作补足。"
-    },
-    {
-      "id": "WARN_E03_LOW_LIGHT_READABILITY",
-      "severity": "medium",
-      "note": "低光暗道易丢失路线信息；所有南线、北线、门线、低缝、石栓镜头必须保留可读指向。"
-    },
-    {
-      "id": "WARN_E03_BLOOD_RECORD_DENSITY",
-      "severity": "low",
-      "note": "血牒规则信息密集，应靠四拍近景和指尖出血表达，不新增解释台词。"
-    }
+    "沈维桑左肩旧伤、猎户动作和有限旧驿共鸣必须按剧本代价呈现，不能升级成无代价法术。",
+    "晏南枝血牒和月白玉片只在剧本指定压力中暴露，逃亡装保持遮蔽但不削弱气度。",
+    "肃明层级必须区分白册官吏、奴兵、虫族小兵、白翳/甲军府，不混成同一种敌人。",
+    "金赤只属于旧驿、日月纹、盟书和残页；虫蜡白/骨白属于清明院制度空间；边墙雪线保持黑石、冰青、旧铁和干血暗红。",
+    "所有动作按真实重心和真实接触反作用生成，避免摆拍、漂浮慢动作和无因果奇观。"
   ]
 }

@@ -1,0 +1,659 @@
+{
+  "version": "director-room-v1-2026-06-05",
+  "episode_id": "04",
+  "workflow_families": [
+    {
+      "workflow_family": "t2v_text_only",
+      "generation_method": "T2V",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "style_preset"
+      ],
+      "node_binding_hints": [
+        "positive_prompt -> PLACEHOLDER_POSITIVE_NODE",
+        "negative_prompt -> PLACEHOLDER_NEGATIVE_NODE",
+        "output_path -> PLACEHOLDER_OUTPUT_NODE",
+        "reference_inputs -> PLACEHOLDER_REFERENCE_NODES when applicable"
+      ],
+      "parameter_defaults": {
+        "aspect_ratio": "9:16",
+        "fps": 24,
+        "checkpoint": "PLACEHOLDER_CHECKPOINT",
+        "lora_stack": "PLACEHOLDER_LORA_STACK",
+        "workflow_template": "PLACEHOLDER_WORKFLOW_TEMPLATE"
+      },
+      "config_status": "needs_config"
+    },
+    {
+      "workflow_family": "i2v_reference",
+      "generation_method": "I2V",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "first_frame_or_reference_image",
+        "style_preset"
+      ],
+      "node_binding_hints": [
+        "positive_prompt -> PLACEHOLDER_POSITIVE_NODE",
+        "negative_prompt -> PLACEHOLDER_NEGATIVE_NODE",
+        "output_path -> PLACEHOLDER_OUTPUT_NODE",
+        "reference_inputs -> PLACEHOLDER_REFERENCE_NODES when applicable"
+      ],
+      "parameter_defaults": {
+        "aspect_ratio": "9:16",
+        "fps": 24,
+        "checkpoint": "PLACEHOLDER_CHECKPOINT",
+        "lora_stack": "PLACEHOLDER_LORA_STACK",
+        "workflow_template": "PLACEHOLDER_WORKFLOW_TEMPLATE"
+      },
+      "config_status": "needs_config"
+    },
+    {
+      "workflow_family": "reference_image_still",
+      "generation_method": "REFERENCE_IMAGE",
+      "required_inputs": [
+        "positive_prompt",
+        "negative_prompt",
+        "asset_prompt_pack",
+        "style_preset"
+      ],
+      "node_binding_hints": [
+        "positive_prompt -> PLACEHOLDER_POSITIVE_NODE",
+        "negative_prompt -> PLACEHOLDER_NEGATIVE_NODE",
+        "output_path -> PLACEHOLDER_OUTPUT_NODE",
+        "reference_inputs -> PLACEHOLDER_REFERENCE_NODES when applicable"
+      ],
+      "parameter_defaults": {
+        "aspect_ratio": "9:16",
+        "fps": 24,
+        "checkpoint": "PLACEHOLDER_CHECKPOINT",
+        "lora_stack": "PLACEHOLDER_LORA_STACK",
+        "workflow_template": "PLACEHOLDER_WORKFLOW_TEMPLATE"
+      },
+      "config_status": "needs_config"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "workflow_family": "t2v_text_only",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh001.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh002.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "assets/reference-frames/sc001-sh003.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh004.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH005",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh005.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH006",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh006.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH007",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "assets/reference-frames/sc001-sh007.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH008",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh008.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH009",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh009.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH010",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_jinhe_grain_mill.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc001-sh010.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh001.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh002.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "assets/reference-frames/sc002-sh003.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh004.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh005.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH006",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh006.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH007",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "assets/reference-frames/sc002-sh007.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH008",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh008.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH009",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh009.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC002-SH010",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_grain_tag_checkpoint.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_grain_tag.png"
+      ],
+      "output_path": "renders/raw/sc002-sh010.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "workflow_family": "t2v_text_only",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh001.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh002.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "assets/reference-frames/sc003-sh003.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh004.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH005",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh005.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH006",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh006.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH007",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "assets/reference-frames/sc003-sh007.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH008",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh008.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH009",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh009.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC003-SH010",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_mill_floor.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ],
+      "output_path": "renders/raw/sc003-sh010.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "workflow_family": "t2v_text_only",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh001.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh002.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "assets/reference-frames/sc004-sh003.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh004.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh005.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH006",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh006.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH007",
+      "workflow_family": "reference_image_still",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "assets/reference-frames/sc004-sh007.png",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH008",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh008.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH009",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh009.mp4",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC004-SH010",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "assets/placeholders/loc_steam_ferry.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ],
+      "output_path": "renders/raw/sc004-sh010.mp4",
+      "status": "needs_config"
+    }
+  ]
+}

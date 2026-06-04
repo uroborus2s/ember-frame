@@ -1,0 +1,2386 @@
+{
+  "version": "director-room-v1-2026-06-05",
+  "episode_id": "09",
+  "prompts": [
+    {
+      "shot_id": "SC001-SH001",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，鸣骨岭雪脊与沈维桑，鸣骨岭雪脊按剧本时间建立，半埋雪中的巨骨被风吹响。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on 鸣骨岭雪脊与Shen Weisang. Establish Minggu Bone Ridge and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "鸣骨岭雪脊与沈维桑",
+          "en": "鸣骨岭雪脊与Shen Weisang"
+        },
+        "action": {
+          "zh": "鸣骨岭雪脊按剧本时间建立，半埋雪中的巨骨被风吹响。",
+          "en": "Establish Minggu Bone Ridge and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，沈维桑，声音三短一长，像有人在骨头里哭。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Shen Weisang. Visualize the scripted beat in Minggu Bone Ridge, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "声音三短一长，像有人在骨头里哭。",
+          "en": "Visualize the scripted beat in Minggu Bone Ridge, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，骨笛，镜头压到骨笛，让其承载本场信息：陆青砾脸色发白，窄刀贴着掌心。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：陆青砾脸色发白，窄刀贴着掌心。",
+          "en": "Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，沈维桑的反应与对话压力，沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Shen Weisang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑的反应与对话压力",
+          "en": "Shen Weisang的反应与对话压力"
+        },
+        "action": {
+          "zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：晏南枝握住月白玉片。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Minggu Bone Ridge. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：晏南枝握住月白玉片。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Minggu Bone Ridge."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：玉片在风声里微微发烫。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：玉片在风声里微微发烫。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，骨笛，镜头压到骨笛，让其承载本场信息：沈维桑蹲下拨开雪，露出旧兵器上的白翅黑日刻痕。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：沈维桑蹲下拨开雪，露出旧兵器上的白翅黑日刻痕。",
+          "en": "Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：骨笛声又响一遍。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：骨笛声又响一遍。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，鸣骨岭雪脊出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：风过骨孔，沈维桑辨出求救骨笛。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "鸣骨岭雪脊出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：风过骨孔，沈维桑辨出求救骨笛。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪脊，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑已经朝雪坑跑去。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑已经朝雪坑跑去。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪脊",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BONE_FLUTE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，鸣骨岭雪坑与沈维桑，鸣骨岭雪坑按剧本时间建立，雪坑底部有冰蓝火将灭。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on 鸣骨岭雪坑与Shen Weisang. Establish Minggu Bone Ridge and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "鸣骨岭雪坑与沈维桑",
+          "en": "鸣骨岭雪坑与Shen Weisang"
+        },
+        "action": {
+          "zh": "鸣骨岭雪坑按剧本时间建立，雪坑底部有冰蓝火将灭。",
+          "en": "Establish Minggu Bone Ridge and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，沈维桑，鹿弥倒在碎石边，鹿耳覆霜，骨笛落在手边，药草袋被血浸湿。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Shen Weisang. Visualize the scripted beat in Minggu Bone Ridge, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "鹿弥倒在碎石边，鹿耳覆霜，骨笛落在手边，药草袋被血浸湿。",
+          "en": "Visualize the scripted beat in Minggu Bone Ridge, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，骨笛，镜头压到骨笛，让其承载本场信息：鹿弥警觉抬手。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：鹿弥警觉抬手。",
+          "en": "Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，晏南枝的反应与对话压力，晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Yan Nanzhi的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "晏南枝的反应与对话压力",
+          "en": "Yan Nanzhi的反应与对话压力"
+        },
+        "action": {
+          "zh": "晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：晏南枝看见鹿弥肩上的伤，又看见远处灰黑旗影。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Minggu Bone Ridge. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：晏南枝看见鹿弥肩上的伤，又看见远处灰黑旗影。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Minggu Bone Ridge."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：鹿弥伤口再次渗血，骨笛从指缝滑落。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：鹿弥伤口再次渗血，骨笛从指缝滑落。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，骨笛，镜头压到骨笛，让其承载本场信息：晏南枝伸出的手停在半空，改为把玉片塞回怀里，撕下护腕压住伤口。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：晏南枝伸出的手停在半空，改为把玉片塞回怀里，撕下护腕压住伤口。",
+          "en": "Hold on the key prop or trace in Minggu Bone Ridge; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH008",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑撕开自己的灰麻披风，压住鹿弥伤口。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑撕开自己的灰麻披风，压住鹿弥伤口。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，鸣骨岭雪坑出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：护送队救出鹿弥，晏南枝想把灾情当筹码。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "鸣骨岭雪坑出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：护送队救出鹿弥，晏南枝想把灾情当筹码。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 鸣骨岭雪坑，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑抬头，看见雪脊上甲军斥候的铁闸令牌反光。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Minggu Bone Ridge, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑抬头，看见雪脊上甲军斥候的铁闸令牌反光。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "鸣骨岭雪坑",
+          "en": "Minggu Bone Ridge"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MINGGU_BONE_RIDGE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_ARMY_SCOUTS",
+        "PROP_QINGMING_REGISTER",
+        "PROP_BONE_FLUTE",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_minggu_bone_ridge.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_bone_flute.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，骨笛谷口与沈维桑，骨笛谷口按剧本时间建立，谷口一侧出现甲军斥候，另一侧传来北境掠粮派兽骨号。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic谷口与Shen Weisang. Establish Bone Flute valley mouth and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛谷口与沈维桑",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic谷口与Shen Weisang"
+        },
+        "action": {
+          "zh": "骨笛谷口按剧本时间建立，谷口一侧出现甲军斥候，另一侧传来北境掠粮派兽骨号。",
+          "en": "Establish Bone Flute valley mouth and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，沈维桑，护送队被夹在雪岭中间。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on Shen Weisang. Visualize the scripted beat in Bone Flute valley mouth, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "护送队被夹在雪岭中间。",
+          "en": "Visualize the scripted beat in Bone Flute valley mouth, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，骨笛，镜头压到骨笛，让其承载本场信息：陆青砾贴墙笑了一声。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in Bone Flute valley mouth; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：陆青砾贴墙笑了一声。",
+          "en": "Hold on the key prop or trace in Bone Flute valley mouth; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，晏南枝的反应与对话压力，晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on Yan Nanzhi的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "晏南枝的反应与对话压力",
+          "en": "Yan Nanzhi的反应与对话压力"
+        },
+        "action": {
+          "zh": "晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：鹿弥猛地打断。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Bone Flute valley mouth. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：鹿弥猛地打断。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Bone Flute valley mouth."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：晏南枝咬住后半句话，把血牒放低，露出空掌。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：晏南枝咬住后半句话，把血牒放低，露出空掌。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，血盐袋，镜头压到血盐袋，让其承载本场信息：沈维桑把骨笛递回鹿弥。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on blood-salt pouch tied to Lu Mi and northern migration/rescue clues. Hold on the key prop or trace in Bone Flute valley mouth; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "血盐袋",
+          "en": "blood-salt pouch tied to Lu Mi and northern migration/rescue clues"
+        },
+        "action": {
+          "zh": "镜头压到血盐袋，让其承载本场信息：沈维桑把骨笛递回鹿弥。",
+          "en": "Hold on the key prop or trace in Bone Flute valley mouth; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：鹿弥摸了摸血盐袋，吹响骨笛。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：鹿弥摸了摸血盐袋，吹响骨笛。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH009",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，骨笛谷口出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：甲军斥候与北境掠粮派夹击。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic谷口出口与下一步路线. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛谷口出口与下一步路线",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic谷口出口与下一步路线"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：甲军斥候与北境掠粮派夹击。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 骨笛谷口，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：一行人钻入暗口。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Bone Flute valley mouth, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：一行人钻入暗口。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "骨笛谷口",
+          "en": "Bone Flute valley mouth"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_BONE_FLUTE_VALLEY_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_NORTHERN_RAIDERS",
+        "CH_ARMY_SCOUTS",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_BONE_FLUTE",
+        "PROP_BLOOD_SALT_POUCH",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_bone_flute_valley_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/ch_northern_raiders.png",
+        "assets/placeholders/ch_army_scouts.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_blood_salt_pouch.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，边墙外废烽燧与沈维桑，边墙外废烽燧按剧本时间建立，废烽燧内残存白石旧墙，金赤路线断断续续。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on 边墙外废烽燧与Shen Weisang. Establish ruined beacon outside the wall and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "边墙外废烽燧与沈维桑",
+          "en": "边墙外废烽燧与Shen Weisang"
+        },
+        "action": {
+          "zh": "边墙外废烽燧按剧本时间建立，废烽燧内残存白石旧墙，金赤路线断断续续。",
+          "en": "Establish ruined beacon outside the wall and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，沈维桑，鹿弥靠墙坐下，目光落到晏南枝的月白玉片上。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on Shen Weisang. Visualize the scripted beat in ruined beacon outside the wall, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "鹿弥靠墙坐下，目光落到晏南枝的月白玉片上。",
+          "en": "Visualize the scripted beat in ruined beacon outside the wall, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，月白玉片，镜头压到月白玉片，让其承载本场信息：晏南枝握紧玉片。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on moon-white jade piece that exposes Yan Nanzhi's identity when firelight or relay-stone reaction reveals sun-moon markings. Hold on the key prop or trace in ruined beacon outside the wall; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "月白玉片",
+          "en": "moon-white jade piece that exposes Yan Nanzhi's identity when firelight or relay-stone reaction reveals sun-moon markings"
+        },
+        "action": {
+          "zh": "镜头压到月白玉片，让其承载本场信息：晏南枝握紧玉片。",
+          "en": "Hold on the key prop or trace in ruined beacon outside the wall; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，鹿弥的反应与对话压力，鹿弥呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on Lu Mi的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "鹿弥的反应与对话压力",
+          "en": "Lu Mi的反应与对话压力"
+        },
+        "action": {
+          "zh": "鹿弥呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：鹿弥用血指擦开灰，陆青砾也伸手抹去另一处积尘，残纹里露出不同族徽。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in ruined beacon outside the wall. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：鹿弥用血指擦开灰，陆青砾也伸手抹去另一处积尘，残纹里露出不同族徽。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in ruined beacon outside the wall."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：陆青砾轻声笑了一下。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：陆青砾轻声笑了一下。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，月白玉片，镜头压到月白玉片，让其承载本场信息：晏南枝没有反驳。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on moon-white jade piece that exposes Yan Nanzhi's identity when firelight or relay-stone reaction reveals sun-moon markings. Hold on the key prop or trace in ruined beacon outside the wall; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "月白玉片",
+          "en": "moon-white jade piece that exposes Yan Nanzhi's identity when firelight or relay-stone reaction reveals sun-moon markings"
+        },
+        "action": {
+          "zh": "镜头压到月白玉片，让其承载本场信息：晏南枝没有反驳。",
+          "en": "Hold on the key prop or trace in ruined beacon outside the wall; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：她第一次把玉片放低，让其他人都能看见。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：她第一次把玉片放低，让其他人都能看见。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，边墙外废烽燧出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：鹿弥认出月下印记是多族旧誓。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "边墙外废烽燧出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：鹿弥认出月下印记是多族旧誓。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 边墙外废烽燧，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝收起玉片，没有再说（精确台词留给字幕与音频）。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined beacon outside the wall, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝收起玉片，没有再说（精确台词留给字幕与音频）。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "边墙外废烽燧",
+          "en": "ruined beacon outside the wall"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OUTER_WALL_RUINED_BEACON",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "PROP_MOON_WHITE_JADE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_outer_wall_ruined_beacon.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_moon_white_jade.png"
+      ]
+    }
+  ]
+}

@@ -1,383 +1,155 @@
 {
-  "version": "1.0",
+  "version": "director-room-v1-2026-06-05",
   "episode_id": "03",
-  "title": "半枚驿令",
-  "format": "9:16 vertical short drama",
-  "total_duration_seconds": 165,
+  "episode_title": "第03集：半枚驿令",
   "source_artifacts": [
-    "bible/scenes.md",
     "03/script/final-script.md",
     "03/reports/continuity-report.md",
-    "03/director/director-brief.md"
-  ],
-  "global_continuity_anchors": [
-    "旧驿暗道是狭窄、低拱、可跑可藏的旧帝国驿道残段，不是大型地下宫殿。",
-    "半枚日月驿令只打开废驿入口并在图室点亮局部路线，不作为万能钥匙、手电或攻击道具。",
-    "灵翼残纹只回应旧驿坏掉、断裂处的残响；路线判断必须先由水痕、灰尘、风、磨痕和车轮粉末完成。",
-    "沈维桑左臂从开场到黑场不可用：抬不起来、拉不了弓、过缝拖行、塌门后咳血，结尾仍需止血。",
-    "清明香是贴地、贴衣、贴血的灰白烟线，功能是嗅记和逼出白蜡虫纹；不能直接拖住或击倒人物。",
-    "日月血牒始终在晏南枝衣内或油纸包中，白蜡虫纹风险未满三层。",
-    "追兵以螳刃、黑绿甲壳局部、刮石声、火星和墙面刮痕呈现，不做怪物潮或完整打斗。",
-    "沈照眠不出场，只通过烧焦发绳、木车车辙、北线车轴旧印和旧名证据牵引行动。"
+    "03/reports/script-score.md",
+    "bible/characters.md",
+    "bible/scenes.md",
+    "bible/visual-style.md"
   ],
   "scenes": [
     {
       "scene_id": "SC001",
-      "source_reference": "final-script scene 1, 0:00-0:18",
-      "production_unit": "黑石缝开门钩子",
-      "location": "北坡山腹黑石缝，外景，旧驿暗道入口前",
-      "time_of_day": "夜未尽",
+      "source_reference": "03/script/final-script.md:L16-L39",
+      "location": "火后残阳坳",
+      "time_of_day": "清晨 / 5秒钩子",
       "characters": [
         "沈维桑",
-        "晏南枝",
-        "追兵局部刃肢"
+        "晏南枝"
       ],
       "visible_actions": [
-        "沈维桑把半枚日月驿令抵进黑石凹槽，断月纹对不上。",
-        "清明香从石缝下方爬入，贴着沈维桑鼻血打旋；画面上沿有螳刃刮近黑石。",
-        "晏南枝按住怀里的油纸血牒并催促沈维桑。",
-        "沈维桑用拇指把掌心血灰抹进缺口并按下，石门内金赤光线一跳，残缺日月线沿山腹石缝疾走。",
-        "石门只向内错开一掌宽，冷风吹散清明香半寸，又卷回更苦的一缕。",
-        "沈维桑收回驿令，先把沈照眠烧焦发绳塞进右腕，再侧身钻入门缝。"
-      ],
-      "props": [
-        "半枚日月驿令",
-        "黑石凹槽",
-        "掌心血灰",
-        "清明香",
-        "油纸血牒",
-        "螳刃",
-        "沈照眠烧焦发绳"
-      ],
-      "wardrobe": [
-        "沈维桑：灰褐猎户短打，烟灰或草药青内层，旧皮护腕，焦黑衣角，左肩血布浸透。",
-        "晏南枝：雾紫或冷灰流亡遮蔽装，血牒藏在衣内或怀中油纸包里。"
+        "灰烬下，半枚日月驿令贴上焦黑石缝。",
+        "地面亮起半截金赤残纹，像被烧剩的血线。",
+        "沈维桑蹲在废井边，左手按住驿令，右手拨开草药灰。",
+        "晏南枝看向他。",
+        "沈维桑没有看她，只把一截烧焦发绳塞进怀里。"
       ],
       "continuity_anchors": [
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "LOC_E03_BLACK_STONE_CLEFT"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "前5秒同框信息密集，必须用极近景和中轴构图保证驿令、清明香、鼻血、螳刃和血牒关系可读。",
-        "不能把半枚驿令拍成完整开门钥匙或持续照明道具。",
-        "不能完整展示追兵并扩展成战斗场面。"
-      ]
+        "fire_smoke_control",
+        "cart_and_crowd_blocking"
+      ],
+      "summary": "驿令亮路。",
+      "dialogue_count": 6
     },
     {
       "scene_id": "SC002",
-      "source_reference": "final-script scene 2, 0:18-0:48",
-      "production_unit": "废驿入口路线与血牒风险",
-      "location": "废驿暗道入口，内景，白石拱道入口",
-      "time_of_day": "夜",
+      "source_reference": "03/script/final-script.md:L40-L69",
+      "location": "山道难民沟",
+      "time_of_day": "上午",
       "characters": [
         "沈维桑",
         "晏南枝",
-        "追兵局部刃肢",
-        "清明香"
+        "奴兵"
       ],
       "visible_actions": [
-        "两人挤进白石拱道；竖屏上方见剥落日月双印，下方见沈维桑拖着伤腿。",
-        "墙上亮起两道残线：南线刻着模糊的“隐歌”，北线断处有车轴形旧印。",
-        "沈维桑盯住北线并攥紧烧焦发绳，判断木车绕北坡走。",
-        "清明香贴着晏南枝衣襟钻上来，油纸血牒边缘浮出白蜡状虫纹，残缺日月血纹被逼亮一瞬。",
-        "晏南枝用指甲刮掉白蜡虫纹，指尖被割出血。",
-        "晏南枝说明清明香在记血牒，白蜡虫纹满三层后会让血牒变成白册能追的味。",
-        "沈维桑以发绳反压路线争执，强调沈照眠没有三层机会；门外刃肢刮声和清明香同时加重。"
-      ],
-      "props": [
-        "南线隐歌刻痕",
-        "北线车轴旧印",
-        "油纸血牒",
-        "白蜡虫纹",
-        "残缺日月血纹",
-        "清明香",
-        "烧焦发绳"
-      ],
-      "wardrobe": [
-        "沈维桑：猎户短打被入口冷风和灰尘打湿，右腕收住烧焦发绳，左肩血布继续渗血。",
-        "晏南枝：流亡遮蔽装保持克制整齐，血牒压在衣内，指尖因刮虫纹出血。"
+        "二人混入逃荒队。",
+        "妇人推着空粮车，老人背祖牌小盒，少年腿上有白册复核条。",
+        "一个诱线奴兵伪装成边墙逃兵，肩上披旧军户围巾，后脑低位却露出金钱马尾。",
+        "晏南枝下意识抬头。",
+        "沈维桑一把按住她的袖口。"
       ],
       "continuity_anchors": [
-        "LOC_E03_RELAY_ENTRANCE",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "FX_WHITE_WAX_INSECT_MARK_E03",
-        "FX_QINGMING_INCENSE_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "risks": [
-        "血牒规则信息密度高，镜头应拆成清明香贴衣、虫纹顶出、血纹被逼亮、刮除出血四拍。",
-        "白蜡虫纹必须是虫蜡白细足状纹理，不要拍成藤蔓、符文或大面积感染。",
-        "路线争执不能拍成晏南枝漠视沈照眠。"
-      ]
+        "crowd_diversity",
+        "institution_hierarchy_clarity"
+      ],
+      "summary": "诱线奴兵接近。",
+      "dialogue_count": 6
     },
     {
       "scene_id": "SC003",
-      "source_reference": "final-script scene 3, 0:48-1:08",
-      "production_unit": "窄廊追压与伤势兑现",
-      "location": "白石窄廊，内景，旧驿狭窄通道",
-      "time_of_day": "夜",
+      "source_reference": "03/script/final-script.md:L70-L87",
+      "location": "旧井废口",
+      "time_of_day": "午后",
       "characters": [
         "沈维桑",
         "晏南枝",
-        "追兵局部刃影"
+        "罗青禾",
+        "奴兵"
       ],
       "visible_actions": [
-        "两人沿窄廊前行，墙面金赤亮纹断断续续。",
-        "后方两道螳刃形黑影先追上来，刃尖在白石墙上划出白痕。",
-        "沈维桑本能反手摸弓，左臂只抬一寸，肩伤抽紧，弓弦擦过手背，箭掉在地上。",
-        "晏南枝指出沈维桑拉不了弓。",
-        "沈维桑弯腰捡箭，用右手攥成短刺，要求不要让他站远处。",
-        "一截黑绿甲壳从拐角掠过又缩回暗处，刮石声更近。",
-        "晏南枝短刀横在身前提醒看路；沈维桑蹲下，用右指摸过地上湿痕。"
-      ],
-      "props": [
-        "猎弓",
-        "掉落箭矢",
-        "短刀",
-        "墙面断续亮纹",
-        "白石刮痕",
-        "地上湿痕",
-        "黑绿甲壳局部"
-      ],
-      "wardrobe": [
-        "沈维桑：旧皮护腕、猎户短打和左肩血布必须清楚；左臂垂落或失败抬起，不可恢复。",
-        "晏南枝：流亡装便于近身行动，短刀在手，血牒仍藏于衣内。"
+        "两人冲到火后旧井另一侧。",
+        "井壁有罗青禾曾用草药灰遮住的刻痕。",
+        "沈维桑用驿令抵住刻痕，白石井壁裂开一道低矮暗门。",
+        "诱线奴兵追到井边，故意喊。",
+        "晏南枝脸色一紧，几乎要按礼回应。"
       ],
       "continuity_anchors": [
-        "LOC_E03_NARROW_CORRIDOR",
-        "PROP_SWS_BOW_DISABLED_E03",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "FX_PURSUER_PARTIAL_PRESSURE_E03"
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "不能让沈维桑成功开弓或以弓解决追兵。",
-        "箭矢作为短刺是应急道具，不要扩展成战斗胜利。",
-        "低光窄廊必须保留湿痕、刮痕和角色手指的可读层次。"
-      ]
+        "fire_smoke_control"
+      ],
+      "summary": "沈维桑识破暗语。",
+      "dialogue_count": 3
     },
     {
       "scene_id": "SC004",
-      "source_reference": "final-script scene 4, 1:08-1:37",
-      "production_unit": "三门观察与残纹边界",
-      "location": "旧驿测绘廊，内景，三道矮门测绘节点",
-      "time_of_day": "夜",
+      "source_reference": "03/script/final-script.md:L88-L138",
+      "location": "旧驿暗道",
+      "time_of_day": "黄昏",
       "characters": [
         "沈维桑",
         "晏南枝",
-        "追兵声源"
+        "白翳"
       ],
       "visible_actions": [
-        "测绘廊内出现三道矮门，墙上旧刻痕被灰盖住，只露出三短一长的测线。",
-        "沈维桑不先看亮纹，而是先看地面：左门前湿且水倒着往外渗，中门下灰尘被吸成细线，右门石栓磨痕向外且门边有新刮痕。",
-        "沈维桑吹灰：灰进中门直坠不见，到右门被细风卷回，门后传来低低刮石声。",
-        "沈维桑判断中门下方塌空、右门后有东西。",
-        "他碰右门旧石栓时左肩像被火针扎穿，眼角金赤残纹短闪，暗道深处传来旧铜针般回音和断裂闷响。",
-        "沈维桑缩手且鼻血重新渗出，说明残纹不找路，只回应旧驿坏掉、断开的地方。",
-        "他用箭尖拨开右门下方低缝灰土，露出检修缝，并决定走栓下。"
-      ],
-      "props": [
-        "三道矮门",
-        "旧测线刻痕",
-        "灰尘",
-        "倒渗水痕",
-        "右门旧石栓",
-        "新刮痕",
-        "箭尖",
-        "检修低缝",
-        "金赤残纹短闪"
-      ],
-      "wardrobe": [
-        "沈维桑：左肩血布和鼻血复发必须在残纹短闪后连续可见。",
-        "晏南枝：保持短刀可用、血牒藏内，不在此场外露更多身份符号。"
+        "暗道窄而低，白石拱顶剥落，日月双印被虫蜡白泥盖过。",
+        "半枚驿令只能点亮断续路线。",
+        "晏南枝用血牒靠近石壁。",
+        "旧光没有向南亮，反而向北延伸。",
+        "晏南枝沉默。"
       ],
       "continuity_anchors": [
-        "LOC_E03_MAPPING_GALLERY",
-        "FX_SPIRIT_WING_REMNANT_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_SWS_BOW_DISABLED_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "观众易误读为超能力找路，镜头必须先拍水、灰、风、磨痕、新刮痕。",
-        "三门空间方向必须稳定，避免反打后南北和左右混乱。",
-        "旧驿测绘廊不能变成复杂机关谜宫。"
-      ]
-    },
-    {
-      "scene_id": "SC005",
-      "source_reference": "final-script scene 5, 1:37-2:02",
-      "production_unit": "检修缝脱身与北线粉末",
-      "location": "检修缝 / 断栓岔路，内景，低矮检修通道与右门背后岔路",
-      "time_of_day": "夜",
-      "characters": [
-        "沈维桑",
-        "晏南枝",
-        "追兵局部刃肢"
+        "cart_and_crowd_blocking",
+        "institution_hierarchy_clarity",
+        "market_crowd_scope",
+        "blood_record_not_magic_solution"
       ],
-      "visible_actions": [
-        "晏南枝先贴地钻进检修缝，油纸血牒被压在胸口。",
-        "沈维桑最后过，右手撑地，左臂拖在身侧，血在石缝上擦出一条细线。",
-        "后方刃肢探入检修缝口，伸进半尺就被低石卡住，刃尖刮掉石皮，火星溅到沈维桑靴跟。",
-        "沈维桑用右脚一蹬，滚进缝后。",
-        "两人落到右门背后的断栓岔路，南线刻痕完整，北线被石灰封过，封灰上有新鲜车轮震落粉末。",
-        "沈维桑抹起粉末判断他们走过北线，晏南枝提醒可能是引他去死。",
-        "晏南枝抓住沈维桑右腕，说明清明籍抹名前有人用旧印保护过一批不该被改名的人；她没有答满沈照眠是否在里面。",
-        "检修缝口传来刃肢连续敲击，石缝开始裂；晏南枝松手并反握短刀，决定先过塌门。"
-      ],
-      "props": [
-        "油纸血牒",
-        "检修缝低石",
-        "刃肢",
-        "火星",
-        "靴跟",
-        "南线刻痕",
-        "北线封灰",
-        "新鲜车轮粉末",
-        "短刀"
-      ],
-      "wardrobe": [
-        "沈维桑：左臂拖行导致衣袖和石缝沾血，右脚蹬地脱身，右腕仍带烧焦发绳。",
-        "晏南枝：流亡遮蔽装因贴地钻行沾灰，但血牒仍被稳压在胸口。"
-      ],
-      "continuity_anchors": [
-        "LOC_E03_MAINTENANCE_SLIT",
-        "LOC_E03_BROKEN_BOLT_FORK",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "PROP_YNZ_SHORT_KNIFE_E03"
-      ],
-      "risks": [
-        "检修缝贴地动作容易失去空间感，必须拍清晏南枝先过、沈维桑最后过、刃肢被低石卡住。",
-        "北线粉末必须看起来是新鲜车轮震落，不要变成抽象指路光。",
-        "晏南枝关于旧印的台词不能扩展为月下盟书真相。"
-      ]
-    },
-    {
-      "scene_id": "SC006",
-      "source_reference": "final-script scene 6, 2:02-2:30",
-      "production_unit": "塌门石栓隔断追兵",
-      "location": "塌门石栓，内景，断栓岔路尽头半塌石门",
-      "time_of_day": "夜",
-      "characters": [
-        "沈维桑",
-        "晏南枝",
-        "追兵局部刃肢"
-      ],
-      "visible_actions": [
-        "断栓岔路尽头出现半塌石门；门线外是追兵廊，门线内右侧有通向图室的窄口，只够一人半侧身挤过。",
-        "石门有两枚旧石栓：上栓裂开顶着门顶，下栓完整却被旧灰咬死。",
-        "沈维桑看门倾斜方向，判断先过门线，门会往外侧落。",
-        "晏南枝先挤进右侧窄口，回身把短刀插入下栓缝。",
-        "沈维桑跨过门线，用右肩抵住石门内侧，左臂仍垂着。",
-        "追兵撞开右门，黑影压上墙，只见一对刃肢交错探出。",
-        "晏南枝负责撬，沈维桑只松栓；沈维桑掌根顶住下栓尾端短促吐劲，闷响震落栓缝一圈灰，石栓只松半寸。",
-        "鼻血滴在石上，左肩布条洇开；晏南枝借半寸缝反手一撬，下栓脱槽，上栓裂纹咬断。",
-        "半塌石门失重，斜向追兵廊砸下；门没有震飞追兵，只把刃肢隔在外侧。",
-        "刃肢在石门外疯狂刮擦，火星从缝里溅进来；沈维桑跪倒咳血，先护住怀里的发绳。",
-        "晏南枝要扶他，沈维桑提醒别碰左肩；晏南枝指出他这样追不到木车，沈维桑回答所以走旧驿。"
-      ],
-      "props": [
-        "半塌石门",
-        "上栓",
-        "下栓",
-        "旧灰",
-        "短刀",
-        "门线",
-        "图室窄口",
-        "刃肢",
-        "火星",
-        "烧焦发绳",
-        "血沫"
-      ],
-      "wardrobe": [
-        "沈维桑：左肩血布在松栓后明显洇开，左臂仍无力垂下，右肩承力，右腕发绳被护住。",
-        "晏南枝：流亡装贴身挤过窄口，短刀反手撬栓，动作克制但主动护人。"
-      ],
-      "continuity_anchors": [
-        "LOC_E03_COLLAPSE_GATE",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "FX_PURSUER_PARTIAL_PRESSURE_E03"
-      ],
-      "risks": [
-        "这是空间因果最复杂的 scene，shot planning 前必须建立门线、追兵廊、图室窄口、上下石栓和落门方向。",
-        "不能把塌门拍成沈维桑单人强行砸门或机关自动救场。",
-        "不能让石门击败追兵，只能暂时隔断刃肢。",
-        "本 scene 不得与图室 scene 合并。"
-      ]
-    },
-    {
-      "scene_id": "SC007",
-      "source_reference": "final-script scene 7, 2:30-2:45",
-      "production_unit": "图室路线接口：金河与北境边墙",
-      "location": "旧驿图室，内景，塌门后的窄小图室",
-      "time_of_day": "夜转灰晨",
-      "characters": [
-        "沈维桑",
-        "晏南枝",
-        "追兵声源"
-      ],
-      "visible_actions": [
-        "塌门后的风把灰吹开，露出一间窄小图室，墙上是密密麻麻的刻线和点位。",
-        "半枚驿令在沈维桑右掌发热；他没有按墙，只靠近图墙。",
-        "图上南线先亮到“隐歌”二字旁，又迅速暗下。",
-        "北线一截一截亮起，穿过一个磨盘形小印，小印旁残字浮出“金河”，沈维桑说出金河粮磨区。",
-        "更北处一点光越过所有岔线，亮得刺眼；旁边是雪线刻痕和黑墙纹，沈维桑说出北境边墙。",
-        "晏南枝下意识把束发红线绕紧，回应师长说月下在南不在墙后。",
-        "沈维桑看着光点，说旧驿说它在墙后。",
-        "沈维桑艰难站起，左臂完全垂着，肩血顺着衣角滴到金河小印下，把磨盘刻痕染暗一角。",
-        "晏南枝按住他右肩，要求进金河前先止血。",
-        "沈维桑用牙咬住烧焦发绳并系在右腕，目光钉着北线，决定先金河，别让他们抹掉车辙。",
-        "塌门外刃肢刮石声不断，图室里北境边墙光点仍在轻响，随后黑场。"
-      ],
-      "props": [
-        "半枚日月驿令",
-        "图墙刻线和点位",
-        "南线隐歌",
-        "北线光",
-        "磨盘形金河小印",
-        "北境边墙光点",
-        "雪线刻痕",
-        "黑墙纹",
-        "束发红线",
-        "烧焦发绳",
-        "肩血"
-      ],
-      "wardrobe": [
-        "沈维桑：左臂完全垂着，肩血沿衣角滴落，右腕重新系紧烧焦发绳。",
-        "晏南枝：流亡遮蔽装保持低调，束发红线在紧张时被绕紧，仍不外露皇族正装。"
-      ],
-      "continuity_anchors": [
-        "LOC_E03_MAP_ROOM",
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "IFACE_E03_E04_GOLDEN_RIVER_STOP_BLOOD"
-      ],
-      "risks": [
-        "图室信息容易被拍成解谜终点，必须保留追兵刮擦和止血压力作为逃亡接口。",
-        "旧驿路线光不能变成完整发光地图或魔法导航。",
-        "月下在墙后只能作为路线疑问，不要提前说透盟书真相。",
-        "夜转灰晨要有时间变化，但不能新增场外补给或休息 beat。",
-        "本 scene 不得与塌门 scene 合并。"
-      ]
+      "summary": "残缺路线指向北境。",
+      "dialogue_count": 12
     }
-  ],
-  "shot_planning_handoff": {
-    "priority_notes": [
-      "优先保证路线、门线和左臂伤势三类信息在每个相关镜头可读。",
-      "北线建议稳定偏竖屏右侧或上沿，南线偏左侧或下沿；反打前必须用刻痕、视线或手指重新校准方向。",
-      "每次出现沈维桑动作都标注可用肢体：右手、右肩、右脚；左臂不可用。",
-      "涉及血牒的镜头必须同时标清清明香、白蜡虫纹、日月血纹的因果关系。",
-      "塌门前必须建立门线、追兵廊、图室窄口、上栓裂、下栓死和石门外落方向。"
-    ],
-    "unresolved_for_next_agents": [
-      "第04集仍需补足可见补给需求；本集只保留金河、止血和车辙接口。",
-      "沈照眠识别者线在本集只通过旧名证据暗接，不能在本集新增清明院识别者说明。"
-    ]
-  }
+  ]
 }

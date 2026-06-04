@@ -1,1204 +1,1544 @@
 {
-  "version": "1.0",
+  "version": "director-room-v1-2026-06-05",
   "episode_id": "02",
-  "project": "severed-homeland",
-  "title": "火烧残阳坳",
-  "source_artifacts": [
-    "02/director/director-brief.md",
-    "02/shots/shot-list.json",
-    "02/director/camera-plan.md",
-    "02/storyboard/storyboard-plan.md",
-    "02/continuity/visual-continuity-bible.json"
-  ],
-  "method_values": [
-    "T2V",
-    "I2V",
-    "FLF2V",
-    "REFERENCE_IMAGE",
-    "REDRAW"
-  ],
-  "global_continuity_locks": [
-    "9:16竖屏写实电影质感，低魔东方史诗奇幻。",
-    "不拍大规模屠村全景，火场和烟尘保持局部化。",
-    "不启动石门，不出现光纹铺路或旧驿机关开启。",
-    "半枚日月驿令只可烫手、血灰蹭亮一瞬和微热指向北坡黑石缝。",
-    "沈维桑谷口后持续鼻血、左肩撕裂、左臂失力。",
-    "灵翼残纹只在左肩伤后金赤短闪，表现痛感，不提供路线或战斗优势。",
-    "半成品明劲只震松湿绳一指，不出现冲击波、击飞或完整武学爆发。",
-    "虫群和螳刃追兵只用少量非人形轮廓、局部刃肢、甲壳腿、影子和动作结果表现。",
-    "北坡、北偏车辙、木车离开方向、黑石缝统一为画面右侧或右上；南侧黑林统一为画面左侧。",
-    "晏南枝裂月玉片和油纸血牒只短暂暴露，不做身份说明。"
-  ],
-  "production_groups": [
-    {
-      "group_id": "PG01-institution-fire-open",
-      "name": "制度落火与火场局部化",
-      "dependency_type": "shared location, props, controlled fire plates",
-      "shot_ids": [
-        "SC001-SH001",
-        "SC001-SH002",
-        "SC001-SH003",
-        "SC001-SH004",
-        "SC001-SH005"
-      ],
-      "batching_opportunity": "先制作清明白册、虫蜡封条、白翳白袍、火把、饭碗、门闩、窗纸等局部火场参考，可复用于结尾白册与火场回望。",
-      "key_risks": [
-        "白袍被火光染脏",
-        "火场扩大成灾难全景",
-        "虫族追兵露出过完整导致怪物潮感"
-      ]
-    },
-    {
-      "group_id": "PG02-backyard-well-escape",
-      "name": "后院旧井与临时同逃",
-      "dependency_type": "spatial continuity, character reference, hidden-prop inserts",
-      "shot_ids": [
-        "SC002-SH001",
-        "SC002-SH002",
-        "SC002-SH003",
-        "SC002-SH004",
-        "SC002-SH005",
-        "SC002-SH006",
-        "SC003-SH001",
-        "SC003-SH002",
-        "SC003-SH003",
-        "SC003-SH004",
-        "SC003-SH005"
-      ],
-      "batching_opportunity": "同一套后院水缸、柴垛、水沟口、旧井、药屋后门参考连续生成；晏南枝井口出场和血牒/玉片插入可共用角色与道具参考。",
-      "key_risks": [
-        "水缸到柴垛水沟口空间断裂",
-        "裂月玉片或血牒暴露过度",
-        "清明香被误做追踪界面"
-      ]
-    },
-    {
-      "group_id": "PG03-medicine-house-handoff",
-      "name": "药屋托付与罗青禾断后",
-      "dependency_type": "interior lighting, emotional continuity, prop handoff",
-      "shot_ids": [
-        "SC004-SH001",
-        "SC004-SH002",
-        "SC004-SH003",
-        "SC004-SH004",
-        "SC004-SH005",
-        "SC004-SH006",
-        "SC004-SH007"
-      ],
-      "batching_opportunity": "蓝黑烟药屋内景、罗青禾火场状态、药柜、青黛粉、半枚驿令、青布头巾应作为一组参考锁定。",
-      "key_risks": [
-        "烟遮住驿令交付",
-        "罗青禾断后被拍成受害奇观",
-        "护送台词被视觉误导成复国宣言"
-      ]
-    },
-    {
-      "group_id": "PG04-cart-abduction",
-      "name": "侧巷木车与救妹失败",
-      "dependency_type": "child continuity, cart direction, action inserts",
-      "shot_ids": [
-        "SC005-SH001",
-        "SC005-SH002",
-        "SC005-SH003",
-        "SC005-SH004",
-        "SC005-SH005",
-        "SC005-SH006",
-        "SC005-SH007"
-      ],
-      "batching_opportunity": "木车、白衣童役、虫蜡环、沈照眠扣腕状态、断箭、小草药袋、北偏车辙同批制作，保证掳人动线连续。",
-      "key_risks": [
-        "沈照眠调度跳位",
-        "箭囊数量显性矛盾",
-        "扣腕段落过长变成折磨展示"
-      ]
-    },
-    {
-      "group_id": "PG05-valley-breakout",
-      "name": "谷口陷阱与低魔代价",
-      "dependency_type": "action causality, first-last-frame control, low-magic restraint",
-      "shot_ids": [
-        "SC006-SH001",
-        "SC006-SH002",
-        "SC006-SH003",
-        "SC006-SH004",
-        "SC006-SH005",
-        "SC006-SH006",
-        "SC006-SH007",
-        "SC006-SH008"
-      ],
-      "batching_opportunity": "谷口窄道、滚木、绳扣、湿绳、石槽、兽道窄缝和少量螳刃追兵可整体预制，再用 FLF2V 控制动作因果。",
-      "key_risks": [
-        "滚木因果不可读",
-        "灵翼残纹变成战斗能力",
-        "明劲被误做冲击波",
-        "虫族数量失控"
-      ]
-    },
-    {
-      "group_id": "PG06-route-and-hook",
-      "name": "路线分歧与余烬钩子",
-      "dependency_type": "screen direction, prop macro, episode handoff",
-      "shot_ids": [
-        "SC007-SH001",
-        "SC007-SH002",
-        "SC007-SH003",
-        "SC008-SH001",
-        "SC008-SH002",
-        "SC008-SH003",
-        "SC008-SH004"
-      ],
-      "batching_opportunity": "外坡、南侧黑林、北偏车辙、烧焦发绳、黑石缝、白翳结尾登记可作为第03集接口参考包。",
-      "key_risks": [
-        "南北方向反切混乱",
-        "驿令误启动石门",
-        "火场回望扩大成灾难奇观"
-      ]
-    }
-  ],
   "shots": [
     {
       "shot_id": "SC001-SH001",
-      "scene_id": "SC001",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：用制度物证开钩，承接上一集旧污疑似并升级为屠村命令",
+      "segment_id": "02-sc001-sh001",
+      "method": "T2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "场景建立或转场镜头，身份/构图连续性风险较低，可先用文本生成并由风格参考约束。",
       "required_assets": [
-        "清明白册",
-        "虫蜡封条",
-        "药屋暗格木屑"
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用制度物证开钩，承接上一集旧污疑似并升级为屠村命令",
-        "scene continuity: SC001",
-        "PROP-QINGMING-WHITE-REGISTER",
-        "PROP-INSECT-WAX-SEAL",
-        "LOC-MEDICINE-HOUSE-FRONT-02"
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "火烟不要扩大为全景奇观",
-        "白翳制度白必须干净",
-        "螳刃追兵只露局部或剪影"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC001-SH002",
-      "scene_id": "SC001",
+      "segment_id": "02-sc001-sh002",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：建立白翳的干净、平稳、制度化压迫",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "白翳无尘白袍",
-        "高筒清明官帽"
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 建立白翳的干净、平稳、制度化压迫",
-        "scene continuity: SC001",
-        "CHAR-BAIYI-02",
-        "PROP-QINGMING-WHITE-REGISTER"
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "火烟不要扩大为全景奇观",
-        "白翳制度白必须干净",
-        "螳刃追兵只露局部或剪影"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config",
+        "occlusion_readability"
       ]
     },
     {
       "shot_id": "SC001-SH003",
-      "scene_id": "SC001",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：把册页合死声转为火把坠落，启动火场压顶感",
+      "segment_id": "02-sc001-sh003",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "火把",
-        "螳刃追兵局部刃肢"
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 把册页合死声转为火把坠落，启动火场压顶感",
-        "scene continuity: SC001",
-        "CHAR-MANTIS-PURSUERS-02",
-        "PROP-TORCHES",
-        "LOC-CANYANG-AO-VILLAGE-02"
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "火烟不要扩大为全景奇观",
-        "白翳制度白必须干净",
-        "螳刃追兵只露局部或剪影"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC001-SH004",
-      "scene_id": "SC001",
-      "method": "REDRAW",
-      "rationale": "高风险局部画面需要区域重绘，控制低魔微光、火烟遮挡、局部灾难或道具可读性。 本镜头用途：用局部灾难表现村庄被毁，不拍大规模屠村全景",
+      "segment_id": "02-sc001-sh004",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "饭碗",
-        "短矛",
-        "燃烧窗纸",
-        "倒梁"
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用局部灾难表现村庄被毁，不拍大规模屠村全景",
-        "scene continuity: SC001",
-        "LOC-CANYANG-AO-VILLAGE-02",
-        "CHAR-MANTIS-PURSUERS-02"
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "火烟不要扩大为全景奇观",
-        "白翳制度白必须干净",
-        "螳刃追兵只露局部或剪影"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC001-SH005",
-      "scene_id": "SC001",
+      "segment_id": "02-sc001-sh005",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：建立沈维桑保护妹妹和判断路线的行动方式",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "水缸",
-        "沈照眠小草药袋",
-        "清明香烟线"
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 建立沈维桑保护妹妹和判断路线的行动方式",
-        "scene continuity: SC001",
-        "CHAR-SHEN-WEISANG-02",
-        "CHAR-SHEN-ZHAOMIAN-02",
-        "PROP-QINGMING-INCENSE",
-        "LOC-OLD-WELL-BACKYARD-02"
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "risks": [
-        "火烟不要扩大为全景奇观",
-        "白翳制度白必须干净",
-        "螳刃追兵只露局部或剪影"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH006",
+      "segment_id": "02-sc001-sh006",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH007",
+      "segment_id": "02-sc001-sh007",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "risks": [
+        "identity_drift",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH008",
+      "segment_id": "02-sc001-sh008",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_cellar.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_prison_cart.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_CELLAR",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH001",
-      "scene_id": "SC002",
+      "segment_id": "02-sc002-sh001",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：用罗青禾手势建立旧井和谷口逃生路线",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "罗青禾青布头巾",
-        "后院烟层"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用罗青禾手势建立旧井和谷口逃生路线",
-        "scene continuity: SC002",
-        "CHAR-LUO-QINGHE-02",
-        "CHAR-SHEN-WEISANG-02",
-        "LOC-OLD-WELL-BACKYARD-02"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH002",
-      "scene_id": "SC002",
+      "segment_id": "02-sc002-sh002",
       "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：锁定沈照眠从水缸到柴垛水沟口的空间链",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
       "required_assets": [
-        "柴垛",
-        "水沟口",
-        "小草药袋"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 锁定沈照眠从水缸到柴垛水沟口的空间链",
-        "scene continuity: SC002",
-        "CHAR-SHEN-ZHAOMIAN-02",
-        "PROP-ZHAOMIAN-HERB-BAG",
-        "LOC-OLD-WELL-BACKYARD-02"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH003",
-      "scene_id": "SC002",
+      "segment_id": "02-sc002-sh003",
       "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：让旧井暗门开启清楚但不展示大型机关",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "旧井",
-        "井绳",
-        "湿苔石",
-        "月白反光"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 让旧井暗门开启清楚但不展示大型机关",
-        "scene continuity: SC002",
-        "LOC-OLD-WELL-BACKYARD-02",
-        "PROP-CRESCENT-MOON-JADE",
-        "MAGIC-CRESCENT-MOON-JADE"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH004",
-      "scene_id": "SC002",
+      "segment_id": "02-sc002-sh004",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：晏南枝以不信任和身份线索入场",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "晏南枝流亡遮蔽装",
-        "短刀",
-        "裂月形玉片"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 晏南枝以不信任和身份线索入场",
-        "scene continuity: SC002",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-CRESCENT-MOON-JADE",
-        "PROP-SHORT-KNIFE-YNZ-CHIPPED"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH005",
-      "scene_id": "SC002",
+      "segment_id": "02-sc002-sh005",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：用追兵逼近把两人的刀口对峙压成同逃选择",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "短矛影子",
-        "井沿"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用追兵逼近把两人的刀口对峙压成同逃选择",
-        "scene continuity: SC002",
-        "CHAR-SHEN-WEISANG-02",
-        "CHAR-YAN-NANZHI-02",
-        "CHAR-MANTIS-PURSUERS-02"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC002-SH006",
-      "scene_id": "SC002",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：短暂暴露血牒残印但不解释身份",
+      "segment_id": "02-sc002-sh006",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
       "required_assets": [
-        "油纸血牒",
-        "残缺日月印"
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 短暂暴露血牒残印但不解释身份",
-        "scene continuity: SC002",
-        "PROP-OILPAPER-BLOOD-TREATY",
-        "MAGIC-BLOOD-TREATY-GLIMPSE",
-        "CHAR-MANTIS-PURSUERS-02"
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "后院空间链必须连续",
-        "晏南枝身份线索不可过度暴露",
-        "旧井不可误生成石门"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH007",
+      "segment_id": "02-sc002-sh007",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "risks": [
+        "identity_drift",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH008",
+      "segment_id": "02-sc002-sh008",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_gate_fireline.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/ch_suming_clerk.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_insect_wax_needle.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_insect_wax_seal.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_GATE_FIRELINE",
+        "CH_SHEN_WEISANG",
+        "CH_SHEN_ZHAOMIAN",
+        "CH_BAI_YI",
+        "CH_SUMING_CLERK",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "CH_SUMING_INFANTRY",
+        "PROP_QINGMING_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_PRISON_CART",
+        "PROP_INSECT_WAX_SEAL",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "motion_control",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC003-SH001",
-      "scene_id": "SC003",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：表现沈维桑用物理手段压断清明香追踪",
+      "segment_id": "02-sc003-sh001",
+      "method": "T2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "场景建立或转场镜头，身份/构图连续性风险较低，可先用文本生成并由风格参考约束。",
       "required_assets": [
-        "贴地清明香",
-        "井边灰泥"
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 表现沈维桑用物理手段压断清明香追踪",
-        "scene continuity: SC003",
-        "PROP-QINGMING-INCENSE",
-        "MAGIC-QINGMING-INCENSE",
-        "LOC-WELL-DARK-PASSAGE-ENTRANCE-02"
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "清明香不可做成界面特效",
-        "两人关系仍未完全信任",
-        "灰烟不能吞掉动作方向"
+        "identity_drift",
+        "needs_model_workflow_config",
+        "occlusion_readability"
       ]
     },
     {
       "shot_id": "SC003-SH002",
-      "scene_id": "SC003",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：维持两人未信任状态并指出追捕目标",
+      "segment_id": "02-sc003-sh002",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
       "required_assets": [
-        "短刀",
-        "油纸包轮廓"
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 维持两人未信任状态并指出追捕目标",
-        "scene continuity: SC003",
-        "CHAR-SHEN-WEISANG-02",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-OILPAPER-BLOOD-TREATY"
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "清明香不可做成界面特效",
-        "两人关系仍未完全信任",
-        "灰烟不能吞掉动作方向"
+        "identity_drift",
+        "missing_reference_asset",
+        "motion_control",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC003-SH003",
-      "scene_id": "SC003",
+      "segment_id": "02-sc003-sh003",
       "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：晏南枝继续隐藏血牒，不扩展身份解释",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "红线束发",
-        "油纸血牒"
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 晏南枝继续隐藏血牒，不扩展身份解释",
-        "scene continuity: SC003",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-RED-HAIR-TIE",
-        "PROP-OILPAPER-BLOOD-TREATY"
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "清明香不可做成界面特效",
-        "两人关系仍未完全信任",
-        "灰烟不能吞掉动作方向"
+        "identity_drift",
+        "needs_model_workflow_config",
+        "occlusion_readability"
       ]
     },
     {
       "shot_id": "SC003-SH004",
-      "scene_id": "SC003",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：用复位湿苔石和燃井绳遮蔽旧井入口",
+      "segment_id": "02-sc003-sh004",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "湿苔石",
-        "井绳",
-        "火星灰烟"
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用复位湿苔石和燃井绳遮蔽旧井入口",
-        "scene continuity: SC003",
-        "LOC-WELL-DARK-PASSAGE-ENTRANCE-02",
-        "LOC-OLD-WELL-BACKYARD-02"
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "清明香不可做成界面特效",
-        "两人关系仍未完全信任",
-        "灰烟不能吞掉动作方向"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC003-SH005",
-      "scene_id": "SC003",
+      "segment_id": "02-sc003-sh005",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：把两人推向药屋后门并保持猎户式判断",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "墙根烟层",
-        "灰抹衣角"
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 把两人推向药屋后门并保持猎户式判断",
-        "scene continuity: SC003",
-        "CHAR-SHEN-WEISANG-02",
-        "CHAR-YAN-NANZHI-02",
-        "LOC-WELL-DARK-PASSAGE-ENTRANCE-02"
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "risks": [
-        "清明香不可做成界面特效",
-        "两人关系仍未完全信任",
-        "灰烟不能吞掉动作方向"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH006",
+      "segment_id": "02-sc003-sh006",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "motion_control",
+        "needs_model_workflow_config",
+        "occlusion_readability"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH007",
+      "segment_id": "02-sc003-sh007",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "risks": [
+        "identity_drift",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH008",
+      "segment_id": "02-sc003-sh008",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_medicine_house_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_blood_record.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_MEDICINE_HOUSE_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_BLOOD_RECORD",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "motion_control",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH001",
-      "scene_id": "SC004",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：建立药屋蓝黑烟与罗青禾断后的核心空间",
+      "segment_id": "02-sc004-sh001",
+      "method": "T2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "场景建立或转场镜头，身份/构图连续性风险较低，可先用文本生成并由风格参考约束。",
       "required_assets": [
-        "青黛粉",
-        "药柜",
-        "蓝黑烟"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 建立药屋蓝黑烟与罗青禾断后的核心空间",
-        "scene continuity: SC004",
-        "LOC-LUO-MEDICINE-HOUSE-INTERIOR-02",
-        "CHAR-LUO-QINGHE-02",
-        "PROP-QINGDAI-POWDER"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH002",
-      "scene_id": "SC004",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：让药屋身份锚点在火中破裂",
+      "segment_id": "02-sc004-sh002",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "白芷木牌",
-        "半扇门",
-        "罗青禾肩伤"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 让药屋身份锚点在火中破裂",
-        "scene continuity: SC004",
-        "PROP-BLUE-HEADSCARF",
-        "CHAR-LUO-QINGHE-02",
-        "LOC-LUO-MEDICINE-HOUSE-INTERIOR-02"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH003",
-      "scene_id": "SC004",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：沈维桑进药屋第一反应寻找妹妹，压住观众焦虑线",
+      "segment_id": "02-sc004-sh003",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "后门烟雾",
-        "沈维桑猎弓"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 沈维桑进药屋第一反应寻找妹妹，压住观众焦虑线",
-        "scene continuity: SC004",
-        "CHAR-SHEN-WEISANG-02",
-        "CHAR-YAN-NANZHI-02",
-        "CHAR-SHEN-ZHAOMIAN-02"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH004",
-      "scene_id": "SC004",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：完成半枚日月驿令交付",
+      "segment_id": "02-sc004-sh004",
+      "method": "FLF2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "PLACEHOLDER_LAST_FRAME",
+      "audio_refs": [],
+      "rationale": "镜头包含明确动作起止、追逃、坠落、推拉或路线转换，需要首尾帧约束运动终点。",
       "required_assets": [
-        "半枚日月驿令",
-        "沈维桑掌心血"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 完成半枚日月驿令交付",
-        "scene continuity: SC004",
-        "PROP-HALF-SUNMOON-POST-RELAY-TOKEN",
-        "CHAR-LUO-QINGHE-02",
-        "CHAR-SHEN-WEISANG-02",
-        "半枚日月驿令只微热或一瞬微亮，不启动石门。"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH005",
-      "scene_id": "SC004",
+      "segment_id": "02-sc004-sh005",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：明确护送定义，不把晏南枝线拍成复国宣言",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "蓝黑烟",
-        "晏南枝冷灰流亡装"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 明确护送定义，不把晏南枝线拍成复国宣言",
-        "scene continuity: SC004",
-        "CHAR-LUO-QINGHE-02",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-HALF-SUNMOON-POST-RELAY-TOKEN"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH006",
-      "scene_id": "SC004",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：用刃肢穿门和推倒药柜把断后变成可见动作",
+      "segment_id": "02-sc004-sh006",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "药柜",
-        "螳刃前腿",
-        "半扇门"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 用刃肢穿门和推倒药柜把断后变成可见动作",
-        "scene continuity: SC004",
-        "CHAR-MANTIS-PURSUERS-02",
-        "PROP-MEDICINE-CABINET",
-        "CHAR-LUO-QINGHE-02"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC004-SH007",
-      "scene_id": "SC004",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：以尊严和阻隔完成母亲断后",
+      "segment_id": "02-sc004-sh007",
+      "method": "REFERENCE_IMAGE",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "罗青禾青布头巾",
-        "火墙",
-        "倒药柜"
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 以尊严和阻隔完成母亲断后",
-        "scene continuity: SC004",
-        "CHAR-LUO-QINGHE-02",
-        "CHAR-SHEN-WEISANG-02",
-        "PROP-BLUE-HEADSCARF"
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
       ],
       "risks": [
-        "蓝黑烟不能遮住托付道具",
-        "罗青禾断后保持尊严",
-        "不得拍成复国宣言"
+        "identity_drift",
+        "needs_model_workflow_config"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH008",
+      "segment_id": "02-sc004-sh008",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_cart_road.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_shen_zhaomian.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png"
+      ],
+      "continuity_locks": [
+        "LOC_CANYANGAO_CART_ROAD",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SHEN_ZHAOMIAN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE"
+      ],
+      "risks": [
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH001",
-      "scene_id": "SC005",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：从药屋侧门连续转入木车绑走线",
+      "segment_id": "02-sc005-sh001",
+      "method": "T2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "场景建立或转场镜头，身份/构图连续性风险较低，可先用文本生成并由风格参考约束。",
       "required_assets": [
-        "侧门",
-        "柴垛旁水沟口",
-        "火光眼神"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 从药屋侧门连续转入木车绑走线",
-        "scene continuity: SC005",
-        "LOC-SIDE-ALLEY-WOODEN-CART-02",
-        "CHAR-SHEN-ZHAOMIAN-02",
-        "CHAR-SHEN-WEISANG-02"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH002",
-      "scene_id": "SC005",
+      "segment_id": "02-sc005-sh002",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：引入白衣童役作为制度执行者而非新人物线",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "虫族木车",
-        "白册小签",
-        "白衣童役"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 引入白衣童役作为制度执行者而非新人物线",
-        "scene continuity: SC005",
-        "CHAR-QINGMING-CHILD-ATTENDANT-02",
-        "PROP-WOODEN-CART",
-        "PROP-WHITE-REGISTER-TAG"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH003",
-      "scene_id": "SC005",
+      "segment_id": "02-sc005-sh003",
       "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：把第01集识句痕转化为本集识别和扣腕",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "识句虫蜡痕",
-        "药名牌"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 把第01集识句痕转化为本集识别和扣腕",
-        "scene continuity: SC005",
-        "PROP-HERB-NAME-TAGS",
-        "PROP-INSECT-WAX-IDENTIFICATION-RING",
-        "CHAR-SHEN-ZHAOMIAN-02"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH004",
-      "scene_id": "SC005",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：完成沈照眠被扣腕和小草药袋掉落",
+      "segment_id": "02-sc005-sh004",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "虫蜡识别环",
-        "小草药袋",
-        "药名牌"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 完成沈照眠被扣腕和小草药袋掉落",
-        "scene continuity: SC005",
-        "PROP-INSECT-WAX-IDENTIFICATION-RING",
-        "PROP-ZHAOMIAN-HERB-BAG",
-        "PROP-HERB-NAME-TAGS"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH005",
-      "scene_id": "SC005",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：拍清沈维桑射箭救妹失败且没有切断扣环",
+      "segment_id": "02-sc005-sh005",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "猎弓",
-        "断箭",
-        "木车边板"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 拍清沈维桑射箭救妹失败且没有切断扣环",
-        "scene continuity: SC005",
-        "PROP-HUNTER-BOW",
-        "PROP-WOODEN-CART",
-        "CHAR-MANTIS-PURSUERS-02",
-        "WATCH-ARROW-COUNT"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH006",
-      "scene_id": "SC005",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：保留救妹失败但避免箭囊完全空尽的可见矛盾",
+      "segment_id": "02-sc005-sh006",
+      "method": "I2V",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "崩缺短刀",
-        "虫族木车",
-        "沈照眠虫蜡环"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 保留救妹失败但避免箭囊完全空尽的可见矛盾",
-        "scene continuity: SC005",
-        "CHAR-SHEN-ZHAOMIAN-02",
-        "PROP-HUNTER-BOW",
-        "PROP-SHORT-KNIFE-YNZ-CHIPPED",
-        "WATCH-ARROW-COUNT"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     },
     {
       "shot_id": "SC005-SH007",
-      "scene_id": "SC005",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：把寻妹线索转移到小草药袋和北偏车辙",
-      "required_assets": [
-        "北偏车辙",
-        "小草药袋",
-        "碎瓦"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 把寻妹线索转移到小草药袋和北偏车辙",
-        "scene continuity: SC005",
-        "PROP-WOODEN-CART",
-        "PROP-ZHAOMIAN-HERB-BAG",
-        "LOC-SIDE-ALLEY-WOODEN-CART-02"
-      ],
-      "risks": [
-        "沈照眠调度不可跳位",
-        "箭数连续性需遮挡处理",
-        "扣腕不可延长为折磨展示"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH001",
-      "scene_id": "SC006",
+      "segment_id": "02-sc005-sh007",
       "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：建立谷口狭窄和猎人陷阱因果基础",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "道具、证据或特写信息需要先生成稳定参考帧，再进入视频或剪辑。",
       "required_assets": [
-        "烧焦草堆",
-        "滚木绳扣",
-        "旧麻绳"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 建立谷口狭窄和猎人陷阱因果基础",
-        "scene continuity: SC006",
-        "LOC-VALLEY-MOUTH-HUNTER-TRAP-02",
-        "PROP-ROLLING-LOG-TRAP",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
+        "identity_drift",
+        "needs_model_workflow_config"
       ]
     },
     {
-      "shot_id": "SC006-SH002",
-      "scene_id": "SC006",
+      "shot_id": "SC005-SH008",
+      "segment_id": "02-sc005-sh008",
       "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：明确沈维桑识别兽道来自猎户经验而非低魔能力",
+      "duration": "6.5s",
+      "fps": 24,
+      "aspect_ratio": "9:16",
+      "first_frame_ref": "PLACEHOLDER_FIRST_FRAME",
+      "last_frame_ref": "",
+      "audio_refs": [],
+      "rationale": "人物身份、服装或场景连续性重要，需要参考图/首帧约束。",
       "required_assets": [
-        "兽蹄磨痕",
-        "北坡石根窄缝",
-        "旧麻绳"
+        "assets/placeholders/loc_canyangao_back_slope.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_moon_white_jade.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png"
       ],
       "continuity_locks": [
-        "shot-list purpose: 明确沈维桑识别兽道来自猎户经验而非低魔能力",
-        "scene continuity: SC006",
-        "CHAR-SHEN-WEISANG-02",
-        "LOC-VALLEY-MOUTH-HUNTER-TRAP-02",
-        "MAGIC-SPIRIT-WING-RESIDUAL",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
+        "LOC_CANYANGAO_BACK_SLOPE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_BAI_YI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
       ],
       "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH003",
-      "scene_id": "SC006",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：晏南枝指出沈维桑不是武者，同时展示崩缺短刀延续",
-      "required_assets": [
-        "崩缺短刀",
-        "石边烟尘"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 晏南枝指出沈维桑不是武者，同时展示崩缺短刀延续",
-        "scene continuity: SC006",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-SHORT-KNIFE-YNZ-CHIPPED",
-        "CHAR-SHEN-WEISANG-02",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH004",
-      "scene_id": "SC006",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：完成谷口绳扣箭，维持箭道具连续",
-      "required_assets": [
-        "猎弓",
-        "绳扣",
-        "滚木"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 完成谷口绳扣箭，维持箭道具连续",
-        "scene continuity: SC006",
-        "PROP-HUNTER-BOW",
-        "PROP-ROLLING-LOG-TRAP",
-        "WATCH-ARROW-COUNT",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH005",
-      "scene_id": "SC006",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：让滚木陷阱结果可读，并准备第三名追兵突袭",
-      "required_assets": [
-        "螳刃腿节",
-        "石壁",
-        "沈维桑左肩伤"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 让滚木陷阱结果可读，并准备第三名追兵突袭",
-        "scene continuity: SC006",
-        "CHAR-MANTIS-PURSUERS-02",
-        "PROP-ROLLING-LOG-TRAP",
-        "CHAR-SHEN-WEISANG-02",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH006",
-      "scene_id": "SC006",
-      "method": "REDRAW",
-      "rationale": "高风险局部画面需要区域重绘，控制低魔微光、火烟遮挡、局部灾难或道具可读性。 本镜头用途：克制表现灵翼残纹，只作为痛感伏笔",
-      "required_assets": [
-        "金赤短闪",
-        "左肩撕裂"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 克制表现灵翼残纹，只作为痛感伏笔",
-        "scene continuity: SC006",
-        "MAGIC-SPIRIT-WING-RESIDUAL",
-        "CHAR-SHEN-WEISANG-02",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。",
-        "灵翼残纹只做痛感短闪，不提供战斗优势。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH007",
-      "scene_id": "SC006",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：表现晏南枝短刀卡死与沈维桑半成品明劲的极小效果",
-      "required_assets": [
-        "湿绳",
-        "石槽",
-        "追兵腿节"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 表现晏南枝短刀卡死与沈维桑半成品明劲的极小效果",
-        "scene continuity: SC006",
-        "MARTIAL-HALF-FORMED-MINGJIN",
-        "PROP-SHORT-KNIFE-YNZ-CHIPPED",
-        "PROP-ROLLING-LOG-TRAP",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH008",
-      "scene_id": "SC006",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：完成突围代价和兽道出口指令",
-      "required_assets": [
-        "鼻血",
-        "垂下左臂",
-        "兽道窄缝"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 完成突围代价和兽道出口指令",
-        "scene continuity: SC006",
-        "CHAR-BAIYI-02",
-        "CHAR-SHEN-WEISANG-02",
-        "LOC-VALLEY-MOUTH-HUNTER-TRAP-02",
-        "谷口后沈维桑鼻血、左肩撕裂、左臂失力持续。"
-      ],
-      "risks": [
-        "滚木和绳扣因果必须可读",
-        "低魔效果必须克制",
-        "左肩伤和鼻血必须延续"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH001",
-      "scene_id": "SC007",
-      "method": "FLF2V",
-      "rationale": "动作因果或空间调度需要明确首尾状态，用首尾帧控制运动方向、结果和镜头读法。 本镜头用途：从兽道滚出并建立南侧黑林方向",
-      "required_assets": [
-        "南侧黑林",
-        "兽道窄缝"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 从兽道滚出并建立南侧黑林方向",
-        "scene continuity: SC007",
-        "LOC-OUTER-SLOPE-TRACKS-02",
-        "CHAR-YAN-NANZHI-02",
-        "MAGIC-QINGMING-INCENSE",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "南北屏幕方向不能反转",
-        "路线分歧不可提前解决",
-        "追兵逼近只用声音或刮痕即可"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH002",
-      "scene_id": "SC007",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：建立北偏车辙与沈维桑寻妹目标的路线分歧",
-      "required_assets": [
-        "北偏车辙",
-        "小草药袋",
-        "沈维桑左肩血"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 建立北偏车辙与沈维桑寻妹目标的路线分歧",
-        "scene continuity: SC007",
-        "PROP-ZHAOMIAN-HERB-BAG",
-        "PROP-WOODEN-CART",
-        "CHAR-SHEN-WEISANG-02",
-        "LOC-OUTER-SLOPE-TRACKS-02",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "南北屏幕方向不能反转",
-        "路线分歧不可提前解决",
-        "追兵逼近只用声音或刮痕即可"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH003",
-      "scene_id": "SC007",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：以短句确认临时合作但不解决路线分歧",
-      "required_assets": [
-        "崩缺短刀",
-        "外坡石面"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 以短句确认临时合作但不解决路线分歧",
-        "scene continuity: SC007",
-        "CHAR-YAN-NANZHI-02",
-        "PROP-SHORT-KNIFE-YNZ-CHIPPED",
-        "CHAR-SHEN-WEISANG-02",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "南北屏幕方向不能反转",
-        "路线分歧不可提前解决",
-        "追兵逼近只用声音或刮痕即可"
-      ]
-    },
-    {
-      "shot_id": "SC008-SH001",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：用火场回望确认残阳坳被毁和罗青禾断后结果",
-      "required_assets": [
-        "燃烧青布头巾",
-        "药屋焦梁",
-        "白册纸灰"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 用火场回望确认残阳坳被毁和罗青禾断后结果",
-        "scene continuity: SC008",
-        "LOC-CANYANG-AO-VILLAGE-02",
-        "PROP-BLUE-HEADSCARF",
-        "PROP-QINGMING-WHITE-REGISTER",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "不得启动石门",
-        "结尾信息密度需分层",
-        "白翳追踪不可表现为全知定位"
-      ]
-    },
-    {
-      "shot_id": "SC008-SH002",
-      "scene_id": "SC008",
-      "method": "REFERENCE_IMAGE",
-      "rationale": "关键静帧/道具信息优先，先锁定可复用参考帧，避免文本、纹路或空间锚点漂移。 本镜头用途：把沈照眠线索收束到烧焦发绳和小草药结",
-      "required_assets": [
-        "烧焦发绳",
-        "小草药结",
-        "湿灰车辙"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 把沈照眠线索收束到烧焦发绳和小草药结",
-        "scene continuity: SC008",
-        "PROP-BURNT-HAIR-TIE",
-        "PROP-WOODEN-CART",
-        "CHAR-SHEN-ZHAOMIAN-02",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "不得启动石门",
-        "结尾信息密度需分层",
-        "白翳追踪不可表现为全知定位"
-      ]
-    },
-    {
-      "shot_id": "SC008-SH003",
-      "scene_id": "SC008",
-      "method": "REDRAW",
-      "rationale": "高风险局部画面需要区域重绘，控制低魔微光、火烟遮挡、局部灾难或道具可读性。 本镜头用途：给第03集方向感但不表现石门启动",
-      "required_assets": [
-        "半枚日月驿令",
-        "血灰掌心",
-        "北坡黑石缝"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 给第03集方向感但不表现石门启动",
-        "scene continuity: SC008",
-        "PROP-HALF-SUNMOON-POST-RELAY-TOKEN",
-        "MAGIC-SUNMOON-POST-RELAY-TOKEN",
-        "LOC-NORTH-SLOPE-BLACK-STONE-CRACK-02",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。",
-        "半枚日月驿令只微热或一瞬微亮，不启动石门。"
-      ],
-      "risks": [
-        "不得启动石门",
-        "结尾信息密度需分层",
-        "白翳追踪不可表现为全知定位"
-      ]
-    },
-    {
-      "shot_id": "SC008-SH004",
-      "scene_id": "SC008",
-      "method": "I2V",
-      "rationale": "角色身份、表演和轻运动一致性优先，使用角色/场景参考驱动受控视频。 本镜头用途：以白翳登记和黑场音效收束清明追捕",
-      "required_assets": [
-        "白翳无尘白袍",
-        "清明白册",
-        "清明香残味"
-      ],
-      "continuity_locks": [
-        "shot-list purpose: 以白翳登记和黑场音效收束清明追捕",
-        "scene continuity: SC008",
-        "CHAR-BAIYI-02",
-        "PROP-QINGMING-WHITE-REGISTER",
-        "PROP-QINGMING-INCENSE",
-        "PROP-BURNT-HAIR-TIE",
-        "北坡/北偏车辙/黑石缝保持画面右侧或右上，南侧黑林保持画面左侧。"
-      ],
-      "risks": [
-        "不得启动石门",
-        "结尾信息密度需分层",
-        "白翳追踪不可表现为全知定位"
+        "identity_drift",
+        "missing_reference_asset",
+        "needs_model_workflow_config"
       ]
     }
-  ],
-  "validation_notes": [
-    "shots 数组按 shot-list.json 的 45 个 shot_id 完全一一对应且顺序一致。",
-    "所有 method 均限定在 T2V、I2V、FLF2V、REFERENCE_IMAGE、REDRAW 之一。",
-    "未输出 ComfyUI 节点图、sampler、seed 或最终工程参数。",
-    "第02集石门不启动、半枚驿令只微热、左肩伤持续、火烟局部化、虫群局部/剪影风险规避均已写入全局锁和相关镜头风险。"
   ]
 }

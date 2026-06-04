@@ -1,0 +1,2536 @@
+{
+  "version": "director-room-v1-2026-06-05",
+  "episode_id": "08",
+  "prompts": [
+    {
+      "shot_id": "SC001-SH001",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，锁喉关主门与沈维桑，锁喉关主门按剧本时间建立，骨钟在暴雪中自鸣。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on 锁喉关主门与Shen Weisang. Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "锁喉关主门与沈维桑",
+          "en": "锁喉关主门与Shen Weisang"
+        },
+        "action": {
+          "zh": "锁喉关主门按剧本时间建立，骨钟在暴雪中自鸣。",
+          "en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，沈维桑，门外，破门猛犸的铁包巨角顶上拒马，黑牙斧兵在巨兽脚边砍门闩。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Shen Weisang. Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "门外，破门猛犸的铁包巨角顶上拒马，黑牙斧兵在巨兽脚边砍门闩。",
+          "en": "Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，骨钟，镜头压到骨钟，让其承载本场信息：墙内粮碗倒扣在雪里，碗底被刮得发白。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on bone bell alarm anchoring Suohou Pass siege pressure. Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨钟",
+          "en": "bone bell alarm anchoring Suohou Pass siege pressure"
+        },
+        "action": {
+          "zh": "镜头压到骨钟，让其承载本场信息：墙内粮碗倒扣在雪里，碗底被刮得发白。",
+          "en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，陆青砾的反应与对话压力，陆青砾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Lu Qingli的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "陆青砾的反应与对话压力",
+          "en": "Lu Qingli的反应与对话压力"
+        },
+        "action": {
+          "zh": "陆青砾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：墙上灰墙军户冻得手指开裂，仍把长矛压下去。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：墙上灰墙军户冻得手指开裂，仍把长矛压下去。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：雪羽攀墙斥候的钩爪挂上墙垛。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：雪羽攀墙斥候的钩爪挂上墙垛。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，骨钟，镜头压到骨钟，让其承载本场信息：薛临墙吹骨哨，声音短硬。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on bone bell alarm anchoring Suohou Pass siege pressure. Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨钟",
+          "en": "bone bell alarm anchoring Suohou Pass siege pressure"
+        },
+        "action": {
+          "zh": "镜头压到骨钟，让其承载本场信息：薛临墙吹骨哨，声音短硬。",
+          "en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑、晏南枝和陆青砾被军户押上墙道。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑、晏南枝和陆青砾被军户押上墙道。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH009",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，锁喉关主门出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：破门猛犸撞响骨钟。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "锁喉关主门出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：破门猛犸撞响骨钟。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾小声说。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾小声说。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH011",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关主门，动作后的喘息与损耗，动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：陆青砾小声说。 构图保持转场远景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Give one controlled breath after action, showing damage, silence and recalculation. Use transition wide shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "动作后的喘息与损耗",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：陆青砾小声说。",
+          "en": "Give one controlled breath after action, showing damage, silence and recalculation."
+        },
+        "environment": {
+          "zh": "锁喉关主门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "转场远景，俯视读路线和人群，静止锁定",
+          "en": "transition wide shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_BONE_BELL",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_bone_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH001",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，锁喉关粮仓门与沈维桑，锁喉关粮仓门按剧本时间建立，粮仓门内堆着肃明封蜡粮袋。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on 锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure与Shen Weisang. Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Xue Linqiang readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "锁喉关粮仓门与沈维桑",
+          "en": "锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure与Shen Weisang"
+        },
+        "action": {
+          "zh": "锁喉关粮仓门按剧本时间建立，粮仓门内堆着肃明封蜡粮袋。",
+          "en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Xue Linqiang readable in vertical composition."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，沈维桑，门外伤兵等粮。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Shen Weisang. Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "门外伤兵等粮。",
+          "en": "Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，粮仓门，镜头压到粮仓门，让其承载本场信息：粮税小吏站在门槛内，身后重甲虫士兵像门闩一样堵住路。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on granary gate showing Suming grain control and Xue Linqiang's survivalist pressure. Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "粮仓门",
+          "en": "granary gate showing Suming grain control and Xue Linqiang's survivalist pressure"
+        },
+        "action": {
+          "zh": "镜头压到粮仓门，让其承载本场信息：粮税小吏站在门槛内，身后重甲虫士兵像门闩一样堵住路。",
+          "en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，薛临墙的反应与对话压力，薛临墙呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Xue Linqiang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "薛临墙的反应与对话压力",
+          "en": "Xue Linqiang的反应与对话压力"
+        },
+        "action": {
+          "zh": "薛临墙呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：薛临墙把一只空粮袋攥成团，没看晏南枝。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：薛临墙把一只空粮袋攥成团，没看晏南枝。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：晏南枝抬起下颌。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：晏南枝抬起下颌。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，粮仓门，镜头压到粮仓门，让其承载本场信息：薛临墙冷笑。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on granary gate showing Suming grain control and Xue Linqiang's survivalist pressure. Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "粮仓门",
+          "en": "granary gate showing Suming grain control and Xue Linqiang's survivalist pressure"
+        },
+        "action": {
+          "zh": "镜头压到粮仓门，让其承载本场信息：薛临墙冷笑。",
+          "en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑挡到晏南枝前面。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑挡到晏南枝前面。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，锁喉关粮仓门出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：薛临墙考虑交出晏南枝换粮。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on 锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure出口与下一步路线. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "锁喉关粮仓门出口与下一步路线",
+          "en": "锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure出口与下一步路线"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：薛临墙考虑交出晏南枝换粮。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：薛临墙盯住沈维桑。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：薛临墙盯住沈维桑。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH011",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 锁喉关粮仓门，动作后的喘息与损耗，动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：薛临墙盯住沈维桑。 构图保持转场远景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Suohou Pass, focus on scripted subject and continuity prop. Give one controlled breath after action, showing damage, silence and recalculation. Use transition wide shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "动作后的喘息与损耗",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：薛临墙盯住沈维桑。",
+          "en": "Give one controlled breath after action, showing damage, silence and recalculation."
+        },
+        "environment": {
+          "zh": "锁喉关粮仓门",
+          "en": "Suohou Pass"
+        },
+        "camera": {
+          "zh": "转场远景，俯视读路线和人群，静止锁定",
+          "en": "transition wide shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_SUOHOU_PASS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_XUE_LINQIANG",
+        "CH_SUMING_INFANTRY",
+        "CH_GREY_WALL_GARRISON",
+        "PROP_GRANARY_GATE",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_suohou_pass.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_suming_infantry.png",
+        "assets/placeholders/ch_grey_wall_garrison.png",
+        "assets/placeholders/prop_granary_gate.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，墙顶雪道与沈维桑，墙顶雪道按剧本时间建立，沈维桑被推上侧门雪道。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on 墙顶雪道与Shen Weisang. Establish wall-top snow path and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "墙顶雪道与沈维桑",
+          "en": "墙顶雪道与Shen Weisang"
+        },
+        "action": {
+          "zh": "墙顶雪道按剧本时间建立，沈维桑被推上侧门雪道。",
+          "en": "Establish wall-top snow path and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，沈维桑，风雪打得人睁不开眼。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on Shen Weisang. Visualize the scripted beat in wall-top snow path, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "风雪打得人睁不开眼。",
+          "en": "Visualize the scripted beat in wall-top snow path, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，关键道具和痕迹，镜头压到关键道具和痕迹，让其承载本场信息：他看见排水沟下方的雪色发灰，立刻判断掘地兵已经接近门基。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "关键道具和痕迹",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "镜头压到关键道具和痕迹，让其承载本场信息：他看见排水沟下方的雪色发灰，立刻判断掘地兵已经接近门基。",
+          "en": "Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，沈维桑的反应与对话压力，沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on Shen Weisang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑的反应与对话压力",
+          "en": "Shen Weisang的反应与对话压力"
+        },
+        "action": {
+          "zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：薛临墙直接下令。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in wall-top snow path. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：薛临墙直接下令。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in wall-top snow path."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：火油灌入排水沟，沈维桑点燃旧布。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：火油灌入排水沟，沈维桑点燃旧布。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，关键道具和痕迹，镜头压到关键道具和痕迹，让其承载本场信息：火线沿沟底窜开，逼出雪獾掘地兵。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "关键道具和痕迹",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "镜头压到关键道具和痕迹，让其承载本场信息：火线沿沟底窜开，逼出雪獾掘地兵。",
+          "en": "Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH008",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：北境黑牙斧兵趁乱冲门，沈维桑用猎弓射断吊石绳，落石砸偏攻城木。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：北境黑牙斧兵趁乱冲门，沈维桑用猎弓射断吊石绳，落石砸偏攻城木。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，墙顶雪道出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑守侧门。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "墙顶雪道出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑守侧门。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH010",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾在一旁割断雪羽斥候的钩绳。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾在一旁割断雪羽斥候的钩绳。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH011",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 墙顶雪道，动作后的喘息与损耗，动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：沈维桑喘着气。 构图保持转场远景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In wall-top snow path, focus on scripted subject and continuity prop. Give one controlled breath after action, showing damage, silence and recalculation. Use transition wide shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "动作后的喘息与损耗",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：沈维桑喘着气。",
+          "en": "Give one controlled breath after action, showing damage, silence and recalculation."
+        },
+        "environment": {
+          "zh": "墙顶雪道",
+          "en": "wall-top snow path"
+        },
+        "camera": {
+          "zh": "转场远景，俯视读路线和人群，静止锁定",
+          "en": "transition wide shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_WALLTOP_SNOW_PATH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_walltop_snow_path.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH001",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，旧日月阵基裸露处与沈维桑，旧日月阵基裸露处按剧本时间建立，战场短暂停顿。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on old sun-moon array base, expressed through body action and cost rather than magic blast裸露处与Shen Weisang. Establish old sun-moon array base and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧日月阵基裸露处与沈维桑",
+          "en": "old sun-moon array base, expressed through body action and cost rather than magic blast裸露处与Shen Weisang"
+        },
+        "action": {
+          "zh": "旧日月阵基裸露处按剧本时间建立，战场短暂停顿。",
+          "en": "Establish old sun-moon array base and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH002",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，沈维桑，墙下，一个鹿族年轻女子倒在旧阵基旁，柔软鹿耳沾血，骨笛挂在胸前。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on Shen Weisang. Visualize the scripted beat in old sun-moon array base, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "墙下，一个鹿族年轻女子倒在旧阵基旁，柔软鹿耳沾血，骨笛挂在胸前。",
+          "en": "Visualize the scripted beat in old sun-moon array base, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH003",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，骨笛，镜头压到骨笛，让其承载本场信息：她不是攻城兵，更像被冲散的萨满。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：她不是攻城兵，更像被冲散的萨满。",
+          "en": "Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH004",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，沈维桑的反应与对话压力，沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on Shen Weisang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑的反应与对话压力",
+          "en": "Shen Weisang的反应与对话压力"
+        },
+        "action": {
+          "zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：晏南枝本能抬手阻止。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in old sun-moon array base. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：晏南枝本能抬手阻止。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in old sun-moon array base."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：沈维桑已经翻下半截雪坡，把鹿族女子拖到阵基背风处。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：沈维桑已经翻下半截雪坡，把鹿族女子拖到阵基背风处。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，骨笛，镜头压到骨笛，让其承载本场信息：她睁眼，浅色鹿眼警惕。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on bone flute used by Lu Mi and northern rescue or beast-calming logic. Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "骨笛",
+          "en": "bone flute used by Lu Mi and northern rescue or beast-calming logic"
+        },
+        "action": {
+          "zh": "镜头压到骨笛，让其承载本场信息：她睁眼，浅色鹿眼警惕。",
+          "en": "Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：门外破门猛犸再度被驱赶，巨角顶向拒马。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：门外破门猛犸再度被驱赶，巨角顶向拒马。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，旧日月阵基裸露处出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：鹿族伤者吹骨笛。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on old sun-moon array base, expressed through body action and cost rather than magic blast裸露处出口与下一步路线. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧日月阵基裸露处出口与下一步路线",
+          "en": "old sun-moon array base, expressed through body action and cost rather than magic blast裸露处出口与下一步路线"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：鹿族伤者吹骨笛。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑、晏南枝和薛临墙同时看向她。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑、晏南枝和薛临墙同时看向她。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    },
+    {
+      "shot_id": "SC004-SH011",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧日月阵基裸露处，动作后的喘息与损耗，动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：它颈下露出被铁钉穿过的旧绳，绳头还攥在驭兽者手里。 构图保持转场远景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old sun-moon array base, focus on scripted subject and continuity prop. Give one controlled breath after action, showing damage, silence and recalculation. Use transition wide shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "动作后的喘息与损耗",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：它颈下露出被铁钉穿过的旧绳，绳头还攥在驭兽者手里。",
+          "en": "Give one controlled breath after action, showing damage, silence and recalculation."
+        },
+        "environment": {
+          "zh": "旧日月阵基裸露处",
+          "en": "old sun-moon array base"
+        },
+        "camera": {
+          "zh": "转场远景，俯视读路线和人群，静止锁定",
+          "en": "transition wide shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_SUNMOON_ARRAY_BASE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_XUE_LINQIANG",
+        "CH_LU_MI",
+        "PROP_GRANARY_GATE",
+        "PROP_BONE_FLUTE",
+        "PROP_SUNMOON_ARRAY_BASE",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_sunmoon_array_base.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_lu_qingli.png",
+        "assets/placeholders/ch_xue_linqiang.png",
+        "assets/placeholders/ch_lu_mi.png",
+        "assets/placeholders/prop_granary_gate.png",
+        "assets/placeholders/prop_bone_flute.png",
+        "assets/placeholders/prop_sunmoon_array_base.png"
+      ]
+    }
+  ]
+}

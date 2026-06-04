@@ -1,657 +1,2315 @@
 {
-  "version": "1.0",
+  "version": "director-room-v1-2026-06-05",
   "episode_id": "03",
-  "title": "半枚驿令",
   "prompts": [
     {
       "shot_id": "SC001-SH001",
       "generation_method": "I2V",
-      "prompt": "主体：沈维桑只露右手、半枚日月驿令和黑石凹槽，旧皮护腕沾血灰；动作：右手发抖把驿令抵入凹槽，断月纹对不上，鼻血旁灰白清明香打旋，上沿黑绿螳刃刮近；摄影：9:16 极近景，正面微低角，中轴压住凹槽，手持短推形成上下夹逼；灯光：黑石冷湿反光，驿令只有微弱金赤反跳，清明香灰白边缘可读，刃影黑绿低亮；连续性锚点：左臂不入画且不参与开门，清明香是嗅记烟线，追兵只局部入画；风格限制：低光可读、窄暗急迫、道具纹理真实，不做机关奇观。",
-      "negative_prompt_notes": "避免左手或左臂帮忙、驿令持续发光、清明香变触手、完整怪物露脸、黑石门提前大开。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，火后残阳坳与沈维桑，火后残阳坳按剧本时间建立，灰烬下，半枚日月驿令贴上焦黑石缝。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on 火后残阳坳与Shen Weisang. Establish Canyangao after the fire and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "火后残阳坳与沈维桑",
+          "en": "火后残阳坳与Shen Weisang"
+        },
+        "action": {
+          "zh": "火后残阳坳按剧本时间建立，灰烬下，半枚日月驿令贴上焦黑石缝。",
+          "en": "Establish Canyangao after the fire and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in vertical composition."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_BLACK_STONE_CLEFT",
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "CHAR_PURSUERS_PARTIAL_E03"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "黑石凹槽与半枚日月驿令微距参考",
-        "沈维桑右手旧皮护腕与血灰",
-        "清明香贴鼻血烟线",
-        "螳刃局部黑绿刃影"
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
       ]
     },
     {
       "shot_id": "SC001-SH002",
       "generation_method": "I2V",
-      "prompt": "主体：晏南枝冷灰旅装下按住怀中油纸血牒，沈维桑右拇指和黑石凹槽同屏；动作：晏南枝护住血牒催促，沈维桑用右拇指把掌心血灰抹进断月纹缺口；摄影：近景侧前方平视，焦点从血牒按压手移到右拇指，两个手部动作在同一竖向空间内；灯光：冷黑石底，血灰湿亮，晏南枝衣襟保持雾紫冷灰，血牒只显衣内轮廓；连续性锚点：血牒隐藏不展开，沈维桑左臂不可用且不进入动作，晏南枝不外露旧帝国正装符号；风格限制：克制逃亡质感，动作实用、低光可读。",
-      "negative_prompt_notes": "避免完整血牒正面展示、晏南枝华丽皇室装、双手混成同一角色、沈维桑左臂补灰。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，沈维桑，地面亮起半截金赤残纹，像被烧剩的血线。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on Shen Weisang. Visualize the scripted beat in Canyangao after the fire, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "地面亮起半截金赤残纹，像被烧剩的血线。",
+          "en": "Visualize the scripted beat in Canyangao after the fire, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_YAN_NANZHI_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "晏南枝冷灰旅装与隐藏油纸血牒按压姿势",
-        "沈维桑右拇指血灰",
-        "黑石凹槽局部"
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
       ]
     },
     {
       "shot_id": "SC001-SH003",
-      "generation_method": "FLF2V",
-      "prompt": "主体：黑石门缝、嵌槽半枚驿令和金赤残缺日月线；动作：沈维桑右手按下后金赤线沿石缝疾走，石门只向内错开一掌宽，冷风从窄缝压出；摄影：贴石侧角插入特写，随金赤线滑移后停在一掌宽门缝，首尾帧锁定闭门到窄开；灯光：金赤短促，不照亮全场，门内是冷白石暗道轮廓，灰白清明香被风吹散半寸但未消失；连续性锚点：驿令只触发入口，左臂不推门，门不开成完整通道；风格限制：机关效果朴素、石粉和缝宽必须可读。",
-      "negative_prompt_notes": "避免石门全开、金赤光变成大地图或手电、人物用身体推门、清明香消失。",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，押车，镜头压到押车，让其承载本场信息：沈维桑蹲在废井边，左手按住驿令，右手拨开草药灰。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office. Hold on the key prop or trace in Canyangao after the fire; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "押车",
+          "en": "prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office"
+        },
+        "action": {
+          "zh": "镜头压到押车，让其承载本场信息：沈维桑蹲在废井边，左手按住驿令，右手拨开草药灰。",
+          "en": "Hold on the key prop or trace in Canyangao after the fire; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "LOC_E03_BLACK_STONE_CLEFT",
-        "FX_QINGMING_INCENSE_E03"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "黑石门缝一掌宽参考",
-        "半枚驿令嵌槽状态",
-        "金赤残缺日月线特效层",
-        "门内冷白石暗道轮廓"
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
       ]
     },
     {
       "shot_id": "SC001-SH004",
       "generation_method": "I2V",
-      "prompt": "主体：门缝内侧的沈维桑惨白脸、浸血左肩、完全垂落左臂和回卷清明香；动作：冷光照出伤势，左臂抬不起来，清明香被冷风吹散半寸后又从门外卷回；摄影：中近景门缝内侧反打，静止构图，靠风和烟线运动推动紧张；灯光：冷白石反光刻出脸色和血布，灰白烟线沿下沿回卷，门外仍是黑绿压力；连续性锚点：右半身支撑身体，左臂完全不可用，清明香是灰白嗅记；风格限制：低光但伤势清楚，不把烟线拍成超自然攻击。",
-      "negative_prompt_notes": "避免左臂抬起支撑、烟线遮脸过重、伤口不可读、清明香实体化、门外追兵完整露脸。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，晏南枝的反应与对话压力，晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on Yan Nanzhi的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "晏南枝的反应与对话压力",
+          "en": "Yan Nanzhi的反应与对话压力"
+        },
+        "action": {
+          "zh": "晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_SHEN_WEISANG_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "LOC_E03_BLACK_STONE_CLEFT"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "沈维桑惨白少年脸",
-        "浸血左肩与垂落左臂",
-        "一掌宽门缝内侧",
-        "清明香回卷烟线"
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
       ]
     },
     {
       "shot_id": "SC001-SH005",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑右腕烧焦发绳、半枚驿令、门外螳刃和一掌宽门缝；动作：刃肢第二次刮到凹槽边，沈维桑右手收回驿令，把烧焦发绳塞进右腕，用右肩带身体侧身钻入窄缝；摄影：近景转半身，右腕低角跟拍挤入门内，首尾帧锁发绳从未固定到压住右腕；灯光：门外火星短亮，门内冷白石接住人物，金赤线熄弱；连续性锚点：发绳是沈照眠动机锚点，左臂贴身拖在暗部不帮忙，追兵只局部刃肢；风格限制：压迫式贴身逃亡，不拍成动作胜利。",
-      "negative_prompt_notes": "避免发绳变新饰品、左臂撑门、门缝变宽、刃肢完整怪物化、驿令当武器。",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：沈维桑没有看她，只把一截烧焦发绳塞进怀里。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in Canyangao after the fire. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：沈维桑没有看她，只把一截烧焦发绳塞进怀里。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in Canyangao after the fire."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "烧焦发绳右腕参考",
-        "半枚驿令回收动作",
-        "门外螳刃刮石局部",
-        "一掌宽门缝侧身通过参考"
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：远处传来清明香铃。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：远处传来清明香铃。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，清明香铃，镜头压到清明香铃，让其承载本场信息：沈维桑立刻用灰盖住光纹。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record铃. Hold on the key prop or trace in Canyangao after the fire; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "清明香铃",
+          "en": "grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record铃"
+        },
+        "action": {
+          "zh": "镜头压到清明香铃，让其承载本场信息：沈维桑立刻用灰盖住光纹。",
+          "en": "Hold on the key prop or trace in Canyangao after the fire; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：晏南枝伸手要拿驿令，沈维桑按住她的手背。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：晏南枝伸手要拿驿令，沈维桑按住她的手背。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，火后残阳坳出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：驿令亮路。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "火后残阳坳出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：驿令亮路。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
+      ]
+    },
+    {
+      "shot_id": "SC001-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 火后残阳坳，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝伸手要拿驿令，沈维桑按住她的手背。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In Canyangao after the fire, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝伸手要拿驿令，沈维桑按住她的手背。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "火后残阳坳",
+          "en": "Canyangao after the fire"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_CANYANGAO_AFTER_FIRE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_QINGMING_INCENSE",
+        "PROP_PRISON_CART",
+        "PROP_SCORCHED_HAIR_TIE",
+        "PROP_QINGMING_SCENT_BELL",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_canyangao_after_fire.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_scorched_hair_tie.png",
+        "assets/placeholders/prop_qingming_scent_bell.png"
       ]
     },
     {
       "shot_id": "SC002-SH001",
-      "generation_method": "REFERENCE_IMAGE",
-      "prompt": "主体：白石旧驿拱道、剥落日月双印、两人挤入暗道、南北路线刻痕；动作：沈维桑右肩前引拖伤进入，晏南枝在左后护住血牒，镜头停在分叉；摄影：9:16 中景建立，竖屏低机位后退跟拍后静止，南线必须在画面左下，北线必须在右上；灯光：白石冷灰底，金赤只沿地面窄亮，空间低窄不是地下宫殿；连续性锚点：沈维桑左臂不可用，血牒仍隐藏，南左下北右上作为后续地理母版；风格限制：参考图要稳定、可复用、方向清楚。",
-      "negative_prompt_notes": "避免空间过大华丽、南北方向反转、血牒外露、沈维桑左臂摆动或支撑、金赤照亮全场。",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，山道难民沟与沈维桑，山道难民沟按剧本时间建立，二人混入逃荒队。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on 山道难民沟与Shen Weisang. Establish mountain refugee ditch and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Suming slave soldier readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "山道难民沟与沈维桑",
+          "en": "山道难民沟与Shen Weisang"
+        },
+        "action": {
+          "zh": "山道难民沟按剧本时间建立，二人混入逃荒队。",
+          "en": "Establish mountain refugee ditch and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Suming slave soldier readable in vertical composition."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_RELAY_ENTRANCE",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "白石旧驿拱道低窄空间",
-        "剥落日月双印",
-        "南线左下与北线右上路线刻痕",
-        "两人挤入暗道姿态"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC002-SH002",
       "generation_method": "I2V",
-      "prompt": "主体：北线车轴旧印、沈维桑右腕烧焦发绳和急促眼神；动作：他盯住北线右上的车轴旧印，右手攥紧发绳，判断木车绕北坡走；摄影：特写到中近景，从车轴刻痕反打眼神，焦点从刻痕拉到发绳；灯光：白石冷灰，低饱和金赤只轻扫刻痕边，不形成完整发光地图；连续性锚点：发绳牵引沈照眠但妹妹不出场，北线固定右上，左臂不可用；风格限制：物理车轴印与亲情锚点清楚，避免神化导航。",
-      "negative_prompt_notes": "避免车轴印变新鲜车轮、北线方向错误、发绳不明显、金赤路线铺满、左臂参与判断动作。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，沈维桑，妇人推着空粮车，老人背祖牌小盒，少年腿上有白册复核条。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on Shen Weisang. Visualize the scripted beat in mountain refugee ditch, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "妇人推着空粮车，老人背祖牌小盒，少年腿上有白册复核条。",
+          "en": "Visualize the scripted beat in mountain refugee ditch, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "LOC_E03_RELAY_ENTRANCE",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "北线车轴旧印特写",
-        "烧焦发绳右腕",
-        "沈维桑急促眼神",
-        "白石入口北线右上方向"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC002-SH003",
-      "generation_method": "REDRAW",
-      "prompt": "主体：晏南枝衣襟、隐藏油纸血牒边缘、灰白清明香和虫蜡白细足虫纹；动作：清明香贴衣襟钻上来，油纸边缘鼓起，白蜡虫纹从纸里一节一节顶出，晏南枝手指按紧但未刮；摄影：胸口侧下角微距近景，慢推油纸边缘，只局部重绘烟线和虫纹；灯光：灰白低位侧逆光勾烟线，虫蜡白硬边小高光，金赤暂不参与；连续性锚点：血牒四拍只完成香贴衣与虫纹顶出，血牒隐藏不完整外露；风格限制：微距规则镜头，细密真实，不像藤蔓符文。",
-      "negative_prompt_notes": "避免完整血牒展开、虫纹变藤蔓或符文、清明香变触手、提前出现血纹亮或指尖出血。",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，清明香，镜头压到清明香，让其承载本场信息：一个诱线奴兵伪装成边墙逃兵，肩上披旧军户围巾，后脑低位却露出金钱马尾。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record. Hold on the key prop or trace in mountain refugee ditch; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "清明香",
+          "en": "grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record"
+        },
+        "action": {
+          "zh": "镜头压到清明香，让其承载本场信息：一个诱线奴兵伪装成边墙逃兵，肩上披旧军户围巾，后脑低位却露出金钱马尾。",
+          "en": "Hold on the key prop or trace in mountain refugee ditch; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "FX_WHITE_WAX_INSECT_MARK_E03",
-        "CHAR_YAN_NANZHI_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "晏南枝衣襟与隐藏油纸血牒微距底图",
-        "灰白清明香贴衣烟线",
-        "虫蜡白细足状白蜡虫纹",
-        "晏南枝按紧血牒的手指"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC002-SH004",
-      "generation_method": "REDRAW",
-      "prompt": "主体：油纸血牒局部、残缺日月血纹、白蜡虫纹和晏南枝指尖；动作：白蜡虫纹碰到残缺血纹，血纹被逼亮一瞬，晏南枝用指甲刮掉白蜡虫纹，指尖被割出血珠；摄影：俯角极近插入，画面静止让四拍后三、四完成，局部重绘血纹短亮、刮除路径和血珠；灯光：虫蜡白与金赤血纹短亮分色，高光只在微距区域；连续性锚点：血牒仍藏在衣内半遮蔽，污染未满三层；风格限制：规则动作清楚，不增加解释性奇观。",
-      "negative_prompt_notes": "避免血牒完整正面、满三层白册、金赤和虫蜡白混色、指尖无血、刮除动作不清。",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，沈维桑的反应与对话压力，沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on Shen Weisang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑的反应与对话压力",
+          "en": "Shen Weisang的反应与对话压力"
+        },
+        "action": {
+          "zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "FX_WHITE_WAX_INSECT_MARK_E03",
-        "CHAR_YAN_NANZHI_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "油纸血牒边缘局部",
-        "残缺日月血纹局部",
-        "晏南枝指甲与指尖血",
-        "可刮除白蜡虫纹"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC002-SH005",
       "generation_method": "I2V",
-      "prompt": "主体：晏南枝指尖血、压回衣内的油纸血牒、沈维桑肩后近景和白石南北线背景；动作：沈维桑看见异样，晏南枝把血牒压回衣内，说明清明香在记它，三层后会变成白册能追的味；摄影：双人近景，从沈维桑肩后看晏南枝，轻横移保持血牒按压手和两人表情同屏；灯光：冷灰白石反光照脸，衣襟下沿残留灰白清明香，虫蜡白高光退下；连续性锚点：保血牒与旧名证据相关，不显得弃活人，血牒不展开，沈维桑左臂仍不可用；风格限制：克制对话镜头，用手部和指血承载规则。",
-      "negative_prompt_notes": "避免晏南枝冷漠站定讲解、血牒展开成圣物、白册提前出现、沈维桑左臂活动。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：沈维桑一把按住她的袖口。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in mountain refugee ditch. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：沈维桑一把按住她的袖口。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in mountain refugee ditch."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_YAN_NANZHI_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "晏南枝指尖血与按回血牒姿态",
-        "沈维桑肩后近景",
-        "白石南北线背景",
-        "衣襟残留清明香"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC002-SH006",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑右手举起烧焦发绳、晏南枝护血牒站位、南北路线同屏；动作：沈维桑以妹妹在车上反压北线，晏南枝说明血牒是旧名证据，追兵声逼近，清明香渐浓；摄影：中近景两人平视，先推发绳再回到分叉，首尾帧锁南左下北右上；灯光：白石冷灰，南北金赤线都窄，北线向右上更明确，灰白清明香从下沿加重但不攻击；连续性锚点：北线救人与南线旧名证据同时成立，血牒只在衣内轮廓，左臂不可用；风格限制：冲突紧张但不改写角色动机。",
-      "negative_prompt_notes": "避免路线方向混乱、血牒外露、晏南枝显得只护纸不护人、清明香攻击人物、左臂举起。",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：诱线奴兵笑。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：诱线奴兵笑。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "FX_QINGMING_INCENSE_E03",
-        "LOC_E03_RELAY_ENTRANCE"
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
       ],
       "required_assets": [
-        "南左下北右上线刻同屏参考",
-        "沈维桑右手举发绳",
-        "晏南枝护血牒站位",
-        "清明香渐浓低位烟线"
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，清明香，镜头压到清明香，让其承载本场信息：沈维桑也笑，眼睛看向它腰侧气味牌。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record. Hold on the key prop or trace in mountain refugee ditch; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "清明香",
+          "en": "grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record"
+        },
+        "action": {
+          "zh": "镜头压到清明香，让其承载本场信息：沈维桑也笑，眼睛看向它腰侧气味牌。",
+          "en": "Hold on the key prop or trace in mountain refugee ditch; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH008",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：诱线奴兵手腕一转，白册小签露出。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：诱线奴兵手腕一转，白册小签露出。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，山道难民沟出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：诱线奴兵接近。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "山道难民沟出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：诱线奴兵接近。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
+      ]
+    },
+    {
+      "shot_id": "SC002-SH010",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 山道难民沟，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝拔出袖中短匕，割断一根黏网绳。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In mountain refugee ditch, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝拔出袖中短匕，割断一根黏网绳。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "山道难民沟",
+          "en": "mountain refugee ditch"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_MOUNTAIN_REFUGEE_DITCH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_QINGMING_REGISTER",
+        "FX_QINGMING_INCENSE"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_mountain_refugee_ditch.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_qingming_register.png"
       ]
     },
     {
       "shot_id": "SC003-SH001",
-      "generation_method": "I2V",
-      "prompt": "主体：白石窄廊、两人逃亡背影、断续亮纹和交叉螳刃影；动作：两人沿窄廊前行，后方两道黑绿刃影交叉追上，刃尖在白石墙划出新白痕；摄影：中景后退跟拍，走廊后侧低角手持，末尾甩到墙面白痕；灯光：断续金赤墙脚线弱亮，黑绿刃影局部硬光，白石新刮痕冷灰反差可读；连续性锚点：追兵只以刃影和黑绿局部出现，沈维桑靠后且左臂垂落，窄廊只够错身；风格限制：追逃压迫，不展开战斗。",
-      "negative_prompt_notes": "避免完整怪物潮、宽阔战斗空间、沈维桑左臂摆动、刃痕不可读、金赤线变导航光。",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，旧井废口与沈维桑，旧井废口按剧本时间建立，两人冲到火后旧井另一侧。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on 旧井废口与Shen Weisang. Establish ruined old-well mouth and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧井废口与沈维桑",
+          "en": "旧井废口与Shen Weisang"
+        },
+        "action": {
+          "zh": "旧井废口按剧本时间建立，两人冲到火后旧井另一侧。",
+          "en": "Establish ruined old-well mouth and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in vertical composition."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_NARROW_CORRIDOR",
-        "FX_PURSUER_PARTIAL_PRESSURE_E03",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "required_assets": [
-        "白石窄廊低光参考",
-        "两人逃亡背影",
-        "螳刃黑影交叉",
-        "白石墙新刮痕"
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
       ]
     },
     {
       "shot_id": "SC003-SH002",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑左肩血布、失效猎弓与箭；动作：他本能摸弓，左臂只抬一寸就抽紧失力，弓弦擦手，箭掉在地上；摄影：侧后方近景贴左肩和猎弓，随左臂上移后切箭落地，首尾帧锁失败动作和箭的位置；灯光：冷灰侧光照出浸血左肩，弓弦和箭尖有细高光，背景保留追兵暗影；连续性锚点：禁止拉满弓，箭落地为右手短刺做准备，左臂从此再次确认不可用；风格限制：疼痛真实、动作降级清楚。",
-      "negative_prompt_notes": "避免英雄式拉弓、箭已射出、左臂恢复、血布不可见、背景变成大打斗。",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，沈维桑，井壁有罗青禾曾用草药灰遮住的刻痕。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on Shen Weisang. Visualize the scripted beat in ruined old-well mouth, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "井壁有罗青禾曾用草药灰遮住的刻痕。",
+          "en": "Visualize the scripted beat in ruined old-well mouth, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_SWS_BOW_DISABLED_E03",
-        "LOC_E03_NARROW_CORRIDOR"
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "required_assets": [
-        "沈维桑左肩血布",
-        "失效猎弓与箭",
-        "窄廊侧后近景",
-        "箭落地特写"
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
       ]
     },
     {
       "shot_id": "SC003-SH003",
-      "generation_method": "I2V",
-      "prompt": "主体：地面箭矢、沈维桑右手旧皮护腕、晏南枝横身短刀和窄廊追兵虚焦压力；动作：晏南枝指出他拉不了弓，沈维桑弯腰用右手捡箭，把箭攥成短刺收向胸前；摄影：低角近景从地面箭矢仰看右手，随右手抓箭上提；灯光：箭尖冷光，右手被墙脚微弱金赤扫过，背景黑绿压力虚焦；连续性锚点：沈维桑改用右手短刺，左臂不可用，晏南枝短刀护路不抢焦；风格限制：求生工具感，不把箭变成长枪或神兵。",
-      "negative_prompt_notes": "避免箭变新武器、左手抓箭、晏南枝短刀变华丽宝刀、追兵完整露脸、动作过度潇洒。",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，半枚日月驿令，镜头压到半枚日月驿令，让其承载本场信息：沈维桑用驿令抵住刻痕，白石井壁裂开一道低矮暗门。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment. Hold on the key prop or trace in ruined old-well mouth; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "半枚日月驿令",
+          "en": "half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment"
+        },
+        "action": {
+          "zh": "镜头压到半枚日月驿令，让其承载本场信息：沈维桑用驿令抵住刻痕，白石井壁裂开一道低矮暗门。",
+          "en": "Hold on the key prop or trace in ruined old-well mouth; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "PROP_SWS_BOW_DISABLED_E03",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "LOC_E03_NARROW_CORRIDOR"
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "required_assets": [
-        "地面箭矢和石粉",
-        "沈维桑右手旧皮护腕",
-        "晏南枝短刀横身",
-        "窄廊追兵虚焦压力"
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
       ]
     },
     {
       "shot_id": "SC003-SH004",
-      "generation_method": "FLF2V",
-      "prompt": "主体：黑绿甲壳拐角掠影、晏南枝短刀、地面湿痕和沈维桑右指；动作：甲壳从拐角闪过，晏南枝短刀横身提醒看路，沈维桑蹲下用右指摸湿痕并低声让她别挡光；摄影：中近景转贴地插入，先平视追兵掠影，再拉焦到低角地面右指，首尾帧锁观察转场；灯光：黑绿高光只闪拐角，湿痕用冷灰半档亮度差读出；连续性锚点：追兵局部出现，沈维桑先观察地面不靠能力导航，左臂垂在身侧不撑地；风格限制：从追压转推理，证据比怪物更清楚。",
-      "negative_prompt_notes": "避免完整怪物、湿痕看不见、左臂撑地、短刀攻击胜利、灵翼残纹提前出现。",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，沈维桑的反应与对话压力，沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on Shen Weisang的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑的反应与对话压力",
+          "en": "Shen Weisang的反应与对话压力"
+        },
+        "action": {
+          "zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "LOC_E03_NARROW_CORRIDOR",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
       ],
       "required_assets": [
-        "黑绿甲壳拐角掠影",
-        "晏南枝短刀横身",
-        "地面湿痕冷灰边光",
-        "沈维桑右指观察"
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH005",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：晏南枝脸色一紧，几乎要按礼回应。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in ruined old-well mouth. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：晏南枝脸色一紧，几乎要按礼回应。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in ruined old-well mouth."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH006",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：沈维桑捂住她嘴。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：沈维桑捂住她嘴。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH007",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，半枚日月驿令，镜头压到半枚日月驿令，让其承载本场信息：他朝井边丢出一块刻错暗号的木牌。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment. Hold on the key prop or trace in ruined old-well mouth; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "半枚日月驿令",
+          "en": "half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment"
+        },
+        "action": {
+          "zh": "镜头压到半枚日月驿令，让其承载本场信息：他朝井边丢出一块刻错暗号的木牌。",
+          "en": "Hold on the key prop or trace in ruined old-well mouth; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH008",
+      "generation_method": "FLF2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：诱线奴兵果然追错方向，踩进沈维桑临时拉起的草绳陷阱，被吊倒在井架下。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：诱线奴兵果然追错方向，踩进沈维桑临时拉起的草绳陷阱，被吊倒在井架下。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，旧井废口出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑识破暗语。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧井废口出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑识破暗语。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
+      ]
+    },
+    {
+      "shot_id": "SC003-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧井废口，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝望着他，第一次不再把他当普通山民。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In ruined old-well mouth, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：晏南枝望着他，第一次不再把他当普通山民。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "旧井废口",
+          "en": "ruined old-well mouth"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "required_assets": [
+        "assets/placeholders/loc_old_well_ruined_mouth.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_luo_qinghe.png",
+        "assets/placeholders/ch_suming_slave_soldier.png",
+        "assets/placeholders/prop_half_relay_token.png"
       ]
     },
     {
       "shot_id": "SC004-SH001",
-      "generation_method": "REFERENCE_IMAGE",
-      "prompt": "主体：旧驿测绘廊三道矮门、三短一长测线、沈维桑右手箭短刺低垂和晏南枝左后警戒；动作：两人进入后停步，沈维桑先看地面，再扫左中右三门；摄影：短全景正面平视三门，静止建立左中右，人物低位不遮门；灯光：冷灰低光保留三门轮廓，观察物位置有窄束边缘光，无金赤导航；连续性锚点：三门观察必须发生在灵翼残纹之前，沈维桑左臂垂落，血牒继续隐藏；风格限制：参考帧要锁透视、门距和测线，不做迷宫奇观。",
-      "negative_prompt_notes": "避免三门透视不稳、人物遮住门、金赤路线提前导航、左臂可用、血牒外露。",
+      "generation_method": "T2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，旧驿暗道与沈维桑，旧驿暗道按剧本时间建立，暗道窄而低，白石拱顶剥落，日月双印被虫蜡白泥盖过。 构图保持竖屏远景，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on 旧驿暗道与Shen Weisang. Establish old relay tunnel and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in vertical composition. Use vertical wide establishing shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧驿暗道与沈维桑",
+          "en": "旧驿暗道与Shen Weisang"
+        },
+        "action": {
+          "zh": "旧驿暗道按剧本时间建立，暗道窄而低，白石拱顶剥落，日月双印被虫蜡白泥盖过。",
+          "en": "Establish old relay tunnel and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in vertical composition."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "竖屏远景，平视贴近人物，慢推",
+          "en": "vertical wide establishing shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAPPING_GALLERY",
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_SWS_BOW_DISABLED_E03",
-        "CHAR_YAN_NANZHI_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "旧驿测绘廊三道矮门正面透视",
-        "三短一长测线",
-        "沈维桑右手箭短刺低垂",
-        "晏南枝左后警戒"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
       "shot_id": "SC004-SH002",
       "generation_method": "I2V",
-      "prompt": "主体：左门倒渗湿痕、中门灰线、右门石栓向外磨痕和新刮痕；动作：镜头低角贴地从左到右扫描，沈维桑只用眼神和右手指向每个物理证据；摄影：连续插入，缓慢横移，先水、再灰、再磨痕、最后新刮痕，停在右门；灯光：水珠冷亮，灰线干白，刮痕冷硬白线，每个证据保留半档亮度差；连续性锚点：三门判断先物理证据，尚不触发灵翼残纹，左臂不可用；风格限制：证据扫描清楚，不靠台词或能力替代观察。",
-      "negative_prompt_notes": "避免证据顺序错乱、左中右门混淆、金赤残纹提前、右手变成施法、低光吞掉灰线。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，沈维桑，半枚驿令只能点亮断续路线。 构图保持中景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on Shen Weisang. Visualize the scripted beat in old relay tunnel, preserving canon and physical continuity. Use medium shot, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑",
+          "en": "Shen Weisang"
+        },
+        "action": {
+          "zh": "半枚驿令只能点亮断续路线。",
+          "en": "Visualize the scripted beat in old relay tunnel, preserving canon and physical continuity."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "中景，微低角压迫空间，手持短跟",
+          "en": "medium shot, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAPPING_GALLERY",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "左门倒渗湿痕",
-        "中门灰线被吸入",
-        "右门石栓向外磨痕",
-        "右门新刮痕"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
       "shot_id": "SC004-SH003",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑右侧脸、吹出的灰尘、中门空坠和右门细风卷灰；动作：沈维桑用口吹灰、右手遮光，灰进中门直坠不见，到右门被细风卷回，门后传来低低刮石声；摄影：近景转特写，跟随灰尘轨迹，首尾帧锁灰从吹出到右门回卷；灯光：灰尘靠冷灰边光可读，右门风不发光，无路线光导航；连续性锚点：物理观察继续优先，左臂不可用且不撑墙，追兵只在声音和暗部压力中存在；风格限制：风和灰是推理证据，不是魔法效果。",
-      "negative_prompt_notes": "避免灰尘发光、风变能力导航、中门和右门方向错、左臂遮光或撑地、追兵露脸。",
+      "generation_method": "REFERENCE_IMAGE",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，清明白册，镜头压到清明白册，让其承载本场信息：晏南枝用血牒靠近石壁。 构图保持近景，俯视读路线和人群，静止锁定。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on Qingming white register used for name testing, tracking, false entries and erasure. Hold on the key prop or trace in old relay tunnel; the insert carries the scripted information without adding extra plot. Use close shot, 俯视读路线和人群 and 静止锁定.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "清明白册",
+          "en": "Qingming white register used for name testing, tracking, false entries and erasure"
+        },
+        "action": {
+          "zh": "镜头压到清明白册，让其承载本场信息：晏南枝用血牒靠近石壁。",
+          "en": "Hold on the key prop or trace in old relay tunnel; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "近景，俯视读路线和人群，静止锁定",
+          "en": "close shot, 俯视读路线和人群, 静止锁定"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAPPING_GALLERY",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "沈维桑右侧脸吹灰",
-        "中门空坠灰尘",
-        "右门细风卷灰",
-        "右门后低刮声暗部"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
       "shot_id": "SC004-SH004",
       "generation_method": "I2V",
-      "prompt": "主体：沈维桑、晏南枝、右门旧石栓和背景里的中门暗空左门湿痕；动作：晏南枝问哪边，沈维桑指出中门下塌空、右门后有东西，右手缓慢伸向旧石栓；摄影：双人中近景，右门侧前方平视，推近将触未触的石栓；灯光：石栓边缘冷灰清楚，金赤残纹尚未出现，三门背景保持低光可读；连续性锚点：判断来自水、灰、风、磨痕和刮痕，沈维桑右手触石栓，左臂不撑墙；风格限制：悬念来自观察因果，不新增神秘解释。",
-      "negative_prompt_notes": "避免观众误读为能力选门、金赤残纹提前、左臂扶墙、箭短刺刺门、三门背景消失。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，晏南枝的反应与对话压力，晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。 构图保持特写，侧前方保持人物与道具同框，横移扫证据。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on Yan Nanzhi的反应与对话压力. Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio. Use close-up, 侧前方保持人物与道具同框 and 横移扫证据.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "晏南枝的反应与对话压力",
+          "en": "Yan Nanzhi的反应与对话压力"
+        },
+        "action": {
+          "zh": "晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
+          "en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "特写，侧前方保持人物与道具同框，横移扫证据",
+          "en": "close-up, 侧前方保持人物与道具同框, 横移扫证据"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAPPING_GALLERY",
-        "CHAR_SHEN_WEISANG_E03",
-        "CHAR_YAN_NANZHI_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "右门旧石栓",
-        "沈维桑右手将触未触",
-        "晏南枝侧脸",
-        "中门暗空和左门湿痕背景"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
       "shot_id": "SC004-SH005",
-      "generation_method": "REDRAW",
-      "prompt": "主体：沈维桑右手触石栓、眼角金赤残纹、左肩血布痛感和复发鼻血；动作：触碰旧石栓后左肩像火针扎穿，眼角和肩胛方向金赤短闪，旧铜针回音与断裂闷响后他缩手，鼻血落下；摄影：极近到近景闪切，局部重绘眼角残纹、肩胛短光、鼻血和石栓触点；灯光：金赤只短促局部，不照亮路线、不标敌，冷灰三门背景保持；连续性锚点：灵翼残纹只回应旧驿断裂结构，观察已先完成，左肩痛和鼻血是代价；风格限制：残纹是残响不是导航。",
-      "negative_prompt_notes": "避免金赤扩成路线光、残纹标敌或找路、左臂恢复、鼻血缺失、全身发光。",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，沈维桑 / 晏南枝，把剧本动作拆成真实重心的身体行动：晏南枝沉默。 构图保持中近景，贴地读脚步和痕迹，快速摇移接动作。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on Shen Weisang / Yan Nanzhi. Show the scripted action with real weight, contact reaction and readable motion path in old relay tunnel. Use medium close-up, 贴地读脚步和痕迹 and 快速摇移接动作.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "沈维桑 / 晏南枝",
+          "en": "Shen Weisang / Yan Nanzhi"
+        },
+        "action": {
+          "zh": "把剧本动作拆成真实重心的身体行动：晏南枝沉默。",
+          "en": "Show the scripted action with real weight, contact reaction and readable motion path in old relay tunnel."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "中近景，贴地读脚步和痕迹，快速摇移接动作",
+          "en": "medium close-up, 贴地读脚步和痕迹, 快速摇移接动作"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "FX_SPIRIT_WING_REMNANT_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "LOC_E03_MAPPING_GALLERY"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "沈维桑右手触石栓近景",
-        "沈维桑眼角金赤残纹",
-        "左肩血布痛感",
-        "鼻血复发"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
       "shot_id": "SC004-SH006",
       "generation_method": "I2V",
-      "prompt": "主体：右门下低缝、沈维桑右手持箭尖、灰土和细石；动作：沈维桑用箭尖拨开右门下灰土，露出贴地检修缝，并说明残纹只回应旧驿断裂；摄影：低角插入，贴地看箭尖拨灰，慢推入低缝；灯光：冷灰边光勾出缝口和灰粒，金赤残纹已退，低缝内保持黑但有轮廓；连续性锚点：检修缝是右门下方入口，右手动作，左臂不可用；风格限制：入口狭窄压迫，箭尖是拨灰工具不是攻击。",
-      "negative_prompt_notes": "避免低缝过宽、箭尖变攻击、残纹继续导航、左臂撑地、缝内亮成通道。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，追捕压力或对手反制，对手或环境升级，迫使人物改变路线：沈维桑把一枚旧绳结从墙缝里取出。 构图保持低角全景，门缝/遮挡后窥视，由道具拉焦到人物。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on scripted subject and continuity prop. Show the opposing pressure or environmental response forcing a route change. Use low-angle full shot, 门缝/遮挡后窥视 and 由道具拉焦到人物.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "追捕压力或对手反制",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "对手或环境升级，迫使人物改变路线：沈维桑把一枚旧绳结从墙缝里取出。",
+          "en": "Show the opposing pressure or environmental response forcing a route change."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物",
+          "en": "low-angle full shot, 门缝/遮挡后窥视, 由道具拉焦到人物"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAINTENANCE_SLIT",
-        "PROP_SWS_BOW_DISABLED_E03",
-        "FX_SPIRIT_WING_REMNANT_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "右门下低缝",
-        "箭尖拨灰",
-        "灰土和细石",
-        "测绘廊右门门槛"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
-      "shot_id": "SC005-SH001",
-      "generation_method": "FLF2V",
-      "prompt": "主体：贴地检修缝、晏南枝压胸口护血牒、沈维桑右手撑地和左臂拖血细线；动作：晏南枝先贴地钻入，血牒压在胸口不外露，沈维桑最后过，右手撑地，左臂在石缝上擦出细血线；摄影：低角近景从检修缝侧面拍，跟晏南枝入缝后回拉沈维桑，首尾帧锁过缝顺序；灯光：缝内窄冷灰反光，血线湿亮，无额外照明；连续性锚点：晏南枝先钻、沈维桑最后过，左臂拖行不可用，血牒隐藏；风格限制：身体压缩真实，低缝不能变普通走廊。",
-      "negative_prompt_notes": "避免沈维桑先过、血牒外露、左臂撑地、检修缝过宽、身体变形或漂浮。",
-      "continuity_refs": [
-        "LOC_E03_MAINTENANCE_SLIT",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "CHAR_YAN_NANZHI_E03"
-      ],
-      "required_assets": [
-        "检修缝贴地侧面参考",
-        "晏南枝压胸口护血牒",
-        "沈维桑右手撑地",
-        "左臂拖血细线"
-      ]
-    },
-    {
-      "shot_id": "SC005-SH002",
-      "generation_method": "FLF2V",
-      "prompt": "主体：检修缝低石卡点、黑绿刃肢局部、沈维桑靴跟和火星；动作：刃肢探入检修缝只伸半尺就被低石卡住，刃尖刮石皮，火星溅到靴跟，沈维桑右脚一蹬滚出；摄影：极低角插入，从靴跟后方看卡点，火星起时快速后撤，首尾帧锁刃肢距离和右脚蹬出；灯光：刃肢黑绿硬高光，火星短亮但不照亮全缝，低石轮廓清楚；连续性锚点：追兵被低石限制，只探半尺，左臂不参与逃脱；风格限制：危险距离可读，不能让追兵钻进来。",
-      "negative_prompt_notes": "避免刃肢越过低石、完整追兵进入、火星照亮全场、左臂推地、靴跟和卡点距离不清。",
-      "continuity_refs": [
-        "LOC_E03_MAINTENANCE_SLIT",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
-      ],
-      "required_assets": [
-        "检修缝低石卡点",
-        "黑绿刃肢局部",
-        "沈维桑靴跟",
-        "火星短亮特效层"
-      ]
-    },
-    {
-      "shot_id": "SC005-SH003",
-      "generation_method": "I2V",
-      "prompt": "主体：断栓岔路、南线完整刻痕、北线封灰和新鲜车轮震落粉末；动作：两人从检修缝后落地，镜头从落地转向北线封灰上的粉末；摄影：中景到插入，检修缝出口低角，落地后转粉末特写；灯光：封灰和粉末用斜侧小光读出颗粒，南线左下完整、北线右上被封灰，金赤只断续弱亮；连续性锚点：粉末来自车轮震落，不是路线光指示，左臂不可用，缝口敲击压力延续；风格限制：地理关系和证据优先。",
-      "negative_prompt_notes": "避免南北方向反转、粉末不可读、驿令发光指路、左臂撑起、缝口危机消失。",
-      "continuity_refs": [
-        "LOC_E03_BROKEN_BOLT_FORK",
-        "LOC_E03_MAINTENANCE_SLIT",
-        "CHAR_SHEN_WEISANG_E03"
-      ],
-      "required_assets": [
-        "断栓岔路低角参考",
-        "南线完整刻痕",
-        "北线封灰",
-        "新鲜车轮震落粉末"
-      ]
-    },
-    {
-      "shot_id": "SC005-SH004",
-      "generation_method": "I2V",
-      "prompt": "主体：沈维桑右指粉末特写、北线封灰、晏南枝质疑半脸和右腕发绳边缘；动作：沈维桑用右指抹起粉末判断他们走过北线，晏南枝提醒可能是陷阱，他回应新灰盖不住车震；摄影：近景，从指腹粉末拉焦到两人半脸，背景保留北线右上断点；灯光：粉末干白、石灰冷灰，人物脸低光边缘可读；连续性锚点：判断来自物理粉末证据，发绳持续牵引照眠，左臂不可用；风格限制：推理短促，不靠能力或地图。",
-      "negative_prompt_notes": "避免粉末变发光线、晏南枝质疑变成阻拦救人、左手抹粉、北线方向错、表情过亮戏剧化。",
-      "continuity_refs": [
-        "LOC_E03_BROKEN_BOLT_FORK",
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "CHAR_YAN_NANZHI_E03"
-      ],
-      "required_assets": [
-        "沈维桑右指粉末特写",
-        "断栓岔路北线封灰",
-        "晏南枝质疑半脸",
-        "右腕发绳边缘"
-      ]
-    },
-    {
-      "shot_id": "SC005-SH005",
-      "generation_method": "FLF2V",
-      "prompt": "主体：晏南枝抓住沈维桑右腕、烧焦发绳、开裂缝口和反握短刀；动作：晏南枝抓右腕说旧印保护过不该被改名的人，沈维桑追问照眠未获完整回答，裂声打断后她放开右腕反握短刀准备先过塌门；摄影：双人近景，右腕抓握特写转眼神，随裂声轻晃后落到短刀，首尾帧锁发绳和短刀转向；灯光：冷灰低光，短刀刃口一线硬光，血牒仍藏在衣内；连续性锚点：旧名证据与北线救人并存，晏南枝不碰左肩，左臂不可用；风格限制：不新增秘密解释，行动导向塌门。",
-      "negative_prompt_notes": "避免抓住左肩、发绳被遮没、血牒外露、短刀变神化钥匙、完整解决沈照眠问题。",
-      "continuity_refs": [
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "LOC_E03_BROKEN_BOLT_FORK",
-        "PROP_BLOOD_RECORD_HIDDEN_E03"
-      ],
-      "required_assets": [
-        "右腕发绳被抓握特写",
-        "晏南枝短刀反握",
-        "断栓岔路开裂缝口",
-        "两人低光近景"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH001",
+      "shot_id": "SC004-SH007",
       "generation_method": "REFERENCE_IMAGE",
-      "prompt": "主体：半塌石门门线、门外追兵廊、门内右侧图室窄口、裂开的上栓和旧灰咬死的下栓；动作：镜头先锁门线，再下摇扫上栓裂与下栓死，为后续塌门因果建立空间；摄影：短全景加插入，门内侧斜角，门线竖向斜置，右侧窄口必须清楚；灯光：门内冷灰，门外黑绿压墙，栓缝灰尘侧光可读；连续性锚点：塌门前必须建立门线、追兵廊、图室窄口、上栓裂、下栓死，石门斜向追兵廊落下；风格限制：参考帧锁透视，不做大机关奇观。",
-      "negative_prompt_notes": "避免跳过门线、图室窄口不清、上下栓像现代机械、石门落向错误、追兵完整展示。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，残缺驿道图，镜头压到残缺驿道图，让其承载本场信息：绳结上有沈季衡的测绘记号。 构图保持过肩中景，反打压住表情代价，后退跟拍。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on fragmented relay-route map sealed under lime, pointing north through Jinhe, the Ash Academy and Wall-foot market. Hold on the key prop or trace in old relay tunnel; the insert carries the scripted information without adding extra plot. Use over-the-shoulder medium shot, 反打压住表情代价 and 后退跟拍.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "残缺驿道图",
+          "en": "fragmented relay-route map sealed under lime, pointing north through Jinhe, the Ash Academy and Wall-foot market"
+        },
+        "action": {
+          "zh": "镜头压到残缺驿道图，让其承载本场信息：绳结上有沈季衡的测绘记号。",
+          "en": "Hold on the key prop or trace in old relay tunnel; the insert carries the scripted information without adding extra plot."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "过肩中景，反打压住表情代价，后退跟拍",
+          "en": "over-the-shoulder medium shot, 反打压住表情代价, 后退跟拍"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_COLLAPSE_GATE",
-        "CHAR_PURSUERS_PARTIAL_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "半塌石门门线透视",
-        "门外追兵廊黑绿暗影",
-        "门内右侧图室窄口",
-        "裂开的上栓和旧灰咬死的下栓"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
-      "shot_id": "SC006-SH002",
-      "generation_method": "FLF2V",
-      "prompt": "主体：晏南枝进入右侧图室窄口、短刀插入下栓缝、沈维桑右肩抵门；动作：晏南枝先挤进右侧窄口插刀，沈维桑跨过门线，用右肩抵住门内侧，右脚站稳，左臂完全垂着；摄影：中近景门线内侧平视，横移从窄口到右肩抵门，首尾帧锁正确站位；灯光：短刀冷光，门外黑绿压力从缝隙压入，无金赤能力加持；连续性锚点：晏南枝先入窄口，沈维桑只用右肩右脚，左臂不推门，驿令不参与塌门；风格限制：实用协作和空间因果清楚。",
-      "negative_prompt_notes": "避免晏南枝站错门外、沈维桑用左臂推门、短刀变机关钥匙、门线消失、金赤加持。",
-      "continuity_refs": [
-        "LOC_E03_COLLAPSE_GATE",
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "CHAR_YAN_NANZHI_E03"
-      ],
-      "required_assets": [
-        "晏南枝挤入右侧窄口",
-        "短刀插入下栓缝",
-        "沈维桑右肩抵门",
-        "塌门门线母版"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH003",
-      "generation_method": "FLF2V",
-      "prompt": "主体：追兵刃肢压墙局部、下栓尾端、沈维桑右掌根、鼻血和左肩洇血；动作：追兵撞开右门刃肢交错探出，晏南枝让他只松栓，沈维桑右掌根短促顶下栓尾端，只震落灰，石栓松半寸，鼻血滴下；摄影：近景组接，追兵压墙切下栓侧角，掌根吐劲时轻震，首尾帧锁半寸缝；灯光：冷灰灰尘、黑绿刃肢局部高光，无爆发强光；连续性锚点：沈维桑只用右掌根、右肩、右脚，不蛮力砸门，左臂不可用，伤势代价清楚；风格限制：结构微动作，不拍英雄爆发。",
-      "negative_prompt_notes": "避免石门被蛮力砸飞、左臂出力、栓缝过大、追兵完整进门、鼻血和肩血缺失。",
-      "continuity_refs": [
-        "LOC_E03_COLLAPSE_GATE",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
-      ],
-      "required_assets": [
-        "右掌根顶下栓尾端",
-        "追兵刃肢压墙局部",
-        "石栓半寸缝",
-        "鼻血和左肩洇血"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH004",
-      "generation_method": "FLF2V",
-      "prompt": "主体：晏南枝短刀反手撬下栓、下栓脱槽、上栓裂纹咬断；动作：她抓住半寸缝反手一撬，下栓脱槽，上栓裂纹跟着咬断，石门开始失重；摄影：插入特写，贴近栓缝短刀，从下栓上摇到上栓裂纹，首尾帧锁由下到上的因果链；灯光：栓缝侧光打出石粉，短刀冷光克制，无金赤参与；连续性锚点：晏南枝借半寸缝撬动，短刀是工具不是神化钥匙，沈维桑右肩仍抵门且左臂不可用；风格限制：塌门由结构失衡触发，动作链清楚。",
-      "negative_prompt_notes": "避免短刀发光开机关、上下栓因果断开、沈维桑单独砸门、现代金属机关、画面过亮。",
-      "continuity_refs": [
-        "PROP_YNZ_SHORT_KNIFE_E03",
-        "LOC_E03_COLLAPSE_GATE",
-        "CHAR_YAN_NANZHI_E03",
-        "CHAR_SHEN_WEISANG_E03"
-      ],
-      "required_assets": [
-        "晏南枝短刀反手撬栓",
-        "下栓脱槽",
-        "上栓裂纹咬断",
-        "石粉和栓缝侧光"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH005",
-      "generation_method": "FLF2V",
-      "prompt": "主体：半塌石门斜落、门外刃肢被隔住、右侧图室窄口和门缝火星；动作：石门失重斜向追兵廊砸下，没有震飞追兵，只把刃肢隔在外侧，门外疯狂刮擦，火星从缝里溅入，沈维桑右肩脱力后退；摄影：中景门内侧斜角，窄口在右，随门外落下压后停在门缝火星，首尾帧锁落向追兵廊；灯光：火星短亮，门外黑绿压力持续，画面不全亮；连续性锚点：塌门只隔断刃肢，危机未解除，晏南枝在右侧窄口避让，左臂不可用；风格限制：隔断而非胜利杀伤。",
-      "negative_prompt_notes": "避免震飞或杀死追兵、完整怪物倒地、石门落向图室、火星爆成大爆炸、左臂恢复。",
-      "continuity_refs": [
-        "LOC_E03_COLLAPSE_GATE",
-        "CHAR_PURSUERS_PARTIAL_E03",
-        "CHAR_SHEN_WEISANG_E03"
-      ],
-      "required_assets": [
-        "半塌石门斜落轨迹",
-        "门外刃肢被隔住局部",
-        "右侧图室窄口",
-        "门缝火星和石粉"
-      ]
-    },
-    {
-      "shot_id": "SC006-SH006",
+      "shot_id": "SC004-SH008",
       "generation_method": "I2V",
-      "prompt": "主体：沈维桑跪倒咳血沫、右手护右腕发绳、晏南枝伸手扶右肩和塌门缝外火星刮擦；动作：他跪倒后先护发绳，说别碰左肩，晏南枝避开左肩扶右肩，二人确认只能走旧驿；摄影：低角近景，下沉到血沫发绳再抬脸；灯光：冷灰低光，血沫暗红湿亮，门外火星偶发且刮擦不停；连续性锚点：塌门只暂时隔住追兵，左肩不可碰，左臂不可用，发绳持续牵引北线救人；风格限制：危机保留，伤势真实。",
-      "negative_prompt_notes": "避免晏南枝碰左肩、门外完全安静、沈维桑恢复站稳、发绳消失、塌门变成安全胜利。",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，角色代价与价值选择，停留在角色代价，不用旁白解释；动作锚点来自本场事实：暗道尽头，一块残图被石灰封住。 构图保持插入特写，长焦压缩追捕距离，轻微下压。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on scripted subject and continuity prop. Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text. Use insert close-up, 长焦压缩追捕距离 and 轻微下压.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "角色代价与价值选择",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：暗道尽头，一块残图被石灰封住。",
+          "en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "插入特写，长焦压缩追捕距离，轻微下压",
+          "en": "insert close-up, 长焦压缩追捕距离, 轻微下压"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "CHAR_SHEN_WEISANG_E03",
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "LOC_E03_COLLAPSE_GATE",
-        "CHAR_YAN_NANZHI_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "沈维桑跪倒咳血沫",
-        "右手护右腕发绳",
-        "晏南枝伸手扶右肩",
-        "塌门缝外刮擦火星"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
-      "shot_id": "SC007-SH001",
-      "generation_method": "REFERENCE_IMAGE",
-      "prompt": "主体：旧驿图室密集刻线墙、塌门后灰风、沈维桑右掌半枚驿令和晏南枝隐蔽血牒站位；动作：灰风吹开露出窄小图室，驿令在沈维桑右掌发热，他没有按墙，只靠近图墙；摄影：短全景到近景，从塌门内侧看图墙，随灰风慢推右掌驿令；灯光：图室冷灰晨前低光，掌心仅有金赤余热，门外刮擦火星在后景；连续性锚点：图室是逃亡接口不是解谜终点，血牒仍隐藏，左臂垂落，驿令不当手电；风格限制：锁定图室空间和刻线母版。",
-      "negative_prompt_notes": "避免图室宏大华丽、驿令按墙开全图、血牒外露、左臂抬起、门外危机消失。",
+      "shot_id": "SC004-SH009",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，旧驿暗道出口与下一步路线，人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：残缺路线指向北境。 构图保持手持跟拍，平视贴近人物，慢推。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on scripted subject and continuity prop. Move the characters through the established entrance or exit, preserving screen direction toward the next scene. Use handheld tracking shot, 平视贴近人物 and 慢推.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧驿暗道出口与下一步路线",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：残缺路线指向北境。",
+          "en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "手持跟拍，平视贴近人物，慢推",
+          "en": "handheld tracking shot, 平视贴近人物, 慢推"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAP_ROOM",
-        "PROP_HALF_RELAY_TOKEN_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03",
-        "CHAR_SHEN_WEISANG_E03"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "旧驿图室密集刻线墙",
-        "塌门后灰风和门外刮擦后景",
-        "沈维桑右掌半枚驿令",
-        "晏南枝隐蔽血牒站位"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     },
     {
-      "shot_id": "SC007-SH002",
-      "generation_method": "REDRAW",
-      "prompt": "主体：图墙南左下北右上刻线、南线隐歌、北线和金河磨盘形小印；动作：南线在左下先亮到隐歌后迅速暗下，北线一截截向右上亮起，穿过磨盘小印，残字浮出金河；摄影：图墙插入特写，贴墙平角，从南线横移到北线，局部重绘分段金赤路线和金河残字；灯光：金赤路线分段短亮，不变完整地图，不照亮全室；连续性锚点：南左下北右上保持清楚，图室只建立金河路线接口，不抵达也不解释真相；风格限制：石墙刻线颗粒和路线方向优先。",
-      "negative_prompt_notes": "避免完整地图展开、南北方向反转、金赤照亮全室、月下盟书真相被解释、人物遮挡金河小印。",
+      "shot_id": "SC004-SH010",
+      "generation_method": "I2V",
+      "prompt_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。 旧驿暗道，本场尾部危险，用声源、道具或远处压力收住本场，形成下一场牵引：金赤残纹在二人脚下熄灭，只剩北方一线微光。 构图保持反应近景，微低角压迫空间，手持短跟。",
+      "prompt_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths. In old relay tunnel, focus on scripted subject and continuity prop. End the scene with a visible or audible threat that pulls the story into the next beat. Use reaction close-up, 微低角压迫空间 and 手持短跟.",
+      "negative_prompt_notes_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
+      "negative_prompt_notes_en": "avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.",
+      "prompt_layers": {
+        "subject": {
+          "zh": "本场尾部危险",
+          "en": "scripted subject and continuity prop"
+        },
+        "action": {
+          "zh": "用声源、道具或远处压力收住本场，形成下一场牵引：金赤残纹在二人脚下熄灭，只剩北方一线微光。",
+          "en": "End the scene with a visible or audible threat that pulls the story into the next beat."
+        },
+        "environment": {
+          "zh": "旧驿暗道",
+          "en": "old relay tunnel"
+        },
+        "camera": {
+          "zh": "反应近景，微低角压迫空间，手持短跟",
+          "en": "reaction close-up, 微低角压迫空间, 手持短跟"
+        },
+        "lighting_color": {
+          "zh": "按场景 bible 分区色彩和当前场景光源。",
+          "en": "Use the scene-bible color zone and current practical light source."
+        },
+        "style_continuity": {
+          "zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+          "en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths."
+        },
+        "quality_intent": {
+          "zh": "电影级写实，动作可读，连续性优先。",
+          "en": "cinematic realism, readable action, continuity first."
+        }
+      },
       "continuity_refs": [
-        "LOC_E03_MAP_ROOM",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "IFACE_E03_E04_GOLDEN_RIVER_STOP_BLOOD"
+        "LOC_OLD_RELAY_TUNNEL",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_HALF_RELAY_TOKEN",
+        "PROP_QINGMING_REGISTER",
+        "PROP_PRISON_CART",
+        "PROP_OLD_SURVEY_KNOT",
+        "PROP_FRAGMENTED_ROUTE_MAP",
+        "FX_FIRE_SMOKE_ASH",
+        "FX_GOLD_RED_RELAY_LIGHT"
       ],
       "required_assets": [
-        "图墙南左下北右上刻线底图",
-        "金河磨盘形小印",
-        "金赤路线分段亮特效",
-        "残字金河局部"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH003",
-      "generation_method": "REDRAW",
-      "prompt": "主体：图墙更北处金赤光点、雪线刻痕、黑墙纹和晏南枝束发红线手部；动作：更北处光点越过岔线刺亮，旁边露出雪线刻痕和黑墙纹，晏南枝下意识把束发红线绕紧，指节发白；摄影：插入转手部特写，图墙上仰接手部平角，局部重绘北境光点和红线收紧细节；灯光：北境光点只刺一点，金赤与冷灰图墙分离，红线保持暗红低光质感；连续性锚点：北境只作为路线接口，不抵达不解释，血牒不外露，沈维桑左臂不可用；风格限制：反应克制，信息只到边墙接口。",
-      "negative_prompt_notes": "避免展开北境全景、解释真相、血牒外露、光点变完整地图、红线变华丽饰品。",
-      "continuity_refs": [
-        "LOC_E03_MAP_ROOM",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "CHAR_YAN_NANZHI_E03",
-        "PROP_BLOOD_RECORD_HIDDEN_E03"
-      ],
-      "required_assets": [
-        "图墙更北处光点底图",
-        "雪线刻痕和黑墙纹",
-        "晏南枝束发红线手部",
-        "指节发白细节"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH004",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑艰难站起、完全垂落左臂、金河磨盘小印、肩血滴落和图墙北线右上余亮；动作：晏南枝说月下在南不在墙后，沈维桑说旧驿说它在墙后，他用右侧撑起，左臂完全垂着，肩血滴到金河小印下；摄影：中近景到低角插入，侧面平视后慢下摇到血滴，首尾帧锁站起和血滴落点；灯光：金赤残光只照小印边，血滴暗红湿亮，冷灰石墙承接；连续性锚点：左臂不恢复，金河、北境和止血压力合成第04集接口，图室仍不解决谜题；风格限制：痛感和接口信息并重。",
-      "negative_prompt_notes": "避免左臂抬起、血滴落点偏离金河小印、北境接口扩展成剧情解释、图墙全亮。",
-      "continuity_refs": [
-        "CHAR_SHEN_WEISANG_E03",
-        "LOC_E03_MAP_ROOM",
-        "IFACE_E03_E04_GOLDEN_RIVER_STOP_BLOOD",
-        "FX_GOLD_RED_RELAY_LINE_E03"
-      ],
-      "required_assets": [
-        "沈维桑左臂完全垂落中近景",
-        "金河磨盘小印",
-        "肩血滴落特写",
-        "图墙北线右上余亮"
-      ]
-    },
-    {
-      "shot_id": "SC007-SH005",
-      "generation_method": "FLF2V",
-      "prompt": "主体：沈维桑牙齿咬住烧焦发绳、右手系右腕、晏南枝按右肩和图墙北线右上光点；动作：晏南枝按右肩提醒进金河前先止血，沈维桑用牙和右手系紧发绳，目光钉住右上北线，说先金河别让他们抹掉车辙，刮石声和北境光点轻响中黑场；摄影：近景收束，右腕和脸同屏，从系绳推到眼神后落黑，首尾帧锁牙齿右手动作；灯光：冷灰人物底，北线金赤小点保持右上，门外火星偶闪不抢主信息；连续性锚点：左臂不可用，进金河前先止血，北线车辙不能断，血牒仍隐藏；风格限制：收束到第04集金河、止血、车辙接口。",
-      "negative_prompt_notes": "避免左手系绳、晏南枝按左肩、北线光点消失或变全图、血牒外露、门外危机静音。",
-      "continuity_refs": [
-        "PROP_BURNT_HAIR_RIBBON_E03",
-        "CHAR_SHEN_WEISANG_E03",
-        "LOC_E03_MAP_ROOM",
-        "FX_GOLD_RED_RELAY_LINE_E03",
-        "IFACE_E03_E04_GOLDEN_RIVER_STOP_BLOOD"
-      ],
-      "required_assets": [
-        "牙齿咬住烧焦发绳",
-        "右手系右腕发绳",
-        "晏南枝按右肩",
-        "图墙北线右上光点"
+        "assets/placeholders/loc_old_relay_tunnel.png",
+        "assets/placeholders/ch_shen_weisang.png",
+        "assets/placeholders/ch_yan_nanzhi.png",
+        "assets/placeholders/ch_bai_yi.png",
+        "assets/placeholders/prop_blood_record.png",
+        "assets/placeholders/prop_half_relay_token.png",
+        "assets/placeholders/prop_qingming_register.png",
+        "assets/placeholders/prop_prison_cart.png",
+        "assets/placeholders/prop_old_survey_knot.png",
+        "assets/placeholders/prop_fragmented_route_map.png"
       ]
     }
   ]
