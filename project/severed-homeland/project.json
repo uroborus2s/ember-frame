@@ -2,7 +2,7 @@
   "project_id": "severed-homeland",
   "title": "断航故土",
   "season": "season-01",
-  "current_status": "season_01_writer_room_dialogue_polish_complete",
+  "current_status": "season_01_writer_room_allusive_dialogue_polish_complete",
   "created_at": "2026-06-02",
   "updated_at": "2026-06-05",
   "format": {
@@ -23,7 +23,8 @@
       "第一季12集详细剧本",
       "每集 brief、outline、script、critique、continuity、score、memory、logs",
       "第一季全集95分目标精修 pass",
-      "第一季全集词顺口润色 pass"
+      "第一季全集词顺口润色 pass",
+      "第一季全集隐语典故润色 pass"
     ],
     "genre": "低魔东方史诗护送短剧",
     "tone": "冷峻、紧迫、制度压迫、政治阴谋、带历史伤口与故土重释；少量黑色幽默只作人物呼吸",
@@ -31,7 +32,7 @@
     "calendar_rule": "承接式纪年：旧时代用昭明历，新王朝用肃明历；旧王朝灭国于昭明历5249年，该年就是肃明历元年；第一季开端固定为肃明历1226年；不得再写帝国历1226年",
     "video_readiness": "Writer Room 只记录可拍摄的叙事约束：控制角色数量、集中场景、使用明确视觉锚点和可表演动作；不生成图像提示词、视频提示词、ComfyUI 参数或后期交付物。",
     "revision_budget": 2,
-    "current_stage": "season 01 dialogue polish complete",
+    "current_stage": "season 01 allusive dialogue polish complete",
     "episode_duration_rule": "每集 3 分 30 秒到 5 分钟",
     "downstream_not_started": [
       "director-room",
@@ -39,7 +40,7 @@
       "ComfyUI production",
       "audio/post-production"
     ],
-    "allowed_next_stage": "director-room from dialogue-polished final scripts"
+    "allowed_next_stage": "director-room from allusive-dialogue-polished final scripts"
   },
   "assumptions": [
     "第一季旧剧本不再作为 canon。全剧基础层以新的 series-outline、episode-outline-index、story-synopsis 和 bible 文件为准。",
@@ -198,9 +199,10 @@
     "legacy/ 只保留为归档，不作为 writer-room 或下游部门的剧情 canon。",
     "第一季 Writer Room 剧本文字已完成，但尚未启动 director-room、art-room、ComfyUI、音频、剪辑或后期流程。",
     "第一季 95分目标精修已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从精修后的 Writer Room 剧本重新启动。",
-    "第一季词顺口润色 pass 已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从词顺口润色后的 Writer Room 剧本重新启动。"
+    "第一季词顺口润色 pass 已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从词顺口润色后的 Writer Room 剧本重新启动。",
+    "第一季隐语典故润色 pass 已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从隐语典故润色后的 Writer Room 剧本重新启动。"
   ],
-  "production_mode": "season_01_writer_room_dialogue_polish_complete",
+  "production_mode": "season_01_writer_room_allusive_dialogue_polish_complete",
   "remake_policy": {
     "keep_as_canon_inputs": [
       "bible/world.md",
@@ -232,7 +234,7 @@
     ],
     "cleanup_status": "completed_after_absorption_into_canonical_files",
     "series_foundation_approval_required_before_episode_mode": false,
-    "episode_mode_status": "season_01_dialogue_polish_complete"
+    "episode_mode_status": "season_01_allusive_dialogue_polish_complete"
   },
   "season_01_95_point_polish": {
     "target_score": 95,
@@ -290,6 +292,43 @@
     },
     "average_score": 96.2,
     "method": "将清明籍、封名、旧姓旁注、旧污、旧誓、旧账、无姓人、残缺证据等设定说明嵌入族谱、户籍、疑名、粮牌、官蜡、账本、讨债、守边旧盟等中国式历史语义。",
-    "boundary": "Writer Room dialogue polish only; no shot list, image/video prompts, ComfyUI, audio, edit, render, or post-production deliverables."
+    "boundary": "Writer Room dialogue polish only; no shot list, image/video prompts, ComfyUI, audio, edit, render, or post-production deliverables.",
+    "latest_followup_pass": "season_01_allusive_dialogue_polish_complete"
+  },
+  "season_01_allusive_dialogue_polish": {
+    "target_score": 95,
+    "completed_at": "2026-06-05",
+    "decision": "pass",
+    "scores": {
+      "10": 96,
+      "11": 97,
+      "12": 97,
+      "01": 96,
+      "02": 96,
+      "03": 96,
+      "04": 96,
+      "05": 96,
+      "06": 96,
+      "07": 96,
+      "08": 96,
+      "09": 96
+    },
+    "dialogue_scores": {
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "01": 15,
+      "02": 15,
+      "03": 15,
+      "04": 15,
+      "05": 15,
+      "06": 15,
+      "07": 15,
+      "08": 15,
+      "09": 15
+    },
+    "average_score": 96.2,
+    "method": "将月饼藏信、河不清、白莲香会等中国观众可直觉理解的典故语义，转译为本世界的月饼、金河、白墙、清明香、粮门、碎陶和盟书残页。",
+    "boundary": "Writer Room allusive dialogue polish only; no shot list, image/video prompts, ComfyUI, audio, edit, render, or post-production deliverables."
   }
 }
