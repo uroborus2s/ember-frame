@@ -4,14 +4,14 @@
 
 - 项目根目录：`project/severed-homeland`
 - 范围：全剧共享 bible 级主资产，不生成分集参考帧和镜头覆盖图。
-- 当前状态：`pending_art_approval_after_contract_repair`
+- 当前状态：`pending_art_approval_after_output_format_repair`
 - 图片生成：未开始。审批通过前不得创建 Codex 图片生成线程，也不得写入 canonical 图片文件。
 - 产物日期：2026-06-05
-- 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，仍等待人工美术审批。
+- 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，并已补齐全局提示词输出图片格式要求，仍等待人工美术审批。
 
 ## 输入来源
 
-本轮只读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。旧 `legacy/`、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为美术 canon。
+本轮主要读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。旧 `legacy/`、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为美术 canon；唯一例外是本次人工审核明确要求 C001 沈维桑脸型与发型沿用 legacy 沈维桑角色板，因此 legacy 图只作为 C001 face/hair reference，不恢复旧版故事或旧版资产路径。
 
 核心来源：`bible/world.md`、`bible/geography.md`、`bible/factions.md`、`bible/characters.md`、`bible/scenes.md`、`bible/visual-style.md`、`bible/continuity.md`、`production/series-video-rules.md`、`01-12/script/final-script.md`、`01-12/continuity/visual-continuity-bible.json`。
 
@@ -41,7 +41,7 @@
 
 | ID | 资产 | 文件 | 输出路径 | 用途 |
 | --- | --- | --- | --- | --- |
-| C001 | 沈维桑全剧主角身份卡 | c001m.png | assets/characters/c001m.png | 主角身份锁定 |
+| C001 | 沈维桑全剧主角身份卡 | c001m.png | assets/characters/c001m.png | 主角身份锁定；脸型发型沿用 legacy 角色板，增加少年剑目星眉 |
 | C002 | 晏南枝全剧主角身份卡 | c002m.png | assets/characters/c002m.png | 护送目标身份锁定 |
 | C003 | 陆青砾墙下混裔身份卡 | c003m.png | assets/characters/c003m.png | 墙下无姓混裔身份锁定 |
 | C004 | 薛临墙边墙老墙师身份卡 | c004m.png | assets/characters/c004m.png | 边墙军户导师身份锁定 |
@@ -131,9 +131,24 @@
 - 顶层字段：prompt_id、asset_id、asset_type、asset_subtype、output_path。
 - `production_metadata`：asset_id、asset_subtype、短文件名 output_file、source_refs、continuity_refs、usage、审批状态、history 策略。
 - `model_visible_prompt`：visible_goal、style_quality、subject_content、composition_motion、visible_continuity、negative_prompt。
+- `output_format`：deliverable_kind、file_format、minimum_resolution、background_policy、alpha_policy、canvas_aspect_ratio、required_views、composition_layers、qc_checks。
 - `copy_ready`：positive_prompt、negative_prompt、chatgpt_image_prompt、gemini_image_prompt，可直接复制给 ChatGPT 或 Gemini 图像生成。
 
 可见提示词不包含 asset_id、episode_id、output_file、source refs 或使用说明；这些只留在生产元数据中，便于审批和后续线程派发。
+
+## 输出格式合同
+
+全局资产提示词不是最终视频帧提示词。每条全局 prompt 都已经写入 literal `output_format`，并把同一格式要求合并进 `copy_ready`：
+
+| 资产类型 | 交付类型 | 图片格式 | 画幅与最低分辨率 | 背景/透明策略 |
+| --- | --- | --- | --- | --- |
+| 角色/族群模板 | neutral_master_character_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，透明 cutout 必须另建 PNG/SVG |
+| 地点主场景 | location_master_scene_card | PNG | 9:16 vertical，2160x3840 px | scene_card_with_spatial_environment；alpha forbidden |
+| 道具/符号 | neutral_master_prop_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，精确符号另建线稿/透明层 |
+| 服装系统 | neutral_costume_system_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，服装 cutout 另行规划 |
+| 风格参考 | style_reference_board | PNG | 9:16 vertical，2160x3840 px | designed_style_board_canvas；alpha forbidden |
+
+QC 必须检查 `required_views`、`composition_layers` 和 `qc_checks`，不得把角色、道具、服装和风格板误当作最终视频帧。
 
 ## 合同修复结果
 
@@ -144,6 +159,8 @@
 3. 精确符号类资产 P002、P003、P007、P009、P010、P013、P014 已标记线稿控制或透明 PNG/SVG 后合成策略。
 4. `prompts/series-art-image-prompts.json` 已从旧 `prompt_records` 改为合同要求的 `prompts` 数组，并为 65 条提示词补齐 `copy_ready`。
 5. `art/series-thread-plan.json` 已拆分为风格、服装、角色、地点、道具/符号的 7 个依赖批次；所有批次仍为 `blocked_pending_art_approval`。
+6. 65 个全局资产和 65 条提示词已补齐 `output_format`；线程计划也要求生成线程逐条遵守输出格式合同。
+7. C001 沈维桑已锁定 legacy 同款窄长少年脸、黑色短碎乱发、额前碎刘海、贴脸鬓发、锋利剑眉、深黑星目和少年剑目星眉。
 
 ## 生成批次计划
 
@@ -177,16 +194,16 @@
 
 | Order | Batch | Phase | Depends On Batches | Depends On Assets | Blocks Batches | Priority |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 2 | B01_CORE_CHARACTERS | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
-| 3 | B02_NORTHERN_AND_FACTION_TEMPLATES | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
-| 4 | B03_LOCATIONS_SEASON_ONE | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
-| 5 | B04_LOCATIONS_FUTURE_SEASONS | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
-| 6 | B05_PROPS_SYMBOLS | precision_assets | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | high |
-| 99 | B07_STYLE | master_cards | - | F001, F002, F003, F004, F005, F006 | - | medium |
-| 99 | B06_COSTUMES | master_cards | - | F001, F002, F003, F004, F005, F006 | - | medium |
+| 1 | B07_STYLE | 01_style_references | - | - | B06_COSTUMES, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES, B03_LOCATIONS_SEASON_ONE, B04_LOCATIONS_FUTURE_SEASONS, B05_PROPS_SYMBOLS | critical |
+| 2 | B06_COSTUMES | 02_costume_style_references | B07_STYLE | F001, F002, F003, F004, F005, F006 | B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | critical |
+| 3 | B01_CORE_CHARACTERS | 03_character_master_cards | B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K001, K002, K003, K004, K005, K006 | B05_PROPS_SYMBOLS | high |
+| 4 | B02_NORTHERN_AND_FACTION_TEMPLATES | 03_character_master_cards | B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K004, K005 | B05_PROPS_SYMBOLS | high |
+| 5 | B03_LOCATIONS_SEASON_ONE | 04_location_master_scene_cards | B07_STYLE | F001, F002, F003, F005, F006 | - | high |
+| 6 | B04_LOCATIONS_FUTURE_SEASONS | 04_location_master_scene_cards | B07_STYLE | F001, F002, F003, F005, F006 | - | high |
+| 7 | B05_PROPS_SYMBOLS | 05_prop_and_precision_symbol_master_cards | B07_STYLE, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | F001, F003, F004, F006, C001, C002, C003, C004, C005, C006, C007, C010, C011, C016, C017, C018, C019, C020, C021, C022 | - | high |
 
 ### 提示词审计
 
-- `prompts/series-art-image-prompts.json` 已补齐 `copy_ready.positive_prompt`、`copy_ready.negative_prompt`、`copy_ready.chatgpt_image_prompt` 和 `copy_ready.gemini_image_prompt`。
+- `prompts/series-art-image-prompts.json` 已补齐 `output_format`、`copy_ready.positive_prompt`、`copy_ready.negative_prompt`、`copy_ready.chatgpt_image_prompt` 和 `copy_ready.gemini_image_prompt`。
 - 全剧 bible 级 prompt record 的 `production_metadata.output_file` 已规范为短文件名，canonical 路径保留在 `output_path`。
 - 可见提示词继续只保留六段模型可见内容，不混入 asset_id、source refs、usage 或输出路径。
