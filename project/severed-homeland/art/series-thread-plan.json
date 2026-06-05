@@ -1,0 +1,300 @@
+{
+  "version": "art-room-series-bible-v1-2026-06-05",
+  "project": "severed-homeland",
+  "scope": "series_bible_master_asset_generation_batches",
+  "approval_status": "awaiting_art_approval",
+  "dispatch_status": "not_dispatched",
+  "dispatch_policy": "Do not create Codex image-generation threads until art approval is granted for asset-index.json and series-art-image-prompts.json.",
+  "history_policy": "Final approved images write to canonical output paths. Retained non-final candidates must be moved to sibling history/ with .v001, .v002 suffixes. Never create v1/, v2/, versions/, or drafts/ directories.",
+  "batches": [
+    {
+      "batch_id": "B01_CORE_CHARACTERS",
+      "title": "核心与追捕线角色",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_C001",
+        "PROMPT_C002",
+        "PROMPT_C003",
+        "PROMPT_C004",
+        "PROMPT_C005",
+        "PROMPT_C006",
+        "PROMPT_C007",
+        "PROMPT_C008",
+        "PROMPT_C009",
+        "PROMPT_C010",
+        "PROMPT_C011"
+      ],
+      "asset_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011"
+      ],
+      "output_dirs": [
+        "assets/characters"
+      ],
+      "expected_final_files": [
+        "assets/characters/c001m.png",
+        "assets/characters/c002m.png",
+        "assets/characters/c003m.png",
+        "assets/characters/c004m.png",
+        "assets/characters/c005m.png",
+        "assets/characters/c006m.png",
+        "assets/characters/c007m.png",
+        "assets/characters/c008m.png",
+        "assets/characters/c009m.png",
+        "assets/characters/c010m.png",
+        "assets/characters/c011m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 核心与追捕线角色. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    },
+    {
+      "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
+      "title": "北境具名角色与族群/肃明层级模板",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_C012",
+        "PROMPT_C013",
+        "PROMPT_C014",
+        "PROMPT_C015",
+        "PROMPT_C016",
+        "PROMPT_C017",
+        "PROMPT_C018",
+        "PROMPT_C019",
+        "PROMPT_C020",
+        "PROMPT_C021"
+      ],
+      "asset_ids": [
+        "C012",
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021"
+      ],
+      "output_dirs": [
+        "assets/characters"
+      ],
+      "expected_final_files": [
+        "assets/characters/c012m.png",
+        "assets/characters/c013m.png",
+        "assets/characters/c014m.png",
+        "assets/characters/c015m.png",
+        "assets/characters/c016m.png",
+        "assets/characters/c017m.png",
+        "assets/characters/c018m.png",
+        "assets/characters/c019m.png",
+        "assets/characters/c020m.png",
+        "assets/characters/c021m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 北境具名角色与族群/肃明层级模板. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    },
+    {
+      "batch_id": "B03_LOCATIONS_SEASON_ONE",
+      "title": "第一季核心地点",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_L001",
+        "PROMPT_L002",
+        "PROMPT_L003",
+        "PROMPT_L004",
+        "PROMPT_L005",
+        "PROMPT_L006",
+        "PROMPT_L007",
+        "PROMPT_L008",
+        "PROMPT_L009",
+        "PROMPT_L010",
+        "PROMPT_L011"
+      ],
+      "asset_ids": [
+        "L001",
+        "L002",
+        "L003",
+        "L004",
+        "L005",
+        "L006",
+        "L007",
+        "L008",
+        "L009",
+        "L010",
+        "L011"
+      ],
+      "output_dirs": [
+        "assets/locations"
+      ],
+      "expected_final_files": [
+        "assets/locations/l001m.png",
+        "assets/locations/l002m.png",
+        "assets/locations/l003m.png",
+        "assets/locations/l004m.png",
+        "assets/locations/l005m.png",
+        "assets/locations/l006m.png",
+        "assets/locations/l007m.png",
+        "assets/locations/l008m.png",
+        "assets/locations/l009m.png",
+        "assets/locations/l010m.png",
+        "assets/locations/l011m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 第一季核心地点. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    },
+    {
+      "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
+      "title": "后续季伏笔地点",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_L012",
+        "PROMPT_L013",
+        "PROMPT_L014",
+        "PROMPT_L015",
+        "PROMPT_L016"
+      ],
+      "asset_ids": [
+        "L012",
+        "L013",
+        "L014",
+        "L015",
+        "L016"
+      ],
+      "output_dirs": [
+        "assets/locations"
+      ],
+      "expected_final_files": [
+        "assets/locations/l012m.png",
+        "assets/locations/l013m.png",
+        "assets/locations/l014m.png",
+        "assets/locations/l015m.png",
+        "assets/locations/l016m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 后续季伏笔地点. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    },
+    {
+      "batch_id": "B05_PROPS_SYMBOLS",
+      "title": "核心道具与精确符号",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_P001",
+        "PROMPT_P002",
+        "PROMPT_P003",
+        "PROMPT_P004",
+        "PROMPT_P005",
+        "PROMPT_P006",
+        "PROMPT_P007",
+        "PROMPT_P008",
+        "PROMPT_P009",
+        "PROMPT_P010",
+        "PROMPT_P011",
+        "PROMPT_P012",
+        "PROMPT_P013",
+        "PROMPT_P014",
+        "PROMPT_P015"
+      ],
+      "asset_ids": [
+        "P001",
+        "P002",
+        "P003",
+        "P004",
+        "P005",
+        "P006",
+        "P007",
+        "P008",
+        "P009",
+        "P010",
+        "P011",
+        "P012",
+        "P013",
+        "P014",
+        "P015"
+      ],
+      "output_dirs": [
+        "assets/props"
+      ],
+      "expected_final_files": [
+        "assets/props/p001m.png",
+        "assets/props/p002m.png",
+        "assets/props/p003m.png",
+        "assets/props/p004m.png",
+        "assets/props/p005m.png",
+        "assets/props/p006m.png",
+        "assets/props/p007m.png",
+        "assets/props/p008m.png",
+        "assets/props/p009m.png",
+        "assets/props/p010m.png",
+        "assets/props/p011m.png",
+        "assets/props/p012m.png",
+        "assets/props/p013m.png",
+        "assets/props/p014m.png",
+        "assets/props/p015m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 核心道具与精确符号. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    },
+    {
+      "batch_id": "B06_COSTUMES_AND_STYLE",
+      "title": "服装系统与全剧风格板",
+      "status": "blocked_pending_art_approval",
+      "prompt_ids": [
+        "PROMPT_K001",
+        "PROMPT_K002",
+        "PROMPT_K003",
+        "PROMPT_K004",
+        "PROMPT_K005",
+        "PROMPT_K006",
+        "PROMPT_F001",
+        "PROMPT_F002",
+        "PROMPT_F003",
+        "PROMPT_F004",
+        "PROMPT_F005",
+        "PROMPT_F006"
+      ],
+      "asset_ids": [
+        "K001",
+        "K002",
+        "K003",
+        "K004",
+        "K005",
+        "K006",
+        "F001",
+        "F002",
+        "F003",
+        "F004",
+        "F005",
+        "F006"
+      ],
+      "output_dirs": [
+        "assets/costumes",
+        "assets/style"
+      ],
+      "expected_final_files": [
+        "assets/costumes/k001m.png",
+        "assets/costumes/k002m.png",
+        "assets/costumes/k003m.png",
+        "assets/costumes/k004m.png",
+        "assets/costumes/k005m.png",
+        "assets/costumes/k006m.png",
+        "assets/style/f001m.png",
+        "assets/style/f002m.png",
+        "assets/style/f003m.png",
+        "assets/style/f004m.png",
+        "assets/style/f005m.png",
+        "assets/style/f006m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes.",
+      "thread_prompt": "After art approval, generate final raster assets for 服装系统与全剧风格板. Use the approved prompt records only. Write confirmed final images to the exact output paths listed in expected_final_files. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes."
+    }
+  ]
+}
