@@ -4,14 +4,14 @@
 
 - 项目根目录：`project/severed-homeland`
 - 范围：全剧共享 bible 级主资产，不生成分集参考帧和镜头覆盖图。
-- 当前状态：`pending_art_approval_after_output_format_repair`
+- 当前状态：`pending_art_approval_after_faction_root_repair`
 - 图片生成：未开始。审批通过前不得创建 Codex 图片生成线程，也不得写入 canonical 图片文件。
 - 产物日期：2026-06-05
-- 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，并已补齐全局提示词输出图片格式要求，仍等待人工美术审批。
+- 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，已补齐全局提示词输出图片格式要求，并已把昭明、肃明、北境部落联盟的徽章旗帜提升为全剧基础根资产，仍等待人工美术审批。
 
 ## 输入来源
 
-本轮主要读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。旧 `legacy/`、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为美术 canon；唯一例外是本次人工审核明确要求 C001 沈维桑脸型与发型沿用 legacy 沈维桑角色板，因此 legacy 图只作为 C001 face/hair reference，不恢复旧版故事或旧版资产路径。
+本轮主要读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。旧 `legacy/`、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为美术 canon；当前例外仅限两类人工锁定参考：C001 沈维桑脸型与发型沿用 legacy 沈维桑角色板；P016、P017、P018 三势力徽章旗帜沿用 legacy 已批准的昭明、肃明/清明院、北境万兽联盟徽章与符号系统。该例外不恢复旧版故事或旧版资产路径。
 
 核心来源：`bible/world.md`、`bible/geography.md`、`bible/factions.md`、`bible/characters.md`、`bible/scenes.md`、`bible/visual-style.md`、`bible/continuity.md`、`production/series-video-rules.md`、`01-12/script/final-script.md`、`01-12/continuity/visual-continuity-bible.json`。
 
@@ -27,7 +27,7 @@
 | --- | ---: | --- | --- |
 | 角色/族群模板 | 22 | `assets/characters/` | 主角、反派、盟友、肃明层级、北境族群、共生兽关系和沈家旧档身份锁定 |
 | 地点主场景 | 16 | `assets/locations/` | 第一季核心地点和后续季伏笔地点空间锁定 |
-| 道具/符号 | 15 | `assets/props/` | 旧驿、清明籍、盟书、粮牌、徽记等可读信息道具 |
+| 道具/符号 | 18 | `assets/props/` | 旧驿、清明籍、盟书、粮牌、三势力徽章旗帜根资产和可读信息道具 |
 | 服装系统 | 6 | `assets/costumes/` | 主角状态、肃明服制、北境服饰、人族地域群众差异 |
 | 风格参考 | 6 | `assets/style/` | 全剧风格、地域色彩、材质、符号策略、竖屏构图、低魔规则 |
 
@@ -101,9 +101,14 @@
 | P010 | 朱赤旗布与日月纹道具卡 | p010m.png | assets/props/p010m.png | 季终价值冲突道具 |
 | P011 | 北境骨铁攻城器具道具卡 | p011m.png | assets/props/p011m.png | 北境攻城职能参考 |
 | P012 | 墙下黑市通行牌与碎陶护符道具卡 | p012m.png | assets/props/p012m.png | 陆青砾身份锚点 |
-| P013 | 肃明黑日白翅徽记系统卡 | p013m.png | assets/props/p013m.png | 肃明层级识别 |
-| P014 | 昭明日月双印系统卡 | p014m.png | assets/props/p014m.png | 旧帝国遗迹/驿令/血牒/盟书统一符号参考 |
+| P013 | 肃明黑日白翅派生徽记系统卡 | p013m.png | assets/props/p013m.png | P017 根徽章的白册/封条/军阶牌派生 |
+| P014 | 昭明日月星盘派生符号系统卡 | p014m.png | assets/props/p014m.png | P016 根徽章的旧驿/驿令/血牒/盟书派生 |
 | P015 | 灰墙军旧甲片与骨哨道具卡 | p015m.png | assets/props/p015m.png | 边墙军户生活与守墙动作参考 |
+| P016 | 昭明日月星盘徽章与朱赤旗帜基础母版 | p016m.png | assets/props/p016m.png | 昭明服饰/遗迹/驿令/旗布统一根符号 |
+| P017 | 肃明清明黑日白翅徽章与旗帜基础母版 | p017m.png | assets/props/p017m.png | 肃明服制/清明院/白册/封条/旗帜统一根符号 |
+| P018 | 北境万兽部落联盟徽章与旗帜基础母版 | p018m.png | assets/props/p018m.png | 北境服饰/盾鼓/皮帐/誓约绳/旗帜统一根符号 |
+
+P016、P017、P018 是全剧最基础的势力视觉元素，必须先于风格板、服装板、角色、地点和其他道具审批。所有服饰纹样、遗迹石刻、清明院白墙、白册章、旗布、封条、甲片、盾鼓、皮帐、誓约绳和道具符号都只能从这三套根徽章旗帜派生，不得重新发明三势力徽章。
 
 精确旗帜、徽记、印记、白册、血牒和盟书类资产需要先做 master prop card，再使用线稿控制或透明 PNG/SVG 后合成策略。不要让图像模型自行发明可读文字、徽章、印章、现代 logo 或北境新动物 crest。
 
@@ -145,6 +150,7 @@
 | 角色/族群模板 | neutral_master_character_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，透明 cutout 必须另建 PNG/SVG |
 | 地点主场景 | location_master_scene_card | PNG | 9:16 vertical，2160x3840 px | scene_card_with_spatial_environment；alpha forbidden |
 | 道具/符号 | neutral_master_prop_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，精确符号另建线稿/透明层 |
+| 三势力徽章旗帜根资产 | faction_emblem_flag_master_prop_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，精确徽章、旗面 mask、SVG/PNG 线控层另建 |
 | 服装系统 | neutral_costume_system_card | PNG | 9:16 vertical，2160x3840 px | neutral_plain_background；此卡禁止 alpha，服装 cutout 另行规划 |
 | 风格参考 | style_reference_board | PNG | 9:16 vertical，2160x3840 px | designed_style_board_canvas；alpha forbidden |
 
@@ -155,34 +161,36 @@ QC 必须检查 `required_views`、`composition_layers` 和 `qc_checks`，不得
 本次审核发现旧版审批包仍处于“可读规划”状态，但未完全满足机器可审计合同。已修复：
 
 1. `assets/asset-index.json` 已补齐每个资产的 `file_path`、`status`、`prompt_id`、`creation_order`、`creation_phase`、`depends_on_assets`、`blocks_assets`、`dependency_reason` 和 `priority`。
-2. 22 个角色/族群模板均已有 literal `body_metrics` 与 `identity_lock`；15 个道具和 6 个服装/服制资产均已有 literal `physical_dimensions`；16 个地点均已有 `location_lock`。
-3. 精确符号类资产 P002、P003、P007、P009、P010、P013、P014 已标记线稿控制或透明 PNG/SVG 后合成策略。
-4. `prompts/series-art-image-prompts.json` 已从旧 `prompt_records` 改为合同要求的 `prompts` 数组，并为 65 条提示词补齐 `copy_ready`。
-5. `art/series-thread-plan.json` 已拆分为风格、服装、角色、地点、道具/符号的 7 个依赖批次；所有批次仍为 `blocked_pending_art_approval`。
-6. 65 个全局资产和 65 条提示词已补齐 `output_format`；线程计划也要求生成线程逐条遵守输出格式合同。
+2. 22 个角色/族群模板均已有 literal `body_metrics` 与 `identity_lock`；18 个道具和 6 个服装/服制资产均已有 literal `physical_dimensions`；16 个地点均已有 `location_lock`。
+3. 精确符号类资产 P002、P003、P007、P009、P010、P013、P014、P016、P017、P018 已标记线稿控制或透明 PNG/SVG 后合成策略。
+4. `prompts/series-art-image-prompts.json` 已从旧 `prompt_records` 改为合同要求的 `prompts` 数组，并为 68 条提示词补齐 `copy_ready`。
+5. `art/series-thread-plan.json` 已拆分为三势力徽章旗帜基础母版、风格、服装、角色、地点、道具/符号的 8 个依赖批次；所有批次仍为 `blocked_pending_art_approval`。
+6. 68 个全局资产和 68 条提示词已补齐 `output_format`；线程计划也要求生成线程逐条遵守输出格式合同。
 7. C001 沈维桑已锁定 legacy 同款窄长少年脸、黑色短碎乱发、额前碎刘海、贴脸鬓发、锋利剑眉、深黑星目和少年剑目星眉。
+8. P016、P017、P018 已锁定 legacy 已批准的昭明日月星盘、肃明黑日白翅、北境骨木万兽三套徽章旗帜为根资产；P013、P014、F004 均改为从根资产派生，不再自行定义三势力徽章。
 
 ## 生成批次计划
 
 预设批次写入 `art/series-thread-plan.json`，当前全部为 `blocked_pending_art_approval`：
 
-| 顺序 | 批次 | 内容 | 依赖 | 状态 |
-| ---: | --- | --- | --- | --- |
-| 1 | B07_STYLE | 全剧风格板 | 无 | blocked_pending_art_approval |
-| 2 | B06_COSTUMES | 服装系统 | B07_STYLE | blocked_pending_art_approval |
-| 3 | B01_CORE_CHARACTERS | 核心、追捕线与沈家旧档角色 | B07_STYLE、B06_COSTUMES | blocked_pending_art_approval |
-| 4 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B07_STYLE、B06_COSTUMES | blocked_pending_art_approval |
-| 5 | B03_LOCATIONS_SEASON_ONE | 第一季核心地点 | B07_STYLE | blocked_pending_art_approval |
-| 6 | B04_LOCATIONS_FUTURE_SEASONS | 后续季伏笔地点 | B07_STYLE | blocked_pending_art_approval |
-| 7 | B05_PROPS_SYMBOLS | 核心道具与精确符号 | B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_art_approval |
+|  顺序 | 批次                                 | 内容               | 依赖                                                               | 状态                           |
+| --: | ---------------------------------- | ---------------- | ---------------------------------------------------------------- | ---------------------------- |
+|   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版       | 无                                                                | blocked_pending_art_approval |
+|   2 | B07_STYLE                          | 全剧风格板            | B00_FACTION_EMBLEM_FLAGS                                         | blocked_pending_art_approval |
+|   3 | B06_COSTUMES                       | 服装系统             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                              | blocked_pending_art_approval |
+|   4 | B01_CORE_CHARACTERS                | 核心、追捕线与沈家旧档角色    | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                 | blocked_pending_art_approval |
+|   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                 | blocked_pending_art_approval |
+|   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                              | blocked_pending_art_approval |
+|   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                              | blocked_pending_art_approval |
+|   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号        | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_art_approval |
 
 ## 审批重点
 
 1. 角色身份是否足够稳定，尤其沈维桑左肩旧伤、晏南枝古典美貌与皇室气度、陆青砾混裔细节、白翳制度性压迫、肃明层级和北境诸族差异。
 2. 场景主卡是否覆盖第一季路线：残阳坳、旧驿暗道、金河、灰烬书院、清明院外署、墙下集市、锁喉关、鸣骨岭、寒鸦堡、月下旧驿、坍塌烽燧。
-3. 道具和符号是否能在短剧首秒读懂，且不让模型发明精确文字或徽记。
+3. P016、P017、P018 三势力徽章旗帜是否批准为最基础根资产；道具和符号是否能在短剧首秒读懂，且不让模型发明精确文字或徽记。
 4. 人族群众、虫族统治层级、北境族群与共生兽是否避免同质化。
-5. 是否批准按 `art/series-thread-plan.json` 的七个批次和依赖顺序开始图片生成。
+5. 是否批准按 `art/series-thread-plan.json` 的八个批次和依赖顺序开始图片生成。
 
 ## 下一步
 
@@ -194,13 +202,14 @@ QC 必须检查 `required_views`、`composition_layers` 和 `qc_checks`，不得
 
 | Order | Batch | Phase | Depends On Batches | Depends On Assets | Blocks Batches | Priority |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | B07_STYLE | 01_style_references | - | - | B06_COSTUMES, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES, B03_LOCATIONS_SEASON_ONE, B04_LOCATIONS_FUTURE_SEASONS, B05_PROPS_SYMBOLS | critical |
-| 2 | B06_COSTUMES | 02_costume_style_references | B07_STYLE | F001, F002, F003, F004, F005, F006 | B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | critical |
-| 3 | B01_CORE_CHARACTERS | 03_character_master_cards | B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K001, K002, K003, K004, K005, K006 | B05_PROPS_SYMBOLS | high |
-| 4 | B02_NORTHERN_AND_FACTION_TEMPLATES | 03_character_master_cards | B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K004, K005 | B05_PROPS_SYMBOLS | high |
-| 5 | B03_LOCATIONS_SEASON_ONE | 04_location_master_scene_cards | B07_STYLE | F001, F002, F003, F005, F006 | - | high |
-| 6 | B04_LOCATIONS_FUTURE_SEASONS | 04_location_master_scene_cards | B07_STYLE | F001, F002, F003, F005, F006 | - | high |
-| 7 | B05_PROPS_SYMBOLS | 05_prop_and_precision_symbol_master_cards | B07_STYLE, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | F001, F003, F004, F006, C001, C002, C003, C004, C005, C006, C007, C010, C011, C016, C017, C018, C019, C020, C021, C022 | - | high |
+| 1 | B00_FACTION_EMBLEM_FLAGS | 00_faction_emblem_flag_roots | - | - | B07_STYLE, B06_COSTUMES, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES, B03_LOCATIONS_SEASON_ONE, B04_LOCATIONS_FUTURE_SEASONS, B05_PROPS_SYMBOLS | critical |
+| 2 | B07_STYLE | 01_style_references | B00_FACTION_EMBLEM_FLAGS | P016, P017, P018 | B06_COSTUMES, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES, B03_LOCATIONS_SEASON_ONE, B04_LOCATIONS_FUTURE_SEASONS, B05_PROPS_SYMBOLS | critical |
+| 3 | B06_COSTUMES | 02_costume_style_references | B00_FACTION_EMBLEM_FLAGS, B07_STYLE | F001, F002, F003, F004, F005, F006, P016, P017, P018 | B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | critical |
+| 4 | B01_CORE_CHARACTERS | 03_character_master_cards | B00_FACTION_EMBLEM_FLAGS, B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K001, K002, K003, K004, K005, K006, P016, P017, P018 | B05_PROPS_SYMBOLS | high |
+| 5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 03_character_master_cards | B00_FACTION_EMBLEM_FLAGS, B07_STYLE, B06_COSTUMES | F001, F002, F003, F004, F005, F006, K004, K005, P016, P017, P018 | B05_PROPS_SYMBOLS | high |
+| 6 | B03_LOCATIONS_SEASON_ONE | 04_location_master_scene_cards | B00_FACTION_EMBLEM_FLAGS, B07_STYLE | F001, F002, F003, F005, F006, P016, P017, P018 | - | high |
+| 7 | B04_LOCATIONS_FUTURE_SEASONS | 04_location_master_scene_cards | B00_FACTION_EMBLEM_FLAGS, B07_STYLE | F001, F002, F003, F005, F006, P016, P017, P018 | - | high |
+| 8 | B05_PROPS_SYMBOLS | 05_prop_and_precision_symbol_master_cards | B00_FACTION_EMBLEM_FLAGS, B07_STYLE, B01_CORE_CHARACTERS, B02_NORTHERN_AND_FACTION_TEMPLATES | F001, F003, F004, F006, C001, C002, C003, C004, C005, C006, C007, C010, C011, C016, C017, C018, C019, C020, C021, C022, P016, P017, P018 | - | high |
 
 ### 提示词审计
 

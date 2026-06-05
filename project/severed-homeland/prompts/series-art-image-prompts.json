@@ -1,8 +1,8 @@
 {
-  "version": "art-room-series-bible-v3-output-format-2026-06-05",
+  "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_prompts",
-  "approval_status": "pending_art_approval_after_output_format_repair",
+  "approval_status": "awaiting_art_approval_after_faction_root_repair",
   "image_generation_status": "not_started_pending_art_approval",
   "source_inputs": [
     "bible/world.md",
@@ -16,7 +16,15 @@
     "production/director-room-series-02-12-summary.json",
     "01-12/script/final-script.md",
     "01-12/continuity/visual-continuity-bible.json",
-    "01-12/shots/scene-breakdown.json"
+    "01-12/shots/scene-breakdown.json",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+    "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+    "legacy/pre-remake-2026-06-04/art/project-faction-emblem-asset-qc-report.md",
+    "legacy/pre-remake-2026-06-04/art/project-faction-symbol-system.md"
   ],
   "prompt_contract": {
     "production_metadata_is_not_model_visible": true,
@@ -54,7 +62,13 @@
       "qc_checks"
     ],
     "output_format_is_model_visible_via_copy_ready": true,
-    "transparent_cutouts_are_separate_deliverables": true
+    "transparent_cutouts_are_separate_deliverables": true,
+    "faction_emblem_flag_roots_required": true,
+    "faction_root_prompt_ids": [
+      "PROMPT_P016",
+      "PROMPT_P017",
+      "PROMPT_P018"
+    ]
   },
   "prompts": [
     {
@@ -6244,16 +6258,22 @@
         "prompt_id": "PROMPT_P013",
         "source_refs": [
           "bible/characters.md#基层官吏、奴兵与虫族士兵",
-          "bible/visual-style.md#虫族统治视觉"
+          "bible/visual-style.md#虫族统治视觉",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png"
         ],
         "continuity_refs": [
+          "源自P017黑日白翅根徽章",
           "黑日小牌",
-          "白翅覆盖纹",
+          "角形白翼刃",
+          "白册章",
+          "虫蜡封条",
           "军阶牌",
           "黑日烙牌"
         ],
         "usage": [
           "肃明层级识别",
+          "P017根徽章的制度派生",
           "徽记后合成参考"
         ],
         "approval_status": "planned_pending_art_approval",
@@ -6302,18 +6322,18 @@
         }
       },
       "model_visible_prompt": {
-        "visible_goal": "创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。",
+        "visible_goal": "创建肃明黑日白翅派生徽记系统卡，作为肃明根徽章在白册、封条、服制、军阶牌和烙牌上的派生参考。",
         "style_quality": "超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。",
-        "subject_content": "肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。",
+        "subject_content": "所有肃明层级符号都从同一黑日白翅根徽章派生：黑日小牌、角形白翼刃、白册章、虫蜡封条、官帽/胸牌、军阶牌和黑日烙牌，黑、骨白、冷金、虫蜡白和珍珠灰裂环层次清楚。",
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
-        "visible_continuity": "这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。",
+        "visible_continuity": "不得重新设计肃明徽章；派生符号只能改变尺度、材质、遮挡、层级磨损和应用位置，不能变成新国家徽章、柔软天使翅膀、大虫身体或现代标志。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "copy_ready": {
-        "positive_prompt": "创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。",
+        "positive_prompt": "创建肃明黑日白翅派生徽记系统卡，作为肃明根徽章在白册、封条、服制、军阶牌和烙牌上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有肃明层级符号都从同一黑日白翅根徽章派生：黑日小牌、角形白翼刃、白册章、虫蜡封条、官帽/胸牌、军阶牌和黑日烙牌，黑、骨白、冷金、虫蜡白和珍珠灰裂环层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计肃明徽章；派生符号只能改变尺度、材质、遮挡、层级磨损和应用位置，不能变成新国家徽章、柔软天使翅膀、大虫身体或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建肃明黑日白翅派生徽记系统卡，作为肃明根徽章在白册、封条、服制、军阶牌和烙牌上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有肃明层级符号都从同一黑日白翅根徽章派生：黑日小牌、角形白翼刃、白册章、虫蜡封条、官帽/胸牌、军阶牌和黑日烙牌，黑、骨白、冷金、虫蜡白和珍珠灰裂环层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计肃明徽章；派生符号只能改变尺度、材质、遮挡、层级磨损和应用位置，不能变成新国家徽章、柔软天使翅膀、大虫身体或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建肃明黑日白翅派生徽记系统卡，作为肃明根徽章在白册、封条、服制、军阶牌和烙牌上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有肃明层级符号都从同一黑日白翅根徽章派生：黑日小牌、角形白翼刃、白册章、虫蜡封条、官帽/胸牌、军阶牌和黑日烙牌，黑、骨白、冷金、虫蜡白和珍珠灰裂环层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计肃明徽章；派生符号只能改变尺度、材质、遮挡、层级磨损和应用位置，不能变成新国家徽章、柔软天使翅膀、大虫身体或现代标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "output_format": {
         "deliverable_kind": "neutral_master_prop_card",
@@ -6370,10 +6390,13 @@
         "prompt_id": "PROMPT_P014",
         "source_refs": [
           "bible/world.md#昭明帝国",
-          "bible/scenes.md#旧帝国遗迹"
+          "bible/scenes.md#旧帝国遗迹",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png"
         ],
         "continuity_refs": [
-          "日月双印",
+          "源自P016日月星盘根徽章",
+          "日月星盘双印",
           "朱赤",
           "宝蓝",
           "月白",
@@ -6381,7 +6404,8 @@
           "裂纹旧债"
         ],
         "usage": [
-          "旧帝国遗迹/驿令/血牒/盟书统一符号参考"
+          "旧帝国遗迹/驿令/血牒/盟书统一符号参考",
+          "P016根徽章的遗迹与道具派生"
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
@@ -6429,18 +6453,18 @@
         }
       },
       "model_visible_prompt": {
-        "visible_goal": "创建昭明日月双印系统卡，作为全剧共享视觉资产参考。",
+        "visible_goal": "创建昭明日月星盘派生符号系统卡，作为昭明根徽章在旧驿、驿令、血牒、盟书、旗布和遗迹上的派生参考。",
         "style_quality": "超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。",
-        "subject_content": "昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。",
+        "subject_content": "所有昭明旧帝国符号都从同一日月星盘根徽章派生：星盘双印、半枚驿令纹、旧白石刻纹、朱赤残旗、血牒暗纹、月白玉片和磨损金线，必须带裂纹、旧债感和年代遮挡。",
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
-        "visible_continuity": "华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。",
+        "visible_continuity": "不得重新设计昭明徽章；派生符号只能改变尺度、材质、破损、遮挡和年代感，不能变成普通太阳图标、现代国旗、圣光胜利旗或干净英雄旗。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "copy_ready": {
-        "positive_prompt": "创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。",
+        "positive_prompt": "创建昭明日月星盘派生符号系统卡，作为昭明根徽章在旧驿、驿令、血牒、盟书、旗布和遗迹上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有昭明旧帝国符号都从同一日月星盘根徽章派生：星盘双印、半枚驿令纹、旧白石刻纹、朱赤残旗、血牒暗纹、月白玉片和磨损金线，必须带裂纹、旧债感和年代遮挡。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计昭明徽章；派生符号只能改变尺度、材质、破损、遮挡和年代感，不能变成普通太阳图标、现代国旗、圣光胜利旗或干净英雄旗。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建昭明日月星盘派生符号系统卡，作为昭明根徽章在旧驿、驿令、血牒、盟书、旗布和遗迹上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有昭明旧帝国符号都从同一日月星盘根徽章派生：星盘双印、半枚驿令纹、旧白石刻纹、朱赤残旗、血牒暗纹、月白玉片和磨损金线，必须带裂纹、旧债感和年代遮挡。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计昭明徽章；派生符号只能改变尺度、材质、破损、遮挡和年代感，不能变成普通太阳图标、现代国旗、圣光胜利旗或干净英雄旗。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建昭明日月星盘派生符号系统卡，作为昭明根徽章在旧驿、驿令、血牒、盟书、旗布和遗迹上的派生参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n所有昭明旧帝国符号都从同一日月星盘根徽章派生：星盘双印、半枚驿令纹、旧白石刻纹、朱赤残旗、血牒暗纹、月白玉片和磨损金线，必须带裂纹、旧债感和年代遮挡。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不得重新设计昭明徽章；派生符号只能改变尺度、材质、破损、遮挡和年代感，不能变成普通太阳图标、现代国旗、圣光胜利旗或干净英雄旗。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 neutral_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent cutout or SVG/PNG line-control layer must be planned separately for compositing or exact symbols；必须包含 front view、back view、side view、top or open-state view when useful、hand-scale view、material/detail crop sheet、damage or marking close-up、scale reference；构图层级必须包含 plain neutral background layer、orthographic prop view layer、hand or tabletop scale reference layer、material/wear detail crop layer、precision symbol or line-control note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "output_format": {
         "deliverable_kind": "neutral_master_prop_card",
@@ -6607,6 +6631,423 @@
           "detail crop sheet",
           "scale reference",
           "line-control or SVG/PNG post-composite layer for exact symbols"
+        ]
+      }
+    },
+    {
+      "prompt_id": "PROMPT_P016",
+      "asset_id": "P016",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p016m.png",
+      "production_metadata": {
+        "asset_id": "P016",
+        "asset_type": "prop",
+        "asset_subtype": "prop_master_card",
+        "output_file": "p016m.png",
+        "prompt_id": "PROMPT_P016",
+        "source_refs": [
+          "bible/world.md#昭明帝国",
+          "bible/scenes.md#旧帝国遗迹",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_zhaoming_sunmoon_system_v01.png",
+          "legacy/pre-remake-2026-06-04/art/project-faction-emblem-asset-qc-report.md#Zhaoming Empire"
+        ],
+        "continuity_refs": [
+          "航海星盘日月徽章",
+          "金色日芒",
+          "月白环",
+          "深朱赤旗布",
+          "磨损金",
+          "旧白石裂纹",
+          "日月照耀皆为故土"
+        ],
+        "usage": [
+          "昭明旧帝国根徽章旗帜",
+          "旧驿遗迹石刻",
+          "驿令/血牒/盟书/旗布统一符号",
+          "昭明相关服饰纹样和后合成母版"
+        ],
+        "approval_status": "planned_pending_art_approval",
+        "generation_status": "not_started_pending_approval",
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p016m.png",
+        "output_format": {
+          "deliverable_kind": "faction_emblem_flag_master_prop_card",
+          "file_format": "PNG",
+          "minimum_resolution": "2160x3840 px",
+          "background_policy": "neutral_plain_background",
+          "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+          "canvas_aspect_ratio": "9:16 vertical",
+          "required_views": [
+            "flat emblem front view",
+            "cloth flag or banner application view",
+            "seal, patch, armor, or stone application view",
+            "material and edge-wear crop sheet",
+            "single-color line-control extraction note",
+            "transparent PNG/SVG derivative planning note",
+            "scale reference across costume, ruin, and prop use"
+          ],
+          "composition_layers": [
+            "plain neutral background layer",
+            "locked root emblem geometry layer",
+            "flag fabric and banner application layer",
+            "costume, seal, stone, wax, or armor application layer",
+            "material/wear detail crop layer",
+            "precision line-control and transparent derivative note layer"
+          ],
+          "qc_checks": [
+            "canonical file uses the exact planned short filename and output path",
+            "basename without extension is 20 characters or fewer",
+            "no readable generated text, UI, watermark, logo, or modern artifact",
+            "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+            "legacy-approved root emblem geometry is preserved and not redesigned",
+            "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+            "exact emblem and flag geometry is not invented freely by the image model",
+            "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+          ],
+          "related_required_deliverables": [
+            "transparent emblem PNG for compositing",
+            "flat single-color SVG/PNG line-control layer",
+            "flag fabric mask and weathering guide",
+            "costume patch, seal, stone-carving, and prop application crops",
+            "scale reference"
+          ]
+        }
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建昭明日月星盘徽章与朱赤旗帜基础母版，作为全剧服饰、遗迹、旗布、道具和后合成统一根视觉资产。",
+        "style_quality": "超写实电影级低魔东方史诗质感，像真实美术部门的可复用根符号道具板；材料真实，旧文明高级但带裂纹、磨损和旧债感。",
+        "subject_content": "锁定昭明的航海星盘式日月徽章：金色日芒、精密星盘/罗盘、月白弧环、深朱赤漆布、磨损金、旧白石裂纹。展示平面根徽章、朱赤旗帜、残旗、石刻、驿令、玉片和服饰刺绣的同源应用。",
+        "composition_motion": "9:16基础母版道具卡，中央为清晰平面徽章，周围分区展示旗布应用、袖口/胸饰应用、旧驿白石刻纹、蜡封/玉片/驿令小件和材质磨损近景；几何必须一致。",
+        "visible_continuity": "不得重新设计昭明徽章，不得变成普通太阳图标、现代国旗、胜利英雄旗或纯洁圣徽；所有应用只能改变材质、尺度、破损、遮挡和年代感。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要普通太阳图标、现代国旗、圣光胜利旗、船只图标、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建昭明日月星盘徽章与朱赤旗帜基础母版，作为全剧服饰、遗迹、旗布、道具和后合成统一根视觉资产。\n超写实电影级低魔东方史诗质感，像真实美术部门的可复用根符号道具板；材料真实，旧文明高级但带裂纹、磨损和旧债感。\n锁定昭明的航海星盘式日月徽章：金色日芒、精密星盘/罗盘、月白弧环、深朱赤漆布、磨损金、旧白石裂纹。展示平面根徽章、朱赤旗帜、残旗、石刻、驿令、玉片和服饰刺绣的同源应用。\n9:16基础母版道具卡，中央为清晰平面徽章，周围分区展示旗布应用、袖口/胸饰应用、旧驿白石刻纹、蜡封/玉片/驿令小件和材质磨损近景；几何必须一致。\n不得重新设计昭明徽章，不得变成普通太阳图标、现代国旗、胜利英雄旗或纯洁圣徽；所有应用只能改变材质、尺度、破损、遮挡和年代感。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要普通太阳图标、现代国旗、圣光胜利旗、船只图标、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建昭明日月星盘徽章与朱赤旗帜基础母版，作为全剧服饰、遗迹、旗布、道具和后合成统一根视觉资产。\n超写实电影级低魔东方史诗质感，像真实美术部门的可复用根符号道具板；材料真实，旧文明高级但带裂纹、磨损和旧债感。\n锁定昭明的航海星盘式日月徽章：金色日芒、精密星盘/罗盘、月白弧环、深朱赤漆布、磨损金、旧白石裂纹。展示平面根徽章、朱赤旗帜、残旗、石刻、驿令、玉片和服饰刺绣的同源应用。\n9:16基础母版道具卡，中央为清晰平面徽章，周围分区展示旗布应用、袖口/胸饰应用、旧驿白石刻纹、蜡封/玉片/驿令小件和材质磨损近景；几何必须一致。\n不得重新设计昭明徽章，不得变成普通太阳图标、现代国旗、胜利英雄旗或纯洁圣徽；所有应用只能改变材质、尺度、破损、遮挡和年代感。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要普通太阳图标、现代国旗、圣光胜利旗、船只图标、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建昭明日月星盘徽章与朱赤旗帜基础母版，作为全剧服饰、遗迹、旗布、道具和后合成统一根视觉资产。\n超写实电影级低魔东方史诗质感，像真实美术部门的可复用根符号道具板；材料真实，旧文明高级但带裂纹、磨损和旧债感。\n锁定昭明的航海星盘式日月徽章：金色日芒、精密星盘/罗盘、月白弧环、深朱赤漆布、磨损金、旧白石裂纹。展示平面根徽章、朱赤旗帜、残旗、石刻、驿令、玉片和服饰刺绣的同源应用。\n9:16基础母版道具卡，中央为清晰平面徽章，周围分区展示旗布应用、袖口/胸饰应用、旧驿白石刻纹、蜡封/玉片/驿令小件和材质磨损近景；几何必须一致。\n不得重新设计昭明徽章，不得变成普通太阳图标、现代国旗、胜利英雄旗或纯洁圣徽；所有应用只能改变材质、尺度、破损、遮挡和年代感。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要普通太阳图标、现代国旗、圣光胜利旗、船只图标、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "output_format": {
+        "deliverable_kind": "faction_emblem_flag_master_prop_card",
+        "file_format": "PNG",
+        "minimum_resolution": "2160x3840 px",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+        "canvas_aspect_ratio": "9:16 vertical",
+        "required_views": [
+          "flat emblem front view",
+          "cloth flag or banner application view",
+          "seal, patch, armor, or stone application view",
+          "material and edge-wear crop sheet",
+          "single-color line-control extraction note",
+          "transparent PNG/SVG derivative planning note",
+          "scale reference across costume, ruin, and prop use"
+        ],
+        "composition_layers": [
+          "plain neutral background layer",
+          "locked root emblem geometry layer",
+          "flag fabric and banner application layer",
+          "costume, seal, stone, wax, or armor application layer",
+          "material/wear detail crop layer",
+          "precision line-control and transparent derivative note layer"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "legacy-approved root emblem geometry is preserved and not redesigned",
+          "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+          "exact emblem and flag geometry is not invented freely by the image model",
+          "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+        ],
+        "related_required_deliverables": [
+          "transparent emblem PNG for compositing",
+          "flat single-color SVG/PNG line-control layer",
+          "flag fabric mask and weathering guide",
+          "costume patch, seal, stone-carving, and prop application crops",
+          "scale reference"
+        ]
+      }
+    },
+    {
+      "prompt_id": "PROMPT_P017",
+      "asset_id": "P017",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p017m.png",
+      "production_metadata": {
+        "asset_id": "P017",
+        "asset_type": "prop",
+        "asset_subtype": "prop_master_card",
+        "output_file": "p017m.png",
+        "prompt_id": "PROMPT_P017",
+        "source_refs": [
+          "bible/factions.md#肃明国虫族",
+          "bible/visual-style.md#虫族统治视觉",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_suming_qingming_system_v01.png",
+          "legacy/pre-remake-2026-06-04/art/project-faction-emblem-asset-qc-report.md#Suming State / Qingming Court"
+        ],
+        "continuity_refs": [
+          "黑日底盘",
+          "角形白翼刃",
+          "珍珠灰裂环",
+          "虫蜡白",
+          "骨白",
+          "冷金钉",
+          "清明白册",
+          "无尘制度感"
+        ],
+        "usage": [
+          "肃明/清明院根徽章旗帜",
+          "清明院白墙与白册章",
+          "官吏服制/军阶牌/烙牌统一符号",
+          "封条/虫蜡/旗帜后合成母版"
+        ],
+        "approval_status": "planned_pending_art_approval",
+        "generation_status": "not_started_pending_approval",
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p017m.png",
+        "output_format": {
+          "deliverable_kind": "faction_emblem_flag_master_prop_card",
+          "file_format": "PNG",
+          "minimum_resolution": "2160x3840 px",
+          "background_policy": "neutral_plain_background",
+          "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+          "canvas_aspect_ratio": "9:16 vertical",
+          "required_views": [
+            "flat emblem front view",
+            "cloth flag or banner application view",
+            "seal, patch, armor, or stone application view",
+            "material and edge-wear crop sheet",
+            "single-color line-control extraction note",
+            "transparent PNG/SVG derivative planning note",
+            "scale reference across costume, ruin, and prop use"
+          ],
+          "composition_layers": [
+            "plain neutral background layer",
+            "locked root emblem geometry layer",
+            "flag fabric and banner application layer",
+            "costume, seal, stone, wax, or armor application layer",
+            "material/wear detail crop layer",
+            "precision line-control and transparent derivative note layer"
+          ],
+          "qc_checks": [
+            "canonical file uses the exact planned short filename and output path",
+            "basename without extension is 20 characters or fewer",
+            "no readable generated text, UI, watermark, logo, or modern artifact",
+            "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+            "legacy-approved root emblem geometry is preserved and not redesigned",
+            "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+            "exact emblem and flag geometry is not invented freely by the image model",
+            "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+          ],
+          "related_required_deliverables": [
+            "transparent emblem PNG for compositing",
+            "flat single-color SVG/PNG line-control layer",
+            "flag fabric mask and weathering guide",
+            "costume patch, seal, stone-carving, and prop application crops",
+            "scale reference"
+          ]
+        }
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建肃明清明黑日白翅徽章与旗帜基础母版，作为肃明服制、清明院遗迹、白册、封条、旗帜和军阶标识的统一根视觉资产。",
+        "style_quality": "超写实电影级低魔东方史诗质感，冷、净、硬、无尘，制度性压迫强；材料真实，虫蜡、骨白、黑釉、珍珠灰裂纹和冷金钉清晰可辨。",
+        "subject_content": "锁定肃明/清明院的黑日白翅根徽章：黑日底盘、角形白翼刃、珍珠灰裂环、虫蜡白和骨白覆层、少量冷金钉。展示完整根徽章、白旗/窄旗、白册章、虫蜡封条、军阶牌、官帽/胸牌和白墙压印的同源应用。",
+        "composition_motion": "9:16基础母版道具卡，中央为清晰平面黑日白翅徽章，周围分区展示旗布应用、白册/封条应用、官吏服制应用、甲军府牌应用和材质裂纹近景；几何必须一致。",
+        "visible_continuity": "不得重新设计肃明徽章；白翅是角形翼刃/虫膜覆盖层，不是柔软天使翅膀；黑日是被洁净秩序压住的权力核心，不得变成怪物巢穴或现代医疗蓝白标志。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要大虫身体当徽章、柔软天使翅膀、怪物巢穴、血腥实验室、现代医院标志、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建肃明清明黑日白翅徽章与旗帜基础母版，作为肃明服制、清明院遗迹、白册、封条、旗帜和军阶标识的统一根视觉资产。\n超写实电影级低魔东方史诗质感，冷、净、硬、无尘，制度性压迫强；材料真实，虫蜡、骨白、黑釉、珍珠灰裂纹和冷金钉清晰可辨。\n锁定肃明/清明院的黑日白翅根徽章：黑日底盘、角形白翼刃、珍珠灰裂环、虫蜡白和骨白覆层、少量冷金钉。展示完整根徽章、白旗/窄旗、白册章、虫蜡封条、军阶牌、官帽/胸牌和白墙压印的同源应用。\n9:16基础母版道具卡，中央为清晰平面黑日白翅徽章，周围分区展示旗布应用、白册/封条应用、官吏服制应用、甲军府牌应用和材质裂纹近景；几何必须一致。\n不得重新设计肃明徽章；白翅是角形翼刃/虫膜覆盖层，不是柔软天使翅膀；黑日是被洁净秩序压住的权力核心，不得变成怪物巢穴或现代医疗蓝白标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要大虫身体当徽章、柔软天使翅膀、怪物巢穴、血腥实验室、现代医院标志、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建肃明清明黑日白翅徽章与旗帜基础母版，作为肃明服制、清明院遗迹、白册、封条、旗帜和军阶标识的统一根视觉资产。\n超写实电影级低魔东方史诗质感，冷、净、硬、无尘，制度性压迫强；材料真实，虫蜡、骨白、黑釉、珍珠灰裂纹和冷金钉清晰可辨。\n锁定肃明/清明院的黑日白翅根徽章：黑日底盘、角形白翼刃、珍珠灰裂环、虫蜡白和骨白覆层、少量冷金钉。展示完整根徽章、白旗/窄旗、白册章、虫蜡封条、军阶牌、官帽/胸牌和白墙压印的同源应用。\n9:16基础母版道具卡，中央为清晰平面黑日白翅徽章，周围分区展示旗布应用、白册/封条应用、官吏服制应用、甲军府牌应用和材质裂纹近景；几何必须一致。\n不得重新设计肃明徽章；白翅是角形翼刃/虫膜覆盖层，不是柔软天使翅膀；黑日是被洁净秩序压住的权力核心，不得变成怪物巢穴或现代医疗蓝白标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要大虫身体当徽章、柔软天使翅膀、怪物巢穴、血腥实验室、现代医院标志、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建肃明清明黑日白翅徽章与旗帜基础母版，作为肃明服制、清明院遗迹、白册、封条、旗帜和军阶标识的统一根视觉资产。\n超写实电影级低魔东方史诗质感，冷、净、硬、无尘，制度性压迫强；材料真实，虫蜡、骨白、黑釉、珍珠灰裂纹和冷金钉清晰可辨。\n锁定肃明/清明院的黑日白翅根徽章：黑日底盘、角形白翼刃、珍珠灰裂环、虫蜡白和骨白覆层、少量冷金钉。展示完整根徽章、白旗/窄旗、白册章、虫蜡封条、军阶牌、官帽/胸牌和白墙压印的同源应用。\n9:16基础母版道具卡，中央为清晰平面黑日白翅徽章，周围分区展示旗布应用、白册/封条应用、官吏服制应用、甲军府牌应用和材质裂纹近景；几何必须一致。\n不得重新设计肃明徽章；白翅是角形翼刃/虫膜覆盖层，不是柔软天使翅膀；黑日是被洁净秩序压住的权力核心，不得变成怪物巢穴或现代医疗蓝白标志。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要大虫身体当徽章、柔软天使翅膀、怪物巢穴、血腥实验室、现代医院标志、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "output_format": {
+        "deliverable_kind": "faction_emblem_flag_master_prop_card",
+        "file_format": "PNG",
+        "minimum_resolution": "2160x3840 px",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+        "canvas_aspect_ratio": "9:16 vertical",
+        "required_views": [
+          "flat emblem front view",
+          "cloth flag or banner application view",
+          "seal, patch, armor, or stone application view",
+          "material and edge-wear crop sheet",
+          "single-color line-control extraction note",
+          "transparent PNG/SVG derivative planning note",
+          "scale reference across costume, ruin, and prop use"
+        ],
+        "composition_layers": [
+          "plain neutral background layer",
+          "locked root emblem geometry layer",
+          "flag fabric and banner application layer",
+          "costume, seal, stone, wax, or armor application layer",
+          "material/wear detail crop layer",
+          "precision line-control and transparent derivative note layer"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "legacy-approved root emblem geometry is preserved and not redesigned",
+          "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+          "exact emblem and flag geometry is not invented freely by the image model",
+          "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+        ],
+        "related_required_deliverables": [
+          "transparent emblem PNG for compositing",
+          "flat single-color SVG/PNG line-control layer",
+          "flag fabric mask and weathering guide",
+          "costume patch, seal, stone-carving, and prop application crops",
+          "scale reference"
+        ]
+      }
+    },
+    {
+      "prompt_id": "PROMPT_P018",
+      "asset_id": "P018",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p018m.png",
+      "production_metadata": {
+        "asset_id": "P018",
+        "asset_type": "prop",
+        "asset_subtype": "prop_master_card",
+        "output_file": "p018m.png",
+        "prompt_id": "PROMPT_P018",
+        "source_refs": [
+          "bible/factions.md#北境诸族",
+          "bible/visual-style.md#北境战争视觉",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-symbol-boards/symbol_northern_wanshou_system_v01.png",
+          "legacy/pre-remake-2026-06-04/art/project-faction-emblem-asset-qc-report.md#Northern Beastfolk Tribal Alliance"
+        ],
+        "continuity_refs": [
+          "骨木万兽誓结",
+          "鹿角枝纹",
+          "狼耳缺口",
+          "熊爪刻痕",
+          "羊角弧",
+          "乌鸦羽影木片",
+          "兽皮绳结",
+          "赭土与灰烬",
+          "冰蓝生存火点"
+        ],
+        "usage": [
+          "北境万兽/部落联盟根徽章旗帜",
+          "北境服饰/盾鼓/皮帐/誓约绳统一符号",
+          "攻城器具和共生兽具识别",
+          "骨木旗帜和透明线控后合成母版"
+        ],
+        "approval_status": "planned_pending_art_approval",
+        "generation_status": "not_started_pending_approval",
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p018m.png",
+        "output_format": {
+          "deliverable_kind": "faction_emblem_flag_master_prop_card",
+          "file_format": "PNG",
+          "minimum_resolution": "2160x3840 px",
+          "background_policy": "neutral_plain_background",
+          "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+          "canvas_aspect_ratio": "9:16 vertical",
+          "required_views": [
+            "flat emblem front view",
+            "cloth flag or banner application view",
+            "seal, patch, armor, or stone application view",
+            "material and edge-wear crop sheet",
+            "single-color line-control extraction note",
+            "transparent PNG/SVG derivative planning note",
+            "scale reference across costume, ruin, and prop use"
+          ],
+          "composition_layers": [
+            "plain neutral background layer",
+            "locked root emblem geometry layer",
+            "flag fabric and banner application layer",
+            "costume, seal, stone, wax, or armor application layer",
+            "material/wear detail crop layer",
+            "precision line-control and transparent derivative note layer"
+          ],
+          "qc_checks": [
+            "canonical file uses the exact planned short filename and output path",
+            "basename without extension is 20 characters or fewer",
+            "no readable generated text, UI, watermark, logo, or modern artifact",
+            "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+            "legacy-approved root emblem geometry is preserved and not redesigned",
+            "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+            "exact emblem and flag geometry is not invented freely by the image model",
+            "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+          ],
+          "related_required_deliverables": [
+            "transparent emblem PNG for compositing",
+            "flat single-color SVG/PNG line-control layer",
+            "flag fabric mask and weathering guide",
+            "costume patch, seal, stone-carving, and prop application crops",
+            "scale reference"
+          ]
+        }
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建北境万兽部落联盟徽章与旗帜基础母版，作为北境诸族服饰、盾鼓、皮帐、誓约绳、骨饰、兽具和旗帜的统一根视觉资产。",
+        "style_quality": "超写实电影级低魔东方史诗质感，低技术、可携带、粗粝神圣，材料必须真实：雕骨、兽角、旧木、兽皮绳、灰烬、赭土和少量冰蓝生存火点。",
+        "subject_content": "锁定北境万兽联盟的骨木誓结根徽章：中央骨木结、鹿角枝纹、狼耳缺口、熊爪刻痕、羊角弧、乌鸦羽影木片、野猪獠牙弧、兽皮绳结、赭土颜料、灰烬黑痕和小范围冰蓝火点。展示根徽章、兽皮旗、盾鼓、皮帐、骨饰、誓约绳和攻城器具标记的同源应用。",
+        "composition_motion": "9:16基础母版道具卡，中央为清晰骨木万兽徽章，周围分区展示兽皮旗帜、盾鼓/皮帐应用、服饰骨饰应用、誓约绳与攻城器具标记、材料磨损近景；几何必须一致。",
+        "visible_continuity": "不得重新设计北境徽章；它代表多族共同体，不是单一动物吉祥物。禁止金属、高科技、宝石、机械对称、单一狼头或狮头、可爱动物和怪物潮。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要金属、金银铜铁、宝石、机械零件、现代运动队 logo、单一狼头、单一狮头、可爱动物、怪物潮、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建北境万兽部落联盟徽章与旗帜基础母版，作为北境诸族服饰、盾鼓、皮帐、誓约绳、骨饰、兽具和旗帜的统一根视觉资产。\n超写实电影级低魔东方史诗质感，低技术、可携带、粗粝神圣，材料必须真实：雕骨、兽角、旧木、兽皮绳、灰烬、赭土和少量冰蓝生存火点。\n锁定北境万兽联盟的骨木誓结根徽章：中央骨木结、鹿角枝纹、狼耳缺口、熊爪刻痕、羊角弧、乌鸦羽影木片、野猪獠牙弧、兽皮绳结、赭土颜料、灰烬黑痕和小范围冰蓝火点。展示根徽章、兽皮旗、盾鼓、皮帐、骨饰、誓约绳和攻城器具标记的同源应用。\n9:16基础母版道具卡，中央为清晰骨木万兽徽章，周围分区展示兽皮旗帜、盾鼓/皮帐应用、服饰骨饰应用、誓约绳与攻城器具标记、材料磨损近景；几何必须一致。\n不得重新设计北境徽章；它代表多族共同体，不是单一动物吉祥物。禁止金属、高科技、宝石、机械对称、单一狼头或狮头、可爱动物和怪物潮。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要金属、金银铜铁、宝石、机械零件、现代运动队 logo、单一狼头、单一狮头、可爱动物、怪物潮、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建北境万兽部落联盟徽章与旗帜基础母版，作为北境诸族服饰、盾鼓、皮帐、誓约绳、骨饰、兽具和旗帜的统一根视觉资产。\n超写实电影级低魔东方史诗质感，低技术、可携带、粗粝神圣，材料必须真实：雕骨、兽角、旧木、兽皮绳、灰烬、赭土和少量冰蓝生存火点。\n锁定北境万兽联盟的骨木誓结根徽章：中央骨木结、鹿角枝纹、狼耳缺口、熊爪刻痕、羊角弧、乌鸦羽影木片、野猪獠牙弧、兽皮绳结、赭土颜料、灰烬黑痕和小范围冰蓝火点。展示根徽章、兽皮旗、盾鼓、皮帐、骨饰、誓约绳和攻城器具标记的同源应用。\n9:16基础母版道具卡，中央为清晰骨木万兽徽章，周围分区展示兽皮旗帜、盾鼓/皮帐应用、服饰骨饰应用、誓约绳与攻城器具标记、材料磨损近景；几何必须一致。\n不得重新设计北境徽章；它代表多族共同体，不是单一动物吉祥物。禁止金属、高科技、宝石、机械对称、单一狼头或狮头、可爱动物和怪物潮。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要金属、金银铜铁、宝石、机械零件、现代运动队 logo、单一狼头、单一狮头、可爱动物、怪物潮、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建北境万兽部落联盟徽章与旗帜基础母版，作为北境诸族服饰、盾鼓、皮帐、誓约绳、骨饰、兽具和旗帜的统一根视觉资产。\n超写实电影级低魔东方史诗质感，低技术、可携带、粗粝神圣，材料必须真实：雕骨、兽角、旧木、兽皮绳、灰烬、赭土和少量冰蓝生存火点。\n锁定北境万兽联盟的骨木誓结根徽章：中央骨木结、鹿角枝纹、狼耳缺口、熊爪刻痕、羊角弧、乌鸦羽影木片、野猪獠牙弧、兽皮绳结、赭土颜料、灰烬黑痕和小范围冰蓝火点。展示根徽章、兽皮旗、盾鼓、皮帐、骨饰、誓约绳和攻城器具标记的同源应用。\n9:16基础母版道具卡，中央为清晰骨木万兽徽章，周围分区展示兽皮旗帜、盾鼓/皮帐应用、服饰骨饰应用、誓约绳与攻城器具标记、材料磨损近景；几何必须一致。\n不得重新设计北境徽章；它代表多族共同体，不是单一动物吉祥物。禁止金属、高科技、宝石、机械对称、单一狼头或狮头、可爱动物和怪物潮。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 faction_emblem_flag_master_prop_card；背景策略为 neutral_plain_background；透明通道策略为 forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing；必须包含 flat emblem front view、cloth flag or banner application view、seal, patch, armor, or stone application view、material and edge-wear crop sheet、single-color line-control extraction note、transparent PNG/SVG derivative planning note、scale reference across costume, ruin, and prop use；构图层级必须包含 plain neutral background layer、locked root emblem geometry layer、flag fabric and banner application layer、costume, seal, stone, wax, or armor application layer、material/wear detail crop layer、precision line-control and transparent derivative note layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要金属、金银铜铁、宝石、机械零件、现代运动队 logo、单一狼头、单一狮头、可爱动物、怪物潮、可读文字、重新发明徽章；精确形状需后续线控或透明图层后合成。"
+      },
+      "output_format": {
+        "deliverable_kind": "faction_emblem_flag_master_prop_card",
+        "file_format": "PNG",
+        "minimum_resolution": "2160x3840 px",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+        "canvas_aspect_ratio": "9:16 vertical",
+        "required_views": [
+          "flat emblem front view",
+          "cloth flag or banner application view",
+          "seal, patch, armor, or stone application view",
+          "material and edge-wear crop sheet",
+          "single-color line-control extraction note",
+          "transparent PNG/SVG derivative planning note",
+          "scale reference across costume, ruin, and prop use"
+        ],
+        "composition_layers": [
+          "plain neutral background layer",
+          "locked root emblem geometry layer",
+          "flag fabric and banner application layer",
+          "costume, seal, stone, wax, or armor application layer",
+          "material/wear detail crop layer",
+          "precision line-control and transparent derivative note layer"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "legacy-approved root emblem geometry is preserved and not redesigned",
+          "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+          "exact emblem and flag geometry is not invented freely by the image model",
+          "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+        ],
+        "related_required_deliverables": [
+          "transparent emblem PNG for compositing",
+          "flat single-color SVG/PNG line-control layer",
+          "flag fabric mask and weathering guide",
+          "costume patch, seal, stone-carving, and prop application crops",
+          "scale reference"
         ]
       }
     },
@@ -7629,13 +8070,17 @@
         "prompt_id": "PROMPT_F004",
         "source_refs": [
           "bible/factions.md",
-          "bible/characters.md#基层官吏、奴兵与虫族士兵"
+          "bible/characters.md#基层官吏、奴兵与虫族士兵",
+          "legacy/pre-remake-2026-06-04/art/project-faction-symbol-system.md",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_zhaoming_empire.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_suming_qingming_state.png",
+          "legacy/pre-remake-2026-06-04/assets/style/faction-emblems/emblem_northern_beastfolk_alliance_wanshou.png"
         ],
         "continuity_refs": [
-          "昭明日月",
-          "肃明黑日白翅",
+          "P016昭明日月星盘根徽章旗帜",
+          "P017肃明黑日白翅根徽章旗帜",
+          "P018北境骨木万兽根徽章旗帜",
           "灰墙军旧甲压痕",
-          "北境骨木誓结",
           "墙下无籍交易牌"
         ],
         "usage": [
@@ -7678,18 +8123,18 @@
         }
       },
       "model_visible_prompt": {
-        "visible_goal": "创建势力符号与禁用标志板，作为全剧共享视觉资产参考。",
+        "visible_goal": "创建势力符号与禁用标志板，统一说明三势力根徽章旗帜如何延展到服饰、遗迹、封条、旗布、甲片和道具。",
         "style_quality": "超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。",
-        "subject_content": "势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。",
+        "subject_content": "势力符号参考板以三套根徽章旗帜为核心：昭明日月星盘与朱赤旗布、肃明黑日白翅与白旗/封条、北境骨木万兽誓结与兽皮旗；同时展示灰墙军旧甲压痕和墙下无籍交易牌作为非国家徽章的物件化标记。",
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
-        "visible_continuity": "精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。",
+        "visible_continuity": "三势力根徽章旗帜是锁定根参考，不得重做或替换；精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "copy_ready": {
-        "positive_prompt": "创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。",
+        "positive_prompt": "创建势力符号与禁用标志板，统一说明三势力根徽章旗帜如何延展到服饰、遗迹、封条、旗布、甲片和道具。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板以三套根徽章旗帜为核心：昭明日月星盘与朱赤旗布、肃明黑日白翅与白旗/封条、北境骨木万兽誓结与兽皮旗；同时展示灰墙军旧甲压痕和墙下无籍交易牌作为非国家徽章的物件化标记。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n三势力根徽章旗帜是锁定根参考，不得重做或替换；精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
-        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+        "chatgpt_image_prompt": "请生成一张图像，并严格遵守以下可见要求：\n创建势力符号与禁用标志板，统一说明三势力根徽章旗帜如何延展到服饰、遗迹、封条、旗布、甲片和道具。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板以三套根徽章旗帜为核心：昭明日月星盘与朱赤旗布、肃明黑日白翅与白旗/封条、北境骨木万兽誓结与兽皮旗；同时展示灰墙军旧甲压痕和墙下无籍交易牌作为非国家徽章的物件化标记。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n三势力根徽章旗帜是锁定根参考，不得重做或替换；精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate an image and strictly follow these visible requirements:\n创建势力符号与禁用标志板，统一说明三势力根徽章旗帜如何延展到服饰、遗迹、封条、旗布、甲片和道具。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板以三套根徽章旗帜为核心：昭明日月星盘与朱赤旗布、肃明黑日白翅与白旗/封条、北境骨木万兽誓结与兽皮旗；同时展示灰墙军旧甲压痕和墙下无籍交易牌作为非国家徽章的物件化标记。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n三势力根徽章旗帜是锁定根参考，不得重做或替换；精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n输出图片格式要求：PNG，9:16 vertical，最低分辨率 2160x3840 px；交付类型为 style_reference_board；背景策略为 designed_style_board_canvas；透明通道策略为 forbidden；必须包含 palette system、material swatches、lighting examples、composition examples、allowed low-magic treatment、prohibited visual examples；构图层级必须包含 style board background layer、palette and material swatch layer、lighting and camera example layer、continuity rule callout layer、negative/prohibited example layer。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       },
       "output_format": {
         "deliverable_kind": "style_reference_board",

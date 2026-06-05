@@ -1,53 +1,59 @@
 {
-  "version": "art-room-series-bible-v3-output-format-2026-06-05",
+  "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_results",
-  "approval_status": "awaiting_art_approval_after_output_format_repair",
+  "approval_status": "awaiting_art_approval_after_faction_root_repair",
   "dispatch_status": "not_dispatched",
   "generated_files": [],
   "history_files": [],
   "threads": [],
   "blocked_items": [
     {
+      "batch_id": "B00_FACTION_EMBLEM_FLAGS",
+      "status": "blocked_pending_art_approval",
+      "reason": "Three faction emblem/flag root assets are planned from legacy-approved designs and must be approved before image generation or downstream style/costume/location/prop work."
+    },
+    {
       "batch_id": "B07_STYLE",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B06_COSTUMES",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B01_CORE_CHARACTERS",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B05_PROPS_SYMBOLS",
       "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
     }
   ],
   "notes": [
     "No Codex background image-generation threads were created in this repair run.",
     "Series image jobs remain blocked by art approval, not by missing planning data.",
-    "Global prompt records now include output_format requirements; image generation remains blocked pending art approval.",
-    "Thread plan dependencies were normalized to the current 7-batch output_format-aware order."
+    "P016/P017/P018 now form B00_FACTION_EMBLEM_FLAGS and lock Zhaoming, Suming/Qingming, and Northern Wanshou root emblem/flag visuals from legacy-approved references.",
+    "All later batches depend on B00 so costumes, ruins, seals, props, flags, and symbol boards derive from the same root faction elements.",
+    "Global prompt records include output_format requirements; image generation remains blocked pending art approval."
   ]
 }

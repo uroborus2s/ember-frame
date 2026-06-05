@@ -1,8 +1,8 @@
 {
-  "version": "art-room-series-bible-v3-output-format-2026-06-05",
+  "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_batches",
-  "approval_status": "awaiting_art_approval_after_output_format_repair",
+  "approval_status": "awaiting_art_approval_after_faction_root_repair",
   "dispatch_status": "not_dispatched",
   "dispatch_policy": "Do not create Codex image-generation threads until art approval is granted for asset-index.json and series-art-image-prompts.json.",
   "history_policy": "Final approved images write to canonical output paths. Retained non-final candidates must be moved to sibling history/ with .v001, .v002 suffixes. Never create v1/, v2/, versions/, or drafts/ directories.",
@@ -19,20 +19,114 @@
       "composition_layers",
       "qc_checks"
     ],
-    "rule": "Thread workers must read each prompt output_format and generate the requested card or board, not a final video frame unless the asset subtype is reference_frame or shot_override."
+    "rule": "Thread workers must read each prompt output_format and generate the requested card or board, not a final video frame unless the asset subtype is reference_frame or shot_override.",
+    "faction_emblem_flag_roots_required": true,
+    "root_batch_id": "B00_FACTION_EMBLEM_FLAGS",
+    "root_asset_ids": [
+      "P016",
+      "P017",
+      "P018"
+    ]
   },
   "batches": [
+    {
+      "batch_id": "B00_FACTION_EMBLEM_FLAGS",
+      "title": "三势力徽章旗帜基础母版",
+      "batch_type": "props-costumes",
+      "status": "blocked_pending_art_approval",
+      "creation_order": 1,
+      "creation_phase": "00_faction_emblem_flag_roots",
+      "priority": "critical",
+      "depends_on_batches": [],
+      "depends_on_assets": [],
+      "dependency_reason": "Root faction emblem and flag master cards must be approved before style, costume, character, location, prop, ruin, and symbol generation.",
+      "prompt_ids": [
+        "PROMPT_P016",
+        "PROMPT_P017",
+        "PROMPT_P018"
+      ],
+      "asset_ids": [
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "output_dirs": [
+        "assets/props"
+      ],
+      "output_paths": [
+        "assets/props/p016m.png",
+        "assets/props/p017m.png",
+        "assets/props/p018m.png"
+      ],
+      "expected_final_files": [
+        "assets/props/p016m.png",
+        "assets/props/p017m.png",
+        "assets/props/p018m.png"
+      ],
+      "retry_policy": "After approval, generate 1-3 candidates per asset only when needed; keep one final file at output_path and archive retained alternatives in history/ with version suffixes. These roots must preserve legacy-approved emblem geometry and plan transparent/line-control derivatives separately.",
+      "output_format_requirements": [
+        {
+          "deliverable_kind": "faction_emblem_flag_master_prop_card",
+          "file_format": "PNG",
+          "minimum_resolution": "2160x3840 px",
+          "background_policy": "neutral_plain_background",
+          "alpha_policy": "forbidden_for_this_card; transparent emblem, flag-mask, or SVG/PNG line-control layers must be planned separately for exact compositing",
+          "canvas_aspect_ratio": "9:16 vertical",
+          "required_views": [
+            "flat emblem front view",
+            "cloth flag or banner application view",
+            "seal, patch, armor, or stone application view",
+            "material and edge-wear crop sheet",
+            "single-color line-control extraction note",
+            "transparent PNG/SVG derivative planning note",
+            "scale reference across costume, ruin, and prop use"
+          ],
+          "composition_layers": [
+            "plain neutral background layer",
+            "locked root emblem geometry layer",
+            "flag fabric and banner application layer",
+            "costume, seal, stone, wax, or armor application layer",
+            "material/wear detail crop layer",
+            "precision line-control and transparent derivative note layer"
+          ],
+          "qc_checks": [
+            "canonical file uses the exact planned short filename and output path",
+            "basename without extension is 20 characters or fewer",
+            "no readable generated text, UI, watermark, logo, or modern artifact",
+            "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+            "legacy-approved root emblem geometry is preserved and not redesigned",
+            "flag, costume, ruin, seal, and prop applications derive from the same root emblem",
+            "exact emblem and flag geometry is not invented freely by the image model",
+            "transparent cutouts, masks, and SVG/PNG line-control layers are treated as separate required deliverables"
+          ],
+          "related_required_deliverables": [
+            "transparent emblem PNG for compositing",
+            "flat single-color SVG/PNG line-control layer",
+            "flag fabric mask and weathering guide",
+            "costume patch, seal, stone-carving, and prop application crops",
+            "scale reference"
+          ]
+        }
+      ],
+      "thread_prompt": "After art approval, generate final raster assets for 三势力徽章旗帜基础母版. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
+    },
     {
       "batch_id": "B07_STYLE",
       "title": "全剧风格板",
       "batch_type": "style",
       "status": "blocked_pending_art_approval",
-      "creation_order": 1,
+      "creation_order": 2,
       "creation_phase": "01_style_references",
       "priority": "critical",
-      "depends_on_batches": [],
-      "depends_on_assets": [],
-      "dependency_reason": "Root visual system must be approved before all other master assets.",
+      "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS"
+      ],
+      "depends_on_assets": [
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "dependency_reason": "Style boards depend on approved root faction emblem/flag masters so faction symbol rules, material swatches, and prohibited examples derive from locked roots.",
       "prompt_ids": [
         "PROMPT_F001",
         "PROMPT_F002",
@@ -102,17 +196,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 全剧风格板. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 全剧风格板. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B06_COSTUMES",
       "title": "服装系统",
       "batch_type": "props-costumes",
       "status": "blocked_pending_art_approval",
-      "creation_order": 2,
+      "creation_order": 3,
       "creation_phase": "02_costume_style_references",
       "priority": "critical",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE"
       ],
       "depends_on_assets": [
@@ -121,9 +216,12 @@
         "F003",
         "F004",
         "F005",
-        "F006"
+        "F006",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Costume boards depend on approved palette, material, faction-symbol, composition, and low-magic style references.",
+      "dependency_reason": "Costume boards depend on approved faction emblem/flag roots plus palette, material, faction-symbol, composition, and low-magic style references.",
       "prompt_ids": [
         "PROMPT_K001",
         "PROMPT_K002",
@@ -195,17 +293,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 服装系统. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 服装系统. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B01_CORE_CHARACTERS",
       "title": "核心、追捕线与沈家旧档角色",
       "batch_type": "characters",
       "status": "blocked_pending_art_approval",
-      "creation_order": 3,
+      "creation_order": 4,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE",
         "B06_COSTUMES"
       ],
@@ -221,9 +320,12 @@
         "K003",
         "K004",
         "K005",
-        "K006"
+        "K006",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Core identity cards need approved style and costume systems, including Shen Weisang legacy face/hair continuity and Shen Jiheng archive-image continuity.",
+      "dependency_reason": "Core identity cards need approved faction emblem/flag roots, style, costume systems, Shen Weisang legacy face/hair continuity, and Shen Jiheng archive-image continuity.",
       "prompt_ids": [
         "PROMPT_C001",
         "PROMPT_C002",
@@ -321,17 +423,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 核心、追捕线与沈家旧档角色. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 核心、追捕线与沈家旧档角色. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "title": "北境具名角色与族群/肃明层级模板",
       "batch_type": "characters",
       "status": "blocked_pending_art_approval",
-      "creation_order": 4,
+      "creation_order": 5,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE",
         "B06_COSTUMES"
       ],
@@ -343,9 +446,12 @@
         "F005",
         "F006",
         "K004",
-        "K005"
+        "K005",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Faction templates need approved style, Sumin hierarchy costume rules, and northern material rules.",
+      "dependency_reason": "Faction templates need approved faction emblem/flag roots, Sumin hierarchy costume rules, and northern material rules.",
       "prompt_ids": [
         "PROMPT_C012",
         "PROMPT_C013",
@@ -435,17 +541,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 北境具名角色与族群/肃明层级模板. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 北境具名角色与族群/肃明层级模板. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "title": "第一季核心地点",
       "batch_type": "locations",
       "status": "blocked_pending_art_approval",
-      "creation_order": 5,
+      "creation_order": 6,
       "creation_phase": "04_location_master_scene_cards",
       "priority": "high",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE"
       ],
       "depends_on_assets": [
@@ -453,9 +560,12 @@
         "F002",
         "F003",
         "F005",
-        "F006"
+        "F006",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Season-one locations need approved visual style, regional color, material, vertical composition, and low-magic boundary rules.",
+      "dependency_reason": "Season-one locations need approved faction emblem/flag roots for ruins, flags, seals, wall marks, and scene dressing, plus style, regional color, material, composition, and low-magic rules.",
       "prompt_ids": [
         "PROMPT_L001",
         "PROMPT_L002",
@@ -546,17 +656,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 第一季核心地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 第一季核心地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
       "title": "后续季伏笔地点",
       "batch_type": "locations",
       "status": "blocked_pending_art_approval",
-      "creation_order": 6,
+      "creation_order": 7,
       "creation_phase": "04_location_master_scene_cards",
       "priority": "high",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE"
       ],
       "depends_on_assets": [
@@ -564,9 +675,12 @@
         "F002",
         "F003",
         "F005",
-        "F006"
+        "F006",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Future locations must remain consistent with the series route without becoming episode-specific scene frames.",
+      "dependency_reason": "Future locations must use the same faction emblem/flag roots while remaining consistent with the series route and avoiding episode-specific scene frames.",
       "prompt_ids": [
         "PROMPT_L012",
         "PROMPT_L013",
@@ -633,17 +747,18 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 后续季伏笔地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 后续季伏笔地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     },
     {
       "batch_id": "B05_PROPS_SYMBOLS",
       "title": "核心道具与精确符号",
       "batch_type": "props-costumes",
       "status": "blocked_pending_art_approval",
-      "creation_order": 7,
+      "creation_order": 8,
       "creation_phase": "05_prop_and_precision_symbol_master_cards",
       "priority": "high",
       "depends_on_batches": [
+        "B00_FACTION_EMBLEM_FLAGS",
         "B07_STYLE",
         "B01_CORE_CHARACTERS",
         "B02_NORTHERN_AND_FACTION_TEMPLATES"
@@ -668,9 +783,12 @@
         "C019",
         "C020",
         "C021",
-        "C022"
+        "C022",
+        "P016",
+        "P017",
+        "P018"
       ],
-      "dependency_reason": "Props and exact symbols depend on approved style, owner identity cards, Sumin hierarchy, northern pact references, and precision-symbol rules.",
+      "dependency_reason": "Props and exact symbols depend on approved faction emblem/flag roots, style, owner identity cards, Sumin hierarchy, northern pact references, and precision-symbol rules.",
       "prompt_ids": [
         "PROMPT_P001",
         "PROMPT_P002",
@@ -779,7 +897,7 @@
           ]
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 核心道具与精确符号. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed."
+      "thread_prompt": "After art approval, generate final raster assets for 核心道具与精确符号. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes."
     }
   ]
 }
