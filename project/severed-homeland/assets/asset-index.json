@@ -1,9 +1,9 @@
 {
-  "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
+  "version": "art-room-series-bible-v4-faction-roots-c026-human-crowds-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_assets",
-  "approval_status": "pending_art_approval_after_schema_output_format_repair",
-  "image_generation_status": "partial_b00_generation_in_progress",
+  "approval_status": "approved_b00_b07_b06_complete_downstream_pending_c025_c026_prompt_reviewed_100",
+  "image_generation_status": "b06_prompt_revised_pending_regeneration_c025_c026_not_started",
   "created_at": "2026-06-05",
   "source_inputs": [
     "bible/world.md",
@@ -34,11 +34,12 @@
     "retained_intermediates": "sibling history/ directory with .v001, .v002 suffixes"
   },
   "counts": {
-    "character": 22,
+    "character": 26,
     "location": 16,
     "prop": 18,
     "costume": 6,
-    "style": 6
+    "style": 6,
+    "costume_complete": 6
   },
   "assets": [
     {
@@ -49,8 +50,8 @@
       "file": "c001m.png",
       "basename": "c001m",
       "output_path": "assets/characters/c001m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "generated_pending_art_review",
+      "generation_status": "generated_qc_passed_current_thread",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#沈维桑",
@@ -82,7 +83,7 @@
       "continuity_lock": "必须保持 已批准同款窄长少年脸、黑色短碎乱发、额前碎刘海、贴脸鬓发、锋利剑眉、深黑星目和少年剑目星眉气质，同时保持后期精瘦耐走体态、弓弦茧、左肩旧伤动作习惯和半成品旧驿共鸣的克制感；不能变成王者、战神、法师、军官、圆脸少年或现代偶像发型。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c001m.png",
-      "status": "blocked",
+      "status": "generated_qc_passed",
       "prompt_id": "PROMPT_C001",
       "history_files": [],
       "creation_phase": "03_character_master_cards",
@@ -101,7 +102,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "canonical_image_generated_qc_passed_pending_art_review",
       "identity_lock": {
         "age_impression": "十七岁少年，山路猎户与旧驿后裔，不成熟王者化",
         "face_features": "已批准同款窄长少年脸，颧颌收紧但不尖，锋利剑眉，深黑星目，直鼻薄唇，眼神克制警觉，少年剑目星眉",
@@ -183,6 +184,27 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "dependencies_complete_generated_current_thread",
+      "generated_at": "2026-06-05",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22b1e31d048196bf6e3762843ba951.png",
+      "final_sha256": "c91b18535aeafb342a8a30cdf01fb3b66a1a85e891e80c796625ad30e3f7f4b0",
+      "generation_notes": [
+        "Generated in current thread with the provided legacy Shen Weisang board as strict face and hair reference; normalized to 2160x3840 with horizontal neutral padding before upsample to avoid face distortion."
+      ],
+      "identity_reference_lock": {
+        "reference_file": "legacy/pre-remake-2026-06-04/assets/characters/character_shen_weisang_multi_state_board.png",
+        "lock_scope": "face shape and hairstyle must match the provided reference board exactly for PROMPT_C001-derived assets",
+        "locked_traits": [
+          "narrow youthful long face",
+          "tightened cheek and jaw structure but not sharp",
+          "sharp sword-like dark brows",
+          "deep black wary eyes",
+          "short messy black hair",
+          "broken uneven forehead bangs",
+          "close face-framing side locks",
+          "cool restrained hunter expression"
+        ]
       }
     },
     {
@@ -193,8 +215,8 @@
       "file": "c002m.png",
       "basename": "c002m",
       "output_path": "assets/characters/c002m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "generated_pending_art_review",
+      "generation_status": "generated_qc_passed_current_thread",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#晏南枝",
@@ -217,7 +239,7 @@
       "continuity_lock": "保留人族顶级古典美貌、皇室礼法训练和逃亡擦伤并存的反差；不能网红脸、尖下巴、过度磨皮、艳俗宫装或只作为被凝视的花瓶。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c002m.png",
-      "status": "blocked",
+      "status": "generated_qc_passed",
       "prompt_id": "PROMPT_C002",
       "history_files": [],
       "creation_phase": "03_character_master_cards",
@@ -237,7 +259,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "canonical_image_generated_qc_passed_pending_art_review",
       "identity_lock": {
         "age_impression": "十八岁人族旧帝国皇室旁支",
         "face_features": "古典椭圆脸、清冷明亮眉眼、红线束发",
@@ -316,7 +338,14 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "dependencies_complete_generated_current_thread",
+      "generated_at": "2026-06-05",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png",
+      "final_sha256": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258",
+      "generation_notes": [
+        "Generated in current thread from approved PROMPT_C002 and K002 costume/state reference; normalized to 2160x3840."
+      ]
     },
     {
       "asset_id": "C003",
@@ -443,7 +472,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C004",
@@ -467,14 +497,16 @@
         "粗麻墙巾",
         "冻裂手指",
         "骨哨",
-        "磨损长枪"
+        "磨损长枪",
+        "与普通边墙军户群像区分"
       ],
       "usage": [
         "边墙军户导师身份锁定",
-        "灰墙军现实主义视觉母版"
+        "灰墙军现实主义视觉母版",
+        "与 C024 普通边墙军户群像区分"
       ],
       "design_summary": "五十岁上下人族边墙老墙师，宽厚骨架、风雪压出的沉重肩背，胡茬、额纹、眼下暗沉和冻裂粗手清楚，穿灰石厚衬袄、祖传旧甲片、粗麻墙巾和雪线绑腿，持磨损长枪与骨哨。",
-      "continuity_lock": "必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。",
+      "continuity_lock": "必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。 薛临墙是具名老墙师和锁喉关现场指挥者，不是普通军户群像成员；他的标志是五十岁上下、宽厚缺粮压瘦的老墙师体态、骨哨、磨损长枪、旧甲片内侧三日粮牌旧债和压低命令姿态。普通边墙军户的年龄、性别、职责和装备轻重应另由 C024 群像模板承载。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c004m.png",
       "status": "blocked",
@@ -502,7 +534,7 @@
         "face_features": "按设计摘要中的头面与身份锚点保持一致",
         "hair_skin_texture": "祖传旧甲片",
         "height_body_type": "约182厘米；约82公斤，宽厚但缺粮压瘦",
-        "movement_habits": "必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。",
+        "movement_habits": "必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。 薛临墙是具名老墙师和锁喉关现场指挥者，不是普通军户群像成员；他的标志是五十岁上下、宽厚缺粮压瘦的老墙师体态、骨哨、磨损长枪、旧甲片内侧三日粮牌旧债和压低命令姿态。普通边墙军户的年龄、性别、职责和装备轻重应另由 C024 群像模板承载。",
         "forbidden_future_reveals": "不得提前揭示后续季身份、复国胜利、终局政治答案或非本季行动状态。"
       },
       "body_metrics": {
@@ -572,6 +604,11 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete",
+      "prompt_review": {
+        "c024_distinction_added_at": "2026-06-05",
+        "c024_distinction_note": "C004 is a named old wall-master and field commander; C024 carries ordinary Grey Wall military-household crowd variation."
       }
     },
     {
@@ -698,7 +735,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C006",
@@ -825,7 +863,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C007",
@@ -957,7 +996,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C008",
@@ -1082,7 +1122,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C009",
@@ -1207,7 +1248,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C010",
@@ -1335,7 +1377,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C011",
@@ -1462,7 +1505,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C012",
@@ -1586,7 +1630,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C013",
@@ -1711,7 +1756,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C014",
@@ -1835,7 +1881,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C015",
@@ -1959,7 +2006,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C016",
@@ -2089,7 +2137,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C017",
@@ -2217,7 +2266,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C018",
@@ -2344,7 +2394,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C019",
@@ -2470,7 +2521,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C020",
@@ -2599,7 +2651,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C021",
@@ -2730,7 +2783,8 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "dependency_status": "costume_dependencies_complete"
     },
     {
       "asset_id": "C022",
@@ -2863,6 +2917,732 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete"
+    },
+    {
+      "asset_id": "C023",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "display_name": "人族逃难流民群像模板",
+      "file": "c023m.png",
+      "basename": "c023m",
+      "output_path": "assets/characters/c023m.png",
+      "approval_status": "prompt_reviewed_pending_art_approval",
+      "generation_status": "not_started_pending_approval",
+      "requires_precision_control": false,
+      "source_refs": [
+        "03/script/final-script.md#山道难民沟逃荒队",
+        "03/shots/scene-breakdown.json#SC002",
+        "06/script/final-script.md#逃荒妇人姿态",
+        "bible/visual-style.md#人族视觉边界",
+        "bible/characters.md#角色建模总则"
+      ],
+      "continuity_refs": [
+        "山道难民沟逃荒队",
+        "征粮逃荒家庭",
+        "妇人推空粮车",
+        "老人背祖牌小盒",
+        "少年腿上白册复核条",
+        "清明籍与白册复核压迫痕迹",
+        "空粮袋与旧包袱",
+        "饥疲体态但中式衣物完整收边",
+        "年龄性别职业地域差异",
+        "不能覆盖普通人族群众状态"
+      ],
+      "usage": [
+        "第03集山道难民沟逃荒队主参考",
+        "第06集清明院队列中逃荒妇人姿态辅助参考",
+        "人族群众极端逃难状态模板，补充 K006 正常地域群众差异板但不取代它"
+      ],
+      "design_summary": "征粮、战乱和白册复核压力下的人族逃难流民群像，不是所有人族群众默认形象。群像包含妇人推空粮车、老人背祖牌小盒、少年腿带白册复核条、抱孩子或护包袱的逃荒家庭、被队伍遮掩的边墙逃兵伪装可能性；衣物贫旧、洗褪、补丁、尘土、肩背压痕、空粮袋和旧包袱可见，但仍保持中式实用缝制和完整收边。",
+      "continuity_lock": "必须明确这是征粮、白册复核、战乱和逃荒压力造成的极端人族群像状态，可以更像乞讨者、逃荒者、流民，但不能把所有人族群众默认乞丐化或同款破布化；同一群像至少包含三类年龄、性别、职业、地域或贫困程度差异。贫困通过褪色、洗旧、补丁、加固针脚、局部污渍、肩背压痕、空粮容器、疲惫步态和护物姿态表达，不能依赖现代街头乞丐、喜剧化脏乱、随机破布条或丧尸化形象。",
+      "version": "art-room-series-bible-v4-c023-refugee-crowd-2026-06-05",
+      "file_path": "assets/characters/c023m.png",
+      "status": "prompt_reviewed_pending_art_approval",
+      "prompt_id": "PROMPT_C023",
+      "history_files": [],
+      "creation_phase": "03_character_master_cards",
+      "creation_order": 63,
+      "depends_on_assets": [
+        "F001",
+        "F002",
+        "F003",
+        "F005",
+        "F006",
+        "K006",
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "dependency_reason": "Requires upstream series style boards, low-magic boundary rules, K006 human regional crowd costume board, and faction roots so the refugee poverty state supplements rather than overwrites ordinary human crowd rules.",
+      "priority": "high",
+      "card_layout": "9:16 multi-person character crowd board: family-unit lineup, front/side/back/three-quarter group views, queue posture, empty-cart and bundle scale reference, face/hand/feet/fabric wear close-ups.",
+      "asset_card_status": "prompt_reviewed_pending_image_approval",
+      "identity_lock": {
+        "age_impression": "混合年龄群像：幼童、少年、成年妇人、成年男子和老人并列，整体被饥荒和迁徙压低气色",
+        "face_features": "脸型和五官不统一，包含晒暗、干裂、浮肿、瘦削和惊惧克制等差异；不做网红脸或重复复制脸",
+        "hair_skin_texture": "头发凌乱但有束扎逻辑，皮肤有风尘、干裂、疲惫和局部污渍，不能过度磨皮或戏剧化脏污",
+        "height_body_type": "群像跨儿童、少年、成人和老人；成人多为瘦弱或负重压肩体态，个别农人仍有劳动骨架",
+        "movement_habits": "肩缩、护包袱、推空粮车、背祖牌小盒、牵孩子、排队接受白册复核，步态慢而戒备",
+        "forbidden_future_reveals": "不得提前揭示后续季政治答案、复国胜利、隐藏组织结局或非本季状态；不得把流民群像变成主角团新组织。"
+      },
+      "body_metrics": {
+        "height": "群像尺度：幼童约110-140厘米，少年约145-165厘米，成人约155-175厘米，老人多佝偻显矮",
+        "weight_build": "整体偏瘦、脱水、疲惫；成人仍保留农人、军户家属或渡口遗民的劳动骨架差异",
+        "body_ratio": "肩背被包袱和空粮车压低，膝步短，手臂护物或牵孩子；儿童头身比明显，老人背弯",
+        "silhouette": "空粮车、旧包袱、祖牌小盒、白册复核条、补丁粗布、护孩子姿态形成逃荒队剪影",
+        "scale_refs": [
+          "与 K006 人族地域群众服装差异板保持衣料和地域来源连续，但贫困与疲惫程度更高",
+          "同画面至少一组家庭单位、一名老人、一名少年和一名负重成年人",
+          "空粮车和包袱不能大到遮蔽身体比例，必须看出真实负重",
+          "白册复核条只做可控视觉条带，不生成可读文字"
+        ]
+      },
+      "episode_state": "series_master_extreme_refugee_crowd_state; episode-specific dirt, wounds, route weather, queue placement, and shot staging must be created as separate episode_state cards or reference frames later.",
+      "blocks_assets": [],
+      "output_format": {
+        "deliverable_kind": "neutral_master_card",
+        "deliverable_kind_notes": "neutral_master_character_card",
+        "file_format": "png",
+        "file_format_notes": "PNG",
+        "minimum_resolution": "2160x3840",
+        "minimum_resolution_notes": "2160x3840 px",
+        "background_policy": "neutral_plain",
+        "background_policy_notes": "neutral_plain_background",
+        "alpha_policy": "forbidden",
+        "alpha_policy_notes": "forbidden_for_this_card; transparent cutout must be planned as a separate PNG/SVG deliverable before compositing",
+        "canvas_aspect_ratio": "project_defined",
+        "canvas_aspect_ratio_notes": "9:16 vertical",
+        "required_views": [
+          "front full-body crowd lineup",
+          "side movement and load-bearing view",
+          "back view showing bundles, carts, straps, and worn garment construction",
+          "three-quarter group view",
+          "family unit pose with adult, elder, child, and adolescent variation",
+          "queue infiltration pose suitable for 山道难民沟 and 清明院队列",
+          "face, hands, feet, food bag, cart, bundle, and fabric wear close-ups",
+          "human scale reference across age, gender, and poverty states"
+        ],
+        "composition_layers": {
+          "foreground": "multi-person refugee crowd lineup with readable family units, empty cart, bundles, lowered shoulders, and full-body scale variation",
+          "midground": "face, hands, feet, worn clothing, repaired seams, white-register review strip, empty grain bag, ancestral-box, and cart detail crop layers",
+          "background": "neutral plain character-card background with scale swatches and no readable captions or process metadata"
+        },
+        "composition_layer_notes": [
+          "plain neutral background layer",
+          "multi-person crowd lineup and family-unit layer",
+          "face, hands, feet, fatigue, and posture detail crop layer",
+          "bundle/cart/empty grain bag/ancestral box material detail layer",
+          "age, gender, profession, region, and poverty-state scale reference layer"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "crowd contains visible age, gender, occupation, regional, and poverty-state variation instead of one repeated ragged figure",
+          "poverty is expressed through washed fabric, repair seams, patch placement, dust, load marks, empty food containers, and fatigue, while Chinese-style garment construction keeps intact practical hems",
+          "card is not treated as a final video frame"
+        ],
+        "related_required_deliverables": [
+          "transparent cutout for selected crowd clusters planned separately if needed",
+          "turnaround sheet",
+          "detail crop sheet",
+          "scale reference"
+        ],
+        "separate_derivatives_required": true,
+        "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete",
+      "prompt_review": {
+        "reviewed_at": "2026-06-05",
+        "review_status": "pass_for_planning_prompt_addition",
+        "review_notes": [
+          "C023 is scoped as an extreme refugee/displaced crowd state and does not replace K006 ordinary human regional crowd costume rules.",
+          "Primary usage is Episode 03 山道难民沟逃荒队; secondary posture reference is Episode 06 清明院队列逃荒妇人.",
+          "No image generation is launched by this planning update."
+        ]
+      }
+    },
+    {
+      "asset_id": "C024",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "display_name": "边墙普通军户群像模板",
+      "file": "c024m.png",
+      "basename": "c024m",
+      "output_path": "assets/characters/c024m.png",
+      "approval_status": "prompt_reviewed_pending_art_approval",
+      "generation_status": "not_started_pending_approval",
+      "requires_precision_control": false,
+      "source_refs": [
+        "bible/characters.md#边墙军户建模规则",
+        "bible/visual-style.md#边墙军户必须保持多样性",
+        "01/script/final-script.md#锁喉关外墙年轻灰墙军户",
+        "01/shots/scene-breakdown.json#SC01",
+        "08/script/final-script.md#锁喉关主门与粮仓门",
+        "08/shots/scene-breakdown.json#灰墙军户",
+        "10/script/final-script.md#薛临墙旧债对照"
+      ],
+      "continuity_refs": [
+        "年轻征发兵",
+        "老军户",
+        "守墙妇人",
+        "女性补甲者",
+        "火夫",
+        "运水少年",
+        "冻伤哨兵",
+        "伤退军户",
+        "修甲匠",
+        "烽燧守灯人",
+        "随军家眷",
+        "厚衬袄",
+        "旧甲片",
+        "黑石灰",
+        "旧铁",
+        "干血暗红",
+        "雪线绑腿",
+        "补墙锤",
+        "旧枪",
+        "骨哨",
+        "炭篓",
+        "水袋",
+        "裂盾",
+        "缝补甲绳",
+        "军户木牌",
+        "与薛临墙区分"
+      ],
+      "usage": [
+        "第01集锁喉关外墙年轻灰墙军户与守墙压力参考",
+        "第08集锁喉关主门、粮仓门和墙上不断倒下的军户群像参考",
+        "边墙普通军户不同年龄、性别、职责、伤退和家眷差异模板",
+        "与 C004 薛临墙具名老墙师身份卡区分"
+      ],
+      "design_summary": "边墙普通军户群像模板，表现锁喉关与灰墙军系统中被军户制捆住的普通人：年轻征发兵、老军户、守墙妇人、女性补甲者、火夫、运水少年、冻伤哨兵、伤退军户、修甲匠、烽燧守灯人和随军家眷并列。整体是守墙生活和消耗战人群，不是整齐军官队列；服装以厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿和粗麻墙巾为主，道具包含补墙锤、旧枪、骨哨、炭篓、水袋、裂盾、缝补甲绳和军户木牌。",
+      "continuity_lock": "必须保持边墙普通军户的多年龄、多职责和军户生活属性，不得只画成一排同款老兵或正规军。普通军户可以疲惫、冻伤、缺粮、负重、补甲、运水、守灯和照料伤兵，但不能拥有薛临墙的具名老墙师权威、宽厚指挥者体量、旧甲片内三日粮牌旧债、核心长枪骨哨组合和压场命令姿态。",
+      "version": "art-room-series-bible-v4-c024-wall-households-2026-06-05",
+      "file_path": "assets/characters/c024m.png",
+      "status": "prompt_reviewed_pending_art_approval",
+      "prompt_id": "PROMPT_C024",
+      "history_files": [],
+      "creation_phase": "03_character_master_cards",
+      "creation_order": 64,
+      "depends_on_assets": [
+        "F001",
+        "F002",
+        "F003",
+        "F005",
+        "F006",
+        "K006",
+        "C004",
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "dependency_reason": "Requires series style, K006 human crowd costume rules, and C004 Xue Linqiang identity lock so ordinary Grey Wall military households remain varied and distinct from the named old wall-master.",
+      "priority": "high",
+      "card_layout": "9:16 multi-person wall military-household board: age-role lineup, front/side/back/three-quarter group views, wall-duty posture sheet, logistics and family support poses, equipment and frostbite detail crops.",
+      "asset_card_status": "prompt_reviewed_pending_image_approval",
+      "identity_lock": {
+        "age_impression": "从运水少年、年轻征发兵、中年守墙者到老军户和伤退军户并列，年龄跨度清楚",
+        "face_features": "脸型五官不统一，包含冻红、风裂、疲惫、警惕、麻木和硬撑等差异；不能复制薛临墙的具名脸",
+        "hair_skin_texture": "头发多被墙巾、皮绳或旧帽束住，皮肤有风雪皴裂、黑石灰、冻伤、干血和长期缺眠痕迹",
+        "height_body_type": "普通中陆人族尺度，少年瘦小、年轻兵紧绷、中年军户负重、老军户佝偻或伤退；不能全部宽肩老兵化",
+        "movement_habits": "压长矛、补墙、倒水袋、背炭篓、缝甲绳、扶伤兵、守烽灯、排粮门，动作短促省力",
+        "forbidden_future_reveals": "不得提前揭示边墙终局、复国胜利或灰墙军后续政治选择；不得把普通军户塑造成薛临墙替身。"
+      },
+      "body_metrics": {
+        "height": "群像尺度：少年约140-165厘米，成年军户约160-185厘米，老人和伤退者因佝偻显矮",
+        "weight_build": "从瘦小运水少年、缺粮年轻兵、劳动型中年军户到宽肩但伤退的老兵都有差异",
+        "body_ratio": "肩背被厚衬袄、旧甲片、水袋、炭篓和裂盾压住；守墙者重心低，后勤者步幅短，伤退者不对称",
+        "silhouette": "灰石厚衬袄、旧甲片、粗麻墙巾、雪线绑腿、旧枪、水袋、炭篓、裂盾和军户木牌构成普通边墙军户群像剪影",
+        "scale_refs": [
+          "薛临墙比多数普通军户更高更厚重，但 C024 不复制他的脸、核心道具组合和指挥姿态",
+          "同画面至少出现年轻征发兵、女性补甲者、运水少年、老军户或伤退军户中的三类",
+          "普通军户装备更杂、更旧、更轻重不齐，不像军官或英雄主角统一套装",
+          "女性军户和随军家眷必须作为边墙生活角色出现，不能被抹掉"
+        ]
+      },
+      "episode_state": "series_master_wall_military_household_crowd_state; episode-specific wounds, snow, hunger, battle damage, ration state, and shot staging must be created as separate episode_state cards or reference frames later.",
+      "blocks_assets": [
+        "P015"
+      ],
+      "output_format": {
+        "deliverable_kind": "neutral_master_card",
+        "deliverable_kind_notes": "neutral_master_character_card",
+        "file_format": "png",
+        "file_format_notes": "PNG",
+        "minimum_resolution": "2160x3840",
+        "minimum_resolution_notes": "2160x3840 px",
+        "background_policy": "neutral_plain",
+        "background_policy_notes": "neutral_plain_background",
+        "alpha_policy": "forbidden",
+        "alpha_policy_notes": "forbidden_for_this_card; transparent cutout must be planned as a separate PNG/SVG deliverable before compositing",
+        "canvas_aspect_ratio": "project_defined",
+        "canvas_aspect_ratio_notes": "9:16 vertical",
+        "required_views": [
+          "front full-body wall military-household lineup",
+          "side movement and load-bearing guard-duty view",
+          "back view showing winter layers, old armor plates, repair cords, water bags, and wall tools",
+          "three-quarter group view",
+          "age-role lineup: young conscript, middle-aged household soldier, elder household veteran, woman armor-mender, cook, water-carrying adolescent, frostbitten sentry, wounded retired soldier, beacon keeper, and family member",
+          "wall-duty pose sheet with spear press, water pouring, armor repair, stretcher support, beacon tending, and ration waiting",
+          "face, hands, frostbite, armor plate, wall scarf, bindings, boots, shield, water bag, charcoal basket, and military-household tag close-ups",
+          "scale reference distinguishing ordinary military households from Xue Linqiang"
+        ],
+        "composition_layers": {
+          "foreground": "multi-age ordinary Grey Wall military-household lineup with guard-duty, repair, carrying, cooking, wounded, and family support roles",
+          "midground": "face, hands, frostbite, old armor plate, wall scarf, snow-line leggings, wooden tag, water bag, charcoal basket, cracked shield, and repair-cord detail crop layers",
+          "background": "neutral plain character-card background with scale swatches and no readable captions or process metadata"
+        },
+        "composition_layer_notes": [
+          "plain neutral background layer",
+          "multi-age wall military-household lineup and role layer",
+          "guard-duty and logistics posture layer",
+          "old armor, wall scarf, water bag, charcoal basket, cracked shield, frostbite, and repair detail crop layer",
+          "scale reference layer separating ordinary military households from Xue Linqiang"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "crowd contains visible age, gender, duty, injury, logistics, and family-household variation instead of one repeated soldier",
+          "ordinary military households are clearly distinct from Xue Linqiang in face, age, command status, equipment authority, and silhouette",
+          "card is not treated as a final video frame"
+        ],
+        "related_required_deliverables": [
+          "transparent cutout for selected wall-duty groups planned separately if needed",
+          "turnaround sheet",
+          "detail crop sheet",
+          "scale reference"
+        ],
+        "separate_derivatives_required": true,
+        "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete_c004_semantic_distinction_ready",
+      "prompt_review": {
+        "reviewed_at": "2026-06-05",
+        "review_status": "pass_for_planning_prompt_addition",
+        "review_notes": [
+          "C024 is scoped as ordinary Grey Wall military-household crowd variation across age, gender, duty, injury, logistics, and family support roles.",
+          "C024 depends on C004 for distinction from Xue Linqiang but must not copy his named face, command posture, or old-wall-master authority.",
+          "No image generation is launched by this planning update."
+        ]
+      }
+    },
+    {
+      "asset_id": "C025",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "display_name": "普通人族平民群像模板",
+      "file": "c025m.png",
+      "basename": "c025m",
+      "output_path": "assets/characters/c025m.png",
+      "approval_status": "prompt_reviewed_100_pending_art_approval",
+      "generation_status": "not_started_pending_approval",
+      "requires_precision_control": false,
+      "source_refs": [
+        "bible/characters.md#人族功能人群",
+        "bible/visual-style.md#人族群众贫困层级",
+        "bible/characters.md#金河粮仓带勉强果腹平民",
+        "01/shots/scene-breakdown.json#征粮暴政平民群像",
+        "04/script/final-script.md#粮牌检查口",
+        "04/shots/scene-breakdown.json#粮牌检查口"
+      ],
+      "continuity_refs": [
+        "残阳坳山民",
+        "金河粮仓带平民",
+        "麦田农户",
+        "粮磨工",
+        "船工家属",
+        "渡口小贩",
+        "低等账房",
+        "旧都渡口遗民",
+        "儿童老人随家庭出现",
+        "麦金褪色",
+        "河泥褐",
+        "湿木灰",
+        "蒸汽白",
+        "袖口补丁",
+        "肘部补丁",
+        "腰带补丁",
+        "膝部补丁",
+        "粮牌",
+        "空布袋",
+        "破粮斗",
+        "磨粉尘",
+        "浮肿脚踝",
+        "瘦脸",
+        "护粮小包",
+        "仍在生活与生产",
+        "不是逃难流民",
+        "不是边墙军户"
+      ],
+      "usage": [
+        "第01集征粮暴政中老人、妇人、孩子和金河平民参考",
+        "第04集金河粮磨区、渡口和粮牌检查口普通平民群像参考",
+        "普通人族贫困但仍在生产生活的基础人群模板",
+        "与 C023 逃难流民、C024 边墙军户、C026 墙下集市无籍者黑市群像区分"
+      ],
+      "design_summary": "普通人族平民群像模板，覆盖残阳坳山民、金河粮仓带平民、麦田农户、粮磨工、船工家属、渡口小贩、低等账房、旧都渡口遗民、儿童、老人和家庭成年人。整体贫困、缺粮、被征粮压迫，但仍在生产、交易、排队、照看家人和维持生活秩序；衣物是洗旧、补丁、磨损和劳动污渍，不是逃难破布、乞讨队伍或边墙军户装备。",
+      "continuity_lock": "必须表现普通人族平民仍有地域、职业、家庭和生活秩序差异，不能统一成破布流民、现代灾民、墙下黑市人或边墙军户。贫困层级要清楚：仍能维持家计的穷平民、勉强果腹的粮仓带平民和被征粮压到缺粮的人可以同场出现，但不能变成已流离的逃荒队。",
+      "version": "art-room-series-bible-v4-c025-civilian-crowd-2026-06-05",
+      "file_path": "assets/characters/c025m.png",
+      "status": "prompt_reviewed_100_pending_art_approval",
+      "prompt_id": "PROMPT_C025",
+      "history_files": [],
+      "creation_phase": "03_character_master_cards",
+      "creation_order": 65,
+      "depends_on_assets": [
+        "F001",
+        "F002",
+        "F003",
+        "F005",
+        "F006",
+        "K006",
+        "C023",
+        "C024",
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "dependency_reason": "Requires style, K006 human regional costume rules, and C023/C024 distinction locks so ordinary civilians remain distinct from refugees and wall military households.",
+      "priority": "high",
+      "card_layout": "9:16 multi-person ordinary civilian board: regional/occupation/family lineup, front/side/back/three-quarter views, daily-life posture sheet, poverty-state and work-tool detail crops.",
+      "asset_card_status": "prompt_reviewed_100_pending_image_approval",
+      "identity_lock": {
+        "age_impression": "混合年龄群像：儿童、少年、成年男女、老人和家庭单位并列，年龄结构自然，不做单一背景人",
+        "face_features": "脸型五官不统一，包含劳动晒暗、饥饿瘦脸、河雾潮湿、粮尘、警惕和疲惫等差异；不做网红脸或重复复制脸",
+        "hair_skin_texture": "头发多为实用束扎、头巾或旧帽，皮肤有日晒、粮粉、河雾潮气、轻微污渍和缺粮疲态，不能过度脏乱或过度干净",
+        "height_body_type": "普通中陆人族尺度，儿童矮小、老人微佝偻、劳动成年人肩背有职业力量，低等账房更瘦直",
+        "movement_habits": "量粮、推袋、护粮小包、牵孩子、排队查粮牌、在渡口或磨坊继续工作，动作务实克制",
+        "forbidden_future_reveals": "不得提前揭示后续政治选择、群体起义或复国结果；不得把普通平民画成逃难流民、边墙军户或墙下黑市团伙。"
+      },
+      "body_metrics": {
+        "height": "儿童约105-145厘米，少年约145-165厘米，成人约155-180厘米，老人因佝偻显矮",
+        "weight_build": "从勉强果腹的瘦弱平民到仍有劳动骨架的农户、磨工和船工家属都有差异",
+        "body_ratio": "农户和磨工肩背有劳动力量，渡口小贩和账房更瘦，老人背弯，儿童头身比明显",
+        "silhouette": "旧衣完整收边、袖肘膝补丁、粮牌、空布袋、破粮斗、磨粉尘、护粮小包和家庭牵扶形成普通平民剪影",
+        "scale_refs": [
+          "同画面至少出现三类地域/职业/年龄差异",
+          "比 C023 逃难流民更有生活秩序和劳动结构",
+          "不像 C024 边墙军户，不带守墙甲片、骨哨或军户木牌",
+          "墙下集市无籍者和黑市商另由 C026 承载"
+        ]
+      },
+      "episode_state": "series_master_ordinary_human_civilian_crowd_state; episode-specific dirt, hunger, tax pressure, location weather, and shot staging must be created as separate episode_state cards or reference frames later.",
+      "blocks_assets": [
+        "P008"
+      ],
+      "output_format": {
+        "deliverable_kind": "neutral_master_card",
+        "deliverable_kind_notes": "neutral_master_character_card",
+        "file_format": "png",
+        "file_format_notes": "PNG",
+        "minimum_resolution": "2160x3840",
+        "minimum_resolution_notes": "2160x3840 px",
+        "background_policy": "neutral_plain",
+        "background_policy_notes": "neutral_plain_background",
+        "alpha_policy": "forbidden",
+        "alpha_policy_notes": "forbidden_for_this_card; transparent cutout must be planned as a separate PNG/SVG deliverable before compositing",
+        "canvas_aspect_ratio": "project_defined",
+        "canvas_aspect_ratio_notes": "9:16 vertical",
+        "required_views": [
+          "front full-body ordinary civilian lineup",
+          "side movement and labor posture view",
+          "back view showing repaired clothing, tools, bags, and family loads",
+          "three-quarter group view",
+          "regional and occupation lineup: Canyangao mountain villager, Jinhe grain-belt farmer, mill worker, boatman family member, ferry peddler, low clerk, old-capital remnant, child, elder, and household adult",
+          "daily-life pose sheet with measuring grain, carrying sacks, holding a food pouch, trading at a stall, protecting a child, queueing at a grain-token checkpoint, and returning to work",
+          "face, hands, sleeve patch, elbow patch, belt, knee patch, grain dust, swollen ankle, food pouch, empty cloth bag, broken grain measure, and work-tool close-ups",
+          "scale reference distinguishing ordinary civilians from refugee crowd and wall military households"
+        ],
+        "composition_layers": {
+          "foreground": "ordinary human civilian lineup with regional, occupation, family, hunger, and working-life variation",
+          "midground": "face, hands, repaired clothing, work tools, grain token, food pouch, empty cloth bag, grain dust, swollen ankle, and family load detail crop layers",
+          "background": "neutral plain character-card background with scale swatches and no readable captions or process metadata"
+        },
+        "composition_layer_notes": [
+          "plain neutral background layer",
+          "regional and occupation civilian lineup layer",
+          "daily work and family posture layer",
+          "fabric repair, hand, tool, food pouch, grain dust, and poverty-state detail crop layer",
+          "scale reference layer separating ordinary civilians from refugees, wall military households, and market underclass groups"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "crowd contains visible age, gender, occupation, region, family, and poverty-level variation instead of one repeated poor background figure",
+          "ordinary civilians are clearly distinct from refugee crowd, wall military households, and wall-foot market underclass groups",
+          "poverty is expressed through work-worn fabric, food pressure, grain tokens, tools, and fatigue while daily life and labor structure remain visible",
+          "card is not treated as a final video frame"
+        ],
+        "related_required_deliverables": [
+          "transparent cutout for selected civilian groups planned separately if needed",
+          "turnaround sheet",
+          "detail crop sheet",
+          "scale reference"
+        ],
+        "separate_derivatives_required": true,
+        "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete_c023_c024_distinction_ready",
+      "prompt_review": {
+        "score_total": 100,
+        "score_status": "pass_100_of_100",
+        "rubric": [
+          {
+            "item": "asset_scope_and_non_overlap",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "source_refs_usage_and_story_boundary",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "production_metadata_model_visible_separation",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "six_section_prompt_and_copy_ready",
+            "score": 20,
+            "max_score": 20
+          },
+          {
+            "item": "output_format_contract",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "negative_prompt_guardrails",
+            "score": 10,
+            "max_score": 10
+          },
+          {
+            "item": "b01_batch_and_dependency_integration",
+            "score": 10,
+            "max_score": 10
+          }
+        ],
+        "reviewer": "codex_art_room_parent",
+        "reviewed_at": "2026-06-05",
+        "review_status": "pass_for_planning_prompt_addition_100",
+        "review_notes": [
+          "C025 fills ordinary civilian human crowd identity and does not duplicate K006 clothing-only rules.",
+          "C025 remains distinct from C023 refugees, C024 wall military households, and C026 wall-foot market groups.",
+          "No image generation is launched by this planning update."
+        ]
+      }
+    },
+    {
+      "asset_id": "C026",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "display_name": "墙下集市无籍者与粮牌黑市群像模板",
+      "file": "c026m.png",
+      "basename": "c026m",
+      "output_path": "assets/characters/c026m.png",
+      "approval_status": "prompt_reviewed_100_pending_art_approval",
+      "generation_status": "not_started_pending_approval",
+      "requires_precision_control": false,
+      "source_refs": [
+        "bible/scenes.md#墙下集市",
+        "bible/geography.md#墙下集市",
+        "bible/timeline.md#肃明迁徙混血政策",
+        "07/script/final-script.md#墙下集市窄巷",
+        "07/script/final-script.md#粮牌交换点",
+        "07/shots/scene-breakdown.json#SC01",
+        "07/shots/scene-breakdown.json#SC02"
+      ],
+      "continuity_refs": [
+        "无籍者",
+        "混裔跑腿",
+        "军户家眷",
+        "黑市商",
+        "灰墙军粮牌贩",
+        "粮牌交换点",
+        "灰布棚",
+        "窑洞门",
+        "碎陶护符",
+        "旧旗残片",
+        "隐藏口袋",
+        "黑木通行牌",
+        "粮牌",
+        "进墙名额",
+        "窄巷交易秩序",
+        "耳后细鳞痕或混裔痕迹",
+        "债务压力",
+        "不是流民营",
+        "不是普通平民村落",
+        "不是正规军户队列"
+      ],
+      "usage": [
+        "第07集墙下集市窄巷和粮牌交换点主群像参考",
+        "陆青砾所处无籍者、混裔跑腿、军户家眷和黑市商世界参考",
+        "粮牌交易、进墙名额、黑市追债和灰墙军粮牌贩身份层级参考",
+        "与 C003 陆青砾个人、C025 普通平民、C023 逃难流民、C024 边墙军户区分"
+      ],
+      "design_summary": "墙下集市无籍者与粮牌黑市群像模板，表现边墙南麓灰布棚、窑洞门和粮牌交换点周围的人群：无籍者、混裔跑腿、军户家眷、黑市商、灰墙军粮牌贩、债务追讨者、传话孩子、摊主和谨慎旧遗民并列。这里有交易秩序、隐藏口袋、黑木通行牌、碎陶护符、旧旗残片、粮牌和进墙名额压力，不是流民营，也不是普通村落集市。",
+      "continuity_lock": "必须保持墙下集市的夹缝秩序：人群旧但有职业、交易和身份层级；混裔、无籍者、军户家眷、黑市商和粮牌贩一眼可分。不能把它画成普通平民集市、逃荒流民营、正规边墙军户队列或陆青砾个人复制群。",
+      "version": "art-room-series-bible-v4-c026-wallfoot-market-crowd-2026-06-05",
+      "file_path": "assets/characters/c026m.png",
+      "status": "prompt_reviewed_100_pending_art_approval",
+      "prompt_id": "PROMPT_C026",
+      "history_files": [],
+      "creation_phase": "03_character_master_cards",
+      "creation_order": 66,
+      "depends_on_assets": [
+        "F001",
+        "F002",
+        "F003",
+        "F005",
+        "F006",
+        "K006",
+        "C003",
+        "C024",
+        "C025",
+        "P016",
+        "P017",
+        "P018"
+      ],
+      "dependency_reason": "Requires style, K006 clothing rules, C003 Lu Qingli identity distinction, C024 wall military-household distinction, and C025 ordinary civilian distinction so wall-foot market people remain a distinct underclass/trade crowd.",
+      "priority": "high",
+      "card_layout": "9:16 multi-person wall-foot market board: status/role lineup, front/side/back/three-quarter views, transaction posture sheet, hidden-pocket/token/pass/charm detail crops.",
+      "asset_card_status": "prompt_reviewed_100_pending_image_approval",
+      "identity_lock": {
+        "age_impression": "混合年龄群像：跑腿少年、成年交易者、军户家眷、老人和传话孩子并列，年龄结构服务交易与生存压力",
+        "face_features": "脸型五官不统一，包含混裔痕迹、警惕眼神、讨价表情、债务压力和长期夹缝生活疲态；不能复制陆青砾个人脸",
+        "hair_skin_texture": "头发多被帽、头巾或旧围巾压住，皮肤有风沙、炭火烟、冷汗、局部鳞痕或混裔痕迹，不能怪物化或干净商铺化",
+        "height_body_type": "普通中陆人族与混裔尺度混杂，跑腿者灵活偏瘦，黑市商更厚重，军户家眷带负重和防备姿态",
+        "movement_habits": "藏碎陶、换粮牌、挡债主、侧身让路、低声谈价、护黑木通行牌、观察清明院压力，动作快而谨慎",
+        "forbidden_future_reveals": "不得提前揭示陆青砾后续选择、墙下势力结局或复国政治答案；不得把墙下集市群像变成主角团组织。"
+      },
+      "body_metrics": {
+        "height": "传话孩子约115-145厘米，跑腿少年约145-170厘米，成年交易者约155-185厘米，个别混裔可更高但不超过奴兵层级压迫感",
+        "weight_build": "从瘦小跑腿者、缺粮无籍者、负重军户家眷到厚实黑市商都有差异",
+        "body_ratio": "跑腿者肩窄步快，黑市商重心低，军户家眷抱物护身，混裔局部体态不对称但仍保留人族直立轮廓",
+        "silhouette": "灰布棚阴影、隐藏口袋、黑木通行牌、碎陶护符、粮牌、旧旗残片、低声交易手势和窄巷侧身姿态形成墙下集市剪影",
+        "scale_refs": [
+          "同画面至少出现无籍者、混裔跑腿、军户家眷和黑市商中的三类",
+          "陆青砾个人身份卡只作区分，不能复制他的脸和主角式挂点",
+          "比 C025 普通平民更夹缝、更交易化、更警惕",
+          "不像 C024 正式边墙军户，不形成守墙队列或统一装备"
+        ]
+      },
+      "episode_state": "series_master_wallfoot_market_underclass_crowd_state; episode-specific debt, pursuit pressure, token handoff, alley layout, and shot staging must be created as separate episode_state cards or reference frames later.",
+      "blocks_assets": [
+        "P012"
+      ],
+      "output_format": {
+        "deliverable_kind": "neutral_master_card",
+        "deliverable_kind_notes": "neutral_master_character_card",
+        "file_format": "png",
+        "file_format_notes": "PNG",
+        "minimum_resolution": "2160x3840",
+        "minimum_resolution_notes": "2160x3840 px",
+        "background_policy": "neutral_plain",
+        "background_policy_notes": "neutral_plain_background",
+        "alpha_policy": "forbidden",
+        "alpha_policy_notes": "forbidden_for_this_card; transparent cutout must be planned as a separate PNG/SVG deliverable before compositing",
+        "canvas_aspect_ratio": "project_defined",
+        "canvas_aspect_ratio_notes": "9:16 vertical",
+        "required_views": [
+          "front full-body wall-foot market lineup",
+          "side trading and movement view in narrow market flow",
+          "back view showing hidden pockets, grey cloth awnings, market packs, wooden passes, and mixed-status clothing layers",
+          "three-quarter group view",
+          "market-role lineup: nameless person, hybrid runner, military-household family member, black market trader, grain-token broker, debt collector, messenger child, stall keeper, and cautious old remnant",
+          "transaction pose sheet with grain-token exchange, hidden shard transfer, blocking a debtor, whispering a route, bargaining under a grey cloth awning, and watching Qingming pressure",
+          "face, ear/scale trace, hands, hidden pocket, black wooden pass, broken pottery charm, grain token, grey cloth awning, old flag scrap, and stall-object close-ups",
+          "scale reference distinguishing wall-foot market people from ordinary civilians, refugees, and formal wall military households"
+        ],
+        "composition_layers": {
+          "foreground": "wall-foot market human and hybrid underclass lineup with nameless people, runners, household relatives, traders, brokers, debt collectors, children, and elders",
+          "midground": "face, hands, ear or scale trace, hidden pocket, black wooden pass, broken pottery charm, grain token, old flag scrap, stall goods, and transaction gesture detail crop layers",
+          "background": "neutral plain character-card background with market-flow scale swatches and no readable captions or process metadata"
+        },
+        "composition_layer_notes": [
+          "plain neutral background layer",
+          "wall-foot market role lineup layer",
+          "transaction and narrow-lane movement posture layer",
+          "hidden pocket, token, charm, pass, hand, face, and mixed-status clothing detail crop layer",
+          "scale reference layer separating market underclass from ordinary civilians, refugees, and formal wall military households"
+        ],
+        "qc_checks": [
+          "canonical file uses the exact planned short filename and output path",
+          "basename without extension is 20 characters or fewer",
+          "no readable generated text, UI, watermark, logo, or modern artifact",
+          "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
+          "crowd contains visible status, species-mixing, job, age, gender, debt, trading, and military-household-relative variation instead of one generic black market crowd",
+          "wall-foot market people are clearly distinct from ordinary civilians, refugees, and formal wall military households",
+          "market order, transaction logic, hidden pockets, grain-token pressure, and nameless/hybrid identity cues remain visible without readable text",
+          "card is not treated as a final video frame"
+        ],
+        "related_required_deliverables": [
+          "transparent cutout for selected market groups planned separately if needed",
+          "turnaround sheet",
+          "detail crop sheet",
+          "scale reference"
+        ],
+        "separate_derivatives_required": true,
+        "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
+      },
+      "dependency_status": "costume_dependencies_complete_c003_c024_c025_distinction_ready",
+      "prompt_review": {
+        "score_total": 100,
+        "score_status": "pass_100_of_100",
+        "rubric": [
+          {
+            "item": "asset_scope_and_non_overlap",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "source_refs_usage_and_story_boundary",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "production_metadata_model_visible_separation",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "six_section_prompt_and_copy_ready",
+            "score": 20,
+            "max_score": 20
+          },
+          {
+            "item": "output_format_contract",
+            "score": 15,
+            "max_score": 15
+          },
+          {
+            "item": "negative_prompt_guardrails",
+            "score": 10,
+            "max_score": 10
+          },
+          {
+            "item": "b01_batch_and_dependency_integration",
+            "score": 10,
+            "max_score": 10
+          }
+        ],
+        "reviewer": "codex_art_room_parent",
+        "reviewed_at": "2026-06-05",
+        "review_status": "pass_for_planning_prompt_addition_100",
+        "review_notes": [
+          "C026 fills wall-foot market human/hybrid underclass identity and does not duplicate L006 location card.",
+          "C026 remains distinct from C003 Lu Qingli, C025 ordinary civilians, C023 refugees, and C024 wall military households.",
+          "No image generation is launched by this planning update."
+        ]
       }
     },
     {
@@ -5552,7 +6332,8 @@
         "C017",
         "P016",
         "P017",
-        "P018"
+        "P018",
+        "C025"
       ],
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
@@ -6047,6 +6828,7 @@
         "F003",
         "F005",
         "C003",
+        "C026",
         "P016",
         "P017",
         "P018"
@@ -6409,10 +7191,12 @@
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#薛临墙",
+        "bible/characters.md#边墙军户建模规则",
         "bible/scenes.md#锁喉关"
       ],
       "continuity_refs": [
         "旧甲片",
+        "普通军户旧甲片差异",
         "日月压痕",
         "骨哨",
         "裂盾",
@@ -6420,7 +7204,8 @@
         "军户木牌"
       ],
       "usage": [
-        "边墙军户生活与守墙动作参考"
+        "边墙军户生活与守墙动作参考",
+        "普通边墙军户装备与薛临墙具名装备差异参考"
       ],
       "design_summary": "灰墙军旧甲片、骨哨、裂盾、缝补甲绳和军户木牌道具板，旧铁、黑石灰、干血暗红和雪线磨损叠在一起，甲片内侧可见严重磨损日月压痕。",
       "continuity_lock": "表现军户活过冬天的现实主义，不要英雄化新甲或干净军装。",
@@ -6438,6 +7223,7 @@
         "F005",
         "F006",
         "C004",
+        "C024",
         "P016",
         "P017",
         "P018"
@@ -6528,8 +7314,8 @@
       "file": "p016m.png",
       "basename": "p016m",
       "output_path": "assets/props/p016m.png",
-      "approval_status": "approved_for_b00_generation",
-      "generation_status": "in_progress_thread_started",
+      "approval_status": "approved_generated_qc_passed",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": true,
       "source_refs": [
         "bible/world.md#昭明帝国",
@@ -6557,7 +7343,7 @@
       "continuity_lock": "不得重画成普通太阳图标、现代国旗、胜利英雄旗或纯洁圣徽；所有延展只能在同一日月星盘根徽章上做磨损、遮挡、材质和尺度变化。",
       "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
       "file_path": "assets/props/p016m.png",
-      "status": "blocked",
+      "status": "ready",
       "prompt_id": "PROMPT_P016",
       "history_files": [],
       "creation_phase": "00_faction_emblem_flag_roots",
@@ -6709,7 +7495,10 @@
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
       },
-      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205"
+      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
+      "generated_file": "assets/props/p016m.png",
+      "final_file": "assets/props/p016m.png",
+      "qc_status": "passed"
     },
     {
       "asset_id": "P017",
@@ -6719,8 +7508,8 @@
       "file": "p017m.png",
       "basename": "p017m",
       "output_path": "assets/props/p017m.png",
-      "approval_status": "approved_for_b00_generation",
-      "generation_status": "in_progress_thread_started",
+      "approval_status": "approved_generated_qc_passed",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": true,
       "source_refs": [
         "bible/factions.md#肃明国虫族",
@@ -6749,7 +7538,7 @@
       "continuity_lock": "不得重画成大虫身体、柔软天使翅膀、怪物巢穴、现代医院标志或普通黑白旗；所有层级标识、白册章、封条和旗面必须从同一黑日白翅根徽章派生。",
       "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
       "file_path": "assets/props/p017m.png",
-      "status": "blocked",
+      "status": "ready",
       "prompt_id": "PROMPT_P017",
       "history_files": [],
       "creation_phase": "00_faction_emblem_flag_roots",
@@ -6901,7 +7690,10 @@
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
       },
-      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205"
+      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
+      "generated_file": "assets/props/p017m.png",
+      "final_file": "assets/props/p017m.png",
+      "qc_status": "passed"
     },
     {
       "asset_id": "P018",
@@ -6911,8 +7703,8 @@
       "file": "p018m.png",
       "basename": "p018m",
       "output_path": "assets/props/p018m.png",
-      "approval_status": "approved_for_b00_generation",
-      "generation_status": "in_progress_thread_started",
+      "approval_status": "approved_generated_qc_passed",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": true,
       "source_refs": [
         "bible/factions.md#北境诸族",
@@ -6942,7 +7734,7 @@
       "continuity_lock": "不得重画成单一狼头/狮头/可爱动物/怪物潮/金属高科技旗帜；所有北境服饰、盾鼓、皮帐、骨饰、誓约绳和旗面必须从同一骨木万兽誓结派生。",
       "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
       "file_path": "assets/props/p018m.png",
-      "status": "blocked",
+      "status": "ready",
       "prompt_id": "PROMPT_P018",
       "history_files": [],
       "creation_phase": "00_faction_emblem_flag_roots",
@@ -7094,7 +7886,10 @@
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
       },
-      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205"
+      "generation_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
+      "generated_file": "assets/props/p018m.png",
+      "final_file": "assets/props/p018m.png",
+      "qc_status": "passed"
     },
     {
       "asset_id": "K001",
@@ -7104,8 +7899,8 @@
       "file": "k001m.png",
       "basename": "k001m",
       "output_path": "assets/costumes/k001m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#沈维桑",
@@ -7123,12 +7918,14 @@
         "主角分集状态卡服装母版"
       ],
       "design_summary": "沈维桑服装状态板，残阳坳猎衣、火后焦黑衣角、旧驿逃亡层、边墙灰麻披风、旧皮肩护和雪线绑腿并列，左肩旧伤导致的穿戴与动作限制可见。",
-      "continuity_lock": "升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。",
+      "continuity_lock": "升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。 旧和简陋不得依靠破碎下摆或碎布条表达；正常状态必须保持中式完整收边和实用缝制。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k001m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K001",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k001m.v001.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 21,
       "depends_on_assets": [
@@ -7145,14 +7942,14 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "主角分集状态卡服装母版",
         "owner_character_or_faction": "沈维桑与旧驿系统",
         "silhouette": "沈维桑服装状态板，残阳坳猎衣、火后焦黑衣角、旧驿逃亡层、边墙灰麻披风、旧皮肩护和雪线绑腿并列，左肩旧伤导致的穿戴与动作限制可见。",
         "proportion_scale": "以沈维桑约173厘米精瘦体量为模特比例",
         "material": "灰褐猎衣；草药青内层；旧皮护腕；灰麻披风；旧皮肩护；雪线绑腿",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
         "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
         "forbidden_future_reveals": "升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。"
       },
@@ -7219,7 +8016,25 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "2160x3840 RGB PNG; existing canonical costume board retained from earlier B06 generation."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "8d2fdde98e0dd9f8c9729d10c1dce19eaa53cbf2d68438f980bdb33d64597210",
+      "generation_method": "built_in_imagegen_current_thread"
     },
     {
       "asset_id": "K002",
@@ -7229,8 +8044,8 @@
       "file": "k002m.png",
       "basename": "k002m",
       "output_path": "assets/costumes/k002m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#晏南枝",
@@ -7247,12 +8062,14 @@
         "护送目标分集状态卡服装母版"
       ],
       "design_summary": "晏南枝服装状态板，遮蔽性的雾紫或冷灰流亡外袍、深墨蓝内层、红线束发、藏匿月白玉片与回忆或身份揭示中的朱赤宝蓝月白旧帝国正装并列。",
-      "continuity_lock": "流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。",
+      "continuity_lock": "流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。 旧和简陋不得依靠破碎下摆或碎布条表达；正常状态必须保持中式完整收边和实用缝制。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k002m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K002",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k002m.v001.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 22,
       "depends_on_assets": [
@@ -7269,14 +8086,14 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "护送目标分集状态卡服装母版",
         "owner_character_or_faction": "晏南枝与旧帝国遗民线",
         "silhouette": "晏南枝服装状态板，遮蔽性的雾紫或冷灰流亡外袍、深墨蓝内层、红线束发、藏匿月白玉片与回忆或身份揭示中的朱赤宝蓝月白旧帝国正装并列。",
         "proportion_scale": "以晏南枝约168厘米清瘦体量为模特比例",
         "material": "雾紫外袍；冷灰外袍；深墨蓝内层；红线束发；旧帝国朱赤宝蓝月白正装",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
         "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
         "forbidden_future_reveals": "流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。"
       },
@@ -7343,7 +8160,25 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "2160x3840 RGB PNG; existing canonical costume board retained from earlier B06 generation."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "9865b6651537d7e74f1a899c34eddd16043b74068674e6d2039b1ea8102cb4e9",
+      "generation_method": "built_in_imagegen_current_thread"
     },
     {
       "asset_id": "K003",
@@ -7353,8 +8188,8 @@
       "file": "k003m.png",
       "basename": "k003m",
       "output_path": "assets/costumes/k003m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#沈照眠",
@@ -7371,12 +8206,14 @@
         "儿童识别者状态连续"
       ],
       "design_summary": "沈照眠双状态服装板，村中浅灰短襦、草药绿小围裙、简单布鞋和烧焦发绳，与清明院干净白色儿童袍、虫蜡识别环和束直动作并列。",
-      "continuity_lock": "白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。",
+      "continuity_lock": "白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。 旧和简陋不得依靠破碎下摆或碎布条表达；正常状态必须保持中式完整收边和实用缝制。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k003m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K003",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k003m.v001.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 23,
       "depends_on_assets": [
@@ -7393,14 +8230,14 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "儿童识别者状态连续",
         "owner_character_or_faction": "沈照眠/沈家亲情线",
         "silhouette": "沈照眠双状态服装板，村中浅灰短襦、草药绿小围裙、简单布鞋和烧焦发绳，与清明院干净白色儿童袍、虫蜡识别环和束直动作并列。",
         "proportion_scale": "以沈照眠约130厘米儿童体量为模特比例",
         "material": "浅灰短襦；草药绿小围裙；烧焦发绳；白色儿童袍；虫蜡识别环",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
         "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
         "forbidden_future_reveals": "白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。"
       },
@@ -7467,7 +8304,25 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "2160x3840 RGB PNG; existing canonical costume board retained from earlier B06 generation."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "5037598f37b4e203a43d8cf2594d042280812afedc33d9d7aeb573450bc25e48",
+      "generation_method": "built_in_imagegen_current_thread"
     },
     {
       "asset_id": "K004",
@@ -7477,8 +8332,8 @@
       "file": "k004m.png",
       "basename": "k004m",
       "output_path": "assets/costumes/k004m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#肃明制度化头部规则",
@@ -7495,13 +8350,16 @@
       "usage": [
         "虫族官吏/奴兵/士兵层级区分"
       ],
-      "design_summary": "肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和黑日牌并列。",
-      "continuity_lock": "必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。",
+      "design_summary": "肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和从 P017 黑日白翅根徽章派生的胸牌/袖章/帽牌并列。",
+      "continuity_lock": "必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物；胸前只能使用 P017 黑日白翅根徽章派生，不得画成虫子、甲虫、昆虫身体或抽象怪物符号。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k004m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K004",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k004m.v001.png",
+        "assets/costumes/history/k004m.v002.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 24,
       "depends_on_assets": [
@@ -7518,15 +8376,15 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "虫族官吏/奴兵/士兵层级区分",
         "owner_character_or_faction": "肃明国/清明院",
         "silhouette": "肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和黑日牌并列。",
         "proportion_scale": "同框对照人族群众、白翳和厉螳体量",
         "material": "白翳高帽；基层虫吏短冠；奴兵剃除头皮；虫须触须束；骨白腕绑；黑日牌",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
-        "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
+        "flag_emblem_symbol_rules": "只允许从 P017 肃明/清明院黑日白翅根徽章派生胸牌、袖章、帽牌和腰牌；若模型无法精确，使用空白线控牌，不生成虫形或新徽章。",
         "forbidden_future_reveals": "必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。"
       },
       "physical_dimensions": {
@@ -7535,7 +8393,7 @@
         "height": "衣甲厚度按虫蜡白、杂旧甲、硬壳、重甲分层",
         "scale_reference": "同框对照人族群众、白翳和厉螳体量",
         "weight_feel": "官服轻硬，奴兵杂甲勒身，重甲虫兵沉重",
-        "material_thickness": "虫蜡、骨白硬领、旧皮扣腕、甲壳与军府金属"
+        "material_thickness": "虫蜡白官袍、骨白硬领、蜡灰青短军袍、骨白腕绑、黑日白翅几何牌。"
       },
       "episode_state": "series_master_prop_or_costume_state; episode-specific dirt, damage, placement, and reveal state must be created as separate episode state cards later.",
       "blocks_assets": [
@@ -7597,7 +8455,26 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "Regenerated canonical board: Suming/Qingming rank hierarchy is readable, black-sun white-wing emblem is visible, and insect chest-symbol drift is avoided."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "36d853e21ac0e10a49b62c78579bf35284f5df5ba05fe39da6477390517622d1",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ab00af3081a2a2d8b951bb13aa09.png",
+      "generation_method": "built_in_imagegen_regenerated_current_thread_then_sips_upscaled_to_contract_size"
     },
     {
       "asset_id": "K005",
@@ -7607,8 +8484,8 @@
       "file": "k005m.png",
       "basename": "k005m",
       "output_path": "assets/costumes/k005m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#北境功能性角色层",
@@ -7627,12 +8504,14 @@
         "鹿族/狼族/熊族/牛族/鸦族差异参考"
       ],
       "design_summary": "北境诸族服装材质层级板，冻裂兽皮内层、厚毛边披挂、骨片护肩、旧木护胸、兽皮绳、暗血誓绳、雪泥绑腿、血盐袋和骨笛绳按鹿族贵族、狼族斥候、白熊护卫、牛族盾兵和雪羽斥候分区展示。",
-      "continuity_lock": "北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。",
+      "continuity_lock": "北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。 旧和简陋不得依靠破碎下摆或碎布条表达；正常状态必须保持中式完整收边和实用缝制。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k005m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K005",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k005m.v001.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 25,
       "depends_on_assets": [
@@ -7649,14 +8528,14 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "鹿族/狼族/熊族/牛族/鸦族差异参考",
         "owner_character_or_faction": "鹿弥与北境守誓派",
         "silhouette": "北境诸族服装材质层级板，冻裂兽皮内层、厚毛边披挂、骨片护肩、旧木护胸、兽皮绳、暗血誓绳、雪泥绑腿、血盐袋和骨笛绳按鹿族贵族、狼族斥候、白熊护卫、牛族盾兵和雪羽斥候分区展示。",
         "proportion_scale": "与北境具名角色和攻城兵模板相互校准",
         "material": "兽皮内层；骨片护肩；旧木护胸；暗血誓绳；雪泥绑腿；血盐袋；骨笛绳",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
         "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
         "forbidden_future_reveals": "北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。"
       },
@@ -7729,7 +8608,26 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "Regenerated canonical board: northern tribe/function tiers are readable. Inheritance constraint: use as material hierarchy reference; downstream character cards must keep garment hems constructed and must not amplify rough fur into beggar-rag shorthand."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "02ee45c94d1ee30565660d1f1d8ff701345d3f76116f4261eed837b85afb7d74",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22b00e9b5881a285fce9c4bf20ac26.png",
+      "generation_method": "built_in_imagegen_regenerated_current_thread_then_sips_upscaled_to_contract_size"
     },
     {
       "asset_id": "K006",
@@ -7739,8 +8637,8 @@
       "file": "k006m.png",
       "basename": "k006m",
       "output_path": "assets/costumes/k006m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_for_b06_costumes_batch_after_b00_b07_qc",
+      "generation_status": "generated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/visual-style.md#人族视觉边界",
@@ -7758,12 +8656,14 @@
         "群像服装与阶层差异参考"
       ],
       "design_summary": "人族地域群众服装差异板，残阳坳山民、金河粮仓带平民、征粮逃荒家庭、旧都渡口遗民、边墙军户和南缘遗民并列，衣料、补丁位置、职业工具、地域痕迹、贫困程度和年龄性别差异清楚。",
-      "continuity_lock": "人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。",
+      "continuity_lock": "人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。 旧和简陋不得依靠破碎下摆或碎布条表达；正常状态必须保持中式完整收边和实用缝制。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/costumes/k006m.png",
-      "status": "blocked",
+      "status": "complete",
       "prompt_id": "PROMPT_K006",
-      "history_files": [],
+      "history_files": [
+        "assets/costumes/history/k006m.v001.png"
+      ],
       "creation_phase": "02_costume_style_references",
       "creation_order": 26,
       "depends_on_assets": [
@@ -7780,14 +8680,14 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "9:16 costume system board: full-body front/side/back, fabric layers, fastening details, wear/dirt states, faction/episode state swatches.",
-      "asset_card_status": "design_spec_ready_pending_image_approval",
+      "asset_card_status": "prompt_revised_pending_regeneration",
       "prop_lock": {
         "story_use": "群像服装与阶层差异参考",
         "owner_character_or_faction": "全剧共享视觉系统",
         "silhouette": "人族地域群众服装差异板，残阳坳山民、金河粮仓带平民、征粮逃荒家庭、旧都渡口遗民、边墙军户和南缘遗民并列，衣料、补丁位置、职业工具、地域痕迹、贫困程度和年龄性别差异清楚。",
         "proportion_scale": "同一群像至少三类年龄/职业/地域差异",
         "material": "残阳坳山民；金河粮仓平民；逃荒家庭；旧都渡口遗民；边墙军户；南缘遗民",
-        "wear_marks": "保留旧痕、裂纹、虫蜡、血盐、焦痕、路灰或使用磨损，不做崭新展示品。",
+        "wear_marks": "旧、穷、简陋只能通过褪色、洗旧、补丁、针脚、局部污渍、边缘磨薄、肩背压痕和加固缝线表现；正常衣摆必须完整收边，不用破烂碎布条表达贫穷。",
         "flag_emblem_symbol_rules": "若出现字形、徽记或印章，只允许抽象可控痕迹，不要求模型生成可读文字。",
         "forbidden_future_reveals": "人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。"
       },
@@ -7859,7 +8759,26 @@
         ],
         "separate_derivatives_required": true,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "qc_status": "passed",
+      "generated_at": "2026-06-05",
+      "generated_in": "current_thread_builtin_imagegen_after_prior_background_thread_rate_limit",
+      "qc_notes": [
+        "Canonical final file exists at planned output_path.",
+        "PNG, 2160x3840, 9:16 vertical, opaque/no alpha.",
+        "Neutral costume-system card, not a video frame.",
+        "Includes costume states/views, layer/material/wear details, and body-scale reference as required.",
+        "Regenerated canonical board: human regional/class wardrobe differences are readable with intact old Chinese-style garment construction and sewn repairs instead of shredded-rag shorthand."
+      ],
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_after_prompt_revision"
+      },
+      "completed_at": "2026-06-05",
+      "final_sha256": "cf2122cbf20124fc088dd74913537125b66e8658af84615f66e39915a681fd18",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ac7408a881a298f2f317c4e8b8a3.png",
+      "generation_method": "built_in_imagegen_regenerated_current_thread_then_sips_upscaled_to_contract_size"
     },
     {
       "asset_id": "F001",
@@ -7869,8 +8788,8 @@
       "file": "f001m.png",
       "basename": "f001m",
       "output_path": "assets/style/f001m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/world.md#全剧风格锁定",
@@ -7890,7 +8809,7 @@
       "continuity_lock": "不能喜剧化、爽剧化、宫廷斗嘴化或高魔法化；所有动作有真实重心和代价。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f001m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F001",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8016,7 +8935,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8025,7 +8947,253 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "global_low_magic_eastern_epic_style_baseline",
+        "palette_display_policy": "Render color chips and material samples visually; do not render token names, HEX codes, captions, labels, UI text, or numbers inside the image.",
+        "color_palette": [
+          {
+            "token_id": "earth_brown",
+            "display_name": "土褐",
+            "hex": "#6A4632",
+            "role": "human rural base",
+            "usage": "残阳坳、山路、旧麻、泥墙、旧皮底色",
+            "max_area_percent": 42
+          },
+          {
+            "token_id": "wheat_gold",
+            "display_name": "麦金",
+            "hex": "#B88A3D",
+            "role": "warm livelihood accent",
+            "usage": "麦田、粮牌、旧粮仓、褪色布边",
+            "max_area_percent": 28
+          },
+          {
+            "token_id": "herb_green",
+            "display_name": "草药青",
+            "hex": "#5D6B47",
+            "role": "healing and old-road accent",
+            "usage": "药户、内层衣、草药袋、旧驿山谷",
+            "max_area_percent": 18
+          },
+          {
+            "token_id": "river_teal",
+            "display_name": "深河青",
+            "hex": "#255A5E",
+            "role": "wet production zone color",
+            "usage": "金河、渡口、蒸汽生产线、湿木阴影",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "insect_wax_white",
+            "display_name": "虫蜡白",
+            "hex": "#E2DDCE",
+            "role": "Qingming institutional base",
+            "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+            "max_area_percent": 46
+          },
+          {
+            "token_id": "blackstone",
+            "display_name": "边墙黑石",
+            "hex": "#202126",
+            "role": "border wall base",
+            "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+            "max_area_percent": 48
+          },
+          {
+            "token_id": "paper_ash",
+            "display_name": "纸灰",
+            "hex": "#8A8174",
+            "role": "burned knowledge base",
+            "usage": "灰烬书院、旧纸、焦黑书架尘面",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "old_white_stone",
+            "display_name": "旧白石",
+            "hex": "#DAD3C2",
+            "role": "old empire stone base",
+            "usage": "白曜旧都、旧驿白石、月下旧驿石台",
+            "max_area_percent": 38
+          },
+          {
+            "token_id": "worn_gold",
+            "display_name": "磨损金",
+            "hex": "#C08A32",
+            "role": "old authority edge accent",
+            "usage": "旧昭明金属边、令牌、磨损凸纹",
+            "max_area_percent": 12
+          },
+          {
+            "token_id": "relay_gold_red",
+            "display_name": "旧驿金赤",
+            "hex": "#C14E32",
+            "role": "low-magic route light",
+            "usage": "旧驿路线光、日月残纹、短促低魔显化",
+            "max_area_percent": 6
+          },
+          {
+            "token_id": "dry_blood",
+            "display_name": "干血暗红",
+            "hex": "#5A1E1A",
+            "role": "injury and wall pressure accent",
+            "usage": "边墙旧血、甲片裂痕、拒马伤痕",
+            "max_area_percent": 8
+          }
+        ],
+        "palette_ratios": {
+          "grounded_environment_base": "55-70%",
+          "human_warmth_and_livelihood": "12-22%",
+          "institutional_or_war_pressure": "12-20%",
+          "old_relay_low_magic_accent": "3-6%"
+        },
+        "material_system": [
+          {
+            "token_id": "old_wood",
+            "display_name": "旧木褐",
+            "base_colors": [
+              "#4B3A2C",
+              "#6A4632"
+            ],
+            "surface": "grain-visible old timber with smoke, hand oil, and water stains",
+            "roughness": "0.68-0.86 high roughness",
+            "reflectance": "low, broken satin only on handled edges",
+            "wear_rules": "chips, soot at corners, rubbed pale edges, never varnished modern wood",
+            "usage": "残阳坳门框、金河码头、水轮、旧驿梁木"
+          },
+          {
+            "token_id": "insect_wax",
+            "display_name": "虫蜡白",
+            "base_colors": [
+              "#E2DDCE",
+              "#EDE8DA",
+              "#BFC1BE"
+            ],
+            "surface": "smooth wax-sealed institutional surface with faint cloudy translucency",
+            "roughness": "0.38-0.52 medium roughness",
+            "reflectance": "soft waxy highlights, no glossy plastic",
+            "wear_rules": "sealed seams, pressed black-sun marks, needle scratches, dustless violence",
+            "usage": "清明院墙面、封条、记忆针、白册章"
+          },
+          {
+            "token_id": "blackstone_snow",
+            "display_name": "黑石雪线",
+            "base_colors": [
+              "#202126",
+              "#4C4F52",
+              "#E8E5DC",
+              "#8FB4BE"
+            ],
+            "surface": "coarse black stone with snow packed into cracks",
+            "roughness": "0.78-0.92 high roughness",
+            "reflectance": "very low, wet edge glints only",
+            "wear_rules": "frost cracks, wind-polished corners, dry blood in cuts, snow accumulation on ledges",
+            "usage": "边墙、锁喉关、寒鸦堡、绝境山脉"
+          },
+          {
+            "token_id": "wet_wood_steam",
+            "display_name": "湿木蒸汽",
+            "base_colors": [
+              "#255A5E",
+              "#4B3A2C",
+              "#D9D6CA",
+              "#141414"
+            ],
+            "surface": "wet river wood, iron grime, steam condensation",
+            "roughness": "0.55-0.75 mixed roughness",
+            "reflectance": "low on wood, dull on iron, white steam glow only as haze",
+            "wear_rules": "water tide marks, oil black smears, rope stains, softened edges",
+            "usage": "金河粮磨、水泵、码头、粮仓生产线"
+          },
+          {
+            "token_id": "paper_ash_copper",
+            "display_name": "纸灰裂铜",
+            "base_colors": [
+              "#8A8174",
+              "#191716",
+              "#8C5A3A",
+              "#D8D0C0"
+            ],
+            "surface": "charred paper, ash dust, cracked copper, brittle seal fragments",
+            "roughness": "0.70-0.88 high roughness",
+            "reflectance": "copper has dull broken glints only",
+            "wear_rules": "burnt edges, ash transfer, copper verdigris, moon-white dust on ridges",
+            "usage": "灰烬书院、碎星图、封条、禁书残页"
+          },
+          {
+            "token_id": "herb_linen",
+            "display_name": "草药麻布",
+            "base_colors": [
+              "#5D6B47",
+              "#A79C83",
+              "#6A4632"
+            ],
+            "surface": "rough linen with herb stains, sweat, smoke and field dust",
+            "roughness": "0.82-0.94 very high roughness",
+            "reflectance": "none except damp darker patches",
+            "wear_rules": "frayed seams, patched elbows, herb-powder smears, soot on corners",
+            "usage": "猎户、药户、山路护送、旧驿后裔服装"
+          },
+          {
+            "token_id": "worn_gold",
+            "display_name": "磨损金",
+            "base_colors": [
+              "#C08A32",
+              "#8C5A3A",
+              "#DAD3C2"
+            ],
+            "surface": "old raised metal with exposed warm gold on edges only",
+            "roughness": "0.45-0.64 medium roughness",
+            "reflectance": "muted glint on raised cuts, no polished palace shine",
+            "wear_rules": "edge wear, blackened recesses, cracked enamel, missing flakes",
+            "usage": "昭明令牌、旧帝国遗迹、日月残纹、盟书印记"
+          }
+        ],
+        "lighting_rules": [
+          {
+            "token_id": "natural_overcast_weight",
+            "color_temperature_kelvin": "5200-6500",
+            "contrast": "medium-low",
+            "usage": "逃亡、村落、边墙外景；保留真实体重和接触阴影"
+          },
+          {
+            "token_id": "warm_fire_local",
+            "color_temperature_kelvin": "1800-2400",
+            "contrast": "localized high contrast",
+            "usage": "门缝火光、火烧残阳坳、炭火；只照亮局部因果"
+          },
+          {
+            "token_id": "qingming_clean_cold",
+            "color_temperature_kelvin": "6800-7600",
+            "contrast": "clean but oppressive",
+            "usage": "清明院和白册场景；白不是圣洁，是制度暴力"
+          },
+          {
+            "token_id": "relay_gold_red_pulse",
+            "color_hex_core": "#C14E32",
+            "color_hex_edge": "#E7A94A",
+            "max_frame_area_percent": 6,
+            "usage": "旧驿短促反应，不许满屏魔法"
+          }
+        ],
+        "downstream_usage": [
+          "B06 costume palettes",
+          "character wardrobe accents",
+          "location scene cards",
+          "prop and symbol material choices",
+          "director-room prompt refresh"
+        ]
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f001m.png",
+      "generated_file": "assets/style/f001m.png",
+      "data_status": "style_reference_data_supplemented"
     },
     {
       "asset_id": "F002",
@@ -8035,8 +9203,8 @@
       "file": "f002m.png",
       "basename": "f002m",
       "output_path": "assets/style/f002m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/visual-style.md#色彩系统",
@@ -8058,7 +9226,7 @@
       "continuity_lock": "全剧不能统一成单一灰冷逃亡色；每个地域有社会功能、材质和天气压力。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f002m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F002",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8184,7 +9352,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8193,7 +9364,399 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "season_one_regional_palette_route_map",
+        "palette_display_policy": "Render route palettes as visual bands and environment swatches; do not render region names or HEX codes as readable text in the image.",
+        "regional_palette_map": [
+          {
+            "region_id": "canyang_ao_old_relay_valley",
+            "display_name": "残阳坳与旧驿山谷",
+            "colors": [
+              {
+                "token_id": "earth_brown",
+                "display_name": "土褐",
+                "hex": "#6A4632",
+                "role": "human rural base",
+                "usage": "残阳坳、山路、旧麻、泥墙、旧皮底色",
+                "max_area_percent": 42
+              },
+              {
+                "token_id": "wheat_gold",
+                "display_name": "麦金",
+                "hex": "#B88A3D",
+                "role": "warm livelihood accent",
+                "usage": "麦田、粮牌、旧粮仓、褪色布边",
+                "max_area_percent": 28
+              },
+              {
+                "token_id": "herb_green",
+                "display_name": "草药青",
+                "hex": "#5D6B47",
+                "role": "healing and old-road accent",
+                "usage": "药户、内层衣、草药袋、旧驿山谷",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "old_leather",
+                "display_name": "旧皮褐",
+                "hex": "#3E2B21",
+                "role": "rural gear base",
+                "usage": "皮护腕、路线包、弓袋",
+                "max_area_percent": 22
+              },
+              {
+                "token_id": "smoke_gray",
+                "display_name": "炊烟灰",
+                "hex": "#7A7064",
+                "role": "fire aftermath haze",
+                "usage": "炊烟、烟灰、火后衣角",
+                "max_area_percent": 18
+              }
+            ],
+            "materials": [
+              "old_wood",
+              "herb_linen"
+            ],
+            "lighting": "warm fire local plus humid autumn haze"
+          },
+          {
+            "region_id": "jinhe_grain_mill",
+            "display_name": "金河粮仓带",
+            "colors": [
+              {
+                "token_id": "river_teal",
+                "display_name": "深河青",
+                "hex": "#255A5E",
+                "role": "wet production zone color",
+                "usage": "金河、渡口、蒸汽生产线、湿木阴影",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "wet_wood_brown",
+                "display_name": "湿木褐",
+                "hex": "#4B3A2C",
+                "role": "river production base",
+                "usage": "码头、水轮、粮磨湿木",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "iron_gray",
+                "display_name": "铁灰",
+                "hex": "#5A5D5F",
+                "role": "retained production tool",
+                "usage": "水泵、轨车、铁件",
+                "max_area_percent": 22
+              },
+              {
+                "token_id": "steam_white",
+                "display_name": "蒸汽白",
+                "hex": "#D9D6CA",
+                "role": "steam haze",
+                "usage": "蒸汽、水雾、粮磨白雾",
+                "max_area_percent": 26
+              },
+              {
+                "token_id": "oil_black",
+                "display_name": "油黑",
+                "hex": "#141414",
+                "role": "machine grime accent",
+                "usage": "油污、轴承、阴影",
+                "max_area_percent": 8
+              }
+            ],
+            "materials": [
+              "wet_wood_steam",
+              "old_wood"
+            ],
+            "lighting": "humid river fog, soft white steam, low oily shadows"
+          },
+          {
+            "region_id": "ash_academy",
+            "display_name": "灰烬书院",
+            "colors": [
+              {
+                "token_id": "paper_ash",
+                "display_name": "纸灰",
+                "hex": "#8A8174",
+                "role": "burned knowledge base",
+                "usage": "灰烬书院、旧纸、焦黑书架尘面",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "cracked_copper",
+                "display_name": "裂铜",
+                "hex": "#8C5A3A",
+                "role": "old knowledge metallic accent",
+                "usage": "旧星图、残铜边、书院机关裂纹",
+                "max_area_percent": 14
+              },
+              {
+                "token_id": "char_black",
+                "display_name": "焦黑",
+                "hex": "#191716",
+                "role": "burned knowledge base",
+                "usage": "焦黑书架、烧毁院墙",
+                "max_area_percent": 45
+              },
+              {
+                "token_id": "moon_white",
+                "display_name": "残月白",
+                "hex": "#D8D0C0",
+                "role": "old knowledge highlight",
+                "usage": "星图灰面、残月图线",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "seal_dark_red",
+                "display_name": "封条暗红",
+                "hex": "#6F2A22",
+                "role": "forbidden record accent",
+                "usage": "封条残痕、禁书印痕",
+                "max_area_percent": 7
+              }
+            ],
+            "materials": [
+              "paper_ash_copper"
+            ],
+            "lighting": "dry cold ash, side light catching paper dust and copper cracks"
+          },
+          {
+            "region_id": "qingming_outer_office",
+            "display_name": "清明院外署",
+            "colors": [
+              {
+                "token_id": "insect_wax_white",
+                "display_name": "虫蜡白",
+                "hex": "#E2DDCE",
+                "role": "Qingming institutional base",
+                "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+                "max_area_percent": 46
+              },
+              {
+                "token_id": "bone_white",
+                "display_name": "骨白",
+                "hex": "#EDE8DA",
+                "role": "cold institutional or northern bone accent",
+                "usage": "肃明骨白、北境骨器、雪中骨饰",
+                "max_area_percent": 28
+              },
+              {
+                "token_id": "pearl_gray",
+                "display_name": "珍珠灰",
+                "hex": "#BFC1BE",
+                "role": "clean violence shadow",
+                "usage": "清明院阴影、无尘墙面、白册纸边",
+                "max_area_percent": 24
+              },
+              {
+                "token_id": "black_sun",
+                "display_name": "黑日近黑",
+                "hex": "#101116",
+                "role": "Suming/Qingming authority mark",
+                "usage": "黑日、审讯桌阴影、虫族中枢标记",
+                "max_area_percent": 12
+              },
+              {
+                "token_id": "cold_gold",
+                "display_name": "冷金",
+                "hex": "#B7A36A",
+                "role": "institutional authority accent",
+                "usage": "清明院金属针、白册章边缘",
+                "max_area_percent": 8
+              }
+            ],
+            "materials": [
+              "insect_wax"
+            ],
+            "lighting": "cold clean white, waxy highlights, high psychological pressure"
+          },
+          {
+            "region_id": "border_wall_and_mountains",
+            "display_name": "边墙与绝境山脉",
+            "colors": [
+              {
+                "token_id": "blackstone",
+                "display_name": "边墙黑石",
+                "hex": "#202126",
+                "role": "border wall base",
+                "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+                "max_area_percent": 48
+              },
+              {
+                "token_id": "snow_white",
+                "display_name": "雪白",
+                "hex": "#E8E5DC",
+                "role": "north and wall exposure",
+                "usage": "雪线、冻风、山口高光、北境远景",
+                "max_area_percent": 36
+              },
+              {
+                "token_id": "ice_cyan",
+                "display_name": "冰青",
+                "hex": "#8FB4BE",
+                "role": "cold-air accent",
+                "usage": "雪影、冰湖、北风、高寒阴影",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "dry_blood",
+                "display_name": "干血暗红",
+                "hex": "#5A1E1A",
+                "role": "injury and wall pressure accent",
+                "usage": "边墙旧血、甲片裂痕、拒马伤痕",
+                "max_area_percent": 8
+              },
+              {
+                "token_id": "old_iron",
+                "display_name": "旧铁",
+                "hex": "#4C4F52",
+                "role": "military repair base",
+                "usage": "旧甲、拒马、枪头、锁喉关铁件",
+                "max_area_percent": 22
+              }
+            ],
+            "materials": [
+              "blackstone_snow",
+              "bone_iron_hide"
+            ],
+            "lighting": "hard cold wind, snow bounce, dark wall mass"
+          },
+          {
+            "region_id": "northern_wilds",
+            "display_name": "北境荒原",
+            "colors": [
+              {
+                "token_id": "dry_grass",
+                "display_name": "枯草黄",
+                "hex": "#A89356",
+                "role": "northern survival accent",
+                "usage": "北境枯草、草坡、血盐袋、迁徙草场",
+                "max_area_percent": 30
+              },
+              {
+                "token_id": "frozen_earth",
+                "display_name": "冻土灰",
+                "hex": "#6C6257",
+                "role": "northern ground base",
+                "usage": "北境冻土、兽群迁徙路、风蚀灰土",
+                "max_area_percent": 36
+              },
+              {
+                "token_id": "wind_brown",
+                "display_name": "风蚀褐",
+                "hex": "#6B4E37",
+                "role": "northern leather and wood base",
+                "usage": "兽皮、骨木、皮帐、风蚀木",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "bone_white",
+                "display_name": "骨白",
+                "hex": "#EDE8DA",
+                "role": "cold institutional or northern bone accent",
+                "usage": "肃明骨白、北境骨器、雪中骨饰",
+                "max_area_percent": 28
+              },
+              {
+                "token_id": "ice_cyan",
+                "display_name": "冰青",
+                "hex": "#8FB4BE",
+                "role": "cold-air accent",
+                "usage": "雪影、冰湖、北风、高寒阴影",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "low_sky_cyan",
+                "display_name": "低饱和天青",
+                "hex": "#8CAFB7",
+                "role": "northern sky distance",
+                "usage": "北境短夏天空、远雪雾",
+                "max_area_percent": 16
+              }
+            ],
+            "materials": [
+              "bone_iron_hide"
+            ],
+            "lighting": "low-saturation sky, wind-scoured ground, survival pressure"
+          },
+          {
+            "region_id": "moon_relay_ruin",
+            "display_name": "月下旧驿与旧帝国遗迹",
+            "colors": [
+              {
+                "token_id": "old_white_stone",
+                "display_name": "旧白石",
+                "hex": "#DAD3C2",
+                "role": "old empire stone base",
+                "usage": "白曜旧都、旧驿白石、月下旧驿石台",
+                "max_area_percent": 38
+              },
+              {
+                "token_id": "zhu_red",
+                "display_name": "朱赤",
+                "hex": "#A9342A",
+                "role": "Zhaoming root cloth accent",
+                "usage": "昭明旗布、旧帝国残纹、遗迹红边",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "lapis_blue",
+                "display_name": "宝蓝",
+                "hex": "#24446D",
+                "role": "old empire ceremonial accent",
+                "usage": "旧帝国星图、宫城残片、少量礼制色",
+                "max_area_percent": 10
+              },
+              {
+                "token_id": "worn_gold",
+                "display_name": "磨损金",
+                "hex": "#C08A32",
+                "role": "old authority edge accent",
+                "usage": "旧昭明金属边、令牌、磨损凸纹",
+                "max_area_percent": 12
+              },
+              {
+                "token_id": "relay_gold_red",
+                "display_name": "旧驿金赤",
+                "hex": "#C14E32",
+                "role": "low-magic route light",
+                "usage": "旧驿路线光、日月残纹、短促低魔显化",
+                "max_area_percent": 6
+              },
+              {
+                "token_id": "moon_white_clean",
+                "display_name": "月白",
+                "hex": "#E1DED2",
+                "role": "old vow stone highlight",
+                "usage": "月下旧驿石台、盟书残光",
+                "max_area_percent": 24
+              }
+            ],
+            "materials": [
+              "worn_gold",
+              "old_wood"
+            ],
+            "lighting": "cold moon white with restrained gold-red route response"
+          }
+        ],
+        "forbidden_palette_rules": [
+          "do not grade all regions into the same cold gray",
+          "do not make Qingming white look holy or cleanly benevolent",
+          "do not turn North into only blue-white snow",
+          "do not use saturated fantasy neon"
+        ]
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f002m.png",
+      "generated_file": "assets/style/f002m.png",
+      "data_status": "style_reference_data_supplemented"
     },
     {
       "asset_id": "F003",
@@ -8203,8 +9766,8 @@
       "file": "f003m.png",
       "basename": "f003m",
       "output_path": "assets/style/f003m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/visual-style.md",
@@ -8226,7 +9789,7 @@
       "continuity_lock": "避免塑料 CGI、过度干净、现代工业纹理或单纯滤镜化；材质必须服务剧情空间。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f003m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F003",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8352,7 +9915,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8361,7 +9927,241 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "core_material_touch_reference",
+        "palette_display_policy": "Render close material crops and mid-distance applications; do not render material names or parameter text in the image.",
+        "color_palette": [
+          {
+            "token_id": "insect_wax_white",
+            "display_name": "虫蜡白",
+            "hex": "#E2DDCE",
+            "role": "Qingming institutional base",
+            "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+            "max_area_percent": 46
+          },
+          {
+            "token_id": "old_white_stone",
+            "display_name": "旧白石",
+            "hex": "#DAD3C2",
+            "role": "old empire stone base",
+            "usage": "白曜旧都、旧驿白石、月下旧驿石台",
+            "max_area_percent": 38
+          },
+          {
+            "token_id": "blackstone",
+            "display_name": "边墙黑石",
+            "hex": "#202126",
+            "role": "border wall base",
+            "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+            "max_area_percent": 48
+          },
+          {
+            "token_id": "snow_white",
+            "display_name": "雪白",
+            "hex": "#E8E5DC",
+            "role": "north and wall exposure",
+            "usage": "雪线、冻风、山口高光、北境远景",
+            "max_area_percent": 36
+          },
+          {
+            "token_id": "river_teal",
+            "display_name": "深河青",
+            "hex": "#255A5E",
+            "role": "wet production zone color",
+            "usage": "金河、渡口、蒸汽生产线、湿木阴影",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "paper_ash",
+            "display_name": "纸灰",
+            "hex": "#8A8174",
+            "role": "burned knowledge base",
+            "usage": "灰烬书院、旧纸、焦黑书架尘面",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "cracked_copper",
+            "display_name": "裂铜",
+            "hex": "#8C5A3A",
+            "role": "old knowledge metallic accent",
+            "usage": "旧星图、残铜边、书院机关裂纹",
+            "max_area_percent": 14
+          },
+          {
+            "token_id": "herb_green",
+            "display_name": "草药青",
+            "hex": "#5D6B47",
+            "role": "healing and old-road accent",
+            "usage": "药户、内层衣、草药袋、旧驿山谷",
+            "max_area_percent": 18
+          },
+          {
+            "token_id": "worn_gold",
+            "display_name": "磨损金",
+            "hex": "#C08A32",
+            "role": "old authority edge accent",
+            "usage": "旧昭明金属边、令牌、磨损凸纹",
+            "max_area_percent": 12
+          },
+          {
+            "token_id": "wind_brown",
+            "display_name": "风蚀褐",
+            "hex": "#6B4E37",
+            "role": "northern leather and wood base",
+            "usage": "兽皮、骨木、皮帐、风蚀木",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "bone_white",
+            "display_name": "骨白",
+            "hex": "#EDE8DA",
+            "role": "cold institutional or northern bone accent",
+            "usage": "肃明骨白、北境骨器、雪中骨饰",
+            "max_area_percent": 28
+          }
+        ],
+        "material_system": [
+          {
+            "token_id": "insect_wax",
+            "display_name": "虫蜡白",
+            "base_colors": [
+              "#E2DDCE",
+              "#EDE8DA",
+              "#BFC1BE"
+            ],
+            "surface": "smooth wax-sealed institutional surface with faint cloudy translucency",
+            "roughness": "0.38-0.52 medium roughness",
+            "reflectance": "soft waxy highlights, no glossy plastic",
+            "wear_rules": "sealed seams, pressed black-sun marks, needle scratches, dustless violence",
+            "usage": "清明院墙面、封条、记忆针、白册章"
+          },
+          {
+            "token_id": "blackstone_snow",
+            "display_name": "黑石雪线",
+            "base_colors": [
+              "#202126",
+              "#4C4F52",
+              "#E8E5DC",
+              "#8FB4BE"
+            ],
+            "surface": "coarse black stone with snow packed into cracks",
+            "roughness": "0.78-0.92 high roughness",
+            "reflectance": "very low, wet edge glints only",
+            "wear_rules": "frost cracks, wind-polished corners, dry blood in cuts, snow accumulation on ledges",
+            "usage": "边墙、锁喉关、寒鸦堡、绝境山脉"
+          },
+          {
+            "token_id": "wet_wood_steam",
+            "display_name": "湿木蒸汽",
+            "base_colors": [
+              "#255A5E",
+              "#4B3A2C",
+              "#D9D6CA",
+              "#141414"
+            ],
+            "surface": "wet river wood, iron grime, steam condensation",
+            "roughness": "0.55-0.75 mixed roughness",
+            "reflectance": "low on wood, dull on iron, white steam glow only as haze",
+            "wear_rules": "water tide marks, oil black smears, rope stains, softened edges",
+            "usage": "金河粮磨、水泵、码头、粮仓生产线"
+          },
+          {
+            "token_id": "bone_iron_hide",
+            "display_name": "骨铁兽皮",
+            "base_colors": [
+              "#D6C9B0",
+              "#4C4F52",
+              "#6B4E37",
+              "#79332B"
+            ],
+            "surface": "bone, dull iron, hide, fur, rope and blood-salt wear",
+            "roughness": "0.72-0.90 high roughness",
+            "reflectance": "very low except worn iron scratches",
+            "wear_rules": "stitched repairs, bite marks, salt bloom, cracked leather, bone polish at grip points",
+            "usage": "北境盾鼓、皮帐、兽具、骨笛、攻城兵种"
+          },
+          {
+            "token_id": "paper_ash_copper",
+            "display_name": "纸灰裂铜",
+            "base_colors": [
+              "#8A8174",
+              "#191716",
+              "#8C5A3A",
+              "#D8D0C0"
+            ],
+            "surface": "charred paper, ash dust, cracked copper, brittle seal fragments",
+            "roughness": "0.70-0.88 high roughness",
+            "reflectance": "copper has dull broken glints only",
+            "wear_rules": "burnt edges, ash transfer, copper verdigris, moon-white dust on ridges",
+            "usage": "灰烬书院、碎星图、封条、禁书残页"
+          },
+          {
+            "token_id": "herb_linen",
+            "display_name": "草药麻布",
+            "base_colors": [
+              "#5D6B47",
+              "#A79C83",
+              "#6A4632"
+            ],
+            "surface": "rough linen with herb stains, sweat, smoke and field dust",
+            "roughness": "0.82-0.94 very high roughness",
+            "reflectance": "none except damp darker patches",
+            "wear_rules": "frayed seams, patched elbows, herb-powder smears, soot on corners",
+            "usage": "猎户、药户、山路护送、旧驿后裔服装"
+          },
+          {
+            "token_id": "worn_gold",
+            "display_name": "磨损金",
+            "base_colors": [
+              "#C08A32",
+              "#8C5A3A",
+              "#DAD3C2"
+            ],
+            "surface": "old raised metal with exposed warm gold on edges only",
+            "roughness": "0.45-0.64 medium roughness",
+            "reflectance": "muted glint on raised cuts, no polished palace shine",
+            "wear_rules": "edge wear, blackened recesses, cracked enamel, missing flakes",
+            "usage": "昭明令牌、旧帝国遗迹、日月残纹、盟书印记"
+          },
+          {
+            "token_id": "old_white_stone",
+            "display_name": "旧白石",
+            "base_colors": [
+              "#DAD3C2",
+              "#E1DED2",
+              "#8A8174"
+            ],
+            "surface": "porous old imperial stone with chips, dust and old carving scars",
+            "roughness": "0.76-0.91 high roughness",
+            "reflectance": "chalky low reflectance",
+            "wear_rules": "corner chips, soot in carved lines, snow or dust settled in cuts",
+            "usage": "白曜旧都、旧驿、月下盟书石台"
+          }
+        ],
+        "material_qc_thresholds": {
+          "tactile_surface_required": true,
+          "modern_plastic_forbidden": true,
+          "clean_cgi_forbidden": true,
+          "material_must_have_wear_source": true
+        },
+        "downstream_usage": [
+          "all prop material crops",
+          "costume material thickness and wear",
+          "location closeups",
+          "shot prompt material language"
+        ]
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f003m.png",
+      "generated_file": "assets/style/f003m.png",
+      "data_status": "style_reference_data_supplemented"
     },
     {
       "asset_id": "F004",
@@ -8371,8 +10171,8 @@
       "file": "f004m.png",
       "basename": "f004m",
       "output_path": "assets/style/f004m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": true,
       "source_refs": [
         "bible/factions.md",
@@ -8396,7 +10196,7 @@
       "continuity_lock": "不得重做三势力根徽章；精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f004m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F004",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8493,7 +10293,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8502,7 +10305,322 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "faction_symbol_extension_and_forbidden_mark_board",
+        "palette_display_policy": "Render root-emblem-derived color and material applications visually; do not render readable faction labels, names, token IDs, or HEX codes.",
+        "root_references": [
+          {
+            "asset_id": "P016",
+            "file": "assets/props/p016m.png",
+            "root_symbol": "昭明日月星盘与朱赤旗布",
+            "locked": true
+          },
+          {
+            "asset_id": "P017",
+            "file": "assets/props/p017m.png",
+            "root_symbol": "肃明/清明院黑日白翅与白旗封条",
+            "locked": true
+          },
+          {
+            "asset_id": "P018",
+            "file": "assets/props/p018m.png",
+            "root_symbol": "北境骨木万兽誓结与兽皮旗",
+            "locked": true
+          }
+        ],
+        "faction_symbol_systems": [
+          {
+            "faction_id": "zhaoming_remnants",
+            "source_asset": "P016",
+            "palette": [
+              {
+                "token_id": "zhu_red",
+                "display_name": "朱赤",
+                "hex": "#A9342A",
+                "role": "Zhaoming root cloth accent",
+                "usage": "昭明旗布、旧帝国残纹、遗迹红边",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "old_white_stone",
+                "display_name": "旧白石",
+                "hex": "#DAD3C2",
+                "role": "old empire stone base",
+                "usage": "白曜旧都、旧驿白石、月下旧驿石台",
+                "max_area_percent": 38
+              },
+              {
+                "token_id": "worn_gold",
+                "display_name": "磨损金",
+                "hex": "#C08A32",
+                "role": "old authority edge accent",
+                "usage": "旧昭明金属边、令牌、磨损凸纹",
+                "max_area_percent": 12
+              },
+              {
+                "token_id": "lapis_blue",
+                "display_name": "宝蓝",
+                "hex": "#24446D",
+                "role": "old empire ceremonial accent",
+                "usage": "旧帝国星图、宫城残片、少量礼制色",
+                "max_area_percent": 10
+              },
+              {
+                "token_id": "relay_gold_red",
+                "display_name": "旧驿金赤",
+                "hex": "#C14E32",
+                "role": "low-magic route light",
+                "usage": "旧驿路线光、日月残纹、短促低魔显化",
+                "max_area_percent": 6
+              }
+            ],
+            "surfaces": [
+              "flag cloth",
+              "worn metal token",
+              "old white stone relief",
+              "wax seal impression",
+              "embroidered robe edge"
+            ],
+            "allowed_applications": [
+              "半枚日月驿令",
+              "旧驿石刻",
+              "流亡袍暗纹",
+              "盟书残印",
+              "遗迹凸纹"
+            ],
+            "forbidden": [
+              "generic sun icon",
+              "modern national flag",
+              "clean victory banner",
+              "new dragon/phoenix emblem",
+              "readable invented script"
+            ]
+          },
+          {
+            "faction_id": "suming_qingming",
+            "source_asset": "P017",
+            "palette": [
+              {
+                "token_id": "insect_wax_white",
+                "display_name": "虫蜡白",
+                "hex": "#E2DDCE",
+                "role": "Qingming institutional base",
+                "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+                "max_area_percent": 46
+              },
+              {
+                "token_id": "bone_white",
+                "display_name": "骨白",
+                "hex": "#EDE8DA",
+                "role": "cold institutional or northern bone accent",
+                "usage": "肃明骨白、北境骨器、雪中骨饰",
+                "max_area_percent": 28
+              },
+              {
+                "token_id": "pearl_gray",
+                "display_name": "珍珠灰",
+                "hex": "#BFC1BE",
+                "role": "clean violence shadow",
+                "usage": "清明院阴影、无尘墙面、白册纸边",
+                "max_area_percent": 24
+              },
+              {
+                "token_id": "black_sun",
+                "display_name": "黑日近黑",
+                "hex": "#101116",
+                "role": "Suming/Qingming authority mark",
+                "usage": "黑日、审讯桌阴影、虫族中枢标记",
+                "max_area_percent": 12
+              },
+              {
+                "token_id": "cold_gold",
+                "display_name": "冷金",
+                "hex": "#B7A36A",
+                "role": "institutional authority accent",
+                "usage": "白册章、虫蜡针、清明院器具",
+                "max_area_percent": 8
+              }
+            ],
+            "surfaces": [
+              "wax seal",
+              "white register paper",
+              "bone tile",
+              "white institutional wall",
+              "black-sun stamp"
+            ],
+            "allowed_applications": [
+              "白册章",
+              "虫蜡封条",
+              "奴兵扣腕",
+              "记忆针室器具",
+              "清明院旗面"
+            ],
+            "forbidden": [
+              "soft angel wing",
+              "hospital logo",
+              "monster nest mark",
+              "pure clean holy sign",
+              "new readable legal text"
+            ]
+          },
+          {
+            "faction_id": "northern_alliance",
+            "source_asset": "P018",
+            "palette": [
+              {
+                "token_id": "bone_white",
+                "display_name": "骨白",
+                "hex": "#EDE8DA",
+                "role": "cold institutional or northern bone accent",
+                "usage": "肃明骨白、北境骨器、雪中骨饰",
+                "max_area_percent": 28
+              },
+              {
+                "token_id": "wind_brown",
+                "display_name": "风蚀褐",
+                "hex": "#6B4E37",
+                "role": "northern leather and wood base",
+                "usage": "兽皮、骨木、皮帐、风蚀木",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "frozen_earth",
+                "display_name": "冻土灰",
+                "hex": "#6C6257",
+                "role": "northern ground base",
+                "usage": "北境冻土、兽群迁徙路、风蚀灰土",
+                "max_area_percent": 36
+              },
+              {
+                "token_id": "dry_grass",
+                "display_name": "枯草黄",
+                "hex": "#A89356",
+                "role": "northern survival accent",
+                "usage": "北境枯草、草坡、血盐袋、迁徙草场",
+                "max_area_percent": 30
+              },
+              {
+                "token_id": "ice_cyan",
+                "display_name": "冰青",
+                "hex": "#8FB4BE",
+                "role": "cold-air accent",
+                "usage": "雪影、冰湖、北风、高寒阴影",
+                "max_area_percent": 18
+              },
+              {
+                "token_id": "blood_salt_red",
+                "display_name": "血盐暗红",
+                "hex": "#79332B",
+                "role": "northern ritual accent",
+                "usage": "血盐袋、誓约绳结、兽具磨损处",
+                "max_area_percent": 7
+              }
+            ],
+            "surfaces": [
+              "bone carving",
+              "hide banner",
+              "fur edge",
+              "wood totem",
+              "rope knot",
+              "shield drum"
+            ],
+            "allowed_applications": [
+              "盾鼓",
+              "皮帐旗",
+              "誓约绳",
+              "骨笛",
+              "兽具角帽",
+              "迁徙标记"
+            ],
+            "forbidden": [
+              "single cute animal logo",
+              "single wolf/lion head as whole faction",
+              "metallic high-tech banner",
+              "mindless monster horde emblem"
+            ]
+          },
+          {
+            "faction_id": "grey_wall_army_and_wallfoot_nonstate",
+            "source_asset": null,
+            "palette": [
+              {
+                "token_id": "blackstone",
+                "display_name": "边墙黑石",
+                "hex": "#202126",
+                "role": "border wall base",
+                "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+                "max_area_percent": 48
+              },
+              {
+                "token_id": "snow_white",
+                "display_name": "雪白",
+                "hex": "#E8E5DC",
+                "role": "north and wall exposure",
+                "usage": "雪线、冻风、山口高光、北境远景",
+                "max_area_percent": 36
+              },
+              {
+                "token_id": "dry_blood",
+                "display_name": "干血暗红",
+                "hex": "#5A1E1A",
+                "role": "injury and wall pressure accent",
+                "usage": "边墙旧血、甲片裂痕、拒马伤痕",
+                "max_area_percent": 8
+              },
+              {
+                "token_id": "river_teal",
+                "display_name": "深河青",
+                "hex": "#255A5E",
+                "role": "wet production zone color",
+                "usage": "金河、渡口、蒸汽生产线、湿木阴影",
+                "max_area_percent": 34
+              },
+              {
+                "token_id": "charcoal_trade_mark",
+                "display_name": "无籍炭黑",
+                "hex": "#25211D",
+                "role": "non-state object mark",
+                "usage": "墙下交易牌、旧粮牌压痕",
+                "max_area_percent": 10
+              }
+            ],
+            "surfaces": [
+              "old armor pressure marks",
+              "wooden pass token",
+              "charcoal mark",
+              "worn rope",
+              "scratched iron"
+            ],
+            "allowed_applications": [
+              "灰墙军旧甲压痕",
+              "墙下交易牌",
+              "军户木牌",
+              "黑市通行牌"
+            ],
+            "forbidden": [
+              "new state emblem",
+              "official crest",
+              "readable modern signage"
+            ]
+          }
+        ],
+        "precision_control": {
+          "exact_root_geometry_must_derive_from_b00": true,
+          "transparent_or_line_control_derivatives_required_for_final_composite": true,
+          "image_model_may_show_material_applications_but_not_invent_new_precise_symbols": true
+        }
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f004m.png",
+      "generated_file": "assets/style/f004m.png",
+      "data_status": "style_reference_data_supplemented"
     },
     {
       "asset_id": "F005",
@@ -8512,8 +10630,8 @@
       "file": "f005m.png",
       "basename": "f005m",
       "output_path": "assets/style/f005m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "production/series-video-rules.md",
@@ -8533,7 +10651,7 @@
       "continuity_lock": "道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f005m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F005",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8659,7 +10777,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8668,7 +10789,194 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "vertical_9x16_composition_and_causal_action_reference",
+        "palette_display_policy": "Render composition thumbnails and prop/hand/silhouette blocks visually; do not render labels, grids, numbers, or captions.",
+        "color_palette": [
+          {
+            "token_id": "blackstone",
+            "display_name": "边墙黑石",
+            "hex": "#202126",
+            "role": "border wall base",
+            "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+            "max_area_percent": 48
+          },
+          {
+            "token_id": "snow_white",
+            "display_name": "雪白",
+            "hex": "#E8E5DC",
+            "role": "north and wall exposure",
+            "usage": "雪线、冻风、山口高光、北境远景",
+            "max_area_percent": 36
+          },
+          {
+            "token_id": "wheat_gold",
+            "display_name": "麦金",
+            "hex": "#B88A3D",
+            "role": "warm livelihood accent",
+            "usage": "麦田、粮牌、旧粮仓、褪色布边",
+            "max_area_percent": 28
+          },
+          {
+            "token_id": "river_teal",
+            "display_name": "深河青",
+            "hex": "#255A5E",
+            "role": "wet production zone color",
+            "usage": "金河、渡口、蒸汽生产线、湿木阴影",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "insect_wax_white",
+            "display_name": "虫蜡白",
+            "hex": "#E2DDCE",
+            "role": "Qingming institutional base",
+            "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+            "max_area_percent": 46
+          },
+          {
+            "token_id": "paper_ash",
+            "display_name": "纸灰",
+            "hex": "#8A8174",
+            "role": "burned knowledge base",
+            "usage": "灰烬书院、旧纸、焦黑书架尘面",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "dry_blood",
+            "display_name": "干血暗红",
+            "hex": "#5A1E1A",
+            "role": "injury and wall pressure accent",
+            "usage": "边墙旧血、甲片裂痕、拒马伤痕",
+            "max_area_percent": 8
+          },
+          {
+            "token_id": "relay_gold_red",
+            "display_name": "旧驿金赤",
+            "hex": "#C14E32",
+            "role": "low-magic route light",
+            "usage": "旧驿路线光、日月残纹、短促低魔显化",
+            "max_area_percent": 6
+          }
+        ],
+        "composition_templates": [
+          {
+            "template_id": "door_slit_fire",
+            "key_readable_area": "vertical central slit 12-18% width",
+            "foreground_percent": 35,
+            "midground_percent": 45,
+            "background_percent": 20,
+            "color_accent": "#A84A2A",
+            "use_cases": [
+              "残阳坳火光",
+              "逃亡窥视",
+              "封门危机"
+            ],
+            "rule": "fire is local cause, not full-screen spectacle"
+          },
+          {
+            "template_id": "hand_prop_first_second",
+            "key_readable_area": "prop and fingers occupy 18-24% frame height",
+            "foreground_percent": 42,
+            "midground_percent": 34,
+            "background_percent": 24,
+            "color_accent": "#C08A32",
+            "use_cases": [
+              "粮牌",
+              "半枚驿令",
+              "虫蜡针",
+              "白册章"
+            ],
+            "rule": "story prop readable before beauty shot"
+          },
+          {
+            "template_id": "bone_bell_vibration",
+            "key_readable_area": "bell or bone object in lower-mid third, vibration debris around contact point",
+            "foreground_percent": 30,
+            "midground_percent": 40,
+            "background_percent": 30,
+            "color_accent": "#D6C9B0",
+            "use_cases": [
+              "骨钟",
+              "骨笛",
+              "北境预警"
+            ],
+            "rule": "sound and vibration shown by local contact cause"
+          },
+          {
+            "template_id": "giant_beast_horn_shadow",
+            "key_readable_area": "horn/silhouette enters from edge 20-35% width, humans small but not unreadable",
+            "foreground_percent": 25,
+            "midground_percent": 35,
+            "background_percent": 40,
+            "color_accent": "#202126",
+            "use_cases": [
+              "巨兽撞门",
+              "北境迁徙",
+              "拒马受力"
+            ],
+            "rule": "show scale through partial body and impact, not full monster splash"
+          },
+          {
+            "template_id": "wax_needle_closeup",
+            "key_readable_area": "needle/wax/contact patch 20-28% height near upper or center third",
+            "foreground_percent": 48,
+            "midground_percent": 32,
+            "background_percent": 20,
+            "color_accent": "#E2DDCE",
+            "use_cases": [
+              "清明院记忆针",
+              "白册复核",
+              "血纹筛查"
+            ],
+            "rule": "clean surface plus bodily threat"
+          },
+          {
+            "template_id": "broken_stair_grab",
+            "key_readable_area": "hand, cracked stair edge and falling debris form diagonal from lower third to upper third",
+            "foreground_percent": 45,
+            "midground_percent": 35,
+            "background_percent": 20,
+            "color_accent": "#8A8174",
+            "use_cases": [
+              "断阶抓手",
+              "坍塌烽燧",
+              "旧驿逃亡"
+            ],
+            "rule": "action consequence must be visible in contact point"
+          },
+          {
+            "template_id": "snow_slope_escape",
+            "key_readable_area": "body path diagonal 60-75% frame height with snow spray at feet/hands",
+            "foreground_percent": 34,
+            "midground_percent": 42,
+            "background_percent": 24,
+            "color_accent": "#8FB4BE",
+            "use_cases": [
+              "雪坡逃亡",
+              "锁喉关撤退",
+              "北境追逐"
+            ],
+            "rule": "weight and friction visible; no floating slow motion"
+          }
+        ],
+        "readability_rules": {
+          "no_text_or_grid_numbers": true,
+          "first_second_story_prop_min_frame_height_percent": 18,
+          "face_hand_or_prop_anchor": "upper-middle or central third",
+          "background_detail_limit": "support cause and geography only"
+        }
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f005m.png",
+      "generated_file": "assets/style/f005m.png",
+      "data_status": "style_reference_data_supplemented"
     },
     {
       "asset_id": "F006",
@@ -8678,8 +10986,8 @@
       "file": "f006m.png",
       "basename": "f006m",
       "output_path": "assets/style/f006m.png",
-      "approval_status": "planned_pending_art_approval",
-      "generation_status": "not_started_pending_approval",
+      "approval_status": "approved_generated_qc_passed_data_supplemented",
+      "generation_status": "complete_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "bible/world.md#法术与记忆规则",
@@ -8699,7 +11007,7 @@
       "continuity_lock": "低魔只能短促、局部、有限，不能一招解决危机，也不能像高饱和魔法或科幻能量。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f006m.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_F006",
       "history_files": [],
       "creation_phase": "01_style_references",
@@ -8789,7 +11097,10 @@
           "no readable generated text, UI, watermark, logo, or modern artifact",
           "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
           "style rules are concrete enough to guide downstream cards",
-          "does not contain ComfyUI node or sampler parameters"
+          "does not contain ComfyUI node or sampler parameters",
+          "style_reference_data.color_palette or equivalent style tokens are represented as visual swatches or material samples without readable labels",
+          "material_system, lighting_rules, faction_symbol_systems, composition_templates, or light_tokens are followed where present for this board",
+          "no HEX codes, token IDs, color names, captions, grid numbers, or UI text are rendered into the image"
         ],
         "related_required_deliverables": [
           "style reference board",
@@ -8798,7 +11109,163 @@
         ],
         "separate_derivatives_required": false,
         "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
-      }
+      },
+      "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "qc_status": "complete_qc_passed",
+      "file_status": "written",
+      "generated_at": "2026-06-05",
+      "style_reference_data": {
+        "data_version": "b07-style-reference-data-v1-2026-06-05",
+        "data_status": "supplemented_after_b07_visual_qc",
+        "board_role": "low_magic_manifestation_and_old_relay_gold_red_light_rules",
+        "palette_display_policy": "Render light as local glow samples on skin, cloth, stone and route marks; do not render labels, runic text, UI, or hex codes.",
+        "color_palette": [
+          {
+            "token_id": "relay_gold_red",
+            "display_name": "旧驿金赤",
+            "hex": "#C14E32",
+            "role": "low-magic route light",
+            "usage": "旧驿路线光、日月残纹、短促低魔显化",
+            "max_area_percent": 6
+          },
+          {
+            "token_id": "worn_gold",
+            "display_name": "磨损金",
+            "hex": "#C08A32",
+            "role": "old authority edge accent",
+            "usage": "旧昭明金属边、令牌、磨损凸纹",
+            "max_area_percent": 12
+          },
+          {
+            "token_id": "zhu_red",
+            "display_name": "朱赤",
+            "hex": "#A9342A",
+            "role": "Zhaoming root cloth accent",
+            "usage": "昭明旗布、旧帝国残纹、遗迹红边",
+            "max_area_percent": 18
+          },
+          {
+            "token_id": "old_white_stone",
+            "display_name": "旧白石",
+            "hex": "#DAD3C2",
+            "role": "old empire stone base",
+            "usage": "白曜旧都、旧驿白石、月下旧驿石台",
+            "max_area_percent": 38
+          },
+          {
+            "token_id": "blackstone",
+            "display_name": "边墙黑石",
+            "hex": "#202126",
+            "role": "border wall base",
+            "usage": "边墙、寒鸦堡、锁喉关、黑石山口",
+            "max_area_percent": 48
+          },
+          {
+            "token_id": "paper_ash",
+            "display_name": "纸灰",
+            "hex": "#8A8174",
+            "role": "burned knowledge base",
+            "usage": "灰烬书院、旧纸、焦黑书架尘面",
+            "max_area_percent": 34
+          },
+          {
+            "token_id": "insect_wax_white",
+            "display_name": "虫蜡白",
+            "hex": "#E2DDCE",
+            "role": "Qingming institutional base",
+            "usage": "清明院白墙、虫蜡封条、记忆室、白册工具",
+            "max_area_percent": 46
+          },
+          {
+            "token_id": "dying_ember_red",
+            "display_name": "余烬暗红",
+            "hex": "#6F2A22",
+            "role": "low magic decay edge",
+            "usage": "旧驿残光熄灭边缘",
+            "max_area_percent": 5
+          },
+          {
+            "token_id": "warm_relay_edge",
+            "display_name": "金赤边缘光",
+            "hex": "#E7A94A",
+            "role": "brief relay rim",
+            "usage": "路线光最亮边缘，只可局部出现",
+            "max_area_percent": 4
+          }
+        ],
+        "light_tokens": [
+          {
+            "token_id": "skin_wing_trace",
+            "placement": [
+              "shoulder blade",
+              "spine",
+              "wrist",
+              "eye corner"
+            ],
+            "core_hex": "#C14E32",
+            "edge_hex": "#E7A94A",
+            "opacity_percent": "18-38",
+            "max_frame_area_percent": 5,
+            "duration_hint": "0.3-1.2 seconds in future video prompts",
+            "rule": "贴着皮肤和衣料裂纹出现，不形成大翅膀"
+          },
+          {
+            "token_id": "relay_route_line",
+            "placement": [
+              "old relay stone",
+              "token groove",
+              "route wall cut",
+              "floor crack"
+            ],
+            "core_hex": "#C14E32",
+            "edge_hex": "#C08A32",
+            "opacity_percent": "20-45",
+            "max_frame_area_percent": 6,
+            "duration_hint": "short pulse then fade",
+            "rule": "局部路线反应，不照亮整场"
+          },
+          {
+            "token_id": "sun_moon_residue",
+            "placement": [
+              "half token",
+              "old seal",
+              "moon relay wall"
+            ],
+            "core_hex": "#C08A32",
+            "edge_hex": "#E1DED2",
+            "opacity_percent": "15-32",
+            "max_frame_area_percent": 4,
+            "duration_hint": "still image only or short glint",
+            "rule": "旧债感和磨损金，不是神圣胜利光"
+          },
+          {
+            "token_id": "stone_brief_response",
+            "placement": [
+              "stone carving groove",
+              "broken step",
+              "old vow wall"
+            ],
+            "core_hex": "#C14E32",
+            "edge_hex": "#8C5A3A",
+            "opacity_percent": "12-28",
+            "max_frame_area_percent": 3,
+            "duration_hint": "blink-level reaction",
+            "rule": "只证明旧驿仍有残响，不解决危机"
+          }
+        ],
+        "forbidden_magic_rules": [
+          "no neon blue-violet fantasy spell flood",
+          "no sci-fi hologram panels",
+          "no clean angel wings",
+          "no full-body power aura",
+          "no magic solution replacing physical action",
+          "no readable glowing script"
+        ]
+      },
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "final_file": "assets/style/f006m.png",
+      "generated_file": "assets/style/f006m.png",
+      "data_status": "style_reference_data_supplemented"
     }
   ],
   "contract_repair": {
@@ -8829,5 +11296,6 @@
     "All asset output_format objects now use schema-normalized machine values: png, neutral_plain/scene_context, forbidden, and project_defined as applicable.",
     "Human-readable 9:16 vertical and 2160x3840 px requirements are preserved in notes fields and copy_ready prompt text.",
     "composition_layers now exposes foreground, midground, and background for every planned asset."
-  ]
+  ],
+  "style_reference_data_file": "art/b07-style-reference-data.json"
 }

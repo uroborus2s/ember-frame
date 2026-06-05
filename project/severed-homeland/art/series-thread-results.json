@@ -2,15 +2,41 @@
   "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_results",
-  "approval_status": "partial_b00_approved_and_generation_started",
-  "dispatch_status": "partial_dispatch_b00_in_progress",
-  "generated_files": [],
-  "history_files": [],
+  "approval_status": "partial_b01_c001_c002_generated_pending_art_review",
+  "dispatch_status": "partial_b01_c001_c002_generated_remaining_batches_pending",
+  "generated_files": [
+    "assets/props/p016m.png",
+    "assets/props/p017m.png",
+    "assets/props/p018m.png",
+    "assets/style/f001m.png",
+    "assets/style/f002m.png",
+    "assets/style/f003m.png",
+    "assets/style/f004m.png",
+    "assets/style/f005m.png",
+    "assets/style/f006m.png",
+    "assets/costumes/k001m.png",
+    "assets/costumes/k002m.png",
+    "assets/costumes/k003m.png",
+    "assets/costumes/k004m.png",
+    "assets/costumes/k005m.png",
+    "assets/costumes/k006m.png",
+    "assets/characters/c001m.png",
+    "assets/characters/c002m.png"
+  ],
+  "history_files": [
+    "assets/costumes/history/k001m.v001.png",
+    "assets/costumes/history/k002m.v001.png",
+    "assets/costumes/history/k003m.v001.png",
+    "assets/costumes/history/k004m.v001.png",
+    "assets/costumes/history/k005m.v001.png",
+    "assets/costumes/history/k006m.v001.png",
+    "assets/costumes/history/k004m.v002.png"
+  ],
   "threads": [
     {
       "batch_id": "B00_FACTION_EMBLEM_FLAGS",
       "thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
-      "status": "in_progress",
+      "status": "complete",
       "dispatched_at": "2026-06-05",
       "asset_ids": [
         "P016",
@@ -33,45 +59,269 @@
         "assets/props/p018m.png"
       ],
       "history_files": [],
-      "final_files": [],
-      "notes": "Codex background thread started for first-batch faction emblem/flag root assets only. Assets remain not-ready until files are written and QC passes."
+      "final_files": [
+        "assets/props/p016m.png",
+        "assets/props/p017m.png",
+        "assets/props/p018m.png"
+      ],
+      "notes": "B00 first-batch faction emblem/flag root assets generated only; canonical files written and QC passed. No downstream batches were generated.",
+      "completed_at": "2026-06-05",
+      "qc_notes": [
+        "Canonical B00 files written to exact output paths.",
+        "All final files are PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical.",
+        "Each card remains a neutral master prop card with flat emblem front view, flag/banner application, seal/patch/armor/stone applications, material and edge-wear crops, line-control planning, transparent PNG/SVG derivative planning, and scale references.",
+        "No retained intermediate candidates; no history files created.",
+        "Downstream batches remain blocked and were not generated."
+      ],
+      "qc_status": "passed"
+    },
+    {
+      "batch_id": "B07_STYLE",
+      "thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
+      "status": "complete",
+      "dispatched_at": "2026-06-05",
+      "asset_ids": [
+        "F001",
+        "F002",
+        "F003",
+        "F004",
+        "F005",
+        "F006"
+      ],
+      "prompt_ids": [
+        "PROMPT_F001",
+        "PROMPT_F002",
+        "PROMPT_F003",
+        "PROMPT_F004",
+        "PROMPT_F005",
+        "PROMPT_F006"
+      ],
+      "output_paths": [
+        "assets/style/f001m.png",
+        "assets/style/f002m.png",
+        "assets/style/f003m.png",
+        "assets/style/f004m.png",
+        "assets/style/f005m.png",
+        "assets/style/f006m.png"
+      ],
+      "expected_final_files": [
+        "assets/style/f001m.png",
+        "assets/style/f002m.png",
+        "assets/style/f003m.png",
+        "assets/style/f004m.png",
+        "assets/style/f005m.png",
+        "assets/style/f006m.png"
+      ],
+      "history_files": [],
+      "final_files": [
+        "assets/style/f001m.png",
+        "assets/style/f002m.png",
+        "assets/style/f003m.png",
+        "assets/style/f004m.png",
+        "assets/style/f005m.png",
+        "assets/style/f006m.png"
+      ],
+      "notes": "B07_STYLE generated and QC passed; machine-readable color, material, regional palette, faction symbol, composition, and low-magic data supplemented after visual QC for downstream use.",
+      "completed_at": "2026-06-05",
+      "qc_notes": [
+        "Canonical B07 files written to exact output paths.",
+        "All final files are PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical.",
+        "F004 derives visible symbol, flag, palette, seal, cloth, armor, stone, and object-marker examples from P016/P017/P018 root faction references instead of reinventing faction emblems.",
+        "Boards contain visual partitions, palettes, material swatches, composition examples, low-magic examples, and prohibited-direction panels without readable text, UI, watermark, modern logo, ComfyUI parameters, or long labels.",
+        "No retained intermediate candidates; no history files created.",
+        "Downstream batches remain blocked and were not generated.",
+        "B07 style_reference_data supplemented in art/b07-style-reference-data.json, asset-index.json, prompts, and thread plan; images must not render labels/HEX/token IDs."
+      ],
+      "style_reference_data_source": "art/b07-style-reference-data.json",
+      "data_status": "style_reference_data_supplemented_after_visual_qc"
+    },
+    {
+      "batch_id": "B06_COSTUMES",
+      "thread_id": "current-thread-direct-generation-after-019e964c-1f23-7bc1-b92f-62ff9658b209-rate-limit",
+      "status": "complete",
+      "dispatched_at": "2026-06-05",
+      "asset_ids": [
+        "K001",
+        "K002",
+        "K003",
+        "K004",
+        "K005",
+        "K006"
+      ],
+      "prompt_ids": [
+        "PROMPT_K001",
+        "PROMPT_K002",
+        "PROMPT_K003",
+        "PROMPT_K004",
+        "PROMPT_K005",
+        "PROMPT_K006"
+      ],
+      "output_paths": [
+        "assets/costumes/k001m.png",
+        "assets/costumes/k002m.png",
+        "assets/costumes/k003m.png",
+        "assets/costumes/k004m.png",
+        "assets/costumes/k005m.png",
+        "assets/costumes/k006m.png"
+      ],
+      "expected_final_files": [
+        "assets/costumes/k001m.png",
+        "assets/costumes/k002m.png",
+        "assets/costumes/k003m.png",
+        "assets/costumes/k004m.png",
+        "assets/costumes/k005m.png",
+        "assets/costumes/k006m.png"
+      ],
+      "history_files": [
+        "assets/costumes/history/k001m.v001.png",
+        "assets/costumes/history/k002m.v001.png",
+        "assets/costumes/history/k003m.v001.png",
+        "assets/costumes/history/k004m.v001.png",
+        "assets/costumes/history/k004m.v002.png",
+        "assets/costumes/history/k005m.v001.png",
+        "assets/costumes/history/k006m.v001.png"
+      ],
+      "final_files": [
+        "assets/costumes/k001m.png",
+        "assets/costumes/k002m.png",
+        "assets/costumes/k003m.png",
+        "assets/costumes/k004m.png",
+        "assets/costumes/k005m.png",
+        "assets/costumes/k006m.png"
+      ],
+      "blocked_items": [],
+      "notes": "B06_COSTUMES complete. K001-K003 canonical files were already present; K004-K006 were regenerated in the current thread with built-in imagegen, copied into the project as canonical files, and upscaled with sips to the 2160x3840 output contract.",
+      "qc_notes": [
+        "Previous rejected costume candidates remain only under assets/costumes/history/ with version suffixes; no version folders were created.",
+        "K004 regenerated: black-sun white-wing emblem reads as the Suming/Qingming faction mark and no longer drifts into a beetle chest symbol.",
+        "K005 regenerated: northern tribe/function tiers are readable; downstream character cards must preserve constructed hems and must not inherit rough fur as beggar-rag shorthand.",
+        "K006 regenerated: human regional/class clothing differences are readable with intact old Chinese-style garments and sewn repairs.",
+        "All K001-K006 canonical files are PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical, short filenames, neutral costume-system boards."
+      ],
+      "previous_thread_id": "019e964c-1f23-7bc1-b92f-62ff9658b209",
+      "source_generated_files": [
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a226614249c8191b6d446055f273969.png",
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22669adc548191b986fa94e471eb80.png",
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22672b419c81919d66aeb9bb4c40df.png",
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a2267bc9e188191833b01e7a0707c4d.png",
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22685758e88191a88bc1134a8a99d0.png",
+        "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22696665d08191b7d138378acd9d93.png"
+      ],
+      "qc_status": "passed",
+      "prompt_revision": {
+        "revised_at": "2026-06-05",
+        "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
+        "status": "regenerated_qc_passed",
+        "completed_at": "2026-06-05"
+      },
+      "completed_at": "2026-06-05",
+      "source_generated_files_by_asset": {
+        "K004": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ab00af3081a2a2d8b951bb13aa09.png",
+        "K005": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22b00e9b5881a285fce9c4bf20ac26.png",
+        "K006": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ac7408a881a298f2f317c4e8b8a3.png"
+      },
+      "final_sha256_by_asset": {
+        "K001": "8d2fdde98e0dd9f8c9729d10c1dce19eaa53cbf2d68438f980bdb33d64597210",
+        "K002": "9865b6651537d7e74f1a899c34eddd16043b74068674e6d2039b1ea8102cb4e9",
+        "K003": "5037598f37b4e203a43d8cf2594d042280812afedc33d9d7aeb573450bc25e48",
+        "K004": "36d853e21ac0e10a49b62c78579bf35284f5df5ba05fe39da6477390517622d1",
+        "K005": "02ee45c94d1ee30565660d1f1d8ff701345d3f76116f4261eed837b85afb7d74",
+        "K006": "cf2122cbf20124fc088dd74913537125b66e8658af84615f66e39915a681fd18"
+      }
+    },
+    {
+      "batch_id": "B01_CORE_CHARACTERS_PARTIAL_C001_C002",
+      "parent_batch_id": "B01_CORE_CHARACTERS",
+      "thread_id": "current-thread-direct-generation",
+      "status": "partial_complete_qc_passed",
+      "dispatched_at": "2026-06-05",
+      "completed_at": "2026-06-05",
+      "asset_ids": [
+        "C001",
+        "C002"
+      ],
+      "prompt_ids": [
+        "PROMPT_C001",
+        "PROMPT_C002"
+      ],
+      "output_paths": [
+        "assets/characters/c001m.png",
+        "assets/characters/c002m.png"
+      ],
+      "expected_final_files": [
+        "assets/characters/c001m.png",
+        "assets/characters/c002m.png"
+      ],
+      "final_files": [
+        "assets/characters/c001m.png",
+        "assets/characters/c002m.png"
+      ],
+      "history_files": [],
+      "blocked_items": [],
+      "source_generated_files_by_asset": {
+        "C001": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22b1e31d048196bf6e3762843ba951.png",
+        "C002": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png"
+      },
+      "final_sha256_by_asset": {
+        "C001": "c91b18535aeafb342a8a30cdf01fb3b66a1a85e891e80c796625ad30e3f7f4b0",
+        "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258"
+      },
+      "notes": "Generated only PROMPT_C001 and PROMPT_C002 from B01_CORE_CHARACTERS in the current thread. C001 was regenerated after user supplied a strict Shen Weisang face/hair reference board.",
+      "qc_status": "passed",
+      "qc_notes": [
+        "Canonical C001 and C002 files written to exact output paths.",
+        "Both final files are PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical, short filenames.",
+        "C001 face shape and hairstyle were regenerated against the supplied Shen Weisang reference board and visually checked after size normalization.",
+        "C001 and C002 remain neutral master character cards, not final video frames.",
+        "No project-retained intermediate candidates; no history files created."
+      ]
     }
   ],
   "blocked_items": [
     {
-      "batch_id": "B07_STYLE",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
-    },
-    {
-      "batch_id": "B06_COSTUMES",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
-    },
-    {
       "batch_id": "B01_CORE_CHARACTERS",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "status": "partial_complete_c001_c002_remaining_pending_separate_dispatch",
+      "reason": "C001 and C002 were generated and QC checked in this pass; remaining B01 assets were not started and remain pending separate dispatch.",
+      "completed_asset_ids": [
+        "C001",
+        "C002"
+      ],
+      "remaining_asset_ids": [
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C022",
+        "C023",
+        "C024",
+        "C025",
+        "C026"
+      ]
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "status": "blocked_pending_separate_dispatch_approval",
+      "reason": "B00, B07, and B06 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "status": "blocked_pending_separate_dispatch_approval",
+      "reason": "B00 and B07 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "status": "blocked_pending_separate_dispatch_approval",
+      "reason": "B00 and B07 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
     },
     {
       "batch_id": "B05_PROPS_SYMBOLS",
-      "status": "blocked_pending_art_approval",
-      "reason": "Planning, prompts, dependencies, faction-root requirements, and output_format requirements are repaired and ready for human approval; image generation starts only after approval."
+      "status": "blocked_pending_separate_dispatch_approval",
+      "reason": "B00 and B07 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
     }
   ],
   "notes": [
@@ -83,6 +333,34 @@
     "Each thread batch now has output_format_contracts with asset_id, prompt_id, output_path, and a literal output_format object.",
     "composition_layers now uses foreground/midground/background objects instead of freeform arrays.",
     "B00_FACTION_EMBLEM_FLAGS was approved for first-batch generation and dispatched to a Codex background thread.",
-    "B00 thread_id=019e9626-3a1e-7a02-95df-e63b532fc205; downstream batches remain blocked until B00 outputs are generated and QC reviewed."
-  ]
+    "B00 thread_id=019e9626-3a1e-7a02-95df-e63b532fc205; downstream batches remain blocked until B00 outputs are generated and QC reviewed.",
+    "B00_FACTION_EMBLEM_FLAGS canonical files were generated and QC passed on 2026-06-05.",
+    "No retained B00 intermediates were kept; history_files remains empty.",
+    "B00_FACTION_EMBLEM_FLAGS completed on 2026-06-05; final files: assets/props/p016m.png, assets/props/p017m.png, assets/props/p018m.png.",
+    "B07_STYLE dispatched on 2026-06-05 to thread 019e963e-3a20-7d33-b16d-07df70d6f027; expected final files: assets/style/f001m.png, assets/style/f002m.png, assets/style/f003m.png, assets/style/f004m.png, assets/style/f005m.png, assets/style/f006m.png.",
+    "B07_STYLE canonical style reference boards were generated and QC passed on 2026-06-05; downstream batches remain blocked and were not generated.",
+    "B06_COSTUMES dispatched on 2026-06-05 to thread 019e964c-1f23-7bc1-b92f-62ff9658b209; expected final files: assets/costumes/k001m.png, assets/costumes/k002m.png, assets/costumes/k003m.png, assets/costumes/k004m.png, assets/costumes/k005m.png, assets/costumes/k006m.png.",
+    "B07_STYLE data supplement completed on 2026-06-05: art/b07-style-reference-data.json added and embedded into F001-F006 assets/prompts/thread contracts.",
+    "2026-06-05: B06_COSTUMES completed with K001-K006 canonical PNGs; downstream character batches are now dependency-unblocked but not dispatched.",
+    "2026-06-05: K004-K006 regenerated in the current thread with built-in imagegen and written to canonical assets/costumes paths; B06_COSTUMES is complete and dependency-unblocks downstream character batches.",
+    "2026-06-05: K005 is accepted as a northern material hierarchy board with an inheritance constraint: downstream character cards must keep garments constructed and avoid amplifying fur edges into shredded-rag poverty shorthand.",
+    "2026-06-05: B01_CORE_CHARACTERS partial generation completed for PROMPT_C001/C001 and PROMPT_C002/C002 only. C001 uses the user-supplied Shen Weisang reference board as strict face/hair lock."
+  ],
+  "qc_notes": [
+    "Canonical B00 files written to exact output paths.",
+    "All final files are PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical.",
+    "Each card remains a neutral master prop card with flat emblem front view, flag/banner application, seal/patch/armor/stone applications, material and edge-wear crops, line-control planning, transparent PNG/SVG derivative planning, and scale references.",
+    "No retained intermediate candidates; no history files created.",
+    "Downstream batches remain blocked and were not generated.",
+    "B00 QC passed: p016m.png, p017m.png, and p018m.png are opaque RGB PNG files at 2160x3840 with neutral master prop-card format.",
+    "B07 QC pending: F001-F006 style_reference boards must be opaque PNG files at 2160x3840 with neutral designed style-board canvases and no readable text/UI/watermark.",
+    "Canonical B07 files written to exact output paths.",
+    "F004 derives visible symbol, flag, palette, seal, cloth, armor, stone, and object-marker examples from P016/P017/P018 root faction references instead of reinventing faction emblems.",
+    "Boards contain visual partitions, palettes, material swatches, composition examples, low-magic examples, and prohibited-direction panels without readable text, UI, watermark, modern logo, ComfyUI parameters, or long labels.",
+    "B06_COSTUMES QC passed: k001m-k006m are PNG, 2160x3840, opaque/no alpha, short filenames, neutral costume-system boards.",
+    "B06_COSTUMES QC passed after K004-K006 regeneration: k001m-k006m are PNG, 2160x3840, opaque/no alpha, short filenames, neutral costume-system boards.",
+    "K004/K006 specifically address the prompt revision by avoiding insect-emblem drift and disaster-rag shorthand; K005 remains a rough northern fur/material board and carries a downstream inheritance constraint.",
+    "B01 partial QC passed for c001m.png and c002m.png: PNG, RGB, opaque/no alpha, 2160x3840, 9:16 vertical, short filenames, neutral master character-card format."
+  ],
+  "style_reference_data_file": "art/b07-style-reference-data.json"
 }

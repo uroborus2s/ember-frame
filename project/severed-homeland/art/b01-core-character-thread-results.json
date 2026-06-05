@@ -1,0 +1,60 @@
+{
+  "version": "art-room-b01-core-character-partial-results-2026-06-05",
+  "project": "severed-homeland",
+  "parent_batch_id": "B01_CORE_CHARACTERS",
+  "scope": "PROMPT_C001_PROMPT_C002_only",
+  "status": "partial_complete_qc_passed",
+  "generated_at": "2026-06-05",
+  "thread_id": "current-thread-direct-generation",
+  "asset_ids": [
+    "C001",
+    "C002"
+  ],
+  "prompt_ids": [
+    "PROMPT_C001",
+    "PROMPT_C002"
+  ],
+  "final_files": [
+    "assets/characters/c001m.png",
+    "assets/characters/c002m.png"
+  ],
+  "history_files": [],
+  "blocked_items": [
+    {
+      "batch_id": "B01_CORE_CHARACTERS",
+      "status": "remaining_assets_not_started",
+      "asset_ids": [
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C022",
+        "C023",
+        "C024",
+        "C025",
+        "C026"
+      ]
+    }
+  ],
+  "source_generated_files_by_asset": {
+    "C001": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22b1e31d048196bf6e3762843ba951.png",
+    "C002": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png"
+  },
+  "final_sha256_by_asset": {
+    "C001": "c91b18535aeafb342a8a30cdf01fb3b66a1a85e891e80c796625ad30e3f7f4b0",
+    "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258"
+  },
+  "qc_status": "passed",
+  "qc_notes": [
+    "C001 and C002 canonical outputs exist under assets/characters/.",
+    "Both files are PNG RGB, 2160x3840, opaque/no alpha, neutral master character cards.",
+    "C001 identity lock was revised after user feedback: face shape and hairstyle match the supplied legacy Shen Weisang board as hard reference.",
+    "No readable text, labels, UI, watermark, or modern logo were observed in final visual review.",
+    "Scale/reference marks are visual only; no numerals or labels were retained."
+  ]
+}

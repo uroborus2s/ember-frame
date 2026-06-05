@@ -33,14 +33,14 @@
 
 ## 批次
 
-| 批次 | 类型 | 创建顺序 | 依赖批次 | 状态 |
-| --- | --- | ---: | --- | --- |
-| B04_E01_STYLE | style | 1 | - | blocked_pending_user_approval |
-| B01_E01_CHARACTERS | characters | 2 | B04_E01_STYLE | blocked_pending_user_approval |
-| B02_E01_LOCATIONS | locations | 3 | B04_E01_STYLE | blocked_pending_user_approval |
-| B03_E01_PROPS_COSTUMES | props-costumes | 4 | B04_E01_STYLE | blocked_pending_user_approval |
-| B05_E01_REFERENCE_FRAMES | reference-frames | 5 | B01_E01_CHARACTERS, B02_E01_LOCATIONS, B03_E01_PROPS_COSTUMES, B04_E01_STYLE | blocked_pending_user_approval |
-| B06_E01_SHOT_OVERRIDES | reference-frames | 6 | B03_E01_PROPS_COSTUMES, B04_E01_STYLE, B05_E01_REFERENCE_FRAMES | blocked_pending_user_approval |
+| 批次                       | 类型               | 创建顺序 | 依赖批次                                                                         | 状态                            |
+| ------------------------ | ---------------- | ---: | ---------------------------------------------------------------------------- | ----------------------------- |
+| B04_E01_STYLE            | style            |    1 | -                                                                            | blocked_pending_user_approval |
+| B01_E01_CHARACTERS       | characters       |    2 | B04_E01_STYLE                                                                | blocked_pending_user_approval |
+| B02_E01_LOCATIONS        | locations        |    3 | B04_E01_STYLE                                                                | blocked_pending_user_approval |
+| B03_E01_PROPS_COSTUMES   | props-costumes   |    4 | B04_E01_STYLE                                                                | blocked_pending_user_approval |
+| B05_E01_REFERENCE_FRAMES | reference-frames |    5 | B01_E01_CHARACTERS, B02_E01_LOCATIONS, B03_E01_PROPS_COSTUMES, B04_E01_STYLE | blocked_pending_user_approval |
+| B06_E01_SHOT_OVERRIDES   | reference-frames |    6 | B03_E01_PROPS_COSTUMES, B04_E01_STYLE, B05_E01_REFERENCE_FRAMES              | blocked_pending_user_approval |
 
 ## 资产创建顺序、依赖与输出格式
 
