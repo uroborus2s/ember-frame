@@ -1,9 +1,9 @@
 {
-  "version": "art-room-b01-core-character-partial-results-c001-c005-2026-06-05",
+  "version": "art-room-b01-core-character-partial-results-c001-c005-c009-c011-2026-06-05",
   "project": "severed-homeland",
   "parent_batch_id": "B01_CORE_CHARACTERS",
-  "scope": "PROMPT_C001_PROMPT_C005",
-  "status": "partial_complete_qc_passed",
+  "scope": "PROMPT_C001_PROMPT_C005_PROMPT_C009_PROMPT_C011",
+  "status": "partial_complete_qc_passed_c008_blocked_retry_needed",
   "generated_at": "2026-06-05",
   "thread_id": "current-thread-direct-generation",
   "asset_ids": [
@@ -11,21 +11,30 @@
     "C002",
     "C003",
     "C004",
-    "C005"
+    "C005",
+    "C009",
+    "C010",
+    "C011"
   ],
   "prompt_ids": [
     "PROMPT_C001",
     "PROMPT_C002",
     "PROMPT_C003",
     "PROMPT_C004",
-    "PROMPT_C005"
+    "PROMPT_C005",
+    "PROMPT_C009",
+    "PROMPT_C010",
+    "PROMPT_C011"
   ],
   "final_files": [
     "assets/characters/c001m.png",
     "assets/characters/c002m.png",
     "assets/characters/c003m.png",
     "assets/characters/c004m.png",
-    "assets/characters/c005m.png"
+    "assets/characters/c005m.png",
+    "assets/characters/c009m.png",
+    "assets/characters/c010m.png",
+    "assets/characters/c011m.png"
   ],
   "history_files": [
     "assets/characters/history/c004m.v001.png",
@@ -34,14 +43,18 @@
   "blocked_items": [
     {
       "batch_id": "B01_CORE_CHARACTERS",
-      "status": "remaining_assets_not_started_in_this_pass",
+      "status": "c008_blocked_retry_needed_remaining_pending_dispatch",
       "asset_ids": [
         "C008",
-        "C009",
-        "C010",
-        "C011",
-        "C023"
-      ]
+        "C023",
+        "C024",
+        "C025",
+        "C026"
+      ],
+      "blocked_asset_ids": [
+        "C008"
+      ],
+      "reason": "Blocked pending regeneration. User art direction changed the insect design contract: Liting must remain an insect-face character with only 40% anthropomorphic/humanoid readability, not a human face wearing a mask; high-ranking insect generals must wear boots or armored foot coverings; dagger blades sit on the outer side of the main arms as blade armor, while the main arms retain usable hands for reviewing and holding objects. Current image-generation service returned rate-limit/server errors before a compliant candidate could be produced."
     }
   ],
   "source_generated_files_by_asset": {
@@ -49,14 +62,20 @@
     "C002": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png",
     "C003": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22c70546bc8197aa50f4229571387c.png",
     "C004": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22e5594d2481978f02c3d12e22e806.png",
-    "C005": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22cad2ee308197873806cc949aab8d.png"
+    "C005": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22cad2ee308197873806cc949aab8d.png",
+    "C009": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22ea6b33608195a0da2a11715c023a.png",
+    "C010": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c61ad1e881958428a6397623cd38.png",
+    "C011": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22d2c77ee88195b981e80c0bd4d936.png"
   },
   "final_sha256_by_asset": {
     "C001": "c91b18535aeafb342a8a30cdf01fb3b66a1a85e891e80c796625ad30e3f7f4b0",
     "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258",
     "C003": "a93bf6f1fbda53f93880613fbe26a8840315b3aa47cc4c43e6f14f6257921f0a",
     "C004": "a3ed5cc1599d256201f5632de2c67fd5d4a41108943abb5c6c2b76eb8ee926d9",
-    "C005": "4258e7f9e43b626d3e37fab21ffe8d73742e21b41f65fbc503d695b03c715e15"
+    "C005": "4258e7f9e43b626d3e37fab21ffe8d73742e21b41f65fbc503d695b03c715e15",
+    "C009": "e825d314d5f9428beb9a6a9ba1c8f12ede4df8a4b2af016a8e2b4afd4ac3769b",
+    "C010": "c8809ec87a0f70c6939877c96522a92f178fb2659f128bc6304c0693a5965892",
+    "C011": "8849b07d861900af146513ec2cb70d56ef42817e032254978f52b9b5f2bda078"
   },
   "retained_rejected_intermediates": [
     {
@@ -80,6 +99,11 @@
     "C004 was regenerated through multiple rejected intermediates; final locks old Zhaoming hereditary armor with Tang Mingguang chest/heart-guard forms, chainmail at structural gaps, irreversible war wear, clean weather-beaten face, and an almost illegible three-quarter Zhaoming crest remnant.",
     "C005 was regenerated to avoid ragged refugee styling and now separates maintained village child clothing from clean Qingming institutional child robe.",
     "No readable text, labels, UI, watermark, modern logo, or crisp new faction emblem were retained in final visual review.",
-    "Retained C004 rejected versions are archived only under assets/characters/history/ with .v001 and .v002 suffixes."
+    "Retained C004 rejected versions are archived only under assets/characters/history/ with .v001 and .v002 suffixes.",
+    "C009-C011 canonical outputs exist under assets/characters/.",
+    "C009-C011 final files are PNG RGB, 2160x3840, opaque/no alpha, neutral master character cards.",
+    "C009 was regenerated to avoid beggar/rag styling and now reads as a maintained Old Book Society scholar-traveler with differentiated ash-gray, indigo, leather, ochre paper, teal tie, copper, and bone materials.",
+    "C011 was regenerated to restore southern old-imperial noble silk/brocade beauty: vermilion silk, royal-blue inner robe, old-gold brocade, muted jade lining, red-thread scroll, and court tailoring.",
+    "C008 is intentionally blocked and not written to canonical output until a compliant insect-face, booted, main-hand-plus-outer-dagger-arm design can be generated."
   ]
 }

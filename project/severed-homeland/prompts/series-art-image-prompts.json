@@ -2,8 +2,8 @@
   "version": "art-room-series-bible-v4-faction-roots-c026-human-crowds-2026-06-05-visible-lock-reviewed-100",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_prompts",
-  "approval_status": "c025_c026_prompt_reviewed_100_pending_art_approval",
-  "image_generation_status": "partial_b07_complete_downstream_blocked_c025_c026_not_started",
+  "approval_status": "partial_c009_c015_generated_c008_c016_retry_needed",
+  "image_generation_status": "partial_c009_c015_generated_c008_c016_blocked_by_art_direction_and_rate_limit",
   "source_inputs": [
     "bible/world.md",
     "bible/geography.md",
@@ -2051,8 +2051,8 @@
           "甲军府军事压力",
           "高阶战斗虫族轮廓母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "blocked_pending_art_retry",
+        "generation_status": "blocked_retry_needed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c008m.png",
         "output_format": {
@@ -2200,7 +2200,11 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "blocked_reason": "Blocked pending regeneration. User art direction changed the insect design contract: Liting must remain an insect-face character with only 40% anthropomorphic/humanoid readability, not a human face wearing a mask; high-ranking insect generals must wear boots or armored foot coverings; dagger blades sit on the outer side of the main arms as blade armor, while the main arms retain usable hands for reviewing and holding objects. Current image-generation service returned rate-limit/server errors before a compliant candidate could be produced.",
+        "generation_notes": [
+          "Blocked pending regeneration. User art direction changed the insect design contract: Liting must remain an insect-face character with only 40% anthropomorphic/humanoid readability, not a human face wearing a mask; high-ranking insect generals must wear boots or armored foot coverings; dagger blades sit on the outer side of the main arms as blade armor, while the main arms retain usable hands for reviewing and holding objects. Current image-generation service returned rate-limit/server errors before a compliant candidate could be produced."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建厉螳甲军府战斗虫族身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -2300,8 +2304,8 @@
           "灰烬书院证人",
           "旧书会档案保存者视觉母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c009m.png",
         "output_format": {
@@ -2449,7 +2453,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22ea6b33608195a0da2a11715c023a.png",
+        "final_sha256": "e825d314d5f9428beb9a6a9ba1c8f12ede4df8a4b2af016a8e2b4afd4ac3769b",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated after art review correction to avoid beggar/rag styling: maintained Old Book Society scholar-traveler clothing with ash-gray outer robe, indigo inner robe, leather book harness, ochre paper bindings, teal ties, bronze/copper clips, and intact professional silhouette."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建孟归藏旧书会亡书人身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -2550,8 +2560,8 @@
           "北境寻灾源派证人",
           "萨满贵族阶层视觉母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c010m.png",
         "output_format": {
@@ -2699,7 +2709,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c61ad1e881958428a6397623cd38.png",
+        "final_sha256": "c8809ec87a0f70c6939877c96522a92f178fb2659f128bc6304c0693a5965892",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated as Frost-Hoof deerfolk shaman master card with white fur, blue woven inner layers, bone-white robe, bone flute, herb pouch, short antlers, deer ears, and readable non-human identity without poverty-rag shorthand."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建鹿弥霜蹄鹿族萨满身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -2798,8 +2814,8 @@
           "晏南枝价值来源",
           "南方复翼者礼法压力参考"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c011m.png",
         "output_format": {
@@ -2947,7 +2963,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22d2c77ee88195b981e80c0bd4d936.png",
+        "final_sha256": "8849b07d861900af146513ec2cb70d56ef42817e032254978f52b9b5f2bda078",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated after art review correction: Gu Huaizhang now reads as southern old-imperial human nobility with vermilion silk outer robe, royal-blue silk inner layer, old-gold brocade, muted jade lining, red-thread scroll bundle, and refined court tailoring instead of plain gray scholar or refugee clothing."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建顾怀章复翼者旧臣身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -3046,8 +3068,8 @@
           "鹿弥重装近卫",
           "北境贵族护卫模板"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c012m.png",
         "output_format": {
@@ -3195,7 +3217,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c718b8dc819594f90221f80dcaba.png",
+        "final_sha256": "95d2f290298ffd46fddb7e3ddc6ae43204b65dabb17e8f3950bf8c997b4eb813",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated as white-bear folk elite guard master card with heavy body scale, white fur cloak, silver-black bone-iron armor, shield and axe, visually distinct from other military assets."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建赫连雪岱白熊族护卫身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -3295,8 +3323,8 @@
           "北境寻灾源派外围联络人",
           "雪线斥候模板"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c013m.png",
         "output_format": {
@@ -3444,7 +3472,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c7bb009c8195b500afc0cd287ae4.png",
+        "final_sha256": "9cefe481e41eac94a7af5c23bd5eb3dd06ed48240a00e48a0a1e51e09d1fdbf8",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated as black-wolf folk scout master card with wolf muzzle, ears, tail, golden vertical pupils, snow-travel clothing, short bow, javelins, bone whistle, and low runner posture."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建乌岚黑狼族斥候身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -3543,8 +3577,8 @@
           "北境军用工匠",
           "重装后勤盾卫模板"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c014m.png",
         "output_format": {
@@ -3692,7 +3726,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22ca0aa7408195ae904541adfe9039.png",
+        "final_sha256": "3dd48959f7db0394e2e3fe64771d72818945a1dfaa2d680369e7cb2299fb69f5",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated as white-bear folk shield-guard artisan master card with heavy workshop body scale, brown leather forge apron, bone-iron shield blank, tools, and craft-logistics identity."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建拓跋砚熊白熊族盾卫工匠身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -3791,8 +3831,8 @@
           "寒鸦堡外线传讯者",
           "雪羽攀墙斥候个人模板"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_pending_art_review",
+        "generation_status": "generated_qc_passed_current_thread",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c015m.png",
         "output_format": {
@@ -3940,7 +3980,13 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22ca5c8c488195a55ea053766da23f.png",
+        "final_sha256": "55cada165116df22f9175d934dd2dd8c731def4f3571a3d70464f71cf65c9fd5",
+        "generated_at": "2026-06-05",
+        "generation_notes": [
+          "Generated as snow-feather crowfolk scout master card with feather crest, beak-like nose, blue-green crow feather accent, short gliding cloak, claw hooks, message tube, and wall-climbing messenger silhouette."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建青翎鸦见雪羽鸦族斥候身份卡，作为全剧共享角色身份与状态参考卡。",
@@ -4041,8 +4087,8 @@
           "粮税小吏",
           "制度下令层级参考"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "blocked_pending_art_retry",
+        "generation_status": "blocked_retry_needed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/characters/c016m.png",
         "output_format": {
@@ -4199,7 +4245,11 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "blocked_reason": "Blocked pending regeneration. User rejected the prior insect-official face direction as either too human or biologically unnatural; new contract requires an insect-face official with 50% anthropomorphic/humanoid readability, natural symmetric biology, white-dominant official robe with scarlet and cyan accents, and shoes/boots rather than bare claws. Current image-generation service hit rate limits before a compliant replacement could be produced.",
+        "generation_notes": [
+          "Blocked pending regeneration. User rejected the prior insect-official face direction as either too human or biologically unnatural; new contract requires an insect-face official with 50% anthropomorphic/humanoid readability, natural symmetric biology, white-dominant official robe with scarlet and cyan accents, and shoes/boots rather than bare claws. Current image-generation service hit rate limits before a compliant replacement could be produced."
+        ]
       },
       "model_visible_prompt": {
         "visible_goal": "创建肃明基层虫吏层级模板，作为全剧共享角色身份与状态参考卡。",
@@ -5753,7 +5803,7 @@
         ],
         "qc_status": "complete_qc_passed",
         "qc_notes": [
-            "Regenerated from revised PROMPT_C022 after user art-direction feedback.",
+          "Regenerated from revised PROMPT_C022 after user art-direction feedback.",
           "Visual age reads as a thirty-something outdoor surveyor, not an elderly man.",
           "Skin tone is normal Chinese/East Asian natural fair-to-light-wheat range; no over-dark or mud-black face observed.",
           "Clothing reads as old but complete practical surveyor travel clothing; not beggar-like or over-torn.",
@@ -7197,8 +7247,8 @@
           "第一季起点",
           "火前/火后复用母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l001m.png",
         "output_format": {
@@ -7331,7 +7381,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "7319dd26ab93dfae2bce2babf1088f8af9d520fd4df4b144ad434040b76e39e4"
       },
       "model_visible_prompt": {
         "visible_goal": "创建残阳坳村落与药屋主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -7426,8 +7479,8 @@
           "旧驿系统视觉母版",
           "月下旧驿同源参考"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l002m.png",
         "output_format": {
@@ -7578,7 +7631,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "77652fe5483dab4539ffff834d485c01cb26e99de83199d76fae72dcec5fabe5"
       },
       "model_visible_prompt": {
         "visible_goal": "创建旧驿暗道白石残段主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -7673,8 +7729,8 @@
         "usage": [
           "灭械令生产技术场景母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l003m.png",
         "output_format": {
@@ -7807,7 +7863,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "f525fac133437f8ec3e9f9346e09a723b3a368bb512ae2dd1c2bbf33c783cb6e"
       },
       "model_visible_prompt": {
         "visible_goal": "创建金河粮磨区与渡船主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -7903,8 +7962,8 @@
           "灭史空间母版",
           "旧书会线索参考"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l004m.png",
         "output_format": {
@@ -8037,7 +8096,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "c16678abc5fcafa4456d6c3a4367259686db3b3d576f4161b74748d459809a05"
       },
       "model_visible_prompt": {
         "visible_goal": "创建灰烬书院文明断代主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -8132,8 +8194,8 @@
         "usage": [
           "清明籍制度空间母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l005m.png",
         "output_format": {
@@ -8275,7 +8337,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "763fc653914965ce1b584d9115f0865245605f3c0362f88fa4bfb88cc46b2541"
       },
       "model_visible_prompt": {
         "visible_goal": "创建清明院外署白墙主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -8370,8 +8435,8 @@
         "usage": [
           "无籍者与混裔世界母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l006m.png",
         "output_format": {
@@ -8513,7 +8578,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "fa52b29f5e666732a504f098580a197be158e01d039564dc6ec26d40c52c8d48"
       },
       "model_visible_prompt": {
         "visible_goal": "创建墙下集市无籍者空间主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -8609,8 +8677,8 @@
         "usage": [
           "边墙战争与控粮冲突母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l007m.png",
         "output_format": {
@@ -8752,7 +8820,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "f84ca4b0cafed016286fe3d1a1e299f5b5bd556e69a2b446aaef8fe9ec0851b7"
       },
       "model_visible_prompt": {
         "visible_goal": "创建锁喉关边墙主门场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -8848,8 +8919,8 @@
         "usage": [
           "北境寻灾源视觉入口"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l008m.png",
         "output_format": {
@@ -9000,7 +9071,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "6d9416c3e612df6f661953226e8960f51a46023140e8001d6f693cf295d2c985"
       },
       "model_visible_prompt": {
         "visible_goal": "创建鸣骨岭北境过渡场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -9095,8 +9169,8 @@
         "usage": [
           "肃明军事占领与旧档线索母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l009m.png",
         "output_format": {
@@ -9238,7 +9312,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "2c05edf6b29369788430ddb17234882528ef8bb9347a88b1d756e8e319308739"
       },
       "model_visible_prompt": {
         "visible_goal": "创建寒鸦堡军府档案主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -9333,8 +9410,8 @@
         "usage": [
           "第一季主题反转核心空间"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l010m.png",
         "output_format": {
@@ -9485,7 +9562,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "050d09045e176cc1b1da872e2a00aaf45bd9c254e01305f533480041a36aec6b"
       },
       "model_visible_prompt": {
         "visible_goal": "创建月下盟书旧驿主场景卡，作为全剧共享场景空间与镜头参考卡。",
@@ -9581,8 +9661,8 @@
         "usage": [
           "季终动作与价值选择场景母版"
         ],
-        "approval_status": "planned_pending_art_approval",
-        "generation_status": "prompt_rewritten_pending_regeneration",
+        "approval_status": "generated_qc_passed_pending_art_review",
+        "generation_status": "generated_qc_passed",
         "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
         "output_path": "assets/locations/l011m.png",
         "output_format": {
@@ -9733,7 +9813,10 @@
         "prompt_revision": {
           "revised_at": "2026-06-05",
           "reason": "Compressed series asset prompt into readable six-section model-visible template; upstream dependency detail remains in reference_inputs and copy_ready reference instructions."
-        }
+        },
+        "completed_at": "2026-06-06",
+        "thread_id": "current-thread-local-raster-generation",
+        "final_sha256": "73e0cdd9a95565933f04ac3d83737282fe38750b365ec88c0c3b750ad76f6549"
       },
       "model_visible_prompt": {
         "visible_goal": "创建坍塌烽燧季终逃亡场景卡，作为全剧共享场景空间与镜头参考卡。",

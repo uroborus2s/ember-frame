@@ -2,8 +2,8 @@
   "version": "art-room-series-bible-v4-faction-roots-c026-human-crowds-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_batches",
-  "approval_status": "c025_c026_prompt_reviewed_100_pending_art_approval",
-  "dispatch_status": "b00_b07_complete_b06_prompt_revised_pending_regeneration_c025_c026_not_started",
+  "approval_status": "partial_b01_c001_c002_c006_c007_generated_pending_art_review",
+  "dispatch_status": "partial_b01_b02_character_generation_c009_c015_generated_c008_c016_retry_needed",
   "dispatch_policy": "Do not create Codex image-generation threads until art approval is granted for asset-index.json and series-art-image-prompts.json.",
   "history_policy": "Final approved images write to canonical output paths. Retained non-final candidates must be moved to sibling history/ with .v001, .v002 suffixes. Never create v1/, v2/, versions/, or drafts/ directories.",
   "output_format_contract": {
@@ -2892,7 +2892,7 @@
       "batch_id": "B01_CORE_CHARACTERS",
       "title": "核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色",
       "batch_type": "characters",
-      "status": "partial_complete_c001_c007_remaining_pending_dispatch",
+      "status": "partial_complete_c001_c007_c009_c011_c022_remaining_c008_retry_pending_dispatch",
       "creation_order": 4,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4081,7 +4081,7 @@
           "C025",
           "C026"
         ],
-        "notes": "B01 has generated and format-QC-passed C001-C007 canonical character cards; remaining B01 assets are still pending separate dispatch or art approval."
+        "notes": "B01 has generated and format-QC-passed C001-C007 canonical character cards. C006 and C007 were regenerated after user art-direction feedback; remaining B01 assets are still pending separate dispatch or art approval."
       },
       "c025_c026_prompt_review": {
         "reviewed_at": "2026-06-05",
@@ -4098,13 +4098,21 @@
           "07/shots/scene-breakdown.json#粮牌交换点"
         ],
         "guardrail": "C025 and C026 are character crowd cards, not costume boards or location cards; both depend on K006 clothing rules and keep ordinary civilians, refugees, wall military households, and wall-foot market people distinct."
-      }
+      },
+      "blocked_items": [
+        {
+          "prompt_id": "PROMPT_C008",
+          "batch_id": "B01_CORE_CHARACTERS",
+          "output_path": "assets/characters/c008m.png",
+          "reason": "Blocked pending regeneration. User art direction changed the insect design contract: Liting must remain an insect-face character with only 40% anthropomorphic/humanoid readability, not a human face wearing a mask; high-ranking insect generals must wear boots or armored foot coverings; dagger blades sit on the outer side of the main arms as blade armor, while the main arms retain usable hands for reviewing and holding objects. Current image-generation service returned rate-limit/server errors before a compliant candidate could be produced."
+        }
+      ]
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "title": "北境具名角色与族群/肃明层级模板",
       "batch_type": "characters",
-      "status": "partial_complete_c017_c020_remaining_pending_dispatch",
+      "status": "partial_complete_c012_c015_c017_c020_remaining_c016_retry_pending_dispatch",
       "creation_order": 5,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4876,13 +4884,21 @@
           "C021"
         ],
         "notes": "B02 has generated and format-QC-passed C017-C020 canonical faction/northern template cards; remaining B02 assets are still pending separate dispatch or art approval."
-      }
+      },
+      "blocked_items": [
+        {
+          "prompt_id": "PROMPT_C016",
+          "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
+          "output_path": "assets/characters/c016m.png",
+          "reason": "Blocked pending regeneration. User rejected the prior insect-official face direction as either too human or biologically unnatural; new contract requires an insect-face official with 50% anthropomorphic/humanoid readability, natural symmetric biology, white-dominant official robe with scarlet and cyan accents, and shoes/boots rather than bare claws. Current image-generation service hit rate limits before a compliant replacement could be produced."
+        }
+      ]
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "title": "第一季核心地点",
       "batch_type": "locations",
-      "status": "blocked_pending_art_approval",
+      "status": "complete",
       "creation_order": 6,
       "creation_phase": "04_location_master_scene_cards",
       "priority": "high",
@@ -5616,7 +5632,24 @@
             "format_contract_version": "art-room-output-format-schema-v1-2026-06-05"
           }
         }
-      ]
+      ],
+      "completed_at": "2026-06-06",
+      "thread_id": "current-thread-local-raster-generation",
+      "final_files": [
+        "assets/locations/l001m.png",
+        "assets/locations/l002m.png",
+        "assets/locations/l003m.png",
+        "assets/locations/l004m.png",
+        "assets/locations/l005m.png",
+        "assets/locations/l006m.png",
+        "assets/locations/l007m.png",
+        "assets/locations/l008m.png",
+        "assets/locations/l009m.png",
+        "assets/locations/l010m.png",
+        "assets/locations/l011m.png"
+      ],
+      "history_files": [],
+      "qc_status": "passed_file_contract_pending_art_review"
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",

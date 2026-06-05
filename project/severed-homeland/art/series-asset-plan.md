@@ -91,24 +91,24 @@
 
 ## 道具与精确符号
 
-| ID | 资产 | 文件 | 输出路径 | 用途 |
-| --- | --- | --- | --- | --- |
-| P001 | 半枚日月驿令道具卡 | p001m.png | assets/props/p001m.png | 旧驿入口反应 |
-| P002 | 日月血牒与月白玉片道具卡 | p002m.png | assets/props/p002m.png | 晏南枝身份压力 |
-| P003 | 清明白册制度道具卡 | p003m.png | assets/props/p003m.png | 验名/划册/定罪工具 |
-| P004 | 虫蜡针与清明香追踪道具卡 | p004m.png | assets/props/p004m.png | 血纹筛查 |
-| P005 | 沈照眠草药袋与烧焦发绳道具卡 | p005m.png | assets/props/p005m.png | 妹妹亲情锚点 |
-| P006 | 鹿弥骨笛与血盐袋道具卡 | p006m.png | assets/props/p006m.png | 共生兽安抚 |
-| P007 | 月下盟书残页与多族印记道具卡 | p007m.png | assets/props/p007m.png | 第一季主题反转核心道具 |
-| P008 | 粮牌封蜡与押车绳道具卡 | p008m.png | assets/props/p008m.png | 征粮压迫 |
-| P009 | 旧驿残图与测绘符号道具卡 | p009m.png | assets/props/p009m.png | 沈家测绘官旧物 |
-| P010 | 朱赤旗布与日月纹道具卡 | p010m.png | assets/props/p010m.png | 季终价值冲突道具 |
-| P011 | 北境骨铁攻城器具道具卡 | p011m.png | assets/props/p011m.png | 北境攻城职能参考 |
-| P012 | 墙下黑市通行牌与碎陶护符道具卡 | p012m.png | assets/props/p012m.png | 陆青砾身份锚点 |
-| P013 | 肃明黑日白翅派生徽记系统卡 | p013m.png | assets/props/p013m.png | P017 根徽章的白册/封条/军阶牌派生 |
-| P014 | 昭明日月星盘派生符号系统卡 | p014m.png | assets/props/p014m.png | P016 根徽章的旧驿/驿令/血牒/盟书派生 |
-| P015 | 灰墙军旧甲片与骨哨道具卡 | p015m.png | assets/props/p015m.png | 边墙军户生活与守墙动作参考 |
-| P016 | 昭明日月星盘徽章与朱赤旗帜基础母版 | p016m.png | assets/props/p016m.png | 昭明服饰/遗迹/驿令/旗布统一根符号 |
+| ID   | 资产                | 文件        | 输出路径                   | 用途                     |
+| ---- | ----------------- | --------- | ---------------------- | ---------------------- |
+| P001 | 半枚日月驿令道具卡         | p001m.png | assets/props/p001m.png | 旧驿入口反应                 |
+| P002 | 日月血牒与月白玉片道具卡      | p002m.png | assets/props/p002m.png | 晏南枝身份压力                |
+| P003 | 清明白册制度道具卡         | p003m.png | assets/props/p003m.png | 验名/划册/定罪工具             |
+| P004 | 虫蜡针与清明香追踪道具卡      | p004m.png | assets/props/p004m.png | 血纹筛查                   |
+| P005 | 沈照眠草药袋与烧焦发绳道具卡    | p005m.png | assets/props/p005m.png | 妹妹亲情锚点                 |
+| P006 | 鹿弥骨笛与血盐袋道具卡       | p006m.png | assets/props/p006m.png | 共生兽安抚                  |
+| P007 | 月下盟书残页与多族印记道具卡    | p007m.png | assets/props/p007m.png | 第一季主题反转核心道具            |
+| P008 | 粮牌封蜡与押车绳道具卡       | p008m.png | assets/props/p008m.png | 征粮压迫                   |
+| P009 | 旧驿残图与测绘符号道具卡      | p009m.png | assets/props/p009m.png | 沈家测绘官旧物                |
+| P010 | 朱赤旗布与日月纹道具卡       | p010m.png | assets/props/p010m.png | 季终价值冲突道具               |
+| P011 | 北境骨铁攻城器具道具卡       | p011m.png | assets/props/p011m.png | 北境攻城职能参考               |
+| P012 | 墙下黑市通行牌与碎陶护符道具卡   | p012m.png | assets/props/p012m.png | 陆青砾身份锚点                |
+| P013 | 肃明黑日白翅派生徽记系统卡     | p013m.png | assets/props/p013m.png | P017 根徽章的白册/封条/军阶牌派生   |
+| P014 | 昭明日月星盘派生符号系统卡     | p014m.png | assets/props/p014m.png | P016 根徽章的旧驿/驿令/血牒/盟书派生 |
+| P015 | 灰墙军旧甲片与骨哨道具卡      | p015m.png | assets/props/p015m.png | 边墙军户生活与守墙动作参考          |
+| P016 | 昭明日月星盘徽章与朱赤旗帜基础母版 | p016m.png | assets/props/p016m.png | 昭明服饰/遗迹/驿令/旗布统一根符号     |
 | P017 | 肃明清明黑日白翅徽章与旗帜基础母版 | p017m.png | assets/props/p017m.png | 肃明服制/清明院/白册/封条/旗帜统一根符号 |
 | P018 | 北境万兽部落联盟徽章与旗帜基础母版 | p018m.png | assets/props/p018m.png | 北境服饰/盾鼓/皮帐/誓约绳/旗帜统一根符号 |
 
@@ -198,16 +198,16 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 
 预设批次写入 `art/series-thread-plan.json`，当前 B00、B07、B06 已完成；其余批次待单独派发：
 
-|  顺序 | 批次                                 | 内容               | 依赖                                                                                        | 状态                                         |
-| --: | ---------------------------------- | ---------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
-|   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版      | 无                                                                                         | complete                                   |
-|   2 | B07_STYLE                          | 全剧风格板            | B00_FACTION_EMBLEM_FLAGS                                                                  | complete                                   |
-|   3 | B06_COSTUMES                       | 服装系统             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | complete                                   |
+|  顺序 | 批次                                 | 内容                                  | 依赖                                                                                        | 状态                                                    |
+| --: | ---------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+|   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版                         | 无                                                                                         | complete                                              |
+|   2 | B07_STYLE                          | 全剧风格板                               | B00_FACTION_EMBLEM_FLAGS                                                                  | complete                                              |
+|   3 | B06_COSTUMES                       | 服装系统                                | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | complete                                              |
 |   4 | B01_CORE_CHARACTERS                | 核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | partial_complete_c001_c007_remaining_pending_dispatch |
-|   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | partial_complete_c017_c020_remaining_pending_dispatch |
-|   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval |
-|   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval |
-|   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号        | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_separate_dispatch_approval |
+|   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板                    | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | partial_complete_c017_c020_remaining_pending_dispatch |
+|   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval            |
+|   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval            |
+|   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号                           | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_separate_dispatch_approval            |
 
 ## 审批重点
 
