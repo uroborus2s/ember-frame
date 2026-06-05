@@ -1,60 +1,85 @@
 {
-  "version": "art-room-b01-core-character-partial-results-2026-06-05",
+  "version": "art-room-b01-core-character-partial-results-c001-c005-2026-06-05",
   "project": "severed-homeland",
   "parent_batch_id": "B01_CORE_CHARACTERS",
-  "scope": "PROMPT_C001_PROMPT_C002_only",
+  "scope": "PROMPT_C001_PROMPT_C005",
   "status": "partial_complete_qc_passed",
   "generated_at": "2026-06-05",
   "thread_id": "current-thread-direct-generation",
   "asset_ids": [
     "C001",
-    "C002"
+    "C002",
+    "C003",
+    "C004",
+    "C005"
   ],
   "prompt_ids": [
     "PROMPT_C001",
-    "PROMPT_C002"
+    "PROMPT_C002",
+    "PROMPT_C003",
+    "PROMPT_C004",
+    "PROMPT_C005"
   ],
   "final_files": [
     "assets/characters/c001m.png",
-    "assets/characters/c002m.png"
+    "assets/characters/c002m.png",
+    "assets/characters/c003m.png",
+    "assets/characters/c004m.png",
+    "assets/characters/c005m.png"
   ],
-  "history_files": [],
+  "history_files": [
+    "assets/characters/history/c004m.v001.png",
+    "assets/characters/history/c004m.v002.png"
+  ],
   "blocked_items": [
     {
       "batch_id": "B01_CORE_CHARACTERS",
-      "status": "remaining_assets_not_started",
+      "status": "remaining_assets_not_started_in_this_pass",
       "asset_ids": [
-        "C003",
-        "C004",
-        "C005",
-        "C006",
-        "C007",
         "C008",
         "C009",
         "C010",
         "C011",
-        "C022",
-        "C023",
-        "C024",
-        "C025",
-        "C026"
+        "C023"
       ]
     }
   ],
   "source_generated_files_by_asset": {
     "C001": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22b1e31d048196bf6e3762843ba951.png",
-    "C002": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png"
+    "C002": "/Users/uroborus/.codex/generated_images/019e9776-a0cf-79f0-8415-864271b9ebe5/ig_00072e2f8a194a6a016a22afa8c6e08196903d8d8c2c630820.png",
+    "C003": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22c70546bc8197aa50f4229571387c.png",
+    "C004": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22e5594d2481978f02c3d12e22e806.png",
+    "C005": "/Users/uroborus/.codex/generated_images/019e97c3-7cda-7f82-9651-979097917b0a/ig_07becb44ea6fbed1016a22cad2ee308197873806cc949aab8d.png"
   },
   "final_sha256_by_asset": {
     "C001": "c91b18535aeafb342a8a30cdf01fb3b66a1a85e891e80c796625ad30e3f7f4b0",
-    "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258"
+    "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258",
+    "C003": "a93bf6f1fbda53f93880613fbe26a8840315b3aa47cc4c43e6f14f6257921f0a",
+    "C004": "a3ed5cc1599d256201f5632de2c67fd5d4a41108943abb5c6c2b76eb8ee926d9",
+    "C005": "4258e7f9e43b626d3e37fab21ffe8d73742e21b41f65fbc503d695b03c715e15"
   },
+  "retained_rejected_intermediates": [
+    {
+      "asset_id": "C004",
+      "history_file": "assets/characters/history/c004m.v001.png",
+      "sha256": "c0bcca45005e3c15197d0f01349a658404a1d2873c8068d86ec1ad76487bdb51",
+      "reason": "Rejected after art review: armor read as organized old wall kit but lacked old Zhaoming imperial inheritance, Mingguang-plus-chainmail structure, and enough irreparable war wear."
+    },
+    {
+      "asset_id": "C004",
+      "history_file": "assets/characters/history/c004m.v002.png",
+      "sha256": "b6cb1106c9622a382411f12fefb33ec2c4b1f36fbce670f29da8ed94b2fbd23e",
+      "reason": "Rejected after art review: improved old Zhaoming inheritance and clean weathered face, but still lacked Tang Mingguang armor plus chainmail emphasis and unrecoverable battle-damage inheritance."
+    }
+  ],
   "qc_status": "passed",
   "qc_notes": [
-    "C001 and C002 canonical outputs exist under assets/characters/.",
-    "Both files are PNG RGB, 2160x3840, opaque/no alpha, neutral master character cards.",
-    "C001 identity lock was revised after user feedback: face shape and hairstyle match the supplied legacy Shen Weisang board as hard reference.",
-    "No readable text, labels, UI, watermark, or modern logo were observed in final visual review.",
-    "Scale/reference marks are visual only; no numerals or labels were retained."
+    "C001-C005 canonical outputs exist under assets/characters/.",
+    "All five final files are PNG RGB, 2160x3840, opaque/no alpha, neutral master character cards.",
+    "C003 was regenerated to avoid beggar/rag styling and now reads as maintained gray-blue wall-foot street-functional clothing with terracotta inner layer.",
+    "C004 was regenerated through multiple rejected intermediates; final locks old Zhaoming hereditary armor with Tang Mingguang chest/heart-guard forms, chainmail at structural gaps, irreversible war wear, clean weather-beaten face, and an almost illegible three-quarter Zhaoming crest remnant.",
+    "C005 was regenerated to avoid ragged refugee styling and now separates maintained village child clothing from clean Qingming institutional child robe.",
+    "No readable text, labels, UI, watermark, modern logo, or crisp new faction emblem were retained in final visual review.",
+    "Retained C004 rejected versions are archived only under assets/characters/history/ with .v001 and .v002 suffixes."
   ]
 }
