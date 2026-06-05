@@ -1,45 +1,51 @@
 {
-  "version": "art-room-series-bible-v1-2026-06-05",
+  "version": "art-room-series-bible-v2-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_results",
-  "approval_status": "awaiting_art_approval",
+  "approval_status": "awaiting_art_approval_after_contract_repair",
   "dispatch_status": "not_dispatched",
   "generated_files": [],
   "history_files": [],
   "threads": [],
   "blocked_items": [
     {
+      "batch_id": "B07_STYLE",
+      "status": "blocked_pending_art_approval",
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
+    },
+    {
+      "batch_id": "B06_COSTUMES",
+      "status": "blocked_pending_art_approval",
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
+    },
+    {
       "batch_id": "B01_CORE_CHARACTERS",
       "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
       "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
     },
     {
       "batch_id": "B05_PROPS_SYMBOLS",
       "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
-    },
-    {
-      "batch_id": "B06_COSTUMES_AND_STYLE",
-      "status": "blocked_pending_art_approval",
-      "reason": "User requested planning and prompts first; image generation starts only after approval."
+      "reason": "Planning and prompts are repaired and ready for human approval; image generation starts only after approval."
     }
   ],
   "notes": [
-    "No Codex background image-generation threads were created in this run."
+    "No Codex background image-generation threads were created in this repair run.",
+    "Series image jobs remain blocked by art approval, not by missing planning data."
   ]
 }

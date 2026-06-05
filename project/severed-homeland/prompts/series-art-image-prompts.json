@@ -1,8 +1,8 @@
 {
-  "version": "art-room-series-bible-v1-2026-06-05",
+  "version": "art-room-series-bible-v2-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_prompts",
-  "approval_status": "pending_art_approval",
+  "approval_status": "pending_art_approval_after_contract_repair",
   "image_generation_status": "not_started_pending_art_approval",
   "source_inputs": [
     "bible/world.md",
@@ -29,16 +29,31 @@
       "negative_prompt"
     ],
     "no_comfyui_parameters": true,
-    "no_generation_before_art_approval": true
+    "no_generation_before_art_approval": true,
+    "copy_ready_fields": [
+      "positive_prompt",
+      "negative_prompt",
+      "chatgpt_image_prompt",
+      "gemini_image_prompt"
+    ],
+    "output_path_is_top_level": true,
+    "production_metadata_output_file_is_short_basename": true,
+    "copy_ready_fields_present": true,
+    "copy_ready_source": "derived_from_model_visible_prompt",
+    "production_metadata_output_file_is_basename": true
   },
-  "prompt_records": [
+  "prompts": [
     {
       "prompt_id": "PROMPT_C001",
+      "asset_id": "C001",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c001m.png",
       "production_metadata": {
         "asset_id": "C001",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c001m.png",
+        "output_file": "c001m.png",
         "prompt_id": "PROMPT_C001",
         "source_refs": [
           "bible/characters.md#沈维桑",
@@ -60,7 +75,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c001m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建沈维桑全剧主角身份卡，作为全剧共享视觉资产参考。",
@@ -69,15 +85,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须保持少年后期精瘦耐走体态、窄脸、弓弦茧、左肩旧伤动作习惯和半成品旧驿共鸣的克制感；不能变成王者、战神、法师或军官。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈维桑全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十七岁人族山路猎户与旧驿后裔，精瘦长骨架、山风烟火晒暗肤色、左肩略低，灰褐猎衣露出草药青内层，旧皮护腕、猎弓、短刀和路线包完整可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须保持少年后期精瘦耐走体态、窄脸、弓弦茧、左肩旧伤动作习惯和半成品旧驿共鸣的克制感；不能变成王者、战神、法师或军官。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈维桑全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十七岁人族山路猎户与旧驿后裔，精瘦长骨架、山风烟火晒暗肤色、左肩略低，灰褐猎衣露出草药青内层，旧皮护腕、猎弓、短刀和路线包完整可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须保持少年后期精瘦耐走体态、窄脸、弓弦茧、左肩旧伤动作习惯和半成品旧驿共鸣的克制感；不能变成王者、战神、法师或军官。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈维桑全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十七岁人族山路猎户与旧驿后裔，精瘦长骨架、山风烟火晒暗肤色、左肩略低，灰褐猎衣露出草药青内层，旧皮护腕、猎弓、短刀和路线包完整可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须保持少年后期精瘦耐走体态、窄脸、弓弦茧、左肩旧伤动作习惯和半成品旧驿共鸣的克制感；不能变成王者、战神、法师或军官。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C002",
+      "asset_id": "C002",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c002m.png",
       "production_metadata": {
         "asset_id": "C002",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c002m.png",
+        "output_file": "c002m.png",
         "prompt_id": "PROMPT_C002",
         "source_refs": [
           "bible/characters.md#晏南枝",
@@ -98,7 +124,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c002m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建晏南枝全剧主角身份卡，作为全剧共享视觉资产参考。",
@@ -107,15 +134,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "保留人族顶级古典美貌、皇室礼法训练和逃亡擦伤并存的反差；不能网红脸、尖下巴、过度磨皮、艳俗宫装或只作为被凝视的花瓶。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建晏南枝全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十八岁人族旧帝国皇室旁支，清瘦挺直、古典椭圆脸、柔圆额头、清冷明亮眉眼、细直鼻梁和短圆下巴，黑发以红线束起，穿遮蔽性的雾紫冷灰流亡外袍与深墨蓝内层。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保留人族顶级古典美貌、皇室礼法训练和逃亡擦伤并存的反差；不能网红脸、尖下巴、过度磨皮、艳俗宫装或只作为被凝视的花瓶。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建晏南枝全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十八岁人族旧帝国皇室旁支，清瘦挺直、古典椭圆脸、柔圆额头、清冷明亮眉眼、细直鼻梁和短圆下巴，黑发以红线束起，穿遮蔽性的雾紫冷灰流亡外袍与深墨蓝内层。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保留人族顶级古典美貌、皇室礼法训练和逃亡擦伤并存的反差；不能网红脸、尖下巴、过度磨皮、艳俗宫装或只作为被凝视的花瓶。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建晏南枝全剧主角身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十八岁人族旧帝国皇室旁支，清瘦挺直、古典椭圆脸、柔圆额头、清冷明亮眉眼、细直鼻梁和短圆下巴，黑发以红线束起，穿遮蔽性的雾紫冷灰流亡外袍与深墨蓝内层。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保留人族顶级古典美貌、皇室礼法训练和逃亡擦伤并存的反差；不能网红脸、尖下巴、过度磨皮、艳俗宫装或只作为被凝视的花瓶。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C003",
+      "asset_id": "C003",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c003m.png",
       "production_metadata": {
         "asset_id": "C003",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c003m.png",
+        "output_file": "c003m.png",
         "prompt_id": "PROMPT_C003",
         "source_refs": [
           "bible/characters.md#陆青砾",
@@ -135,7 +172,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c003m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建陆青砾墙下混裔身份卡，作为全剧共享视觉资产参考。",
@@ -144,15 +182,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "保持贴墙站、试探笑、随时看出口的生存姿态；虫化痕迹只能细微，不能完整虫甲，也不能被画成普通小贼或喜剧角色。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建陆青砾墙下混裔身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十五到十六岁墙下无姓混裔少女，个子不高、骨架窄、动作敏捷，灰蓝短袄与陶土色内层有隐藏口袋，耳后或颈侧有细鳞痕，腰间窄刀、碎陶护符和黑市通行木牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保持贴墙站、试探笑、随时看出口的生存姿态；虫化痕迹只能细微，不能完整虫甲，也不能被画成普通小贼或喜剧角色。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建陆青砾墙下混裔身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十五到十六岁墙下无姓混裔少女，个子不高、骨架窄、动作敏捷，灰蓝短袄与陶土色内层有隐藏口袋，耳后或颈侧有细鳞痕，腰间窄刀、碎陶护符和黑市通行木牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保持贴墙站、试探笑、随时看出口的生存姿态；虫化痕迹只能细微，不能完整虫甲，也不能被画成普通小贼或喜剧角色。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建陆青砾墙下混裔身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十五到十六岁墙下无姓混裔少女，个子不高、骨架窄、动作敏捷，灰蓝短袄与陶土色内层有隐藏口袋，耳后或颈侧有细鳞痕，腰间窄刀、碎陶护符和黑市通行木牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n保持贴墙站、试探笑、随时看出口的生存姿态；虫化痕迹只能细微，不能完整虫甲，也不能被画成普通小贼或喜剧角色。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C004",
+      "asset_id": "C004",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c004m.png",
       "production_metadata": {
         "asset_id": "C004",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c004m.png",
+        "output_file": "c004m.png",
         "prompt_id": "PROMPT_C004",
         "source_refs": [
           "bible/characters.md#薛临墙",
@@ -173,7 +221,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c004m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建薛临墙边墙老墙师身份卡，作为全剧共享视觉资产参考。",
@@ -182,15 +231,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建薛临墙边墙老墙师身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n五十岁上下人族边墙老墙师，宽厚骨架、风雪压出的沉重肩背，胡茬、额纹、眼下暗沉和冻裂粗手清楚，穿灰石厚衬袄、祖传旧甲片、粗麻墙巾和雪线绑腿，持磨损长枪与骨哨。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建薛临墙边墙老墙师身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n五十岁上下人族边墙老墙师，宽厚骨架、风雪压出的沉重肩背，胡茬、额纹、眼下暗沉和冻裂粗手清楚，穿灰石厚衬袄、祖传旧甲片、粗麻墙巾和雪线绑腿，持磨损长枪与骨哨。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建薛临墙边墙老墙师身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n五十岁上下人族边墙老墙师，宽厚骨架、风雪压出的沉重肩背，胡茬、额纹、眼下暗沉和冻裂粗手清楚，穿灰石厚衬袄、祖传旧甲片、粗麻墙巾和雪线绑腿，持磨损长枪与骨哨。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须像长期缺粮缺眠仍守墙的人，旧甲片内有严重磨损日月压痕；不能一见皇血就变忠臣，也不能像扫平敌军的老宗师。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C005",
+      "asset_id": "C005",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c005m.png",
       "production_metadata": {
         "asset_id": "C005",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c005m.png",
+        "output_file": "c005m.png",
         "prompt_id": "PROMPT_C005",
         "source_refs": [
           "bible/characters.md#沈照眠",
@@ -209,7 +268,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c005m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建沈照眠儿童识别者双状态卡，作为全剧共享视觉资产参考。",
@@ -218,15 +278,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "虫蜡识别环不能遮住她仍是孩子的脆弱体量；烧焦发绳或草药袋必须作为亲情锚点保留，不能过早恢复成自由状态。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈照眠儿童识别者双状态卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n八到十岁人族女孩双状态设定，一侧是村中浅灰短襦、草药绿小围裙、草药袋和烧焦发绳，另一侧是被洗净束直后的清明院白色儿童袍与虫蜡识别环，圆脸稚气仍未消失。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n虫蜡识别环不能遮住她仍是孩子的脆弱体量；烧焦发绳或草药袋必须作为亲情锚点保留，不能过早恢复成自由状态。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈照眠儿童识别者双状态卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n八到十岁人族女孩双状态设定，一侧是村中浅灰短襦、草药绿小围裙、草药袋和烧焦发绳，另一侧是被洗净束直后的清明院白色儿童袍与虫蜡识别环，圆脸稚气仍未消失。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n虫蜡识别环不能遮住她仍是孩子的脆弱体量；烧焦发绳或草药袋必须作为亲情锚点保留，不能过早恢复成自由状态。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈照眠儿童识别者双状态卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n八到十岁人族女孩双状态设定，一侧是村中浅灰短襦、草药绿小围裙、草药袋和烧焦发绳，另一侧是被洗净束直后的清明院白色儿童袍与虫蜡识别环，圆脸稚气仍未消失。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n虫蜡识别环不能遮住她仍是孩子的脆弱体量；烧焦发绳或草药袋必须作为亲情锚点保留，不能过早恢复成自由状态。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C006",
+      "asset_id": "C006",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c006m.png",
       "production_metadata": {
         "asset_id": "C006",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c006m.png",
+        "output_file": "c006m.png",
         "prompt_id": "PROMPT_C006",
         "source_refs": [
           "bible/characters.md#罗青禾",
@@ -246,7 +316,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c006m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建罗青禾医者母亲身份卡，作为全剧共享视觉资产参考。",
@@ -255,15 +326,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "粗布、劳作和火场烟熏不能抹掉她昔日丽色、医者镇定与旧驿守护者尊严；不能画成普通苍老村妇或少女化美人。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建罗青禾医者母亲身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十七岁残阳坳医者与母亲，身形不高但稳定，骨相端正、眉眼极清，粗布头巾、草药绿围裙和土褐药屋上衣有药汁与烟火痕迹，手腕细而有力，药篮、小铜剪和药线随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n粗布、劳作和火场烟熏不能抹掉她昔日丽色、医者镇定与旧驿守护者尊严；不能画成普通苍老村妇或少女化美人。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建罗青禾医者母亲身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十七岁残阳坳医者与母亲，身形不高但稳定，骨相端正、眉眼极清，粗布头巾、草药绿围裙和土褐药屋上衣有药汁与烟火痕迹，手腕细而有力，药篮、小铜剪和药线随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n粗布、劳作和火场烟熏不能抹掉她昔日丽色、医者镇定与旧驿守护者尊严；不能画成普通苍老村妇或少女化美人。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建罗青禾医者母亲身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十七岁残阳坳医者与母亲，身形不高但稳定，骨相端正、眉眼极清，粗布头巾、草药绿围裙和土褐药屋上衣有药汁与烟火痕迹，手腕细而有力，药篮、小铜剪和药线随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n粗布、劳作和火场烟熏不能抹掉她昔日丽色、医者镇定与旧驿守护者尊严；不能画成普通苍老村妇或少女化美人。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C007",
+      "asset_id": "C007",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c007m.png",
       "production_metadata": {
         "asset_id": "C007",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c007m.png",
+        "output_file": "c007m.png",
         "prompt_id": "PROMPT_C007",
         "source_refs": [
           "bible/characters.md#白翳",
@@ -286,7 +367,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c007m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建白翳清明院监察官身份卡，作为全剧共享视觉资产参考。",
@@ -295,15 +377,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "压迫来自理性、洁净和制度信念，虫蜡针与白册必须可读；不能画成嘶吼怪物、变态杀手或人类白衣官员。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建白翳清明院监察官身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n两米以上高瘦上层智力型虫族监察官，极高而洁净，基本无发，清明高筒官帽后沿露出细长虫须状触须束，虫蜡白官服、骨白硬领、半透明薄翼披肩、暗色复眼和胸前黑日小徽组成冷静压迫。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自理性、洁净和制度信念，虫蜡针与白册必须可读；不能画成嘶吼怪物、变态杀手或人类白衣官员。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建白翳清明院监察官身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n两米以上高瘦上层智力型虫族监察官，极高而洁净，基本无发，清明高筒官帽后沿露出细长虫须状触须束，虫蜡白官服、骨白硬领、半透明薄翼披肩、暗色复眼和胸前黑日小徽组成冷静压迫。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自理性、洁净和制度信念，虫蜡针与白册必须可读；不能画成嘶吼怪物、变态杀手或人类白衣官员。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建白翳清明院监察官身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n两米以上高瘦上层智力型虫族监察官，极高而洁净，基本无发，清明高筒官帽后沿露出细长虫须状触须束，虫蜡白官服、骨白硬领、半透明薄翼披肩、暗色复眼和胸前黑日小徽组成冷静压迫。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自理性、洁净和制度信念，虫蜡针与白册必须可读；不能画成嘶吼怪物、变态杀手或人类白衣官员。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C008",
+      "asset_id": "C008",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c008m.png",
       "production_metadata": {
         "asset_id": "C008",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c008m.png",
+        "output_file": "c008m.png",
         "prompt_id": "PROMPT_C008",
         "source_refs": [
           "bible/characters.md#厉螳",
@@ -323,7 +415,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c008m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建厉螳甲军府战斗虫族身份卡，作为全剧共享视觉资产参考。",
@@ -332,15 +425,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须是螳刃近战和军府封锁功能的虫族体貌，不是人类黑甲将军，也不能承担白翳式思想反派气质。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建厉螳甲军府战斗虫族身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n高阶战斗型虫族将领，直立高度超过两米一，躯干窄硬、前倾站姿像压低长刃，反关节长腿、黑绿硬化甲壳、折叠臂刀、骨白护颚、暗色复眼和铁闸令牌固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是螳刃近战和军府封锁功能的虫族体貌，不是人类黑甲将军，也不能承担白翳式思想反派气质。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建厉螳甲军府战斗虫族身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n高阶战斗型虫族将领，直立高度超过两米一，躯干窄硬、前倾站姿像压低长刃，反关节长腿、黑绿硬化甲壳、折叠臂刀、骨白护颚、暗色复眼和铁闸令牌固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是螳刃近战和军府封锁功能的虫族体貌，不是人类黑甲将军，也不能承担白翳式思想反派气质。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建厉螳甲军府战斗虫族身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n高阶战斗型虫族将领，直立高度超过两米一，躯干窄硬、前倾站姿像压低长刃，反关节长腿、黑绿硬化甲壳、折叠臂刀、骨白护颚、暗色复眼和铁闸令牌固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是螳刃近战和军府封锁功能的虫族体貌，不是人类黑甲将军，也不能承担白翳式思想反派气质。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C009",
+      "asset_id": "C009",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c009m.png",
       "production_metadata": {
         "asset_id": "C009",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c009m.png",
+        "output_file": "c009m.png",
         "prompt_id": "PROMPT_C009",
         "source_refs": [
           "bible/characters.md#孟归藏",
@@ -360,7 +463,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c009m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建孟归藏旧书会亡书人身份卡，作为全剧共享视觉资产参考。",
@@ -369,15 +473,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "动作不快但避火藏页熟练，给出的真相带缺页和风险；不能成为全知解说员或干净学者。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建孟归藏旧书会亡书人身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十五到四十五岁人族旧书会亡书人，干瘦略驼，半边眉毛被火燎过，眼下烟熏和睡眠不足明显，深灰学士旅衣、焦边完整书箱、纸夹、骨片页夹和蜡封小袋随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n动作不快但避火藏页熟练，给出的真相带缺页和风险；不能成为全知解说员或干净学者。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建孟归藏旧书会亡书人身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十五到四十五岁人族旧书会亡书人，干瘦略驼，半边眉毛被火燎过，眼下烟熏和睡眠不足明显，深灰学士旅衣、焦边完整书箱、纸夹、骨片页夹和蜡封小袋随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n动作不快但避火藏页熟练，给出的真相带缺页和风险；不能成为全知解说员或干净学者。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建孟归藏旧书会亡书人身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十五到四十五岁人族旧书会亡书人，干瘦略驼，半边眉毛被火燎过，眼下烟熏和睡眠不足明显，深灰学士旅衣、焦边完整书箱、纸夹、骨片页夹和蜡封小袋随身。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n动作不快但避火藏页熟练，给出的真相带缺页和风险；不能成为全知解说员或干净学者。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C010",
+      "asset_id": "C010",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c010m.png",
       "production_metadata": {
         "asset_id": "C010",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c010m.png",
+        "output_file": "c010m.png",
         "prompt_id": "PROMPT_C010",
         "source_refs": [
           "bible/characters.md#鹿弥",
@@ -398,7 +512,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c010m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建鹿弥霜蹄鹿族萨满身份卡，作为全剧共享视觉资产参考。",
@@ -407,15 +522,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建鹿弥霜蹄鹿族萨满身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n约二十岁霜蹄鹿族年轻女萨满，长肢窄肩轻步，人形比例高但鹿耳、短小鹿角或骨金角饰、浅色鹿眼和鹿族纹样清楚，穿雪白珍稀皮草披肩、冰蓝厚织内层与骨白长袍，胸前骨笛、血盐袋和雪地药草袋可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建鹿弥霜蹄鹿族萨满身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n约二十岁霜蹄鹿族年轻女萨满，长肢窄肩轻步，人形比例高但鹿耳、短小鹿角或骨金角饰、浅色鹿眼和鹿族纹样清楚，穿雪白珍稀皮草披肩、冰蓝厚织内层与骨白长袍，胸前骨笛、血盐袋和雪地药草袋可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建鹿弥霜蹄鹿族萨满身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n约二十岁霜蹄鹿族年轻女萨满，长肢窄肩轻步，人形比例高但鹿耳、短小鹿角或骨金角饰、浅色鹿眼和鹿族纹样清楚，穿雪白珍稀皮草披肩、冰蓝厚织内层与骨白长袍，胸前骨笛、血盐袋和雪地药草袋可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C011",
+      "asset_id": "C011",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c011m.png",
       "production_metadata": {
         "asset_id": "C011",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c011m.png",
+        "output_file": "c011m.png",
         "prompt_id": "PROMPT_C011",
         "source_refs": [
           "bible/characters.md#顾怀章",
@@ -434,7 +559,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c011m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建顾怀章复翼者旧臣身份卡，作为全剧共享视觉资产参考。",
@@ -443,15 +569,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "他代表旧帝国礼制压力而不是当前行动战力；不能画成绝对正确忠臣或华丽宫廷权臣。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建顾怀章复翼者旧臣身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n年长清瘦人族旧臣，肩颈仍保持旧礼法训练的端正姿态，手背青筋明显，穿轻薄朱赤外袍、宝蓝内层和磨损旧金边，防潮卷轴筒与南方红线卷轴比身体更有存在感。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他代表旧帝国礼制压力而不是当前行动战力；不能画成绝对正确忠臣或华丽宫廷权臣。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建顾怀章复翼者旧臣身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n年长清瘦人族旧臣，肩颈仍保持旧礼法训练的端正姿态，手背青筋明显，穿轻薄朱赤外袍、宝蓝内层和磨损旧金边，防潮卷轴筒与南方红线卷轴比身体更有存在感。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他代表旧帝国礼制压力而不是当前行动战力；不能画成绝对正确忠臣或华丽宫廷权臣。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建顾怀章复翼者旧臣身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n年长清瘦人族旧臣，肩颈仍保持旧礼法训练的端正姿态，手背青筋明显，穿轻薄朱赤外袍、宝蓝内层和磨损旧金边，防潮卷轴筒与南方红线卷轴比身体更有存在感。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他代表旧帝国礼制压力而不是当前行动战力；不能画成绝对正确忠臣或华丽宫廷权臣。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C012",
+      "asset_id": "C012",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c012m.png",
       "production_metadata": {
         "asset_id": "C012",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c012m.png",
+        "output_file": "c012m.png",
         "prompt_id": "PROMPT_C012",
         "source_refs": [
           "bible/characters.md#赫连雪岱"
@@ -470,7 +606,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c012m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建赫连雪岱白熊族护卫身份卡，作为全剧共享视觉资产参考。",
@@ -479,15 +616,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建赫连雪岱白熊族护卫身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n二十四岁白熊族高级女护卫，身高两米以上、肩背厚实但脸部大部分人形，重眉骨、厚颧骨、宽下颌、厚直鼻梁、鬓颊与后颈白熊绒毛、熊爪面纹和粗壮前臂清楚，白熊皮厚披、银黑骨铁胸甲、骨铁大盾与护卫斧固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建赫连雪岱白熊族护卫身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n二十四岁白熊族高级女护卫，身高两米以上、肩背厚实但脸部大部分人形，重眉骨、厚颧骨、宽下颌、厚直鼻梁、鬓颊与后颈白熊绒毛、熊爪面纹和粗壮前臂清楚，白熊皮厚披、银黑骨铁胸甲、骨铁大盾与护卫斧固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建赫连雪岱白熊族护卫身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n二十四岁白熊族高级女护卫，身高两米以上、肩背厚实但脸部大部分人形，重眉骨、厚颧骨、宽下颌、厚直鼻梁、鬓颊与后颈白熊绒毛、熊爪面纹和粗壮前臂清楚，白熊皮厚披、银黑骨铁胸甲、骨铁大盾与护卫斧固定可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C013",
+      "asset_id": "C013",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c013m.png",
       "production_metadata": {
         "asset_id": "C013",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c013m.png",
+        "output_file": "c013m.png",
         "prompt_id": "PROMPT_C013",
         "source_refs": [
           "bible/characters.md#乌岚"
@@ -507,7 +654,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c013m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建乌岚黑狼族斥候身份卡，作为全剧共享视觉资产参考。",
@@ -516,15 +664,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须低重心前倾、像随时贴地奔跑；不能普通人加狼耳狼尾、现代战术斥候或恐怖狼人。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建乌岚黑狼族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十九到二十五岁黑狼族男斥候，直立狼性主体，明确狼吻、黑狼耳、强颧骨、犬齿、金黄竖瞳、低垂黑灰分层狼尾和刺纹，穿暗蓝贴身雪行衣、黑灰狼皮短披，短弓、三支短标枪、骨哨和雪地脚爪套完整。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须低重心前倾、像随时贴地奔跑；不能普通人加狼耳狼尾、现代战术斥候或恐怖狼人。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建乌岚黑狼族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十九到二十五岁黑狼族男斥候，直立狼性主体，明确狼吻、黑狼耳、强颧骨、犬齿、金黄竖瞳、低垂黑灰分层狼尾和刺纹，穿暗蓝贴身雪行衣、黑灰狼皮短披，短弓、三支短标枪、骨哨和雪地脚爪套完整。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须低重心前倾、像随时贴地奔跑；不能普通人加狼耳狼尾、现代战术斥候或恐怖狼人。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建乌岚黑狼族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n十九到二十五岁黑狼族男斥候，直立狼性主体，明确狼吻、黑狼耳、强颧骨、犬齿、金黄竖瞳、低垂黑灰分层狼尾和刺纹，穿暗蓝贴身雪行衣、黑灰狼皮短披，短弓、三支短标枪、骨哨和雪地脚爪套完整。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须低重心前倾、像随时贴地奔跑；不能普通人加狼耳狼尾、现代战术斥候或恐怖狼人。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C014",
+      "asset_id": "C014",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c014m.png",
       "production_metadata": {
         "asset_id": "C014",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c014m.png",
+        "output_file": "c014m.png",
         "prompt_id": "PROMPT_C014",
         "source_refs": [
           "bible/characters.md#拓跋砚熊"
@@ -543,7 +701,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c014m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建拓跋砚熊白熊族盾卫工匠身份卡，作为全剧共享视觉资产参考。",
@@ -552,15 +711,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建拓跋砚熊白熊族盾卫工匠身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十到四十岁白熊族男盾卫兼雪炉工匠，体量为普通人族重装兵两到三倍，短宽熊吻、圆熊耳、鬓边白熊绒毛、盾形胸廓、极粗前臂和巨大手掌可读，厚重深褐皮革围裙有火星烫痕，挂雪炉工具链、铁锉、骨锤、铆钉袋和大型骨铁盾。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建拓跋砚熊白熊族盾卫工匠身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十到四十岁白熊族男盾卫兼雪炉工匠，体量为普通人族重装兵两到三倍，短宽熊吻、圆熊耳、鬓边白熊绒毛、盾形胸廓、极粗前臂和巨大手掌可读，厚重深褐皮革围裙有火星烫痕，挂雪炉工具链、铁锉、骨锤、铆钉袋和大型骨铁盾。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建拓跋砚熊白熊族盾卫工匠身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n三十到四十岁白熊族男盾卫兼雪炉工匠，体量为普通人族重装兵两到三倍，短宽熊吻、圆熊耳、鬓边白熊绒毛、盾形胸廓、极粗前臂和巨大手掌可读，厚重深褐皮革围裙有火星烫痕，挂雪炉工具链、铁锉、骨锤、铆钉袋和大型骨铁盾。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C015",
+      "asset_id": "C015",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c015m.png",
       "production_metadata": {
         "asset_id": "C015",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c015m.png",
+        "output_file": "c015m.png",
         "prompt_id": "PROMPT_C015",
         "source_refs": [
           "bible/characters.md#青翎鸦见"
@@ -579,7 +748,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c015m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建青翎鸦见雪羽鸦族斥候身份卡，作为全剧共享视觉资产参考。",
@@ -588,15 +758,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "她是攀墙传讯模板，不是大规模空军、天使翼、现代忍者或华丽游侠。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建青翎鸦见雪羽鸦族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n雪羽鸦族女性轻装斥候，瘦长轻骨、肩窄、前臂长、动作贴墙，黑灰羽冠、锐利黑眼、喙形鼻梁、颧侧短羽、左侧低饱和青绿色鸦羽和右眼浅白旧伤清楚，深烟灰羽纹臂披可半展开，骨爪钩、短刀、小火罐、传讯筒和三枚小骨环固定。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是攀墙传讯模板，不是大规模空军、天使翼、现代忍者或华丽游侠。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建青翎鸦见雪羽鸦族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n雪羽鸦族女性轻装斥候，瘦长轻骨、肩窄、前臂长、动作贴墙，黑灰羽冠、锐利黑眼、喙形鼻梁、颧侧短羽、左侧低饱和青绿色鸦羽和右眼浅白旧伤清楚，深烟灰羽纹臂披可半展开，骨爪钩、短刀、小火罐、传讯筒和三枚小骨环固定。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是攀墙传讯模板，不是大规模空军、天使翼、现代忍者或华丽游侠。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建青翎鸦见雪羽鸦族斥候身份卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n雪羽鸦族女性轻装斥候，瘦长轻骨、肩窄、前臂长、动作贴墙，黑灰羽冠、锐利黑眼、喙形鼻梁、颧侧短羽、左侧低饱和青绿色鸦羽和右眼浅白旧伤清楚，深烟灰羽纹臂披可半展开，骨爪钩、短刀、小火罐、传讯筒和三枚小骨环固定。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n她是攀墙传讯模板，不是大规模空军、天使翼、现代忍者或华丽游侠。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C016",
+      "asset_id": "C016",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c016m.png",
       "production_metadata": {
         "asset_id": "C016",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c016m.png",
+        "output_file": "c016m.png",
         "prompt_id": "PROMPT_C016",
         "source_refs": [
           "bible/characters.md#基层官吏、奴兵与虫族士兵"
@@ -617,7 +797,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c016m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建肃明基层虫吏层级模板，作为全剧共享视觉资产参考。",
@@ -626,15 +807,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须是开册下令与盖蜡印的制度剪影，不亲自做脏活；不能变成人族衙役、县吏或戴面具的人。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建肃明基层虫吏层级模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n低阶官僚型虫族基层官吏模板，身高一米九到两米一，近人形但比例拉长，复眼、骨白颊壳、暗绿颈侧软膜、节状手指和脊背细甲线可见，戴高耸虫蜡小冠或半圆高账吏帽，穿蜡白灰短官袍，持白册夹板、虫蜡印盒、旧铁账牌、气味牌和骨算盘。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是开册下令与盖蜡印的制度剪影，不亲自做脏活；不能变成人族衙役、县吏或戴面具的人。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建肃明基层虫吏层级模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n低阶官僚型虫族基层官吏模板，身高一米九到两米一，近人形但比例拉长，复眼、骨白颊壳、暗绿颈侧软膜、节状手指和脊背细甲线可见，戴高耸虫蜡小冠或半圆高账吏帽，穿蜡白灰短官袍，持白册夹板、虫蜡印盒、旧铁账牌、气味牌和骨算盘。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是开册下令与盖蜡印的制度剪影，不亲自做脏活；不能变成人族衙役、县吏或戴面具的人。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建肃明基层虫吏层级模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n低阶官僚型虫族基层官吏模板，身高一米九到两米一，近人形但比例拉长，复眼、骨白颊壳、暗绿颈侧软膜、节状手指和脊背细甲线可见，戴高耸虫蜡小冠或半圆高账吏帽，穿蜡白灰短官袍，持白册夹板、虫蜡印盒、旧铁账牌、气味牌和骨算盘。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须是开册下令与盖蜡印的制度剪影，不亲自做脏活；不能变成人族衙役、县吏或戴面具的人。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C017",
+      "asset_id": "C017",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c017m.png",
       "production_metadata": {
         "asset_id": "C017",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c017m.png",
+        "output_file": "c017m.png",
         "prompt_id": "PROMPT_C017",
         "source_refs": [
           "bible/characters.md#奴兵总则"
@@ -653,7 +844,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c017m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建混血奴兵清污军户模板，作为全剧共享视觉资产参考。",
@@ -662,15 +854,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "他们是同类押同类的制度伤口，不是自愿精锐或天然邪恶；金钱马尾不能误画成虫族触须。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建混血奴兵清污军户模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫族与人族混血清污军户模板，保留人族直立轮廓和人脸表情，但额角、耳后、颈侧、指节或肋侧有多边形甲片与虫蜡痕，穿蜡灰青短军袍、暗绿黑护布和硬化蜡布肩胸片，骨白腕绑、黑日烙牌、编号木牌、旧铁扣、气味牌和后脑低位细长金钱马尾清楚。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他们是同类押同类的制度伤口，不是自愿精锐或天然邪恶；金钱马尾不能误画成虫族触须。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建混血奴兵清污军户模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫族与人族混血清污军户模板，保留人族直立轮廓和人脸表情，但额角、耳后、颈侧、指节或肋侧有多边形甲片与虫蜡痕，穿蜡灰青短军袍、暗绿黑护布和硬化蜡布肩胸片，骨白腕绑、黑日烙牌、编号木牌、旧铁扣、气味牌和后脑低位细长金钱马尾清楚。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他们是同类押同类的制度伤口，不是自愿精锐或天然邪恶；金钱马尾不能误画成虫族触须。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建混血奴兵清污军户模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫族与人族混血清污军户模板，保留人族直立轮廓和人脸表情，但额角、耳后、颈侧、指节或肋侧有多边形甲片与虫蜡痕，穿蜡灰青短军袍、暗绿黑护布和硬化蜡布肩胸片，骨白腕绑、黑日烙牌、编号木牌、旧铁扣、气味牌和后脑低位细长金钱马尾清楚。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n他们是同类押同类的制度伤口，不是自愿精锐或天然邪恶；金钱马尾不能误画成虫族触须。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C018",
+      "asset_id": "C018",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c018m.png",
       "production_metadata": {
         "asset_id": "C018",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c018m.png",
+        "output_file": "c018m.png",
         "prompt_id": "PROMPT_C018",
         "source_refs": [
           "bible/characters.md#普通虫族小兵"
@@ -689,7 +891,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c018m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建普通纯虫族小兵模板，作为全剧共享视觉资产参考。",
@@ -698,15 +901,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "用于封村巡逻、粮仓守门和切断救援线；不能像白翳，也不能混成奴兵或官吏。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建普通纯虫族小兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n纯虫族基层武力模板，身高两米到两米三，胸背硬化、前倾低伏、反关节腿、爪足、窄复眼和骨白护颚固定，背部退化硬翅像叠甲板，主臂持短矛或钩镰，前臂外侧可折叠短刃，旧铁束具、暗绿绳带和小型白翅覆黑日牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n用于封村巡逻、粮仓守门和切断救援线；不能像白翳，也不能混成奴兵或官吏。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建普通纯虫族小兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n纯虫族基层武力模板，身高两米到两米三，胸背硬化、前倾低伏、反关节腿、爪足、窄复眼和骨白护颚固定，背部退化硬翅像叠甲板，主臂持短矛或钩镰，前臂外侧可折叠短刃，旧铁束具、暗绿绳带和小型白翅覆黑日牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n用于封村巡逻、粮仓守门和切断救援线；不能像白翳，也不能混成奴兵或官吏。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建普通纯虫族小兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n纯虫族基层武力模板，身高两米到两米三，胸背硬化、前倾低伏、反关节腿、爪足、窄复眼和骨白护颚固定，背部退化硬翅像叠甲板，主臂持短矛或钩镰，前臂外侧可折叠短刃，旧铁束具、暗绿绳带和小型白翅覆黑日牌可见。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n用于封村巡逻、粮仓守门和切断救援线；不能像白翳，也不能混成奴兵或官吏。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C019",
+      "asset_id": "C019",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c019m.png",
       "production_metadata": {
         "asset_id": "C019",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c019m.png",
+        "output_file": "c019m.png",
         "prompt_id": "PROMPT_C019",
         "source_refs": [
           "bible/characters.md#重甲虫士兵"
@@ -725,7 +938,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c019m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建中阶重甲虫士兵模板，作为全剧共享视觉资产参考。",
@@ -734,15 +948,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "压迫来自重量和不可绕过的守门功能；不能有人脸、人发、人类头盔或将领气质。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建中阶重甲虫士兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n重装型纯虫族步兵模板，身高两米二到两米六，直立重装、胸背厚甲、短宽腹节、外扩骨盆甲、粗壮后肢和重型爪足能稳站成盾墙，低宽虫头、窄复眼、厚骨白护颚和暗绿颈膜固定，装备黑铁门盾、短重矛、重钩镰和闸门叉。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自重量和不可绕过的守门功能；不能有人脸、人发、人类头盔或将领气质。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建中阶重甲虫士兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n重装型纯虫族步兵模板，身高两米二到两米六，直立重装、胸背厚甲、短宽腹节、外扩骨盆甲、粗壮后肢和重型爪足能稳站成盾墙，低宽虫头、窄复眼、厚骨白护颚和暗绿颈膜固定，装备黑铁门盾、短重矛、重钩镰和闸门叉。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自重量和不可绕过的守门功能；不能有人脸、人发、人类头盔或将领气质。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建中阶重甲虫士兵模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n重装型纯虫族步兵模板，身高两米二到两米六，直立重装、胸背厚甲、短宽腹节、外扩骨盆甲、粗壮后肢和重型爪足能稳站成盾墙，低宽虫头、窄复眼、厚骨白护颚和暗绿颈膜固定，装备黑铁门盾、短重矛、重钩镰和闸门叉。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n压迫来自重量和不可绕过的守门功能；不能有人脸、人发、人类头盔或将领气质。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C020",
+      "asset_id": "C020",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c020m.png",
       "production_metadata": {
         "asset_id": "C020",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c020m.png",
+        "output_file": "c020m.png",
         "prompt_id": "PROMPT_C020",
         "source_refs": [
           "bible/characters.md#北境攻城兵种",
@@ -764,7 +988,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c020m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建北境攻城兵种群像模板，作为全剧共享视觉资产参考。",
@@ -773,15 +998,25 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "必须呈现饥饿、迁徙、部族政治和攻城职能，不得统一成同一种兽人换武器，也不得加单一现代徽章。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建北境攻城兵种群像模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境攻城兵种设定板，黑牙破门斧兵、铁角盾墙牛族、白鬃雪狼骑、雪獾掘地兵、灰皮拖城巨魔、雪羽攀墙斥候、霜蹄梦笛祭兵和赤鬃督战骑兵并列展示，体量、头面、手足、装备和战场功能一眼可分。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须呈现饥饿、迁徙、部族政治和攻城职能，不得统一成同一种兽人换武器，也不得加单一现代徽章。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建北境攻城兵种群像模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境攻城兵种设定板，黑牙破门斧兵、铁角盾墙牛族、白鬃雪狼骑、雪獾掘地兵、灰皮拖城巨魔、雪羽攀墙斥候、霜蹄梦笛祭兵和赤鬃督战骑兵并列展示，体量、头面、手足、装备和战场功能一眼可分。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须呈现饥饿、迁徙、部族政治和攻城职能，不得统一成同一种兽人换武器，也不得加单一现代徽章。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建北境攻城兵种群像模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境攻城兵种设定板，黑牙破门斧兵、铁角盾墙牛族、白鬃雪狼骑、雪獾掘地兵、灰皮拖城巨魔、雪羽攀墙斥候、霜蹄梦笛祭兵和赤鬃督战骑兵并列展示，体量、头面、手足、装备和战场功能一眼可分。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n必须呈现饥饿、迁徙、部族政治和攻城职能，不得统一成同一种兽人换武器，也不得加单一现代徽章。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
       }
     },
     {
       "prompt_id": "PROMPT_C021",
+      "asset_id": "C021",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c021m.png",
       "production_metadata": {
         "asset_id": "C021",
         "asset_type": "character",
         "asset_subtype": "character_master_card",
-        "output_file": "assets/characters/c021m.png",
+        "output_file": "c021m.png",
         "prompt_id": "PROMPT_C021",
         "source_refs": [
           "bible/characters.md#共生兽规则",
@@ -805,7 +1040,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c021m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建北境共生兽关系模板，作为全剧共享视觉资产参考。",
@@ -814,15 +1050,77 @@
         "composition_motion": "9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。",
         "visible_continuity": "共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建北境共生兽关系模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境共生兽关系设定板，破门猛犸、岩背犀、冰湖甲龟、披甲牦牛、地热冰蟒、裂风飞龙、冻原雷蜥和霜狼群以不同尺度展示，每个兽类旁都有对应驭兽者、骨笛、血盐、绳环或抚摸旧伤的互动。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建北境共生兽关系模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境共生兽关系设定板，破门猛犸、岩背犀、冰湖甲龟、披甲牦牛、地热冰蟒、裂风飞龙、冻原雷蜥和霜狼群以不同尺度展示，每个兽类旁都有对应驭兽者、骨笛、血盐、绳环或抚摸旧伤的互动。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建北境共生兽关系模板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境共生兽关系设定板，破门猛犸、岩背犀、冰湖甲龟、披甲牦牛、地热冰蟒、裂风飞龙、冻原雷蜥和霜狼群以不同尺度展示，每个兽类旁都有对应驭兽者、骨笛、血盐、绳环或抚摸旧伤的互动。\n9:16角色设定板，正面、侧面、背面和三分之二视角并列，加入手部、头部、道具与材质局部特写，姿态自然且有体重。\n共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要把不同族群、阶层或肃明执行层级画成同一种脸、同一种服装或同一种敌人。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_C022",
+      "asset_id": "C022",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c022m.png",
+      "production_metadata": {
+        "asset_id": "C022",
+        "asset_type": "character",
+        "asset_subtype": "character_master_card",
+        "output_file": "c022m.png",
+        "prompt_id": "PROMPT_C022",
+        "source_refs": [
+          "bible/characters.md#沈季衡",
+          "10/script/final-script.md",
+          "10/continuity/visual-continuity-bible.json"
+        ],
+        "continuity_refs": [
+          "旧帝国驿道测绘官后裔",
+          "身高约178厘米",
+          "体重约67公斤",
+          "偏瘦腿长",
+          "衣摆路灰",
+          "旧绳结",
+          "测绘手势",
+          "虫蜡档案影像"
+        ],
+        "usage": [
+          "沈家旧驿血线与父亲记忆锁定",
+          "第10集寒鸦堡虫蜡档案影像参考",
+          "旧驿测绘符号与月下路线价值来源参考"
+        ],
+        "approval_status": "planned_pending_art_approval",
+        "generation_status": "not_started_pending_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/characters/c022m.png"
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈季衡旧驿测绘者档案影像身份卡，作为父亲记忆与旧驿测绘血线的视觉参考。",
+        "style_quality": "超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，档案光影克制贴近虫蜡记录表面。",
+        "subject_content": "旧帝国驿道测绘官后裔，中年男性，偏瘦腿长，背微弯，衣摆带路灰，手指像在比划方位，随身旧绳结、残缺测绘符号和朴素行路包可见；人物可呈现为虫蜡档案墙中的半透明旧影。",
+        "composition_motion": "9:16角色档案设定板，正面、侧面、三分之二旧影和手部测绘动作并列，加入旧绳结、路灰衣摆、测绘符号和虫蜡档案材质局部特写。",
+        "visible_continuity": "必须保持测路者、父亲和旧驿债务见证人的风尘感；只能像旧档与记忆影像，不要变成当前行动角色、皇旗忠臣、复国遗命发布者或神秘法师。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、完整可读档案文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要让旧影变成活人登场或复国英雄海报。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈季衡旧驿测绘者档案影像身份卡，作为父亲记忆与旧驿测绘血线的视觉参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，档案光影克制贴近虫蜡记录表面。\n旧帝国驿道测绘官后裔，中年男性，偏瘦腿长，背微弯，衣摆带路灰，手指像在比划方位，随身旧绳结、残缺测绘符号和朴素行路包可见；人物可呈现为虫蜡档案墙中的半透明旧影。\n9:16角色档案设定板，正面、侧面、三分之二旧影和手部测绘动作并列，加入旧绳结、路灰衣摆、测绘符号和虫蜡档案材质局部特写。\n必须保持测路者、父亲和旧驿债务见证人的风尘感；只能像旧档与记忆影像，不要变成当前行动角色、皇旗忠臣、复国遗命发布者或神秘法师。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、完整可读档案文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要让旧影变成活人登场或复国英雄海报。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈季衡旧驿测绘者档案影像身份卡，作为父亲记忆与旧驿测绘血线的视觉参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，档案光影克制贴近虫蜡记录表面。\n旧帝国驿道测绘官后裔，中年男性，偏瘦腿长，背微弯，衣摆带路灰，手指像在比划方位，随身旧绳结、残缺测绘符号和朴素行路包可见；人物可呈现为虫蜡档案墙中的半透明旧影。\n9:16角色档案设定板，正面、侧面、三分之二旧影和手部测绘动作并列，加入旧绳结、路灰衣摆、测绘符号和虫蜡档案材质局部特写。\n必须保持测路者、父亲和旧驿债务见证人的风尘感；只能像旧档与记忆影像，不要变成当前行动角色、皇旗忠臣、复国遗命发布者或神秘法师。\n避免：不要现代物件、现代 logo、水印、乱码文字、完整可读档案文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要让旧影变成活人登场或复国英雄海报。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈季衡旧驿测绘者档案影像身份卡，作为父亲记忆与旧驿测绘血线的视觉参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，档案光影克制贴近虫蜡记录表面。\n旧帝国驿道测绘官后裔，中年男性，偏瘦腿长，背微弯，衣摆带路灰，手指像在比划方位，随身旧绳结、残缺测绘符号和朴素行路包可见；人物可呈现为虫蜡档案墙中的半透明旧影。\n9:16角色档案设定板，正面、侧面、三分之二旧影和手部测绘动作并列，加入旧绳结、路灰衣摆、测绘符号和虫蜡档案材质局部特写。\n必须保持测路者、父亲和旧驿债务见证人的风尘感；只能像旧档与记忆影像，不要变成当前行动角色、皇旗忠臣、复国遗命发布者或神秘法师。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、完整可读档案文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。不要让旧影变成活人登场或复国英雄海报。"
       }
     },
     {
       "prompt_id": "PROMPT_L001",
+      "asset_id": "L001",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l001m.png",
       "production_metadata": {
         "asset_id": "L001",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l001m.png",
+        "output_file": "l001m.png",
         "prompt_id": "PROMPT_L001",
         "source_refs": [
           "bible/scenes.md#残阳坳",
@@ -843,7 +1141,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l001m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建残阳坳村落与药屋主场景卡，作为全剧共享视觉资产参考。",
@@ -852,15 +1151,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "必须先显示生活秩序与工具，再显示清明籍清查压力；火后仍能辨认旧井、药屋焦梁和暗格位置。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建残阳坳村落与药屋主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n中央大陆中南部旧驿村落，药屋、旧井、村口检查桌、低坡后山和药柜暗格空间关系清楚，土褐、麦金、草药青、旧木褐和炊烟灰构成可居住但被清查的故土。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n必须先显示生活秩序与工具，再显示清明籍清查压力；火后仍能辨认旧井、药屋焦梁和暗格位置。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建残阳坳村落与药屋主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n中央大陆中南部旧驿村落，药屋、旧井、村口检查桌、低坡后山和药柜暗格空间关系清楚，土褐、麦金、草药青、旧木褐和炊烟灰构成可居住但被清查的故土。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n必须先显示生活秩序与工具，再显示清明籍清查压力；火后仍能辨认旧井、药屋焦梁和暗格位置。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建残阳坳村落与药屋主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n中央大陆中南部旧驿村落，药屋、旧井、村口检查桌、低坡后山和药柜暗格空间关系清楚，土褐、麦金、草药青、旧木褐和炊烟灰构成可居住但被清查的故土。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n必须先显示生活秩序与工具，再显示清明籍清查压力；火后仍能辨认旧井、药屋焦梁和暗格位置。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L002",
+      "asset_id": "L002",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l002m.png",
       "production_metadata": {
         "asset_id": "L002",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l002m.png",
+        "output_file": "l002m.png",
         "prompt_id": "PROMPT_L002",
         "source_refs": [
           "bible/scenes.md#旧驿暗道",
@@ -879,7 +1188,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l002m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建旧驿暗道白石残段主场景卡，作为全剧共享视觉资产参考。",
@@ -888,15 +1198,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "反应短促、局部、有限，不能变成万能传送、奇观密宫或战斗解决方案。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建旧驿暗道白石残段主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n残阳坳地下旧驿残段，旧白石低拱、潮湿石壁、岔路刻痕、剥落日月双印和断续金赤路线光形成被遗忘术压住但仍残留功能的交通系统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n反应短促、局部、有限，不能变成万能传送、奇观密宫或战斗解决方案。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建旧驿暗道白石残段主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n残阳坳地下旧驿残段，旧白石低拱、潮湿石壁、岔路刻痕、剥落日月双印和断续金赤路线光形成被遗忘术压住但仍残留功能的交通系统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n反应短促、局部、有限，不能变成万能传送、奇观密宫或战斗解决方案。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建旧驿暗道白石残段主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n残阳坳地下旧驿残段，旧白石低拱、潮湿石壁、岔路刻痕、剥落日月双印和断续金赤路线光形成被遗忘术压住但仍残留功能的交通系统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n反应短促、局部、有限，不能变成万能传送、奇观密宫或战斗解决方案。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L003",
+      "asset_id": "L003",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l003m.png",
       "production_metadata": {
         "asset_id": "L003",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l003m.png",
+        "output_file": "l003m.png",
         "prompt_id": "PROMPT_L003",
         "source_refs": [
           "bible/scenes.md#金河粮磨区与渡河蒸汽船",
@@ -915,7 +1235,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l003m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建金河粮磨区与渡船主场景卡，作为全剧共享视觉资产参考。",
@@ -924,15 +1245,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "蒸汽技术是被保留的生产工具而非欢乐蒸汽朋克；磨平军用接口和封蜡粮牌必须可见。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建金河粮磨区与渡船主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河中游粮仓带，水轮、泵房、蒸汽磨盘、粮袋轨车、粮牌检查口、湿木码头和渡河蒸汽船在河雾中相连，深河青、湿木褐、铁灰、蒸汽白、油黑和暗粮牌黄构成生产压迫。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n蒸汽技术是被保留的生产工具而非欢乐蒸汽朋克；磨平军用接口和封蜡粮牌必须可见。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建金河粮磨区与渡船主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河中游粮仓带，水轮、泵房、蒸汽磨盘、粮袋轨车、粮牌检查口、湿木码头和渡河蒸汽船在河雾中相连，深河青、湿木褐、铁灰、蒸汽白、油黑和暗粮牌黄构成生产压迫。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n蒸汽技术是被保留的生产工具而非欢乐蒸汽朋克；磨平军用接口和封蜡粮牌必须可见。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建金河粮磨区与渡船主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河中游粮仓带，水轮、泵房、蒸汽磨盘、粮袋轨车、粮牌检查口、湿木码头和渡河蒸汽船在河雾中相连，深河青、湿木褐、铁灰、蒸汽白、油黑和暗粮牌黄构成生产压迫。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n蒸汽技术是被保留的生产工具而非欢乐蒸汽朋克；磨平军用接口和封蜡粮牌必须可见。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L004",
+      "asset_id": "L004",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l004m.png",
       "production_metadata": {
         "asset_id": "L004",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l004m.png",
+        "output_file": "l004m.png",
         "prompt_id": "PROMPT_L004",
         "source_refs": [
           "bible/scenes.md#灰烬书院",
@@ -952,7 +1283,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l004m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建灰烬书院文明断代主场景卡，作为全剧共享视觉资产参考。",
@@ -961,15 +1293,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "不是恐怖地牢或普通废墟空景；文明断代必须由书架、星图、封条和残页表达。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建灰烬书院文明断代主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧书库遗址，焦黑拱廊、炭化书架、碎裂星图盘、纸灰、裂铜、残月白和虫蜡封条组成文明断代空间，儿童识别角落与旧书会藏身处控制在少量人物尺度。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n不是恐怖地牢或普通废墟空景；文明断代必须由书架、星图、封条和残页表达。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建灰烬书院文明断代主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧书库遗址，焦黑拱廊、炭化书架、碎裂星图盘、纸灰、裂铜、残月白和虫蜡封条组成文明断代空间，儿童识别角落与旧书会藏身处控制在少量人物尺度。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n不是恐怖地牢或普通废墟空景；文明断代必须由书架、星图、封条和残页表达。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建灰烬书院文明断代主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧书库遗址，焦黑拱廊、炭化书架、碎裂星图盘、纸灰、裂铜、残月白和虫蜡封条组成文明断代空间，儿童识别角落与旧书会藏身处控制在少量人物尺度。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n不是恐怖地牢或普通废墟空景；文明断代必须由书架、星图、封条和残页表达。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L005",
+      "asset_id": "L005",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l005m.png",
       "production_metadata": {
         "asset_id": "L005",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l005m.png",
+        "output_file": "l005m.png",
         "prompt_id": "PROMPT_L005",
         "source_refs": [
           "bible/scenes.md#清明院外署",
@@ -988,7 +1330,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l005m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建清明院外署白墙主场景卡，作为全剧共享视觉资产参考。",
@@ -997,15 +1340,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "压迫来自洁净、秩序和执行层级，必须区分白册官吏、奴兵、虫族士兵与白翳。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建清明院外署白墙主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明院地方外署，虫蜡白、骨白、珍珠灰、黑日与冷金形成过度洁净的制度空间，白墙登记厅、白册台、虫蜡针室、蜂巢记忆室入口和后巷路线清楚。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n压迫来自洁净、秩序和执行层级，必须区分白册官吏、奴兵、虫族士兵与白翳。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建清明院外署白墙主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明院地方外署，虫蜡白、骨白、珍珠灰、黑日与冷金形成过度洁净的制度空间，白墙登记厅、白册台、虫蜡针室、蜂巢记忆室入口和后巷路线清楚。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n压迫来自洁净、秩序和执行层级，必须区分白册官吏、奴兵、虫族士兵与白翳。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建清明院外署白墙主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明院地方外署，虫蜡白、骨白、珍珠灰、黑日与冷金形成过度洁净的制度空间，白墙登记厅、白册台、虫蜡针室、蜂巢记忆室入口和后巷路线清楚。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n压迫来自洁净、秩序和执行层级，必须区分白册官吏、奴兵、虫族士兵与白翳。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L006",
+      "asset_id": "L006",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l006m.png",
       "production_metadata": {
         "asset_id": "L006",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l006m.png",
+        "output_file": "l006m.png",
         "prompt_id": "PROMPT_L006",
         "source_refs": [
           "bible/scenes.md#墙下集市",
@@ -1024,7 +1377,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l006m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建墙下集市无籍者空间主场景卡，作为全剧共享视觉资产参考。",
@@ -1033,15 +1387,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "旧但有职业和交易秩序，不是流民营；空间复杂感来自摊位、手部交易、门洞和窄巷。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建墙下集市无籍者空间主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙南麓墙下集市，灰布棚、窑洞门、旧粮牌摊、黑木通行牌、背风石屋和窄巷形成交易秩序，炭火烟、雪粒和风沙显示军道与黑市交界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n旧但有职业和交易秩序，不是流民营；空间复杂感来自摊位、手部交易、门洞和窄巷。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建墙下集市无籍者空间主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙南麓墙下集市，灰布棚、窑洞门、旧粮牌摊、黑木通行牌、背风石屋和窄巷形成交易秩序，炭火烟、雪粒和风沙显示军道与黑市交界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n旧但有职业和交易秩序，不是流民营；空间复杂感来自摊位、手部交易、门洞和窄巷。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建墙下集市无籍者空间主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙南麓墙下集市，灰布棚、窑洞门、旧粮牌摊、黑木通行牌、背风石屋和窄巷形成交易秩序，炭火烟、雪粒和风沙显示军道与黑市交界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n旧但有职业和交易秩序，不是流民营；空间复杂感来自摊位、手部交易、门洞和窄巷。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L007",
+      "asset_id": "L007",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l007m.png",
       "production_metadata": {
         "asset_id": "L007",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l007m.png",
+        "output_file": "l007m.png",
         "prompt_id": "PROMPT_L007",
         "source_refs": [
           "bible/scenes.md#锁喉关",
@@ -1061,7 +1425,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l007m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建锁喉关边墙主门场景卡，作为全剧共享视觉资产参考。",
@@ -1070,15 +1435,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "边墙不是壮丽背景，而是军户牢笼、战场和可能重签盟约的边界；攻城必须拆成兵种、共生兽和城防反应。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建锁喉关边墙主门场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n绝境山脉最窄山口边墙主门，黑石城门、骨钟、粮仓门、墙顶雪道、拒马、雪泥和裸露旧日月阵基构成通路狭窄、人群渺小、粮仓控制和战争消耗的边界空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n边墙不是壮丽背景，而是军户牢笼、战场和可能重签盟约的边界；攻城必须拆成兵种、共生兽和城防反应。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建锁喉关边墙主门场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n绝境山脉最窄山口边墙主门，黑石城门、骨钟、粮仓门、墙顶雪道、拒马、雪泥和裸露旧日月阵基构成通路狭窄、人群渺小、粮仓控制和战争消耗的边界空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n边墙不是壮丽背景，而是军户牢笼、战场和可能重签盟约的边界；攻城必须拆成兵种、共生兽和城防反应。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建锁喉关边墙主门场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n绝境山脉最窄山口边墙主门，黑石城门、骨钟、粮仓门、墙顶雪道、拒马、雪泥和裸露旧日月阵基构成通路狭窄、人群渺小、粮仓控制和战争消耗的边界空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n边墙不是壮丽背景，而是军户牢笼、战场和可能重签盟约的边界；攻城必须拆成兵种、共生兽和城防反应。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L008",
+      "asset_id": "L008",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l008m.png",
       "production_metadata": {
         "asset_id": "L008",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l008m.png",
+        "output_file": "l008m.png",
         "prompt_id": "PROMPT_L008",
         "source_refs": [
           "bible/scenes.md#鸣骨岭",
@@ -1098,7 +1473,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l008m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建鸣骨岭北境过渡场景卡，作为全剧共享视觉资产参考。",
@@ -1107,15 +1483,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "氛围不能压过剧情，重点是救援、躲追兵、辨认印记和骨笛求救；北境角色要有迁徙和救援痕迹。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建鸣骨岭北境过渡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙外风蚀骨雪岭，半埋骨骸、骨孔、雪坑、枯草冻土、冰蓝火、冻裂旧兵器和迁徙痕迹在暴雪中形成从人族战线到北境灾民世界的过渡。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n氛围不能压过剧情，重点是救援、躲追兵、辨认印记和骨笛求救；北境角色要有迁徙和救援痕迹。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建鸣骨岭北境过渡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙外风蚀骨雪岭，半埋骨骸、骨孔、雪坑、枯草冻土、冰蓝火、冻裂旧兵器和迁徙痕迹在暴雪中形成从人族战线到北境灾民世界的过渡。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n氛围不能压过剧情，重点是救援、躲追兵、辨认印记和骨笛求救；北境角色要有迁徙和救援痕迹。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建鸣骨岭北境过渡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙外风蚀骨雪岭，半埋骨骸、骨孔、雪坑、枯草冻土、冰蓝火、冻裂旧兵器和迁徙痕迹在暴雪中形成从人族战线到北境灾民世界的过渡。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n氛围不能压过剧情，重点是救援、躲追兵、辨认印记和骨笛求救；北境角色要有迁徙和救援痕迹。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L009",
+      "asset_id": "L009",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l009m.png",
       "production_metadata": {
         "asset_id": "L009",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l009m.png",
+        "output_file": "l009m.png",
         "prompt_id": "PROMPT_L009",
         "source_refs": [
           "bible/scenes.md#寒鸦堡",
@@ -1134,7 +1520,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l009m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建寒鸦堡军府档案主场景卡，作为全剧共享视觉资产参考。",
@@ -1143,15 +1530,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "潜入路线限制在膜廊、审讯厅、档案墙和堡门，材质比清明院更军事、更寒冷。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建寒鸦堡军府档案主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙最高军事堡垒，旧人族黑石堡墙被肃明甲军府覆盖，虫膜走廊、审讯厅、虫蜡档案墙、堡门和旧档暗格叠在一起，表现人族堡垒被占领而非纯虫巢。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n潜入路线限制在膜廊、审讯厅、档案墙和堡门，材质比清明院更军事、更寒冷。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建寒鸦堡军府档案主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙最高军事堡垒，旧人族黑石堡墙被肃明甲军府覆盖，虫膜走廊、审讯厅、虫蜡档案墙、堡门和旧档暗格叠在一起，表现人族堡垒被占领而非纯虫巢。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n潜入路线限制在膜廊、审讯厅、档案墙和堡门，材质比清明院更军事、更寒冷。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建寒鸦堡军府档案主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙最高军事堡垒，旧人族黑石堡墙被肃明甲军府覆盖，虫膜走廊、审讯厅、虫蜡档案墙、堡门和旧档暗格叠在一起，表现人族堡垒被占领而非纯虫巢。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n潜入路线限制在膜廊、审讯厅、档案墙和堡门，材质比清明院更军事、更寒冷。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L010",
+      "asset_id": "L010",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l010m.png",
       "production_metadata": {
         "asset_id": "L010",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l010m.png",
+        "output_file": "l010m.png",
         "prompt_id": "PROMPT_L010",
         "source_refs": [
           "bible/scenes.md#月下盟书旧驿",
@@ -1170,7 +1567,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l010m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建月下盟书旧驿主场景卡，作为全剧共享视觉资产参考。",
@@ -1179,15 +1577,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "盟书必须有多族印记和旧债感，不能视觉上只像皇族圣物或纯洁圣殿。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建月下盟书旧驿主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙背后旧驿群核心，地下星图厅、月白石台、多族印记墙、残缺盟书、日月双印裂纹和断续金赤路线共同说明这里不是皇座，而是多族共同守边的残缺承诺现场。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n盟书必须有多族印记和旧债感，不能视觉上只像皇族圣物或纯洁圣殿。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建月下盟书旧驿主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙背后旧驿群核心，地下星图厅、月白石台、多族印记墙、残缺盟书、日月双印裂纹和断续金赤路线共同说明这里不是皇座，而是多族共同守边的残缺承诺现场。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n盟书必须有多族印记和旧债感，不能视觉上只像皇族圣物或纯洁圣殿。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建月下盟书旧驿主场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n边墙背后旧驿群核心，地下星图厅、月白石台、多族印记墙、残缺盟书、日月双印裂纹和断续金赤路线共同说明这里不是皇座，而是多族共同守边的残缺承诺现场。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n盟书必须有多族印记和旧债感，不能视觉上只像皇族圣物或纯洁圣殿。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L011",
+      "asset_id": "L011",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l011m.png",
       "production_metadata": {
         "asset_id": "L011",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l011m.png",
+        "output_file": "l011m.png",
         "prompt_id": "PROMPT_L011",
         "source_refs": [
           "bible/scenes.md#坍塌烽燧",
@@ -1207,7 +1615,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l011m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建坍塌烽燧季终逃亡场景卡，作为全剧共享视觉资产参考。",
@@ -1216,15 +1625,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "坍塌用断阶、落石、抓手和雪坡局部表达，不能依赖大型建筑毁灭全景。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建坍塌烽燧季终逃亡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧帝国烽燧残塔与雪坡逃亡线，断塔、裂阶、落石、尘雾、雪泥、金赤残纹余烬、磨损朱赤旗布和盟书残页形成先救活人再带走残缺证据的价值选择空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n坍塌用断阶、落石、抓手和雪坡局部表达，不能依赖大型建筑毁灭全景。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建坍塌烽燧季终逃亡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧帝国烽燧残塔与雪坡逃亡线，断塔、裂阶、落石、尘雾、雪泥、金赤残纹余烬、磨损朱赤旗布和盟书残页形成先救活人再带走残缺证据的价值选择空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n坍塌用断阶、落石、抓手和雪坡局部表达，不能依赖大型建筑毁灭全景。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建坍塌烽燧季终逃亡场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧帝国烽燧残塔与雪坡逃亡线，断塔、裂阶、落石、尘雾、雪泥、金赤残纹余烬、磨损朱赤旗布和盟书残页形成先救活人再带走残缺证据的价值选择空间。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n坍塌用断阶、落石、抓手和雪坡局部表达，不能依赖大型建筑毁灭全景。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L012",
+      "asset_id": "L012",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l012m.png",
       "production_metadata": {
         "asset_id": "L012",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l012m.png",
+        "output_file": "l012m.png",
         "prompt_id": "PROMPT_L012",
         "source_refs": [
           "bible/geography.md#肃明首都：白曜城",
@@ -1242,7 +1661,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l012m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建白曜城与清明中枢伏笔场景卡，作为全剧共享视觉资产参考。",
@@ -1251,15 +1671,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "第一季只作远景和制度来源伏笔，不展开宫廷线，不另设冲突的虫族首都。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建白曜城与清明中枢伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河下游北岸三级白石台地上的肃明首都远景，旧昭明白石古都被虫蜡白墙、黑日徽记、蜂巢官署和清明院本部覆盖，裂缝中仍露出朱赤、宝蓝、月白和磨损金旧日月纹。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作远景和制度来源伏笔，不展开宫廷线，不另设冲突的虫族首都。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建白曜城与清明中枢伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河下游北岸三级白石台地上的肃明首都远景，旧昭明白石古都被虫蜡白墙、黑日徽记、蜂巢官署和清明院本部覆盖，裂缝中仍露出朱赤、宝蓝、月白和磨损金旧日月纹。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作远景和制度来源伏笔，不展开宫廷线，不另设冲突的虫族首都。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建白曜城与清明中枢伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n金河下游北岸三级白石台地上的肃明首都远景，旧昭明白石古都被虫蜡白墙、黑日徽记、蜂巢官署和清明院本部覆盖，裂缝中仍露出朱赤、宝蓝、月白和磨损金旧日月纹。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作远景和制度来源伏笔，不展开宫廷线，不另设冲突的虫族首都。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L013",
+      "asset_id": "L013",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l013m.png",
       "production_metadata": {
         "asset_id": "L013",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l013m.png",
+        "output_file": "l013m.png",
         "prompt_id": "PROMPT_L013",
         "source_refs": [
           "bible/scenes.md#东海断航相关空间",
@@ -1278,7 +1708,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l013m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建东海断航伏笔场景卡，作为全剧共享视觉资产参考。",
@@ -1287,15 +1718,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "第一季只作为残页、地名、星图和灯塔残光，不提前改成海上主线。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建东海断航伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东海岛链与断航伤口伏笔，海雾、碎帆、盐蚀木桩、残灯塔、浅滩龙骨、潮洞和被焚毁的龙船船坞残址形成失去港籍与航权的旧港遗民世界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作为残页、地名、星图和灯塔残光，不提前改成海上主线。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建东海断航伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东海岛链与断航伤口伏笔，海雾、碎帆、盐蚀木桩、残灯塔、浅滩龙骨、潮洞和被焚毁的龙船船坞残址形成失去港籍与航权的旧港遗民世界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作为残页、地名、星图和灯塔残光，不提前改成海上主线。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建东海断航伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东海岛链与断航伤口伏笔，海雾、碎帆、盐蚀木桩、残灯塔、浅滩龙骨、潮洞和被焚毁的龙船船坞残址形成失去港籍与航权的旧港遗民世界。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只作为残页、地名、星图和灯塔残光，不提前改成海上主线。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L014",
+      "asset_id": "L014",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l014m.png",
       "production_metadata": {
         "asset_id": "L014",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l014m.png",
+        "output_file": "l014m.png",
         "prompt_id": "PROMPT_L014",
         "source_refs": [
           "bible/geography.md#南部丛林地",
@@ -1314,7 +1755,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l014m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建南林南缘红线伏笔场景卡，作为全剧共享视觉资产参考。",
@@ -1323,15 +1765,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "第一季主要作为晏南枝与顾怀章价值来源，不展开南林政治；湿热、旧歌和红线要与北境雪线形成强对比。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建南林南缘红线伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n南部丛林地伏笔，雨林、藤桥、湿石祭台、月苔林、红线木牌、防潮卷轴筒、旧歌火圈和潮湿山谷呈现南缘遗民与精灵庇护边界的紧张互助。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季主要作为晏南枝与顾怀章价值来源，不展开南林政治；湿热、旧歌和红线要与北境雪线形成强对比。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建南林南缘红线伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n南部丛林地伏笔，雨林、藤桥、湿石祭台、月苔林、红线木牌、防潮卷轴筒、旧歌火圈和潮湿山谷呈现南缘遗民与精灵庇护边界的紧张互助。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季主要作为晏南枝与顾怀章价值来源，不展开南林政治；湿热、旧歌和红线要与北境雪线形成强对比。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建南林南缘红线伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n南部丛林地伏笔，雨林、藤桥、湿石祭台、月苔林、红线木牌、防潮卷轴筒、旧歌火圈和潮湿山谷呈现南缘遗民与精灵庇护边界的紧张互助。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季主要作为晏南枝与顾怀章价值来源，不展开南林政治；湿热、旧歌和红线要与北境雪线形成强对比。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L015",
+      "asset_id": "L015",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l015m.png",
       "production_metadata": {
         "asset_id": "L015",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l015m.png",
+        "output_file": "l015m.png",
         "prompt_id": "PROMPT_L015",
         "source_refs": [
           "bible/geography.md#西部高原地",
@@ -1350,7 +1802,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l015m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建西部高原矮人旧盟伏笔场景卡，作为全剧共享视觉资产参考。",
@@ -1359,15 +1812,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "第一季只保留金河源头、矮人工程师参与盟书和火器断代事实，不提前展开西部主线。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建西部高原矮人旧盟伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n西部高原伏笔，赤砧山脉、星铁矿脉、冰蚀峡谷、山腹熔炉、契约石门、禁枪炉和高原风门关在干冷强风中显示矮人工程和被灭械令切断的旧军工传统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只保留金河源头、矮人工程师参与盟书和火器断代事实，不提前展开西部主线。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建西部高原矮人旧盟伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n西部高原伏笔，赤砧山脉、星铁矿脉、冰蚀峡谷、山腹熔炉、契约石门、禁枪炉和高原风门关在干冷强风中显示矮人工程和被灭械令切断的旧军工传统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只保留金河源头、矮人工程师参与盟书和火器断代事实，不提前展开西部主线。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建西部高原矮人旧盟伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n西部高原伏笔，赤砧山脉、星铁矿脉、冰蚀峡谷、山腹熔炉、契约石门、禁枪炉和高原风门关在干冷强风中显示矮人工程和被灭械令切断的旧军工传统。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季只保留金河源头、矮人工程师参与盟书和火器断代事实，不提前展开西部主线。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_L016",
+      "asset_id": "L016",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l016m.png",
       "production_metadata": {
         "asset_id": "L016",
         "asset_type": "location",
         "asset_subtype": "location_master_scene_card",
-        "output_file": "assets/locations/l016m.png",
+        "output_file": "l016m.png",
         "prompt_id": "PROMPT_L016",
         "source_refs": [
           "bible/geography.md#东北沼泽",
@@ -1386,7 +1849,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/locations/l016m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建东北沼泽虫族起源伏笔场景卡，作为全剧共享视觉资产参考。",
@@ -1395,15 +1859,25 @@
         "composition_motion": "9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。",
         "visible_continuity": "第一季不进入此地，只可通过旧档和传闻暗示；不能变成普通魔物沼泽。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建东北沼泽虫族起源伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东北沼泽伏笔，黑泥、芦苇、冷雾、半沉旧堡、湿木栈道、虫巢黑台、旧流放石牢和早期虫族文字残迹构成肃明文明正统叙事背后的不洁起源。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季不进入此地，只可通过旧档和传闻暗示；不能变成普通魔物沼泽。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建东北沼泽虫族起源伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东北沼泽伏笔，黑泥、芦苇、冷雾、半沉旧堡、湿木栈道、虫巢黑台、旧流放石牢和早期虫族文字残迹构成肃明文明正统叙事背后的不洁起源。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季不进入此地，只可通过旧档和传闻暗示；不能变成普通魔物沼泽。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建东北沼泽虫族起源伏笔场景卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n东北沼泽伏笔，黑泥、芦苇、冷雾、半沉旧堡、湿木栈道、虫巢黑台、旧流放石牢和早期虫族文字残迹构成肃明文明正统叙事背后的不洁起源。\n9:16场景设定板，主视角展示入口、出口、行动区和摄影可读区，辅以材质近景、天气压力和人物尺度参照。\n第一季不进入此地，只可通过旧档和传闻暗示；不能变成普通魔物沼泽。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要空洞气氛图、纯奇观废墟、现代建筑感或改变既定地理关系。"
       }
     },
     {
       "prompt_id": "PROMPT_P001",
+      "asset_id": "P001",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p001m.png",
       "production_metadata": {
         "asset_id": "P001",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p001m.png",
+        "output_file": "p001m.png",
         "prompt_id": "PROMPT_P001",
         "source_refs": [
           "bible/characters.md#沈维桑",
@@ -1420,7 +1894,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p001m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建半枚日月驿令道具卡，作为全剧共享视觉资产参考。",
@@ -1429,15 +1904,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "它是路线和承诺锚点，不是万能钥匙或法器武器；必须残缺、手工磨损、尺寸可握。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建半枚日月驿令道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n半枚日月驿令道具板，磨损金属与旧白石粉尘附着，日月双印只剩半边，边缘有火后烟痕和长期携带磨痕，触碰石缝时仅有短促金赤残纹反光。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n它是路线和承诺锚点，不是万能钥匙或法器武器；必须残缺、手工磨损、尺寸可握。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建半枚日月驿令道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n半枚日月驿令道具板，磨损金属与旧白石粉尘附着，日月双印只剩半边，边缘有火后烟痕和长期携带磨痕，触碰石缝时仅有短促金赤残纹反光。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n它是路线和承诺锚点，不是万能钥匙或法器武器；必须残缺、手工磨损、尺寸可握。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建半枚日月驿令道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n半枚日月驿令道具板，磨损金属与旧白石粉尘附着，日月双印只剩半边，边缘有火后烟痕和长期携带磨痕，触碰石缝时仅有短促金赤残纹反光。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n它是路线和承诺锚点，不是万能钥匙或法器武器；必须残缺、手工磨损、尺寸可握。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P002",
+      "asset_id": "P002",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p002m.png",
       "production_metadata": {
         "asset_id": "P002",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p002m.png",
+        "output_file": "p002m.png",
         "prompt_id": "PROMPT_P002",
         "source_refs": [
           "bible/characters.md#晏南枝",
@@ -1455,7 +1940,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p002m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建日月血牒与月白玉片道具卡，作为全剧共享视觉资产参考。",
@@ -1464,15 +1950,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "只能在指定身份压力中暴露，不直接变成战斗能力；不能画成全新皇室神器。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建日月血牒与月白玉片道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n日月血牒残段与月白玉片道具板，油纸包裹、防潮红线、月白玉片边缘磨损，血牒不是完整圣物，纸面有缺口、潮痕和折痕，反光克制。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n只能在指定身份压力中暴露，不直接变成战斗能力；不能画成全新皇室神器。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建日月血牒与月白玉片道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n日月血牒残段与月白玉片道具板，油纸包裹、防潮红线、月白玉片边缘磨损，血牒不是完整圣物，纸面有缺口、潮痕和折痕，反光克制。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n只能在指定身份压力中暴露，不直接变成战斗能力；不能画成全新皇室神器。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建日月血牒与月白玉片道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n日月血牒残段与月白玉片道具板，油纸包裹、防潮红线、月白玉片边缘磨损，血牒不是完整圣物，纸面有缺口、潮痕和折痕，反光克制。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n只能在指定身份压力中暴露，不直接变成战斗能力；不能画成全新皇室神器。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P003",
+      "asset_id": "P003",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p003m.png",
       "production_metadata": {
         "asset_id": "P003",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p003m.png",
+        "output_file": "p003m.png",
         "prompt_id": "PROMPT_P003",
         "source_refs": [
           "bible/characters.md#白翳",
@@ -1490,7 +1986,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p003m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建清明白册制度道具卡，作为全剧共享视觉资产参考。",
@@ -1499,15 +1996,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "恐怖来自把活人写成条目，不靠血腥或怪物装饰；不要出现现代文字、水印或可读乱码。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建清明白册制度道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明白册制度道具板，骨白册页、冷灰夹板、蜡笔针、小印盒、黑日小牌和可擦写条目墨迹排列清楚，纸面洁净得近乎暴力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n恐怖来自把活人写成条目，不靠血腥或怪物装饰；不要出现现代文字、水印或可读乱码。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建清明白册制度道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明白册制度道具板，骨白册页、冷灰夹板、蜡笔针、小印盒、黑日小牌和可擦写条目墨迹排列清楚，纸面洁净得近乎暴力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n恐怖来自把活人写成条目，不靠血腥或怪物装饰；不要出现现代文字、水印或可读乱码。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建清明白册制度道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n清明白册制度道具板，骨白册页、冷灰夹板、蜡笔针、小印盒、黑日小牌和可擦写条目墨迹排列清楚，纸面洁净得近乎暴力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n恐怖来自把活人写成条目，不靠血腥或怪物装饰；不要出现现代文字、水印或可读乱码。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P004",
+      "asset_id": "P004",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p004m.png",
       "production_metadata": {
         "asset_id": "P004",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p004m.png",
+        "output_file": "p004m.png",
         "prompt_id": "PROMPT_P004",
         "source_refs": [
           "bible/characters.md#白翳",
@@ -1525,7 +2032,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p004m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建虫蜡针与清明香追踪道具卡，作为全剧共享视觉资产参考。",
@@ -1534,15 +2042,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "不能做成毒针奇观或现代医疗器械；香烟和气味牌是追踪制度的一部分。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建虫蜡针与清明香追踪道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫蜡针与清明香追踪道具板，细长冷白虫蜡针、洁净针盒、气味牌、虫蜡封条和淡白香烟形成肃明清查工具组，材质像骨白与蜡质之间。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能做成毒针奇观或现代医疗器械；香烟和气味牌是追踪制度的一部分。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建虫蜡针与清明香追踪道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫蜡针与清明香追踪道具板，细长冷白虫蜡针、洁净针盒、气味牌、虫蜡封条和淡白香烟形成肃明清查工具组，材质像骨白与蜡质之间。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能做成毒针奇观或现代医疗器械；香烟和气味牌是追踪制度的一部分。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建虫蜡针与清明香追踪道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n虫蜡针与清明香追踪道具板，细长冷白虫蜡针、洁净针盒、气味牌、虫蜡封条和淡白香烟形成肃明清查工具组，材质像骨白与蜡质之间。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能做成毒针奇观或现代医疗器械；香烟和气味牌是追踪制度的一部分。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P005",
+      "asset_id": "P005",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p005m.png",
       "production_metadata": {
         "asset_id": "P005",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p005m.png",
+        "output_file": "p005m.png",
         "prompt_id": "PROMPT_P005",
         "source_refs": [
           "bible/characters.md#沈照眠",
@@ -1560,7 +2078,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p005m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建沈照眠草药袋与烧焦发绳道具卡，作为全剧共享视觉资产参考。",
@@ -1569,15 +2088,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "这是亲情和旧暗语锚点，必须脆弱、真实、儿童尺度；不能变成神秘法器。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈照眠草药袋与烧焦发绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n儿童草药袋与烧焦发绳道具板，小草药袋沾草药灰，烧焦发绳有火场边缘卷曲，简单布鞋和浅灰布料碎片显示村中孩子身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是亲情和旧暗语锚点，必须脆弱、真实、儿童尺度；不能变成神秘法器。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈照眠草药袋与烧焦发绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n儿童草药袋与烧焦发绳道具板，小草药袋沾草药灰，烧焦发绳有火场边缘卷曲，简单布鞋和浅灰布料碎片显示村中孩子身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是亲情和旧暗语锚点，必须脆弱、真实、儿童尺度；不能变成神秘法器。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈照眠草药袋与烧焦发绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n儿童草药袋与烧焦发绳道具板，小草药袋沾草药灰，烧焦发绳有火场边缘卷曲，简单布鞋和浅灰布料碎片显示村中孩子身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是亲情和旧暗语锚点，必须脆弱、真实、儿童尺度；不能变成神秘法器。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P006",
+      "asset_id": "P006",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p006m.png",
       "production_metadata": {
         "asset_id": "P006",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p006m.png",
+        "output_file": "p006m.png",
         "prompt_id": "PROMPT_P006",
         "source_refs": [
           "bible/characters.md#鹿弥",
@@ -1595,7 +2124,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p006m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建鹿弥骨笛与血盐袋道具卡，作为全剧共享视觉资产参考。",
@@ -1604,15 +2134,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "骨笛用于安抚与校准，不是高魔法乐器；血盐和药草必须体现迁徙和救援压力。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建鹿弥骨笛与血盐袋道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n鹿族萨满骨笛、血盐袋和雪地药草袋道具板，骨笛有长期吹奏磨痕，血盐袋用兽皮和骨木绳结缝制，雪地药草袋、青玉扣与极光绿小珠共同显示寻灾源派身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n骨笛用于安抚与校准，不是高魔法乐器；血盐和药草必须体现迁徙和救援压力。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建鹿弥骨笛与血盐袋道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n鹿族萨满骨笛、血盐袋和雪地药草袋道具板，骨笛有长期吹奏磨痕，血盐袋用兽皮和骨木绳结缝制，雪地药草袋、青玉扣与极光绿小珠共同显示寻灾源派身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n骨笛用于安抚与校准，不是高魔法乐器；血盐和药草必须体现迁徙和救援压力。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建鹿弥骨笛与血盐袋道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n鹿族萨满骨笛、血盐袋和雪地药草袋道具板，骨笛有长期吹奏磨痕，血盐袋用兽皮和骨木绳结缝制，雪地药草袋、青玉扣与极光绿小珠共同显示寻灾源派身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n骨笛用于安抚与校准，不是高魔法乐器；血盐和药草必须体现迁徙和救援压力。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P007",
+      "asset_id": "P007",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p007m.png",
       "production_metadata": {
         "asset_id": "P007",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p007m.png",
+        "output_file": "p007m.png",
         "prompt_id": "PROMPT_P007",
         "source_refs": [
           "bible/world.md#全剧故事主题",
@@ -1630,7 +2170,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p007m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建月下盟书残页与多族印记道具卡，作为全剧共享视觉资产参考。",
@@ -1639,15 +2180,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "盟书不是皇族圣物，而是共同守边的残缺承诺；精确印记需要线稿或透明图层后合成，不能让模型随意发明文字。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建月下盟书残页与多族印记道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n月下盟书残页和多族印记道具板，破损石拓或残页上同时出现日月双印裂纹、人族边军、北境守誓派、精灵见证、矮人工程和海陆盟约的抽象印记痕迹，纸石材质残缺、有旧债感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n盟书不是皇族圣物，而是共同守边的残缺承诺；精确印记需要线稿或透明图层后合成，不能让模型随意发明文字。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建月下盟书残页与多族印记道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n月下盟书残页和多族印记道具板，破损石拓或残页上同时出现日月双印裂纹、人族边军、北境守誓派、精灵见证、矮人工程和海陆盟约的抽象印记痕迹，纸石材质残缺、有旧债感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n盟书不是皇族圣物，而是共同守边的残缺承诺；精确印记需要线稿或透明图层后合成，不能让模型随意发明文字。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建月下盟书残页与多族印记道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n月下盟书残页和多族印记道具板，破损石拓或残页上同时出现日月双印裂纹、人族边军、北境守誓派、精灵见证、矮人工程和海陆盟约的抽象印记痕迹，纸石材质残缺、有旧债感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n盟书不是皇族圣物，而是共同守边的残缺承诺；精确印记需要线稿或透明图层后合成，不能让模型随意发明文字。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P008",
+      "asset_id": "P008",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p008m.png",
       "production_metadata": {
         "asset_id": "P008",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p008m.png",
+        "output_file": "p008m.png",
         "prompt_id": "PROMPT_P008",
         "source_refs": [
           "bible/scenes.md#金河粮磨区与渡河蒸汽船",
@@ -1666,7 +2217,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p008m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建粮牌封蜡与押车绳道具卡，作为全剧共享视觉资产参考。",
@@ -1675,15 +2227,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "不能像现代票据或干净道具；要体现粮仓、渡口、边墙粮门之间的制度连续。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建粮牌封蜡与押车绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n粮牌、虫蜡封条、押车绳、破粮斗、空布袋和旧铁秤钩道具板，材质有湿木、河泥、暗粮牌黄和冷蜡痕，显示被征粮榨干但仍有生产结构的生活压力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能像现代票据或干净道具；要体现粮仓、渡口、边墙粮门之间的制度连续。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建粮牌封蜡与押车绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n粮牌、虫蜡封条、押车绳、破粮斗、空布袋和旧铁秤钩道具板，材质有湿木、河泥、暗粮牌黄和冷蜡痕，显示被征粮榨干但仍有生产结构的生活压力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能像现代票据或干净道具；要体现粮仓、渡口、边墙粮门之间的制度连续。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建粮牌封蜡与押车绳道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n粮牌、虫蜡封条、押车绳、破粮斗、空布袋和旧铁秤钩道具板，材质有湿木、河泥、暗粮牌黄和冷蜡痕，显示被征粮榨干但仍有生产结构的生活压力。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n不能像现代票据或干净道具；要体现粮仓、渡口、边墙粮门之间的制度连续。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P009",
+      "asset_id": "P009",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p009m.png",
       "production_metadata": {
         "asset_id": "P009",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p009m.png",
+        "output_file": "p009m.png",
         "prompt_id": "PROMPT_P009",
         "source_refs": [
           "bible/characters.md#沈季衡",
@@ -1701,7 +2263,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p009m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建旧驿残图与测绘符号道具卡，作为全剧共享视觉资产参考。",
@@ -1710,15 +2273,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "残图指向月下路不能交给任何皇旗；不能完整得像藏宝图，也不能显示现代地图比例尺。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建旧驿残图与测绘符号道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧驿残图、旧绳结和测绘符号道具板，泛黄纸面、石灰封痕、路线包磨损、方位小记号和断续金赤路线痕显示旧驿测绘者的风尘感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n残图指向月下路不能交给任何皇旗；不能完整得像藏宝图，也不能显示现代地图比例尺。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建旧驿残图与测绘符号道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧驿残图、旧绳结和测绘符号道具板，泛黄纸面、石灰封痕、路线包磨损、方位小记号和断续金赤路线痕显示旧驿测绘者的风尘感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n残图指向月下路不能交给任何皇旗；不能完整得像藏宝图，也不能显示现代地图比例尺。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建旧驿残图与测绘符号道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n旧驿残图、旧绳结和测绘符号道具板，泛黄纸面、石灰封痕、路线包磨损、方位小记号和断续金赤路线痕显示旧驿测绘者的风尘感。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n残图指向月下路不能交给任何皇旗；不能完整得像藏宝图，也不能显示现代地图比例尺。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P010",
+      "asset_id": "P010",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p010m.png",
       "production_metadata": {
         "asset_id": "P010",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p010m.png",
+        "output_file": "p010m.png",
         "prompt_id": "PROMPT_P010",
         "source_refs": [
           "bible/scenes.md#坍塌烽燧",
@@ -1735,7 +2308,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p010m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建朱赤旗布与日月纹道具卡，作为全剧共享视觉资产参考。",
@@ -1744,15 +2318,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "旗布不是复国胜利旗帜，而是在雪泥中被质疑又被重释的旧符号；精确纹样需后合成控制。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建朱赤旗布与日月纹道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n磨损朱赤旗布与日月纹道具板，旗布边缘破损、沾雪泥与烟尘，日月纹残缺但仍可读，材质应像长期逃亡中保存的旧帝国残片。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n旗布不是复国胜利旗帜，而是在雪泥中被质疑又被重释的旧符号；精确纹样需后合成控制。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建朱赤旗布与日月纹道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n磨损朱赤旗布与日月纹道具板，旗布边缘破损、沾雪泥与烟尘，日月纹残缺但仍可读，材质应像长期逃亡中保存的旧帝国残片。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n旗布不是复国胜利旗帜，而是在雪泥中被质疑又被重释的旧符号；精确纹样需后合成控制。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建朱赤旗布与日月纹道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n磨损朱赤旗布与日月纹道具板，旗布边缘破损、沾雪泥与烟尘，日月纹残缺但仍可读，材质应像长期逃亡中保存的旧帝国残片。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n旗布不是复国胜利旗帜，而是在雪泥中被质疑又被重释的旧符号；精确纹样需后合成控制。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P011",
+      "asset_id": "P011",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p011m.png",
       "production_metadata": {
         "asset_id": "P011",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p011m.png",
+        "output_file": "p011m.png",
         "prompt_id": "PROMPT_P011",
         "source_refs": [
           "bible/characters.md#北境攻城兵种",
@@ -1772,7 +2356,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p011m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建北境骨铁攻城器具道具卡，作为全剧共享视觉资产参考。",
@@ -1781,15 +2366,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "武器和护具必须服务攻城功能和迁徙生存，不要形成新动物 crest、现代 logo 或游戏装备华丽感。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建北境骨铁攻城器具道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境骨铁攻城器具道具板，骨铁盾、破门斧、骨片护肩、兽皮绳、血盐袋、骨木誓结和雪泥绑腿材料并列，表面有实用修补痕和迁徙磨损。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n武器和护具必须服务攻城功能和迁徙生存，不要形成新动物 crest、现代 logo 或游戏装备华丽感。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建北境骨铁攻城器具道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境骨铁攻城器具道具板，骨铁盾、破门斧、骨片护肩、兽皮绳、血盐袋、骨木誓结和雪泥绑腿材料并列，表面有实用修补痕和迁徙磨损。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n武器和护具必须服务攻城功能和迁徙生存，不要形成新动物 crest、现代 logo 或游戏装备华丽感。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建北境骨铁攻城器具道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境骨铁攻城器具道具板，骨铁盾、破门斧、骨片护肩、兽皮绳、血盐袋、骨木誓结和雪泥绑腿材料并列，表面有实用修补痕和迁徙磨损。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n武器和护具必须服务攻城功能和迁徙生存，不要形成新动物 crest、现代 logo 或游戏装备华丽感。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P012",
+      "asset_id": "P012",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p012m.png",
       "production_metadata": {
         "asset_id": "P012",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p012m.png",
+        "output_file": "p012m.png",
         "prompt_id": "PROMPT_P012",
         "source_refs": [
           "bible/characters.md#陆青砾",
@@ -1807,7 +2402,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p012m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建墙下黑市通行牌与碎陶护符道具卡，作为全剧共享视觉资产参考。",
@@ -1816,15 +2412,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "道具要像能藏、能换、能割断标记绳的生存物，不是冒险游戏钥匙。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建墙下黑市通行牌与碎陶护符道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n墙下黑市通行牌、碎陶护符、隐藏口袋挂点和小额粮牌道具板，黑木、碎陶、灰蓝布料、陶土线头和手汗磨痕显示无籍混裔的交易身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n道具要像能藏、能换、能割断标记绳的生存物，不是冒险游戏钥匙。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建墙下黑市通行牌与碎陶护符道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n墙下黑市通行牌、碎陶护符、隐藏口袋挂点和小额粮牌道具板，黑木、碎陶、灰蓝布料、陶土线头和手汗磨痕显示无籍混裔的交易身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n道具要像能藏、能换、能割断标记绳的生存物，不是冒险游戏钥匙。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建墙下黑市通行牌与碎陶护符道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n墙下黑市通行牌、碎陶护符、隐藏口袋挂点和小额粮牌道具板，黑木、碎陶、灰蓝布料、陶土线头和手汗磨痕显示无籍混裔的交易身份。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n道具要像能藏、能换、能割断标记绳的生存物，不是冒险游戏钥匙。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_P013",
+      "asset_id": "P013",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p013m.png",
       "production_metadata": {
         "asset_id": "P013",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p013m.png",
+        "output_file": "p013m.png",
         "prompt_id": "PROMPT_P013",
         "source_refs": [
           "bible/characters.md#基层官吏、奴兵与虫族士兵",
@@ -1842,7 +2448,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p013m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。",
@@ -1851,15 +2458,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建肃明黑日白翅徽记系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明黑日与白翅覆盖纹徽记系统板，小型黑日牌、白翅覆黑日军阶牌、黑日烙牌和官署检查点符号以线稿和材质样本展示，黑、骨白、冷金和虫蜡白层次清楚。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n这是精确符号系统，应先做线控或透明图层，不能让生成模型随意发明文字、印章或现代标志。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P014",
+      "asset_id": "P014",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p014m.png",
       "production_metadata": {
         "asset_id": "P014",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p014m.png",
+        "output_file": "p014m.png",
         "prompt_id": "PROMPT_P014",
         "source_refs": [
           "bible/world.md#昭明帝国",
@@ -1878,7 +2495,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p014m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建昭明日月双印系统卡，作为全剧共享视觉资产参考。",
@@ -1887,15 +2505,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建昭明日月双印系统卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n昭明日月双印系统板，朱赤、宝蓝、月白、磨损金和裂纹白石构成旧帝国残存符号，包含驿令、石刻、旗布、血牒和盟书上的不同磨损状态。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n华丽必须带裂纹和旧债感，不得纯洁圣殿化；精确符号建议透明图层后合成。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_P015",
+      "asset_id": "P015",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p015m.png",
       "production_metadata": {
         "asset_id": "P015",
         "asset_type": "prop",
         "asset_subtype": "prop_master_card",
-        "output_file": "assets/props/p015m.png",
+        "output_file": "p015m.png",
         "prompt_id": "PROMPT_P015",
         "source_refs": [
           "bible/characters.md#薛临墙",
@@ -1914,7 +2542,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/props/p015m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建灰墙军旧甲片与骨哨道具卡，作为全剧共享视觉资产参考。",
@@ -1923,15 +2552,25 @@
         "composition_motion": "9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。",
         "visible_continuity": "表现军户活过冬天的现实主义，不要英雄化新甲或干净军装。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建灰墙军旧甲片与骨哨道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n灰墙军旧甲片、骨哨、裂盾、缝补甲绳和军户木牌道具板，旧铁、黑石灰、干血暗红和雪线磨损叠在一起，甲片内侧可见严重磨损日月压痕。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n表现军户活过冬天的现实主义，不要英雄化新甲或干净军装。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建灰墙军旧甲片与骨哨道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n灰墙军旧甲片、骨哨、裂盾、缝补甲绳和军户木牌道具板，旧铁、黑石灰、干血暗红和雪线磨损叠在一起，甲片内侧可见严重磨损日月压痕。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n表现军户活过冬天的现实主义，不要英雄化新甲或干净军装。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建灰墙军旧甲片与骨哨道具卡，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n灰墙军旧甲片、骨哨、裂盾、缝补甲绳和军户木牌道具板，旧铁、黑石灰、干血暗红和雪线磨损叠在一起，甲片内侧可见严重磨损日月压痕。\n9:16道具设定板，正视、侧视、手持尺度、材质近景和磨损痕迹并列，精确符号只作为线稿或占位参考。\n表现军户活过冬天的现实主义，不要英雄化新甲或干净军装。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K001",
+      "asset_id": "K001",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k001m.png",
       "production_metadata": {
         "asset_id": "K001",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k001m.png",
+        "output_file": "k001m.png",
         "prompt_id": "PROMPT_K001",
         "source_refs": [
           "bible/characters.md#沈维桑",
@@ -1950,7 +2589,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k001m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建沈维桑分季服装状态板，作为全剧共享视觉资产参考。",
@@ -1959,15 +2599,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈维桑分季服装状态板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈维桑服装状态板，残阳坳猎衣、火后焦黑衣角、旧驿逃亡层、边墙灰麻披风、旧皮肩护和雪线绑腿并列，左肩旧伤导致的穿戴与动作限制可见。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈维桑分季服装状态板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈维桑服装状态板，残阳坳猎衣、火后焦黑衣角、旧驿逃亡层、边墙灰麻披风、旧皮肩护和雪线绑腿并列，左肩旧伤导致的穿戴与动作限制可见。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈维桑分季服装状态板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈维桑服装状态板，残阳坳猎衣、火后焦黑衣角、旧驿逃亡层、边墙灰麻披风、旧皮肩护和雪线绑腿并列，左肩旧伤导致的穿戴与动作限制可见。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n升级只能来自逃亡与边墙环境，不得变成军官甲或英雄华服。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K002",
+      "asset_id": "K002",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k002m.png",
       "production_metadata": {
         "asset_id": "K002",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k002m.png",
+        "output_file": "k002m.png",
         "prompt_id": "PROMPT_K002",
         "source_refs": [
           "bible/characters.md#晏南枝",
@@ -1985,7 +2635,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k002m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建晏南枝流亡与身份揭示服装板，作为全剧共享视觉资产参考。",
@@ -1994,15 +2645,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建晏南枝流亡与身份揭示服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n晏南枝服装状态板，遮蔽性的雾紫或冷灰流亡外袍、深墨蓝内层、红线束发、藏匿月白玉片与回忆或身份揭示中的朱赤宝蓝月白旧帝国正装并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建晏南枝流亡与身份揭示服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n晏南枝服装状态板，遮蔽性的雾紫或冷灰流亡外袍、深墨蓝内层、红线束发、藏匿月白玉片与回忆或身份揭示中的朱赤宝蓝月白旧帝国正装并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建晏南枝流亡与身份揭示服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n晏南枝服装状态板，遮蔽性的雾紫或冷灰流亡外袍、深墨蓝内层、红线束发、藏匿月白玉片与回忆或身份揭示中的朱赤宝蓝月白旧帝国正装并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n流亡装越压低越显眼，轮廓干净修长贵气；正装只用于回忆或身份揭示，不能逃亡中外露。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K003",
+      "asset_id": "K003",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k003m.png",
       "production_metadata": {
         "asset_id": "K003",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k003m.png",
+        "output_file": "k003m.png",
         "prompt_id": "PROMPT_K003",
         "source_refs": [
           "bible/characters.md#沈照眠",
@@ -2020,7 +2681,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k003m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建沈照眠村中与清明院服装板，作为全剧共享视觉资产参考。",
@@ -2029,15 +2691,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建沈照眠村中与清明院服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈照眠双状态服装板，村中浅灰短襦、草药绿小围裙、简单布鞋和烧焦发绳，与清明院干净白色儿童袍、虫蜡识别环和束直动作并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建沈照眠村中与清明院服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈照眠双状态服装板，村中浅灰短襦、草药绿小围裙、简单布鞋和烧焦发绳，与清明院干净白色儿童袍、虫蜡识别环和束直动作并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建沈照眠村中与清明院服装板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n沈照眠双状态服装板，村中浅灰短襦、草药绿小围裙、简单布鞋和烧焦发绳，与清明院干净白色儿童袍、虫蜡识别环和束直动作并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n白袍状态必须让孩子体量仍然脆弱，不能抹掉发绳或草药袋锚点。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K004",
+      "asset_id": "K004",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k004m.png",
       "production_metadata": {
         "asset_id": "K004",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k004m.png",
+        "output_file": "k004m.png",
         "prompt_id": "PROMPT_K004",
         "source_refs": [
           "bible/characters.md#肃明制度化头部规则",
@@ -2056,7 +2728,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k004m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建肃明清明院服制层级板，作为全剧共享视觉资产参考。",
@@ -2065,15 +2738,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建肃明清明院服制层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和黑日牌并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建肃明清明院服制层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和黑日牌并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建肃明清明院服制层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n肃明清明院服制层级板，白翳高筒官帽、基层虫吏较低高账吏帽、奴兵剃除或脱落头皮与低位金钱马尾、骨白腕绑、虫蜡白官袍、蜡灰青短军袍和黑日牌并列。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n必须区分虫须触须束和奴兵金钱马尾，不能让所有虫族都像白翳或都像怪物。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K005",
+      "asset_id": "K005",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k005m.png",
       "production_metadata": {
         "asset_id": "K005",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k005m.png",
+        "output_file": "k005m.png",
         "prompt_id": "PROMPT_K005",
         "source_refs": [
           "bible/characters.md#北境功能性角色层",
@@ -2093,7 +2776,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k005m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建北境诸族服装材质层级板，作为全剧共享视觉资产参考。",
@@ -2102,15 +2786,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建北境诸族服装材质层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境诸族服装材质层级板，冻裂兽皮内层、厚毛边披挂、骨片护肩、旧木护胸、兽皮绳、暗血誓绳、雪泥绑腿、血盐袋和骨笛绳按鹿族贵族、狼族斥候、白熊护卫、牛族盾兵和雪羽斥候分区展示。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建北境诸族服装材质层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境诸族服装材质层级板，冻裂兽皮内层、厚毛边披挂、骨片护肩、旧木护胸、兽皮绳、暗血誓绳、雪泥绑腿、血盐袋和骨笛绳按鹿族贵族、狼族斥候、白熊护卫、牛族盾兵和雪羽斥候分区展示。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建北境诸族服装材质层级板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n北境诸族服装材质层级板，冻裂兽皮内层、厚毛边披挂、骨片护肩、旧木护胸、兽皮绳、暗血誓绳、雪泥绑腿、血盐袋和骨笛绳按鹿族贵族、狼族斥候、白熊护卫、牛族盾兵和雪羽斥候分区展示。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n北境军服不是统一制式，必须体现族群、阶层、战场职能与迁徙消耗。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_K006",
+      "asset_id": "K006",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k006m.png",
       "production_metadata": {
         "asset_id": "K006",
         "asset_type": "costume",
         "asset_subtype": "style_reference",
-        "output_file": "assets/costumes/k006m.png",
+        "output_file": "k006m.png",
         "prompt_id": "PROMPT_K006",
         "source_refs": [
           "bible/visual-style.md#人族视觉边界",
@@ -2129,7 +2823,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/costumes/k006m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建人族地域群众服装差异板，作为全剧共享视觉资产参考。",
@@ -2138,15 +2833,25 @@
         "composition_motion": "9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。",
         "visible_continuity": "人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建人族地域群众服装差异板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n人族地域群众服装差异板，残阳坳山民、金河粮仓带平民、征粮逃荒家庭、旧都渡口遗民、边墙军户和南缘遗民并列，衣料、补丁位置、职业工具、地域痕迹、贫困程度和年龄性别差异清楚。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建人族地域群众服装差异板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n人族地域群众服装差异板，残阳坳山民、金河粮仓带平民、征粮逃荒家庭、旧都渡口遗民、边墙军户和南缘遗民并列，衣料、补丁位置、职业工具、地域痕迹、贫困程度和年龄性别差异清楚。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建人族地域群众服装差异板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗质感，竖屏短剧可读，真实身体重量与触感材料，低魔元素克制且贴近物体表面。\n人族地域群众服装差异板，残阳坳山民、金河粮仓带平民、征粮逃荒家庭、旧都渡口遗民、边墙军户和南缘遗民并列，衣料、补丁位置、职业工具、地域痕迹、贫困程度和年龄性别差异清楚。\n9:16服装材质板，正背面轮廓、分层穿法、局部纹理、磨损位置和状态变化并列，保持人物体量与身份差异。\n人族群众不能统一成破布流民、乞丐队伍或同款灰麻背景人；同场至少三类差异。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_F001",
+      "asset_id": "F001",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f001m.png",
       "production_metadata": {
         "asset_id": "F001",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f001m.png",
+        "output_file": "f001m.png",
         "prompt_id": "PROMPT_F001",
         "source_refs": [
           "bible/world.md#全剧风格锁定",
@@ -2164,7 +2869,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f001m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建全剧低魔东方史诗风格板，作为全剧共享视觉资产参考。",
@@ -2173,15 +2879,25 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "不能喜剧化、爽剧化、宫廷斗嘴化或高魔法化；所有动作有真实重心和代价。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建全剧低魔东方史诗风格板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n全剧风格板，超写实电影级低魔东方史诗质感，真实身体重量、旧文明断代、制度悬疑、护送逃亡和大陆战争阴影并列，材质触感来自旧木、虫蜡、黑石、雪、药草、纸灰和磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n不能喜剧化、爽剧化、宫廷斗嘴化或高魔法化；所有动作有真实重心和代价。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建全剧低魔东方史诗风格板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n全剧风格板，超写实电影级低魔东方史诗质感，真实身体重量、旧文明断代、制度悬疑、护送逃亡和大陆战争阴影并列，材质触感来自旧木、虫蜡、黑石、雪、药草、纸灰和磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n不能喜剧化、爽剧化、宫廷斗嘴化或高魔法化；所有动作有真实重心和代价。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建全剧低魔东方史诗风格板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n全剧风格板，超写实电影级低魔东方史诗质感，真实身体重量、旧文明断代、制度悬疑、护送逃亡和大陆战争阴影并列，材质触感来自旧木、虫蜡、黑石、雪、药草、纸灰和磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n不能喜剧化、爽剧化、宫廷斗嘴化或高魔法化；所有动作有真实重心和代价。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_F002",
+      "asset_id": "F002",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f002m.png",
       "production_metadata": {
         "asset_id": "F002",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f002m.png",
+        "output_file": "f002m.png",
         "prompt_id": "PROMPT_F002",
         "source_refs": [
           "bible/visual-style.md#色彩系统",
@@ -2201,7 +2917,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f002m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建第一季地域色彩路线板，作为全剧共享视觉资产参考。",
@@ -2210,15 +2927,25 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "全剧不能统一成单一灰冷逃亡色；每个地域有社会功能、材质和天气压力。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建第一季地域色彩路线板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n第一季地域色彩路线板，从残阳坳土褐麦金草药青，到金河深河青蒸汽白，再到灰烬书院焦黑纸灰、清明院虫蜡白骨白、边墙黑石雪白、北境枯草冻土和月下旧驿月白磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n全剧不能统一成单一灰冷逃亡色；每个地域有社会功能、材质和天气压力。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建第一季地域色彩路线板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n第一季地域色彩路线板，从残阳坳土褐麦金草药青，到金河深河青蒸汽白，再到灰烬书院焦黑纸灰、清明院虫蜡白骨白、边墙黑石雪白、北境枯草冻土和月下旧驿月白磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n全剧不能统一成单一灰冷逃亡色；每个地域有社会功能、材质和天气压力。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建第一季地域色彩路线板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n第一季地域色彩路线板，从残阳坳土褐麦金草药青，到金河深河青蒸汽白，再到灰烬书院焦黑纸灰、清明院虫蜡白骨白、边墙黑石雪白、北境枯草冻土和月下旧驿月白磨损金。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n全剧不能统一成单一灰冷逃亡色；每个地域有社会功能、材质和天气压力。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_F003",
+      "asset_id": "F003",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f003m.png",
       "production_metadata": {
         "asset_id": "F003",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f003m.png",
+        "output_file": "f003m.png",
         "prompt_id": "PROMPT_F003",
         "source_refs": [
           "bible/visual-style.md",
@@ -2238,7 +2965,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f003m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建核心材质触感板，作为全剧共享视觉资产参考。",
@@ -2247,15 +2975,25 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "避免塑料 CGI、过度干净、现代工业纹理或单纯滤镜化；材质必须服务剧情空间。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建核心材质触感板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n核心材质触感板，虫蜡白、旧白石、黑石雪线、湿木蒸汽、骨铁兽皮、纸灰裂铜、草药布料和磨损金以近景纹理与中景应用并列，强调可触摸的古代材料。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n避免塑料 CGI、过度干净、现代工业纹理或单纯滤镜化；材质必须服务剧情空间。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建核心材质触感板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n核心材质触感板，虫蜡白、旧白石、黑石雪线、湿木蒸汽、骨铁兽皮、纸灰裂铜、草药布料和磨损金以近景纹理与中景应用并列，强调可触摸的古代材料。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n避免塑料 CGI、过度干净、现代工业纹理或单纯滤镜化；材质必须服务剧情空间。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建核心材质触感板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n核心材质触感板，虫蜡白、旧白石、黑石雪线、湿木蒸汽、骨铁兽皮、纸灰裂铜、草药布料和磨损金以近景纹理与中景应用并列，强调可触摸的古代材料。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n避免塑料 CGI、过度干净、现代工业纹理或单纯滤镜化；材质必须服务剧情空间。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_F004",
+      "asset_id": "F004",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f004m.png",
       "production_metadata": {
         "asset_id": "F004",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f004m.png",
+        "output_file": "f004m.png",
         "prompt_id": "PROMPT_F004",
         "source_refs": [
           "bible/factions.md",
@@ -2273,7 +3011,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f004m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建势力符号与禁用标志板，作为全剧共享视觉资产参考。",
@@ -2282,15 +3021,25 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建势力符号与禁用标志板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n势力符号参考板，昭明日月、肃明黑日白翅、灰墙军旧甲压痕、北境骨木誓结和墙下无籍交易牌分别以材质样本、线稿占位和应用位置展示。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n精确符号必须线控或透明图层后合成；不得生成新北境单一动物徽章、现代 logo、水印或乱码文字。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。 不要让模型随意发明精确文字、徽章、印章、族徽或可读符号；精确形状需后续线控或透明图层后合成。"
       }
     },
     {
       "prompt_id": "PROMPT_F005",
+      "asset_id": "F005",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f005m.png",
       "production_metadata": {
         "asset_id": "F005",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f005m.png",
+        "output_file": "f005m.png",
         "prompt_id": "PROMPT_F005",
         "source_refs": [
           "production/series-video-rules.md",
@@ -2308,7 +3057,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f005m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建9比16竖屏构图与动作因果板，作为全剧共享视觉资产参考。",
@@ -2317,15 +3067,25 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建9比16竖屏构图与动作因果板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n9比16竖屏构图与动作因果板，展示门缝火光、粮牌手部、骨钟震动、巨兽角影、虫蜡针近景、断阶抓手和雪坡逃亡等短剧竖屏可读构图。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建9比16竖屏构图与动作因果板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n9比16竖屏构图与动作因果板，展示门缝火光、粮牌手部、骨钟震动、巨兽角影、虫蜡针近景、断阶抓手和雪坡逃亡等短剧竖屏可读构图。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建9比16竖屏构图与动作因果板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n9比16竖屏构图与动作因果板，展示门缝火光、粮牌手部、骨钟震动、巨兽角影、虫蜡针近景、断阶抓手和雪坡逃亡等短剧竖屏可读构图。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     },
     {
       "prompt_id": "PROMPT_F006",
+      "asset_id": "F006",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f006m.png",
       "production_metadata": {
         "asset_id": "F006",
         "asset_type": "style",
         "asset_subtype": "style_reference",
-        "output_file": "assets/style/f006m.png",
+        "output_file": "f006m.png",
         "prompt_id": "PROMPT_F006",
         "source_refs": [
           "bible/world.md#法术与记忆规则",
@@ -2343,7 +3103,8 @@
         ],
         "approval_status": "planned_pending_art_approval",
         "generation_status": "not_started_pending_approval",
-        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes."
+        "history_policy": "Only final approved image may live at output_file; retained intermediates go to sibling history/ with .v001, .v002 suffixes.",
+        "output_path": "assets/style/f006m.png"
       },
       "model_visible_prompt": {
         "visible_goal": "创建低魔显化与旧驿金赤光规则板，作为全剧共享视觉资产参考。",
@@ -2352,6 +3113,12 @@
         "composition_motion": "9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。",
         "visible_continuity": "低魔只能短促、局部、有限，不能一招解决危机，也不能像高饱和魔法或科幻能量。",
         "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建低魔显化与旧驿金赤光规则板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n低魔显化规则板，肩胛、脊柱、手腕或眼角的灵翼纹路、旧驿局部金赤路线光、日月残纹、石刻短促反应和记忆残留动作并列，光效贴近材质表面。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n低魔只能短促、局部、有限，不能一招解决危机，也不能像高饱和魔法或科幻能量。",
+        "negative_prompt": "不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "chatgpt_image_prompt": "请生成一张竖屏 9:16 图像。画面要求：\n创建低魔显化与旧驿金赤光规则板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n低魔显化规则板，肩胛、脊柱、手腕或眼角的灵翼纹路、旧驿局部金赤路线光、日月残纹、石刻短促反应和记忆残留动作并列，光效贴近材质表面。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n低魔只能短促、局部、有限，不能一招解决危机，也不能像高饱和魔法或科幻能量。\n避免：不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。",
+        "gemini_image_prompt": "Generate a vertical 9:16 cinematic image using these visible requirements:\n创建低魔显化与旧驿金赤光规则板，作为全剧共享视觉资产参考。\n超写实电影级低魔东方史诗风格参考，真实材质、自然光、旧文明断代感，避免塑料感、现代感和高魔法光污染。\n低魔显化规则板，肩胛、脊柱、手腕或眼角的灵翼纹路、旧驿局部金赤路线光、日月残纹、石刻短促反应和记忆残留动作并列，光效贴近材质表面。\n9:16风格参考板，使用分区版式展示色彩、材质、构图案例和禁用方向，信息清晰但不做图文海报。\n低魔只能短促、局部、有限，不能一招解决危机，也不能像高饱和魔法或科幻能量。\nNegative prompt: 不要现代物件、现代 logo、水印、乱码文字、游戏化装备、塑料 CGI、过度磨皮、单一灰冷滤镜、漂浮慢动作、无重量姿态。"
       }
     }
   ]

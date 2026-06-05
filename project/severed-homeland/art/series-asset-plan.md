@@ -4,9 +4,10 @@
 
 - 项目根目录：`project/severed-homeland`
 - 范围：全剧共享 bible 级主资产，不生成分集参考帧和镜头覆盖图。
-- 当前状态：`pending_art_approval`
+- 当前状态：`pending_art_approval_after_contract_repair`
 - 图片生成：未开始。审批通过前不得创建 Codex 图片生成线程，也不得写入 canonical 图片文件。
 - 产物日期：2026-06-05
+- 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，仍等待人工美术审批。
 
 ## 输入来源
 
@@ -24,7 +25,7 @@
 
 | 类型 | 数量 | 输出目录 | 目的 |
 | --- | ---: | --- | --- |
-| 角色/族群模板 | 21 | `assets/characters/` | 主角、反派、盟友、肃明层级、北境族群和共生兽关系身份锁定 |
+| 角色/族群模板 | 22 | `assets/characters/` | 主角、反派、盟友、肃明层级、北境族群、共生兽关系和沈家旧档身份锁定 |
 | 地点主场景 | 16 | `assets/locations/` | 第一季核心地点和后续季伏笔地点空间锁定 |
 | 道具/符号 | 15 | `assets/props/` | 旧驿、清明籍、盟书、粮牌、徽记等可读信息道具 |
 | 服装系统 | 6 | `assets/costumes/` | 主角状态、肃明服制、北境服饰、人族地域群众差异 |
@@ -61,6 +62,7 @@
 | C019 | 中阶重甲虫士兵模板 | c019m.png | assets/characters/c019m.png | 守门压阵层级 |
 | C020 | 北境攻城兵种群像模板 | c020m.png | assets/characters/c020m.png | 锁喉关与北境战场兵种区分 |
 | C021 | 北境共生兽关系模板 | c021m.png | assets/characters/c021m.png | 北境共生兽与驭兽者关系参考 |
+| C022 | 沈季衡旧驿测绘者档案影像身份卡 | c022m.png | assets/characters/c022m.png | 沈家旧驿血线与第 10 集虫蜡档案影像参考 |
 
 ## 地点主场景
 
@@ -126,23 +128,36 @@
 
 全剧级图像提示词写入 `prompts/series-art-image-prompts.json`。每条记录都分离：
 
-- `production_metadata`：asset_id、asset_subtype、output_file、source_refs、continuity_refs、usage、审批状态、history 策略。
+- 顶层字段：prompt_id、asset_id、asset_type、asset_subtype、output_path。
+- `production_metadata`：asset_id、asset_subtype、短文件名 output_file、source_refs、continuity_refs、usage、审批状态、history 策略。
 - `model_visible_prompt`：visible_goal、style_quality、subject_content、composition_motion、visible_continuity、negative_prompt。
+- `copy_ready`：positive_prompt、negative_prompt、chatgpt_image_prompt、gemini_image_prompt，可直接复制给 ChatGPT 或 Gemini 图像生成。
 
 可见提示词不包含 asset_id、episode_id、output_file、source refs 或使用说明；这些只留在生产元数据中，便于审批和后续线程派发。
+
+## 合同修复结果
+
+本次审核发现旧版审批包仍处于“可读规划”状态，但未完全满足机器可审计合同。已修复：
+
+1. `assets/asset-index.json` 已补齐每个资产的 `file_path`、`status`、`prompt_id`、`creation_order`、`creation_phase`、`depends_on_assets`、`blocks_assets`、`dependency_reason` 和 `priority`。
+2. 22 个角色/族群模板均已有 literal `body_metrics` 与 `identity_lock`；15 个道具和 6 个服装/服制资产均已有 literal `physical_dimensions`；16 个地点均已有 `location_lock`。
+3. 精确符号类资产 P002、P003、P007、P009、P010、P013、P014 已标记线稿控制或透明 PNG/SVG 后合成策略。
+4. `prompts/series-art-image-prompts.json` 已从旧 `prompt_records` 改为合同要求的 `prompts` 数组，并为 65 条提示词补齐 `copy_ready`。
+5. `art/series-thread-plan.json` 已拆分为风格、服装、角色、地点、道具/符号的 7 个依赖批次；所有批次仍为 `blocked_pending_art_approval`。
 
 ## 生成批次计划
 
 预设批次写入 `art/series-thread-plan.json`，当前全部为 `blocked_pending_art_approval`：
 
-| 批次 | 内容 | 状态 |
-| --- | --- | --- |
-| B01_CORE_CHARACTERS | 核心与追捕线角色 | blocked_pending_art_approval |
-| B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | blocked_pending_art_approval |
-| B03_LOCATIONS_SEASON_ONE | 第一季核心地点 | blocked_pending_art_approval |
-| B04_LOCATIONS_FUTURE_SEASONS | 后续季伏笔地点 | blocked_pending_art_approval |
-| B05_PROPS_SYMBOLS | 核心道具与精确符号 | blocked_pending_art_approval |
-| B06_COSTUMES_AND_STYLE | 服装系统与全剧风格板 | blocked_pending_art_approval |
+| 顺序 | 批次 | 内容 | 依赖 | 状态 |
+| ---: | --- | --- | --- | --- |
+| 1 | B07_STYLE | 全剧风格板 | 无 | blocked_pending_art_approval |
+| 2 | B06_COSTUMES | 服装系统 | B07_STYLE | blocked_pending_art_approval |
+| 3 | B01_CORE_CHARACTERS | 核心、追捕线与沈家旧档角色 | B07_STYLE、B06_COSTUMES | blocked_pending_art_approval |
+| 4 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B07_STYLE、B06_COSTUMES | blocked_pending_art_approval |
+| 5 | B03_LOCATIONS_SEASON_ONE | 第一季核心地点 | B07_STYLE | blocked_pending_art_approval |
+| 6 | B04_LOCATIONS_FUTURE_SEASONS | 后续季伏笔地点 | B07_STYLE | blocked_pending_art_approval |
+| 7 | B05_PROPS_SYMBOLS | 核心道具与精确符号 | B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_art_approval |
 
 ## 审批重点
 
@@ -150,8 +165,28 @@
 2. 场景主卡是否覆盖第一季路线：残阳坳、旧驿暗道、金河、灰烬书院、清明院外署、墙下集市、锁喉关、鸣骨岭、寒鸦堡、月下旧驿、坍塌烽燧。
 3. 道具和符号是否能在短剧首秒读懂，且不让模型发明精确文字或徽记。
 4. 人族群众、虫族统治层级、北境族群与共生兽是否避免同质化。
-5. 是否批准按 `art/series-thread-plan.json` 的六个批次开始图片生成。
+5. 是否批准按 `art/series-thread-plan.json` 的七个批次和依赖顺序开始图片生成。
 
 ## 下一步
 
 人工审批通过后，再按批次创建 Codex 背景图片生成线程，生成结果写入 `art/series-thread-results.json`，并在完成后进入资产 QC。QC 通过后再交回 director-room 做分集 prompt refresh 与镜头级参考帧规划。
+
+## 合同审计补充
+
+### 创建顺序与依赖
+
+| Order | Batch | Phase | Depends On Batches | Depends On Assets | Blocks Batches | Priority |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 2 | B01_CORE_CHARACTERS | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
+| 3 | B02_NORTHERN_AND_FACTION_TEMPLATES | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
+| 4 | B03_LOCATIONS_SEASON_ONE | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
+| 5 | B04_LOCATIONS_FUTURE_SEASONS | master_cards | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | medium |
+| 6 | B05_PROPS_SYMBOLS | precision_assets | B06_COSTUMES_AND_STYLE | F001, F002, F003, F004, F005, F006 | - | high |
+| 99 | B07_STYLE | master_cards | - | F001, F002, F003, F004, F005, F006 | - | medium |
+| 99 | B06_COSTUMES | master_cards | - | F001, F002, F003, F004, F005, F006 | - | medium |
+
+### 提示词审计
+
+- `prompts/series-art-image-prompts.json` 已补齐 `copy_ready.positive_prompt`、`copy_ready.negative_prompt`、`copy_ready.chatgpt_image_prompt` 和 `copy_ready.gemini_image_prompt`。
+- 全剧 bible 级 prompt record 的 `production_metadata.output_file` 已规范为短文件名，canonical 路径保留在 `output_path`。
+- 可见提示词继续只保留六段模型可见内容，不混入 asset_id、source refs、usage 或输出路径。
