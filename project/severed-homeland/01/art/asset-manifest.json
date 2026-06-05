@@ -77,7 +77,38 @@
         "E01_R040"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C002",
@@ -122,7 +153,38 @@
         "E01_R027"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C004",
@@ -159,7 +221,38 @@
         "E01_R004"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C005",
@@ -204,7 +297,38 @@
         "E01_O003"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C006",
@@ -250,7 +374,38 @@
         "E01_R040"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C007",
@@ -295,7 +450,38 @@
         "E01_O004"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C011",
@@ -334,7 +520,38 @@
         "E01_R012"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C016A",
@@ -381,7 +598,38 @@
         "E01_O001"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C016B",
@@ -420,7 +668,38 @@
         "E01_R007"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C017",
@@ -466,7 +745,38 @@
         "E01_R032"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C018",
@@ -508,7 +818,38 @@
         "E01_R037"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C020",
@@ -547,7 +888,38 @@
         "E01_R003"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C022",
@@ -582,7 +954,38 @@
         "E01_R003"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C023",
@@ -619,7 +1022,38 @@
         "E01_R032"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_C024",
@@ -656,7 +1090,38 @@
         "E01_R009"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "character_episode_state_turnaround_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full body",
+          "side full body",
+          "back full body",
+          "three-quarter view",
+          "face or head detail crop",
+          "hands, prop grip, wound, or movement-habit detail crop",
+          "wardrobe material detail crop",
+          "scale reference against a human, child, doorway, table, or key prop"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or video-frame environment",
+          "primary_views": "front, side, back, and three-quarter full-body views aligned for comparison",
+          "detail_crops": "face/head, hands, wardrobe texture, wounds, marks, props, or identity anchors isolated in small panels",
+          "scale_reference": "one visible scale marker that does not obscure the character silhouette"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "front, side, back, and three-quarter views are present",
+          "detail crops preserve face, hands, costume texture, marks, wounds, and material continuity",
+          "scale reference is visible and proportions match body_metrics"
+        ]
+      }
     },
     {
       "asset_id": "E01_L007",
@@ -700,7 +1165,36 @@
         "E01_R004"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_L003",
@@ -741,7 +1235,36 @@
         "E01_R009"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_L014",
@@ -782,7 +1305,36 @@
         "E01_R014"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001A",
@@ -827,7 +1379,36 @@
         "E01_R024"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001B",
@@ -872,7 +1453,36 @@
         "E01_O002"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001C",
@@ -918,7 +1528,36 @@
         "E01_R037"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
+        "file_format": "png",
+        "minimum_resolution": "2400x1600",
+        "background_policy": "scene_card_not_final_video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "3:2",
+        "required_views": [
+          "establishing plate",
+          "entrance and exit zone diagram",
+          "camera-facing action zones",
+          "hero prop placement map",
+          "lighting/weather/time reference",
+          "scale reference with human figures or doors"
+        ],
+        "composition_layers": {
+          "card_background": "location card layout, not a final generated shot",
+          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
+          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
+          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "entrances, exits, and action zones are readable",
+          "camera-facing zones and hero prop positions are clear",
+          "lighting/weather/time is explicit",
+          "no modern architecture, wrong geography, or empty atmospheric-only scene"
+        ]
+      }
     },
     {
       "asset_id": "E01_P016",
@@ -956,7 +1595,36 @@
         "E01_R003"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P008",
@@ -995,7 +1663,36 @@
         "E01_R009"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P009",
@@ -1034,7 +1731,36 @@
         "E01_R014"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P002",
@@ -1076,7 +1802,36 @@
         "E01_R025"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P003",
@@ -1121,7 +1876,36 @@
         "E01_O004"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P004",
@@ -1163,7 +1947,36 @@
         "E01_R035"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P017",
@@ -1204,7 +2017,36 @@
         "E01_R030"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P005",
@@ -1245,7 +2087,36 @@
         "E01_O003"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P018",
@@ -1287,7 +2158,36 @@
         "E01_O002"
       ],
       "dependency_reason": "Precision or text-like assets need approved style plus line/control or post-composite strategy before reference frames use them.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_P020",
@@ -1328,7 +2228,36 @@
         "E01_R040"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front view",
+          "side view",
+          "top or open view when useful",
+          "hand-scale or tabletop-scale view",
+          "material/damage/marking detail crop",
+          "precision line-control crop when symbols or text-like marks appear"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, and use-state views arranged as a readable prop board",
+          "detail_crops": "material texture, wear, seals, marks, mechanisms, damage, line-control areas, or exact symbol panels",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_K001",
@@ -1367,7 +2296,37 @@
         "E01_R040"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full outfit",
+          "side outfit view",
+          "back outfit view",
+          "three-quarter outfit view",
+          "fabric/material crop",
+          "fastener/marking/damage crop",
+          "body-scale reference"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, back, and three-quarter outfit views arranged as a costume board",
+          "detail_crops": "fabric weave, trim, closures, dirt, damage, rank/role marks, or material seams",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_K002",
@@ -1405,7 +2364,37 @@
         "E01_R025"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full outfit",
+          "side outfit view",
+          "back outfit view",
+          "three-quarter outfit view",
+          "fabric/material crop",
+          "fastener/marking/damage crop",
+          "body-scale reference"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, back, and three-quarter outfit views arranged as a costume board",
+          "detail_crops": "fabric weave, trim, closures, dirt, damage, rank/role marks, or material seams",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_K003",
@@ -1443,7 +2432,37 @@
         "E01_R038"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full outfit",
+          "side outfit view",
+          "back outfit view",
+          "three-quarter outfit view",
+          "fabric/material crop",
+          "fastener/marking/damage crop",
+          "body-scale reference"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, back, and three-quarter outfit views arranged as a costume board",
+          "detail_crops": "fabric weave, trim, closures, dirt, damage, rank/role marks, or material seams",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_K004",
@@ -1485,7 +2504,37 @@
         "E01_R032"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full outfit",
+          "side outfit view",
+          "back outfit view",
+          "three-quarter outfit view",
+          "fabric/material crop",
+          "fastener/marking/damage crop",
+          "body-scale reference"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, back, and three-quarter outfit views arranged as a costume board",
+          "detail_crops": "fabric weave, trim, closures, dirt, damage, rank/role marks, or material seams",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_K006",
@@ -1526,7 +2575,37 @@
         "E01_R032"
       ],
       "dependency_reason": "Episode state card depends on the series master asset and episode style boards so wardrobe, geography, role tier, and continuity stay stable.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format": {
+        "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "neutral_plain_background",
+        "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "front full outfit",
+          "side outfit view",
+          "back outfit view",
+          "three-quarter outfit view",
+          "fabric/material crop",
+          "fastener/marking/damage crop",
+          "body-scale reference"
+        ],
+        "composition_layers": {
+          "card_background": "neutral matte plain background only, no scene or final video-frame environment",
+          "primary_views": "front, side, back, and three-quarter outfit views arranged as a costume board",
+          "detail_crops": "fabric weave, trim, closures, dirt, damage, rank/role marks, or material seams",
+          "scale_reference": "human hand, tabletop, doorway, child/adult body, or carrying reference sized to physical_dimensions"
+        },
+        "qc_checks": [
+          "not treated as a final video frame",
+          "neutral background, no alpha transparency in this card",
+          "required views and detail crops are present",
+          "scale reference matches physical_dimensions",
+          "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
+        ]
+      }
     },
     {
       "asset_id": "E01_F001",
@@ -1641,7 +2720,35 @@
         "E01_O004"
       ],
       "dependency_reason": "Style references establish visual quality, 9:16 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "style_reference_board",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "style_board_layout",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "material swatches",
+          "lighting examples",
+          "9:16 composition examples",
+          "do-and-do-not comparison",
+          "symbol or low-magic boundary examples"
+        ],
+        "composition_layers": {
+          "board_background": "clean style-board layout rather than final scene",
+          "material_palette": "materials, colors, texture, and light examples grouped by rule",
+          "application_examples": "small example frames showing how the style applies to characters, props, locations, or low-magic marks",
+          "rejection_examples": "visual notes for prohibited styles, modern marks, wrong symbols, or over-magical effects"
+        },
+        "qc_checks": [
+          "style board is reusable across assets",
+          "material and color rules are readable",
+          "low-magic and precision-symbol limits are explicit",
+          "no final video frame framing requirement is implied",
+          "no watermarks or random text"
+        ]
+      }
     },
     {
       "asset_id": "E01_F005",
@@ -1726,7 +2833,35 @@
         "E01_O004"
       ],
       "dependency_reason": "Style references establish visual quality, 9:16 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "style_reference_board",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "style_board_layout",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "material swatches",
+          "lighting examples",
+          "9:16 composition examples",
+          "do-and-do-not comparison",
+          "symbol or low-magic boundary examples"
+        ],
+        "composition_layers": {
+          "board_background": "clean style-board layout rather than final scene",
+          "material_palette": "materials, colors, texture, and light examples grouped by rule",
+          "application_examples": "small example frames showing how the style applies to characters, props, locations, or low-magic marks",
+          "rejection_examples": "visual notes for prohibited styles, modern marks, wrong symbols, or over-magical effects"
+        },
+        "qc_checks": [
+          "style board is reusable across assets",
+          "material and color rules are readable",
+          "low-magic and precision-symbol limits are explicit",
+          "no final video frame framing requirement is implied",
+          "no watermarks or random text"
+        ]
+      }
     },
     {
       "asset_id": "E01_F006",
@@ -1773,7 +2908,35 @@
         "E01_O004"
       ],
       "dependency_reason": "Style references establish visual quality, 9:16 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
-      "priority": "high"
+      "priority": "high",
+      "output_format": {
+        "deliverable_kind": "style_reference_board",
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "background_policy": "style_board_layout",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "1:1",
+        "required_views": [
+          "material swatches",
+          "lighting examples",
+          "9:16 composition examples",
+          "do-and-do-not comparison",
+          "symbol or low-magic boundary examples"
+        ],
+        "composition_layers": {
+          "board_background": "clean style-board layout rather than final scene",
+          "material_palette": "materials, colors, texture, and light examples grouped by rule",
+          "application_examples": "small example frames showing how the style applies to characters, props, locations, or low-magic marks",
+          "rejection_examples": "visual notes for prohibited styles, modern marks, wrong symbols, or over-magical effects"
+        },
+        "qc_checks": [
+          "style board is reusable across assets",
+          "material and color rules are readable",
+          "low-magic and precision-symbol limits are explicit",
+          "no final video frame framing requirement is implied",
+          "no watermarks or random text"
+        ]
+      }
     },
     {
       "asset_id": "E01_R001",
@@ -1814,7 +2977,33 @@
         "E01_P016"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R002",
@@ -1855,7 +3044,33 @@
         "E01_P016"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R003",
@@ -1896,7 +3111,33 @@
         "E01_P016"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R004",
@@ -1935,7 +3176,33 @@
         "E01_L007"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R005",
@@ -1976,7 +3243,33 @@
         "E01_K004"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R006",
@@ -2018,7 +3311,33 @@
         "E01_K006"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R007",
@@ -2057,7 +3376,33 @@
         "E01_C016B"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R008",
@@ -2099,7 +3444,33 @@
         "E01_P008"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R009",
@@ -2141,7 +3512,33 @@
         "E01_P008"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R010",
@@ -2180,7 +3577,33 @@
         "E01_P009"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R011",
@@ -2222,7 +3645,33 @@
         "E01_K002"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R012",
@@ -2263,7 +3712,33 @@
         "E01_P002"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R013",
@@ -2302,7 +3777,33 @@
         "E01_P009"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R014",
@@ -2341,7 +3842,33 @@
         "E01_P009"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R015",
@@ -2387,7 +3914,33 @@
         "E01_K006"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R016",
@@ -2427,7 +3980,33 @@
         "E01_L001A"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R017",
@@ -2467,7 +4046,33 @@
         "E01_K001"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R018",
@@ -2508,7 +4113,33 @@
         "E01_K003"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R019",
@@ -2549,7 +4180,33 @@
         "E01_C016A"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R020",
@@ -2590,7 +4247,33 @@
         "E01_P020"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R021",
@@ -2631,7 +4314,33 @@
       "blocks_assets": [
         "E01_O001"
       ],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R022",
@@ -2671,7 +4380,33 @@
         "E01_P004"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R023",
@@ -2711,7 +4446,33 @@
         "E01_P017"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R024",
@@ -2751,7 +4512,33 @@
         "E01_P017"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R025",
@@ -2794,7 +4581,33 @@
         "E01_K002"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R026",
@@ -2834,7 +4647,33 @@
         "E01_L001B"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R027",
@@ -2873,7 +4712,33 @@
         "E01_C002"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R028",
@@ -2915,7 +4780,33 @@
       "blocks_assets": [
         "E01_O002"
       ],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R029",
@@ -2955,7 +4846,33 @@
         "E01_L001B"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R030",
@@ -2995,7 +4912,33 @@
         "E01_P017"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R031",
@@ -3036,7 +4979,33 @@
         "E01_P018"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R032",
@@ -3081,7 +5050,33 @@
         "E01_K006"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R033",
@@ -3125,7 +5120,33 @@
       "blocks_assets": [
         "E01_O003"
       ],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R034",
@@ -3165,7 +5186,33 @@
         "E01_P004"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R035",
@@ -3205,7 +5252,33 @@
         "E01_P004"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R036",
@@ -3248,7 +5321,33 @@
       "blocks_assets": [
         "E01_O004"
       ],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R037",
@@ -3288,7 +5387,33 @@
         "E01_L001C"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R038",
@@ -3332,7 +5457,33 @@
         "E01_K003"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R039",
@@ -3375,7 +5526,33 @@
         "E01_K001"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_R040",
@@ -3418,7 +5595,33 @@
         "E01_K001"
       ],
       "blocks_assets": [],
-      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot."
+      "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_O001",
@@ -3467,7 +5670,33 @@
         "E01_O003",
         "E01_O004"
       ],
-      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control."
+      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control.",
+      "output_format": {
+        "deliverable_kind": "shot_override_video_frame_control_plate",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_O002",
@@ -3517,7 +5746,33 @@
         "E01_O003",
         "E01_O004"
       ],
-      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control."
+      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control.",
+      "output_format": {
+        "deliverable_kind": "shot_override_video_frame_control_plate",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_O003",
@@ -3569,7 +5824,33 @@
         "E01_O003",
         "E01_O004"
       ],
-      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control."
+      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control.",
+      "output_format": {
+        "deliverable_kind": "shot_override_video_frame_control_plate",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     },
     {
       "asset_id": "E01_O004",
@@ -3620,7 +5901,33 @@
         "E01_O003",
         "E01_O004"
       ],
-      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control."
+      "dependency_reason": "Shot override depends on matching reference-frame planning and approved precision assets for line, mask, or transparent post-composite control.",
+      "output_format": {
+        "deliverable_kind": "shot_override_video_frame_control_plate",
+        "file_format": "png",
+        "minimum_resolution": "1920x1080",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather, and time of day visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
+          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
+          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+        },
+        "qc_checks": [
+          "16:9 canvas, minimum 1920x1080",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ]
+      }
     }
   ],
   "audit_status": "passed_after_contract_repair",

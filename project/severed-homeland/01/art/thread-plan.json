@@ -45,7 +45,7 @@
         "assets/characters/c023e01.png",
         "assets/characters/c024e01.png"
       ],
-      "thread_prompt": "After user approval, generate B01_E01_CHARACTERS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B01_E01_CHARACTERS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 2,
       "creation_phase": "episode_state_cards",
@@ -107,7 +107,20 @@
         "B05_E01_REFERENCE_FRAMES"
       ],
       "dependency_reason": "Batch depends on approved episode style references and any listed series master assets.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "character_episode_state_turnaround_sheet"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "1:1"
+        ],
+        "alpha_policies": [
+          "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     },
     {
       "batch_id": "B02_E01_LOCATIONS",
@@ -129,7 +142,7 @@
         "assets/locations/l001e02.png",
         "assets/locations/l001e03.png"
       ],
-      "thread_prompt": "After user approval, generate B02_E01_LOCATIONS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B02_E01_LOCATIONS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 3,
       "creation_phase": "episode_state_cards",
@@ -173,7 +186,20 @@
         "B05_E01_REFERENCE_FRAMES"
       ],
       "dependency_reason": "Batch depends on approved episode style references and any listed series master assets.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "location_episode_scene_card_with_zone_diagram"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "3:2"
+        ],
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     },
     {
       "batch_id": "B03_E01_PROPS_COSTUMES",
@@ -213,7 +239,7 @@
         "assets/costumes/k004e01.png",
         "assets/costumes/k006e01.png"
       ],
-      "thread_prompt": "After user approval, generate B03_E01_PROPS_COSTUMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B03_E01_PROPS_COSTUMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 4,
       "creation_phase": "precision_assets",
@@ -278,7 +304,21 @@
         "B06_E01_SHOT_OVERRIDES"
       ],
       "dependency_reason": "Batch depends on approved episode style references and any listed series master assets.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "prop_item_state_sheet_with_scale_and_detail_crops",
+          "costume_state_turnaround_and_detail_sheet"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "1:1"
+        ],
+        "alpha_policies": [
+          "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     },
     {
       "batch_id": "B04_E01_STYLE",
@@ -294,7 +334,7 @@
         "assets/style/f005e01.png",
         "assets/style/f006e01.png"
       ],
-      "thread_prompt": "After user approval, generate B04_E01_STYLE assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B04_E01_STYLE assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 1,
       "creation_phase": "style_reference",
@@ -394,7 +434,20 @@
         "B06_E01_SHOT_OVERRIDES"
       ],
       "dependency_reason": "Style batch must be approved before characters, locations, props, costumes, reference frames, or shot overrides are generated.",
-      "priority": "high"
+      "priority": "high",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "style_reference_board"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "1:1"
+        ],
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     },
     {
       "batch_id": "B05_E01_REFERENCE_FRAMES",
@@ -484,7 +537,7 @@
         "01/assets/reference-frames/r039e01.png",
         "01/assets/reference-frames/r040e01.png"
       ],
-      "thread_prompt": "After user approval, generate B05_E01_REFERENCE_FRAMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B05_E01_REFERENCE_FRAMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 5,
       "creation_phase": "reference_frames",
@@ -544,7 +597,20 @@
         "B06_E01_SHOT_OVERRIDES"
       ],
       "dependency_reason": "Reference frames depend on approved style plus same-shot character, location, prop, and costume cards.",
-      "priority": "medium"
+      "priority": "medium",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "video_generation_reference_frame"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "16:9"
+        ],
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     },
     {
       "batch_id": "B06_E01_SHOT_OVERRIDES",
@@ -562,7 +628,7 @@
         "01/assets/shot-overrides/o003e01.png",
         "01/assets/shot-overrides/o004e01.png"
       ],
-      "thread_prompt": "After user approval, generate B06_E01_SHOT_OVERRIDES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.",
+      "thread_prompt": "After user approval, generate B06_E01_SHOT_OVERRIDES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
       "creation_order": 6,
       "creation_phase": "shot_overrides",
@@ -599,7 +665,20 @@
       ],
       "blocks_batches": [],
       "dependency_reason": "Shot overrides depend on approved precision assets and matching reference-frame planning.",
-      "priority": "high"
+      "priority": "high",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "shot_override_video_frame_control_plate"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "16:9"
+        ],
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      }
     }
   ],
   "status": "blocked_pending_user_approval",
