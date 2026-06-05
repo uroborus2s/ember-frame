@@ -2892,7 +2892,7 @@
       "batch_id": "B01_CORE_CHARACTERS",
       "title": "核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色",
       "batch_type": "characters",
-      "status": "partial_complete_c001_c002_remaining_pending_dispatch",
+      "status": "partial_complete_c001_c007_remaining_pending_dispatch",
       "creation_order": 4,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4025,31 +4025,63 @@
         "updated_at": "2026-06-05",
         "completed_asset_ids": [
           "C001",
-          "C002"
-        ],
-        "completed_prompt_ids": [
-          "PROMPT_C001",
-          "PROMPT_C002"
-        ],
-        "completed_output_paths": [
-          "assets/characters/c001m.png",
-          "assets/characters/c002m.png"
-        ],
-        "remaining_asset_ids": [
+          "C002",
           "C003",
           "C004",
           "C005",
           "C006",
-          "C007",
+          "C007"
+        ],
+        "completed_prompt_ids": [
+          "PROMPT_C001",
+          "PROMPT_C002",
+          "PROMPT_C003",
+          "PROMPT_C004",
+          "PROMPT_C005",
+          "PROMPT_C006",
+          "PROMPT_C007"
+        ],
+        "completed_output_paths": [
+          "assets/characters/c001m.png",
+          "assets/characters/c002m.png",
+          "assets/characters/c003m.png",
+          "assets/characters/c004m.png",
+          "assets/characters/c005m.png",
+          "assets/characters/c006m.png",
+          "assets/characters/c007m.png"
+        ],
+        "history_files": {
+          "C001": [
+            "assets/characters/history/c001m.v001.png"
+          ],
+          "C002": [],
+          "C003": [],
+          "C004": [
+            "assets/characters/history/c004m.v001.png"
+          ],
+          "C005": [],
+          "C006": [
+            "assets/characters/history/c006m.v001.png",
+            "assets/characters/history/c006m.v002.png"
+          ],
+          "C007": [
+            "assets/characters/history/c007m.v001.png",
+            "assets/characters/history/c007m.v002.png",
+            "assets/characters/history/c007m.v003.png"
+          ]
+        },
+        "remaining_asset_ids": [
           "C008",
           "C009",
           "C010",
           "C011",
           "C022",
           "C023",
-          "C024"
+          "C024",
+          "C025",
+          "C026"
         ],
-        "notes": "User explicitly requested B01 generation for PROMPT_C001 and PROMPT_C002 only; remaining B01 assets are not generated in this pass."
+        "notes": "B01 has generated and format-QC-passed C001-C007 canonical character cards; remaining B01 assets are still pending separate dispatch or art approval."
       },
       "c025_c026_prompt_review": {
         "reviewed_at": "2026-06-05",
@@ -4072,7 +4104,7 @@
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "title": "北境具名角色与族群/肃明层级模板",
       "batch_type": "characters",
-      "status": "blocked_pending_b06_regeneration",
+      "status": "partial_complete_c017_c020_remaining_pending_dispatch",
       "creation_order": 5,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4801,7 +4833,50 @@
         "B07_STYLE",
         "B06_COSTUMES"
       ],
-      "dependency_status": "b06_regeneration_pending"
+      "dependency_status": "b06_regeneration_pending",
+      "partial_completion": {
+        "updated_at": "2026-06-05",
+        "completed_asset_ids": [
+          "C017",
+          "C018",
+          "C019",
+          "C020"
+        ],
+        "completed_prompt_ids": [
+          "PROMPT_C017",
+          "PROMPT_C018",
+          "PROMPT_C019",
+          "PROMPT_C020"
+        ],
+        "completed_output_paths": [
+          "assets/characters/c017m.png",
+          "assets/characters/c018m.png",
+          "assets/characters/c019m.png",
+          "assets/characters/c020m.png"
+        ],
+        "history_files": {
+          "C017": [
+            "assets/characters/history/c017m.v001.png",
+            "assets/characters/history/c017m.v002.png"
+          ],
+          "C018": [
+            "assets/characters/history/c018m.v001.png"
+          ],
+          "C019": [
+            "assets/characters/history/c019m.v001.png"
+          ],
+          "C020": []
+        },
+        "remaining_asset_ids": [
+          "C012",
+          "C013",
+          "C014",
+          "C015",
+          "C016",
+          "C021"
+        ],
+        "notes": "B02 has generated and format-QC-passed C017-C020 canonical faction/northern template cards; remaining B02 assets are still pending separate dispatch or art approval."
+      }
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",

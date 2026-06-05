@@ -4,14 +4,14 @@
 
 - 项目根目录：`project/severed-homeland`
 - 范围：全剧共享 bible 级主资产，不生成分集参考帧和镜头覆盖图。
-- 当前状态：`partial_b06_complete_downstream_pending`
-- 图片生成：B00_FACTION_EMBLEM_FLAGS、B07_STYLE 与 B06_COSTUMES 已完成并通过 QC；B00 线程 019e9626-3a1e-7a02-95df-e63b532fc205 已生成 P016-P018，B07 线程 019e963e-3a20-7d33-b16d-07df70d6f027 已生成 F001-F006，B06 在当前线程使用内置 imagegen 生成 K001-K006，并在本轮重新生成 K004-K006 后写入 canonical 路径。B07 具体色彩、材质、地域色板、势力符号、竖屏构图和低魔光效数据已补入 `art/b07-style-reference-data.json`、资产索引、提示词和线程合同；角色/地点/道具等后续批次仍待单独派发。
+- 当前状态：`partial_b01_b02_character_subsets_generated_downstream_pending`
+- 图片生成：B00_FACTION_EMBLEM_FLAGS、B07_STYLE 与 B06_COSTUMES 已完成并通过 QC；B00 线程 019e9626-3a1e-7a02-95df-e63b532fc205 已生成 P016-P018，B07 线程 019e963e-3a20-7d33-b16d-07df70d6f027 已生成 F001-F006，B06 在当前线程使用内置 imagegen 生成 K001-K006，并在本轮重新生成 K004-K006 后写入 canonical 路径。B01_CORE_CHARACTERS 已完成 C001-C007 七张角色身份卡；C001 按用户提供的沈维桑旧参考板硬锁脸型与发型。B02_NORTHERN_AND_FACTION_TEMPLATES 已完成 C017-C020 四张肃明/北境模板卡。B07 具体色彩、材质、地域色板、势力符号、竖屏构图和低魔光效数据已补入 `art/b07-style-reference-data.json`、资产索引、提示词和线程合同；其余角色/地点/道具批次仍待单独派发。
 - 产物日期：2026-06-05
 - 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，已补齐并 schema-normalize 全局提示词输出图片格式要求，并已把昭明、肃明、北境部落联盟的徽章旗帜提升为全剧基础根资产。B07 风格板已补充机器可审计的具体风格数据，用于后续批次和 director-room prompt refresh。
 
 ## 输入来源
 
-本轮主要读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。历史故事稿、历史资产、历史提示词、历史 ComfyUI 参数和历史渲染结果不作为美术 canon；当前仅锁定两类人工批准参考：C001 沈维桑脸型与发型沿用已批准沈维桑角色参考；P016、P017、P018 三势力徽章旗帜沿用已批准的昭明、肃明/清明院、北境万兽联盟徽章与符号系统。该锁定不恢复历史故事或历史资产路径。
+本轮主要读取重制后的 bible、全剧视频规则、12 集最终剧本、分集连续性和 scene breakdown。历史故事稿、历史资产、历史提示词、历史 ComfyUI 参数和历史渲染结果不作为美术 canon；当前仅锁定两类人工批准参考：C001 沈维桑脸型与发型沿用用户提供的 `legacy/pre-remake-2026-06-04/assets/characters/character_shen_weisang_multi_state_board.png` 参考板；P016、P017、P018 三势力徽章旗帜沿用已批准的昭明、肃明/清明院、北境万兽联盟徽章与符号系统。该锁定不恢复历史故事或历史资产路径。
 
 核心来源：`bible/world.md`、`bible/geography.md`、`bible/factions.md`、`bible/characters.md`、`bible/scenes.md`、`bible/visual-style.md`、`bible/continuity.md`、`production/series-video-rules.md`、`01-12/script/final-script.md`、`01-12/continuity/visual-continuity-bible.json`。
 
@@ -191,6 +191,8 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 12. C023 人族逃难流民群像模板已完成索引与提示词规划评审，明确作为 K006 的极端逃难状态补充，不取代普通人族地域群众规则。
 13. C024 边墙普通军户群像模板已完成索引与提示词规划评审，明确承载普通军户年龄、性别、职责、后勤、伤退和家眷差异，并与 C004 薛临墙具名老墙师身份卡区分。
 14. C025 普通人族平民群像模板与 C026 墙下集市无籍者与粮牌黑市群像模板已完成索引与提示词规划评审，均为 B01_CORE_CHARACTERS 中的 character_master_card，审核评分均为 100/100；C025 承载仍在生产生活的普通人族平民，C026 承载墙下集市交易人群与无籍者/混裔/黑市层级，二者均不替代 K006 服装板，也不替代 L006 地点卡。
+15. B01_CORE_CHARACTERS 已局部生成 C001-C007：`assets/characters/c001m.png` 至 `assets/characters/c007m.png` 均为 2160x3840、9:16、无 alpha 的 PNG 角色身份卡；C001 以用户提供的沈维桑旧参考板硬锁脸型和发型，保留候选图写入 `assets/characters/history/`。
+16. B02_NORTHERN_AND_FACTION_TEMPLATES 已局部生成 C017-C020：`assets/characters/c017m.png` 至 `assets/characters/c020m.png` 均为 2160x3840、9:16、无 alpha 的 PNG 肃明/北境模板卡，保留候选图写入 `assets/characters/history/`。
 
 ## 生成批次计划
 
@@ -201,8 +203,8 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 |   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版      | 无                                                                                         | complete                                   |
 |   2 | B07_STYLE                          | 全剧风格板            | B00_FACTION_EMBLEM_FLAGS                                                                  | complete                                   |
 |   3 | B06_COSTUMES                       | 服装系统             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | complete                                   |
-|   4 | B01_CORE_CHARACTERS                | 核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | blocked_pending_separate_dispatch_approval |
-|   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | blocked_pending_separate_dispatch_approval |
+|   4 | B01_CORE_CHARACTERS                | 核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | partial_complete_c001_c007_remaining_pending_dispatch |
+|   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | partial_complete_c017_c020_remaining_pending_dispatch |
 |   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval |
 |   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点          | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | blocked_pending_separate_dispatch_approval |
 |   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号        | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | blocked_pending_separate_dispatch_approval |
@@ -217,7 +219,7 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 
 ## 下一步
 
-B00 线程：`019e9626-3a1e-7a02-95df-e63b532fc205` 已完成 P016/P017/P018 三张徽章旗帜根资产并通过 QC。B07_STYLE 线程：`019e963e-3a20-7d33-b16d-07df70d6f027` 已完成 F001-F006 六张全剧风格板并通过 QC；B07 具体数据合同已写入 `art/b07-style-reference-data.json`。B06_COSTUMES 已在当前线程完成 K001-K006 六张服装系统板并通过格式 QC。下一批可按依赖启动 B01_CORE_CHARACTERS 或 B02_NORTHERN_AND_FACTION_TEMPLATES；地点与道具批次仍按依赖顺序等待单独派发。
+B00 线程：`019e9626-3a1e-7a02-95df-e63b532fc205` 已完成 P016/P017/P018 三张徽章旗帜根资产并通过 QC。B07_STYLE 线程：`019e963e-3a20-7d33-b16d-07df70d6f027` 已完成 F001-F006 六张全剧风格板并通过 QC；B07 具体数据合同已写入 `art/b07-style-reference-data.json`。B06_COSTUMES 已在当前线程完成 K001-K006 六张服装系统板并通过格式 QC。B01_CORE_CHARACTERS 已局部完成 C001-C007，B02_NORTHERN_AND_FACTION_TEMPLATES 已局部完成 C017-C020；下一批可继续派发 B01/B02 剩余角色，地点与道具批次仍按依赖顺序等待单独派发。
 
 ## 合同审计补充
 
