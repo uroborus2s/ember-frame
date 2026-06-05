@@ -1,104 +1,294 @@
 {
-  "version": "1",
+  "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "date": "2026-06-03",
+  "approval_status": "pending_user_art_approval",
   "locations": [
     {
-      "asset_id": "loc_canyangao_master_dusk_ep01",
-      "name": "残阳坳黄昏总场景",
-      "output_path": "assets/locations/canyangao/loc_canyangao_master_dusk.png",
-      "source_refs": [
-        "残阳坳"
+      "asset_id": "E01_L007",
+      "file": "l007e01.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "锁喉关外墙序幕场景卡",
+      "parent_asset_id": "L007",
+      "location_lock": {
+        "story_function": "黑石外墙、骨钟、门闩、枪线、拒马和暴雪构成局部攻城序幕；只做墙面近景和剪影，不做完整战场。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "黑石外墙、骨钟、门闩、枪线、拒马和暴雪构成局部攻城序幕；只做墙面近景和剪影，不做完整战场。",
+        "scenes": [
+          "SC001-SH001",
+          "SC001-SH002",
+          "SC001-SH003"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "LOC_CANYANG_GATE",
-        "LOC_MEDICINE_HOUSE",
-        "LOC_OLD_WELL"
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
       ],
-      "set_rules": "Use 残阳坳黄昏总场景 as episode 01 art reference. 总空间和区域色参考。 Preserve LOC_CANYANG_GATE;LOC_MEDICINE_HOUSE;LOC_OLD_WELL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#锁喉关",
+        "01/script/final-script.md#SC01",
+        "01/director/camera-plan.md#SC001"
+      ],
       "usage": [
-        "总空间和区域色参考。"
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
       ]
     },
     {
-      "asset_id": "loc_canyangao_gate_blood_check_ep01",
-      "name": "残阳坳村口验血席",
-      "output_path": "assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
-      "source_refs": [
-        "村口验血"
+      "asset_id": "E01_L003",
+      "file": "l003e01.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "金河粮仓带征粮场景卡",
+      "parent_asset_id": "L003",
+      "location_lock": {
+        "story_function": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
+        "scenes": [
+          "SC002-SH001",
+          "SC002-SH004"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "LOC_CANYANG_GATE",
-        "PROP_QINGMING_REGISTER"
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
       ],
-      "set_rules": "Use 残阳坳村口验血席 as episode 01 art reference. 村口验血、白布、短矛封锁和清明香参考。 Preserve LOC_CANYANG_GATE;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#金河粮磨区与渡河蒸汽船",
+        "01/script/final-script.md#SC02"
+      ],
       "usage": [
-        "村口验血、白布、短矛封锁和清明香参考。"
+        "SC002-SH001",
+        "SC002-SH004"
       ]
     },
     {
-      "asset_id": "loc_canyangao_medicine_house_exterior_ep01",
-      "name": "罗家药屋外景/门槛",
-      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
-      "source_refs": [
-        "药屋门槛"
+      "asset_id": "E01_L014",
+      "file": "l014e01.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "南方红线密室第01集场景卡",
+      "parent_asset_id": "L014",
+      "location_lock": {
+        "story_function": "油布雨夜、旧驿残图桌、红线和防潮卷轴筒构成南方旧礼法压力；不展开南林政治。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "油布雨夜、旧驿残图桌、红线和防潮卷轴筒构成南方旧礼法压力；不展开南林政治。",
+        "scenes": [
+          "SC003-SH001",
+          "SC003-SH004"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "LOC_MEDICINE_HOUSE",
-        "RULE_SPATIAL_GEOGRAPHY"
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_BLOOD_GENEALOGY",
+        "PROP_MOON_WHITE_JADE"
       ],
-      "set_rules": "Use 罗家药屋外景/门槛 as episode 01 art reference. 门槛失言、药屋门口和后院方向参考。 Preserve LOC_MEDICINE_HOUSE;RULE_SPATIAL_GEOGRAPHY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#南部丛林与南缘遗民",
+        "01/script/final-script.md#SC03"
+      ],
       "usage": [
-        "门槛失言、药屋门口和后院方向参考。"
+        "SC003-SH001",
+        "SC003-SH004"
       ]
     },
     {
-      "asset_id": "loc_canyangao_medicine_house_interior_ep01",
-      "name": "罗家药屋内景/药柜",
-      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
-      "source_refs": [
-        "药屋内景"
+      "asset_id": "E01_L001A",
+      "file": "l001e01.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "残阳坳村口封锁地理场景卡",
+      "parent_asset_id": "L001",
+      "location_lock": {
+        "story_function": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
+        "scenes": [
+          "SC004-SH001",
+          "SC004-SH002",
+          "SC004-SH009"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "LOC_MEDICINE_HOUSE",
-        "RULE_HIDE_RELAY_MARKS"
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
       ],
-      "set_rules": "Use 罗家药屋内景/药柜 as episode 01 art reference. 药柜压迫构图、罗青禾手势、白翳入内参考。 Preserve LOC_MEDICINE_HOUSE;RULE_HIDE_RELAY_MARKS. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC04",
+        "01/director/camera-plan.md#SC004"
+      ],
       "usage": [
-        "药柜压迫构图、罗青禾手势、白翳入内参考。"
+        "SC004-SH001",
+        "SC004-SH002",
+        "SC004-SH009"
       ]
     },
     {
-      "asset_id": "loc_canyangao_old_well_courtyard_ep01",
-      "name": "罗家后院旧井",
-      "output_path": "assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
-      "source_refs": [
-        "旧井"
+      "asset_id": "E01_L001B",
+      "file": "l001e02.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "罗青禾药屋内景与暗格场景卡",
+      "parent_asset_id": "L001",
+      "location_lock": {
+        "story_function": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
+        "scenes": [
+          "SC005-SH001",
+          "SC005-SH002",
+          "SC005-SH004",
+          "SC005-SH005"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "LOC_OLD_WELL",
-        "RULE_MOON_WHITE_GLINT_ONLY"
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "PROP_MEDICINE_CABINET",
+        "PROP_OLD_RELAY_MARK"
       ],
-      "set_rules": "Use 罗家后院旧井 as episode 01 art reference. 水缸、旧井、墙根清明香和井沿擦痕参考。 Preserve LOC_OLD_WELL;RULE_MOON_WHITE_GLINT_ONLY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC05"
+      ],
       "usage": [
-        "水缸、旧井、墙根清明香和井沿擦痕参考。"
+        "SC005-SH001",
+        "SC005-SH002",
+        "SC005-SH004",
+        "SC005-SH005"
       ]
     },
     {
-      "asset_id": "loc_canyangao_hidden_relay_compartment_ep01",
-      "name": "药屋暗格与旧驿刻痕",
-      "output_path": "assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
-      "source_refs": [
-        "暗格"
+      "asset_id": "E01_L001C",
+      "file": "l001e03.png",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "display_name": "残阳坳旧井检查桌场景卡",
+      "parent_asset_id": "L001",
+      "location_lock": {
+        "story_function": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
+        "geography": "保持导演文件中锁定的方向和相对位置；残阳坳必须读出检查桌、旧井、药屋、后山出口。",
+        "entrances_exits": "每个场景卡标出入口、出口、封锁线和角色可移动路径。",
+        "spatial_structure": "用竖屏上下层级和窄门槛压迫构图，避免空景奇观。",
+        "action_zones": "骨钟/粮袋墙/红线桌/检查桌/药柜/旧井是本集主要动作区。",
+        "camera_facing_zones": "按 camera-plan 保持道具首秒可读，人物尺度必须服务 I2V/FLF2V。",
+        "prohibited_elements": "禁止现代建筑、现代仓库、欢乐蒸汽朋克、完整战场奇观、药屋奇观机关和地理关系混乱。"
+      },
+      "episode_state": {
+        "state": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
+        "scenes": [
+          "SC006-SH001",
+          "SC006-SH002",
+          "SC006-SH003",
+          "SC006-SH008"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "establishing_plate",
+        "set_zone_diagram",
+        "hero_prop_positions",
+        "lighting_weather_reference",
+        "camera_angle_reference"
       ],
       "continuity_refs": [
-        "PROP_HIDDEN_RELAY_COMPARTMENT",
-        "FACTION_ZHAOMING_RELIC"
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_REGISTER",
+        "PROP_OLD_RELAY_MARK"
       ],
-      "set_rules": "Use 药屋暗格与旧驿刻痕 as episode 01 art reference. 暗格暴露、残缺日月纹、虫蜡封条参考。 Preserve PROP_HIDDEN_RELAY_COMPARTMENT;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC06",
+        "01/director/camera-plan.md#SC006"
+      ],
       "usage": [
-        "暗格暴露、残缺日月纹、虫蜡封条参考。"
+        "SC006-SH001",
+        "SC006-SH002",
+        "SC006-SH003",
+        "SC006-SH008"
       ]
     }
   ]

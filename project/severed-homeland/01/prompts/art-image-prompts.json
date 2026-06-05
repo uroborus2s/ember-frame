@@ -1,612 +1,3214 @@
 {
-  "version": "1",
+  "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "date": "2026-06-03",
+  "approval_status": "pending_user_art_approval",
+  "image_generation_status": "not_started_pending_user_approval",
+  "prompt_contract": {
+    "production_metadata_is_not_model_visible": true,
+    "visible_prompt_sections": [
+      "visible_goal",
+      "style_quality",
+      "subject_content",
+      "composition_motion",
+      "visible_continuity",
+      "negative_prompt"
+    ],
+    "no_comfyui_parameters": true,
+    "no_generation_before_user_approval": true
+  },
   "prompts": [
     {
-      "prompt_id": "prompt_character_shen_weisang_ep01",
-      "asset_id": "character_shen_weisang_ep01",
+      "prompt_id": "PROMPT_E01_C001",
+      "asset_id": "E01_C001",
       "asset_type": "character",
-      "output_path": "assets/characters/character_shen_weisang_multi_state_board.png",
-      "prompt": "Use 沈维桑第一集角色板 as episode 01 art reference. 第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。 Preserve CHAR_SHEN_WEISANG;CHAR_SHEN_WEISANG_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_WEISANG",
-        "CHAR_SHEN_WEISANG_RESTRAINT"
-      ],
-      "source_refs": [
-        "沈维桑"
-      ],
-      "downstream_usage": [
-        "第一集只取残阳坳猎户状态，压住发光裂纹和雪线状态。"
-      ]
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C001",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c001e01.png",
+        "prompt_id": "PROMPT_E01_C001",
+        "source_refs": [
+          "bible/characters.md#沈维桑",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "PROP_SHEN_BOW",
+          "PROP_WHITE_WAX_FLAGS",
+          "left_shoulder_old_wound"
+        ],
+        "usage": [
+          "SC004-SH003",
+          "SC004-SH006",
+          "SC006-SH009",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈维桑第01集封村状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "十七岁山路猎户少年站在被封村的人群边缘，灰褐猎衣露出草药青内层，旧皮护腕、猎弓、路线包和短刀清楚，左肩微低，眼神先读旧井、药屋和后山出口再看官吏。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "17岁残阳坳猎户，灰褐猎衣和草药青内层，背弓站在人群边缘，左肩微低；本集状态是白册封村中的圆谎、忍耐和扣弦克制。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
     },
     {
-      "prompt_id": "prompt_character_shen_zhaomian_ep01",
-      "asset_id": "character_shen_zhaomian_ep01",
+      "prompt_id": "PROMPT_E01_C002",
+      "asset_id": "E01_C002",
       "asset_type": "character",
-      "output_path": "assets/characters/character_shen_zhaomian_multi_state_board.png",
-      "prompt": "Use 沈照眠第一集角色板 as episode 01 art reference. 第一集只取村童草药袋状态，清明白衣为后续威胁状态。 Preserve CHAR_SHEN_ZHAOMIAN;PROP_HERB_POUCH. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "PROP_HERB_POUCH"
-      ],
-      "source_refs": [
-        "沈照眠"
-      ],
-      "downstream_usage": [
-        "第一集只取村童草药袋状态，清明白衣为后续威胁状态。"
-      ]
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c002e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C002",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c002e01.png",
+        "prompt_id": "PROMPT_E01_C002",
+        "source_refs": [
+          "bible/characters.md#晏南枝",
+          "01/script/final-script.md#SC03",
+          "01/script/final-script.md#SC05"
+        ],
+        "continuity_refs": [
+          "CHAR_YAN_NANZHI",
+          "PROP_MOON_WHITE_JADE",
+          "PROP_BLOOD_GENEALOGY",
+          "face_reveal_control"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "SC003-SH003",
+          "SC005-SH001",
+          "SC005-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建晏南枝第01集遮面藏身状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "十八岁旧帝国皇室旁支少女处于遮面流亡状态，冷灰外袍、深墨蓝内层、黑发红线束发，手心压着月白玉片；只露出下颌、手指和暗处眼神，气度克制而非华丽登场。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "晏南枝在01集不做完整正面华丽揭示；南方密室中遮面、手握月白玉片，药柜暗格中低光藏身，贵气被压低但轮廓仍干净。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
     },
     {
-      "prompt_id": "prompt_character_luo_qinghe_ep01",
-      "asset_id": "character_luo_qinghe_ep01",
+      "prompt_id": "PROMPT_E01_C004",
+      "asset_id": "E01_C004",
       "asset_type": "character",
-      "output_path": "assets/characters/character_luo_qinghe_multi_state_board.png",
-      "prompt": "Use 罗青禾第一集角色板 as episode 01 art reference. 本地医者、青布头巾、草药篮、药柜手势。 Preserve CHAR_LUO_QINGHE;RULE_DIALOGUE_AS_COVER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_LUO_QINGHE",
-        "RULE_DIALOGUE_AS_COVER"
-      ],
-      "source_refs": [
-        "罗青禾"
-      ],
-      "downstream_usage": [
-        "本地医者、青布头巾、草药篮、药柜手势。"
-      ]
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c004e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C004",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c004e01.png",
+        "prompt_id": "PROMPT_E01_C004",
+        "source_refs": [
+          "bible/characters.md#薛临墙",
+          "01/script/final-script.md#SC01"
+        ],
+        "continuity_refs": [
+          "CHAR_XUE_LINQIANG",
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL"
+        ],
+        "usage": [
+          "SC001-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建薛临墙第01集边墙序幕状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "五十岁上下边墙老墙师在黑石墙缝前低声下令，灰石厚衬袄、旧甲片、粗麻墙巾和雪线绑腿覆雪，冻裂粗手压住墙体裂纹，脸侧胡茬和眼下暗沉清楚。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "边墙暴雪序幕中的老墙师，灰石厚衬袄覆雪，冻裂粗手按墙缝，用短令建立守墙人的现实主义。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
     },
     {
-      "prompt_id": "prompt_character_bai_yi_ep01",
-      "asset_id": "character_bai_yi_ep01",
+      "prompt_id": "PROMPT_E01_C005",
+      "asset_id": "E01_C005",
       "asset_type": "character",
-      "output_path": "assets/characters/character_bai_yi_multi_state_board.png",
-      "prompt": "Use 白翳第一集角色板 as episode 01 art reference. 上层清明监察虫族官制，无尘白袍、膜翼、虫蜡针、白册。 Preserve CHAR_BAI_YI;FACTION_SUMING_QINGMING. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_BAI_YI",
-        "FACTION_SUMING_QINGMING"
-      ],
-      "source_refs": [
-        "白翳"
-      ],
-      "downstream_usage": [
-        "上层清明监察虫族官制，无尘白袍、膜翼、虫蜡针、白册。"
-      ]
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c005e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C005",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c005e01.png",
+        "prompt_id": "PROMPT_E01_C005",
+        "source_refs": [
+          "bible/characters.md#沈照眠",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_ZHAOMIAN",
+          "PROP_ZHAOMIAN_HERB_BAG",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC004-SH004",
+          "SC004-SH005",
+          "SC006-SH004",
+          "SC006-SH009"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈照眠第01集村中疑童状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "八到十岁人族女孩抱着小草药袋站在成人身体形成的窄框里，浅灰短襦、草药绿小围裙、简单布鞋，圆脸稚气和紧张摸袋动作清楚。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "沈照眠仍是村中状态，浅灰短襦和草药袋，因儿童习惯漏出禁歌，被白册写成疑童。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
     },
     {
-      "prompt_id": "prompt_character_suming_inspector_background_ep01",
-      "asset_id": "character_suming_inspector_background_ep01",
+      "prompt_id": "PROMPT_E01_C006",
+      "asset_id": "E01_C006",
       "asset_type": "character",
-      "output_path": "assets/characters/character_suming_insect_infantry_multi_state_board.png",
-      "prompt": "Use 虫族监察队背景参考 as episode 01 art reference. 仅作短矛、局部甲片和剪影参考，不形成怪物潮。 Preserve FACTION_SUMING_QINGMING;RULE_LIMIT_INSECT_CROWD. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "FACTION_SUMING_QINGMING",
-        "RULE_LIMIT_INSECT_CROWD"
-      ],
-      "source_refs": [
-        "虫族监察队"
-      ],
-      "downstream_usage": [
-        "仅作短矛、局部甲片和剪影参考，不形成怪物潮。"
-      ]
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c006e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C006",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c006e01.png",
+        "prompt_id": "PROMPT_E01_C006",
+        "source_refs": [
+          "bible/characters.md#罗青禾",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC05",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_LUO_QINGHE",
+          "PROP_MEDICINE_CABINET",
+          "PROP_ZHAOMIAN_HERB_BAG"
+        ],
+        "usage": [
+          "SC004-SH005",
+          "SC005-SH002",
+          "SC005-SH005",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建罗青禾第01集药屋保护状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "三十七岁残阳坳医者站在门与药柜之间，青布头巾、草药绿围裙、土褐药屋上衣和小铜剪清楚，手指有药草染色和细小刀口，眼神镇定。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "罗青禾在村口挡女儿、药屋挡暗格、旧井旁隔人群阻止沈维桑出箭；青布头巾、草药绿围裙、小铜剪和医者手稳是核心。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
     },
     {
-      "prompt_id": "prompt_costume_shen_weisang_ep01",
-      "asset_id": "costume_shen_weisang_ep01",
+      "prompt_id": "PROMPT_E01_C007",
+      "asset_id": "E01_C007",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c007e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C007",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c007e01.png",
+        "prompt_id": "PROMPT_E01_C007",
+        "source_refs": [
+          "bible/characters.md#白翳",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_BAI_YI",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_WHITE_REGISTER",
+          "clean_straight_entry"
+        ],
+        "usage": [
+          "SC006-SH005",
+          "SC006-SH006",
+          "SC006-SH007",
+          "SC006-SH009"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建白翳第01集无尘入场状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "两米以上高瘦虫族监察官从土褐村口直线走入，虫蜡白官服无尘、高筒清明官帽、骨白硬领、半透明薄翼披肩、暗色复眼和细长虫须束清楚，一手擦拭虫蜡针。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "白翳第一次以中枢监察使姿态进入残阳坳，白袍无尘、高瘦、直线移动，擦虫蜡针后将地方疑名升级为逆案。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C011",
+      "asset_id": "E01_C011",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c011e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C011",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c011e01.png",
+        "prompt_id": "PROMPT_E01_C011",
+        "source_refs": [
+          "bible/characters.md#顾怀章",
+          "01/script/final-script.md#SC03"
+        ],
+        "continuity_refs": [
+          "CHAR_GU_HUAIZHANG",
+          "PROP_BLOOD_GENEALOGY",
+          "LOC_SOUTHERN_REDLINE_ROOM"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "SC003-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建顾怀章第01集南方旧臣状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "年长清瘦人族旧臣站在油灯侧，轻薄朱赤外袍、宝蓝内层、旧金边和防潮卷轴筒清楚，正衣袖后把半卷血牒推向阴影。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "南方密室里把血牒和月下任务压给晏南枝的旧臣，衣冠和卷轴比身体更有压迫感。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C016A",
+      "asset_id": "E01_C016A",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c016e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C016A",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c016e01.png",
+        "prompt_id": "PROMPT_E01_C016A",
+        "source_refs": [
+          "bible/characters.md#白册官吏",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_BAICE_CLERK",
+          "PROP_WHITE_REGISTER",
+          "LOC_CANYANGAO_GATE"
+        ],
+        "usage": [
+          "SC004-SH002",
+          "SC004-SH005",
+          "SC004-SH007",
+          "SC006-SH002",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建白册官吏第01集残阳坳登记状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "低阶官僚型虫族白册官吏站在村口检查桌后，半圆高账吏帽拉高剪影，蜡白灰短官袍、白册夹板、蜡笔针、小印盒和复眼清楚，村民被压在低位。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "残阳坳执行层的白册官吏，开册、挂疑名、写疑童；不亲自扣腕，权力来自高位、白册和蜡笔。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C016B",
+      "asset_id": "E01_C016B",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c016e02.png",
+      "production_metadata": {
+        "asset_id": "E01_C016B",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c016e02.png",
+        "prompt_id": "PROMPT_E01_C016B",
+        "source_refs": [
+          "bible/characters.md#粮税小吏",
+          "01/script/final-script.md#SC02"
+        ],
+        "continuity_refs": [
+          "CHAR_GRAIN_TAX_CLERK",
+          "PROP_WHITE_REGISTER",
+          "LOC_JINHE_GRAIN_DEPOT"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "SC002-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建粮税小吏第01集金河征粮状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "虫族粮税小吏立在粮袋墙前，蜡灰青官袍、高账吏帽、白册夹板、骨算盘、粮牌、旧铁秤钩和节状手指清楚，姿态像念条目。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "金河序幕中把粮和清明籍绑定的粮税小吏，蜡灰青官服、高账吏帽、粮牌和骨算盘必须区别于人族账房。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C017",
+      "asset_id": "E01_C017",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c017e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C017",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c017e01.png",
+        "prompt_id": "PROMPT_E01_C017",
+        "source_refs": [
+          "bible/characters.md#奴兵总则",
+          "01/script/final-script.md#SC02",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "CHAR_SUMING_SLAVE_CART_SOLDIER",
+          "CHAR_SUMING_DOOR_SEAL_SOLDIER"
+        ],
+        "usage": [
+          "SC002-SH002",
+          "SC002-SH004",
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建混血奴兵第01集扣腕押车状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "混血清污军户两到三人组合，蜡灰青短军袍、暗绿黑护布、骨白虫蜡腕绑、黑日烙牌、编号木牌和后脑低位细长金钱马尾清楚，一人扣腕，一人拖粮袋或押车。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "奴兵负责扣腕、押车、封门和执行抓捕，不承担开册职责；人族轮廓与虫化甲片并存，后脑低位金钱马尾可见。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C018",
+      "asset_id": "E01_C018",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c018e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C018",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c018e01.png",
+        "prompt_id": "PROMPT_E01_C018",
+        "source_refs": [
+          "bible/characters.md#普通虫族小兵",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CHAR_SUMING_INSECT_INFANTRY",
+          "LOC_CANYANGAO_WELL",
+          "LOC_LUO_MEDICINE_HOUSE"
+        ],
+        "usage": [
+          "SC004-SH001",
+          "SC006-SH003",
+          "SC006-SH008"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建纯虫族小兵第01集封路状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "纯虫族基层小兵低伏在旧井和药屋外圈，胸背硬化、反关节腿、爪足、窄复眼、骨白护颚、短矛或钩镰和白翅覆黑日旧铁牌清楚。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "纯虫族小兵只负责封旧井、药屋外圈和钩镰堵路；低伏、反关节腿和外圈封锁线必须与官吏/奴兵区分。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C020",
+      "asset_id": "E01_C020",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c020e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C020",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c020e01.png",
+        "prompt_id": "PROMPT_E01_C020",
+        "source_refs": [
+          "bible/characters.md#北境攻城兵种",
+          "01/script/final-script.md#SC01"
+        ],
+        "continuity_refs": [
+          "CHAR_NORTHERN_SIEGE_SILHOUETTES",
+          "RULE_SIEGE_LOCAL_CAUSALITY"
+        ],
+        "usage": [
+          "SC001-SH001",
+          "SC001-SH002"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建北境攻城剪影第01集序幕卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "暴雪中只读局部剪影的北境攻城压力，黑牙斧兵砍拒马、雪狼骑绕向烽燧、破门猛犸铁包巨角撞近骨钟，所有形体被风雪遮挡成局部因果。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "序幕只需要黑牙斧兵、雪狼骑和破门猛犸局部剪影，不展开完整兽潮或全兵种大场面。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C022",
+      "asset_id": "E01_C022",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c022e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C022",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c022e01.png",
+        "prompt_id": "PROMPT_E01_C022",
+        "source_refs": [
+          "01/script/final-script.md#SC01",
+          "01/storyboard/storyboard-plan.md#SC001-SH002"
+        ],
+        "continuity_refs": [
+          "young_grey_wall_soldier",
+          "PROP_BONE_BELL",
+          "PROP_BROKEN_SPEAR"
+        ],
+        "usage": [
+          "SC001-SH002"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建年轻灰墙军户序幕状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "年轻灰墙军户跪倒在雪泥中，厚衬袄和旧甲片沾雪，手里的长矛断成两截，冻裂掌心贴住裂开的骨钟。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C023",
+      "asset_id": "E01_C023",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c023e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C023",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c023e01.png",
+        "prompt_id": "PROMPT_E01_C023",
+        "source_refs": [
+          "bible/visual-style.md#人族视觉边界",
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "CANYANGAO_VILLAGERS",
+          "human_crowd_diversity_rule"
+        ],
+        "usage": [
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建残阳坳村民群像状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳村民群像，男女老幼、猎户、药户、驿道后裔和山民混在检查桌旁，灰褐旧麻短袄、草药青内层、旧皮护腕、药篮、柴刀、草绳和粮袋显示生活秩序。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "残阳坳山民群像需要年龄、性别、职业和贫困程度差异；猎户、药户、驿道后裔和山民工具必须可见。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_C024",
+      "asset_id": "E01_C024",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_path": "assets/characters/c024e01.png",
+      "production_metadata": {
+        "asset_id": "E01_C024",
+        "asset_subtype": "character_episode_state_card",
+        "output_file": "c024e01.png",
+        "prompt_id": "PROMPT_E01_C024",
+        "source_refs": [
+          "bible/visual-style.md#金河粮仓带的勉强果腹平民",
+          "01/script/final-script.md#SC02"
+        ],
+        "continuity_refs": [
+          "JINHE_HOUSEHOLD_CIVILIANS",
+          "human_crowd_diversity_rule"
+        ],
+        "usage": [
+          "SC002-SH002",
+          "SC002-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建金河被征粮家庭群像状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "金河粮仓带被征粮家庭，老人护祖牌小盒、妇人护过冬粮、孩子被迫按封条，衣物麦金褪色、河泥褐、湿木灰，补丁沿袖口、肘部、腰带和膝部。",
+        "composition_motion": "角色设定板应包含正面、侧面、三分之二视角、手部或头部细节、服装材质近景和本集关键动作姿态。",
+        "visible_continuity": "金河家庭不是无来源灾民，必须保留粮仓带劳动结构、老人、妇人、孩子、祖牌和过冬粮压力。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级与体貌。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L007",
+      "asset_id": "E01_L007",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l007e01.png",
+      "production_metadata": {
+        "asset_id": "E01_L007",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l007e01.png",
+        "prompt_id": "PROMPT_E01_L007",
+        "source_refs": [
+          "bible/scenes.md#锁喉关",
+          "01/script/final-script.md#SC01",
+          "01/director/camera-plan.md#SC001"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "RULE_SIEGE_LOCAL_CAUSALITY"
+        ],
+        "usage": [
+          "SC001-SH001",
+          "SC001-SH002",
+          "SC001-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建锁喉关外墙序幕场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "暴雪里的锁喉关外墙，黑石墙垂直压迫竖屏，骨钟挂在前景上部，门闩、枪线、拒马、断矛和冻血形成局部攻城因果，墙外巨角和斧兵只读剪影。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "黑石外墙、骨钟、门闩、枪线、拒马和暴雪构成局部攻城序幕；只做墙面近景和剪影，不做完整战场。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L003",
+      "asset_id": "E01_L003",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l003e01.png",
+      "production_metadata": {
+        "asset_id": "E01_L003",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l003e01.png",
+        "prompt_id": "PROMPT_E01_L003",
+        "source_refs": [
+          "bible/scenes.md#金河粮磨区与渡河蒸汽船",
+          "01/script/final-script.md#SC02"
+        ],
+        "continuity_refs": [
+          "LOC_JINHE_GRAIN_DEPOT",
+          "CHAR_GRAIN_TAX_CLERK",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "SC002-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建金河粮仓带征粮场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "金河粮仓带清晨，麦金色粮袋堆成高墙，泥路、湿木门槛、粮税检查处、押车轮痕和虫蜡封条可见，平民低位排队，清晨河雾压低饱和度。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L014",
+      "asset_id": "E01_L014",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l014e01.png",
+      "production_metadata": {
+        "asset_id": "E01_L014",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l014e01.png",
+        "prompt_id": "PROMPT_E01_L014",
+        "source_refs": [
+          "bible/scenes.md#南部丛林与南缘遗民",
+          "01/script/final-script.md#SC03"
+        ],
+        "continuity_refs": [
+          "LOC_SOUTHERN_REDLINE_ROOM",
+          "PROP_BLOOD_GENEALOGY",
+          "PROP_MOON_WHITE_JADE"
+        ],
+        "usage": [
+          "SC003-SH001",
+          "SC003-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建南方红线密室第01集场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "南方红线密室雨夜，油布被雨敲响，桌面铺开旧驿残图，朱赤红线从画面下方南缘钉向上方北境，防潮卷轴筒、油灯和潮湿木墙形成低暖暗环境。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "油布雨夜、旧驿残图桌、红线和防潮卷轴筒构成南方旧礼法压力；不展开南林政治。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L001A",
+      "asset_id": "E01_L001A",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_L001A",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l001e01.png",
+        "prompt_id": "PROMPT_E01_L001A",
+        "source_refs": [
+          "bible/scenes.md#残阳坳",
+          "01/script/final-script.md#SC04",
+          "01/director/camera-plan.md#SC004"
+        ],
+        "continuity_refs": [
+          "LOC_CANYANGAO_GATE",
+          "LOC_CANYANGAO_WELL",
+          "LOC_LUO_MEDICINE_HOUSE",
+          "PROP_WHITE_WAX_FLAGS"
+        ],
+        "usage": [
+          "SC004-SH001",
+          "SC004-SH002",
+          "SC004-SH009"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建残阳坳村口封锁地理场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳村口白天，检查桌居中，旧井在一侧，罗青禾药屋在另一侧，后山出口插三支白蜡旗；粮袋、药篮和柴刀被堆到低处，土褐生活色被虫蜡冷白切开。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L001B",
+      "asset_id": "E01_L001B",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l001e02.png",
+      "production_metadata": {
+        "asset_id": "E01_L001B",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l001e02.png",
+        "prompt_id": "PROMPT_E01_L001B",
+        "source_refs": [
+          "bible/scenes.md#残阳坳",
+          "01/script/final-script.md#SC05"
+        ],
+        "continuity_refs": [
+          "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+          "PROP_MEDICINE_CABINET",
+          "PROP_OLD_RELAY_MARK"
+        ],
+        "usage": [
+          "SC005-SH001",
+          "SC005-SH002",
+          "SC005-SH004",
+          "SC005-SH005"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建罗青禾药屋内景与暗格场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳药屋内景，草药青暗光、旧木药柜、药包、药篮、小铜剪和地面草药灰，药柜底板藏着旧驿暗号，门缝外有冷白虫蜡光和叉矛影。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_L001C",
+      "asset_id": "E01_L001C",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_path": "assets/locations/l001e03.png",
+      "production_metadata": {
+        "asset_id": "E01_L001C",
+        "asset_subtype": "location_episode_scene_card",
+        "output_file": "l001e03.png",
+        "prompt_id": "PROMPT_E01_L001C",
+        "source_refs": [
+          "bible/scenes.md#残阳坳",
+          "01/script/final-script.md#SC06",
+          "01/director/camera-plan.md#SC006"
+        ],
+        "continuity_refs": [
+          "LOC_CANYANGAO_WELL_TABLE",
+          "LOC_LUO_MEDICINE_HOUSE",
+          "PROP_WHITE_REGISTER",
+          "PROP_OLD_RELAY_MARK"
+        ],
+        "usage": [
+          "SC006-SH001",
+          "SC006-SH002",
+          "SC006-SH003",
+          "SC006-SH008"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建残阳坳旧井检查桌场景卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳旧井旁检查桌午后，旧井在前，药屋封门牌在侧后，检查桌上摆着旧驿暗号底板和白册，村民被赶到井边，虫族小兵向井口收拢。",
+        "composition_motion": "场景设定板应标出入口、出口、行动区、摄影可读区、主道具位置、人物尺度和天气/光线压力。",
+        "visible_continuity": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P016",
+      "asset_id": "E01_P016",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p016e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P016",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p016e01.png",
+        "prompt_id": "PROMPT_E01_P016",
+        "source_refs": [
+          "01/script/final-script.md#SC01"
+        ],
+        "continuity_refs": [
+          "PROP_BONE_BELL",
+          "PROP_BROKEN_SPEAR",
+          "RULE_SIEGE_LOCAL_CAUSALITY"
+        ],
+        "usage": [
+          "SC001-SH001",
+          "SC001-SH002"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建骨钟断矛与冻血序幕道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "裂开的骨钟、铜锈下旧日月刻痕、断成两截的长矛、冻血掌印和黑石墙粉尘组成道具设定板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "骨钟裂缝、旧日月刻痕、断矛和冻血负责把边墙战争压到局部道具上。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P008",
+      "asset_id": "E01_P008",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p008e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P008",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p008e01.png",
+        "prompt_id": "PROMPT_E01_P008",
+        "source_refs": [
+          "01/script/final-script.md#SC02"
+        ],
+        "continuity_refs": [
+          "PROP_ANCESTRAL_TABLET_BOX",
+          "PROP_GRAIN_TAG",
+          "PROP_INSECT_WAX_SEAL"
+        ],
+        "usage": [
+          "SC002-SH002",
+          "SC002-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建金河粮牌封蜡与祖牌组合卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "空粮缸、半斗杂粮、祖牌小盒、粮牌、虫蜡封条、押车绳和泥水门槛并列，材质旧而可触。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "粮牌、虫蜡封条、祖牌小盒、粮缸和押车绳要让制度如何写没家门可见。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P009",
+      "asset_id": "E01_P009",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p009e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P009",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p009e01.png",
+        "prompt_id": "PROMPT_E01_P009",
+        "source_refs": [
+          "01/script/final-script.md#SC03"
+        ],
+        "continuity_refs": [
+          "PROP_OLD_RELAY_MAP_REDLINE",
+          "LOC_SOUTHERN_REDLINE_ROOM"
+        ],
+        "usage": [
+          "SC003-SH001",
+          "SC003-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建南方旧驿残图红线道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "潮湿旧驿残图、朱赤红线、木钉、防潮卷轴筒和雨滴边缘组成桌面道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "旧驿残图用于红线从南缘向北境的方向锁定；不得出现现代地图字。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P002",
+      "asset_id": "E01_P002",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p002e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P002",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p002e01.png",
+        "prompt_id": "PROMPT_E01_P002",
+        "source_refs": [
+          "01/script/final-script.md#SC03",
+          "01/script/final-script.md#SC05"
+        ],
+        "continuity_refs": [
+          "PROP_MOON_WHITE_JADE",
+          "PROP_BLOOD_GENEALOGY",
+          "face_reveal_control"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "SC003-SH003",
+          "SC005-SH001"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建月白玉片与半卷血牒第01集状态卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "半卷血牒、油纸防潮包、红线、月白玉片和停住的指尖组成低光道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "本集只作为身份压力和手心冷反光，不提供战斗能力。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P003",
+      "asset_id": "E01_P003",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p003e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P003",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p003e01.png",
+        "prompt_id": "PROMPT_E01_P003",
+        "source_refs": [
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_REGISTER",
+          "PROP_REGISTER_SIDE_NOTE",
+          "text_not_model_generated"
+        ],
+        "usage": [
+          "SC004-SH007",
+          "SC006-SH004",
+          "SC006-SH007"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建白册与蜡笔疑名道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "骨白白册、冷灰夹板、蜡笔、疑名旁注空白区域、小印盒和虫蜡纹组成精确道具板，页面留有后合成文字区域。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "白册需要空白板和可后合成区域；不要让模型生成文字。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P004",
+      "asset_id": "E01_P004",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p004e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P004",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p004e01.png",
+        "prompt_id": "PROMPT_E01_P004",
+        "source_refs": [
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_QINGMING_INCENSE",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_QINGMING_SCENT_BELL"
+        ],
+        "usage": [
+          "SC004-SH008",
+          "SC006-SH005",
+          "SC006-SH006"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建清明香与虫蜡针第01集道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "插入检查桌裂缝的清明香、细长冷白虫蜡针、洁净针盒和清明香铃组成道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "清明香是倒计时，虫蜡针是白翳清洁式审讯动作。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P017",
+      "asset_id": "E01_P017",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p017e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P017",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p017e01.png",
+        "prompt_id": "PROMPT_E01_P017",
+        "source_refs": [
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_WAX_FLAGS",
+          "PROP_DOOR_SEAL_TAG"
+        ],
+        "usage": [
+          "SC004-SH001",
+          "SC004-SH009",
+          "SC006-SH001"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建白蜡旗与封门牌道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白蜡旗、未干虫蜡、封门牌、旧木门框和冷白蜡滴组成封锁道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "三支白蜡旗和虫蜡封门牌说明封村已提前布好。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P005",
+      "asset_id": "E01_P005",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p005e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P005",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p005e01.png",
+        "prompt_id": "PROMPT_E01_P005",
+        "source_refs": [
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_ZHAOMIAN_HERB_BAG",
+          "CHAR_SHEN_ZHAOMIAN"
+        ],
+        "usage": [
+          "SC004-SH004",
+          "SC004-SH006",
+          "SC006-SH004"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈照眠草药袋第01集道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "小草药袋、草药灰、简单系绳、浅灰布片和孩子手指抓痕组成儿童尺度道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "草药袋承载孩子习惯、亲情锚点和白册疑童动作。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P018",
+      "asset_id": "E01_P018",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p018e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P018",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p018e01.png",
+        "prompt_id": "PROMPT_E01_P018",
+        "source_refs": [
+          "01/script/final-script.md#SC05",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_MEDICINE_CABINET",
+          "PROP_OLD_RELAY_MARK",
+          "redraw_needed"
+        ],
+        "usage": [
+          "SC005-SH001",
+          "SC005-SH004",
+          "SC006-SH002"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建药柜暗格与旧驿暗号道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "旧木药柜底板、草药灰、擦开的旧驿暗号占位、日月残纹和药包边缘组成道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "药柜底板旧驿暗号是本集被查出的罪证；精确符号需要后合成控制。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_P020",
+      "asset_id": "E01_P020",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/props/p020e01.png",
+      "production_metadata": {
+        "asset_id": "E01_P020",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "p020e01.png",
+        "prompt_id": "PROMPT_E01_P020",
+        "source_refs": [
+          "01/script/final-script.md#SC04",
+          "01/script/final-script.md#SC06"
+        ],
+        "continuity_refs": [
+          "PROP_SHEN_BOW",
+          "CHAR_SHEN_WEISANG",
+          "ending_timing"
+        ],
+        "usage": [
+          "SC004-SH006",
+          "SC006-SH009",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈维桑猎弓弓弦克制道具卡，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "旧猎弓、磨损弓弦、少年指腹弓弦茧、旧皮护腕和低冷反光组成手部道具板。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "猎弓不是动作爽点，本集最终必须停在扣弦又松开的克制。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_K001",
+      "asset_id": "E01_K001",
       "asset_type": "costume",
-      "output_path": "assets/costumes/costume_shen_weisang_states.png",
-      "prompt": "Use 沈维桑第一集服装板 as episode 01 art reference. 新增服装板，第一集只用猎户状态。 Preserve CHAR_SHEN_WEISANG;COSTUME_COMPLETE_NOT_RAGGED. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_WEISANG",
-        "COSTUME_COMPLETE_NOT_RAGGED"
-      ],
-      "source_refs": [
-        "沈维桑服装"
-      ],
-      "downstream_usage": [
-        "新增服装板，第一集只用猎户状态。"
-      ]
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/costumes/k001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_K001",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "k001e01.png",
+        "prompt_id": "PROMPT_E01_K001",
+        "source_refs": [
+          "bible/characters.md#沈维桑",
+          "01/script/final-script.md"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "left_shoulder_old_wound"
+        ],
+        "usage": [
+          "SC004-SH003",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈维桑第01集猎户服装状态板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "灰褐猎衣、草药青内层、旧皮护腕、绑腿、路线包和左肩旧伤造成的衣料拉扯并列。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "灰褐猎衣、草药青内层和旧皮护腕保持村中状态，不进入边墙升级。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_costume_shen_zhaomian_ep01",
-      "asset_id": "costume_shen_zhaomian_ep01",
+      "prompt_id": "PROMPT_E01_K002",
+      "asset_id": "E01_K002",
       "asset_type": "costume",
-      "output_path": "assets/costumes/costume_shen_zhaomian_states.png",
-      "prompt": "Use 沈照眠第一集服装板 as episode 01 art reference. 新增服装板，第一集只用村童状态。 Preserve CHAR_SHEN_ZHAOMIAN;CHILD_SAFETY_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "CHILD_SAFETY_RESTRAINT"
-      ],
-      "source_refs": [
-        "沈照眠服装"
-      ],
-      "downstream_usage": [
-        "新增服装板，第一集只用村童状态。"
-      ]
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/costumes/k002e01.png",
+      "production_metadata": {
+        "asset_id": "E01_K002",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "k002e01.png",
+        "prompt_id": "PROMPT_E01_K002",
+        "source_refs": [
+          "bible/characters.md#晏南枝",
+          "01/script/final-script.md"
+        ],
+        "continuity_refs": [
+          "CHAR_YAN_NANZHI",
+          "face_reveal_control"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "SC005-SH001"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建晏南枝第01集遮面流亡服装板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "冷灰遮面斗篷、深墨蓝内层、红线束发、袖中月白玉片位置和低光藏身状态并列。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "冷灰外袍和遮面斗篷压低身份，但轮廓仍修长贵气。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_costume_luo_qinghe_ep01",
-      "asset_id": "costume_luo_qinghe_ep01",
+      "prompt_id": "PROMPT_E01_K003",
+      "asset_id": "E01_K003",
       "asset_type": "costume",
-      "output_path": "assets/costumes/costume_luo_qinghe_states.png",
-      "prompt": "Use 罗青禾第一集服装板 as episode 01 art reference. 新增服装板，药屋医者服装和工具清楚。 Preserve CHAR_LUO_QINGHE;LOC_MEDICINE_HOUSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_LUO_QINGHE",
-        "LOC_MEDICINE_HOUSE"
-      ],
-      "source_refs": [
-        "罗青禾服装"
-      ],
-      "downstream_usage": [
-        "新增服装板，药屋医者服装和工具清楚。"
-      ]
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/costumes/k003e01.png",
+      "production_metadata": {
+        "asset_id": "E01_K003",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "k003e01.png",
+        "prompt_id": "PROMPT_E01_K003",
+        "source_refs": [
+          "bible/characters.md#沈照眠",
+          "01/script/final-script.md"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_ZHAOMIAN",
+          "PROP_ZHAOMIAN_HERB_BAG"
+        ],
+        "usage": [
+          "SC004-SH004",
+          "SC006-SH009"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建沈照眠第01集村中儿童服装板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "浅灰短襦、草药绿小围裙、简单布鞋、小草药袋和被成人身体遮住的儿童尺度并列。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "浅灰短襦和草药绿小围裙必须保留儿童脆弱体量。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_costume_bai_yi_ep01",
-      "asset_id": "costume_bai_yi_ep01",
+      "prompt_id": "PROMPT_E01_K004",
+      "asset_id": "E01_K004",
       "asset_type": "costume",
-      "output_path": "assets/costumes/costume_bai_yi_states.png",
-      "prompt": "Use 白翳第一集服装板 as episode 01 art reference. 新增服装板，清明监察官制白参考。 Preserve CHAR_BAI_YI;COSTUME_QINGMING_UPPER_OFFICIAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_BAI_YI",
-        "COSTUME_QINGMING_UPPER_OFFICIAL"
-      ],
-      "source_refs": [
-        "白翳服装"
-      ],
-      "downstream_usage": [
-        "新增服装板，清明监察官制白参考。"
-      ]
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/costumes/k004e01.png",
+      "production_metadata": {
+        "asset_id": "E01_K004",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "k004e01.png",
+        "prompt_id": "PROMPT_E01_K004",
+        "source_refs": [
+          "bible/characters.md#基层官吏、奴兵与虫族士兵",
+          "01/script/final-script.md"
+        ],
+        "continuity_refs": [
+          "CHAR_BAICE_CLERK",
+          "CHAR_GRAIN_TAX_CLERK",
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "CHAR_SUMING_INSECT_INFANTRY"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建肃明执行层第01集服制板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白册官吏高账吏帽、粮税小吏蜡灰青官袍、奴兵蜡灰青短军袍与金钱马尾、纯虫族小兵低伏甲壳并列。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "同场必须一眼区分官吏、奴兵和纯虫族小兵。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_loc_canyangao_master_dusk_ep01",
-      "asset_id": "loc_canyangao_master_dusk_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_master_dusk.png",
-      "prompt": "Use 残阳坳黄昏总场景 as episode 01 art reference. 总空间和区域色参考。 Preserve LOC_CANYANG_GATE;LOC_MEDICINE_HOUSE;LOC_OLD_WELL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_CANYANG_GATE",
-        "LOC_MEDICINE_HOUSE",
-        "LOC_OLD_WELL"
-      ],
-      "source_refs": [
-        "残阳坳"
-      ],
-      "downstream_usage": [
-        "总空间和区域色参考。"
-      ]
+      "prompt_id": "PROMPT_E01_K006",
+      "asset_id": "E01_K006",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_path": "assets/costumes/k006e01.png",
+      "production_metadata": {
+        "asset_id": "E01_K006",
+        "asset_subtype": "prop_episode_state_card",
+        "output_file": "k006e01.png",
+        "prompt_id": "PROMPT_E01_K006",
+        "source_refs": [
+          "bible/visual-style.md#人族视觉边界",
+          "01/script/final-script.md"
+        ],
+        "continuity_refs": [
+          "CANYANGAO_VILLAGERS",
+          "JINHE_HOUSEHOLD_CIVILIANS",
+          "human_crowd_diversity_rule"
+        ],
+        "usage": [
+          "SC002-SH002",
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建第01集人族群众服装差异板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳山民灰褐猎衣与草药青、金河平民麦金褪色与湿木灰、老人妇人孩子和职业工具差异并列。",
+        "composition_motion": "道具或服装设定板应包含正视、侧视、手持尺度、材质磨损近景、状态变化和需要后合成的精确区域。",
+        "visible_continuity": "残阳坳山民和金河平民不得同款灾民化。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_loc_canyangao_gate_blood_check_ep01",
-      "asset_id": "loc_canyangao_gate_blood_check_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
-      "prompt": "Use 残阳坳村口验血席 as episode 01 art reference. 村口验血、白布、短矛封锁和清明香参考。 Preserve LOC_CANYANG_GATE;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_CANYANG_GATE",
-        "PROP_QINGMING_REGISTER"
-      ],
-      "source_refs": [
-        "村口验血"
-      ],
-      "downstream_usage": [
-        "村口验血、白布、短矛封锁和清明香参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_loc_canyangao_medicine_house_exterior_ep01",
-      "asset_id": "loc_canyangao_medicine_house_exterior_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
-      "prompt": "Use 罗家药屋外景/门槛 as episode 01 art reference. 门槛失言、药屋门口和后院方向参考。 Preserve LOC_MEDICINE_HOUSE;RULE_SPATIAL_GEOGRAPHY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_MEDICINE_HOUSE",
-        "RULE_SPATIAL_GEOGRAPHY"
-      ],
-      "source_refs": [
-        "药屋门槛"
-      ],
-      "downstream_usage": [
-        "门槛失言、药屋门口和后院方向参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_loc_canyangao_medicine_house_interior_ep01",
-      "asset_id": "loc_canyangao_medicine_house_interior_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
-      "prompt": "Use 罗家药屋内景/药柜 as episode 01 art reference. 药柜压迫构图、罗青禾手势、白翳入内参考。 Preserve LOC_MEDICINE_HOUSE;RULE_HIDE_RELAY_MARKS. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_MEDICINE_HOUSE",
-        "RULE_HIDE_RELAY_MARKS"
-      ],
-      "source_refs": [
-        "药屋内景"
-      ],
-      "downstream_usage": [
-        "药柜压迫构图、罗青禾手势、白翳入内参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_loc_canyangao_old_well_courtyard_ep01",
-      "asset_id": "loc_canyangao_old_well_courtyard_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
-      "prompt": "Use 罗家后院旧井 as episode 01 art reference. 水缸、旧井、墙根清明香和井沿擦痕参考。 Preserve LOC_OLD_WELL;RULE_MOON_WHITE_GLINT_ONLY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_OLD_WELL",
-        "RULE_MOON_WHITE_GLINT_ONLY"
-      ],
-      "source_refs": [
-        "旧井"
-      ],
-      "downstream_usage": [
-        "水缸、旧井、墙根清明香和井沿擦痕参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_loc_canyangao_hidden_relay_compartment_ep01",
-      "asset_id": "loc_canyangao_hidden_relay_compartment_ep01",
-      "asset_type": "location",
-      "output_path": "assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
-      "prompt": "Use 药屋暗格与旧驿刻痕 as episode 01 art reference. 暗格暴露、残缺日月纹、虫蜡封条参考。 Preserve PROP_HIDDEN_RELAY_COMPARTMENT;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_HIDDEN_RELAY_COMPARTMENT",
-        "FACTION_ZHAOMING_RELIC"
-      ],
-      "source_refs": [
-        "暗格"
-      ],
-      "downstream_usage": [
-        "暗格暴露、残缺日月纹、虫蜡封条参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_prop_qingming_white_register_ep01",
-      "asset_id": "prop_qingming_white_register_ep01",
-      "asset_type": "prop",
-      "output_path": "assets/props/prop_qingming_white_register.png",
-      "prompt": "Use 清明白册 as episode 01 art reference. 白册页角、浮字后期文字位、结尾合册参考。 Preserve PROP_QINGMING_REGISTER;RULE_BLOODLINE_TEXT_READABLE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_QINGMING_REGISTER",
-        "RULE_BLOODLINE_TEXT_READABLE"
-      ],
-      "source_refs": [
-        "清明白册"
-      ],
-      "downstream_usage": [
-        "白册页角、浮字后期文字位、结尾合册参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_prop_qingming_court_tool_board_ep01",
-      "asset_id": "prop_qingming_court_tool_board_ep01",
-      "asset_type": "prop",
-      "output_path": "assets/props/prop_qingming_court_tool_board.png",
-      "prompt": "Use 虫蜡针/清明香/清明工具板 as episode 01 art reference. 虫蜡针、香线、针盘、封条参考。 Preserve PROP_INSECT_WAX_NEEDLE;PROP_QINGMING_INCENSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_INSECT_WAX_NEEDLE",
-        "PROP_QINGMING_INCENSE"
-      ],
-      "source_refs": [
-        "清明工具"
-      ],
-      "downstream_usage": [
-        "虫蜡针、香线、针盘、封条参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_prop_fragmented_continent_relay_map_ep01",
-      "asset_id": "prop_fragmented_continent_relay_map_ep01",
-      "asset_type": "prop",
-      "output_path": "assets/props/prop_fragmented_continent_relay_map.png",
-      "prompt": "Use 旧驿图/残缺大陆驿道图 as episode 01 art reference. 序幕南方密室旧驿图和药包遮蔽参考。 Preserve PROP_OLD_RELAY_MAP;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_OLD_RELAY_MAP",
-        "FACTION_ZHAOMING_RELIC"
-      ],
-      "source_refs": [
-        "旧驿图"
-      ],
-      "downstream_usage": [
-        "序幕南方密室旧驿图和药包遮蔽参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_prop_half_sunmoon_relay_token_ep01",
-      "asset_id": "prop_half_sunmoon_relay_token_ep01",
-      "asset_type": "prop",
-      "output_path": "assets/props/prop_half_sunmoon_relay_token.png",
-      "prompt": "Use 半枚日月驿令/一线月白反光规则 as episode 01 art reference. 第一集只作井沿一线月白反光参考，不展示全貌。 Preserve RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_MOON_JADE_FULL_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "RULE_NO_MOON_JADE_FULL_REVEAL"
-      ],
-      "source_refs": [
-        "半枚日月驿令"
-      ],
-      "downstream_usage": [
-        "第一集只作井沿一线月白反光参考，不展示全貌。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_prop_shen_zhaomian_child_relics_ep01",
-      "asset_id": "prop_shen_zhaomian_child_relics_ep01",
-      "asset_type": "prop",
-      "output_path": "assets/props/prop_shen_zhaomian_child_relics.png",
-      "prompt": "Use 沈照眠小草药袋/药名牌 as episode 01 art reference. 小草药袋、空白药名牌、烧焦发绳参考。 Preserve PROP_HERB_POUCH;PROP_HERB_NAME_TILES. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_HERB_POUCH",
-        "PROP_HERB_NAME_TILES"
-      ],
-      "source_refs": [
-        "沈照眠小物"
-      ],
-      "downstream_usage": [
-        "小草药袋、空白药名牌、烧焦发绳参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_style_global_mood_ep01",
-      "asset_id": "style_global_mood_ep01",
+      "prompt_id": "PROMPT_E01_F001",
+      "asset_id": "E01_F001",
       "asset_type": "style",
-      "output_path": "assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
-      "prompt": "Use 低魔东方史诗总风格 as episode 01 art reference. 低饱和、局部叙事、现实材质参考。 Preserve STYLE_GROUNDED_EPIC;LOW_MAGIC_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "STYLE_GROUNDED_EPIC",
-        "LOW_MAGIC_RESTRAINT"
-      ],
-      "source_refs": [
-        "总风格"
-      ],
-      "downstream_usage": [
-        "低饱和、局部叙事、现实材质参考。"
-      ]
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_F001",
+        "asset_subtype": "style_reference",
+        "output_file": "f001e01.png",
+        "prompt_id": "PROMPT_E01_F001",
+        "source_refs": [
+          "01/director/director-brief.md",
+          "01/storyboard/storyboard-plan.md"
+        ],
+        "continuity_refs": [
+          "STYLE_LOW_MAGIC_EASTERN_EPIC",
+          "9:16",
+          "local_causality"
+        ],
+        "usage": [
+          "all_scenes"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建第01集整体风格与材质板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "第01集整体风格板，黑石暴雪、金河麦金冷雾、南方雨夜红线、残阳坳土褐药草青和清明虫蜡白分区展示。",
+        "composition_motion": "风格板使用分区布局展示材质、色彩、构图案例和禁用方向，避免做成宣传海报。",
+        "visible_continuity": "低魔东方史诗、制度洁净和生活门槛被越过。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_style_material_palette_ep01",
-      "asset_id": "style_material_palette_ep01",
+      "prompt_id": "PROMPT_E01_F005",
+      "asset_id": "E01_F005",
       "asset_type": "style",
-      "output_path": "assets/style/project-style-board/style_material_palette_v01.png",
-      "prompt": "Use 材质与低魔调色板 as episode 01 art reference. 布、旧木、黑石、虫蜡白、旧金、烟尘材质参考。 Preserve STYLE_MATERIAL_TACTILITY. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "STYLE_MATERIAL_TACTILITY"
-      ],
-      "source_refs": [
-        "材质调色板"
-      ],
-      "downstream_usage": [
-        "布、旧木、黑石、虫蜡白、旧金、烟尘材质参考。"
-      ]
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f005e01.png",
+      "production_metadata": {
+        "asset_id": "E01_F005",
+        "asset_subtype": "style_reference",
+        "output_file": "f005e01.png",
+        "prompt_id": "PROMPT_E01_F005",
+        "source_refs": [
+          "01/director/camera-plan.md",
+          "01/storyboard/storyboard-plan.md"
+        ],
+        "continuity_refs": [
+          "9:16",
+          "threshold_pressure",
+          "vertical_hierarchy"
+        ],
+        "usage": [
+          "all_scenes"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建第01集竖屏构图与局部因果板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "9比16竖屏构图板，骨钟冲击、粮袋墙、红线桌面、村口检查桌、药柜暗格、白翳直线入场和弓弦极近景分区展示。",
+        "composition_motion": "风格板使用分区布局展示材质、色彩、构图案例和禁用方向，避免做成宣传海报。",
+        "visible_continuity": "上下层级、窄门槛、道具首秒可读。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_style_canyang_to_jinhe_palette_ep01",
-      "asset_id": "style_canyang_to_jinhe_palette_ep01",
+      "prompt_id": "PROMPT_E01_F006",
+      "asset_id": "E01_F006",
       "asset_type": "style",
-      "output_path": "assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
-      "prompt": "Use 残阳坳/金河区域色 as episode 01 art reference. 残阳坳黄昏、金河征粮和旧村材质色。 Preserve REGION_CANYANG_JINHE;LOC_INTRO_MONTAGE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "REGION_CANYANG_JINHE",
-        "LOC_INTRO_MONTAGE"
-      ],
-      "source_refs": [
-        "区域色"
-      ],
-      "downstream_usage": [
-        "残阳坳黄昏、金河征粮和旧村材质色。"
-      ]
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f006e01.png",
+      "production_metadata": {
+        "asset_id": "E01_F006",
+        "asset_subtype": "style_reference",
+        "output_file": "f006e01.png",
+        "prompt_id": "PROMPT_E01_F006",
+        "source_refs": [
+          "bible/world.md#法术与记忆规则",
+          "01/director/director-brief.md"
+        ],
+        "continuity_refs": [
+          "PROP_OLD_RELAY_MARK",
+          "PROP_WHITE_REGISTER",
+          "PROP_MOON_WHITE_JADE"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "SC005-SH004",
+          "SC006-SH007"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建第01集低魔与精确符号边界板，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "低魔边界板，月白玉片手心冷反光、旧驿暗号低光擦灰、白册虫蜡纹和日月残纹占位线稿并列，所有反应短促局部。",
+        "composition_motion": "风格板使用分区布局展示材质、色彩、构图案例和禁用方向，避免做成宣传海报。",
+        "visible_continuity": "旧驿、月白玉片和白册都只提供线索/罪名，不提供战斗能力。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
     },
     {
-      "prompt_id": "prompt_style_qingming_institution_palette_ep01",
-      "asset_id": "style_qingming_institution_palette_ep01",
-      "asset_type": "style",
-      "output_path": "assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
-      "prompt": "Use 清明制度白色系统 as episode 01 art reference. 白翳、白册、虫蜡针、清明香参考。 Preserve FACTION_SUMING_QINGMING;STYLE_QINGMING_WHITE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "FACTION_SUMING_QINGMING",
-        "STYLE_QINGMING_WHITE"
-      ],
-      "source_refs": [
-        "清明制度白"
-      ],
-      "downstream_usage": [
-        "白翳、白册、虫蜡针、清明香参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_style_zhaoming_relic_material_ep01",
-      "asset_id": "style_zhaoming_relic_material_ep01",
-      "asset_type": "style",
-      "output_path": "assets/style/base-material-boards/material_zhaoming_relic_v01.png",
-      "prompt": "Use 昭明旧物材质 as episode 01 art reference. 残缺日月纹、旧驿图、半枚驿令参考。 Preserve FACTION_ZHAOMING_RELIC;RULE_FIRST_CLEAR_RELAY_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "FACTION_ZHAOMING_RELIC",
-        "RULE_FIRST_CLEAR_RELAY_REVEAL"
-      ],
-      "source_refs": [
-        "昭明旧物"
-      ],
-      "downstream_usage": [
-        "残缺日月纹、旧驿图、半枚驿令参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_style_qingming_wax_material_ep01",
-      "asset_id": "style_qingming_wax_material_ep01",
-      "asset_type": "style",
-      "output_path": "assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
-      "prompt": "Use 清明虫蜡/白册材质 as episode 01 art reference. 虫蜡针、封条、白册、白翳衣料参考。 Preserve PROP_INSECT_WAX_NEEDLE;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_INSECT_WAX_NEEDLE",
-        "PROP_QINGMING_REGISTER"
-      ],
-      "source_refs": [
-        "虫蜡白材质"
-      ],
-      "downstream_usage": [
-        "虫蜡针、封条、白册、白翳衣料参考。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_ref_ep01_sc001_sh002",
-      "asset_id": "ref_ep01_sc001_sh002",
+      "prompt_id": "PROMPT_E01_R001",
+      "asset_id": "E01_R001",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
-      "prompt": "Use SC001-SH002 北境战后压力碎片 as episode 01 art reference. 序幕北境压力参考，无血腥全景。 Preserve LOC_INTRO_MONTAGE;FACTION_BORDER_WALL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_INTRO_MONTAGE",
-        "FACTION_BORDER_WALL"
-      ],
-      "source_refs": [
-        "北境参考帧"
-      ],
-      "downstream_usage": [
-        "序幕北境压力参考，无血腥全景。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R001",
+        "asset_subtype": "reference_frame",
+        "output_file": "r001e01.png",
+        "prompt_id": "PROMPT_E01_R001",
+        "source_refs": [
+          "01/production/generation-plan.json#SC001-SH001-A",
+          "01/shots/shot-list.json#SC001-SH001",
+          "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_start.png"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "RULE_SIEGE_LOCAL_CAUSALITY"
+        ],
+        "usage": [
+          "SC001-SH001",
+          "FLF2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC001-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "锁喉关黑石墙、骨钟、破门猛犸巨角剪影。画面动作：暴雪斜砸黑石墙，铁包巨角撞击门外拒马，骨钟被震得横摆，钟声像骨裂一样切入黑场后的第一声。。构图要求：extreme close detail to vertical wall reveal，low angle looking up along blackstone wall，violent impact shake then half-second hold。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC001-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_ref_ep01_sc001_sh003",
-      "asset_id": "ref_ep01_sc001_sh003",
+      "prompt_id": "PROMPT_E01_R002",
+      "asset_id": "E01_R002",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
-      "prompt": "Use SC001-SH003 金河征粮道 as episode 01 art reference. 征粮木牌、半袋谷、空碗参考。 Preserve LOC_INTRO_MONTAGE;PROP_FOOD_TAX_MARKER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "LOC_INTRO_MONTAGE",
-        "PROP_FOOD_TAX_MARKER"
-      ],
-      "source_refs": [
-        "金河征粮参考帧"
-      ],
-      "downstream_usage": [
-        "征粮木牌、半袋谷、空碗参考。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r002e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R002",
+        "asset_subtype": "reference_frame",
+        "output_file": "r002e01.png",
+        "prompt_id": "PROMPT_E01_R002",
+        "source_refs": [
+          "01/production/generation-plan.json#SC001-SH001-A",
+          "01/shots/shot-list.json#SC001-SH001",
+          "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_impact.png"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "RULE_SIEGE_LOCAL_CAUSALITY"
+        ],
+        "usage": [
+          "SC001-SH001",
+          "FLF2V",
+          "终帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC001-SH001 终帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "锁喉关黑石墙、骨钟、破门猛犸巨角剪影。画面动作：暴雪斜砸黑石墙，铁包巨角撞击门外拒马，骨钟被震得横摆，钟声像骨裂一样切入黑场后的第一声。。构图要求：extreme close detail to vertical wall reveal，low angle looking up along blackstone wall，violent impact shake then half-second hold。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC001-SH001 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_ref_ep01_sc001_sh004",
-      "asset_id": "ref_ep01_sc001_sh004",
+      "prompt_id": "PROMPT_E01_R003",
+      "asset_id": "E01_R003",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
-      "prompt": "Use SC001-SH004 南方密室旧驿图 as episode 01 art reference. 旧驿图、药包、断裂日月纹参考。 Preserve PROP_OLD_RELAY_MAP;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "PROP_OLD_RELAY_MAP",
-        "FACTION_ZHAOMING_RELIC"
-      ],
-      "source_refs": [
-        "南方密室参考帧"
-      ],
-      "downstream_usage": [
-        "旧驿图、药包、断裂日月纹参考。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r003e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R003",
+        "asset_subtype": "reference_frame",
+        "output_file": "r003e01.png",
+        "prompt_id": "PROMPT_E01_R003",
+        "source_refs": [
+          "01/production/generation-plan.json#SC001-SH002-A",
+          "01/shots/shot-list.json#SC001-SH002",
+          "needs_asset:episode01/reference-frames/sc001_sh002_frozen_blood_old_mark.png"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL"
+        ],
+        "usage": [
+          "SC001-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC001-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "年轻灰墙军户、断矛、骨钟裂缝旧日月刻痕。画面动作：年轻灰墙军户跪倒，断矛滑进雪泥；他伸手扶住裂开的骨钟，掌心被冻血黏住，旧日月刻痕在铜锈下露出。。构图要求：tight medium with insert emphasis，human eye-level, slightly canted by impact，quick drop with soldier then rack to bell crack。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC001-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_ref_ep01_sc005_threshold_identification",
-      "asset_id": "ref_ep01_sc005_threshold_identification",
+      "prompt_id": "PROMPT_E01_R004",
+      "asset_id": "E01_R004",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "prompt": "Use SC005 药屋门槛失言/识句 as episode 01 art reference. 沈照眠门槛失言、白册识句标记参考。 Preserve CHAR_SHEN_ZHAOMIAN;PROP_HERB_POUCH;PROP_QINGMING_REGISTER. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_ZHAOMIAN",
-        "PROP_HERB_POUCH",
-        "PROP_QINGMING_REGISTER"
-      ],
-      "source_refs": [
-        "药屋门槛参考帧"
-      ],
-      "downstream_usage": [
-        "沈照眠门槛失言、白册识句标记参考。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r004e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R004",
+        "asset_subtype": "reference_frame",
+        "output_file": "r004e01.png",
+        "prompt_id": "PROMPT_E01_R004",
+        "source_refs": [
+          "01/production/generation-plan.json#SC001-SH003-A",
+          "01/shots/shot-list.json#SC001-SH003",
+          "needs_asset:episode01/reference-frames/sc001_sh003_xue_hand_wall_crack.png"
+        ],
+        "continuity_refs": [
+          "CHAR_XUE_LINQIANG",
+          "LOC_SUOHOU_GATE_OUTER_WALL"
+        ],
+        "usage": [
+          "SC001-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC001-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "薛临墙按墙缝的冻裂手、墙外斧兵与烽燧方向剪影。画面动作：薛临墙粗大的手按住墙缝，冻裂血沾上黑石；他不看兽群，只看门闩和枪线，低声命令补枪。。构图要求：medium close-up，side profile at wall height，small locked push to his hand and mouth。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC001-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint",
-      "asset_id": "ref_ep01_sc008_final_spear_line_well_glint",
+      "prompt_id": "PROMPT_E01_R005",
+      "asset_id": "E01_R005",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "prompt": "Use SC008 结尾短矛封锁/井沿月白反光 as episode 01 art reference. 结尾封锁线和一线月白反光参考。 Preserve RULE_SPATIAL_GEOGRAPHY;RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_YAN_NANZHI_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, high-magic spectacle, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "RULE_SPATIAL_GEOGRAPHY",
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "RULE_NO_YAN_NANZHI_REVEAL"
-      ],
-      "source_refs": [
-        "结尾参考帧"
-      ],
-      "downstream_usage": [
-        "结尾封锁线和一线月白反光参考。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r005e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R005",
+        "asset_subtype": "reference_frame",
+        "output_file": "r005e01.png",
+        "prompt_id": "PROMPT_E01_R005",
+        "source_refs": [
+          "01/production/generation-plan.json#SC002-SH001-A",
+          "01/shots/shot-list.json#SC002-SH001",
+          "needs_asset:episode01/reference-frames/sc002_sh001_jinhe_grain_wall.png"
+        ],
+        "continuity_refs": [
+          "LOC_JINHE_GRAIN_DEPOT",
+          "CHAR_GRAIN_TAX_CLERK",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC002-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "金河粮袋墙、粮税小吏、白册夹板。画面动作：清晨麦金冷雾里，粮袋堆成墙；粮税小吏站在高过人群的检查处，胸前白册夹板轻晃，骨算盘和粮牌碰响。。构图要求：wide vertical procedural establishing shot，slightly low, villagers compressed below grain wall，slow but real-time push through grain dust。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC002-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
     },
     {
-      "prompt_id": "prompt_shot_override_sc008_sh003_well_glint_readability",
-      "asset_id": "shot_override_sc008_sh003_well_glint_readability",
-      "asset_type": "shot_override",
-      "output_path": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
-      "prompt": "Use SC008-SH003 井沿月白反光可读性覆盖帧 as episode 01 shot override. Macro low-angle old well rim close-up, Qingming incense smoke touching damp mossy stone, one narrow moon-white glint line readable on the inner rim. Preserve RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_YAN_NANZHI_REVEAL;RULE_NO_MOON_JADE_FULL_REVEAL;PROP_QINGMING_INCENSE;LOC_OLD_WELL. No people, no hand, no full jade, no readable generated text, no UI, no watermark, no high-magic beam.",
-      "negative_prompt_notes": "No readable generated text, labels, UI, watermark, modern logos, full jade token, visible person below well, hands, faces, magical beam, continuity drift, or unapproved reveal. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "RULE_NO_YAN_NANZHI_REVEAL",
-        "RULE_NO_MOON_JADE_FULL_REVEAL",
-        "PROP_QINGMING_INCENSE",
-        "LOC_OLD_WELL"
-      ],
-      "source_refs": [
-        "SC008-SH003",
-        "ref_ep01_sc008_final_spear_line_well_glint"
-      ],
-      "downstream_usage": [
-        "Prompt Room 应优先作为 SC008-SH003 图生视频首帧/参考帧；原 SC008 reference frame 保留用于 SC008-SH001/SH002 的封锁线与空间气氛。"
-      ]
-    },
-    {
-      "prompt_id": "prompt_ref_ep01_sc002_sh001_shen_weisang_gate_observation",
-      "asset_id": "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "prompt_id": "PROMPT_E01_R006",
+      "asset_id": "E01_R006",
       "asset_type": "reference_frame",
-      "output_path": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
-      "prompt": "Use SC002-SH001 沈维桑村口观察首帧 as episode 01 shot reference. 9:16 vertical cinematic first frame, Canyangao village gate blood-check area at dusk, Shen Weisang standing behind villagers in grey-brown episode-01 hunter state, hunting bow on back, old leather wrist guards, seen through foreground villagers shoulders, eyes checking wind direction then lowering toward muddy footprints. Preserve CHAR_SHEN_WEISANG;CHAR_SHEN_WEISANG_RESTRAINT;LOC_CANYANG_GATE. No readable generated text, no heroic glamour, no glowing cracks, no snowline cloak, no future-state costume.",
-      "negative_prompt_notes": "No readable generated text, subtitles, UI, watermark, modern clothing, hero lighting, monster crowd, high-magic spectacle, glowing cracks, snowline cloak, Yan Nanzhi reveal, complete moon-jade object, or continuity drift. Retained non-final candidates must be archived under sibling history/<filename>.vNNN.png; never use version folders.",
-      "continuity_refs": [
-        "CHAR_SHEN_WEISANG",
-        "CHAR_SHEN_WEISANG_RESTRAINT",
-        "LOC_CANYANG_GATE"
-      ],
-      "source_refs": [
-        "SC002-SH001",
-        "character_shen_weisang_ep01",
-        "costume_shen_weisang_ep01",
-        "loc_canyangao_gate_blood_check_ep01"
-      ],
-      "downstream_usage": [
-        "SC002-SH001 图生视频首帧；沈维桑第一集猎户状态在人群后观察风向和村口泥印。"
-      ]
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r006e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R006",
+        "asset_subtype": "reference_frame",
+        "output_file": "r006e01.png",
+        "prompt_id": "PROMPT_E01_R006",
+        "source_refs": [
+          "01/production/generation-plan.json#SC002-SH002-A",
+          "01/shots/shot-list.json#SC002-SH002",
+          "needs_asset:episode01/reference-frames/sc002_sh002_threshold_handprint.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "PROP_ANCESTRAL_TABLET_BOX",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC002-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC002-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "奴兵手、空粮缸、老人祖牌小盒、孩子虫蜡手印。画面动作：奴兵掀倒粮缸只倒出半斗杂粮，老人护住祖牌小盒被压进泥里；孩子的小手被按到虫蜡封条上，手印变冷白。。构图要求：coercive close-up cluster，door-threshold waist height，handheld one-step pull with real contact reaction。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC002-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R007",
+      "asset_id": "E01_R007",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r007e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R007",
+        "asset_subtype": "reference_frame",
+        "output_file": "r007e01.png",
+        "prompt_id": "PROMPT_E01_R007",
+        "source_refs": [
+          "01/production/generation-plan.json#SC002-SH003-A",
+          "01/shots/shot-list.json#SC002-SH003",
+          "needs_asset:episode01/reference-frames/sc002_sh003_tax_clerk_register.png"
+        ],
+        "continuity_refs": [
+          "CHAR_GRAIN_TAX_CLERK",
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC002-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC002-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "粮税小吏、白册、粮牌、被扣住的妇人。画面动作：粮税小吏翻开白册，节状手指点过族谱行；妇人护粮被奴兵按住，官吏把粮袋旁的封牌敲下。。构图要求：medium procedural shot，frontal slightly above table edge，locked frame, only hands and bodies move。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC002-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R008",
+      "asset_id": "E01_R008",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r008e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R008",
+        "asset_subtype": "reference_frame",
+        "output_file": "r008e01.png",
+        "prompt_id": "PROMPT_E01_R008",
+        "source_refs": [
+          "01/production/generation-plan.json#SC002-SH004-A",
+          "01/shots/shot-list.json#SC002-SH004",
+          "needs_asset:episode01/reference-frames/sc002_sh004_cart_start.png"
+        ],
+        "continuity_refs": [
+          "LOC_JINHE_GRAIN_DEPOT",
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "PROP_ANCESTRAL_TABLET_BOX"
+        ],
+        "usage": [
+          "SC002-SH004",
+          "FLF2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC002-SH004 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "押车奴兵、被拖走的粮袋、祖牌仍在泥中的门槛。画面动作：押车奴兵把粮袋拖上车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边看着粮袋离开，孩子手印还粘着虫蜡白。。构图要求：wide-to-close pullback，rear three-quarter from family threshold，cart pulls away, camera stays with abandoned household。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC002-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R009",
+      "asset_id": "E01_R009",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r009e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R009",
+        "asset_subtype": "reference_frame",
+        "output_file": "r009e01.png",
+        "prompt_id": "PROMPT_E01_R009",
+        "source_refs": [
+          "01/production/generation-plan.json#SC002-SH004-A",
+          "01/shots/shot-list.json#SC002-SH004",
+          "needs_asset:episode01/reference-frames/sc002_sh004_empty_threshold_end.png"
+        ],
+        "continuity_refs": [
+          "LOC_JINHE_GRAIN_DEPOT",
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "PROP_ANCESTRAL_TABLET_BOX"
+        ],
+        "usage": [
+          "SC002-SH004",
+          "FLF2V",
+          "终帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC002-SH004 终帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "押车奴兵、被拖走的粮袋、祖牌仍在泥中的门槛。画面动作：押车奴兵把粮袋拖上车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边看着粮袋离开，孩子手印还粘着虫蜡白。。构图要求：wide-to-close pullback，rear three-quarter from family threshold，cart pulls away, camera stays with abandoned household。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC002-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R010",
+      "asset_id": "E01_R010",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r010e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R010",
+        "asset_subtype": "reference_frame",
+        "output_file": "r010e01.png",
+        "prompt_id": "PROMPT_E01_R010",
+        "source_refs": [
+          "01/production/generation-plan.json#SC003-SH001-A",
+          "01/shots/shot-list.json#SC003-SH001",
+          "needs_asset:episode01/reference-frames/sc003_sh001_redline_map.png"
+        ],
+        "continuity_refs": [
+          "LOC_SOUTHERN_REDLINE_ROOM",
+          "PROP_BLOOD_GENEALOGY"
+        ],
+        "usage": [
+          "SC003-SH001",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC003-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "雨夜油布、旧驿残图、红线从南缘钉向北境。画面动作：雨敲油布，水滴沿桌角落下；旧驿残图铺开，红线从南缘一路钉到北境，油灯把地图边缘照成湿金色。。构图要求：tabletop establishing close-up，overhead oblique，slow deliberate push following red line north。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC003-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R011",
+      "asset_id": "E01_R011",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r011e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R011",
+        "asset_subtype": "reference_frame",
+        "output_file": "r011e01.png",
+        "prompt_id": "PROMPT_E01_R011",
+        "source_refs": [
+          "01/production/generation-plan.json#SC003-SH002-A",
+          "01/shots/shot-list.json#SC003-SH002",
+          "needs_asset:episode01/reference-frames/sc003_sh002_gu_yan_twoshot.png"
+        ],
+        "continuity_refs": [
+          "CHAR_GU_HUAIZHANG",
+          "CHAR_YAN_NANZHI",
+          "PROP_MOON_WHITE_JADE"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC003-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "顾怀章、遮面晏南枝、月白玉片。画面动作：顾怀章站在灯侧，袖口压住旧驿图；晏南枝在阴影侧握紧月白玉片，遮面下颌微收，问证据能不能让北边开门。。构图要求：two-shot medium close-up，low table edge, red line between them，locked, tension carried by hands。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC003-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R012",
+      "asset_id": "E01_R012",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r012e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R012",
+        "asset_subtype": "reference_frame",
+        "output_file": "r012e01.png",
+        "prompt_id": "PROMPT_E01_R012",
+        "source_refs": [
+          "01/production/generation-plan.json#SC003-SH003-A",
+          "01/shots/shot-list.json#SC003-SH003",
+          "needs_asset:episode01/reference-frames/sc003_sh003_blood_genealogy_hesitation.png"
+        ],
+        "continuity_refs": [
+          "PROP_BLOOD_GENEALOGY",
+          "CHAR_YAN_NANZHI",
+          "CHAR_GU_HUAIZHANG"
+        ],
+        "usage": [
+          "SC003-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC003-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "半卷血牒、顾怀章的手、晏南枝未接的指尖。画面动作：顾怀章把半卷血牒推过红线；晏南枝指尖停在卷轴前，没有立刻接；门外旧歌唱到一半，被一只手捂住。。构图要求：insert close-up with offscreen sound，table height, shallow depth，tiny push then hold on stopped fingers。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC003-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R013",
+      "asset_id": "E01_R013",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r013e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R013",
+        "asset_subtype": "reference_frame",
+        "output_file": "r013e01.png",
+        "prompt_id": "PROMPT_E01_R013",
+        "source_refs": [
+          "01/production/generation-plan.json#SC003-SH004-A",
+          "01/shots/shot-list.json#SC003-SH004",
+          "needs_asset:episode01/reference-frames/sc003_sh004_redline_north.png"
+        ],
+        "continuity_refs": [
+          "LOC_SOUTHERN_REDLINE_ROOM",
+          "CHAR_YAN_NANZHI"
+        ],
+        "usage": [
+          "SC003-SH004",
+          "FLF2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC003-SH004 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "雨中红线北端、晏南枝遮面剪影、灯火被雨声压暗。画面动作：红线北端在地图上被雨滴打湿，晏南枝遮面剪影短暂停在灯外；画面切向残阳坳前，灯火像被雨声压低。。构图要求：graphic transition close-up，map-level, red line leading upward，match move from red line to village checkpoint line。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC003-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R014",
+      "asset_id": "E01_R014",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r014e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R014",
+        "asset_subtype": "reference_frame",
+        "output_file": "r014e01.png",
+        "prompt_id": "PROMPT_E01_R014",
+        "source_refs": [
+          "01/production/generation-plan.json#SC003-SH004-A",
+          "01/shots/shot-list.json#SC003-SH004",
+          "needs_asset:episode01/reference-frames/sc004_sh001_checkpoint_line_start.png"
+        ],
+        "continuity_refs": [
+          "LOC_SOUTHERN_REDLINE_ROOM",
+          "CHAR_YAN_NANZHI"
+        ],
+        "usage": [
+          "SC003-SH004",
+          "FLF2V",
+          "终帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC003-SH004 终帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "雨中红线北端、晏南枝遮面剪影、灯火被雨声压暗。画面动作：红线北端在地图上被雨滴打湿，晏南枝遮面剪影短暂停在灯外；画面切向残阳坳前，灯火像被雨声压低。。构图要求：graphic transition close-up，map-level, red line leading upward，match move from red line to village checkpoint line。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC003-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R015",
+      "asset_id": "E01_R015",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r015e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R015",
+        "asset_subtype": "reference_frame",
+        "output_file": "r015e01.png",
+        "prompt_id": "PROMPT_E01_R015",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH001-A",
+          "01/shots/shot-list.json#SC004-SH001",
+          "needs_asset:episode01/reference-frames/sc004_sh001_canyangao_blockade_geography.png"
+        ],
+        "continuity_refs": [
+          "LOC_CANYANGAO_GATE",
+          "LOC_CANYANGAO_WELL",
+          "LOC_LUO_MEDICINE_HOUSE",
+          "PROP_WHITE_WAX_FLAGS"
+        ],
+        "usage": [
+          "SC004-SH001",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "残阳坳村口检查桌、旧井外圈、药屋外圈、三支白蜡旗。画面动作：画面切回肃明历1226年残阳坳，检查桌摆在村口；奴兵扣腕排队，纯虫族小兵封住旧井和药屋外圈，三处出口插着白蜡旗。。构图要求：wide vertical geography shot，elevated village-entry angle，slow pan from check table to well and medicine house。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R016",
+      "asset_id": "E01_R016",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r016e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R016",
+        "asset_subtype": "reference_frame",
+        "output_file": "r016e01.png",
+        "prompt_id": "PROMPT_E01_R016",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH002-A",
+          "01/shots/shot-list.json#SC004-SH002",
+          "needs_asset:episode01/reference-frames/sc004_sh002_register_procedure.png"
+        ],
+        "continuity_refs": [
+          "CHAR_BAICE_CLERK",
+          "PROP_WHITE_REGISTER",
+          "LOC_CANYANGAO_GATE"
+        ],
+        "usage": [
+          "SC004-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白册官吏、检查桌、排队村民、堆放粮袋药篮柴刀。画面动作：白册官吏站在检查桌后念名，白册夹板遮住半个胸口；村民粮袋、药篮和柴刀被堆到一边，奴兵把手腕扣进队列。。构图要求：medium procedural shot，table edge frontal, official tall in frame，locked bureaucratic frame。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R017",
+      "asset_id": "E01_R017",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r017e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R017",
+        "asset_subtype": "reference_frame",
+        "output_file": "r017e01.png",
+        "prompt_id": "PROMPT_E01_R017",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH003-A",
+          "01/shots/shot-list.json#SC004-SH003",
+          "needs_asset:episode01/reference-frames/sc004_sh003_shen_reads_exits.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "PROP_WHITE_WAX_FLAGS",
+          "LOC_CANYANGAO_WELL"
+        ],
+        "usage": [
+          "SC004-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈维桑在人群边、旧井、后山出口、未干虫蜡旗。画面动作：沈维桑背弓站在人群边，左肩微低；他的视线依次扫过旧井、后山出口和三支白蜡旗，看到虫蜡未干。。构图要求：POV sequence into medium close-up，Shen eye-line height，three quick eye-line cuts then return to his face。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R018",
+      "asset_id": "E01_R018",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r018e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R018",
+        "asset_subtype": "reference_frame",
+        "output_file": "r018e01.png",
+        "prompt_id": "PROMPT_E01_R018",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH004-A",
+          "01/shots/shot-list.json#SC004-SH004",
+          "needs_asset:episode01/reference-frames/sc004_sh004_zhaomian_song.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_ZHAOMIAN",
+          "PROP_ZHAOMIAN_HERB_BAG",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC004-SH004",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH004 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈照眠、草药袋、白册官吏念错古旧地名。画面动作：沈照眠抱着草药袋，听见官吏念错古旧地名，下意识抬头接了半句禁歌；村口人声瞬间压低。。构图要求：child close-up within crowd，slightly above child height through adults，small push as she speaks then sudden stillness。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R019",
+      "asset_id": "E01_R019",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r019e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R019",
+        "asset_subtype": "reference_frame",
+        "output_file": "r019e01.png",
+        "prompt_id": "PROMPT_E01_R019",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH005-A",
+          "01/shots/shot-list.json#SC004-SH005",
+          "needs_asset:episode01/reference-frames/sc004_sh005_luo_covers_child.png"
+        ],
+        "continuity_refs": [
+          "CHAR_LUO_QINGHE",
+          "CHAR_SHEN_ZHAOMIAN",
+          "CHAR_BAICE_CLERK"
+        ],
+        "usage": [
+          "SC004-SH005",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH005 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "罗青禾挡身位、白册官吏复眼、药剪。画面动作：罗青禾一步挡到女儿身前，手里还捏着药剪；白册官吏复眼转向她，抓住红花是药、留灯不是药的破绽。。构图要求：medium close confrontation，between mother and official，short lateral slide to show Luo covering child。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R020",
+      "asset_id": "E01_R020",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r020e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R020",
+        "asset_subtype": "reference_frame",
+        "output_file": "r020e01.png",
+        "prompt_id": "PROMPT_E01_R020",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH006-A",
+          "01/shots/shot-list.json#SC004-SH006",
+          "needs_asset:episode01/reference-frames/sc004_sh006_shen_half_truth.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "PROP_SHEN_BOW",
+          "PROP_ZHAOMIAN_HERB_BAG"
+        ],
+        "usage": [
+          "SC004-SH006",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH006 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈维桑、草药袋、猎弓弓弦、白册官吏。画面动作：沈维桑挤到队列边，笑意不达眼底；他把沈照眠的草药袋勾到自己脚边，指腹按住弓弦，把禁歌压成一声咳。。构图要求：medium close-up with hand insert，Shen three-quarter, official over-shoulder，small push to bowstring hand。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH006 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R021",
+      "asset_id": "E01_R021",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r021e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R021",
+        "asset_subtype": "reference_frame",
+        "output_file": "r021e01.png",
+        "prompt_id": "PROMPT_E01_R021",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH007-A",
+          "01/shots/shot-list.json#SC004-SH007",
+          "needs_asset:episode01/reference-frames/sc004_sh007_register_blank_plate.png"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_REGISTER",
+          "CHAR_BAICE_CLERK"
+        ],
+        "usage": [
+          "SC004-SH007",
+          "REDRAW",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH007 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白册纸面虫蜡纹、沈家户名、蜡笔针。画面动作：白册翻开，纸面浮出淡白虫蜡纹；蜡笔针停在沈家户名旁，疑名旁注像冷水一样渗开。。构图要求：macro insert，direct overhead table insert，locked, only wax pattern moves。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH007 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R022",
+      "asset_id": "E01_R022",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r022e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R022",
+        "asset_subtype": "reference_frame",
+        "output_file": "r022e01.png",
+        "prompt_id": "PROMPT_E01_R022",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH008-A",
+          "01/shots/shot-list.json#SC004-SH008",
+          "needs_asset:episode01/reference-frames/sc004_sh008_qingming_incense_countdown.png"
+        ],
+        "continuity_refs": [
+          "PROP_QINGMING_INCENSE",
+          "CHAR_SHEN_WEISANG",
+          "CHAR_LUO_QINGHE",
+          "CHAR_SHEN_ZHAOMIAN"
+        ],
+        "usage": [
+          "SC004-SH008",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH008 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "清明香插入检查桌裂缝、沈家人反应。画面动作：白册官吏把一炷清明香插进检查桌裂缝，冷白烟线升起；沈维桑、罗青禾和沈照眠在不同层次同时看向香。。构图要求：insert to reaction triptych，table low angle then three fast reactions，needle-like insert, then cut reactions。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH008 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R023",
+      "asset_id": "E01_R023",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r023e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R023",
+        "asset_subtype": "reference_frame",
+        "output_file": "r023e01.png",
+        "prompt_id": "PROMPT_E01_R023",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH009-A",
+          "01/shots/shot-list.json#SC004-SH009",
+          "needs_asset:episode01/reference-frames/sc004_sh009_incense_smoke_start.png"
+        ],
+        "continuity_refs": [
+          "PROP_QINGMING_INCENSE",
+          "PROP_WHITE_WAX_FLAGS",
+          "LOC_LUO_MEDICINE_HOUSE"
+        ],
+        "usage": [
+          "SC004-SH009",
+          "FLF2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH009 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "清明香烟线、白蜡旗、药屋门外纯虫族小兵爪足。画面动作：烟线被风压向药屋方向；三支白蜡旗的虫蜡仍湿，门外纯虫族小兵爪足在药屋外停住，转入室内木缝视角。。构图要求：transition detail shot，ground-level smoke and feet，low track from incense toward medicine house。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH009 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R024",
+      "asset_id": "E01_R024",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r024e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R024",
+        "asset_subtype": "reference_frame",
+        "output_file": "r024e01.png",
+        "prompt_id": "PROMPT_E01_R024",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH009-A",
+          "01/shots/shot-list.json#SC004-SH009",
+          "needs_asset:episode01/reference-frames/sc005_sh001_medicine_door_feet_end.png"
+        ],
+        "continuity_refs": [
+          "PROP_QINGMING_INCENSE",
+          "PROP_WHITE_WAX_FLAGS",
+          "LOC_LUO_MEDICINE_HOUSE"
+        ],
+        "usage": [
+          "SC004-SH009",
+          "FLF2V",
+          "终帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH009 终帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "清明香烟线、白蜡旗、药屋门外纯虫族小兵爪足。画面动作：烟线被风压向药屋方向；三支白蜡旗的虫蜡仍湿，门外纯虫族小兵爪足在药屋外停住，转入室内木缝视角。。构图要求：transition detail shot，ground-level smoke and feet，low track from incense toward medicine house。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC004-SH009 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R025",
+      "asset_id": "E01_R025",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r025e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R025",
+        "asset_subtype": "reference_frame",
+        "output_file": "r025e01.png",
+        "prompt_id": "PROMPT_E01_R025",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH001-A",
+          "01/shots/shot-list.json#SC005-SH001",
+          "needs_asset:episode01/reference-frames/sc005_sh001_cabinet_slit_yan.png"
+        ],
+        "continuity_refs": [
+          "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+          "CHAR_YAN_NANZHI",
+          "PROP_MOON_WHITE_JADE"
+        ],
+        "usage": [
+          "SC005-SH001",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "药柜木缝、晏南枝眼睛、门外虫族小兵爪足。画面动作：从药柜木缝内看出去，门外虫族小兵爪足停在门槛阴影上；晏南枝在暗格内屏住呼吸，手压月白玉片。。构图要求：claustrophobic POV close-up，inside cabinet looking out through slit，almost static, slight breath tremor。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC005-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R026",
+      "asset_id": "E01_R026",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r026e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R026",
+        "asset_subtype": "reference_frame",
+        "output_file": "r026e01.png",
+        "prompt_id": "PROMPT_E01_R026",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH002-A",
+          "01/shots/shot-list.json#SC005-SH002",
+          "needs_asset:episode01/reference-frames/sc005_sh002_luo_grabs_medicine.png"
+        ],
+        "continuity_refs": [
+          "CHAR_LUO_QINGHE",
+          "PROP_MEDICINE_CABINET",
+          "LOC_LUO_MEDICINE_HOUSE_INTERIOR"
+        ],
+        "usage": [
+          "SC005-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "罗青禾抓药、药篮、药柜暗格板。画面动作：罗青禾进屋抓药，药剪和药包动作稳定；她经过药柜时不看暗格，只用低声警告柜板一响的后果。。构图要求：medium interior with prop inserts，side angle between cabinet and door，quiet follow of Luo hand movement。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC005-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R027",
+      "asset_id": "E01_R027",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r027e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R027",
+        "asset_subtype": "reference_frame",
+        "output_file": "r027e01.png",
+        "prompt_id": "PROMPT_E01_R027",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH003-A",
+          "01/shots/shot-list.json#SC005-SH003",
+          "needs_asset:episode01/reference-frames/sc005_sh003_identity_cost_split.png"
+        ],
+        "continuity_refs": [
+          "CHAR_YAN_NANZHI",
+          "CHAR_LUO_QINGHE",
+          "PROP_MOON_WHITE_JADE"
+        ],
+        "usage": [
+          "SC005-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "暗格内晏南枝、罗青禾侧脸、月白玉片。画面动作：晏南枝在暗格内低声问你知道我是谁；罗青禾停在柜侧，脸不转向她，只说知道她会害死这里的人。。构图要求：split close-up through cabinet slit，cabinet interior foreground with Luo blurred outside，locked。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC005-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R028",
+      "asset_id": "E01_R028",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r028e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R028",
+        "asset_subtype": "reference_frame",
+        "output_file": "r028e01.png",
+        "prompt_id": "PROMPT_E01_R028",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH004-A",
+          "01/shots/shot-list.json#SC005-SH004",
+          "needs_asset:episode01/reference-frames/sc005_sh004_relay_mark_board_plate.png"
+        ],
+        "continuity_refs": [
+          "PROP_OLD_RELAY_MARK",
+          "PROP_MEDICINE_CABINET",
+          "CHAR_YAN_NANZHI"
+        ],
+        "usage": [
+          "SC005-SH004",
+          "REDRAW",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH004 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "药柜底板、草药灰、旧驿暗号、日月残纹。画面动作：罗青禾打开药柜底板，草药灰被指腹拂开，一道旧驿暗号和日月残纹露出；晏南枝指尖几乎碰到纹路又停住。。构图要求：insert close-up，top-down cabinet board，slow reveal with hand wipe。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC005-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R029",
+      "asset_id": "E01_R029",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r029e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R029",
+        "asset_subtype": "reference_frame",
+        "output_file": "r029e01.png",
+        "prompt_id": "PROMPT_E01_R029",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH005-A",
+          "01/shots/shot-list.json#SC005-SH005",
+          "needs_asset:episode01/reference-frames/sc005_sh005_open_cabinet_shadow.png"
+        ],
+        "continuity_refs": [
+          "CHAR_LUO_QINGHE",
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "PROP_MEDICINE_CABINET"
+        ],
+        "usage": [
+          "SC005-SH005",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH005 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "罗青禾、药柜暗格、门外封门奴兵。画面动作：罗青禾把底板压回去，声音更低：皇旗一露，残阳坳就是反寨；门外封门奴兵敲门，叉矛影落在药柜上。。构图要求：medium interior to door shadow，from cabinet side toward door，sharp rack from Luo to door shadow。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC005-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R030",
+      "asset_id": "E01_R030",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r030e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R030",
+        "asset_subtype": "reference_frame",
+        "output_file": "r030e01.png",
+        "prompt_id": "PROMPT_E01_R030",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH001-A",
+          "01/shots/shot-list.json#SC006-SH001",
+          "needs_asset:episode01/reference-frames/sc006_sh001_well_sealed_medicine_house.png"
+        ],
+        "continuity_refs": [
+          "LOC_CANYANGAO_WELL_TABLE",
+          "LOC_LUO_MEDICINE_HOUSE",
+          "CHAR_SHEN_WEISANG"
+        ],
+        "usage": [
+          "SC006-SH001",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH001 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "旧井边村民、药屋封门牌、沈维桑视线。画面动作：村民被赶到旧井边，药屋门框挂上虫蜡封门牌；沈维桑的视线落在药屋窗缝，又迅速转向后山风口。。构图要求：wide geography with eye-line insert，well-side view across crowd，pan from sealed medicine house to Shen eyes。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R031",
+      "asset_id": "E01_R031",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r031e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R031",
+        "asset_subtype": "reference_frame",
+        "output_file": "r031e01.png",
+        "prompt_id": "PROMPT_E01_R031",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH002-A",
+          "01/shots/shot-list.json#SC006-SH002",
+          "needs_asset:episode01/reference-frames/sc006_sh002_old_mark_evidence_table.png"
+        ],
+        "continuity_refs": [
+          "PROP_OLD_RELAY_MARK",
+          "CHAR_BAICE_CLERK",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC006-SH002",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH002 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "检查桌上的药柜底板旧驿暗号、白册官吏。画面动作：白册官吏把药柜底板的旧驿暗号摆到检查桌上，虫蜡白反光压过草药灰；他宣布按窝户论、封全村户口。。构图要求：table insert to medium official，low table edge, official towering behind，locked bureaucratic reveal。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R032",
+      "asset_id": "E01_R032",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r032e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R032",
+        "asset_subtype": "reference_frame",
+        "output_file": "r032e01.png",
+        "prompt_id": "PROMPT_E01_R032",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH003-A",
+          "01/shots/shot-list.json#SC006-SH003",
+          "needs_asset:episode01/reference-frames/sc006_sh003_crowd_hierarchy.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SUMING_SLAVE_SOLDIER",
+          "CHAR_SUMING_INSECT_INFANTRY",
+          "CHAR_BAICE_CLERK"
+        ],
+        "usage": [
+          "SC006-SH003",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH003 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "人群、被扣住的少年、奴兵、虫族小兵钩镰封路。画面动作：人群炸开，两个奴兵扣住几个少年并收紧押绳；纯虫族小兵用钩镰堵死退路，白册官吏仍站在桌后开册。。构图要求：wide chaotic but readable crowd shot，slightly elevated, lanes visible，short handheld brace, no slow motion。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R033",
+      "asset_id": "E01_R033",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r033e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R033",
+        "asset_subtype": "reference_frame",
+        "output_file": "r033e01.png",
+        "prompt_id": "PROMPT_E01_R033",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH004-A",
+          "01/shots/shot-list.json#SC006-SH004",
+          "needs_asset:episode01/reference-frames/sc006_sh004_zhaomian_register_mark.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_ZHAOMIAN",
+          "CHAR_SHEN_WEISANG",
+          "PROP_ZHAOMIAN_HERB_BAG",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC006-SH004",
+          "REDRAW",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH004 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈照眠草药袋、沈维桑伸手、白册蜡笔。画面动作：沈照眠被吓得去摸草药袋，沈维桑伸手要拉她；白册官吏的蜡笔先落到纸上，把她记作疑童。。构图要求：intercut close-ups，child hand, Shen hand, register overhead，three fast cuts, then hold on wax mark。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R034",
+      "asset_id": "E01_R034",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r034e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R034",
+        "asset_subtype": "reference_frame",
+        "output_file": "r034e01.png",
+        "prompt_id": "PROMPT_E01_R034",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH005-A",
+          "01/shots/shot-list.json#SC006-SH005",
+          "needs_asset:episode01/reference-frames/sc006_sh005_baiyi_entrance.png"
+        ],
+        "continuity_refs": [
+          "CHAR_BAI_YI",
+          "LOC_CANYANGAO_GATE",
+          "PROP_QINGMING_INCENSE"
+        ],
+        "usage": [
+          "SC006-SH005",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH005 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白翳白袍、村口风尘、清明香铃声。画面动作：远处传来清明香铃声；白袍高瘦的白翳走进村口，风里没有尘沾到衣角，村民自然退开一条直线。。构图要求：full-body entrance shot，low frontal down the village lane，slow locked dolly backward as he advances。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R035",
+      "asset_id": "E01_R035",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r035e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R035",
+        "asset_subtype": "reference_frame",
+        "output_file": "r035e01.png",
+        "prompt_id": "PROMPT_E01_R035",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH006-A",
+          "01/shots/shot-list.json#SC006-SH006",
+          "needs_asset:episode01/reference-frames/sc006_sh006_baiyi_wipes_needle.png"
+        ],
+        "continuity_refs": [
+          "CHAR_BAI_YI",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_OLD_RELAY_MARK"
+        ],
+        "usage": [
+          "SC006-SH006",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH006 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白翳擦虫蜡针、旧驿暗号、检查桌。画面动作：白翳停在检查桌前，细长手指擦拭虫蜡针；他看向旧驿暗号，不提高音量地判断有人开过门、带过路。。构图要求：medium close-up with needle insert，table three-quarter, Bai Yi towering but calm，small push to needle then hold on still face。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH006 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R036",
+      "asset_id": "E01_R036",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r036e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R036",
+        "asset_subtype": "reference_frame",
+        "output_file": "r036e01.png",
+        "prompt_id": "PROMPT_E01_R036",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH007-A",
+          "01/shots/shot-list.json#SC006-SH007",
+          "needs_asset:episode01/reference-frames/sc006_sh007_shen_side_note_plate.png"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_REGISTER",
+          "PROP_INSECT_WAX_NEEDLE",
+          "CHAR_SHEN_WEISANG",
+          "CHAR_BAI_YI"
+        ],
+        "usage": [
+          "SC006-SH007",
+          "REDRAW",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH007 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "虫蜡针点沈家户名、白册旁注渗出。画面动作：虫蜡针点住白册上的沈家户名，冷白旁注一点点渗出：祖账未清，疑连昭明旧驿；沈维桑眼神冷下。。构图要求：macro insert to Shen reaction，overhead register then sharp cut to eyes，static insert, hard cut。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH007 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R037",
+      "asset_id": "E01_R037",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r037e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R037",
+        "asset_subtype": "reference_frame",
+        "output_file": "r037e01.png",
+        "prompt_id": "PROMPT_E01_R037",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH008-A",
+          "01/shots/shot-list.json#SC006-SH008",
+          "needs_asset:episode01/reference-frames/sc006_sh008_well_blockade_tightens.png"
+        ],
+        "continuity_refs": [
+          "LOC_CANYANGAO_WELL_TABLE",
+          "PROP_WHITE_WAX_FLAGS",
+          "CHAR_SUMING_INSECT_INFANTRY"
+        ],
+        "usage": [
+          "SC006-SH008",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH008 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "旧井、虫族小兵封路、白蜡旗、村民队列。画面动作：白翳命令落下后，虫族小兵向旧井口收拢，白蜡旗被重新压紧；奴兵把村民队列推回井边，井口变成全村审讯中心。。构图要求：wide command consequence shot，high well-side overview，controlled pan following soldiers toward well。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH008 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R038",
+      "asset_id": "E01_R038",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r038e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R038",
+        "asset_subtype": "reference_frame",
+        "output_file": "r038e01.png",
+        "prompt_id": "PROMPT_E01_R038",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH009-A",
+          "01/shots/shot-list.json#SC006-SH009",
+          "needs_asset:episode01/reference-frames/sc006_sh009_start_with_child.png"
+        ],
+        "continuity_refs": [
+          "CHAR_BAI_YI",
+          "CHAR_SHEN_ZHAOMIAN",
+          "CHAR_SHEN_WEISANG",
+          "PROP_SHEN_BOW"
+        ],
+        "usage": [
+          "SC006-SH009",
+          "I2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH009 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "白翳翻新页、沈照眠被拉出半步、沈维桑扣弦。画面动作：白翳翻到新页，说先从孩子开始；奴兵把沈照眠拉出半步，草药袋晃起，沈维桑拇指扣住弓弦。。构图要求：medium confrontation with hand inserts，child foreground, Bai Yi high background, Shen side insert，slow tightening push。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH009 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R039",
+      "asset_id": "E01_R039",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r039e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R039",
+        "asset_subtype": "reference_frame",
+        "output_file": "r039e01.png",
+        "prompt_id": "PROMPT_E01_R039",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH010-A",
+          "01/shots/shot-list.json#SC006-SH010",
+          "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_tensed.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "CHAR_LUO_QINGHE",
+          "PROP_SHEN_BOW",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC006-SH010",
+          "FLF2V",
+          "首帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH010 首帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈维桑拇指、猎弓弦、罗青禾隔人群摇头、沈照眠。画面动作：沈维桑眼神冷下，拇指扣住弓弦；罗青禾隔着人群看他，极轻地摇头。他的手缓缓松开，风声里只剩白册翻页声，切黑。。构图要求：extreme hand close-up to reaction close-up，bowstring side insert, then Luo eye-line，micro push then hard cut to black。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH010 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_R040",
+      "asset_id": "E01_R040",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "01/assets/reference-frames/r040e01.png",
+      "production_metadata": {
+        "asset_id": "E01_R040",
+        "asset_subtype": "reference_frame",
+        "output_file": "r040e01.png",
+        "prompt_id": "PROMPT_E01_R040",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH010-A",
+          "01/shots/shot-list.json#SC006-SH010",
+          "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_released_black.png"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_WEISANG",
+          "CHAR_LUO_QINGHE",
+          "PROP_SHEN_BOW",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC006-SH010",
+          "FLF2V",
+          "终帧"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH010 终帧参考帧，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "沈维桑拇指、猎弓弦、罗青禾隔人群摇头、沈照眠。画面动作：沈维桑眼神冷下，拇指扣住弓弦；罗青禾隔着人群看他，极轻地摇头。他的手缓缓松开，风声里只剩白册翻页声，切黑。。构图要求：extreme hand close-up to reaction close-up，bowstring side insert, then Luo eye-line，micro push then hard cut to black。",
+        "composition_motion": "按单个镜头参考帧构图，明确前景、中景、后景层级和角色/道具空间关系，保持画面可作为后续 I2V 或 FLF2V 起止帧。",
+        "visible_continuity": "SC006-SH010 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_O001",
+      "asset_id": "E01_O001",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "output_path": "01/assets/shot-overrides/o001e01.png",
+      "production_metadata": {
+        "asset_id": "E01_O001",
+        "asset_subtype": "shot_override",
+        "output_file": "o001e01.png",
+        "prompt_id": "PROMPT_E01_O001",
+        "source_refs": [
+          "01/production/generation-plan.json#SC004-SH007-A",
+          "01/shots/shot-list.json#SC004-SH007"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_REGISTER",
+          "CHAR_BAICE_CLERK"
+        ],
+        "usage": [
+          "SC004-SH007",
+          "redraw_plate",
+          "precision_text_symbol_control"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC004-SH007 精确符号/白册覆盖图，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "为白册、旧驿暗号或疑童旁注准备干净覆盖图和遮罩参考，保持纸面、木板、虫蜡纹和手部尺度，精确文字与符号区域留白。",
+        "composition_motion": "作为精确文字、白册旁注或旧驿符号的覆盖图/遮罩参考，构图保持原镜头纸面或木板尺度，精确内容留待线控或透明图层后合成。",
+        "visible_continuity": "SC004-SH007 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_O002",
+      "asset_id": "E01_O002",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "output_path": "01/assets/shot-overrides/o002e01.png",
+      "production_metadata": {
+        "asset_id": "E01_O002",
+        "asset_subtype": "shot_override",
+        "output_file": "o002e01.png",
+        "prompt_id": "PROMPT_E01_O002",
+        "source_refs": [
+          "01/production/generation-plan.json#SC005-SH004-A",
+          "01/shots/shot-list.json#SC005-SH004"
+        ],
+        "continuity_refs": [
+          "PROP_OLD_RELAY_MARK",
+          "PROP_MEDICINE_CABINET",
+          "CHAR_YAN_NANZHI"
+        ],
+        "usage": [
+          "SC005-SH004",
+          "redraw_plate",
+          "precision_text_symbol_control"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC005-SH004 精确符号/白册覆盖图，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "为白册、旧驿暗号或疑童旁注准备干净覆盖图和遮罩参考，保持纸面、木板、虫蜡纹和手部尺度，精确文字与符号区域留白。",
+        "composition_motion": "作为精确文字、白册旁注或旧驿符号的覆盖图/遮罩参考，构图保持原镜头纸面或木板尺度，精确内容留待线控或透明图层后合成。",
+        "visible_continuity": "SC005-SH004 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_O003",
+      "asset_id": "E01_O003",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "output_path": "01/assets/shot-overrides/o003e01.png",
+      "production_metadata": {
+        "asset_id": "E01_O003",
+        "asset_subtype": "shot_override",
+        "output_file": "o003e01.png",
+        "prompt_id": "PROMPT_E01_O003",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH004-A",
+          "01/shots/shot-list.json#SC006-SH004"
+        ],
+        "continuity_refs": [
+          "CHAR_SHEN_ZHAOMIAN",
+          "CHAR_SHEN_WEISANG",
+          "PROP_ZHAOMIAN_HERB_BAG",
+          "PROP_WHITE_REGISTER"
+        ],
+        "usage": [
+          "SC006-SH004",
+          "redraw_plate",
+          "precision_text_symbol_control"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH004 精确符号/白册覆盖图，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "为白册、旧驿暗号或疑童旁注准备干净覆盖图和遮罩参考，保持纸面、木板、虫蜡纹和手部尺度，精确文字与符号区域留白。",
+        "composition_motion": "作为精确文字、白册旁注或旧驿符号的覆盖图/遮罩参考，构图保持原镜头纸面或木板尺度，精确内容留待线控或透明图层后合成。",
+        "visible_continuity": "SC006-SH004 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
+    },
+    {
+      "prompt_id": "PROMPT_E01_O004",
+      "asset_id": "E01_O004",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "output_path": "01/assets/shot-overrides/o004e01.png",
+      "production_metadata": {
+        "asset_id": "E01_O004",
+        "asset_subtype": "shot_override",
+        "output_file": "o004e01.png",
+        "prompt_id": "PROMPT_E01_O004",
+        "source_refs": [
+          "01/production/generation-plan.json#SC006-SH007-A",
+          "01/shots/shot-list.json#SC006-SH007"
+        ],
+        "continuity_refs": [
+          "PROP_WHITE_REGISTER",
+          "PROP_INSECT_WAX_NEEDLE",
+          "CHAR_SHEN_WEISANG",
+          "CHAR_BAI_YI"
+        ],
+        "usage": [
+          "SC006-SH007",
+          "redraw_plate",
+          "precision_text_symbol_control"
+        ],
+        "approval_status": "pending_user_art_approval",
+        "generation_status": "not_started_pending_user_approval",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建SC006-SH007 精确符号/白册覆盖图，作为第01集审核用视觉资产参考。",
+        "style_quality": "超写实电影级低魔东方史诗，9:16竖屏短剧可读，真实身体重量、自然接触反作用、触感古代材料；低魔痕迹短促局部，不能替代行动。",
+        "subject_content": "为白册、旧驿暗号或疑童旁注准备干净覆盖图和遮罩参考，保持纸面、木板、虫蜡纹和手部尺度，精确文字与符号区域留白。",
+        "composition_motion": "作为精确文字、白册旁注或旧驿符号的覆盖图/遮罩参考，构图保持原镜头纸面或木板尺度，精确内容留待线控或透明图层后合成。",
+        "visible_continuity": "SC006-SH007 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料CG、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍。 不要让模型自行生成可读文字、册页旁注、旗帜徽记、旧驿符号或现代标志；精确内容应留给线稿、遮罩或透明图层后合成。"
+      }
     }
   ]
 }

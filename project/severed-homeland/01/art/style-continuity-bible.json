@@ -1,44 +1,56 @@
 {
-  "version": "1",
+  "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "date": "2026-06-03",
-  "style_tokens": [
-    "STYLE_GROUNDED_EPIC",
-    "STYLE_LOW_SATURATION",
-    "STYLE_TACTILE_PERIOD_MATERIALS",
-    "STYLE_QINGMING_COLD_WHITE",
-    "STYLE_ZHAOMING_RELIC_PARTIAL",
-    "STYLE_CANYANG_DUSK_MUD_HERB"
-  ],
-  "palette_rules": {
-    "canyang": "mud brown, herb green, dusk red edge, smoke grey",
-    "qingming": "bone white, insect-wax pearl, cold gold pins, black-green chitin",
-    "zhaoming": "dull gold, moon-white ceramic/jade, cracked lacquer, old paper",
-    "north_intro": "snow grey, wall blackstone, torn banner shadow, low ember"
+  "approval_status": "pending_user_art_approval",
+  "style_tokens": {
+    "format": "9:16 vertical short drama",
+    "realism": "hyper-real cinematic low-magic Eastern epic",
+    "palette_by_scene": {
+      "SC001": "blackstone, snow white, ice blue, old iron, dark frozen blood",
+      "SC002": "wheat gold, river mud brown, wet wood grey, insect-wax white",
+      "SC003": "humid oil-lamp warmth, vermilion red cord, moon-white jade reflection",
+      "SC004_SC006": "Canyangao earth brown, herb green, old wood brown, Suming insect-wax white"
+    },
+    "material_language": [
+      "旧木",
+      "虫蜡白",
+      "骨白",
+      "黑石",
+      "雪泥",
+      "草药灰",
+      "麦金布料",
+      "磨损金",
+      "冷灰纸面"
+    ],
+    "camera_rules": [
+      "上下层级优先",
+      "门槛压力优先",
+      "白册和白翳镜头稳定洁净",
+      "人群压力可轻手持但层级不能乱"
+    ]
   },
-  "lens_and_framing": [
-    "vertical 9:16",
-    "close and medium-close blocking",
-    "hand/prop inserts",
-    "low angle spear-line pressure",
-    "narrow medicine-house frames",
-    "old well geometry first, mystery second"
+  "style_rules": [
+    "沈维桑、罗青禾、沈照眠、晏南枝、白翳和肃明执行层优先保持身份稳定，不能为了单张图好看牺牲连续性。",
+    "残阳坳检查桌、旧井、药屋、后山出口必须在所有相关参考帧中保持相对位置可读。",
+    "白册官吏负责开册和写名，奴兵负责扣腕押车封门，纯虫族小兵负责封路；三者不能混成一种敌人。",
+    "金河平民和残阳坳村民都要保留地域、职业和家庭痕迹，不得同款破布灾民化。",
+    "北境序幕只做局部因果和剪影，避免完整兽潮、巨兽奇观和高魔法战场。",
+    "晏南枝第01集保持遮面与局部手部/眼神压力，不能提前华丽正脸身份揭示。",
+    "低魔痕迹只能作为月白玉片冷反光、旧驿暗号残纹、白册虫蜡纹等局部线索。"
   ],
-  "hierarchy_rules": [
-    "Bai Yi is upper Qingming intelligence/institutional authority; background inspectors are cropped lower-function enforcers.",
-    "Zhaoming relics are partial old-object traces, not live royal branding in episode 01."
+  "continuity_risks": [
+    "白册文字和旧驿暗号若直接交给图像模型会随机造字，必须用空白板、遮罩或后合成。",
+    "残阳坳地理若不同参考帧各自生成，容易打乱旧井/药屋/检查桌位置。",
+    "肃明官吏、奴兵和纯虫族小兵同场时容易被模型同质化，需要服装和体态分层。",
+    "晏南枝在低光暗格中容易被过度美化或提前正脸化。",
+    "儿童威胁镜头需要克制，避免受害奇观。",
+    "序幕战争和金河征粮容易膨胀为大场面，需坚持局部因果。"
   ],
-  "negative_rules": [
-    "no readable generated text in asset images",
-    "no full Yan Nanzhi reveal",
-    "no complete moon-jade object",
-    "no high-magic spell circles",
-    "no monster crowd",
-    "no version folders"
-  ],
-  "post_text_layer_policy": {
-    "status": "required",
-    "rule": "白册、药牌、征粮木牌、旧驿图等叙事文字必须在后期文字层或 Prompt Room 的精确文字资产中处理；生成图与视频帧只保留空白承载面或模糊不可读痕迹。"
-  }
+  "precision_asset_rules": [
+    "白册、疑名、疑童、沈家旁注使用空白册页板和后期文字/符号合成。",
+    "旧驿暗号和日月残纹使用线稿或透明 PNG/SVG 后合成，不让模型发明。",
+    "红线地图不得出现现代地图文字；路线只用红线和材质方向表达。",
+    "白蜡旗和肃明黑日白翅只做明确占位，正式徽记需用已批准符号系统。"
+  ]
 }

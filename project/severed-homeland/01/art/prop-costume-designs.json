@@ -1,164 +1,708 @@
 {
-  "version": "1",
+  "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "date": "2026-06-03",
+  "approval_status": "pending_user_art_approval",
   "props": [
     {
-      "asset_id": "prop_qingming_white_register_ep01",
-      "name": "清明白册",
-      "output_path": "assets/props/prop_qingming_white_register.png",
-      "source_refs": [
-        "清明白册"
+      "asset_id": "E01_P016",
+      "file": "p016e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "骨钟断矛与冻血序幕道具卡",
+      "parent_asset_id": null,
+      "prop_lock": {
+        "story_use": "骨钟裂缝、旧日月刻痕、断矛和冻血负责把边墙战争压到局部道具上。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "骨钟裂缝、旧日月刻痕、断矛和冻血负责把边墙战争压到局部道具上。",
+        "scenes": [
+          "SC001-SH001",
+          "SC001-SH002"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "PROP_QINGMING_REGISTER",
-        "RULE_BLOODLINE_TEXT_READABLE"
+        "PROP_BONE_BELL",
+        "PROP_BROKEN_SPEAR",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
       ],
-      "design_rules": "Use 清明白册 as episode 01 art reference. 白册页角、浮字后期文字位、结尾合册参考。 Preserve PROP_QINGMING_REGISTER;RULE_BLOODLINE_TEXT_READABLE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "01/script/final-script.md#SC01"
+      ],
       "usage": [
-        "白册页角、浮字后期文字位、结尾合册参考。"
+        "SC001-SH001",
+        "SC001-SH002"
       ]
     },
     {
-      "asset_id": "prop_qingming_court_tool_board_ep01",
-      "name": "虫蜡针/清明香/清明工具板",
-      "output_path": "assets/props/prop_qingming_court_tool_board.png",
-      "source_refs": [
-        "清明工具"
+      "asset_id": "E01_P008",
+      "file": "p008e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "金河粮牌封蜡与祖牌组合卡",
+      "parent_asset_id": "P008",
+      "prop_lock": {
+        "story_use": "粮牌、虫蜡封条、祖牌小盒、粮缸和押车绳要让制度如何写没家门可见。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "粮牌、虫蜡封条、祖牌小盒、粮缸和押车绳要让制度如何写没家门可见。",
+        "scenes": [
+          "SC002-SH002",
+          "SC002-SH004"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
+        "PROP_ANCESTRAL_TABLET_BOX",
+        "PROP_GRAIN_TAG",
+        "PROP_INSECT_WAX_SEAL"
+      ],
+      "source_refs": [
+        "01/script/final-script.md#SC02"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "SC002-SH004"
+      ]
+    },
+    {
+      "asset_id": "E01_P009",
+      "file": "p009e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "南方旧驿残图红线道具卡",
+      "parent_asset_id": "P009",
+      "prop_lock": {
+        "story_use": "旧驿残图用于红线从南缘向北境的方向锁定；不得出现现代地图字。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "旧驿残图用于红线从南缘向北境的方向锁定；不得出现现代地图字。",
+        "scenes": [
+          "SC003-SH001",
+          "SC003-SH004"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP_REDLINE",
+        "LOC_SOUTHERN_REDLINE_ROOM"
+      ],
+      "source_refs": [
+        "01/script/final-script.md#SC03"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH004"
+      ]
+    },
+    {
+      "asset_id": "E01_P002",
+      "file": "p002e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "月白玉片与半卷血牒第01集状态卡",
+      "parent_asset_id": "P002",
+      "prop_lock": {
+        "story_use": "本集只作为身份压力和手心冷反光，不提供战斗能力。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "本集只作为身份压力和手心冷反光，不提供战斗能力。",
+        "scenes": [
+          "SC003-SH002",
+          "SC003-SH003",
+          "SC005-SH001"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_GENEALOGY",
+        "face_reveal_control"
+      ],
+      "source_refs": [
+        "01/script/final-script.md#SC03",
+        "01/script/final-script.md#SC05"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC005-SH001"
+      ]
+    },
+    {
+      "asset_id": "E01_P003",
+      "file": "p003e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "白册与蜡笔疑名道具卡",
+      "parent_asset_id": "P003",
+      "prop_lock": {
+        "story_use": "白册需要空白板和可后合成区域；不要让模型生成文字。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "白册需要空白板和可后合成区域；不要让模型生成文字。",
+        "scenes": [
+          "SC004-SH007",
+          "SC006-SH004",
+          "SC006-SH007"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_REGISTER_SIDE_NOTE",
+        "text_not_model_generated"
+      ],
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "usage": [
+        "SC004-SH007",
+        "SC006-SH004",
+        "SC006-SH007"
+      ]
+    },
+    {
+      "asset_id": "E01_P004",
+      "file": "p004e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "清明香与虫蜡针第01集道具卡",
+      "parent_asset_id": "P004",
+      "prop_lock": {
+        "story_use": "清明香是倒计时，虫蜡针是白翳清洁式审讯动作。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "清明香是倒计时，虫蜡针是白翳清洁式审讯动作。",
+        "scenes": [
+          "SC004-SH008",
+          "SC006-SH005",
+          "SC006-SH006"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
         "PROP_INSECT_WAX_NEEDLE",
-        "PROP_QINGMING_INCENSE"
+        "PROP_QINGMING_SCENT_BELL"
       ],
-      "design_rules": "Use 虫蜡针/清明香/清明工具板 as episode 01 art reference. 虫蜡针、香线、针盘、封条参考。 Preserve PROP_INSECT_WAX_NEEDLE;PROP_QINGMING_INCENSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
       "usage": [
-        "虫蜡针、香线、针盘、封条参考。"
+        "SC004-SH008",
+        "SC006-SH005",
+        "SC006-SH006"
       ]
     },
     {
-      "asset_id": "prop_fragmented_continent_relay_map_ep01",
-      "name": "旧驿图/残缺大陆驿道图",
-      "output_path": "assets/props/prop_fragmented_continent_relay_map.png",
-      "source_refs": [
-        "旧驿图"
+      "asset_id": "E01_P017",
+      "file": "p017e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "白蜡旗与封门牌道具卡",
+      "parent_asset_id": null,
+      "prop_lock": {
+        "story_use": "三支白蜡旗和虫蜡封门牌说明封村已提前布好。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "三支白蜡旗和虫蜡封门牌说明封村已提前布好。",
+        "scenes": [
+          "SC004-SH001",
+          "SC004-SH009",
+          "SC006-SH001"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "PROP_OLD_RELAY_MAP",
-        "FACTION_ZHAOMING_RELIC"
+        "PROP_WHITE_WAX_FLAGS",
+        "PROP_DOOR_SEAL_TAG"
       ],
-      "design_rules": "Use 旧驿图/残缺大陆驿道图 as episode 01 art reference. 序幕南方密室旧驿图和药包遮蔽参考。 Preserve PROP_OLD_RELAY_MAP;FACTION_ZHAOMING_RELIC. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
       "usage": [
-        "序幕南方密室旧驿图和药包遮蔽参考。"
+        "SC004-SH001",
+        "SC004-SH009",
+        "SC006-SH001"
       ]
     },
     {
-      "asset_id": "prop_half_sunmoon_relay_token_ep01",
-      "name": "半枚日月驿令/一线月白反光规则",
-      "output_path": "assets/props/prop_half_sunmoon_relay_token.png",
-      "source_refs": [
-        "半枚日月驿令"
+      "asset_id": "E01_P005",
+      "file": "p005e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "沈照眠草药袋第01集道具卡",
+      "parent_asset_id": "P005",
+      "prop_lock": {
+        "story_use": "草药袋承载孩子习惯、亲情锚点和白册疑童动作。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "草药袋承载孩子习惯、亲情锚点和白册疑童动作。",
+        "scenes": [
+          "SC004-SH004",
+          "SC004-SH006",
+          "SC006-SH004"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "RULE_MOON_WHITE_GLINT_ONLY",
-        "RULE_NO_MOON_JADE_FULL_REVEAL"
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "CHAR_SHEN_ZHAOMIAN"
       ],
-      "design_rules": "Use 半枚日月驿令/一线月白反光规则 as episode 01 art reference. 第一集只作井沿一线月白反光参考，不展示全貌。 Preserve RULE_MOON_WHITE_GLINT_ONLY;RULE_NO_MOON_JADE_FULL_REVEAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
       "usage": [
-        "第一集只作井沿一线月白反光参考，不展示全貌。"
+        "SC004-SH004",
+        "SC004-SH006",
+        "SC006-SH004"
       ]
     },
     {
-      "asset_id": "prop_shen_zhaomian_child_relics_ep01",
-      "name": "沈照眠小草药袋/药名牌",
-      "output_path": "assets/props/prop_shen_zhaomian_child_relics.png",
-      "source_refs": [
-        "沈照眠小物"
+      "asset_id": "E01_P018",
+      "file": "p018e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "药柜暗格与旧驿暗号道具卡",
+      "parent_asset_id": null,
+      "prop_lock": {
+        "story_use": "药柜底板旧驿暗号是本集被查出的罪证；精确符号需要后合成控制。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "药柜底板旧驿暗号是本集被查出的罪证；精确符号需要后合成控制。",
+        "scenes": [
+          "SC005-SH001",
+          "SC005-SH004",
+          "SC006-SH002"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "PROP_HERB_POUCH",
-        "PROP_HERB_NAME_TILES"
+        "PROP_MEDICINE_CABINET",
+        "PROP_OLD_RELAY_MARK",
+        "redraw_needed"
       ],
-      "design_rules": "Use 沈照眠小草药袋/药名牌 as episode 01 art reference. 小草药袋、空白药名牌、烧焦发绳参考。 Preserve PROP_HERB_POUCH;PROP_HERB_NAME_TILES. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
-      "usage": [
-        "小草药袋、空白药名牌、烧焦发绳参考。"
-      ]
-    }
-  ],
-  "costumes": [
-    {
-      "asset_id": "costume_shen_weisang_ep01",
-      "name": "沈维桑第一集服装板",
-      "output_path": "assets/costumes/costume_shen_weisang_states.png",
       "source_refs": [
-        "沈维桑服装"
+        "01/script/final-script.md#SC05",
+        "01/script/final-script.md#SC06"
+      ],
+      "usage": [
+        "SC005-SH001",
+        "SC005-SH004",
+        "SC006-SH002"
+      ]
+    },
+    {
+      "asset_id": "E01_P020",
+      "file": "p020e01.png",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "沈维桑猎弓弓弦克制道具卡",
+      "parent_asset_id": null,
+      "prop_lock": {
+        "story_use": "猎弓不是动作爽点，本集最终必须停在扣弦又松开的克制。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "猎弓不是动作爽点，本集最终必须停在扣弦又松开的克制。",
+        "scenes": [
+          "SC004-SH006",
+          "SC006-SH009",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "PROP_SHEN_BOW",
+        "CHAR_SHEN_WEISANG",
+        "ending_timing"
+      ],
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "usage": [
+        "SC004-SH006",
+        "SC006-SH009",
+        "SC006-SH010"
+      ]
+    },
+    {
+      "asset_id": "E01_K001",
+      "file": "k001e01.png",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "沈维桑第01集猎户服装状态板",
+      "parent_asset_id": "K001",
+      "prop_lock": {
+        "story_use": "灰褐猎衣、草药青内层和旧皮护腕保持村中状态，不进入边墙升级。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "灰褐猎衣、草药青内层和旧皮护腕保持村中状态，不进入边墙升级。",
+        "scenes": [
+          "SC004-SH003",
+          "SC006-SH010"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
         "CHAR_SHEN_WEISANG",
-        "COSTUME_COMPLETE_NOT_RAGGED"
+        "left_shoulder_old_wound"
       ],
-      "design_rules": "Use 沈维桑第一集服装板 as episode 01 art reference. 新增服装板，第一集只用猎户状态。 Preserve CHAR_SHEN_WEISANG;COSTUME_COMPLETE_NOT_RAGGED. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/characters.md#沈维桑",
+        "01/script/final-script.md"
+      ],
       "usage": [
-        "新增服装板，第一集只用猎户状态。"
+        "SC004-SH003",
+        "SC006-SH010"
       ]
     },
     {
-      "asset_id": "costume_shen_zhaomian_ep01",
-      "name": "沈照眠第一集服装板",
-      "output_path": "assets/costumes/costume_shen_zhaomian_states.png",
+      "asset_id": "E01_K002",
+      "file": "k002e01.png",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "晏南枝第01集遮面流亡服装板",
+      "parent_asset_id": "K002",
+      "prop_lock": {
+        "story_use": "冷灰外袍和遮面斗篷压低身份，但轮廓仍修长贵气。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "冷灰外袍和遮面斗篷压低身份，但轮廓仍修长贵气。",
+        "scenes": [
+          "SC003-SH002",
+          "SC005-SH001"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
+      ],
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "face_reveal_control"
+      ],
       "source_refs": [
-        "沈照眠服装"
+        "bible/characters.md#晏南枝",
+        "01/script/final-script.md"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC005-SH001"
+      ]
+    },
+    {
+      "asset_id": "E01_K003",
+      "file": "k003e01.png",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "沈照眠第01集村中儿童服装板",
+      "parent_asset_id": "K003",
+      "prop_lock": {
+        "story_use": "浅灰短襦和草药绿小围裙必须保留儿童脆弱体量。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "浅灰短襦和草药绿小围裙必须保留儿童脆弱体量。",
+        "scenes": [
+          "SC004-SH004",
+          "SC006-SH009"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
         "CHAR_SHEN_ZHAOMIAN",
-        "CHILD_SAFETY_RESTRAINT"
+        "PROP_ZHAOMIAN_HERB_BAG"
       ],
-      "design_rules": "Use 沈照眠第一集服装板 as episode 01 art reference. 新增服装板，第一集只用村童状态。 Preserve CHAR_SHEN_ZHAOMIAN;CHILD_SAFETY_RESTRAINT. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/characters.md#沈照眠",
+        "01/script/final-script.md"
+      ],
       "usage": [
-        "新增服装板，第一集只用村童状态。"
+        "SC004-SH004",
+        "SC006-SH009"
       ]
     },
     {
-      "asset_id": "costume_luo_qinghe_ep01",
-      "name": "罗青禾第一集服装板",
-      "output_path": "assets/costumes/costume_luo_qinghe_states.png",
-      "source_refs": [
-        "罗青禾服装"
+      "asset_id": "E01_K004",
+      "file": "k004e01.png",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "肃明执行层第01集服制板",
+      "parent_asset_id": "K004",
+      "prop_lock": {
+        "story_use": "同场必须一眼区分官吏、奴兵和纯虫族小兵。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "同场必须一眼区分官吏、奴兵和纯虫族小兵。",
+        "scenes": [
+          "SC002-SH001",
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "CHAR_LUO_QINGHE",
-        "LOC_MEDICINE_HOUSE"
+        "CHAR_BAICE_CLERK",
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY"
       ],
-      "design_rules": "Use 罗青禾第一集服装板 as episode 01 art reference. 新增服装板，药屋医者服装和工具清楚。 Preserve CHAR_LUO_QINGHE;LOC_MEDICINE_HOUSE. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/characters.md#基层官吏、奴兵与虫族士兵",
+        "01/script/final-script.md"
+      ],
       "usage": [
-        "新增服装板，药屋医者服装和工具清楚。"
+        "SC002-SH001",
+        "SC004-SH001",
+        "SC006-SH003"
       ]
     },
     {
-      "asset_id": "costume_bai_yi_ep01",
-      "name": "白翳第一集服装板",
-      "output_path": "assets/costumes/costume_bai_yi_states.png",
-      "source_refs": [
-        "白翳服装"
+      "asset_id": "E01_K006",
+      "file": "k006e01.png",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "display_name": "第01集人族群众服装差异板",
+      "parent_asset_id": "K006",
+      "prop_lock": {
+        "story_use": "残阳坳山民和金河平民不得同款灾民化。",
+        "owner_or_faction": "按 source_refs 归属；肃明道具归清明籍制度，旧帝国道具归旧驿/血牒压力，人族服装归地域生活秩序。",
+        "silhouette": "短剧首秒可读，轮廓简单明确。",
+        "proportion_scale": "必须有人手或身体尺度参照。",
+        "material": "使用旧木、虫蜡、骨白、旧铁、纸灰、草药布、麦金布料等触感材料。",
+        "wear_marks": "保留烟火、泥水、药草灰、冻血、虫蜡痕和长期使用磨损。",
+        "symbol_rules": "白册、旧驿暗号、日月纹、血牒和徽记必须用线控/遮罩/后合成，不让模型随机造字。",
+        "forbidden_future_reveals": "不得提前完整揭示月下盟书、晏南枝皇室正装或后续清明院深层设施。"
+      },
+      "episode_state": {
+        "state": "残阳坳山民和金河平民不得同款灾民化。",
+        "scenes": [
+          "SC002-SH002",
+          "SC004-SH001",
+          "SC006-SH003"
+        ],
+        "approval_status": "pending_user_art_approval"
+      },
+      "card_layout": [
+        "front_view",
+        "side_or_open_view",
+        "hand_scale",
+        "material_closeups",
+        "state_variants_or_precision_mask"
       ],
       "continuity_refs": [
-        "CHAR_BAI_YI",
-        "COSTUME_QINGMING_UPPER_OFFICIAL"
+        "CANYANGAO_VILLAGERS",
+        "JINHE_HOUSEHOLD_CIVILIANS",
+        "human_crowd_diversity_rule"
       ],
-      "design_rules": "Use 白翳第一集服装板 as episode 01 art reference. 新增服装板，清明监察官制白参考。 Preserve CHAR_BAI_YI;COSTUME_QINGMING_UPPER_OFFICIAL. No readable generated text, UI, watermark, high-magic spectacle, or unapproved reveal.",
+      "source_refs": [
+        "bible/visual-style.md#人族视觉边界",
+        "01/script/final-script.md"
+      ],
       "usage": [
-        "新增服装板，清明监察官制白参考。"
+        "SC002-SH002",
+        "SC004-SH001",
+        "SC006-SH003"
       ]
     }
-  ],
-  "post_text_layer_rules": {
-    "status": "required_for_video_generation",
-    "applies_to": [
-      "清明白册旧污疑似",
-      "沈照眠药名牌",
-      "金河征粮木牌",
-      "旧驿图地名/路线标记"
-    ],
-    "rule": "图像资产只提供留白、纸张、木牌、药牌、地图和封条材质；所有可读文字由 Prompt Room 或后期文字层精确叠加，不交给图像/视频模型生成。"
-  }
+  ]
 }

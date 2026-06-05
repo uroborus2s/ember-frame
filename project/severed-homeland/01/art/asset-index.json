@@ -1,350 +1,2433 @@
 {
-  "version": "1",
+  "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "date": "2026-06-03",
-  "status": "ready_with_warnings",
+  "scope": "episode01_art_room_assets",
+  "approval_status": "pending_user_art_approval",
+  "image_generation_status": "not_started_pending_user_approval",
+  "counts": {
+    "character": 15,
+    "location": 6,
+    "prop": 10,
+    "costume": 5,
+    "style": 3,
+    "reference_frame": 44
+  },
   "assets": [
     {
-      "asset_id": "character_shen_weisang_ep01",
+      "asset_id": "E01_C001",
+      "parent_asset_id": "C001",
       "asset_type": "character",
-      "file_path": "assets/characters/character_shen_weisang_multi_state_board.png",
-      "status": "warning",
-      "prompt_id": "prompt_character_shen_weisang_ep01",
-      "score": 87,
-      "history_files": [
-        "assets/characters/history/character_shen_weisang_multi_state_board.v001.png",
-        "assets/characters/history/character_shen_weisang_multi_state_board.v002.png"
+      "asset_subtype": "character_episode_state_card",
+      "file": "c001e01.png",
+      "display_name": "沈维桑第01集封村状态卡",
+      "output_path": "assets/characters/c001e01.png",
+      "source_refs": [
+        "bible/characters.md#沈维桑",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
       ],
-      "qc_note": "可用但有第一集使用边界，详见 QC 报告。"
-    },
-    {
-      "asset_id": "character_shen_zhaomian_ep01",
-      "asset_type": "character",
-      "file_path": "assets/characters/character_shen_zhaomian_multi_state_board.png",
-      "status": "warning",
-      "prompt_id": "prompt_character_shen_zhaomian_ep01",
-      "score": 87,
-      "history_files": [],
-      "qc_note": "可用但有第一集使用边界，详见 QC 报告。"
-    },
-    {
-      "asset_id": "character_luo_qinghe_ep01",
-      "asset_type": "character",
-      "file_path": "assets/characters/character_luo_qinghe_multi_state_board.png",
-      "status": "ready",
-      "prompt_id": "prompt_character_luo_qinghe_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "character_bai_yi_ep01",
-      "asset_type": "character",
-      "file_path": "assets/characters/character_bai_yi_multi_state_board.png",
-      "status": "ready",
-      "prompt_id": "prompt_character_bai_yi_ep01",
-      "score": 92,
-      "history_files": [
-        "assets/characters/history/character_bai_yi_multi_state_board.v001.png",
-        "assets/characters/history/character_bai_yi_multi_state_board.v002.png",
-        "assets/characters/history/character_bai_yi_multi_state_board.v003.png"
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_WAX_FLAGS",
+        "left_shoulder_old_wound"
       ],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "usage": [
+        "SC004-SH003",
+        "SC004-SH006",
+        "SC006-SH009",
+        "SC006-SH010"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "17岁残阳坳猎户，灰褐猎衣和草药青内层，背弓站在人群边缘，左肩微低；本集状态是白册封村中的圆谎、忍耐和扣弦克制。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "character_suming_inspector_background_ep01",
+      "asset_id": "E01_C002",
+      "parent_asset_id": "C002",
       "asset_type": "character",
-      "file_path": "assets/characters/character_suming_insect_infantry_multi_state_board.png",
-      "status": "ready",
-      "prompt_id": "prompt_character_suming_inspector_background_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "costume_shen_weisang_ep01",
-      "asset_type": "costume",
-      "file_path": "assets/costumes/costume_shen_weisang_states.png",
-      "status": "warning",
-      "prompt_id": "prompt_costume_shen_weisang_ep01",
-      "score": 83,
-      "history_files": [
-        "assets/costumes/history/costume_shen_weisang_states.v001.png"
+      "asset_subtype": "character_episode_state_card",
+      "file": "c002e01.png",
+      "display_name": "晏南枝第01集遮面藏身状态卡",
+      "output_path": "assets/characters/c002e01.png",
+      "source_refs": [
+        "bible/characters.md#晏南枝",
+        "01/script/final-script.md#SC03",
+        "01/script/final-script.md#SC05"
       ],
-      "qc_note": "可用但有第一集使用边界，详见 QC 报告。"
-    },
-    {
-      "asset_id": "costume_shen_zhaomian_ep01",
-      "asset_type": "costume",
-      "file_path": "assets/costumes/costume_shen_zhaomian_states.png",
-      "status": "warning",
-      "prompt_id": "prompt_costume_shen_zhaomian_ep01",
-      "score": 83,
-      "history_files": [],
-      "qc_note": "可用但有第一集使用边界，详见 QC 报告。"
-    },
-    {
-      "asset_id": "costume_luo_qinghe_ep01",
-      "asset_type": "costume",
-      "file_path": "assets/costumes/costume_luo_qinghe_states.png",
-      "status": "ready",
-      "prompt_id": "prompt_costume_luo_qinghe_ep01",
-      "score": 88,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "costume_bai_yi_ep01",
-      "asset_type": "costume",
-      "file_path": "assets/costumes/costume_bai_yi_states.png",
-      "status": "ready",
-      "prompt_id": "prompt_costume_bai_yi_ep01",
-      "score": 88,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_master_dusk_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_master_dusk.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_master_dusk_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_gate_blood_check_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_gate_blood_check.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_gate_blood_check_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_medicine_house_exterior_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_medicine_house_exterior.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_medicine_house_exterior_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_medicine_house_interior_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_medicine_house_interior.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_medicine_house_interior_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_old_well_courtyard_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_old_well_courtyard.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_old_well_courtyard_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "loc_canyangao_hidden_relay_compartment_ep01",
-      "asset_type": "location",
-      "file_path": "assets/locations/canyangao/loc_canyangao_hidden_relay_compartment.png",
-      "status": "ready",
-      "prompt_id": "prompt_loc_canyangao_hidden_relay_compartment_ep01",
-      "score": 92,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "prop_qingming_white_register_ep01",
-      "asset_type": "prop",
-      "file_path": "assets/props/prop_qingming_white_register.png",
-      "status": "ready",
-      "prompt_id": "prompt_prop_qingming_white_register_ep01",
-      "score": 91,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "prop_qingming_court_tool_board_ep01",
-      "asset_type": "prop",
-      "file_path": "assets/props/prop_qingming_court_tool_board.png",
-      "status": "ready",
-      "prompt_id": "prompt_prop_qingming_court_tool_board_ep01",
-      "score": 91,
-      "history_files": [
-        "assets/props/history/prop_qingming_court_tool_board.v001.png"
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_GENEALOGY",
+        "face_reveal_control"
       ],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC005-SH001",
+        "SC005-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "晏南枝在01集不做完整正面华丽揭示；南方密室中遮面、手握月白玉片，药柜暗格中低光藏身，贵气被压低但轮廓仍干净。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "prop_fragmented_continent_relay_map_ep01",
+      "asset_id": "E01_C004",
+      "parent_asset_id": "C004",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c004e01.png",
+      "display_name": "薛临墙第01集边墙序幕状态卡",
+      "output_path": "assets/characters/c004e01.png",
+      "source_refs": [
+        "bible/characters.md#薛临墙",
+        "01/script/final-script.md#SC01"
+      ],
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL"
+      ],
+      "usage": [
+        "SC001-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "边墙暴雪序幕中的老墙师，灰石厚衬袄覆雪，冻裂粗手按墙缝，用短令建立守墙人的现实主义。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C005",
+      "parent_asset_id": "C005",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c005e01.png",
+      "display_name": "沈照眠第01集村中疑童状态卡",
+      "output_path": "assets/characters/c005e01.png",
+      "source_refs": [
+        "bible/characters.md#沈照眠",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC004-SH004",
+        "SC004-SH005",
+        "SC006-SH004",
+        "SC006-SH009"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "沈照眠仍是村中状态，浅灰短襦和草药袋，因儿童习惯漏出禁歌，被白册写成疑童。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C006",
+      "parent_asset_id": "C006",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c006e01.png",
+      "display_name": "罗青禾第01集药屋保护状态卡",
+      "output_path": "assets/characters/c006e01.png",
+      "source_refs": [
+        "bible/characters.md#罗青禾",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC05",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "PROP_MEDICINE_CABINET",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "usage": [
+        "SC004-SH005",
+        "SC005-SH002",
+        "SC005-SH005",
+        "SC006-SH010"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "罗青禾在村口挡女儿、药屋挡暗格、旧井旁隔人群阻止沈维桑出箭；青布头巾、草药绿围裙、小铜剪和医者手稳是核心。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C007",
+      "parent_asset_id": "C007",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c007e01.png",
+      "display_name": "白翳第01集无尘入场状态卡",
+      "output_path": "assets/characters/c007e01.png",
+      "source_refs": [
+        "bible/characters.md#白翳",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_WHITE_REGISTER",
+        "clean_straight_entry"
+      ],
+      "usage": [
+        "SC006-SH005",
+        "SC006-SH006",
+        "SC006-SH007",
+        "SC006-SH009"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "白翳第一次以中枢监察使姿态进入残阳坳，白袍无尘、高瘦、直线移动，擦虫蜡针后将地方疑名升级为逆案。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C011",
+      "parent_asset_id": "C011",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c011e01.png",
+      "display_name": "顾怀章第01集南方旧臣状态卡",
+      "output_path": "assets/characters/c011e01.png",
+      "source_refs": [
+        "bible/characters.md#顾怀章",
+        "01/script/final-script.md#SC03"
+      ],
+      "continuity_refs": [
+        "CHAR_GU_HUAIZHANG",
+        "PROP_BLOOD_GENEALOGY",
+        "LOC_SOUTHERN_REDLINE_ROOM"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "南方密室里把血牒和月下任务压给晏南枝的旧臣，衣冠和卷轴比身体更有压迫感。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C016A",
+      "parent_asset_id": "C016",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c016e01.png",
+      "display_name": "白册官吏第01集残阳坳登记状态卡",
+      "output_path": "assets/characters/c016e01.png",
+      "source_refs": [
+        "bible/characters.md#白册官吏",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_CANYANGAO_GATE"
+      ],
+      "usage": [
+        "SC004-SH002",
+        "SC004-SH005",
+        "SC004-SH007",
+        "SC006-SH002",
+        "SC006-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "残阳坳执行层的白册官吏，开册、挂疑名、写疑童；不亲自扣腕，权力来自高位、白册和蜡笔。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C016B",
+      "parent_asset_id": "C016",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c016e02.png",
+      "display_name": "粮税小吏第01集金河征粮状态卡",
+      "output_path": "assets/characters/c016e02.png",
+      "source_refs": [
+        "bible/characters.md#粮税小吏",
+        "01/script/final-script.md#SC02"
+      ],
+      "continuity_refs": [
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_JINHE_GRAIN_DEPOT"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "SC002-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "金河序幕中把粮和清明籍绑定的粮税小吏，蜡灰青官服、高账吏帽、粮牌和骨算盘必须区别于人族账房。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C017",
+      "parent_asset_id": "C017",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c017e01.png",
+      "display_name": "混血奴兵第01集扣腕押车状态卡",
+      "output_path": "assets/characters/c017e01.png",
+      "source_refs": [
+        "bible/characters.md#奴兵总则",
+        "01/script/final-script.md#SC02",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_SLAVE_CART_SOLDIER",
+        "CHAR_SUMING_DOOR_SEAL_SOLDIER"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "SC002-SH004",
+        "SC004-SH001",
+        "SC006-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "奴兵负责扣腕、押车、封门和执行抓捕，不承担开册职责；人族轮廓与虫化甲片并存，后脑低位金钱马尾可见。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C018",
+      "parent_asset_id": "C018",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c018e01.png",
+      "display_name": "纯虫族小兵第01集封路状态卡",
+      "output_path": "assets/characters/c018e01.png",
+      "source_refs": [
+        "bible/characters.md#普通虫族小兵",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ],
+      "usage": [
+        "SC004-SH001",
+        "SC006-SH003",
+        "SC006-SH008"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "纯虫族小兵只负责封旧井、药屋外圈和钩镰堵路；低伏、反关节腿和外圈封锁线必须与官吏/奴兵区分。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C020",
+      "parent_asset_id": "C020",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c020e01.png",
+      "display_name": "北境攻城剪影第01集序幕卡",
+      "output_path": "assets/characters/c020e01.png",
+      "source_refs": [
+        "bible/characters.md#北境攻城兵种",
+        "01/script/final-script.md#SC01"
+      ],
+      "continuity_refs": [
+        "CHAR_NORTHERN_SIEGE_SILHOUETTES",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ],
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "序幕只需要黑牙斧兵、雪狼骑和破门猛犸局部剪影，不展开完整兽潮或全兵种大场面。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C022",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c022e01.png",
+      "display_name": "年轻灰墙军户序幕状态卡",
+      "output_path": "assets/characters/c022e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC01",
+        "01/storyboard/storyboard-plan.md#SC001-SH002"
+      ],
+      "continuity_refs": [
+        "young_grey_wall_soldier",
+        "PROP_BONE_BELL",
+        "PROP_BROKEN_SPEAR"
+      ],
+      "usage": [
+        "SC001-SH002"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C023",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c023e01.png",
+      "display_name": "残阳坳村民群像状态卡",
+      "output_path": "assets/characters/c023e01.png",
+      "source_refs": [
+        "bible/visual-style.md#人族视觉边界",
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "CANYANGAO_VILLAGERS",
+        "human_crowd_diversity_rule"
+      ],
+      "usage": [
+        "SC004-SH001",
+        "SC006-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "残阳坳山民群像需要年龄、性别、职业和贫困程度差异；猎户、药户、驿道后裔和山民工具必须可见。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_C024",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "file": "c024e01.png",
+      "display_name": "金河被征粮家庭群像状态卡",
+      "output_path": "assets/characters/c024e01.png",
+      "source_refs": [
+        "bible/visual-style.md#金河粮仓带的勉强果腹平民",
+        "01/script/final-script.md#SC02"
+      ],
+      "continuity_refs": [
+        "JINHE_HOUSEHOLD_CIVILIANS",
+        "human_crowd_diversity_rule"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "SC002-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "金河家庭不是无来源灾民，必须保留粮仓带劳动结构、老人、妇人、孩子、祖牌和过冬粮压力。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L007",
+      "parent_asset_id": "L007",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l007e01.png",
+      "display_name": "锁喉关外墙序幕场景卡",
+      "output_path": "assets/locations/l007e01.png",
+      "source_refs": [
+        "bible/scenes.md#锁喉关",
+        "01/script/final-script.md#SC01",
+        "01/director/camera-plan.md#SC001"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ],
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "黑石外墙、骨钟、门闩、枪线、拒马和暴雪构成局部攻城序幕；只做墙面近景和剪影，不做完整战场。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L003",
+      "parent_asset_id": "L003",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l003e01.png",
+      "display_name": "金河粮仓带征粮场景卡",
+      "output_path": "assets/locations/l003e01.png",
+      "source_refs": [
+        "bible/scenes.md#金河粮磨区与渡河蒸汽船",
+        "01/script/final-script.md#SC02"
+      ],
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "SC002-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L014",
+      "parent_asset_id": "L014",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l014e01.png",
+      "display_name": "南方红线密室第01集场景卡",
+      "output_path": "assets/locations/l014e01.png",
+      "source_refs": [
+        "bible/scenes.md#南部丛林与南缘遗民",
+        "01/script/final-script.md#SC03"
+      ],
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_BLOOD_GENEALOGY",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "油布雨夜、旧驿残图桌、红线和防潮卷轴筒构成南方旧礼法压力；不展开南林政治。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L001A",
+      "parent_asset_id": "L001",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l001e01.png",
+      "display_name": "残阳坳村口封锁地理场景卡",
+      "output_path": "assets/locations/l001e01.png",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC04",
+        "01/director/camera-plan.md#SC004"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
+      ],
+      "usage": [
+        "SC004-SH001",
+        "SC004-SH002",
+        "SC004-SH009"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L001B",
+      "parent_asset_id": "L001",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l001e02.png",
+      "display_name": "罗青禾药屋内景与暗格场景卡",
+      "output_path": "assets/locations/l001e02.png",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC05"
+      ],
+      "continuity_refs": [
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "PROP_MEDICINE_CABINET",
+        "PROP_OLD_RELAY_MARK"
+      ],
+      "usage": [
+        "SC005-SH001",
+        "SC005-SH002",
+        "SC005-SH004",
+        "SC005-SH005"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_L001C",
+      "parent_asset_id": "L001",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "file": "l001e03.png",
+      "display_name": "残阳坳旧井检查桌场景卡",
+      "output_path": "assets/locations/l001e03.png",
+      "source_refs": [
+        "bible/scenes.md#残阳坳",
+        "01/script/final-script.md#SC06",
+        "01/director/camera-plan.md#SC006"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_REGISTER",
+        "PROP_OLD_RELAY_MARK"
+      ],
+      "usage": [
+        "SC006-SH001",
+        "SC006-SH002",
+        "SC006-SH003",
+        "SC006-SH008"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P016",
+      "parent_asset_id": null,
       "asset_type": "prop",
-      "file_path": "assets/props/prop_fragmented_continent_relay_map.png",
-      "status": "ready",
-      "prompt_id": "prompt_prop_fragmented_continent_relay_map_ep01",
-      "score": 91,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p016e01.png",
+      "display_name": "骨钟断矛与冻血序幕道具卡",
+      "output_path": "assets/props/p016e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC01"
+      ],
+      "continuity_refs": [
+        "PROP_BONE_BELL",
+        "PROP_BROKEN_SPEAR",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ],
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "骨钟裂缝、旧日月刻痕、断矛和冻血负责把边墙战争压到局部道具上。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "prop_half_sunmoon_relay_token_ep01",
+      "asset_id": "E01_P008",
+      "parent_asset_id": "P008",
       "asset_type": "prop",
-      "file_path": "assets/props/prop_half_sunmoon_relay_token.png",
-      "status": "ready",
-      "prompt_id": "prompt_prop_half_sunmoon_relay_token_ep01",
-      "score": 91,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p008e01.png",
+      "display_name": "金河粮牌封蜡与祖牌组合卡",
+      "output_path": "assets/props/p008e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC02"
+      ],
+      "continuity_refs": [
+        "PROP_ANCESTRAL_TABLET_BOX",
+        "PROP_GRAIN_TAG",
+        "PROP_INSECT_WAX_SEAL"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "SC002-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "粮牌、虫蜡封条、祖牌小盒、粮缸和押车绳要让制度如何写没家门可见。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "prop_shen_zhaomian_child_relics_ep01",
+      "asset_id": "E01_P009",
+      "parent_asset_id": "P009",
       "asset_type": "prop",
-      "file_path": "assets/props/prop_shen_zhaomian_child_relics.png",
-      "status": "ready",
-      "prompt_id": "prompt_prop_shen_zhaomian_child_relics_ep01",
-      "score": 91,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p009e01.png",
+      "display_name": "南方旧驿残图红线道具卡",
+      "output_path": "assets/props/p009e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC03"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP_REDLINE",
+        "LOC_SOUTHERN_REDLINE_ROOM"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "旧驿残图用于红线从南缘向北境的方向锁定；不得出现现代地图字。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "style_global_mood_ep01",
+      "asset_id": "E01_P002",
+      "parent_asset_id": "P002",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p002e01.png",
+      "display_name": "月白玉片与半卷血牒第01集状态卡",
+      "output_path": "assets/props/p002e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC03",
+        "01/script/final-script.md#SC05"
+      ],
+      "continuity_refs": [
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_GENEALOGY",
+        "face_reveal_control"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC005-SH001"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "本集只作为身份压力和手心冷反光，不提供战斗能力。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P003",
+      "parent_asset_id": "P003",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p003e01.png",
+      "display_name": "白册与蜡笔疑名道具卡",
+      "output_path": "assets/props/p003e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_REGISTER_SIDE_NOTE",
+        "text_not_model_generated"
+      ],
+      "usage": [
+        "SC004-SH007",
+        "SC006-SH004",
+        "SC006-SH007"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "白册需要空白板和可后合成区域；不要让模型生成文字。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P004",
+      "parent_asset_id": "P004",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p004e01.png",
+      "display_name": "清明香与虫蜡针第01集道具卡",
+      "output_path": "assets/props/p004e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_QINGMING_SCENT_BELL"
+      ],
+      "usage": [
+        "SC004-SH008",
+        "SC006-SH005",
+        "SC006-SH006"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "清明香是倒计时，虫蜡针是白翳清洁式审讯动作。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P017",
+      "parent_asset_id": null,
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p017e01.png",
+      "display_name": "白蜡旗与封门牌道具卡",
+      "output_path": "assets/props/p017e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_WAX_FLAGS",
+        "PROP_DOOR_SEAL_TAG"
+      ],
+      "usage": [
+        "SC004-SH001",
+        "SC004-SH009",
+        "SC006-SH001"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "三支白蜡旗和虫蜡封门牌说明封村已提前布好。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P005",
+      "parent_asset_id": "P005",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p005e01.png",
+      "display_name": "沈照眠草药袋第01集道具卡",
+      "output_path": "assets/props/p005e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "usage": [
+        "SC004-SH004",
+        "SC004-SH006",
+        "SC006-SH004"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "草药袋承载孩子习惯、亲情锚点和白册疑童动作。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P018",
+      "parent_asset_id": null,
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p018e01.png",
+      "display_name": "药柜暗格与旧驿暗号道具卡",
+      "output_path": "assets/props/p018e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC05",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_MEDICINE_CABINET",
+        "PROP_OLD_RELAY_MARK",
+        "redraw_needed"
+      ],
+      "usage": [
+        "SC005-SH001",
+        "SC005-SH004",
+        "SC006-SH002"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "药柜底板旧驿暗号是本集被查出的罪证；精确符号需要后合成控制。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_P020",
+      "parent_asset_id": null,
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "p020e01.png",
+      "display_name": "沈维桑猎弓弓弦克制道具卡",
+      "output_path": "assets/props/p020e01.png",
+      "source_refs": [
+        "01/script/final-script.md#SC04",
+        "01/script/final-script.md#SC06"
+      ],
+      "continuity_refs": [
+        "PROP_SHEN_BOW",
+        "CHAR_SHEN_WEISANG",
+        "ending_timing"
+      ],
+      "usage": [
+        "SC004-SH006",
+        "SC006-SH009",
+        "SC006-SH010"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "猎弓不是动作爽点，本集最终必须停在扣弦又松开的克制。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_K001",
+      "parent_asset_id": "K001",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "k001e01.png",
+      "display_name": "沈维桑第01集猎户服装状态板",
+      "output_path": "assets/costumes/k001e01.png",
+      "source_refs": [
+        "bible/characters.md#沈维桑",
+        "01/script/final-script.md"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "left_shoulder_old_wound"
+      ],
+      "usage": [
+        "SC004-SH003",
+        "SC006-SH010"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "灰褐猎衣、草药青内层和旧皮护腕保持村中状态，不进入边墙升级。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_K002",
+      "parent_asset_id": "K002",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "k002e01.png",
+      "display_name": "晏南枝第01集遮面流亡服装板",
+      "output_path": "assets/costumes/k002e01.png",
+      "source_refs": [
+        "bible/characters.md#晏南枝",
+        "01/script/final-script.md"
+      ],
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "face_reveal_control"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC005-SH001"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "冷灰外袍和遮面斗篷压低身份，但轮廓仍修长贵气。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_K003",
+      "parent_asset_id": "K003",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "k003e01.png",
+      "display_name": "沈照眠第01集村中儿童服装板",
+      "output_path": "assets/costumes/k003e01.png",
+      "source_refs": [
+        "bible/characters.md#沈照眠",
+        "01/script/final-script.md"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "usage": [
+        "SC004-SH004",
+        "SC006-SH009"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "浅灰短襦和草药绿小围裙必须保留儿童脆弱体量。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_K004",
+      "parent_asset_id": "K004",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "k004e01.png",
+      "display_name": "肃明执行层第01集服制板",
+      "output_path": "assets/costumes/k004e01.png",
+      "source_refs": [
+        "bible/characters.md#基层官吏、奴兵与虫族士兵",
+        "01/script/final-script.md"
+      ],
+      "continuity_refs": [
+        "CHAR_BAICE_CLERK",
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "SC004-SH001",
+        "SC006-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "同场必须一眼区分官吏、奴兵和纯虫族小兵。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_K006",
+      "parent_asset_id": "K006",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "file": "k006e01.png",
+      "display_name": "第01集人族群众服装差异板",
+      "output_path": "assets/costumes/k006e01.png",
+      "source_refs": [
+        "bible/visual-style.md#人族视觉边界",
+        "01/script/final-script.md"
+      ],
+      "continuity_refs": [
+        "CANYANGAO_VILLAGERS",
+        "JINHE_HOUSEHOLD_CIVILIANS",
+        "human_crowd_diversity_rule"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "SC004-SH001",
+        "SC006-SH003"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "残阳坳山民和金河平民不得同款灾民化。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_F001",
+      "parent_asset_id": "F001",
       "asset_type": "style",
-      "file_path": "assets/style/project-style-board/style_global_mood_low_magic_eastern_epic_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_global_mood_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "style_reference",
+      "file": "f001e01.png",
+      "display_name": "第01集整体风格与材质板",
+      "output_path": "assets/style/f001e01.png",
+      "source_refs": [
+        "01/director/director-brief.md",
+        "01/storyboard/storyboard-plan.md"
+      ],
+      "continuity_refs": [
+        "STYLE_LOW_MAGIC_EASTERN_EPIC",
+        "9:16",
+        "local_causality"
+      ],
+      "usage": [
+        "all_scenes"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "低魔东方史诗、制度洁净和生活门槛被越过。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "style_material_palette_ep01",
+      "asset_id": "E01_F005",
+      "parent_asset_id": "F005",
       "asset_type": "style",
-      "file_path": "assets/style/project-style-board/style_material_palette_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_material_palette_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "style_reference",
+      "file": "f005e01.png",
+      "display_name": "第01集竖屏构图与局部因果板",
+      "output_path": "assets/style/f005e01.png",
+      "source_refs": [
+        "01/director/camera-plan.md",
+        "01/storyboard/storyboard-plan.md"
+      ],
+      "continuity_refs": [
+        "9:16",
+        "threshold_pressure",
+        "vertical_hierarchy"
+      ],
+      "usage": [
+        "all_scenes"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "上下层级、窄门槛、道具首秒可读。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "style_canyang_to_jinhe_palette_ep01",
+      "asset_id": "E01_F006",
+      "parent_asset_id": "F006",
       "asset_type": "style",
-      "file_path": "assets/style/regional-color-system/style_canyang_to_jinhe_palette_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_canyang_to_jinhe_palette_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "style_reference",
+      "file": "f006e01.png",
+      "display_name": "第01集低魔与精确符号边界板",
+      "output_path": "assets/style/f006e01.png",
+      "source_refs": [
+        "bible/world.md#法术与记忆规则",
+        "01/director/director-brief.md"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_WHITE_REGISTER",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "SC005-SH004",
+        "SC006-SH007"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "旧驿、月白玉片和白册都只提供线索/罪名，不提供战斗能力。",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "style_qingming_institution_palette_ep01",
-      "asset_type": "style",
-      "file_path": "assets/style/regional-color-system/style_qingming_institution_palette_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_qingming_institution_palette_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "style_zhaoming_relic_material_ep01",
-      "asset_type": "style",
-      "file_path": "assets/style/base-material-boards/material_zhaoming_relic_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_zhaoming_relic_material_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "style_qingming_wax_material_ep01",
-      "asset_type": "style",
-      "file_path": "assets/style/base-material-boards/material_qingming_insect_wax_white_v01.png",
-      "status": "ready",
-      "prompt_id": "prompt_style_qingming_wax_material_ep01",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
-    },
-    {
-      "asset_id": "ref_ep01_sc001_sh002",
+      "asset_id": "E01_R001",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc001_sh002_northern_battle_fragment.png",
-      "status": "ready",
-      "prompt_id": "prompt_ref_ep01_sc001_sh002",
-      "score": 86,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "reference_frame",
+      "file": "r001e01.png",
+      "display_name": "SC001-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r001e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC001-SH001-A",
+        "01/shots/shot-list.json#SC001-SH001",
+        "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_start.png"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ],
+      "usage": [
+        "SC001-SH001",
+        "FLF2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC001-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "ref_ep01_sc001_sh003",
+      "asset_id": "E01_R002",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc001_sh003_jinhe_grain_levy_road.png",
-      "status": "ready",
-      "prompt_id": "prompt_ref_ep01_sc001_sh003",
-      "score": 86,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "reference_frame",
+      "file": "r002e01.png",
+      "display_name": "SC001-SH001 终帧参考帧",
+      "output_path": "01/assets/reference-frames/r002e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC001-SH001-A",
+        "01/shots/shot-list.json#SC001-SH001",
+        "needs_asset:episode01/reference-frames/sc001_sh001_bone_bell_impact.png"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ],
+      "usage": [
+        "SC001-SH001",
+        "FLF2V",
+        "终帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC001-SH001 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "ref_ep01_sc001_sh004",
+      "asset_id": "E01_R003",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc001_sh004_southern_secret_room_relay_table.png",
-      "status": "ready",
-      "prompt_id": "prompt_ref_ep01_sc001_sh004",
-      "score": 86,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "reference_frame",
+      "file": "r003e01.png",
+      "display_name": "SC001-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r003e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC001-SH002-A",
+        "01/shots/shot-list.json#SC001-SH002",
+        "needs_asset:episode01/reference-frames/sc001_sh002_frozen_blood_old_mark.png"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL"
+      ],
+      "usage": [
+        "SC001-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC001-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "ref_ep01_sc005_threshold_identification",
+      "asset_id": "E01_R004",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc005_zhaomian_threshold_identification.png",
-      "status": "ready",
-      "prompt_id": "prompt_ref_ep01_sc005_threshold_identification",
-      "score": 86,
-      "history_files": [],
-      "qc_note": "canonical 文件存在，路径合规，纳入第一集提示资产包。"
+      "asset_subtype": "reference_frame",
+      "file": "r004e01.png",
+      "display_name": "SC001-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r004e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC001-SH003-A",
+        "01/shots/shot-list.json#SC001-SH003",
+        "needs_asset:episode01/reference-frames/sc001_sh003_xue_hand_wall_crack.png"
+      ],
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL"
+      ],
+      "usage": [
+        "SC001-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC001-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "ref_ep01_sc008_final_spear_line_well_glint",
+      "asset_id": "E01_R005",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc008_final_spear_line_well_glint.png",
-      "status": "ready_with_override",
-      "prompt_id": "prompt_ref_ep01_sc008_final_spear_line_well_glint",
-      "score": 86,
-      "history_files": [],
-      "qc_note": "原图继续作为 SC008-SH001/SH002 封锁线与空间气氛参考；SC008-SH003 井沿特写改用新增 shot override。"
+      "asset_subtype": "reference_frame",
+      "file": "r005e01.png",
+      "display_name": "SC002-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r005e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC002-SH001-A",
+        "01/shots/shot-list.json#SC002-SH001",
+        "needs_asset:episode01/reference-frames/sc002_sh001_jinhe_grain_wall.png"
+      ],
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC002-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     },
     {
-      "asset_id": "shot_override_sc008_sh003_well_glint_readability",
-      "asset_type": "shot_override",
-      "file_path": "01/assets/shot-overrides/sc008_sh003_well_glint_readability_override.png",
-      "status": "ready",
-      "prompt_id": "prompt_shot_override_sc008_sh003_well_glint_readability",
-      "score": 94,
-      "history_files": [],
-      "qc_note": "新增 SC008-SH003 井沿可读性覆盖帧，月白反光清楚且未揭示井下人物、手或完整玉片。"
-    },
-    {
-      "asset_id": "ref_ep01_sc002_sh001_shen_weisang_gate_observation",
+      "asset_id": "E01_R006",
       "asset_type": "reference_frame",
-      "file_path": "01/assets/reference-frames/sc002_sh001_shen_weisang_gate_observation.png",
-      "status": "ready",
-      "prompt_id": "prompt_ref_ep01_sc002_sh001_shen_weisang_gate_observation",
-      "score": 91,
-      "history_files": [],
-      "qc_note": "新增 SC002-SH001 首帧，沈维桑为第一集猎户状态，村口人群遮挡和验血场景成立；无生成文字、无后续发光/雪线状态。"
+      "asset_subtype": "reference_frame",
+      "file": "r006e01.png",
+      "display_name": "SC002-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r006e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC002-SH002-A",
+        "01/shots/shot-list.json#SC002-SH002",
+        "needs_asset:episode01/reference-frames/sc002_sh002_threshold_handprint.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC002-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC002-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R007",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r007e01.png",
+      "display_name": "SC002-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r007e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC002-SH003-A",
+        "01/shots/shot-list.json#SC002-SH003",
+        "needs_asset:episode01/reference-frames/sc002_sh003_tax_clerk_register.png"
+      ],
+      "continuity_refs": [
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC002-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC002-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R008",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r008e01.png",
+      "display_name": "SC002-SH004 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r008e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC002-SH004-A",
+        "01/shots/shot-list.json#SC002-SH004",
+        "needs_asset:episode01/reference-frames/sc002_sh004_cart_start.png"
+      ],
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ],
+      "usage": [
+        "SC002-SH004",
+        "FLF2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC002-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R009",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r009e01.png",
+      "display_name": "SC002-SH004 终帧参考帧",
+      "output_path": "01/assets/reference-frames/r009e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC002-SH004-A",
+        "01/shots/shot-list.json#SC002-SH004",
+        "needs_asset:episode01/reference-frames/sc002_sh004_empty_threshold_end.png"
+      ],
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ],
+      "usage": [
+        "SC002-SH004",
+        "FLF2V",
+        "终帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC002-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R010",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r010e01.png",
+      "display_name": "SC003-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r010e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC003-SH001-A",
+        "01/shots/shot-list.json#SC003-SH001",
+        "needs_asset:episode01/reference-frames/sc003_sh001_redline_map.png"
+      ],
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_BLOOD_GENEALOGY"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC003-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R011",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r011e01.png",
+      "display_name": "SC003-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r011e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC003-SH002-A",
+        "01/shots/shot-list.json#SC003-SH002",
+        "needs_asset:episode01/reference-frames/sc003_sh002_gu_yan_twoshot.png"
+      ],
+      "continuity_refs": [
+        "CHAR_GU_HUAIZHANG",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC003-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R012",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r012e01.png",
+      "display_name": "SC003-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r012e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC003-SH003-A",
+        "01/shots/shot-list.json#SC003-SH003",
+        "needs_asset:episode01/reference-frames/sc003_sh003_blood_genealogy_hesitation.png"
+      ],
+      "continuity_refs": [
+        "PROP_BLOOD_GENEALOGY",
+        "CHAR_YAN_NANZHI",
+        "CHAR_GU_HUAIZHANG"
+      ],
+      "usage": [
+        "SC003-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC003-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R013",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r013e01.png",
+      "display_name": "SC003-SH004 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r013e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC003-SH004-A",
+        "01/shots/shot-list.json#SC003-SH004",
+        "needs_asset:episode01/reference-frames/sc003_sh004_redline_north.png"
+      ],
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "CHAR_YAN_NANZHI"
+      ],
+      "usage": [
+        "SC003-SH004",
+        "FLF2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC003-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R014",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r014e01.png",
+      "display_name": "SC003-SH004 终帧参考帧",
+      "output_path": "01/assets/reference-frames/r014e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC003-SH004-A",
+        "01/shots/shot-list.json#SC003-SH004",
+        "needs_asset:episode01/reference-frames/sc004_sh001_checkpoint_line_start.png"
+      ],
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "CHAR_YAN_NANZHI"
+      ],
+      "usage": [
+        "SC003-SH004",
+        "FLF2V",
+        "终帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC003-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R015",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r015e01.png",
+      "display_name": "SC004-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r015e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH001-A",
+        "01/shots/shot-list.json#SC004-SH001",
+        "needs_asset:episode01/reference-frames/sc004_sh001_canyangao_blockade_geography.png"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
+      ],
+      "usage": [
+        "SC004-SH001",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R016",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r016e01.png",
+      "display_name": "SC004-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r016e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH002-A",
+        "01/shots/shot-list.json#SC004-SH002",
+        "needs_asset:episode01/reference-frames/sc004_sh002_register_procedure.png"
+      ],
+      "continuity_refs": [
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_CANYANGAO_GATE"
+      ],
+      "usage": [
+        "SC004-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R017",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r017e01.png",
+      "display_name": "SC004-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r017e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH003-A",
+        "01/shots/shot-list.json#SC004-SH003",
+        "needs_asset:episode01/reference-frames/sc004_sh003_shen_reads_exits.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_CANYANGAO_WELL"
+      ],
+      "usage": [
+        "SC004-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R018",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r018e01.png",
+      "display_name": "SC004-SH004 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r018e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH004-A",
+        "01/shots/shot-list.json#SC004-SH004",
+        "needs_asset:episode01/reference-frames/sc004_sh004_zhaomian_song.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC004-SH004",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R019",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r019e01.png",
+      "display_name": "SC004-SH005 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r019e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH005-A",
+        "01/shots/shot-list.json#SC004-SH005",
+        "needs_asset:episode01/reference-frames/sc004_sh005_luo_covers_child.png"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_BAICE_CLERK"
+      ],
+      "usage": [
+        "SC004-SH005",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R020",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r020e01.png",
+      "display_name": "SC004-SH006 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r020e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH006-A",
+        "01/shots/shot-list.json#SC004-SH006",
+        "needs_asset:episode01/reference-frames/sc004_sh006_shen_half_truth.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "usage": [
+        "SC004-SH006",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH006 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R021",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r021e01.png",
+      "display_name": "SC004-SH007 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r021e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH007-A",
+        "01/shots/shot-list.json#SC004-SH007",
+        "needs_asset:episode01/reference-frames/sc004_sh007_register_blank_plate.png"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "CHAR_BAICE_CLERK"
+      ],
+      "usage": [
+        "SC004-SH007",
+        "REDRAW",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH007 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "REDRAW",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R022",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r022e01.png",
+      "display_name": "SC004-SH008 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r022e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH008-A",
+        "01/shots/shot-list.json#SC004-SH008",
+        "needs_asset:episode01/reference-frames/sc004_sh008_qingming_incense_countdown.png"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "usage": [
+        "SC004-SH008",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH008 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R023",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r023e01.png",
+      "display_name": "SC004-SH009 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r023e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH009-A",
+        "01/shots/shot-list.json#SC004-SH009",
+        "needs_asset:episode01/reference-frames/sc004_sh009_incense_smoke_start.png"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ],
+      "usage": [
+        "SC004-SH009",
+        "FLF2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH009 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R024",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r024e01.png",
+      "display_name": "SC004-SH009 终帧参考帧",
+      "output_path": "01/assets/reference-frames/r024e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH009-A",
+        "01/shots/shot-list.json#SC004-SH009",
+        "needs_asset:episode01/reference-frames/sc005_sh001_medicine_door_feet_end.png"
+      ],
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ],
+      "usage": [
+        "SC004-SH009",
+        "FLF2V",
+        "终帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH009 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R025",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r025e01.png",
+      "display_name": "SC005-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r025e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH001-A",
+        "01/shots/shot-list.json#SC005-SH001",
+        "needs_asset:episode01/reference-frames/sc005_sh001_cabinet_slit_yan.png"
+      ],
+      "continuity_refs": [
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "usage": [
+        "SC005-SH001",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R026",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r026e01.png",
+      "display_name": "SC005-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r026e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH002-A",
+        "01/shots/shot-list.json#SC005-SH002",
+        "needs_asset:episode01/reference-frames/sc005_sh002_luo_grabs_medicine.png"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "PROP_MEDICINE_CABINET",
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR"
+      ],
+      "usage": [
+        "SC005-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R027",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r027e01.png",
+      "display_name": "SC005-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r027e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH003-A",
+        "01/shots/shot-list.json#SC005-SH003",
+        "needs_asset:episode01/reference-frames/sc005_sh003_identity_cost_split.png"
+      ],
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "CHAR_LUO_QINGHE",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "usage": [
+        "SC005-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R028",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r028e01.png",
+      "display_name": "SC005-SH004 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r028e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH004-A",
+        "01/shots/shot-list.json#SC005-SH004",
+        "needs_asset:episode01/reference-frames/sc005_sh004_relay_mark_board_plate.png"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_MEDICINE_CABINET",
+        "CHAR_YAN_NANZHI"
+      ],
+      "usage": [
+        "SC005-SH004",
+        "REDRAW",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "REDRAW",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R029",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r029e01.png",
+      "display_name": "SC005-SH005 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r029e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH005-A",
+        "01/shots/shot-list.json#SC005-SH005",
+        "needs_asset:episode01/reference-frames/sc005_sh005_open_cabinet_shadow.png"
+      ],
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_MEDICINE_CABINET"
+      ],
+      "usage": [
+        "SC005-SH005",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R030",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r030e01.png",
+      "display_name": "SC006-SH001 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r030e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH001-A",
+        "01/shots/shot-list.json#SC006-SH001",
+        "needs_asset:episode01/reference-frames/sc006_sh001_well_sealed_medicine_house.png"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "usage": [
+        "SC006-SH001",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R031",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r031e01.png",
+      "display_name": "SC006-SH002 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r031e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH002-A",
+        "01/shots/shot-list.json#SC006-SH002",
+        "needs_asset:episode01/reference-frames/sc006_sh002_old_mark_evidence_table.png"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC006-SH002",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R032",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r032e01.png",
+      "display_name": "SC006-SH003 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r032e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH003-A",
+        "01/shots/shot-list.json#SC006-SH003",
+        "needs_asset:episode01/reference-frames/sc006_sh003_crowd_hierarchy.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "CHAR_BAICE_CLERK"
+      ],
+      "usage": [
+        "SC006-SH003",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R033",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r033e01.png",
+      "display_name": "SC006-SH004 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r033e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH004-A",
+        "01/shots/shot-list.json#SC006-SH004",
+        "needs_asset:episode01/reference-frames/sc006_sh004_zhaomian_register_mark.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC006-SH004",
+        "REDRAW",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "REDRAW",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R034",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r034e01.png",
+      "display_name": "SC006-SH005 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r034e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH005-A",
+        "01/shots/shot-list.json#SC006-SH005",
+        "needs_asset:episode01/reference-frames/sc006_sh005_baiyi_entrance.png"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "LOC_CANYANGAO_GATE",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "usage": [
+        "SC006-SH005",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH005 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R035",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r035e01.png",
+      "display_name": "SC006-SH006 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r035e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH006-A",
+        "01/shots/shot-list.json#SC006-SH006",
+        "needs_asset:episode01/reference-frames/sc006_sh006_baiyi_wipes_needle.png"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_OLD_RELAY_MARK"
+      ],
+      "usage": [
+        "SC006-SH006",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH006 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R036",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r036e01.png",
+      "display_name": "SC006-SH007 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r036e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH007-A",
+        "01/shots/shot-list.json#SC006-SH007",
+        "needs_asset:episode01/reference-frames/sc006_sh007_shen_side_note_plate.png"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_BAI_YI"
+      ],
+      "usage": [
+        "SC006-SH007",
+        "REDRAW",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH007 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "REDRAW",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R037",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r037e01.png",
+      "display_name": "SC006-SH008 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r037e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH008-A",
+        "01/shots/shot-list.json#SC006-SH008",
+        "needs_asset:episode01/reference-frames/sc006_sh008_well_blockade_tightens.png"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "PROP_WHITE_WAX_FLAGS",
+        "CHAR_SUMING_INSECT_INFANTRY"
+      ],
+      "usage": [
+        "SC006-SH008",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH008 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R038",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r038e01.png",
+      "display_name": "SC006-SH009 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r038e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH009-A",
+        "01/shots/shot-list.json#SC006-SH009",
+        "needs_asset:episode01/reference-frames/sc006_sh009_start_with_child.png"
+      ],
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW"
+      ],
+      "usage": [
+        "SC006-SH009",
+        "I2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH009 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "I2V",
+      "priority": "normal",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R039",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r039e01.png",
+      "display_name": "SC006-SH010 首帧参考帧",
+      "output_path": "01/assets/reference-frames/r039e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH010-A",
+        "01/shots/shot-list.json#SC006-SH010",
+        "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_tensed.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC006-SH010",
+        "FLF2V",
+        "首帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH010 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_R040",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r040e01.png",
+      "display_name": "SC006-SH010 终帧参考帧",
+      "output_path": "01/assets/reference-frames/r040e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH010-A",
+        "01/shots/shot-list.json#SC006-SH010",
+        "needs_asset:episode01/reference-frames/sc006_sh010_bowstring_released_black.png"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC006-SH010",
+        "FLF2V",
+        "终帧"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH010 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
+      "generation_method": "FLF2V",
+      "priority": "high",
+      "precision_control": false,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_O001",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "file": "o001e01.png",
+      "display_name": "SC004-SH007 精确符号/白册覆盖图",
+      "output_path": "01/assets/shot-overrides/o001e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC004-SH007-A",
+        "01/shots/shot-list.json#SC004-SH007"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "CHAR_BAICE_CLERK"
+      ],
+      "usage": [
+        "SC004-SH007",
+        "redraw_plate",
+        "precision_text_symbol_control"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC004-SH007 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+      "generation_method": "REDRAW",
+      "priority": "high",
+      "precision_control": true,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_O002",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "file": "o002e01.png",
+      "display_name": "SC005-SH004 精确符号/白册覆盖图",
+      "output_path": "01/assets/shot-overrides/o002e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC005-SH004-A",
+        "01/shots/shot-list.json#SC005-SH004"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_MEDICINE_CABINET",
+        "CHAR_YAN_NANZHI"
+      ],
+      "usage": [
+        "SC005-SH004",
+        "redraw_plate",
+        "precision_text_symbol_control"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC005-SH004 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+      "generation_method": "REDRAW",
+      "priority": "high",
+      "precision_control": true,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_O003",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "file": "o003e01.png",
+      "display_name": "SC006-SH004 精确符号/白册覆盖图",
+      "output_path": "01/assets/shot-overrides/o003e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH004-A",
+        "01/shots/shot-list.json#SC006-SH004"
+      ],
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "usage": [
+        "SC006-SH004",
+        "redraw_plate",
+        "precision_text_symbol_control"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH004 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+      "generation_method": "REDRAW",
+      "priority": "high",
+      "precision_control": true,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
+    },
+    {
+      "asset_id": "E01_O004",
+      "asset_type": "reference_frame",
+      "asset_subtype": "shot_override",
+      "file": "o004e01.png",
+      "display_name": "SC006-SH007 精确符号/白册覆盖图",
+      "output_path": "01/assets/shot-overrides/o004e01.png",
+      "source_refs": [
+        "01/production/generation-plan.json#SC006-SH007-A",
+        "01/shots/shot-list.json#SC006-SH007"
+      ],
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_BAI_YI"
+      ],
+      "usage": [
+        "SC006-SH007",
+        "redraw_plate",
+        "precision_text_symbol_control"
+      ],
+      "approval_status": "pending_user_art_approval",
+      "generation_status": "not_started_pending_user_approval",
+      "design_summary": "SC006-SH007 需要 REDRAW/后合成控制，避免模型生成随机文字、白册旁注或旧驿符号。",
+      "generation_method": "REDRAW",
+      "priority": "high",
+      "precision_control": true,
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes."
     }
-  ]
+  ],
+  "qc_summary": {
+    "status": "planning_qc_passed_pending_user_review",
+    "generated_images": 0,
+    "thread_count": 0,
+    "validations": [
+      "JSON structure planned against art-room schemas",
+      "short filenames reserved",
+      "no history/version output paths",
+      "all prompt records split production metadata and model-visible prompt",
+      "image generation blocked pending user approval"
+    ]
+  }
 }
