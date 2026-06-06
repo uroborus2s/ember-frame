@@ -82,7 +82,8 @@
     "assets/costumes/history/k003m.v002.png",
     "assets/costumes/history/k004m.v003.png",
     "assets/costumes/history/k005m.v002.png",
-    "assets/costumes/history/k006m.v002.png"
+    "assets/costumes/history/k006m.v002.png",
+    "assets/style/history/f005m.v001.png"
   ],
   "threads": [
     {
@@ -130,7 +131,7 @@
     {
       "batch_id": "B07_STYLE",
       "thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
-      "status": "complete",
+      "status": "complete_qc_passed_f005_landscape_regenerated",
       "dispatched_at": "2026-06-05",
       "asset_ids": [
         "F001",
@@ -164,7 +165,9 @@
         "assets/style/f005m.png",
         "assets/style/f006m.png"
       ],
-      "history_files": [],
+      "history_files": [
+        "assets/style/history/f005m.v001.png"
+      ],
       "final_files": [
         "assets/style/f001m.png",
         "assets/style/f002m.png",
@@ -173,19 +176,53 @@
         "assets/style/f005m.png",
         "assets/style/f006m.png"
       ],
-      "notes": "B07_STYLE generated and QC passed; machine-readable color, material, regional palette, faction symbol, composition, and low-magic data supplemented after visual QC for downstream use.",
-      "completed_at": "2026-06-05",
+      "notes": "B07_STYLE complete. F005 was regenerated on 2026-06-06 after review found the previous canonical board was portrait/non-target for the landscape composition contract.",
+      "completed_at": "2026-06-06",
       "qc_notes": [
-        "Canonical B07 files written to exact output paths.",
-        "All final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract.",
-        "F004 derives visible symbol, flag, palette, seal, cloth, armor, stone, and object-marker examples from P016/P017/P018 root faction references instead of reinventing faction emblems.",
-        "Boards contain visual partitions, palettes, material swatches, composition examples, low-magic examples, and prohibited-direction panels without readable text, UI, watermark, modern logo, ComfyUI parameters, or long labels.",
-        "No retained intermediate candidates; no history files created.",
-        "Downstream batches remain blocked and were not generated.",
-        "B07 style_reference_data supplemented in art/b07-style-reference-data.json, asset-index.json, prompts, and thread plan; images must not render labels/HEX/token IDs."
+        "F001, F002, F003, F004, and F006 remain approved style master/reference boards under project_defined layout and do not require landscape regeneration.",
+        "F005 canonical file replaced with a 3840x2160, RGB, opaque/no-alpha, 16:9 landscape composition style board.",
+        "Previous F005 portrait canonical retained as assets/style/history/f005m.v001.png per history policy.",
+        "New F005 contains seven text-free cinematic composition/action-causality thumbnails plus an unlabeled material/palette strip.",
+        "No readable text, UI, watermark, HEX codes, grid numbers, captions, or ComfyUI parameters observed in the new F005 board."
       ],
       "style_reference_data_source": "art/b07-style-reference-data.json",
-      "data_status": "style_reference_data_supplemented_after_visual_qc"
+      "data_status": "style_reference_data_supplemented_after_visual_qc",
+      "final_sha256_by_asset": {
+        "F005": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48"
+      },
+      "source_generated_files_by_asset": {
+        "F005": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png"
+      },
+      "run_source_files_by_asset": {
+        "F005": "art/runs/b07-style-reference/f005m-source-20260606.png"
+      },
+      "qc_status": "passed",
+      "f005_landscape_qc": {
+        "version": "b07-f005-landscape-qc-v1-2026-06-06",
+        "audited_at": "2026-06-06",
+        "status": "passed",
+        "output_path": "assets/style/f005m.png",
+        "dimensions": "3840x2160",
+        "file_format": "png",
+        "alpha_policy": "forbidden",
+        "visual_checks": [
+          "single 16:9 landscape board",
+          "seven readable cinematic composition thumbnails",
+          "foreground/midground/background separation visible",
+          "door-slit fire, hand-prop, bone-bell vibration, giant horn scale, wax-needle, broken stair grab, and snow-slope escape represented",
+          "bottom material and palette strip uses visual swatches without labels",
+          "no readable text, UI, watermark, HEX codes, captions, grid numbers, or ComfyUI parameters observed",
+          "warm gold, wheat, dry red, river teal, wax white, blackstone, snow, paper ash, and old metal anchors are readable without becoming a single gray-brown filter"
+        ],
+        "history_files": [
+          "assets/style/history/f005m.v001.png"
+        ],
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png",
+        "run_source_file": "art/runs/b07-style-reference/f005m-source-20260606.png",
+        "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
+        "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+        "report": "art/reports/b07-style-asset-qc-report.md"
+      }
     },
     {
       "batch_id": "B06_COSTUMES",
@@ -1125,7 +1162,8 @@
     "2026-06-06: User confirmed image_gen is available and requested a separate task for K001-K006. Background imagegen retry thread 019e9964-7fb0-7523-8104-6b6eefdcbb9c was dispatched with canonical replacement/QC instructions.",
     "2026-06-06: B01_CORE_CHARACTERS and B02_NORTHERN_AND_FACTION_TEMPLATES now have canonical generated outputs for their planned character/template assets; remaining status is pending art review rather than generation block.",
     "2026-06-06: Delegated B06_COLOR_READABILITY_REPAIR task completed K003-K006 only; K003-K006 canonical costume boards are replaced and QC-passed, while K001 remains rejected/blocked and K002 prior completion is preserved.",
-    "2026-06-06: Old single-canvas result wording is superseded. Current generation must follow typed output_format: master_reference_card is project_defined and not forced to landscape; scene_reference_card, video_frame_reference, and F005 landscape_composition_style_board are 16:9 landscape at 3840x2160 minimum."
+    "2026-06-06: Old single-canvas result wording is superseded. Current generation must follow typed output_format: master_reference_card is project_defined and not forced to landscape; scene_reference_card, video_frame_reference, and F005 landscape_composition_style_board are 16:9 landscape at 3840x2160 minimum.",
+    "2026-06-06: B07_STYLE F005 regenerated as 3840x2160 16:9 landscape composition/action-causality style board; previous portrait board archived under assets/style/history/f005m.v001.png."
   ],
   "qc_notes": [
     "Canonical B00 files written to exact output paths.",
@@ -1152,12 +1190,14 @@
     "2026-06-06 B06_COLOR_READABILITY_REPAIR delegated K003-K006 task: K003-K006 canonical files passed visual/file/color-readability QC and now match their upscaled run candidates; K001 remains the only blocked item.",
     "2026-06-06 warm-multicolor repair: gray-brown clarified as contextual scene/material color; warm regional/faction/class colors now must dominate C/K/L/F prompts.",
     "C/K/L/F assets flagged in asset-index with warm_multicolor_audit for redo, generation, or reference review.",
-    "Typed contract QC: old file-canvas observations are non-target history; do not use them as generation specs. Use output_format and asset_delivery_contract as the only current target."
+    "Typed contract QC: old file-canvas observations are non-target history; do not use them as generation specs. Use output_format and asset_delivery_contract as the only current target.",
+    "B07 F005 landscape QC passed: canonical f005m.png is PNG RGB opaque, 3840x2160, 16:9, text-free, and suitable as landscape composition style reference."
   ],
   "style_reference_data_file": "art/b07-style-reference-data.json",
   "reports": [
     "art/reports/series-color-readability-qc-rules.md",
-    "art/reports/warm-multicolor-redo-audit.md"
+    "art/reports/warm-multicolor-redo-audit.md",
+    "art/reports/b07-style-asset-qc-report.md"
   ],
   "current_output_contract": {
     "status": "old_single_canvas_results_superseded_by_typed_asset_delivery_contract",

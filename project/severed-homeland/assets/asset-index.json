@@ -15535,8 +15535,8 @@
       "file": "f005m.png",
       "basename": "f005m",
       "output_path": "assets/style/f005m.png",
-      "approval_status": "approved_generated_qc_passed_data_supplemented",
-      "generation_status": "composition_style_board_needs_landscape_regeneration_qc",
+      "approval_status": "approved_landscape_16x9_regenerated_qc_passed",
+      "generation_status": "landscape_16x9_regenerated_qc_passed",
       "requires_precision_control": false,
       "source_refs": [
         "production/series-video-rules.md",
@@ -15556,9 +15556,11 @@
       "continuity_lock": "道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/style/f005m.png",
-      "status": "composition_style_board_needs_landscape_regeneration_qc",
+      "status": "landscape_16x9_regenerated_qc_passed",
       "prompt_id": "PROMPT_F005",
-      "history_files": [],
+      "history_files": [
+        "assets/style/history/f005m.v001.png"
+      ],
       "creation_phase": "01_style_references",
       "creation_order": 6,
       "depends_on_assets": [
@@ -15569,7 +15571,7 @@
       "dependency_reason": "Requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots before downstream visual generation.",
       "priority": "critical",
       "card_layout": "16:9 style board: palette, material swatches, lighting examples, composition examples, prohibited examples and low-magic boundary callouts.",
-      "asset_card_status": "composition_style_board_needs_landscape_regeneration_qc",
+      "asset_card_status": "landscape_16x9_regenerated_qc_passed",
       "style_lock": {
         "visual_system": "16比9横屏构图与动作因果板，展示门缝火光、粮牌手部、骨钟震动、巨兽角影、虫蜡针近景、断阶抓手和雪坡逃亡等短剧横屏可读构图。",
         "continuity_boundaries": "道具信息第一秒可读，火、烟、蒸汽、雪、坍塌和攻城都用局部因果，不用满屏奇观。",
@@ -15711,7 +15713,7 @@
       "generation_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
       "qc_status": "complete_qc_passed",
       "file_status": "written",
-      "generated_at": "2026-06-05",
+      "generated_at": "2026-06-06",
       "style_reference_data": {
         "data_version": "b07-style-reference-data-v1-2026-06-05",
         "data_status": "supplemented_after_b07_visual_qc",
@@ -15897,7 +15899,7 @@
       "data_status": "style_reference_data_supplemented",
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
-        "severity": "keep",
+        "severity": "keep_after_landscape_regeneration",
         "recommended_action": "保留",
         "neutral_ratio": 0.6099,
         "accent_ratio": 0.3947,
@@ -15908,17 +15910,17 @@
           "orange"
         ],
         "reasons": [],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/b07-style-asset-qc-report.md"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
         "audited_at": "2026-06-06",
-        "status": "review_before_reuse",
-        "recommended_action": "reference_review_then_redo_if_gray_dominant",
-        "report": "art/reports/warm-multicolor-redo-audit.md",
+        "status": "passed_after_landscape_regeneration",
+        "recommended_action": "keep_current_f005_landscape_board",
+        "report": "art/reports/b07-style-asset-qc-report.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+        "current_file_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
         "previous_color_readability_severity": "keep",
         "neutral_ratio": 0.6099,
         "accent_ratio": 0.3947,
@@ -15927,34 +15929,86 @@
           "orange"
         ],
         "reasons": [
-          "现有图像来自暖多色合同之前的生成基线，不能作为后续角色、服装、场景的颜色母版继续继承。",
-          "中性、低色度像素约 61%，数值不算最高，但仍需确认灰褐是否只是条件色。",
-          "可读强调色约 39%，但仍要检查是否多色主导而不是单一暖褐。",
-          "活跃色相族仅 red、orange，不满足至少三组可读色相的暖多色要求。",
-          "风格板若继续被下游引用，必须先确认其输出不会把整剧拉回灰褐滤镜。"
-        ]
+          "F005 has been regenerated after the previous warm-multicolor reference review.",
+          "The current board is not the previous portrait image; it is a 3840x2160 16:9 landscape composition board.",
+          "Visual QC confirms multiple material/color anchors and clear subject/background separation without a single gray-brown filter."
+        ],
+        "previous_file_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d"
       },
       "prompt_revision": "series-warm-multicolor-repair-v1-2026-06-06",
-      "final_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+      "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
       "landscape_contract_status": {
         "contract_class": "landscape_composition_style_board",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "existing_16x9_landscape_reference_available_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "history_files": [
+          "assets/style/history/f005m.v001.png"
+        ],
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png",
+        "run_source_file": "art/runs/b07-style-reference/f005m-source-20260606.png",
+        "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
+        "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+        "regenerated_at": "2026-06-06",
+        "notes": "Replaced previous 2160x3840 portrait/non-target board with a 3840x2160 16:9 landscape composition board."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_reference_review",
       "asset_contract_status": {
         "contract_class": "landscape_composition_style_board",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
-      }
+        "existing_file_status": "existing_16x9_landscape_reference_available_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "history_files": [
+          "assets/style/history/f005m.v001.png"
+        ],
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png",
+        "run_source_file": "art/runs/b07-style-reference/f005m-source-20260606.png",
+        "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
+        "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+        "regenerated_at": "2026-06-06",
+        "notes": "Replaced previous 2160x3840 portrait/non-target board with a 3840x2160 16:9 landscape composition board."
+      },
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png",
+      "run_source_file": "art/runs/b07-style-reference/f005m-source-20260606.png",
+      "f005_landscape_qc": {
+        "version": "b07-f005-landscape-qc-v1-2026-06-06",
+        "audited_at": "2026-06-06",
+        "status": "passed",
+        "output_path": "assets/style/f005m.png",
+        "dimensions": "3840x2160",
+        "file_format": "png",
+        "alpha_policy": "forbidden",
+        "visual_checks": [
+          "single 16:9 landscape board",
+          "seven readable cinematic composition thumbnails",
+          "foreground/midground/background separation visible",
+          "door-slit fire, hand-prop, bone-bell vibration, giant horn scale, wax-needle, broken stair grab, and snow-slope escape represented",
+          "bottom material and palette strip uses visual swatches without labels",
+          "no readable text, UI, watermark, HEX codes, captions, grid numbers, or ComfyUI parameters observed",
+          "warm gold, wheat, dry red, river teal, wax white, blackstone, snow, paper ash, and old metal anchors are readable without becoming a single gray-brown filter"
+        ],
+        "history_files": [
+          "assets/style/history/f005m.v001.png"
+        ],
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9d5b-5d41-73d3-a964-a081b1738715/ig_09b3cb26698e44d4016a2430d341c4819bb29eac1fc2413d2e.png",
+        "run_source_file": "art/runs/b07-style-reference/f005m-source-20260606.png",
+        "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
+        "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
+        "report": "art/reports/b07-style-asset-qc-report.md"
+      },
+      "generation_notes": [
+        "2026-06-06: B07_STYLE review found the previous F005 canonical board was portrait 2160x3840 and visually read as an abstract/non-target composition board.",
+        "Regenerated with built-in imagegen as a text-free 16:9 cinematic composition/action-causality board, then normalized with sips to 3840x2160.",
+        "Previous canonical file retained under assets/style/history/f005m.v001.png per art-room history policy."
+      ]
     },
     {
       "asset_id": "F006",
@@ -16411,5 +16465,8 @@
       "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc": 12,
       "missing_or_not_png": 20
     }
-  }
+  },
+  "reports": [
+    "art/reports/b07-style-asset-qc-report.md"
+  ]
 }

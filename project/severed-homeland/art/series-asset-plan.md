@@ -5,7 +5,7 @@
 - 项目根目录：`project/severed-homeland`
 - 范围：全剧共享 bible 级主资产，不生成分集参考帧和镜头覆盖图。
 - 当前状态：`typed_contract_scene_assets_need_landscape_generation_master_refs_not_forced`
-- 图片生成：旧 B00、B07、B06、B01、B02 批次曾生成 canonical PNG。角色、服装、道具、徽章和普通风格板属于设定参考卡，不因视频横屏合同而强制重做；地点主场景卡、分集参考帧、shot override 和 F005 构图动作板必须按 `3840x2160`、`16:9` 横屏合同生成或重新 QC。B07 具体色彩、材质、地域色板、势力符号、横屏宽屏构图和低魔光效数据已补入 `art/b07-style-reference-data.json`、资产索引、提示词和线程合同；未生成角色/地点/道具批次按各自资产类型单独派发。
+- 图片生成：旧 B00、B07、B06、B01、B02 批次曾生成 canonical PNG。角色、服装、道具、徽章和普通风格板属于设定参考卡，不因视频横屏合同而强制重做；地点主场景卡、分集参考帧、shot override 和 F005 构图动作板必须按 `3840x2160`、`16:9` 横屏合同生成或重新 QC。2026-06-06 已将 B07 的 F005 重生为 `3840x2160`、`16:9` 横屏构图动作板并通过 QC；B07 具体色彩、材质、地域色板、势力符号、横屏宽屏构图和低魔光效数据已补入 `art/b07-style-reference-data.json`、资产索引、提示词和线程合同；未生成角色/地点/道具批次按各自资产类型单独派发。
 - 产物日期：2026-06-06
 - 合同修复：2026-06-05 已完成 code review 修复；当前 JSON 资产索引、系列提示词和线程计划已满足 `art-room` 系列资产合同，已补齐并 schema-normalize 全局提示词输出图片格式要求，并已把昭明、肃明、北境部落联盟的徽章旗帜提升为全剧基础根资产。B07 风格板已补充机器可审计的具体风格数据，用于后续批次和 director-room prompt refresh。
 
@@ -201,7 +201,7 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 |  顺序 | 批次                                 | 内容                                  | 依赖                                                                                        | 状态                                                    |
 | --: | ---------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 |   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版                         | 无                                                                                         | reference_qc_passed_no_landscape_regeneration_required |
-|   2 | B07_STYLE                          | 全剧风格板                               | B00_FACTION_EMBLEM_FLAGS                                                                  | mixed_style_reference_review_f005_landscape_composition_board_needed |
+|   2 | B07_STYLE                          | 全剧风格板                               | B00_FACTION_EMBLEM_FLAGS                                                                  | complete_qc_passed_f005_landscape_regenerated |
 |   3 | B06_COSTUMES                       | 服装系统                                | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_master_reference_qc_or_regeneration_not_landscape |
 |   4 | B01_CORE_CHARACTERS                | 核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | needs_master_reference_qc_or_regeneration_not_landscape |
 |   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板                    | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | needs_master_reference_qc_or_regeneration_not_landscape |
@@ -219,7 +219,7 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 
 ## 下一步
 
-下一步先按横屏合同重生上游 B00/B07/B06，再重生 B01/B02 角色模板，最后生成 B03/B04 地点和 B05 道具。旧线程 ID 与旧图片只作为历史参考，不作为横屏 QC 通过依据。
+下一步继续按资产类型处理下游批次：B07 的 F005 已完成横屏重生并通过 QC；地点主场景卡、分集参考帧和 shot override 仍按横屏合同执行，角色、服装、道具、徽章和普通风格板按设定参考卡合同执行。旧线程 ID 与旧图片只作为历史参考，不作为横屏 QC 通过依据。
 
 ## 合同审计补充
 
