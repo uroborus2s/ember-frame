@@ -198,16 +198,16 @@ QC 必须检查 `required_views`、`composition_layers.foreground`、`compositio
 
 预设批次写入 `art/series-thread-plan.json`，当前合同已按资产类型修复；角色、服装、道具、徽章和普通风格板是设定参考卡，地点主场景、分集参考帧、shot override 和 F005 构图动作板才需要横屏生成或横屏 QC：
 
-|  顺序 | 批次                                 | 内容                                  | 依赖                                                                                        | 状态                                                    |
-| --: | ---------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-|   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版                         | 无                                                                                         | reference_qc_passed_no_landscape_regeneration_required |
-|   2 | B07_STYLE                          | 全剧风格板                               | B00_FACTION_EMBLEM_FLAGS                                                                  | complete_qc_passed_f005_landscape_regenerated |
+|  顺序 | 批次                                 | 内容                                  | 依赖                                                                                        | 状态                                                      |
+| --: | ---------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+|   1 | B00_FACTION_EMBLEM_FLAGS           | 三势力徽章旗帜基础母版                         | 无                                                                                         | reference_qc_passed_no_landscape_regeneration_required  |
+|   2 | B07_STYLE                          | 全剧风格板                               | B00_FACTION_EMBLEM_FLAGS                                                                  | complete_qc_passed_f005_landscape_regenerated           |
 |   3 | B06_COSTUMES                       | 服装系统                                | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_master_reference_qc_or_regeneration_not_landscape |
 |   4 | B01_CORE_CHARACTERS                | 核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色 | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | needs_master_reference_qc_or_regeneration_not_landscape |
 |   5 | B02_NORTHERN_AND_FACTION_TEMPLATES | 北境具名角色与族群/肃明层级模板                    | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B06_COSTUMES                                           | needs_master_reference_qc_or_regeneration_not_landscape |
-|   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_landscape_generation                            |
-|   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_landscape_generation                            |
-|   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号                           | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | needs_master_reference_generation_not_landscape       |
+|   6 | B03_LOCATIONS_SEASON_ONE           | 第一季核心地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_landscape_generation                              |
+|   7 | B04_LOCATIONS_FUTURE_SEASONS       | 后续季伏笔地点                             | B00_FACTION_EMBLEM_FLAGS、B07_STYLE                                                        | needs_landscape_generation                              |
+|   8 | B05_PROPS_SYMBOLS                  | 核心道具与精确符号                           | B00_FACTION_EMBLEM_FLAGS、B07_STYLE、B01_CORE_CHARACTERS、B02_NORTHERN_AND_FACTION_TEMPLATES | needs_master_reference_generation_not_landscape         |
 
 ## 审批重点
 
