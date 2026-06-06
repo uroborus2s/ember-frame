@@ -82,9 +82,9 @@ C011 was regenerated after user feedback that Gu Huaizhang is a southern old-imp
 | Exact canonical path | pass | pass |
 | Short basename <= 20 chars | pass | pass |
 | PNG format | pass | pass |
-| 2160x3840 minimum resolution | pass | pass |
+| 3840x2160 minimum resolution | pass | pass |
 | Opaque / no alpha | pass | pass |
-| 9:16 vertical card format | pass | pass |
+| 16:9 landscape widescreen card format | pass | pass |
 | Neutral master character card, not video frame | pass | pass |
 | No readable text, labels, UI, watermark, modern logo | pass | pending final art review |
 | Retained intermediates under project `history/` only | pass; C004 has two retained rejected files | pass; no retained project intermediates |

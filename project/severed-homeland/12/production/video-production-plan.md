@@ -2,7 +2,7 @@
 
 - Stage: `pre_asset`
 - Shots: 44
-- Aspect ratio: `9:16`
+- Aspect ratio: `16:9`
 - FPS: `24`
 
 ## Render Order / 渲染顺序

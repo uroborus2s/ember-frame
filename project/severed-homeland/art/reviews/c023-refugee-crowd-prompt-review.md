@@ -20,7 +20,7 @@
 | 资产索引 | pass | `assets/asset-index.json` 已新增 `C023`，含 `identity_lock`、`body_metrics`、依赖、用途和 `output_format`。 |
 | 提示词结构 | pass | `prompts/series-art-image-prompts.json` 已新增 `PROMPT_C023`，保留 `production_metadata` 与 `model_visible_prompt` 分离。 |
 | copy-ready | pass | 已补齐 `positive_prompt`、`negative_prompt`、`chatgpt_image_prompt`、`gemini_image_prompt` 和参考图执行说明。 |
-| 输出格式合同 | pass | 已声明 9:16、2160x3840、PNG、neutral plain、alpha forbidden、多人群像视图和 QC 项。 |
+| 输出格式合同 | pass | 已声明 16:9、3840x2160、PNG、neutral plain、alpha forbidden、多人群像视图和 QC 项。 |
 | 线程计划 | pass | 已加入 `B01_CORE_CHARACTERS`，但保持未派发状态。 |
 | 剧情边界 | pass | 不改剧本，不新增剧情信息；只把已有逃荒队和逃荒妇人姿态转为可复用资产。 |
 

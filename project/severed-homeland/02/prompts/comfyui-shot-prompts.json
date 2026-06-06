@@ -10,7 +10,7 @@
         "generation_method": "T2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -41,13 +41,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "罗青禾药屋地窖按剧本时间建立，地窖门被钩棍撬开。",
-        "visible_goal_en": "Establish medicine-house cellar and the immediate scripted pressure, keeping Yan Nanzhi, Luo Qinghe, Shen Zhaomian readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish medicine-house cellar and the immediate scripted pressure, keeping Yan Nanzhi, Luo Qinghe, Shen Zhaomian readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：罗青禾药屋地窖与晏南枝；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: Luo Qinghe药屋地窖与Yan Nanzhi; environment: medicine-house cellar.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_CANYANGAO_MEDICINE_CELLAR, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_SHEN_ZHAOMIAN, CH_SUMING_SLAVE_SOLDIER, PROP_MOON_WHITE_JADE, PROP_PRISON_CART, FX_FIRE_SMOKE_ASH。",
         "visible_continuity_en": "Continuity locks: LOC_CANYANGAO_MEDICINE_CELLAR, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_SHEN_ZHAOMIAN, CH_SUMING_SLAVE_SOLDIER, PROP_MOON_WHITE_JADE, PROP_PRISON_CART, FX_FIRE_SMOKE_ASH.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -55,7 +55,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -74,7 +74,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -106,8 +106,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "火光灌入暗格，晏南枝怀里的月白玉片亮出日月纹。",
         "visible_goal_en": "Visualize the scripted beat in medicine-house cellar, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：晏南枝；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: Yan Nanzhi; environment: medicine-house cellar.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -119,7 +119,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -138,7 +138,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -170,8 +170,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：封门奴兵愣住，立刻吹响气味牌。",
         "visible_goal_en": "Hold on the key prop or trace in medicine-house cellar; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: medicine-house cellar.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -183,7 +183,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -202,7 +202,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -234,8 +234,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "罗青禾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：罗青禾的反应与对话压力；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: Luo Qinghe的反应与对话压力; environment: medicine-house cellar.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -247,7 +247,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -266,7 +266,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -298,8 +298,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：晏南枝抬手遮住玉片，手指仍在发抖。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in medicine-house cellar.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：晏南枝 / 罗青禾；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: Yan Nanzhi / Luo Qinghe; environment: medicine-house cellar.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -311,7 +311,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -330,7 +330,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -362,8 +362,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：罗青禾从药柜旁扑来，一把药粉撒进奴兵眼里。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: medicine-house cellar.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -375,7 +375,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -394,7 +394,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -426,8 +426,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：罗青禾从药柜旁扑来，一把药粉撒进奴兵眼里。",
         "visible_goal_en": "Hold on the key prop or trace in medicine-house cellar; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: medicine-house cellar.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -439,7 +439,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -458,7 +458,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_cellar.png",
           "assets/placeholders/ch_yan_nanzhi.png",
@@ -490,8 +490,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：罗青禾从药柜旁扑来，一把药粉撒进奴兵眼里。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：罗青禾药屋地窖。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: medicine-house cellar.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -503,7 +503,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -522,7 +522,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -560,13 +560,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "残阳坳村口按剧本时间建立，白翳站在井旁，白册官吏把虫蜡封条贴上村门。",
-        "visible_goal_en": "Establish Canyangao village gate fireline and the immediate scripted pressure, keeping Shen Weisang, Shen Zhaomian, Bai Yi readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Canyangao village gate fireline and the immediate scripted pressure, keeping Shen Weisang, Shen Zhaomian, Bai Yi readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：残阳坳村口与沈维桑；环境：残阳坳村口。",
         "subject_content_en": "Subject: 残阳坳村口与Shen Weisang; environment: Canyangao village gate fireline.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_CANYANGAO_GATE_FIRELINE, CH_SHEN_WEISANG, CH_SHEN_ZHAOMIAN, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_QINGMING_REGISTER。",
         "visible_continuity_en": "Continuity locks: LOC_CANYANGAO_GATE_FIRELINE, CH_SHEN_WEISANG, CH_SHEN_ZHAOMIAN, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_QINGMING_REGISTER.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -574,7 +574,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -593,7 +593,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -632,8 +632,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "奴兵推来押车，车上已经有几个被绑的村民。",
         "visible_goal_en": "Visualize the scripted beat in Canyangao village gate fireline, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：残阳坳村口。",
         "subject_content_en": "Subject: Shen Weisang; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -645,7 +645,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -664,7 +664,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -703,8 +703,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：他话音落下，虫族小兵点燃药屋侧墙。",
         "visible_goal_en": "Hold on the key prop or trace in Canyangao village gate fireline; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：残阳坳村口。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -716,7 +716,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -735,7 +735,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -774,8 +774,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈照眠呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈照眠的反应与对话压力；环境：残阳坳村口。",
         "subject_content_en": "Subject: Shen Zhaomian的反应与对话压力; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -787,7 +787,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -806,7 +806,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -845,8 +845,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：沈维桑被两个奴兵按住。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Canyangao village gate fireline.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 沈照眠；环境：残阳坳村口。",
         "subject_content_en": "Subject: Shen Weisang / Shen Zhaomian; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -858,7 +858,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -877,7 +877,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -916,8 +916,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：他看到沈照眠被推向木车，眼神变了。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：残阳坳村口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -929,7 +929,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -948,7 +948,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -987,8 +987,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡封条，让其承载本场信息：奴兵的扣环锁住她的腕。",
         "visible_goal_en": "Hold on the key prop or trace in Canyangao village gate fireline; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡封条；环境：残阳坳村口。",
         "subject_content_en": "Subject: insect-wax seals used for institutional closure and erasure; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1000,7 +1000,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1019,7 +1019,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_gate_fireline.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1058,8 +1058,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑肩膀猛地一沉，用左肩旧伤硬撞开一人，短刀割断绳结。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：残阳坳村口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Canyangao village gate fireline.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1071,7 +1071,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1090,7 +1090,7 @@
         "generation_method": "T2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1114,13 +1114,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "药屋火场按剧本时间建立，浓烟压低。",
-        "visible_goal_en": "Establish burning medicine house and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish burning medicine house and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：药屋火场与沈维桑；环境：药屋火场。",
         "subject_content_en": "Subject: 药屋火场与Shen Weisang; environment: burning medicine house.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_CANYANGAO_MEDICINE_HOUSE_FIRE, CH_SHEN_WEISANG, CH_YAN_NANZHI, PROP_BLOOD_RECORD, FX_FIRE_SMOKE_ASH。",
         "visible_continuity_en": "Continuity locks: LOC_CANYANGAO_MEDICINE_HOUSE_FIRE, CH_SHEN_WEISANG, CH_YAN_NANZHI, PROP_BLOOD_RECORD, FX_FIRE_SMOKE_ASH.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -1128,7 +1128,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1147,7 +1147,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1172,8 +1172,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑用湿布捂住口鼻，从后窗撞进药屋。",
         "visible_goal_en": "Visualize the scripted beat in burning medicine house, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：药屋火场。",
         "subject_content_en": "Subject: Shen Weisang; environment: burning medicine house.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1185,7 +1185,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1204,7 +1204,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1229,8 +1229,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到日月血牒，让其承载本场信息：他先踢翻水缸压住火舌，再顺着药柜暗号摸到地窖口。",
         "visible_goal_en": "Hold on the key prop or trace in burning medicine house; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：日月血牒；环境：药屋火场。",
         "subject_content_en": "Subject: oil-paper wrapped damaged blood record; not a magic solution, and it carries tracking risk; environment: burning medicine house.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1242,7 +1242,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1261,7 +1261,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1286,8 +1286,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "晏南枝呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：晏南枝的反应与对话压力；环境：药屋火场。",
         "subject_content_en": "Subject: Yan Nanzhi的反应与对话压力; environment: burning medicine house.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -1299,7 +1299,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1318,7 +1318,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1343,8 +1343,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：他把她从暗格拖出。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in burning medicine house.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：药屋火场。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: burning medicine house.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1356,7 +1356,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1375,7 +1375,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1400,8 +1400,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：火梁坠下，沈维桑用猎弓撑住半瞬，左肩疼得发僵。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：药屋火场。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: burning medicine house.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1413,7 +1413,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1432,7 +1432,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1457,8 +1457,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到日月血牒，让其承载本场信息：晏南枝第一次看清他的伤。",
         "visible_goal_en": "Hold on the key prop or trace in burning medicine house; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：日月血牒；环境：药屋火场。",
         "subject_content_en": "Subject: oil-paper wrapped damaged blood record; not a magic solution, and it carries tracking risk; environment: burning medicine house.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1470,7 +1470,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1489,7 +1489,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_medicine_house_fire.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1514,8 +1514,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：两人从药屋后墙滚出。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：药屋火场。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: burning medicine house.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1527,7 +1527,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1546,7 +1546,7 @@
         "generation_method": "T2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1578,13 +1578,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "押车路口按剧本时间建立，沈维桑和晏南枝贴着柴垛潜行。",
-        "visible_goal_en": "Establish prison-cart road junction and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish prison-cart road junction and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车路口与沈维桑；环境：押车路口。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office路口与Shen Weisang; environment: prison-cart road junction.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_CANYANGAO_CART_ROAD, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_SHEN_ZHAOMIAN, PROP_QINGMING_REGISTER, FX_QINGMING_INCENSE, PROP_PRISON_CART。",
         "visible_continuity_en": "Continuity locks: LOC_CANYANGAO_CART_ROAD, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_SHEN_ZHAOMIAN, PROP_QINGMING_REGISTER, FX_QINGMING_INCENSE, PROP_PRISON_CART.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -1592,7 +1592,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1611,7 +1611,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1644,8 +1644,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "押车已经动了。",
         "visible_goal_en": "Visualize the scripted beat in prison-cart road junction, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：押车路口。",
         "subject_content_en": "Subject: Shen Weisang; environment: prison-cart road junction.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1657,7 +1657,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1676,7 +1676,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1709,8 +1709,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：沈照眠被缚网绑在第二辆车上，烧焦发绳垂在脸侧。",
         "visible_goal_en": "Hold on the key prop or trace in prison-cart road junction; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：押车路口。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: prison-cart road junction.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1722,7 +1722,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1741,7 +1741,7 @@
         "generation_method": "FLF2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1774,8 +1774,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "罗青禾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：罗青禾的反应与对话压力；环境：押车路口。",
         "subject_content_en": "Subject: Luo Qinghe的反应与对话压力; environment: prison-cart road junction.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -1787,7 +1787,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1806,7 +1806,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1839,8 +1839,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：罗青禾嘴角有血，青布头巾烧开半边，却仍稳稳按住他的手。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in prison-cart road junction.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：押车路口。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: prison-cart road junction.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1852,7 +1852,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1871,7 +1871,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1904,8 +1904,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：罗青禾看向押车远去，眼里疼到发空。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：押车路口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: prison-cart road junction.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1917,7 +1917,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1936,7 +1936,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1969,8 +1969,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到烧焦发绳，让其承载本场信息：她抓起一把湿泥，在沈维桑掌心划出三道短痕一道长痕。",
         "visible_goal_en": "Hold on the key prop or trace in prison-cart road junction; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：烧焦发绳；环境：押车路口。",
         "subject_content_en": "Subject: scorched hair tie as Shen Zhaomian family anchor; environment: prison-cart road junction.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1982,7 +1982,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2001,7 +2001,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_cart_road.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2034,8 +2034,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：晏南枝低声说。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：押车路口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: prison-cart road junction.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -2047,7 +2047,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2066,7 +2066,7 @@
         "generation_method": "T2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2104,13 +2104,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "后山坡按剧本时间建立，三人退到后山坡。",
-        "visible_goal_en": "Establish back slope above Canyangao and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish back slope above Canyangao and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Luo Qinghe readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：后山坡与沈维桑；环境：后山坡。",
         "subject_content_en": "Subject: 后山坡与Shen Weisang; environment: back slope above Canyangao.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_CANYANGAO_BACK_SLOPE, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_BAI_YI, PROP_MOON_WHITE_JADE, PROP_BLOOD_RECORD, PROP_HALF_RELAY_TOKEN。",
         "visible_continuity_en": "Continuity locks: LOC_CANYANGAO_BACK_SLOPE, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LUO_QINGHE, CH_BAI_YI, PROP_MOON_WHITE_JADE, PROP_BLOOD_RECORD, PROP_HALF_RELAY_TOKEN.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -2118,7 +2118,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2137,7 +2137,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2176,8 +2176,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "残阳坳在身后烧成红黑一片。",
         "visible_goal_en": "Visualize the scripted beat in back slope above Canyangao, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：后山坡。",
         "subject_content_en": "Subject: Shen Weisang; environment: back slope above Canyangao.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2189,7 +2189,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2208,7 +2208,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2247,8 +2247,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到半枚日月驿令，让其承载本场信息：罗青禾跪坐在草丛里，手里握着半枚日月驿令。",
         "visible_goal_en": "Hold on the key prop or trace in back slope above Canyangao; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：半枚日月驿令；环境：后山坡。",
         "subject_content_en": "Subject: half sun-moon relay token that only triggers broken old-route lines and cannot replace judgment; environment: back slope above Canyangao.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2260,7 +2260,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2279,7 +2279,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2318,8 +2318,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "罗青禾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：罗青禾的反应与对话压力；环境：后山坡。",
         "subject_content_en": "Subject: Luo Qinghe的反应与对话压力; environment: back slope above Canyangao.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -2331,7 +2331,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2350,7 +2350,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2389,8 +2389,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：驿令冰冷，边缘有旧血和草药灰。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in back slope above Canyangao.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：后山坡。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: back slope above Canyangao.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -2402,7 +2402,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2421,7 +2421,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2460,8 +2460,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：沈维桑看着她。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：后山坡。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: back slope above Canyangao.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -2473,7 +2473,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2492,7 +2492,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2531,8 +2531,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：晏南枝脸色微变。",
         "visible_goal_en": "Hold on the key prop or trace in back slope above Canyangao; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：后山坡。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: back slope above Canyangao.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -2544,7 +2544,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2563,7 +2563,7 @@
         "generation_method": "I2V",
         "duration": "6.5s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_canyangao_back_slope.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2602,8 +2602,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：罗青禾抬手摸他的脸，指腹全是药草染色。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：后山坡。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: back slope above Canyangao.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -2615,7 +2615,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,

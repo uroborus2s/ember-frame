@@ -2,7 +2,7 @@
 
 ## Format
 
-- Aspect ratio: `9:16` vertical short drama.
+- Aspect ratio: `16:9` landscape widescreen drama.
 - Frame rate: `24 fps` unless a downstream workflow explicitly overrides it.
 - Default clip length: 3-8 seconds per generated video segment; longer dialogue beats must be split by reaction, prop, or transition shots.
 - Visual style: hyper-realistic cinematic low-magic Eastern epic; tactile ancient materials; grounded body mechanics.

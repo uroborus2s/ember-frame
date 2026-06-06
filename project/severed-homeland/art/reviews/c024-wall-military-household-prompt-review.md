@@ -25,7 +25,7 @@
 | 薛临墙区分 | pass | `C004` 已补充与普通军户群像的区分锁；`C024` 也明确不得复制薛临墙的具名脸、体量、道具组合和指挥姿态。 |
 | 提示词结构 | pass | `prompts/series-art-image-prompts.json` 已新增 `PROMPT_C024`，保留 `production_metadata` 与 `model_visible_prompt` 分离。 |
 | copy-ready | pass | 已补齐 `positive_prompt`、`negative_prompt`、`chatgpt_image_prompt`、`gemini_image_prompt` 和参考图执行说明。 |
-| 输出格式合同 | pass | 已声明 9:16、2160x3840、PNG、neutral plain、alpha forbidden、多人年龄职责视图和 QC 项。 |
+| 输出格式合同 | pass | 已声明 16:9、3840x2160、PNG、neutral plain、alpha forbidden、多人年龄职责视图和 QC 项。 |
 | 线程计划 | pass | 已加入 `B01_CORE_CHARACTERS`，但保持未派发状态。 |
 
 ## 关键视觉锁

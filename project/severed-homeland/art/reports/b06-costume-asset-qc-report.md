@@ -22,8 +22,8 @@
 ## 合同验证
 
 - 文件格式：六张均为 PNG。
-- 分辨率：六张均为 2160x3840。
-- 画幅：9:16 vertical。
+- 分辨率：六张均为 3840x2160。
+- 画幅：16:9 landscape widescreen。
 - 透明策略：六张均无 alpha。
 - 文件名：`k001m` 到 `k006m` basename 均为 5 字符，符合短文件码规则。
 - 版本策略：旧拒稿只保留在 `assets/costumes/history/` 并使用 `.v001` / `.v002` 后缀；canonical 路径只保留最终确认图；未创建版本目录。

@@ -2,9 +2,9 @@
 
 ## 全局摄影锁 / Global Camera Lock
 
-中文：9:16 竖屏以“上下层级”和“窄门槛压力”为核心。镜头不追求漂亮空景，必须服务制度压迫、人物克制和地理可读。运动速度保持真实，不用漂浮慢动作；手持只用于人群压力和门槛推搡，白册与白翳镜头尽量稳定、干净、冷。
+中文：16:9 横屏宽屏以“上下层级”和“窄门槛压力”为核心。镜头不追求漂亮空景，必须服务制度压迫、人物克制和地理可读。运动速度保持真实，不用漂浮慢动作；手持只用于人群压力和门槛推搡，白册与白翳镜头尽量稳定、干净、冷。
 
-English: The 9:16 frame is built around vertical hierarchy and threshold pressure. Shots should not chase beauty plates; they must serve institutional pressure, restraint and readable geography. Motion stays real-time, with no floaty slow motion. Handheld is reserved for crowd pressure and threshold contact; register and Bai Yi shots stay stable, clean and cold.
+English: The 16:9 frame is built around vertical hierarchy and threshold pressure. Shots should not chase beauty plates; they must serve institutional pressure, restraint and readable geography. Motion stays real-time, with no floaty slow motion. Handheld is reserved for crowd pressure and threshold contact; register and Bai Yi shots stay stable, clean and cold.
 
 ## 场景摄影策略 / Scene Camera Strategy
 
@@ -19,7 +19,7 @@ English: The 9:16 frame is built around vertical hierarchy and threshold pressur
 ### SC002 金河粮仓带 / Jinhe Grain Depot
 
 - 镜头：`SC002-SH001` 到 `SC002-SH004`
-- 景别：竖屏远景建立粮袋墙，中近景读制度流程，门槛特写读家庭被写没。
+- 景别：横屏远景建立粮袋墙，中近景读制度流程，门槛特写读家庭被写没。
 - 光线：清晨麦金冷雾、湿木褐、虫蜡白；不要拍成灰色灾民营。
 - 运镜：粮袋和押车保持横向运动，家庭门槛保持纵深不动，形成“粮走了，家留空”的反差。
 - 连续性：粮税小吏高账吏帽、白册夹板、骨算盘和粮牌必须明显；奴兵扣腕和押车，不承担开册职责。
@@ -63,7 +63,7 @@ English: The 9:16 frame is built around vertical hierarchy and threshold pressur
 | SC001-SH001 | wide impact detail | low wall base | impact shake then hold | cold snow bounce | bone bell must read before monster scale |
 | SC001-SH002 | tight natural lens | human kneel height | drop and rack focus | cold side snow | old sun-moon mark should be visible, not glowing |
 | SC001-SH003 | compressed medium | wall chest height | locked push | cold front, fire rim | Xue command is restraint, not hero pose |
-| SC002-SH001 | vertical wide | villager eye height | real-time push | morning grain haze | grain bags dominate upper frame |
+| SC002-SH001 | landscape wide | villager eye height | real-time push | morning grain haze | grain bags dominate upper frame |
 | SC002-SH002 | close threshold | waist height | one-step handheld pull | side doorway light | keep child hand sensitive and brief |
 | SC002-SH003 | medium table | table edge | locked | cold wax top light | official taller than civilians |
 | SC002-SH004 | wide pullback | threshold rear | cart moves, camera holds | pale morning backlight | family remains while grain exits |
@@ -71,7 +71,7 @@ English: The 9:16 frame is built around vertical hierarchy and threshold pressur
 | SC003-SH002 | medium two-shot | table edge | locked | warm lamp, cool jade | red line separates them |
 | SC003-SH003 | insert | table height | tiny push | warm low practical | stopped fingers carry hesitation |
 | SC003-SH004 | graphic close | map level | match move | rain-dim lamp | cut to checkpoint line |
-| SC004-SH001 | vertical wide | elevated village entry | pan geography | daylight plus wax white | lock table-well-medicine house-exits |
+| SC004-SH001 | landscape wide | elevated village entry | pan geography | daylight plus wax white | lock table-well-medicine house-exits |
 | SC004-SH002 | medium procedure | table edge | static | cold white on register | bureaucratic calm |
 | SC004-SH003 | POV + MCU | Shen eye height | eye-line cuts | daylight, low contrast | show Shen reads before speaking |
 | SC004-SH004 | child close | adult shoulder gap | push then still | soft daylight | sudden silence after line |

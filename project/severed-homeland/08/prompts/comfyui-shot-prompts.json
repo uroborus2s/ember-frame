@@ -10,7 +10,7 @@
         "generation_method": "T2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -40,13 +40,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "锁喉关主门按剧本时间建立，骨钟在暴雪中自鸣。",
-        "visible_goal_en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：锁喉关主门与沈维桑；环境：锁喉关主门。",
         "subject_content_en": "Subject: 锁喉关主门与Shen Weisang; environment: Suohou Pass.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_SUOHOU_PASS, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, CH_GREY_WALL_GARRISON, PROP_BONE_BELL, FX_SNOW_COLD_WIND。",
         "visible_continuity_en": "Continuity locks: LOC_SUOHOU_PASS, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, CH_GREY_WALL_GARRISON, PROP_BONE_BELL, FX_SNOW_COLD_WIND.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -54,7 +54,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -73,7 +73,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -104,8 +104,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "门外，破门猛犸的铁包巨角顶上拒马，黑牙斧兵在巨兽脚边砍门闩。",
         "visible_goal_en": "Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：锁喉关主门。",
         "subject_content_en": "Subject: Shen Weisang; environment: Suohou Pass.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -117,7 +117,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -136,7 +136,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -167,8 +167,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到骨钟，让其承载本场信息：墙内粮碗倒扣在雪里，碗底被刮得发白。",
         "visible_goal_en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：骨钟；环境：锁喉关主门。",
         "subject_content_en": "Subject: bone bell alarm anchoring Suohou Pass siege pressure; environment: Suohou Pass.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -180,7 +180,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -199,7 +199,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -230,8 +230,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "陆青砾呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：陆青砾的反应与对话压力；环境：锁喉关主门。",
         "subject_content_en": "Subject: Lu Qingli的反应与对话压力; environment: Suohou Pass.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -243,7 +243,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -262,7 +262,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -293,8 +293,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：墙上灰墙军户冻得手指开裂，仍把长矛压下去。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：锁喉关主门。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: Suohou Pass.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -306,7 +306,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -325,7 +325,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -356,8 +356,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：雪羽攀墙斥候的钩爪挂上墙垛。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：锁喉关主门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -369,7 +369,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -388,7 +388,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -419,8 +419,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到骨钟，让其承载本场信息：薛临墙吹骨哨，声音短硬。",
         "visible_goal_en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：骨钟；环境：锁喉关主门。",
         "subject_content_en": "Subject: bone bell alarm anchoring Suohou Pass siege pressure; environment: Suohou Pass.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -432,7 +432,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -451,7 +451,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -482,8 +482,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑、晏南枝和陆青砾被军户押上墙道。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：锁喉关主门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -495,7 +495,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -514,7 +514,7 @@
         "generation_method": "FLF2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -545,8 +545,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：破门猛犸撞响骨钟。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：锁喉关主门出口与下一步路线；环境：锁喉关主门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -558,7 +558,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -577,7 +577,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -608,8 +608,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾小声说。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：锁喉关主门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -621,7 +621,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -640,7 +640,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -671,8 +671,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：陆青砾小声说。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：锁喉关主门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -684,7 +684,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -703,7 +703,7 @@
         "generation_method": "T2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -733,13 +733,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "锁喉关粮仓门按剧本时间建立，粮仓门内堆着肃明封蜡粮袋。",
-        "visible_goal_en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Xue Linqiang readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Suohou Pass and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Xue Linqiang readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：锁喉关粮仓门与沈维桑；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: 锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure与Shen Weisang; environment: Suohou Pass.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_SUOHOU_PASS, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_XUE_LINQIANG, CH_SUMING_INFANTRY, CH_GREY_WALL_GARRISON, PROP_GRANARY_GATE, FX_SNOW_COLD_WIND。",
         "visible_continuity_en": "Continuity locks: LOC_SUOHOU_PASS, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_XUE_LINQIANG, CH_SUMING_INFANTRY, CH_GREY_WALL_GARRISON, PROP_GRANARY_GATE, FX_SNOW_COLD_WIND.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -747,7 +747,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -766,7 +766,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -797,8 +797,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "门外伤兵等粮。",
         "visible_goal_en": "Visualize the scripted beat in Suohou Pass, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: Shen Weisang; environment: Suohou Pass.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -810,7 +810,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -829,7 +829,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -860,8 +860,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到粮仓门，让其承载本场信息：粮税小吏站在门槛内，身后重甲虫士兵像门闩一样堵住路。",
         "visible_goal_en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：粮仓门；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: granary gate showing Suming grain control and Xue Linqiang's survivalist pressure; environment: Suohou Pass.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -873,7 +873,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -892,7 +892,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -923,8 +923,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "薛临墙呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：薛临墙的反应与对话压力；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: Xue Linqiang的反应与对话压力; environment: Suohou Pass.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -936,7 +936,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -955,7 +955,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -986,8 +986,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：薛临墙把一只空粮袋攥成团，没看晏南枝。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Suohou Pass.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: Suohou Pass.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -999,7 +999,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1018,7 +1018,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1049,8 +1049,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：晏南枝抬起下颌。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1062,7 +1062,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1081,7 +1081,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1112,8 +1112,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到粮仓门，让其承载本场信息：薛临墙冷笑。",
         "visible_goal_en": "Hold on the key prop or trace in Suohou Pass; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：粮仓门；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: granary gate showing Suming grain control and Xue Linqiang's survivalist pressure; environment: Suohou Pass.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1125,7 +1125,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1144,7 +1144,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1175,8 +1175,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈维桑挡到晏南枝前面。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1188,7 +1188,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1207,7 +1207,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1238,8 +1238,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：薛临墙考虑交出晏南枝换粮。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：锁喉关粮仓门出口与下一步路线；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: 锁喉关granary gate showing Suming grain control and Xue Linqiang's survivalist pressure出口与下一步路线; environment: Suohou Pass.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -1251,7 +1251,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1270,7 +1270,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1301,8 +1301,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：薛临墙盯住沈维桑。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1314,7 +1314,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1333,7 +1333,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_suohou_pass.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1364,8 +1364,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：薛临墙盯住沈维桑。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：锁喉关粮仓门。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Suohou Pass.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1377,7 +1377,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1396,7 +1396,7 @@
         "generation_method": "FLF2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1423,13 +1423,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "墙顶雪道按剧本时间建立，沈维桑被推上侧门雪道。",
-        "visible_goal_en": "Establish wall-top snow path and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish wall-top snow path and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：墙顶雪道与沈维桑；环境：墙顶雪道。",
         "subject_content_en": "Subject: 墙顶雪道与Shen Weisang; environment: wall-top snow path.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_WALLTOP_SNOW_PATH, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, FX_FIRE_SMOKE_ASH, FX_SNOW_COLD_WIND。",
         "visible_continuity_en": "Continuity locks: LOC_WALLTOP_SNOW_PATH, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, FX_FIRE_SMOKE_ASH, FX_SNOW_COLD_WIND.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -1437,7 +1437,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1456,7 +1456,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1484,8 +1484,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "风雪打得人睁不开眼。",
         "visible_goal_en": "Visualize the scripted beat in wall-top snow path, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：墙顶雪道。",
         "subject_content_en": "Subject: Shen Weisang; environment: wall-top snow path.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1497,7 +1497,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1516,7 +1516,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1544,8 +1544,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到关键道具和痕迹，让其承载本场信息：他看见排水沟下方的雪色发灰，立刻判断掘地兵已经接近门基。",
         "visible_goal_en": "Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：关键道具和痕迹；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1557,7 +1557,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1576,7 +1576,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1604,8 +1604,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：墙顶雪道。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: wall-top snow path.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -1617,7 +1617,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1636,7 +1636,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1664,8 +1664,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：薛临墙直接下令。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in wall-top snow path.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：墙顶雪道。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: wall-top snow path.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1677,7 +1677,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1696,7 +1696,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1724,8 +1724,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：火油灌入排水沟，沈维桑点燃旧布。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1737,7 +1737,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1756,7 +1756,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1784,8 +1784,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到关键道具和痕迹，让其承载本场信息：火线沿沟底窜开，逼出雪獾掘地兵。",
         "visible_goal_en": "Hold on the key prop or trace in wall-top snow path; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：关键道具和痕迹；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1797,7 +1797,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1816,7 +1816,7 @@
         "generation_method": "FLF2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1844,8 +1844,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：北境黑牙斧兵趁乱冲门，沈维桑用猎弓射断吊石绳，落石砸偏攻城木。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1857,7 +1857,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1876,7 +1876,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1904,8 +1904,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑守侧门。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：墙顶雪道出口与下一步路线；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -1917,7 +1917,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1936,7 +1936,7 @@
         "generation_method": "FLF2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1964,8 +1964,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：陆青砾在一旁割断雪羽斥候的钩绳。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1977,7 +1977,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1996,7 +1996,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_walltop_snow_path.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2024,8 +2024,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：沈维桑喘着气。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：墙顶雪道。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: wall-top snow path.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2037,7 +2037,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2056,7 +2056,7 @@
         "generation_method": "T2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2091,13 +2091,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "旧日月阵基裸露处按剧本时间建立，战场短暂停顿。",
-        "visible_goal_en": "Establish old sun-moon array base and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish old sun-moon array base and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Lu Qingli readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：旧日月阵基裸露处与沈维桑；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: old sun-moon array base, expressed through body action and cost rather than magic blast裸露处与Shen Weisang; environment: old sun-moon array base.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_OLD_SUNMOON_ARRAY_BASE, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, CH_LU_MI, PROP_GRANARY_GATE, PROP_BONE_FLUTE。",
         "visible_continuity_en": "Continuity locks: LOC_OLD_SUNMOON_ARRAY_BASE, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_LU_QINGLI, CH_XUE_LINQIANG, CH_LU_MI, PROP_GRANARY_GATE, PROP_BONE_FLUTE.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -2105,7 +2105,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2124,7 +2124,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2160,8 +2160,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "墙下，一个鹿族年轻女子倒在旧阵基旁，柔软鹿耳沾血，骨笛挂在胸前。",
         "visible_goal_en": "Visualize the scripted beat in old sun-moon array base, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: Shen Weisang; environment: old sun-moon array base.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2173,7 +2173,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2192,7 +2192,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2228,8 +2228,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到骨笛，让其承载本场信息：她不是攻城兵，更像被冲散的萨满。",
         "visible_goal_en": "Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：骨笛；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: bone flute used by Lu Mi and northern rescue or beast-calming logic; environment: old sun-moon array base.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2241,7 +2241,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2260,7 +2260,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2296,8 +2296,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: old sun-moon array base.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -2309,7 +2309,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2328,7 +2328,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2364,8 +2364,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：晏南枝本能抬手阻止。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in old sun-moon array base.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: old sun-moon array base.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -2377,7 +2377,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2396,7 +2396,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2432,8 +2432,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：沈维桑已经翻下半截雪坡，把鹿族女子拖到阵基背风处。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: old sun-moon array base.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -2445,7 +2445,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2464,7 +2464,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2500,8 +2500,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到骨笛，让其承载本场信息：她睁眼，浅色鹿眼警惕。",
         "visible_goal_en": "Hold on the key prop or trace in old sun-moon array base; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：骨笛；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: bone flute used by Lu Mi and northern rescue or beast-calming logic; environment: old sun-moon array base.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -2513,7 +2513,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2532,7 +2532,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2568,8 +2568,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：门外破门猛犸再度被驱赶，巨角顶向拒马。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: old sun-moon array base.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -2581,7 +2581,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2600,7 +2600,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2636,8 +2636,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：鹿族伤者吹骨笛。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：旧日月阵基裸露处出口与下一步路线；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: old sun-moon array base, expressed through body action and cost rather than magic blast裸露处出口与下一步路线; environment: old sun-moon array base.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -2649,7 +2649,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2668,7 +2668,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2704,8 +2704,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑、晏南枝和薛临墙同时看向她。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: old sun-moon array base.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2717,7 +2717,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2736,7 +2736,7 @@
         "generation_method": "I2V",
         "duration": "6.6s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_old_sunmoon_array_base.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2772,8 +2772,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：它颈下露出被铁钉穿过的旧绳，绳头还攥在驭兽者手里。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：旧日月阵基裸露处。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: old sun-moon array base.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2785,7 +2785,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,

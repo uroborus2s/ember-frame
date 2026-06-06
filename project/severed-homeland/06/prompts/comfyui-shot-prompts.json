@@ -10,7 +10,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -39,13 +39,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "清明院外署白墙按剧本时间建立，无尘白墙前，虫蜡针刺入一名孩子手腕。",
-        "visible_goal_en": "Establish Qingming Court outer office and the immediate scripted pressure, keeping Bai Yi, Suming registry clerk, Suming slave soldier readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Qingming Court outer office and the immediate scripted pressure, keeping Bai Yi, Suming registry clerk, Suming slave soldier readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：清明院外署白墙与白翳；环境：清明院外署白墙。",
         "subject_content_en": "Subject: 清明院外署白墙与Bai Yi; environment: Qingming Court outer office.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_QINGMING_OUTER_OFFICE, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_QINGMING_REGISTER, PROP_INSECT_WAX_NEEDLE。",
         "visible_continuity_en": "Continuity locks: LOC_QINGMING_OUTER_OFFICE, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_QINGMING_REGISTER, PROP_INSECT_WAX_NEEDLE.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -53,7 +53,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -72,7 +72,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -102,8 +102,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "白册自动浮出一个旧姓，孩子的母亲当场跪下。",
         "visible_goal_en": "Visualize the scripted beat in Qingming Court outer office, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：白翳；环境：清明院外署白墙。",
         "subject_content_en": "Subject: Bai Yi; environment: Qingming Court outer office.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -115,7 +115,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -134,7 +134,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -164,8 +164,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡针，让其承载本场信息：奴兵扣住孩子。",
         "visible_goal_en": "Hold on the key prop or trace in Qingming Court outer office; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡针；环境：清明院外署白墙。",
         "subject_content_en": "Subject: insect-wax needle used by Bai Yi and the Qingming Court for identity testing and interrogation; environment: Qingming Court outer office.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -177,7 +177,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -196,7 +196,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -226,8 +226,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "白翳呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：白翳的反应与对话压力；环境：清明院外署白墙。",
         "subject_content_en": "Subject: Bai Yi的反应与对话压力; environment: Qingming Court outer office.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -239,7 +239,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -258,7 +258,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -288,8 +288,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：白翳站在白墙阴影里，声音平静。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Qingming Court outer office.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：白翳 / 白册官吏；环境：清明院外署白墙。",
         "subject_content_en": "Subject: Bai Yi / Suming registry clerk; environment: Qingming Court outer office.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -301,7 +301,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -320,7 +320,7 @@
         "generation_method": "FLF2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -350,8 +350,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：母亲把孩子的袖子往下拽，想盖住针孔。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：清明院外署白墙。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Qingming Court outer office.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -363,7 +363,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -382,7 +382,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -412,8 +412,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡针，让其承载本场信息：母亲把孩子的袖子往下拽，想盖住针孔。",
         "visible_goal_en": "Hold on the key prop or trace in Qingming Court outer office; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡针；环境：清明院外署白墙。",
         "subject_content_en": "Subject: insect-wax needle used by Bai Yi and the Qingming Court for identity testing and interrogation; environment: Qingming Court outer office.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -425,7 +425,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -444,7 +444,7 @@
         "generation_method": "FLF2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -474,8 +474,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：母亲把孩子的袖子往下拽，想盖住针孔。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：清明院外署白墙。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Qingming Court outer office.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -487,7 +487,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -506,7 +506,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -536,8 +536,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：虫蜡针验名钩子。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：清明院外署白墙出口与下一步路线；环境：清明院外署白墙。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Qingming Court outer office.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -549,7 +549,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -568,7 +568,7 @@
         "generation_method": "FLF2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -598,8 +598,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：母亲把孩子的袖子往下拽，想盖住针孔。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：清明院外署白墙。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Qingming Court outer office.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -611,7 +611,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -630,7 +630,7 @@
         "generation_method": "FLF2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_outer_office.png",
           "assets/placeholders/ch_bai_yi.png",
@@ -660,8 +660,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：母亲把孩子的袖子往下拽，想盖住针孔。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：清明院外署白墙。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Qingming Court outer office.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -673,7 +673,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -692,7 +692,7 @@
         "generation_method": "T2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -726,13 +726,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "外署登记厅按剧本时间建立，沈维桑和晏南枝混在待验人群里。",
-        "visible_goal_en": "Establish outer office registration hall and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish outer office registration hall and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：外署登记厅与沈维桑；环境：外署登记厅。",
         "subject_content_en": "Subject: 外署登记厅与Shen Weisang; environment: outer office registration hall.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_QINGMING_REGISTRATION_HALL, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_QINGMING_REGISTER, PROP_INSECT_WAX_NEEDLE。",
         "visible_continuity_en": "Continuity locks: LOC_QINGMING_REGISTRATION_HALL, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_BAI_YI, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_QINGMING_REGISTER, PROP_INSECT_WAX_NEEDLE.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -740,7 +740,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -759,7 +759,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -794,8 +794,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑换了船工湿牌，晏南枝脸上抹着河泥，但姿态仍太直。",
         "visible_goal_en": "Visualize the scripted beat in outer office registration hall, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：外署登记厅。",
         "subject_content_en": "Subject: Shen Weisang; environment: outer office registration hall.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -807,7 +807,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -826,7 +826,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -861,8 +861,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：沈维桑压低声音。",
         "visible_goal_en": "Hold on the key prop or trace in outer office registration hall; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：外署登记厅。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: outer office registration hall.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -874,7 +874,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -893,7 +893,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -928,8 +928,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：外署登记厅。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: outer office registration hall.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -941,7 +941,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -960,7 +960,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -995,8 +995,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：白册官吏查到他们前一排。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in outer office registration hall.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：外署登记厅。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: outer office registration hall.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1008,7 +1008,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1027,7 +1027,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1062,8 +1062,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：一名少年被虫蜡针刺出旧驿半音，押车奴兵立刻上前。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：外署登记厅。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office registration hall.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1075,7 +1075,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1094,7 +1094,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1129,8 +1129,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：晏南枝的手握紧短匕。",
         "visible_goal_en": "Hold on the key prop or trace in outer office registration hall; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：外署登记厅。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: outer office registration hall.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1142,7 +1142,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1161,7 +1161,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1196,8 +1196,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：白翳忽然抬头。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：外署登记厅。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office registration hall.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1209,7 +1209,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1228,7 +1228,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1263,8 +1263,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈维桑和晏南枝混入待验人群。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：外署登记厅出口与下一步路线；环境：外署登记厅。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office registration hall.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -1276,7 +1276,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1295,7 +1295,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1330,8 +1330,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：他闻到一丝被压过的旧驿香灰味。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：外署登记厅。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office registration hall.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1343,7 +1343,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1362,7 +1362,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_registration_hall.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1397,8 +1397,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：他闻到一丝被压过的旧驿香灰味。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：外署登记厅。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office registration hall.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1410,7 +1410,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1429,7 +1429,7 @@
         "generation_method": "T2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1463,13 +1463,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "蜂巢记忆室门口按剧本时间建立，人群骚乱。",
-        "visible_goal_en": "Establish honeycomb memory-room entrance and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish honeycomb memory-room entrance and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Bai Yi readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：蜂巢记忆室门口与沈维桑；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: 蜂巢记忆室门口与Shen Weisang; environment: honeycomb memory-room entrance.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_HONEYCOMB_MEMORY_ROOM, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_BAI_YI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_QINGMING_REGISTER。",
         "visible_continuity_en": "Continuity locks: LOC_HONEYCOMB_MEMORY_ROOM, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_BAI_YI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_QINGMING_REGISTER.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -1477,7 +1477,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1496,7 +1496,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1531,8 +1531,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑把孟归藏给的转运签塞到登记桌下，又用半句旧驿暗语引诱白册官吏写错路线。",
         "visible_goal_en": "Visualize the scripted beat in honeycomb memory-room entrance, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: Shen Weisang; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1544,7 +1544,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1563,7 +1563,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1598,8 +1598,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到粮牌，让其承载本场信息：白册官吏低头核对。",
         "visible_goal_en": "Hold on the key prop or trace in honeycomb memory-room entrance; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：粮牌；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: grain permit tag for Jinhe, wall-foot and border-wall ration control; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1611,7 +1611,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1630,7 +1630,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1665,8 +1665,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "白翳呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：白翳的反应与对话压力；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: Bai Yi的反应与对话压力; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -1678,7 +1678,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1697,7 +1697,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1732,8 +1732,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：他低声念出半句旧驿暗语，诱得官吏补上（精确台词留给字幕与音频）。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in honeycomb memory-room entrance.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1745,7 +1745,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1764,7 +1764,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1799,8 +1799,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：白册官吏迟疑。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1812,7 +1812,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1831,7 +1831,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1866,8 +1866,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到粮牌，让其承载本场信息：错册墨迹在白墙上浮动，旧姓被新墨盖住，只剩一条错路。",
         "visible_goal_en": "Hold on the key prop or trace in honeycomb memory-room entrance; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：粮牌；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: grain permit tag for Jinhe, wall-foot and border-wall ration control; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1879,7 +1879,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1898,7 +1898,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1933,8 +1933,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：晏南枝扶住少年母亲，低声说。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1946,7 +1946,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1965,7 +1965,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2000,8 +2000,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：制造错册救孩子。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：蜂巢记忆室门口出口与下一步路线；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -2013,7 +2013,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2032,7 +2032,7 @@
         "generation_method": "FLF2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2067,8 +2067,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：沈维桑拉起晏南枝冲向后巷。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2080,7 +2080,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2099,7 +2099,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_honeycomb_memory_room.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2134,8 +2134,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：白翳走近，指尖擦过错册墨迹。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：蜂巢记忆室门口。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: honeycomb memory-room entrance.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2147,7 +2147,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2166,7 +2166,7 @@
         "generation_method": "T2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2201,13 +2201,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "外署后巷按剧本时间建立，后巷窄而白，墙面干净得没有影子。",
-        "visible_goal_en": "Establish outer office back alley and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Shen Zhaomian readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish outer office back alley and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Shen Zhaomian readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：外署后巷与沈维桑；环境：外署后巷。",
         "subject_content_en": "Subject: 外署后巷与Shen Weisang; environment: outer office back alley.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_QINGMING_BACK_ALLEY, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_SHEN_ZHAOMIAN, CH_BAI_YI, CH_SUMING_INFANTRY, PROP_BLOOD_RECORD, PROP_QINGMING_REGISTER。",
         "visible_continuity_en": "Continuity locks: LOC_QINGMING_BACK_ALLEY, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_SHEN_ZHAOMIAN, CH_BAI_YI, CH_SUMING_INFANTRY, PROP_BLOOD_RECORD, PROP_QINGMING_REGISTER.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -2215,7 +2215,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2234,7 +2234,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2270,8 +2270,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "虫族小兵从两头堵来。",
         "visible_goal_en": "Visualize the scripted beat in outer office back alley, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：外署后巷。",
         "subject_content_en": "Subject: Shen Weisang; environment: outer office back alley.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2283,7 +2283,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2302,7 +2302,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2338,8 +2338,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到烧焦发绳，让其承载本场信息：沈维桑用短刀割断晾布绳，白布落下挡住钩镰。",
         "visible_goal_en": "Hold on the key prop or trace in outer office back alley; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：烧焦发绳；环境：外署后巷。",
         "subject_content_en": "Subject: scorched hair tie as Shen Zhaomian family anchor; environment: outer office back alley.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2351,7 +2351,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2370,7 +2370,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2406,8 +2406,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：外署后巷。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: outer office back alley.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -2419,7 +2419,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2438,7 +2438,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2474,8 +2474,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：廊口尽头，一个白衣小女孩站在那里。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in outer office back alley.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：外署后巷。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: outer office back alley.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -2487,7 +2487,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2506,7 +2506,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2542,8 +2542,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：腕上虫蜡识别环泛白，烧焦发绳被干净白袍压在领口。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：外署后巷。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office back alley.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -2555,7 +2555,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2574,7 +2574,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2610,8 +2610,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡识别环，让其承载本场信息：沈维桑的呼吸停住。",
         "visible_goal_en": "Hold on the key prop or trace in outer office back alley; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡识别环；环境：外署后巷。",
         "subject_content_en": "Subject: insect-wax recognition ring marking Shen Zhaomian as a child identifier; environment: outer office back alley.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -2623,7 +2623,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2642,7 +2642,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2678,8 +2678,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：沈照眠抬头，眼神像隔着白册看他。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：外署后巷。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office back alley.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -2691,7 +2691,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2710,7 +2710,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2746,8 +2746,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈照眠出现。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：外署后巷出口与下一步路线；环境：外署后巷。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office back alley.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -2759,7 +2759,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2778,7 +2778,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2814,8 +2814,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：白翳露出极淡的满意。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：外署后巷。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office back alley.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2827,7 +2827,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2846,7 +2846,7 @@
         "generation_method": "I2V",
         "duration": "6.4s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_qingming_back_alley.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2882,8 +2882,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：沈维桑眼眶瞬间红了。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：外署后巷。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: outer office back alley.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2895,7 +2895,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,

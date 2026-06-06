@@ -7,8 +7,8 @@ English: This prompt brief is generated from the director-room storyboard packag
 
 ## Global Prompt Rules
 
-- Positive / 正向：超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。
-- Positive EN: hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.
+- Positive / 正向：超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。
+- Positive EN: hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.
 - Negative / 负向：避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。
 - Negative EN: avoid plastic CGI, over-smoothed skin, modern clothing, floaty slow motion, stiff posing, wrong faction anatomy, gore spectacle, and visible dialogue text in the image.
 

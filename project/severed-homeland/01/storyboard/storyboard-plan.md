@@ -2,9 +2,9 @@
 
 ## 1. 基础设定 / Basic Setup
 
-中文：本 storyboard 按 35 个稳定镜头 ID 编排，目标成片时长约 4 分 30 秒，9:16 竖屏短剧。分镜只根据当前重制后的 `01/script/final-script.md`、角色/场景 bible、连续性报告和脚本评分生成；旧版资产和旧版分镜只作为目录格式参考，不作为剧情 canon。
+中文：本 storyboard 按 35 个稳定镜头 ID 编排，目标成片时长约 4 分 30 秒，16:9 横屏宽屏剧。分镜只根据当前重制后的 `01/script/final-script.md`、角色/场景 bible、连续性报告和脚本评分生成；旧版资产和旧版分镜只作为目录格式参考，不作为剧情 canon。
 
-English: This storyboard uses 35 stable shot IDs for an approximately four-and-a-half-minute 9:16 vertical short drama. It is based on the current remade `01/script/final-script.md`, the character and scene bibles, continuity report and script score. Legacy assets and storyboard files are used only as structural references, not story canon.
+English: This storyboard uses 35 stable shot IDs for an approximately four-and-a-half-minute 16:9 landscape widescreen drama. It is based on the current remade `01/script/final-script.md`, the character and scene bibles, continuity report and script score. Legacy assets and storyboard files are used only as structural references, not story canon.
 
 ## 2. 氛围和画质 / Atmosphere and Image Quality
 
@@ -30,7 +30,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ### SC001-SH001 / Bone bell impact
 
-- 景别 / Shot Size: 中文：冲击特写接竖屏墙体揭示。 English: impact detail into vertical wall reveal.
+- 景别 / Shot Size: 中文：冲击特写接横屏墙体揭示。 English: impact detail into vertical wall reveal.
 - 构图 / Composition: 中文：骨钟占前景上部，黑石墙垂直压下，巨角和拒马只读剪影。 English: bone bell dominates the upper foreground; blackstone wall presses vertically, with horn and barricade only as silhouettes.
 - 运镜手法 / Camera Movement: 中文：撞击瞬间短抖，随后半秒锁住。 English: brief impact shake, then a half-second hold.
 - 画面内容 / Visual Content: 中文：暴雪斜砸黑石墙，巨角撞响骨钟，钟身横摆。 English: blizzard slashes the black wall as the iron-capped horn rings the bone bell.
@@ -57,7 +57,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ### SC002-SH001 / Grain wall procedure
 
-- 景别 / Shot Size: 中文：竖屏程序性远景。 English: vertical procedural wide shot.
+- 景别 / Shot Size: 中文：横屏程序性远景。 English: vertical procedural wide shot.
 - 构图 / Composition: 中文：粮袋墙压在画面上部，粮税小吏居中高位，村民在下方低位。 English: grain wall presses upper frame; grain tax clerk stands high center; villagers remain low below.
 - 运镜手法 / Camera Movement: 中文：穿过粮尘真实速度推进。 English: real-time push through grain dust.
 - 画面内容 / Visual Content: 中文：白册夹板、骨算盘和粮牌随小吏动作轻晃。 English: white register board, bone abacus and grain tags sway with the clerk movement.
@@ -94,7 +94,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 ### SC003-SH001 / Red line map
 
 - 景别 / Shot Size: 中文：桌面建立特写。 English: tabletop establishing close-up.
-- 构图 / Composition: 中文：旧驿图铺满竖屏，红线从下方向上方北境延伸，雨滴落在边缘。 English: old relay map fills vertical frame, red line runs from lower south to upper north, rain dots the edge.
+- 构图 / Composition: 中文：旧驿图铺满横屏，红线从下方向上方北境延伸，雨滴落在边缘。 English: old relay map fills vertical frame, red line runs from lower south to upper north, rain dots the edge.
 - 运镜手法 / Camera Movement: 中文：沿红线缓慢向北推进。 English: slow push north along the red line.
 - 画面内容 / Visual Content: 中文：油布雨声下，顾怀章摊开旧驿残图。 English: under oilcloth rain, Gu Huaizhang spreads the damaged relay map.
 - 光线与色彩 / Lighting and Color: 中文：油灯湿暖、红线朱赤、纸面旧黄。 English: humid oil-lamp warmth, vermilion cord and aged yellow paper.
@@ -129,7 +129,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ### SC004-SH001 / Canyangao blockade geography
 
-- 景别 / Shot Size: 中文：竖屏地理宽镜。 English: vertical geography wide shot.
+- 景别 / Shot Size: 中文：横屏地理宽镜。 English: vertical geography wide shot.
 - 构图 / Composition: 中文：检查桌居中，旧井一侧，药屋一侧，后山出口由白蜡旗标出。 English: inspection table center, well on one side, medicine house on the other, back-mountain exits marked by white wax flags.
 - 运镜手法 / Camera Movement: 中文：从桌到井、药屋和出口的慢平移。 English: slow pan from table to well, medicine house and exits.
 - 画面内容 / Visual Content: 中文：奴兵扣腕排队，纯虫族小兵封旧井和药屋。 English: slave soldiers bind wrists while pure insect soldiers seal the well and medicine house.

@@ -17,9 +17,9 @@ English: Episode 01 must compress three layers of pressure into four and a half 
 
 ## 摄影语言 / Camera Language
 
-中文：竖屏构图优先保留上下层级：官吏和白册在上，孩子和村民在下；井口、检查桌、药柜、白蜡旗构成垂直压迫线。沈维桑的主观镜头先看出口、风口、井和药屋，再看人脸。白翳入场后镜头变得更干净、更静，压迫来自秩序而非怪物化动作。
+中文：横屏宽屏构图优先保留上下层级：官吏和白册在上，孩子和村民在下；井口、检查桌、药柜、白蜡旗构成垂直压迫线。沈维桑的主观镜头先看出口、风口、井和药屋，再看人脸。白翳入场后镜头变得更干净、更静，压迫来自秩序而非怪物化动作。
 
-English: Vertical composition should preserve hierarchy: officials and registers above, children and villagers below. The well, inspection table, medicine cabinet and white wax flags create vertical pressure lines. Shen Weisang point-of-view reads exits, wind, the well and the medicine house before faces. After Bai Yi enters, the camera becomes cleaner and stiller; pressure comes from order, not monstrous motion.
+English: Landscape widescreen composition should preserve top-bottom hierarchy: officials and registers above, children and villagers below. The well, inspection table, medicine cabinet and white wax flags create upright pressure lines. Shen Weisang point-of-view reads exits, wind, the well and the medicine house before faces. After Bai Yi enters, the camera becomes cleaner and stiller; pressure comes from order, not monstrous motion.
 
 ## 表演红线 / Performance Red Lines
 

@@ -95,7 +95,7 @@
 | PROMPT_F001 | F001 | 全剧低魔东方史诗风格板 | 82 | OWN_LOCK_WEAK: visible/copy prompt covers 61/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 62/120 type-specific anchors<br>DEPENDENCY_LOCK_NOT_VISIBLE: visible/copy prompt visibly carries 0/3 dependency locks |
 | PROMPT_F002 | F002 | 第一季地域色彩路线板 | 66 | OWN_LOCK_WEAK: visible/copy prompt covers 44/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 43/120 type-specific anchors<br>DEPENDENCY_LOCK_NOT_VISIBLE: visible/copy prompt visibly carries 0/3 dependency locks |
 | PROMPT_F004 | F004 | 势力符号与禁用标志板 | 73 | OWN_LOCK_WEAK: visible/copy prompt covers 32/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 32/120 type-specific anchors<br>REFERENCE_INPUTS_MISSING: prompt record has depends_on_assets in asset index but no explicit reference image/control inputs for model dispatch |
-| PROMPT_F005 | F005 | 9比16竖屏构图与动作因果板 | 76 | OWN_LOCK_WEAK: visible/copy prompt covers 59/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 60/120 type-specific anchors<br>DEPENDENCY_LOCK_NOT_VISIBLE: visible/copy prompt visibly carries 0/3 dependency locks |
+| PROMPT_F005 | F005 | 16比9横屏构图与动作因果板 | 76 | OWN_LOCK_WEAK: visible/copy prompt covers 59/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 60/120 type-specific anchors<br>DEPENDENCY_LOCK_NOT_VISIBLE: visible/copy prompt visibly carries 0/3 dependency locks |
 | PROMPT_F006 | F006 | 低魔显化与旧驿金赤光规则板 | 81 | OWN_LOCK_WEAK: visible/copy prompt covers 61/120 own lock anchors<br>TYPE_LOCK_WEAK: visible/copy prompt covers 62/120 type-specific anchors<br>DEPENDENCY_LOCK_NOT_VISIBLE: visible/copy prompt visibly carries 0/3 dependency locks |
 
 ## 全量逐条评分
@@ -168,7 +168,7 @@
 | PROMPT_F002 | F002 | 第一季地域色彩路线板 | style | 66 | high_risk | OWN_LOCK_WEAK, TYPE_LOCK_WEAK, DEPENDENCY_LOCK_NOT_VISIBLE, REFERENCE_INPUTS_MISSING, STORY_CONTINUITY_WEAK |
 | PROMPT_F003 | F003 | 核心材质触感板 | style | 85 | needs_revision | DEPENDENCY_LOCK_NOT_VISIBLE, REFERENCE_INPUTS_MISSING |
 | PROMPT_F004 | F004 | 势力符号与禁用标志板 | style | 73 | high_risk | OWN_LOCK_WEAK, TYPE_LOCK_WEAK, REFERENCE_INPUTS_MISSING, STORY_CONTINUITY_WEAK |
-| PROMPT_F005 | F005 | 9比16竖屏构图与动作因果板 | style | 76 | needs_revision | OWN_LOCK_WEAK, TYPE_LOCK_WEAK, DEPENDENCY_LOCK_NOT_VISIBLE, REFERENCE_INPUTS_MISSING, STORY_CONTINUITY_WEAK |
+| PROMPT_F005 | F005 | 16比9横屏构图与动作因果板 | style | 76 | needs_revision | OWN_LOCK_WEAK, TYPE_LOCK_WEAK, DEPENDENCY_LOCK_NOT_VISIBLE, REFERENCE_INPUTS_MISSING, STORY_CONTINUITY_WEAK |
 | PROMPT_F006 | F006 | 低魔显化与旧驿金赤光规则板 | style | 81 | needs_revision | OWN_LOCK_WEAK, TYPE_LOCK_WEAK, DEPENDENCY_LOCK_NOT_VISIBLE, REFERENCE_INPUTS_MISSING, STORY_CONTINUITY_WEAK |
 
 ## 结论

@@ -8,7 +8,7 @@ English: This is the director-room pre-asset shot package. It has not yet entere
 
 ## 生产规格 / Production Specs
 
-- 画幅 / Aspect Ratio: `9:16`
+- 画幅 / Aspect Ratio: `16:9`
 - 帧率 / FPS: `24`
 - 目标时长 / Target Duration: `270s`
 - 规划时长 / Planned Duration: `269.5s`

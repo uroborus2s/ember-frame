@@ -40,9 +40,9 @@
 | Exact canonical paths | pass |
 | Short basenames <= 20 chars | pass |
 | PNG format | pass |
-| 2160x3840 minimum resolution | pass |
+| 3840x2160 minimum resolution | pass |
 | Opaque / no alpha | pass |
-| 9:16 vertical card format | pass |
+| 16:9 landscape widescreen card format | pass |
 | Neutral master character/crowd card, not video frame | pass |
 | No retained draft outside `history/` | pass |
 

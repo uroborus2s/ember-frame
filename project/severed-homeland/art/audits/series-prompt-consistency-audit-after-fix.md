@@ -105,7 +105,7 @@
 | PROMPT_F002 | F002 | 第一季地域色彩路线板 | style | 100 | 100_ready | 无 |
 | PROMPT_F003 | F003 | 核心材质触感板 | style | 100 | 100_ready | 无 |
 | PROMPT_F004 | F004 | 势力符号与禁用标志板 | style | 100 | 100_ready | 无 |
-| PROMPT_F005 | F005 | 9比16竖屏构图与动作因果板 | style | 100 | 100_ready | 无 |
+| PROMPT_F005 | F005 | 16比9横屏构图与动作因果板 | style | 100 | 100_ready | 无 |
 | PROMPT_F006 | F006 | 低魔显化与旧驿金赤光规则板 | style | 100 | 100_ready | 无 |
 
 ## 结论

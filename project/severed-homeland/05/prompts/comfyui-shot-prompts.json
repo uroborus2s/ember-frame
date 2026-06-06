@@ -10,7 +10,7 @@
         "generation_method": "T2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -40,13 +40,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "灰烬书院焦黑书架按剧本时间建立，焦黑书架后，一个白衣儿童抱着膝，轻轻哼出沈家旧驿暗号。",
-        "visible_goal_en": "Establish Ash Academy and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Ash Academy and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：灰烬书院焦黑书架与沈维桑；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: 灰烬书院焦黑书架与Shen Weisang; environment: Ash Academy.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_ASH_ACADEMY, CH_SHEN_WEISANG, CH_YAN_NANZHI, PROP_QINGMING_REGISTER, FX_QINGMING_INCENSE, PROP_QINGMING_SCENT_BELL, PROP_RECOGNITION_RING, FX_FIRE_SMOKE_ASH。",
         "visible_continuity_en": "Continuity locks: LOC_ASH_ACADEMY, CH_SHEN_WEISANG, CH_YAN_NANZHI, PROP_QINGMING_REGISTER, FX_QINGMING_INCENSE, PROP_QINGMING_SCENT_BELL, PROP_RECOGNITION_RING, FX_FIRE_SMOKE_ASH.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -54,7 +54,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -73,7 +73,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -104,8 +104,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑本能停步。",
         "visible_goal_en": "Visualize the scripted beat in Ash Academy, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: Shen Weisang; environment: Ash Academy.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -117,7 +117,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -136,7 +136,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -167,8 +167,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到清明香铃，让其承载本场信息：晏南枝脸色发白。",
         "visible_goal_en": "Hold on the key prop or trace in Ash Academy; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：清明香铃；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: grey-white Qingming incense tracking scent that clings to blood, old wax or the blood record铃; environment: Ash Academy.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -180,7 +180,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -199,7 +199,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -230,8 +230,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "白衣儿童呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：白衣儿童的反应与对话压力；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -243,7 +243,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -262,7 +262,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -293,8 +293,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：孩子抬起脸，腕上有虫蜡识别环。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Ash Academy.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: Ash Academy.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -306,7 +306,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -325,7 +325,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -356,8 +356,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：他忽然捂住自己的嘴，像才想起这句话会害人。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -369,7 +369,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -388,7 +388,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -419,8 +419,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡识别环，让其承载本场信息：孩子看向书架缝。",
         "visible_goal_en": "Hold on the key prop or trace in Ash Academy; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡识别环；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: insect-wax recognition ring marking Shen Zhaomian as a child identifier; environment: Ash Academy.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -432,7 +432,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -451,7 +451,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -482,8 +482,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：缝里一粒清明香灰亮了一下。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -495,7 +495,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -514,7 +514,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -545,8 +545,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：白衣儿童哼旧驿暗号。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：灰烬书院焦黑书架出口与下一步路线；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -558,7 +558,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -577,7 +577,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -608,8 +608,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：远处清明香铃响起。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -621,7 +621,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -640,7 +640,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -671,8 +671,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：远处清明香铃响起。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：灰烬书院焦黑书架。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -684,7 +684,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -703,7 +703,7 @@
         "generation_method": "T2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -739,13 +739,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "灰烬书院拱廊按剧本时间建立，焦黑拱廊被虫蜡封条切成一段一段。",
-        "visible_goal_en": "Establish Ash Academy and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Meng Guizang readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish Ash Academy and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Meng Guizang readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：灰烬书院拱廊与沈维桑；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: 灰烬书院拱廊与Shen Weisang; environment: Ash Academy.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_ASH_ACADEMY, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_BLOOD_RECORD, PROP_QINGMING_REGISTER。",
         "visible_continuity_en": "Continuity locks: LOC_ASH_ACADEMY, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, PROP_BLOOD_RECORD, PROP_QINGMING_REGISTER.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -753,7 +753,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -772,7 +772,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -809,8 +809,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "白册官吏让几个白衣儿童站成一排，逐句哼禁歌。",
         "visible_goal_en": "Visualize the scripted beat in Ash Academy, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: Shen Weisang; environment: Ash Academy.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -822,7 +822,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -841,7 +841,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -878,8 +878,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到押车，让其承载本场信息：奴兵藏在拱廊阴影里，等谁有反应就扣腕。",
         "visible_goal_en": "Hold on the key prop or trace in Ash Academy; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：押车；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: prison cart with binding net and copper rings, linking Shen Zhaomian's capture to the outer office; environment: Ash Academy.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -891,7 +891,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -910,7 +910,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -947,8 +947,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: Ash Academy.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -960,7 +960,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -979,7 +979,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1016,8 +1016,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：晏南枝看着那些孩子，手指攥住血牒。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in Ash Academy.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: Ash Academy.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1029,7 +1029,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1048,7 +1048,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1085,8 +1085,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：晏南枝没有回答。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1098,7 +1098,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1117,7 +1117,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1154,8 +1154,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到虫蜡封条，让其承载本场信息：她想走向孩子，被沈维桑按住。",
         "visible_goal_en": "Hold on the key prop or trace in Ash Academy; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：虫蜡封条；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: insect-wax seals used for institutional closure and erasure; environment: Ash Academy.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1167,7 +1167,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1186,7 +1186,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1223,8 +1223,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：一枚骨片从黑暗中飞来，打灭拱廊尽头的小灯。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1236,7 +1236,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1255,7 +1255,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1292,8 +1292,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：清明院封锁筛歌。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：灰烬书院拱廊出口与下一步路线；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -1305,7 +1305,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1324,7 +1324,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1361,8 +1361,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：孟归藏从塌书架后探身。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1374,7 +1374,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1393,7 +1393,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_ash_academy.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1430,8 +1430,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：孟归藏从塌书架后探身。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：灰烬书院拱廊。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: Ash Academy.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1443,7 +1443,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1462,7 +1462,7 @@
         "generation_method": "T2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1492,13 +1492,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "星图台残座按剧本时间建立，三人躲入半塌星图台。",
-        "visible_goal_en": "Establish scripted location and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Shen Zhaomian readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish scripted location and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Shen Zhaomian readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：星图台残座与沈维桑；环境：星图台残座。",
         "subject_content_en": "Subject: 星图台残座与Shen Weisang; environment: scripted location.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_28E3D1A2, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_SHEN_ZHAOMIAN, CH_MENG_GUIZANG, PROP_BLOOD_RECORD, PROP_BURNED_SAIL_ORDER, FX_FIRE_SMOKE_ASH。",
         "visible_continuity_en": "Continuity locks: LOC_28E3D1A2, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_SHEN_ZHAOMIAN, CH_MENG_GUIZANG, PROP_BLOOD_RECORD, PROP_BURNED_SAIL_ORDER, FX_FIRE_SMOKE_ASH.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -1506,7 +1506,7 @@
       },
       "workflow_family": "t2v_text_only",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1525,7 +1525,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1556,8 +1556,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "台面碎裂，能看见东海星图一角、焚帆令残页和被烧黑的旧军械铭牌。",
         "visible_goal_en": "Visualize the scripted beat in scripted location, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：星图台残座。",
         "subject_content_en": "Subject: Shen Weisang; environment: scripted location.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -1569,7 +1569,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1588,7 +1588,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1619,8 +1619,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到焚帆令残页，让其承载本场信息：孟归藏背着焦边书箱，半边眉毛被火燎过。",
         "visible_goal_en": "Hold on the key prop or trace in scripted location; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：焚帆令残页；环境：星图台残座。",
         "subject_content_en": "Subject: burned-sail decree fragment, a foreshadowing item for the East Sea blockade; environment: scripted location.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -1632,7 +1632,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1651,7 +1651,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1682,8 +1682,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "孟归藏把三样东西摊开呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：孟归藏把三样东西摊开的反应与对话压力；环境：星图台残座。",
         "subject_content_en": "Subject: Meng Guizang把三样东西摊开的反应与对话压力; environment: scripted location.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -1695,7 +1695,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1714,7 +1714,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1745,8 +1745,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：沈维桑指向一块小白签。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in scripted location.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：星图台残座。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: scripted location.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -1758,7 +1758,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1777,7 +1777,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1808,8 +1808,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：沈维桑的手僵住。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：星图台残座。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -1821,7 +1821,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1840,7 +1840,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1871,8 +1871,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到焚帆令残页，让其承载本场信息：孟归藏看了她一眼。",
         "visible_goal_en": "Hold on the key prop or trace in scripted location; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：焚帆令残页；环境：星图台残座。",
         "subject_content_en": "Subject: burned-sail decree fragment, a foreshadowing item for the East Sea blockade; environment: scripted location.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -1884,7 +1884,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1903,7 +1903,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1934,8 +1934,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：孟归藏看了她一眼。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：星图台残座。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -1947,7 +1947,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -1966,7 +1966,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -1997,8 +1997,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：孟归藏救人并展示残页。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：星图台残座出口与下一步路线；环境：星图台残座。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -2010,7 +2010,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2029,7 +2029,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2060,8 +2060,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：孟归藏看了她一眼。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：星图台残座。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2073,7 +2073,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2092,7 +2092,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_28e3d1a2.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2123,8 +2123,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：孟归藏看了她一眼。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：星图台残座。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2136,7 +2136,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2155,7 +2155,7 @@
         "generation_method": "FLF2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2191,13 +2191,13 @@
       },
       "model_visible_prompt": {
         "visible_goal_zh": "儿童识别角落按剧本时间建立，逃离前，沈维桑又看见那个白衣儿童。",
-        "visible_goal_en": "Establish scripted location and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Meng Guizang readable in vertical composition.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "visible_goal_en": "Establish scripted location and the immediate scripted pressure, keeping Shen Weisang, Yan Nanzhi, Meng Guizang readable in landscape widescreen composition.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：儿童识别角落与沈维桑；环境：儿童识别角落。",
         "subject_content_en": "Subject: 儿童识别角落与Shen Weisang; environment: scripted location.",
-        "composition_motion_zh": "竖屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
-        "composition_motion_en": "vertical wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
+        "composition_motion_zh": "横屏远景，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
+        "composition_motion_en": "landscape wide establishing shot; 平视贴近人物; 慢推; motion keeps real weight and contact reaction.",
         "visible_continuity_zh": "连续性锁：LOC_4787ACAF, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_BLOOD_RECORD。",
         "visible_continuity_en": "Continuity locks: LOC_4787ACAF, CH_SHEN_WEISANG, CH_YAN_NANZHI, CH_MENG_GUIZANG, CH_SUMING_CLERK, CH_SUMING_SLAVE_SOLDIER, CH_SUMING_INFANTRY, PROP_BLOOD_RECORD.",
         "negative_prompt_zh": "避免塑料CG、过度磨皮、现代服饰、漂浮慢动作、僵硬摆拍、错误族群外观、血腥奇观化、对白文字出现在画面中。",
@@ -2205,7 +2205,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2224,7 +2224,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2261,8 +2261,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "孩子被奴兵带回识别角落，嘴里还机械地哼着旧歌。",
         "visible_goal_en": "Visualize the scripted beat in scripted location, preserving canon and physical continuity.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑；环境：儿童识别角落。",
         "subject_content_en": "Subject: Shen Weisang; environment: scripted location.",
         "composition_motion_zh": "中景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2274,7 +2274,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2293,7 +2293,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2330,8 +2330,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到焚帆令残页，让其承载本场信息：沈维桑把一小包草药塞到书架缝里，悄悄推给他。",
         "visible_goal_en": "Hold on the key prop or trace in scripted location; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：焚帆令残页；环境：儿童识别角落。",
         "subject_content_en": "Subject: burned-sail decree fragment, a foreshadowing item for the East Sea blockade; environment: scripted location.",
         "composition_motion_zh": "近景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2343,7 +2343,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2362,7 +2362,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2399,8 +2399,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "沈维桑呈现说话状态、情绪压力、手部动作、视线变化和身体距离；精确台词留给字幕与音频。",
         "visible_goal_en": "Keep the dialogue beat physical: face, hands, eye-line and spacing change while exact words remain for subtitle and audio.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑的反应与对话压力；环境：儿童识别角落。",
         "subject_content_en": "Subject: Shen Weisang的反应与对话压力; environment: scripted location.",
         "composition_motion_zh": "特写，侧前方保持人物与道具同框，横移扫证据；动作遵守真实重心和接触反作用。",
@@ -2412,7 +2412,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2431,7 +2431,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2468,8 +2468,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "把剧本动作拆成真实重心的身体行动：晏南枝望着这一幕，终于把血牒收回衣内。",
         "visible_goal_en": "Show the scripted action with real weight, contact reaction and readable motion path in scripted location.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：沈维桑 / 晏南枝；环境：儿童识别角落。",
         "subject_content_en": "Subject: Shen Weisang / Yan Nanzhi; environment: scripted location.",
         "composition_motion_zh": "中近景，贴地读脚步和痕迹，快速摇移接动作；动作遵守真实重心和接触反作用。",
@@ -2481,7 +2481,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2500,7 +2500,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2537,8 +2537,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "对手或环境升级，迫使人物改变路线：孟归藏把焚帆令残页撕下一角交给晏南枝，又把转运签交给沈维桑。",
         "visible_goal_en": "Show the opposing pressure or environmental response forcing a route change.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：追捕压力或对手反制；环境：儿童识别角落。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "低角全景，门缝/遮挡后窥视，由道具拉焦到人物；动作遵守真实重心和接触反作用。",
@@ -2550,7 +2550,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2569,7 +2569,7 @@
         "generation_method": "REFERENCE_IMAGE",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2606,8 +2606,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "镜头压到焚帆令残页，让其承载本场信息：清明院士兵发现暗门，虫族小兵钩镰切开焦书架。",
         "visible_goal_en": "Hold on the key prop or trace in scripted location; the insert carries the scripted information without adding extra plot.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：焚帆令残页；环境：儿童识别角落。",
         "subject_content_en": "Subject: burned-sail decree fragment, a foreshadowing item for the East Sea blockade; environment: scripted location.",
         "composition_motion_zh": "过肩中景，反打压住表情代价，后退跟拍；动作遵守真实重心和接触反作用。",
@@ -2619,7 +2619,7 @@
       },
       "workflow_family": "reference_image_still",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2638,7 +2638,7 @@
         "generation_method": "FLF2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2675,8 +2675,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "停留在角色代价，不用旁白解释；动作锚点来自本场事实：三人冲入残廊。",
         "visible_goal_en": "Hold the emotional cost through posture, breath, injury, silence and distance rather than explanatory text.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：角色代价与价值选择；环境：儿童识别角落。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "插入特写，长焦压缩追捕距离，轻微下压；动作遵守真实重心和接触反作用。",
@@ -2688,7 +2688,7 @@
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2707,7 +2707,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2744,8 +2744,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "人物沿已建立的入口/出口/路线移动，镜头保留方向锚点：沈照眠下落。",
         "visible_goal_en": "Move the characters through the established entrance or exit, preserving screen direction toward the next scene.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：儿童识别角落出口与下一步路线；环境：儿童识别角落。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "手持跟拍，平视贴近人物，慢推；动作遵守真实重心和接触反作用。",
@@ -2757,7 +2757,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2776,7 +2776,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2813,8 +2813,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "用声源、道具或远处压力收住本场，形成下一场牵引：孩子没有看他，只低头背白册条目。",
         "visible_goal_en": "End the scene with a visible or audible threat that pulls the story into the next beat.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：本场尾部危险；环境：儿童识别角落。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "反应近景，微低角压迫空间，手持短跟；动作遵守真实重心和接触反作用。",
@@ -2826,7 +2826,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -2845,7 +2845,7 @@
         "generation_method": "I2V",
         "duration": "6.2s",
         "fps": 24,
-        "aspect_ratio": "9:16",
+        "aspect_ratio": "16:9",
         "asset_refs": [
           "assets/placeholders/loc_4787acaf.png",
           "assets/placeholders/ch_shen_weisang.png",
@@ -2882,8 +2882,8 @@
       "model_visible_prompt": {
         "visible_goal_zh": "动作后给人物一拍呼吸、疼痛、沉默或重新判断，仍保持剧本事件：沈维桑回头一瞬。",
         "visible_goal_en": "Give one controlled breath after action, showing damage, silence and recalculation.",
-        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、9:16竖屏短剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
-        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 9:16 vertical drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
+        "style_quality_zh": "超写实、电影级质感、低魔东方史诗、16:9横屏宽屏剧；真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
+        "style_quality_en": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama; real body weight, real speed, natural breathing, contact reaction and readable movement paths.",
         "subject_content_zh": "主体：动作后的喘息与损耗；环境：儿童识别角落。",
         "subject_content_en": "Subject: scripted subject and continuity prop; environment: scripted location.",
         "composition_motion_zh": "转场远景，俯视读路线和人群，静止锁定；动作遵守真实重心和接触反作用。",
@@ -2895,7 +2895,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "PLACEHOLDER_9x16_RESOLUTION",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,

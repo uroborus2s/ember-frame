@@ -39,9 +39,9 @@ The accepted card also locks the bureaucratic uniform rules: white insect-wax of
 | Exact canonical path | pass for C012-C020 |
 | Short basename <= 20 chars | pass for C012-C020 |
 | PNG format | pass for C012-C020 |
-| 2160x3840 minimum resolution | pass for C012-C020 |
+| 3840x2160 minimum resolution | pass for C012-C020 |
 | Opaque / no alpha | pass for C012-C020 |
-| 9:16 vertical card format | pass for C012-C020 |
+| 16:9 landscape widescreen card format | pass for C012-C020 |
 | Neutral master character card, not video frame | pass for C012-C020 |
 | No readable text, labels, UI, watermark, modern logo | pending visual art review |
 | Retained intermediates under project `history/` only | pass; retained candidates are under `assets/characters/history/` |
