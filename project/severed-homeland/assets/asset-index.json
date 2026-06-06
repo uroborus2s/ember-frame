@@ -5902,7 +5902,7 @@
       "basename": "l001m",
       "output_path": "assets/locations/l001m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#残阳坳",
@@ -5925,9 +5925,12 @@
       "continuity_lock": "必须先显示生活秩序与工具，再显示清明籍清查压力；火后仍能辨认旧井、药屋焦梁和暗格位置。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l001m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L001",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l001m.v001.png",
+        "assets/locations/history/l001m.v002.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 81,
       "depends_on_assets": [
@@ -5942,7 +5945,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "第一季起点；火前/火后复用母版",
         "geography": "bible/scenes.md#残阳坳",
@@ -6020,7 +6023,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "7319dd26ab93dfae2bce2babf1088f8af9d520fd4df4b144ad434040b76e39e4",
+      "final_sha256": "6857f8fdecccb2a9ec5073ff3929f129be1134f8e9b4fe853f1bec81e4efbac3",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -6044,7 +6047,8 @@
           "地点卡当前为脚本生成的抽象构图/色块板，不是超写实可用场景资产",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "6857f8fdecccb2a9ec5073ff3929f129be1134f8e9b4fe853f1bec81e4efbac3"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -6054,7 +6058,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "7319dd26ab93dfae2bce2babf1088f8af9d520fd4df4b144ad434040b76e39e4",
+        "current_file_sha256": "6857f8fdecccb2a9ec5073ff3929f129be1134f8e9b4fe853f1bec81e4efbac3",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.0965,
         "accent_ratio": 0.5965,
@@ -6074,20 +6078,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -6099,7 +6103,7 @@
       "basename": "l002m",
       "output_path": "assets/locations/l002m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#旧驿暗道",
@@ -6120,9 +6124,12 @@
       "continuity_lock": "反应短促、局部、有限，不能变成万能传送、奇观密宫或战斗解决方案。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l002m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L002",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l002m.v001.png",
+        "assets/locations/history/l002m.v002.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 82,
       "depends_on_assets": [
@@ -6139,7 +6146,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "旧驿系统视觉母版；月下旧驿同源参考",
         "geography": "bible/scenes.md#旧驿暗道",
@@ -6217,7 +6224,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "77652fe5483dab4539ffff834d485c01cb26e99de83199d76fae72dcec5fabe5",
+      "final_sha256": "742635f04789c957eed49e959a06c52e64371c48f6d12a2fcf89cccddbd1f94d",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -6243,7 +6250,8 @@
           "中性/低色度像素约 93%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "742635f04789c957eed49e959a06c52e64371c48f6d12a2fcf89cccddbd1f94d"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -6253,7 +6261,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "77652fe5483dab4539ffff834d485c01cb26e99de83199d76fae72dcec5fabe5",
+        "current_file_sha256": "742635f04789c957eed49e959a06c52e64371c48f6d12a2fcf89cccddbd1f94d",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9301,
         "accent_ratio": 0.0487,
@@ -6274,20 +6282,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -6299,7 +6307,7 @@
       "basename": "l003m",
       "output_path": "assets/locations/l003m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#金河粮磨区与渡河蒸汽船",
@@ -6320,9 +6328,14 @@
       "continuity_lock": "蒸汽技术是被保留的生产工具而非欢乐蒸汽朋克；磨平军用接口和封蜡粮牌必须可见。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l003m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L003",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l003m.v001.png",
+        "assets/locations/history/l003m.v002.png",
+        "assets/locations/history/l003m.v003.png",
+        "assets/locations/history/l003m.v004.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 83,
       "depends_on_assets": [
@@ -6337,7 +6350,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "灭械令生产技术场景母版",
         "geography": "bible/scenes.md#金河粮磨区与渡河蒸汽船",
@@ -6414,15 +6427,16 @@
       },
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
-      "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "f525fac133437f8ec3e9f9346e09a723b3a368bb512ae2dd1c2bbf33c783cb6e",
+      "thread_id": "019e9deb-01b2-7750-a605-2a6c5e0e007a",
+      "final_sha256": "24a116d225de58b81d5affb98c4748af1a207bb07ab49d571063ac643d6a92cc",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
         "PNG is RGB, opaque/no alpha, 3840x2160, 16:9 landscape widescreen.",
         "Scene card includes wide establishing view, action-zone view, route inset, material/light crops, and human scale reference.",
         "No retained intermediate candidates were created for this run.",
-        "No readable generated text, UI, watermark, modern logo, or version folder is present."
+        "No readable generated text, UI, watermark, modern logo, or version folder is present.",
+        "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user geography correction: south-bank large grain ferry district; north-bank ferry and tributary confluence visible; imperial capital set back far north in mist, not directly on the Golden River."
       ],
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
@@ -6440,7 +6454,8 @@
           "中性/低色度像素约 91%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "24a116d225de58b81d5affb98c4748af1a207bb07ab49d571063ac643d6a92cc"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -6450,7 +6465,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "f525fac133437f8ec3e9f9346e09a723b3a368bb512ae2dd1c2bbf33c783cb6e",
+        "current_file_sha256": "24a116d225de58b81d5affb98c4748af1a207bb07ab49d571063ac643d6a92cc",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9135,
         "accent_ratio": 0.0867,
@@ -6470,20 +6485,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user geography correction: south-bank large grain ferry district; north-bank ferry and tributary confluence visible; imperial capital set back far north in mist, not directly on the Golden River."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user geography correction: south-bank large grain ferry district; north-bank ferry and tributary confluence visible; imperial capital set back far north in mist, not directly on the Golden River."
       }
     },
     {
@@ -6495,7 +6510,7 @@
       "basename": "l004m",
       "output_path": "assets/locations/l004m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#灰烬书院",
@@ -6517,9 +6532,14 @@
       "continuity_lock": "不是恐怖地牢或普通废墟空景；文明断代必须由书架、星图、封条和残页表达。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l004m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L004",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l004m.v001.png",
+        "assets/locations/history/l004m.v002.png",
+        "assets/locations/history/l004m.v003.png",
+        "assets/locations/history/l004m.v004.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 84,
       "depends_on_assets": [
@@ -6534,7 +6554,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "灭史空间母版；旧书会线索参考",
         "geography": "bible/scenes.md#灰烬书院",
@@ -6611,15 +6631,16 @@
       },
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
-      "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "c16678abc5fcafa4456d6c3a4367259686db3b3d576f4161b74748d459809a05",
+      "thread_id": "019e9d8e-d6da-7890-ac53-c47d5e925f94",
+      "final_sha256": "9d92e33210ad557db51a8bed72774470094d94ab0cc1f874cdb8f6a27b545ad2",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
         "PNG is RGB, opaque/no alpha, 3840x2160, 16:9 landscape widescreen.",
         "Scene card includes wide establishing view, action-zone view, route inset, material/light crops, and human scale reference.",
         "No retained intermediate candidates were created for this run.",
-        "No readable generated text, UI, watermark, modern logo, or version folder is present."
+        "No readable generated text, UI, watermark, modern logo, or version folder is present.",
+        "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: Ash Academy remains a Zhaoming old-site ruin; Suming/Qingming flags removed; only ruined, burned, wind-eroded Zhaoming fragments remain."
       ],
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
@@ -6638,7 +6659,8 @@
           "中性/低色度像素约 95%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "9d92e33210ad557db51a8bed72774470094d94ab0cc1f874cdb8f6a27b545ad2"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -6648,7 +6670,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "c16678abc5fcafa4456d6c3a4367259686db3b3d576f4161b74748d459809a05",
+        "current_file_sha256": "9d92e33210ad557db51a8bed72774470094d94ab0cc1f874cdb8f6a27b545ad2",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9533,
         "accent_ratio": 0.0502,
@@ -6669,20 +6691,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: Ash Academy remains a Zhaoming old-site ruin; Suming/Qingming flags removed; only ruined, burned, wind-eroded Zhaoming fragments remain."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: Ash Academy remains a Zhaoming old-site ruin; Suming/Qingming flags removed; only ruined, burned, wind-eroded Zhaoming fragments remain."
       }
     },
     {
@@ -6694,7 +6716,7 @@
       "basename": "l005m",
       "output_path": "assets/locations/l005m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#清明院外署",
@@ -6715,9 +6737,14 @@
       "continuity_lock": "压迫来自洁净、秩序和执行层级，必须区分白册官吏、奴兵、虫族士兵与白翳。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l005m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L005",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l005m.v001.png",
+        "assets/locations/history/l005m.v002.png",
+        "assets/locations/history/l005m.v003.png",
+        "assets/locations/history/l005m.v004.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 85,
       "depends_on_assets": [
@@ -6733,7 +6760,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "清明籍制度空间母版",
         "geography": "bible/scenes.md#清明院外署",
@@ -6810,15 +6837,17 @@
       },
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
-      "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "763fc653914965ce1b584d9115f0865245605f3c0362f88fa4bfb88cc46b2541",
+      "thread_id": "019e9e06-e1da-7df1-9f93-f0e54c7f9260",
+      "final_sha256": "bd7d5bcfdc90e544f53bc46c2c865ecf16265928188a09f8917e54ec394dcc6c",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
         "PNG is RGB, opaque/no alpha, 3840x2160, 16:9 landscape widescreen.",
         "Scene card includes wide establishing view, action-zone view, route inset, material/light crops, and human scale reference.",
         "No retained intermediate candidates were created for this run.",
-        "No readable generated text, UI, watermark, modern logo, or version folder is present."
+        "No readable generated text, UI, watermark, modern logo, or version folder is present.",
+        "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: paired stone lions added; exterior reads as freshly repainted cold white Zhaoming imperial office walls; chipped eaves reveal redwood and gray-blue tiles.",
+        "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after secondary L005 correction: exterior walls retain cold-white repaint while showing scraped-flat, repainted Zhaoming emblem relief scars without a complete readable P016 mark."
       ],
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
@@ -6836,7 +6865,8 @@
           "中性/低色度像素约 100%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "bd7d5bcfdc90e544f53bc46c2c865ecf16265928188a09f8917e54ec394dcc6c"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -6846,7 +6876,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "763fc653914965ce1b584d9115f0865245605f3c0362f88fa4bfb88cc46b2541",
+        "current_file_sha256": "bd7d5bcfdc90e544f53bc46c2c865ecf16265928188a09f8917e54ec394dcc6c",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9961,
         "accent_ratio": 0.0039,
@@ -6866,20 +6896,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after secondary L005 correction: exterior walls retain cold-white repaint while showing scraped-flat, repainted Zhaoming emblem relief scars without a complete readable P016 mark."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after secondary L005 correction: exterior walls retain cold-white repaint while showing scraped-flat, repainted Zhaoming emblem relief scars without a complete readable P016 mark."
       }
     },
     {
@@ -6891,7 +6921,7 @@
       "basename": "l006m",
       "output_path": "assets/locations/l006m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#墙下集市",
@@ -6912,9 +6942,14 @@
       "continuity_lock": "旧但有职业和交易秩序，不是流民营；空间复杂感来自摊位、手部交易、门洞和窄巷。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l006m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L006",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l006m.v001.png",
+        "assets/locations/history/l006m.v002.png",
+        "assets/locations/history/l006m.v003.png",
+        "assets/locations/history/l006m.v004.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 86,
       "depends_on_assets": [
@@ -6930,7 +6965,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "无籍者与混裔世界母版",
         "geography": "bible/scenes.md#墙下集市",
@@ -7007,15 +7042,16 @@
       },
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
-      "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "fa52b29f5e666732a504f098580a197be158e01d039564dc6ec26d40c52c8d48",
+      "thread_id": "019e9d8e-e23e-7061-896a-c3c1541965af",
+      "final_sha256": "993ed7e797f9108ae8423cdfeb23b9234f418146dfdda36af982470cbcfb66ea",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
         "PNG is RGB, opaque/no alpha, 3840x2160, 16:9 landscape widescreen.",
         "Scene card includes wide establishing view, action-zone view, route inset, material/light crops, and human scale reference.",
         "No retained intermediate candidates were created for this run.",
-        "No readable generated text, UI, watermark, modern logo, or version folder is present."
+        "No readable generated text, UI, watermark, modern logo, or version folder is present.",
+        "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: wall-foot market now shows both long-term stateless residence and black-market grain/pass exchange functions."
       ],
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
@@ -7034,7 +7070,8 @@
           "中性/低色度像素约 75%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "993ed7e797f9108ae8423cdfeb23b9234f418146dfdda36af982470cbcfb66ea"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -7044,7 +7081,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "fa52b29f5e666732a504f098580a197be158e01d039564dc6ec26d40c52c8d48",
+        "current_file_sha256": "993ed7e797f9108ae8423cdfeb23b9234f418146dfdda36af982470cbcfb66ea",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.7546,
         "accent_ratio": 0.2059,
@@ -7065,20 +7102,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: wall-foot market now shows both long-term stateless residence and black-market grain/pass exchange functions."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after user correction: wall-foot market now shows both long-term stateless residence and black-market grain/pass exchange functions."
       }
     },
     {
@@ -7090,7 +7127,7 @@
       "basename": "l007m",
       "output_path": "assets/locations/l007m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#锁喉关",
@@ -7112,9 +7149,12 @@
       "continuity_lock": "边墙不是壮丽背景，而是军户牢笼、战场和可能重签盟约的边界；攻城必须拆成兵种、共生兽和城防反应。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l007m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L007",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l007m.v001.png",
+        "assets/locations/history/l007m.v002.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 87,
       "depends_on_assets": [
@@ -7130,7 +7170,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "critical",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "边墙战争与控粮冲突母版",
         "geography": "bible/scenes.md#锁喉关",
@@ -7208,7 +7248,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "f84ca4b0cafed016286fe3d1a1e299f5b5bd556e69a2b446aaef8fe9ec0851b7",
+      "final_sha256": "002a07ee601b4624cf76e56587cc1fc1ccd1c0c0e0f2dff03c9b4c807a1c14ae",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -7234,7 +7274,8 @@
           "中性/低色度像素约 93%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "002a07ee601b4624cf76e56587cc1fc1ccd1c0c0e0f2dff03c9b4c807a1c14ae"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -7244,7 +7285,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "f84ca4b0cafed016286fe3d1a1e299f5b5bd556e69a2b446aaef8fe9ec0851b7",
+        "current_file_sha256": "002a07ee601b4624cf76e56587cc1fc1ccd1c0c0e0f2dff03c9b4c807a1c14ae",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.934,
         "accent_ratio": 0.0638,
@@ -7265,20 +7306,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -7290,7 +7331,7 @@
       "basename": "l008m",
       "output_path": "assets/locations/l008m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#鸣骨岭",
@@ -7312,9 +7353,12 @@
       "continuity_lock": "氛围不能压过剧情，重点是救援、躲追兵、辨认印记和骨笛求救；北境角色要有迁徙和救援痕迹。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l008m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L008",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l008m.v001.png",
+        "assets/locations/history/l008m.v002.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 88,
       "depends_on_assets": [
@@ -7331,7 +7375,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "北境寻灾源视觉入口",
         "geography": "bible/scenes.md#鸣骨岭",
@@ -7409,7 +7453,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "6d9416c3e612df6f661953226e8960f51a46023140e8001d6f693cf295d2c985",
+      "final_sha256": "db62356e8f9f5b8c48fc514233f96a5985b573509b3cef76f6ac3b152eefa52e",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -7434,7 +7478,8 @@
           "中性/低色度像素约 95%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "db62356e8f9f5b8c48fc514233f96a5985b573509b3cef76f6ac3b152eefa52e"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -7444,7 +7489,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "6d9416c3e612df6f661953226e8960f51a46023140e8001d6f693cf295d2c985",
+        "current_file_sha256": "db62356e8f9f5b8c48fc514233f96a5985b573509b3cef76f6ac3b152eefa52e",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9545,
         "accent_ratio": 0.0057,
@@ -7464,20 +7509,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -7489,7 +7534,7 @@
       "basename": "l009m",
       "output_path": "assets/locations/l009m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#寒鸦堡",
@@ -7510,9 +7555,12 @@
       "continuity_lock": "潜入路线限制在膜廊、审讯厅、档案墙和堡门，材质比清明院更军事、更寒冷。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l009m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L009",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l009m.v001.png",
+        "assets/locations/history/l009m.v002.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 89,
       "depends_on_assets": [
@@ -7528,7 +7576,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "肃明军事占领与旧档线索母版",
         "geography": "bible/scenes.md#寒鸦堡",
@@ -7606,7 +7654,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "2c05edf6b29369788430ddb17234882528ef8bb9347a88b1d756e8e319308739",
+      "final_sha256": "7bc4b9c767899f4d40577529ca9318a4045c9f31b81b15047890dde10448a62c",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -7631,7 +7679,8 @@
           "中性/低色度像素约 100%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "7bc4b9c767899f4d40577529ca9318a4045c9f31b81b15047890dde10448a62c"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -7641,7 +7690,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "2c05edf6b29369788430ddb17234882528ef8bb9347a88b1d756e8e319308739",
+        "current_file_sha256": "7bc4b9c767899f4d40577529ca9318a4045c9f31b81b15047890dde10448a62c",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.9961,
         "accent_ratio": 0.0039,
@@ -7661,20 +7710,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -7686,7 +7735,7 @@
       "basename": "l010m",
       "output_path": "assets/locations/l010m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#月下盟书旧驿",
@@ -7707,9 +7756,13 @@
       "continuity_lock": "盟书必须有多族印记和旧债感，不能视觉上只像皇族圣物或纯洁圣殿。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l010m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L010",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l010m.v001.png",
+        "assets/locations/history/l010m.v002.png",
+        "assets/locations/history/l010m.v003.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 90,
       "depends_on_assets": [
@@ -7726,7 +7779,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "第一季主题反转核心空间",
         "geography": "bible/scenes.md#月下盟书旧驿",
@@ -7804,7 +7857,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "050d09045e176cc1b1da872e2a00aaf45bd9c254e01305f533480041a36aec6b",
+      "final_sha256": "f01fb7fdfa0efa7ffc799e74e4b745bcf981db93f353dcce6a5e5cde9a916754",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -7830,7 +7883,8 @@
           "中性/低色度像素约 92%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "f01fb7fdfa0efa7ffc799e74e4b745bcf981db93f353dcce6a5e5cde9a916754"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -7840,7 +7894,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "050d09045e176cc1b1da872e2a00aaf45bd9c254e01305f533480041a36aec6b",
+        "current_file_sha256": "f01fb7fdfa0efa7ffc799e74e4b745bcf981db93f353dcce6a5e5cde9a916754",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.918,
         "accent_ratio": 0.0783,
@@ -7861,20 +7915,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -7886,7 +7940,7 @@
       "basename": "l011m",
       "output_path": "assets/locations/l011m.png",
       "approval_status": "generated_qc_passed_pending_art_review",
-      "generation_status": "scene_reference_needs_landscape_regeneration_qc",
+      "generation_status": "generated_qc_passed_3840x2160_rgb_png",
       "requires_precision_control": false,
       "source_refs": [
         "bible/scenes.md#坍塌烽燧",
@@ -7908,9 +7962,13 @@
       "continuity_lock": "坍塌用断阶、落石、抓手和雪坡局部表达，不能依赖大型建筑毁灭全景。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/locations/l011m.png",
-      "status": "scene_reference_needs_landscape_regeneration_qc",
+      "status": "generated_qc_passed_3840x2160_rgb_png",
       "prompt_id": "PROMPT_L011",
-      "history_files": [],
+      "history_files": [
+        "assets/locations/history/l011m.v001.png",
+        "assets/locations/history/l011m.v002.png",
+        "assets/locations/history/l011m.v003.png"
+      ],
       "creation_phase": "04_location_master_scene_cards",
       "creation_order": 91,
       "depends_on_assets": [
@@ -7927,7 +7985,7 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "16:9 location scene card: wide establishing view, medium action zone view, entrance/exit map inset, material and light close-ups.",
-      "asset_card_status": "scene_reference_needs_landscape_regeneration_qc",
+      "asset_card_status": "generated_qc_passed_3840x2160_rgb_png",
       "location_lock": {
         "story_function": "季终动作与价值选择场景母版",
         "geography": "bible/scenes.md#坍塌烽燧",
@@ -8005,7 +8063,7 @@
       "completed_at": "2026-06-06",
       "generated_at": "2026-06-06",
       "thread_id": "current-thread-local-raster-generation",
-      "final_sha256": "73e0cdd9a95565933f04ac3d83737282fe38750b365ec88c0c3b750ad76f6549",
+      "final_sha256": "d735011c22fbe2f80a9cee69226cace72d4b1e5ff3615a924504bfe57739be1f",
       "qc_status": "passed_file_contract_pending_art_review",
       "qc_notes": [
         "Canonical file exists at the exact planned output path.",
@@ -8031,7 +8089,8 @@
           "中性/低色度像素约 92%，场景会吞掉人物轮廓",
           "缺少可验证的人物放置区、前中后景材质真实度和主体/背景分离"
         ],
-        "report": "art/reports/gray-heavy-asset-redo-audit.md"
+        "report": "art/reports/gray-heavy-asset-redo-audit.md",
+        "current_file_sha256": "d735011c22fbe2f80a9cee69226cace72d4b1e5ff3615a924504bfe57739be1f"
       },
       "warm_multicolor_audit": {
         "version": "series-warm-multicolor-repair-v1-2026-06-06",
@@ -8041,7 +8100,7 @@
         "report": "art/reports/warm-multicolor-redo-audit.md",
         "run": "art/runs/20260606-warm-multicolor-repair",
         "current_file_exists": true,
-        "current_file_sha256": "73e0cdd9a95565933f04ac3d83737282fe38750b365ec88c0c3b750ad76f6549",
+        "current_file_sha256": "d735011c22fbe2f80a9cee69226cace72d4b1e5ff3615a924504bfe57739be1f",
         "previous_color_readability_severity": "must_redo",
         "neutral_ratio": 0.924,
         "accent_ratio": 0.0724,
@@ -8062,20 +8121,20 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after location revision pass."
       },
       "legacy_generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
       "asset_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
-        "existing_file_dimensions": null,
-        "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
-        "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+        "existing_file_status": "canonical_file_exists_qc_passed",
+        "existing_file_dimensions": "3840x2160 RGB PNG",
+        "action_required": "none",
+        "existing_file_dimension_note": "Verified canonical raster is 3840x2160 RGB PNG on 2026-06-06 after emblem-locked location revisions."
       }
     },
     {
@@ -16467,6 +16526,7 @@
     }
   },
   "reports": [
-    "art/reports/b07-style-asset-qc-report.md"
+    "art/reports/b07-style-asset-qc-report.md",
+    "art/reports/b03-location-asset-qc-report.md"
   ]
 }

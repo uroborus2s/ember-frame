@@ -39,34 +39,34 @@
 
 ## 角色与族群模板
 
-| ID   | 资产              | 文件        | 输出路径                        | 用途                            |
-| ---- | --------------- | --------- | --------------------------- | ----------------------------- |
-| C001 | 沈维桑全剧主角身份卡      | c001m.png | assets/characters/c001m.png | 主角身份锁定；脸型发型沿用已批准角色参考，增加少年剑目星眉 |
-| C002 | 晏南枝全剧主角身份卡      | c002m.png | assets/characters/c002m.png | 护送目标身份锁定                      |
-| C003 | 陆青砾墙下混裔身份卡      | c003m.png | assets/characters/c003m.png | 墙下无姓混裔身份锁定                    |
-| C004 | 薛临墙边墙老墙师身份卡     | c004m.png | assets/characters/c004m.png | 边墙军户导师身份锁定                    |
-| C005 | 沈照眠儿童识别者双状态卡    | c005m.png | assets/characters/c005m.png | 妹妹亲情锚点                        |
-| C006 | 罗青禾医者母亲身份卡      | c006m.png | assets/characters/c006m.png | 残阳坳情感起点                       |
-| C007 | 白翳清明院监察官身份卡     | c007m.png | assets/characters/c007m.png | 核心追捕者身份锁定                     |
-| C008 | 厉螳甲军府战斗虫族身份卡    | c008m.png | assets/characters/c008m.png | 甲军府军事压力                       |
-| C009 | 孟归藏旧书会亡书人身份卡    | c009m.png | assets/characters/c009m.png | 灰烬书院证人                        |
-| C010 | 鹿弥霜蹄鹿族萨满身份卡     | c010m.png | assets/characters/c010m.png | 北境寻灾源派证人                      |
-| C011 | 顾怀章复翼者旧臣身份卡     | c011m.png | assets/characters/c011m.png | 晏南枝价值来源                       |
-| C012 | 赫连雪岱白熊族护卫身份卡    | c012m.png | assets/characters/c012m.png | 鹿弥重装近卫                        |
-| C013 | 乌岚黑狼族斥候身份卡      | c013m.png | assets/characters/c013m.png | 北境寻灾源派外围联络人                   |
-| C014 | 拓跋砚熊白熊族盾卫工匠身份卡  | c014m.png | assets/characters/c014m.png | 北境军用工匠                        |
-| C015 | 青翎鸦见雪羽鸦族斥候身份卡   | c015m.png | assets/characters/c015m.png | 寒鸦堡外线传讯者                      |
-| C016 | 肃明基层虫吏层级模板      | c016m.png | assets/characters/c016m.png | 白册官吏                          |
-| C017 | 混血奴兵清污军户模板      | c017m.png | assets/characters/c017m.png | 扣腕押车封门层级                      |
-| C018 | 普通纯虫族小兵模板       | c018m.png | assets/characters/c018m.png | 封锁退路                          |
-| C019 | 中阶重甲虫士兵模板       | c019m.png | assets/characters/c019m.png | 守门压阵层级                        |
-| C020 | 北境攻城兵种群像模板      | c020m.png | assets/characters/c020m.png | 锁喉关与北境战场兵种区分                  |
-| C021 | 北境共生兽关系模板       | c021m.png | assets/characters/c021m.png | 北境共生兽与驭兽者关系参考                 |
-| C022 | 沈季衡旧驿测绘者档案影像身份卡 | c022m.png | assets/characters/c022m.png | 沈家旧驿血线与第 10 集虫蜡档案影像参考         |
-| C023 | 人族逃难流民群像模板      | c023m.png | assets/characters/c023m.png | 第 03 集山道难民沟逃荒队主参考；第 06 集清明院队列逃荒妇人姿态辅助参考 |
-| C024 | 边墙普通军户群像模板      | c024m.png | assets/characters/c024m.png | 第 01/08 集锁喉关普通灰墙军户、军户家眷、后勤与伤退群像参考；与 C004 薛临墙区分 |
-| C025 | 普通人族平民群像模板      | c025m.png | assets/characters/c025m.png | 第 01/04 集普通人族平民、粮仓带劳动者、村落家庭与渡口生活人群参考 |
-| C026 | 墙下集市无籍者与粮牌黑市群像模板 | c026m.png | assets/characters/c026m.png | 第 07 集墙下集市窄巷、粮牌交换点、无籍者、混裔跑腿、军户家眷与黑市商群像参考 |
+| ID   | 资产               | 文件        | 输出路径                        | 用途                                             |
+| ---- | ---------------- | --------- | --------------------------- | ---------------------------------------------- |
+| C001 | 沈维桑全剧主角身份卡       | c001m.png | assets/characters/c001m.png | 主角身份锁定；脸型发型沿用已批准角色参考，增加少年剑目星眉                  |
+| C002 | 晏南枝全剧主角身份卡       | c002m.png | assets/characters/c002m.png | 护送目标身份锁定                                       |
+| C003 | 陆青砾墙下混裔身份卡       | c003m.png | assets/characters/c003m.png | 墙下无姓混裔身份锁定                                     |
+| C004 | 薛临墙边墙老墙师身份卡      | c004m.png | assets/characters/c004m.png | 边墙军户导师身份锁定                                     |
+| C005 | 沈照眠儿童识别者双状态卡     | c005m.png | assets/characters/c005m.png | 妹妹亲情锚点                                         |
+| C006 | 罗青禾医者母亲身份卡       | c006m.png | assets/characters/c006m.png | 残阳坳情感起点                                        |
+| C007 | 白翳清明院监察官身份卡      | c007m.png | assets/characters/c007m.png | 核心追捕者身份锁定                                      |
+| C008 | 厉螳甲军府战斗虫族身份卡     | c008m.png | assets/characters/c008m.png | 甲军府军事压力                                        |
+| C009 | 孟归藏旧书会亡书人身份卡     | c009m.png | assets/characters/c009m.png | 灰烬书院证人                                         |
+| C010 | 鹿弥霜蹄鹿族萨满身份卡      | c010m.png | assets/characters/c010m.png | 北境寻灾源派证人                                       |
+| C011 | 顾怀章复翼者旧臣身份卡      | c011m.png | assets/characters/c011m.png | 晏南枝价值来源                                        |
+| C012 | 赫连雪岱白熊族护卫身份卡     | c012m.png | assets/characters/c012m.png | 鹿弥重装近卫                                         |
+| C013 | 乌岚黑狼族斥候身份卡       | c013m.png | assets/characters/c013m.png | 北境寻灾源派外围联络人                                    |
+| C014 | 拓跋砚熊白熊族盾卫工匠身份卡   | c014m.png | assets/characters/c014m.png | 北境军用工匠                                         |
+| C015 | 青翎鸦见雪羽鸦族斥候身份卡    | c015m.png | assets/characters/c015m.png | 寒鸦堡外线传讯者                                       |
+| C016 | 肃明基层虫吏层级模板       | c016m.png | assets/characters/c016m.png | 白册官吏                                           |
+| C017 | 混血奴兵清污军户模板       | c017m.png | assets/characters/c017m.png | 扣腕押车封门层级                                       |
+| C018 | 普通纯虫族小兵模板        | c018m.png | assets/characters/c018m.png | 封锁退路                                           |
+| C019 | 中阶重甲虫士兵模板        | c019m.png | assets/characters/c019m.png | 守门压阵层级                                         |
+| C020 | 北境攻城兵种群像模板       | c020m.png | assets/characters/c020m.png | 锁喉关与北境战场兵种区分                                   |
+| C021 | 北境共生兽关系模板        | c021m.png | assets/characters/c021m.png | 北境共生兽与驭兽者关系参考                                  |
+| C022 | 沈季衡旧驿测绘者档案影像身份卡  | c022m.png | assets/characters/c022m.png | 沈家旧驿血线与第 10 集虫蜡档案影像参考                          |
+| C023 | 人族逃难流民群像模板       | c023m.png | assets/characters/c023m.png | 第 03 集山道难民沟逃荒队主参考；第 06 集清明院队列逃荒妇人姿态辅助参考        |
+| C024 | 边墙普通军户群像模板       | c024m.png | assets/characters/c024m.png | 第 01/08 集锁喉关普通灰墙军户、军户家眷、后勤与伤退群像参考；与 C004 薛临墙区分 |
+| C025 | 普通人族平民群像模板       | c025m.png | assets/characters/c025m.png | 第 01/04 集普通人族平民、粮仓带劳动者、村落家庭与渡口生活人群参考           |
+| C026 | 墙下集市无籍者与粮牌黑市群像模板 | c026m.png | assets/characters/c026m.png | 第 07 集墙下集市窄巷、粮牌交换点、无籍者、混裔跑腿、军户家眷与黑市商群像参考       |
 
 ## 地点主场景
 
