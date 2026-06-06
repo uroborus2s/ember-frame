@@ -131,10 +131,10 @@
       "output_format": {
         "deliverable_kind": "style_reference_board",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "style_board_layout",
         "alpha_policy": "forbidden",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "material swatches",
           "lighting examples",
@@ -155,8 +155,28 @@
           "no final video frame framing requirement is implied",
           "no watermarks or random text"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -290,8 +310,26 @@
           "no final video frame framing requirement is implied",
           "no watermarks or random text"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "landscape_composition_style_board"
+      },
+      "asset_contract_status": {
+        "contract_class": "landscape_composition_style_board",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "landscape_composition_style_board",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -381,10 +419,10 @@
       "output_format": {
         "deliverable_kind": "style_reference_board",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "style_board_layout",
         "alpha_policy": "forbidden",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "material swatches",
           "lighting examples",
@@ -405,8 +443,28 @@
           "no final video frame framing requirement is implied",
           "no watermarks or random text"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -504,10 +562,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -531,8 +589,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -620,10 +698,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -647,8 +725,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -736,10 +834,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -763,8 +861,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -840,10 +958,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -867,8 +985,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -965,10 +1103,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -992,8 +1130,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -1070,10 +1228,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -1097,8 +1255,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -1159,10 +1337,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -1186,8 +1364,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -1247,10 +1445,10 @@
       "output_format": {
         "deliverable_kind": "character_episode_state_card_with_turnaround_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full body",
           "side view",
@@ -1274,8 +1472,28 @@
           "body metrics and source identity reference remain stable",
           "no modern clothing, random text, or wrong faction anatomy"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -1334,7 +1552,7 @@
         "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
         "file_format": "png",
         "minimum_resolution": "3840x2160",
-        "background_policy": "scene_card_not_final_video_frame",
+        "background_policy": "scene_context",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
         "required_views": [
@@ -1358,8 +1576,27 @@
           "lighting/weather/time is explicit",
           "no modern architecture, wrong geography, or empty atmospheric-only scene"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "scene_context_background",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "scene_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -1418,7 +1655,7 @@
         "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
         "file_format": "png",
         "minimum_resolution": "3840x2160",
-        "background_policy": "scene_card_not_final_video_frame",
+        "background_policy": "scene_context",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
         "required_views": [
@@ -1442,8 +1679,27 @@
           "lighting/weather/time is explicit",
           "no modern architecture, wrong geography, or empty atmospheric-only scene"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "scene_context_background",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "scene_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -1502,7 +1758,7 @@
         "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
         "file_format": "png",
         "minimum_resolution": "3840x2160",
-        "background_policy": "scene_card_not_final_video_frame",
+        "background_policy": "scene_context",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
         "required_views": [
@@ -1526,8 +1782,27 @@
           "lighting/weather/time is explicit",
           "no modern architecture, wrong geography, or empty atmospheric-only scene"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "scene_context_background",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "scene_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -1586,7 +1861,7 @@
         "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
         "file_format": "png",
         "minimum_resolution": "3840x2160",
-        "background_policy": "scene_card_not_final_video_frame",
+        "background_policy": "scene_context",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
         "required_views": [
@@ -1610,8 +1885,27 @@
           "lighting/weather/time is explicit",
           "no modern architecture, wrong geography, or empty atmospheric-only scene"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "scene_context_background",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "scene_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -1670,7 +1964,7 @@
         "deliverable_kind": "location_episode_scene_card_with_zone_diagram",
         "file_format": "png",
         "minimum_resolution": "3840x2160",
-        "background_policy": "scene_card_not_final_video_frame",
+        "background_policy": "scene_context",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
         "required_views": [
@@ -1694,8 +1988,27 @@
           "lighting/weather/time is explicit",
           "no modern architecture, wrong geography, or empty atmospheric-only scene"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "scene_context_background",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "scene_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "scene_reference_card",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -1771,10 +2084,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -1796,8 +2109,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -1892,10 +2225,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -1917,8 +2250,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2007,10 +2360,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2032,8 +2385,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2094,10 +2467,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2119,8 +2492,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2181,10 +2574,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2206,8 +2599,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2283,10 +2696,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2308,8 +2721,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2367,10 +2800,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2392,8 +2825,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2453,10 +2906,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2478,8 +2931,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2540,10 +3013,10 @@
       "output_format": {
         "deliverable_kind": "prop_item_state_sheet_with_scale_and_detail_crops",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front view",
           "side view",
@@ -2565,8 +3038,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2648,10 +3141,10 @@
       "output_format": {
         "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full outfit",
           "side outfit view",
@@ -2674,8 +3167,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2757,10 +3270,10 @@
       "output_format": {
         "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full outfit",
           "side outfit view",
@@ -2783,8 +3296,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2866,10 +3399,10 @@
       "output_format": {
         "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full outfit",
           "side outfit view",
@@ -2892,8 +3425,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -2975,10 +3528,10 @@
       "output_format": {
         "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full outfit",
           "side outfit view",
@@ -3001,8 +3554,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -3084,10 +3657,10 @@
       "output_format": {
         "deliverable_kind": "costume_state_turnaround_and_detail_sheet",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "2048x2048",
         "background_policy": "neutral_plain_background",
         "alpha_policy": "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset",
-        "canvas_aspect_ratio": "16:9",
+        "canvas_aspect_ratio": "project_defined",
         "required_views": [
           "front full outfit",
           "side outfit view",
@@ -3110,8 +3683,28 @@
           "scale reference matches physical_dimensions",
           "precise symbols, records, seals, or text-like marks use line-control or post-composite planning and are not randomly invented"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "asset-defined reference-card layout; portrait, square, or multi-view sheets allowed; not a video frame",
+        "minimum_resolution_notes": "2048x2048 px minimum; higher portrait, square, or multi-view reference sheets are allowed",
+        "video_use_policy": "identity/material/prop reference only; do not use as a scene plate or final video frame",
+        "format_contract_scope": "master_reference_card"
+      },
+      "asset_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
+      },
+      "landscape_contract_status": {
+        "contract_class": "master_reference_card",
+        "target_aspect_ratio": "asset_defined_reference_card",
+        "target_minimum_resolution": "2048x2048",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_master_reference_card_when_unblocked",
+        "landscape_regeneration_required": false
       }
     },
     {
@@ -3185,14 +3778,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3266,14 +3878,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3347,14 +3978,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3428,14 +4078,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3509,14 +4178,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3590,14 +4278,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3671,14 +4378,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3752,14 +4478,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3840,14 +4585,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -3928,14 +4692,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4016,14 +4799,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4104,14 +4906,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4192,14 +5013,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4280,14 +5120,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4368,14 +5227,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4456,14 +5334,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4530,14 +5427,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4604,14 +5520,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4678,14 +5613,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4752,14 +5706,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4826,14 +5799,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4900,14 +5892,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -4974,14 +5985,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5048,14 +6078,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5130,14 +6179,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5212,14 +6280,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5294,14 +6381,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5376,14 +6482,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5458,14 +6583,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5540,14 +6684,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5622,14 +6785,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5704,14 +6886,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5792,14 +6993,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5880,14 +7100,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -5968,14 +7207,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -6056,14 +7314,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -6144,14 +7421,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -6232,14 +7528,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -6320,14 +7635,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     },
     {
@@ -6408,14 +7742,33 @@
           "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
         },
         "qc_checks": [
-          "project delivery canvas, minimum 1080x1920",
+          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
-        "canvas_aspect_ratio_notes": "16:9 landscape widescreen",
-        "minimum_resolution_notes": "3840x2160 px"
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+      },
+      "landscape_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "missing_or_not_png",
+        "existing_file_dimensions": null,
+        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
       }
     }
   ],

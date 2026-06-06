@@ -57,7 +57,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ### SC002-SH001 / Grain wall procedure
 
-- 景别 / Shot Size: 中文：横屏程序性远景。 English: vertical procedural wide shot.
+- 景别 / Shot Size: 中文：横屏程序性远景。 English: landscape procedural wide shot.
 - 构图 / Composition: 中文：粮袋墙压在画面上部，粮税小吏居中高位，村民在下方低位。 English: grain wall presses upper frame; grain tax clerk stands high center; villagers remain low below.
 - 运镜手法 / Camera Movement: 中文：穿过粮尘真实速度推进。 English: real-time push through grain dust.
 - 画面内容 / Visual Content: 中文：白册夹板、骨算盘和粮牌随小吏动作轻晃。 English: white register board, bone abacus and grain tags sway with the clerk movement.
@@ -94,7 +94,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 ### SC003-SH001 / Red line map
 
 - 景别 / Shot Size: 中文：桌面建立特写。 English: tabletop establishing close-up.
-- 构图 / Composition: 中文：旧驿图铺满横屏，红线从下方向上方北境延伸，雨滴落在边缘。 English: old relay map fills vertical frame, red line runs from lower south to upper north, rain dots the edge.
+- 构图 / Composition: 中文：旧驿图铺满横屏，红线从下方向上方北境延伸，雨滴落在边缘。 English: old relay map fills the widescreen frame, red line runs from lower south to upper north, rain dots the edge.
 - 运镜手法 / Camera Movement: 中文：沿红线缓慢向北推进。 English: slow push north along the red line.
 - 画面内容 / Visual Content: 中文：油布雨声下，顾怀章摊开旧驿残图。 English: under oilcloth rain, Gu Huaizhang spreads the damaged relay map.
 - 光线与色彩 / Lighting and Color: 中文：油灯湿暖、红线朱赤、纸面旧黄。 English: humid oil-lamp warmth, vermilion cord and aged yellow paper.
@@ -129,7 +129,7 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ### SC004-SH001 / Canyangao blockade geography
 
-- 景别 / Shot Size: 中文：横屏地理宽镜。 English: vertical geography wide shot.
+- 景别 / Shot Size: 中文：横屏地理宽镜。 English: landscape geography wide shot.
 - 构图 / Composition: 中文：检查桌居中，旧井一侧，药屋一侧，后山出口由白蜡旗标出。 English: inspection table center, well on one side, medicine house on the other, back-mountain exits marked by white wax flags.
 - 运镜手法 / Camera Movement: 中文：从桌到井、药屋和出口的慢平移。 English: slow pan from table to well, medicine house and exits.
 - 画面内容 / Visual Content: 中文：奴兵扣腕排队，纯虫族小兵封旧井和药屋。 English: slave soldiers bind wrists while pure insect soldiers seal the well and medicine house.

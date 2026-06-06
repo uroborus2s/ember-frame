@@ -37,7 +37,7 @@
 
 - active 文件关键词扫描已排除历史线程、history、runs、memory、migration、legacy 后执行。
 - active 文件未发现会被生产流程解释为旧版移动端画幅的交付设定。
-- 145 个 active JSON 文件解析通过。
+- 148 个 active JSON 文件解析通过。
 
 ## 注意
 
