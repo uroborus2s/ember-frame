@@ -1,0 +1,3772 @@
+{
+  "summary": {
+    "project": "severed-homeland",
+    "episode_id": "02",
+    "prompt_file": "project/severed-homeland/02/prompts/art-image-prompts.json",
+    "scored_at": "2026-06-05",
+    "initial_audit": "art-room prompt file and supporting art assets were missing before this repair; package was generated from director-room asset prompt pack, shot list, continuity bible, and global asset index.",
+    "total_prompts": 70,
+    "average_score": 100,
+    "min_score": 100,
+    "max_score": 100,
+    "all_100": true,
+    "by_type": {
+      "style": {
+        "count": 3,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      },
+      "character": {
+        "count": 8,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      },
+      "location": {
+        "count": 5,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      },
+      "prop": {
+        "count": 9,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      },
+      "costume": {
+        "count": 5,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      },
+      "reference_frame": {
+        "count": 40,
+        "average_score": 100,
+        "min_score": 100,
+        "all_100": true
+      }
+    },
+    "repair_actions": [
+      "created missing episode art asset index, manifest, design JSON files, style continuity bible, thread plan, and art-image prompt package",
+      "generated production_metadata.reference_inputs from global parents, episode dependencies, costumes, props, locations, and style assets",
+      "kept production ids, source paths, usage, workflow labels, and shot codes out of model-visible prompt text",
+      "rebuilt all prompts with six model-visible sections and copy_ready reference image instructions",
+      "separated reusable 1:1/3:2 asset-card prompts from project-ratio vertical reference-frame prompts",
+      "added line-control, mask, and post-composite rules for exact text, symbols, registers, emblems, seals, blood records, jade marks, and relay tokens"
+    ]
+  },
+  "prompts": [
+    {
+      "prompt_id": "PROMPT_E02_F001",
+      "asset_id": "E02_F001",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_ratio": "1:1",
+      "reference_input_count": 1,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_F005",
+      "asset_id": "E02_F005",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_ratio": "1:1",
+      "reference_input_count": 1,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_F006",
+      "asset_id": "E02_F006",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_ratio": "1:1",
+      "reference_input_count": 1,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C002",
+      "asset_id": "E02_C002",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C006",
+      "asset_id": "E02_C006",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 5,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C005",
+      "asset_id": "E02_C005",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 5,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C017",
+      "asset_id": "E02_C017",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 5,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C001",
+      "asset_id": "E02_C001",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 6,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C007",
+      "asset_id": "E02_C007",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 6,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C016",
+      "asset_id": "E02_C016",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 6,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_C018",
+      "asset_id": "E02_C018",
+      "asset_type": "character",
+      "asset_subtype": "character_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 5,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_L001A",
+      "asset_id": "E02_L001A",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_ratio": "3:2",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_L001B",
+      "asset_id": "E02_L001B",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_ratio": "3:2",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_L001C",
+      "asset_id": "E02_L001C",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_ratio": "3:2",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_L001D",
+      "asset_id": "E02_L001D",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_ratio": "3:2",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_L001E",
+      "asset_id": "E02_L001E",
+      "asset_type": "location",
+      "asset_subtype": "location_episode_scene_card",
+      "output_ratio": "3:2",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P002A",
+      "asset_id": "E02_P002A",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P008",
+      "asset_id": "E02_P008",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P003",
+      "asset_id": "E02_P003",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P004A",
+      "asset_id": "E02_P004A",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P004B",
+      "asset_id": "E02_P004B",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P002B",
+      "asset_id": "E02_P002B",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P004C",
+      "asset_id": "E02_P004C",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P005",
+      "asset_id": "E02_P005",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_P001",
+      "asset_id": "E02_P001",
+      "asset_type": "prop",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 4,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_K001",
+      "asset_id": "E02_K001",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_K002",
+      "asset_id": "E02_K002",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_K003",
+      "asset_id": "E02_K003",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_K004",
+      "asset_id": "E02_K004",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_K006",
+      "asset_id": "E02_K006",
+      "asset_type": "costume",
+      "asset_subtype": "prop_episode_state_card",
+      "output_ratio": "1:1",
+      "reference_input_count": 3,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R001",
+      "asset_id": "E02_R001",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R002",
+      "asset_id": "E02_R002",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R003",
+      "asset_id": "E02_R003",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R004",
+      "asset_id": "E02_R004",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R005",
+      "asset_id": "E02_R005",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R006",
+      "asset_id": "E02_R006",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R007",
+      "asset_id": "E02_R007",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R008",
+      "asset_id": "E02_R008",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 10,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R009",
+      "asset_id": "E02_R009",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R010",
+      "asset_id": "E02_R010",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R011",
+      "asset_id": "E02_R011",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R012",
+      "asset_id": "E02_R012",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R013",
+      "asset_id": "E02_R013",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R014",
+      "asset_id": "E02_R014",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R015",
+      "asset_id": "E02_R015",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R016",
+      "asset_id": "E02_R016",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 14,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R017",
+      "asset_id": "E02_R017",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R018",
+      "asset_id": "E02_R018",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R019",
+      "asset_id": "E02_R019",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R020",
+      "asset_id": "E02_R020",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R021",
+      "asset_id": "E02_R021",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R022",
+      "asset_id": "E02_R022",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R023",
+      "asset_id": "E02_R023",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R024",
+      "asset_id": "E02_R024",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 7,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R025",
+      "asset_id": "E02_R025",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R026",
+      "asset_id": "E02_R026",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R027",
+      "asset_id": "E02_R027",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R028",
+      "asset_id": "E02_R028",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R029",
+      "asset_id": "E02_R029",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R030",
+      "asset_id": "E02_R030",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R031",
+      "asset_id": "E02_R031",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R032",
+      "asset_id": "E02_R032",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 11,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R033",
+      "asset_id": "E02_R033",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R034",
+      "asset_id": "E02_R034",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R035",
+      "asset_id": "E02_R035",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R036",
+      "asset_id": "E02_R036",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R037",
+      "asset_id": "E02_R037",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R038",
+      "asset_id": "E02_R038",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R039",
+      "asset_id": "E02_R039",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    },
+    {
+      "prompt_id": "PROMPT_E02_R040",
+      "asset_id": "E02_R040",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_ratio": "9:16",
+      "reference_input_count": 13,
+      "score": 100,
+      "status": "pass_100",
+      "failed_checks": [],
+      "checks": [
+        {
+          "criterion": "six_section_visible_prompt",
+          "ok": true,
+          "detail": "model_visible_prompt has visible_goal/style_quality/subject_content/composition_motion/visible_continuity/negative_prompt"
+        },
+        {
+          "criterion": "no_visible_production_leaks",
+          "ok": true,
+          "detail": "no prompt ids, episode ids, shot codes, source paths, workflow labels, approval language, placeholder labels, or asset paths in model-visible text"
+        },
+        {
+          "criterion": "no_untranslated_template_residue",
+          "ok": true,
+          "detail": "no English camera/template residue or malformed punctuation"
+        },
+        {
+          "criterion": "reference_inputs_complete",
+          "ok": true,
+          "detail": "production_metadata.reference_inputs resolves parent and dependency assets with lock usage"
+        },
+        {
+          "criterion": "copy_ready_complete_and_clean",
+          "ok": true,
+          "detail": "copy_ready contains copyable prompts plus reference image instructions without workflow residue or English leftovers"
+        },
+        {
+          "criterion": "output_format_semantics_match_prompt",
+          "ok": true,
+          "detail": "asset cards remain reusable cards; reference frames remain project-ratio foreground/midground/background video frames"
+        },
+        {
+          "criterion": "precision_symbol_control_present",
+          "ok": true,
+          "detail": "text-like marks, symbols, registers, emblems, seals, and overlays use line control/mask/post-composite rules"
+        },
+        {
+          "criterion": "story_and_inherited_continuity_present",
+          "ok": true,
+          "detail": "subject and hard continuity are explicit enough to preserve story intent and inherited global locks"
+        }
+      ]
+    }
+  ]
+}

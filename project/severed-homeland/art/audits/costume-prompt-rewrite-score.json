@@ -1,0 +1,213 @@
+{
+  "scoring_rubric": {
+    "section_structure": 15,
+    "story_asset_fit": 25,
+    "continuity_lock_fit": 25,
+    "model_visible_hygiene": 20,
+    "copy_ready_and_references": 15,
+    "note": "This is the revised readability-and-consistency rubric for the compact six-section template. Upstream dependency text is not required in model_visible_prompt when production_metadata.reference_inputs and reference_image_instructions are complete."
+  },
+  "count": 6,
+  "average_score": 100,
+  "min_score": 100,
+  "max_score": 100,
+  "all_100": true,
+  "average_total_chars_before": 9659.7,
+  "average_total_chars_after": 843.8,
+  "average_continuity_chars_before": 8875.8,
+  "average_continuity_chars_after": 236,
+  "results": [
+    {
+      "prompt_id": "PROMPT_K001",
+      "asset_id": "K001",
+      "before": {
+        "total": 9575,
+        "continuity": 8810,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 830,
+        "continuity": 268,
+        "positive": 681,
+        "chatgpt": 1008,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "12/12",
+        "continuity_hits": "7/7"
+      },
+      "leaks": []
+    },
+    {
+      "prompt_id": "PROMPT_K002",
+      "asset_id": "K002",
+      "before": {
+        "total": 9580,
+        "continuity": 8827,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 851,
+        "continuity": 243,
+        "positive": 701,
+        "chatgpt": 1029,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "11/11",
+        "continuity_hits": "6/6"
+      },
+      "leaks": []
+    },
+    {
+      "prompt_id": "PROMPT_K003",
+      "asset_id": "K003",
+      "before": {
+        "total": 9530,
+        "continuity": 8776,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 791,
+        "continuity": 208,
+        "positive": 636,
+        "chatgpt": 969,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "10/10",
+        "continuity_hits": "6/6"
+      },
+      "leaks": []
+    },
+    {
+      "prompt_id": "PROMPT_K004",
+      "asset_id": "K004",
+      "before": {
+        "total": 9923,
+        "continuity": 9083,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 858,
+        "continuity": 228,
+        "positive": 692,
+        "chatgpt": 1036,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "12/12",
+        "continuity_hits": "7/7"
+      },
+      "leaks": []
+    },
+    {
+      "prompt_id": "PROMPT_K005",
+      "asset_id": "K005",
+      "before": {
+        "total": 9649,
+        "continuity": 8865,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 848,
+        "continuity": 229,
+        "positive": 681,
+        "chatgpt": 1026,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "15/15",
+        "continuity_hits": "9/9"
+      },
+      "leaks": []
+    },
+    {
+      "prompt_id": "PROMPT_K006",
+      "asset_id": "K006",
+      "before": {
+        "total": 9701,
+        "continuity": 8894,
+        "upstream": 9,
+        "labels": 47
+      },
+      "after": {
+        "total": 885,
+        "continuity": 240,
+        "positive": 719,
+        "chatgpt": 1063,
+        "upstream": 0,
+        "labels": 0,
+        "refs": 9
+      },
+      "score_breakdown": {
+        "section_structure": 15,
+        "story_asset_fit": 25,
+        "continuity_lock_fit": 25,
+        "model_visible_hygiene": 20,
+        "copy_ready_and_references": 15,
+        "total": 100
+      },
+      "keyword_coverage": {
+        "story_hits": "12/12",
+        "continuity_hits": "8/8"
+      },
+      "leaks": []
+    }
+  ]
+}

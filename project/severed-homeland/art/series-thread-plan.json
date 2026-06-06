@@ -2892,7 +2892,7 @@
       "batch_id": "B01_CORE_CHARACTERS",
       "title": "核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色",
       "batch_type": "characters",
-      "status": "partial_complete_c001_c007_c009_c011_c022_remaining_c008_retry_pending_dispatch",
+      "status": "complete_qc_passed_pending_art_review",
       "creation_order": 4,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4022,7 +4022,7 @@
         "guardrail": "C024 carries ordinary multi-age Grey Wall military-household variation and must remain distinct from C004 Xue Linqiang."
       },
       "partial_completion": {
-        "updated_at": "2026-06-05",
+        "updated_at": "2026-06-06",
         "completed_asset_ids": [
           "C001",
           "C002",
@@ -4030,7 +4030,12 @@
           "C004",
           "C005",
           "C006",
-          "C007"
+          "C007",
+          "C008",
+          "C009",
+          "C010",
+          "C011",
+          "C022"
         ],
         "completed_prompt_ids": [
           "PROMPT_C001",
@@ -4039,7 +4044,12 @@
           "PROMPT_C004",
           "PROMPT_C005",
           "PROMPT_C006",
-          "PROMPT_C007"
+          "PROMPT_C007",
+          "PROMPT_C008",
+          "PROMPT_C009",
+          "PROMPT_C010",
+          "PROMPT_C011",
+          "PROMPT_C022"
         ],
         "completed_output_paths": [
           "assets/characters/c001m.png",
@@ -4048,7 +4058,12 @@
           "assets/characters/c004m.png",
           "assets/characters/c005m.png",
           "assets/characters/c006m.png",
-          "assets/characters/c007m.png"
+          "assets/characters/c007m.png",
+          "assets/characters/c008m.png",
+          "assets/characters/c009m.png",
+          "assets/characters/c010m.png",
+          "assets/characters/c011m.png",
+          "assets/characters/c022m.png"
         ],
         "history_files": {
           "C001": [
@@ -4068,20 +4083,16 @@
             "assets/characters/history/c007m.v001.png",
             "assets/characters/history/c007m.v002.png",
             "assets/characters/history/c007m.v003.png"
-          ]
+          ],
+          "C008": []
         },
         "remaining_asset_ids": [
-          "C008",
-          "C009",
-          "C010",
-          "C011",
-          "C022",
           "C023",
           "C024",
           "C025",
           "C026"
         ],
-        "notes": "B01 has generated and format-QC-passed C001-C007 canonical character cards. C006 and C007 were regenerated after user art-direction feedback; remaining B01 assets are still pending separate dispatch or art approval."
+        "notes": "B01 has generated and format-QC-passed C001-C011 plus C022 canonical character cards. C008 was regenerated on 2026-06-06 under the latest insect-general contract; C023-C026 remain pending separate dispatch or art review."
       },
       "c025_c026_prompt_review": {
         "reviewed_at": "2026-06-05",
@@ -4099,20 +4110,13 @@
         ],
         "guardrail": "C025 and C026 are character crowd cards, not costume boards or location cards; both depend on K006 clothing rules and keep ordinary civilians, refugees, wall military households, and wall-foot market people distinct."
       },
-      "blocked_items": [
-        {
-          "prompt_id": "PROMPT_C008",
-          "batch_id": "B01_CORE_CHARACTERS",
-          "output_path": "assets/characters/c008m.png",
-          "reason": "Blocked pending regeneration. User art direction changed the insect design contract: Liting must remain an insect-face character with only 40% anthropomorphic/humanoid readability, not a human face wearing a mask; high-ranking insect generals must wear boots or armored foot coverings; dagger blades sit on the outer side of the main arms as blade armor, while the main arms retain usable hands for reviewing and holding objects. Current image-generation service returned rate-limit/server errors before a compliant candidate could be produced."
-        }
-      ]
+      "blocked_items": []
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "title": "北境具名角色与族群/肃明层级模板",
       "batch_type": "characters",
-      "status": "partial_complete_c012_c015_c017_c020_remaining_c016_retry_pending_dispatch",
+      "status": "complete_qc_passed_pending_art_review",
       "creation_order": 5,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4841,22 +4845,37 @@
         "B07_STYLE",
         "B06_COSTUMES"
       ],
-      "dependency_status": "b06_regeneration_pending",
+      "dependency_status": "dependencies_complete_partial_generation_started",
       "partial_completion": {
-        "updated_at": "2026-06-05",
+        "updated_at": "2026-06-06",
         "completed_asset_ids": [
+          "C012",
+          "C013",
+          "C014",
+          "C015",
+          "C016",
           "C017",
           "C018",
           "C019",
           "C020"
         ],
         "completed_prompt_ids": [
+          "PROMPT_C012",
+          "PROMPT_C013",
+          "PROMPT_C014",
+          "PROMPT_C015",
+          "PROMPT_C016",
           "PROMPT_C017",
           "PROMPT_C018",
           "PROMPT_C019",
           "PROMPT_C020"
         ],
         "completed_output_paths": [
+          "assets/characters/c012m.png",
+          "assets/characters/c013m.png",
+          "assets/characters/c014m.png",
+          "assets/characters/c015m.png",
+          "assets/characters/c016m.png",
           "assets/characters/c017m.png",
           "assets/characters/c018m.png",
           "assets/characters/c019m.png",
@@ -4873,26 +4892,17 @@
           "C019": [
             "assets/characters/history/c019m.v001.png"
           ],
-          "C020": []
+          "C020": [],
+          "C016": [
+            "assets/characters/history/c016m.v001.png"
+          ]
         },
         "remaining_asset_ids": [
-          "C012",
-          "C013",
-          "C014",
-          "C015",
-          "C016",
           "C021"
         ],
-        "notes": "B02 has generated and format-QC-passed C017-C020 canonical faction/northern template cards; remaining B02 assets are still pending separate dispatch or art approval."
+        "notes": "B02 has generated and format-QC-passed C012-C020 canonical character/template cards. C016 was regenerated on 2026-06-06 under the latest insect-official contract; C021 remains pending separate dispatch or art review."
       },
-      "blocked_items": [
-        {
-          "prompt_id": "PROMPT_C016",
-          "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
-          "output_path": "assets/characters/c016m.png",
-          "reason": "Blocked pending regeneration. User rejected the prior insect-official face direction as either too human or biologically unnatural; new contract requires an insect-face official with 50% anthropomorphic/humanoid readability, natural symmetric biology, white-dominant official robe with scarlet and cyan accents, and shoes/boots rather than bare claws. Current image-generation service hit rate limits before a compliant replacement could be produced."
-        }
-      ]
+      "blocked_items": []
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",

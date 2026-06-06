@@ -1,0 +1,3114 @@
+{
+  "version": "series-prompt-length-quality-review-v3-2026-06-06",
+  "audited_at": "2026-06-06",
+  "source": "prompts/series-art-image-prompts.json",
+  "prompt_count": 72,
+  "length_unit": "JavaScript Unicode code point count via [...string].length; Chinese punctuation and newline count as characters when present.",
+  "length_stats": {
+    "model_visible_total": {
+      "min": 764,
+      "max": 2636,
+      "avg": 1148,
+      "median": 1090
+    },
+    "visible_goal": {
+      "min": 24,
+      "max": 56,
+      "avg": 33,
+      "median": 32
+    },
+    "style_quality": {
+      "min": 121,
+      "max": 335,
+      "avg": 246,
+      "median": 285
+    },
+    "subject_content": {
+      "min": 111,
+      "max": 787,
+      "avg": 196,
+      "median": 150
+    },
+    "composition_motion": {
+      "min": 92,
+      "max": 205,
+      "avg": 108,
+      "median": 98
+    },
+    "visible_continuity": {
+      "min": 209,
+      "max": 1000,
+      "avg": 327,
+      "median": 294
+    },
+    "model_negative": {
+      "min": 150,
+      "max": 414,
+      "avg": 232,
+      "median": 241
+    },
+    "copy_positive": {
+      "min": 617,
+      "max": 2225,
+      "avg": 919,
+      "median": 856
+    },
+    "copy_negative": {
+      "min": 150,
+      "max": 414,
+      "avg": 232,
+      "median": 241
+    },
+    "chatgpt_image_prompt": {
+      "min": 898,
+      "max": 2918,
+      "avg": 1342,
+      "median": 1302
+    },
+    "gemini_image_prompt": {
+      "min": 1090,
+      "max": 3110,
+      "avg": 1534,
+      "median": 1494
+    },
+    "reference_image_instructions": {
+      "min": 86,
+      "max": 234,
+      "avg": 147,
+      "median": 164
+    },
+    "copy_ready_total": {
+      "min": 2841,
+      "max": 8901,
+      "avg": 4174,
+      "median": 4053
+    }
+  },
+  "by_type": {
+    "character": {
+      "count": 26,
+      "avg_copy_positive": 1144,
+      "max_copy_positive": 2225,
+      "avg_chatgpt": 1618,
+      "high_issues": 2,
+      "medium_issues": 0,
+      "low_issues": 17,
+      "none_issues": 7
+    },
+    "location": {
+      "count": 16,
+      "avg_copy_positive": 847,
+      "max_copy_positive": 861,
+      "avg_chatgpt": 1297,
+      "high_issues": 0,
+      "medium_issues": 0,
+      "low_issues": 16,
+      "none_issues": 0
+    },
+    "prop": {
+      "count": 18,
+      "avg_copy_positive": 690,
+      "max_copy_positive": 871,
+      "avg_chatgpt": 974,
+      "high_issues": 0,
+      "medium_issues": 0,
+      "low_issues": 0,
+      "none_issues": 18
+    },
+    "costume": {
+      "count": 6,
+      "avg_copy_positive": 976,
+      "max_copy_positive": 1050,
+      "avg_chatgpt": 1493,
+      "high_issues": 0,
+      "medium_issues": 0,
+      "low_issues": 5,
+      "none_issues": 1
+    },
+    "style": {
+      "count": 6,
+      "avg_copy_positive": 765,
+      "max_copy_positive": 827,
+      "avg_chatgpt": 1225,
+      "high_issues": 0,
+      "medium_issues": 0,
+      "low_issues": 5,
+      "none_issues": 1
+    }
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "title": "C001/C002 皮肤修复锁仍保留，本轮按要求未处理",
+      "assets": [
+        "C001",
+        "C002"
+      ],
+      "detail": "这些提示词含“只允许调整肤色/脸手/不要改服装”或类似约束，会阻止按新暖多色合同重做服饰颜色；用户指定本轮先不处理。"
+    },
+    {
+      "severity": "low",
+      "title": "剩余低风险重复句或精确符号规则重复",
+      "assets": [
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "L001",
+        "L002",
+        "L003",
+        "L004",
+        "L005",
+        "L006",
+        "L007",
+        "L008",
+        "L009",
+        "L010",
+        "L011",
+        "L012",
+        "L013",
+        "L014",
+        "L015",
+        "L016",
+        "K001",
+        "K002",
+        "K003",
+        "K005",
+        "K006",
+        "F001",
+        "F002",
+        "F003",
+        "F005",
+        "F006"
+      ],
+      "detail": "多为“精确符号留给线控”一类低风险重复；不影响本轮中风险重复和病句修复目标。"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "C001",
+      "prompt_id": "PROMPT_C001",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c001m.png",
+      "lengths": {
+        "model_visible_total": 2636,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 787,
+        "composition_motion": 107,
+        "visible_continuity": 1000,
+        "model_negative": 414,
+        "copy_positive": 2225,
+        "copy_negative": 414,
+        "chatgpt_image_prompt": 2918,
+        "gemini_image_prompt": 3110,
+        "reference_image_instructions": 234,
+        "copy_ready_total": 8901
+      },
+      "duplicate_sentence_count": 5,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "当前 canonical C001 原图是硬参考：必须保留原图的窄长少年脸、眼距、颧颌、鼻唇比例、短碎黑发、额前碎刘海、贴脸鬓发、灰褐猎衣、草药青内层、旧皮护腕、猎弓、短刀、路线包、靴子、材质裁切、道具裁切、尺度参考和密集多面板资产卡版式"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "服饰破损程度必须与原图一致，不能重新设计成更破烂、更乞丐、更缺袖、更毛边、更脏或新增洞口布条"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "不能被肤色提亮洗掉、不能变淡、不能模糊、不能隐藏"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "只允许调整脸、颈、手等裸露皮肤的肤色与风尘程度"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "约61公斤，精瘦耐走，肩背有猎户力量"
+        }
+      ],
+      "issue_severity": "high",
+      "issue_count": 11,
+      "pattern_hits": [
+        {
+          "id": "skin_edit_lock_conflict",
+          "severity": "high",
+          "reason": "含“只允许调整肤色/脸手/不要改服装”一类皮肤修复遗留锁，与当前暖多色重做目标冲突。"
+        },
+        {
+          "id": "contextual_gray_base",
+          "severity": "info",
+          "reason": "含灰褐/灰麻/黑灰/冷灰等场景或材质色。颜色本身不算问题，只有成为主调或吞掉主体时才失败。"
+        },
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "universal_rule_duplicated",
+          "severity": "medium",
+          "reason": "全局暖多色规则同时写入 style_quality 和 reference_image_instructions，安全但重复，批量生成时可压缩为一次。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        },
+        {
+          "id": "too_many_negative_do_not_change",
+          "severity": "medium",
+          "reason": "negative prompt 同时包含大量“不要改...”和通用禁项，容易压制必要重做范围。"
+        }
+      ],
+      "flags": [
+        "many_exact_repeats",
+        "high:skin_edit_lock_conflict",
+        "info:contextual_gray_base",
+        "info:color_context_ok",
+        "medium:universal_rule_duplicated",
+        "low:text_symbol_precision_repeated",
+        "medium:too_many_negative_do_not_change"
+      ]
+    },
+    {
+      "asset_id": "C002",
+      "prompt_id": "PROMPT_C002",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c002m.png",
+      "lengths": {
+        "model_visible_total": 1977,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 495,
+        "composition_motion": 107,
+        "visible_continuity": 697,
+        "model_negative": 350,
+        "copy_positive": 1630,
+        "copy_negative": 350,
+        "chatgpt_image_prompt": 2240,
+        "gemini_image_prompt": 2432,
+        "reference_image_instructions": 215,
+        "copy_ready_total": 6867
+      },
+      "duplicate_sentence_count": 3,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "当前 canonical C002 原图是硬参考：必须保留原图的古典椭圆脸、柔圆额头、眉眼距离、鼻唇比例、短圆下巴、红线束发、雾紫冷灰流亡外袍、深墨蓝内层、月白玉片、腰绳、小包/书册细节、布料纹样、发饰背面、眼耳发丝裁切、尺度对比和密集多面板资产卡版式"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "服饰必须维持原图设计和颜色层次，不能改成新宫装、新发型、新披风、拖地大礼服或更丑的替代款"
+        },
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "只允许调整脸和手的肤色质感、轻微奔波痕迹和疲惫程度"
+        }
+      ],
+      "issue_severity": "high",
+      "issue_count": 10,
+      "pattern_hits": [
+        {
+          "id": "skin_edit_lock_conflict",
+          "severity": "high",
+          "reason": "含“只允许调整肤色/脸手/不要改服装”一类皮肤修复遗留锁，与当前暖多色重做目标冲突。"
+        },
+        {
+          "id": "contextual_gray_base",
+          "severity": "info",
+          "reason": "含灰褐/灰麻/黑灰/冷灰等场景或材质色。颜色本身不算问题，只有成为主调或吞掉主体时才失败。"
+        },
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "universal_rule_duplicated",
+          "severity": "medium",
+          "reason": "全局暖多色规则同时写入 style_quality 和 reference_image_instructions，安全但重复，批量生成时可压缩为一次。"
+        },
+        {
+          "id": "reference_rule_duplication",
+          "severity": "medium",
+          "reason": "“生成时使用随附参考图作为硬参考”和 copy_ready 的参考图执行规则重复。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        },
+        {
+          "id": "too_many_negative_do_not_change",
+          "severity": "medium",
+          "reason": "negative prompt 同时包含大量“不要改...”和通用禁项，容易压制必要重做范围。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "high:skin_edit_lock_conflict",
+        "info:contextual_gray_base",
+        "info:color_context_ok",
+        "medium:universal_rule_duplicated",
+        "medium:reference_rule_duplication",
+        "low:text_symbol_precision_repeated",
+        "medium:too_many_negative_do_not_change"
+      ]
+    },
+    {
+      "asset_id": "C003",
+      "prompt_id": "PROMPT_C003",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c003m.png",
+      "lengths": {
+        "model_visible_total": 1001,
+        "visible_goal": 30,
+        "style_quality": 251,
+        "subject_content": 136,
+        "composition_motion": 129,
+        "visible_continuity": 228,
+        "model_negative": 222,
+        "copy_positive": 782,
+        "copy_negative": 222,
+        "chatgpt_image_prompt": 1213,
+        "gemini_image_prompt": 1405,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3786
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C004",
+      "prompt_id": "PROMPT_C004",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c004m.png",
+      "lengths": {
+        "model_visible_total": 1106,
+        "visible_goal": 31,
+        "style_quality": 267,
+        "subject_content": 196,
+        "composition_motion": 120,
+        "visible_continuity": 265,
+        "model_negative": 222,
+        "copy_positive": 887,
+        "copy_negative": 222,
+        "chatgpt_image_prompt": 1318,
+        "gemini_image_prompt": 1510,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4101
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C005",
+      "prompt_id": "PROMPT_C005",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c005m.png",
+      "lengths": {
+        "model_visible_total": 989,
+        "visible_goal": 32,
+        "style_quality": 250,
+        "subject_content": 131,
+        "composition_motion": 130,
+        "visible_continuity": 215,
+        "model_negative": 226,
+        "copy_positive": 766,
+        "copy_negative": 226,
+        "chatgpt_image_prompt": 1201,
+        "gemini_image_prompt": 1393,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3750
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C006",
+      "prompt_id": "PROMPT_C006",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c006m.png",
+      "lengths": {
+        "model_visible_total": 1216,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 194,
+        "composition_motion": 107,
+        "visible_continuity": 345,
+        "model_negative": 242,
+        "copy_positive": 977,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1428,
+        "gemini_image_prompt": 1620,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4431
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "约54公斤，不高但稳定，肩臂有采药搬水力量"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C007",
+      "prompt_id": "PROMPT_C007",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c007m.png",
+      "lengths": {
+        "model_visible_total": 1240,
+        "visible_goal": 31,
+        "style_quality": 293,
+        "subject_content": 214,
+        "composition_motion": 107,
+        "visible_continuity": 348,
+        "model_negative": 242,
+        "copy_positive": 1001,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1452,
+        "gemini_image_prompt": 1644,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4503
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "约78公斤，极高极瘦，骨架被白袍拉长"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C008",
+      "prompt_id": "PROMPT_C008",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c008m.png",
+      "lengths": {
+        "model_visible_total": 1335,
+        "visible_goal": 32,
+        "style_quality": 293,
+        "subject_content": 287,
+        "composition_motion": 107,
+        "visible_continuity": 346,
+        "model_negative": 265,
+        "copy_positive": 1073,
+        "copy_negative": 265,
+        "chatgpt_image_prompt": 1547,
+        "gemini_image_prompt": 1739,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4788
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C009",
+      "prompt_id": "PROMPT_C009",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c009m.png",
+      "lengths": {
+        "model_visible_total": 1165,
+        "visible_goal": 32,
+        "style_quality": 293,
+        "subject_content": 165,
+        "composition_motion": 107,
+        "visible_continuity": 321,
+        "model_negative": 242,
+        "copy_positive": 926,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1377,
+        "gemini_image_prompt": 1569,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4278
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C010",
+      "prompt_id": "PROMPT_C010",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c010m.png",
+      "lengths": {
+        "model_visible_total": 1213,
+        "visible_goal": 31,
+        "style_quality": 293,
+        "subject_content": 198,
+        "composition_motion": 107,
+        "visible_continuity": 337,
+        "model_negative": 242,
+        "copy_positive": 974,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1425,
+        "gemini_image_prompt": 1617,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4422
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C011",
+      "prompt_id": "PROMPT_C011",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c011m.png",
+      "lengths": {
+        "model_visible_total": 1204,
+        "visible_goal": 31,
+        "style_quality": 293,
+        "subject_content": 195,
+        "composition_motion": 107,
+        "visible_continuity": 331,
+        "model_negative": 242,
+        "copy_positive": 965,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1416,
+        "gemini_image_prompt": 1608,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4395
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "约65公斤，旧臣偏瘦但站姿受礼法训练"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C012",
+      "prompt_id": "PROMPT_C012",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c012m.png",
+      "lengths": {
+        "model_visible_total": 1208,
+        "visible_goal": 32,
+        "style_quality": 293,
+        "subject_content": 205,
+        "composition_motion": 107,
+        "visible_continuity": 324,
+        "model_negative": 242,
+        "copy_positive": 969,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1420,
+        "gemini_image_prompt": 1612,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4407
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C013",
+      "prompt_id": "PROMPT_C013",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c013m.png",
+      "lengths": {
+        "model_visible_total": 1185,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 186,
+        "composition_motion": 107,
+        "visible_continuity": 322,
+        "model_negative": 242,
+        "copy_positive": 946,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1397,
+        "gemini_image_prompt": 1589,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4338
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "contextual_gray_base",
+          "severity": "info",
+          "reason": "含灰褐/灰麻/黑灰/冷灰等场景或材质色。颜色本身不算问题，只有成为主调或吞掉主体时才失败。"
+        },
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:contextual_gray_base",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C014",
+      "prompt_id": "PROMPT_C014",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c014m.png",
+      "lengths": {
+        "model_visible_total": 1230,
+        "visible_goal": 34,
+        "style_quality": 293,
+        "subject_content": 211,
+        "composition_motion": 107,
+        "visible_continuity": 338,
+        "model_negative": 242,
+        "copy_positive": 991,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1442,
+        "gemini_image_prompt": 1634,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4473
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C015",
+      "prompt_id": "PROMPT_C015",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c015m.png",
+      "lengths": {
+        "model_visible_total": 1204,
+        "visible_goal": 33,
+        "style_quality": 293,
+        "subject_content": 208,
+        "composition_motion": 107,
+        "visible_continuity": 316,
+        "model_negative": 242,
+        "copy_positive": 965,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1416,
+        "gemini_image_prompt": 1608,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4395
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C016",
+      "prompt_id": "PROMPT_C016",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c016m.png",
+      "lengths": {
+        "model_visible_total": 1320,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 272,
+        "composition_motion": 107,
+        "visible_continuity": 340,
+        "model_negative": 273,
+        "copy_positive": 1050,
+        "copy_negative": 273,
+        "chatgpt_image_prompt": 1532,
+        "gemini_image_prompt": 1724,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4743
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C017",
+      "prompt_id": "PROMPT_C017",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c017m.png",
+      "lengths": {
+        "model_visible_total": 1238,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 231,
+        "composition_motion": 107,
+        "visible_continuity": 330,
+        "model_negative": 242,
+        "copy_positive": 999,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1450,
+        "gemini_image_prompt": 1642,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4497
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C018",
+      "prompt_id": "PROMPT_C018",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c018m.png",
+      "lengths": {
+        "model_visible_total": 1220,
+        "visible_goal": 29,
+        "style_quality": 293,
+        "subject_content": 224,
+        "composition_motion": 107,
+        "visible_continuity": 320,
+        "model_negative": 242,
+        "copy_positive": 981,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1432,
+        "gemini_image_prompt": 1624,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4443
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C019",
+      "prompt_id": "PROMPT_C019",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c019m.png",
+      "lengths": {
+        "model_visible_total": 1224,
+        "visible_goal": 29,
+        "style_quality": 293,
+        "subject_content": 219,
+        "composition_motion": 107,
+        "visible_continuity": 329,
+        "model_negative": 242,
+        "copy_positive": 985,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1436,
+        "gemini_image_prompt": 1628,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4455
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "约130到180公斤，中阶重甲虫士兵"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C020",
+      "prompt_id": "PROMPT_C020",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c020m.png",
+      "lengths": {
+        "model_visible_total": 1284,
+        "visible_goal": 30,
+        "style_quality": 293,
+        "subject_content": 228,
+        "composition_motion": 107,
+        "visible_continuity": 379,
+        "model_negative": 242,
+        "copy_positive": 1045,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1496,
+        "gemini_image_prompt": 1688,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4635
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "轻斥候、牛族盾兵、巨魔力士、狮裔骑兵分层展示"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C021",
+      "prompt_id": "PROMPT_C021",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c021m.png",
+      "lengths": {
+        "model_visible_total": 1280,
+        "visible_goal": 29,
+        "style_quality": 293,
+        "subject_content": 230,
+        "composition_motion": 107,
+        "visible_continuity": 374,
+        "model_negative": 242,
+        "copy_positive": 1041,
+        "copy_negative": 242,
+        "chatgpt_image_prompt": 1492,
+        "gemini_image_prompt": 1684,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4623
+      },
+      "duplicate_sentence_count": 1,
+      "duplicate_sentences": [
+        {
+          "count": 2,
+          "fields": [
+            "subject_content",
+            "visible_continuity"
+          ],
+          "sentence": "强调兽与驭兽者互相依赖，不做无主怪兽"
+        }
+      ],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "exact_repeats",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C022",
+      "prompt_id": "PROMPT_C022",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c022m.png",
+      "lengths": {
+        "model_visible_total": 1759,
+        "visible_goal": 35,
+        "style_quality": 293,
+        "subject_content": 403,
+        "composition_motion": 149,
+        "visible_continuity": 507,
+        "model_negative": 367,
+        "copy_positive": 1395,
+        "copy_negative": 367,
+        "chatgpt_image_prompt": 1971,
+        "gemini_image_prompt": 2163,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 6060
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "C023",
+      "prompt_id": "PROMPT_C023",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c023m.png",
+      "lengths": {
+        "model_visible_total": 1773,
+        "visible_goal": 42,
+        "style_quality": 267,
+        "subject_content": 414,
+        "composition_motion": 161,
+        "visible_continuity": 620,
+        "model_negative": 264,
+        "copy_positive": 1512,
+        "copy_negative": 264,
+        "chatgpt_image_prompt": 1985,
+        "gemini_image_prompt": 2177,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 6102
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C024",
+      "prompt_id": "PROMPT_C024",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c024m.png",
+      "lengths": {
+        "model_visible_total": 1840,
+        "visible_goal": 38,
+        "style_quality": 270,
+        "subject_content": 471,
+        "composition_motion": 178,
+        "visible_continuity": 607,
+        "model_negative": 271,
+        "copy_positive": 1572,
+        "copy_negative": 271,
+        "chatgpt_image_prompt": 2052,
+        "gemini_image_prompt": 2244,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 6303
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C025",
+      "prompt_id": "PROMPT_C025",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c025m.png",
+      "lengths": {
+        "model_visible_total": 1783,
+        "visible_goal": 47,
+        "style_quality": 271,
+        "subject_content": 480,
+        "composition_motion": 205,
+        "visible_continuity": 529,
+        "model_negative": 246,
+        "copy_positive": 1540,
+        "copy_negative": 246,
+        "chatgpt_image_prompt": 1995,
+        "gemini_image_prompt": 2187,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 6132
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "C026",
+      "prompt_id": "PROMPT_C026",
+      "asset_type": "character",
+      "asset_subtype": "character_master_card",
+      "output_path": "assets/characters/c026m.png",
+      "lengths": {
+        "model_visible_total": 1801,
+        "visible_goal": 56,
+        "style_quality": 272,
+        "subject_content": 458,
+        "composition_motion": 203,
+        "visible_continuity": 555,
+        "model_negative": 252,
+        "copy_positive": 1552,
+        "copy_negative": 252,
+        "chatgpt_image_prompt": 2013,
+        "gemini_image_prompt": 2205,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 6186
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "L001",
+      "prompt_id": "PROMPT_L001",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l001m.png",
+      "lengths": {
+        "model_visible_total": 1092,
+        "visible_goal": 32,
+        "style_quality": 285,
+        "subject_content": 137,
+        "composition_motion": 98,
+        "visible_continuity": 294,
+        "model_negative": 241,
+        "copy_positive": 854,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1304,
+        "gemini_image_prompt": 1496,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4059
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L002",
+      "prompt_id": "PROMPT_L002",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l002m.png",
+      "lengths": {
+        "model_visible_total": 1079,
+        "visible_goal": 32,
+        "style_quality": 285,
+        "subject_content": 135,
+        "composition_motion": 98,
+        "visible_continuity": 283,
+        "model_negative": 241,
+        "copy_positive": 841,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1291,
+        "gemini_image_prompt": 1483,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4020
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L003",
+      "prompt_id": "PROMPT_L003",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l003m.png",
+      "lengths": {
+        "model_visible_total": 1099,
+        "visible_goal": 32,
+        "style_quality": 285,
+        "subject_content": 149,
+        "composition_motion": 98,
+        "visible_continuity": 289,
+        "model_negative": 241,
+        "copy_positive": 861,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1311,
+        "gemini_image_prompt": 1503,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4080
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L004",
+      "prompt_id": "PROMPT_L004",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l004m.png",
+      "lengths": {
+        "model_visible_total": 1090,
+        "visible_goal": 32,
+        "style_quality": 285,
+        "subject_content": 143,
+        "composition_motion": 98,
+        "visible_continuity": 286,
+        "model_negative": 241,
+        "copy_positive": 852,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1302,
+        "gemini_image_prompt": 1494,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4053
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L005",
+      "prompt_id": "PROMPT_L005",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l005m.png",
+      "lengths": {
+        "model_visible_total": 1083,
+        "visible_goal": 31,
+        "style_quality": 285,
+        "subject_content": 137,
+        "composition_motion": 98,
+        "visible_continuity": 286,
+        "model_negative": 241,
+        "copy_positive": 845,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1295,
+        "gemini_image_prompt": 1487,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4032
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L006",
+      "prompt_id": "PROMPT_L006",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l006m.png",
+      "lengths": {
+        "model_visible_total": 1081,
+        "visible_goal": 33,
+        "style_quality": 285,
+        "subject_content": 130,
+        "composition_motion": 98,
+        "visible_continuity": 289,
+        "model_negative": 241,
+        "copy_positive": 843,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1293,
+        "gemini_image_prompt": 1485,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4026
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L007",
+      "prompt_id": "PROMPT_L007",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l007m.png",
+      "lengths": {
+        "model_visible_total": 1094,
+        "visible_goal": 30,
+        "style_quality": 285,
+        "subject_content": 137,
+        "composition_motion": 98,
+        "visible_continuity": 298,
+        "model_negative": 241,
+        "copy_positive": 856,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1306,
+        "gemini_image_prompt": 1498,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4065
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L008",
+      "prompt_id": "PROMPT_L008",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l008m.png",
+      "lengths": {
+        "model_visible_total": 1085,
+        "visible_goal": 30,
+        "style_quality": 285,
+        "subject_content": 132,
+        "composition_motion": 98,
+        "visible_continuity": 294,
+        "model_negative": 241,
+        "copy_positive": 847,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1297,
+        "gemini_image_prompt": 1489,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4038
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L009",
+      "prompt_id": "PROMPT_L009",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l009m.png",
+      "lengths": {
+        "model_visible_total": 1088,
+        "visible_goal": 31,
+        "style_quality": 285,
+        "subject_content": 142,
+        "composition_motion": 98,
+        "visible_continuity": 286,
+        "model_negative": 241,
+        "copy_positive": 850,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1300,
+        "gemini_image_prompt": 1492,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4047
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L010",
+      "prompt_id": "PROMPT_L010",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l010m.png",
+      "lengths": {
+        "model_visible_total": 1090,
+        "visible_goal": 30,
+        "style_quality": 285,
+        "subject_content": 149,
+        "composition_motion": 98,
+        "visible_continuity": 282,
+        "model_negative": 241,
+        "copy_positive": 852,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1302,
+        "gemini_image_prompt": 1494,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4053
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L011",
+      "prompt_id": "PROMPT_L011",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l011m.png",
+      "lengths": {
+        "model_visible_total": 1078,
+        "visible_goal": 31,
+        "style_quality": 285,
+        "subject_content": 135,
+        "composition_motion": 98,
+        "visible_continuity": 283,
+        "model_negative": 241,
+        "copy_positive": 840,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1290,
+        "gemini_image_prompt": 1482,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4017
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L012",
+      "prompt_id": "PROMPT_L012",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l012m.png",
+      "lengths": {
+        "model_visible_total": 1096,
+        "visible_goal": 33,
+        "style_quality": 285,
+        "subject_content": 150,
+        "composition_motion": 98,
+        "visible_continuity": 284,
+        "model_negative": 241,
+        "copy_positive": 858,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1308,
+        "gemini_image_prompt": 1500,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4071
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L013",
+      "prompt_id": "PROMPT_L013",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l013m.png",
+      "lengths": {
+        "model_visible_total": 1068,
+        "visible_goal": 29,
+        "style_quality": 285,
+        "subject_content": 129,
+        "composition_motion": 98,
+        "visible_continuity": 281,
+        "model_negative": 241,
+        "copy_positive": 830,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1280,
+        "gemini_image_prompt": 1472,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3987
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L014",
+      "prompt_id": "PROMPT_L014",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l014m.png",
+      "lengths": {
+        "model_visible_total": 1081,
+        "visible_goal": 31,
+        "style_quality": 285,
+        "subject_content": 123,
+        "composition_motion": 98,
+        "visible_continuity": 298,
+        "model_negative": 241,
+        "copy_positive": 843,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1293,
+        "gemini_image_prompt": 1485,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4026
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L015",
+      "prompt_id": "PROMPT_L015",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l015m.png",
+      "lengths": {
+        "model_visible_total": 1087,
+        "visible_goal": 33,
+        "style_quality": 285,
+        "subject_content": 136,
+        "composition_motion": 98,
+        "visible_continuity": 289,
+        "model_negative": 241,
+        "copy_positive": 849,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1299,
+        "gemini_image_prompt": 1491,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4044
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "L016",
+      "prompt_id": "PROMPT_L016",
+      "asset_type": "location",
+      "asset_subtype": "location_master_scene_card",
+      "output_path": "assets/locations/l016m.png",
+      "lengths": {
+        "model_visible_total": 1071,
+        "visible_goal": 33,
+        "style_quality": 285,
+        "subject_content": 126,
+        "composition_motion": 98,
+        "visible_continuity": 283,
+        "model_negative": 241,
+        "copy_positive": 833,
+        "copy_negative": 241,
+        "chatgpt_image_prompt": 1283,
+        "gemini_image_prompt": 1475,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3996
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "P001",
+      "prompt_id": "PROMPT_P001",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p001m.png",
+      "lengths": {
+        "model_visible_total": 768,
+        "visible_goal": 31,
+        "style_quality": 121,
+        "subject_content": 136,
+        "composition_motion": 96,
+        "visible_continuity": 229,
+        "model_negative": 150,
+        "copy_positive": 621,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 902,
+        "gemini_image_prompt": 1094,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2853
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P002",
+      "prompt_id": "PROMPT_P002",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p002m.png",
+      "lengths": {
+        "model_visible_total": 791,
+        "visible_goal": 34,
+        "style_quality": 121,
+        "subject_content": 142,
+        "composition_motion": 96,
+        "visible_continuity": 243,
+        "model_negative": 150,
+        "copy_positive": 644,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 925,
+        "gemini_image_prompt": 1117,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2922
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P003",
+      "prompt_id": "PROMPT_P003",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p003m.png",
+      "lengths": {
+        "model_visible_total": 770,
+        "visible_goal": 31,
+        "style_quality": 121,
+        "subject_content": 130,
+        "composition_motion": 96,
+        "visible_continuity": 237,
+        "model_negative": 150,
+        "copy_positive": 623,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 904,
+        "gemini_image_prompt": 1096,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2859
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P004",
+      "prompt_id": "PROMPT_P004",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p004m.png",
+      "lengths": {
+        "model_visible_total": 768,
+        "visible_goal": 34,
+        "style_quality": 121,
+        "subject_content": 129,
+        "composition_motion": 96,
+        "visible_continuity": 233,
+        "model_negative": 150,
+        "copy_positive": 621,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 902,
+        "gemini_image_prompt": 1094,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2853
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P005",
+      "prompt_id": "PROMPT_P005",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p005m.png",
+      "lengths": {
+        "model_visible_total": 764,
+        "visible_goal": 36,
+        "style_quality": 121,
+        "subject_content": 124,
+        "composition_motion": 96,
+        "visible_continuity": 232,
+        "model_negative": 150,
+        "copy_positive": 617,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 898,
+        "gemini_image_prompt": 1090,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2841
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P006",
+      "prompt_id": "PROMPT_P006",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p006m.png",
+      "lengths": {
+        "model_visible_total": 789,
+        "visible_goal": 33,
+        "style_quality": 121,
+        "subject_content": 147,
+        "composition_motion": 96,
+        "visible_continuity": 237,
+        "model_negative": 150,
+        "copy_positive": 642,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 923,
+        "gemini_image_prompt": 1115,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2916
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P007",
+      "prompt_id": "PROMPT_P007",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p007m.png",
+      "lengths": {
+        "model_visible_total": 827,
+        "visible_goal": 36,
+        "style_quality": 121,
+        "subject_content": 162,
+        "composition_motion": 96,
+        "visible_continuity": 257,
+        "model_negative": 150,
+        "copy_positive": 680,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 961,
+        "gemini_image_prompt": 1153,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 3030
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P008",
+      "prompt_id": "PROMPT_P008",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p008m.png",
+      "lengths": {
+        "model_visible_total": 784,
+        "visible_goal": 33,
+        "style_quality": 121,
+        "subject_content": 138,
+        "composition_motion": 96,
+        "visible_continuity": 241,
+        "model_negative": 150,
+        "copy_positive": 637,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 918,
+        "gemini_image_prompt": 1110,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2901
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P009",
+      "prompt_id": "PROMPT_P009",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p009m.png",
+      "lengths": {
+        "model_visible_total": 799,
+        "visible_goal": 34,
+        "style_quality": 121,
+        "subject_content": 144,
+        "composition_motion": 96,
+        "visible_continuity": 249,
+        "model_negative": 150,
+        "copy_positive": 652,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 933,
+        "gemini_image_prompt": 1125,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2946
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P010",
+      "prompt_id": "PROMPT_P010",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p010m.png",
+      "lengths": {
+        "model_visible_total": 796,
+        "visible_goal": 33,
+        "style_quality": 121,
+        "subject_content": 141,
+        "composition_motion": 96,
+        "visible_continuity": 250,
+        "model_negative": 150,
+        "copy_positive": 649,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 930,
+        "gemini_image_prompt": 1122,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2937
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P011",
+      "prompt_id": "PROMPT_P011",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p011m.png",
+      "lengths": {
+        "model_visible_total": 817,
+        "visible_goal": 33,
+        "style_quality": 121,
+        "subject_content": 154,
+        "composition_motion": 96,
+        "visible_continuity": 258,
+        "model_negative": 150,
+        "copy_positive": 670,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 951,
+        "gemini_image_prompt": 1143,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 3000
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P012",
+      "prompt_id": "PROMPT_P012",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p012m.png",
+      "lengths": {
+        "model_visible_total": 787,
+        "visible_goal": 37,
+        "style_quality": 121,
+        "subject_content": 144,
+        "composition_motion": 96,
+        "visible_continuity": 234,
+        "model_negative": 150,
+        "copy_positive": 640,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 921,
+        "gemini_image_prompt": 1113,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 2910
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P013",
+      "prompt_id": "PROMPT_P013",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p013m.png",
+      "lengths": {
+        "model_visible_total": 847,
+        "visible_goal": 35,
+        "style_quality": 121,
+        "subject_content": 168,
+        "composition_motion": 96,
+        "visible_continuity": 272,
+        "model_negative": 150,
+        "copy_positive": 700,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 981,
+        "gemini_image_prompt": 1173,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 3090
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P014",
+      "prompt_id": "PROMPT_P014",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p014m.png",
+      "lengths": {
+        "model_visible_total": 836,
+        "visible_goal": 35,
+        "style_quality": 121,
+        "subject_content": 167,
+        "composition_motion": 96,
+        "visible_continuity": 262,
+        "model_negative": 150,
+        "copy_positive": 689,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 970,
+        "gemini_image_prompt": 1162,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 3057
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P015",
+      "prompt_id": "PROMPT_P015",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p015m.png",
+      "lengths": {
+        "model_visible_total": 888,
+        "visible_goal": 34,
+        "style_quality": 121,
+        "subject_content": 147,
+        "composition_motion": 96,
+        "visible_continuity": 335,
+        "model_negative": 150,
+        "copy_positive": 741,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 1022,
+        "gemini_image_prompt": 1214,
+        "reference_image_instructions": 86,
+        "copy_ready_total": 3213
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P016",
+      "prompt_id": "PROMPT_P016",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p016m.png",
+      "lengths": {
+        "model_visible_total": 1007,
+        "visible_goal": 39,
+        "style_quality": 121,
+        "subject_content": 210,
+        "composition_motion": 96,
+        "visible_continuity": 386,
+        "model_negative": 150,
+        "copy_positive": 860,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 1157,
+        "gemini_image_prompt": 1349,
+        "reference_image_instructions": 94,
+        "copy_ready_total": 3610
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P017",
+      "prompt_id": "PROMPT_P017",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p017m.png",
+      "lengths": {
+        "model_visible_total": 1009,
+        "visible_goal": 39,
+        "style_quality": 121,
+        "subject_content": 211,
+        "composition_motion": 96,
+        "visible_continuity": 387,
+        "model_negative": 150,
+        "copy_positive": 862,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 1159,
+        "gemini_image_prompt": 1351,
+        "reference_image_instructions": 94,
+        "copy_ready_total": 3616
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "P018",
+      "prompt_id": "PROMPT_P018",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "output_path": "assets/props/p018m.png",
+      "lengths": {
+        "model_visible_total": 1018,
+        "visible_goal": 39,
+        "style_quality": 121,
+        "subject_content": 218,
+        "composition_motion": 96,
+        "visible_continuity": 389,
+        "model_negative": 150,
+        "copy_positive": 871,
+        "copy_negative": 150,
+        "chatgpt_image_prompt": 1168,
+        "gemini_image_prompt": 1360,
+        "reference_image_instructions": 94,
+        "copy_ready_total": 3643
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 0,
+      "pattern_hits": [],
+      "flags": []
+    },
+    {
+      "asset_id": "K001",
+      "prompt_id": "PROMPT_K001",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k001m.png",
+      "lengths": {
+        "model_visible_total": 1335,
+        "visible_goal": 35,
+        "style_quality": 335,
+        "subject_content": 165,
+        "composition_motion": 126,
+        "visible_continuity": 372,
+        "model_negative": 297,
+        "copy_positive": 1041,
+        "copy_negative": 297,
+        "chatgpt_image_prompt": 1547,
+        "gemini_image_prompt": 1739,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4788
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 3,
+      "pattern_hits": [
+        {
+          "id": "contextual_gray_base",
+          "severity": "info",
+          "reason": "含灰褐/灰麻/黑灰/冷灰等场景或材质色。颜色本身不算问题，只有成为主调或吞掉主体时才失败。"
+        },
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:contextual_gray_base",
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "K002",
+      "prompt_id": "PROMPT_K002",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k002m.png",
+      "lengths": {
+        "model_visible_total": 1255,
+        "visible_goal": 40,
+        "style_quality": 315,
+        "subject_content": 145,
+        "composition_motion": 125,
+        "visible_continuity": 323,
+        "model_negative": 302,
+        "copy_positive": 956,
+        "copy_negative": 302,
+        "chatgpt_image_prompt": 1467,
+        "gemini_image_prompt": 1659,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4548
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "K003",
+      "prompt_id": "PROMPT_K003",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k003m.png",
+      "lengths": {
+        "model_visible_total": 1181,
+        "visible_goal": 41,
+        "style_quality": 286,
+        "subject_content": 137,
+        "composition_motion": 113,
+        "visible_continuity": 302,
+        "model_negative": 297,
+        "copy_positive": 887,
+        "copy_negative": 297,
+        "chatgpt_image_prompt": 1393,
+        "gemini_image_prompt": 1585,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4326
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "K004",
+      "prompt_id": "PROMPT_K004",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k004m.png",
+      "lengths": {
+        "model_visible_total": 1278,
+        "visible_goal": 39,
+        "style_quality": 277,
+        "subject_content": 157,
+        "composition_motion": 127,
+        "visible_continuity": 357,
+        "model_negative": 316,
+        "copy_positive": 965,
+        "copy_negative": 316,
+        "chatgpt_image_prompt": 1490,
+        "gemini_image_prompt": 1682,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4617
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "K005",
+      "prompt_id": "PROMPT_K005",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k005m.png",
+      "lengths": {
+        "model_visible_total": 1264,
+        "visible_goal": 43,
+        "style_quality": 288,
+        "subject_content": 141,
+        "composition_motion": 134,
+        "visible_continuity": 340,
+        "model_negative": 313,
+        "copy_positive": 954,
+        "copy_negative": 313,
+        "chatgpt_image_prompt": 1476,
+        "gemini_image_prompt": 1668,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4575
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "K006",
+      "prompt_id": "PROMPT_K006",
+      "asset_type": "costume",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/costumes/k006m.png",
+      "lengths": {
+        "model_visible_total": 1375,
+        "visible_goal": 43,
+        "style_quality": 326,
+        "subject_content": 183,
+        "composition_motion": 118,
+        "visible_continuity": 372,
+        "model_negative": 328,
+        "copy_positive": 1050,
+        "copy_negative": 328,
+        "chatgpt_image_prompt": 1587,
+        "gemini_image_prompt": 1779,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4908
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "F001",
+      "prompt_id": "PROMPT_F001",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f001m.png",
+      "lengths": {
+        "model_visible_total": 1009,
+        "visible_goal": 28,
+        "style_quality": 290,
+        "subject_content": 133,
+        "composition_motion": 92,
+        "visible_continuity": 210,
+        "model_negative": 251,
+        "copy_positive": 761,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1221,
+        "gemini_image_prompt": 1413,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3810
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "F002",
+      "prompt_id": "PROMPT_F002",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f002m.png",
+      "lengths": {
+        "model_visible_total": 1008,
+        "visible_goal": 27,
+        "style_quality": 290,
+        "subject_content": 134,
+        "composition_motion": 92,
+        "visible_continuity": 209,
+        "model_negative": 251,
+        "copy_positive": 760,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1220,
+        "gemini_image_prompt": 1412,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3807
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "F003",
+      "prompt_id": "PROMPT_F003",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f003m.png",
+      "lengths": {
+        "model_visible_total": 996,
+        "visible_goal": 24,
+        "style_quality": 290,
+        "subject_content": 120,
+        "composition_motion": 92,
+        "visible_continuity": 214,
+        "model_negative": 251,
+        "copy_positive": 748,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1208,
+        "gemini_image_prompt": 1400,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3771
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "F004",
+      "prompt_id": "PROMPT_F004",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f004m.png",
+      "lengths": {
+        "model_visible_total": 1075,
+        "visible_goal": 27,
+        "style_quality": 290,
+        "subject_content": 158,
+        "composition_motion": 92,
+        "visible_continuity": 252,
+        "model_negative": 251,
+        "copy_positive": 827,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1287,
+        "gemini_image_prompt": 1479,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 4008
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "none",
+      "issue_count": 1,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok"
+      ]
+    },
+    {
+      "asset_id": "F005",
+      "prompt_id": "PROMPT_F005",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f005m.png",
+      "lengths": {
+        "model_visible_total": 996,
+        "visible_goal": 31,
+        "style_quality": 290,
+        "subject_content": 113,
+        "composition_motion": 92,
+        "visible_continuity": 214,
+        "model_negative": 251,
+        "copy_positive": 748,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1208,
+        "gemini_image_prompt": 1400,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3771
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    },
+    {
+      "asset_id": "F006",
+      "prompt_id": "PROMPT_F006",
+      "asset_type": "style",
+      "asset_subtype": "style_reference",
+      "output_path": "assets/style/f006m.png",
+      "lengths": {
+        "model_visible_total": 992,
+        "visible_goal": 30,
+        "style_quality": 290,
+        "subject_content": 111,
+        "composition_motion": 92,
+        "visible_continuity": 213,
+        "model_negative": 251,
+        "copy_positive": 744,
+        "copy_negative": 251,
+        "chatgpt_image_prompt": 1204,
+        "gemini_image_prompt": 1396,
+        "reference_image_instructions": 164,
+        "copy_ready_total": 3759
+      },
+      "duplicate_sentence_count": 0,
+      "duplicate_sentences": [],
+      "issue_severity": "low",
+      "issue_count": 2,
+      "pattern_hits": [
+        {
+          "id": "color_context_ok",
+          "severity": "info",
+          "reason": "已包含“灰褐可按场景/材质使用但不得主导”的新规则。"
+        },
+        {
+          "id": "text_symbol_precision_repeated",
+          "severity": "low",
+          "reason": "徽记/印章/文字由线控或后合成处理的规则重复较多，可作为全局精确符号规则收敛。"
+        }
+      ],
+      "flags": [
+        "info:color_context_ok",
+        "low:text_symbol_precision_repeated"
+      ]
+    }
+  ]
+}
