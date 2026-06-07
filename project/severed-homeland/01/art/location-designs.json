@@ -60,6 +60,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L007 锁喉关母卡派生的近景层：黑石外墙门侧、门闩、拒马前缘、雪泥地面和少量人形尺度剪影，保持墙体材质、比例和入口方向不漂移。",
+          "midground": "从全剧 L007 母卡派生的中景层：骨钟、枪线、局部破门压力、封锁动线和墙脚行动区，仅读局部攻城序幕，不扩展成完整战场。",
+          "background": "从全剧 L007 母卡继承的背景层：暴雪冷白、火罐残红、黑石墙顶局部军户和攻城剪影，禁止新增现代构件或改变边墙地理关系。"
+        },
+        "camera_requirements": {
+          "camera_distance": "外墙局部近景和中景动作区从全剧母卡裁切派生，不做完整战场远景。",
+          "camera_angle": "低位仰看黑石墙门侧，保持骨钟、门闩、拒马和墙脚压迫关系。",
+          "screen_direction": "北境压力从画面外下方和侧后方压向墙门。",
+          "light": "暴雪冷白、火罐残红和黑石反光。",
+          "weather_time": "暴雪序幕，冷白雪光主导。"
+        }
       }
     },
     {
@@ -115,6 +131,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L003 金河粮仓母卡派生的近景层：泥路门槛、空粮缸、祖牌小盒、儿童手印或粮牌尺度物，保持金河粮仓带的湿木、河泥和粮税检查材质。",
+          "midground": "从全剧 L003 母卡派生的中景层：粮税检查处、白册夹板、骨算盘、粮袋拖行动线和家庭门槛，必须读出征粮流程而非现代仓库。",
+          "background": "从全剧 L003 母卡继承的背景层：粮袋墙、冷雾、湿木码头/粮仓结构和押车离开的侧向路径，保持麦金冷雾与虫蜡白对比。"
+        },
+        "camera_requirements": {
+          "camera_distance": "横屏远景建立粮袋墙，中近景读征粮流程，门槛近景读家庭被写没。",
+          "camera_angle": "粮袋墙上压、人物低位，检查处居中偏高。",
+          "screen_direction": "粮袋从家庭前景拖向官仓后景或侧向押车。",
+          "light": "清晨麦金冷雾、湿木褐、河泥褐与虫蜡白对冲。",
+          "weather_time": "清晨冷雾，泥路潮湿。"
+        }
       }
     },
     {
@@ -170,6 +202,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L014 南方红线空间母卡派生的近景层：旧驿残图桌、朱赤红线、月白玉片、防潮卷轴筒和雨水纸面边缘，保持红线由南向北的方向。",
+          "midground": "从全剧 L014 母卡派生的中景层：灯侧与阴影侧的双人位置、桌边行动区、红线钉点和旧礼法压力，只表现密室局部，不展开南林政治。",
+          "background": "从全剧 L014 母卡继承的背景层：油布雨夜、潮湿墙面、南部丛林雨幕暗示和湿暖油灯反光，禁止改成华丽宫殿或独立大场面。"
+        },
+        "camera_requirements": {
+          "camera_distance": "桌面特写、双人中近景和红线方向板从全剧母卡局部派生。",
+          "camera_angle": "沿红线向北推进，保持桌面地图方向感。",
+          "screen_direction": "地图路线由南向北，晏南枝从安全阴影进入北上危机。",
+          "light": "雨夜湿暖、油灯低照、红线与月白玉片局部反光。",
+          "weather_time": "雨夜密室，油布外有雨幕。"
+        }
       }
     },
     {
@@ -229,6 +277,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L001 残阳坳母卡派生的近景层：村民低位队列、土褐泥地、白册检查桌前缘和生活工具尺度，保持旧驿村落生活秩序。",
+          "midground": "从全剧 L001 母卡派生的中景层：检查桌、旧井、药屋外圈和三支白蜡旗标出的后山出口，三点关系必须同场可读。",
+          "background": "从全剧 L001 母卡继承的背景层：村口入口、低矮房屋、后山坡与封锁线，禁止改变旧井、药屋、检查桌、后山出口相对位置。"
+        },
+        "camera_requirements": {
+          "camera_distance": "先用宽镜锁定检查桌、旧井、药屋、后山出口，再派生近景动作区。",
+          "camera_angle": "村口压迫横屏，检查桌居中偏上，村民低位。",
+          "screen_direction": "沈维桑 POV 反复读取旧井、药屋、后山出口三点关系。",
+          "light": "白天土褐日光，虫蜡旗和白册冷白突出。",
+          "weather_time": "白天封村，干冷土褐日光。"
+        }
       }
     },
     {
@@ -288,6 +352,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L001/药屋母卡派生的近景层：药桌、草药篮、药柜暗格低位、旧驿暗号底板边缘和门缝冷白光，保持药屋真实尺度。",
+          "midground": "从全剧药屋空间派生的中景层：罗青禾活动线位于药柜与门之间，药柜、暗格、门框和遮掩动线必须清楚。",
+          "background": "从全剧 L001 母卡继承的背景层：门外封门奴兵爪足、药屋外圈和村口封锁冷白压力，禁止把药屋画成奇观机关房。"
+        },
+        "camera_requirements": {
+          "camera_distance": "药屋内中景转门影，暗格和门缝近景从母卡室内空间派生。",
+          "camera_angle": "低位药柜和门缝轴线，藏身空间不可过亮。",
+          "screen_direction": "晏南枝从柜内看外，罗青禾在柜与门之间形成保护线。",
+          "light": "室内草药青暗光，门缝虫蜡冷白切入。",
+          "weather_time": "封村当天室内暗光，外部冷白封锁压力进入门缝。"
+        }
       }
     },
     {
@@ -349,6 +429,22 @@
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+      },
+      "output_format_requirements": {
+        "canvas_aspect_ratio": "16:9",
+        "background_policy": "scene_context",
+        "composition_layers": {
+          "foreground": "从全剧 L001 旧井检查桌母卡派生的近景层：旧井口、检查桌边缘、白册/虫蜡针尺度物和被压低的人群，旧井必须成为案件中心。",
+          "midground": "从全剧 L001 母卡派生的中景层：检查桌审讯轴线、药屋封门牌、沈维桑视线横跨两点的行动区，保留井口与检查桌关系。",
+          "background": "从全剧 L001 母卡继承的背景层：药屋门框、村口入口、封锁队列和午后硬光，禁止漂移旧井、药屋、检查桌相对方位。"
+        },
+        "camera_requirements": {
+          "camera_distance": "旧井、检查桌、药屋封门牌先同场确认，再派生井口和册页近景。",
+          "camera_angle": "井口与检查桌形成同一审讯轴线，人物被压低到井边。",
+          "screen_direction": "白翳从村口入口直线进入检查桌，沈维桑与罗青禾隔人群相望。",
+          "light": "午后硬光，虫蜡白逐渐压过土褐生活色。",
+          "weather_time": "午后旧井检查桌，封村压力增强。"
+        }
       }
     }
   ]

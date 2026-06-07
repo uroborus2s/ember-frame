@@ -6,15 +6,16 @@ B04_E01_STYLE 已完成并通过协调端视觉 QC。三张 episode style refere
 
 ## 已完成
 
-- E01_F001 -> assets/style/f001e01.png, 2048x2048, QC passed.
-- E01_F005 -> assets/style/f005e01.png, 3840x2160, QC passed.
-- E01_F006 -> assets/style/f006e01.png, 2048x2048, QC passed.
+- E01_F001 -> 01/assets/style/f001e01.png, 2048x2048, QC passed.
+- E01_F005 -> 01/assets/style/f005e01.png, 3840x2160, QC passed.
+- E01_F006 -> 01/assets/style/f006e01.png, 2048x2048, QC passed.
 
 ## 保留历史
 
-- assets/style/history/f001e01.v001.png: 首版候选，因可读/伪文字标签被拒。
-- assets/style/history/f001e01.v002.png: 内容合格但低于最终尺寸的候选源。
-- assets/style/history/f005e01.v001.png: 内容合格但低于最终尺寸的候选源。
+- 01/assets/style/history/f001e01.v001.png: 首版候选，因可读/伪文字标签被拒。
+- 01/assets/style/history/f001e01.v002.png: 内容合格但低于最终尺寸的候选源。
+- 01/assets/style/history/f005e01.v001.png: 内容合格但低于最终尺寸的候选源。
+- 01/assets/style/history/f006e01.v001.png: F006 初始候选源，保留在 history。
 
 ## 仍待执行
 
