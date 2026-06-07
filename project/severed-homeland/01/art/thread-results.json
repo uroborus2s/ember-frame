@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "dispatch_in_progress",
+  "status": "paused_for_identity_location_path_repair_2026-06-07",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -77,11 +77,32 @@
       "warnings": []
     }
   ],
-  "blocked_jobs": [],
+  "blocked_jobs": [
+    {
+      "batch_id": "B05_E01_REFERENCE_FRAMES",
+      "status": "blocked_until_B01_B02_reapproved_2026-06-07",
+      "reason": "requires corrected character/location episode assets with strict series-master inheritance"
+    },
+    {
+      "batch_id": "B06_E01_SHOT_OVERRIDES",
+      "status": "blocked_until_B01_B02_reapproved_2026-06-07",
+      "reason": "requires corrected character/location episode assets with strict series-master inheritance"
+    }
+  ],
   "validation_notes": [
     "B04_E01_STYLE generated and coordinator-QC passed.",
     "Style dependency is satisfied; downstream B01, B02, B03, B05, and B06 may now be dispatched.",
     "All B04 canonical files use exact planned short filenames and output paths."
   ],
-  "updated_at": "2026-06-07"
+  "updated_at": "2026-06-07",
+  "path_repair_status": {
+    "version": "episode-output-routing-v1-2026-06-07",
+    "repaired": true,
+    "rule": "episode state cards route to 01/assets/<type>/; root assets are for whole-series reusable assets only"
+  },
+  "inheritance_repair_status": {
+    "version": "episode-inheritance-hard-lock-v1-2026-06-07",
+    "repaired": true,
+    "rule": "character and location episode assets must use series master cards as hard references; text-only generation is blocked"
+  }
 }

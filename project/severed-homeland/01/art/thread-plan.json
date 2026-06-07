@@ -3,14 +3,14 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "approval_status": "approved_by_user_request_2026-06-07",
-  "dispatch_status": "dispatch_in_progress",
+  "dispatch_status": "paused_for_identity_location_path_repair_2026-06-07",
   "dispatch_policy": "Do not create image-generation threads until the user approves the episode 01 asset manifest, designs, prompts, and thread plan.",
   "history_policy": "Final approved images write to exact output_paths; retained alternatives go to sibling history/ with .v001 suffixes; no version folders.",
   "batches": [
     {
       "batch_id": "B01_E01_CHARACTERS",
       "batch_type": "characters",
-      "status": "dispatched",
+      "status": "needs_retry_identity_inheritance_lock_2026-06-07",
       "prompt_ids": [
         "PROMPT_E01_C001",
         "PROMPT_E01_C002",
@@ -256,7 +256,8 @@
           "creation_order": 11,
           "depends_on_assets": [
             "E01_F001",
-            "C016"
+            "C016",
+            "K004"
           ],
           "blocks_assets": [
             "E01_R016",
@@ -276,7 +277,8 @@
           "creation_order": 12,
           "depends_on_assets": [
             "E01_F001",
-            "C016"
+            "C016",
+            "K004"
           ],
           "blocks_assets": [
             "E01_R005",
@@ -292,7 +294,8 @@
           "creation_order": 13,
           "depends_on_assets": [
             "E01_F001",
-            "C017"
+            "C017",
+            "K004"
           ],
           "blocks_assets": [
             "E01_R006",
@@ -311,7 +314,8 @@
           "creation_order": 14,
           "depends_on_assets": [
             "E01_F001",
-            "C018"
+            "C018",
+            "K004"
           ],
           "blocks_assets": [
             "E01_R015",
@@ -344,7 +348,10 @@
           "priority": "medium",
           "creation_order": 16,
           "depends_on_assets": [
-            "E01_F001"
+            "E01_F001",
+            "C024",
+            "K006",
+            "E01_P021"
           ],
           "blocks_assets": [
             "E01_R003"
@@ -358,7 +365,10 @@
           "priority": "medium",
           "creation_order": 17,
           "depends_on_assets": [
-            "E01_F001"
+            "E01_F001",
+            "C025",
+            "K006",
+            "L001"
           ],
           "blocks_assets": [
             "E01_R015",
@@ -373,7 +383,10 @@
           "priority": "medium",
           "creation_order": 18,
           "depends_on_assets": [
-            "E01_F001"
+            "E01_F001",
+            "C025",
+            "K006",
+            "L003"
           ],
           "blocks_assets": [
             "E01_R006",
@@ -387,12 +400,17 @@
       ],
       "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
       "thread_id": "019ea08f-f6af-73d2-87a3-003201b81ebf",
-      "dispatched_at": "2026-06-07"
+      "dispatched_at": "2026-06-07",
+      "blocking_reason": "current generated images drift from series master character identities; retry must use hard master reference images",
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
+      }
     },
     {
       "batch_id": "B02_E01_LOCATIONS",
       "batch_type": "locations",
-      "status": "dispatched",
+      "status": "needs_retry_location_inheritance_lock_2026-06-07",
       "prompt_ids": [
         "PROMPT_E01_L007",
         "PROMPT_E01_L003",
@@ -587,12 +605,17 @@
       ],
       "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
       "thread_id": "019ea090-029f-7e01-b60d-927f7145f97f",
-      "dispatched_at": "2026-06-07"
+      "dispatched_at": "2026-06-07",
+      "blocking_reason": "current generated images are not approved as strict derivatives of series master locations; retry must use hard master reference images",
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
+      }
     },
     {
       "batch_id": "B03_E01_PROPS_COSTUMES",
       "batch_type": "props-costumes",
-      "status": "dispatched",
+      "status": "path_repaired_pending_final_qc_2026-06-07",
       "prompt_ids": [
         "PROMPT_E01_P021",
         "PROMPT_E01_P008",
@@ -977,7 +1000,11 @@
       ],
       "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
       "thread_id": "019ea090-0b78-7de1-9e78-fee6289984df",
-      "dispatched_at": "2026-06-07"
+      "dispatched_at": "2026-06-07",
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
+      }
     },
     {
       "batch_id": "B04_E01_STYLE",
@@ -1316,12 +1343,16 @@
         "f005_single_asset": "019ea082-f0a3-7dd0-9900-79b77cc86b51",
         "f006_stalled_single_asset": "019ea082-fbd3-73e0-a679-c44776699bfe",
         "f006_retry": "019ea087-b53d-70f1-89a3-417b3af9d23b"
+      },
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
       }
     },
     {
       "batch_id": "B05_E01_REFERENCE_FRAMES",
       "batch_type": "reference-frames",
-      "status": "ready_for_dispatch_style_dependency_satisfied",
+      "status": "blocked_until_B01_B02_reapproved_2026-06-07",
       "prompt_ids": [
         "PROMPT_E01_R001",
         "PROMPT_E01_R002",
@@ -2128,12 +2159,17 @@
       "output_directories": [
         "01/assets/reference-frames"
       ],
-      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07"
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "blocking_reason": "downstream frames cannot start until episode character and location state cards pass hard inheritance QC",
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
+      }
     },
     {
       "batch_id": "B06_E01_SHOT_OVERRIDES",
       "batch_type": "reference-frames",
-      "status": "ready_for_dispatch_style_dependency_satisfied",
+      "status": "blocked_until_B01_B02_reapproved_2026-06-07",
       "prompt_ids": [
         "PROMPT_E01_O001",
         "PROMPT_E01_O002",
@@ -2307,10 +2343,15 @@
       "output_directories": [
         "01/assets/shot-overrides"
       ],
-      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07"
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "blocking_reason": "downstream frames cannot start until episode character and location state cards pass hard inheritance QC",
+      "image_reference_contract": {
+        "version": "mandatory-master-reference-use-v1-2026-06-07",
+        "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
+      }
     }
   ],
-  "status": "dispatch_in_progress",
+  "status": "paused_for_identity_location_path_repair_2026-06-07",
   "approval_gate": "approved_by_user_request_2026-06-07",
   "contract_repair_status": "passed",
   "dispatch_readiness": {
@@ -2319,5 +2360,15 @@
     "project_root": "project/severed-homeland",
     "episode_id": "01"
   },
-  "updated_at": "2026-06-07"
+  "updated_at": "2026-06-07T00:00:00+08:00",
+  "path_repair_status": {
+    "version": "episode-output-routing-v1-2026-06-07",
+    "repaired": true,
+    "rule": "episode state cards route to 01/assets/<type>/; root assets are for whole-series reusable assets only"
+  },
+  "inheritance_repair_status": {
+    "version": "episode-inheritance-hard-lock-v1-2026-06-07",
+    "repaired": true,
+    "rule": "character and location episode assets must use series master cards as hard references; text-only generation is blocked"
+  }
 }
