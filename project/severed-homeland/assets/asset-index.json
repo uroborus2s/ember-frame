@@ -2043,8 +2043,8 @@
       "file": "c010m.png",
       "basename": "c010m",
       "output_path": "assets/characters/c010m.png",
-      "approval_status": "generated_pending_art_review",
-      "generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "approval_status": "approved_image_metadata_corrected_2026-06-07",
+      "generation_status": "image_approved_body_metrics_metadata_corrected_2026-06-07",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#鹿弥",
@@ -2067,7 +2067,7 @@
       "continuity_lock": "她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c010m.png",
-      "status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "prompt_id": "PROMPT_C010",
       "history_files": [],
       "creation_phase": "03_character_master_cards",
@@ -2085,22 +2085,23 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "设定参考卡布局 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "asset_card_status": "complete_qc_passed_user_confirmed_2026-06-07",
       "identity_lock": {
         "age_impression": "约二十岁霜蹄鹿族年轻女萨满",
         "face_features": "柔软鹿耳、短角或骨金角饰、浅色鹿眼",
         "hair_skin_texture": "雪地药草袋",
-        "height_body_type": "约176厘米；约58公斤，鹿族萨满，轻而稳",
+        "height_body_type": "约169厘米；约52公斤，霜蹄鹿族寻灾源派年轻萨满，轻步、窄肩、长肢，不套用攻城鹿族祭兵体量",
         "movement_habits": "她是有政治立场和部族压力的寻灾源派证人，不是神秘治愈工具或异族奇观；不能画成普通人戴鹿角。",
         "forbidden_future_reveals": "不得提前揭示后续季身份、复国胜利、终局政治答案或非本季行动状态。"
       },
       "body_metrics": {
-        "height": "约176厘米",
-        "weight_build": "约58公斤，鹿族萨满，轻而稳",
-        "body_ratio": "腿长、肩窄、颈线高，短角与鹿耳可读",
+        "height": "约169厘米",
+        "weight_build": "约52公斤，霜蹄鹿族寻灾源派年轻萨满，轻步、窄肩、长肢，不能套用攻城鹿族祭兵体量",
+        "body_ratio": "长肢、窄肩、细长颈线；鹿角、鹿耳和发饰只增加头部视觉高度，不计入身高",
         "silhouette": "霜蹄纹披肩、骨笛、血盐袋、鹿眼和短角形成萨满剪影",
         "scale_refs": [
-          "比人族女性略高",
+          "接近普通人族成年女性尺度，不做高大攻城祭兵",
+          "比鹿族攻城梦笛祭兵更轻、更窄、更灵活",
           "与共生兽同框时不是骑手而是契约者"
         ]
       },
@@ -2178,7 +2179,7 @@
       "dependency_status": "dependencies_complete_generated_current_thread",
       "generated_at": "2026-06-05",
       "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c61ad1e881958428a6397623cd38.png",
-      "final_sha256": "c8809ec87a0f70c6939877c96522a92f178fb2659f128bc6304c0693a5965892",
+      "final_sha256": "807f6450260c2e423b95cef317487e773023f03620552fd46e1bc177b5dbcbf7",
       "generation_notes": [
         "Generated as Frost-Hoof deerfolk shaman master card with white fur, blue woven inner layers, bone-white robe, bone flute, herb pouch, short antlers, deer ears, and readable non-human identity without poverty-rag shorthand.",
         "Canonical file is PNG RGB, superseded_master_reference_canvas, opaque/no alpha, neutral master character card; source generated image retained under $CODEX_HOME/generated_images."
@@ -2234,9 +2235,9 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
       },
@@ -2245,12 +2246,13 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
-      }
+      },
+      "qc_status": "passed_user_confirmed_2026-06-07"
     },
     {
       "asset_id": "C011",
@@ -2471,8 +2473,8 @@
       "file": "c012m.png",
       "basename": "c012m",
       "output_path": "assets/characters/c012m.png",
-      "approval_status": "generated_pending_art_review",
-      "generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "approval_status": "approved_generated_qc_passed_body_metrics_corrected_2026-06-07",
+      "generation_status": "complete_qc_passed_body_metrics_regenerated_2026-06-07",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#赫连雪岱"
@@ -2489,13 +2491,15 @@
         "鹿弥重装近卫",
         "北境贵族护卫模板"
       ],
-      "design_summary": "二十四岁白熊族高级女护卫，身高两米以上、肩背厚实但脸部大部分人形，重眉骨、厚颧骨、宽下颌、厚直鼻梁、鬓颊与后颈白熊绒毛、熊爪面纹和粗壮前臂清楚，白熊皮厚披、银黑骨铁胸甲、骨铁大盾与护卫斧固定可见。",
+      "design_summary": "二十四岁白熊族高级女护卫，身高两米以上、比普通人族重装兵明显大一圈但不是低等巨兽化体型；脸部80%到90%人形，重眉骨、厚颧骨、宽下颌、厚直鼻梁、鬓颊与后颈白熊绒毛、熊爪面纹和粗壮前臂清楚，白熊皮厚披、银黑骨铁胸甲、骨铁大盾与护卫斧固定可见。",
       "continuity_lock": "站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c012m.png",
-      "status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "prompt_id": "PROMPT_C012",
-      "history_files": [],
+      "history_files": [
+        "assets/characters/history/c012m.v001.png"
+      ],
       "creation_phase": "03_character_master_cards",
       "creation_order": 52,
       "depends_on_assets": [
@@ -2511,23 +2515,24 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "设定参考卡布局 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "asset_card_status": "complete_qc_passed_user_confirmed_2026-06-07",
       "identity_lock": {
         "age_impression": "二十四岁白熊族高级女护卫",
         "face_features": "按设计摘要中的头面与身份锚点保持一致",
         "hair_skin_texture": "银黑骨铁胸甲",
-        "height_body_type": "约210厘米；约170公斤，白熊族厚骨架重装护卫",
+        "height_body_type": "约202到210厘米；约140到155公斤，白熊族高级护卫，厚实但不得低等巨兽化",
         "movement_habits": "站在鹿弥身侧像有礼仪秩序的盾墙；不能普通美女加熊耳，不能鹿弥换装，也不能贫寒破皮草。",
         "forbidden_future_reveals": "不得提前揭示后续季身份、复国胜利、终局政治答案或非本季行动状态。"
       },
       "body_metrics": {
-        "height": "约210厘米",
-        "weight_build": "约170公斤，白熊族厚骨架重装护卫",
-        "body_ratio": "肩极宽、手掌大、颈背厚",
+        "height": "约202到210厘米",
+        "weight_build": "约140到155公斤，白熊族高级护卫，厚实但不得低等巨兽化",
+        "body_ratio": "肩背厚实、前臂粗、手掌大，但腰腹与下盘不过度膨胀；脸部80%到90%人形",
         "silhouette": "白熊绒毛、重皮甲、巨盾边和雪泥靴形成近卫剪影",
         "scale_refs": [
-          "比鹿弥高一头以上",
-          "一只手可覆盖人族前臂"
+          "比鹿弥高约一头以上，但不能宽成拓跋砚熊或低阶巨兽兵",
+          "比普通人族重装兵明显大一圈，不是两到三倍视觉重量",
+          "与C014拓跋砚熊区分：她是礼仪护卫，不是盾卫工匠重体量"
         ]
       },
       "episode_state": "series_master_identity_state; episode-specific wounds, dirt, wardrobe damage, and reveal state must be created as separate episode_state cards later.",
@@ -2600,12 +2605,14 @@
         "format_contract_scope": "master_reference_card"
       },
       "dependency_status": "dependencies_complete_generated_current_thread",
-      "generated_at": "2026-06-05",
-      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22c718b8dc819594f90221f80dcaba.png",
-      "final_sha256": "95d2f290298ffd46fddb7e3ddc6ae43204b65dabb17e8f3950bf8c997b4eb813",
+      "generated_at": "2026-06-07",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019e9e0a-8e02-7013-aeb4-37f5b89560f9/ig_0ab542ab032f644e016a24ffe06ae8819b9f9c1d4068abdc43.png",
+      "final_sha256": "64daf1337cdd071d07d546a5465881933a57663ccbe86f06e2b594d21cd6f4e6",
       "generation_notes": [
         "Generated as white-bear folk elite guard master card with heavy body scale, white fur cloak, silver-black bone-iron armor, shield and axe, visually distinct from other military assets.",
-        "Canonical file is PNG RGB, superseded_master_reference_canvas, opaque/no alpha, neutral master character card; source generated image retained under $CODEX_HOME/generated_images."
+        "Canonical file is PNG RGB, superseded_master_reference_canvas, opaque/no alpha, neutral master character card; source generated image retained under $CODEX_HOME/generated_images.",
+        "2026-06-07 body-metrics repair: prior card read too broad/heavy at 210cm/170kg; prompt revised toward 202-210cm and 140-155kg, preserving elite white-bear guard identity while avoiding low-tier giant-beast body mass.",
+        "2026-06-07 final body-metrics regeneration accepted: new C012 canonical is 3840x2160 PNG, reduced from prior 170kg visual mass to Bible-compatible 140-155kg elite white-bear guard read, while preserving white-bear female guard identity, 80-90% human face, shield, axe, fur, and armor anchors."
       ],
       "color_readability_audit": {
         "version": "gray-heavy-asset-redo-audit-v1-2026-06-06",
@@ -2654,9 +2661,9 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
       },
@@ -2665,11 +2672,26 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
+      },
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "latest_candidate_path": "art/runs/20260607-c012-body-metrics-repair/c012m.generated-source.png",
+      "latest_candidate_sha256": "3481a4bad78234264287112d8922b042d7b7ef7efdba01a67eacffbf22f418ff",
+      "latest_candidate_dimensions": "1672x941",
+      "final_dimensions": "3840x2160",
+      "history_sha256_by_file": {
+        "assets/characters/history/c012m.v001.png": "49203b2bfdd0fbbd8ba9085927c03642d38680b6e4e3c3bb5393ae8c90a8fbd4"
+      },
+      "body_metrics_correction": {
+        "corrected_at": "2026-06-07",
+        "reason": "Previous C012 image and metadata read as 210cm/170kg low-tier heavy bear soldier; user approved correction plan to keep elite guard identity while reducing visual mass.",
+        "final_target": "202-210cm, 140-155kg, high-ranking white-bear guard, not giant-beast build",
+        "regeneration_run": "art/runs/20260607-c012-body-metrics-repair",
+        "prompt_review": "art/reviews/c012-body-metrics-prompt-review-2026-06-07.md"
       }
     },
     {
@@ -2892,8 +2914,8 @@
       "file": "c014m.png",
       "basename": "c014m",
       "output_path": "assets/characters/c014m.png",
-      "approval_status": "generated_pending_art_review",
-      "generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "approval_status": "approved_image_metadata_corrected_2026-06-07",
+      "generation_status": "image_approved_body_metrics_metadata_corrected_2026-06-07",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#拓跋砚熊"
@@ -2914,7 +2936,7 @@
       "continuity_lock": "气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c014m.png",
-      "status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "prompt_id": "PROMPT_C014",
       "history_files": [],
       "creation_phase": "03_character_master_cards",
@@ -2932,23 +2954,24 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "设定参考卡布局 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "asset_card_status": "complete_qc_passed_user_confirmed_2026-06-07",
       "identity_lock": {
         "age_impression": "三十到四十岁白熊族男盾卫兼雪炉工匠",
         "face_features": "按设计摘要中的头面与身份锚点保持一致",
         "hair_skin_texture": "雪炉工具链",
-        "height_body_type": "约218厘米；约190公斤，白熊族盾卫工匠重体量",
+        "height_body_type": "约218到228厘米；约210到260公斤，白熊族盾卫工匠重体量，是普通人族重装兵两到三倍视觉重量",
         "movement_habits": "气质沉稳、耐寒、寡言、可靠，说明北境有工匠后勤；不能可爱熊形、人类壮汉加熊耳或贵族护卫换皮。",
         "forbidden_future_reveals": "不得提前揭示后续季身份、复国胜利、终局政治答案或非本季行动状态。"
       },
       "body_metrics": {
-        "height": "约218厘米",
-        "weight_build": "约190公斤，白熊族盾卫工匠重体量",
-        "body_ratio": "厚胸、粗臂、大手，站姿像移动工坊",
+        "height": "约218到228厘米",
+        "weight_build": "约210到260公斤，白熊族盾卫工匠重体量，是普通人族重装兵两到三倍视觉重量",
+        "body_ratio": "盾形胸廓、厚背、极粗前臂和巨大手掌，站姿像移动工坊",
         "silhouette": "毛边工匠围裙、盾坯、骨铁工具和白熊头面形成盾卫工匠剪影",
         "scale_refs": [
           "工具在手中不应像玩具",
-          "可与门板尺度对照"
+          "可与门板尺度对照",
+          "必须比C012赫连雪岱更重、更工匠化、更像盾卫后勤体量"
         ]
       },
       "episode_state": "series_master_identity_state; episode-specific wounds, dirt, wardrobe damage, and reveal state must be created as separate episode_state cards later.",
@@ -3023,7 +3046,7 @@
       "dependency_status": "dependencies_complete_generated_current_thread",
       "generated_at": "2026-06-05",
       "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97cd-3447-7613-83a3-80cefad15700/ig_0ca495dfa15dd983016a22ca0aa7408195ae904541adfe9039.png",
-      "final_sha256": "3dd48959f7db0394e2e3fe64771d72818945a1dfaa2d680369e7cb2299fb69f5",
+      "final_sha256": "04f089b921c77c7c58a54a813d8909abf1c71de967b2ef7a86abf0a8d735b4ce",
       "generation_notes": [
         "Generated as white-bear folk shield-guard artisan master card with heavy workshop body scale, brown leather forge apron, bone-iron shield blank, tools, and craft-logistics identity.",
         "Canonical file is PNG RGB, superseded_master_reference_canvas, opaque/no alpha, neutral master character card; source generated image retained under $CODEX_HOME/generated_images."
@@ -3075,9 +3098,9 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
       },
@@ -3086,12 +3109,13 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
-      }
+      },
+      "qc_status": "passed_user_confirmed_2026-06-07"
     },
     {
       "asset_id": "C015",
@@ -4384,8 +4408,8 @@
       "file": "c021m.png",
       "basename": "c021m",
       "output_path": "assets/characters/c021m.png",
-      "approval_status": "generated_pending_art_review",
-      "generation_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "approval_status": "approved_image_metadata_corrected_2026-06-07",
+      "generation_status": "image_approved_body_metrics_metadata_corrected_2026-06-07",
       "requires_precision_control": false,
       "source_refs": [
         "bible/characters.md#共生兽规则",
@@ -4411,7 +4435,7 @@
       "continuity_lock": "共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。",
       "version": "art-room-series-bible-v3-output-format-2026-06-05",
       "file_path": "assets/characters/c021m.png",
-      "status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "prompt_id": "PROMPT_C021",
       "history_files": [],
       "creation_phase": "03_character_master_cards",
@@ -4429,24 +4453,35 @@
       "dependency_reason": "Requires upstream style, costume, identity, faction, or precision-symbol references before final image generation. Also requires approved Zhaoming, Suming/Qingming, and Northern faction emblem/flag roots for unified faction use.",
       "priority": "high",
       "card_layout": "设定参考卡布局 multi-view identity board: front, side, back, three-quarter view, face/hand/material/prop callouts, neutral stance plus one action pose.",
-      "asset_card_status": "prompt_revised_pending_warm_multicolor_regeneration",
+      "asset_card_status": "complete_qc_passed_user_confirmed_2026-06-07",
       "identity_lock": {
         "age_impression": "按 Bible 体貌连续性，不额外改龄",
         "face_features": "按设计摘要中的头面与身份锚点保持一致",
         "hair_skin_texture": "冰湖甲龟、披甲牦牛群",
-        "height_body_type": "共生兽从霜狼到小型飞龙、巨兽幼体多尺度；强调兽与驭兽者互相依赖，不做无主怪兽",
+        "height_body_type": "北境共生兽按类型分层：霜狼90到120厘米肩高，飞龙300到400厘米体长，猛犸380到450厘米肩高，甲龟壳宽400到600厘米；强调兽与驭兽者互相依赖，不做无主怪兽",
         "movement_habits": "共生兽不是无主怪物、坐骑图鉴或游戏 Boss；必须可见幼崽共养、血盐、骨笛、梦境契约和战场消耗。",
         "forbidden_future_reveals": "不得提前揭示后续季身份、复国胜利、终局政治答案或非本季行动状态。"
       },
       "body_metrics": {
-        "height": "共生兽从霜狼到小型飞龙、巨兽幼体多尺度",
-        "weight_build": "强调兽与驭兽者互相依赖，不做无主怪兽",
+        "height": "按共生兽类型分层：霜狼肩高90到120厘米；披甲牦牛肩高180到220厘米；岩背犀肩高260到320厘米；破门猛犸肩高380到450厘米；冰湖甲龟壳高180到240厘米、壳宽400到600厘米；地热冰蟒体长8到14米、最粗处直径60到100厘米；裂风飞龙体长300到400厘米、翼展600到900厘米；冻原雷蜥体长400到600厘米、肩高140到180厘米",
+        "weight_build": "按共生兽类型分层：霜狼80到130公斤；披甲牦牛900到1300公斤；岩背犀3到5吨；破门猛犸6到9吨；冰湖甲龟8到14吨；裂风飞龙180到320公斤；冻原雷蜥800到1500公斤；地热冰蟒以低伏长身、腹部磨痕和墙体震动表达重量",
         "body_ratio": "兽体、绳环、骨笛、血盐袋和引导者姿态必须成对出现",
         "silhouette": "共生兽幼崽、成年兽、驭兽者、骨笛和血盐构成关系模板剪影",
         "scale_refs": [
-          "至少展示人、兽、幼崽三种尺度",
-          "飞龙不应像巨龙，猛兽不应满屏失控"
-        ]
+          "每个兽类旁必须有对应驭兽者或吹哨者，显示人兽尺度差",
+          "飞龙比人族大但不应像巨龙，猛犸和甲龟可压迫但不应满屏失控",
+          "至少展示小型霜狼、中型牦牛/飞龙、巨型猛犸/甲龟三档尺度"
+        ],
+        "creature_dimensions": {
+          "破门猛犸": "肩高380到450厘米，体重6到9吨",
+          "岩背犀": "肩高260到320厘米，体重3到5吨",
+          "冰湖甲龟": "壳高180到240厘米，壳宽400到600厘米，体重8到14吨",
+          "披甲牦牛群": "肩高180到220厘米，单体体重900到1300公斤",
+          "地热冰蟒": "体长8到14米，最粗处直径60到100厘米",
+          "裂风飞龙": "体长300到400厘米，翼展600到900厘米，体重180到320公斤",
+          "冻原雷蜥": "体长400到600厘米，肩高140到180厘米，体重800到1500公斤",
+          "霜狼群": "肩高90到120厘米，体重80到130公斤"
+        }
       },
       "episode_state": "series_master_identity_state; episode-specific wounds, dirt, wardrobe damage, and reveal state must be created as separate episode_state cards later.",
       "blocks_assets": [
@@ -4522,7 +4557,7 @@
       "dependency_status": "costume_dependencies_complete",
       "generated_at": "2026-06-06",
       "source_generated_file": "/Users/uroborus/.codex/generated_images/019e97f8-97a3-7190-89b8-fa4d1580bbb6/ig_0093b859c1001029016a22e92b653c8196a1ac0c902c42e9a4.png",
-      "final_sha256": "2d097e14ea8579295dd1c12b4db9dfa44ed61b4930aab1b8ccbac65b65918d43",
+      "final_sha256": "84367c233245fe2913ea66443ca75485678d049a3fb1c5e1725d22fd3df5b8d0",
       "generation_notes": [
         "Generated as Northern symbiotic beast relationship board with human, juvenile/small beast, adult beast, handlers, bone flutes, blood-salt, rope rings, and care gestures."
       ],
@@ -4573,9 +4608,9 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
       },
@@ -4584,12 +4619,13 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
         "existing_file_dimensions": null,
-        "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+        "action_required": "none",
         "landscape_regeneration_required": false,
         "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
-      }
+      },
+      "qc_status": "passed_user_confirmed_2026-06-07"
     },
     {
       "asset_id": "C022",

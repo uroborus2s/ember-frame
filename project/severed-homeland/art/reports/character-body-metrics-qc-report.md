@@ -31,10 +31,10 @@ Highest priority conflicts:
 | P0 | C019 | Current index says `205-225cm`, but Bible says heavy insect soldiers are `220-260cm`; it collapses the tier gap with C018. |
 | P0 | C020 | Current index says Northern siege troops are `175-340cm`, missing the `145-165cm` snow-badger diggers and all subtype weight bands. |
 | Resolved | C008 | User confirmed the latest `220cm / 150kg` elite insect-general version is canon; `bible/characters.md` has been updated accordingly. No redraw required for body metrics. |
-| P1 | C010 | Current index says `176cm / 58kg`, while Bible says 鹿弥 is `169cm / 52kg`; she has been pulled toward generic攻城鹿族萨满 scale. |
-| P1 | C012 | Current index says `210cm / 170kg`; Bible says `202-210cm / 125-155kg` and "not low-grade giant-beast build." Visual card also reads too heavy. |
-| P1 | C014 | Current index says `218cm / 190kg`; Bible says `218-228cm / 210-260kg`. Visual card looks heavy enough, so index correction may be sufficient. |
-| P1 | C021 | Current index says only "multi-scale"; Bible gives exact shoulder height, body length, and weight ranges for each共生兽. Body metrics are too coarse for a reusable master card. |
+| Resolved | C010 | Metadata and prompt updated to Bible-compatible `169cm / 52kg`, preserving 鹿弥 as a light寻灾源派萨满 rather than generic攻城鹿族祭兵. No redraw required. |
+| Resolved | C012 | Regenerated on 2026-06-07 as corrected `202-210cm / 140-155kg` elite white-bear guard. New canonical passed visual and file QC. |
+| Resolved | C014 | Metadata and prompt updated to `218-228cm / 210-260kg`; existing image already reads sufficiently heavy, so no redraw required. |
+| Resolved | C021 | Metadata and prompt updated with per-beast size ranges for mammoth, rhino, turtle, yak, python, wyvern, thunder lizard, and frost wolf. No redraw required. |
 
 ## Per-Asset Findings
 
@@ -67,10 +67,10 @@ Highest priority conflicts:
 
 | Asset | Current body metrics | Bible baseline | Visual judgment | QC result | Required action |
 | --- | --- | --- | --- | --- | --- |
-| C010 鹿弥 | `176cm`, `58kg`, light deer shaman | Bible: `169cm`, `52kg`; named尋灾源派 young shaman, not generic siege ritual troop | Visual body may still read light if antlers/fur are excluded, but the metadata has drifted toward the `175-195cm / 60-85kg`攻城鹿族祭兵 template. | P1 mismatch | Change index to `169cm / 52kg`; keep "long limbs, narrow shoulders, light step." Re-render only if strict scale review confirms the body, not antlers, is drawn at 176cm. |
-| C012 赫连雪岱 | `210cm`, `170kg`, thick white-bear heavy guard | Bible: `202-210cm`, `125-155kg`, bigger than human heavy guard but not low-grade giant-beast build | Visual reads very broad and heavy, close to a low-tier heavy bear soldier. It exceeds the intended elite guard mass. | P1 visual and metadata fail | Either re-render or locally adjust prompt/image direction toward `140-155kg`, still broad but less giantized. If current visual is accepted, Bible must be updated. |
+| C010 鹿弥 | Updated to `169cm`, `52kg`, light寻灾源派 deer shaman | Bible: `169cm`, `52kg`; named尋灾源派 young shaman, not generic siege ritual troop | Existing visual can remain because the issue was metadata/prompt drift rather than confirmed body failure. | Resolved / metadata only | Completed on 2026-06-07: index and prompt corrected; no redraw required. |
+| C012 赫连雪岱 | Updated to `202-210cm`, `140-155kg`, elite white-bear guard | Bible: `202-210cm`, `125-155kg`, bigger than human heavy guard but not low-grade giant-beast build | Regenerated canonical now reads tall, broad and protective, but no longer C014-style shield-worker mass. | Resolved / regenerated | Completed on 2026-06-07: canonical replaced, prompt reviewed, file QC passed. See `art/reports/c012-body-metrics-regeneration-qc-2026-06-07.md`. |
 | C013 乌岚 | `185cm`, `72kg`, long-legged black-wolf scout | Bible: `182-190cm`, `68-82kg` | Visual reads lean, fast, low-forward wolf scout. | Pass | No action. |
-| C014 拓跋砚熊 | `218cm`, `190kg` | Bible: `218-228cm`, `210-260kg`, ordinary human heavy soldier two-to-three times visual weight | Visual already reads massive and heavy enough for the Bible role. The index under-reports weight. | P1 metadata mismatch | Change index to `218-228cm / 210-260kg`. No redraw needed unless scale labels must be visible. |
+| C014 拓跋砚熊 | Updated to `218-228cm`, `210-260kg` | Bible: `218-228cm`, `210-260kg`, ordinary human heavy soldier two-to-three times visual weight | Existing visual already reads massive and heavy enough for the Bible role. | Resolved / metadata only | Completed on 2026-06-07: index and prompt corrected; no redraw required. |
 | C015 青翎鸦见 | `182cm`, `60kg` | Bible: `172-182cm`, `52-64kg` | Visual reads light-boned, narrow, crow-scout. Height is at upper bound but acceptable. | Pass | No action. |
 
 ### Northern Group And Beast Relationship Templates
@@ -78,7 +78,7 @@ Highest priority conflicts:
 | Asset | Current body metrics | Bible baseline | Visual judgment | QC result | Required action |
 | --- | --- | --- | --- | --- | --- |
 | C020 北境攻城兵种群像 | `175-340cm`, no subtype weights | Bible includes black-tooth axemen `225-245cm / 160-220kg`; ox shield troops `205-230cm / 180-260kg`; white-mane wolf riders `185-205cm / 80-115kg`; snow-badger diggers `145-165cm / 90-130kg`; trolls `280-340cm / 350-600kg`; bird climbers `175-195cm / 55-80kg`; deer ritual troops `175-210cm / 60-120kg`; lion cavalry `205-225cm / 130-180kg` | Visual shows multiple Northern combat types and scale variety, but the current index misses the shortest snow-badger tier and all weight bands. | P0 group metrics incomplete | Replace the single broad height field with subtype body metrics. If image detail review confirms snow-badger diggers are not visibly short and barrel-bodied, schedule targeted redraw/patch. |
-| C021 北境共生兽关系 | "multi-scale", no exact ranges | Bible gives exact ranges: mammoth shoulder `380-450cm`, `6-9t`; rhino shoulder `260-320cm`, `3-5t`; turtle shell `180-240cm` high and `400-600cm` wide, `8-14t`; yak shoulder `180-220cm`, `900-1300kg`; ice python length `8-14m`; wyvern length `300-400cm`, wingspan `600-900cm`; thunder lizard length `400-600cm`; frost wolf shoulder `90-120cm`, `80-130kg` | Visual relation card is strong:兽 and handler interaction is readable. The metrics field is too vague for a reusable scale reference. | P1 metadata incomplete | Add per-beast `body_metrics` or `physical_dimensions` style subentries. No redraw required unless downstream needs exact size labels. |
+| C021 北境共生兽关系 | Updated with per-beast dimensions and weights | Bible gives exact ranges: mammoth shoulder `380-450cm`, `6-9t`; rhino shoulder `260-320cm`, `3-5t`; turtle shell `180-240cm` high and `400-600cm` wide, `8-14t`; yak shoulder `180-220cm`, `900-1300kg`; ice python length `8-14m`; wyvern length `300-400cm`, wingspan `600-900cm`; thunder lizard length `400-600cm`; frost wolf shoulder `90-120cm`, `80-130kg` | Existing relation card is strong:兽 and handler interaction is readable. | Resolved / metadata only | Completed on 2026-06-07: index and prompt now carry exact scale ranges; no redraw required. |
 
 ### Human Crowd Templates
 
@@ -96,16 +96,12 @@ Highest priority conflicts:
    - C017: `170-200cm`, human-hybrid slave soldier range.
    - C018: `200-230cm`, pure insect foot soldier.
    - C019: `220-260cm`, heavy insect shield-wall tier.
-   - C014: `218-228cm / 210-260kg`.
    - C020: replace broad range with subtype height and weight bands.
-   - C021: add exact per-beast size ranges.
 
 2. Canon-decision required before redraw:
    - C001: decide whether approved legacy card body remains 173cm/61kg or Bible/episode 175cm/64kg is restored.
 
 3. Potential visual redraw or targeted correction:
-   - C012: current visual is too heavy if Bible remains `125-155kg`.
-   - C010: likely metadata-only, but verify body height excluding antlers/fur before declaring no redraw.
    - C020: if snow-badger digger subtype is not visibly below human height and barrel-bodied, redraw or add a focused subtype card.
 
 ## Pass List
@@ -114,4 +110,4 @@ No body-scale action required for: C002, C003, C004, C005, C006, C007, C013, C01
 
 Pass with minor metadata normalization: C001, C009, C011, C026.
 
-Requires correction before Director Room prompt refresh: C010, C012, C014, C016, C017, C018, C019, C020, C021.
+Requires correction before Director Room prompt refresh: C016, C017, C018, C019, C020.
