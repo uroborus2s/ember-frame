@@ -6,15 +6,6 @@
   "no_generation_before_user_approval": true,
   "batches": [
     {
-      "batch_id": "e02-style",
-      "asset_ids": [
-        "E02_F001",
-        "E02_F005",
-        "E02_F006"
-      ],
-      "status": "blocked_pending_user_approval"
-    },
-    {
       "batch_id": "e02-characters",
       "asset_ids": [
         "E02_C002",
@@ -29,15 +20,12 @@
       "status": "blocked_pending_user_approval"
     },
     {
-      "batch_id": "e02-locations",
+      "batch_id": "e02-location-inheritance-lock",
       "asset_ids": [
-        "E02_L001A",
-        "E02_L001B",
-        "E02_L001C",
-        "E02_L001D",
-        "E02_L001E"
+        "E02_L001"
       ],
-      "status": "blocked_pending_user_approval"
+      "status": "blocked_pending_user_approval",
+      "dependency_reason": "Only one E02_L001 scene card is generated; it inherits L001 and covers 地窖、村口、药屋火场、押车路口、后山坡 to prevent repeated L001 scene generation."
     },
     {
       "batch_id": "e02-props-costumes",

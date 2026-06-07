@@ -24,26 +24,26 @@
         "PROMPT_E01_C017",
         "PROMPT_E01_C018",
         "PROMPT_E01_C020",
-        "PROMPT_E01_C022",
-        "PROMPT_E01_C023",
-        "PROMPT_E01_C024"
+        "PROMPT_E01_C024A",
+        "PROMPT_E01_C027",
+        "PROMPT_E01_C023"
       ],
       "output_paths": [
-        "assets/characters/c001e01.png",
-        "assets/characters/c002e01.png",
-        "assets/characters/c004e01.png",
-        "assets/characters/c005e01.png",
-        "assets/characters/c006e01.png",
-        "assets/characters/c007e01.png",
-        "assets/characters/c011e01.png",
-        "assets/characters/c016e01.png",
-        "assets/characters/c016e02.png",
-        "assets/characters/c017e01.png",
-        "assets/characters/c018e01.png",
-        "assets/characters/c020e01.png",
-        "assets/characters/c022e01.png",
-        "assets/characters/c023e01.png",
-        "assets/characters/c024e01.png"
+        "01/assets/characters/c001e01.png",
+        "01/assets/characters/c002e01.png",
+        "01/assets/characters/c004e01.png",
+        "01/assets/characters/c005e01.png",
+        "01/assets/characters/c006e01.png",
+        "01/assets/characters/c007e01.png",
+        "01/assets/characters/c011e01.png",
+        "01/assets/characters/c016e01.png",
+        "01/assets/characters/c016be01.png",
+        "01/assets/characters/c017e01.png",
+        "01/assets/characters/c018e01.png",
+        "01/assets/characters/c020e01.png",
+        "01/assets/characters/c024ae01.png",
+        "01/assets/characters/c027e01.png",
+        "01/assets/characters/c023e01.png"
       ],
       "thread_prompt": "After user approval, generate B01_E01_CHARACTERS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "approved_by_user_request_2026-06-07",
@@ -126,7 +126,7 @@
           "asset_id": "E01_C001",
           "prompt_id": "PROMPT_E01_C001",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c001e01.png",
+          "output_path": "01/assets/characters/c001e01.png",
           "priority": "high",
           "creation_order": 4,
           "depends_on_assets": [
@@ -145,7 +145,7 @@
           "asset_id": "E01_C002",
           "prompt_id": "PROMPT_E01_C002",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c002e01.png",
+          "output_path": "01/assets/characters/c002e01.png",
           "priority": "high",
           "creation_order": 5,
           "depends_on_assets": [
@@ -163,7 +163,7 @@
           "asset_id": "E01_C004",
           "prompt_id": "PROMPT_E01_C004",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c004e01.png",
+          "output_path": "01/assets/characters/c004e01.png",
           "priority": "medium",
           "creation_order": 6,
           "depends_on_assets": [
@@ -178,7 +178,7 @@
           "asset_id": "E01_C005",
           "prompt_id": "PROMPT_E01_C005",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c005e01.png",
+          "output_path": "01/assets/characters/c005e01.png",
           "priority": "high",
           "creation_order": 7,
           "depends_on_assets": [
@@ -197,7 +197,7 @@
           "asset_id": "E01_C006",
           "prompt_id": "PROMPT_E01_C006",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c006e01.png",
+          "output_path": "01/assets/characters/c006e01.png",
           "priority": "high",
           "creation_order": 8,
           "depends_on_assets": [
@@ -216,7 +216,7 @@
           "asset_id": "E01_C007",
           "prompt_id": "PROMPT_E01_C007",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c007e01.png",
+          "output_path": "01/assets/characters/c007e01.png",
           "priority": "high",
           "creation_order": 9,
           "depends_on_assets": [
@@ -235,7 +235,7 @@
           "asset_id": "E01_C011",
           "prompt_id": "PROMPT_E01_C011",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c011e01.png",
+          "output_path": "01/assets/characters/c011e01.png",
           "priority": "medium",
           "creation_order": 10,
           "depends_on_assets": [
@@ -251,7 +251,7 @@
           "asset_id": "E01_C016A",
           "prompt_id": "PROMPT_E01_C016A",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c016e01.png",
+          "output_path": "01/assets/characters/c016e01.png",
           "priority": "medium",
           "creation_order": 11,
           "depends_on_assets": [
@@ -271,7 +271,7 @@
           "asset_id": "E01_C016B",
           "prompt_id": "PROMPT_E01_C016B",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c016e02.png",
+          "output_path": "01/assets/characters/c016be01.png",
           "priority": "medium",
           "creation_order": 12,
           "depends_on_assets": [
@@ -287,7 +287,7 @@
           "asset_id": "E01_C017",
           "prompt_id": "PROMPT_E01_C017",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c017e01.png",
+          "output_path": "01/assets/characters/c017e01.png",
           "priority": "medium",
           "creation_order": 13,
           "depends_on_assets": [
@@ -306,7 +306,7 @@
           "asset_id": "E01_C018",
           "prompt_id": "PROMPT_E01_C018",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c018e01.png",
+          "output_path": "01/assets/characters/c018e01.png",
           "priority": "medium",
           "creation_order": 14,
           "depends_on_assets": [
@@ -323,7 +323,7 @@
           "asset_id": "E01_C020",
           "prompt_id": "PROMPT_E01_C020",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c020e01.png",
+          "output_path": "01/assets/characters/c020e01.png",
           "priority": "medium",
           "creation_order": 15,
           "depends_on_assets": [
@@ -337,10 +337,10 @@
           ]
         },
         {
-          "asset_id": "E01_C022",
-          "prompt_id": "PROMPT_E01_C022",
+          "asset_id": "E01_C024A",
+          "prompt_id": "PROMPT_E01_C024A",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c022e01.png",
+          "output_path": "01/assets/characters/c024ae01.png",
           "priority": "medium",
           "creation_order": 16,
           "depends_on_assets": [
@@ -351,10 +351,10 @@
           ]
         },
         {
-          "asset_id": "E01_C023",
-          "prompt_id": "PROMPT_E01_C023",
+          "asset_id": "E01_C027",
+          "prompt_id": "PROMPT_E01_C027",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c023e01.png",
+          "output_path": "01/assets/characters/c027e01.png",
           "priority": "medium",
           "creation_order": 17,
           "depends_on_assets": [
@@ -366,10 +366,10 @@
           ]
         },
         {
-          "asset_id": "E01_C024",
-          "prompt_id": "PROMPT_E01_C024",
+          "asset_id": "E01_C023",
+          "prompt_id": "PROMPT_E01_C023",
           "asset_subtype": "character_episode_state_card",
-          "output_path": "assets/characters/c024e01.png",
+          "output_path": "01/assets/characters/c023e01.png",
           "priority": "medium",
           "creation_order": 18,
           "depends_on_assets": [
@@ -402,12 +402,12 @@
         "PROMPT_E01_L001C"
       ],
       "output_paths": [
-        "assets/locations/l007e01.png",
-        "assets/locations/l003e01.png",
-        "assets/locations/l014e01.png",
-        "assets/locations/l001e01.png",
-        "assets/locations/l001e02.png",
-        "assets/locations/l001e03.png"
+        "01/assets/locations/l007e01.png",
+        "01/assets/locations/l003e01.png",
+        "01/assets/locations/l014e01.png",
+        "01/assets/locations/l001ae01.png",
+        "01/assets/locations/l001be01.png",
+        "01/assets/locations/l001ce01.png"
       ],
       "thread_prompt": "After user approval, generate B02_E01_LOCATIONS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "approved_by_user_request_2026-06-07",
@@ -472,7 +472,7 @@
           "asset_id": "E01_L007",
           "prompt_id": "PROMPT_E01_L007",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l007e01.png",
+          "output_path": "01/assets/locations/l007e01.png",
           "priority": "medium",
           "creation_order": 19,
           "depends_on_assets": [
@@ -491,7 +491,7 @@
           "asset_id": "E01_L003",
           "prompt_id": "PROMPT_E01_L003",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l003e01.png",
+          "output_path": "01/assets/locations/l003e01.png",
           "priority": "medium",
           "creation_order": 20,
           "depends_on_assets": [
@@ -509,7 +509,7 @@
           "asset_id": "E01_L014",
           "prompt_id": "PROMPT_E01_L014",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l014e01.png",
+          "output_path": "01/assets/locations/l014e01.png",
           "priority": "medium",
           "creation_order": 21,
           "depends_on_assets": [
@@ -527,7 +527,7 @@
           "asset_id": "E01_L001A",
           "prompt_id": "PROMPT_E01_L001A",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l001e01.png",
+          "output_path": "01/assets/locations/l001ae01.png",
           "priority": "high",
           "creation_order": 22,
           "depends_on_assets": [
@@ -546,7 +546,7 @@
           "asset_id": "E01_L001B",
           "prompt_id": "PROMPT_E01_L001B",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l001e02.png",
+          "output_path": "01/assets/locations/l001be01.png",
           "priority": "high",
           "creation_order": 23,
           "depends_on_assets": [
@@ -566,7 +566,7 @@
           "asset_id": "E01_L001C",
           "prompt_id": "PROMPT_E01_L001C",
           "asset_subtype": "location_episode_scene_card",
-          "output_path": "assets/locations/l001e03.png",
+          "output_path": "01/assets/locations/l001ce01.png",
           "priority": "high",
           "creation_order": 24,
           "depends_on_assets": [
@@ -594,15 +594,15 @@
       "batch_type": "props-costumes",
       "status": "dispatched",
       "prompt_ids": [
-        "PROMPT_E01_P016",
+        "PROMPT_E01_P021",
         "PROMPT_E01_P008",
         "PROMPT_E01_P009",
         "PROMPT_E01_P002",
         "PROMPT_E01_P003",
         "PROMPT_E01_P004",
-        "PROMPT_E01_P017",
+        "PROMPT_E01_P022",
         "PROMPT_E01_P005",
-        "PROMPT_E01_P018",
+        "PROMPT_E01_P023",
         "PROMPT_E01_P020",
         "PROMPT_E01_K001",
         "PROMPT_E01_K002",
@@ -611,21 +611,21 @@
         "PROMPT_E01_K006"
       ],
       "output_paths": [
-        "assets/props/p016e01.png",
-        "assets/props/p008e01.png",
-        "assets/props/p009e01.png",
-        "assets/props/p002e01.png",
-        "assets/props/p003e01.png",
-        "assets/props/p004e01.png",
-        "assets/props/p017e01.png",
-        "assets/props/p005e01.png",
-        "assets/props/p018e01.png",
-        "assets/props/p020e01.png",
-        "assets/costumes/k001e01.png",
-        "assets/costumes/k002e01.png",
-        "assets/costumes/k003e01.png",
-        "assets/costumes/k004e01.png",
-        "assets/costumes/k006e01.png"
+        "01/assets/props/p021e01.png",
+        "01/assets/props/p008e01.png",
+        "01/assets/props/p009e01.png",
+        "01/assets/props/p002e01.png",
+        "01/assets/props/p003e01.png",
+        "01/assets/props/p004e01.png",
+        "01/assets/props/p022e01.png",
+        "01/assets/props/p005e01.png",
+        "01/assets/props/p023e01.png",
+        "01/assets/props/p020e01.png",
+        "01/assets/costumes/k001e01.png",
+        "01/assets/costumes/k002e01.png",
+        "01/assets/costumes/k003e01.png",
+        "01/assets/costumes/k004e01.png",
+        "01/assets/costumes/k006e01.png"
       ],
       "thread_prompt": "After user approval, generate B03_E01_PROPS_COSTUMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "approved_by_user_request_2026-06-07",
@@ -709,10 +709,10 @@
       },
       "assets": [
         {
-          "asset_id": "E01_P016",
-          "prompt_id": "PROMPT_E01_P016",
+          "asset_id": "E01_P021",
+          "prompt_id": "PROMPT_E01_P021",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p016e01.png",
+          "output_path": "01/assets/props/p021e01.png",
           "priority": "medium",
           "creation_order": 25,
           "depends_on_assets": [
@@ -728,7 +728,7 @@
           "asset_id": "E01_P008",
           "prompt_id": "PROMPT_E01_P008",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p008e01.png",
+          "output_path": "01/assets/props/p008e01.png",
           "priority": "medium",
           "creation_order": 26,
           "depends_on_assets": [
@@ -745,7 +745,7 @@
           "asset_id": "E01_P009",
           "prompt_id": "PROMPT_E01_P009",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p009e01.png",
+          "output_path": "01/assets/props/p009e01.png",
           "priority": "high",
           "creation_order": 34,
           "depends_on_assets": [
@@ -763,7 +763,7 @@
           "asset_id": "E01_P002",
           "prompt_id": "PROMPT_E01_P002",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p002e01.png",
+          "output_path": "01/assets/props/p002e01.png",
           "priority": "high",
           "creation_order": 35,
           "depends_on_assets": [
@@ -781,7 +781,7 @@
           "asset_id": "E01_P003",
           "prompt_id": "PROMPT_E01_P003",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p003e01.png",
+          "output_path": "01/assets/props/p003e01.png",
           "priority": "high",
           "creation_order": 36,
           "depends_on_assets": [
@@ -802,7 +802,7 @@
           "asset_id": "E01_P004",
           "prompt_id": "PROMPT_E01_P004",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p004e01.png",
+          "output_path": "01/assets/props/p004e01.png",
           "priority": "high",
           "creation_order": 37,
           "depends_on_assets": [
@@ -817,10 +817,10 @@
           ]
         },
         {
-          "asset_id": "E01_P017",
-          "prompt_id": "PROMPT_E01_P017",
+          "asset_id": "E01_P022",
+          "prompt_id": "PROMPT_E01_P022",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p017e01.png",
+          "output_path": "01/assets/props/p022e01.png",
           "priority": "high",
           "creation_order": 38,
           "depends_on_assets": [
@@ -838,7 +838,7 @@
           "asset_id": "E01_P005",
           "prompt_id": "PROMPT_E01_P005",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p005e01.png",
+          "output_path": "01/assets/props/p005e01.png",
           "priority": "medium",
           "creation_order": 27,
           "depends_on_assets": [
@@ -853,10 +853,10 @@
           ]
         },
         {
-          "asset_id": "E01_P018",
-          "prompt_id": "PROMPT_E01_P018",
+          "asset_id": "E01_P023",
+          "prompt_id": "PROMPT_E01_P023",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p018e01.png",
+          "output_path": "01/assets/props/p023e01.png",
           "priority": "high",
           "creation_order": 39,
           "depends_on_assets": [
@@ -874,7 +874,7 @@
           "asset_id": "E01_P020",
           "prompt_id": "PROMPT_E01_P020",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/props/p020e01.png",
+          "output_path": "01/assets/props/p020e01.png",
           "priority": "medium",
           "creation_order": 28,
           "depends_on_assets": [
@@ -891,7 +891,7 @@
           "asset_id": "E01_K001",
           "prompt_id": "PROMPT_E01_K001",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/costumes/k001e01.png",
+          "output_path": "01/assets/costumes/k001e01.png",
           "priority": "medium",
           "creation_order": 29,
           "depends_on_assets": [
@@ -908,7 +908,7 @@
           "asset_id": "E01_K002",
           "prompt_id": "PROMPT_E01_K002",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/costumes/k002e01.png",
+          "output_path": "01/assets/costumes/k002e01.png",
           "priority": "medium",
           "creation_order": 30,
           "depends_on_assets": [
@@ -924,7 +924,7 @@
           "asset_id": "E01_K003",
           "prompt_id": "PROMPT_E01_K003",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/costumes/k003e01.png",
+          "output_path": "01/assets/costumes/k003e01.png",
           "priority": "medium",
           "creation_order": 31,
           "depends_on_assets": [
@@ -940,7 +940,7 @@
           "asset_id": "E01_K004",
           "prompt_id": "PROMPT_E01_K004",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/costumes/k004e01.png",
+          "output_path": "01/assets/costumes/k004e01.png",
           "priority": "medium",
           "creation_order": 32,
           "depends_on_assets": [
@@ -957,7 +957,7 @@
           "asset_id": "E01_K006",
           "prompt_id": "PROMPT_E01_K006",
           "asset_subtype": "prop_episode_state_card",
-          "output_path": "assets/costumes/k006e01.png",
+          "output_path": "01/assets/costumes/k006e01.png",
           "priority": "medium",
           "creation_order": 33,
           "depends_on_assets": [
@@ -989,9 +989,9 @@
         "PROMPT_E01_F006"
       ],
       "output_paths": [
-        "assets/style/f001e01.png",
-        "assets/style/f005e01.png",
-        "assets/style/f006e01.png"
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png"
       ],
       "thread_prompt": "After user approval, generate B04_E01_STYLE assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
       "approval_gate": "approved_by_user_request_2026-06-07",
@@ -1016,24 +1016,24 @@
         "E01_C017",
         "E01_C018",
         "E01_C020",
-        "E01_C022",
-        "E01_C023",
-        "E01_C024",
+        "E01_C024A",
+        "E01_C027",
+        "E01_C027",
         "E01_L007",
         "E01_L003",
         "E01_L014",
         "E01_L001A",
         "E01_L001B",
         "E01_L001C",
-        "E01_P016",
+        "E01_P021",
         "E01_P008",
         "E01_P009",
         "E01_P002",
         "E01_P003",
         "E01_P004",
-        "E01_P017",
+        "E01_P022",
         "E01_P005",
-        "E01_P018",
+        "E01_P023",
         "E01_P020",
         "E01_K001",
         "E01_K002",
@@ -1112,7 +1112,7 @@
           "asset_id": "E01_F001",
           "prompt_id": "PROMPT_E01_F001",
           "asset_subtype": "style_reference",
-          "output_path": "assets/style/f001e01.png",
+          "output_path": "01/assets/style/f001e01.png",
           "priority": "high",
           "creation_order": 1,
           "depends_on_assets": [
@@ -1131,24 +1131,24 @@
             "E01_C017",
             "E01_C018",
             "E01_C020",
-            "E01_C022",
-            "E01_C023",
-            "E01_C024",
+            "E01_C024A",
+            "E01_C027",
+            "E01_C027",
             "E01_L007",
             "E01_L003",
             "E01_L014",
             "E01_L001A",
             "E01_L001B",
             "E01_L001C",
-            "E01_P016",
+            "E01_P021",
             "E01_P008",
             "E01_P009",
             "E01_P002",
             "E01_P003",
             "E01_P004",
-            "E01_P017",
+            "E01_P022",
             "E01_P005",
-            "E01_P018",
+            "E01_P023",
             "E01_P020",
             "E01_K001",
             "E01_K002",
@@ -1205,7 +1205,7 @@
           "asset_id": "E01_F005",
           "prompt_id": "PROMPT_E01_F005",
           "asset_subtype": "style_reference",
-          "output_path": "assets/style/f005e01.png",
+          "output_path": "01/assets/style/f005e01.png",
           "priority": "high",
           "creation_order": 2,
           "depends_on_assets": [
@@ -1268,7 +1268,7 @@
           "asset_id": "E01_F006",
           "prompt_id": "PROMPT_E01_F006",
           "asset_subtype": "style_reference",
-          "output_path": "assets/style/f006e01.png",
+          "output_path": "01/assets/style/f006e01.png",
           "priority": "high",
           "creation_order": 3,
           "depends_on_assets": [
@@ -1279,8 +1279,8 @@
             "E01_P002",
             "E01_P003",
             "E01_P004",
-            "E01_P017",
-            "E01_P018",
+            "E01_P022",
+            "E01_P023",
             "E01_O001",
             "E01_O002",
             "E01_O003",
@@ -1295,9 +1295,9 @@
       "thread_id": "019ea079-574d-7751-a1f1-750001408fd5",
       "completed_at": "2026-06-07",
       "final_files": [
-        "assets/style/f001e01.png",
-        "assets/style/f005e01.png",
-        "assets/style/f006e01.png"
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png"
       ],
       "history_files": [
         "assets/style/history/f001e01.v001.png",
@@ -1421,14 +1421,14 @@
         "E01_F005",
         "E01_C020",
         "E01_L007",
-        "E01_P016",
-        "E01_C022",
+        "E01_P021",
+        "E01_C024A",
         "E01_C004",
         "E01_C016B",
         "E01_L003",
         "E01_K004",
         "E01_C017",
-        "E01_C024",
+        "E01_C027",
         "E01_P008",
         "E01_K006",
         "E01_L014",
@@ -1438,9 +1438,8 @@
         "E01_P002",
         "E01_K002",
         "E01_C018",
-        "E01_C023",
         "E01_L001A",
-        "E01_P017",
+        "E01_P022",
         "E01_C016A",
         "E01_C001",
         "E01_K001",
@@ -1452,7 +1451,7 @@
         "E01_P003",
         "E01_P004",
         "E01_L001B",
-        "E01_P018",
+        "E01_P023",
         "E01_L001C",
         "E01_C007"
       ],
@@ -1493,7 +1492,7 @@
             "E01_F005",
             "E01_C020",
             "E01_L007",
-            "E01_P016"
+            "E01_P021"
           ],
           "blocks_assets": []
         },
@@ -1509,7 +1508,7 @@
             "E01_F005",
             "E01_C020",
             "E01_L007",
-            "E01_P016"
+            "E01_P021"
           ],
           "blocks_assets": []
         },
@@ -1524,9 +1523,9 @@
             "E01_F001",
             "E01_F005",
             "E01_C020",
-            "E01_C022",
+            "E01_C024A",
             "E01_L007",
-            "E01_P016"
+            "E01_P021"
           ],
           "blocks_assets": []
         },
@@ -1572,7 +1571,7 @@
             "E01_F001",
             "E01_F005",
             "E01_C017",
-            "E01_C024",
+            "E01_C023",
             "E01_P008",
             "E01_K006"
           ],
@@ -1603,7 +1602,7 @@
             "E01_F001",
             "E01_F005",
             "E01_C017",
-            "E01_C024",
+            "E01_C023",
             "E01_L003",
             "E01_P008"
           ],
@@ -1620,7 +1619,7 @@
             "E01_F001",
             "E01_F005",
             "E01_C017",
-            "E01_C024",
+            "E01_C023",
             "E01_L003",
             "E01_P008"
           ],
@@ -1716,9 +1715,9 @@
             "E01_F005",
             "E01_C017",
             "E01_C018",
-            "E01_C023",
+            "E01_C027",
             "E01_L001A",
-            "E01_P017",
+            "E01_P022",
             "E01_K004",
             "E01_K006"
           ],
@@ -1844,7 +1843,7 @@
             "E01_F001",
             "E01_F005",
             "E01_L001A",
-            "E01_P017"
+            "E01_P022"
           ],
           "blocks_assets": []
         },
@@ -1859,7 +1858,7 @@
             "E01_F001",
             "E01_F005",
             "E01_L001A",
-            "E01_P017"
+            "E01_P022"
           ],
           "blocks_assets": []
         },
@@ -1876,7 +1875,7 @@
             "E01_C002",
             "E01_L001B",
             "E01_P002",
-            "E01_P018",
+            "E01_P023",
             "E01_K002"
           ],
           "blocks_assets": []
@@ -1921,7 +1920,7 @@
             "E01_F001",
             "E01_F005",
             "E01_L001B",
-            "E01_P018"
+            "E01_P023"
           ],
           "blocks_assets": [
             "E01_O002"
@@ -1953,7 +1952,7 @@
             "E01_F001",
             "E01_F005",
             "E01_L001C",
-            "E01_P017"
+            "E01_P022"
           ],
           "blocks_assets": []
         },
@@ -1969,7 +1968,7 @@
             "E01_F005",
             "E01_C016A",
             "E01_L001C",
-            "E01_P018"
+            "E01_P023"
           ],
           "blocks_assets": []
         },
@@ -1986,7 +1985,7 @@
             "E01_C016A",
             "E01_C017",
             "E01_C018",
-            "E01_C023",
+            "E01_C027",
             "E01_L001C",
             "E01_K004",
             "E01_K006"
@@ -2168,7 +2167,7 @@
         "E01_O003",
         "E01_O004",
         "E01_L001B",
-        "E01_P018",
+        "E01_P023",
         "E01_R028",
         "E01_C005",
         "E01_P005",
@@ -2237,7 +2236,7 @@
             "E01_F005",
             "E01_F006",
             "E01_L001B",
-            "E01_P018",
+            "E01_P023",
             "E01_R028",
             "E01_O001",
             "E01_O002",

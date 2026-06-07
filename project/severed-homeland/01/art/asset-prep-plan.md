@@ -61,16 +61,16 @@
 | 13 | E01_C017 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, C017 | medium |
 | 14 | E01_C018 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, C018 | medium |
 | 15 | E01_C020 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, C020 | medium |
-| 16 | E01_C022 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
-| 17 | E01_C023 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
-| 18 | E01_C024 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
+| 16 | E01_C024A | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
+| 17 | E01_C027 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
+| 18 | E01_C023 | character_episode_state_card | episode_state_cards | character_episode_state_turnaround_sheet | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
 | 19 | E01_L007 | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L007 | medium |
 | 20 | E01_L003 | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L003 | medium |
 | 21 | E01_L014 | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L014 | medium |
 | 22 | E01_L001A | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L001 | high |
 | 23 | E01_L001B | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L001 | high |
 | 24 | E01_L001C | location_episode_scene_card | episode_state_cards | location_episode_scene_card_with_zone_diagram | 3:2 | scene_card_not_final_video_frame | forbidden | E01_F001, E01_F005, L001 | high |
-| 25 | E01_P016 | prop_episode_state_card | episode_state_cards | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
+| 25 | E01_P021 | prop_episode_state_card | episode_state_cards | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
 | 26 | E01_P008 | prop_episode_state_card | episode_state_cards | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, P008 | medium |
 | 27 | E01_P005 | prop_episode_state_card | episode_state_cards | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, P005 | medium |
 | 28 | E01_P020 | prop_episode_state_card | episode_state_cards | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001 | medium |
@@ -83,23 +83,23 @@
 | 35 | E01_P002 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006, P002 | high |
 | 36 | E01_P003 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006, P003 | high |
 | 37 | E01_P004 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006, P004 | high |
-| 38 | E01_P017 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006 | high |
-| 39 | E01_P018 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006 | high |
-| 40 | E01_R001 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_L007, E01_P016 | high |
-| 41 | E01_R002 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_L007, E01_P016 | high |
-| 42 | E01_R003 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_C022, E01_L007, E01_P016 | high |
+| 38 | E01_P022 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006 | high |
+| 39 | E01_P023 | prop_episode_state_card | precision_assets | prop_item_state_sheet_with_scale_and_detail_crops | 1:1 | neutral_plain_background | forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset | E01_F001, E01_F006 | high |
+| 40 | E01_R001 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_L007, E01_P021 | high |
+| 41 | E01_R002 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_L007, E01_P021 | high |
+| 42 | E01_R003 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C020, E01_C024A, E01_L007, E01_P021 | high |
 | 43 | E01_R004 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C004, E01_L007 | medium |
 | 44 | E01_R005 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016B, E01_L003, E01_K004 | medium |
-| 45 | E01_R006 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C024, E01_P008, E01_K006 | medium |
+| 45 | E01_R006 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C023, E01_P008, E01_K006 | medium |
 | 46 | E01_R007 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016B | medium |
-| 47 | E01_R008 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C024, E01_L003, E01_P008 | high |
-| 48 | E01_R009 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C024, E01_L003, E01_P008 | high |
+| 47 | E01_R008 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C023, E01_L003, E01_P008 | high |
+| 48 | E01_R009 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C023, E01_L003, E01_P008 | high |
 | 49 | E01_R010 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L014, E01_P009 | medium |
 | 50 | E01_R011 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C002, E01_C011, E01_P002, E01_K002 | medium |
 | 51 | E01_R012 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C002, E01_C011, E01_P002 | medium |
 | 52 | E01_R013 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L014, E01_P009 | high |
 | 53 | E01_R014 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L014, E01_P009 | high |
-| 54 | E01_R015 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C018, E01_C023, E01_L001A, E01_P017, E01_K004, E01_K006 | high |
+| 54 | E01_R015 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C017, E01_C018, E01_C027, E01_L001A, E01_P022, E01_K004, E01_K006 | high |
 | 55 | E01_R016 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_L001A | high |
 | 56 | E01_R017 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C001, E01_K001 | high |
 | 57 | E01_R018 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C005, E01_P005, E01_K003 | high |
@@ -107,16 +107,16 @@
 | 59 | E01_R020 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C001, E01_P005, E01_P020 | high |
 | 60 | E01_R021 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_P003 | high |
 | 61 | E01_R022 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_P004 | high |
-| 62 | E01_R023 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001A, E01_P017 | high |
-| 63 | E01_R024 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001A, E01_P017 | high |
-| 64 | E01_R025 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C002, E01_L001B, E01_P002, E01_P018, E01_K002 | high |
+| 62 | E01_R023 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001A, E01_P022 | high |
+| 63 | E01_R024 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001A, E01_P022 | high |
+| 64 | E01_R025 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C002, E01_L001B, E01_P002, E01_P023, E01_K002 | high |
 | 65 | E01_R026 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C006, E01_L001B | medium |
 | 66 | E01_R027 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C002 | medium |
-| 67 | E01_R028 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001B, E01_P018 | high |
+| 67 | E01_R028 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001B, E01_P023 | high |
 | 68 | E01_R029 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C006, E01_L001B | medium |
-| 69 | E01_R030 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001C, E01_P017 | high |
-| 70 | E01_R031 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_L001C, E01_P018 | high |
-| 71 | E01_R032 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_C017, E01_C018, E01_C023, E01_L001C, E01_K004, E01_K006 | high |
+| 69 | E01_R030 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_L001C, E01_P022 | high |
+| 70 | E01_R031 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_L001C, E01_P023 | high |
+| 71 | E01_R032 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C016A, E01_C017, E01_C018, E01_C027, E01_L001C, E01_K004, E01_K006 | high |
 | 72 | E01_R033 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C005, E01_P003, E01_P005 | high |
 | 73 | E01_R034 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C007, E01_P004 | high |
 | 74 | E01_R035 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C007, E01_P004 | high |
@@ -126,7 +126,7 @@
 | 78 | E01_R039 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C001, E01_C006, E01_P020, E01_K001 | high |
 | 79 | E01_R040 | reference_frame | reference_frames | video_generation_reference_frame | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_C001, E01_C006, E01_P020, E01_K001 | high |
 | 80 | E01_O001 | shot_override | shot_overrides | shot_override_video_frame_control_plate | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_F006, E01_C016A, E01_P003, E01_R021, E01_O001, E01_O002, E01_O003, E01_O004 | high |
-| 81 | E01_O002 | shot_override | shot_overrides | shot_override_video_frame_control_plate | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_F006, E01_L001B, E01_P018, E01_R028, E01_O001, E01_O002, E01_O003, E01_O004 | high |
+| 81 | E01_O002 | shot_override | shot_overrides | shot_override_video_frame_control_plate | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_F006, E01_L001B, E01_P023, E01_R028, E01_O001, E01_O002, E01_O003, E01_O004 | high |
 | 82 | E01_O003 | shot_override | shot_overrides | shot_override_video_frame_control_plate | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_F006, E01_C005, E01_P003, E01_P005, E01_R033, E01_O001, E01_O002, E01_O003, E01_O004 | high |
 | 83 | E01_O004 | shot_override | shot_overrides | shot_override_video_frame_control_plate | 16:9 | video_frame | forbidden | E01_F001, E01_F005, E01_F006, E01_C007, E01_P003, E01_R036, E01_O001, E01_O002, E01_O003, E01_O004 | high |
 
