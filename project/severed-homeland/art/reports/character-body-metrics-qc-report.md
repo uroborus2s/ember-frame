@@ -30,7 +30,7 @@ Highest priority conflicts:
 | P0 | C018 | Current index says `185-205cm`, but Bible says pure insect foot soldiers are `200-230cm`; lower bound is too human. |
 | P0 | C019 | Current index says `205-225cm`, but Bible says heavy insect soldiers are `220-260cm`; it collapses the tier gap with C018. |
 | P0 | C020 | Current index says Northern siege troops are `175-340cm`, missing the `145-165cm` snow-badger diggers and all subtype weight bands. |
-| P1 | C008 | Latest user correction passes visually for `220cm`, boots, and integrated insect face, but conflicts with Bible's older `218cm / 118kg / narrow hard torso` baseline. Canon decision required before further reuse. |
+| Resolved | C008 | User confirmed the latest `220cm / 150kg` elite insect-general version is canon; `bible/characters.md` has been updated accordingly. No redraw required for body metrics. |
 | P1 | C010 | Current index says `176cm / 58kg`, while Bible says 鹿弥 is `169cm / 52kg`; she has been pulled toward generic攻城鹿族萨满 scale. |
 | P1 | C012 | Current index says `210cm / 170kg`; Bible says `202-210cm / 125-155kg` and "not low-grade giant-beast build." Visual card also reads too heavy. |
 | P1 | C014 | Current index says `218cm / 190kg`; Bible says `218-228cm / 210-260kg`. Visual card looks heavy enough, so index correction may be sufficient. |
@@ -57,7 +57,7 @@ Highest priority conflicts:
 
 | Asset | Current body metrics | Bible / continuity baseline | Visual judgment | QC result | Required action |
 | --- | --- | --- | --- | --- | --- |
-| C008 厉螳 | `220cm`, `150kg`, heavy insect general | Bible: `218cm`, `118kg`, narrow hard torso, forward long-blade silhouette. Latest user feedback requested `220cm`, shoes, and +10% humanoid face readability. | Visual now passes recent user requirements: noticeably taller than human, integrated insect head rather than mask, enclosed segmented boots, and about half humanoid command readability. It is heavier and broader than Bible's older narrow-blade baseline. | Canon conflict | Do not regenerate immediately. First decide whether the newer user direction officially overrides Bible. If yes, update Bible to `220cm / around150kg` heavy elite commander. If no, reduce index and future prompt to `218cm / around118-130kg`, narrow torso, lighter blade-like body. |
+| C008 厉螳 | `220cm`, `150kg`, heavy insect general | Bible updated on 2026-06-07 to `220cm / 150kg`, high-ranking heavy combat insect commander, integrated insect face, enclosed segmented boots. | Visual passes recent user requirements: noticeably taller than human, integrated insect head rather than mask, enclosed segmented boots, and about half humanoid command readability. | Resolved / pass | No redraw required for body metrics. Future prompt refresh should inherit the updated Bible baseline rather than the older `218cm / 118kg` narrow-blade version. |
 | C016 肃明基层虫吏 | `170-185cm`, slim/medium official | Bible: must be insect, not below `190cm`, common `190-210cm`; episode continuity also `190-210cm` | Visual face, white official robe, shoes, ledger/seal/abacus are correct. The metric field is wrong and weakens hierarchy. | P0 fail in metadata | Change body metrics to `190-210cm`, "tall elongated official, slim but above human height." Add scale refs against 170cm human and lower slave soldier. Redraw only if a future scale panel shows under-190 body. |
 | C017 混血奴兵 | `168-180cm`, medium thin | Bible: `170-200cm`, mixed human-insect slave soldier | Visual reads as hybrid清污军户 with human expression and insectized scalp/skin; height panel does not fully protect the 200cm upper bound. | P1 metadata mismatch | Change body metrics to `170-200cm`, with most common examples around human-to-tall-human scale. No redraw required unless later scenes need the tallest slave tier. |
 | C018 普通纯虫族小兵 | `185-205cm`, light-mid hard shell | Bible: pure insect foot soldiers `200-230cm`; episode continuity `200-230cm` | Visual reads as taller than human and strongly insectoid. The image can work, but index lower bound is too human. | P0 metadata fail | Change body metrics to `200-230cm`; emphasize low, forward, strong body and clear height above C017. Image likely reusable after index correction. |
@@ -101,7 +101,6 @@ Highest priority conflicts:
    - C021: add exact per-beast size ranges.
 
 2. Canon-decision required before redraw:
-   - C008: decide whether latest accepted 220cm/150kg elite commander replaces the older 218cm/118kg narrow-blade Bible baseline.
    - C001: decide whether approved legacy card body remains 173cm/61kg or Bible/episode 175cm/64kg is restored.
 
 3. Potential visual redraw or targeted correction:
@@ -115,4 +114,4 @@ No body-scale action required for: C002, C003, C004, C005, C006, C007, C013, C01
 
 Pass with minor metadata normalization: C001, C009, C011, C026.
 
-Requires correction before Director Room prompt refresh: C008, C010, C012, C014, C016, C017, C018, C019, C020, C021.
+Requires correction before Director Room prompt refresh: C010, C012, C014, C016, C017, C018, C019, C020, C021.
