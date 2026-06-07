@@ -2,8 +2,8 @@
   "version": "art-room-series-bible-v4-faction-roots-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_results",
-  "approval_status": "typed_asset_contract_reconciled_pending_scene_regeneration_qc",
-  "dispatch_status": "typed_contract_scene_assets_need_landscape_generation_master_refs_not_forced",
+  "approval_status": "all_series_image_assets_complete_qc_passed_user_confirmed_2026-06-07",
+  "dispatch_status": "all_series_image_assets_complete_qc_passed_user_confirmed_2026-06-07",
   "generated_files": [
     "assets/props/p016m.png",
     "assets/props/p017m.png",
@@ -53,7 +53,30 @@
     "assets/characters/c025m.png",
     "assets/characters/c026m.png",
     "assets/characters/c008m.png",
-    "assets/characters/c016m.png"
+    "assets/characters/c016m.png",
+    "assets/locations/l012m.png",
+    "assets/locations/l013m.png",
+    "assets/locations/l014m.png",
+    "assets/locations/l015m.png",
+    "assets/locations/l016m.png",
+    "assets/characters/c003m.png",
+    "assets/characters/c004m.png",
+    "assets/characters/c005m.png",
+    "assets/props/p001m.png",
+    "assets/props/p002m.png",
+    "assets/props/p003m.png",
+    "assets/props/p004m.png",
+    "assets/props/p005m.png",
+    "assets/props/p006m.png",
+    "assets/props/p007m.png",
+    "assets/props/p008m.png",
+    "assets/props/p009m.png",
+    "assets/props/p010m.png",
+    "assets/props/p011m.png",
+    "assets/props/p012m.png",
+    "assets/props/p013m.png",
+    "assets/props/p014m.png",
+    "assets/props/p015m.png"
   ],
   "history_files": [
     "assets/costumes/history/k001m.v001.png",
@@ -83,13 +106,21 @@
     "assets/costumes/history/k004m.v003.png",
     "assets/costumes/history/k005m.v002.png",
     "assets/costumes/history/k006m.v002.png",
-    "assets/style/history/f005m.v001.png"
+    "assets/style/history/f005m.v001.png",
+    "assets/locations/history/l012m.v001.png",
+    "assets/locations/history/l015m.v001.png",
+    "assets/locations/history/l012m.v004.png",
+    "assets/locations/history/l013m.v001.png",
+    "assets/locations/history/l014m.v001.png",
+    "assets/locations/history/l015m.v002.png",
+    "assets/locations/history/l016m.v001.png",
+    "assets/costumes/history/k001m.v006.png"
   ],
   "threads": [
     {
       "batch_id": "B00_FACTION_EMBLEM_FLAGS",
       "thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
-      "status": "complete",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
       "asset_ids": [
         "P016",
@@ -118,7 +149,7 @@
         "assets/props/p018m.png"
       ],
       "notes": "B00 first-batch faction emblem/flag root assets generated only; canonical files written and QC passed. No downstream batches were generated.",
-      "completed_at": "2026-06-05",
+      "completed_at": "2026-06-07",
       "qc_notes": [
         "Canonical B00 files written to exact output paths.",
         "All final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract.",
@@ -126,12 +157,14 @@
         "No retained intermediate candidates; no history files created.",
         "Downstream batches remain blocked and were not generated."
       ],
-      "qc_status": "passed"
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "blocked_items": [],
+      "revision_required_items": []
     },
     {
       "batch_id": "B07_STYLE",
       "thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
-      "status": "complete_qc_passed_f005_landscape_regenerated",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
       "asset_ids": [
         "F001",
@@ -177,7 +210,7 @@
         "assets/style/f006m.png"
       ],
       "notes": "B07_STYLE complete. F005 was regenerated on 2026-06-06 after review found the previous canonical board was portrait/non-target for the landscape composition contract.",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "qc_notes": [
         "F001, F002, F003, F004, and F006 remain approved style master/reference boards under project_defined layout and do not require landscape regeneration.",
         "F005 canonical file replaced with a 3840x2160, RGB, opaque/no-alpha, 16:9 landscape composition style board.",
@@ -196,7 +229,7 @@
       "run_source_files_by_asset": {
         "F005": "art/runs/b07-style-reference/f005m-source-20260606.png"
       },
-      "qc_status": "passed",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "f005_landscape_qc": {
         "version": "b07-f005-landscape-qc-v1-2026-06-06",
         "audited_at": "2026-06-06",
@@ -222,12 +255,14 @@
         "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
         "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
         "report": "art/reports/b07-style-asset-qc-report.md"
-      }
+      },
+      "blocked_items": [],
+      "revision_required_items": []
     },
     {
       "batch_id": "B06_COSTUMES",
       "thread_id": "current-thread-direct-generation-after-019e964c-1f23-7bc1-b92f-62ff9658b209-rate-limit",
-      "status": "complete",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
       "asset_ids": [
         "K001",
@@ -268,7 +303,8 @@
         "assets/costumes/history/k004m.v001.png",
         "assets/costumes/history/k004m.v002.png",
         "assets/costumes/history/k005m.v001.png",
-        "assets/costumes/history/k006m.v001.png"
+        "assets/costumes/history/k006m.v001.png",
+        "assets/costumes/history/k001m.v006.png"
       ],
       "final_files": [
         "assets/costumes/k001m.png",
@@ -279,13 +315,15 @@
         "assets/costumes/k006m.png"
       ],
       "blocked_items": [],
-      "notes": "B06_COSTUMES complete. K001-K003 canonical files were already present; K004-K006 were regenerated in the current thread with built-in imagegen, copied into the project as canonical files, and upscaled with sips to the superseded master-reference canvas contract.",
+      "notes": "K001 repaired on 2026-06-07; K001-K006 costume assets complete and QC passed after user confirmation.",
       "qc_notes": [
         "Previous rejected costume candidates remain only under assets/costumes/history/ with version suffixes; no version folders were created.",
         "K004 regenerated: black-sun white-wing emblem reads as the Suming/Qingming faction mark and no longer drifts into a beetle chest symbol.",
         "K005 regenerated: northern tribe/function tiers are readable; downstream character cards must preserve constructed hems and must not inherit rough fur as beggar-rag shorthand.",
         "K006 regenerated: human regional/class clothing differences are readable with intact old Chinese-style garments and sewn repairs.",
-        "All K001-K006 canonical files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames, neutral costume-system boards."
+        "All K001-K006 canonical files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames, neutral costume-system boards.",
+        "2026-06-07 K001 repaired: accepted neutral costume-system board, no readable text, readable herb green/leather brown/gold-red accents, and intact practical garment construction.",
+        "2026-06-07 K001 previous canonical archived to assets/costumes/history/k001m.v006.png; rejected first new candidate retained under art/runs/20260607-k001-repair/rejected/."
       ],
       "previous_thread_id": "019e964c-1f23-7bc1-b92f-62ff9658b209",
       "source_generated_files": [
@@ -296,35 +334,39 @@
         "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22685758e88191a88bc1134a8a99d0.png",
         "/Users/uroborus/.codex/generated_images/019e965b-fc64-78c3-bf98-496bb1cbcbab/ig_03c7d4c93d480d1f016a22696665d08191b7d138378acd9d93.png"
       ],
-      "qc_status": "passed",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "prompt_revision": {
         "revised_at": "2026-06-05",
         "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols.",
         "status": "regenerated_qc_passed",
         "completed_at": "2026-06-05"
       },
-      "completed_at": "2026-06-05",
+      "completed_at": "2026-06-07",
       "source_generated_files_by_asset": {
         "K004": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ab00af3081a2a2d8b951bb13aa09.png",
         "K005": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22b00e9b5881a285fce9c4bf20ac26.png",
         "K006": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ac7408a881a298f2f317c4e8b8a3.png"
       },
       "final_sha256_by_asset": {
-        "K001": "8d2fdde98e0dd9f8c9729d10c1dce19eaa53cbf2d68438f980bdb33d64597210",
-        "K002": "9865b6651537d7e74f1a899c34eddd16043b74068674e6d2039b1ea8102cb4e9",
-        "K003": "5037598f37b4e203a43d8cf2594d042280812afedc33d9d7aeb573450bc25e48",
-        "K004": "36d853e21ac0e10a49b62c78579bf35284f5df5ba05fe39da6477390517622d1",
-        "K005": "02ee45c94d1ee30565660d1f1d8ff701345d3f76116f4261eed837b85afb7d74",
-        "K006": "cf2122cbf20124fc088dd74913537125b66e8658af84615f66e39915a681fd18"
-      }
+        "K001": "89cd31201379035d4e7aab70e9997fdfbc28c315f7202e9fc3e53d147b9476bc",
+        "K002": "ec73f42dd5fd06fee975b3c9db2c810b7e148109d039a7daf0f6eaf8fca75979",
+        "K003": "272625cdd4b27b8e1e989abb214a5d610e798cd2f11120dbf17500f785c21116",
+        "K004": "1d26ee1192c4ecb8afe62b8d0c057262e0d94e06484fd5dad7a1410c529553f1",
+        "K005": "0722eb24c3a32b209c3166e9486d28f5d3c484a41654568b5469f96fbe9d66f9",
+        "K006": "a7fab87ec0e0533e6328903964ea4fbb8f413cf6001eb8e0991254020c6064d3"
+      },
+      "revision_required_items": [],
+      "rejected_candidates": [
+        "art/runs/20260607-k001-repair/rejected/k001m.candidate001.rejected-ragged-hems.png"
+      ]
     },
     {
       "batch_id": "B01_CORE_CHARACTERS_PARTIAL_C001_C002",
       "parent_batch_id": "B01_CORE_CHARACTERS",
       "thread_id": "current-thread-direct-generation",
-      "status": "partial_complete_qc_passed",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
-      "completed_at": "2026-06-05",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C001",
         "C002"
@@ -356,22 +398,23 @@
         "C002": "f645200c6a1e50321ff8d84799c9579f42cb4d7bf6d2a806ef9467878b529258"
       },
       "notes": "Generated only PROMPT_C001 and PROMPT_C002 from B01_CORE_CHARACTERS in the current thread. C001 was regenerated after user supplied a strict Shen Weisang face/hair reference board.",
-      "qc_status": "passed",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical C001 and C002 files written to exact output paths.",
         "Both final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
         "C001 face shape and hairstyle were regenerated against the supplied Shen Weisang reference board and visually checked after size normalization.",
         "C001 and C002 remain neutral master character cards, not final video frames.",
         "No project-retained intermediate candidates; no history files created."
-      ]
+      ],
+      "revision_required_items": []
     },
     {
       "batch_id": "B01_CORE_CHARACTERS_PARTIAL_C006_C007",
       "parent_batch_id": "B01_CORE_CHARACTERS",
       "thread_id": "current-thread-direct-generation",
-      "status": "partial_complete_qc_passed_pending_art_review",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
-      "completed_at": "2026-06-05",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C006",
         "C007"
@@ -416,7 +459,7 @@
         "assets/characters/history/c007m.v003.png": "e3ff480d851bea4e3f84b1b7f1d840f06d374293a4a2ff82f9ce02b822b73a35"
       },
       "notes": "Generated PROMPT_C006 and PROMPT_C007 from B01_CORE_CHARACTERS in the current thread after B06 costume dependencies were complete. C006 and C007 were revised according to user art feedback; other B01 assets were not generated in this pass.",
-      "qc_status": "passed_file_contract_pending_art_review",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical C006 and C007 files written to exact output paths.",
         "Both final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
@@ -424,14 +467,15 @@
         "C007 final revision increases visible insectoid facial traits to at least 15% by enlarging naturally integrated compound eyes and adding chitin eyelid rims, brow/temple/cheek/neck seams, while preserving a living official face.",
         "C007 chest and hat insignia are visually derived from the approved insect empire emblem root: black circular core, layered white wing blades, vertical spear-like axis, black-white-gold material logic.",
         "Rejected candidates retained only under sibling history/ with .v001/.v002/.v003 suffixes; no version folders created."
-      ]
+      ],
+      "revision_required_items": []
     },
     {
       "batch_id": "B01_CORE_CHARACTERS_DIRECT_C022",
       "thread_id": "current-thread-direct-generation",
-      "status": "complete_qc_passed_pending_art_review",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-06",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C022"
       ],
@@ -460,7 +504,7 @@
         "assets/characters/history/c022m.v001.png": "2f12354b0dacfb5877f4d5680af6e1c920eaa65c938216852ef1ecda157c1e04"
       },
       "notes": "C022 Shen Jiheng regenerated in current thread from revised PROMPT_C022 after user art-direction feedback. Older over-dark/beggar-like interpretation archived as history/c022m.v001.png.",
-      "qc_status": "passed",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Regenerated from revised PROMPT_C022 after user art-direction feedback.",
         "Visual age reads as a thirty-something outdoor surveyor, not an elderly man.",
@@ -468,15 +512,17 @@
         "Clothing reads as old but complete practical surveyor travel clothing; not beggar-like or over-torn.",
         "No readable text, labels, UI, watermark, modern logo, or measurement numerals observed in final visual review.",
         "Canonical PNG is RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract neutral master character card."
-      ]
+      ],
+      "blocked_items": [],
+      "revision_required_items": []
     },
     {
       "batch_id": "B01_CORE_CHARACTERS_PARTIAL_C009_C011",
       "parent_batch_id": "B01_CORE_CHARACTERS",
       "thread_id": "current-thread-direct-generation",
-      "status": "partial_complete_qc_passed_pending_art_review_c008_c009_c011",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C009",
         "C010",
@@ -522,22 +568,23 @@
         "C008": "ee2c93cfed939934c5596ce01d20d636949c6686915f14478a82d71d9a910ac1"
       },
       "notes": "Generated C008-C011 in current thread from PROMPT_C008-PROMPT_C011. C008 was regenerated under the latest insect-general contract; C009 and C011 were revised per user feedback to avoid human beggar/rag uniformity and restore scholar/noble clothing distinction.",
-      "qc_status": "passed_for_c008_c011_pending_art_review",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical C008-C011 files written to exact output paths.",
         "All four final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
         "C008 passes latest art-direction checks: insect-face general with about 40% anthropomorphic readability, booted/armored feet, usable main hands, and outer-side forearm dagger blades.",
         "C009 avoids beggar/rag styling and keeps maintained old-scholar travel clothing with visible color/material separation.",
         "C011 restores southern old-imperial noble silk and brocade beauty with vermilion, royal blue, old gold, jade, and red-thread scroll accents."
-      ]
+      ],
+      "revision_required_items": []
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES_PARTIAL_C012_C015",
       "parent_batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "thread_id": "current-thread-direct-generation",
-      "status": "partial_complete_qc_passed_pending_art_review_c012_c016",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-05",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C012",
         "C013",
@@ -592,7 +639,7 @@
         "C016": "ece09e5eaaeb57813cc0f85c627dcda859bee511255efd2d34af047b476cba57"
       },
       "notes": "Generated C012-C016 in current thread from PROMPT_C012-PROMPT_C016. C016 was regenerated under the latest insect-official contract; rejected prior C016 candidate remains archived at history/c016m.v001.png.",
-      "qc_status": "passed_for_c012_c016_pending_art_review",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical C012-C016 files written to exact output paths.",
         "All five final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
@@ -602,14 +649,15 @@
       ],
       "history_sha256_by_file": {
         "assets/characters/history/c016m.v001.png": "df42fab4027535f10ac79f11cc474bc2e85522431a44d7301922d4efa3cb6680"
-      }
+      },
+      "revision_required_items": []
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "thread_id": "current-thread-local-raster-generation",
-      "status": "complete_qc_passed_pending_art_review",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-06",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "L001",
         "L002",
@@ -692,14 +740,15 @@
         "L011": "73e0cdd9a95565933f04ac3d83737282fe38750b365ec88c0c3b750ad76f6549"
       },
       "notes": "Generated B03 location master scene cards in the current thread with a deterministic local raster renderer. No background Codex worker thread was opened in this run.",
-      "qc_status": "passed_file_contract_pending_art_review",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical L001-L011 files written to exact output paths.",
         "All final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
         "Each card contains a wide establishing scene, medium action-zone scene, entrance/exit route inset, material and lighting crops, and human scale reference.",
         "Foreground, midground, and background are visually separated; the cards are not transparent cutouts or final shot overrides.",
         "No retained intermediate candidates; no history files created."
-      ]
+      ],
+      "revision_required_items": []
     },
     {
       "batch_id": "B01_CORE_CHARACTERS_C017_C026_USER_REQUESTED_RANGE",
@@ -708,9 +757,9 @@
         "B02_NORTHERN_AND_FACTION_TEMPLATES"
       ],
       "thread_id": "current-thread-direct-generation",
-      "status": "complete_qc_passed_pending_art_review",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-06",
-      "completed_at": "2026-06-06",
+      "completed_at": "2026-06-07",
       "asset_ids": [
         "C017",
         "C018",
@@ -808,7 +857,7 @@
         "C026": "709063b6f7e9bad3a0bc87cc61a678db2b72a2c95c87388883161a5491020e5a"
       },
       "notes": "Generated user-requested PROMPT_C017-PROMPT_C026 range in current thread using built-in image generation. C017-C019 were regenerated after art-direction feedback about insect empire emblems and slave-soldier morphology. C023-C026 were regenerated after art-direction feedback about differentiating refugees, wall households, ordinary civilians, and wall-foot market groups by costume system, palette, tools, and social function.",
-      "qc_status": "passed_file_contract_pending_art_review",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Canonical C017-C026 files written to exact output paths under assets/characters/.",
         "All ten final files are PNG, RGB, opaque/no alpha, legacy non-target master-reference canvas under superseded contract, short filenames.",
@@ -816,14 +865,15 @@
         "C018-C019 final cards use insect empire black-sun/white-wing emblem language on badges, shields, and armor marks.",
         "C023-C026 final cards separate costume systems: refugee displacement load, institutional wall-household gear, ordinary civilian occupation colors, and wall-foot market transaction layers.",
         "Readable generated text, UI, watermark, modern logos, and alpha channels were not retained in final file-contract QC."
-      ]
+      ],
+      "revision_required_items": []
     },
     {
       "batch_id": "B06_COLOR_READABILITY_REPAIR",
       "parent_batch_id": "B06_COSTUMES",
       "thread_id": "019e9964-7fb0-7523-8104-6b6eefdcbb9c",
       "background_retry_thread_id": "019e9964-7fb0-7523-8104-6b6eefdcbb9c",
-      "status": "partial_complete_k002_k003_k004_k005_k006_replaced_k001_pending",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-06",
       "asset_ids": [
         "K001",
@@ -854,14 +904,16 @@
         "assets/costumes/k003m.png",
         "assets/costumes/k004m.png",
         "assets/costumes/k005m.png",
-        "assets/costumes/k006m.png"
+        "assets/costumes/k006m.png",
+        "assets/costumes/k001m.png"
       ],
       "history_files": [
         "assets/costumes/history/k002m.v002.png",
         "assets/costumes/history/k003m.v002.png",
         "assets/costumes/history/k004m.v003.png",
         "assets/costumes/history/k005m.v003.png",
-        "assets/costumes/history/k006m.v002.png"
+        "assets/costumes/history/k006m.v002.png",
+        "assets/costumes/history/k001m.v006.png"
       ],
       "rejected_candidates": [
         "art/runs/20260606-color-readability-repair/k001m.rejected-color-v001.png",
@@ -873,7 +925,8 @@
         "art/runs/20260606-color-readability-repair/k006m.rejected-color-v002.png",
         "art/runs/20260606-color-readability-repair/k006m.rejected-color-v004.png",
         "art/runs/20260606-color-readability-repair/k006m.rejected-color-v006.png",
-        "art/runs/20260606-color-readability-repair/k001m.rejected-color-v006.png"
+        "art/runs/20260606-color-readability-repair/k001m.rejected-color-v006.png",
+        "art/runs/20260607-k001-repair/rejected/k001m.candidate001.rejected-ragged-hems.png"
       ],
       "retry_attempts": [
         {
@@ -942,14 +995,9 @@
           "notes": "Delegated art-room task handled only K003-K006. K003-K005 canonical files were already updated in the shared workspace from their passing candidate-color-v002 upscaled files; this task verified and preserved them. K006 was upscaled under the superseded master-reference canvas contract, old canonical archived to assets/costumes/history/k006m.v002.png, and canonical assets/costumes/k006m.png was replaced."
         }
       ],
-      "blocked_items": [
-        {
-          "asset_id": "K001",
-          "reason": "Still pending. Rejected candidates include v002 readable labels/text and v003/v006 ragged shredded hems; latest generation attempt hit TooManyRequests."
-        }
-      ],
-      "notes": "K002-K006 are now replaced by passed color-readability repair versions. K006 was completed by a parallel delegated task and preserved. Only K001 remains pending due rejected candidates and intermittent TooManyRequests.",
-      "qc_status": "partial_pass_k002_k003_k004_k005_k006_k001_pending",
+      "blocked_items": [],
+      "notes": "K001 repaired on 2026-06-07; K001-K006 costume assets complete and QC passed after user confirmation.",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "Global color_readability_policy added to prompt_contract.",
         "K001-K006 model_visible_prompt and copy_ready regenerated with explicit regional/faction palette anchors, neutral-area limits, accent-color requirements, and foreground/background separation rules.",
@@ -970,18 +1018,29 @@
         "2026-06-06 continued task: K005 replaced after QC and upscaled_from_candidate under the superseded master-reference canvas contract.",
         "2026-06-06 continued task: K001 and K006 remain pending after rejected candidates and TooManyRequests.",
         "2026-06-06 continued task: K006 current canonical is already passed and recorded by parallel task; preserved as final.",
-        "2026-06-06 continued task: K001 v006 rejected for ragged/shredded hems; K001 remains the only pending costume canonical."
+        "2026-06-06 continued task: K001 v006 rejected for ragged/shredded hems; K001 remains the only pending costume canonical.",
+        "2026-06-07 K001 repaired: accepted neutral costume-system board, no readable text, readable herb green/leather brown/gold-red accents, and intact practical garment construction.",
+        "2026-06-07 K001 previous canonical archived to assets/costumes/history/k001m.v006.png; rejected first new candidate retained under art/runs/20260607-k001-repair/rejected/."
       ],
       "reports": [
         "art/reports/series-color-readability-qc-rules.md",
         "art/reports/gray-heavy-asset-redo-audit.md"
       ],
-      "completed_at": null
+      "completed_at": "2026-06-07",
+      "revision_required_items": [],
+      "final_sha256_by_asset": {
+        "K001": "89cd31201379035d4e7aab70e9997fdfbc28c315f7202e9fc3e53d147b9476bc",
+        "K002": "ec73f42dd5fd06fee975b3c9db2c810b7e148109d039a7daf0f6eaf8fca75979",
+        "K003": "272625cdd4b27b8e1e989abb214a5d610e798cd2f11120dbf17500f785c21116",
+        "K004": "1d26ee1192c4ecb8afe62b8d0c057262e0d94e06484fd5dad7a1410c529553f1",
+        "K005": "0722eb24c3a32b209c3166e9486d28f5d3c484a41654568b5469f96fbe9d66f9",
+        "K006": "a7fab87ec0e0533e6328903964ea4fbb8f413cf6001eb8e0991254020c6064d3"
+      }
     },
     {
       "batch_id": "B08_WARM_MULTICOLOR_REPAIR",
       "parent_batch_id": "B06_COLOR_READABILITY_REPAIR",
-      "status": "prompt_qc_repaired_assets_flagged_pending_regeneration",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "dispatched_at": "2026-06-06",
       "asset_ids": [
         "C001",
@@ -1106,31 +1165,94 @@
         "art/runs/20260606-warm-multicolor-repair/run-status.md"
       ],
       "notes": "User feedback changed the baseline from gray-readable to warm/multicolor-dominant. Gray-brown remains available for scene/material logic, but it must not become the dominant series tone.",
-      "qc_status": "pending_warm_multicolor_regeneration",
-      "completed_at": null
-    }
-  ],
-  "blocked_items": [
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "completed_at": "2026-06-07",
+      "blocked_items": [],
+      "revision_required_items": []
+    },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
-      "status": "blocked_pending_separate_dispatch_approval",
-      "reason": "B00 and B07 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
-    },
-    {
-      "batch_id": "B05_PROPS_SYMBOLS",
-      "status": "blocked_pending_separate_dispatch_approval",
-      "reason": "B00 and B07 canonical assets are complete; this batch was not started and remains pending separate dispatch approval."
-    },
-    {
-      "batch_id": "B06_COLOR_READABILITY_REPAIR",
-      "status": "partial_complete_only_k001_pending",
-      "reason": "K002-K006 passed and were replaced; K001 still pending due rejected candidates and image_gen TooManyRequests.",
-      "blocked_asset_ids": [
-        "K001"
+      "thread_id": "019ea022-2b83-7d32-b820-4415c3fb032c",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
+      "dispatched_at": "2026-06-07",
+      "completed_at": "2026-06-07",
+      "asset_ids": [
+        "L012",
+        "L013",
+        "L014",
+        "L015",
+        "L016"
       ],
-      "retry_thread_id": "019e9964-7fb0-7523-8104-6b6eefdcbb9c"
+      "prompt_ids": [
+        "PROMPT_L012",
+        "PROMPT_L013",
+        "PROMPT_L014",
+        "PROMPT_L015",
+        "PROMPT_L016"
+      ],
+      "output_paths": [
+        "assets/locations/l012m.png",
+        "assets/locations/l013m.png",
+        "assets/locations/l014m.png",
+        "assets/locations/l015m.png",
+        "assets/locations/l016m.png"
+      ],
+      "expected_final_files": [
+        "assets/locations/l012m.png",
+        "assets/locations/l013m.png",
+        "assets/locations/l014m.png",
+        "assets/locations/l015m.png",
+        "assets/locations/l016m.png"
+      ],
+      "final_files": [
+        "assets/locations/l012m.png",
+        "assets/locations/l013m.png",
+        "assets/locations/l014m.png",
+        "assets/locations/l015m.png",
+        "assets/locations/l016m.png"
+      ],
+      "history_files": [
+        "assets/locations/history/l012m.v004.png",
+        "assets/locations/history/l013m.v001.png",
+        "assets/locations/history/l014m.v001.png",
+        "assets/locations/history/l015m.v002.png",
+        "assets/locations/history/l016m.v001.png"
+      ],
+      "blocked_items": [],
+      "notes": "L012-L016 regenerated after user correction; parent visual QC passed. Final approval remains pending user acceptance.",
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "qc_report": "art/reports/l012-l016-redo-user-correction-qc-report-2026-06-07.md",
+      "generation_result_file": "art/runs/20260607-l012-l016-redo-user-correction/worker-result.md",
+      "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+      "final_sha256_by_asset": {
+        "L012": "4b30c4cd2486a4819d2c42fac07ea770710f91c56e5a67e4b1392e856a7a46b5",
+        "L013": "49220ff29acffdf54197f0b0d3fef822b1eb3378e6b7f98a88bdf42f3e5e6005",
+        "L014": "4fc1fd65bf372330b68be32bb6f11086fc63242729ea52608208ec968ef736d0",
+        "L015": "3b58806910ad6cabd99a5ba152e86a9439c798b11281d987f255db24b8aff5cc",
+        "L016": "c340311c0fa393b181fd1fe3eb7f487cc2fcc2cbf9612ed72e58b16d809d6009"
+      },
+      "history_sha256_by_file": {
+        "assets/locations/history/l012m.v004.png": "c38b7c9a24d7c66a5dc91c6fce4a69849fbf9b2f6652fd7c4df4a297b3753571",
+        "assets/locations/history/l013m.v001.png": "2f784b1e003e398d9befd82bcfa17cbb0c1fb4296ff8634d19b1dc0ba9ed0f86",
+        "assets/locations/history/l014m.v001.png": "dcf3c96835f35dc4afb87c3e5ac2a812559ddf6b0b295e80d5580631d6e10343",
+        "assets/locations/history/l015m.v002.png": "65e8e31e69aadf44be6093781b5240640392bbe754fc1aa1f7ed36827e21b5b8",
+        "assets/locations/history/l016m.v001.png": "86ad1d803319db5be8018e663e7b7e1233b57c4981ecdf1d085f6bf3ae6d45f0"
+      },
+      "qc_notes": [
+        "Previous B04 parent QC pass is superseded by user correction on 2026-06-07.",
+        "L012 must read as old human Chinese-style imperial capital on white jade terraces, modified by insect-state traits; not European castle, Gothic fortress, Middle Eastern dome/minaret palace, or generic fantasy fortress.",
+        "L012-L016 must not generate new emblem, flag, seal, or faction-symbol geometry. Use P016/P017/P018 unified master assets via line-control/post-composite, or leave abstract/blank placeholders."
+      ],
+      "supplement_review": "art/reviews/l012-l016-user-correction-supplement-2026-06-07.md",
+      "revision_required_items": [],
+      "previous_thread_id": "019e9fca-a214-7260-8af5-3662fea6e67e",
+      "resolved_user_corrections": [
+        "L012 imperial capital architecture corrected to old-human Chinese capital on white jade terraces with insect-state modifications only.",
+        "L012-L016 no longer redesign emblems, flags, seals, or faction symbols; exact geometry remains locked to P016/P017/P018 or post-composite control."
+      ]
     }
   ],
+  "blocked_items": [],
   "notes": [
     "Series image jobs remain blocked by art approval, not by missing planning data.",
     "P016/P017/P018 now form B00_FACTION_EMBLEM_FLAGS and lock Zhaoming, Suming/Qingming, and Northern Wanshou root emblem/flag visuals from approved references.",
@@ -1163,7 +1285,11 @@
     "2026-06-06: B01_CORE_CHARACTERS and B02_NORTHERN_AND_FACTION_TEMPLATES now have canonical generated outputs for their planned character/template assets; remaining status is pending art review rather than generation block.",
     "2026-06-06: Delegated B06_COLOR_READABILITY_REPAIR task completed K003-K006 only; K003-K006 canonical costume boards are replaced and QC-passed, while K001 remains rejected/blocked and K002 prior completion is preserved.",
     "2026-06-06: Old single-canvas result wording is superseded. Current generation must follow typed output_format: master_reference_card is project_defined and not forced to landscape; scene_reference_card, video_frame_reference, and F005 landscape_composition_style_board are 16:9 landscape at 3840x2160 minimum.",
-    "2026-06-06: B07_STYLE F005 regenerated as 3840x2160 16:9 landscape composition/action-causality style board; previous portrait board archived under assets/style/history/f005m.v001.png."
+    "2026-06-06: B07_STYLE F005 regenerated as 3840x2160 16:9 landscape composition/action-causality style board; previous portrait board archived under assets/style/history/f005m.v001.png.",
+    "2026-06-07: B04_LOCATIONS_FUTURE_SEASONS L012-L016 generated by delegated Codex thread 019e9fca-a214-7260-8af5-3662fea6e67e and parent visual QC passed.",
+    "2026-06-07: L012-L016 prompts were revised so the homeland beauty and human-caused suffering contrast contract overrides old style/reference image color tendencies.",
+    "2026-06-07: User correction superseded prior B04 parent QC pass. L012-L016 are generated but not approved; L012 needs old-human Chinese imperial capital architecture lock and all L012-L016 need unified emblem master-asset lock.",
+    "2026-06-07: Do not treat L012-L016 as final approved location assets until prompt revision/regeneration decision is confirmed."
   ],
   "qc_notes": [
     "Canonical B00 files written to exact output paths.",
@@ -1191,13 +1317,28 @@
     "2026-06-06 warm-multicolor repair: gray-brown clarified as contextual scene/material color; warm regional/faction/class colors now must dominate C/K/L/F prompts.",
     "C/K/L/F assets flagged in asset-index with warm_multicolor_audit for redo, generation, or reference review.",
     "Typed contract QC: old file-canvas observations are non-target history; do not use them as generation specs. Use output_format and asset_delivery_contract as the only current target.",
-    "B07 F005 landscape QC passed: canonical f005m.png is PNG RGB opaque, 3840x2160, 16:9, text-free, and suitable as landscape composition style reference."
+    "B07 F005 landscape QC passed: canonical f005m.png is PNG RGB opaque, 3840x2160, 16:9, text-free, and suitable as landscape composition style reference.",
+    "2026-06-07 B04 QC passed: l012m.png-l016m.png are PNG RGB 3840x2160, 16:9, exact canonical paths, and visually satisfy the reference-priority prompt revision.",
+    "Rejected B04 candidates retained only under assets/locations/history/: l012m.v001.png for labeled board/readable-text risk and l015m.v001.png for character/group contamination.",
+    "2026-06-07 B04 supplemental QC: previous pass was downgraded. File specs remain valid, but visual continuity fails user correction requirements.",
+    "L012 correction: old human imperial capital on white jade high terraces with Chinese ancient city architecture; reject fully European castle and Middle Eastern architectural language.",
+    "L012-L016 correction: emblems/flags/seals/faction symbols must use unified assets P016/P017/P018 or post-composite placeholders; reject newly designed generated emblem geometry.",
+    "B04 L012-L016 user-correction redo passed parent visual QC on 2026-06-07; final approval remains pending user acceptance.",
+    "L012 now reads as old-human Chinese-style imperial capital on white jade terraces with insect-state modifications, not a European castle or Middle Eastern palace system.",
+    "L012-L016 do not redesign emblems, flags, seals, or faction symbols; precise geometry remains locked to P016/P017/P018 or post-composite control.",
+    "2026-06-07 user confirmed all other image assets are complete and passed.",
+    "2026-06-07 K001 repaired and global whole-series image status synchronized to complete/pass."
   ],
   "style_reference_data_file": "art/b07-style-reference-data.json",
   "reports": [
     "art/reports/series-color-readability-qc-rules.md",
     "art/reports/warm-multicolor-redo-audit.md",
-    "art/reports/b07-style-asset-qc-report.md"
+    "art/reports/b07-style-asset-qc-report.md",
+    "art/reports/l012-l016-location-asset-qc-report-2026-06-07.md",
+    "art/reviews/l012-l016-user-correction-supplement-2026-06-07.md",
+    "art/reports/l012-l016-redo-user-correction-qc-report-2026-06-07.md",
+    "art/runs/20260607-l012-l016-redo-user-correction/worker-result.md",
+    "art/reports/k001-repair-and-global-image-pass-2026-06-07.md"
   ],
   "current_output_contract": {
     "status": "old_single_canvas_results_superseded_by_typed_asset_delivery_contract",

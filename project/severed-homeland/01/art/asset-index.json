@@ -3,8 +3,8 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "episode01_art_room_assets",
-  "approval_status": "pending_user_art_approval",
-  "image_generation_status": "not_started_pending_user_approval",
+  "approval_status": "approved_by_user_request_2026-06-07",
+  "image_generation_status": "style_batch_complete_downstream_ready_2026-06-07",
   "counts": {
     "character": 15,
     "location": 6,
@@ -3502,8 +3502,8 @@
       "usage": [
         "all_scenes"
       ],
-      "approval_status": "pending_user_art_approval",
-      "generation_status": "not_started_pending_user_approval",
+      "approval_status": "approved_generated_qc_passed_2026-06-07",
+      "generation_status": "complete_qc_passed_2026-06-07",
       "design_summary": "低魔东方史诗、制度洁净和生活门槛被越过。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -3597,7 +3597,7 @@
       "dependency_reason": "Style references establish visual quality, 设定参考卡布局 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
       "priority": "high",
       "file_path": "assets/style/f001e01.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_E01_F001",
       "output_format": {
         "deliverable_kind": "style_reference_board",
@@ -3635,20 +3635,52 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "99e124cbf60f42132b0007a9c058478fee6ecf53e1a63110b7f2265acbe1b233",
+        "history_files": [
+          "assets/style/history/f001e01.v001.png",
+          "assets/style/history/f001e01.v002.png"
+        ],
+        "generated_at": "2026-06-07"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
-      }
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "99e124cbf60f42132b0007a9c058478fee6ecf53e1a63110b7f2265acbe1b233",
+        "history_files": [
+          "assets/style/history/f001e01.v001.png",
+          "assets/style/history/f001e01.v002.png"
+        ],
+        "generated_at": "2026-06-07"
+      },
+      "file_status": "written",
+      "qc_status": "passed",
+      "generated_at": "2026-06-07",
+      "final_file": "assets/style/f001e01.png",
+      "generated_file": "assets/style/f001e01.png",
+      "final_sha256": "99e124cbf60f42132b0007a9c058478fee6ecf53e1a63110b7f2265acbe1b233",
+      "history_files": [
+        "assets/style/history/f001e01.v001.png",
+        "assets/style/history/f001e01.v002.png"
+      ],
+      "generation_thread_ids": {
+        "batch": "019ea079-574d-7751-a1f1-750001408fd5"
+      },
+      "qc_notes": [
+        "First generated candidate had readable or pseudo-text labels and was retained only in history.",
+        "Second candidate passed visual QC; canonical file was normalized to 2048x2048.",
+        "Board shows material, color, light, low-magic, and prohibited-direction examples without readable text."
+      ]
     },
     {
       "asset_id": "E01_F005",
@@ -3670,8 +3702,8 @@
       "usage": [
         "all_scenes"
       ],
-      "approval_status": "pending_user_art_approval",
-      "generation_status": "not_started_pending_user_approval",
+      "approval_status": "approved_generated_qc_passed_2026-06-07",
+      "generation_status": "complete_qc_passed_2026-06-07",
       "design_summary": "上下层级、窄门槛、道具首秒可读。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -3735,7 +3767,7 @@
       "dependency_reason": "Style references establish visual quality, 16:9 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
       "priority": "high",
       "file_path": "assets/style/f005e01.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_E01_F005",
       "output_format": {
         "deliverable_kind": "style_reference_board",
@@ -3773,18 +3805,50 @@
         "contract_class": "landscape_composition_style_board",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "a5f8980e8189956ec6e325372d65ac77d80aebe22c1bfde80602ffc9c52ee993",
+        "history_files": [
+          "assets/style/history/f005e01.v001.png"
+        ],
+        "generated_at": "2026-06-07"
       },
       "landscape_contract_status": {
         "contract_class": "landscape_composition_style_board",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
-      }
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "a5f8980e8189956ec6e325372d65ac77d80aebe22c1bfde80602ffc9c52ee993",
+        "history_files": [
+          "assets/style/history/f005e01.v001.png"
+        ],
+        "generated_at": "2026-06-07"
+      },
+      "file_status": "written",
+      "qc_status": "passed",
+      "generated_at": "2026-06-07",
+      "final_file": "assets/style/f005e01.png",
+      "generated_file": "assets/style/f005e01.png",
+      "final_sha256": "a5f8980e8189956ec6e325372d65ac77d80aebe22c1bfde80602ffc9c52ee993",
+      "history_files": [
+        "assets/style/history/f005e01.v001.png"
+      ],
+      "generation_thread_ids": {
+        "single_asset": "019ea082-f0a3-7dd0-9900-79b77cc86b51"
+      },
+      "qc_notes": [
+        "Candidate passed as a 16:9 style board, not a poster or final frame.",
+        "Door-slit fire, hand-prop, bone bell, giant horn, wax needle, broken-stair grip, and snow-slope escape are represented.",
+        "No readable text, UI, watermark, random glyphs, or random insignia observed.",
+        "Canonical file was normalized to 3840x2160."
+      ]
     },
     {
       "asset_id": "E01_F006",
@@ -3808,8 +3872,8 @@
         "SC005-SH004",
         "SC006-SH007"
       ],
-      "approval_status": "pending_user_art_approval",
-      "generation_status": "not_started_pending_user_approval",
+      "approval_status": "approved_generated_qc_passed_2026-06-07",
+      "generation_status": "complete_qc_passed_2026-06-07",
       "design_summary": "旧驿、月白玉片和白册都只提供线索/罪名，不提供战斗能力。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -3833,7 +3897,7 @@
       "dependency_reason": "Style references establish visual quality, 设定参考卡布局 composition, material language, and low-magic/precision symbol boundaries before any asset generation.",
       "priority": "high",
       "file_path": "assets/style/f006e01.png",
-      "status": "blocked",
+      "status": "complete_qc_passed",
       "prompt_id": "PROMPT_E01_F006",
       "output_format": {
         "deliverable_kind": "style_reference_board",
@@ -3871,20 +3935,51 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "f7eec8728e538e60af4436ff28dc8f2f1e33486835250606dc6fa84a9f7a80b9",
+        "history_files": [
+          "assets/style/history/f006e01.v001.png"
+        ],
+        "generated_at": "2026-06-07"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
-      }
+        "existing_file_status": "canonical_image_present_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "f7eec8728e538e60af4436ff28dc8f2f1e33486835250606dc6fa84a9f7a80b9",
+        "history_files": [
+          "assets/style/history/f006e01.v001.png"
+        ],
+        "generated_at": "2026-06-07"
+      },
+      "file_status": "written",
+      "qc_status": "passed",
+      "generated_at": "2026-06-07",
+      "final_file": "assets/style/f006e01.png",
+      "generated_file": "assets/style/f006e01.png",
+      "final_sha256": "f7eec8728e538e60af4436ff28dc8f2f1e33486835250606dc6fa84a9f7a80b9",
+      "history_files": [
+        "assets/style/history/f006e01.v001.png"
+      ],
+      "generation_thread_ids": {
+        "stalled_single_asset": "019ea082-fbd3-73e0-a679-c44776699bfe",
+        "retry": "019ea087-b53d-70f1-89a3-417b3af9d23b"
+      },
+      "qc_notes": [
+        "Retry candidate passed as a low-magic and precision-symbol boundary board.",
+        "Old relay, moon-white jade, white register, blank paper/control plates, line masks, and post-composite boundaries are represented.",
+        "Low magic reads as local traces and material reaction, not a combat power or solution.",
+        "No readable text, UI, watermark, random glyphs, or random insignia observed."
+      ]
     },
     {
       "asset_id": "E01_R001",
@@ -7948,6 +8043,21 @@
     "contract_repair_status": "passed",
     "planning_fields_present": true,
     "prompt_copy_ready_present": true,
-    "image_generation_status": "blocked_pending_user_art_approval"
+    "image_generation_status": "blocked_pending_user_art_approval",
+    "style_batch": {
+      "status": "complete_qc_passed",
+      "completed_at": "2026-06-07",
+      "final_files": [
+        "assets/style/f001e01.png",
+        "assets/style/f005e01.png",
+        "assets/style/f006e01.png"
+      ],
+      "history_files": [
+        "assets/style/history/f001e01.v001.png",
+        "assets/style/history/f001e01.v002.png",
+        "assets/style/history/f005e01.v001.png",
+        "assets/style/history/f006e01.v001.png"
+      ]
+    }
   }
 }

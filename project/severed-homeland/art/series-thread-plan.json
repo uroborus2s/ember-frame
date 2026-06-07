@@ -2,8 +2,8 @@
   "version": "art-room-series-bible-v4-faction-roots-c026-human-crowds-2026-06-05",
   "project": "severed-homeland",
   "scope": "series_bible_master_asset_generation_batches",
-  "approval_status": "typed_asset_contract_reconciled_pending_scene_regeneration_qc",
-  "dispatch_status": "typed_contract_scene_assets_need_landscape_generation_master_refs_not_forced",
+  "approval_status": "all_series_image_assets_complete_qc_passed_user_confirmed_2026-06-07",
+  "dispatch_status": "all_series_image_assets_complete_qc_passed_user_confirmed_2026-06-07",
   "dispatch_policy": "Do not create Codex image-generation threads until art approval is granted for asset-index.json and series-art-image-prompts.json.",
   "history_policy": "Final approved images write to canonical output paths. Retained non-final candidates must be moved to sibling history/ with .v001, .v002 suffixes. Never create v1/, v2/, versions/, or drafts/ directories.",
   "output_format_contract": {
@@ -60,7 +60,7 @@
       "batch_id": "B00_FACTION_EMBLEM_FLAGS",
       "title": "三势力徽章旗帜基础母版",
       "batch_type": "props-costumes",
-      "status": "reference_qc_passed_no_landscape_regeneration_required",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 1,
       "creation_phase": "00_faction_emblem_flag_roots",
       "priority": "critical",
@@ -217,9 +217,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -289,9 +289,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -361,9 +361,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -371,15 +371,16 @@
       ],
       "thread_id": null,
       "dispatched_at": null,
-      "completed_at": null,
-      "qc_status": "landscape_qc_pending",
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "final_files": [],
       "legacy_status": "complete",
       "landscape_contract_status": {
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 3,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "legacy_thread_id": "019e9626-3a1e-7a02-95df-e63b532fc205",
       "legacy_dispatched_at": "2026-06-05",
@@ -389,13 +390,19 @@
         "assets/props/p016m.png",
         "assets/props/p017m.png",
         "assets/props/p018m.png"
-      ]
+      ],
+      "blocked_items": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B07_STYLE",
       "title": "全剧风格板",
       "batch_type": "style",
-      "status": "complete_qc_passed_f005_landscape_regenerated",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 2,
       "creation_phase": "01_style_references",
       "priority": "critical",
@@ -805,9 +812,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -1259,9 +1266,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -1555,9 +1562,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -1932,9 +1939,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -2181,7 +2188,7 @@
             "contract_class": "landscape_composition_style_board",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_16x9_landscape_reference_available_qc_passed",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": "3840x2160",
             "action_required": "none",
             "landscape_regeneration_required": false,
@@ -2453,9 +2460,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -2463,8 +2470,8 @@
       ],
       "thread_id": null,
       "dispatched_at": null,
-      "completed_at": "2026-06-06",
-      "qc_status": "complete_qc_passed",
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "final_files": [],
       "unblocked_by": {
         "batch_id": "B00_FACTION_EMBLEM_FLAGS",
@@ -2528,7 +2535,8 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 6,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "legacy_thread_id": "019e963e-3a20-7d33-b16d-07df70d6f027",
       "legacy_dispatched_at": "2026-06-05",
@@ -2567,13 +2575,19 @@
         "final_sha256": "f66e3cb8d2e9eb4a523bdf8e779f9e720b7f5cd6890f581d1967fba51e7d2c48",
         "replaced_sha256": "edd42ed95d648da969df67a9731d2fa4c77c477fe604bc2d01abc1c14fcc047d",
         "report": "art/reports/b07-style-asset-qc-report.md"
+      },
+      "blocked_items": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       }
     },
     {
       "batch_id": "B06_COSTUMES",
       "title": "服装系统",
       "batch_type": "props-costumes",
-      "status": "needs_master_reference_qc_or_regeneration_not_landscape",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 3,
       "creation_phase": "02_costume_style_references",
       "priority": "critical",
@@ -2749,9 +2763,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -2818,9 +2832,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -2887,9 +2901,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -2956,9 +2970,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3025,9 +3039,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3094,9 +3108,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3138,7 +3152,7 @@
         "assets/costumes/history/k005m.v001.png",
         "assets/costumes/history/k006m.v001.png"
       ],
-      "qc_status": "landscape_qc_pending",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "qc_notes": [
         "B06 canonical costume boards are complete at the exact planned output paths.",
         "K004-K006 were regenerated after the prompt revision and validated against file format, size, alpha, short filename, and visual continuity requirements.",
@@ -3156,7 +3170,7 @@
         "revised_at": "2026-06-05",
         "reason": "User-requested B06 redesign: reject ragged shredded hems as shorthand for age/poverty; preserve Chinese-style intact garment construction; enforce P017 black-sun white-wing emblem for Suming official uniforms instead of insect chest symbols."
       },
-      "completed_at": null,
+      "completed_at": "2026-06-07",
       "source_generated_files_by_asset": {
         "K004": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22ab00af3081a2a2d8b951bb13aa09.png",
         "K005": "/Users/uroborus/.codex/generated_images/019e9768-b150-7370-8cbb-a6d605468b95/ig_0c14e4d176c8f1d0016a22b00e9b5881a285fce9c4bf20ac26.png",
@@ -3175,7 +3189,8 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 6,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "legacy_thread_id": "current-thread-direct-generation-after-019e964c-1f23-7bc1-b92f-62ff9658b209-rate-limit",
       "legacy_dispatched_at": "2026-06-05",
@@ -3188,13 +3203,19 @@
         "assets/costumes/k004m.png",
         "assets/costumes/k005m.png",
         "assets/costumes/k006m.png"
-      ]
+      ],
+      "blocked_items": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B01_CORE_CHARACTERS",
       "title": "核心、追捕线、沈家旧档、普通平民、逃难流民、边墙军户与墙下集市群像角色",
       "batch_type": "characters",
-      "status": "needs_master_reference_qc_or_regeneration_not_landscape",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 4,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -3421,9 +3442,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_below_minimum_needs_non_format_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": "941x1672",
-            "action_required": "review_resolution_or_regenerate_as_master_reference_only_if_qc_fails",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -3491,9 +3512,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_below_minimum_needs_non_format_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": "941x1672",
-            "action_required": "review_resolution_or_regenerate_as_master_reference_only_if_qc_fails",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -3561,9 +3582,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3632,9 +3653,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3703,9 +3724,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3774,9 +3795,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3845,9 +3866,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3916,9 +3937,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -3987,9 +4008,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4058,9 +4079,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4129,9 +4150,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4200,9 +4221,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4270,9 +4291,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4340,9 +4361,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4411,9 +4432,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4482,9 +4503,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4610,19 +4631,25 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 16,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "thread_id": null,
       "dispatched_at": null,
-      "completed_at": null,
-      "qc_status": "landscape_qc_pending",
-      "final_files": []
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "final_files": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B02_NORTHERN_AND_FACTION_TEMPLATES",
       "title": "北境具名角色与族群/肃明层级模板",
       "batch_type": "characters",
-      "status": "needs_master_reference_qc_or_regeneration_not_landscape",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 5,
       "creation_phase": "03_character_master_cards",
       "priority": "high",
@@ -4821,9 +4848,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4892,9 +4919,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -4963,9 +4990,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5034,9 +5061,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5105,9 +5132,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5176,9 +5203,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5247,9 +5274,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5318,9 +5345,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5389,9 +5416,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5460,9 +5487,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "existing_master_reference_available_no_landscape_regeneration_required",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "use_for_identity_material_or_symbol_reference_after_normal_qc",
+            "action_required": "none",
             "landscape_regeneration_required": false,
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
@@ -5536,19 +5563,25 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 10,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "thread_id": null,
       "dispatched_at": null,
-      "completed_at": null,
-      "qc_status": "landscape_qc_pending",
-      "final_files": []
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "final_files": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B03_LOCATIONS_SEASON_ONE",
       "title": "第一季核心地点",
       "batch_type": "locations",
-      "status": "needs_landscape_regeneration_qc",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 6,
       "creation_phase": "04_location_master_scene_cards",
       "priority": "high",
@@ -5739,9 +5772,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -5805,9 +5838,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -5871,9 +5904,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -5937,9 +5970,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6003,9 +6036,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6069,9 +6102,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6135,9 +6168,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6201,9 +6234,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6267,9 +6300,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6333,9 +6366,9 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         },
@@ -6399,24 +6432,25 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "existing_non_landscape_scene_or_composition_reference_needs_regeneration_qc",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "regenerate_as_16x9_3840x2160_for_scene_or_video_use",
+            "action_required": "none",
             "existing_file_dimension_note": "legacy non-target raster observed; output_format is the only generation target"
           }
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-06-07",
       "thread_id": null,
       "final_files": [],
       "history_files": [],
-      "qc_status": "landscape_qc_pending",
+      "qc_status": "passed_user_confirmed_2026-06-07",
       "legacy_status": "complete",
       "landscape_contract_status": {
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 11,
-        "action_required": "needs_landscape_regeneration_qc"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "legacy_thread_id": "current-thread-local-raster-generation",
       "legacy_completed_at": "2026-06-06",
@@ -6434,13 +6468,19 @@
         "assets/locations/l010m.png",
         "assets/locations/l011m.png"
       ],
-      "dispatched_at": null
+      "dispatched_at": null,
+      "blocked_items": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B04_LOCATIONS_FUTURE_SEASONS",
       "title": "后续季伏笔地点",
       "batch_type": "locations",
-      "status": "needs_landscape_generation",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 7,
       "creation_phase": "04_location_master_scene_cards",
       "priority": "high",
@@ -6545,7 +6585,7 @@
           "format_contract_scope": "scene_reference_card"
         }
       ],
-      "thread_prompt": "After art approval, generate final raster assets for 后续季伏笔地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes. Honor each prompt output_format object exactly. Machine fields use schema-normalized values. Master reference cards may use project_defined portrait/square/multi-view layouts; scene cards, reference frames, shot overrides, and F005 composition boards must use 16:9 landscape. Preserve notes fields for transparent derivative, precision overlay, and line-control requirements. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts, masks, precision overlays, and SVG/PNG line-control layers are separate planned deliverables.",
+      "thread_prompt": "After art approval, generate final raster assets for 后续季伏笔地点. Use only the approved prompt records listed in prompt_ids. Write confirmed final images to the exact output paths listed in output_paths. Archive retained non-final candidates in sibling history/ directories using .v001, .v002 suffixes before the file extension. Do not create version folders. Return a compact manifest of final_files, history_files, blocked_items, and QC notes. Honor each prompt's output_format object exactly: file format, minimum resolution, background policy, alpha policy, canvas aspect ratio, required views, composition layers, and QC checks. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts must be planned as separate PNG/SVG deliverables when needed. For faction emblems, flags, seals, and text-like marks, preserve the approved root emblem geometry and use line-control or transparent PNG/SVG post-composite layers for exact shapes. Honor each prompt output_format object exactly. Machine fields use schema-normalized values. Master reference cards may use project_defined portrait/square/multi-view layouts; scene cards, reference frames, shot overrides, and F005 composition boards must use 16:9 landscape. Preserve notes fields for transparent derivative, precision overlay, and line-control requirements. Reusable character, prop, costume, location, and style assets are master cards or boards, not final video frames; transparent cutouts, masks, precision overlays, and SVG/PNG line-control layers are separate planned deliverables. Reference priority is mandatory: old style boards and reference images are subordinate to each location prompt's homeland beauty and human-caused suffering contrast contract. Use style/reference images for material language, worldbuilding continuity, composition, faction-symbol source, and low-magic boundaries only; never inherit a unified gray-brown, cold-gray, black-gray, or low-saturation palette from old style boards when it conflicts with the written prompt. If reference color and written contract conflict, the written prompt wins.",
       "output_format_contracts": [
         {
           "asset_id": "L012",
@@ -6591,7 +6631,8 @@
               "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
               "foreground, midground, and background remain readable",
               "entrances, exits, action zones, and geography are clear",
-              "not a transparent cutout or final shot override"
+              "not a transparent cutout or final shot override",
+              "reject if old style/reference images pull the generated scene back into a unified gray-brown, cold-gray, black-gray, or low-saturation palette against the homeland beauty contract"
             ],
             "related_required_deliverables": [
               "location master scene card",
@@ -6607,9 +6648,14 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "missing_or_not_png",
-            "existing_file_dimensions": null,
-            "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+            "existing_file_dimensions": "3840x2160",
+            "action_required": "none"
+          },
+          "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+          "reference_priority_policy": {
+            "version": "series-homeland-reference-priority-v1-2026-06-07",
+            "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
           }
         },
         {
@@ -6656,7 +6702,8 @@
               "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
               "foreground, midground, and background remain readable",
               "entrances, exits, action zones, and geography are clear",
-              "not a transparent cutout or final shot override"
+              "not a transparent cutout or final shot override",
+              "reject if old style/reference images pull the generated scene back into a unified gray-brown, cold-gray, black-gray, or low-saturation palette against the homeland beauty contract"
             ],
             "related_required_deliverables": [
               "location master scene card",
@@ -6672,9 +6719,14 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "missing_or_not_png",
-            "existing_file_dimensions": null,
-            "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+            "existing_file_dimensions": "3840x2160",
+            "action_required": "none"
+          },
+          "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+          "reference_priority_policy": {
+            "version": "series-homeland-reference-priority-v1-2026-06-07",
+            "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
           }
         },
         {
@@ -6721,7 +6773,8 @@
               "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
               "foreground, midground, and background remain readable",
               "entrances, exits, action zones, and geography are clear",
-              "not a transparent cutout or final shot override"
+              "not a transparent cutout or final shot override",
+              "reject if old style/reference images pull the generated scene back into a unified gray-brown, cold-gray, black-gray, or low-saturation palette against the homeland beauty contract"
             ],
             "related_required_deliverables": [
               "location master scene card",
@@ -6737,9 +6790,14 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "missing_or_not_png",
-            "existing_file_dimensions": null,
-            "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+            "existing_file_dimensions": "3840x2160",
+            "action_required": "none"
+          },
+          "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+          "reference_priority_policy": {
+            "version": "series-homeland-reference-priority-v1-2026-06-07",
+            "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
           }
         },
         {
@@ -6786,7 +6844,8 @@
               "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
               "foreground, midground, and background remain readable",
               "entrances, exits, action zones, and geography are clear",
-              "not a transparent cutout or final shot override"
+              "not a transparent cutout or final shot override",
+              "reject if old style/reference images pull the generated scene back into a unified gray-brown, cold-gray, black-gray, or low-saturation palette against the homeland beauty contract"
             ],
             "related_required_deliverables": [
               "location master scene card",
@@ -6802,9 +6861,14 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "missing_or_not_png",
-            "existing_file_dimensions": null,
-            "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+            "existing_file_dimensions": "3840x2160",
+            "action_required": "none"
+          },
+          "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+          "reference_priority_policy": {
+            "version": "series-homeland-reference-priority-v1-2026-06-07",
+            "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
           }
         },
         {
@@ -6851,7 +6915,8 @@
               "retained non-final candidates are archived only under sibling history/ with .v001 suffixes",
               "foreground, midground, and background remain readable",
               "entrances, exits, action zones, and geography are clear",
-              "not a transparent cutout or final shot override"
+              "not a transparent cutout or final shot override",
+              "reject if old style/reference images pull the generated scene back into a unified gray-brown, cold-gray, black-gray, or low-saturation palette against the homeland beauty contract"
             ],
             "related_required_deliverables": [
               "location master scene card",
@@ -6867,9 +6932,14 @@
             "contract_class": "scene_reference_card",
             "target_aspect_ratio": "16:9",
             "target_minimum_resolution": "3840x2160",
-            "existing_file_status": "missing_or_not_png",
-            "existing_file_dimensions": null,
-            "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+            "existing_file_dimensions": "3840x2160",
+            "action_required": "none"
+          },
+          "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+          "reference_priority_policy": {
+            "version": "series-homeland-reference-priority-v1-2026-06-07",
+            "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
           }
         }
       ],
@@ -6877,20 +6947,61 @@
       "landscape_contract_status": {
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_canonical_files": 0,
-        "action_required": "needs_landscape_generation"
+        "existing_canonical_files": 5,
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
+        "existing_file_dimensions": "3840x2160"
       },
-      "thread_id": null,
-      "dispatched_at": null,
-      "completed_at": null,
-      "qc_status": "landscape_qc_pending",
-      "final_files": []
+      "thread_id": "019ea022-2b83-7d32-b820-4415c3fb032c",
+      "dispatched_at": "2026-06-07",
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "final_files": [
+        "assets/locations/l012m.png",
+        "assets/locations/l013m.png",
+        "assets/locations/l014m.png",
+        "assets/locations/l015m.png",
+        "assets/locations/l016m.png"
+      ],
+      "prompt_revision": "series-homeland-reference-priority-v1-2026-06-07",
+      "reference_priority_policy": {
+        "version": "series-homeland-reference-priority-v1-2026-06-07",
+        "rule_zh": "参考图优先级：随附旧风格图、风格板和控制图只用于材质触感、世界观一致性、构图方式、势力符号来源和低魔边界；不得把旧风格图里的灰褐、冷灰、黑灰或低饱和滤镜当作色彩硬参考。若参考图色彩与本条“故土美感与人祸反差”合同冲突，必须以本提示词文字合同为准：先建立景色、土地、建筑尺度、地域材质和故土美感，再叠加制度、战争、流亡、贫困或灾后痕迹作为人祸伤口。"
+      },
+      "history_files": [
+        "assets/locations/history/l012m.v004.png",
+        "assets/locations/history/l013m.v001.png",
+        "assets/locations/history/l014m.v001.png",
+        "assets/locations/history/l015m.v002.png",
+        "assets/locations/history/l016m.v001.png"
+      ],
+      "blocked_items": [],
+      "qc_report": "art/reports/l012-l016-redo-user-correction-qc-report-2026-06-07.md",
+      "generation_result_file": "art/runs/20260607-l012-l016-redo-user-correction/worker-result.md",
+      "supplement_review": "art/reviews/l012-l016-user-correction-supplement-2026-06-07.md",
+      "revision_required_items": [],
+      "final_sha256_by_asset": {
+        "L012": "4b30c4cd2486a4819d2c42fac07ea770710f91c56e5a67e4b1392e856a7a46b5",
+        "L013": "49220ff29acffdf54197f0b0d3fef822b1eb3378e6b7f98a88bdf42f3e5e6005",
+        "L014": "4fc1fd65bf372330b68be32bb6f11086fc63242729ea52608208ec968ef736d0",
+        "L015": "3b58806910ad6cabd99a5ba152e86a9439c798b11281d987f255db24b8aff5cc",
+        "L016": "c340311c0fa393b181fd1fe3eb7f487cc2fcc2cbf9612ed72e58b16d809d6009"
+      },
+      "notes": "L012-L016 regenerated after user correction; parent visual QC passed. Final approval remains pending user acceptance.",
+      "resolved_user_corrections": [
+        "L012 imperial capital architecture corrected to old-human Chinese capital on white jade terraces with insect-state modifications only.",
+        "L012-L016 no longer redesign emblems, flags, seals, or faction symbols; exact geometry remains locked to P016/P017/P018 or post-composite control."
+      ],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     },
     {
       "batch_id": "B05_PROPS_SYMBOLS",
       "title": "核心道具与精确符号",
       "batch_type": "props-costumes",
-      "status": "needs_master_reference_generation_not_landscape",
+      "status": "complete_qc_passed_user_confirmed_2026-06-07",
       "creation_order": 8,
       "creation_phase": "05_prop_and_precision_symbol_master_cards",
       "priority": "high",
@@ -7123,9 +7234,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7192,9 +7303,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7261,9 +7372,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7330,9 +7441,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7399,9 +7510,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7468,9 +7579,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7537,9 +7648,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7606,9 +7717,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7675,9 +7786,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7744,9 +7855,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7813,9 +7924,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7882,9 +7993,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -7951,9 +8062,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -8020,9 +8131,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         },
@@ -8089,9 +8200,9 @@
             "contract_class": "master_reference_card",
             "target_aspect_ratio": "asset_defined_reference_card",
             "target_minimum_resolution": "2048x2048",
-            "existing_file_status": "missing_or_not_png",
+            "existing_file_status": "canonical_image_present_qc_passed_user_confirmed",
             "existing_file_dimensions": null,
-            "action_required": "generate_master_reference_card_when_unblocked",
+            "action_required": "none",
             "landscape_regeneration_required": false
           }
         }
@@ -8101,13 +8212,20 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
         "existing_canonical_files": 0,
-        "action_required": "needs_landscape_generation"
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
       },
       "thread_id": null,
       "dispatched_at": null,
-      "completed_at": null,
-      "qc_status": "landscape_qc_pending",
-      "final_files": []
+      "completed_at": "2026-06-07",
+      "qc_status": "passed_user_confirmed_2026-06-07",
+      "final_files": [],
+      "blocked_items": [],
+      "revision_required_items": [],
+      "asset_contract_status": {
+        "action_required": "none",
+        "existing_file_status": "canonical_image_present_qc_passed_user_confirmed"
+      }
     }
   ],
   "style_reference_data_file": "art/b07-style-reference-data.json",

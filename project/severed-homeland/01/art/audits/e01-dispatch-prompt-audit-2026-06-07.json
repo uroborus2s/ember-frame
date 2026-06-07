@@ -1,0 +1,80 @@
+{
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "audited_at": "2026-06-07",
+  "prompt_file": "project/severed-homeland/01/prompts/art-image-prompts.json",
+  "total_prompts": 83,
+  "repaired_prompt_count": 21,
+  "repaired_asset_ids": [
+    "E01_R001",
+    "E01_R002",
+    "E01_R008",
+    "E01_R009",
+    "E01_R013",
+    "E01_R014",
+    "E01_R017",
+    "E01_R021",
+    "E01_R022",
+    "E01_R023",
+    "E01_R024",
+    "E01_R028",
+    "E01_R031",
+    "E01_R033",
+    "E01_R036",
+    "E01_R039",
+    "E01_R040",
+    "E01_O001",
+    "E01_O002",
+    "E01_O003",
+    "E01_O004"
+  ],
+  "first_last_pairs": [
+    {
+      "first": "E01_R001",
+      "last": "E01_R002",
+      "distinct_visible_goal": true,
+      "distinct_subject_content": true,
+      "distinct_composition": true
+    },
+    {
+      "first": "E01_R008",
+      "last": "E01_R009",
+      "distinct_visible_goal": true,
+      "distinct_subject_content": true,
+      "distinct_composition": true
+    },
+    {
+      "first": "E01_R013",
+      "last": "E01_R014",
+      "distinct_visible_goal": true,
+      "distinct_subject_content": true,
+      "distinct_composition": true
+    },
+    {
+      "first": "E01_R023",
+      "last": "E01_R024",
+      "distinct_visible_goal": true,
+      "distinct_subject_content": true,
+      "distinct_composition": true
+    },
+    {
+      "first": "E01_R039",
+      "last": "E01_R040",
+      "distinct_visible_goal": true,
+      "distinct_subject_content": true,
+      "distinct_composition": true
+    }
+  ],
+  "checks": {
+    "required_prompt_fields": "pass",
+    "copy_ready_fields": "pass",
+    "output_format_fields": "pass",
+    "video_minimum_resolution_consistency": "pass",
+    "exact_text_symbol_policy": "pass",
+    "dispatch_status": "ready_for_dispatch"
+  },
+  "residual_notes": [
+    "Global master assets are used as references; episode state outputs are still missing until background image threads complete.",
+    "Exact text, white-register notes, old relay marks, and sun-moon traces must remain line-control, mask, or post-composite targets."
+  ]
+}

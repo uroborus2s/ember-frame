@@ -2,15 +2,15 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "approval_status": "awaiting_user_art_approval",
-  "dispatch_status": "not_dispatched",
+  "approval_status": "approved_by_user_request_2026-06-07",
+  "dispatch_status": "dispatch_in_progress",
   "dispatch_policy": "Do not create image-generation threads until the user approves the episode 01 asset manifest, designs, prompts, and thread plan.",
   "history_policy": "Final approved images write to exact output_paths; retained alternatives go to sibling history/ with .v001 suffixes; no version folders.",
   "batches": [
     {
       "batch_id": "B01_E01_CHARACTERS",
       "batch_type": "characters",
-      "status": "blocked_pending_user_approval",
+      "status": "dispatched",
       "prompt_ids": [
         "PROMPT_E01_C001",
         "PROMPT_E01_C002",
@@ -46,7 +46,7 @@
         "assets/characters/c024e01.png"
       ],
       "thread_prompt": "After user approval, generate B01_E01_CHARACTERS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 2,
       "creation_phase": "episode_state_cards",
       "depends_on_batches": [
@@ -120,12 +120,279 @@
           "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
-      }
+      },
+      "assets": [
+        {
+          "asset_id": "E01_C001",
+          "prompt_id": "PROMPT_E01_C001",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c001e01.png",
+          "priority": "high",
+          "creation_order": 4,
+          "depends_on_assets": [
+            "E01_F001",
+            "C001"
+          ],
+          "blocks_assets": [
+            "E01_R017",
+            "E01_R020",
+            "E01_R038",
+            "E01_R039",
+            "E01_R040"
+          ]
+        },
+        {
+          "asset_id": "E01_C002",
+          "prompt_id": "PROMPT_E01_C002",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c002e01.png",
+          "priority": "high",
+          "creation_order": 5,
+          "depends_on_assets": [
+            "E01_F001",
+            "C002"
+          ],
+          "blocks_assets": [
+            "E01_R011",
+            "E01_R012",
+            "E01_R025",
+            "E01_R027"
+          ]
+        },
+        {
+          "asset_id": "E01_C004",
+          "prompt_id": "PROMPT_E01_C004",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c004e01.png",
+          "priority": "medium",
+          "creation_order": 6,
+          "depends_on_assets": [
+            "E01_F001",
+            "C004"
+          ],
+          "blocks_assets": [
+            "E01_R004"
+          ]
+        },
+        {
+          "asset_id": "E01_C005",
+          "prompt_id": "PROMPT_E01_C005",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c005e01.png",
+          "priority": "high",
+          "creation_order": 7,
+          "depends_on_assets": [
+            "E01_F001",
+            "C005"
+          ],
+          "blocks_assets": [
+            "E01_R018",
+            "E01_R019",
+            "E01_R033",
+            "E01_R038",
+            "E01_O003"
+          ]
+        },
+        {
+          "asset_id": "E01_C006",
+          "prompt_id": "PROMPT_E01_C006",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c006e01.png",
+          "priority": "high",
+          "creation_order": 8,
+          "depends_on_assets": [
+            "E01_F001",
+            "C006"
+          ],
+          "blocks_assets": [
+            "E01_R019",
+            "E01_R026",
+            "E01_R029",
+            "E01_R039",
+            "E01_R040"
+          ]
+        },
+        {
+          "asset_id": "E01_C007",
+          "prompt_id": "PROMPT_E01_C007",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c007e01.png",
+          "priority": "high",
+          "creation_order": 9,
+          "depends_on_assets": [
+            "E01_F001",
+            "C007"
+          ],
+          "blocks_assets": [
+            "E01_R034",
+            "E01_R035",
+            "E01_R036",
+            "E01_R038",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_C011",
+          "prompt_id": "PROMPT_E01_C011",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c011e01.png",
+          "priority": "medium",
+          "creation_order": 10,
+          "depends_on_assets": [
+            "E01_F001",
+            "C011"
+          ],
+          "blocks_assets": [
+            "E01_R011",
+            "E01_R012"
+          ]
+        },
+        {
+          "asset_id": "E01_C016A",
+          "prompt_id": "PROMPT_E01_C016A",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c016e01.png",
+          "priority": "medium",
+          "creation_order": 11,
+          "depends_on_assets": [
+            "E01_F001",
+            "C016"
+          ],
+          "blocks_assets": [
+            "E01_R016",
+            "E01_R019",
+            "E01_R021",
+            "E01_R031",
+            "E01_R032",
+            "E01_O001"
+          ]
+        },
+        {
+          "asset_id": "E01_C016B",
+          "prompt_id": "PROMPT_E01_C016B",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c016e02.png",
+          "priority": "medium",
+          "creation_order": 12,
+          "depends_on_assets": [
+            "E01_F001",
+            "C016"
+          ],
+          "blocks_assets": [
+            "E01_R005",
+            "E01_R007"
+          ]
+        },
+        {
+          "asset_id": "E01_C017",
+          "prompt_id": "PROMPT_E01_C017",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c017e01.png",
+          "priority": "medium",
+          "creation_order": 13,
+          "depends_on_assets": [
+            "E01_F001",
+            "C017"
+          ],
+          "blocks_assets": [
+            "E01_R006",
+            "E01_R008",
+            "E01_R009",
+            "E01_R015",
+            "E01_R032"
+          ]
+        },
+        {
+          "asset_id": "E01_C018",
+          "prompt_id": "PROMPT_E01_C018",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c018e01.png",
+          "priority": "medium",
+          "creation_order": 14,
+          "depends_on_assets": [
+            "E01_F001",
+            "C018"
+          ],
+          "blocks_assets": [
+            "E01_R015",
+            "E01_R032",
+            "E01_R037"
+          ]
+        },
+        {
+          "asset_id": "E01_C020",
+          "prompt_id": "PROMPT_E01_C020",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c020e01.png",
+          "priority": "medium",
+          "creation_order": 15,
+          "depends_on_assets": [
+            "E01_F001",
+            "C020"
+          ],
+          "blocks_assets": [
+            "E01_R001",
+            "E01_R002",
+            "E01_R003"
+          ]
+        },
+        {
+          "asset_id": "E01_C022",
+          "prompt_id": "PROMPT_E01_C022",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c022e01.png",
+          "priority": "medium",
+          "creation_order": 16,
+          "depends_on_assets": [
+            "E01_F001"
+          ],
+          "blocks_assets": [
+            "E01_R003"
+          ]
+        },
+        {
+          "asset_id": "E01_C023",
+          "prompt_id": "PROMPT_E01_C023",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c023e01.png",
+          "priority": "medium",
+          "creation_order": 17,
+          "depends_on_assets": [
+            "E01_F001"
+          ],
+          "blocks_assets": [
+            "E01_R015",
+            "E01_R032"
+          ]
+        },
+        {
+          "asset_id": "E01_C024",
+          "prompt_id": "PROMPT_E01_C024",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "assets/characters/c024e01.png",
+          "priority": "medium",
+          "creation_order": 18,
+          "depends_on_assets": [
+            "E01_F001"
+          ],
+          "blocks_assets": [
+            "E01_R006",
+            "E01_R008",
+            "E01_R009"
+          ]
+        }
+      ],
+      "output_directories": [
+        "assets/characters"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "thread_id": "019ea08f-f6af-73d2-87a3-003201b81ebf",
+      "dispatched_at": "2026-06-07"
     },
     {
       "batch_id": "B02_E01_LOCATIONS",
       "batch_type": "locations",
-      "status": "blocked_pending_user_approval",
+      "status": "dispatched",
       "prompt_ids": [
         "PROMPT_E01_L007",
         "PROMPT_E01_L003",
@@ -143,7 +410,7 @@
         "assets/locations/l001e03.png"
       ],
       "thread_prompt": "After user approval, generate B02_E01_LOCATIONS assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 3,
       "creation_phase": "episode_state_cards",
       "depends_on_batches": [
@@ -199,12 +466,133 @@
           "forbidden"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
-      }
+      },
+      "assets": [
+        {
+          "asset_id": "E01_L007",
+          "prompt_id": "PROMPT_E01_L007",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l007e01.png",
+          "priority": "medium",
+          "creation_order": 19,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L007"
+          ],
+          "blocks_assets": [
+            "E01_R001",
+            "E01_R002",
+            "E01_R003",
+            "E01_R004"
+          ]
+        },
+        {
+          "asset_id": "E01_L003",
+          "prompt_id": "PROMPT_E01_L003",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l003e01.png",
+          "priority": "medium",
+          "creation_order": 20,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L003"
+          ],
+          "blocks_assets": [
+            "E01_R005",
+            "E01_R008",
+            "E01_R009"
+          ]
+        },
+        {
+          "asset_id": "E01_L014",
+          "prompt_id": "PROMPT_E01_L014",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l014e01.png",
+          "priority": "medium",
+          "creation_order": 21,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L014"
+          ],
+          "blocks_assets": [
+            "E01_R010",
+            "E01_R013",
+            "E01_R014"
+          ]
+        },
+        {
+          "asset_id": "E01_L001A",
+          "prompt_id": "PROMPT_E01_L001A",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l001e01.png",
+          "priority": "high",
+          "creation_order": 22,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L001"
+          ],
+          "blocks_assets": [
+            "E01_R015",
+            "E01_R016",
+            "E01_R023",
+            "E01_R024"
+          ]
+        },
+        {
+          "asset_id": "E01_L001B",
+          "prompt_id": "PROMPT_E01_L001B",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l001e02.png",
+          "priority": "high",
+          "creation_order": 23,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L001"
+          ],
+          "blocks_assets": [
+            "E01_R025",
+            "E01_R026",
+            "E01_R028",
+            "E01_R029",
+            "E01_O002"
+          ]
+        },
+        {
+          "asset_id": "E01_L001C",
+          "prompt_id": "PROMPT_E01_L001C",
+          "asset_subtype": "location_episode_scene_card",
+          "output_path": "assets/locations/l001e03.png",
+          "priority": "high",
+          "creation_order": 24,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "L001"
+          ],
+          "blocks_assets": [
+            "E01_R030",
+            "E01_R031",
+            "E01_R032",
+            "E01_R037"
+          ]
+        }
+      ],
+      "output_directories": [
+        "assets/locations"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "thread_id": "019ea090-029f-7e01-b60d-927f7145f97f",
+      "dispatched_at": "2026-06-07"
     },
     {
       "batch_id": "B03_E01_PROPS_COSTUMES",
       "batch_type": "props-costumes",
-      "status": "blocked_pending_user_approval",
+      "status": "dispatched",
       "prompt_ids": [
         "PROMPT_E01_P016",
         "PROMPT_E01_P008",
@@ -240,7 +628,7 @@
         "assets/costumes/k006e01.png"
       ],
       "thread_prompt": "After user approval, generate B03_E01_PROPS_COSTUMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 4,
       "creation_phase": "precision_assets",
       "depends_on_batches": [
@@ -318,12 +706,283 @@
           "forbidden_on_card; transparent_cutout_requires_separate_png_or_svg_asset"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
-      }
+      },
+      "assets": [
+        {
+          "asset_id": "E01_P016",
+          "prompt_id": "PROMPT_E01_P016",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p016e01.png",
+          "priority": "medium",
+          "creation_order": 25,
+          "depends_on_assets": [
+            "E01_F001"
+          ],
+          "blocks_assets": [
+            "E01_R001",
+            "E01_R002",
+            "E01_R003"
+          ]
+        },
+        {
+          "asset_id": "E01_P008",
+          "prompt_id": "PROMPT_E01_P008",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p008e01.png",
+          "priority": "medium",
+          "creation_order": 26,
+          "depends_on_assets": [
+            "E01_F001",
+            "P008"
+          ],
+          "blocks_assets": [
+            "E01_R006",
+            "E01_R008",
+            "E01_R009"
+          ]
+        },
+        {
+          "asset_id": "E01_P009",
+          "prompt_id": "PROMPT_E01_P009",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p009e01.png",
+          "priority": "high",
+          "creation_order": 34,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006",
+            "P009"
+          ],
+          "blocks_assets": [
+            "E01_R010",
+            "E01_R013",
+            "E01_R014"
+          ]
+        },
+        {
+          "asset_id": "E01_P002",
+          "prompt_id": "PROMPT_E01_P002",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p002e01.png",
+          "priority": "high",
+          "creation_order": 35,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006",
+            "P002"
+          ],
+          "blocks_assets": [
+            "E01_R011",
+            "E01_R012",
+            "E01_R025"
+          ]
+        },
+        {
+          "asset_id": "E01_P003",
+          "prompt_id": "PROMPT_E01_P003",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p003e01.png",
+          "priority": "high",
+          "creation_order": 36,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006",
+            "P003"
+          ],
+          "blocks_assets": [
+            "E01_R021",
+            "E01_R033",
+            "E01_R036",
+            "E01_O001",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_P004",
+          "prompt_id": "PROMPT_E01_P004",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p004e01.png",
+          "priority": "high",
+          "creation_order": 37,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006",
+            "P004"
+          ],
+          "blocks_assets": [
+            "E01_R022",
+            "E01_R034",
+            "E01_R035"
+          ]
+        },
+        {
+          "asset_id": "E01_P017",
+          "prompt_id": "PROMPT_E01_P017",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p017e01.png",
+          "priority": "high",
+          "creation_order": 38,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006"
+          ],
+          "blocks_assets": [
+            "E01_R015",
+            "E01_R023",
+            "E01_R024",
+            "E01_R030"
+          ]
+        },
+        {
+          "asset_id": "E01_P005",
+          "prompt_id": "PROMPT_E01_P005",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p005e01.png",
+          "priority": "medium",
+          "creation_order": 27,
+          "depends_on_assets": [
+            "E01_F001",
+            "P005"
+          ],
+          "blocks_assets": [
+            "E01_R018",
+            "E01_R020",
+            "E01_R033",
+            "E01_O003"
+          ]
+        },
+        {
+          "asset_id": "E01_P018",
+          "prompt_id": "PROMPT_E01_P018",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p018e01.png",
+          "priority": "high",
+          "creation_order": 39,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F006"
+          ],
+          "blocks_assets": [
+            "E01_R025",
+            "E01_R028",
+            "E01_R031",
+            "E01_O002"
+          ]
+        },
+        {
+          "asset_id": "E01_P020",
+          "prompt_id": "PROMPT_E01_P020",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/props/p020e01.png",
+          "priority": "medium",
+          "creation_order": 28,
+          "depends_on_assets": [
+            "E01_F001"
+          ],
+          "blocks_assets": [
+            "E01_R020",
+            "E01_R038",
+            "E01_R039",
+            "E01_R040"
+          ]
+        },
+        {
+          "asset_id": "E01_K001",
+          "prompt_id": "PROMPT_E01_K001",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/costumes/k001e01.png",
+          "priority": "medium",
+          "creation_order": 29,
+          "depends_on_assets": [
+            "E01_F001",
+            "K001"
+          ],
+          "blocks_assets": [
+            "E01_R017",
+            "E01_R039",
+            "E01_R040"
+          ]
+        },
+        {
+          "asset_id": "E01_K002",
+          "prompt_id": "PROMPT_E01_K002",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/costumes/k002e01.png",
+          "priority": "medium",
+          "creation_order": 30,
+          "depends_on_assets": [
+            "E01_F001",
+            "K002"
+          ],
+          "blocks_assets": [
+            "E01_R011",
+            "E01_R025"
+          ]
+        },
+        {
+          "asset_id": "E01_K003",
+          "prompt_id": "PROMPT_E01_K003",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/costumes/k003e01.png",
+          "priority": "medium",
+          "creation_order": 31,
+          "depends_on_assets": [
+            "E01_F001",
+            "K003"
+          ],
+          "blocks_assets": [
+            "E01_R018",
+            "E01_R038"
+          ]
+        },
+        {
+          "asset_id": "E01_K004",
+          "prompt_id": "PROMPT_E01_K004",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/costumes/k004e01.png",
+          "priority": "medium",
+          "creation_order": 32,
+          "depends_on_assets": [
+            "E01_F001",
+            "K004"
+          ],
+          "blocks_assets": [
+            "E01_R005",
+            "E01_R015",
+            "E01_R032"
+          ]
+        },
+        {
+          "asset_id": "E01_K006",
+          "prompt_id": "PROMPT_E01_K006",
+          "asset_subtype": "prop_episode_state_card",
+          "output_path": "assets/costumes/k006e01.png",
+          "priority": "medium",
+          "creation_order": 33,
+          "depends_on_assets": [
+            "E01_F001",
+            "K006"
+          ],
+          "blocks_assets": [
+            "E01_R006",
+            "E01_R015",
+            "E01_R032"
+          ]
+        }
+      ],
+      "output_directories": [
+        "assets/props",
+        "assets/costumes"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "thread_id": "019ea090-0b78-7de1-9e78-fee6289984df",
+      "dispatched_at": "2026-06-07"
     },
     {
       "batch_id": "B04_E01_STYLE",
       "batch_type": "style",
-      "status": "blocked_pending_user_approval",
+      "status": "completed_qc_passed",
       "prompt_ids": [
         "PROMPT_E01_F001",
         "PROMPT_E01_F005",
@@ -335,7 +994,7 @@
         "assets/style/f006e01.png"
       ],
       "thread_prompt": "After user approval, generate B04_E01_STYLE assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 1,
       "creation_phase": "style_reference",
       "depends_on_batches": [],
@@ -447,12 +1106,222 @@
           "forbidden"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
+      },
+      "assets": [
+        {
+          "asset_id": "E01_F001",
+          "prompt_id": "PROMPT_E01_F001",
+          "asset_subtype": "style_reference",
+          "output_path": "assets/style/f001e01.png",
+          "priority": "high",
+          "creation_order": 1,
+          "depends_on_assets": [
+            "F001"
+          ],
+          "blocks_assets": [
+            "E01_C001",
+            "E01_C002",
+            "E01_C004",
+            "E01_C005",
+            "E01_C006",
+            "E01_C007",
+            "E01_C011",
+            "E01_C016A",
+            "E01_C016B",
+            "E01_C017",
+            "E01_C018",
+            "E01_C020",
+            "E01_C022",
+            "E01_C023",
+            "E01_C024",
+            "E01_L007",
+            "E01_L003",
+            "E01_L014",
+            "E01_L001A",
+            "E01_L001B",
+            "E01_L001C",
+            "E01_P016",
+            "E01_P008",
+            "E01_P009",
+            "E01_P002",
+            "E01_P003",
+            "E01_P004",
+            "E01_P017",
+            "E01_P005",
+            "E01_P018",
+            "E01_P020",
+            "E01_K001",
+            "E01_K002",
+            "E01_K003",
+            "E01_K004",
+            "E01_K006",
+            "E01_R001",
+            "E01_R002",
+            "E01_R003",
+            "E01_R004",
+            "E01_R005",
+            "E01_R006",
+            "E01_R007",
+            "E01_R008",
+            "E01_R009",
+            "E01_R010",
+            "E01_R011",
+            "E01_R012",
+            "E01_R013",
+            "E01_R014",
+            "E01_R015",
+            "E01_R016",
+            "E01_R017",
+            "E01_R018",
+            "E01_R019",
+            "E01_R020",
+            "E01_R021",
+            "E01_R022",
+            "E01_R023",
+            "E01_R024",
+            "E01_R025",
+            "E01_R026",
+            "E01_R027",
+            "E01_R028",
+            "E01_R029",
+            "E01_R030",
+            "E01_R031",
+            "E01_R032",
+            "E01_R033",
+            "E01_R034",
+            "E01_R035",
+            "E01_R036",
+            "E01_R037",
+            "E01_R038",
+            "E01_R039",
+            "E01_R040",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_F005",
+          "prompt_id": "PROMPT_E01_F005",
+          "asset_subtype": "style_reference",
+          "output_path": "assets/style/f005e01.png",
+          "priority": "high",
+          "creation_order": 2,
+          "depends_on_assets": [
+            "F005"
+          ],
+          "blocks_assets": [
+            "E01_L007",
+            "E01_L003",
+            "E01_L014",
+            "E01_L001A",
+            "E01_L001B",
+            "E01_L001C",
+            "E01_R001",
+            "E01_R002",
+            "E01_R003",
+            "E01_R004",
+            "E01_R005",
+            "E01_R006",
+            "E01_R007",
+            "E01_R008",
+            "E01_R009",
+            "E01_R010",
+            "E01_R011",
+            "E01_R012",
+            "E01_R013",
+            "E01_R014",
+            "E01_R015",
+            "E01_R016",
+            "E01_R017",
+            "E01_R018",
+            "E01_R019",
+            "E01_R020",
+            "E01_R021",
+            "E01_R022",
+            "E01_R023",
+            "E01_R024",
+            "E01_R025",
+            "E01_R026",
+            "E01_R027",
+            "E01_R028",
+            "E01_R029",
+            "E01_R030",
+            "E01_R031",
+            "E01_R032",
+            "E01_R033",
+            "E01_R034",
+            "E01_R035",
+            "E01_R036",
+            "E01_R037",
+            "E01_R038",
+            "E01_R039",
+            "E01_R040",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_F006",
+          "prompt_id": "PROMPT_E01_F006",
+          "asset_subtype": "style_reference",
+          "output_path": "assets/style/f006e01.png",
+          "priority": "high",
+          "creation_order": 3,
+          "depends_on_assets": [
+            "F006"
+          ],
+          "blocks_assets": [
+            "E01_P009",
+            "E01_P002",
+            "E01_P003",
+            "E01_P004",
+            "E01_P017",
+            "E01_P018",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        }
+      ],
+      "output_directories": [
+        "assets/style"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07",
+      "thread_id": "019ea079-574d-7751-a1f1-750001408fd5",
+      "completed_at": "2026-06-07",
+      "final_files": [
+        "assets/style/f001e01.png",
+        "assets/style/f005e01.png",
+        "assets/style/f006e01.png"
+      ],
+      "history_files": [
+        "assets/style/history/f001e01.v001.png",
+        "assets/style/history/f001e01.v002.png",
+        "assets/style/history/f005e01.v001.png",
+        "assets/style/history/f006e01.v001.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "Primary B04 batch thread stalled after style-board generation; coordinator recovered outputs and split F005/F006 into single-asset threads.",
+        "F006 first single-asset thread stalled without output; retry thread completed canonical file.",
+        "Built-in generator returned sub-target dimensions for F001/F005; accepted visual candidates were normalized locally to the required output_format dimensions."
+      ],
+      "thread_ids": {
+        "primary_batch": "019ea079-574d-7751-a1f1-750001408fd5",
+        "f005_single_asset": "019ea082-f0a3-7dd0-9900-79b77cc86b51",
+        "f006_stalled_single_asset": "019ea082-fbd3-73e0-a679-c44776699bfe",
+        "f006_retry": "019ea087-b53d-70f1-89a3-417b3af9d23b"
       }
     },
     {
       "batch_id": "B05_E01_REFERENCE_FRAMES",
       "batch_type": "reference-frames",
-      "status": "blocked_pending_user_approval",
+      "status": "ready_for_dispatch_style_dependency_satisfied",
       "prompt_ids": [
         "PROMPT_E01_R001",
         "PROMPT_E01_R002",
@@ -538,7 +1407,7 @@
         "01/assets/reference-frames/r040e01.png"
       ],
       "thread_prompt": "After user approval, generate B05_E01_REFERENCE_FRAMES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 5,
       "creation_phase": "reference_frames",
       "depends_on_batches": [
@@ -610,12 +1479,662 @@
           "forbidden"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
-      }
+      },
+      "assets": [
+        {
+          "asset_id": "E01_R001",
+          "prompt_id": "PROMPT_E01_R001",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r001e01.png",
+          "priority": "high",
+          "creation_order": 40,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_L007",
+            "E01_P016"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R002",
+          "prompt_id": "PROMPT_E01_R002",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r002e01.png",
+          "priority": "high",
+          "creation_order": 41,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_L007",
+            "E01_P016"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R003",
+          "prompt_id": "PROMPT_E01_R003",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r003e01.png",
+          "priority": "high",
+          "creation_order": 42,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_C022",
+            "E01_L007",
+            "E01_P016"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R004",
+          "prompt_id": "PROMPT_E01_R004",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r004e01.png",
+          "priority": "medium",
+          "creation_order": 43,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C004",
+            "E01_L007"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R005",
+          "prompt_id": "PROMPT_E01_R005",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r005e01.png",
+          "priority": "medium",
+          "creation_order": 44,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016B",
+            "E01_L003",
+            "E01_K004"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R006",
+          "prompt_id": "PROMPT_E01_R006",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r006e01.png",
+          "priority": "medium",
+          "creation_order": 45,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C017",
+            "E01_C024",
+            "E01_P008",
+            "E01_K006"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R007",
+          "prompt_id": "PROMPT_E01_R007",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r007e01.png",
+          "priority": "medium",
+          "creation_order": 46,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016B"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R008",
+          "prompt_id": "PROMPT_E01_R008",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r008e01.png",
+          "priority": "high",
+          "creation_order": 47,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C017",
+            "E01_C024",
+            "E01_L003",
+            "E01_P008"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R009",
+          "prompt_id": "PROMPT_E01_R009",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r009e01.png",
+          "priority": "high",
+          "creation_order": 48,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C017",
+            "E01_C024",
+            "E01_L003",
+            "E01_P008"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R010",
+          "prompt_id": "PROMPT_E01_R010",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r010e01.png",
+          "priority": "medium",
+          "creation_order": 49,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L014",
+            "E01_P009"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R011",
+          "prompt_id": "PROMPT_E01_R011",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r011e01.png",
+          "priority": "medium",
+          "creation_order": 50,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C002",
+            "E01_C011",
+            "E01_P002",
+            "E01_K002"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R012",
+          "prompt_id": "PROMPT_E01_R012",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r012e01.png",
+          "priority": "medium",
+          "creation_order": 51,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C002",
+            "E01_C011",
+            "E01_P002"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R013",
+          "prompt_id": "PROMPT_E01_R013",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r013e01.png",
+          "priority": "high",
+          "creation_order": 52,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L014",
+            "E01_P009"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R014",
+          "prompt_id": "PROMPT_E01_R014",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r014e01.png",
+          "priority": "high",
+          "creation_order": 53,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L014",
+            "E01_P009"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R015",
+          "prompt_id": "PROMPT_E01_R015",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r015e01.png",
+          "priority": "high",
+          "creation_order": 54,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C017",
+            "E01_C018",
+            "E01_C023",
+            "E01_L001A",
+            "E01_P017",
+            "E01_K004",
+            "E01_K006"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R016",
+          "prompt_id": "PROMPT_E01_R016",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r016e01.png",
+          "priority": "high",
+          "creation_order": 55,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016A",
+            "E01_L001A"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R017",
+          "prompt_id": "PROMPT_E01_R017",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r017e01.png",
+          "priority": "high",
+          "creation_order": 56,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C001",
+            "E01_K001"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R018",
+          "prompt_id": "PROMPT_E01_R018",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r018e01.png",
+          "priority": "high",
+          "creation_order": 57,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C005",
+            "E01_P005",
+            "E01_K003"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R019",
+          "prompt_id": "PROMPT_E01_R019",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r019e01.png",
+          "priority": "high",
+          "creation_order": 58,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C005",
+            "E01_C006",
+            "E01_C016A"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R020",
+          "prompt_id": "PROMPT_E01_R020",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r020e01.png",
+          "priority": "high",
+          "creation_order": 59,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C001",
+            "E01_P005",
+            "E01_P020"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R021",
+          "prompt_id": "PROMPT_E01_R021",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r021e01.png",
+          "priority": "high",
+          "creation_order": 60,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016A",
+            "E01_P003"
+          ],
+          "blocks_assets": [
+            "E01_O001"
+          ]
+        },
+        {
+          "asset_id": "E01_R022",
+          "prompt_id": "PROMPT_E01_R022",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r022e01.png",
+          "priority": "high",
+          "creation_order": 61,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_P004"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R023",
+          "prompt_id": "PROMPT_E01_R023",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r023e01.png",
+          "priority": "high",
+          "creation_order": 62,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L001A",
+            "E01_P017"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R024",
+          "prompt_id": "PROMPT_E01_R024",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r024e01.png",
+          "priority": "high",
+          "creation_order": 63,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L001A",
+            "E01_P017"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R025",
+          "prompt_id": "PROMPT_E01_R025",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r025e01.png",
+          "priority": "high",
+          "creation_order": 64,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C002",
+            "E01_L001B",
+            "E01_P002",
+            "E01_P018",
+            "E01_K002"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R026",
+          "prompt_id": "PROMPT_E01_R026",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r026e01.png",
+          "priority": "medium",
+          "creation_order": 65,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C006",
+            "E01_L001B"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R027",
+          "prompt_id": "PROMPT_E01_R027",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r027e01.png",
+          "priority": "medium",
+          "creation_order": 66,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C002"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R028",
+          "prompt_id": "PROMPT_E01_R028",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r028e01.png",
+          "priority": "high",
+          "creation_order": 67,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L001B",
+            "E01_P018"
+          ],
+          "blocks_assets": [
+            "E01_O002"
+          ]
+        },
+        {
+          "asset_id": "E01_R029",
+          "prompt_id": "PROMPT_E01_R029",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r029e01.png",
+          "priority": "medium",
+          "creation_order": 68,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C006",
+            "E01_L001B"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R030",
+          "prompt_id": "PROMPT_E01_R030",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r030e01.png",
+          "priority": "high",
+          "creation_order": 69,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_L001C",
+            "E01_P017"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R031",
+          "prompt_id": "PROMPT_E01_R031",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r031e01.png",
+          "priority": "high",
+          "creation_order": 70,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016A",
+            "E01_L001C",
+            "E01_P018"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R032",
+          "prompt_id": "PROMPT_E01_R032",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r032e01.png",
+          "priority": "high",
+          "creation_order": 71,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C016A",
+            "E01_C017",
+            "E01_C018",
+            "E01_C023",
+            "E01_L001C",
+            "E01_K004",
+            "E01_K006"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R033",
+          "prompt_id": "PROMPT_E01_R033",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r033e01.png",
+          "priority": "high",
+          "creation_order": 72,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C005",
+            "E01_P003",
+            "E01_P005"
+          ],
+          "blocks_assets": [
+            "E01_O003"
+          ]
+        },
+        {
+          "asset_id": "E01_R034",
+          "prompt_id": "PROMPT_E01_R034",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r034e01.png",
+          "priority": "high",
+          "creation_order": 73,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C007",
+            "E01_P004"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R035",
+          "prompt_id": "PROMPT_E01_R035",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r035e01.png",
+          "priority": "high",
+          "creation_order": 74,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C007",
+            "E01_P004"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R036",
+          "prompt_id": "PROMPT_E01_R036",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r036e01.png",
+          "priority": "high",
+          "creation_order": 75,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C007",
+            "E01_P003"
+          ],
+          "blocks_assets": [
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_R037",
+          "prompt_id": "PROMPT_E01_R037",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r037e01.png",
+          "priority": "high",
+          "creation_order": 76,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C018",
+            "E01_L001C"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R038",
+          "prompt_id": "PROMPT_E01_R038",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r038e01.png",
+          "priority": "high",
+          "creation_order": 77,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C001",
+            "E01_C005",
+            "E01_C007",
+            "E01_P020",
+            "E01_K003"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R039",
+          "prompt_id": "PROMPT_E01_R039",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r039e01.png",
+          "priority": "high",
+          "creation_order": 78,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C001",
+            "E01_C006",
+            "E01_P020",
+            "E01_K001"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R040",
+          "prompt_id": "PROMPT_E01_R040",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r040e01.png",
+          "priority": "high",
+          "creation_order": 79,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C001",
+            "E01_C006",
+            "E01_P020",
+            "E01_K001"
+          ],
+          "blocks_assets": []
+        }
+      ],
+      "output_directories": [
+        "01/assets/reference-frames"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07"
     },
     {
       "batch_id": "B06_E01_SHOT_OVERRIDES",
       "batch_type": "reference-frames",
-      "status": "blocked_pending_user_approval",
+      "status": "ready_for_dispatch_style_dependency_satisfied",
       "prompt_ids": [
         "PROMPT_E01_O001",
         "PROMPT_E01_O002",
@@ -629,7 +2148,7 @@
         "01/assets/shot-overrides/o004e01.png"
       ],
       "thread_prompt": "After user approval, generate B06_E01_SHOT_OVERRIDES assets only from approved prompt records. Write one final confirmed image per exact output path. Retained non-final candidates must be archived in sibling history/ with .v001, .v002 suffixes. Do not create version folders. Return final_files, history_files, blocked_items, and QC notes. This is an image generation thread batch: use only the approved art-image prompt records, keep every final confirmed image at the exact canonical output path, and archive any retained alternate or rejected image in sibling history/ files with .v001, .v002 filename suffixes.\n\nOutput format contract: follow each prompt record's literal output_format object. File format must be PNG. Asset card batches require neutral plain or board backgrounds, no alpha transparency, required multi-view/detail/scale-reference layout, and must not be treated as final video frames. Reference-frame and shot-override batches require 16:9 video_frame backgrounds, alpha forbidden, and clearly separated foreground, midground, and background with camera distance, camera angle, screen direction, lighting, weather/time, and action state.",
-      "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
+      "approval_gate": "approved_by_user_request_2026-06-07",
       "creation_order": 6,
       "creation_phase": "shot_overrides",
       "depends_on_batches": [
@@ -678,10 +2197,128 @@
           "forbidden"
         ],
         "enforcement": "Each prompt record output_format is binding. Asset cards are not final video frames. Reference frames and shot overrides must use video_frame background, alpha forbidden, and visibly separated foreground/midground/background."
-      }
+      },
+      "assets": [
+        {
+          "asset_id": "E01_O001",
+          "prompt_id": "PROMPT_E01_O001",
+          "asset_subtype": "shot_override",
+          "output_path": "01/assets/shot-overrides/o001e01.png",
+          "priority": "high",
+          "creation_order": 80,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_F006",
+            "E01_C016A",
+            "E01_P003",
+            "E01_R021",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ],
+          "blocks_assets": [
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_O002",
+          "prompt_id": "PROMPT_E01_O002",
+          "asset_subtype": "shot_override",
+          "output_path": "01/assets/shot-overrides/o002e01.png",
+          "priority": "high",
+          "creation_order": 81,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_F006",
+            "E01_L001B",
+            "E01_P018",
+            "E01_R028",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ],
+          "blocks_assets": [
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_O003",
+          "prompt_id": "PROMPT_E01_O003",
+          "asset_subtype": "shot_override",
+          "output_path": "01/assets/shot-overrides/o003e01.png",
+          "priority": "high",
+          "creation_order": 82,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_F006",
+            "E01_C005",
+            "E01_P003",
+            "E01_P005",
+            "E01_R033",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ],
+          "blocks_assets": [
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        },
+        {
+          "asset_id": "E01_O004",
+          "prompt_id": "PROMPT_E01_O004",
+          "asset_subtype": "shot_override",
+          "output_path": "01/assets/shot-overrides/o004e01.png",
+          "priority": "high",
+          "creation_order": 83,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_F006",
+            "E01_C007",
+            "E01_P003",
+            "E01_R036",
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ],
+          "blocks_assets": [
+            "E01_O001",
+            "E01_O002",
+            "E01_O003",
+            "E01_O004"
+          ]
+        }
+      ],
+      "output_directories": [
+        "01/assets/shot-overrides"
+      ],
+      "dispatch_instruction_revision": "episode01-dispatch-ready-2026-06-07"
     }
   ],
-  "status": "blocked_pending_user_approval",
-  "approval_gate": "requires_user_art_approval_before_thread_creation_or_image_generation",
-  "contract_repair_status": "passed"
+  "status": "dispatch_in_progress",
+  "approval_gate": "approved_by_user_request_2026-06-07",
+  "contract_repair_status": "passed",
+  "dispatch_readiness": {
+    "status": "ready_for_thread_creation",
+    "approved_at": "2026-06-07",
+    "project_root": "project/severed-homeland",
+    "episode_id": "01"
+  },
+  "updated_at": "2026-06-07"
 }
