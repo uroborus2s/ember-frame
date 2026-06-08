@@ -2,7 +2,7 @@
   "version": "1.1-audio-manifest",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "planned_not_rendered",
+  "status": "voiceover_qwen3_ready_dialogue_music_sfx_pending",
   "dialogue_plan": "01/audio/dialogue-plan.json",
   "voice_bible": "01/audio/voice-bible.md",
   "provider_workflow": "01/audio/provider-workflow.md",
@@ -75,6 +75,66 @@
         "sfx008.wav"
       ]
     }
+  },
+  "voiceover_render": {
+    "status": "ready",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-bf16",
+    "speaker": "Serena",
+    "language": "chinese",
+    "provider": "qwen3_tts",
+    "post_processing": "ffmpeg atempo timing conform from compact Qwen3-TTS candidates",
+    "files": [
+      {
+        "cue_id": "d001",
+        "kind": "voiceover",
+        "shot_id": "SC001-SH001",
+        "text": "肃明历1226年，北境十三部落联盟大举入寇。",
+        "provider_file": "01/audio/dialogue/provider/qwen3-tts/d001.wav",
+        "final_file": "01/audio/dialogue/d001.wav",
+        "duration_seconds": 3.486542,
+        "target_window": "00:00.0-00:03.5",
+        "status": "ready"
+      },
+      {
+        "cue_id": "d002",
+        "kind": "voiceover",
+        "shot_id": "SC001-SH002",
+        "text": "北关五百载，白骨未成尘。",
+        "provider_file": "01/audio/dialogue/provider/qwen3-tts/d002.wav",
+        "final_file": "01/audio/dialogue/d002.wav",
+        "duration_seconds": 1.788792,
+        "target_window": "00:03.5-00:05.3",
+        "status": "ready"
+      },
+      {
+        "cue_id": "d006",
+        "kind": "voiceover",
+        "shot_id": "SC002-SH004",
+        "text": "官笔一点，良户成逃籍；粮归官仓，人归押车，祖牌还在，家门没了。",
+        "provider_file": "01/audio/dialogue/provider/qwen3-tts/d006.wav",
+        "final_file": "01/audio/dialogue/d006.wav",
+        "duration_seconds": 7.98925,
+        "target_window": "00:27.2-00:35.2",
+        "status": "ready"
+      },
+      {
+        "cue_id": "d010",
+        "kind": "voiceover",
+        "shot_id": "SC003-SH004",
+        "text": "南方遗民仍在旧歌里找路，却不知道路尽头等着的，不一定是皇座。",
+        "provider_file": "01/audio/dialogue/provider/qwen3-tts/d010.wav",
+        "final_file": "01/audio/dialogue/d010.wav",
+        "duration_seconds": 9.006083,
+        "target_window": "00:59.2-01:08.2",
+        "status": "ready"
+      }
+    ],
+    "notes": [
+      "Qwen3-TTS 1.7B CustomVoice was selected over 0.6B for stronger style control on narration.",
+      "The initial Vivian pass produced overlong narration, so compact Serena candidates were generated and conformed with light atempo timing except d002, which required stronger compression to fit the shot-end slot.",
+      "This status covers voiceover cues only; dialogue, music, and SFX are still pending."
+    ]
   },
   "render_notes": [
     "Do not create placeholder wav files.",
