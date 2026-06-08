@@ -1,18 +1,21 @@
 {
-  "version": "1.0-audio-dialogue-plan",
+  "version": "1.1-audio-dialogue-plan",
   "project": "severed-homeland",
   "episode_id": "01",
   "title": "白册进村",
   "source_files": [
     "01/script/final-script.md",
     "01/shots/shot-list.json",
-    "01/audio/voice-bible.md"
+    "01/audio/voice-bible.md",
+    "01/audio/provider-prompts.json"
   ],
   "export_root": "01/audio/dialogue",
   "rules": {
     "language": "zh-CN",
     "no_video_burned_text": true,
     "one_export_per_spoken_line": true,
+    "provider_prompt_source": "01/audio/provider-prompts.json",
+    "provider_workflow": "01/audio/provider-workflow.md",
     "subtitle_source": "01/post/subtitle-script.md",
     "timing_note": "timecode windows are planning estimates from shot durations and must be conformed after picture lock"
   },

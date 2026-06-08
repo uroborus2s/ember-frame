@@ -5,6 +5,8 @@
 - 本计划完成第01集配乐、环境声、音效和对白关系。
 - 音乐不满铺，不抢中文对白；对白清晰度优先。
 - 精确对白和字幕来自 `01/audio/dialogue-plan.json` 与 `01/post/subtitle-script.md`。
+- MiniMax / Qwen3-TTS 双路线工作流来自 `01/audio/provider-workflow.md`。
+- 每句对白、旁白和配乐 cue 的生成提示词来自 `01/audio/provider-prompts.json`。
 - 未来导出短文件名：`01/audio/music/mx001.wav` 起，`01/audio/sfx/sfx001.wav` 起。
 
 ## 总体声音策略
@@ -24,6 +26,13 @@
 | MX005 | `01/audio/music/mx005.wav` | 02:15.2-03:15.2 | SC005 药屋暗格 | 低弦弱持续音、药柜木腔共鸣、门外爪足节奏；不煽情。 | 罗青禾低声必须贴近，晏南枝清冷但被木柜压住。 |
 | MX006 | `01/audio/music/mx006.wav` | 03:15.2-04:28.2 | SC006 旧井检查桌 | 清明香铃、白册纸声、细高虫蜡音和低频黑日压迫；白翳入场后音乐更干净、更冷。 | 白翳对白居中偏前，群众声退后。 |
 | MX007 | `01/audio/music/mx007.wav` | 04:28.2-04:38.2 | 切黑尾声 | 弓弦张力后突然抽空，保留半秒无音乐，再给极低骨钟尾波。 | 结尾不要情绪宣泄，留悬念。 |
+
+## 生成提示词来源
+
+- 对白/旁白：每个 spoken cue 同时提供 MiniMax TTS 与 Qwen3-TTS 提示词，字段见 `dialogue_prompts[*].minimax_tts_prompt_zh` 与 `dialogue_prompts[*].qwen3_tts_prompt_zh`。
+- 逐句配乐：每个 spoken cue 同步提供 `bed_music_prompt_zh`，用于确认该句所处配乐床和混音关系。
+- 配乐 cue：`music_prompts[*].minimax_music_prompt_zh` 是配乐生成主提示词，`negative_prompt_zh` 是禁止风格，`mix_prompt_zh` 是后期混音要求。
+- Qwen3-TTS 路线只生成对白、旁白、旧歌/童谣等人声层；纯配乐按 MiniMax 音乐路线或同类 music model 执行。
 
 ## 核心音效 Cue
 

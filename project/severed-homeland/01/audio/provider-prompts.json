@@ -1,0 +1,382 @@
+{
+  "version": "1.0-provider-prompts",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "title": "白册进村",
+  "language": "zh-CN",
+  "workflow_files": {
+    "dialogue_plan": "01/audio/dialogue-plan.json",
+    "voice_bible": "01/audio/voice-bible.md",
+    "provider_workflow": "01/audio/provider-workflow.md",
+    "sound_plan": "01/post/sound-plan.md"
+  },
+  "global_negative_prompt_zh": "不要广播腔、动漫腔、游戏NPC腔、综艺感、夸张哭喊、反派怪笑、甜美旋律、英雄史诗感、现代鼓点、英文口音或多余台词。",
+  "dialogue_export_rule": {
+    "minimax_pattern": "01/audio/dialogue/provider/minimax/{export_stem}.wav",
+    "qwen3_tts_pattern": "01/audio/dialogue/provider/qwen3-tts/{export_stem}.wav",
+    "final_pattern": "01/audio/dialogue/{export_stem}.wav",
+    "subtitle_only_rule": "subtitle_only cue 不生成 TTS，只保留字幕和配乐上下文。"
+  },
+  "dialogue_prompts": [
+    {
+      "cue_id": "d001",
+      "export_stem": "d001",
+      "shot_id": "SC001-SH001",
+      "speaker_id": "VO_NARRATOR",
+      "text": "肃明历1226年，北境十三部落联盟大举入寇。",
+      "minimax_tts_prompt_zh": "中文影视旁白。成熟中低音女声或中性声线，冷静、压抑、史书感强；读得像宣判时代背景，不煽情，不热血。句末留短空气给撞门、骨钟和风雪。",
+      "qwen3_tts_prompt_zh": "用标准普通话朗读，声线中低、稳定、冷；语速中慢，字清楚，句尾收住。不要主持腔，不要情绪上扬。",
+      "bed_music_prompt_zh": "MX001：低频弓擦金属、远处心跳般战鼓、暴雪和骨钟裂响；音乐贴底，旁白必须清楚。"
+    },
+    {
+      "cue_id": "d002",
+      "export_stem": "d002",
+      "shot_id": "SC001-SH002",
+      "speaker_id": "VO_NARRATOR",
+      "text": "北关五百载，白骨未成尘。",
+      "minimax_tts_prompt_zh": "同一旁白声线。八字对句要短、重、冷，像落在冻土上的判词；不要拖腔，最后三个字干净落下。",
+      "qwen3_tts_prompt_zh": "普通话中低音旁白，停顿为：北关五百载，白骨未成尘。压低声线，句尾不要拉长。",
+      "bed_music_prompt_zh": "MX001 末尾：骨钟尾波、武器落雪泥、钟链轻抖；对白后给半秒冷空气。"
+    },
+    {
+      "cue_id": "d003",
+      "export_stem": "d003",
+      "shot_id": "SC001-SH003",
+      "speaker_id": "XUE_LINQIANG",
+      "text": "敌人上来了。",
+      "minimax_tts_prompt_zh": "50岁上下男性墙师，低哑粗粝，风雪里压出来的短句；急但不乱，不喊口号，像把士兵从恐惧里拽回门线。",
+      "qwen3_tts_prompt_zh": "男性低哑声，短促低声说出。语气紧迫但克制，音量能压过风声，不要怒吼。",
+      "bed_music_prompt_zh": "MX001 在这句前瞬间收窄，只留低频风雪和门后冲击。"
+    },
+    {
+      "cue_id": "d004",
+      "export_stem": "d004",
+      "shot_id": "SC002-SH003",
+      "speaker_id": "GRAIN_TAX_CLERK",
+      "text": "查清明籍。金河不清，粮也得清；族谱对不上，粮就不算你家的。",
+      "minimax_tts_prompt_zh": "低阶粮税小吏，偏中性男声，干薄、鼻腔窄、像念账册；语速均匀偏快，不怒吼，不得意，恐怖来自制度确定性。",
+      "qwen3_tts_prompt_zh": "普通话干冷男声，按账册条目朗读；逗号处不停太久，尾音平直。避免反派腔。",
+      "bed_music_prompt_zh": "MX002：木轮脉冲、骨算盘轻响、低持续音；对白在前，配乐像粮袋被推走。"
+    },
+    {
+      "cue_id": "d005",
+      "export_stem": "d005",
+      "shot_id": "SC002-SH003",
+      "speaker_id": "GRAIN_WOMAN",
+      "text": "这是过冬粮。",
+      "minimax_tts_prompt_zh": "饥饿疲惫的成年女性，护家、发紧、短促；不是哭喊，不撒泼，像从胸口挤出最后一句抗辩。",
+      "qwen3_tts_prompt_zh": "女性近声，声音薄而紧，语速短促；句尾被车轮和粮袋声压住，不要长哭。",
+      "bed_music_prompt_zh": "MX002 和 SFX003：车轮、粮袋拖地逐渐盖过尾字，音乐不抬情绪。"
+    },
+    {
+      "cue_id": "d006",
+      "export_stem": "d006",
+      "shot_id": "SC002-SH004",
+      "speaker_id": "VO_NARRATOR",
+      "text": "官笔一点，良户成逃籍；粮归官仓，人归押车，祖牌还在，家门没了。",
+      "minimax_tts_prompt_zh": "冷静历史旁白，中低音，像宣读结果；不要替妇人哭，尾句更低更空，给木轮远去留空间。",
+      "qwen3_tts_prompt_zh": "标准普通话旁白，中慢速，分号后略停；家门没了四字压低，不要哽咽。",
+      "bed_music_prompt_zh": "MX002：骨算盘、木轮、低持续音渐远；家门没了后不升调，只留下押车声。"
+    },
+    {
+      "cue_id": "d007",
+      "export_stem": "d007",
+      "shot_id": "SC003-SH002",
+      "speaker_id": "GU_HUAIZHANG",
+      "text": "你不是逃。你是日月还在人间的证据。",
+      "minimax_tts_prompt_zh": "年长男性旧臣，南方旧礼法气质，低稳、湿润、有压力；温度不高，像把使命压到年轻人肩上。",
+      "qwen3_tts_prompt_zh": "年长男声，语速中慢，第一句短停；第二句压重证据二字，不要慈祥。",
+      "bed_music_prompt_zh": "MX003：潮湿低弦、雨敲油布、微弱古琴泛音；对白优先。"
+    },
+    {
+      "cue_id": "d008",
+      "export_stem": "d008",
+      "shot_id": "SC003-SH002",
+      "speaker_id": "YAN_NANZHI",
+      "text": "证据能让北边的人开门吗？",
+      "minimax_tts_prompt_zh": "18岁女性，清冷端正，旧礼法训练过；先停半拍再问，尊严压住疲惫，不要尖，不要软。",
+      "qwen3_tts_prompt_zh": "年轻女性清冷声线，语速中慢，问句不上扬过多；像质疑，不像求救。",
+      "bed_music_prompt_zh": "MX003 保持潮湿低弦和雨声，问题落下后给一小段空。"
+    },
+    {
+      "cue_id": "d009",
+      "export_stem": "d009",
+      "shot_id": "SC003-SH003",
+      "speaker_id": "GU_HUAIZHANG",
+      "text": "找到月下盟书。旧臣看见它，就会记起该跪向谁。",
+      "minimax_tts_prompt_zh": "顾怀章声线更低更重，旧帝国忠诚带排除性；每个短句清楚，跪向谁三字压低。",
+      "qwen3_tts_prompt_zh": "年长男声低稳朗读，找到月下盟书后停顿；后半句带命令感但不吼。",
+      "bed_music_prompt_zh": "MX003：红线推进时出现微弱朱赤色动机，雨声不能盖字。"
+    },
+    {
+      "cue_id": "d010",
+      "export_stem": "d010",
+      "shot_id": "SC003-SH004",
+      "speaker_id": "VO_NARRATOR",
+      "text": "南方遗民仍在旧歌里找路，却不知道路尽头等着的，不一定是皇座。",
+      "minimax_tts_prompt_zh": "旁白中低音，从雨夜转向残阳坳；冷静反转，不嘲讽，不抒情，尾句留出地点断裂。",
+      "qwen3_tts_prompt_zh": "普通话旁白，中慢速，旧歌里找路略轻，不一定是皇座压低收住。",
+      "bed_music_prompt_zh": "MX003 尾部雨声切成村口人声，古琴泛音消失，低弦抽空。"
+    },
+    {
+      "cue_id": "d011",
+      "export_stem": "",
+      "shot_id": "SC004-SH001",
+      "speaker_id": "TITLE_CARD",
+      "text": "肃明历1226年，残阳坳。",
+      "minimax_tts_prompt_zh": "不生成 TTS。只做字幕卡。",
+      "qwen3_tts_prompt_zh": "不生成 TTS。只做字幕卡。",
+      "bed_music_prompt_zh": "MX004 开始：残阳坳村口几乎无旋律，白册翻页、虫蜡针和短矛敲地组成冷节奏。"
+    },
+    {
+      "cue_id": "d012",
+      "export_stem": "d011",
+      "shot_id": "SC004-SH002",
+      "speaker_id": "BAICE_CLERK",
+      "text": "残阳坳，原旧驿地名一处。按清明籍，逐户复核。",
+      "minimax_tts_prompt_zh": "白册官吏，低阶登记型虫族官吏，偏中性男声，细硬、洁净、无温度；像白册开页，不带怒气。",
+      "qwen3_tts_prompt_zh": "普通话细硬男声或中性声，语速平直偏快；逐户复核四字像盖印。",
+      "bed_music_prompt_zh": "MX004：白册纸声和虫蜡细响贴在台词下，每句官吏开口前有轻微翻页。"
+    },
+    {
+      "cue_id": "d013",
+      "export_stem": "d012",
+      "shot_id": "SC004-SH004",
+      "speaker_id": "SHEN_ZHAOMIAN",
+      "text": "红花不落雪留灯。",
+      "minimax_tts_prompt_zh": "8到10岁女童，自然、轻、小，像背草药名；前半句熟练轻快，意识到不对后尾音断掉，不卖萌。",
+      "qwen3_tts_prompt_zh": "儿童女声，普通话自然短句，前半轻快，留灯后突然收住。不要成人化。",
+      "bed_music_prompt_zh": "MX004 在童声后立刻低下去，只留纸声、虫蜡和村民短吸气。"
+    },
+    {
+      "cue_id": "d014",
+      "export_stem": "d013",
+      "shot_id": "SC004-SH005",
+      "speaker_id": "LUO_QINGHE",
+      "text": "孩子背药名，背串了。",
+      "minimax_tts_prompt_zh": "37岁女性医者和母亲，稳、低、清醒；马上挡住危险，像把后果接到自己身上，不哭不喊。",
+      "qwen3_tts_prompt_zh": "成年女性低声，语速中速偏快，稳住场面；背串了三个字轻但硬。",
+      "bed_music_prompt_zh": "MX004 维持低频收紧，白册翻页声贴着句尾。"
+    },
+    {
+      "cue_id": "d015",
+      "export_stem": "d014",
+      "shot_id": "SC004-SH005",
+      "speaker_id": "BAICE_CLERK",
+      "text": "红花是药。留灯是哪味药？",
+      "minimax_tts_prompt_zh": "白册官吏细硬平直追问，语速不快；像抓住册面错行，不带愤怒或讥笑。",
+      "qwen3_tts_prompt_zh": "中性男声，冷而干净。第一句短平，第二句问句不要上扬太多。",
+      "bed_music_prompt_zh": "MX004：虫蜡针轻响压在是哪味药后面，环境声缩小。"
+    },
+    {
+      "cue_id": "d016",
+      "export_stem": "d015",
+      "shot_id": "SC004-SH006",
+      "speaker_id": "SHEN_WEISANG",
+      "text": "那是后山旧药路，我让她背来认草。官爷要验旧话，就验我这张猎户嘴。",
+      "minimax_tts_prompt_zh": "17岁山路猎户少年，偏低但未完全成年；半真半假地硬撑轻松，保护妹妹，不能热血喊叫。",
+      "qwen3_tts_prompt_zh": "年轻男声，山野、短促，语速中等；官爷要验旧话后略放松，最后一句压硬。",
+      "bed_music_prompt_zh": "MX004：短矛敲地和弓弦细响贴着声尾，低频持续收紧。"
+    },
+    {
+      "cue_id": "d017",
+      "export_stem": "d016",
+      "shot_id": "SC004-SH007",
+      "speaker_id": "BAICE_CLERK",
+      "text": "沈家。祖上这一笔说不清，先挂疑名。",
+      "minimax_tts_prompt_zh": "白册官吏近声，干、轻、细硬；像把一家人写进格子，沈家二字短停。",
+      "qwen3_tts_prompt_zh": "冷净中性男声，沈家后停顿；先挂疑名四字像登记结果。",
+      "bed_music_prompt_zh": "MX004：白册翻页放大，音乐几乎不动，只让纸声成为压力。"
+    },
+    {
+      "cue_id": "d018",
+      "export_stem": "d017",
+      "shot_id": "SC004-SH008",
+      "speaker_id": "BAICE_CLERK",
+      "text": "香烧完还说不清，全家按疑户押册。",
+      "minimax_tts_prompt_zh": "白册官吏制度性宣告，句尾无情绪；清楚、冷、洁净，像流程自动落下。",
+      "qwen3_tts_prompt_zh": "普通话细硬男声，语速平直；全家按疑户押册不要加怒气。",
+      "bed_music_prompt_zh": "MX004 与 SFX005：清明香插木裂声清楚，尾部低频收住。"
+    },
+    {
+      "cue_id": "d019",
+      "export_stem": "d018",
+      "shot_id": "SC005-SH002",
+      "speaker_id": "LUO_QINGHE",
+      "text": "别动。柜板一响，白册就能把药屋写成窝户。",
+      "minimax_tts_prompt_zh": "罗青禾极低近声，稳，先制止再说明后果；像医生判断伤势，不慌不哭。",
+      "qwen3_tts_prompt_zh": "成年女性低声贴近，别动短而硬；后半句压低但字清楚。",
+      "bed_music_prompt_zh": "MX005：低弦弱持续音、药柜木腔共鸣、门外爪足节奏，柜内空间感清楚。"
+    },
+    {
+      "cue_id": "d020",
+      "export_stem": "d019",
+      "shot_id": "SC005-SH003",
+      "speaker_id": "YAN_NANZHI",
+      "text": "你知道我是谁？",
+      "minimax_tts_prompt_zh": "晏南枝清冷压低，仍有旧礼法尊严；不是求救，也不是炫耀，短问句干净。",
+      "qwen3_tts_prompt_zh": "年轻女性清冷近声，音量压低，问句尾音收住；不要惊慌。",
+      "bed_music_prompt_zh": "MX005：柜内木腔轻微压住声线，低弦保持很弱。"
+    },
+    {
+      "cue_id": "d021",
+      "export_stem": "d020",
+      "shot_id": "SC005-SH003",
+      "speaker_id": "LUO_QINGHE",
+      "text": "知道你会害死这里的人。",
+      "minimax_tts_prompt_zh": "罗青禾冷静直接，不恨她；像医生说出病情，音量低但每个字有重量。",
+      "qwen3_tts_prompt_zh": "成年女性低稳声线，语速中慢；害死这里的人压低，不要责骂腔。",
+      "bed_music_prompt_zh": "MX005：药柜木腔和门外甲片摩擦在下层，音乐不煽情。"
+    },
+    {
+      "cue_id": "d022",
+      "export_stem": "d021",
+      "shot_id": "SC005-SH004",
+      "speaker_id": "YAN_NANZHI",
+      "text": "这是昭明驿记。",
+      "minimax_tts_prompt_zh": "晏南枝低声确认，短促但字清；带一瞬旧物被认出的震动，仍克制。",
+      "qwen3_tts_prompt_zh": "年轻女性低声，昭明驿记四字读清楚；情绪只露一瞬，不要扩大。",
+      "bed_music_prompt_zh": "MX005：低弦和药柜共鸣稍微抬起一层，马上压回。"
+    },
+    {
+      "cue_id": "d023",
+      "export_stem": "d022",
+      "shot_id": "SC005-SH005",
+      "speaker_id": "LUO_QINGHE",
+      "text": "旗一露，残阳坳就不是村，是反寨；白册一写，良户也成逆户。",
+      "minimax_tts_prompt_zh": "罗青禾压低但更硬，一口气压完后果；不哭不喊，门外敲门声切断尾音。",
+      "qwen3_tts_prompt_zh": "成年女性低声，语速略快但清楚；反寨、逆户两个词压重。",
+      "bed_music_prompt_zh": "MX005：门外爪足停步、敲门前的空气压缩，低弦不抬情绪。"
+    },
+    {
+      "cue_id": "d024",
+      "export_stem": "d023",
+      "shot_id": "SC005-SH005",
+      "speaker_id": "GATE_SLAVE_SOLDIER",
+      "text": "开药柜。",
+      "minimax_tts_prompt_zh": "门外封门奴兵，成年男性或中性，麻木僵硬，服从命令；两字短直，带木门隔音。",
+      "qwen3_tts_prompt_zh": "低而僵硬的门外男声，短命令，无情绪；加轻微隔门距离感。",
+      "bed_music_prompt_zh": "MX005 与 SFX006：敲门声切断前句尾音，木门低频清楚。"
+    },
+    {
+      "cue_id": "d025",
+      "export_stem": "d024",
+      "shot_id": "SC006-SH002",
+      "speaker_id": "BAICE_CLERK",
+      "text": "查出旧驿暗号，按窝户论。先封全村户口，谁家都不许改供。",
+      "minimax_tts_prompt_zh": "白册官吏程序性宣告，近而冷；每个处置像条文，不怒，不急，人群惊气退后。",
+      "qwen3_tts_prompt_zh": "细硬中性男声，平直偏快；按窝户论后短停，后半句像盖章。",
+      "bed_music_prompt_zh": "MX006：清明香铃、白册纸声、细高虫蜡音和低频黑日压迫。"
+    },
+    {
+      "cue_id": "d026",
+      "export_stem": "d025",
+      "shot_id": "SC006-SH004",
+      "speaker_id": "BAICE_CLERK",
+      "text": "沈照眠，听旧歌有反应。先记作疑童。",
+      "minimax_tts_prompt_zh": "白册官吏像诊断标签，声音小而冷；蜡笔落纸声大于人声，疑童二字干净落下。",
+      "qwen3_tts_prompt_zh": "细硬中性男声，语速平直；沈照眠后停顿，先记作疑童不要带怜悯。",
+      "bed_music_prompt_zh": "MX006：虫蜡针擦拭和纸面渗蜡声露出来，群众声退后。"
+    },
+    {
+      "cue_id": "d027",
+      "export_stem": "d026",
+      "shot_id": "SC006-SH006",
+      "speaker_id": "BAI_YI",
+      "text": "一块暗号藏不住这么多年。有人开过门，也有人带过路。",
+      "minimax_tts_prompt_zh": "白翳，高阶清明院虫族，中低音男性表达，极冷、极稳、无尘；慢于白册官吏，像擦拭虫蜡针后下判断。",
+      "qwen3_tts_prompt_zh": "中低音男声，洁净冷静，语速慢；每句都像审定事实，不要反派笑。",
+      "bed_music_prompt_zh": "MX006 白翳入场后音乐更干净更冷，环境声变薄，清明香铃露出。"
+    },
+    {
+      "cue_id": "d028",
+      "export_stem": "d027",
+      "shot_id": "SC006-SH007",
+      "speaker_id": "BAI_YI",
+      "text": "残阳坳按逆案查办。封村，清户，搜旧井。",
+      "minimax_tts_prompt_zh": "白翳慢、洁净、不可商量；每个动词像盖一个印，封村、清户、搜旧井逐次落下。",
+      "qwen3_tts_prompt_zh": "中低音男声，冷而稳定；第一句后停顿，三个命令词间距清楚，不要提高音量。",
+      "bed_music_prompt_zh": "MX006：低频黑日压迫，白册纸声居后，白翳声线居中偏前。"
+    },
+    {
+      "cue_id": "d029",
+      "export_stem": "d028",
+      "shot_id": "SC006-SH009",
+      "speaker_id": "BAI_YI",
+      "text": "大人能改供，孩子改不了童谣。祖上留的暗号，歌一接，根脚就露了。",
+      "minimax_tts_prompt_zh": "白翳低冷不急，逻辑清洁到残酷；不要反派笑，根脚就露了要轻而确定。",
+      "qwen3_tts_prompt_zh": "中低音男声，语速慢，普通话极清楚；孩子改不了童谣后略停，尾句收干净。",
+      "bed_music_prompt_zh": "MX006 尾部接 MX007：白册翻页声像骨钟回声，弓弦张力开始出现。"
+    }
+  ],
+  "music_export_rule": {
+    "minimax_pattern": "01/audio/music/provider/minimax/{cue_lower}.wav",
+    "final_pattern": "01/audio/music/{cue_lower}.wav",
+    "qwen3_tts_note": "Qwen3-TTS 不作为纯配乐生成器；只在需要童谣、旧歌、人声念白声层时按对白规则单独生成。"
+  },
+  "music_prompts": [
+    {
+      "cue_id": "MX001",
+      "file": "mx001.wav",
+      "time_window": "00:00.0-00:07.2",
+      "scene": "SC001 锁喉关",
+      "minimax_music_prompt_zh": "古代北境战争开场，低频弓擦金属、暴雪、远鼓像心跳、骨钟裂响形成主题；无旋律或极少旋律，冷、压抑、残酷，给中文旁白留中频空间。",
+      "negative_prompt_zh": "不要英雄铜管、史诗合唱、现代鼓点、快节奏战斗音乐、甜美旋律。",
+      "mix_prompt_zh": "旁白居中偏前，配乐低于风雪和撞门；薛临墙台词前音乐收窄。"
+    },
+    {
+      "cue_id": "MX002",
+      "file": "mx002.wav",
+      "time_window": "00:07.2-00:35.2",
+      "scene": "SC002 金河粮仓",
+      "minimax_music_prompt_zh": "制度性掠粮场景，木轮脉冲、骨算盘节奏、湿粮袋摩擦、低持续音；像粮食和活人一起被账册推走，克制冷硬。",
+      "negative_prompt_zh": "不要煽情弦乐、哭腔女声、胜利感节奏、现代打击乐。",
+      "mix_prompt_zh": "粮税小吏要清楚，妇人尾句被车轮压住，旁白尾部只留木轮远去。"
+    },
+    {
+      "cue_id": "MX003",
+      "file": "mx003.wav",
+      "time_window": "00:35.2-01:08.2",
+      "scene": "SC003 南方红线密室",
+      "minimax_music_prompt_zh": "潮湿南方密室，低弦、雨敲油布、少量古琴泛音，红线推进时出现微弱朱赤色动机；旧帝国余味沉重，不浪漫。",
+      "negative_prompt_zh": "不要江南柔美、完整歌唱、甜古风、抒情钢琴。",
+      "mix_prompt_zh": "顾怀章和晏南枝对白优先，旧歌只半句被捂住，转场时雨声切成村口人声。"
+    },
+    {
+      "cue_id": "MX004",
+      "file": "mx004.wav",
+      "time_window": "01:08.2-02:15.2",
+      "scene": "SC004 残阳坳村口",
+      "minimax_music_prompt_zh": "残阳村口清户，几乎无旋律；白册翻页、虫蜡针、短矛敲地、清明香插木组成稀疏节奏，低频慢慢收紧。",
+      "negative_prompt_zh": "不要恐怖尖叫、怪物音效堆砌、快节奏追逐、温情村庄音乐。",
+      "mix_prompt_zh": "白册官吏每句干净，沈照眠童声刺出后环境突然低下去。"
+    },
+    {
+      "cue_id": "MX005",
+      "file": "mx005.wav",
+      "time_window": "02:15.2-03:15.2",
+      "scene": "SC005 药屋暗格",
+      "minimax_music_prompt_zh": "药屋柜内紧张，低弦弱持续音、药柜木腔共鸣、门外爪足停步、药剪细响；空间狭窄，压迫但不煽情。",
+      "negative_prompt_zh": "不要惊悚跳吓、现代低音轰鸣、抒情母爱主题。",
+      "mix_prompt_zh": "罗青禾低声贴近，晏南枝清冷但被木柜压住，敲门切断尾音。"
+    },
+    {
+      "cue_id": "MX006",
+      "file": "mx006.wav",
+      "time_window": "03:15.2-04:28.2",
+      "scene": "SC006 旧井检查桌",
+      "minimax_music_prompt_zh": "旧井清户高潮，清明香铃、白册纸声、虫蜡针擦拭、纸面渗蜡、低频黑日压迫；白翳入场后声音更洁净、更冷。",
+      "negative_prompt_zh": "不要史诗终章、反派主题旋律、尖锐恐怖音墙、过度打击。",
+      "mix_prompt_zh": "白翳对白居中偏前，群众声退后，白册翻页像骨钟回声。"
+    },
+    {
+      "cue_id": "MX007",
+      "file": "mx007.wav",
+      "time_window": "04:28.2-04:38.2",
+      "scene": "切黑尾声",
+      "minimax_music_prompt_zh": "结尾悬念，弓弦张力后突然抽空，保留半秒无音乐，再给极低骨钟尾波；冷、空、未完。",
+      "negative_prompt_zh": "不要情绪宣泄、鼓点收束、英雄主题、响亮结尾。",
+      "mix_prompt_zh": "切黑时无音乐半秒，只留弓弦和空气，再落极低骨钟尾波。"
+    }
+  ]
+}

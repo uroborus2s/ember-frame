@@ -1,15 +1,21 @@
 {
-  "version": "1.0-audio-manifest",
+  "version": "1.1-audio-manifest",
   "project": "severed-homeland",
   "episode_id": "01",
   "status": "planned_not_rendered",
   "dialogue_plan": "01/audio/dialogue-plan.json",
   "voice_bible": "01/audio/voice-bible.md",
+  "provider_workflow": "01/audio/provider-workflow.md",
+  "provider_prompts": "01/audio/provider-prompts.json",
   "sound_plan": "01/post/sound-plan.md",
   "subtitle_script": "01/post/subtitle-script.md",
   "exports": {
     "dialogue": {
       "directory": "01/audio/dialogue",
+      "provider_directories": {
+        "minimax_tts": "01/audio/dialogue/provider/minimax",
+        "qwen3_tts": "01/audio/dialogue/provider/qwen3-tts"
+      },
       "planned_files": [
         "d001.wav",
         "d002.wav",
@@ -43,6 +49,9 @@
     },
     "music": {
       "directory": "01/audio/music",
+      "provider_directories": {
+        "minimax_music": "01/audio/music/provider/minimax"
+      },
       "planned_files": [
         "mx001.wav",
         "mx002.wav",
@@ -69,6 +78,8 @@
   },
   "render_notes": [
     "Do not create placeholder wav files.",
+    "Generate MiniMax and Qwen3-TTS dialogue candidates before selecting final dialogue wav files.",
+    "Use provider-prompts.json for every dialogue, voiceover, and music cue prompt.",
     "Mark this manifest complete only after actual dialogue, music, and SFX exports exist.",
     "Subtitle timing must be conformed after picture lock and final audio duration."
   ]
