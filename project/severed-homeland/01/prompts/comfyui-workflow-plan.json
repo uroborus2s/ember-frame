@@ -14,6 +14,11 @@
         "last_frame",
         "style_reference",
         "optional_location_reference",
+        "optional_tail_wall_defender_reference",
+        "optional_xue_tail_presence_reference",
+        "beast_troop_master_reference",
+        "companion_beast_master_reference",
+        "episode_beast_state_reference",
         "output_path"
       ],
       "node_binding_hints": [
@@ -22,21 +27,81 @@
         "first_frame -> PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
         "last_frame -> PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
         "style_reference -> PLACEHOLDER_STYLE_REFERENCE_NODE",
+        "01/assets/characters/c024ae01.png -> PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE -> PLACEHOLDER_CHARACTER_IPADAPTER_NODE, suggested low weight 0.25-0.30 from 55% to 100% of SH001 only",
+        "01/assets/characters/c004e01.png -> PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE -> PLACEHOLDER_CHARACTER_IPADAPTER_NODE, optional low weight 0.20-0.25 from 65% to 100% only if Xue is visible in the SH001 tail frame",
+        "assets/characters/c020m.png -> PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.50",
+        "assets/characters/c021m.png -> PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.40",
+        "01/assets/characters/c020e01.png -> PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.55",
         "output_path -> PLACEHOLDER_OUTPUT_NODE"
+      ],
+      "comfyui_node_chain": [
+        "Load Image r001e01.png -> Image Resize/Crop 16:9 -> Wan first-last-frame video node 起始图像",
+        "Load Image r002e01.png -> Image Resize/Crop 16:9 -> Wan first-last-frame video node 结束图像",
+        "If the Wan node exposes clip_vision_start_image / clip_vision_end_image sockets, send the same resized start/end images through the matching CLIP Vision Encode path before connecting those sockets.",
+        "CLIP Text Encode positive / negative -> Wan first-last-frame video node 正向 / 负向",
+        "VAE -> Wan first-last-frame video node vae",
+        "Wan first-last-frame video node 正向 / 负向 / latent -> KSampler Advanced positive / negative / latent_image",
+        "Checkpoint / LoRA model -> required ModelSamplingSD3 shift node -> Character IPAdapter/reference node -> Beast IPAdapter/reference node -> KSampler Advanced model",
+        "Character references must be connected before KSampler, not after VAE Decode or Create Video.",
+        "KSampler Advanced latent -> VAE Decode latent",
+        "Same VAE -> VAE Decode vae",
+        "VAE Decode image sequence -> Create Video images",
+        "Create Video video -> Save Video video"
       ],
       "parameter_defaults": {
         "aspect_ratio": "16:9",
         "fps": 24,
+        "frame_count": 84,
+        "duration_seconds": 3.5,
         "checkpoint": "PLACEHOLDER_VIDEO_CHECKPOINT",
         "lora_stack": "PLACEHOLDER_LORA_STACK",
         "workflow_template": "PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE",
-        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
-        "sampler": "PLACEHOLDER_SAMPLER",
-        "scheduler": "PLACEHOLDER_SCHEDULER",
-        "steps": 30,
-        "cfg": 5.5,
+        "resolution": "1280x720 production, 960x544 preview if VRAM is limited; do not use 640x640 for this 16:9 shot",
+        "wan_first_last_frame_video_node": {
+          "width": 1280,
+          "height": 720,
+          "length": 84,
+          "batch_size": 1,
+          "operator_note": "If this Wan build requires 4n+1 frame counts, use length 85 at fps 24 for a 3.54s render rather than falling back to 81 frames at 16fps."
+        },
+        "sampler": "euler",
+        "scheduler": "simple",
+        "steps": 28,
+        "preview_steps": 20,
+        "cfg": 4.0,
+        "cfg_range_note": "Use 4.0 for first tests; raise only to 4.5 if prompt adherence is weak. Higher CFG can damage first/last-frame continuity.",
+        "model_sampling_sd3_shift": 8.0,
         "denoise": 0.45,
         "reference_weight": "PLACEHOLDER_REFERENCE_WEIGHT",
+        "character_reference_weights": {
+          "E01_C024A_tail_wall_defender": 0.28,
+          "E01_C024A_start_percent": 0.55,
+          "E01_C024A_end_percent": 1.0,
+          "E01_C004_optional_xue_tail_presence": 0.22,
+          "E01_C004_start_percent": 0.65,
+          "E01_C004_end_percent": 1.0,
+          "operator_note": "SH001 character references are tail-frame continuity only. Keep them lower than first/last-frame constraints; disable E01_C004 unless Xue is visibly present in the tail frame."
+        },
+        "beast_reference_weights": {
+          "C020_beast_troop_master": 0.5,
+          "C021_companion_beast_master": 0.4,
+          "E01_C020_episode_beast_state": 0.55,
+          "start_percent": 0.0,
+          "end_percent": 0.8,
+          "operator_note": "ComfyUI cannot read image file names from prompt text. These three references must be loaded through image nodes and connected to the configured reference/IPAdapter branch."
+        },
+        "camera_direction_lock": {
+          "path": "attacker-side diagonal lift along the same exterior wall face",
+          "landing": "exterior-edge wall top beside the same bone bell and parapet",
+          "view_direction": "still looking toward the same exterior siege side through merlons or along the exterior wall line",
+          "forbidden": [
+            "crossing over the wall crown to view the city or rear side",
+            "turning the wall into a horizontal barrier attacked from both sides",
+            "showing beast attackers inside the wall",
+            "making rear-wall thickness the main view",
+            "180-degree turn"
+          ]
+        },
         "motion_bucket": "PLACEHOLDER_LOW_MEDIUM_MOTION"
       },
       "config_status": "needs_config"
@@ -50,6 +115,9 @@
         "first_frame_or_reference_image",
         "style_reference",
         "optional_character_or_prop_reference",
+        "optional_beast_troop_master_reference",
+        "optional_companion_beast_master_reference",
+        "optional_episode_beast_state_reference",
         "output_path"
       ],
       "node_binding_hints": [
@@ -57,6 +125,9 @@
         "negative_prompt from comfyui-render-prompts.md -> PLACEHOLDER_NEGATIVE_PROMPT_NODE",
         "first_frame_or_reference_image -> PLACEHOLDER_I2V_IMAGE_NODE",
         "character_identity_reference -> PLACEHOLDER_IPADAPTER_NODE when configured",
+        "assets/characters/c020m.png -> PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.35 when beast troops are background-only",
+        "assets/characters/c021m.png -> PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.30 when companion beasts are background-only",
+        "01/assets/characters/c020e01.png -> PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.40 when beast troops are background-only",
         "style_reference -> PLACEHOLDER_STYLE_REFERENCE_NODE",
         "output_path -> PLACEHOLDER_OUTPUT_NODE"
       ],
@@ -73,6 +144,14 @@
         "cfg": 5.2,
         "denoise": 0.4,
         "reference_weight": "PLACEHOLDER_REFERENCE_WEIGHT",
+        "beast_reference_weights": {
+          "C020_beast_troop_master": 0.35,
+          "C021_companion_beast_master": 0.3,
+          "E01_C020_episode_beast_state": 0.4,
+          "start_percent": 0.0,
+          "end_percent": 0.65,
+          "operator_note": "For SH002 and SH003 these references are background continuity only; keep them lower than the human identity/first-frame reference."
+        },
         "motion_bucket": "PLACEHOLDER_LOW_MOTION"
       },
       "config_status": "needs_config"
@@ -88,7 +167,68 @@
         "01/assets/style/f001e01.png",
         "01/assets/style/f005e01.png",
         "01/assets/locations/l007e01.png",
-        "01/assets/props/p021e01.png"
+        "01/assets/props/p021e01.png",
+        "01/assets/characters/c024ae01.png",
+        "01/assets/characters/c004e01.png",
+        "assets/characters/c020m.png",
+        "assets/characters/c021m.png",
+        "01/assets/characters/c020e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "node_hint": "PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
+          "path": "01/assets/reference-frames/r001e01.png",
+          "role": "primary_first_frame",
+          "connection": "FLF2V first-frame input",
+          "weight": "primary"
+        },
+        {
+          "node_hint": "PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+          "path": "01/assets/reference-frames/r002e01.png",
+          "role": "primary_last_frame",
+          "connection": "FLF2V last-frame input",
+          "weight": "primary"
+        },
+        {
+          "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c020m.png",
+          "role": "beast_troop_multi_type_master",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.5
+        },
+        {
+          "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c021m.png",
+          "role": "companion_beast_diversity_master",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.4
+        },
+        {
+          "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+          "path": "01/assets/characters/c020e01.png",
+          "role": "episode_blizzard_beast_state",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.55
+        },
+        {
+          "node_hint": "PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE",
+          "path": "01/assets/characters/c024ae01.png",
+          "role": "tail_wall_defender_continuity",
+          "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+          "suggested_weight": 0.28,
+          "start_percent": 0.55,
+          "end_percent": 1.0
+        },
+        {
+          "node_hint": "PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE",
+          "path": "01/assets/characters/c004e01.png",
+          "role": "optional_xue_linqiang_tail_presence",
+          "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+          "suggested_weight": 0.22,
+          "start_percent": 0.65,
+          "end_percent": 1.0,
+          "operator_note": "Disable unless Xue Linqiang is visibly present in the SH001 tail frame."
+        }
       ],
       "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH001",
       "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH001",
@@ -98,7 +238,7 @@
         "fps": 24,
         "duration": "3.5s",
         "denoise": 0.45,
-        "motion": "controlled diagonal siege-side lift to wall-top bone bell; no frontal push, no wall pass-through, no 180-degree turn"
+        "motion": "controlled same-side diagonal siege lift along the exterior wall to the exterior-edge wall-top bone bell; camera remains facing the same exterior siege side; no rear/opposite-side reveal, no both-side attack reading, no frontal push, no wall pass-through, no 180-degree turn"
       },
       "reference_frame_status": "r001e01.png and r002e01.png have been updated and visually checked for the revised diagonal first-frame and wall-top last-frame compositions.",
       "status": "needs_config"
@@ -111,7 +251,47 @@
         "01/assets/style/f001e01.png",
         "01/assets/style/f005e01.png",
         "01/assets/props/p021e01.png",
-        "01/assets/characters/c024ae01.png"
+        "01/assets/characters/c024ae01.png",
+        "assets/characters/c020m.png",
+        "assets/characters/c021m.png",
+        "01/assets/characters/c020e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "path": "01/assets/reference-frames/r003e01.png",
+          "role": "primary_i2v_first_frame",
+          "connection": "I2V image input",
+          "weight": "primary"
+        },
+        {
+          "node_hint": "PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE",
+          "path": "01/assets/characters/c024ae01.png",
+          "role": "human_identity_reference",
+          "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+          "suggested_weight": 0.55
+        },
+        {
+          "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c020m.png",
+          "role": "background_beast_troop_continuity",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.35
+        },
+        {
+          "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c021m.png",
+          "role": "background_companion_beast_continuity",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.3
+        },
+        {
+          "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+          "path": "01/assets/characters/c020e01.png",
+          "role": "background_episode_beast_state",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.4
+        }
       ],
       "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH002",
       "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH002",
@@ -133,7 +313,47 @@
         "01/assets/style/f001e01.png",
         "01/assets/style/f005e01.png",
         "01/assets/locations/l007e01.png",
-        "01/assets/characters/c004e01.png"
+        "01/assets/characters/c004e01.png",
+        "assets/characters/c020m.png",
+        "assets/characters/c021m.png",
+        "01/assets/characters/c020e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "path": "01/assets/reference-frames/r004e01.png",
+          "role": "primary_i2v_first_frame",
+          "connection": "I2V image input",
+          "weight": "primary"
+        },
+        {
+          "node_hint": "PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE",
+          "path": "01/assets/characters/c004e01.png",
+          "role": "human_identity_reference",
+          "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+          "suggested_weight": 0.6
+        },
+        {
+          "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c020m.png",
+          "role": "background_beast_troop_continuity",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.35
+        },
+        {
+          "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+          "path": "assets/characters/c021m.png",
+          "role": "background_companion_beast_continuity",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.3
+        },
+        {
+          "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+          "path": "01/assets/characters/c020e01.png",
+          "role": "background_episode_beast_state",
+          "connection": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+          "suggested_weight": 0.4
+        }
       ],
       "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH003",
       "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH003",
@@ -159,6 +379,11 @@
     "PLACEHOLDER_LORA_STACK",
     "PLACEHOLDER_CONTROLNET",
     "PLACEHOLDER_IPADAPTER_PRESET",
+    "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+    "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+    "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+    "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+    "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
     "PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE",
     "PLACEHOLDER_I2V_WORKFLOW_TEMPLATE",
     "PLACEHOLDER_POSITIVE_PROMPT_NODE",

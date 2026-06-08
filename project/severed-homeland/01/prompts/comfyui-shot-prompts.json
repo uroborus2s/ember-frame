@@ -19,11 +19,75 @@
           "01/assets/locations/l007e01.png",
           "01/assets/props/p021e01.png",
           "01/assets/characters/c020e01.png",
+          "01/assets/characters/c024ae01.png",
+          "01/assets/characters/c004e01.png",
           "01/assets/reference-frames/r001e01.png",
           "01/assets/reference-frames/r002e01.png",
           "assets/characters/c020m.png",
           "assets/characters/c021m.png"
         ],
+        "reference_image_binding": {
+          "operator_note": "ComfyUI cannot read these image paths from prompt text. Load each path through an image node and connect it to the configured FLF2V/IPAdapter/reference branch.",
+          "primary_image_nodes": [
+            {
+              "path": "01/assets/reference-frames/r001e01.png",
+              "role": "primary_first_frame",
+              "node_hint": "PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
+              "weight": "primary"
+            },
+            {
+              "path": "01/assets/reference-frames/r002e01.png",
+              "role": "primary_last_frame",
+              "node_hint": "PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+              "weight": "primary"
+            }
+          ],
+          "beast_reference_nodes": [
+            {
+              "path": "assets/characters/c020m.png",
+              "role": "beast_troop_multi_type_master",
+              "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.5
+            },
+            {
+              "path": "assets/characters/c021m.png",
+              "role": "companion_beast_diversity_master",
+              "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.4
+            },
+            {
+              "path": "01/assets/characters/c020e01.png",
+              "role": "episode_blizzard_beast_state",
+              "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.55
+            }
+          ],
+          "character_reference_nodes": [
+            {
+              "path": "01/assets/characters/c024ae01.png",
+              "role": "tail_frame_wall_defender_continuity",
+              "node_hint": "PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+              "suggested_weight": 0.28,
+              "start_percent": 0.55,
+              "end_percent": 1.0,
+              "operator_note": "Low-weight SH001 tail-frame continuity only; do not let this override first/last frames or turn the shot into a character close-up."
+            },
+            {
+              "path": "01/assets/characters/c004e01.png",
+              "role": "optional_xue_linqiang_tail_presence",
+              "node_hint": "PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+              "suggested_weight": 0.22,
+              "start_percent": 0.65,
+              "end_percent": 1.0,
+              "operator_note": "Use only if Xue Linqiang is visibly present in the SH001 tail frame; otherwise reserve this identity reference for SH003."
+            }
+          ]
+        },
         "first_frame_ref": "01/assets/reference-frames/r001e01.png",
         "last_frame_ref": "01/assets/reference-frames/r002e01.png",
         "reference_frame_status": "R001 and R002 have been updated and visually checked for the revised SH001 FLF2V scheme: R001 is a low diagonal rear-side siege first frame, and R002 is a wall-top medium-near last frame with bone bell, defenders and exterior siege visible below.",
@@ -49,33 +113,33 @@
           "C021",
           "E01_C020"
         ],
-        "reference_frame_update_note": "Current R001/R002 are regenerated: R001 attacker-side low oblique view; R002 same-wall climb to wall-top 45-degree turn. One wall, one bell frame, one bell; beast troops and companion beasts inherit C020/C021/E01_C020."
+        "reference_frame_update_note": "Current R001/R002 are regenerated: R001 attacker-side low oblique view; R002 same-wall climb to the exterior-edge wall-top landing. One wall, one bell frame, one bell; camera must not cross to the rear or opposite side of the wall. Beast troops and companion beasts must inherit the loaded C020/C021/E01_C020 image references, not prompt text alone."
       },
       "model_visible_prompt": {
-        "visible_goal_zh": "在暴雪中建立锁喉关外墙攻城压力：从攻城方斜后侧低机位的兽潮构图起，落到城头中景偏近的骨钟、黑石女墙和人族守军；墙外兽潮仍在斜下方可见，为切入人族身体代价做转场。",
-        "visible_goal_en": "Establish the Suohou Gate outer-wall siege pressure in blizzard: begin from a low diagonal rear-side siege composition and land in a wall-top medium-near composition of bone bell, blackstone parapet and human defenders, with the exterior beast tide still visible below on a diagonal as the transition into human bodily cost.",
+        "visible_goal_zh": "在暴雪中建立锁喉关外墙攻城压力：从攻城方斜后侧低机位的兽潮构图起，沿同一面外墙上升，落到墙头外沿中景偏近的骨钟、黑石女墙和人族守军；镜头仍面向同一个墙外攻城面，墙外兽潮仍在斜下方可见，为切入人族身体代价做转场。",
+        "visible_goal_en": "Establish the Suohou Gate outer-wall siege pressure in blizzard: begin from a low diagonal rear-side siege composition, climb along the same exterior wall face, and land on the exterior edge of the wall top with bone bell, blackstone parapet and human defenders; the camera still faces the same exterior siege side, with the beast tide visible below on a diagonal as the transition into human bodily cost.",
         "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。斜侧攻城建立镜头布光：冷白暴雪天光压出黑墙巨型剪影，黑墙负补光吞掉墙面和兽潮大暗面；远处暗红火线和火盆亮度克制，从低位反打雪雾、烟尘、攻城队列、旗帜破布、旧铁、巨角边缘、骨钟和守军肩线，形成残酷战场尺度。",
         "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Diagonal siege-establishing lighting: cold blizzard sky light silhouettes the massive black wall, black-wall negative fill swallows the wall face and the beast tide's large shadow masses; distant dark-red firelines and braziers stay controlled in brightness and low-counterlight snow haze, smoke, siege ranks, torn banners, old iron, horn edges, bone bell and defender shoulder lines, creating brutal battlefield scale.",
-        "subject_content_zh": "首帧构图是攻城方斜后侧低机位，三分之四角度看锁喉关黑石巨墙；前景只有兽族攻城队列肩背、旧铁甲片、破旗、火盆、雪泥脚步和一截巨兽背脊或巨角，兽潮从画面左前方斜推向右后方城门，城门不居中、军阵不对称，远处墙头只见很小的骨钟和守军剪影。尾帧构图是城头中景偏近，骨钟和钟架占画面左侧或中上部，黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛或门闩局部清楚；2到4名守军被撞门震动影响而短促前倾又稳住枪线，墙外兽潮、拒马、巨兽局部、火线、烟柱和暴雪仍在斜下方背景可见。",
-        "subject_content_en": "First-frame composition: low diagonal rear-side siege angle, a three-quarter view of the Suohou Gate blackstone wall; foreground shows only beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and the ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes far away. Last-frame composition: wall-top medium-near endpoint, bone bell and bell frame on the left or upper middle, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands, spear or gate-bar details clear; two to four defenders jolt forward briefly from the gate impact then steady the spear line, while the exterior beast tide, barricades, beast parts, firelines, smoke columns and blizzard remain visible below on a diagonal.",
-        "composition_motion_zh": "使用首尾参考帧约束斜侧攻城到城头落点。镜头顺旗杆、烟柱、巨角和黑墙外立面起吊到骨钟，旁白随起镜进入；不正面穿向城门，不穿墙，不做180度调头。骨钟横摆、雪雾吃画面和钟声裂响可作为隐藏剪切点，下一镜切到同一口骨钟旁的年轻军户。",
-        "composition_motion_en": "Use first and last reference frames to constrain the move from diagonal siege pressure to a wall-top landing. The camera lifts along flags, smoke columns, horn shapes and the exterior black wall toward the bone bell as the voiceover enters; it does not push frontally into the gate, pass through the wall, or make a 180-degree turn. The bell swing, snow haze swallowing the frame and cracked bell sound can act as the hidden cut point into the next shot beside the same bell and young soldier.",
-        "visible_continuity_zh": "人族守军在墙头，兽族攻城方在墙外和墙下；尾帧必须同时读到墙头人族空间和斜下方墙外兽潮方向。骨钟属于墙头警钟架，残缺淡金旧日月痕只能被裂缝、铜锈和雪泥遮住，不能完整发光。",
-        "visible_continuity_en": "Human defenders stay on the wall top and beast attackers stay outside and below the wall; the last frame must read both the human wall-top space and the exterior beast tide direction below on a diagonal. The bone bell belongs to the wall-top bell frame, and faint broken old sun-moon traces must be obscured by cracks, verdigris and snow mud, never complete or glowing.",
-        "negative_prompt_zh": "不要现代服饰、枪械、科幻 UI、塑料 CG、正面居中城门、左右完全对称军阵、航拍感、游戏飞镜、穿墙、180度调头、纯骨钟特写、看不到墙头守军、看不到墙外兽潮方向、完整发光徽章、巨龙化猛犸、魔法光柱、神圣金光、过曝 bloom、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕、战场空间跳变。",
-        "negative_prompt_en": "avoid modern clothing, firearms, sci-fi UI, plastic CGI, centered frontal gate, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, passing through the wall, 180-degree turn, pure bone-bell close-up, missing wall-top defenders, missing exterior beast-tide direction, complete glowing emblem, dragon-like mammoth, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles, battlefield spatial jumps."
+        "subject_content_zh": "首帧构图是攻城方斜后侧低机位，三分之四角度看锁喉关黑石巨墙；前景只有继承已接入兽族攻城兵种母卡、伴生兽关系母卡和本集兽族状态卡的兽族攻城队列肩背、旧铁甲片、破旗、火盆、雪泥脚步和一截巨兽背脊或巨角，兽潮从画面左前方斜推向右后方城门，城门不居中、军阵不对称，远处墙头只见很小的骨钟和守军剪影。尾帧构图是同一城头外沿中景偏近，骨钟和钟架占画面左侧或中上部，黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛或门闩局部清楚；2到4名守军被撞门震动影响而短促前倾又稳住枪线，墙外兽潮、拒马、巨兽局部、火线、烟柱和暴雪仍从垛口或墙外侧斜下方可见。城内侧、墙后方和城墙另一边不展开，不出现另一侧也被攻击。",
+        "subject_content_en": "First-frame composition: low diagonal rear-side siege angle, a three-quarter view of the Suohou Gate blackstone wall; foreground shows only beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn inherited from the loaded beast troop master, companion-beast master and episode beast-state references, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and the ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes far away. Last-frame composition: same exterior-edge wall-top medium-near endpoint, bone bell and bell frame on the left or upper middle, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands, spear or gate-bar details clear; two to four defenders jolt forward briefly from the gate impact then steady the spear line, while the exterior beast tide, barricades, beast parts, firelines, smoke columns and blizzard remain visible below through merlons or along the exterior side. The inner side, rear side and opposite side of the wall do not open up, and there is no second-side attack.",
+        "composition_motion_zh": "使用首尾参考帧约束斜侧攻城到同一墙头落点。镜头顺旗杆、烟柱、巨角和黑墙外立面起吊到骨钟，旁白随起镜进入；到达墙头后只沿女墙方向做小角度偏转，把骨钟和人族守军带入前景，但镜头视线仍留在同一个墙外攻城面。不越过墙脊看向城内或后墙，不正面穿向城门，不穿墙，不做180度调头。骨钟横摆、雪雾吃画面和钟声裂响可作为隐藏剪切点，下一镜切到同一口骨钟旁的年轻军户。",
+        "composition_motion_en": "Use first and last reference frames to constrain the move from diagonal siege pressure to a wall-top landing. The camera lifts along flags, smoke columns, horn shapes and the exterior black wall toward the bone bell as the voiceover enters; after reaching the wall top it makes only a small yaw along the parapet line to bring the bell and human defenders into the foreground while still looking toward the same exterior siege side. It does not cross over the wall crown to look into the city or rear side, push frontally into the gate, pass through the wall, or make a 180-degree turn. The bell swing, snow haze swallowing the frame and cracked bell sound can act as the hidden cut point into the next shot beside the same bell and young soldier.",
+        "visible_continuity_zh": "人族守军在墙头，兽族攻城方只在同一面城墙外侧和墙下；尾帧必须同时读到墙头人族空间和斜下方同一侧墙外兽潮方向。禁止把城墙读成两边都被攻击的横墙，禁止出现城内另一侧战场、后城墙厚度主景、墙内侧兽潮。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持黑牙斧兵、铁角盾墙、雪狼骑、灰皮拖城巨魔、雪羽攀墙斥候、破门猛犸、岩背犀或牦牛、霜狼等多兵种、多伴生兽形态，不能泛化成单一种类兽群。骨钟属于墙头警钟架，残缺淡金旧日月痕只能被裂缝、铜锈和雪泥遮住，不能完整发光。",
+        "visible_continuity_en": "Human defenders stay on the wall top, and beast attackers stay only outside and below the same exterior side of the wall; the last frame must read both the human wall-top space and the same-side exterior beast tide direction below on a diagonal. Never read the wall as a horizontal barrier attacked from both sides; do not show an inner-side battlefield, rear-wall thickness as the main subject, or beast attackers inside the wall. Beast soldiers and companion beasts must inherit the three loaded beast reference images, preserving varied troop and beast types such as black-tooth axe troops, iron-horn shield wall, snow-wolf riders, grey-skinned city-dragging trolls, snow-feather climbers, gate-breaking mammoths, rock-backed rhino or yak forms, and frost wolves; never collapse them into one generic beast crowd. The bone bell belongs to the wall-top bell frame, and faint broken old sun-moon traces must be obscured by cracks, verdigris and snow mud, never complete or glowing.",
+        "negative_prompt_zh": "不要现代服饰、枪械、科幻 UI、塑料 CG、正面居中城门、左右完全对称军阵、航拍感、游戏飞镜、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、纯骨钟特写、看不到墙头守军、看不到墙外兽潮方向、完整发光徽章、巨龙化猛犸、魔法光柱、神圣金光、过曝 bloom、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕、战场空间跳变。",
+        "negative_prompt_en": "avoid modern clothing, firearms, sci-fi UI, plastic CGI, centered frontal gate, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, passing through the wall, crossing over the wall to look at the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, pure bone-bell close-up, missing wall-top defenders, missing exterior beast-tide direction, complete glowing emblem, dragon-like mammoth, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles, battlefield spatial jumps."
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
-        "resolution": "3840x2160 input refs; render target PLACEHOLDER_16x9_RESOLUTION",
-        "sampler": "PLACEHOLDER_SAMPLER",
-        "scheduler": "PLACEHOLDER_SCHEDULER",
-        "steps": 30,
-        "cfg": 5.5,
+        "resolution": "1280x720 production, 960x544 preview if VRAM is limited",
+        "sampler": "euler",
+        "scheduler": "simple",
+        "steps": 28,
+        "cfg": 4.0,
         "seed_policy": "lock_after_first_approved_motion_test",
         "denoise": 0.45,
         "frame_count": 84,
-        "motion_notes": "controlled diagonal siege-side lift to wall-top bone bell; no frontal push, no wall pass-through, no 180-degree turn"
+        "motion_notes": "controlled same-side diagonal siege lift to exterior-edge wall-top bone bell; camera remains facing the exterior siege side; no crossing to rear/opposite wall side, no frontal push, no wall pass-through, no 180-degree turn"
       },
       "status": "ready_pending_user_qc"
     },
@@ -99,6 +163,47 @@
           "assets/characters/c021m.png",
           "01/assets/characters/c020e01.png"
         ],
+        "reference_image_binding": {
+          "operator_note": "ComfyUI cannot read these image paths from prompt text. For SH002, beast references are background continuity only and must stay lower than the young soldier identity and I2V first-frame reference.",
+          "primary_image_nodes": [
+            {
+              "path": "01/assets/reference-frames/r003e01.png",
+              "role": "primary_i2v_first_frame",
+              "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+              "weight": "primary"
+            },
+            {
+              "path": "01/assets/characters/c024ae01.png",
+              "role": "young_wall_soldier_identity",
+              "node_hint": "PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+              "suggested_weight": 0.55
+            }
+          ],
+          "background_beast_reference_nodes": [
+            {
+              "path": "assets/characters/c020m.png",
+              "role": "background_beast_troop_continuity",
+              "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.35
+            },
+            {
+              "path": "assets/characters/c021m.png",
+              "role": "background_companion_beast_continuity",
+              "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.3
+            },
+            {
+              "path": "01/assets/characters/c020e01.png",
+              "role": "background_episode_beast_state",
+              "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.4
+            }
+          ]
+        },
         "first_frame_ref": "01/assets/reference-frames/r003e01.png",
         "last_frame_ref": "",
         "audio_refs": [
@@ -130,8 +235,8 @@
         "subject_content_en": "Young soldier, cracked bone bell, frozen blooded palm, broken spear, blackstone wall top and distant exterior siege shadows share the frame; he kneels in snow mud with short breaths, fingers trembling slightly where frozen blood sticks them to the bell, the broken spear sliding a fraction near his foot, blizzard striking old armor plates and bell surface, restrained and neither heroic nor exploitative. The old sun-moon mark is only a faint broken gold trace, cold light sinks into bell cracks, blood is edged dark red only by weak warm fire rim, and the background battlefield stays low-lit and oppressive.",
         "composition_motion_zh": "以参考帧为首帧，保持人物贴钟姿态和墙外背景层次。镜头不做大移动，只允许极轻微的压近或稳定手持感，重点锁住手、钟裂和断矛的物理反应。",
         "composition_motion_en": "Use the reference image as first frame, preserving the soldier's bell-contact pose and exterior background layers. The camera does not make a large move, allowing only a very slight push-in or stable handheld feel, locked on the physical reaction of hand, bell crack and broken spear.",
-        "visible_continuity_zh": "骨钟仍在同一墙头警钟架，墙外战场方向不变；旧徽不发光，冻血暗红，儿童化或英雄化脸型都不可出现。",
-        "visible_continuity_en": "The bone bell remains in the same wall-top bell frame and the exterior battlefield direction does not change; the old emblem does not glow, frozen blood is dark red, and no childlike or heroic face treatment appears.",
+        "visible_continuity_zh": "骨钟仍在同一墙头警钟架，墙外战场方向不变；墙外远景兽族和伴生兽继承已接入的兽族攻城兵种母卡、伴生兽关系母卡和本集兽族状态卡，但权重低于年轻军户和 I2V 首帧；旧徽不发光，冻血暗红，儿童化或英雄化脸型都不可出现。",
+        "visible_continuity_en": "The bone bell remains in the same wall-top bell frame and the exterior battlefield direction does not change; distant exterior beast troops and companion beasts inherit the loaded beast troop master, companion-beast master and episode beast-state references, with lower weight than the young soldier and the I2V first frame; the old emblem does not glow, frozen blood is dark red, and no childlike or heroic face treatment appears.",
         "negative_prompt_zh": "不要强光圣徽、不要英雄摆拍、不要神圣逆光、不要过曝 bloom、不要过度血腥、不要面部美化、不要现代甲胄、不要骨钟位置漂移、不要背景战场换方向。",
         "negative_prompt_en": "avoid bright sacred emblem, heroic posing, divine backlight, overexposed bloom, excessive gore, beautified face, modern armor, drifting bell position, background battlefield direction change."
       },
@@ -168,6 +273,47 @@
           "assets/characters/c021m.png",
           "01/assets/characters/c020e01.png"
         ],
+        "reference_image_binding": {
+          "operator_note": "ComfyUI cannot read these image paths from prompt text. For SH003, beast references are background continuity only and must stay lower than Xue Linqiang identity and I2V first-frame reference.",
+          "primary_image_nodes": [
+            {
+              "path": "01/assets/reference-frames/r004e01.png",
+              "role": "primary_i2v_first_frame",
+              "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+              "weight": "primary"
+            },
+            {
+              "path": "01/assets/characters/c004e01.png",
+              "role": "xue_linqiang_identity",
+              "node_hint": "PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
+              "suggested_weight": 0.6
+            }
+          ],
+          "background_beast_reference_nodes": [
+            {
+              "path": "assets/characters/c020m.png",
+              "role": "background_beast_troop_continuity",
+              "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.35
+            },
+            {
+              "path": "assets/characters/c021m.png",
+              "role": "background_companion_beast_continuity",
+              "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.3
+            },
+            {
+              "path": "01/assets/characters/c020e01.png",
+              "role": "background_episode_beast_state",
+              "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+              "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+              "suggested_weight": 0.4
+            }
+          ]
+        },
         "first_frame_ref": "01/assets/reference-frames/r004e01.png",
         "last_frame_ref": "",
         "audio_refs": [
@@ -200,8 +346,8 @@
         "subject_content_en": "Xue Linqiang fills the foreground, cracked broad hand pressing the blackstone parapet, bone bell beside him; as he speaks the short warning, his mouth opens only once, his breath stays low in the blizzard, his eye-line shifts from the bell toward the gate line, and old armor plates and coarse wall scarf tug lightly in the wind, with a low, practical, non-heroic performance. Wall defenders, spear line, gate bar and exterior battlefield remain readable in middle and background, with several defenders following his eye-line toward the gate, while the warm fire edge serves only the command moment's face, hand, eye-line and battlefield direction.",
         "composition_motion_zh": "以参考帧为首帧，做小幅锁定推进到手、嘴和眼线；镜头运动克制，不追随大动作，精确台词不进入画面文字。",
         "composition_motion_en": "Use the reference image as first frame, with a small locked push toward hand, mouth and eye-line; camera motion stays restrained and does not follow large action, with no exact dialogue text in the image.",
-        "visible_continuity_zh": "薛临墙不是华甲将军或武侠宗师；他是旧墙师，话短、低声、急促但不慌。骨钟、墙缝和枪线必须仍与前两镜同一空间。",
-        "visible_continuity_en": "Xue Linqiang is not an ornate general or wuxia master; he is an old wall master, speaking briefly, low, urgent but controlled. The bell, wall seam and spear line must remain in the same space as the previous two shots.",
+        "visible_continuity_zh": "薛临墙不是华甲将军或武侠宗师；他是旧墙师，话短、低声、急促但不慌。骨钟、墙缝和枪线必须仍与前两镜同一空间。墙外远景兽族和伴生兽继承已接入的兽族攻城兵种母卡、伴生兽关系母卡和本集兽族状态卡，但权重低于薛临墙身份参考和 I2V 首帧。",
+        "visible_continuity_en": "Xue Linqiang is not an ornate general or wuxia master; he is an old wall master, speaking briefly, low, urgent but controlled. The bell, wall seam and spear line must remain in the same space as the previous two shots. Distant exterior beast troops and companion beasts inherit the loaded beast troop master, companion-beast master and episode beast-state references, with lower weight than the Xue Linqiang identity reference and the I2V first frame.",
         "negative_prompt_zh": "不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要过曝脸光、不要华丽将军甲、不要台词文字入画、不要大幅口型夸张、不要角色变年轻、不要骨钟消失。",
         "negative_prompt_en": "avoid grandmaster pose, wuxia glow, divine heroic backlight, overexposed face light, ornate general armor, dialogue text in frame, exaggerated lip movement, younger identity drift, missing bone bell."
       },

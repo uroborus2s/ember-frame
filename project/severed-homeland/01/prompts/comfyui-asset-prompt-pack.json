@@ -175,7 +175,15 @@
       "status": "ready",
       "prompt_hint_zh": "北境攻城剪影状态卡，只用于墙外兽族联盟远景、巨角、毛皮、盾面和火雪分离参考。",
       "prompt_hint_en": "Northern siege silhouette state card, used only for exterior beast-alliance distance, horn, fur, shield and fire-snow separation reference.",
-      "comfyui_role": "reference_image",
+      "comfyui_role": "episode_beast_state_reference_image",
+      "conditioning": {
+        "node_type": "Load Image -> IPAdapter/reference branch",
+        "node_hint": "PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+        "suggested_weight_sh001": 0.55,
+        "suggested_weight_sh002_sh003_background": 0.4,
+        "operator_note": "Must be loaded as an image node. Prompt text mentioning E01_C020 is not enough for ComfyUI to use this image."
+      },
       "output_format": {
         "deliverable_kind": "episode_state_card",
         "background_policy": "neutral_plain",
@@ -240,8 +248,8 @@
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r001e01.png",
       "status": "ready",
-      "prompt_hint_zh": "SC001-SH001 首帧：攻城方斜后侧低机位，三分之四看同一面锁喉关黑石墙；远处墙头小钟只是锚点，兽族/伴生兽继承 C020/C021/E01_C020。",
-      "prompt_hint_en": "SC001-SH001 updated first frame: low diagonal rear-side siege angle, three-quarter view of the Suohou Gate blackstone wall; foreground shows beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes.",
+      "prompt_hint_zh": "SC001-SH001 首帧：攻城方斜后侧低机位，三分之四看同一面锁喉关黑石墙；远处墙头小钟只是锚点，兽族/伴生兽由已加载的 C020、C021、E01_C020 参考图节点约束。",
+      "prompt_hint_en": "SC001-SH001 updated first frame: low diagonal rear-side siege angle, three-quarter view of the Suohou Gate blackstone wall; foreground shows beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes. Beast troops and companion beasts are constrained by loaded C020, C021 and E01_C020 reference image nodes.",
       "comfyui_role": "first_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -374,7 +382,15 @@
       "status": "ready",
       "prompt_hint_zh": "兽族攻城兵种群像母卡：R001-R004 中所有兽族士兵必须继承此多兵种外形，不可泛化。",
       "prompt_hint_en": "Beast-alliance siege troop master board: all beast soldiers in R001-R004 inherit these varied troop designs, no generic army.",
-      "comfyui_role": "reference_image",
+      "comfyui_role": "beast_troop_master_reference_image",
+      "conditioning": {
+        "node_type": "Load Image -> IPAdapter/reference branch",
+        "node_hint": "PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+        "suggested_weight_sh001": 0.5,
+        "suggested_weight_sh002_sh003_background": 0.35,
+        "operator_note": "Use this image to preserve multiple beast soldier types. Do not use it as a video first frame."
+      },
       "usage": [
         "SC001-SH001",
         "SC001-SH002",
@@ -392,7 +408,15 @@
       "status": "ready",
       "prompt_hint_zh": "北境伴生兽关系母卡：R001-R004 中伴生兽必须继承猛犸、岩背犀/牦牛、霜狼等多样关系。",
       "prompt_hint_en": "Northern companion-beast relationship master board: companion beasts in R001-R004 inherit mammoth, rock-backed rhino/yak, frost wolf and handler relations.",
-      "comfyui_role": "reference_image",
+      "comfyui_role": "companion_beast_master_reference_image",
+      "conditioning": {
+        "node_type": "Load Image -> IPAdapter/reference branch",
+        "node_hint": "PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_BEAST_IPADAPTER_NODE",
+        "suggested_weight_sh001": 0.4,
+        "suggested_weight_sh002_sh003_background": 0.3,
+        "operator_note": "Use this image to preserve companion-beast variety and handler relationships. Do not use it as a video first frame."
+      },
       "usage": [
         "SC001-SH001",
         "SC001-SH002",

@@ -8,9 +8,9 @@ English: This delivery pack covers only episode 01 `SC001-SH001` through `SC001-
 
 ## Creative Update / 创作更新
 
-中文：SC001 开场改为斜侧攻城升镜。首帧应是攻城方斜后侧低机位，兽潮从左前向右后斜推城门，黑石墙不正面居中；尾帧应是城头中景偏近，骨钟、黑石女墙、守军肩背和枪线可读，墙外兽潮仍在斜下方背景可见。旁白在这条升镜中读：“北墙五百年，血从未干。”
+中文：SC001 开场改为斜侧攻城升镜。首帧应是攻城方斜后侧低机位，兽潮从左前向右后斜推城门，黑石墙不正面居中；尾帧应是同一面外墙的墙头外沿中景偏近，骨钟、黑石女墙、守军肩背和枪线可读，镜头仍面向同一个墙外攻城面，墙外兽潮仍在斜下方背景可见。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条升镜中读：“北墙五百年，血从未干。”
 
-English: SC001 now uses a diagonal siege-side lift. The first frame should be a low diagonal rear-side siege angle, with the beast tide pushing from front-left toward the gate at rear-right and the black wall not centered frontally; the last frame should be a wall-top medium-near composition, with bone bell, blackstone parapet, defender shoulders and spear line readable, and the exterior beast tide still visible below on a diagonal. The voiceover reads during this lift: "For five hundred years, the northern wall's blood has never dried."
+English: SC001 now uses a diagonal siege-side lift. The first frame should be a low diagonal rear-side siege angle, with the beast tide pushing from front-left toward the gate at rear-right and the black wall not centered frontally; the last frame should be an exterior-edge wall-top medium-near composition on the same wall face, with bone bell, blackstone parapet, defender shoulders and spear line readable, while the camera still faces the same exterior siege side and the exterior beast tide remains visible below on a diagonal. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. The voiceover reads during this lift: "For five hundred years, the northern wall's blood has never dried."
 
 中文：`r001e01.png` 和 `r002e01.png` 已按新版构图更新并通过视觉检查，可作为 `SC001-SH001` 的 FLF2V 首尾帧交付位。该镜头时长改为 `3.5s / 84 frames @ 24fps`。
 
@@ -40,6 +40,26 @@ English: The following unified cinematography grammar is for prompt authors and 
 | `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png` | 断矛、冻血、远处战声 / broken spear, frozen blood, distant battle |
 | `SC001-SH003` | `I2V` | `01/assets/reference-frames/r004e01.png` | 薛临墙台词 / Xue Linqiang line |
 
+## ComfyUI Reference Binding / ComfyUI 参考图接入
+
+中文：ComfyUI 不会因为 prompt 写了 `C020`、`C021` 或文件名就自动读取图片。生产 workflow 必须把下列图片接入 `Load Image` 或等价图片节点，再连接到 IPAdapter、Reference-only、Redux 或实际 workflow 使用的参考图分支。
+
+English: ComfyUI will not load images automatically just because the prompt mentions `C020`, `C021`, or a file name. Production workflow must load the following files through `Load Image` or equivalent image nodes, then connect them to IPAdapter, Reference-only, Redux, or the actual reference branch used by the workflow.
+
+| Image | Path | Node Role | Suggested Weight |
+| --- | --- | --- | --- |
+| FLF2V first frame | `01/assets/reference-frames/r001e01.png` | `PLACEHOLDER_FIRST_FRAME_IMAGE_NODE` | primary |
+| FLF2V last frame | `01/assets/reference-frames/r002e01.png` | `PLACEHOLDER_LAST_FRAME_IMAGE_NODE` | primary |
+| Beast troop master | `assets/characters/c020m.png` | `PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE` | SH001 `0.50`; SH002/SH003 background `0.35` |
+| Companion beast master | `assets/characters/c021m.png` | `PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE` | SH001 `0.40`; SH002/SH003 background `0.30` |
+| Episode beast state | `01/assets/characters/c020e01.png` | `PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE` | SH001 `0.55`; SH002/SH003 background `0.40` |
+| Young soldier state | `01/assets/characters/c024ae01.png` | `PLACEHOLDER_YOUNG_SOLDIER_IMAGE_NODE -> PLACEHOLDER_CHARACTER_IPADAPTER_NODE` | SH002 `0.55` |
+| Xue Linqiang state | `01/assets/characters/c004e01.png` | `PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE -> PLACEHOLDER_CHARACTER_IPADAPTER_NODE` | SH003 `0.60` |
+
+中文：SH001 的首尾帧是主约束；三张兽族参考图只锁多兵种、多伴生兽、毛皮骨饰旧铁材质，不替代首尾帧。SH002/SH003 中兽族只在背景，参考权重必须低于人物身份参考和 I2V 首帧。
+
+English: SH001 first/last frames are the primary constraints; the three beast references only lock troop variety, companion-beast diversity, fur/bone/old-iron material language, and must not replace the first/last frames. In SH002/SH003, beast forces are background-only, so beast reference weights must stay lower than human identity reference and I2V first frame.
+
 ## Copy-Ready Prompts / 可复制提示词
 
 中文：生产侧直接使用 `01/prompts/comfyui-render-prompts.md`，其中已经按镜头组装好分段标题版 `positive_prompt_zh/en` 和 `negative_prompt_zh/en`。正向提示词使用 `风格 / 目标 / 光影 / 画面内容 / 运镜 / 约束` 分段，负向提示词使用 `通用负面 / 镜头负面` 分段。`comfyui-shot-prompts.json` 继续作为结构化源文件和溯源文件，不建议操作员手动拼接。
@@ -50,6 +70,8 @@ English: Production should use `01/prompts/comfyui-render-prompts.md` directly. 
 
 - 中文：`E01_R001` 和 `E01_R002` 是已更新通过的 `SC001-SH001` 首尾帧交付位；`E01_R003` 和 `E01_R004` 可继续作为 `SC001-SH002`、`SC001-SH003` 的 I2V 首帧。
 - English: `E01_R001` and `E01_R002` are the updated and accepted first/last-frame delivery slots for `SC001-SH001`; `E01_R003` and `E01_R004` may continue as the I2V first frames for `SC001-SH002` and `SC001-SH003`.
+- 中文：`C020/c020m.png`、`C021/c021m.png`、`E01_C020/c020e01.png` 必须作为图片节点接入，分别锁兽族多兵种、伴生兽多样性和本集暴雪状态；只写在 prompt 里无效。
+- English: `C020/c020m.png`, `C021/c021m.png`, and `E01_C020/c020e01.png` must be connected as image nodes, locking beast troop variety, companion-beast diversity and episode blizzard state respectively; prompt text alone is not sufficient.
 - 中文：`E01_C004`、`E01_C020`、`E01_C024A` 是角色状态卡，只能作为身份、服装、材质参考，不作为视频首帧。
 - English: `E01_C004`, `E01_C020`, and `E01_C024A` are character state cards for identity, wardrobe, and material reference only, not video first frames.
 - 中文：`E01_L007` 可作为锁喉关外墙场景参考；`E01_P021` 只作为骨钟、断矛、冻血和旧痕道具参考。

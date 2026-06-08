@@ -1,6 +1,6 @@
 {
   "version": "1.0-director-room",
-  "status": "no_feedback",
+  "status": "feedback_applied",
   "iterations": [
     {
       "iteration_id": "sc001-post-asset-initial",
@@ -46,6 +46,18 @@
         {
           "shot_id": "SC001-SH001",
           "change": "Marked R001/R002 as visually checked updated first/last frames for the diagonal siege-side lift."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Rewrote beast troop and companion-beast inheritance from prompt-only file-name references to explicit ComfyUI image-node binding requirements for C020, C021, and E01_C020."
+        },
+        {
+          "shot_id": "SC001-SH002",
+          "change": "Added low-weight background beast reference binding so exterior beast troops remain visually continuous without overpowering the young soldier I2V frame."
+        },
+        {
+          "shot_id": "SC001-SH003",
+          "change": "Added low-weight background beast reference binding so exterior beast troops remain visually continuous without overpowering Xue Linqiang identity reference."
         }
       ],
       "parameter_changes": [
@@ -59,7 +71,50 @@
       "unresolved_issues": [
         "No ComfyUI render feedback exists for the current remade episode 01 package.",
         "SC001 E01_R001-E01_R004 reference frame files exist at 3840x2160 and are synchronized as generated_candidate_pending_user_qc; user visual QC is still required before final approval.",
-        "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs are not configured."
+        "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs are not configured.",
+        "The production workflow must provide image input nodes for C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png; prompt text alone cannot make ComfyUI read these references."
+      ]
+    },
+    {
+      "iteration_id": "sc001-sh001-render-feedback-same-side-wall-lock",
+      "source_feedback": [
+        "User reported the generated SH001 video moved behind the wall without the intended turn, faced the other side of the wall, and made the wall read as a horizontal wall attacked from both sides.",
+        "User asked how to add character modeling/reference nodes into the FLF2V workflow."
+      ],
+      "changed_shots": [
+        "SC001-SH001"
+      ],
+      "prompt_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Strengthened camera direction language: the camera climbs along the same exterior wall face and lands on the exterior-edge wall top while still facing the same exterior siege side."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Added explicit negatives against crossing over the wall crown, looking at the opposite side, showing both sides of the wall under attack, making rear-wall thickness the main subject, or placing beast attackers inside the wall."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Added low-weight character reference guidance for tail-frame wall defenders using E01_C024A, with optional E01_C004 only if Xue Linqiang is actually visible in the SH001 tail frame."
+        }
+      ],
+      "parameter_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "character_reference_branch",
+          "old_value": "not configured for FLF2V",
+          "new_value": "E01_C024A at weight 0.25-0.30 from 55% to 100%; optional E01_C004 at weight 0.20-0.25 from 65% to 100% only if visible in tail frame"
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "camera_direction_lock",
+          "old_value": "45-degree turn into human parapet space",
+          "new_value": "small yaw along the parapet while still facing the same exterior siege side; no rear/opposite-side reveal"
+        }
+      ],
+      "unresolved_issues": [
+        "Need a new SH001 FLF2V test render to verify the same-side exterior wall lock.",
+        "If the model still crosses to the opposite side, reduce camera motion strength or regenerate R002 with a stronger same-side exterior downward view through merlons."
       ]
     }
   ]
