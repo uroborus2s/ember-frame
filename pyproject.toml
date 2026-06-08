@@ -13,9 +13,21 @@ dev = [
   "pytest-cov>=5.0.0",
   "ruff>=0.6.0",
 ]
+tts-mac = [
+  "mlx-audio>=0.4.4",
+]
+tts-torch = [
+  "qwen-tts>=0.1.1",
+]
 
 [tool.uv]
 package = false
+conflicts = [
+  [
+    { group = "tts-mac" },
+    { group = "tts-torch" },
+  ],
+]
 
 [tool.uv.workspace]
 members = []

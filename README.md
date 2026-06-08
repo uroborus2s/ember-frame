@@ -46,10 +46,111 @@ uv run ruff check .
 说明：
 
 - 根项目通过 `[tool.uv] package = false` 声明为非打包项目，适合作为 monorepo 的工具入口。
+- TTS 依赖不放入默认环境；通过 `tts-mac` / `tts-torch` 互斥 group 按平台安装对应后端。
 - 当前 `project/` 下的内容项目主要是 Markdown、图片和工作流资产，不作为 Python workspace member。
 - 如果后续某个子项目加入自己的 `pyproject.toml`，再把对应路径加入根目录 `[tool.uv.workspace] members`。
 - Python 自动化脚本建议集中放入 `scripts/` 或具名子项目中，并通过 `uv run` 执行。
 - 新增 Python 代码和测试后，再把 `uv run mypy .`、`uv run pytest` 纳入交付前检查。
+
+### Qwen3-TTS
+
+Qwen3-TTS 依赖按平台分流，规则写在 `pyproject.toml`：
+
+- `tts-mac`：Apple Silicon Mac，安装 `mlx-audio`，默认使用 `mlx-community` 的 Qwen3-TTS MLX 模型。
+- `tts-torch`：Windows、Linux、Intel Mac，安装官方 `qwen-tts`，默认使用 Hugging Face 上游 Qwen 模型。
+- 两个 group 依赖的 `transformers` 版本不兼容，所以通过 `[tool.uv].conflicts` 声明互斥。
+
+首次运行会下载模型权重。默认输出路径在 `project/run/qwen3-tts/`，该目录属于本地生成产物，
+不纳入版本控制。
+
+基础环境不安装 TTS：
+
+```bash
+uv sync
+```
+
+Apple Silicon Mac 安装 TTS 后端：
+
+```bash
+uv sync --group tts-mac
+```
+
+Windows / Linux / Intel Mac 安装 TTS 后端：
+
+```bash
+uv sync --group tts-torch
+```
+
+Apple Silicon Mac 生成一段 CustomVoice 配音：
+
+```bash
+uv run --group tts-mac python scripts/qwen3_tts.py \
+  --backend mlx \
+  --text "这是 Ember Frame 的第一段 Qwen3-TTS 配音测试。" \
+  --language chinese \
+  --voice Vivian \
+  --output project/run/qwen3-tts/custom-voice.wav
+```
+
+Windows / CUDA 机器生成一段 CustomVoice 配音：
+
+```bash
+uv run --group tts-torch python scripts/qwen3_tts.py \
+  --backend torch \
+  --device cuda:0 \
+  --text "这是 Ember Frame 的第一段 Qwen3-TTS 配音测试。" \
+  --language Chinese \
+  --voice Vivian \
+  --output project/run/qwen3-tts/custom-voice.wav
+```
+
+Mac VoiceDesign 示例：
+
+```bash
+uv run --group tts-mac python scripts/qwen3_tts.py \
+  --backend mlx \
+  --mode voice-design \
+  --model mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16 \
+  --text "We are ready for the next shot." \
+  --language english \
+  --instruct "Calm, focused production director voice." \
+  --output project/run/qwen3-tts/voice-design.wav
+```
+
+Voice clone 示例：
+
+```bash
+uv run --group tts-mac python scripts/qwen3_tts.py \
+  --backend mlx \
+  --mode base \
+  --model mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 \
+  --text "This line reuses the reference voice." \
+  --language english \
+  --ref-audio project/run/qwen3-tts/reference.wav \
+  --ref-text "This is the exact transcript of the reference audio." \
+  --output project/run/qwen3-tts/voice-clone.wav
+```
+
+Apple Silicon Mac 也可以直接使用 `mlx-audio` 自带 CLI：
+
+```bash
+uv run --group tts-mac mlx_audio.tts.generate \
+  --model mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-bf16 \
+  --text "这是直接调用 mlx-audio CLI 的测试。" \
+  --voice Vivian \
+  --lang_code chinese \
+  --output_path project/run/qwen3-tts \
+  --file_prefix mlx-cli
+```
+
+说明：
+
+- `--backend auto` 会在 Apple Silicon Mac 上选择 MLX，在其他平台选择 torch。
+- Mac 默认模型是 `mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-bf16`。
+- Windows / Linux 默认模型是 `Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice`。
+- Mac 可把 `--model` 换成 `mlx-community` 中的 6bit/8bit 量化模型以降低内存占用。
+- Voice clone 需要切换到 Base 模型，并提供 `--ref-audio` 与 `--ref-text`。
+- WAV 输出不需要额外系统依赖；如果要输出 MP3、FLAC、OGG 等格式，macOS 先执行 `brew install ffmpeg`。
 
 ## 内容协作约定
 
