@@ -1,0 +1,168 @@
+{
+  "version": "director-room-comfyui-workflow-plan-v1-2026-06-08",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001",
+  "workflow_families": [
+    {
+      "workflow_family": "flf2v_transition",
+      "generation_method": "FLF2V",
+      "required_inputs": [
+        "positive_prompt_zh_or_en",
+        "negative_prompt_zh_or_en",
+        "first_frame",
+        "last_frame",
+        "style_reference",
+        "optional_location_reference",
+        "output_path"
+      ],
+      "node_binding_hints": [
+        "positive_prompt from comfyui-render-prompts.md -> PLACEHOLDER_POSITIVE_PROMPT_NODE",
+        "negative_prompt from comfyui-render-prompts.md -> PLACEHOLDER_NEGATIVE_PROMPT_NODE",
+        "first_frame -> PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
+        "last_frame -> PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+        "style_reference -> PLACEHOLDER_STYLE_REFERENCE_NODE",
+        "output_path -> PLACEHOLDER_OUTPUT_NODE"
+      ],
+      "parameter_defaults": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "checkpoint": "PLACEHOLDER_VIDEO_CHECKPOINT",
+        "lora_stack": "PLACEHOLDER_LORA_STACK",
+        "workflow_template": "PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
+        "sampler": "PLACEHOLDER_SAMPLER",
+        "scheduler": "PLACEHOLDER_SCHEDULER",
+        "steps": 30,
+        "cfg": 5.5,
+        "denoise": 0.45,
+        "reference_weight": "PLACEHOLDER_REFERENCE_WEIGHT",
+        "motion_bucket": "PLACEHOLDER_LOW_MEDIUM_MOTION"
+      },
+      "config_status": "needs_config"
+    },
+    {
+      "workflow_family": "i2v_reference",
+      "generation_method": "I2V",
+      "required_inputs": [
+        "positive_prompt_zh_or_en",
+        "negative_prompt_zh_or_en",
+        "first_frame_or_reference_image",
+        "style_reference",
+        "optional_character_or_prop_reference",
+        "output_path"
+      ],
+      "node_binding_hints": [
+        "positive_prompt from comfyui-render-prompts.md -> PLACEHOLDER_POSITIVE_PROMPT_NODE",
+        "negative_prompt from comfyui-render-prompts.md -> PLACEHOLDER_NEGATIVE_PROMPT_NODE",
+        "first_frame_or_reference_image -> PLACEHOLDER_I2V_IMAGE_NODE",
+        "character_identity_reference -> PLACEHOLDER_IPADAPTER_NODE when configured",
+        "style_reference -> PLACEHOLDER_STYLE_REFERENCE_NODE",
+        "output_path -> PLACEHOLDER_OUTPUT_NODE"
+      ],
+      "parameter_defaults": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "checkpoint": "PLACEHOLDER_VIDEO_CHECKPOINT",
+        "lora_stack": "PLACEHOLDER_LORA_STACK",
+        "workflow_template": "PLACEHOLDER_I2V_WORKFLOW_TEMPLATE",
+        "resolution": "PLACEHOLDER_16x9_RESOLUTION",
+        "sampler": "PLACEHOLDER_SAMPLER",
+        "scheduler": "PLACEHOLDER_SCHEDULER",
+        "steps": 28,
+        "cfg": 5.2,
+        "denoise": 0.4,
+        "reference_weight": "PLACEHOLDER_REFERENCE_WEIGHT",
+        "motion_bucket": "PLACEHOLDER_LOW_MOTION"
+      },
+      "config_status": "needs_config"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC001-SH001",
+      "workflow_family": "flf2v_transition",
+      "asset_inputs": [
+        "01/assets/reference-frames/r001e01.png",
+        "01/assets/reference-frames/r002e01.png",
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/locations/l007e01.png",
+        "01/assets/props/p021e01.png"
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH001",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH001",
+      "output_path": "01/renders/raw/sc001-sh001.mp4",
+      "parameter_profile": {
+        "frame_count": 84,
+        "fps": 24,
+        "duration": "3.5s",
+        "denoise": 0.45,
+        "motion": "controlled diagonal siege-side lift to wall-top bone bell; no frontal push, no wall pass-through, no 180-degree turn"
+      },
+      "reference_frame_status": "r001e01.png and r002e01.png have been updated and visually checked for the revised diagonal first-frame and wall-top last-frame compositions.",
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/props/p021e01.png",
+        "01/assets/characters/c024ae01.png"
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH002",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH002",
+      "output_path": "01/renders/raw/sc001-sh002.mp4",
+      "parameter_profile": {
+        "frame_count": 44,
+        "fps": 24,
+        "duration": "1.8s",
+        "denoise": 0.42,
+        "motion": "minimal physical reaction"
+      },
+      "status": "needs_config"
+    },
+    {
+      "shot_id": "SC001-SH003",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/reference-frames/r004e01.png",
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/locations/l007e01.png",
+        "01/assets/characters/c004e01.png"
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH003",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC001-SH003",
+      "output_path": "01/renders/raw/sc001-sh003.mp4",
+      "parameter_profile": {
+        "frame_count": 46,
+        "fps": 24,
+        "duration": "1.9s",
+        "denoise": 0.38,
+        "motion": "subtle command performance"
+      },
+      "status": "needs_config"
+    }
+  ],
+  "render_order": [
+    "SC001-SH001",
+    "SC001-SH002",
+    "SC001-SH003"
+  ],
+  "config_placeholders": [
+    "PLACEHOLDER_VIDEO_CHECKPOINT",
+    "PLACEHOLDER_IMAGE_CHECKPOINT",
+    "PLACEHOLDER_LORA_STACK",
+    "PLACEHOLDER_CONTROLNET",
+    "PLACEHOLDER_IPADAPTER_PRESET",
+    "PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE",
+    "PLACEHOLDER_I2V_WORKFLOW_TEMPLATE",
+    "PLACEHOLDER_POSITIVE_PROMPT_NODE",
+    "PLACEHOLDER_NEGATIVE_PROMPT_NODE",
+    "PLACEHOLDER_OUTPUT_NODE"
+  ]
+}

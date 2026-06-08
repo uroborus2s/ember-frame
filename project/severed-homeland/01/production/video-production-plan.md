@@ -2,16 +2,16 @@
 
 ## 状态 / Status
 
-中文：当前为 director-room 预资产分镜包。尚未进入 Art Room 资产生产、ComfyUI 终版提示工程、渲染、剪辑、音频或交付 QC。
+中文：当前已补齐 `SC001` 后资产 ComfyUI 交付包，并已按新版斜侧攻城升镜更新 `SC001-SH001`。`r001e01.png` 和 `r002e01.png` 已通过新版首尾帧构图检查。其余场次仍保持 director-room 预资产分镜包状态。`SC001-SH001` 到 `SC001-SH003` 可在补齐模型与 workflow 配置后小批量试渲。
 
-English: This is the director-room pre-asset shot package. It has not yet entered Art Room asset production, final ComfyUI prompt engineering, rendering, editing, audio or delivery QC.
+English: The post-asset ComfyUI delivery package is now complete for `SC001`, and `SC001-SH001` has been updated to the new diagonal siege-side lift. `r001e01.png` and `r002e01.png` have passed the updated first/last-frame composition check. The remaining scenes are still in director-room pre-asset shot-package state. `SC001-SH001` through `SC001-SH003` can enter a small test batch after model and workflow configuration is supplied.
 
 ## 生产规格 / Production Specs
 
 - 画幅 / Aspect Ratio: `16:9`
 - 帧率 / FPS: `24`
 - 目标时长 / Target Duration: `270s`
-- 规划时长 / Planned Duration: `269.5s`
+- 规划时长 / Planned Duration: `271.2s`
 - 风格 / Style: 超写实、电影级质感、真实触感古代材质、低魔东方史诗、真实重心和真实速度。
 
 ## 产物索引 / Artifact Index
@@ -24,16 +24,36 @@ English: This is the director-room pre-asset shot package. It has not yet entere
 - `01/continuity/visual-continuity-bible.json`
 - `01/production/generation-plan.json`
 - `01/prompts/shot-prompts-draft.json`
+- `01/prompts/comfyui-prompt-brief.md`
+- `01/prompts/comfyui-style-preset.json`
+- `01/prompts/comfyui-asset-prompt-pack.json`
+- `01/prompts/comfyui-shot-prompts.json`
+- `01/prompts/comfyui-workflow-plan.json`
+- `01/prompts/comfyui-tuning-log.json`
+- `01/reports/comfyui-prompt-qc.md`
 - `01/production/video-production-plan.md`
 
 ## 生产顺序 / Recommended Render Order
 
-1. 残阳坳主空间锁定：`SC004-SH001`, `SC006-SH001`, `SC006-SH008`
-2. 核心角色参考：`SC004-SH003`, `SC004-SH005`, `SC004-SH006`, `SC006-SH005`
-3. 关键道具插入：`SC004-SH007`, `SC004-SH008`, `SC005-SH004`, `SC006-SH004`, `SC006-SH007`, `SC006-SH010`
-4. 药屋暗格段：`SC005-SH001` 到 `SC005-SH005`
-5. 残阳坳对白压力段：`SC004-SH002` 到 `SC004-SH009`, `SC006-SH002` 到 `SC006-SH009`
-6. 序幕世界压力段：`SC001-SH001` 到 `SC003-SH004`
+1. SC001 后资产小批量试渲：`SC001-SH001`, `SC001-SH002`, `SC001-SH003`
+2. 残阳坳主空间锁定：`SC004-SH001`, `SC006-SH001`, `SC006-SH008`
+3. 核心角色参考：`SC004-SH003`, `SC004-SH005`, `SC004-SH006`, `SC006-SH005`
+4. 关键道具插入：`SC004-SH007`, `SC004-SH008`, `SC005-SH004`, `SC006-SH004`, `SC006-SH007`, `SC006-SH010`
+5. 药屋暗格段：`SC005-SH001` 到 `SC005-SH005`
+6. 残阳坳对白压力段：`SC004-SH002` 到 `SC004-SH009`, `SC006-SH002` 到 `SC006-SH009`
+7. 其余序幕世界压力段：`SC002-SH001` 到 `SC003-SH004`
+
+## SC001 ComfyUI Handoff / SC001 ComfyUI 交付
+
+| Shot | Method | Reference Inputs | Output |
+| --- | --- | --- | --- |
+| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（新版斜侧攻城首帧）, `01/assets/reference-frames/r002e01.png`（单墙单钟城头尾帧）, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh001.mp4` |
+| `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png`, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh002.mp4` |
+| `SC001-SH003` | `I2V` | `01/assets/reference-frames/r004e01.png`, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh003.mp4` |
+
+中文：`SC001-SH001` 改为斜侧攻城升镜：首帧从攻城方斜后侧低机位看兽潮斜推城门，尾帧沿同一面墙斜爬上墙头并约 45 度转向人族女墙空间。R001-R004 硬锁为同一面城墙、同一个钟架、同一口钟；城外只允许继承 `C020/C021/E01_C020` 的兽族士兵和伴生兽朝墙攻来。升镜期间读旁白“北墙五百年，血从未干。”。`SC001-SH003` 台词统一为“敌人上来了。”，语气为压低、急促但不慌。视频 prompt 不要求生成精确文字，字幕和配音在后期音频阶段处理。
+
+English: `SC001-SH001` now uses a diagonal siege-side lift: the first frame starts from a low diagonal rear-side siege angle with the beast tide pushing diagonally toward the gate, and the last frame climbs along the same wall to the wall top before turning about 45 degrees into the human parapet space. R001-R004 are locked to one wall, one bell frame and one bell; outside the wall only C020/C021/E01_C020 beast troops and companion beasts press toward the wall. The voiceover "For five hundred years, the northern wall's blood has never dried" reads during the lift. `SC001-SH003` uses the updated line "The enemy is coming up," delivered low, urgent but controlled. Video prompts do not ask the model to generate exact text; subtitles and voice are handled in post/audio.
 
 ## Art Room 资产需求 / Art Room Asset Needs
 
@@ -45,7 +65,7 @@ English: This is the director-room pre-asset shot package. It has not yet entere
 ## 配置待决 / Unresolved Config
 
 - `needs_config`: 未提供视频模型 checkpoint、图像模型 checkpoint、LoRA ID、ControlNet 模型、IPAdapter preset、ComfyUI workflow template 或 node ID。
-- `needs_asset`: 新项目根目录尚无 `assets/asset-index.json`，也无 `01/art/asset-index.json`。
+- `reference_frame_status`: `01/art/asset-index.json` 与 `01/art/asset-manifest.json` 中 `E01_R001` 到 `E01_R004` 已更新为 `generated_candidate_pending_user_qc`；最终仍以用户画面 QC 为准。
 - 精确文字和符号镜头必须使用静帧、后期文字或 `REDRAW`：`SC004-SH007`, `SC005-SH004`, `SC006-SH004`, `SC006-SH007`。
 - 直接视频模型不负责精确对白。对白来自 `01/script/final-script.md`，后续进入 audio/post 阶段时再拆成字幕和配音行。
 
@@ -58,6 +78,6 @@ English: This is the director-room pre-asset shot package. It has not yet entere
 
 ## ComfyUI Handoff Recommendation
 
-中文：先交 Art Room 生成角色、地点和关键道具资产，再回到 director-room 运行 post-asset prompt pass，生成 `comfyui-prompt-brief.md`、style preset、asset prompt pack、final shot prompts、workflow plan 和 prompt QC。当前 `generation-plan.json` 已给出每个镜头的方法、资产需求和风险。
+中文：SC001 的参考帧已通过新版构图检查。生产侧补齐 `PLACEHOLDER_VIDEO_CHECKPOINT`、`PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`、`PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`、prompt node、image node 和 output node 绑定后，按 `SC001-SH001`、`SC001-SH002`、`SC001-SH003` 顺序渲染。`SC001-SH001` 使用 `3.5s / 84f`，其余场次继续按预资产计划推进 Art Room 资产。
 
-English: First hand this package to Art Room for character, location and key prop assets. Then return to director-room for the post-asset prompt pass to create the ComfyUI prompt brief, style preset, asset prompt pack, final shot prompts, workflow plan and prompt QC. The current `generation-plan.json` already defines method, asset needs and risks for each shot.
+English: SC001 reference frames have passed the updated composition check. Production should fill `PLACEHOLDER_VIDEO_CHECKPOINT`, `PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`, `PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`, prompt node, image node and output node bindings, then render `SC001-SH001`, `SC001-SH002`, and `SC001-SH003` in order. `SC001-SH001` uses `3.5s / 84f`; the remaining scenes should continue through the pre-asset Art Room plan.

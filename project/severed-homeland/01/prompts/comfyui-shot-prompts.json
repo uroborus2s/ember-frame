@@ -1,0 +1,223 @@
+{
+  "version": "director-room-comfyui-shot-prompts-v1-2026-06-08",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001",
+  "shots": [
+    {
+      "production_metadata": {
+        "episode_id": "01",
+        "shot_id": "SC001-SH001",
+        "segment_id": "01-sc001-sh001",
+        "generation_method": "FLF2V",
+        "duration": "3.5s",
+        "fps": 24,
+        "aspect_ratio": "16:9",
+        "asset_refs": [
+          "01/assets/style/f001e01.png",
+          "01/assets/style/f005e01.png",
+          "01/assets/locations/l007e01.png",
+          "01/assets/props/p021e01.png",
+          "01/assets/characters/c020e01.png",
+          "01/assets/reference-frames/r001e01.png",
+          "01/assets/reference-frames/r002e01.png",
+          "assets/characters/c020m.png",
+          "assets/characters/c021m.png"
+        ],
+        "first_frame_ref": "01/assets/reference-frames/r001e01.png",
+        "last_frame_ref": "01/assets/reference-frames/r002e01.png",
+        "reference_frame_status": "R001 and R002 have been updated and visually checked for the revised SH001 FLF2V scheme: R001 is a low diagonal rear-side siege first frame, and R002 is a wall-top medium-near last frame with bone bell, defenders and exterior siege visible below.",
+        "audio_refs": [
+          "voiceover:北墙五百年，血从未干。",
+          "sfx:bone_bell_crack",
+          "sfx:blizzard",
+          "sfx:low_gate_impact"
+        ],
+        "workflow_hint": "flf2v_transition",
+        "source_refs": [
+          "01/script/final-script.md#SC01",
+          "01/shots/shot-list.json#SC001-SH001",
+          "01/assets/reference-frames/r001e01.png",
+          "01/assets/reference-frames/r002e01.png"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "RULE_SIEGE_LOCAL_CAUSALITY",
+          "ONE_WALL_ONE_BELL_FRAME",
+          "C020",
+          "C021",
+          "E01_C020"
+        ],
+        "reference_frame_update_note": "Current R001/R002 are regenerated: R001 attacker-side low oblique view; R002 same-wall climb to wall-top 45-degree turn. One wall, one bell frame, one bell; beast troops and companion beasts inherit C020/C021/E01_C020."
+      },
+      "model_visible_prompt": {
+        "visible_goal_zh": "在暴雪中建立锁喉关外墙攻城压力：从攻城方斜后侧低机位的兽潮构图起，落到城头中景偏近的骨钟、黑石女墙和人族守军；墙外兽潮仍在斜下方可见，为切入人族身体代价做转场。",
+        "visible_goal_en": "Establish the Suohou Gate outer-wall siege pressure in blizzard: begin from a low diagonal rear-side siege composition and land in a wall-top medium-near composition of bone bell, blackstone parapet and human defenders, with the exterior beast tide still visible below on a diagonal as the transition into human bodily cost.",
+        "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。斜侧攻城建立镜头布光：冷白暴雪天光压出黑墙巨型剪影，黑墙负补光吞掉墙面和兽潮大暗面；远处暗红火线和火盆亮度克制，从低位反打雪雾、烟尘、攻城队列、旗帜破布、旧铁、巨角边缘、骨钟和守军肩线，形成残酷战场尺度。",
+        "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Diagonal siege-establishing lighting: cold blizzard sky light silhouettes the massive black wall, black-wall negative fill swallows the wall face and the beast tide's large shadow masses; distant dark-red firelines and braziers stay controlled in brightness and low-counterlight snow haze, smoke, siege ranks, torn banners, old iron, horn edges, bone bell and defender shoulder lines, creating brutal battlefield scale.",
+        "subject_content_zh": "首帧构图是攻城方斜后侧低机位，三分之四角度看锁喉关黑石巨墙；前景只有兽族攻城队列肩背、旧铁甲片、破旗、火盆、雪泥脚步和一截巨兽背脊或巨角，兽潮从画面左前方斜推向右后方城门，城门不居中、军阵不对称，远处墙头只见很小的骨钟和守军剪影。尾帧构图是城头中景偏近，骨钟和钟架占画面左侧或中上部，黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛或门闩局部清楚；2到4名守军被撞门震动影响而短促前倾又稳住枪线，墙外兽潮、拒马、巨兽局部、火线、烟柱和暴雪仍在斜下方背景可见。",
+        "subject_content_en": "First-frame composition: low diagonal rear-side siege angle, a three-quarter view of the Suohou Gate blackstone wall; foreground shows only beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and the ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes far away. Last-frame composition: wall-top medium-near endpoint, bone bell and bell frame on the left or upper middle, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands, spear or gate-bar details clear; two to four defenders jolt forward briefly from the gate impact then steady the spear line, while the exterior beast tide, barricades, beast parts, firelines, smoke columns and blizzard remain visible below on a diagonal.",
+        "composition_motion_zh": "使用首尾参考帧约束斜侧攻城到城头落点。镜头顺旗杆、烟柱、巨角和黑墙外立面起吊到骨钟，旁白随起镜进入；不正面穿向城门，不穿墙，不做180度调头。骨钟横摆、雪雾吃画面和钟声裂响可作为隐藏剪切点，下一镜切到同一口骨钟旁的年轻军户。",
+        "composition_motion_en": "Use first and last reference frames to constrain the move from diagonal siege pressure to a wall-top landing. The camera lifts along flags, smoke columns, horn shapes and the exterior black wall toward the bone bell as the voiceover enters; it does not push frontally into the gate, pass through the wall, or make a 180-degree turn. The bell swing, snow haze swallowing the frame and cracked bell sound can act as the hidden cut point into the next shot beside the same bell and young soldier.",
+        "visible_continuity_zh": "人族守军在墙头，兽族攻城方在墙外和墙下；尾帧必须同时读到墙头人族空间和斜下方墙外兽潮方向。骨钟属于墙头警钟架，残缺淡金旧日月痕只能被裂缝、铜锈和雪泥遮住，不能完整发光。",
+        "visible_continuity_en": "Human defenders stay on the wall top and beast attackers stay outside and below the wall; the last frame must read both the human wall-top space and the exterior beast tide direction below on a diagonal. The bone bell belongs to the wall-top bell frame, and faint broken old sun-moon traces must be obscured by cracks, verdigris and snow mud, never complete or glowing.",
+        "negative_prompt_zh": "不要现代服饰、枪械、科幻 UI、塑料 CG、正面居中城门、左右完全对称军阵、航拍感、游戏飞镜、穿墙、180度调头、纯骨钟特写、看不到墙头守军、看不到墙外兽潮方向、完整发光徽章、巨龙化猛犸、魔法光柱、神圣金光、过曝 bloom、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕、战场空间跳变。",
+        "negative_prompt_en": "avoid modern clothing, firearms, sci-fi UI, plastic CGI, centered frontal gate, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, passing through the wall, 180-degree turn, pure bone-bell close-up, missing wall-top defenders, missing exterior beast-tide direction, complete glowing emblem, dragon-like mammoth, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles, battlefield spatial jumps."
+      },
+      "workflow_family": "flf2v_transition",
+      "parameter_profile": {
+        "resolution": "3840x2160 input refs; render target PLACEHOLDER_16x9_RESOLUTION",
+        "sampler": "PLACEHOLDER_SAMPLER",
+        "scheduler": "PLACEHOLDER_SCHEDULER",
+        "steps": 30,
+        "cfg": 5.5,
+        "seed_policy": "lock_after_first_approved_motion_test",
+        "denoise": 0.45,
+        "frame_count": 84,
+        "motion_notes": "controlled diagonal siege-side lift to wall-top bone bell; no frontal push, no wall pass-through, no 180-degree turn"
+      },
+      "status": "ready_pending_user_qc"
+    },
+    {
+      "production_metadata": {
+        "episode_id": "01",
+        "shot_id": "SC001-SH002",
+        "segment_id": "01-sc001-sh002",
+        "generation_method": "I2V",
+        "duration": "1.8s",
+        "fps": 24,
+        "aspect_ratio": "16:9",
+        "asset_refs": [
+          "01/assets/style/f001e01.png",
+          "01/assets/style/f005e01.png",
+          "01/assets/locations/l007e01.png",
+          "01/assets/props/p021e01.png",
+          "01/assets/characters/c024ae01.png",
+          "01/assets/reference-frames/r003e01.png",
+          "assets/characters/c020m.png",
+          "assets/characters/c021m.png",
+          "01/assets/characters/c020e01.png"
+        ],
+        "first_frame_ref": "01/assets/reference-frames/r003e01.png",
+        "last_frame_ref": "",
+        "audio_refs": [
+          "sfx:broken_spear_drop",
+          "sfx:frozen_blood_stick",
+          "sfx:distant_snow_wolf"
+        ],
+        "workflow_hint": "i2v_reference",
+        "source_refs": [
+          "01/script/final-script.md#SC01",
+          "01/shots/shot-list.json#SC001-SH002",
+          "01/assets/reference-frames/r003e01.png"
+        ],
+        "continuity_refs": [
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "ONE_WALL_ONE_BELL_FRAME",
+          "C020",
+          "C021",
+          "E01_C020"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal_zh": "把战场规模压到年轻灰墙军户的身体代价：他跪在同一座骨钟旁，断矛落在雪泥里，带血手掌被冻在裂开的钟面上。",
+        "visible_goal_en": "Compress the battlefield scale into the young grey-wall soldier's bodily cost: he kneels beside the same bone bell, broken spear in snow mud, blooded palm frozen to the cracked bell surface.",
+        "style_quality_zh": "超写实电影级低魔东方史诗。身体代价近景布光：光源收窄，不再追求大场面纵深；冷白暴雪主光变成贴近骨钟和手掌的冰青反光，钟裂里吃进冷光，黑墙负补光压住人物肩背和背景；远处火线只保留很弱的低位暖边，勾出暗红冻血、手指和骨钟裂边。",
+        "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic. Bodily-cost close-shot lighting: the light sources narrow instead of chasing large-scale depth; cold blizzard key light becomes ice-blue bounce near the bell and palm, cold light sinks into bell cracks, and black-wall negative fill presses down the soldier's shoulders and background; distant fire keeps only a very weak low warm edge on dark frozen blood, fingers and bell cracks.",
+        "subject_content_zh": "年轻军户、裂开的骨钟、冻血手掌、断矛、黑石墙头和远处墙外攻城影同框；他跪在雪泥里短促喘息，手指因冻血粘连而微抖，断矛在脚边轻滑半寸，暴雪打在旧甲片和钟面上，反应克制、不英雄化、不猎奇。旧日月刻痕只是一点残缺淡金旧痕，钟裂里吃进冷光，血迹只被弱暖火边勾出暗红，背景战场保持低照度压迫感。",
+        "subject_content_en": "Young soldier, cracked bone bell, frozen blooded palm, broken spear, blackstone wall top and distant exterior siege shadows share the frame; he kneels in snow mud with short breaths, fingers trembling slightly where frozen blood sticks them to the bell, the broken spear sliding a fraction near his foot, blizzard striking old armor plates and bell surface, restrained and neither heroic nor exploitative. The old sun-moon mark is only a faint broken gold trace, cold light sinks into bell cracks, blood is edged dark red only by weak warm fire rim, and the background battlefield stays low-lit and oppressive.",
+        "composition_motion_zh": "以参考帧为首帧，保持人物贴钟姿态和墙外背景层次。镜头不做大移动，只允许极轻微的压近或稳定手持感，重点锁住手、钟裂和断矛的物理反应。",
+        "composition_motion_en": "Use the reference image as first frame, preserving the soldier's bell-contact pose and exterior background layers. The camera does not make a large move, allowing only a very slight push-in or stable handheld feel, locked on the physical reaction of hand, bell crack and broken spear.",
+        "visible_continuity_zh": "骨钟仍在同一墙头警钟架，墙外战场方向不变；旧徽不发光，冻血暗红，儿童化或英雄化脸型都不可出现。",
+        "visible_continuity_en": "The bone bell remains in the same wall-top bell frame and the exterior battlefield direction does not change; the old emblem does not glow, frozen blood is dark red, and no childlike or heroic face treatment appears.",
+        "negative_prompt_zh": "不要强光圣徽、不要英雄摆拍、不要神圣逆光、不要过曝 bloom、不要过度血腥、不要面部美化、不要现代甲胄、不要骨钟位置漂移、不要背景战场换方向。",
+        "negative_prompt_en": "avoid bright sacred emblem, heroic posing, divine backlight, overexposed bloom, excessive gore, beautified face, modern armor, drifting bell position, background battlefield direction change."
+      },
+      "workflow_family": "i2v_reference",
+      "parameter_profile": {
+        "resolution": "3840x2160 input ref; render target PLACEHOLDER_16x9_RESOLUTION",
+        "sampler": "PLACEHOLDER_SAMPLER",
+        "scheduler": "PLACEHOLDER_SCHEDULER",
+        "steps": 28,
+        "cfg": 5.2,
+        "seed_policy": "lock_after_identity_and_prop_qc",
+        "denoise": 0.42,
+        "frame_count": 44,
+        "motion_notes": "minimal physical motion; preserve hand-to-bell contact and old mark readability"
+      },
+      "status": "ready_pending_user_qc"
+    },
+    {
+      "production_metadata": {
+        "episode_id": "01",
+        "shot_id": "SC001-SH003",
+        "segment_id": "01-sc001-sh003",
+        "generation_method": "I2V",
+        "duration": "1.9s",
+        "fps": 24,
+        "aspect_ratio": "16:9",
+        "asset_refs": [
+          "01/assets/style/f001e01.png",
+          "01/assets/style/f005e01.png",
+          "01/assets/locations/l007e01.png",
+          "01/assets/characters/c004e01.png",
+          "01/assets/reference-frames/r004e01.png",
+          "assets/characters/c020m.png",
+          "assets/characters/c021m.png",
+          "01/assets/characters/c020e01.png"
+        ],
+        "first_frame_ref": "01/assets/reference-frames/r004e01.png",
+        "last_frame_ref": "",
+        "audio_refs": [
+          "dialogue:Xue_Linqiang_001:敌人上来了。",
+          "sfx:bone_bell_tail",
+          "sfx:blizzard_walltop"
+        ],
+        "workflow_hint": "i2v_reference",
+        "source_refs": [
+          "01/script/final-script.md#SC01",
+          "01/shots/shot-list.json#SC001-SH003",
+          "01/assets/reference-frames/r004e01.png"
+        ],
+        "continuity_refs": [
+          "CHAR_XUE_LINQIANG",
+          "LOC_SUOHOU_GATE_OUTER_WALL",
+          "PROP_BONE_BELL",
+          "ONE_WALL_ONE_BELL_FRAME",
+          "C020",
+          "C021",
+          "E01_C020"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal_zh": "表现薛临墙在同一墙头空间内低声提醒敌人逼近：他手压黑石墙缝，脸转向门线和枪线，嘴部只做短句开口状态，语气压低、急促但不慌。",
+        "visible_goal_en": "Show Xue Linqiang giving a low warning that the enemy is coming up in the same wall-top space: his hand presses the blackstone seam, face turned toward gate line and spear line, mouth only in a short speaking state, tone low, urgent but controlled.",
+        "style_quality_zh": "超写实电影级低魔东方史诗。战场口令中近景布光：重点是人物可读性和压迫，不做英雄逆光；冷白暴雪主光只给额骨、鼻梁和手背一点硬冷边，黑墙负补光吞掉半张脸和墙体，远处火线低位暖边更集中地切出侧脸、冻裂手和旧甲片，雪雾烟尘把枪线和门线分层。",
+        "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic. Battlefield-command close-medium lighting: prioritize character readability and pressure, with no heroic backlight; cold blizzard key light gives only a hard cold edge on brow, nose bridge and hand back, black-wall negative fill swallows half the face and wall mass, low distant fireline more tightly cuts the side profile, cracked hand and old armor plates, and snow-smoke haze layers spear line and gate line.",
+        "subject_content_zh": "薛临墙占前景，冻裂粗手压住黑石女墙，骨钟在旁；他说短句时嘴部只轻开一次，呼吸在风雪里压住，眼线从骨钟转向门线，旧甲片和粗麻墙巾被风雪轻轻扯动，表演压低、实际、非英雄摆拍。墙头守军、枪线、门闩和墙外战场在中后景保持可读，几名守军随他的视线转向门线，火线暖边只服务于命令瞬间的脸、手、眼线和战场方向。",
+        "subject_content_en": "Xue Linqiang fills the foreground, cracked broad hand pressing the blackstone parapet, bone bell beside him; as he speaks the short warning, his mouth opens only once, his breath stays low in the blizzard, his eye-line shifts from the bell toward the gate line, and old armor plates and coarse wall scarf tug lightly in the wind, with a low, practical, non-heroic performance. Wall defenders, spear line, gate bar and exterior battlefield remain readable in middle and background, with several defenders following his eye-line toward the gate, while the warm fire edge serves only the command moment's face, hand, eye-line and battlefield direction.",
+        "composition_motion_zh": "以参考帧为首帧，做小幅锁定推进到手、嘴和眼线；镜头运动克制，不追随大动作，精确台词不进入画面文字。",
+        "composition_motion_en": "Use the reference image as first frame, with a small locked push toward hand, mouth and eye-line; camera motion stays restrained and does not follow large action, with no exact dialogue text in the image.",
+        "visible_continuity_zh": "薛临墙不是华甲将军或武侠宗师；他是旧墙师，话短、低声、急促但不慌。骨钟、墙缝和枪线必须仍与前两镜同一空间。",
+        "visible_continuity_en": "Xue Linqiang is not an ornate general or wuxia master; he is an old wall master, speaking briefly, low, urgent but controlled. The bell, wall seam and spear line must remain in the same space as the previous two shots.",
+        "negative_prompt_zh": "不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要过曝脸光、不要华丽将军甲、不要台词文字入画、不要大幅口型夸张、不要角色变年轻、不要骨钟消失。",
+        "negative_prompt_en": "avoid grandmaster pose, wuxia glow, divine heroic backlight, overexposed face light, ornate general armor, dialogue text in frame, exaggerated lip movement, younger identity drift, missing bone bell."
+      },
+      "workflow_family": "i2v_reference",
+      "parameter_profile": {
+        "resolution": "3840x2160 input ref; render target PLACEHOLDER_16x9_RESOLUTION",
+        "sampler": "PLACEHOLDER_SAMPLER",
+        "scheduler": "PLACEHOLDER_SCHEDULER",
+        "steps": 28,
+        "cfg": 5.2,
+        "seed_policy": "lock_after_face_and_wall_geography_qc",
+        "denoise": 0.38,
+        "frame_count": 46,
+        "motion_notes": "subtle command performance only; exact dialogue handled in audio and subtitles"
+      },
+      "status": "ready_pending_user_qc"
+    }
+  ]
+}

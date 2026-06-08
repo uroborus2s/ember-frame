@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "blocked_for_B01_B02_hard_reference_image_binding_unavailable_2026-06-07",
+  "status": "targeted_location_scene_cards_completed_with_remaining_batches_preserved_2026-06-07",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -116,49 +116,14 @@
     {
       "batch_id": "B02_E01_LOCATIONS",
       "thread_id": "019ea090-029f-7e01-b60d-927f7145f97f",
-      "status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "status": "resolved_by_single_asset_retries_2026-06-07",
       "created_files": [],
       "history_files": [],
-      "warnings": [
-        "No episode location outputs were generated or modified.",
-        "No previous l***e01 location outputs were used as references."
-      ],
+      "warnings": [],
       "dispatched_at": "2026-06-07",
-      "blocked_items": [
-        {
-          "asset_id": "E01_L007",
-          "output_path": "01/assets/locations/l007e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L003",
-          "output_path": "01/assets/locations/l003e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L014",
-          "output_path": "01/assets/locations/l014e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001A",
-          "output_path": "01/assets/locations/l001ae01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001B",
-          "output_path": "01/assets/locations/l001be01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001C",
-          "output_path": "01/assets/locations/l001ce01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        }
-      ],
+      "blocked_items": [],
       "qc_notes": [
-        "Verified required hard-reference files exist: assets/locations/l007m.png, assets/locations/l003m.png, assets/locations/l014m.png, assets/locations/l001m.png, 01/assets/style/f001e01.png, 01/assets/style/f005e01.png.",
-        "Verified canonical episode output files for this batch were absent before writing this manifest."
+        "Previously blocked B02 location items were resolved by single-asset retries with hard-reference derivation and parent QC."
       ],
       "worker_result_path": "01/art/runs/2026-06-07-e01-art-dispatch/worker-result-B02_E01_LOCATIONS.json"
     },
@@ -235,6 +200,302 @@
       "blocked_items": [],
       "warnings": [],
       "qc_notes": []
+    },
+    {
+      "batch_id": "SINGLE_E01_L007",
+      "thread_id": "019ea1ad-4aa9-7a61-9925-ded7e87c92d6",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l007e01.png"
+      ],
+      "history_files": [
+        "01/assets/locations/history/l007e01.v004.png"
+      ],
+      "warnings": [],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "parent QC passed after replacing stray CHEVAUX label with CART SCALE",
+        "inherits L007 black-stone gate/snow-wall master geography"
+      ],
+      "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "batch_id": "SINGLE_E01_L003",
+      "thread_id": "019ea1b9-9761-7742-9b6f-7c787074479b",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l003e01.png"
+      ],
+      "history_files": [
+        "01/assets/locations/history/l003e01.v001.png",
+        "01/assets/locations/history/l003e01.v002.png",
+        "01/assets/locations/history/l003e01.v003.png"
+      ],
+      "warnings": [
+        "Original child turn ran long; parent confirmed and promoted reviewed v003 canonical after thread converged."
+      ],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "parent promoted reviewed v003 to canonical after child thread stalled",
+        "inherits L003 Jinhe granary/wet-wood dock/grain-sack checkpoint master geography"
+      ],
+      "final_sha256": "65711036b0dce3d40bab5d765e9b45ab7bf13ea961d4cddf73a9abb7596d5750",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "batch_id": "SINGLE_E01_L014",
+      "thread_id": "019ea1ca-f4ab-76a0-8f4e-297582c11f2f",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l014e01.png"
+      ],
+      "history_files": [],
+      "warnings": [],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "prompt repaired from sealed interior room to L014 rainforest red-line master inheritance",
+        "deterministic derived card preserves rope bridge, red-line marker, wet stone platform, fire ring, scroll tubes, and rainforest valley"
+      ],
+      "final_sha256": "57281bfff4e993b8865d28807d3bdfe07ab01834d9c59d01ad445f178293c95a",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "batch_id": "SINGLE_E01_L001A",
+      "thread_id": "019ea1e9-3232-7b31-b399-48a4e85f72c9",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l001ae01.png"
+      ],
+      "history_files": [
+        "01/assets/locations/history/l001ae01.v001.png",
+        "01/assets/locations/history/l001ae01.v002.png"
+      ],
+      "final_sha256": "7fe58b7c1b91116948e7e90192f15f4ec01f4f13188b74b33fa48debd7292d45",
+      "warnings": [],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "parent QC passed; regenerated as L001 village-gate blockade geography card from the L001 master",
+        "preserves check table, old well, medicine house, back-mountain exit, white wax flags, blockade lines, and queue geography",
+        "no visible readable text after review"
+      ],
+      "dispatched_at": "2026-06-07",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "batch_id": "SINGLE_E01_L001B",
+      "thread_id": "019ea1f4-717c-7651-956d-f8d2b0abfa34",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l001be01.png"
+      ],
+      "history_files": [
+        "01/assets/locations/history/l001be01.v001.png"
+      ],
+      "final_sha256": "2a09ae60e14aa0c7592ce5f1ceaea4daea813d4f66f0b0da5620527acad5833a",
+      "warnings": [],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "parent QC passed after masking text-like cloth, paper, and detail-panel marks",
+        "inherits L001 medicine-house subspace and keeps the medicine cabinet, hidden compartment, door, and exterior blockade pressure readable",
+        "does not drift into an isolated spectacle mechanism room"
+      ],
+      "dispatched_at": "2026-06-07",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "batch_id": "SINGLE_E01_L001C",
+      "thread_id": "019ea1f9-9ff3-7da3-9ebc-7db9ad7234b1",
+      "status": "completed_parent_qc_passed_2026-06-07",
+      "created_files": [
+        "01/assets/locations/l001ce01.png"
+      ],
+      "history_files": [
+        "01/assets/locations/history/l001ce01.v001.png"
+      ],
+      "final_sha256": "31760dfdb7a6f8a7463d77d4de712a14d7ff935c7b6bd26b5d88f3dd28d78d80",
+      "warnings": [],
+      "blocked_items": [],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha",
+        "parent QC passed after masking text-like medicine-house cloth, window/paper, and check-table register marks",
+        "inherits L001 old-well/check-table/medicine-house/village-entry geography",
+        "old well remains the case center and foreground, midground, and background zones are readable"
+      ],
+      "dispatched_at": "2026-06-07",
+      "completed_at": "2026-06-07"
+    },
+    {
+      "thread_id": "not_created_task_ready_for_dispatch",
+      "batch_id": "SC001_E01_REFERENCE_FRAMES",
+      "status": "blocked_pending_sc001_character_rework_2026-06-07",
+      "output_count": 0,
+      "run_task_plan": "01/art/runs/2026-06-07-sc001-reference-frame-dispatch/task-plan.json",
+      "confirmed_upstream_assets": [
+        {
+          "asset_id": "E01_C004",
+          "output_path": "01/assets/characters/c004e01.png",
+          "dimensions": "2048x2048",
+          "final_sha256": "fe9991fa8b3fad644fdf73f0d17808aa692aa2685d9696c7da16e4cb4e1b26c4",
+          "qc_status": "passed",
+          "notes": [
+            "2048x2048 PNG RGB/no-alpha.",
+            "Visual QC passed for SC001-SH003: Xue Linqiang identity, wall-worker winter clothing, snow wear, spear, rough hand, and black-stone wall contact are readable.",
+            "Usable as character episode state card; not a final video frame."
+          ]
+        },
+        {
+          "asset_id": "E01_C020",
+          "output_path": "01/assets/characters/c020e01.png",
+          "dimensions": "2048x2048",
+          "final_sha256": "ee99f7e6b8f7804b5d36c1a9f65fd1ffab00bd7bfd27f2f40733793172354867",
+          "qc_status": "passed",
+          "notes": [
+            "2048x2048 PNG RGB/no-alpha.",
+            "Visual QC passed for SC001-SH001/SC001-SH002: northern siege silhouettes, wolf riders, mammoth horn pressure, axes/shields, and cold battlefield material are readable.",
+            "Usable as northern siege template/state card; reference frames must still keep the enemy force as local silhouettes, not full spectacle."
+          ]
+        },
+        {
+          "asset_id": "E01_C024A",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "dimensions": "2048x2048",
+          "final_sha256": "c0f253ccb4eaad656ca7e0373c31cb795e4f92d8a11c459f0f7f6b1e71b67e28",
+          "qc_status": "passed",
+          "notes": [
+            "2048x2048 PNG RGB/no-alpha.",
+            "Visual QC passed for SC001-SH002: young wall soldier, old armor plates, snow leggings, broken spear, frozen blood, hand detail, and black-stone scale are readable.",
+            "Usable as young wall-soldier episode state card; not a new named-character master."
+          ]
+        },
+        {
+          "asset_id": "E01_L007",
+          "output_path": "01/assets/locations/l007e01.png",
+          "dimensions": "3840x2160",
+          "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+          "qc_status": "passed",
+          "notes": [
+            "3840x2160 PNG RGB/no-alpha.",
+            "Visual QC passed for SC001: black-stone outer wall, bone bell, gate bar, spear line, barricade/blockade line, entrance/exit zones, blizzard, and camera-facing action zone are readable.",
+            "Usable as location episode scene card with zone diagram; labels are acceptable for a scene card and must not be treated as final video text."
+          ]
+        },
+        {
+          "asset_id": "E01_P021",
+          "output_path": "01/assets/props/p021e01.png",
+          "dimensions": "2048x2048",
+          "final_sha256": "533e506ce5202957936c7e25ee565e34d081de175ad4806e951b00469d579c6e",
+          "qc_status": "passed",
+          "notes": [
+            "2048x2048 PNG RGB/no-alpha.",
+            "Visual QC passed for SC001-SH001/SC001-SH002: cracked bone bell, shallow old sun-moon mark area, broken spear, frozen blood/ice, material detail, and hand scale are readable.",
+            "Usable as prop state card; exact symbol readability must still be controlled by shallow marks, line control, mask, or post-composite in reference frames."
+          ]
+        }
+      ],
+      "missing_outputs": [
+        "01/assets/reference-frames/r001e01.png",
+        "01/assets/reference-frames/r002e01.png",
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/reference-frames/r004e01.png"
+      ],
+      "qc_notes": [
+        "Reference frame tasks were created but are now blocked by user QC feedback on upstream character assets.",
+        "Regenerate and QC-pass E01_C004, E01_C020, and E01_C024A before generating r001e01.png-r004e01.png."
+      ],
+      "blocked_by_assets": [
+        "E01_C004",
+        "E01_C020",
+        "E01_C024A"
+      ]
+    },
+    {
+      "thread_id": "local_imagegen_second_readability_pass_2026-06-07",
+      "batch_id": "SC001_E01_CHARACTER_REWORK",
+      "status": "complete_user_approved_2026-06-08",
+      "output_count": 3,
+      "run_task_plan": "01/art/runs/2026-06-07-sc001-character-rework/task-plan.json",
+      "rejected_current_assets": [
+        {
+          "asset_id": "E01_C004",
+          "output_path": "01/assets/characters/c004e01.png",
+          "reason": "Reject current output: face, age impression, beard/hair, and identity do not match global Xue Linqiang master C004; costume also collapses into wall-grey with poor scene contrast."
+        },
+        {
+          "asset_id": "E01_C020",
+          "output_path": "01/assets/characters/c020e01.png",
+          "reason": "Reject current output for SC001 use: northern siege figures are almost all grey and risk merging into L007 black-stone wall/blizzard background as unreadable silhouettes."
+        },
+        {
+          "asset_id": "E01_C024A",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "reason": "Reject current output for SC001 use: young wall-soldier costume is nearly all grey and will merge into black-stone wall/snow scene; needs controlled costume contrast while preserving border-soldier template."
+        }
+      ],
+      "blocks_reference_frames": [
+        "E01_R001",
+        "E01_R002",
+        "E01_R003",
+        "E01_R004"
+      ],
+      "qc_notes": [
+        "User feedback after first generated pass: characters still merged into black wall/gray environment; tiny contrast details were not sufficient.",
+        "Second pass regenerated current assets with large readable value blocks and black-wall preview panels.",
+        "C004 identity has been rebound to the global black-haired/topknot Xue Linqiang master rather than the rejected white-haired elder drift.",
+        "Reference frames E01_R001-E01_R004 remain blocked pending user QC of these three current character files."
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_C004",
+          "output_path": "01/assets/characters/c004e01.png",
+          "dimensions": "3072x2048",
+          "sha256": "4f3c5d44f011d998aa47d80f25d7cab17ac5ebc8f62eb7f1c2bf1a81b66fd3e1"
+        },
+        {
+          "asset_id": "E01_C020",
+          "output_path": "01/assets/characters/c020e01.png",
+          "dimensions": "3640x2048",
+          "sha256": "8eee5b2c5a9c26057dbee9d19a61cb6a89f9263962382ebf27df4d579d07db40"
+        },
+        {
+          "asset_id": "E01_C024A",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "dimensions": "2048x2048",
+          "sha256": "b5d078de77a55e3bffd14f09b9adfc35682122f6217c9d91e34339fae40e32b2"
+        }
+      ],
+      "history_files": [
+        {
+          "asset_id": "E01_C004",
+          "path": "01/assets/characters/history/c004e01.v003-rejected-low-identity-contrast-20260607.png"
+        },
+        {
+          "asset_id": "E01_C004",
+          "path": "01/assets/characters/history/c004e01.v004-rejected-still-low-readability-20260607.png"
+        },
+        {
+          "asset_id": "E01_C020",
+          "path": "01/assets/characters/history/c020e01.v002-rejected-low-contrast-20260607.png"
+        },
+        {
+          "asset_id": "E01_C020",
+          "path": "01/assets/characters/history/c020e01.v003-rejected-still-low-readability-20260607.png"
+        },
+        {
+          "asset_id": "E01_C024A",
+          "path": "01/assets/characters/history/c024ae01.v002-rejected-low-contrast-20260607.png"
+        },
+        {
+          "asset_id": "E01_C024A",
+          "path": "01/assets/characters/history/c024ae01.v003-rejected-still-low-readability-20260607.png"
+        }
+      ],
+      "user_confirmation": "User confirmed all three character assets pass."
     }
   ],
   "blocked_jobs": [
@@ -347,48 +608,20 @@
     },
     {
       "batch_id": "B02_E01_LOCATIONS",
-      "status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
-      "blocked_items": [
-        {
-          "asset_id": "E01_L007",
-          "output_path": "01/assets/locations/l007e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L003",
-          "output_path": "01/assets/locations/l003e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L014",
-          "output_path": "01/assets/locations/l014e01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001A",
-          "output_path": "01/assets/locations/l001ae01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001B",
-          "output_path": "01/assets/locations/l001be01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        },
-        {
-          "asset_id": "E01_L001C",
-          "output_path": "01/assets/locations/l001ce01.png",
-          "reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
-        }
-      ],
-      "reason": "Hard reference image binding is mandatory but unavailable in the worker image-generation interface."
+      "status": "resolved_by_single_asset_retries_2026-06-07",
+      "blocked_items": [],
+      "reason": "All listed B02 location blocked items were resolved by single-asset retries with parent QC."
     }
   ],
   "validation_notes": [
     "B04_E01_STYLE generated and coordinator-QC passed.",
     "Style dependency is satisfied; downstream B01, B02, B03, B05, and B06 may now be dispatched.",
-    "All B04 canonical files use exact planned short filenames and output paths."
+    "All B04 canonical files use exact planned short filenames and output paths.",
+    "Targeted location scene cards E01_L007, E01_L003, and E01_L014 are now canonical 3840x2160 PNG RGB/no-alpha files and passed parent visual QC.",
+    "Targeted location scene cards E01_L001A, E01_L001B, and E01_L001C are now canonical 3840x2160 PNG RGB/no-alpha files and passed parent visual QC.",
+    "E01_L001B and E01_L001C required one correction pass each to mask text-like marks before approval."
   ],
-  "updated_at": "2026-06-07",
+  "updated_at": "2026-06-08",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -398,5 +631,129 @@
     "version": "episode-inheritance-hard-lock-v1-2026-06-07",
     "repaired": true,
     "rule": "character and location episode assets must use series master cards as hard references; text-only generation is blocked"
+  },
+  "targeted_location_scene_cards_2026_06_07": {
+    "status": "completed_parent_qc_passed",
+    "assets": {
+      "E01_L007": {
+        "output_path": "01/assets/locations/l007e01.png",
+        "thread_id": "019ea1ad-4aa9-7a61-9925-ded7e87c92d6",
+        "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after replacing stray CHEVAUX label with CART SCALE",
+          "inherits L007 black-stone gate/snow-wall master geography"
+        ]
+      },
+      "E01_L003": {
+        "output_path": "01/assets/locations/l003e01.png",
+        "thread_id": "019ea1b9-9761-7742-9b6f-7c787074479b",
+        "final_sha256": "65711036b0dce3d40bab5d765e9b45ab7bf13ea961d4cddf73a9abb7596d5750",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent promoted reviewed v003 to canonical after child thread stalled",
+          "inherits L003 Jinhe granary/wet-wood dock/grain-sack checkpoint master geography"
+        ]
+      },
+      "E01_L014": {
+        "output_path": "01/assets/locations/l014e01.png",
+        "thread_id": "019ea1ca-f4ab-76a0-8f4e-297582c11f2f",
+        "final_sha256": "57281bfff4e993b8865d28807d3bdfe07ab01834d9c59d01ad445f178293c95a",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "prompt repaired from sealed interior room to L014 rainforest red-line master inheritance",
+          "deterministic derived card preserves rope bridge, red-line marker, wet stone platform, fire ring, scroll tubes, and rainforest valley"
+        ]
+      },
+      "E01_L001A": {
+        "output_path": "01/assets/locations/l001ae01.png",
+        "thread_id": "019ea1e9-3232-7b31-b399-48a4e85f72c9",
+        "final_sha256": "7fe58b7c1b91116948e7e90192f15f4ec01f4f13188b74b33fa48debd7292d45",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed; regenerated as L001 village-gate blockade geography card from the L001 master",
+          "preserves check table, old well, medicine house, back-mountain exit, white wax flags, blockade lines, and queue geography",
+          "no visible readable text after review"
+        ]
+      },
+      "E01_L001B": {
+        "output_path": "01/assets/locations/l001be01.png",
+        "thread_id": "019ea1f4-717c-7651-956d-f8d2b0abfa34",
+        "final_sha256": "2a09ae60e14aa0c7592ce5f1ceaea4daea813d4f66f0b0da5620527acad5833a",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after masking text-like cloth, paper, and detail-panel marks",
+          "inherits L001 medicine-house subspace and keeps the medicine cabinet, hidden compartment, door, and exterior blockade pressure readable",
+          "does not drift into an isolated spectacle mechanism room"
+        ]
+      },
+      "E01_L001C": {
+        "output_path": "01/assets/locations/l001ce01.png",
+        "thread_id": "019ea1f9-9ff3-7da3-9ebc-7db9ad7234b1",
+        "final_sha256": "31760dfdb7a6f8a7463d77d4de712a14d7ff935c7b6bd26b5d88f3dd28d78d80",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after masking text-like medicine-house cloth, window/paper, and check-table register marks",
+          "inherits L001 old-well/check-table/medicine-house/village-entry geography",
+          "old well remains the case center and foreground, midground, and background zones are readable"
+        ]
+      }
+    }
+  },
+  "sc001_opening_qc_2026_06_07": {
+    "status": "blocked_pending_user_qc_on_sc001_character_rework_v2",
+    "confirmed_assets": [
+      "E01_F001",
+      "E01_F005",
+      "E01_L007",
+      "E01_P021"
+    ],
+    "rework_required_assets": [
+      {
+        "asset_id": "E01_C004",
+        "output_path": "01/assets/characters/c004e01.png",
+        "reason": "Reject current output: face, age impression, beard/hair, and identity do not match global Xue Linqiang master C004; costume also collapses into wall-grey with poor scene contrast.",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C004"
+      },
+      {
+        "asset_id": "E01_C020",
+        "output_path": "01/assets/characters/c020e01.png",
+        "reason": "Reject current output for SC001 use: northern siege figures are almost all grey and risk merging into L007 black-stone wall/blizzard background as unreadable silhouettes.",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C020"
+      },
+      {
+        "asset_id": "E01_C024A",
+        "output_path": "01/assets/characters/c024ae01.png",
+        "reason": "Reject current output for SC001 use: young wall-soldier costume is nearly all grey and will merge into black-stone wall/snow scene; needs controlled costume contrast while preserving border-soldier template.",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C024A"
+      }
+    ],
+    "blocked_reference_frames": [
+      "E01_R001",
+      "E01_R002",
+      "E01_R003",
+      "E01_R004"
+    ],
+    "next_step": "If the user approves the second-pass characters, generate SC001 reference frames E01_R001-E01_R004 using the new readability constraints.",
+    "candidate_assets_pending_user_qc": [
+      "E01_C004",
+      "E01_C020",
+      "E01_C024A"
+    ]
+  },
+  "sc001_opening_qc_2026_06_08": {
+    "status": "reference_frame_generation_started_after_character_approval",
+    "approved_character_assets": [
+      "E01_C004",
+      "E01_C020",
+      "E01_C024A"
+    ],
+    "reference_frames_to_generate": [
+      "E01_R001",
+      "E01_R002",
+      "E01_R003",
+      "E01_R004"
+    ],
+    "started_at": "2026-06-08"
   }
 }

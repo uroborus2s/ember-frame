@@ -5,7 +5,7 @@
   "title": "白册进村",
   "format": "16:9 landscape widescreen drama",
   "target_duration_seconds": 270,
-  "actual_planned_duration_seconds": 269.5,
+  "actual_planned_duration_seconds": 271.2,
   "global_style_lock_zh": "超写实、电影级质感、真实触感古代材质、低魔东方史诗、16:9横屏；动作遵守真实重心、真实速度、自然呼吸、接触反作用和可读运动路径。",
   "global_style_lock_en": "Hyper-realistic cinematic quality, tactile period materials, grounded low-magic Eastern epic, 16:9 landscape widescreen; movement follows real weight, real speed, natural breathing, contact reaction and readable motion paths.",
   "shots": [
@@ -13,49 +13,79 @@
       "shot_id": "SC001-SH001",
       "scene_id": "SC001",
       "order": 1,
-      "purpose": "5秒内用骨钟与暴雪钩住边墙战争压力",
-      "subject": "锁喉关黑石墙、骨钟、破门猛犸巨角剪影",
-      "visible_action": "暴雪斜砸黑石墙，铁包巨角撞击门外拒马，骨钟被震得横摆，钟声像骨裂一样切入黑场后的第一声。",
-      "shot_size": "extreme close detail to vertical wall reveal",
-      "camera_angle": "low angle looking up along blackstone wall",
-      "camera_movement": "violent impact shake then half-second hold",
-      "duration_seconds": 1.8,
-      "audio_note": "骨钟裂响、暴雪、低频撞门声；旁白起：北墙五百年。",
+      "purpose": "5秒内用同一面墙的斜向攻城推进、墙头骨钟与暴雪钩住边墙战争压力",
+      "subject": "锁喉关同一面黑石外墙、墙头同一警钟、墙外继承 C020/C021/C020E01 的兽族攻城队列",
+      "visible_action": "镜头从攻城方斜后侧低机位看同一面锁喉关黑石巨墙，兽族和伴生兽从左前向右后斜推城门；镜头顺同一墙面斜爬上墙头，再约45度转向人族女墙空间。尾帧只保留一面墙、一个钟架、一只钟：骨钟沿同一钟架方向横摆，守军短促前倾后稳住枪线，墙外兽族仍在斜下方朝墙压上来。",
+      "shot_size": "attacker-side low oblique wide to wall-top medium-near split frame",
+      "camera_angle": "R001 attacking-side low three-quarter angle; R002 human wall-top 45-degree angle along the same parapet",
+      "camera_movement": "diagonal climb along the same exterior wall, then 45-degree turn onto the human wall-top; no wall pass-through, no second wall",
+      "duration_seconds": 3.5,
+      "audio_note": "骨钟裂响、暴雪、低频撞门声；斜侧升镜期间完整读旁白。",
       "dialogue_or_subtitle": "旁白：北墙五百年，血从未干。",
-      "continuity_refs": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL", "RULE_SIEGE_LOCAL_CAUSALITY"],
-      "risk_flags": ["high_motion", "needs_reference_frame"]
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "risk_flags": [
+        "wide_battlefield_layering",
+        "high_motion",
+        "needs_reference_frame"
+      ]
     },
     {
       "shot_id": "SC001-SH002",
       "scene_id": "SC001",
       "order": 2,
       "purpose": "把战争规模压到一个年轻军户的身体代价",
-      "subject": "年轻灰墙军户、断矛、骨钟裂缝旧日月刻痕",
-      "visible_action": "年轻灰墙军户跪倒，断矛滑进雪泥；他伸手扶住裂开的骨钟，掌心被冻血黏住，旧日月刻痕在铜锈下露出。",
+      "subject": "同一墙头年轻军户、同一摇晃骨钟、断矛、不可读淡金旧徽断屑",
+      "visible_action": "年轻灰墙军户在 R002 同一墙头警钟旁跪倒，断矛滑进雪泥；他伸手扶住同一口裂开的骨钟，手掌和裂缝遮住旧徽区域，只剩不可读的淡金断屑。墙外兽族和伴生兽仍在同一面墙下朝墙压上来。",
       "shot_size": "tight medium with insert emphasis",
       "camera_angle": "human eye-level, slightly canted by impact",
       "camera_movement": "quick drop with soldier then rack to bell crack",
       "duration_seconds": 1.8,
       "audio_note": "断矛落雪、冻血黏住的细响、远处雪狼骑啸声。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL"],
-      "risk_flags": ["blood_readability", "short_duration"]
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "risk_flags": [
+        "blood_readability",
+        "short_duration"
+      ]
     },
     {
       "shot_id": "SC001-SH003",
       "scene_id": "SC001",
       "order": 3,
-      "purpose": "用薛临墙短令建立守墙人的现实主义基调",
-      "subject": "薛临墙按墙缝的冻裂手、墙外斧兵与烽燧方向剪影",
-      "visible_action": "薛临墙粗大的手按住墙缝，冻裂血沾上黑石；他不看兽群，只看门闩和枪线，低声命令补枪。",
+      "purpose": "用薛临墙低声战场提醒建立守墙人的现实主义基调",
+      "subject": "同一墙头薛临墙、同一摇晃警钟、门线与枪位",
+      "visible_action": "薛临墙在 R003 同一口骨钟旁压住黑石女墙，扫过摇晃警钟、门闩和枪线，低声急促但不慌地把墙头所有人的视线从骨钟拉回门线；墙外斜下方仍是同一批朝墙攻来的兽族和伴生兽。",
       "shot_size": "medium close-up",
       "camera_angle": "side profile at wall height",
       "camera_movement": "small locked push to his hand and mouth",
       "duration_seconds": 1.9,
-      "audio_note": "薛临墙台词压过风声，切出时保留骨钟尾音。",
-      "dialogue_or_subtitle": "薛临墙：补枪。别看兽，看门。",
-      "continuity_refs": ["CHAR_XUE_LINQIANG", "LOC_SUOHOU_GATE_OUTER_WALL"],
-      "risk_flags": ["dialogue_sync"]
+      "audio_note": "薛临墙台词低声、急促但不慌，压过风声；切出时保留骨钟尾音。",
+      "dialogue_or_subtitle": "薛临墙：敌人上来了。",
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "risk_flags": [
+        "dialogue_sync"
+      ]
     },
     {
       "shot_id": "SC002-SH001",
@@ -70,8 +100,15 @@
       "duration_seconds": 6,
       "audio_note": "粮袋摩擦、骨算盘、押车轮声；旁白由边墙转入金河。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_GRAIN_TAX_CLERK", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["crowd_layering", "needs_location_plate"]
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "crowd_layering",
+        "needs_location_plate"
+      ]
     },
     {
       "shot_id": "SC002-SH002",
@@ -86,8 +123,15 @@
       "duration_seconds": 7,
       "audio_note": "谷粒落泥、老人闷哼、孩子吸气、虫蜡封条轻响。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["child_sensitivity", "prop_detail"]
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "child_sensitivity",
+        "prop_detail"
+      ]
     },
     {
       "shot_id": "SC002-SH003",
@@ -102,8 +146,15 @@
       "duration_seconds": 7,
       "audio_note": "粮税小吏台词干净，周围求饶声压低。",
       "dialogue_or_subtitle": "粮税小吏：查清明籍。金河不清，粮也得清；族谱对不上，粮就不算你家的。妇人：这是过冬粮。",
-      "continuity_refs": ["CHAR_GRAIN_TAX_CLERK", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["dialogue_sync", "hierarchy_clarity"]
+      "continuity_refs": [
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "hierarchy_clarity"
+      ]
     },
     {
       "shot_id": "SC002-SH004",
@@ -118,8 +169,14 @@
       "duration_seconds": 8,
       "audio_note": "旁白完整落下；车轮和粮袋声逐渐盖住哭声。",
       "dialogue_or_subtitle": "旁白：官笔一点，良户成逃籍；粮归官仓，人归押车，祖牌还在，家门没了。",
-      "continuity_refs": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX"],
-      "risk_flags": ["emotion_overstatement"]
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ],
+      "risk_flags": [
+        "emotion_overstatement"
+      ]
     },
     {
       "shot_id": "SC003-SH001",
@@ -134,8 +191,13 @@
       "duration_seconds": 7,
       "audio_note": "雨声、油布震动、红线钉入木面的细响。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_SOUTHERN_REDLINE_ROOM", "PROP_BLOOD_GENEALOGY"],
-      "risk_flags": ["map_readability"]
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_BLOOD_GENEALOGY"
+      ],
+      "risk_flags": [
+        "map_readability"
+      ]
     },
     {
       "shot_id": "SC003-SH002",
@@ -150,8 +212,15 @@
       "duration_seconds": 8,
       "audio_note": "雨声不盖对白。",
       "dialogue_or_subtitle": "顾怀章：你不是逃。你是日月还在人间的证据。晏南枝：证据能让北边的人开门吗？",
-      "continuity_refs": ["CHAR_GU_HUAIZHANG", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
-      "risk_flags": ["dialogue_sync", "face_reveal_control"]
+      "continuity_refs": [
+        "CHAR_GU_HUAIZHANG",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "face_reveal_control"
+      ]
     },
     {
       "shot_id": "SC003-SH003",
@@ -166,8 +235,15 @@
       "duration_seconds": 9,
       "audio_note": "顾怀章台词、旧歌被捂住的闷声、雨声。",
       "dialogue_or_subtitle": "顾怀章：找到月下盟书。旧臣看见它，就会记起该跪向谁。",
-      "continuity_refs": ["PROP_BLOOD_GENEALOGY", "CHAR_YAN_NANZHI", "CHAR_GU_HUAIZHANG"],
-      "risk_flags": ["prop_detail", "subtle_performance"]
+      "continuity_refs": [
+        "PROP_BLOOD_GENEALOGY",
+        "CHAR_YAN_NANZHI",
+        "CHAR_GU_HUAIZHANG"
+      ],
+      "risk_flags": [
+        "prop_detail",
+        "subtle_performance"
+      ]
     },
     {
       "shot_id": "SC003-SH004",
@@ -182,8 +258,13 @@
       "duration_seconds": 9,
       "audio_note": "旁白落到“不一定是皇座”，雨声切成村口人声。",
       "dialogue_or_subtitle": "旁白：南方遗民仍在旧歌里找路，却不知道路尽头等着的，不一定是皇座。",
-      "continuity_refs": ["LOC_SOUTHERN_REDLINE_ROOM", "CHAR_YAN_NANZHI"],
-      "risk_flags": ["transition_timing"]
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "CHAR_YAN_NANZHI"
+      ],
+      "risk_flags": [
+        "transition_timing"
+      ]
     },
     {
       "shot_id": "SC004-SH001",
@@ -198,8 +279,16 @@
       "duration_seconds": 9,
       "audio_note": "村民压低的骚动、短矛敲地、官吏翻册声。",
       "dialogue_or_subtitle": "字幕：肃明历1226年，残阳坳。",
-      "continuity_refs": ["LOC_CANYANGAO_GATE", "LOC_CANYANGAO_WELL", "LOC_LUO_MEDICINE_HOUSE", "PROP_WHITE_WAX_FLAGS"],
-      "risk_flags": ["geography_clarity", "crowd_layering"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
+      ],
+      "risk_flags": [
+        "geography_clarity",
+        "crowd_layering"
+      ]
     },
     {
       "shot_id": "SC004-SH002",
@@ -214,8 +303,15 @@
       "duration_seconds": 8,
       "audio_note": "官吏念名冷而重复。",
       "dialogue_or_subtitle": "白册官吏：残阳坳，原旧驿地名一处。按清明籍，逐户复核。",
-      "continuity_refs": ["CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER", "LOC_CANYANGAO_GATE"],
-      "risk_flags": ["dialogue_sync", "hierarchy_clarity"]
+      "continuity_refs": [
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_CANYANGAO_GATE"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "hierarchy_clarity"
+      ]
     },
     {
       "shot_id": "SC004-SH003",
@@ -230,8 +326,14 @@
       "duration_seconds": 8,
       "audio_note": "环境声降低，白册翻页声突出。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "PROP_WHITE_WAX_FLAGS", "LOC_CANYANGAO_WELL"],
-      "risk_flags": ["eyeline_continuity"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_CANYANGAO_WELL"
+      ],
+      "risk_flags": [
+        "eyeline_continuity"
+      ]
     },
     {
       "shot_id": "SC004-SH004",
@@ -246,8 +348,15 @@
       "duration_seconds": 7,
       "audio_note": "她的声音轻，之后只剩白册纸响。",
       "dialogue_or_subtitle": "沈照眠：红花不落雪留灯。",
-      "continuity_refs": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["child_performance", "dialogue_sync"]
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "child_performance",
+        "dialogue_sync"
+      ]
     },
     {
       "shot_id": "SC004-SH005",
@@ -262,8 +371,14 @@
       "duration_seconds": 9,
       "audio_note": "罗青禾压住气息，官吏语速平直。",
       "dialogue_or_subtitle": "罗青禾：孩子背药名，背串了。白册官吏：红花是药。留灯是哪味药？",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN", "CHAR_BAICE_CLERK"],
-      "risk_flags": ["blocking_precision"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_BAICE_CLERK"
+      ],
+      "risk_flags": [
+        "blocking_precision"
+      ]
     },
     {
       "shot_id": "SC004-SH006",
@@ -278,8 +393,15 @@
       "duration_seconds": 10,
       "audio_note": "弓弦被按住的细响与他咳声重叠。",
       "dialogue_or_subtitle": "沈维桑：那是后山旧药路，我让她背来认草。官爷要验旧话，就验我这张猎户嘴。",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "PROP_SHEN_BOW", "PROP_ZHAOMIAN_HERB_BAG"],
-      "risk_flags": ["dialogue_sync", "hand_detail"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "hand_detail"
+      ]
     },
     {
       "shot_id": "SC004-SH007",
@@ -294,8 +416,14 @@
       "duration_seconds": 7,
       "audio_note": "白册官吏声音近而干；背景村民声远。",
       "dialogue_or_subtitle": "白册官吏：沈家。祖上这一笔说不清，先挂疑名。",
-      "continuity_refs": ["PROP_WHITE_REGISTER", "CHAR_BAICE_CLERK"],
-      "risk_flags": ["text_not_model_generated", "redraw_needed"]
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "CHAR_BAICE_CLERK"
+      ],
+      "risk_flags": [
+        "text_not_model_generated",
+        "redraw_needed"
+      ]
     },
     {
       "shot_id": "SC004-SH008",
@@ -310,8 +438,15 @@
       "duration_seconds": 9,
       "audio_note": "香插木裂声清楚。",
       "dialogue_or_subtitle": "白册官吏：香烧完还说不清，全家按疑户押册。",
-      "continuity_refs": ["PROP_QINGMING_INCENSE", "CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN"],
-      "risk_flags": ["countdown_readability"]
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "risk_flags": [
+        "countdown_readability"
+      ]
     },
     {
       "shot_id": "SC004-SH009",
@@ -326,8 +461,14 @@
       "duration_seconds": 13,
       "audio_note": "村口声被木门隔住，转为药屋内低声。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["PROP_QINGMING_INCENSE", "PROP_WHITE_WAX_FLAGS", "LOC_LUO_MEDICINE_HOUSE"],
-      "risk_flags": ["transition_timing"]
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ],
+      "risk_flags": [
+        "transition_timing"
+      ]
     },
     {
       "shot_id": "SC005-SH001",
@@ -342,8 +483,15 @@
       "duration_seconds": 8,
       "audio_note": "木板轻响、门外爪足停步声、晏南枝压低呼吸。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_LUO_MEDICINE_HOUSE_INTERIOR", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
-      "risk_flags": ["low_light_identity", "claustrophobic_framing"]
+      "continuity_refs": [
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "risk_flags": [
+        "low_light_identity",
+        "claustrophobic_framing"
+      ]
     },
     {
       "shot_id": "SC005-SH002",
@@ -358,8 +506,15 @@
       "duration_seconds": 9,
       "audio_note": "药剪轻响、门外甲片摩擦。",
       "dialogue_or_subtitle": "罗青禾：别动。柜板一响，白册就能把药屋写成窝户。",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "PROP_MEDICINE_CABINET", "LOC_LUO_MEDICINE_HOUSE_INTERIOR"],
-      "risk_flags": ["dialogue_sync", "prop_blocking"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "PROP_MEDICINE_CABINET",
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "prop_blocking"
+      ]
     },
     {
       "shot_id": "SC005-SH003",
@@ -374,8 +529,15 @@
       "duration_seconds": 10,
       "audio_note": "两人对白压低，门外敲门前的空白拉长。",
       "dialogue_or_subtitle": "晏南枝：你知道我是谁？罗青禾：知道你会害死这里的人。",
-      "continuity_refs": ["CHAR_YAN_NANZHI", "CHAR_LUO_QINGHE", "PROP_MOON_WHITE_JADE"],
-      "risk_flags": ["subtle_performance", "face_reveal_control"]
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "CHAR_LUO_QINGHE",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "risk_flags": [
+        "subtle_performance",
+        "face_reveal_control"
+      ]
     },
     {
       "shot_id": "SC005-SH004",
@@ -390,8 +552,15 @@
       "duration_seconds": 9,
       "audio_note": "木板轻开、草药灰摩擦。",
       "dialogue_or_subtitle": "晏南枝：这是昭明驿记。",
-      "continuity_refs": ["PROP_OLD_RELAY_MARK", "PROP_MEDICINE_CABINET", "CHAR_YAN_NANZHI"],
-      "risk_flags": ["prop_detail", "redraw_needed"]
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_MEDICINE_CABINET",
+        "CHAR_YAN_NANZHI"
+      ],
+      "risk_flags": [
+        "prop_detail",
+        "redraw_needed"
+      ]
     },
     {
       "shot_id": "SC005-SH005",
@@ -406,8 +575,15 @@
       "duration_seconds": 11,
       "audio_note": "门外敲门声切断对白尾音。",
       "dialogue_or_subtitle": "罗青禾：旗一露，残阳坳就不是村，是反寨；白册一写，良户也成逆户。封门奴兵：开药柜。",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_MEDICINE_CABINET"],
-      "risk_flags": ["dialogue_sync", "shadow_readability"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_MEDICINE_CABINET"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "shadow_readability"
+      ]
     },
     {
       "shot_id": "SC006-SH001",
@@ -422,8 +598,14 @@
       "duration_seconds": 8,
       "audio_note": "人群骚动压低，封门牌轻晃。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_CANYANGAO_WELL_TABLE", "LOC_LUO_MEDICINE_HOUSE", "CHAR_SHEN_WEISANG"],
-      "risk_flags": ["geography_clarity"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "risk_flags": [
+        "geography_clarity"
+      ]
     },
     {
       "shot_id": "SC006-SH002",
@@ -438,8 +620,15 @@
       "duration_seconds": 8,
       "audio_note": "桌木碰撞声、官吏台词、村民吸气。",
       "dialogue_or_subtitle": "白册官吏：查出旧驿暗号，按窝户论。先封全村户口，谁家都不许改供。",
-      "continuity_refs": ["PROP_OLD_RELAY_MARK", "CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["dialogue_sync", "prop_detail"]
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "prop_detail"
+      ]
     },
     {
       "shot_id": "SC006-SH003",
@@ -454,8 +643,15 @@
       "duration_seconds": 8,
       "audio_note": "人群惊叫、押绳收紧、钩镰敲石。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["CHAR_SUMING_SLAVE_SOLDIER", "CHAR_SUMING_INSECT_INFANTRY", "CHAR_BAICE_CLERK"],
-      "risk_flags": ["crowd_layering", "hierarchy_clarity"]
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "CHAR_BAICE_CLERK"
+      ],
+      "risk_flags": [
+        "crowd_layering",
+        "hierarchy_clarity"
+      ]
     },
     {
       "shot_id": "SC006-SH004",
@@ -470,8 +666,16 @@
       "duration_seconds": 7,
       "audio_note": "蜡笔落纸声大于人声。",
       "dialogue_or_subtitle": "白册官吏：沈照眠，听旧歌有反应。先记作疑童。",
-      "continuity_refs": ["CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["child_sensitivity", "redraw_needed"]
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "child_sensitivity",
+        "redraw_needed"
+      ]
     },
     {
       "shot_id": "SC006-SH005",
@@ -486,8 +690,15 @@
       "duration_seconds": 9,
       "audio_note": "清明香铃声、布料几乎无声，环境声变薄。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["CHAR_BAI_YI", "LOC_CANYANGAO_GATE", "PROP_QINGMING_INCENSE"],
-      "risk_flags": ["identity_reference_needed", "wardrobe_cleanliness"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "LOC_CANYANGAO_GATE",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "risk_flags": [
+        "identity_reference_needed",
+        "wardrobe_cleanliness"
+      ]
     },
     {
       "shot_id": "SC006-SH006",
@@ -502,8 +713,15 @@
       "duration_seconds": 9,
       "audio_note": "虫蜡针被擦过的细响。",
       "dialogue_or_subtitle": "白翳：一块暗号藏不住这么多年。有人开过门，也有人带过路。",
-      "continuity_refs": ["CHAR_BAI_YI", "PROP_INSECT_WAX_NEEDLE", "PROP_OLD_RELAY_MARK"],
-      "risk_flags": ["dialogue_sync", "prop_detail"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_OLD_RELAY_MARK"
+      ],
+      "risk_flags": [
+        "dialogue_sync",
+        "prop_detail"
+      ]
     },
     {
       "shot_id": "SC006-SH007",
@@ -518,8 +736,16 @@
       "duration_seconds": 7,
       "audio_note": "纸面渗蜡声细微，沈维桑呼吸变低。",
       "dialogue_or_subtitle": "白翳：残阳坳按逆案查办。封村，清户，搜旧井。",
-      "continuity_refs": ["PROP_WHITE_REGISTER", "PROP_INSECT_WAX_NEEDLE", "CHAR_SHEN_WEISANG", "CHAR_BAI_YI"],
-      "risk_flags": ["text_not_model_generated", "redraw_needed"]
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_BAI_YI"
+      ],
+      "risk_flags": [
+        "text_not_model_generated",
+        "redraw_needed"
+      ]
     },
     {
       "shot_id": "SC006-SH008",
@@ -534,8 +760,15 @@
       "duration_seconds": 8,
       "audio_note": "命令尾音、钩镰和旗杆声。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["LOC_CANYANGAO_WELL_TABLE", "PROP_WHITE_WAX_FLAGS", "CHAR_SUMING_INSECT_INFANTRY"],
-      "risk_flags": ["geography_clarity", "crowd_layering"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "PROP_WHITE_WAX_FLAGS",
+        "CHAR_SUMING_INSECT_INFANTRY"
+      ],
+      "risk_flags": [
+        "geography_clarity",
+        "crowd_layering"
+      ]
     },
     {
       "shot_id": "SC006-SH009",
@@ -550,8 +783,16 @@
       "duration_seconds": 9,
       "audio_note": "白册翻页声像骨钟回声。",
       "dialogue_or_subtitle": "白翳：大人能改供，孩子改不了童谣。祖上留的暗号，歌一接，根脚就露了。",
-      "continuity_refs": ["CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_SHEN_BOW"],
-      "risk_flags": ["child_sensitivity", "dialogue_sync"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW"
+      ],
+      "risk_flags": [
+        "child_sensitivity",
+        "dialogue_sync"
+      ]
     },
     {
       "shot_id": "SC006-SH010",
@@ -566,8 +807,16 @@
       "duration_seconds": 10,
       "audio_note": "弓弦张力声、白册翻页、切黑无音乐半秒。",
       "dialogue_or_subtitle": "",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "PROP_SHEN_BOW", "PROP_WHITE_REGISTER"],
-      "risk_flags": ["ending_timing", "hand_detail"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_REGISTER"
+      ],
+      "risk_flags": [
+        "ending_timing",
+        "hand_detail"
+      ]
     }
   ]
 }

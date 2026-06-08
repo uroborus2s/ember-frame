@@ -2498,6 +2498,264 @@
         "version": "mandatory-master-reference-use-v1-2026-06-07",
         "requirement": "workers must use production_metadata.reference_inputs master images as hard visual references; block instead of generating from text-only when required references are unavailable"
       }
+    },
+    {
+      "batch_id": "SC001_E01_REFERENCE_FRAMES",
+      "batch_type": "reference-frames",
+      "status": "ready_for_image_generation_after_character_approval_2026-06-08",
+      "prompt_ids": [
+        "PROMPT_E01_R001",
+        "PROMPT_E01_R002",
+        "PROMPT_E01_R003",
+        "PROMPT_E01_R004"
+      ],
+      "output_paths": [
+        "01/assets/reference-frames/r001e01.png",
+        "01/assets/reference-frames/r002e01.png",
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/reference-frames/r004e01.png"
+      ],
+      "thread_prompt": "Generate only SC001 opening reference frames E01_R001-E01_R004 from the approved prompt records in 01/prompts/art-image-prompts.json. Use the confirmed upstream assets listed in each task. Write one final confirmed PNG per exact output path. Retained non-final candidates must go to 01/assets/reference-frames/history/ with .v001/.v002 suffixes. Return final_files, history_files, blocked_items, and QC notes.",
+      "approval_gate": "sc001_upstream_assets_qc_passed_2026-06-07",
+      "creation_order": 5.1,
+      "creation_phase": "opening_reference_frames",
+      "depends_on_batches": [
+        "B04_E01_STYLE",
+        "SC001_E01_CHARACTER_REWORK"
+      ],
+      "depends_on_assets": [
+        "E01_F001",
+        "E01_F005",
+        "E01_C020",
+        "E01_L007",
+        "E01_P021",
+        "E01_C024A",
+        "E01_C004"
+      ],
+      "blocks_assets": [],
+      "blocks_batches": [],
+      "dependency_reason": "SC001 upstream style, character, location, and prop assets are confirmed by coordinator visual QC; only the four opening reference-frame PNG files are missing.",
+      "priority": "high",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "video_generation_reference_frame"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "16:9"
+        ],
+        "minimum_resolution": "3840x2160",
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "Use each prompt record output_format literally. Reference frames must be final-video-frame-like stills, not asset cards, with readable foreground/midground/background and camera/action state."
+      },
+      "assets": [
+        {
+          "asset_id": "E01_R001",
+          "prompt_id": "PROMPT_E01_R001",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r001e01.png",
+          "priority": "high",
+          "creation_order": 1,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_L007",
+            "E01_P021"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R002",
+          "prompt_id": "PROMPT_E01_R002",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r002e01.png",
+          "priority": "high",
+          "creation_order": 2,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_L007",
+            "E01_P021"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R003",
+          "prompt_id": "PROMPT_E01_R003",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r003e01.png",
+          "priority": "high",
+          "creation_order": 3,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C020",
+            "E01_C024A",
+            "E01_L007",
+            "E01_P021"
+          ],
+          "blocks_assets": []
+        },
+        {
+          "asset_id": "E01_R004",
+          "prompt_id": "PROMPT_E01_R004",
+          "asset_subtype": "reference_frame",
+          "output_path": "01/assets/reference-frames/r004e01.png",
+          "priority": "high",
+          "creation_order": 4,
+          "depends_on_assets": [
+            "E01_F001",
+            "E01_F005",
+            "E01_C004",
+            "E01_L007"
+          ],
+          "blocks_assets": []
+        }
+      ],
+      "output_directories": [
+        "01/assets/reference-frames"
+      ],
+      "run_task_plan": "01/art/runs/2026-06-07-sc001-reference-frame-dispatch/task-plan.json",
+      "created_at": "2026-06-07",
+      "unblocked_at": "2026-06-08",
+      "unblocked_by": "User confirmed E01_C004, E01_C020, and E01_C024A pass."
+    },
+    {
+      "batch_id": "SC001_E01_CHARACTER_REWORK",
+      "batch_type": "characters",
+      "status": "complete_user_approved_2026-06-08",
+      "prompt_ids": [
+        "PROMPT_E01_C004",
+        "PROMPT_E01_C020",
+        "PROMPT_E01_C024A"
+      ],
+      "output_paths": [
+        "01/assets/characters/c004e01.png",
+        "01/assets/characters/c020e01.png",
+        "01/assets/characters/c024ae01.png"
+      ],
+      "thread_prompt": "Regenerate only SC001 upstream character/state assets E01_C004, E01_C020, and E01_C024A. Use the hard master/template references listed in each task. Fix low character-vs-wall contrast for all three assets. For E01_C004, identity match to global Xue Linqiang C004 is mandatory; reject any face, age, beard/hair, or body drift. Write final approved PNGs to the exact canonical output paths and archive retained rejected/current alternatives in sibling history/ with .v001/.v002 suffixes. Return final_files, history_files, blocked_items, and QC notes.",
+      "approval_gate": "passed_user_qc_2026-06-08",
+      "creation_order": 4.9,
+      "creation_phase": "opening_character_rework_before_reference_frames",
+      "depends_on_batches": [
+        "B04_E01_STYLE"
+      ],
+      "depends_on_assets": [
+        "C004",
+        "E01_F001",
+        "E01_F005",
+        "C020",
+        "C024"
+      ],
+      "blocks_assets": [
+        "E01_R001",
+        "E01_R002",
+        "E01_R003",
+        "E01_R004"
+      ],
+      "blocks_batches": [
+        "SC001_E01_REFERENCE_FRAMES"
+      ],
+      "dependency_reason": "User QC rejected current SC001 character upstream assets because contrast against L007 is too low; C004 also fails hard identity inheritance from global Xue Linqiang master.",
+      "priority": "high",
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "character_episode_state_turnaround_sheet"
+        ],
+        "file_format": "png",
+        "minimum_resolution": "2048x2048",
+        "alpha_policies": [
+          "forbidden_on_card"
+        ],
+        "enforcement": "Use hard references. Do not text-only regenerate C004. Increase value/color separation from black-stone wall while preserving world realism and template identity."
+      },
+      "assets": [
+        {
+          "asset_id": "E01_C004",
+          "prompt_id": "PROMPT_E01_C004",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "01/assets/characters/c004e01.png",
+          "priority": "high",
+          "creation_order": 1,
+          "depends_on_assets": [
+            "C004",
+            "E01_F001",
+            "E01_F005"
+          ],
+          "blocks_assets": [
+            "E01_R004"
+          ]
+        },
+        {
+          "asset_id": "E01_C020",
+          "prompt_id": "PROMPT_E01_C020",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "01/assets/characters/c020e01.png",
+          "priority": "high",
+          "creation_order": 2,
+          "depends_on_assets": [
+            "C020",
+            "E01_F001",
+            "E01_F005"
+          ],
+          "blocks_assets": [
+            "E01_R001",
+            "E01_R002",
+            "E01_R003"
+          ]
+        },
+        {
+          "asset_id": "E01_C024A",
+          "prompt_id": "PROMPT_E01_C024A",
+          "asset_subtype": "character_episode_state_card",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "priority": "high",
+          "creation_order": 3,
+          "depends_on_assets": [
+            "C024",
+            "E01_F001",
+            "E01_F005"
+          ],
+          "blocks_assets": [
+            "E01_R003"
+          ]
+        }
+      ],
+      "output_directories": [
+        "01/assets/characters"
+      ],
+      "run_task_plan": "01/art/runs/2026-06-07-sc001-character-rework/task-plan.json",
+      "created_at": "2026-06-07",
+      "generated_outputs": [
+        {
+          "asset_id": "E01_C004",
+          "output_path": "01/assets/characters/c004e01.png",
+          "dimensions": "3072x2048",
+          "sha256": "4f3c5d44f011d998aa47d80f25d7cab17ac5ebc8f62eb7f1c2bf1a81b66fd3e1"
+        },
+        {
+          "asset_id": "E01_C020",
+          "output_path": "01/assets/characters/c020e01.png",
+          "dimensions": "3640x2048",
+          "sha256": "8eee5b2c5a9c26057dbee9d19a61cb6a89f9263962382ebf27df4d579d07db40"
+        },
+        {
+          "asset_id": "E01_C024A",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "dimensions": "2048x2048",
+          "sha256": "b5d078de77a55e3bffd14f09b9adfc35682122f6217c9d91e34339fae40e32b2"
+        }
+      ],
+      "qc_notes": [
+        "First generated pass was rejected because fine detail contrast still collapsed in black-wall previews.",
+        "Second pass forces large value blocks, pale/warm costume anchors, and black-wall preview panels.",
+        "Reference frame batch remains blocked until user confirms these candidates."
+      ]
     }
   ],
   "status": "paused_for_identity_location_path_repair_2026-06-07",
@@ -2509,7 +2767,7 @@
     "project_root": "project/severed-homeland",
     "episode_id": "01"
   },
-  "updated_at": "2026-06-07T00:00:00+08:00",
+  "updated_at": "2026-06-08",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -2519,5 +2777,26 @@
     "version": "episode-inheritance-hard-lock-v1-2026-06-07",
     "repaired": true,
     "rule": "character and location episode assets must use series master cards as hard references; text-only generation is blocked"
+  },
+  "sc001_opening_readiness": {
+    "status": "blocked_pending_character_rework_2026-06-07",
+    "confirmed_assets": [
+      "E01_F001",
+      "E01_F005",
+      "E01_L007",
+      "E01_P021"
+    ],
+    "rework_required_assets": [
+      "E01_C004",
+      "E01_C020",
+      "E01_C024A"
+    ],
+    "blocked_reference_frame_tasks": [
+      "E01_R001",
+      "E01_R002",
+      "E01_R003",
+      "E01_R004"
+    ],
+    "character_rework_task_plan": "01/art/runs/2026-06-07-sc001-character-rework/task-plan.json"
   }
 }

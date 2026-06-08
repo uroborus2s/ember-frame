@@ -1,0 +1,408 @@
+{
+  "version": "director-room-comfyui-asset-pack-v1-2026-06-08",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001",
+  "assets": [
+    {
+      "asset_id": "E01_F001",
+      "asset_type": "style",
+      "file_path": "01/assets/style/f001e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "第01集边境暴雪风格参考：低调高反差、冷白暴雪、黑石大暗面、旧铁、粗木、雪泥、冻血、暗红火点和真实火光动机。",
+      "prompt_hint_en": "Episode 01 border-blizzard style reference: low-key high contrast, cold white blizzard, massive blackstone shadow, old iron, rough wood, snow mud, frozen blood, dark red embers and motivated real firelight.",
+      "comfyui_role": "style_reference",
+      "output_format": {
+        "deliverable_kind": "style_reference",
+        "background_policy": "scene_context",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "style board"
+        ],
+        "composition_layers": {
+          "foreground": "material swatches and lighting examples",
+          "midground": "episode color and texture language",
+          "background": "neutral style-board layout"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "STYLE_EP01_BORDER_BLIZZARD"
+      ]
+    },
+    {
+      "asset_id": "E01_F005",
+      "asset_type": "style",
+      "file_path": "01/assets/style/f005e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "横屏构图和局部因果板，用于保持战场远景、身体代价近景、战场口令中近景三种不同光影比例下的空间连续性。",
+      "prompt_hint_en": "Landscape composition and local-causality board for preserving spatial continuity across three different lighting balances: battlefield wide shot, bodily-cost close shot, and battlefield-command close-medium shot.",
+      "comfyui_role": "style_reference",
+      "output_format": {
+        "deliverable_kind": "style_reference",
+        "background_policy": "scene_context",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "composition board"
+        ],
+        "composition_layers": {
+          "foreground": "wall-top anchors",
+          "midground": "defenders and bell space",
+          "background": "battlefield pressure and weather"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ]
+    },
+    {
+      "asset_id": "E01_L007",
+      "asset_type": "location",
+      "file_path": "01/assets/locations/l007e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "锁喉关外墙序幕场景卡，锁定黑石墙、墙头警钟架、门闩、枪线、拒马和墙外攻城方向。",
+      "prompt_hint_en": "Suohou Gate outer wall scene card locking blackstone wall, wall-top bell frame, gate bar, spear line, barricades and exterior siege direction.",
+      "comfyui_role": "reference_image",
+      "output_format": {
+        "deliverable_kind": "location_scene_card",
+        "background_policy": "scene_context",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "wide geography",
+          "zone diagram",
+          "prop placement"
+        ],
+        "composition_layers": {
+          "foreground": "wall-top parapet and bell-side working space",
+          "midground": "defenders, bell frame, gate mechanism and spear line",
+          "background": "outer battlefield, barricades, siege pressure and mountains"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ]
+    },
+    {
+      "asset_id": "E01_P021",
+      "asset_type": "prop",
+      "file_path": "01/assets/props/p021e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "骨钟、断矛、冻血、裂缝和残缺淡金旧日月刻痕的道具参考；不可当作视频首帧。",
+      "prompt_hint_en": "Prop reference for bone bell, broken spear, frozen blood, cracks and faint broken old sun-moon traces; not a video first frame.",
+      "comfyui_role": "reference_image",
+      "output_format": {
+        "deliverable_kind": "detail_crop_sheet",
+        "background_policy": "neutral_plain",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "prop scale",
+          "crack detail",
+          "blood detail",
+          "old mark detail"
+        ],
+        "composition_layers": {
+          "foreground": "bone bell surface, cracks, frozen blood and old mark details",
+          "midground": "broken spear and scale references",
+          "background": "neutral prop sheet background"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002"
+      ],
+      "continuity_refs": [
+        "PROP_BONE_BELL"
+      ]
+    },
+    {
+      "asset_id": "E01_C004",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c004e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "薛临墙第01集边墙序幕状态卡：黑发束髻、短须、灰石厚衬袄、旧甲片、粗麻墙巾、冻裂手和低声实际命令状态。",
+      "prompt_hint_en": "Xue Linqiang episode 01 border prologue state card: tied black hair, short beard, grey padded coat, old armor plates, coarse wall scarf, cracked hands and practical low-command posture.",
+      "comfyui_role": "ipadapter",
+      "output_format": {
+        "deliverable_kind": "episode_state_card",
+        "background_policy": "neutral_plain",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "front",
+          "side",
+          "back",
+          "three-quarter",
+          "face detail",
+          "hand detail",
+          "wardrobe detail"
+        ],
+        "composition_layers": {
+          "foreground": "Xue Linqiang identity, face, hands and wardrobe material details",
+          "midground": "turnaround or state-card views",
+          "background": "neutral card background"
+        }
+      },
+      "usage": [
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG"
+      ]
+    },
+    {
+      "asset_id": "E01_C020",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c020e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "北境攻城剪影状态卡，只用于墙外兽族联盟远景、巨角、毛皮、盾面和火雪分离参考。",
+      "prompt_hint_en": "Northern siege silhouette state card, used only for exterior beast-alliance distance, horn, fur, shield and fire-snow separation reference.",
+      "comfyui_role": "reference_image",
+      "output_format": {
+        "deliverable_kind": "episode_state_card",
+        "background_policy": "neutral_plain",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "silhouette",
+          "costume detail",
+          "scale detail"
+        ],
+        "composition_layers": {
+          "foreground": "siege silhouette, horn and shield readability",
+          "midground": "wardrobe and material detail",
+          "background": "neutral card background"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002"
+      ],
+      "continuity_refs": [
+        "SIEGE_BEAST_ALLIANCE"
+      ]
+    },
+    {
+      "asset_id": "E01_C024A",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c024ae01.png",
+      "status": "ready",
+      "prompt_hint_zh": "年轻灰墙军户序幕状态卡，用于扶钟、断矛、冻血和雪墙可读性；不可当作视频首帧。",
+      "prompt_hint_en": "Young grey-wall soldier prologue state card for bell support, broken spear, frozen blood and snow-wall readability; not a video first frame.",
+      "comfyui_role": "ipadapter",
+      "output_format": {
+        "deliverable_kind": "episode_state_card",
+        "background_policy": "neutral_plain",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "project_defined",
+        "required_views": [
+          "front",
+          "side",
+          "three-quarter",
+          "face detail",
+          "hand detail",
+          "costume detail"
+        ],
+        "composition_layers": {
+          "foreground": "young soldier identity, face, hands and blood-contact detail",
+          "midground": "episode wardrobe and scale views",
+          "background": "neutral card background"
+        }
+      },
+      "usage": [
+        "SC001-SH002"
+      ],
+      "continuity_refs": [
+        "YOUNG_WALL_SOLDIER",
+        "PROP_BONE_BELL"
+      ]
+    },
+    {
+      "asset_id": "E01_R001",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r001e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "SC001-SH001 首帧：攻城方斜后侧低机位，三分之四看同一面锁喉关黑石墙；远处墙头小钟只是锚点，兽族/伴生兽继承 C020/C021/E01_C020。",
+      "prompt_hint_en": "SC001-SH001 updated first frame: low diagonal rear-side siege angle, three-quarter view of the Suohou Gate blackstone wall; foreground shows beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes.",
+      "comfyui_role": "first_frame",
+      "output_format": {
+        "deliverable_kind": "video_reference_frame",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "first frame"
+        ],
+        "composition_layers": {
+          "foreground": "diagonal rear-side beast siege shoulders, torn banners, old iron plates, brazier fire, snow-mud footsteps and partial beast spine or horn",
+          "midground": "blackstone wall and gate set off-center along a diagonal siege line",
+          "background": "small wall-top bone bell and defender silhouettes, mountains, snow haze and distant firelines"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "FLF2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ]
+    },
+    {
+      "asset_id": "E01_R002",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r002e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "SC001-SH001 终帧：同一墙面斜爬上墙头后45度转向；单墙、单钟架、单钟，半幅墙头守军、半幅俯看城外兽族朝墙攻来。",
+      "prompt_hint_en": "SC001-SH001 updated last frame: wall-top medium-near composition, camera landed at the blackstone parapet outer edge or wall-top human height, looking diagonally down outside the wall; bone bell and frame sit on the left or upper middle, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands, spear or gate-bar details are clear, two to four defenders steady the spear line, and the exterior beast tide, barricades, beast parts, firelines, smoke columns and blizzard remain visible below on a diagonal.",
+      "comfyui_role": "last_frame",
+      "output_format": {
+        "deliverable_kind": "video_reference_frame",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "last frame"
+        ],
+        "composition_layers": {
+          "foreground": "bone bell, bell frame, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands and spear or gate-bar details",
+          "midground": "two to four wall-top defenders bracing the spear line after impact",
+          "background": "exterior beast tide, barricades, partial beasts, firelines, smoke columns and blizzard visible below on a diagonal"
+        }
+      },
+      "usage": [
+        "SC001-SH001",
+        "FLF2V",
+        "last_frame"
+      ],
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ]
+    },
+    {
+      "asset_id": "E01_R003",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r003e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "SC001-SH002 首帧：同一墙头同一口钟旁，年轻军户扶住破钟，旧徽几乎被手和裂缝遮住。",
+      "prompt_hint_en": "SC001-SH002 first frame: young soldier holds the cracked bell; frozen blood, broken spear, old mark and exterior battlefield layers are clear.",
+      "comfyui_role": "first_frame",
+      "output_format": {
+        "deliverable_kind": "video_reference_frame",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "first frame"
+        ],
+        "composition_layers": {
+          "foreground": "young soldier, cracked bone bell, blooded hands and broken spear",
+          "midground": "wall-top walkway and nearby defenders",
+          "background": "outer siege field below the wall and blizzard"
+        }
+      },
+      "usage": [
+        "SC001-SH002",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "PROP_BONE_BELL",
+        "YOUNG_WALL_SOLDIER",
+        "RULE_SIEGE_LOCAL_CAUSALITY"
+      ]
+    },
+    {
+      "asset_id": "E01_R004",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r004e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "SC001-SH003 首帧：同一墙头同一口钟旁，薛临墙压住女墙并把注意力拉回门线和枪线。",
+      "prompt_hint_en": "SC001-SH003 first frame: Xue Linqiang presses the wall seam in the same wall-top space; bell, spear line, defenders and exterior battlefield remain readable.",
+      "comfyui_role": "first_frame",
+      "output_format": {
+        "deliverable_kind": "video_reference_frame",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "first frame"
+        ],
+        "composition_layers": {
+          "foreground": "Xue Linqiang, cracked hand, parapet and bell-side space",
+          "midground": "bone bell, spear line and defenders on wall top",
+          "background": "outer battlefield, siege forces, snow and fire points"
+        }
+      },
+      "usage": [
+        "SC001-SH003",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL"
+      ]
+    },
+    {
+      "asset_id": "C020",
+      "asset_type": "character",
+      "file_path": "assets/characters/c020m.png",
+      "status": "ready",
+      "prompt_hint_zh": "兽族攻城兵种群像母卡：R001-R004 中所有兽族士兵必须继承此多兵种外形，不可泛化。",
+      "prompt_hint_en": "Beast-alliance siege troop master board: all beast soldiers in R001-R004 inherit these varied troop designs, no generic army.",
+      "comfyui_role": "reference_image",
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "SIEGE_BEAST_ALLIANCE",
+        "C020_C021_E01_C020_LOCK"
+      ]
+    },
+    {
+      "asset_id": "C021",
+      "asset_type": "character",
+      "file_path": "assets/characters/c021m.png",
+      "status": "ready",
+      "prompt_hint_zh": "北境伴生兽关系母卡：R001-R004 中伴生兽必须继承猛犸、岩背犀/牦牛、霜狼等多样关系。",
+      "prompt_hint_en": "Northern companion-beast relationship master board: companion beasts in R001-R004 inherit mammoth, rock-backed rhino/yak, frost wolf and handler relations.",
+      "comfyui_role": "reference_image",
+      "usage": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "continuity_refs": [
+        "SIEGE_BEAST_ALLIANCE",
+        "COMPANION_BEAST_LOCK"
+      ]
+    }
+  ],
+  "asset_metadata_warning": "E01_R001-E01_R004 are generated 3840x2160 same-space SC001 candidate reference frames and are synchronized with 01/art/asset-index.json and asset-manifest.json as generated_candidate_pending_user_qc. They can be used for ComfyUI shot tests, but should not be marked final approved until user visual QC passes."
+}

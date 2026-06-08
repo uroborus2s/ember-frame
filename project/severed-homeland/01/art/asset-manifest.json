@@ -282,8 +282,8 @@
       "usage": [
         "SC001-SH003"
       ],
-      "approval_status": "rejected_current_output_identity_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "user_approved_for_sc001_reference_frames_2026-06-08",
+      "generation_status": "complete_user_approved_after_sc001_readability_rework_v2_2026-06-08",
       "design_summary": "边墙暴雪序幕中的老墙师，灰石厚衬袄覆雪，冻裂粗手按墙缝，用短令建立守墙人的现实主义。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -337,19 +337,27 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "3072x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "4f3c5d44f011d998aa47d80f25d7cab17ac5ebc8f62eb7f1c2bf1a81b66fd3e1",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C004"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "3072x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "4f3c5d44f011d998aa47d80f25d7cab17ac5ebc8f62eb7f1c2bf1a81b66fd3e1",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C004"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -366,7 +374,45 @@
         "01/assets/characters/history/c004e01.v002.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
+      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references.",
+      "status": "complete_qc_passed",
+      "sc001_qc_status": {
+        "status": "passed_user_approved",
+        "checked_at": "2026-06-08",
+        "checked_scope": "SC001 opening upstream asset readiness after user feedback on black-wall readability",
+        "rejection_reason": "Reject current output: face, age impression, beard/hair, and identity do not match global Xue Linqiang master C004; costume also collapses into wall-grey with poor scene contrast.",
+        "required_changes": [
+          "Must use assets/characters/c004m.png as hard identity reference, not text-only generation.",
+          "Preserve C004 face shape, black hair/topknot, short beard/stubble, age impression, body proportions, stance, and worn wall-master movement habits.",
+          "Episode state may add snow, cracked hands, wall grime, heavier scarf, and frozen wear, but must not turn him into a white-haired old man or different face.",
+          "Increase separation from black-stone wall: keep dark wall-worker base but add readable warm brown leather bindings, old iron rim highlights, bone/tan tool toggles, muted rust-red cord/patch accents, and frost edge highlights.",
+          "Silhouette must read against L007 black-stone wall at thumbnail size; avoid all-over mid-grey clothing."
+        ],
+        "qc_gate": [
+          "At thumbnail distance, the character or group must separate from L007 black stone wall and gray blizzard.",
+          "Readable separation must come from large value/color blocks and rim light, not only tiny costume details.",
+          "Identity/template inheritance must still match the global master/template reference.",
+          "Do not generate SC001 reference frames until this second-pass candidate is user-approved."
+        ],
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C004",
+        "run_dir": "01/art/runs/2026-06-07-sc001-character-rework",
+        "candidate_result": {
+          "generation_round": "v2_readability_pass_after_user_black_wall_feedback",
+          "output_path": "01/assets/characters/c004e01.png",
+          "dimensions": "3072x2048",
+          "sha256": "4f3c5d44f011d998aa47d80f25d7cab17ac5ebc8f62eb7f1c2bf1a81b66fd3e1",
+          "generated_from": "/Users/uroborus/.codex/generated_images/019ea21d-286d-7f02-aac9-529711071887/ig_05056f36a52c6aad016a2584abf6808198898cb57dd937d3cf.png",
+          "history_files": [
+            "01/assets/characters/history/c004e01.v003-rejected-low-identity-contrast-20260607.png",
+            "01/assets/characters/history/c004e01.v004-rejected-still-low-readability-20260607.png"
+          ],
+          "notes": [
+            "Second readability pass restores black-haired/topknot Xue Linqiang identity from C004 master.",
+            "Adds larger ash scarf, rust-red waist/sash, bone charm, warm leather, iron edge scratches, and snow rim to separate against black stone wall."
+          ]
+        },
+        "user_confirmation": "User confirmed all three second-pass character assets pass and requested generation of four SC001 reference frames."
+      }
     },
     {
       "asset_id": "E01_C005",
@@ -1407,8 +1453,8 @@
         "SC001-SH001",
         "SC001-SH002"
       ],
-      "approval_status": "rejected_current_output_identity_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "user_approved_for_sc001_reference_frames_2026-06-08",
+      "generation_status": "complete_user_approved_after_sc001_readability_rework_v2_2026-06-08",
       "design_summary": "序幕只需要黑牙斧兵、雪狼骑和破门猛犸局部剪影，不展开完整兽潮或全兵种大场面。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -1464,19 +1510,27 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "3640x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "8eee5b2c5a9c26057dbee9d19a61cb6a89f9263962382ebf27df4d579d07db40",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C020"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "3640x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "8eee5b2c5a9c26057dbee9d19a61cb6a89f9263962382ebf27df4d579d07db40",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C020"
       },
       "inheritance_contract": {
         "version": "episode-template-inheritance-lock-v2-2026-06-07",
@@ -1507,7 +1561,44 @@
         "01/assets/characters/history/c020e01.v001.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
+      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references.",
+      "status": "complete_qc_passed",
+      "sc001_qc_status": {
+        "status": "passed_user_approved",
+        "checked_at": "2026-06-08",
+        "checked_scope": "SC001 opening upstream asset readiness after user feedback on black-wall readability",
+        "rejection_reason": "Reject current output for SC001 use: northern siege figures are almost all grey and risk merging into L007 black-stone wall/blizzard background as unreadable silhouettes.",
+        "required_changes": [
+          "Use assets/characters/c020m.png as hard template reference for species, body scale, equipment, and siege roles.",
+          "Keep northern attackers as local pressure silhouettes, but separate forms with controlled contrast: snow-rim highlights, dark iron shapes, dull bone/horn edges, wet leather browns, muted blood-rust cloth tags, and cold blue shadow separation.",
+          "Maintain multiple readable categories: black-tooth axe fighters, wolf riders, and mammoth/giant horn pressure must not collapse into one grey mass.",
+          "Design for later placement near black wall and storm: each figure group must remain legible at thumbnail size against black stone, snow, and smoke."
+        ],
+        "qc_gate": [
+          "At thumbnail distance, the character or group must separate from L007 black stone wall and gray blizzard.",
+          "Readable separation must come from large value/color blocks and rim light, not only tiny costume details.",
+          "Identity/template inheritance must still match the global master/template reference.",
+          "Do not generate SC001 reference frames until this second-pass candidate is user-approved."
+        ],
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C020",
+        "run_dir": "01/art/runs/2026-06-07-sc001-character-rework",
+        "candidate_result": {
+          "generation_round": "v2_readability_pass_after_user_black_wall_feedback",
+          "output_path": "01/assets/characters/c020e01.png",
+          "dimensions": "3640x2048",
+          "sha256": "8eee5b2c5a9c26057dbee9d19a61cb6a89f9263962382ebf27df4d579d07db40",
+          "generated_from": "/Users/uroborus/.codex/generated_images/019ea21d-286d-7f02-aac9-529711071887/ig_05056f36a52c6aad016a2583045e7081989cf8a0e2e66d8650.png",
+          "history_files": [
+            "01/assets/characters/history/c020e01.v002-rejected-low-contrast-20260607.png",
+            "01/assets/characters/history/c020e01.v003-rejected-still-low-readability-20260607.png"
+          ],
+          "notes": [
+            "Second readability pass uses large dirty-ivory fur, pale shields, bone/antler masks, light wolf fur, rust cloth, and torch/snow back separation.",
+            "Scene preview panels are included to check that raiders do not collapse into black-wall silhouettes."
+          ]
+        },
+        "user_confirmation": "User confirmed all three second-pass character assets pass and requested generation of four SC001 reference frames."
+      }
     },
     {
       "asset_id": "E01_C024A",
@@ -1530,8 +1621,8 @@
       "usage": [
         "SC001-SH002"
       ],
-      "approval_status": "rejected_current_output_identity_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "user_approved_for_sc001_reference_frames_2026-06-08",
+      "generation_status": "complete_user_approved_after_sc001_readability_rework_v2_2026-06-08",
       "design_summary": "从全局边墙普通军户群像模板派生，只服务序幕年轻征发兵的身体代价状态；厚衬袄、旧甲片、冻血掌心、断矛和裂骨钟必须可读，不得成为新的具名角色母卡。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -1587,19 +1678,27 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "b5d078de77a55e3bffd14f09b9adfc35682122f6217c9d91e34339fae40e32b2",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C024A"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "current_output_user_approved_for_sc001",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed_user_approved",
+        "final_sha256": "b5d078de77a55e3bffd14f09b9adfc35682122f6217c9d91e34339fae40e32b2",
+        "checked_at": "2026-06-08",
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C024A"
       },
       "inheritance_contract": {
         "version": "episode-template-inheritance-lock-v2-2026-06-07",
@@ -1652,7 +1751,44 @@
         "01/assets/characters/history/c024ae01.v001.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
+      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references.",
+      "status": "complete_qc_passed",
+      "sc001_qc_status": {
+        "status": "passed_user_approved",
+        "checked_at": "2026-06-08",
+        "checked_scope": "SC001 opening upstream asset readiness after user feedback on black-wall readability",
+        "rejection_reason": "Reject current output for SC001 use: young wall-soldier costume is nearly all grey and will merge into black-stone wall/snow scene; needs controlled costume contrast while preserving border-soldier template.",
+        "required_changes": [
+          "Use assets/characters/c024m.png as hard template reference and keep C024 border household soldier class, body type range, old armor logic, and wall-worker material system.",
+          "Preserve young conscript state, broken spear, frozen blood palm, old armor plates, snow leggings, and fatigue.",
+          "Increase scene contrast without breaking realism: add muted rust-red cord or repair patch, tan rope lashings, brown leather belt/straps, off-white frost edge, dark iron plate outlines, and small bone/wood token detail.",
+          "The figure must be readable against L007 black-stone wall in SC001-SH002 and not become a flat grey wall-shaped mass."
+        ],
+        "qc_gate": [
+          "At thumbnail distance, the character or group must separate from L007 black stone wall and gray blizzard.",
+          "Readable separation must come from large value/color blocks and rim light, not only tiny costume details.",
+          "Identity/template inheritance must still match the global master/template reference.",
+          "Do not generate SC001 reference frames until this second-pass candidate is user-approved."
+        ],
+        "task_id": "SC001_E01_CHARACTER_REWORK:E01_C024A",
+        "run_dir": "01/art/runs/2026-06-07-sc001-character-rework",
+        "candidate_result": {
+          "generation_round": "v2_readability_pass_after_user_black_wall_feedback",
+          "output_path": "01/assets/characters/c024ae01.png",
+          "dimensions": "2048x2048",
+          "sha256": "b5d078de77a55e3bffd14f09b9adfc35682122f6217c9d91e34339fae40e32b2",
+          "generated_from": "/Users/uroborus/.codex/generated_images/019ea21d-286d-7f02-aac9-529711071887/ig_05056f36a52c6aad016a2583f2652c81988b54c0fcba8f2b36.png",
+          "history_files": [
+            "01/assets/characters/history/c024ae01.v002-rejected-low-contrast-20260607.png",
+            "01/assets/characters/history/c024ae01.v003-rejected-still-low-readability-20260607.png"
+          ],
+          "notes": [
+            "Second readability pass adds large ash scarf, tan rope belt, brown pouch/strap, rust-red armband/back patch, warm face/hands, and snow rim.",
+            "Black-wall preview panels are included to validate the young soldier remains visible at thumbnail distance."
+          ]
+        },
+        "user_confirmation": "User confirmed all three second-pass character assets pass and requested generation of four SC001 reference frames."
+      }
     },
     {
       "asset_id": "E01_C027",
@@ -1973,8 +2109,8 @@
         "SC001-SH002",
         "SC001-SH003"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "sc001_visual_qc_passed_2026-06-07",
+      "generation_status": "canonical_png_present_sc001_qc_passed_2026-06-07",
       "design_summary": "黑石外墙、骨钟、门闩、枪线、拒马和暴雪构成局部攻城序幕；只做墙面近景和剪影，不做完整战场。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2011,11 +2147,7 @@
         "composition_layers": {
           "foreground": "从全剧 L007 锁喉关母卡派生的近景层：黑石外墙门侧、门闩、拒马前缘、雪泥地面和少量人形尺度剪影，保持墙体材质、比例和入口方向不漂移。",
           "midground": "从全剧 L007 母卡派生的中景层：骨钟、枪线、局部破门压力、封锁动线和墙脚行动区，仅读局部攻城序幕，不扩展成完整战场。",
-          "background": "从全剧 L007 母卡继承的背景层：暴雪冷白、火罐残红、黑石墙顶局部军户和攻城剪影，禁止新增现代构件或改变边墙地理关系。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "background": "从全剧 L007 母卡继承的背景层：暴雪冷白、火罐残红、黑石墙顶局部军户和攻城剪影，禁止新增现代构件或改变边墙地理关系。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2037,17 +2169,23 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_sc001_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "qc_status": "passed",
+        "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+        "checked_at": "2026-06-07"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_sc001_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none",
+        "qc_status": "passed",
+        "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+        "checked_at": "2026-06-07"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2064,7 +2202,33 @@
         "01/assets/locations/history/l007e01.v003.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden.",
+      "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "reviewer": "parent_art_room_coordinator",
+        "status": "passed_parent_qc_2026-06-07",
+        "thread_id": "019ea1ad-4aa9-7a61-9925-ded7e87c92d6",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after replacing stray CHEVAUX label with CART SCALE",
+          "inherits L007 black-stone gate/snow-wall master geography"
+        ]
+      },
+      "status": "complete_qc_passed",
+      "sc001_qc_status": {
+        "status": "passed",
+        "checked_at": "2026-06-07",
+        "checked_scope": "SC001 opening upstream asset readiness",
+        "output_path": "01/assets/locations/l007e01.png",
+        "existing_file_dimensions": "3840x2160",
+        "final_sha256": "6757b94d3cdecacbdae8010d10361916a9ea0f3e2fca958dc5d27573840bafbd",
+        "qc_notes": [
+          "3840x2160 PNG RGB/no-alpha.",
+          "Visual QC passed for SC001: black-stone outer wall, bone bell, gate bar, spear line, barricade/blockade line, entrance/exit zones, blizzard, and camera-facing action zone are readable.",
+          "Usable as location episode scene card with zone diagram; labels are acceptable for a scene card and must not be treated as final video text."
+        ]
+      }
     },
     {
       "asset_id": "E01_L003",
@@ -2087,8 +2251,8 @@
         "SC002-SH001",
         "SC002-SH004"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "parent_qc_passed_2026-06-07",
+      "generation_status": "complete_qc_passed_2026-06-07",
       "design_summary": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2124,11 +2288,7 @@
         "composition_layers": {
           "foreground": "从全剧 L003 金河粮仓母卡派生的近景层：泥路门槛、空粮缸、祖牌小盒、儿童手印或粮牌尺度物，保持金河粮仓带的湿木、河泥和粮税检查材质。",
           "midground": "从全剧 L003 母卡派生的中景层：粮税检查处、白册夹板、骨算盘、粮袋拖行动线和家庭门槛，必须读出征粮流程而非现代仓库。",
-          "background": "从全剧 L003 母卡继承的背景层：粮袋墙、冷雾、湿木码头/粮仓结构和押车离开的侧向路径，保持麦金冷雾与虫蜡白对比。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "background": "从全剧 L003 母卡继承的背景层：粮袋墙、冷雾、湿木码头/粮仓结构和押车离开的侧向路径，保持麦金冷雾与虫蜡白对比。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2150,17 +2310,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2177,7 +2337,19 @@
         "01/assets/locations/history/l003e01.v003.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden.",
+      "final_sha256": "65711036b0dce3d40bab5d765e9b45ab7bf13ea961d4cddf73a9abb7596d5750",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "reviewer": "parent_art_room_coordinator",
+        "status": "passed_parent_qc_2026-06-07",
+        "thread_id": "019ea1b9-9761-7742-9b6f-7c787074479b",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent promoted reviewed v003 to canonical after child thread stalled",
+          "inherits L003 Jinhe granary/wet-wood dock/grain-sack checkpoint master geography"
+        ]
+      }
     },
     {
       "asset_id": "E01_L014",
@@ -2185,14 +2357,14 @@
       "asset_type": "location",
       "asset_subtype": "location_episode_scene_card",
       "file": "l014e01.png",
-      "display_name": "南方红线密室第01集场景卡",
+      "display_name": "南林南缘红线伏笔第01集场景卡",
       "output_path": "01/assets/locations/l014e01.png",
       "source_refs": [
         "bible/scenes.md#南部丛林与南缘遗民",
         "01/script/final-script.md#SC03"
       ],
       "continuity_refs": [
-        "LOC_SOUTHERN_REDLINE_ROOM",
+        "LOC_SOUTHERN_REDLINE_EDGE",
         "PROP_BLOOD_GENEALOGY",
         "PROP_MOON_WHITE_JADE"
       ],
@@ -2200,9 +2372,9 @@
         "SC003-SH001",
         "SC003-SH004"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
-      "design_summary": "油布雨夜、旧驿残图桌、红线和防潮卷轴筒构成南方旧礼法压力；不展开南林政治。",
+      "approval_status": "parent_qc_passed_2026-06-07",
+      "generation_status": "complete_qc_passed_2026-06-07",
+      "design_summary": "雨夜南部丛林边缘、藤桥、湿石祭台、红线木牌、防潮卷轴筒和临时油布图桌构成晏南枝来处的旧礼法压力；不展开南林政治。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
       "creation_order": 21,
@@ -2232,16 +2404,12 @@
           "camera-facing action zones",
           "hero prop placement map",
           "lighting/weather/time reference",
-          "scale reference with human figures or doors"
+          "scale reference with human figures, thresholds, bridge, table, or red-line marker"
         ],
         "composition_layers": {
-          "foreground": "从全剧 L014 南方红线空间母卡派生的近景层：旧驿残图桌、朱赤红线、月白玉片、防潮卷轴筒和雨水纸面边缘，保持红线由南向北的方向。",
-          "midground": "从全剧 L014 母卡派生的中景层：灯侧与阴影侧的双人位置、桌边行动区、红线钉点和旧礼法压力，只表现密室局部，不展开南林政治。",
-          "background": "从全剧 L014 母卡继承的背景层：油布雨夜、潮湿墙面、南部丛林雨幕暗示和湿暖油灯反光，禁止改成华丽宫殿或独立大场面。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "foreground": "从全剧 L014 南部丛林红线母卡派生的近景层：湿石台/前景石面上的临时油布图桌、旧驿残图、朱赤红线、月白玉片、防潮卷轴筒和雨水纸面边缘，保持湿石、藤蔓和红线材质。",
+          "midground": "从全剧 L014 母卡派生的中景层：红线木牌、旧歌火圈、藤桥入口/桥下通道、双人灯侧/阴影侧站位和桌边行动区，只表现南缘旧礼法伏笔。",
+          "background": "从全剧 L014 母卡继承的背景层：雨林山谷、藤桥、月苔林、水汽、瀑布/湿热雨幕和红线木牌方向，禁止改成封闭内景或独立大场面。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2251,7 +2419,8 @@
           "no modern architecture, wrong geography, or empty atmospheric-only scene",
           "foreground, midground, and background are explicitly separated",
           "foreground and midground are visibly derived from the referenced series master scene card",
-          "no spatial/geographic drift from the master scene card"
+          "no spatial/geographic drift from the master scene card",
+          "no sealed interior room drift from L014 rainforest master"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -2263,17 +2432,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2290,7 +2459,19 @@
         "01/assets/locations/history/l014e01.v003.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden.",
+      "final_sha256": "57281bfff4e993b8865d28807d3bdfe07ab01834d9c59d01ad445f178293c95a",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "reviewer": "parent_art_room_coordinator",
+        "status": "passed_parent_qc_2026-06-07",
+        "thread_id": "019ea1ca-f4ab-76a0-8f4e-297582c11f2f",
+        "qc_notes": [
+          "3840x2160 PNG RGB no alpha",
+          "prompt repaired from sealed interior room to L014 rainforest red-line master inheritance",
+          "deterministic derived card preserves rope bridge, red-line marker, wet stone platform, fire ring, scroll tubes, and rainforest valley"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001A",
@@ -2316,8 +2497,8 @@
         "SC004-SH002",
         "SC004-SH009"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "approved_parent_qc_2026-06-07",
+      "generation_status": "completed_parent_qc_passed_2026-06-07",
       "design_summary": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2354,11 +2535,7 @@
         "composition_layers": {
           "foreground": "从全剧 L001 残阳坳母卡派生的近景层：村民低位队列、土褐泥地、白册检查桌前缘和生活工具尺度，保持旧驿村落生活秩序。",
           "midground": "从全剧 L001 母卡派生的中景层：检查桌、旧井、药屋外圈和三支白蜡旗标出的后山出口，三点关系必须同场可读。",
-          "background": "从全剧 L001 母卡继承的背景层：村口入口、低矮房屋、后山坡与封锁线，禁止改变旧井、药屋、检查桌、后山出口相对位置。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "background": "从全剧 L001 母卡继承的背景层：村口入口、低矮房屋、后山坡与封锁线，禁止改变旧井、药屋、检查桌、后山出口相对位置。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2380,17 +2557,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2402,12 +2579,24 @@
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
       },
-      "qc_status": "blocked_after_location_drift_rejection_2026-06-07",
+      "qc_status": "parent_qc_passed_2026-06-07",
       "history_files": [
-        "01/assets/locations/history/l001ae01.v001.png"
+        "01/assets/locations/history/l001ae01.v001.png",
+        "01/assets/locations/history/l001ae01.v002.png"
       ],
-      "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "current_canonical_file_status": "present_parent_qc_passed_2026-06-07",
+      "blocked_reason": null,
+      "final_sha256": "7fe58b7c1b91116948e7e90192f15f4ec01f4f13188b74b33fa48debd7292d45",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "status": "passed",
+        "notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed; regenerated as L001 village-gate blockade geography card from the L001 master",
+          "preserves check table, old well, medicine house, back-mountain exit, white wax flags, blockade lines, and queue geography",
+          "no visible readable text after review"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001B",
@@ -2432,8 +2621,8 @@
         "SC005-SH004",
         "SC005-SH005"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "approved_parent_qc_2026-06-07",
+      "generation_status": "completed_parent_qc_passed_2026-06-07",
       "design_summary": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2471,11 +2660,7 @@
         "composition_layers": {
           "foreground": "从全剧 L001/药屋母卡派生的近景层：药桌、草药篮、药柜暗格低位、旧驿暗号底板边缘和门缝冷白光，保持药屋真实尺度。",
           "midground": "从全剧药屋空间派生的中景层：罗青禾活动线位于药柜与门之间，药柜、暗格、门框和遮掩动线必须清楚。",
-          "background": "从全剧 L001 母卡继承的背景层：门外封门奴兵爪足、药屋外圈和村口封锁冷白压力，禁止把药屋画成奇观机关房。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "background": "从全剧 L001 母卡继承的背景层：门外封门奴兵爪足、药屋外圈和村口封锁冷白压力，禁止把药屋画成奇观机关房。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2497,17 +2682,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2519,12 +2704,23 @@
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
       },
-      "qc_status": "blocked_after_location_drift_rejection_2026-06-07",
+      "qc_status": "parent_qc_passed_2026-06-07",
       "history_files": [
         "01/assets/locations/history/l001be01.v001.png"
       ],
-      "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "current_canonical_file_status": "present_parent_qc_passed_2026-06-07",
+      "blocked_reason": null,
+      "final_sha256": "2a09ae60e14aa0c7592ce5f1ceaea4daea813d4f66f0b0da5620527acad5833a",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "status": "passed",
+        "notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after masking text-like cloth, paper, and detail-panel marks",
+          "inherits L001 medicine-house subspace and keeps the medicine cabinet, hidden compartment, door, and exterior blockade pressure readable",
+          "does not drift into an isolated spectacle mechanism room"
+        ]
+      }
     },
     {
       "asset_id": "E01_L001C",
@@ -2551,8 +2747,8 @@
         "SC006-SH003",
         "SC006-SH008"
       ],
-      "approval_status": "rejected_current_output_location_inheritance_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "approved_parent_qc_2026-06-07",
+      "generation_status": "completed_parent_qc_passed_2026-06-07",
       "design_summary": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2589,11 +2785,7 @@
         "composition_layers": {
           "foreground": "从全剧 L001 旧井检查桌母卡派生的近景层：旧井口、检查桌边缘、白册/虫蜡针尺度物和被压低的人群，旧井必须成为案件中心。",
           "midground": "从全剧 L001 母卡派生的中景层：检查桌审讯轴线、药屋封门牌、沈维桑视线横跨两点的行动区，保留井口与检查桌关系。",
-          "background": "从全剧 L001 母卡继承的背景层：药屋门框、村口入口、封锁队列和午后硬光，禁止漂移旧井、药屋、检查桌相对方位。",
-          "card_background": "location card layout, not a final generated shot",
-          "spatial_layout": "readable geography, entrances, exits, thresholds, camera-facing zones, and action lanes",
-          "material_lighting": "dominant materials, color system, weather/time, and light logic separated into callouts",
-          "scale_reference": "human figures, doors, tables, wells, walls, carts, or props placed to lock scale"
+          "background": "从全剧 L001 母卡继承的背景层：药屋门框、村口入口、封锁队列和午后硬光，禁止漂移旧井、药屋、检查桌相对方位。"
         },
         "qc_checks": [
           "not treated as a final video frame",
@@ -2615,17 +2807,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "present_valid_png_3840x2160_rgb_no_alpha",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2637,12 +2829,23 @@
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
       },
-      "qc_status": "blocked_after_location_drift_rejection_2026-06-07",
+      "qc_status": "parent_qc_passed_2026-06-07",
       "history_files": [
         "01/assets/locations/history/l001ce01.v001.png"
       ],
-      "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden."
+      "current_canonical_file_status": "present_parent_qc_passed_2026-06-07",
+      "blocked_reason": null,
+      "final_sha256": "31760dfdb7a6f8a7463d77d4de712a14d7ff935c7b6bd26b5d88f3dd28d78d80",
+      "parent_qc_review": {
+        "reviewed_at": "2026-06-07",
+        "status": "passed",
+        "notes": [
+          "3840x2160 PNG RGB no alpha",
+          "parent QC passed after masking text-like medicine-house cloth, window/paper, and check-table register marks",
+          "inherits L001 old-well/check-table/medicine-house/village-entry geography",
+          "old well remains the case center and foreground, midground, and background zones are readable"
+        ]
+      }
     },
     {
       "asset_id": "E01_P021",
@@ -2664,8 +2867,8 @@
         "SC001-SH001",
         "SC001-SH002"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "path_repaired_qc_passed_pending_manifest_finalize_2026-06-07",
+      "approval_status": "sc001_visual_qc_passed_2026-06-07",
+      "generation_status": "canonical_png_present_sc001_qc_passed_2026-06-07",
       "design_summary": "骨钟裂缝、旧日月刻痕、断矛和冻血负责把边墙战争压到局部道具上。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2718,19 +2921,39 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "canonical_image_present_sc001_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "533e506ce5202957936c7e25ee565e34d081de175ad4806e951b00469d579c6e",
+        "checked_at": "2026-06-07"
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
-        "landscape_regeneration_required": false
+        "existing_file_status": "canonical_image_present_sc001_qc_passed",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none",
+        "landscape_regeneration_required": false,
+        "qc_status": "passed",
+        "final_sha256": "533e506ce5202957936c7e25ee565e34d081de175ad4806e951b00469d579c6e",
+        "checked_at": "2026-06-07"
+      },
+      "status": "complete_qc_passed",
+      "sc001_qc_status": {
+        "status": "passed",
+        "checked_at": "2026-06-07",
+        "checked_scope": "SC001 opening upstream asset readiness",
+        "output_path": "01/assets/props/p021e01.png",
+        "existing_file_dimensions": "2048x2048",
+        "final_sha256": "533e506ce5202957936c7e25ee565e34d081de175ad4806e951b00469d579c6e",
+        "qc_notes": [
+          "2048x2048 PNG RGB/no-alpha.",
+          "Visual QC passed for SC001-SH001/SC001-SH002: cracked bone bell, shallow old sun-moon mark area, broken spear, frozen blood/ice, material detail, and hand scale are readable.",
+          "Usable as prop state card; exact symbol readability must still be controlled by shallow marks, line control, mask, or post-composite in reference frames."
+        ]
       }
     },
     {
@@ -4530,15 +4753,19 @@
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
-        "RULE_SIEGE_LOCAL_CAUSALITY"
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "usage": [
         "SC001-SH001",
         "FLF2V",
         "首帧"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "ready_for_dispatch",
+      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
       "design_summary": "SC001-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -4590,17 +4817,59 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+      },
+      "status": "generated_candidate_pending_user_qc",
+      "sc001_task_status": {
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
+        "status": "generated_candidate_pending_user_qc",
+        "updated_at": "2026-06-08",
+        "output_path": "01/assets/reference-frames/r001e01.png",
+        "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
+        "depends_on_assets": [
+          "E01_F001",
+          "E01_F005",
+          "E01_C020",
+          "E01_L007",
+          "E01_P021",
+          "C020",
+          "C021"
+        ],
+        "blocked_by_assets": [],
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+      },
+      "sc001_qc_status": {
+        "status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "checked_at": "2026-06-08",
+        "image_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
+        "qc_gate": [
+          "16:9 PNG, 3840x2160, no alpha.",
+          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
+          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
+          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
+          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
+          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+        ]
       }
     },
     {
@@ -4618,15 +4887,19 @@
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
-        "RULE_SIEGE_LOCAL_CAUSALITY"
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "usage": [
         "SC001-SH001",
         "FLF2V",
         "终帧"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "ready_for_dispatch",
+      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
       "design_summary": "SC001-SH001 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -4678,17 +4951,59 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+      },
+      "status": "generated_candidate_pending_user_qc",
+      "sc001_task_status": {
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
+        "status": "generated_candidate_pending_user_qc",
+        "updated_at": "2026-06-08",
+        "output_path": "01/assets/reference-frames/r002e01.png",
+        "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
+        "depends_on_assets": [
+          "E01_F001",
+          "E01_F005",
+          "E01_C020",
+          "E01_L007",
+          "E01_P021",
+          "C020",
+          "C021"
+        ],
+        "blocked_by_assets": [],
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+      },
+      "sc001_qc_status": {
+        "status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "checked_at": "2026-06-08",
+        "image_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
+        "qc_gate": [
+          "16:9 PNG, 3840x2160, no alpha.",
+          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
+          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
+          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
+          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
+          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+        ]
       }
     },
     {
@@ -4705,15 +5020,19 @@
       ],
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
-        "PROP_BONE_BELL"
+        "PROP_BONE_BELL",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "usage": [
         "SC001-SH002",
         "I2V",
         "首帧"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "ready_for_dispatch",
+      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
       "design_summary": "SC001-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "high",
@@ -4766,17 +5085,60 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+      },
+      "status": "generated_candidate_pending_user_qc",
+      "sc001_task_status": {
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
+        "status": "generated_candidate_pending_user_qc",
+        "updated_at": "2026-06-08",
+        "output_path": "01/assets/reference-frames/r003e01.png",
+        "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
+        "depends_on_assets": [
+          "E01_F001",
+          "E01_F005",
+          "E01_C020",
+          "E01_C024A",
+          "E01_L007",
+          "E01_P021",
+          "C020",
+          "C021"
+        ],
+        "blocked_by_assets": [],
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+      },
+      "sc001_qc_status": {
+        "status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "checked_at": "2026-06-08",
+        "image_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "qc_gate": [
+          "16:9 PNG, 3840x2160, no alpha.",
+          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
+          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
+          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
+          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
+          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+        ]
       }
     },
     {
@@ -4793,15 +5155,19 @@
       ],
       "continuity_refs": [
         "CHAR_XUE_LINQIANG",
-        "LOC_SUOHOU_GATE_OUTER_WALL"
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "usage": [
         "SC001-SH003",
         "I2V",
         "首帧"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "ready_for_dispatch",
+      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
       "design_summary": "SC001-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -4852,17 +5218,59 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "action_required": "none_current_reference_candidate_ready_for_user_qc",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
+        "checked_at": "2026-06-08",
+        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+      },
+      "status": "generated_candidate_pending_user_qc",
+      "sc001_task_status": {
+        "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
+        "status": "generated_candidate_pending_user_qc",
+        "updated_at": "2026-06-08",
+        "output_path": "01/assets/reference-frames/r004e01.png",
+        "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
+        "depends_on_assets": [
+          "E01_F001",
+          "E01_F005",
+          "E01_C004",
+          "E01_L007",
+          "C020",
+          "C021",
+          "E01_C020"
+        ],
+        "blocked_by_assets": [],
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+      },
+      "sc001_qc_status": {
+        "status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "checked_at": "2026-06-08",
+        "image_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "qc_gate": [
+          "16:9 PNG, 3840x2160, no alpha.",
+          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
+          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
+          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
+          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
+          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+        ]
       }
     },
     {
@@ -8436,5 +8844,37 @@
     "Required art-room planning fields were added to every asset.",
     "Creation order follows style references, episode state cards, precision assets, reference frames, then shot overrides.",
     "Dependencies keep series master asset IDs when parent_asset_id exists and derive shot-frame dependencies from usage overlap."
-  ]
+  ],
+  "status": "updated_2026-06-07",
+  "updated_at": "2026-06-08",
+  "sc001_opening_readiness": {
+    "status": "reference_frames_generated_candidate_pending_user_qc",
+    "checked_at": "2026-06-08",
+    "confirmed_assets": [
+      "E01_F001",
+      "E01_F005",
+      "E01_L007",
+      "E01_P021",
+      "E01_C004",
+      "E01_C020",
+      "E01_C024A"
+    ],
+    "rework_required_assets": [],
+    "blocked_reference_frames": [],
+    "character_rework_run_dir": "01/art/runs/2026-06-07-sc001-character-rework",
+    "next_step": "Generate E01_R001-E01_R004 and QC them for 16:9 resolution, no alpha, continuity, and black-wall thumbnail readability.",
+    "candidate_assets_pending_user_qc": [],
+    "approved_character_assets": [
+      "E01_C004",
+      "E01_C020",
+      "E01_C024A"
+    ],
+    "reference_frames_ready_for_generation": [
+      "E01_R001",
+      "E01_R002",
+      "E01_R003",
+      "E01_R004"
+    ],
+    "updated_at": "2026-06-08"
+  }
 }

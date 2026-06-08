@@ -28,32 +28,32 @@ English: SC001 uses blackstone, snow white, ice blue, old iron and dark red; SC0
 
 ## 3. 画面内容 / Shot Panels
 
-### SC001-SH001 / Bone bell impact
+### SC001-SH001 / Diagonal siege lift to wall-top bone bell
 
-- 景别 / Shot Size: 中文：冲击特写接横屏墙体揭示。 English: impact detail into vertical wall reveal.
-- 构图 / Composition: 中文：骨钟占前景上部，黑石墙垂直压下，巨角和拒马只读剪影。 English: bone bell dominates the upper foreground; blackstone wall presses vertically, with horn and barricade only as silhouettes.
-- 运镜手法 / Camera Movement: 中文：撞击瞬间短抖，随后半秒锁住。 English: brief impact shake, then a half-second hold.
-- 画面内容 / Visual Content: 中文：暴雪斜砸黑石墙，巨角撞响骨钟，钟身横摆。 English: blizzard slashes the black wall as the iron-capped horn rings the bone bell.
-- 光线与色彩 / Lighting and Color: 中文：冷白雪光、黑石反光、暗红火星边缘。 English: cold snow light, blackstone reflection and a dark red ember edge.
-- 连续性锚点 / Continuity Anchors: 中文：`LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`。 English: `LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`.
+- 景别 / Shot Size: 中文：斜侧攻城远景落到城头中景偏近。 English: diagonal siege wide shot landing in a wall-top medium-near endpoint.
+- 构图 / Composition: 中文：首帧是攻城方斜后侧低机位，兽潮从左前向右后斜推同一面黑石墙，城门不居中；尾帧是同一墙头中景偏近，一半读黑石女墙、守军、同一钟架和同一口骨钟，一半俯看城外朝墙压来的兽族与伴生兽。全镜头只允许一面墙、一个钟架、一只钟。 English: the first frame is a low diagonal rear-side siege angle, with the beast tide pushing from front-left toward the same black wall and the gate off-center; the last frame lands on that same wall-top in a medium-near split composition: one half reads blackstone parapet, defenders, the same bell frame and same bell, while the other half looks down at beast troops and companion beasts pressing toward the wall. The whole shot allows only one wall, one bell frame and one bell.
+- 运镜手法 / Camera Movement: 中文：镜头顺旗杆、烟柱、巨角和同一面黑墙外立面斜爬上墙头，再约 45 度转向人族墙头；不穿墙、不做 180 度调头、不生成远处第二道墙或第二个钟架。 English: the camera climbs diagonally along flags, smoke columns, horn shapes and the same exterior black wall, then turns about 45 degrees onto the human wall-top; it does not pass through the wall, make a 180-degree turn, or create a distant second wall or second bell frame.
+- 画面内容 / Visual Content: 中文：暴雪斜砸黑石墙，斜侧兽潮、拒马、火线和烟柱形成纵深，落到墙头时骨钟横摆、木架抖雪，守军短促稳住枪线。 English: blizzard slashes the black wall, diagonal siege ranks, barricades, firelines and smoke columns create depth, and on the wall-top landing the bone bell swings, the wooden frame sheds snow, and defenders briefly steady the spear line.
+- 光线与色彩 / Lighting and Color: 中文：云层裂隙冷天光压住黑墙大暗面，远处火线和火盆在雪雾里形成低位暖反打，骨钟和旧铁有冷暖分离的边缘光。 English: cold sky light through broken storm clouds presses massive black wall shadows, distant firelines and braziers create low warm counterlight through snow haze, and the bone bell and old iron carry separated cold-warm rim light.
+- 连续性锚点 / Continuity Anchors: 中文：`LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`, `ONE_WALL_ONE_BELL_FRAME`, `C020`, `C021`, `E01_C020`。 English: `LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`, `ONE_WALL_ONE_BELL_FRAME`, `C020`, `C021`, `E01_C020`.
 
 ### SC001-SH002 / Frozen blood on old mark
 
 - 景别 / Shot Size: 中文：年轻军户中近景加钟裂插入。 English: tight medium of the young wall soldier with bell-crack insert.
-- 构图 / Composition: 中文：断矛斜落下方，军户手掌贴在骨钟裂缝，旧日月刻痕在上方露出。 English: broken spear lies below; the soldier palm sticks to the bell crack while old sun-moon marks emerge above.
+- 构图 / Composition: 中文：断矛斜落下方，军户手掌贴在同一口骨钟裂缝，手、裂缝和雪泥遮住旧徽区域，只剩不可读淡金断屑。钟架方向与 R002 一致。 English: broken spear lies below; the soldier palm sticks to the crack of the same bone bell, while hand, cracks and snow mud cover the old-mark area, leaving only unreadable dull-gold flecks. The bell-frame direction matches R002.
 - 运镜手法 / Camera Movement: 中文：随跪倒快速下落，再拉焦到裂缝。 English: quick drop with the kneel, then rack focus to the crack.
-- 画面内容 / Visual Content: 中文：军户掌心冻血黏住骨钟，墙外战影仍在压近。 English: frozen blood sticks his palm to the bell while battle silhouettes press closer outside.
-- 光线与色彩 / Lighting and Color: 中文：冰青雪光，冻血暗红，不让旧纹发光。 English: ice-blue snow light, dark frozen blood, no glowing old mark.
-- 连续性锚点 / Continuity Anchors: 中文：`PROP_BONE_BELL`, `RULE_SIEGE_LOCAL_CAUSALITY`。 English: `PROP_BONE_BELL`, `RULE_SIEGE_LOCAL_CAUSALITY`.
+- 画面内容 / Visual Content: 中文：军户扶住同一口被震响的骨钟，墙外朝墙攻来的 C020/C021 兽族与伴生兽仍在斜下方压近；不出现第二道城墙。 English: the soldier braces the same impact-rung bone bell while C020/C021 beast troops and companion beasts press toward the wall below on a diagonal; no second wall appears.
+- 光线与色彩 / Lighting and Color: 中文：冰青雪光落进钟裂，远处火线只勾出冻血和手指边缘，不让旧纹发光。 English: ice-blue snow light sinks into the bell crack, distant fireline only edges the frozen blood and fingers, with no glowing old mark.
+- 连续性锚点 / Continuity Anchors: 中文：`PROP_BONE_BELL`, `RULE_SIEGE_LOCAL_CAUSALITY`, `ONE_WALL_ONE_BELL_FRAME`。 English: `PROP_BONE_BELL`, `RULE_SIEGE_LOCAL_CAUSALITY`, `ONE_WALL_ONE_BELL_FRAME`.
 
 ### SC001-SH003 / Xue Linqiang order
 
 - 景别 / Shot Size: 中文：薛临墙手部和侧脸中近景。 English: medium close-up of Xue Linqiang hand and side profile.
-- 构图 / Composition: 中文：冻裂手压墙缝，远处门闩和枪线虚焦，脸只占画面侧边。 English: cracked hand presses the wall seam; gate bar and spear line blur behind, face on the edge.
+- 构图 / Composition: 中文：薛临墙压住同一面黑石女墙，身后/侧后仍能读到同一钟架和同一口破钟，年轻军户低位扶钟；女墙线斜向退进，墙外兽族仍朝墙攻来。 English: Xue Linqiang presses the same blackstone parapet; behind or beside him the same bell frame and broken bell remain readable, with the young soldier low near the bell. The parapet recedes diagonally and exterior beast troops still press toward the wall.
 - 运镜手法 / Camera Movement: 中文：小幅推进到手和嘴。 English: small push to hand and mouth.
-- 画面内容 / Visual Content: 中文：他不喊冲锋，只看门和枪线，低声命令。 English: he does not shout charge; he watches door and spear line, giving a low order.
-- 光线与色彩 / Lighting and Color: 中文：冷白雪光，手背冻裂处有暗血。 English: cold snow light with dark blood in hand cracks.
-- 连续性锚点 / Continuity Anchors: 中文：`CHAR_XUE_LINQIANG`, `LOC_SUOHOU_GATE_OUTER_WALL`。 English: `CHAR_XUE_LINQIANG`, `LOC_SUOHOU_GATE_OUTER_WALL`.
+- 画面内容 / Visual Content: 中文：他不喊冲锋，只看门和枪线，声音压低、急促但不慌地提醒“敌人上来了”。 English: he does not shout charge; he watches door and spear line, warning in a low, urgent but controlled voice that the enemy is coming up.
+- 光线与色彩 / Lighting and Color: 中文：黑墙大暗面压住薛临墙，雪雾冷光和远处火线暖边缘把手、侧脸和旧甲片切出来。 English: massive black wall shadow presses over Xue Linqiang, while cold snow-haze light and warm distant fireline edges cut out his hand, side profile and old armor plates.
+- 连续性锚点 / Continuity Anchors: 中文：`CHAR_XUE_LINQIANG`, `LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`, `ONE_WALL_ONE_BELL_FRAME`。 English: `CHAR_XUE_LINQIANG`, `LOC_SUOHOU_GATE_OUTER_WALL`, `PROP_BONE_BELL`, `ONE_WALL_ONE_BELL_FRAME`.
 
 ### SC002-SH001 / Grain wall procedure
 

@@ -9,32 +9,77 @@
     {
       "shot_id": "SC001-SH001",
       "generation_method": "FLF2V",
-      "prompt_zh": "锁喉关外墙暴雪夜，黑石墙垂直压迫画面，骨钟在前景被破门猛犸铁包巨角震响，拒马和巨兽只读剪影，冷白雪光、旧铁和暗红火星，超写实低魔东方史诗，动作有真实撞击反作用。",
-      "prompt_en": "Blizzard at Suohou Gate outer wall, a vertical blackstone wall pressing the frame, foreground bone bell struck by an iron-capped mammoth horn, barricade and beast only as silhouettes, cold snow light, old iron and dark ember red, hyper-real grounded Eastern epic, real impact reaction.",
-      "negative_prompt_notes_zh": "不要完整兽潮、不要巨龙化猛犸、不要夸张魔法光、不要慢动作漂浮。",
-      "negative_prompt_notes_en": "No full beast tide, no dragon-like mammoth, no exaggerated magic glow, no floaty slow motion.",
-      "continuity_refs": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL"],
-      "required_assets": ["LOC_SUOHOU_GATE_OUTER_WALL", "PROP_BONE_BELL", "REF_siege_impact_snow"]
+      "prompt_zh": "锁喉关外墙暴雪夜，镜头从攻城方斜后侧低机位建立兽潮压城，C020/C021/E01_C020 兽族与伴生兽从左前向右后斜推同一面黑石城墙；远处墙头小钟只是锚点。镜头顺同一墙面斜爬上墙头，再45度转向人族女墙空间，尾帧半幅是同一钟架、骨钟、黑石女墙和守军，半幅俯看城外兽族仍朝墙攻来。全程只有一面城墙、一个钟架、一口钟。",
+      "prompt_en": "Blizzard at Suohou Gate outer wall. The camera begins from the attacking side, low and oblique behind the siege column, with C020/C021/E01_C020 beast troops and companion beasts pushing diagonally from front-left toward the same black-stone wall; the small wall-top bell is only an anchor. The camera climbs diagonally along the same wall and turns 45 degrees onto the human parapet. The last frame is split between the same bell frame, broken bell, blackstone parapet and defenders, and the exterior attackers below still facing the wall. One wall, one bell frame, one bell throughout.",
+      "negative_prompt_notes_zh": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、完整圆形徽章。",
+      "negative_prompt_notes_en": "No second wall, distant wall, second bell frame, second bell, changed bell-frame direction, humans outside the wall, beast troops posing toward camera, centered frontal gate, pure bell close-up, complete circular emblem.",
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "required_assets": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "C020",
+        "C021",
+        "E01_C020",
+        "E01_R001",
+        "E01_R002"
+      ]
     },
     {
       "shot_id": "SC001-SH002",
       "generation_method": "I2V",
-      "prompt_zh": "年轻灰墙军户跪在雪泥中，断矛滑落，冻裂掌心贴住裂开的骨钟，铜锈下露出旧日月刻痕，墙外战影模糊压近，冰青雪光与暗红冻血形成真实触感。",
-      "prompt_en": "A young grey-wall soldier kneels in snow mud, broken spear sliding down, cracked palm stuck to the split bone bell, old sun-moon marks visible under verdigris, blurred battle shadows pressing outside the wall, ice-blue snow light and dark frozen blood with tactile realism.",
+      "prompt_zh": "年轻灰墙军户跪在雪泥中，断矛滑落，冻裂掌心贴住裂开的骨钟，铜锈下露出旧日月刻痕；身体代价近景收窄光源，冷白暴雪主光变成贴近骨钟和手掌的冰青反光，黑墙负补光压住肩背和背景，远处火线只在雪雾烟尘里留下很弱低位暖边，勾出暗红冻血、手指和骨钟裂边。",
+      "prompt_en": "A young grey-wall soldier kneels in snow mud, broken spear sliding down, cracked palm stuck to the split bone bell, old sun-moon marks visible under verdigris; the bodily-cost close shot narrows the light sources, cold blizzard key light becomes ice-blue bounce near the bell and palm, black-wall negative fill presses the shoulders and background down, and distant fire leaves only a very weak low warm edge through snow-smoke haze on dark frozen blood, fingers and bell cracks.",
       "negative_prompt_notes_zh": "不要让旧日月刻痕发强光，不要英雄化摆拍，不要血腥夸张。",
       "negative_prompt_notes_en": "Do not make the old mark glow strongly, no heroic posing, no exaggerated gore.",
-      "continuity_refs": ["PROP_BONE_BELL", "RULE_SIEGE_LOCAL_CAUSALITY"],
-      "required_assets": ["PROP_BONE_BELL", "PROP_broken_spear", "REF_young_wall_soldier"]
+      "continuity_refs": [
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "required_assets": [
+        "PROP_BONE_BELL",
+        "PROP_broken_spear",
+        "REF_young_wall_soldier",
+        "C020",
+        "C021",
+        "E01_C020",
+        "E01_R003"
+      ]
     },
     {
       "shot_id": "SC001-SH003",
       "generation_method": "I2V",
-      "prompt_zh": "薛临墙在黑石墙缝前低声下令，冻裂粗手压住墙体裂纹，灰石厚衬袄和旧甲片覆雪，远处门闩和枪线虚焦，表演克制、真实呼吸、冷白暴雪环境。",
-      "prompt_en": "Xue Linqiang gives a low order at the blackstone wall seam, cracked broad hand pressing the wall crack, grey padded coat and old armor plates dusted with snow, gate bar and spear line blurred behind, restrained acting, real breathing, cold blizzard atmosphere.",
-      "negative_prompt_notes_zh": "不要老宗师姿势、不要武侠强光、不要把他画成将军华甲。",
-      "negative_prompt_notes_en": "No grandmaster pose, no wuxia power glow, do not turn him into an ornate general.",
-      "continuity_refs": ["CHAR_XUE_LINQIANG", "LOC_SUOHOU_GATE_OUTER_WALL"],
-      "required_assets": ["CHAR_XUE_LINQIANG", "LOC_SUOHOU_GATE_OUTER_WALL"]
+      "prompt_zh": "薛临墙在黑石墙缝前低声提醒敌人逼近，语气压低、急促但不慌，冻裂粗手压住墙体裂纹，灰石厚衬袄和旧甲片覆雪；战场口令中近景强调可读性，冷白暴雪主光只给额骨、鼻梁和手背硬冷边，黑墙负补光吞掉半张脸，远处火线低位暖边集中切出侧脸、手和旧甲片，雪雾烟尘把枪线与门线分层。",
+      "prompt_en": "Xue Linqiang gives a low warning that the enemy is coming up, his tone low, urgent but controlled, cracked broad hand pressing the wall crack, grey padded coat and old armor plates dusted with snow; the battlefield-command close-medium shot emphasizes readability, cold blizzard key light gives only a hard cold edge on brow, nose bridge and hand back, black-wall negative fill swallows half the face, low distant fireline tightly cuts the side profile, hand and old armor plates, and snow-smoke haze layers spear line and gate line.",
+      "negative_prompt_notes_zh": "不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要把他画成将军华甲。",
+      "negative_prompt_notes_en": "No grandmaster pose, no wuxia power glow, no divine heroic backlight, do not turn him into an ornate general.",
+      "continuity_refs": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "PROP_BONE_BELL",
+        "ONE_WALL_ONE_BELL_FRAME",
+        "C020",
+        "C021",
+        "E01_C020"
+      ],
+      "required_assets": [
+        "CHAR_XUE_LINQIANG",
+        "LOC_SUOHOU_GATE_OUTER_WALL",
+        "C020",
+        "C021",
+        "E01_C020",
+        "E01_R004"
+      ]
     },
     {
       "shot_id": "SC002-SH001",
@@ -43,8 +88,16 @@
       "prompt_en": "Morning at Jinhe grain depot, wheat-gold grain sacks stacked into a wall, grain tax clerk in wax-grey-blue official robe and tall account hat, white register board, grain tags and bone abacus visible, villagers queued low, wet wood brown, river mud brown and insect-wax white.",
       "negative_prompt_notes_zh": "不要蒸汽朋克欢乐感，不要人族账房先生外观，不要现代仓库。",
       "negative_prompt_notes_en": "No cheerful steampunk, no human accountant look, no modern warehouse.",
-      "continuity_refs": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_GRAIN_TAX_CLERK", "PROP_WHITE_REGISTER"],
-      "required_assets": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_GRAIN_TAX_CLERK", "PROP_WHITE_REGISTER"]
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_GRAIN_TAX_CLERK",
+        "PROP_WHITE_REGISTER"
+      ]
     },
     {
       "shot_id": "SC002-SH002",
@@ -53,8 +106,15 @@
       "prompt_en": "Jinhe household threshold, a mixed-blood slave soldier hand with bone-white wrist binding tips an empty grain jar, an elder protecting an ancestral tablet box is pressed into mud, a child hand forced onto an insect-wax seal, old work-clothes with repairs, restrained not exploitative.",
       "negative_prompt_notes_zh": "不要直观伤害儿童，不要血腥，不要把奴兵画成纯怪物。",
       "negative_prompt_notes_en": "No explicit child harm, no gore, do not render slave soldiers as pure monsters.",
-      "continuity_refs": ["CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX"],
-      "required_assets": ["CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX", "PROP_insect_wax_seal"]
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ],
+      "required_assets": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX",
+        "PROP_insect_wax_seal"
+      ]
     },
     {
       "shot_id": "SC002-SH003",
@@ -63,8 +123,16 @@
       "prompt_en": "The grain tax clerk turns the white register behind the inspection table, segmented fingers pointing at genealogy rows, a woman guarding winter grain pinned by a slave soldier, seal tag struck beside grain sack, official high and calm, soldier executing below, villagers compressed low.",
       "negative_prompt_notes_zh": "不要混淆官吏和奴兵职责，不要让白册出现乱字。",
       "negative_prompt_notes_en": "Do not mix clerk and slave soldier roles, no random text on the register.",
-      "continuity_refs": ["CHAR_GRAIN_TAX_CLERK", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_WHITE_REGISTER"],
-      "required_assets": ["CHAR_GRAIN_TAX_CLERK", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_WHITE_REGISTER"]
+      "continuity_refs": [
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "CHAR_GRAIN_TAX_CLERK",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_WHITE_REGISTER"
+      ]
     },
     {
       "shot_id": "SC002-SH004",
@@ -73,8 +141,15 @@
       "prompt_en": "Slave soldiers drag grain sacks onto the cart, cart wheel rolls through mud beside the ancestral tablet box, woman and child remain low at the threshold, doorway still standing while grain leaves, morning backlight, mud brown and faded wheat gold, heavy real motion.",
       "negative_prompt_notes_zh": "不要追车英雄镜头，不要夸张哭喊，不要现代车轮。",
       "negative_prompt_notes_en": "No heroic cart chase, no exaggerated crying, no modern wheels.",
-      "continuity_refs": ["LOC_JINHE_GRAIN_DEPOT", "PROP_ANCESTRAL_TABLET_BOX"],
-      "required_assets": ["LOC_JINHE_GRAIN_DEPOT", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_ANCESTRAL_TABLET_BOX"]
+      "continuity_refs": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ],
+      "required_assets": [
+        "LOC_JINHE_GRAIN_DEPOT",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_ANCESTRAL_TABLET_BOX"
+      ]
     },
     {
       "shot_id": "SC003-SH001",
@@ -83,8 +158,14 @@
       "prompt_en": "Rainy night tabletop in southern red-line room, damaged old relay map fills the widescreen frame, red cord pinned from southern edge to northern border, oilcloth rain drops and humid oil-lamp reflection, aged yellow paper, vermilion cord, moisture-proof scroll texture.",
       "negative_prompt_notes_zh": "不要现代地图标注，不要高魔法发光路线，不要清晰现代字体。",
       "negative_prompt_notes_en": "No modern map labels, no high-magic glowing route, no clean modern typography.",
-      "continuity_refs": ["LOC_SOUTHERN_REDLINE_ROOM", "PROP_BLOOD_GENEALOGY"],
-      "required_assets": ["LOC_SOUTHERN_REDLINE_ROOM", "PROP_old_relay_map_redline"]
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_BLOOD_GENEALOGY"
+      ],
+      "required_assets": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "PROP_old_relay_map_redline"
+      ]
     },
     {
       "shot_id": "SC003-SH002",
@@ -93,8 +174,16 @@
       "prompt_en": "Gu Huaizhang by oil lamp straightens his sleeve, veiled Yan Nanzhi stands in shadow, cold-grey exile robe, black hair with red cord, moon-white jade in palm, red cord dividing them, humid warm rain night contrasted with cold jade light.",
       "negative_prompt_notes_zh": "不要晏南枝全脸华丽揭示，不要艳俗宫装，不要现代妆容。",
       "negative_prompt_notes_en": "No full glamorous Yan face reveal, no vulgar palace costume, no modern makeup.",
-      "continuity_refs": ["CHAR_GU_HUAIZHANG", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
-      "required_assets": ["CHAR_GU_HUAIZHANG", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"]
+      "continuity_refs": [
+        "CHAR_GU_HUAIZHANG",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "required_assets": [
+        "CHAR_GU_HUAIZHANG",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ]
     },
     {
       "shot_id": "SC003-SH003",
@@ -103,8 +192,15 @@
       "prompt_en": "Half blood genealogy slides from Gu lamp side toward Yan shadow, Yan fingertips stop before taking it, old song outside muffled by a hand, damaged paper, moisture-proof wrapping, pressure of old imperial ritual.",
       "negative_prompt_notes_zh": "不要完整圣旨光效，不要正统万岁式英雄感。",
       "negative_prompt_notes_en": "No perfect sacred edict glow, no triumphant legitimist hero tone.",
-      "continuity_refs": ["PROP_BLOOD_GENEALOGY", "CHAR_YAN_NANZHI"],
-      "required_assets": ["PROP_BLOOD_GENEALOGY", "CHAR_YAN_NANZHI", "CHAR_GU_HUAIZHANG"]
+      "continuity_refs": [
+        "PROP_BLOOD_GENEALOGY",
+        "CHAR_YAN_NANZHI"
+      ],
+      "required_assets": [
+        "PROP_BLOOD_GENEALOGY",
+        "CHAR_YAN_NANZHI",
+        "CHAR_GU_HUAIZHANG"
+      ]
     },
     {
       "shot_id": "SC003-SH004",
@@ -113,8 +209,14 @@
       "prompt_en": "The north end of the red cord dampens under rain, oil lamp dimmed, Yan veiled silhouette paused outside the map, frame match-cuts from red-line direction to Canyangao checkpoint line, suggesting the road does not necessarily end at a throne.",
       "negative_prompt_notes_zh": "不要皇座幻象，不要字卡解释，不要过度梦幻转场。",
       "negative_prompt_notes_en": "No throne vision, no explanatory title card, no overly dreamy transition.",
-      "continuity_refs": ["LOC_SOUTHERN_REDLINE_ROOM", "CHAR_YAN_NANZHI"],
-      "required_assets": ["LOC_SOUTHERN_REDLINE_ROOM", "LOC_CANYANGAO_GATE"]
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "CHAR_YAN_NANZHI"
+      ],
+      "required_assets": [
+        "LOC_SOUTHERN_REDLINE_ROOM",
+        "LOC_CANYANGAO_GATE"
+      ]
     },
     {
       "shot_id": "SC004-SH001",
@@ -123,8 +225,18 @@
       "prompt_en": "Daytime Canyangao gate, inspection table centered, old well on one side, medicine house on the other, three white wax flags marking back-mountain exits, slave soldiers binding wrists, pure insect soldiers sealing well and medicine house perimeter, earth-brown village against cold insect-wax white.",
       "negative_prompt_notes_zh": "不要地理混乱，不要把村民画成同款乞丐，不要现代村口。",
       "negative_prompt_notes_en": "No confusing geography, no identical beggar villagers, no modern village gate.",
-      "continuity_refs": ["LOC_CANYANGAO_GATE", "LOC_CANYANGAO_WELL", "LOC_LUO_MEDICINE_HOUSE", "PROP_WHITE_WAX_FLAGS"],
-      "required_assets": ["LOC_CANYANGAO_GATE", "LOC_CANYANGAO_WELL", "LOC_LUO_MEDICINE_HOUSE", "PROP_WHITE_WAX_FLAGS"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
+      ],
+      "required_assets": [
+        "LOC_CANYANGAO_GATE",
+        "LOC_CANYANGAO_WELL",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "PROP_WHITE_WAX_FLAGS"
+      ]
     },
     {
       "shot_id": "SC004-SH002",
@@ -133,8 +245,16 @@
       "prompt_en": "Register clerk behind Canyangao inspection table, half-round tall account hat, wax-white-grey short robe, white register board and wax pen needle clear, villagers grain sacks, herb baskets and wood knives piled low, cold procedural household review.",
       "negative_prompt_notes_zh": "不要人族衙役造型，不要官吏低于村民，不要清代官服。",
       "negative_prompt_notes_en": "No human yamen clerk look, do not make the official lower than villagers, no Qing dynasty official costume.",
-      "continuity_refs": ["CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER", "LOC_CANYANGAO_GATE"],
-      "required_assets": ["CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER", "LOC_CANYANGAO_GATE"]
+      "continuity_refs": [
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_CANYANGAO_GATE"
+      ],
+      "required_assets": [
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER",
+        "LOC_CANYANGAO_GATE"
+      ]
     },
     {
       "shot_id": "SC004-SH003",
@@ -143,8 +263,16 @@
       "prompt_en": "Shen Weisang stands at crowd edge with bow, left shoulder slightly low, grey-brown hunter clothes and herb-green inner layer, eyes reading old well, back-mountain exit and wet wax on flags in sequence, protagonist observation before action.",
       "negative_prompt_notes_zh": "不要少年战神姿势，不要拔弓动作过早，不要美化左肩旧伤。",
       "negative_prompt_notes_en": "No young war-god pose, no early bow draw, do not glamorize the left shoulder injury.",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "PROP_WHITE_WAX_FLAGS", "LOC_CANYANGAO_WELL"],
-      "required_assets": ["CHAR_SHEN_WEISANG", "PROP_WHITE_WAX_FLAGS", "LOC_CANYANGAO_GATE"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_CANYANGAO_WELL"
+      ],
+      "required_assets": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_CANYANGAO_GATE"
+      ]
     },
     {
       "shot_id": "SC004-SH004",
@@ -153,8 +281,15 @@
       "prompt_en": "Shen Zhaomian lifts her head through a gap in the crowd, small herb bag clutched, pale grey short robe and herb-green apron, reflexively continuing a forbidden song after hearing an old place name, adult bodies forming a narrow pressure frame.",
       "negative_prompt_notes_zh": "不要恐怖附身表情，不要儿童奇观化，不要过度干净。",
       "negative_prompt_notes_en": "No possessed horror expression, no child spectacle, no over-clean look.",
-      "continuity_refs": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG"],
-      "required_assets": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "LOC_CANYANGAO_GATE"]
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "required_assets": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "LOC_CANYANGAO_GATE"
+      ]
     },
     {
       "shot_id": "SC004-SH005",
@@ -163,8 +298,16 @@
       "prompt_en": "Luo Qinghe steps in front of Zhaomian, blue cloth headscarf, herb-green apron, small copper scissors in hand, the register clerk compound eyes turn toward her from above, maternal protection line and institutional scrutiny in one frame.",
       "negative_prompt_notes_zh": "不要把罗青禾画成普通苍老村妇，不要动作过度武打化。",
       "negative_prompt_notes_en": "Do not render Luo as an ordinary aged village woman, no over-martial action.",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN", "CHAR_BAICE_CLERK"],
-      "required_assets": ["CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN", "CHAR_BAICE_CLERK"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_BAICE_CLERK"
+      ],
+      "required_assets": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_BAICE_CLERK"
+      ]
     },
     {
       "shot_id": "SC004-SH006",
@@ -173,8 +316,16 @@
       "prompt_en": "Shen Weisang forces a half-true smile, hooks Zhaomian herb bag to his foot, fingertip pressing his hunter bowstring, grey-brown hunter clothes at crowd edge, register clerk pressure on the opposite side of frame.",
       "negative_prompt_notes_zh": "不要热血反击，不要拔箭，不要让他笑得轻松。",
       "negative_prompt_notes_en": "No hot-blooded counterattack, no arrow draw, do not make his smile easy.",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "PROP_SHEN_BOW", "PROP_ZHAOMIAN_HERB_BAG"],
-      "required_assets": ["CHAR_SHEN_WEISANG", "PROP_SHEN_BOW", "PROP_ZHAOMIAN_HERB_BAG"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ],
+      "required_assets": [
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW",
+        "PROP_ZHAOMIAN_HERB_BAG"
+      ]
     },
     {
       "shot_id": "SC004-SH007",
@@ -183,8 +334,13 @@
       "prompt_en": "Macro close-up of white register paper, Shen household name centered, pale insect-wax veins seeping through paper fibers, wax pen needle paused at side-note area, cold bureaucratic record feeling, text must be precise through post or masked redraw.",
       "negative_prompt_notes_zh": "不要随机文字，不要魔法符文乱飞，不要发光书页。",
       "negative_prompt_notes_en": "No random text, no flying magic runes, no glowing book page.",
-      "continuity_refs": ["PROP_WHITE_REGISTER"],
-      "required_assets": ["PROP_WHITE_REGISTER", "MASK_register_side_note_area"]
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "PROP_WHITE_REGISTER",
+        "MASK_register_side_note_area"
+      ]
     },
     {
       "shot_id": "SC004-SH008",
@@ -193,8 +349,18 @@
       "prompt_en": "Qingming incense inserted into the crack of the inspection table, thin cold-white smoke rising, Shen Weisang, Luo Qinghe and Zhaomian looking at the incense on different depth layers, old brown table wood, insect-wax white, crowd sound lowered.",
       "negative_prompt_notes_zh": "不要浓烟遮挡，不要香变法术，不要火焰夸张。",
       "negative_prompt_notes_en": "No thick blocking smoke, do not turn incense into magic, no exaggerated flame.",
-      "continuity_refs": ["PROP_QINGMING_INCENSE", "CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN"],
-      "required_assets": ["PROP_QINGMING_INCENSE", "CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "CHAR_SHEN_ZHAOMIAN"]
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ],
+      "required_assets": [
+        "PROP_QINGMING_INCENSE",
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "CHAR_SHEN_ZHAOMIAN"
+      ]
     },
     {
       "shot_id": "SC004-SH009",
@@ -203,8 +369,16 @@
       "prompt_en": "Qingming incense smoke crawls low toward the medicine house under wind, wet wax on white flags, pure insect soldier clawed feet stopping outside the medicine-house door, ground-level view transitioning from village gate to medicine house, sound muffled by wood door.",
       "negative_prompt_notes_zh": "不要烟线变灵蛇，不要药屋位置跳变，不要虫兵怪物化抢戏。",
       "negative_prompt_notes_en": "Do not turn smoke into spirit snake, no medicine-house position jump, no insect soldier monster spectacle.",
-      "continuity_refs": ["PROP_QINGMING_INCENSE", "PROP_WHITE_WAX_FLAGS", "LOC_LUO_MEDICINE_HOUSE"],
-      "required_assets": ["PROP_QINGMING_INCENSE", "PROP_WHITE_WAX_FLAGS", "LOC_LUO_MEDICINE_HOUSE"]
+      "continuity_refs": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ],
+      "required_assets": [
+        "PROP_QINGMING_INCENSE",
+        "PROP_WHITE_WAX_FLAGS",
+        "LOC_LUO_MEDICINE_HOUSE"
+      ]
     },
     {
       "shot_id": "SC005-SH001",
@@ -213,8 +387,17 @@
       "prompt_en": "Inside Luo medicine house cabinet compartment POV, wood slit cutting the frame, veiled Yan Nanzhi eyes in darkness, hand pressing moon-white jade, insect soldier clawed feet stopped in cold door-slit light outside, low breathing.",
       "negative_prompt_notes_zh": "不要正面露晏南枝完整脸，不要暗格过亮，不要现代柜子。",
       "negative_prompt_notes_en": "No full frontal Yan face reveal, do not overlight the compartment, no modern cabinet.",
-      "continuity_refs": ["LOC_LUO_MEDICINE_HOUSE_INTERIOR", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE"],
-      "required_assets": ["LOC_LUO_MEDICINE_HOUSE_INTERIOR", "CHAR_YAN_NANZHI", "PROP_MOON_WHITE_JADE", "PROP_MEDICINE_CABINET"]
+      "continuity_refs": [
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "required_assets": [
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR",
+        "CHAR_YAN_NANZHI",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_MEDICINE_CABINET"
+      ]
     },
     {
       "shot_id": "SC005-SH002",
@@ -223,8 +406,16 @@
       "prompt_en": "Luo Qinghe gathers medicine inside the medicine house, blue headscarf, herb-green apron, steady scissors and packet movement, standing between door and cabinet compartment, cold door-slit light cutting into herb-green interior.",
       "negative_prompt_notes_zh": "不要慌乱夸张动作，不要现代药房器具，不要削弱罗青禾稳定感。",
       "negative_prompt_notes_en": "No exaggerated panic motion, no modern pharmacy objects, do not weaken Luo steadiness.",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "PROP_MEDICINE_CABINET", "LOC_LUO_MEDICINE_HOUSE_INTERIOR"],
-      "required_assets": ["CHAR_LUO_QINGHE", "PROP_MEDICINE_CABINET", "LOC_LUO_MEDICINE_HOUSE_INTERIOR"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "PROP_MEDICINE_CABINET",
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR"
+      ],
+      "required_assets": [
+        "CHAR_LUO_QINGHE",
+        "PROP_MEDICINE_CABINET",
+        "LOC_LUO_MEDICINE_HOUSE_INTERIOR"
+      ]
     },
     {
       "shot_id": "SC005-SH003",
@@ -233,8 +424,16 @@
       "prompt_en": "Medicine cabinet slit split close-up, Yan Nanzhi in dark foreground asking softly, Luo Qinghe side face soft outside but clear-eyed, cold moon-white jade light in Yan palm, identity carrying real cost.",
       "negative_prompt_notes_zh": "不要浪漫对视，不要宫廷美图，不要把罗青禾画成冷血反派。",
       "negative_prompt_notes_en": "No romantic gaze, no palace beauty shot, do not make Luo a cold villain.",
-      "continuity_refs": ["CHAR_YAN_NANZHI", "CHAR_LUO_QINGHE", "PROP_MOON_WHITE_JADE"],
-      "required_assets": ["CHAR_YAN_NANZHI", "CHAR_LUO_QINGHE", "PROP_MOON_WHITE_JADE"]
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "CHAR_LUO_QINGHE",
+        "PROP_MOON_WHITE_JADE"
+      ],
+      "required_assets": [
+        "CHAR_YAN_NANZHI",
+        "CHAR_LUO_QINGHE",
+        "PROP_MOON_WHITE_JADE"
+      ]
     },
     {
       "shot_id": "SC005-SH004",
@@ -243,8 +442,15 @@
       "prompt_en": "Medicine cabinet bottom-board insert close-up, Luo fingers wiping aside herb ash, old relay sign and sun-moon remnant emerging from old wood, restrained worn non-glowing mark, Yan fingertip paused near edge.",
       "negative_prompt_notes_zh": "不要发光法阵，不要随机符号，不要把旧驿暗号画成现代 logo。",
       "negative_prompt_notes_en": "No glowing magic array, no random symbols, do not make the relay mark a modern logo.",
-      "continuity_refs": ["PROP_OLD_RELAY_MARK", "PROP_MEDICINE_CABINET"],
-      "required_assets": ["PROP_OLD_RELAY_MARK", "PROP_MEDICINE_CABINET", "MASK_old_relay_mark_area"]
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_MEDICINE_CABINET"
+      ],
+      "required_assets": [
+        "PROP_OLD_RELAY_MARK",
+        "PROP_MEDICINE_CABINET",
+        "MASK_old_relay_mark_area"
+      ]
     },
     {
       "shot_id": "SC005-SH005",
@@ -253,8 +459,16 @@
       "prompt_en": "Luo presses the board back into the cabinet, voice low, sealed-door slave soldier knocking outside, fork spear shadow falling across cabinet door, insect-wax cold white entering through door slit, the real pressure that an imperial flag would turn the village into a rebel den.",
       "negative_prompt_notes_zh": "不要外面冲进来，不要武打化，叉矛影要清楚但不夸张。",
       "negative_prompt_notes_en": "No soldier bursting in, no martial-action exaggeration, spear shadow clear but not overdone.",
-      "continuity_refs": ["CHAR_LUO_QINGHE", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_MEDICINE_CABINET"],
-      "required_assets": ["CHAR_LUO_QINGHE", "CHAR_SUMING_SLAVE_SOLDIER", "PROP_MEDICINE_CABINET"]
+      "continuity_refs": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_MEDICINE_CABINET"
+      ],
+      "required_assets": [
+        "CHAR_LUO_QINGHE",
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "PROP_MEDICINE_CABINET"
+      ]
     },
     {
       "shot_id": "SC006-SH001",
@@ -263,8 +477,16 @@
       "prompt_en": "Afternoon beside Canyangao old well, villagers driven to the well, insect-wax seal hanging on medicine-house doorframe, Shen Weisang eyeline moving from medicine-house window slit to back-mountain wind gap, geography clearly readable.",
       "negative_prompt_notes_zh": "不要旧井和药屋位置混乱，不要人群遮住关键道具。",
       "negative_prompt_notes_en": "No confused well/medicine-house location, do not let crowd hide key props.",
-      "continuity_refs": ["LOC_CANYANGAO_WELL_TABLE", "LOC_LUO_MEDICINE_HOUSE", "CHAR_SHEN_WEISANG"],
-      "required_assets": ["LOC_CANYANGAO_WELL_TABLE", "LOC_LUO_MEDICINE_HOUSE", "CHAR_SHEN_WEISANG"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "required_assets": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "LOC_LUO_MEDICINE_HOUSE",
+        "CHAR_SHEN_WEISANG"
+      ]
     },
     {
       "shot_id": "SC006-SH002",
@@ -273,8 +495,16 @@
       "prompt_en": "Old relay-mark cabinet board lies on the inspection table, herb ash suppressed by insect-wax reflection, register clerk high behind table declaring harboring and village seal, villagers below compressed by bureaucratic language.",
       "negative_prompt_notes_zh": "不要把暗号变大型法器，不要让官吏亲自施暴。",
       "negative_prompt_notes_en": "Do not turn the mark into a large magic object, do not have the clerk personally attack.",
-      "continuity_refs": ["PROP_OLD_RELAY_MARK", "CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER"],
-      "required_assets": ["PROP_OLD_RELAY_MARK", "CHAR_BAICE_CLERK", "PROP_WHITE_REGISTER"]
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MARK",
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "PROP_OLD_RELAY_MARK",
+        "CHAR_BAICE_CLERK",
+        "PROP_WHITE_REGISTER"
+      ]
     },
     {
       "shot_id": "SC006-SH003",
@@ -283,8 +513,17 @@
       "prompt_en": "Crowd erupts beside the old well, register clerk still behind table with register open, mixed-blood slave soldiers holding boys and ropes, pure insect soldiers blocking exits with hooks, three arrest roles clear, hard afternoon light.",
       "negative_prompt_notes_zh": "不要混成一团怪物，不要血腥混战，不要镜头糊掉层级。",
       "negative_prompt_notes_en": "Do not merge into one monster mass, no bloody melee, do not blur hierarchy.",
-      "continuity_refs": ["CHAR_SUMING_SLAVE_SOLDIER", "CHAR_SUMING_INSECT_INFANTRY", "CHAR_BAICE_CLERK"],
-      "required_assets": ["CHAR_SUMING_SLAVE_SOLDIER", "CHAR_SUMING_INSECT_INFANTRY", "CHAR_BAICE_CLERK", "LOC_CANYANGAO_WELL_TABLE"]
+      "continuity_refs": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "CHAR_BAICE_CLERK"
+      ],
+      "required_assets": [
+        "CHAR_SUMING_SLAVE_SOLDIER",
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "CHAR_BAICE_CLERK",
+        "LOC_CANYANGAO_WELL_TABLE"
+      ]
     },
     {
       "shot_id": "SC006-SH004",
@@ -293,8 +532,17 @@
       "prompt_en": "Zhaomian frightened hand touches herb bag, Shen hand reaches but cannot pull her first, wax pen marks suspect child on white register paper, living color of herb bag against cold white paper, child threat restrained.",
       "negative_prompt_notes_zh": "不要儿童受伤画面，不要随机文字，不要恐怖儿童表情。",
       "negative_prompt_notes_en": "No child injury image, no random text, no horror child expression.",
-      "continuity_refs": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER"],
-      "required_assets": ["CHAR_SHEN_ZHAOMIAN", "PROP_ZHAOMIAN_HERB_BAG", "PROP_WHITE_REGISTER", "MASK_register_child_mark_area"]
+      "continuity_refs": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "CHAR_SHEN_ZHAOMIAN",
+        "PROP_ZHAOMIAN_HERB_BAG",
+        "PROP_WHITE_REGISTER",
+        "MASK_register_child_mark_area"
+      ]
     },
     {
       "shot_id": "SC006-SH005",
@@ -303,8 +551,16 @@
       "prompt_en": "Bai Yi enters straight through village gate, extremely tall and thin, spotless insect-wax white official robe, tall Qingming hat, bone-white hard collar, translucent wing-like shoulder mantle, dark compound eyes, dust not touching robe, villagers part naturally.",
       "negative_prompt_notes_zh": "不要怪物咆哮，不要大翅膀奇观，不要普通白衣人。",
       "negative_prompt_notes_en": "No roaring monster, no large wing spectacle, no ordinary white-robed human.",
-      "continuity_refs": ["CHAR_BAI_YI", "LOC_CANYANGAO_GATE", "PROP_QINGMING_INCENSE"],
-      "required_assets": ["CHAR_BAI_YI", "LOC_CANYANGAO_GATE", "PROP_INSECT_WAX_NEEDLE"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "LOC_CANYANGAO_GATE",
+        "PROP_QINGMING_INCENSE"
+      ],
+      "required_assets": [
+        "CHAR_BAI_YI",
+        "LOC_CANYANGAO_GATE",
+        "PROP_INSECT_WAX_NEEDLE"
+      ]
     },
     {
       "shot_id": "SC006-SH006",
@@ -313,8 +569,16 @@
       "prompt_en": "Bai Yi stops at inspection table wiping the insect-wax needle, old relay mark on the table, cold register reflection, Bai Yi face quiet and without anger, using institutional reasoning to infer someone opened a door and guided the path.",
       "negative_prompt_notes_zh": "不要表情狰狞，不要毒针绿光，不要审讯室现代感。",
       "negative_prompt_notes_en": "No snarling expression, no green poison needle glow, no modern interrogation room feeling.",
-      "continuity_refs": ["CHAR_BAI_YI", "PROP_INSECT_WAX_NEEDLE", "PROP_OLD_RELAY_MARK"],
-      "required_assets": ["CHAR_BAI_YI", "PROP_INSECT_WAX_NEEDLE", "PROP_OLD_RELAY_MARK"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_OLD_RELAY_MARK"
+      ],
+      "required_assets": [
+        "CHAR_BAI_YI",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_OLD_RELAY_MARK"
+      ]
     },
     {
       "shot_id": "SC006-SH007",
@@ -323,8 +587,16 @@
       "prompt_en": "Insect-wax needle touches Shen family name in the white register, cold side note slowly seeps out reading ancestral account unclear, suspected link to Zhaoming relay, then cut to Shen eyes going cold; text must be post or masked redraw.",
       "negative_prompt_notes_zh": "不要模型随机汉字，不要魔法爆光，不要把白册做成电子屏。",
       "negative_prompt_notes_en": "No random generated Chinese text, no magic burst light, do not make the register an electronic screen.",
-      "continuity_refs": ["PROP_WHITE_REGISTER", "PROP_INSECT_WAX_NEEDLE", "CHAR_SHEN_WEISANG"],
-      "required_assets": ["PROP_WHITE_REGISTER", "PROP_INSECT_WAX_NEEDLE", "MASK_register_shen_side_note_area"]
+      "continuity_refs": [
+        "PROP_WHITE_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "CHAR_SHEN_WEISANG"
+      ],
+      "required_assets": [
+        "PROP_WHITE_REGISTER",
+        "PROP_INSECT_WAX_NEEDLE",
+        "MASK_register_shen_side_note_area"
+      ]
     },
     {
       "shot_id": "SC006-SH008",
@@ -333,8 +605,16 @@
       "prompt_en": "Old well becomes interrogation center, insect soldiers close toward the well, white wax flags pressed tight, slave soldiers push villagers low beside the well, seal village, clear households and search well become spatial action.",
       "negative_prompt_notes_zh": "不要搜井提前变战斗，不要地理跳位，不要大规模暴力。",
       "negative_prompt_notes_en": "Do not turn well search into battle early, no geography jump, no large-scale violence.",
-      "continuity_refs": ["LOC_CANYANGAO_WELL_TABLE", "PROP_WHITE_WAX_FLAGS", "CHAR_SUMING_INSECT_INFANTRY"],
-      "required_assets": ["LOC_CANYANGAO_WELL_TABLE", "CHAR_SUMING_INSECT_INFANTRY", "PROP_WHITE_WAX_FLAGS"]
+      "continuity_refs": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "PROP_WHITE_WAX_FLAGS",
+        "CHAR_SUMING_INSECT_INFANTRY"
+      ],
+      "required_assets": [
+        "LOC_CANYANGAO_WELL_TABLE",
+        "CHAR_SUMING_INSECT_INFANTRY",
+        "PROP_WHITE_WAX_FLAGS"
+      ]
     },
     {
       "shot_id": "SC006-SH009",
@@ -343,8 +623,18 @@
       "prompt_en": "Bai Yi turns to a new register page high in background, Zhaomian pulled half a step forward by slave soldier in foreground, herb bag swinging, Shen side hand hooks hunter bowstring, restrained pressure between child and bowstring.",
       "negative_prompt_notes_zh": "不要射箭动作完成，不要儿童受伤，不要白翳怒吼。",
       "negative_prompt_notes_en": "No completed arrow shot, no child injury, no Bai Yi shouting.",
-      "continuity_refs": ["CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_SHEN_BOW"],
-      "required_assets": ["CHAR_BAI_YI", "CHAR_SHEN_ZHAOMIAN", "CHAR_SHEN_WEISANG", "PROP_SHEN_BOW"]
+      "continuity_refs": [
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW"
+      ],
+      "required_assets": [
+        "CHAR_BAI_YI",
+        "CHAR_SHEN_ZHAOMIAN",
+        "CHAR_SHEN_WEISANG",
+        "PROP_SHEN_BOW"
+      ]
     },
     {
       "shot_id": "SC006-SH010",
@@ -353,8 +643,18 @@
       "prompt_en": "Extreme close-up of Shen thumb hooking bowstring then slowly releasing, Luo Qinghe gives a tiny head shake across the crowd, Zhaomian blurred low, register page turn echoes like bone bell, one cold glint on string then hard cut to black.",
       "negative_prompt_notes_zh": "不要松弦变射击，不要英雄慢动作，不要过度眼泪煽情。",
       "negative_prompt_notes_en": "Do not turn release into shooting, no heroic slow motion, no excessive tear melodrama.",
-      "continuity_refs": ["CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "PROP_SHEN_BOW", "PROP_WHITE_REGISTER"],
-      "required_assets": ["CHAR_SHEN_WEISANG", "CHAR_LUO_QINGHE", "PROP_SHEN_BOW", "PROP_WHITE_REGISTER"]
+      "continuity_refs": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_REGISTER"
+      ],
+      "required_assets": [
+        "CHAR_SHEN_WEISANG",
+        "CHAR_LUO_QINGHE",
+        "PROP_SHEN_BOW",
+        "PROP_WHITE_REGISTER"
+      ]
     }
   ]
 }

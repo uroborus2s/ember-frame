@@ -3,15 +3,63 @@
   "status": "no_feedback",
   "iterations": [
     {
-      "iteration_id": "initial-pre-asset",
-      "source_feedback": [],
-      "changed_shots": [],
-      "prompt_changes": [],
-      "parameter_changes": [],
+      "iteration_id": "sc001-post-asset-initial",
+      "source_feedback": [
+        "User confirmed SC001 assets are complete and asked to add a battlefield push-pull wide shot with voiceover.",
+        "User requested replacing Xue Linqiang's battlefield line with a shorter battlefield warning and asked the script to clarify the required tone.",
+        "User updated R001/R002 image files and requested SC001-SH001 duration be changed to 3.5s / 84 frames."
+      ],
+      "changed_shots": [
+        "SC001-SH001",
+        "SC001-SH002",
+        "SC001-SH003"
+      ],
+      "prompt_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Updated prompt intent from impact detail to battlefield wide push-pull using R001/R002 FLF2V references."
+        },
+        {
+          "shot_id": "SC001-SH003",
+          "change": "Updated dialogue reference to '敌人上来了。' and clarified the required tone as low, urgent but controlled in script and prompt metadata."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Reframed lighting as the battlefield-wide variant: maximum environmental depth, cold sky light silhouetting the black wall, multiple distant firelines, volumetric snow-smoke layers and the largest shadow area."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Adjusted camera endpoint from pullback to the bone bell to pullback to the city wall and wall-top defense line, keeping the bell as a wall anchor."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Updated the shooting scheme from frontal push-pull to a diagonal siege-side lift: R001 should become a low diagonal rear-side siege first frame, and R002 should become a wall-top medium-near last frame with bone bell, defenders and exterior siege visible below."
+        },
+        {
+          "shot_id": "SC001-SH002",
+          "change": "Reframed lighting as the bodily-cost close-shot variant: narrowed sources, cold snow bounce into bell cracks, black-wall negative fill over the figure and only weak warm fire rim on blood, fingers and bell cracks."
+        },
+        {
+          "shot_id": "SC001-SH003",
+          "change": "Reframed lighting as the battlefield-command close-medium variant: half-face black-wall negative fill, small low warm fire edge on face, hand and old armor, and snow haze separating spear line and gate line without heroic backlight."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Marked R001/R002 as visually checked updated first/last frames for the diagonal siege-side lift."
+        }
+      ],
+      "parameter_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "duration",
+          "old_value": "1.8s / 44 frames @ 24fps",
+          "new_value": "3.5s / 84 frames @ 24fps"
+        }
+      ],
       "unresolved_issues": [
         "No ComfyUI render feedback exists for the current remade episode 01 package.",
-        "Art Room assets are not available in project/severed-homeland/assets/asset-index.json or project/severed-homeland/01/art/asset-index.json.",
-        "Model checkpoint, LoRA, ControlNet, IPAdapter preset and workflow node IDs are not configured."
+        "SC001 E01_R001-E01_R004 reference frame files exist at 3840x2160 and are synchronized as generated_candidate_pending_user_qc; user visual QC is still required before final approval.",
+        "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs are not configured."
       ]
     }
   ]

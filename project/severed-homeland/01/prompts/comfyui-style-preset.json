@@ -1,0 +1,49 @@
+{
+  "version": "director-room-comfyui-style-v1-2026-06-08",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001",
+  "style_profiles": [
+    {
+      "profile_id": "e01_sc001_border_blizzard_realism",
+      "global_positive_prefix_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪边境，低调高反差，材质与空间以参考帧为准，真实重心、真实速度、自然呼吸、接触反作用。",
+      "global_positive_prefix_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, materials and geography follow the reference frames, real body weight, real speed, natural breathing, contact reaction.",
+      "global_positive_suffix_zh": "旧日月痕必须残缺、黯淡、被裂缝、铜锈和雪泥吃掉，不可发光或圣物化。",
+      "global_positive_suffix_en": "Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow mud, never glowing or sacred.",
+      "global_negative_zh": "现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。",
+      "global_negative_en": "modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.",
+      "continuity_rules": [
+        "SC001 is one continuous wall-top bell space: human defenders on the wall, beast alliance outside and below the wall.",
+        "The bone bell is mounted in a wooden-iron bell frame on the wall top and rings from transmitted gate impact.",
+        "Use reference frames only for I2V/FLF2V scene plates; character cards remain identity or material references.",
+        "Do not ask the video model to render exact Chinese dialogue text."
+      ],
+      "shot_lighting_strategy": [
+        {
+          "shot_id": "SC001-SH001",
+          "lighting_role_zh": "斜侧攻城建立镜头使用最大环境纵深：冷白暴雪天光压出黑墙巨型剪影，黑墙负补光吞掉墙面和兽潮大暗面，远处暗红火线低位反打雪雾、烟尘、攻城队列、破旗、巨角、骨钟边缘和守军肩线。",
+          "lighting_role_en": "The diagonal siege-establishing shot uses maximum environmental depth: cold blizzard sky light silhouettes the massive black wall, black-wall negative fill swallows the wall face and beast tide's large shadow masses, and distant dark-red firelines low-counterlight snow haze, smoke, siege ranks, torn banners, horn edges, bone-bell edge and defender shoulder lines."
+        },
+        {
+          "shot_id": "SC001-SH002",
+          "lighting_role_zh": "身体代价近景收窄光源：冷雪反光进钟裂，黑墙负补光压低人物，远火只在冻血、手指和骨钟裂边留下弱暖边，不做大场面火光。",
+          "lighting_role_en": "The bodily-cost close shot narrows the light sources: cold snow bounce enters bell cracks, black-wall negative fill presses the figure down, and distant fire leaves only a weak warm edge on frozen blood, fingers and bell cracks, not broad battlefield glow."
+        },
+        {
+          "shot_id": "SC001-SH003",
+          "lighting_role_zh": "战场口令中近景强调可读性：半张脸被黑墙吞没，远火低位暖边只切出侧脸、手和旧甲片，雪雾分离枪线和门线，不形成英雄逆光。",
+          "lighting_role_en": "The command close-medium shot prioritizes readability: half the face is swallowed by the black wall, low distant fire cuts only the side profile, hand and old armor plates, and snow haze separates spear line and gate line without heroic backlight."
+        }
+      ],
+      "config_status": "needs_config",
+      "config_placeholders": [
+        "PLACEHOLDER_VIDEO_CHECKPOINT",
+        "PLACEHOLDER_IMAGE_CHECKPOINT",
+        "PLACEHOLDER_LORA_STACK",
+        "PLACEHOLDER_CONTROLNET",
+        "PLACEHOLDER_IPADAPTER_PRESET",
+        "PLACEHOLDER_COMFYUI_WORKFLOW_TEMPLATE"
+      ]
+    }
+  ]
+}

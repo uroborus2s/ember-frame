@@ -11,9 +11,9 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 ### SC001 锁喉关外墙 / Suohou Gate Outer Wall
 
 - 镜头：`SC001-SH001` 到 `SC001-SH003`
-- 景别：冲击特写、局部中近景、薛临墙中近景。
-- 光线：暴雪冷白为主，火罐与冻血暗红只做局部信息。
-- 运镜：撞钟一瞬可抖动，其余保持短促、重心真实。禁止一镜到底展示完整战场。
+- 景别：斜侧攻城远景到城头中景偏近、局部中近景、薛临墙中近景。
+- 光线：暴雪冷白为主，加入云层裂隙冷天光、雪雾体积层、远处火线暖反打和黑石大暗面；火罐与冻血暗红只做局部信息，禁止圣光化。
+- 运镜：开场从攻城方斜后侧低机位起，不做正面居中冲城。兽潮从左前向右后斜推城门，镜头顺旗杆、烟柱、巨角和黑墙外立面起吊，落到城头中景偏近的骨钟、黑石女墙和守军肩背；墙外兽潮仍在斜下方背景可见。骨钟横摆和暴雪雪雾可作为隐藏剪切点，禁止穿墙、180 度调头和游戏感飞镜。
 - 连续性：骨钟、断矛、旧日月刻痕必须同场建立，后续旧帝国残痕才有重量。
 
 ### SC002 金河粮仓带 / Jinhe Grain Depot
@@ -60,9 +60,9 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 
 | Shot ID | Lens Feel | Camera Height | Movement | Lighting Key | Notes |
 | --- | --- | --- | --- | --- | --- |
-| SC001-SH001 | wide impact detail | low wall base | impact shake then hold | cold snow bounce | bone bell must read before monster scale |
-| SC001-SH002 | tight natural lens | human kneel height | drop and rack focus | cold side snow | old sun-moon mark should be visible, not glowing |
-| SC001-SH003 | compressed medium | wall chest height | locked push | cold front, fire rim | Xue command is restraint, not hero pose |
+| SC001-SH001 | diagonal siege wide to wall-top medium-near | low siege-side rising to wall human height | diagonal lift along flags, smoke, horn and black-wall exterior to bone bell | cold storm break, volumetric snow, distant fireline rim | voiceover rides the lift; first frame must not be frontal symmetrical siege, last frame must show wall-top defenders and exterior siege below |
+| SC001-SH002 | tight natural lens | human kneel height | drop and rack focus | cold side snow, low fire edge | old sun-moon mark should be visible, not glowing |
+| SC001-SH003 | compressed medium | wall chest height | locked push | black wall shadow, cold snow rim, fireline edge | Xue command is restraint, not hero pose |
 | SC002-SH001 | landscape wide | villager eye height | real-time push | morning grain haze | grain bags dominate upper frame |
 | SC002-SH002 | close threshold | waist height | one-step handheld pull | side doorway light | keep child hand sensitive and brief |
 | SC002-SH003 | medium table | table edge | locked | cold wax top light | official taller than civilians |
