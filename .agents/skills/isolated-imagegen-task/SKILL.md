@@ -1,103 +1,101 @@
 ---
 name: isolated-imagegen-task
-description: Run isolated image generation or image editing through a clean prompt-and-reference workflow. Use when Codex needs a generic image generation task that must not read project files, inherit long project context, inspect background documents, write files, or do non-image work; especially after imagegen ServerError, context-too-long failures, repeated image retries, many reference images, or semantic drift from long prompts and stale image history.
+description: 隔离式图片生成与图片编辑流程。适用于需要把生图任务做成干净子任务的场景：只给提示词和压缩参考图，不让生图任务读取项目文件、继承长上下文、查看背景文档、写文件、做 QC 或输出无关文字；尤其用于 imagegen ServerError、上下文过长、多轮重试、参考图过多、长提示词污染或生成语义跑偏后的稳定重试。
 ---
 
-# Isolated Imagegen Task
+# 隔离生图任务
 
-## Core Rule
+## 核心原则
 
-Treat image generation as a clean-room worker task.
+把生图任务当成隔离的子任务。
 
-The parent task prepares all context. The image task receives only:
+主任务负责准备上下文；生图任务只接收：
 
-- A single image prompt.
-- Optional attached reference images that are already selected and compressed.
+- 一段图片提示词。
+- 已筛选、已压缩的参考图附件。
 
-The image task must return only generated image output. It must not read files, write files, inspect the project, summarize background, run shell commands, search, commit, or perform QC prose.
+生图任务只返回图片。它不得读取文件、写文件、搜索、查看项目背景、提交 Git、做 QC、解释构图或输出无关文字。
 
-## Failure This Prevents
+## 解决的问题
 
-Long, image-heavy threads can carry stale large images, old failed prompts, negative prompt debris, and unrelated project history into the image generation call. This can cause `ServerError` or semantic drift even when later references are compressed. A fresh task with only compressed references and a short prompt is the stable path.
+长线程里可能残留旧大图、失败提示词、负面词和项目背景。即使后来换成压缩图，这些历史也可能继续进入生图调用，造成 `ServerError` 或画面跑偏。稳定做法是新开干净任务，只放必要附件和短提示词。
 
-## Parent Task Protocol
+## 主任务流程
 
-Use this protocol before opening or continuing an image task.
+1. 在主任务里整理干净输入包。
+2. 只选本张图必须用的参考图。
+3. 发送前先压缩参考图：
+   - 优先不超过 8 张。
+   - 长边不超过 1600 px。
+   - 单张不超过 2 MB。
+   - 附件总量不超过 12 MB。
+   - 超限时，裁局部图或合成参考拼图。
+4. 为单张目标图准备一段提示词：
+   - 目标长度：中文不超过 1800 字，英文不超过 900 词。
+   - 硬上限：中文不超过 3000 字，英文不超过 1500 词。
+   - 超过硬上限时，先压缩提示词。
+   - 少写负面词，多写正向视觉锁定。
+   - 提示词正文不要写本地文件路径。
+5. 每张目标图第一次生成时，必须新开干净生图任务。
+6. 主任务记录生图任务的线程 id。
+7. 主任务取回生成图。
+8. 主任务负责审核、保存、复制文件和向用户说明结果。
+9. 需要重做时，只把修改后的提示词、必要参考图以及需要参照的上一版图发给生图任务。
+10. 出现以下情况，停止沿用旧生图任务，改开新任务：
+    - `imagegen` 返回 `ServerError`。
+    - 生图任务已经加载过原始大图或长背景文本。
+    - 同一生图任务已累计超过 2 次重做。
+    - 目标图或参考图集合发生明显变化。
+    - 生图任务开始读文件、写文件、解释项目背景或输出 QC。
 
-1. Build a clean input package outside the image task.
-2. Select only references needed for the next image.
-3. Compress references before sending:
-   - Prefer no more than 8 attached images.
-   - Long edge at or below 1600 px.
-   - Each image at or below 2 MB.
-   - Total attached image payload at or below 12 MB.
-   - If over budget, crop detail panels or merge references into a contact sheet before sending.
-4. Prepare one prompt for one target image:
-   - Target length: at or below 1800 Chinese characters or 900 English words.
-   - Hard limit: 3000 Chinese characters or 1500 English words.
-   - If over the hard limit, compress the prompt before sending.
-   - Keep negative constraints short; prefer positive visual locks.
-   - Do not include local file paths in the image prompt.
-5. Create a fresh child task for the first generation attempt.
-6. Record the child task/thread id in the parent task.
-7. Retrieve the generated image in the parent task.
-8. Do QC in the parent task only.
-9. If revision is needed, send the image task only a revised prompt plus the minimal current/reference images.
-10. Start a new clean image task instead of continuing when:
-    - `imagegen` returns `ServerError`.
-    - The child task has already loaded original large images or long background text.
-    - More than two revision attempts have accumulated.
-    - The target image or reference set changes materially.
-    - The child task starts reading files, writing files, or discussing project context.
+## 生图任务边界
 
-The parent task owns file lookup, path resolution, image compression, saving/copying final files, audit notes, and user-facing explanation.
+生图任务必须遵守：
 
-## Child Task Rules
+- 只使用当前消息里的提示词和附件。
+- 参考图必须作为图片附件随消息提供；若只出现本地路径，不要打开、读取、复制该文件，也不要把路径写进提示词。
+- 不使用 shell、文件系统、搜索、Git、项目文档或旧线程背景。
+- 不要求补充项目上下文。
+- 每个任务只生成指定数量的图片，默认 1 张。
+- 只返回图片。若系统必须返回文字，只写一行生成图 id 或路径，不写分析。
+- 缺少提示词时，只回复：`缺少图片提示词，无法生图。`
 
-When acting as the image task:
-
-- Use only the prompt and attached images in the current task.
-- Treat markdown image paths as attachments only; do not open, copy, inspect, or mention the paths.
-- Do not use shell, filesystem, search, project files, git, or background documents.
-- Do not ask to inspect missing project context.
-- Generate exactly the requested image count, preferably one image per task.
-- Return only the image artifact. If text is unavoidable, return one compact line containing the generated image id or path and no analysis.
-- If the prompt is missing, reply only: `缺少图片提示词，无法生图。`
-
-## Child Task Prompt Template
-
-Use this shape when the parent creates a clean image task:
+## 新建任务模板
 
 ```text
 任务：只根据本消息中的图片提示词和随附参考图生成 1 张图片。
 
 硬限制：
-- 不读取文件，不写文件，不搜索，不查看项目背景，不提交 git。
-- 参考图只作为视觉附件使用；不要把附件路径写入图片提示词。
-- 只调用生图工具并返回图片本身；不要输出构图分析、QC、背景说明或其他行文。
+- 不读取文件，不写文件，不搜索，不查看项目背景，不提交 Git。
+- 参考图只作为视觉附件使用，不要把附件路径写入图片提示词。
+- 只调用生图工具并返回图片，不输出构图分析、QC、背景说明或其他文字。
 
 参考图附件：
-![reference label](attached-image)
+![参考图名称](图片附件)
 
 图片提示词：
-<prompt without local paths>
+<不含本地路径的提示词>
 ```
 
-For a revision:
+## 重做任务模板
 
 ```text
-任务：基于本消息中的修订提示词和随附参考图/上一版图，重新生成 1 张图片。
+任务：基于本消息中的修订提示词、随附参考图以及需要参照的上一版图，重新生成 1 张图片。
 
-硬限制同前：不读取文件，不写文件，不搜索，不查看项目背景；只返回图片。
+硬限制：
+- 不读取文件，不写文件，不搜索，不查看项目背景，不提交 Git。
+- 参考图只作为视觉附件使用。
+- 只调用生图工具并返回图片。
 
 修订提示词：
-<revised prompt without local paths>
+<不含本地路径的修订提示词>
 ```
 
-## Anti-Patterns
+## 禁止做法
 
-- Do not ask the image task to "read the project", "load the original large image", "open previous docs", or "save to this path".
-- Do not send episode bibles, shot plans, long diagnostics, Git diffs, or unrelated history into the image task.
-- Do not generate multiple target images in one child task unless the user explicitly accepts the added risk.
-- Do not keep retrying in a child task after a context-related failure.
-- Do not put file paths, task ids, or asset registry text into the actual image prompt.
+- 不要让生图任务读取项目文件、原始大图、旧文档或旧调度记录。
+- 不要让生图任务保存到指定路径；保存和复制由主任务处理。
+- 不要把剧集设定、分镜文档、Git diff、诊断长文或无关历史发给生图任务。
+- 除非用户明确接受风险，不要让一个生图任务同时生成多张目标图。
+- 遇到上下文相关失败后，不要在同一生图任务里反复重试。
+- 不要把文件路径、任务 id、资产登记文字写进图片提示词正文。
