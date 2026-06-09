@@ -241,7 +241,12 @@
         "motion": "controlled exterior front-biased low push toward the same gate, slight tilt-up, first gate impact and bone-bell shock; no 90-degree turn, no rear/opposite-side reveal, no both-side attack reading, no wall pass-through, no 180-degree turn"
       },
       "reference_frame_status": "R001/R002 prompt plan now uses exterior gate pressure and first gate-impact bell shock; regenerate frames if existing images still imply wall-top turn or rear-side reveal.",
-      "status": "needs_config"
+      "status": "needs_config",
+      "production_metadata": {
+        "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+        "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+        "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+      }
     },
     {
       "shot_id": "SC001-SH002",
@@ -304,7 +309,12 @@
         "motion": "minimal aftershock reaction: bell swing, chain tremble, dropped weapon slides a fraction, slight handheld push; no bell-bracing pose"
       },
       "status": "needs_reference_regeneration_and_config",
-      "reference_frame_status": "r003e01.png must be regenerated for the new half-collapsed-by-impact composition before final I2V render."
+      "reference_frame_status": "r003e01.png must be regenerated for the new half-collapsed-by-impact composition before final I2V render.",
+      "production_metadata": {
+        "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+        "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+        "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+      }
     },
     {
       "shot_id": "SC001-SH003",
@@ -366,7 +376,12 @@
         "denoise": 0.38,
         "motion": "subtle command performance"
       },
-      "status": "needs_config"
+      "status": "needs_config",
+      "production_metadata": {
+        "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+        "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+        "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+      }
     }
   ],
   "render_order": [

@@ -26,6 +26,12 @@ English: ComfyUI cannot automatically read image file names written in a prompt.
 
 English: For SH001, first/last frames are the highest-priority inputs; the three beast references only lock silhouette, troop variety and companion-beast diversity, and must not replace the first/last frames. In SH002/SH003 the beast army is background-only, so beast reference weights must stay lower than the human identity reference and I2V first frame.
 
+## Texture Standard / 质感标准
+
+中文：`01/assets/reference-frames/r001e01.png` 是当前批准的 4K 首帧质感标准。后续首尾帧、I2V 首帧和场景资产必须继承它的去粒子化真实材质：不使用黄色闪粉、数字颗粒、全局高频假锐化或同质灰色颗粒表面。
+
+English: `01/assets/reference-frames/r001e01.png` is the approved 4K first-frame texture standard. Later first/last frames, I2V first frames and scene assets must inherit its de-particleized photoreal material language, with no yellow glitter, digital grain, global high-frequency fake sharpening or uniform grey grain surfaces.
+
 ## SC001-SH001 FLF2V 节点配置 / FLF2V Node Setup
 
 中文：尾帧不是单独接到解码或视频节点的。`r002e01.png` 只接入 `Wan首尾帧视频` 的 `结束图像`，由该节点生成带首尾帧约束的 positive、negative 和 latent，再交给采样器。新版 R002 应是同一墙外方向的第一次撞门震钟尾帧，不是墙头转向尾帧。
@@ -99,14 +105,14 @@ English: The last frame is not connected directly to decode or video output node
 现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。
 
 **镜头负面**
-不要现代服饰、枪械、科幻 UI、塑料 CG、正面完全对称城门海报、左右完全对称军阵、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个钟架、第二只钟、城门方向跳变、兽族看镜头列队、纯骨钟特写、完整发光徽章、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确亮部中心、雪雾糊成灰白罩、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
+不要现代服饰、枪械、科幻 UI、塑料 CG、正面完全对称城门海报、左右完全对称军阵、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个钟架、第二只钟、城门方向跳变、兽族看镜头列队、纯骨钟特写、完整发光徽章、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确亮部中心、雪雾糊成灰白罩、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
 ```
 
 ### positive_prompt_en
 
 ```text
 **Style**
-Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction.
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction. Match the approved first-frame texture standard: de-particleized photoreal surfaces, no digital speckle, no yellow glitter, clear material separation and physically plausible cold-warm lighting.
 
 **Goal**
 Establish Suohou Gate siege pressure in blizzard with a front-biased exterior angle: the first frame looks from outside the wall at a low, slightly oblique angle toward the gate and blackstone wall as the beast tide, siege cart or gate-breaking mammoth presses forward; the last frame keeps the same exterior-side direction and uses the first heavy gate impact, swinging bone bell and snow blast as the transition into wall-top bodily cost.
@@ -131,7 +137,7 @@ Human defenders on the wall top are only small silhouettes and spear-line shapes
 modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.
 
 **Shot Negative**
-avoid modern clothing, firearms, sci-fi UI, plastic CGI, perfectly symmetrical frontal-gate poster frame, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second bell frame, second bell, gate direction jump, beast troops posing toward camera, pure bone-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear highlight center, snow haze as grey veil, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles.
+avoid modern clothing, firearms, sci-fi UI, plastic CGI, perfectly symmetrical frontal-gate poster frame, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second bell frame, second bell, gate direction jump, beast troops posing toward camera, pure bone-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear highlight center, snow haze as grey veil, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles.
 ```
 
 ## SC001-SH002
@@ -177,7 +183,7 @@ avoid modern clothing, firearms, sci-fi UI, plastic CGI, perfectly symmetrical f
 
 ```text
 **Style**
-Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction.
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction. Match the approved first-frame texture standard: de-particleized photoreal surfaces, no digital speckle, no yellow glitter, clear material separation and physically plausible cold-warm lighting.
 
 **Goal**
 Compress the battlefield scale into the young grey-wall soldier's bodily cost: the gate-impact shock knocks him off balance, he half-collapses beside the same wall-top blackstone parapet with shoulder and back against the wall, his weapon slips from his hand into the snow mud, and the same bone bell still swings beside him.
@@ -202,7 +208,7 @@ The bone bell remains in the same wall-top bell frame and the exterior battlefie
 modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.
 
 **Shot Negative**
-avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object framing, bright sacred emblem, heroic posing, divine backlight, overexposed bloom, uniformly grey-black image, no key-light direction, snow haze as grey veil, video smearing, glitching, compression blocks, local melting, blurred face, melted fingers, fused armor plates, warped bell frame, excessive gore, deformed front-face close-up, beautified face, childlike face, modern armor, drifting bell position, background battlefield direction change, second wall, second bell frame.
+avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object framing, bright sacred emblem, heroic posing, divine backlight, overexposed bloom, uniformly grey-black image, no key-light direction, snow haze as grey veil, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred face, melted fingers, fused armor plates, warped bell frame, excessive gore, deformed front-face close-up, beautified face, childlike face, modern armor, drifting bell position, background battlefield direction change, second wall, second bell frame.
 ```
 
 ## SC001-SH003

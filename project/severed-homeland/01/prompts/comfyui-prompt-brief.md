@@ -2,15 +2,21 @@
 
 ## Scope / 范围
 
-中文：本交付包只覆盖第01集 `SC001-SH001` 到 `SC001-SH003`，即锁喉关外墙暴雪序幕。SC001 资产图已经进入可交付使用状态，四张 3840x2160 横屏参考帧可用于 ComfyUI 视频生成。
+中文：本交付包只覆盖第01集 `SC001-SH001` 到 `SC001-SH003`，即锁喉关外墙暴雪序幕。SC001 资产图已经进入可交付使用状态，四张 4K 横屏参考图可用于 ComfyUI 视频生成。
 
-English: This delivery pack covers only episode 01 `SC001-SH001` through `SC001-SH003`, the Suohou Gate blizzard prologue. SC001 visual assets are usable for handoff, and four 3840x2160 landscape reference frames can be used for ComfyUI video generation.
+English: This delivery pack covers only episode 01 `SC001-SH001` through `SC001-SH003`, the Suohou Gate blizzard prologue. SC001 visual assets are usable for handoff, and four 4K landscape reference images can be used for ComfyUI video generation.
+
+## Texture Standard / 质感标准
+
+中文：`r001e01.png` 已替换为 `019eac75-d625-7291-bfd7-273ec630f1c3` 最新 fortress_battle_far_view_war_aged_clean_4k 首帧，canonical 文件为 4096x1840 4K 宽银幕参考图。后续 `SC001` 尾帧以及 `SC002`、`SC003` 资产图必须以这张图的去粒子化真实质感为标准：黑石、旧木、骨钟/旧金属、兽皮毛、泥雪和布旗分材质处理，不允许黄色闪粉、数字噪点、全局假锐化或同质灰色颗粒材质。
+
+English: `r001e01.png` has been replaced with the latest fortress_battle_far_view_war_aged_clean_4k first frame from `019eac75-d625-7291-bfd7-273ec630f1c3`; the canonical file is a 4096x1840 4K widescreen reference image. Later `SC001` tail-frame work and `SC002` / `SC003` asset images must match this de-particleized photoreal texture standard: separated blackstone, old timber, bone or aged metal, fur, mud-snow and cloth flag materials, with no yellow glitter, digital speckle, global fake sharpening or uniform grey grain texture.
 
 ## Creative Update / 创作更新
 
-中文：SC001 开场改为墙外正向偏斜攻城前推，不再要求模型完成升到墙头后的转向。首帧应是墙外攻城方向低机位，约七成正向读城门压力、三成斜向给纵深；兽潮、攻城车或破门猛犸压向同一面黑石城门。尾帧仍保持同一墙外方向，攻城车木梁或铁包巨角第一次重撞城门，雪雾冲画面，墙头同一钟架和同一口骨钟在上方或侧上方横摆。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条前推中只读时代事件：“肃明历1226年，北境十三部落联盟大举入寇。”；“北关五百载，白骨未成尘。”改放 `SC001-SH002` 末尾。
+中文：SC001 开场改为墙外正向偏斜攻城前推，不再要求模型完成升到墙头后的转向。首帧应是墙外攻城方向低机位，约七成正向读城门压力、三成斜向给纵深；兽潮、攻城车或破门猛犸压向同一面黑石城门。尾帧仍保持同一墙外方向，攻城车木梁或铁包巨角第一次重撞城门，雪雾冲画面，墙头同一钟架和同一口骨钟在上方或侧上方横摆。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条前推中只读精炼时代事件：“肃明一千两百二十六年，北方大雪。”；“敌已叩关。”改放 `SC001-SH002` 末尾。
 
-English: SC001 now uses an exterior front-biased siege push, and no longer asks the model to complete a turn after climbing to the wall top. The first frame should be a low exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth, with the beast tide, siege cart or gate-breaking mammoth pressing toward the same blackstone gate. The last frame keeps the same exterior direction as a siege-cart beam or iron-wrapped horn hits the gate for the first time, snow haze blasts into frame, and the same wall-top bell frame and same bone bell swing above or upper-side. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. This push only reads the era-event voiceover: "In Suming year 1226, the northern thirteen-tribe alliance invades in force."; "At the northern pass, five hundred years of bones have not turned to dust." lands at the end of `SC001-SH002`.
+English: SC001 now uses an exterior front-biased siege push, and no longer asks the model to complete a turn after climbing to the wall top. The first frame should be a low exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth, with the beast tide, siege cart or gate-breaking mammoth pressing toward the same blackstone gate. The last frame keeps the same exterior direction as a siege-cart beam or iron-wrapped horn hits the gate for the first time, snow haze blasts into frame, and the same wall-top bell frame and same bone bell swing above or upper-side. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. This push only reads the refined era-event voiceover: "In Suming year one thousand two hundred twenty-six, heavy snow falls in the north."; "The enemy has reached the pass." lands at the end of `SC001-SH002`.
 
 中文：`r001e01.png` 和 `r002e01.png` 若仍是上一版墙头转向构图，需要按本版“墙外前推 + 撞门震钟”重新确认或重生。该镜头时长保持 `3.5s / 84 frames @ 24fps`。
 
@@ -38,9 +44,9 @@ English: The following unified cinematography grammar is for prompt authors and 
 
 ## Video Quality Lock / 视频画质锁
 
-中文：SC001 的“脏暗、模糊、花屏”问题必须在构图和 prompt 两层处理。构图上要求前景、中景、背景明确分层，关键脸、手、武器、钟架、城门和兽潮轮廓可读；光影上用明确亮部中心和轮廓光解决灰暗，不靠全局提亮。雪雾只允许做体积层、撞击亮部和隐藏剪切点，不能糊成覆盖细节的灰白罩。ComfyUI 负面提示必须包含：视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化、甲片粘连、关键轮廓糊掉。
+中文：SC001 的“脏暗、模糊、花屏”问题必须在构图和 prompt 两层处理。构图上要求前景、中景、背景明确分层，关键脸、手、武器、钟架、城门和兽潮轮廓可读；光影上用明确亮部中心和轮廓光解决灰暗，不靠全局提亮。雪雾只允许做体积层、撞击亮部和隐藏剪切点，不能糊成覆盖细节的灰白罩。ComfyUI 负面提示必须包含：粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化、甲片粘连、关键轮廓糊掉。
 
-English: SC001 must solve muddy darkness, blur and video glitches at both composition and prompt levels. Composition requires clear foreground/midground/background separation and readable key faces, hands, weapons, bell frame, gate and beast silhouettes; lighting solves darkness with a clear highlight center and rim light, not global brightening. Snow haze is only volumetric depth, impact highlight and hidden cut point, never a grey-white veil over detail. ComfyUI negative prompts must include video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers, fused armor plates and blurred key silhouettes.
+English: SC001 must solve muddy darkness, blur and video glitches at both composition and prompt levels. Composition requires clear foreground/midground/background separation and readable key faces, hands, weapons, bell frame, gate and beast silhouettes; lighting solves darkness with a clear highlight center and rim light, not global brightening. Snow haze is only volumetric depth, impact highlight and hidden cut point, never a grey-white veil over detail. ComfyUI negative prompts must include particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers, fused armor plates and blurred key silhouettes.
 
 ## Shot Method / 镜头方法
 

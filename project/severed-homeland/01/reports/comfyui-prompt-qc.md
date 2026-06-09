@@ -20,6 +20,11 @@ English: The SC001 post-asset ComfyUI delivery package is structurally complete,
 | `SC001-SH002` | `I2V` | `r003e01.png` first frame, `c024ae01.png` character reference, plus low-weight background `c020m.png`, `c021m.png`, `c020e01.png` beast references | `needs_config / needs_r003_regeneration` | 旧扶钟构图已废弃。新版 `r003` 必须是年轻军户被撞门余震晃倒、半倒墙边、武器脱手滑进雪泥、旁边同一口骨钟横摆；人物脸半遮，不做正脸表情。光影修正为：撞门方向冷白雪雾反光为亮部中心，裂云冷白/淡金边缘光切钟架、锁链、头盔、肩甲和武器，低位暗红火只勾手指、武器边缘、钟缘和冻血，黑墙负补光压脸和暗面。 |
 | `SC001-SH003` | `I2V` | `r004e01.png` first frame, `c004e01.png` character reference, plus low-weight background `c020m.png`, `c021m.png`, `c020e01.png` beast references | `needs_config` | 薛临墙台词已改为“敌人上来了。”；兽族参考只作为墙外背景连续性，权重必须低于薛临墙身份参考和 I2V 首帧。光影为战场口令中近景方案：半脸入黑墙负补光，远火小面积切出脸、手、旧甲片，雪雾分离枪线和门线。 |
 
+## R001 Replacement / R001 替换记录
+
+- 中文：`r001e01.png` 已替换为 `019eac75-d625-7291-bfd7-273ec630f1c3` 最新 fortress_battle_far_view_war_aged_clean_4k 首帧，当前 canonical 分辨率为 4096x1840；被替换的临时 4096x1700 候选版本已归档到 `01/assets/reference-frames/history/r001e01.before-fortress-battle-4k-replace-20260609.png`，源图已保存在 `01/assets/reference-frames/history/r001e01.019eac75-source-fortress-battle-far-view-war-aged-clean-4k-20260609.png`。
+- English: `r001e01.png` has been replaced with the latest fortress_battle_far_view_war_aged_clean_4k first frame from `019eac75-d625-7291-bfd7-273ec630f1c3`; the canonical file is now 4096x1840, and the replaced temporary 4096x1700 candidate is archived at `01/assets/reference-frames/history/r001e01.before-fortress-battle-4k-replace-20260609.png`, and the source image is preserved at `01/assets/reference-frames/history/r001e01.019eac75-source-fortress-battle-far-view-war-aged-clean-4k-20260609.png`.
+
 ## Asset Format Checks / 资产格式检查
 
 - 中文：`E01_R001`、`E01_R002`、`E01_R003` 和 `E01_R004` 均为视频参考帧槽位；但 `E01_R002` 需复核是否已是撞门震钟尾帧，`E01_R003` 旧扶钟构图已废弃，必须重生后再作为 `SC001-SH002` 首帧。

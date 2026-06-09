@@ -92,7 +92,7 @@
         "last_frame_ref": "01/assets/reference-frames/r002e01.png",
         "reference_frame_status": "R001 and R002 have been updated and visually checked for the revised SH001 FLF2V scheme: R001 is a low diagonal rear-side siege first frame, and R002 is a wall-top medium-near last frame with bone bell, defenders and exterior siege visible below.",
         "audio_refs": [
-          "voiceover:肃明历1226年，北境十三部落联盟大举入寇。",
+          "voiceover:肃明一千两百二十六年，北方大雪。",
           "sfx:bone_bell_crack",
           "sfx:blizzard",
           "sfx:low_gate_impact"
@@ -113,7 +113,12 @@
           "C021",
           "E01_C020"
         ],
-        "reference_frame_update_note": "R001/R002 are now authored as an exterior front-biased siege push and first gate-impact/bell-shock endpoint. One wall, one gate, one bell frame, one bell; camera must not turn behind the wall, cross to the rear/opposite side, or make the wall read as attacked from both sides."
+        "reference_frame_update_note": "R001/R002 are now authored as an exterior front-biased siege push and first gate-impact/bell-shock endpoint. One wall, one gate, one bell frame, one bell; camera must not turn behind the wall, cross to the rear/opposite side, or make the wall read as attacked from both sides.",
+        "production_metadata": {
+          "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+          "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+          "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+        }
       },
       "model_visible_prompt": {
         "visible_goal_zh": "在暴雪中建立锁喉关正面偏斜攻城压力：首帧从墙外攻城方向低机位正向偏斜看城门和黑石巨墙，兽潮、攻城车或破门猛犸压向城门；尾帧仍保持同一墙外方向，用第一次重撞城门、骨钟横摆和雪雾冲画面作为切入墙头身体代价的转场。",
@@ -207,7 +212,7 @@
         "first_frame_ref": "01/assets/reference-frames/r003e01.png",
         "last_frame_ref": "",
         "audio_refs": [
-          "voiceover:北关五百载，白骨未成尘。",
+          "voiceover:敌已叩关。",
           "sfx:broken_spear_drop",
           "sfx:frozen_blood_stick",
           "sfx:distant_snow_wolf"
@@ -227,7 +232,12 @@
           "E01_C020"
         ],
         "reference_frame_update_note": "R003 old bell-bracing frame is superseded; regenerate r003e01.png as a half-collapsed young soldier beside the wall, dropped weapon in snow mud, same bell swinging beside him, with refined storm-break cinematic lighting.",
-        "reference_frame_status": "needs_regeneration_after_sh002_action_rework_2026-06-08"
+        "reference_frame_status": "needs_regeneration_after_sh002_action_rework_2026-06-08",
+        "production_metadata": {
+          "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+          "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+          "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+        }
       },
       "model_visible_prompt": {
         "visible_goal_zh": "把战场规模压到年轻灰墙军户的身体代价：撞门余震把他晃倒，他半倒在同一墙头黑石女墙边，肩背撞墙，武器从手中脱落滑进雪泥，旁边同一口骨钟仍在横摆。",
@@ -245,7 +255,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "3840x2160 input ref; render target PLACEHOLDER_16x9_RESOLUTION",
+        "resolution": "4K input ref; render target PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
@@ -338,7 +348,12 @@
           "C020",
           "C021",
           "E01_C020"
-        ]
+        ],
+        "production_metadata": {
+          "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
+          "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+          "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+        }
       },
       "model_visible_prompt": {
         "visible_goal_zh": "表现薛临墙在同一墙头空间内低声提醒敌人逼近：他手压黑石墙缝，脸转向门线和枪线，嘴部只做短句开口状态，语气压低、急促但不慌。",
@@ -356,7 +371,7 @@
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
-        "resolution": "3840x2160 input ref; render target PLACEHOLDER_16x9_RESOLUTION",
+        "resolution": "4K input ref; render target PLACEHOLDER_16x9_RESOLUTION",
         "sampler": "PLACEHOLDER_SAMPLER",
         "scheduler": "PLACEHOLDER_SCHEDULER",
         "steps": 28,
