@@ -68,25 +68,25 @@
         "scheduler": "simple",
         "steps": 28,
         "preview_steps": 20,
-        "cfg": 4.0,
+        "cfg": 4,
         "cfg_range_note": "Use 4.0 for first tests; raise only to 4.5 if prompt adherence is weak. Higher CFG can damage first/last-frame continuity.",
-        "model_sampling_sd3_shift": 8.0,
+        "model_sampling_sd3_shift": 8,
         "denoise": 0.45,
         "reference_weight": "PLACEHOLDER_REFERENCE_WEIGHT",
         "character_reference_weights": {
           "E01_C024A_tail_wall_defender": 0.28,
           "E01_C024A_start_percent": 0.55,
-          "E01_C024A_end_percent": 1.0,
+          "E01_C024A_end_percent": 1,
           "E01_C004_optional_xue_tail_presence": 0.22,
           "E01_C004_start_percent": 0.65,
-          "E01_C004_end_percent": 1.0,
+          "E01_C004_end_percent": 1,
           "operator_note": "SH001 character references are tail-frame continuity only. Keep them lower than first/last-frame constraints; disable E01_C004 unless Xue is visibly present in the tail frame."
         },
         "beast_reference_weights": {
           "C020_beast_troop_master": 0.5,
           "C021_companion_beast_master": 0.4,
           "E01_C020_episode_beast_state": 0.55,
-          "start_percent": 0.0,
+          "start_percent": 0,
           "end_percent": 0.8,
           "operator_note": "ComfyUI cannot read image file names from prompt text. These three references must be loaded through image nodes and connected to the configured reference/IPAdapter branch."
         },
@@ -148,7 +148,7 @@
           "C020_beast_troop_master": 0.35,
           "C021_companion_beast_master": 0.3,
           "E01_C020_episode_beast_state": 0.4,
-          "start_percent": 0.0,
+          "start_percent": 0,
           "end_percent": 0.65,
           "operator_note": "For SH002 and SH003 these references are background continuity only; keep them lower than the human identity/first-frame reference."
         },
@@ -217,7 +217,7 @@
           "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
           "suggested_weight": 0.28,
           "start_percent": 0.55,
-          "end_percent": 1.0
+          "end_percent": 1
         },
         {
           "node_hint": "PLACEHOLDER_XUE_LINQIANG_IMAGE_NODE",
@@ -226,7 +226,7 @@
           "connection": "PLACEHOLDER_CHARACTER_IPADAPTER_NODE",
           "suggested_weight": 0.22,
           "start_percent": 0.65,
-          "end_percent": 1.0,
+          "end_percent": 1,
           "operator_note": "Disable unless Xue Linqiang is visibly present in the SH001 tail frame."
         }
       ],
@@ -238,9 +238,9 @@
         "fps": 24,
         "duration": "3.5s",
         "denoise": 0.45,
-        "motion": "controlled same-side diagonal siege lift along the exterior wall to the exterior-edge wall-top bone bell; camera remains facing the same exterior siege side; no rear/opposite-side reveal, no both-side attack reading, no frontal push, no wall pass-through, no 180-degree turn"
+        "motion": "controlled exterior front-biased low push toward the same gate, slight tilt-up, first gate impact and bone-bell shock; no 90-degree turn, no rear/opposite-side reveal, no both-side attack reading, no wall pass-through, no 180-degree turn"
       },
-      "reference_frame_status": "r001e01.png and r002e01.png have been updated and visually checked for the revised diagonal first-frame and wall-top last-frame compositions.",
+      "reference_frame_status": "R001/R002 prompt plan now uses exterior gate pressure and first gate-impact bell shock; regenerate frames if existing images still imply wall-top turn or rear-side reveal.",
       "status": "needs_config"
     },
     {
@@ -301,9 +301,10 @@
         "fps": 24,
         "duration": "1.8s",
         "denoise": 0.42,
-        "motion": "minimal physical reaction"
+        "motion": "minimal aftershock reaction: bell swing, chain tremble, dropped weapon slides a fraction, slight handheld push; no bell-bracing pose"
       },
-      "status": "needs_config"
+      "status": "needs_reference_regeneration_and_config",
+      "reference_frame_status": "r003e01.png must be regenerated for the new half-collapsed-by-impact composition before final I2V render."
     },
     {
       "shot_id": "SC001-SH003",

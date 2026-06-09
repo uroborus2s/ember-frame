@@ -213,8 +213,8 @@
       "asset_type": "character",
       "file_path": "01/assets/characters/c024ae01.png",
       "status": "ready",
-      "prompt_hint_zh": "年轻灰墙军户序幕状态卡，用于扶钟、断矛、冻血和雪墙可读性；不可当作视频首帧。",
-      "prompt_hint_en": "Young grey-wall soldier prologue state card for bell support, broken spear, frozen blood and snow-wall readability; not a video first frame.",
+      "prompt_hint_zh": "年轻灰墙军户序幕状态卡，用于被撞门余震晃倒、半倒墙边、武器脱手、冻血和雪墙可读性；不可当作视频首帧。",
+      "prompt_hint_en": "Young grey-wall soldier prologue state card for aftershock collapse beside the wall, dropped weapon, frozen blood and snow-wall readability; not a video first frame.",
       "comfyui_role": "ipadapter",
       "output_format": {
         "deliverable_kind": "episode_state_card",
@@ -247,9 +247,9 @@
       "asset_id": "E01_R001",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r001e01.png",
-      "status": "ready",
-      "prompt_hint_zh": "SC001-SH001 首帧：攻城方斜后侧低机位，三分之四看同一面锁喉关黑石墙；远处墙头小钟只是锚点，兽族/伴生兽由已加载的 C020、C021、E01_C020 参考图节点约束。",
-      "prompt_hint_en": "SC001-SH001 updated first frame: low diagonal rear-side siege angle, three-quarter view of the Suohou Gate blackstone wall; foreground shows beast siege shoulders, old iron armor plates, torn banners, brazier fire, snow-mud footsteps and one partial beast spine or horn, with the beast tide pushing from front-left toward the gate at rear-right, the gate not centered and ranks not symmetrical, while the wall-top bone bell and defenders are only small silhouettes. Beast troops and companion beasts are constrained by loaded C020, C021 and E01_C020 reference image nodes.",
+      "status": "needs_recheck",
+      "prompt_hint_zh": "SC001-SH001 首帧：墙外攻城方向低机位正向偏斜，七成正向读城门压力、三成斜向给纵深；兽族/伴生兽、攻城车或破门猛犸压向同一面黑石城门，远处墙头小钟只是锚点。",
+      "prompt_hint_en": "SC001-SH001 first frame: low front-biased exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth; beast troops/companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate, with the tiny wall-top bell only as an anchor.",
       "comfyui_role": "first_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -260,8 +260,8 @@
           "first frame"
         ],
         "composition_layers": {
-          "foreground": "diagonal rear-side beast siege shoulders, torn banners, old iron plates, brazier fire, snow-mud footsteps and partial beast spine or horn",
-          "midground": "blackstone wall and gate set off-center along a diagonal siege line",
+          "foreground": "front-biased low beast siege shoulders, torn banners, old iron shields, siege-cart beams, snow-mud footsteps and partial beast horn or mammoth form",
+          "midground": "same blackstone wall and gate with frontal pressure and slight oblique depth",
           "background": "small wall-top bone bell and defender silhouettes, mountains, snow haze and distant firelines"
         }
       },
@@ -281,8 +281,8 @@
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r002e01.png",
       "status": "ready",
-      "prompt_hint_zh": "SC001-SH001 终帧：同一墙面斜爬上墙头后45度转向；单墙、单钟架、单钟，半幅墙头守军、半幅俯看城外兽族朝墙攻来。",
-      "prompt_hint_en": "SC001-SH001 updated last frame: wall-top medium-near composition, camera landed at the blackstone parapet outer edge or wall-top human height, looking diagonally down outside the wall; bone bell and frame sit on the left or upper middle, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands, spear or gate-bar details are clear, two to four defenders steady the spear line, and the exterior beast tide, barricades, beast parts, firelines, smoke columns and blizzard remain visible below on a diagonal.",
+      "prompt_hint_zh": "SC001-SH001 终帧：同一墙外方向的第一次重撞城门；攻城车木梁或铁包巨角撞门，雪雾亮部、门闩震动、同一墙头骨钟横摆，禁止越墙到背面。",
+      "prompt_hint_en": "SC001-SH001 last frame: first heavy gate impact from the same exterior direction; siege-cart beam or iron-wrapped horn hits the gate, snow-haze highlight, gate-bar shock and the same wall-top bone bell swinging, with no crossing behind the wall.",
       "comfyui_role": "last_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -293,9 +293,9 @@
           "last frame"
         ],
         "composition_layers": {
-          "foreground": "bone bell, bell frame, blackstone parapet, snow-mud wall surface, defender shoulders, cracked hands and spear or gate-bar details",
-          "midground": "two to four wall-top defenders bracing the spear line after impact",
-          "background": "exterior beast tide, barricades, partial beasts, firelines, smoke columns and blizzard visible below on a diagonal"
+          "foreground": "gate-impact snow blast, siege-cart beam or iron-wrapped horn, old timber, blackstone edge and low fire rim",
+          "midground": "same blackstone gate, shaken bars, wall face and impact debris",
+          "background": "same wall-top bell frame and bone bell swinging above or upper-side, small defender silhouettes and blizzard"
         }
       },
       "usage": [
@@ -313,9 +313,9 @@
       "asset_id": "E01_R003",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r003e01.png",
-      "status": "ready",
-      "prompt_hint_zh": "SC001-SH002 首帧：同一墙头同一口钟旁，年轻军户扶住破钟，旧徽几乎被手和裂缝遮住。",
-      "prompt_hint_en": "SC001-SH002 first frame: young soldier holds the cracked bell; frozen blood, broken spear, old mark and exterior battlefield layers are clear.",
+      "status": "needs_regeneration",
+      "prompt_hint_zh": "SC001-SH002 新首帧：同一墙头同一口钟旁，年轻军户被撞门余震晃倒，半倒墙边，武器脱手滑进雪泥，旁边骨钟横摆；旧徽只剩不可读断屑。",
+      "prompt_hint_en": "SC001-SH002 new first frame: beside the same wall-top bell, the young soldier is knocked down by the gate-impact aftershock, half-collapsed by the wall, weapon slipping into snow mud, same bone bell swinging beside him; the old mark remains only unreadable broken flecks.",
       "comfyui_role": "first_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -326,9 +326,9 @@
           "first frame"
         ],
         "composition_layers": {
-          "foreground": "young soldier, cracked bone bell, blooded hands and broken spear",
-          "midground": "wall-top walkway and nearby defenders",
-          "background": "outer siege field below the wall and blizzard"
+          "foreground": "dropped broken spear or spear shaft sliding through snow mud, bracing hand, snow and dark-red frozen blood edge",
+          "midground": "young soldier half-collapsed beside blackstone parapet, shoulder and back against wall, face half hidden by helmet, scarf, shadow and blizzard",
+          "background": "same bell frame and swinging bone bell, nearby defenders, exterior siege pressure, snow haze and low fire points"
         }
       },
       "usage": [

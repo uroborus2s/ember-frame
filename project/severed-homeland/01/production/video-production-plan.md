@@ -2,9 +2,9 @@
 
 ## 状态 / Status
 
-中文：当前已补齐 `SC001` 后资产 ComfyUI 交付包，并已按新版斜侧攻城升镜更新 `SC001-SH001`。`r001e01.png` 和 `r002e01.png` 已通过新版首尾帧构图检查。其余场次仍保持 director-room 预资产分镜包状态。`SC001-SH001` 到 `SC001-SH003` 可在补齐模型与 workflow 配置后小批量试渲。
+中文：当前已补齐 `SC001` 后资产 ComfyUI 交付包，并按最新方案把 `SC001-SH001` 改为墙外正向偏斜前推到第一次撞门震钟，放弃升到墙头后转向的复杂运镜。`SC001-SH002` 废弃年轻军户扶钟构图，改为被撞门余震晃倒、半倒墙边、武器脱手、旁边骨钟横摆。其余场次仍保持 director-room 预资产分镜包状态。`SC001-SH001` 到 `SC001-SH003` 可在重生/确认 `r002e01.png`、`r003e01.png` 并补齐模型与 workflow 配置后小批量试渲。
 
-English: The post-asset ComfyUI delivery package is now complete for `SC001`, and `SC001-SH001` has been updated to the new diagonal siege-side lift. `r001e01.png` and `r002e01.png` have passed the updated first/last-frame composition check. The remaining scenes are still in director-room pre-asset shot-package state. `SC001-SH001` through `SC001-SH003` can enter a small test batch after model and workflow configuration is supplied.
+English: The post-asset ComfyUI delivery package is now complete for `SC001`, and `SC001-SH001` has been updated to the latest exterior front-biased push into the first gate-impact bell shock, dropping the complex wall-top turn. `SC001-SH002` abandons the young soldier bracing-the-bell composition and changes to aftershock collapse beside the wall, dropped weapon, and the same bell swinging beside him. The remaining scenes are still in director-room pre-asset shot-package state. `SC001-SH001` through `SC001-SH003` can enter a small test batch after `r002e01.png` and `r003e01.png` are regenerated/rechecked and model/workflow configuration is supplied.
 
 ## 生产规格 / Production Specs
 
@@ -47,13 +47,19 @@ English: The post-asset ComfyUI delivery package is now complete for `SC001`, an
 
 | Shot | Method | Reference Inputs | Output |
 | --- | --- | --- | --- |
-| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（新版斜侧攻城首帧）, `01/assets/reference-frames/r002e01.png`（单墙单钟同侧外墙城头尾帧）, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png`, `01/assets/characters/c024ae01.png`（低权重尾帧守军连续性）, `01/assets/characters/c004e01.png`（仅薛临墙在尾帧可见时启用） | `01/renders/raw/sc001-sh001.mp4` |
-| `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png`, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh002.mp4` |
+| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（墙外正向偏斜攻城首帧）, `01/assets/reference-frames/r002e01.png`（同一墙外方向第一次撞门震钟尾帧）, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png`, `01/assets/characters/c024ae01.png`（低权重墙头守军剪影连续性） | `01/renders/raw/sc001-sh001.mp4` |
+| `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png`（旧扶钟构图已废弃，必须重生为半倒墙边、武器脱手、骨钟横摆）, `01/assets/characters/c024ae01.png`, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh002.mp4` |
 | `SC001-SH003` | `I2V` | `01/assets/reference-frames/r004e01.png`, `assets/characters/c020m.png`, `assets/characters/c021m.png`, `01/assets/characters/c020e01.png` | `01/renders/raw/sc001-sh003.mp4` |
 
-中文：`SC001-SH001` 改为斜侧攻城升镜：首帧从攻城方斜后侧低机位看兽潮斜推城门，尾帧沿同一面外墙斜爬到墙头外沿，只沿女墙方向做小角度偏转，把骨钟和人族守军带入前景，但镜头仍面向同一个墙外攻城面。R001-R004 硬锁为同一面城墙、同一个钟架、同一口钟；城外只允许由已加载 `C020/C021/E01_C020` 参考图节点约束的兽族士兵和伴生兽朝墙攻来。禁止越过墙脊看城内或另一侧，禁止读成城墙两边同时被攻击。升镜期间读旁白“北墙五百年，血从未干。”。`SC001-SH003` 台词统一为“敌人上来了。”，语气为压低、急促但不慌。视频 prompt 不要求生成精确文字，字幕和配音在后期音频阶段处理。
+中文：`SC001-SH001` 改为墙外正向偏斜攻城前推：首帧从墙外攻城方向低机位看兽潮、攻城车或破门猛犸压向同一面黑石城门，尾帧保持同一墙外方向，第一次重撞城门，雪雾冲画面，墙头同一钟架和同一口骨钟横摆。R001-R004 硬锁为同一面城墙、同一个城门、同一个钟架、同一口钟；城外只允许由已加载 `C020/C021/E01_C020` 参考图节点约束的兽族士兵和伴生兽朝墙攻来。禁止越过墙脊看城内或另一侧，禁止读成城墙两边同时被攻击。前推期间读时代事件旁白“肃明历1226年，北境十三部落联盟大举入寇。”。`SC001-SH002` 新版首帧必须是年轻军户被震倒半倒墙边、武器脱手、骨钟横摆，并在镜头末尾落旁白“北关五百载，白骨未成尘。”；`SC001-SH003` 台词统一为“敌人上来了。”，语气为压低、急促但不慌。视频 prompt 不要求生成精确文字，字幕和配音在后期音频阶段处理。
 
-English: `SC001-SH001` now uses a diagonal siege-side lift: the first frame starts from a low diagonal rear-side siege angle with the beast tide pushing diagonally toward the gate, and the last frame climbs along the same exterior wall to the exterior edge of the wall top, making only a small yaw along the parapet line to bring the bone bell and defenders into the foreground while still facing the same exterior siege side. R001-R004 are locked to one wall, one bell frame and one bell; outside the wall, only beast troops and companion beasts constrained by loaded `C020/C021/E01_C020` reference image nodes press toward the wall. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as being attacked from both sides. The voiceover "For five hundred years, the northern wall's blood has never dried" reads during the lift. `SC001-SH003` uses the updated line "The enemy is coming up," delivered low, urgent but controlled. Video prompts do not ask the model to generate exact text; subtitles and voice are handled in post/audio.
+English: `SC001-SH001` now uses an exterior front-biased siege push: the first frame starts from a low exterior siege angle with the beast tide, siege cart or gate-breaking mammoth pressing toward the same blackstone gate, and the last frame keeps the same exterior direction for the first heavy gate impact, snow haze blasting into frame and the same wall-top bell frame plus same bone bell swinging. R001-R004 are locked to one wall, one gate, one bell frame and one bell; outside the wall, only beast troops and companion beasts constrained by loaded `C020/C021/E01_C020` reference image nodes press toward the wall. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as being attacked from both sides. The voiceover "In Suming year 1226, the northern thirteen-tribe alliance invades in force." reads during the push. `SC001-SH002` must use the new first frame of the young soldier half-collapsed by the wall, weapon dropped and bell swinging, with the voiceover line "At the northern pass, five hundred years of bones have not turned to dust." landing at the shot end; `SC001-SH003` uses the updated line "The enemy is coming up," delivered low, urgent but controlled. Video prompts do not ask the model to generate exact text; subtitles and voice are handled in post/audio.
+
+### SC001 Cinematic Lighting Fix / SC001 电影光影修正
+
+中文：当前画面“脏、暗、灰”的解决方式不是全局调亮，而是建立亮部层级。`SC001-SH001` 最亮点是撞门瞬间的冷白雪雾，其次是城墙、攻城器械、巨兽和骨钟的冷白/淡金轮廓，再其次是暗红火点边缘；黑石墙继续作为负补光压住大暗面。`SC001-SH002` 最亮点是撞门方向反射到墙头的冷白雪雾，轮廓光落在钟架、锁链、头盔、肩甲和脱手武器上，暗红火只勾手指、武器边缘、钟缘和冻血。禁止全画面平均灰、禁止没有主光方向、禁止把雪雾做成糊掉细节的白灰罩。
+
+English: The fix for the current muddy, dark, grey image is not global brightening, but a clear highlight hierarchy. In `SC001-SH001`, the brightest point is the cold-white snow haze at the gate impact, followed by cold-white/pale-gold rims on the wall, siege engine, beast silhouettes and bone bell, then dark-red fire edges; the blackstone wall remains the negative-fill mass. In `SC001-SH002`, the brightest point is cold-white snow-haze bounce from the gate-impact direction, with rim light on bell frame, chains, helmet, shoulder armor and dropped weapon, while dark-red fire only edges fingers, weapon, bell rim and frozen blood. Reject flat grey across the whole frame, missing key-light direction, and snow haze that turns details into a white-grey smear.
 
 ### ComfyUI Reference Binding / 参考图节点接入
 
@@ -75,7 +81,7 @@ English: SH001 character modeling references are only for tail-frame defender co
 ## 配置待决 / Unresolved Config
 
 - `needs_config`: 未提供视频模型 checkpoint、图像模型 checkpoint、LoRA ID、ControlNet 模型、IPAdapter preset、ComfyUI workflow template 或 node ID。
-- `reference_frame_status`: `01/art/asset-index.json` 与 `01/art/asset-manifest.json` 中 `E01_R001` 到 `E01_R004` 已更新为 `generated_candidate_pending_user_qc`；最终仍以用户画面 QC 为准。
+- `reference_frame_status`: `E01_R003` 旧扶钟构图已废弃，必须重生为“半倒墙边、武器脱手、骨钟横摆”；`E01_R001/E01_R002` 若仍是上一版升镜/城头转向构图，也需按“墙外前推 + 撞门震钟”重新确认或重生；最终仍以用户画面 QC 为准。
 - 精确文字和符号镜头必须使用静帧、后期文字或 `REDRAW`：`SC004-SH007`, `SC005-SH004`, `SC006-SH004`, `SC006-SH007`。
 - 直接视频模型不负责精确对白。对白来自 `01/script/final-script.md`，后续进入 audio/post 阶段时再拆成字幕和配音行。
 
@@ -88,6 +94,6 @@ English: SH001 character modeling references are only for tail-frame defender co
 
 ## ComfyUI Handoff Recommendation
 
-中文：SC001 的参考帧已通过新版构图检查。生产侧补齐 `PLACEHOLDER_VIDEO_CHECKPOINT`、`PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`、`PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`、prompt node、image node、兽族参考/IPAdapter node 和 output node 绑定后，按 `SC001-SH001`、`SC001-SH002`、`SC001-SH003` 顺序渲染。`SC001-SH001` 使用 `3.5s / 84f`，其余场次继续按预资产计划推进 Art Room 资产。
+中文：先重生/确认 `r002e01.png` 的撞门震钟尾帧和 `r003e01.png` 的半倒墙边首帧，再补齐 `PLACEHOLDER_VIDEO_CHECKPOINT`、`PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`、`PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`、prompt node、image node、人物/兽族参考 IPAdapter node 和 output node 绑定，并按 `SC001-SH001`、`SC001-SH002`、`SC001-SH003` 顺序渲染。`SC001-SH001` 使用 `3.5s / 84f`；其余场次继续按预资产计划推进 Art Room 资产。
 
-English: SC001 reference frames have passed the updated composition check. Production should fill `PLACEHOLDER_VIDEO_CHECKPOINT`, `PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`, `PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`, prompt node, image node, beast reference/IPAdapter node and output node bindings, then render `SC001-SH001`, `SC001-SH002`, and `SC001-SH003` in order. `SC001-SH001` uses `3.5s / 84f`; the remaining scenes should continue through the pre-asset Art Room plan.
+English: First regenerate/recheck `r002e01.png` as the gate-impact bell-shock last frame and `r003e01.png` as the half-collapsed-by-the-wall first frame, then fill `PLACEHOLDER_VIDEO_CHECKPOINT`, `PLACEHOLDER_FLF2V_WORKFLOW_TEMPLATE`, `PLACEHOLDER_I2V_WORKFLOW_TEMPLATE`, prompt node, image node, character/beast reference IPAdapter nodes and output node bindings, and render `SC001-SH001`, `SC001-SH002`, and `SC001-SH003` in order. `SC001-SH001` uses `3.5s / 84f`; the remaining scenes should continue through the pre-asset Art Room plan.

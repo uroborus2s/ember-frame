@@ -116,6 +116,54 @@
         "Need a new SH001 FLF2V test render to verify the same-side exterior wall lock.",
         "If the model still crosses to the opposite side, reduce camera motion strength or regenerate R002 with a stronger same-side exterior downward view through merlons."
       ]
+    },
+    {
+      "iteration_id": "sc001-sh002-action-and-cinematic-lighting-rework",
+      "source_feedback": [
+        "User rejected the young soldier bracing the bell and requested that he be knocked by the impact, half-collapsed beside the wall, with the weapon slipping from his hand and the bell swinging beside him.",
+        "User reported the image lacked refined cinematic lighting and felt muddy, dark and grey, referencing a shot with clear low sun, rim light and tonal separation."
+      ],
+      "changed_shots": [
+        "SC001-SH001",
+        "SC001-SH002"
+      ],
+      "prompt_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Dropped the complex wall-top turn and rewrote the shot as an exterior front-biased low push to the first gate impact and bone-bell shock, reducing direction drift risk."
+        },
+        {
+          "shot_id": "SC001-SH002",
+          "change": "Replaced the bell-bracing pose with an aftershock body-cost beat: young soldier half-collapsed beside the parapet, weapon dropped into snow mud, same bone bell swinging beside him."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Added cinematic highlight hierarchy: cold-white gate-impact snow haze as brightest zone, pale-gold/cold-white storm-break rim on wall/siege engine/beasts/bell, low dark-red fire edge, black-wall negative fill."
+        },
+        {
+          "shot_id": "SC001-SH002",
+          "change": "Added close-shot lighting hierarchy: storm-break rim on bell frame, chains, helmet, shoulder armor and dropped weapon; gate-impact snow bounce as highlight center; dark-red fire edge only on fingers, weapon, bell rim and frozen blood."
+        }
+      ],
+      "parameter_changes": [
+        {
+          "shot_id": "SC001-SH002",
+          "parameter": "reference_frame_status",
+          "old_value": "r003e01.png bell-bracing candidate",
+          "new_value": "needs regeneration as half-collapsed-by-impact, dropped weapon, same bell swinging"
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "camera_direction_lock",
+          "old_value": "diagonal lift / wall-top turn variant",
+          "new_value": "same exterior direction low push to gate impact; no 90-degree turn, no rear/opposite-side reveal"
+        }
+      ],
+      "unresolved_issues": [
+        "Regenerate or recheck r002e01.png to match the same-exterior gate-impact bell-shock endpoint.",
+        "Regenerate r003e01.png from the updated image prompt before final SC001-SH002 I2V render.",
+        "Run a small ComfyUI render test to confirm the image no longer reads muddy, dark and uniformly grey, and that the shot has a clear highlight center and key-light direction."
+      ]
     }
   ]
 }

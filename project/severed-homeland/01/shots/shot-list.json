@@ -13,15 +13,15 @@
       "shot_id": "SC001-SH001",
       "scene_id": "SC001",
       "order": 1,
-      "purpose": "5秒内用同一面墙的斜向攻城推进、墙头骨钟与暴雪钩住边墙战争压力",
+      "purpose": "5秒内用同一面墙外正向偏斜攻城压力、第一次撞门震钟与暴雪钩住边墙战争压力",
       "subject": "锁喉关同一面黑石外墙、墙头同一警钟、墙外继承 C020/C021/C020E01 的兽族攻城队列",
-      "visible_action": "镜头从攻城方斜后侧低机位看同一面锁喉关黑石巨墙，兽族和伴生兽从左前向右后斜推城门；镜头顺同一墙面斜爬上墙头，再约45度转向人族女墙空间。尾帧只保留一面墙、一个钟架、一只钟：骨钟沿同一钟架方向横摆，守军短促前倾后稳住枪线，墙外兽族仍在斜下方朝墙压上来。",
-      "shot_size": "attacker-side low oblique wide to wall-top medium-near split frame",
-      "camera_angle": "R001 attacking-side low three-quarter angle; R002 human wall-top 45-degree angle along the same parapet",
-      "camera_movement": "diagonal climb along the same exterior wall, then 45-degree turn onto the human wall-top; no wall pass-through, no second wall",
+      "visible_action": "镜头从墙外攻城方向低机位正向偏斜看同一面锁喉关黑石巨墙和城门，兽族、伴生兽、攻城车或破门猛犸从雪雾里压向城门；镜头低位前推并轻微上仰，终点不越过墙头，而是在第一次重撞城门时让门闩、旧木、黑石边缘和雪雾震开。墙头同一钟架和同一口骨钟在上方或侧上方横摆，守军只读成小剪影和枪线，为下一镜墙头年轻军户被震倒做转场。",
+      "shot_size": "front-biased exterior siege wide to gate-impact bell-shock endpoint",
+      "camera_angle": "attacker-side low front-biased oblique angle toward the same gate and wall",
+      "camera_movement": "low exterior push and slight tilt-up to first gate impact; no wall crossing, no 90-degree turn, no rear-side reveal",
       "duration_seconds": 3.5,
-      "audio_note": "骨钟裂响、暴雪、低频撞门声；斜侧升镜期间完整读旁白。",
-      "dialogue_or_subtitle": "旁白：北墙五百年，血从未干。",
+      "audio_note": "低频撞门声、骨钟裂响、暴雪冲画面；前推期间读时代事件旁白。",
+      "dialogue_or_subtitle": "旁白：肃明历1226年，北境十三部落联盟大举入寇。",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
@@ -41,14 +41,14 @@
       "scene_id": "SC001",
       "order": 2,
       "purpose": "把战争规模压到一个年轻军户的身体代价",
-      "subject": "同一墙头年轻军户、同一摇晃骨钟、断矛、不可读淡金旧徽断屑",
-      "visible_action": "年轻灰墙军户在 R002 同一墙头警钟旁跪倒，断矛滑进雪泥；他伸手扶住同一口裂开的骨钟，手掌和裂缝遮住旧徽区域，只剩不可读的淡金断屑。墙外兽族和伴生兽仍在同一面墙下朝墙压上来。",
+      "subject": "同一墙头年轻军户、同一横摆骨钟、脱手断矛或长矛残杆、不可读淡金旧徽断屑",
+      "visible_action": "年轻灰墙军户被撞门余震晃到，半倒在 R002 同一墙头黑石女墙边，肩背撞墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛或长矛残杆，武器脱手斜滑进前景雪泥。旁边同一口裂开的骨钟仍在横摆，锁链拉紧、木架抖雪；旧徽区域只剩被裂缝、铜锈和雪泥吃掉的不可读淡金断屑。墙外兽族和伴生兽仍在同一面墙下朝城门压上来。",
       "shot_size": "tight medium with insert emphasis",
       "camera_angle": "human eye-level, slightly canted by impact",
-      "camera_movement": "quick drop with soldier then rack to bell crack",
+      "camera_movement": "small aftershock handheld feel, slight push to dropped weapon, body collapse and swinging bell",
       "duration_seconds": 1.8,
-      "audio_note": "断矛落雪、冻血黏住的细响、远处雪狼骑啸声。",
-      "dialogue_or_subtitle": "",
+      "audio_note": "撞门余震、武器脱手滑进雪泥、钟链抖动、远处兽潮和雪狼骑啸声；镜头末尾落旁白。",
+      "dialogue_or_subtitle": "旁白：北关五百载，白骨未成尘。",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
@@ -59,7 +59,8 @@
       ],
       "risk_flags": [
         "blood_readability",
-        "short_duration"
+        "short_duration",
+        "reference_frame_regeneration"
       ]
     },
     {

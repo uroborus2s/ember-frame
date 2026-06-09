@@ -11,9 +11,9 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 ### SC001 锁喉关外墙 / Suohou Gate Outer Wall
 
 - 镜头：`SC001-SH001` 到 `SC001-SH003`
-- 景别：斜侧攻城远景到城头中景偏近、局部中近景、薛临墙中近景。
-- 光线：暴雪冷白为主，加入云层裂隙冷天光、雪雾体积层、远处火线暖反打和黑石大暗面；火罐与冻血暗红只做局部信息，禁止圣光化。
-- 运镜：开场从攻城方斜后侧低机位起，不做正面居中冲城。兽潮从左前向右后斜推城门，镜头顺旗杆、烟柱、巨角和黑墙外立面起吊，落到城头中景偏近的骨钟、黑石女墙和守军肩背；墙外兽潮仍在斜下方背景可见。骨钟横摆和暴雪雪雾可作为隐藏剪切点，禁止穿墙、180 度调头和游戏感飞镜。
+- 景别：墙外正向偏斜攻城远景到撞门震钟终点、局部中近景、薛临墙中近景。
+- 光线：暴雪冷白为主，但必须有明确亮部中心和轮廓光。SC001 使用裂云低角度冷白带淡金天光、撞门冷白雪雾亮部、低位暗红火边缘和黑石墙负补光；火罐与冻血暗红只做局部信息，禁止圣光化，也禁止全画面灰黑。
+- 运镜：开场从墙外攻城方向低机位正向偏斜起，不做完全对称正面冲城。兽潮、攻城车或破门猛犸压向同一城门，镜头低位前推并轻微上仰，终点压到第一次撞门和骨钟横摆；不再要求升到墙头转向。骨钟横摆和暴雪雪雾可作为隐藏剪切点，禁止穿墙、90 度转向、180 度调头、越过墙脊看另一边和游戏感飞镜。
 - 连续性：骨钟、断矛、旧日月刻痕必须同场建立，后续旧帝国残痕才有重量。
 
 ### SC002 金河粮仓带 / Jinhe Grain Depot
@@ -60,8 +60,8 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 
 | Shot ID | Lens Feel | Camera Height | Movement | Lighting Key | Notes |
 | --- | --- | --- | --- | --- | --- |
-| SC001-SH001 | diagonal siege wide to wall-top medium-near | low siege-side rising to wall human height | diagonal lift along flags, smoke, horn and black-wall exterior to bone bell | cold storm break, volumetric snow, distant fireline rim | voiceover rides the lift; first frame must not be frontal symmetrical siege, last frame must show wall-top defenders and exterior siege below |
-| SC001-SH002 | tight natural lens | human kneel height | drop and rack focus | cold side snow, low fire edge | old sun-moon mark should be visible, not glowing |
+| SC001-SH001 | exterior front-biased siege wide to gate-impact endpoint | low attacker-side gate height | low push and slight tilt-up to first gate impact and bell shock | cold storm-break sky, pale-gold edge, snow-blast highlight, dark-red fire rim, black-wall negative fill | voiceover rides the push; first frame must not be perfectly symmetrical, last frame must stay same exterior direction and avoid rear/opposite-side reveal |
+| SC001-SH002 | tight natural lens | low wall-side collapse height | aftershock handheld micro push to dropped weapon, half-collapsed body and swinging bell | cold storm-break rim, gate-impact snow bounce, low fire edge, black-wall negative fill | old sun-moon mark should be broken/dim, not glowing; young soldier is half-collapsed by the wall, not bracing the bell |
 | SC001-SH003 | compressed medium | wall chest height | locked push | black wall shadow, cold snow rim, fireline edge | Xue command is restraint, not hero pose |
 | SC002-SH001 | landscape wide | villager eye height | real-time push | morning grain haze | grain bags dominate upper frame |
 | SC002-SH002 | close threshold | waist height | one-step handheld pull | side doorway light | keep child hand sensitive and brief |

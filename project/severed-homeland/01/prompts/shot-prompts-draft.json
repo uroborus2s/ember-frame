@@ -3,16 +3,16 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "status": "pre_asset_draft",
-  "global_negative_prompt_notes_zh": "避免现代服饰、现代建筑、枪械、科幻 UI、网红脸、过度磨皮、塑料 CG、漂浮慢动作、僵硬摆拍、无来源灾民、把虫族层级混成同一种怪物、让白册文字随机生成。",
-  "global_negative_prompt_notes_en": "Avoid modern clothing, modern architecture, firearms, sci-fi UI, influencer faces, over-smoothed skin, plastic CG, floaty slow motion, stiff posing, source-less refugees, mixing all insect hierarchy into one monster type, and random generated register text.",
+  "global_negative_prompt_notes_zh": "避免现代服饰、现代建筑、枪械、科幻 UI、网红脸、过度磨皮、塑料 CG、漂浮慢动作、僵硬摆拍、无来源灾民、把虫族层级混成同一种怪物、让白册文字随机生成、视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化和关键轮廓糊掉。",
+  "global_negative_prompt_notes_en": "Avoid modern clothing, modern architecture, firearms, sci-fi UI, influencer faces, over-smoothed skin, plastic CG, floaty slow motion, stiff posing, source-less refugees, mixing all insect hierarchy into one monster type, random generated register text, video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers and blurred key silhouettes.",
   "prompts": [
     {
       "shot_id": "SC001-SH001",
       "generation_method": "FLF2V",
-      "prompt_zh": "锁喉关外墙暴雪夜，镜头从攻城方斜后侧低机位建立兽潮压城，C020/C021/E01_C020 兽族与伴生兽从左前向右后斜推同一面黑石城墙；远处墙头小钟只是锚点。镜头顺同一墙面斜爬上墙头，再45度转向人族女墙空间，尾帧半幅是同一钟架、骨钟、黑石女墙和守军，半幅俯看城外兽族仍朝墙攻来。全程只有一面城墙、一个钟架、一口钟。",
-      "prompt_en": "Blizzard at Suohou Gate outer wall. The camera begins from the attacking side, low and oblique behind the siege column, with C020/C021/E01_C020 beast troops and companion beasts pushing diagonally from front-left toward the same black-stone wall; the small wall-top bell is only an anchor. The camera climbs diagonally along the same wall and turns 45 degrees onto the human parapet. The last frame is split between the same bell frame, broken bell, blackstone parapet and defenders, and the exterior attackers below still facing the wall. One wall, one bell frame, one bell throughout.",
-      "negative_prompt_notes_zh": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、完整圆形徽章。",
-      "negative_prompt_notes_en": "No second wall, distant wall, second bell frame, second bell, changed bell-frame direction, humans outside the wall, beast troops posing toward camera, centered frontal gate, pure bell close-up, complete circular emblem.",
+      "prompt_zh": "锁喉关外墙暴雪夜，镜头从墙外攻城方向低机位正向偏斜建立兽潮压城：C020/C021/E01_C020 兽族与伴生兽、攻城车或破门猛犸压向同一面黑石城门；裂云冷白带淡金天光从左上或侧后切出城墙、攻城器械、巨兽轮廓和骨钟边缘，撞门瞬间冷白雪雾成为最亮区域，低位暗红火点只做边缘反打。镜头低位前推并轻微上仰，终点是第一次重撞城门和骨钟横摆，不越过墙头、不转到墙后。全程只有一面城墙、一个城门、一个钟架、一口钟。",
+      "prompt_en": "Blizzard at Suohou Gate outer wall. The camera begins outside the wall from a low front-biased oblique siege angle: C020/C021/E01_C020 beast troops and companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. Storm-break cold-white sky light with a faint pale-gold edge cuts the wall, siege engine, beast silhouettes and bone-bell rim from upper-left or side-back; the cold-white snow blast at impact is the brightest zone, with low dark-red fire only as edge counterlight. The camera pushes low and tilts slightly up, ending on the first heavy gate impact and swinging bell, without crossing the wall or turning behind it. One wall, one gate, one bell frame, one bell throughout.",
+      "negative_prompt_notes_zh": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城外人族、兽族看镜头列队、完全对称正面城门、纯骨钟特写、完整圆形徽章、全画面灰黑、雪雾糊成灰白罩、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群。",
+      "negative_prompt_notes_en": "No second wall, distant wall, second bell frame, second bell, changed bell-frame direction, 90-degree turn, crossing behind the wall, both sides under attack, humans outside the wall, beast troops posing toward camera, perfectly symmetrical frontal gate, pure bell close-up, complete circular emblem, uniformly grey-black image, snow haze as grey veil, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass.",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
@@ -34,10 +34,10 @@
     {
       "shot_id": "SC001-SH002",
       "generation_method": "I2V",
-      "prompt_zh": "年轻灰墙军户跪在雪泥中，断矛滑落，冻裂掌心贴住裂开的骨钟，铜锈下露出旧日月刻痕；身体代价近景收窄光源，冷白暴雪主光变成贴近骨钟和手掌的冰青反光，黑墙负补光压住肩背和背景，远处火线只在雪雾烟尘里留下很弱低位暖边，勾出暗红冻血、手指和骨钟裂边。",
-      "prompt_en": "A young grey-wall soldier kneels in snow mud, broken spear sliding down, cracked palm stuck to the split bone bell, old sun-moon marks visible under verdigris; the bodily-cost close shot narrows the light sources, cold blizzard key light becomes ice-blue bounce near the bell and palm, black-wall negative fill presses the shoulders and background down, and distant fire leaves only a very weak low warm edge through snow-smoke haze on dark frozen blood, fingers and bell cracks.",
-      "negative_prompt_notes_zh": "不要让旧日月刻痕发强光，不要英雄化摆拍，不要血腥夸张。",
-      "negative_prompt_notes_en": "Do not make the old mark glow strongly, no heroic posing, no exaggerated gore.",
+      "prompt_zh": "年轻灰墙军户被撞门余震晃倒，半倒在同一墙头黑石女墙边，肩背撞墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛或长矛残杆，武器脱手斜滑进前景雪泥。旁边同一口骨钟和钟架正在横摆，锁链拉紧、木架抖雪。左上或侧后裂云冷白带淡金天光给钟架、锁链、头盔、肩甲、脱手武器和雪粒轮廓；撞门方向反射冷白雪雾亮部，低位暗红火只勾手指、武器边缘、钟缘和冻血，黑墙负补光压住暗面。",
+      "prompt_en": "The young grey-wall soldier is knocked down by the gate-impact aftershock, half-collapsed beside the same wall-top blackstone parapet, shoulder and back against the wall, body weight unstable; one hand braces on wall edge or snow mud, the other has just released a broken spear or spear shaft, and the weapon slips diagonally into foreground snow mud. The same bone bell and bell frame swing beside him, chain taut and wooden frame shedding snow. Storm-break cold-white sky light with a faint pale-gold edge from upper-left or side-back rims the bell frame, chains, helmet, shoulder armor, dropped weapon and snow grains; cold-white snow-haze bounce from the gate-impact direction creates the highlight, low dark-red fire only edges fingers, weapon, bell rim and frozen blood, while black-wall negative fill presses the dark side.",
+      "negative_prompt_notes_zh": "不要扶钟姿势、不要跪着摆拍、不要手掌贴钟圣物化、不要强光圣徽、不要英雄化摆拍、不要全画面灰黑、不要无主光方向、不要雪雾糊成灰白罩、不要视频涂抹、不要花屏、不要压缩块、不要局部融化、不要糊脸、不要手指融化、不要甲片粘连、不要钟架变形、不要正脸变形特写、不要过度血腥。",
+      "negative_prompt_notes_en": "No bell-bracing pose, no kneeling tableau, no sacred palm-on-bell framing, no bright sacred emblem, no heroic posing, no uniformly grey-black image, no missing key-light direction, no snow haze as grey veil, no video smearing, no glitching, no compression blocks, no local melting, no blurred face, no melted fingers, no fused armor plates, no warped bell frame, no deformed front-face close-up, no excessive gore.",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
@@ -61,8 +61,8 @@
       "generation_method": "I2V",
       "prompt_zh": "薛临墙在黑石墙缝前低声提醒敌人逼近，语气压低、急促但不慌，冻裂粗手压住墙体裂纹，灰石厚衬袄和旧甲片覆雪；战场口令中近景强调可读性，冷白暴雪主光只给额骨、鼻梁和手背硬冷边，黑墙负补光吞掉半张脸，远处火线低位暖边集中切出侧脸、手和旧甲片，雪雾烟尘把枪线与门线分层。",
       "prompt_en": "Xue Linqiang gives a low warning that the enemy is coming up, his tone low, urgent but controlled, cracked broad hand pressing the wall crack, grey padded coat and old armor plates dusted with snow; the battlefield-command close-medium shot emphasizes readability, cold blizzard key light gives only a hard cold edge on brow, nose bridge and hand back, black-wall negative fill swallows half the face, low distant fireline tightly cuts the side profile, hand and old armor plates, and snow-smoke haze layers spear line and gate line.",
-      "negative_prompt_notes_zh": "不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要把他画成将军华甲。",
-      "negative_prompt_notes_en": "No grandmaster pose, no wuxia power glow, no divine heroic backlight, do not turn him into an ornate general.",
+      "negative_prompt_notes_zh": "不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要把他画成将军华甲、不要口型融化、不要脸部花屏、不要眼鼻漂移、不要手指糊成团、不要背景枪线糊成灰块。",
+      "negative_prompt_notes_en": "No grandmaster pose, no wuxia power glow, no divine heroic backlight, do not turn him into an ornate general, no melted mouth shape, no face glitching, no drifting eyes or nose, no clumped fingers, no background spear line blurred into grey blocks.",
       "continuity_refs": [
         "CHAR_XUE_LINQIANG",
         "LOC_SUOHOU_GATE_OUTER_WALL",

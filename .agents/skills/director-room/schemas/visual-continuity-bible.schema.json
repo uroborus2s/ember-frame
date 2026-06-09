@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Director Room Visual Continuity Bible",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["version", "characters", "locations", "props", "continuity_rules"],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["continuity_id", "name", "appearance", "wardrobe"],
+        "properties": {
+          "continuity_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "appearance": {
+            "type": "string"
+          },
+          "wardrobe": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["continuity_id", "name", "spatial_layout"],
+        "properties": {
+          "continuity_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "spatial_layout": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["continuity_id", "name", "description"],
+        "properties": {
+          "continuity_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "continuity_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

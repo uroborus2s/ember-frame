@@ -2403,22 +2403,23 @@
           "qc_rejection_rule": "reject single-identity face locking on template/crowd assets, reject generic duplicated crowd figures, reject wrong source category, and reject any visible drift from required role, costume, species, geography, or class boundaries"
         },
         "source_asset_id": "C024",
-        "inheritance_review_note": "从全局边墙普通军户群像模板派生，只服务序幕年轻征发兵的身体代价状态；厚衬袄、旧甲片、冻血掌心、断矛和裂骨钟必须可读，不得成为新的具名角色母卡。"
+        "inheritance_review_note": "从全局边墙普通军户群像模板派生，只服务序幕年轻征发兵的身体代价状态；厚衬袄、旧甲片、冻血手指、武器脱手、断矛和裂骨钟必须可读，不得成为新的具名角色母卡。",
+        "reference_frame_update_note": "Young soldier state prompt updated away from bell-contact/bracing pose toward aftershock collapse, dropped weapon and frozen-blood fingers."
       },
       "model_visible_prompt": {
         "visible_goal": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。",
         "style_quality": "超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。",
-        "subject_content": "这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态紧张贴墙；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。",
+        "subject_content": "这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、被震倒、半倒墙边、武器脱手和冻血手指。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态被震到贴墙、半倒失衡；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。",
         "composition_motion": "设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。",
-        "visible_continuity": "硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变跪倒、冻血、断矛、雪泥和骨钟接触动作。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。",
+        "visible_continuity": "硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变被震倒、半倒墙边、武器脱手、冻血、断矛和雪泥。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。",
         "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。"
       },
       "copy_ready": {
-        "positive_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态紧张贴墙；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变跪倒、冻血、断矛、雪泥和骨钟接触动作。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。",
+        "positive_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、被震倒、半倒墙边、武器脱手和冻血手指。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态被震到贴墙、半倒失衡；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变被震倒、半倒墙边、武器脱手、冻血、断矛和雪泥。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。",
         "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。",
         "reference_image_instructions": "生成前必须上传/引用 production_metadata.reference_inputs 中列出的全剧 master 图片；角色卡以角色母卡锁定身份，场景卡以场景母卡锁定空间。\n只允许按本集 episode_state 改变服装、污损、道具、情绪、镜头距离、光线、天气和调度。\n如果模型无法使用参考图，必须停止并标记 blocked，不能凭文字重造角色或场景。",
-        "chatgpt_image_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态紧张贴墙；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变跪倒、冻血、断矛、雪泥和骨钟接触动作。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。\n\n参考图使用要求：生成前必须上传/引用 production_metadata.reference_inputs 中列出的全剧 master 图片；角色卡以角色母卡锁定身份，场景卡以场景母卡锁定空间。\n只允许按本集 episode_state 改变服装、污损、道具、情绪、镜头距离、光线、天气和调度。\n如果模型无法使用参考图，必须停止并标记 blocked，不能凭文字重造角色或场景。\n\n负面提示：不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。",
-        "gemini_image_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、冻血掌心和断矛。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态紧张贴墙；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变跪倒、冻血、断矛、雪泥和骨钟接触动作。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。\n\n参考图使用要求：生成前必须上传/引用 production_metadata.reference_inputs 中列出的全剧 master 图片；角色卡以角色母卡锁定身份，场景卡以场景母卡锁定空间。\n只允许按本集 episode_state 改变服装、污损、道具、情绪、镜头距离、光线、天气和调度。\n如果模型无法使用参考图，必须停止并标记 blocked，不能凭文字重造角色或场景。\n\n负面提示：不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。"
+        "chatgpt_image_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、被震倒、半倒墙边、武器脱手和冻血手指。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态被震到贴墙、半倒失衡；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变被震倒、半倒墙边、武器脱手、冻血、断矛和雪泥。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。\n\n参考图使用要求：生成前必须上传/引用 production_metadata.reference_inputs 中列出的全剧 master 图片；角色卡以角色母卡锁定身份，场景卡以场景母卡锁定空间。\n只允许按本集 episode_state 改变服装、污损、道具、情绪、镜头距离、光线、天气和调度。\n如果模型无法使用参考图，必须停止并标记 blocked，不能凭文字重造角色或场景。\n\n负面提示：不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。",
+        "gemini_image_prompt": "创建年轻灰墙军户序幕状态卡，一张角色本集状态参考卡。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、旧木、虫蜡、黑石、雪、药草、纸灰、布料和旧金属都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n这是边墙军户群像模板派生出的序幕年轻征发兵状态，不是新的具名角色母卡；只为序幕身体代价服务的年轻灰墙军户：厚衬袄、旧甲片、被震倒、半倒墙边、武器脱手和冻血手指。身体尺度：约165到178厘米范围；肩背未完全长开，手脚冻裂，姿态被震到贴墙、半倒失衡；旧甲片、补墙绳、雪线绑腿和短枪形成年轻守墙人剪影。动作和禁区：沈维桑先看出口再说话；罗青禾手稳挡人；白翳直线洁净；奴兵扣腕押车；虫兵封路；不得提前展示晏南枝完整身份正装、沈照眠清明院状态之外的恢复、沈维桑战神化或月下盟书信息。\n\n设定参考卡布局中性纯背景角色状态卡，最低分辨率2048；包含正面、侧面、背面、三分之二全身视图，另有脸部、手部、服装材质、关键动作姿态和人体或门框尺度参照；这是可复用角色资产板，不做成剧情镜头或透明抠图。\n\n硬锁：随附全剧模板、服装、场景、道具和本集风格参考图用于锁定阶层、地域、服制、物种、道具比例、空间地理和动作因果；只表现本集状态，不提前展示后续身份、装备升级或能力。若画面出现旗帜、册页、旁注、徽记、旧驿暗号或文字类痕迹，必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n模板继承锁：必须使用全剧边墙普通军户群像模板、人族地域服装差异板和序幕断矛/裂骨钟道具状态作为参考。厚衬袄、旧甲片、黑石灰、旧铁、干血暗红、雪线绑腿、补墙工具、军户木牌和年轻征发兵的未成熟肩背必须稳定；第一集只允许改变被震倒、半倒墙边、武器脱手、冻血、断矛和雪泥。不得把这名年轻军户提升为新的具名英雄母卡，也不得替代全剧军户群像模板。\n\n身份继承硬锁：必须把随附全剧角色母卡作为唯一身份母本；脸型、五官比例、眼距、鼻唇、下颌骨相、年龄感、身高体型比例、肩线、站姿、发型、发际线、刘海、鬓发、标志性表情和动作习惯必须与母卡完全一致。第一集状态卡只允许改变服装装扮、遮面方式、伤痕污损、随身道具、情绪和动作状态；不得换脸、不得改体型、不得改年龄、不得改发型、不得改气质、不得美化、成熟化、幼化、圆脸化、尖脸化、加宽或缩窄骨架。群体/模板角色同样必须继承全剧模板母卡的物种比例、等级层级、群像构成、服制剪影和体貌规则，只允许调整本集动作、污损、队列、道具和局部服装状态。只要与母卡有任何肉眼可见身份偏差，生成即失败。\n\n参考图使用要求：生成前必须上传/引用 production_metadata.reference_inputs 中列出的全剧 master 图片；角色卡以角色母卡锁定身份，场景卡以场景母卡锁定空间。\n只允许按本集 episode_state 改变服装、污损、道具、情绪、镜头距离、光线、天气和调度。\n如果模型无法使用参考图，必须停止并标记 blocked，不能凭文字重造角色或场景。\n\n负面提示：不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要混淆肃明官吏、奴兵、纯虫族小兵、白翳、北境剪影和人族村民的层级、体貌与服制。"
       },
       "output_format": {
         "deliverable_kind": "character_episode_state_turnaround_sheet",
@@ -6582,15 +6583,19 @@
           "ONE_WALL_ONE_BELL_FRAME",
           "C020",
           "C021",
-          "E01_C020"
+          "E01_C020",
+          "P016",
+          "P017",
+          "RULE_SC001_FOUR_FRAMES_ONE_SPACE",
+          "RULE_LOW_KEY_HIGH_CONTRAST_NOT_GREY"
         ],
         "usage": [
           "SC001-SH001",
           "FLF2V",
           "首帧"
         ],
-        "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-        "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+        "approval_status": "ready_for_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
+        "generation_status": "needs_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
         "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
         "display_name": "SC001-SH001 首帧参考帧",
         "reference_inputs": [
@@ -6663,10 +6668,30 @@
             "reference_scope": "series_master",
             "role": "companion_beast_species_and_handler_lock",
             "lock_usage": "锁定伴生兽多样性和驭兽关系：破门猛犸、岩背犀/牦牛、霜狼、绳索、骨笛、血盐袋、驭兽者互动。"
+          },
+          {
+            "asset_id": "P016",
+            "display_name": "昭明日月星盘徽章与朱赤旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p016m.png",
+            "reference_scope": "series_master",
+            "role": "zhaoming_old_emblem_symbol_lock",
+            "lock_usage": "锁定警钟/骨钟上的昭明旧徽残痕：只能继承 P016 根徽章并做风化、破损、遮挡，不得重画新徽章。"
+          },
+          {
+            "asset_id": "P017",
+            "display_name": "肃明清明黑日白翅徽章与旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p017m.png",
+            "reference_scope": "series_master",
+            "role": "suming_wall_flag_symbol_lock",
+            "lock_usage": "锁定墙头肃明黑日白翅旗帜：只能继承 P017 根徽章并做破损、雪遮、低可读旗面，不得重画新徽章。"
           }
         ],
         "reference_input_policy": "Reference inputs are production metadata for the generator operator. They must be uploaded or linked as images/control layers when available, but their ids, paths, source refs, and usage notes must not be copied into model_visible_prompt.",
-        "prompt_revision": "sc001-same-wall-single-bell-continuity-v9-2026-06-08",
+        "prompt_revision": "e01_r001-same-space-p016-p017-light-v12-2026-06-08",
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
@@ -6674,11 +6699,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "landscape_contract_status": {
           "contract_class": "video_frame_reference",
@@ -6687,11 +6712,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "output_path": "01/assets/reference-frames/r001e01.png",
         "inheritance_contract": {
@@ -6699,22 +6724,23 @@
           "generator_requirement": "must use approved episode character/location cards and their series masters as references before producing shot frames",
           "visible_prompt_lock": "参考帧继承硬锁：画面中的具名角色必须继承已批准角色母卡和本集状态卡，画面中的地点必须继承已批准场景母卡和本集场景卡；参考帧只调整镜头、调度、光线和动作，不允许替换角色身份或重造空间。",
           "qc_rejection_rule": "reject if any named character identity or location geography drifts from approved upstream assets"
-        }
+        },
+        "reference_frame_update_note": "User lock added: four frames share one space; C020/C021 beast inheritance; c024ae01 and c004m character inheritance; P017 Suming wall flags; P016 weathered Zhaoming old emblem on damaged warning bell; low-key high-contrast lighting with clear cold-white gate-impact highlight."
       },
       "model_visible_prompt": {
-        "visible_goal": "创建 SC001-SH001 首帧：攻城方斜后侧低机位，三分之四角度看同一面锁喉关黑石巨墙，远处墙头小钟只是目标锚点。",
-        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。",
-        "subject_content": "前景只给 C020/C020E01 兽族攻城队列的肩背、旧铁甲片、脏白毛皮、破旗、火盆、雪泥脚步，以及 C021 伴生兽的一截背脊、巨角或绳索局部。兽潮从画面左前方斜推向右后方城门，城门不居中，军阵不对称。黑石城墙沿画面右侧和上方斜向展开；远处同一段墙头能看见很小的破旧警钟和人族守军剪影。",
-        "composition_motion": "R001 是镜头起点：攻城方斜后侧低机位，顺旗杆、烟柱、巨角和黑墙外立面建立斜向纵深。钟不是主体，不能放大，不能正面居中，不能航拍。",
-        "visible_continuity": "兽族士兵和伴生兽必须继承 C020/c020m.png、C021/c021m.png 与 E01_C020/c020e01.png；必须读出多兵种和多伴生兽，而不是泛化骷髅兵或单一巨兽。R002/R003/R004 都必须来自这一面墙、这一只钟、这一条攻击方向。",
-        "negative_prompt": "不要正面城门居中、左右完全对称、兽潮平铺、钟过大、航拍视角、游戏感飞镜、火光过曝、第二道城墙、第二个钟架、泛化骷髅兵、泛化兽人、完整旧帝国徽章、可读文字、UI 标记。"
+        "visible_goal": "创建 SC001-SH001 首帧 r001e01.png：城外低机位正向偏斜看向同一面锁喉关黑石巨墙和城门，兽族军阵、攻城车和破门伴生兽从前景压向城门，建立第一镜开场的同场景攻城压力。",
+        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。",
+        "subject_content": "构图从城外攻城方向看墙和门，约七成正向读城门压力、三成斜向给纵深。前景是继承 C020/C021/E01_C020 的兽族肩背、旧铁盾、雪泥脚步、破旗、攻城车木梁、巨兽角或破门猛犸局部；中景是黑石城门、拒马、门前雪泥、烟柱和低位暗红火点；远景是同一面黑石巨墙、墙头守军剪影、肃明黑日白翅旗、同一钟架和同一口带昭明旧徽残痕的破损风化警钟/骨钟。首帧是撞门前压力，城门撞击区域要预留明确冷白亮部位置，不能只是一整片暗墙。",
+        "composition_motion": "16:9 横屏电影参考帧。前景兽潮和攻城器械形成暗轮廓，中景城门撞击点和门前雪雾形成未来动作中心，背景雪山和远处军阵降对比退后。画面方向必须清楚：兽族从画面下方/前景朝中后景同一城门压上去。前景兽潮、中景城门、背景墙头钟架和旗帜必须分层清楚；雪雾只做体积层和亮部反光，不能糊成灰白罩。",
+        "visible_continuity": "四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R001 只负责建立墙外正向偏斜攻城压力，不出现城头近景，不展开城内。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、城门撞击点完全缺失、墙头旗帜消失、警钟旧徽完全消失、攻城方没有伴生兽"
       },
       "copy_ready": {
-        "positive_prompt": "创建 SC001-SH001 首帧：攻城方斜后侧低机位，三分之四角度看同一面锁喉关黑石巨墙，远处墙头小钟只是目标锚点。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n前景只给 C020/C020E01 兽族攻城队列的肩背、旧铁甲片、脏白毛皮、破旗、火盆、雪泥脚步，以及 C021 伴生兽的一截背脊、巨角或绳索局部。兽潮从画面左前方斜推向右后方城门，城门不居中，军阵不对称。黑石城墙沿画面右侧和上方斜向展开；远处同一段墙头能看见很小的破旧警钟和人族守军剪影。\n\nR001 是镜头起点：攻城方斜后侧低机位，顺旗杆、烟柱、巨角和黑墙外立面建立斜向纵深。钟不是主体，不能放大，不能正面居中，不能航拍。\n\n兽族士兵和伴生兽必须继承 C020/c020m.png、C021/c021m.png 与 E01_C020/c020e01.png；必须读出多兵种和多伴生兽，而不是泛化骷髅兵或单一巨兽。R002/R003/R004 都必须来自这一面墙、这一只钟、这一条攻击方向。",
-        "negative_prompt": "不要正面城门居中、左右完全对称、兽潮平铺、钟过大、航拍视角、游戏感飞镜、火光过曝、第二道城墙、第二个钟架、泛化骷髅兵、泛化兽人、完整旧帝国徽章、可读文字、UI 标记。",
-        "reference_image_instructions": "生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。",
-        "chatgpt_image_prompt": "创建 SC001-SH001 首帧：攻城方斜后侧低机位，三分之四角度看同一面锁喉关黑石巨墙，远处墙头小钟只是目标锚点。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n前景只给 C020/C020E01 兽族攻城队列的肩背、旧铁甲片、脏白毛皮、破旗、火盆、雪泥脚步，以及 C021 伴生兽的一截背脊、巨角或绳索局部。兽潮从画面左前方斜推向右后方城门，城门不居中，军阵不对称。黑石城墙沿画面右侧和上方斜向展开；远处同一段墙头能看见很小的破旧警钟和人族守军剪影。\n\nR001 是镜头起点：攻城方斜后侧低机位，顺旗杆、烟柱、巨角和黑墙外立面建立斜向纵深。钟不是主体，不能放大，不能正面居中，不能航拍。\n\n兽族士兵和伴生兽必须继承 C020/c020m.png、C021/c021m.png 与 E01_C020/c020e01.png；必须读出多兵种和多伴生兽，而不是泛化骷髅兵或单一巨兽。R002/R003/R004 都必须来自这一面墙、这一只钟、这一条攻击方向。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要正面城门居中、左右完全对称、兽潮平铺、钟过大、航拍视角、游戏感飞镜、火光过曝、第二道城墙、第二个钟架、泛化骷髅兵、泛化兽人、完整旧帝国徽章、可读文字、UI 标记。",
-        "gemini_image_prompt": "创建 SC001-SH001 首帧：攻城方斜后侧低机位，三分之四角度看同一面锁喉关黑石巨墙，远处墙头小钟只是目标锚点。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n前景只给 C020/C020E01 兽族攻城队列的肩背、旧铁甲片、脏白毛皮、破旗、火盆、雪泥脚步，以及 C021 伴生兽的一截背脊、巨角或绳索局部。兽潮从画面左前方斜推向右后方城门，城门不居中，军阵不对称。黑石城墙沿画面右侧和上方斜向展开；远处同一段墙头能看见很小的破旧警钟和人族守军剪影。\n\nR001 是镜头起点：攻城方斜后侧低机位，顺旗杆、烟柱、巨角和黑墙外立面建立斜向纵深。钟不是主体，不能放大，不能正面居中，不能航拍。\n\n兽族士兵和伴生兽必须继承 C020/c020m.png、C021/c021m.png 与 E01_C020/c020e01.png；必须读出多兵种和多伴生兽，而不是泛化骷髅兵或单一巨兽。R002/R003/R004 都必须来自这一面墙、这一只钟、这一条攻击方向。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要正面城门居中、左右完全对称、兽潮平铺、钟过大、航拍视角、游戏感飞镜、火光过曝、第二道城墙、第二个钟架、泛化骷髅兵、泛化兽人、完整旧帝国徽章、可读文字、UI 标记。"
+        "positive_prompt": "创建 SC001-SH001 首帧 r001e01.png：城外低机位正向偏斜看向同一面锁喉关黑石巨墙和城门，兽族军阵、攻城车和破门伴生兽从前景压向城门，建立第一镜开场的同场景攻城压力。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n构图从城外攻城方向看墙和门，约七成正向读城门压力、三成斜向给纵深。前景是继承 C020/C021/E01_C020 的兽族肩背、旧铁盾、雪泥脚步、破旗、攻城车木梁、巨兽角或破门猛犸局部；中景是黑石城门、拒马、门前雪泥、烟柱和低位暗红火点；远景是同一面黑石巨墙、墙头守军剪影、肃明黑日白翅旗、同一钟架和同一口带昭明旧徽残痕的破损风化警钟/骨钟。首帧是撞门前压力，城门撞击区域要预留明确冷白亮部位置，不能只是一整片暗墙。\n\n16:9 横屏电影参考帧。前景兽潮和攻城器械形成暗轮廓，中景城门撞击点和门前雪雾形成未来动作中心，背景雪山和远处军阵降对比退后。画面方向必须清楚：兽族从画面下方/前景朝中后景同一城门压上去。前景兽潮、中景城门、背景墙头钟架和旗帜必须分层清楚；雪雾只做体积层和亮部反光，不能糊成灰白罩。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R001 只负责建立墙外正向偏斜攻城压力，不出现城头近景，不展开城内。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、城门撞击点完全缺失、墙头旗帜消失、警钟旧徽完全消失、攻城方没有伴生兽",
+        "reference_image_instructions": "生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r001e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。",
+        "chatgpt_image_prompt": "创建 SC001-SH001 首帧 r001e01.png：城外低机位正向偏斜看向同一面锁喉关黑石巨墙和城门，兽族军阵、攻城车和破门伴生兽从前景压向城门，建立第一镜开场的同场景攻城压力。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n构图从城外攻城方向看墙和门，约七成正向读城门压力、三成斜向给纵深。前景是继承 C020/C021/E01_C020 的兽族肩背、旧铁盾、雪泥脚步、破旗、攻城车木梁、巨兽角或破门猛犸局部；中景是黑石城门、拒马、门前雪泥、烟柱和低位暗红火点；远景是同一面黑石巨墙、墙头守军剪影、肃明黑日白翅旗、同一钟架和同一口带昭明旧徽残痕的破损风化警钟/骨钟。首帧是撞门前压力，城门撞击区域要预留明确冷白亮部位置，不能只是一整片暗墙。\n\n16:9 横屏电影参考帧。前景兽潮和攻城器械形成暗轮廓，中景城门撞击点和门前雪雾形成未来动作中心，背景雪山和远处军阵降对比退后。画面方向必须清楚：兽族从画面下方/前景朝中后景同一城门压上去。前景兽潮、中景城门、背景墙头钟架和旗帜必须分层清楚；雪雾只做体积层和亮部反光，不能糊成灰白罩。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R001 只负责建立墙外正向偏斜攻城压力，不出现城头近景，不展开城内。\n\n参考图使用要求：生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r001e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\n负面提示：全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、城门撞击点完全缺失、墙头旗帜消失、警钟旧徽完全消失、攻城方没有伴生兽",
+        "gemini_image_prompt": "创建 SC001-SH001 首帧 r001e01.png：城外低机位正向偏斜看向同一面锁喉关黑石巨墙和城门，兽族军阵、攻城车和破门伴生兽从前景压向城门，建立第一镜开场的同场景攻城压力。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n构图从城外攻城方向看墙和门，约七成正向读城门压力、三成斜向给纵深。前景是继承 C020/C021/E01_C020 的兽族肩背、旧铁盾、雪泥脚步、破旗、攻城车木梁、巨兽角或破门猛犸局部；中景是黑石城门、拒马、门前雪泥、烟柱和低位暗红火点；远景是同一面黑石巨墙、墙头守军剪影、肃明黑日白翅旗、同一钟架和同一口带昭明旧徽残痕的破损风化警钟/骨钟。首帧是撞门前压力，城门撞击区域要预留明确冷白亮部位置，不能只是一整片暗墙。\n\n16:9 横屏电影参考帧。前景兽潮和攻城器械形成暗轮廓，中景城门撞击点和门前雪雾形成未来动作中心，背景雪山和远处军阵降对比退后。画面方向必须清楚：兽族从画面下方/前景朝中后景同一城门压上去。前景兽潮、中景城门、背景墙头钟架和旗帜必须分层清楚；雪雾只做体积层和亮部反光，不能糊成灰白罩。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R001 只负责建立墙外正向偏斜攻城压力，不出现城头近景，不展开城内。\n\nReference image instructions: 生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r001e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\nNegative prompt: 全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、城门撞击点完全缺失、墙头旗帜消失、警钟旧徽完全消失、攻城方没有伴生兽"
       },
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6730,16 +6756,20 @@
           "lighting, weather, and time of day visible in-frame"
         ],
         "composition_layers": {
-          "foreground": "攻城方斜后侧兽族肩背、旧铁甲片、破旗、火盆、雪泥脚步和一截巨兽背脊或巨角",
-          "midground": "兽潮从左前向右后斜推城门，黑石巨墙沿画面斜向展开，城门不居中",
-          "background": "远处墙头很小的骨钟和守军剪影、拒马、烟柱、火线、暴雪和山口纵深"
+          "foreground": "低位兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部",
+          "midground": "同一面黑石巨墙和同一城门、拒马、烟柱和低位火点",
+          "background": "雪山、暴雪、火线和很小的墙头同一钟架、同一口骨钟、守军剪影"
         },
         "qc_checks": [
           "16:9 canvas, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
-          "no watermarks, modern UI, random text, or wrong faction symbols"
+          "no watermarks, modern UI, random text, or wrong faction symbols",
+          "R001-R004 share one wall, one gate, one bell frame, one damaged warning bell, one battlefield space",
+          "P017 Suming wall flags inherit the approved root emblem and are not redesigned",
+          "P016 Zhaoming old emblem appears only as damaged weathered residual marks on the warning bell",
+          "low-key high-contrast lighting with a clear cold-white gate-impact highlight; not uniformly grey-black"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -6754,11 +6784,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -6767,11 +6797,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "3d60da92b5928277f30f6d4f55267ec0777efb2b476b3073691fade280f164fc",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       }
     },
     {
@@ -6797,15 +6827,19 @@
           "ONE_WALL_ONE_BELL_FRAME",
           "C020",
           "C021",
-          "E01_C020"
+          "E01_C020",
+          "P016",
+          "P017",
+          "RULE_SC001_FOUR_FRAMES_ONE_SPACE",
+          "RULE_LOW_KEY_HIGH_CONTRAST_NOT_GREY"
         ],
         "usage": [
           "SC001-SH001",
           "FLF2V",
           "终帧"
         ],
-        "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-        "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+        "approval_status": "ready_for_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
+        "generation_status": "needs_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
         "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
         "display_name": "SC001-SH001 终帧参考帧",
         "reference_inputs": [
@@ -6878,10 +6912,30 @@
             "reference_scope": "series_master",
             "role": "companion_beast_species_and_handler_lock",
             "lock_usage": "锁定伴生兽多样性和驭兽关系：破门猛犸、岩背犀/牦牛、霜狼、绳索、骨笛、血盐袋、驭兽者互动。"
+          },
+          {
+            "asset_id": "P016",
+            "display_name": "昭明日月星盘徽章与朱赤旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p016m.png",
+            "reference_scope": "series_master",
+            "role": "zhaoming_old_emblem_symbol_lock",
+            "lock_usage": "锁定警钟/骨钟上的昭明旧徽残痕：只能继承 P016 根徽章并做风化、破损、遮挡，不得重画新徽章。"
+          },
+          {
+            "asset_id": "P017",
+            "display_name": "肃明清明黑日白翅徽章与旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p017m.png",
+            "reference_scope": "series_master",
+            "role": "suming_wall_flag_symbol_lock",
+            "lock_usage": "锁定墙头肃明黑日白翅旗帜：只能继承 P017 根徽章并做破损、雪遮、低可读旗面，不得重画新徽章。"
           }
         ],
         "reference_input_policy": "Reference inputs are production metadata for the generator operator. They must be uploaded or linked as images/control layers when available, but their ids, paths, source refs, and usage notes must not be copied into model_visible_prompt.",
-        "prompt_revision": "sc001-same-wall-single-bell-continuity-v9-2026-06-08",
+        "prompt_revision": "e01_r002-same-space-p016-p017-light-v12-2026-06-08",
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
@@ -6889,11 +6943,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "landscape_contract_status": {
           "contract_class": "video_frame_reference",
@@ -6902,11 +6956,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "output_path": "01/assets/reference-frames/r002e01.png",
         "inheritance_contract": {
@@ -6914,22 +6968,23 @@
           "generator_requirement": "must use approved episode character/location cards and their series masters as references before producing shot frames",
           "visible_prompt_lock": "参考帧继承硬锁：画面中的具名角色必须继承已批准角色母卡和本集状态卡，画面中的地点必须继承已批准场景母卡和本集场景卡；参考帧只调整镜头、调度、光线和动作，不允许替换角色身份或重造空间。",
           "qc_rejection_rule": "reject if any named character identity or location geography drifts from approved upstream assets"
-        }
+        },
+        "reference_frame_update_note": "User lock added: four frames share one space; C020/C021 beast inheritance; c024ae01 and c004m character inheritance; P017 Suming wall flags; P016 weathered Zhaoming old emblem on damaged warning bell; low-key high-contrast lighting with clear cold-white gate-impact highlight."
       },
       "model_visible_prompt": {
-        "visible_goal": "创建 SC001-SH001 尾帧：镜头从 R001 攻城方低机位顺同一面城墙斜爬上墙头，再 45 度转向人族墙头；画面一半是墙头守军空间，一半俯看城外攻墙兽族。",
-        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。",
-        "subject_content": "只有一面连续黑石城墙、一个钟架、一只钟。钟架位于 R001 同一段墙头，同一方向；木横梁必须平行于女墙/墙头线，随女墙斜向透视退进，不能转成另一套角度。墙头半幅包含黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛、局部门闩或墙体机构，2 到 4 名守军因撞门震动短促前倾或稳住枪线，年轻军户靠近骨钟。城外半幅只允许兽族士兵和伴生兽面向城墙压上来。",
-        "composition_motion": "R002 是 R001 后的同空间移动终点：摄影机沿同一墙面斜向爬升到墙头，随后约 45 度转向人族墙头。不能出现第二道城墙、第二个城门、第二个钟架、远处另一座城。骨钟横摆 35-45 度，作为转场锚点但不是纯特写。",
-        "visible_continuity": "兽族外形继承 C020/C020E01 的黑牙斧兵、铁角盾墙、雪狼骑、灰皮拖城巨魔、雪羽攀墙斥候、脏白毛皮、旧铁、骨饰、锈红布条；伴生兽继承 C021 的破门猛犸、岩背犀/牦牛、霜狼等多样关系。城外兽族都朝这面墙和门线攻来，不可背向墙或看镜头列队。旧帝国徽章只允许极少淡金断屑。",
-        "negative_prompt": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、钟过大、完整圆形徽章、圣光、过曝火盆、航拍、游戏飞镜、文字、UI 标记。"
+        "visible_goal": "创建 SC001-SH001 尾帧 r002e01.png：保持 R001 同一城外朝墙方向，第一次重撞同一城门，冷白撞击亮部、碎冰、雪雾和木屑成为画面明暗中心，同时墙头同一钟架和同一口警钟/骨钟被震动横摆。",
+        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。",
+        "subject_content": "尾帧仍从城外朝向同一面黑石巨墙和同一城门，不能升到墙头转向。攻城车木梁或破门猛犸铁包巨角第一次重撞城门，门闩、旧木、黑石边缘、碎冰、雪尘和木屑被震开；撞击点必须是最明确的冷白亮部。墙头上方或侧上方能读到同一钟架、同一口带 P016 昭明旧徽残痕的破损风化警钟/骨钟横摆，旁边有 P017 肃明黑日白翅旗在暴雪中破损飘动，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。",
+        "composition_motion": "16:9 横屏电影参考帧。前景是撞门冷白雪雾亮部、攻城车木梁或铁包巨角、碎冰、旧木和黑石边缘；中景是同一城门和被震动的门闩结构；背景/上方是同一墙头钟架、横摆骨钟、小守军剪影、肃明旗、暴雪和低位火点。撞门雪雾必须有亮部层级，不能糊成灰白罩；门闩、旧木、黑石边缘、钟架、骨钟和旗帜轮廓必须清楚。",
+        "visible_continuity": "四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R002 是 R001 的动作终点，只负责同一墙外方向的第一次撞门和骨钟震响；禁止越墙到背面，禁止读成城墙两边同时被攻击。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、撞击点不在城门、撞击点不亮、碎冰木屑不可见、墙头旗帜消失、警钟旧徽完全消失"
       },
       "copy_ready": {
-        "positive_prompt": "创建 SC001-SH001 尾帧：镜头从 R001 攻城方低机位顺同一面城墙斜爬上墙头，再 45 度转向人族墙头；画面一半是墙头守军空间，一半俯看城外攻墙兽族。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n只有一面连续黑石城墙、一个钟架、一只钟。钟架位于 R001 同一段墙头，同一方向；木横梁必须平行于女墙/墙头线，随女墙斜向透视退进，不能转成另一套角度。墙头半幅包含黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛、局部门闩或墙体机构，2 到 4 名守军因撞门震动短促前倾或稳住枪线，年轻军户靠近骨钟。城外半幅只允许兽族士兵和伴生兽面向城墙压上来。\n\nR002 是 R001 后的同空间移动终点：摄影机沿同一墙面斜向爬升到墙头，随后约 45 度转向人族墙头。不能出现第二道城墙、第二个城门、第二个钟架、远处另一座城。骨钟横摆 35-45 度，作为转场锚点但不是纯特写。\n\n兽族外形继承 C020/C020E01 的黑牙斧兵、铁角盾墙、雪狼骑、灰皮拖城巨魔、雪羽攀墙斥候、脏白毛皮、旧铁、骨饰、锈红布条；伴生兽继承 C021 的破门猛犸、岩背犀/牦牛、霜狼等多样关系。城外兽族都朝这面墙和门线攻来，不可背向墙或看镜头列队。旧帝国徽章只允许极少淡金断屑。",
-        "negative_prompt": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、钟过大、完整圆形徽章、圣光、过曝火盆、航拍、游戏飞镜、文字、UI 标记。",
-        "reference_image_instructions": "生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。",
-        "chatgpt_image_prompt": "创建 SC001-SH001 尾帧：镜头从 R001 攻城方低机位顺同一面城墙斜爬上墙头，再 45 度转向人族墙头；画面一半是墙头守军空间，一半俯看城外攻墙兽族。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n只有一面连续黑石城墙、一个钟架、一只钟。钟架位于 R001 同一段墙头，同一方向；木横梁必须平行于女墙/墙头线，随女墙斜向透视退进，不能转成另一套角度。墙头半幅包含黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛、局部门闩或墙体机构，2 到 4 名守军因撞门震动短促前倾或稳住枪线，年轻军户靠近骨钟。城外半幅只允许兽族士兵和伴生兽面向城墙压上来。\n\nR002 是 R001 后的同空间移动终点：摄影机沿同一墙面斜向爬升到墙头，随后约 45 度转向人族墙头。不能出现第二道城墙、第二个城门、第二个钟架、远处另一座城。骨钟横摆 35-45 度，作为转场锚点但不是纯特写。\n\n兽族外形继承 C020/C020E01 的黑牙斧兵、铁角盾墙、雪狼骑、灰皮拖城巨魔、雪羽攀墙斥候、脏白毛皮、旧铁、骨饰、锈红布条；伴生兽继承 C021 的破门猛犸、岩背犀/牦牛、霜狼等多样关系。城外兽族都朝这面墙和门线攻来，不可背向墙或看镜头列队。旧帝国徽章只允许极少淡金断屑。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、钟过大、完整圆形徽章、圣光、过曝火盆、航拍、游戏飞镜、文字、UI 标记。",
-        "gemini_image_prompt": "创建 SC001-SH001 尾帧：镜头从 R001 攻城方低机位顺同一面城墙斜爬上墙头，再 45 度转向人族墙头；画面一半是墙头守军空间，一半俯看城外攻墙兽族。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n只有一面连续黑石城墙、一个钟架、一只钟。钟架位于 R001 同一段墙头，同一方向；木横梁必须平行于女墙/墙头线，随女墙斜向透视退进，不能转成另一套角度。墙头半幅包含黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛、局部门闩或墙体机构，2 到 4 名守军因撞门震动短促前倾或稳住枪线，年轻军户靠近骨钟。城外半幅只允许兽族士兵和伴生兽面向城墙压上来。\n\nR002 是 R001 后的同空间移动终点：摄影机沿同一墙面斜向爬升到墙头，随后约 45 度转向人族墙头。不能出现第二道城墙、第二个城门、第二个钟架、远处另一座城。骨钟横摆 35-45 度，作为转场锚点但不是纯特写。\n\n兽族外形继承 C020/C020E01 的黑牙斧兵、铁角盾墙、雪狼骑、灰皮拖城巨魔、雪羽攀墙斥候、脏白毛皮、旧铁、骨饰、锈红布条；伴生兽继承 C021 的破门猛犸、岩背犀/牦牛、霜狼等多样关系。城外兽族都朝这面墙和门线攻来，不可背向墙或看镜头列队。旧帝国徽章只允许极少淡金断屑。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、城外人族、兽族看镜头列队、正面居中城门、纯骨钟特写、钟过大、完整圆形徽章、圣光、过曝火盆、航拍、游戏飞镜、文字、UI 标记。"
+        "positive_prompt": "创建 SC001-SH001 尾帧 r002e01.png：保持 R001 同一城外朝墙方向，第一次重撞同一城门，冷白撞击亮部、碎冰、雪雾和木屑成为画面明暗中心，同时墙头同一钟架和同一口警钟/骨钟被震动横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n尾帧仍从城外朝向同一面黑石巨墙和同一城门，不能升到墙头转向。攻城车木梁或破门猛犸铁包巨角第一次重撞城门，门闩、旧木、黑石边缘、碎冰、雪尘和木屑被震开；撞击点必须是最明确的冷白亮部。墙头上方或侧上方能读到同一钟架、同一口带 P016 昭明旧徽残痕的破损风化警钟/骨钟横摆，旁边有 P017 肃明黑日白翅旗在暴雪中破损飘动，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。\n\n16:9 横屏电影参考帧。前景是撞门冷白雪雾亮部、攻城车木梁或铁包巨角、碎冰、旧木和黑石边缘；中景是同一城门和被震动的门闩结构；背景/上方是同一墙头钟架、横摆骨钟、小守军剪影、肃明旗、暴雪和低位火点。撞门雪雾必须有亮部层级，不能糊成灰白罩；门闩、旧木、黑石边缘、钟架、骨钟和旗帜轮廓必须清楚。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R002 是 R001 的动作终点，只负责同一墙外方向的第一次撞门和骨钟震响；禁止越墙到背面，禁止读成城墙两边同时被攻击。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、撞击点不在城门、撞击点不亮、碎冰木屑不可见、墙头旗帜消失、警钟旧徽完全消失",
+        "reference_image_instructions": "生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r002e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。",
+        "chatgpt_image_prompt": "创建 SC001-SH001 尾帧 r002e01.png：保持 R001 同一城外朝墙方向，第一次重撞同一城门，冷白撞击亮部、碎冰、雪雾和木屑成为画面明暗中心，同时墙头同一钟架和同一口警钟/骨钟被震动横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n尾帧仍从城外朝向同一面黑石巨墙和同一城门，不能升到墙头转向。攻城车木梁或破门猛犸铁包巨角第一次重撞城门，门闩、旧木、黑石边缘、碎冰、雪尘和木屑被震开；撞击点必须是最明确的冷白亮部。墙头上方或侧上方能读到同一钟架、同一口带 P016 昭明旧徽残痕的破损风化警钟/骨钟横摆，旁边有 P017 肃明黑日白翅旗在暴雪中破损飘动，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。\n\n16:9 横屏电影参考帧。前景是撞门冷白雪雾亮部、攻城车木梁或铁包巨角、碎冰、旧木和黑石边缘；中景是同一城门和被震动的门闩结构；背景/上方是同一墙头钟架、横摆骨钟、小守军剪影、肃明旗、暴雪和低位火点。撞门雪雾必须有亮部层级，不能糊成灰白罩；门闩、旧木、黑石边缘、钟架、骨钟和旗帜轮廓必须清楚。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R002 是 R001 的动作终点，只负责同一墙外方向的第一次撞门和骨钟震响；禁止越墙到背面，禁止读成城墙两边同时被攻击。\n\n参考图使用要求：生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r002e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\n负面提示：全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、撞击点不在城门、撞击点不亮、碎冰木屑不可见、墙头旗帜消失、警钟旧徽完全消失",
+        "gemini_image_prompt": "创建 SC001-SH001 尾帧 r002e01.png：保持 R001 同一城外朝墙方向，第一次重撞同一城门，冷白撞击亮部、碎冰、雪雾和木屑成为画面明暗中心，同时墙头同一钟架和同一口警钟/骨钟被震动横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。\n\n尾帧仍从城外朝向同一面黑石巨墙和同一城门，不能升到墙头转向。攻城车木梁或破门猛犸铁包巨角第一次重撞城门，门闩、旧木、黑石边缘、碎冰、雪尘和木屑被震开；撞击点必须是最明确的冷白亮部。墙头上方或侧上方能读到同一钟架、同一口带 P016 昭明旧徽残痕的破损风化警钟/骨钟横摆，旁边有 P017 肃明黑日白翅旗在暴雪中破损飘动，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。\n\n16:9 横屏电影参考帧。前景是撞门冷白雪雾亮部、攻城车木梁或铁包巨角、碎冰、旧木和黑石边缘；中景是同一城门和被震动的门闩结构；背景/上方是同一墙头钟架、横摆骨钟、小守军剪影、肃明旗、暴雪和低位火点。撞门雪雾必须有亮部层级，不能糊成灰白罩；门闩、旧木、黑石边缘、钟架、骨钟和旗帜轮廓必须清楚。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R002 是 R001 的动作终点，只负责同一墙外方向的第一次撞门和骨钟震响；禁止越墙到背面，禁止读成城墙两边同时被攻击。\n\nReference image instructions: 生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r002e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\nNegative prompt: 全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、撞击点不在城门、撞击点不亮、碎冰木屑不可见、墙头旗帜消失、警钟旧徽完全消失"
       },
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6945,16 +7000,20 @@
           "lighting, weather, and time of day visible in-frame"
         ],
         "composition_layers": {
-          "foreground": "骨钟、钟架、黑石女墙、雪泥墙面、守军肩背、冻裂手、长矛或门闩局部",
-          "midground": "2到4名守军受撞门震动影响后稳住枪线，其中可有年轻军户靠近骨钟",
-          "background": "女墙斜下方可见墙外兽潮、拒马、巨兽局部、火线、烟柱和暴雪"
+          "foreground": "撞门冷白雪雾亮部、攻城车木梁或铁包巨角、碎冰、旧木、黑石边缘和低位火边",
+          "midground": "同一黑石城门、门闩震动、墙体冲击和雪尘",
+          "background": "同一墙头钟架和横摆骨钟、小守军剪影、暴雪、低位火点"
         },
         "qc_checks": [
           "16:9 canvas, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
-          "no watermarks, modern UI, random text, or wrong faction symbols"
+          "no watermarks, modern UI, random text, or wrong faction symbols",
+          "R001-R004 share one wall, one gate, one bell frame, one damaged warning bell, one battlefield space",
+          "P017 Suming wall flags inherit the approved root emblem and are not redesigned",
+          "P016 Zhaoming old emblem appears only as damaged weathered residual marks on the warning bell",
+          "low-key high-contrast lighting with a clear cold-white gate-impact highlight; not uniformly grey-black"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -6969,11 +7028,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -6982,11 +7041,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       }
     },
     {
@@ -7011,15 +7070,19 @@
           "ONE_WALL_ONE_BELL_FRAME",
           "C020",
           "C021",
-          "E01_C020"
+          "E01_C020",
+          "P016",
+          "P017",
+          "RULE_SC001_FOUR_FRAMES_ONE_SPACE",
+          "RULE_LOW_KEY_HIGH_CONTRAST_NOT_GREY"
         ],
         "usage": [
           "SC001-SH002",
           "I2V",
           "首帧"
         ],
-        "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-        "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+        "approval_status": "ready_for_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
+        "generation_status": "needs_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
         "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
         "display_name": "SC001-SH002 首帧参考帧",
         "reference_inputs": [
@@ -7102,10 +7165,30 @@
             "reference_scope": "series_master",
             "role": "companion_beast_species_and_handler_lock",
             "lock_usage": "锁定伴生兽多样性和驭兽关系：破门猛犸、岩背犀/牦牛、霜狼、绳索、骨笛、血盐袋、驭兽者互动。"
+          },
+          {
+            "asset_id": "P016",
+            "display_name": "昭明日月星盘徽章与朱赤旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p016m.png",
+            "reference_scope": "series_master",
+            "role": "zhaoming_old_emblem_symbol_lock",
+            "lock_usage": "锁定警钟/骨钟上的昭明旧徽残痕：只能继承 P016 根徽章并做风化、破损、遮挡，不得重画新徽章。"
+          },
+          {
+            "asset_id": "P017",
+            "display_name": "肃明清明黑日白翅徽章与旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p017m.png",
+            "reference_scope": "series_master",
+            "role": "suming_wall_flag_symbol_lock",
+            "lock_usage": "锁定墙头肃明黑日白翅旗帜：只能继承 P017 根徽章并做破损、雪遮、低可读旗面，不得重画新徽章。"
           }
         ],
         "reference_input_policy": "Reference inputs are production metadata for the generator operator. They must be uploaded or linked as images/control layers when available, but their ids, paths, source refs, and usage notes must not be copied into model_visible_prompt.",
-        "prompt_revision": "sc001-same-wall-single-bell-continuity-v9-2026-06-08",
+        "prompt_revision": "e01_r003-same-space-p016-p017-light-v12-2026-06-08",
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
@@ -7113,11 +7196,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "landscape_contract_status": {
           "contract_class": "video_frame_reference",
@@ -7126,11 +7209,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "output_path": "01/assets/reference-frames/r003e01.png",
         "inheritance_contract": {
@@ -7138,22 +7221,23 @@
           "generator_requirement": "must use approved episode character/location cards and their series masters as references before producing shot frames",
           "visible_prompt_lock": "参考帧继承硬锁：画面中的具名角色必须继承已批准角色母卡和本集状态卡，画面中的地点必须继承已批准场景母卡和本集场景卡；参考帧只调整镜头、调度、光线和动作，不允许替换角色身份或重造空间。",
           "qc_rejection_rule": "reject if any named character identity or location geography drifts from approved upstream assets"
-        }
+        },
+        "reference_frame_update_note": "User lock added: four frames share one space; C020/C021 beast inheritance; c024ae01 and c004m character inheritance; P017 Suming wall flags; P016 weathered Zhaoming old emblem on damaged warning bell; low-key high-contrast lighting with clear cold-white gate-impact highlight."
       },
       "model_visible_prompt": {
-        "visible_goal": "创建 SC001-SH002 首帧：同一面城墙、同一只钟旁，年轻军户扶住正在摇晃的破钟，把战场规模压到人身代价。",
-        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。",
-        "subject_content": "年轻灰墙军户在 R002 同一钟架旁跪在雪泥墙头，暗灰墙守甲和围巾被雪打湿；他用冻红脏污的手掌按住同一口破钟，手掌覆盖旧徽区域，只留不可读的几粒淡金断屑。断矛落在膝边雪泥。背景保留同一女墙、同一钟架方向、远处守军，以及女墙外斜下方朝墙压来的兽族和伴生兽。",
-        "composition_motion": "镜头从 R002 继续靠近同一口钟，不换位置不换方向。钟架横梁仍沿女墙方向斜向退进；外侧背景只能是开阔战场、兽族和山谷，不能生成第二道墙。",
-        "visible_continuity": "R003 继承 R002 的单墙、单钟、同钟架方向。旧帝国痕迹几乎被手、裂缝、铜锈、雪泥遮住，不可读成完整日月徽章。墙外远景兽族和伴生兽仍继承 C020/C021/E01_C020。",
-        "negative_prompt": "不要完整圆形徽章、可读日月符号、第二道城墙、第二个钟架、钟架旋转、孤立道具特写、没有墙头地面、英雄摆拍、城外人族、泛化骷髅兵、文字、UI 标记。"
+        "visible_goal": "创建 SC001-SH002 首帧 r003e01.png：同一城墙头的年轻灰墙军户，角色继承 E01_C024A/c024ae01；他被上一帧撞门余震晃倒，半倒在黑石女墙边，武器脱手滑进雪泥，旁边同一口破损风化警钟/骨钟仍在横摆。",
+        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 墙头人物近景也要有明确冷白主光和暗红边缘光：脸可半暗，手、脱手武器、肩甲、钟缘、钟架链条、肃明旗边和雪粒必须亮暗分离。",
+        "subject_content": "年轻灰墙军户必须继承 c024ae01 的年龄、脸型、厚衬袄、旧甲片、冻血掌心、断矛/长矛残杆和普通军户身份。他不是具名英雄，也不再扶钟：他半倒在同一黑石女墙根部或墙边雪泥里，肩背贴墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛、短枪或长矛残杆，脱手武器斜滑在前景雪泥里。旁边同一口骨钟和同一钟架正在横摆，锁链拉紧、木架抖雪，钟面有 P016 昭明旧徽残缺风化痕。墙头有 P017 肃明黑日白翅旗在雪风中破损飘动。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、冷白撞门反光、雪雾和斜下方攻城压力。",
+        "composition_motion": "16:9 横屏电影参考帧。前景是脱手断矛或长矛残杆、撑地手、雪泥和暗红冻血边；中景是年轻军户半倒在黑石女墙边，肩背撞墙，脸被头盔/围巾/阴影和风雪半遮但不变形；上方或侧后是同一钟架和正在横摆的同一口骨钟，钟缘和旧徽残痕有冷亮轮廓；背景为同一墙头守军、肃明旗、墙外火点、雪雾、军阵和攻城压力。脱手武器、撑地手、肩背贴墙姿态、横摆骨钟必须清楚；风雪不能糊掉身体重心。",
+        "visible_continuity": "四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R003 继承 R002 的单墙、单钟、同钟架方向，是撞门震钟后的同一墙头身体代价，不是新场景。墙外兽族和伴生兽只是背景连续性，权重低于 c024ae01 士兵身份。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、扶钟姿势、跪着摆拍、手掌贴钟圣物化、英雄摆拍、糊脸、手指融化、甲片粘连、钟架变形、正脸变形特写、面部美化、儿童化脸型、孤立道具特写、没有墙头地面、泛化骷髅兵"
       },
       "copy_ready": {
-        "positive_prompt": "创建 SC001-SH002 首帧：同一面城墙、同一只钟旁，年轻军户扶住正在摇晃的破钟，把战场规模压到人身代价。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n年轻灰墙军户在 R002 同一钟架旁跪在雪泥墙头，暗灰墙守甲和围巾被雪打湿；他用冻红脏污的手掌按住同一口破钟，手掌覆盖旧徽区域，只留不可读的几粒淡金断屑。断矛落在膝边雪泥。背景保留同一女墙、同一钟架方向、远处守军，以及女墙外斜下方朝墙压来的兽族和伴生兽。\n\n镜头从 R002 继续靠近同一口钟，不换位置不换方向。钟架横梁仍沿女墙方向斜向退进；外侧背景只能是开阔战场、兽族和山谷，不能生成第二道墙。\n\nR003 继承 R002 的单墙、单钟、同钟架方向。旧帝国痕迹几乎被手、裂缝、铜锈、雪泥遮住，不可读成完整日月徽章。墙外远景兽族和伴生兽仍继承 C020/C021/E01_C020。",
-        "negative_prompt": "不要完整圆形徽章、可读日月符号、第二道城墙、第二个钟架、钟架旋转、孤立道具特写、没有墙头地面、英雄摆拍、城外人族、泛化骷髅兵、文字、UI 标记。",
-        "reference_image_instructions": "生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。",
-        "chatgpt_image_prompt": "创建 SC001-SH002 首帧：同一面城墙、同一只钟旁，年轻军户扶住正在摇晃的破钟，把战场规模压到人身代价。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n年轻灰墙军户在 R002 同一钟架旁跪在雪泥墙头，暗灰墙守甲和围巾被雪打湿；他用冻红脏污的手掌按住同一口破钟，手掌覆盖旧徽区域，只留不可读的几粒淡金断屑。断矛落在膝边雪泥。背景保留同一女墙、同一钟架方向、远处守军，以及女墙外斜下方朝墙压来的兽族和伴生兽。\n\n镜头从 R002 继续靠近同一口钟，不换位置不换方向。钟架横梁仍沿女墙方向斜向退进；外侧背景只能是开阔战场、兽族和山谷，不能生成第二道墙。\n\nR003 继承 R002 的单墙、单钟、同钟架方向。旧帝国痕迹几乎被手、裂缝、铜锈、雪泥遮住，不可读成完整日月徽章。墙外远景兽族和伴生兽仍继承 C020/C021/E01_C020。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要完整圆形徽章、可读日月符号、第二道城墙、第二个钟架、钟架旋转、孤立道具特写、没有墙头地面、英雄摆拍、城外人族、泛化骷髅兵、文字、UI 标记。",
-        "gemini_image_prompt": "创建 SC001-SH002 首帧：同一面城墙、同一只钟旁，年轻军户扶住正在摇晃的破钟，把战场规模压到人身代价。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n年轻灰墙军户在 R002 同一钟架旁跪在雪泥墙头，暗灰墙守甲和围巾被雪打湿；他用冻红脏污的手掌按住同一口破钟，手掌覆盖旧徽区域，只留不可读的几粒淡金断屑。断矛落在膝边雪泥。背景保留同一女墙、同一钟架方向、远处守军，以及女墙外斜下方朝墙压来的兽族和伴生兽。\n\n镜头从 R002 继续靠近同一口钟，不换位置不换方向。钟架横梁仍沿女墙方向斜向退进；外侧背景只能是开阔战场、兽族和山谷，不能生成第二道墙。\n\nR003 继承 R002 的单墙、单钟、同钟架方向。旧帝国痕迹几乎被手、裂缝、铜锈、雪泥遮住，不可读成完整日月徽章。墙外远景兽族和伴生兽仍继承 C020/C021/E01_C020。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要完整圆形徽章、可读日月符号、第二道城墙、第二个钟架、钟架旋转、孤立道具特写、没有墙头地面、英雄摆拍、城外人族、泛化骷髅兵、文字、UI 标记。"
+        "positive_prompt": "创建 SC001-SH002 首帧 r003e01.png：同一城墙头的年轻灰墙军户，角色继承 E01_C024A/c024ae01；他被上一帧撞门余震晃倒，半倒在黑石女墙边，武器脱手滑进雪泥，旁边同一口破损风化警钟/骨钟仍在横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 墙头人物近景也要有明确冷白主光和暗红边缘光：脸可半暗，手、脱手武器、肩甲、钟缘、钟架链条、肃明旗边和雪粒必须亮暗分离。\n\n年轻灰墙军户必须继承 c024ae01 的年龄、脸型、厚衬袄、旧甲片、冻血掌心、断矛/长矛残杆和普通军户身份。他不是具名英雄，也不再扶钟：他半倒在同一黑石女墙根部或墙边雪泥里，肩背贴墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛、短枪或长矛残杆，脱手武器斜滑在前景雪泥里。旁边同一口骨钟和同一钟架正在横摆，锁链拉紧、木架抖雪，钟面有 P016 昭明旧徽残缺风化痕。墙头有 P017 肃明黑日白翅旗在雪风中破损飘动。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、冷白撞门反光、雪雾和斜下方攻城压力。\n\n16:9 横屏电影参考帧。前景是脱手断矛或长矛残杆、撑地手、雪泥和暗红冻血边；中景是年轻军户半倒在黑石女墙边，肩背撞墙，脸被头盔/围巾/阴影和风雪半遮但不变形；上方或侧后是同一钟架和正在横摆的同一口骨钟，钟缘和旧徽残痕有冷亮轮廓；背景为同一墙头守军、肃明旗、墙外火点、雪雾、军阵和攻城压力。脱手武器、撑地手、肩背贴墙姿态、横摆骨钟必须清楚；风雪不能糊掉身体重心。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R003 继承 R002 的单墙、单钟、同钟架方向，是撞门震钟后的同一墙头身体代价，不是新场景。墙外兽族和伴生兽只是背景连续性，权重低于 c024ae01 士兵身份。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、扶钟姿势、跪着摆拍、手掌贴钟圣物化、英雄摆拍、糊脸、手指融化、甲片粘连、钟架变形、正脸变形特写、面部美化、儿童化脸型、孤立道具特写、没有墙头地面、泛化骷髅兵",
+        "reference_image_instructions": "生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r003e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。",
+        "chatgpt_image_prompt": "创建 SC001-SH002 首帧 r003e01.png：同一城墙头的年轻灰墙军户，角色继承 E01_C024A/c024ae01；他被上一帧撞门余震晃倒，半倒在黑石女墙边，武器脱手滑进雪泥，旁边同一口破损风化警钟/骨钟仍在横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 墙头人物近景也要有明确冷白主光和暗红边缘光：脸可半暗，手、脱手武器、肩甲、钟缘、钟架链条、肃明旗边和雪粒必须亮暗分离。\n\n年轻灰墙军户必须继承 c024ae01 的年龄、脸型、厚衬袄、旧甲片、冻血掌心、断矛/长矛残杆和普通军户身份。他不是具名英雄，也不再扶钟：他半倒在同一黑石女墙根部或墙边雪泥里，肩背贴墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛、短枪或长矛残杆，脱手武器斜滑在前景雪泥里。旁边同一口骨钟和同一钟架正在横摆，锁链拉紧、木架抖雪，钟面有 P016 昭明旧徽残缺风化痕。墙头有 P017 肃明黑日白翅旗在雪风中破损飘动。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、冷白撞门反光、雪雾和斜下方攻城压力。\n\n16:9 横屏电影参考帧。前景是脱手断矛或长矛残杆、撑地手、雪泥和暗红冻血边；中景是年轻军户半倒在黑石女墙边，肩背撞墙，脸被头盔/围巾/阴影和风雪半遮但不变形；上方或侧后是同一钟架和正在横摆的同一口骨钟，钟缘和旧徽残痕有冷亮轮廓；背景为同一墙头守军、肃明旗、墙外火点、雪雾、军阵和攻城压力。脱手武器、撑地手、肩背贴墙姿态、横摆骨钟必须清楚；风雪不能糊掉身体重心。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R003 继承 R002 的单墙、单钟、同钟架方向，是撞门震钟后的同一墙头身体代价，不是新场景。墙外兽族和伴生兽只是背景连续性，权重低于 c024ae01 士兵身份。\n\n参考图使用要求：生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r003e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\n负面提示：全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、扶钟姿势、跪着摆拍、手掌贴钟圣物化、英雄摆拍、糊脸、手指融化、甲片粘连、钟架变形、正脸变形特写、面部美化、儿童化脸型、孤立道具特写、没有墙头地面、泛化骷髅兵",
+        "gemini_image_prompt": "创建 SC001-SH002 首帧 r003e01.png：同一城墙头的年轻灰墙军户，角色继承 E01_C024A/c024ae01；他被上一帧撞门余震晃倒，半倒在黑石女墙边，武器脱手滑进雪泥，旁边同一口破损风化警钟/骨钟仍在横摆。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 墙头人物近景也要有明确冷白主光和暗红边缘光：脸可半暗，手、脱手武器、肩甲、钟缘、钟架链条、肃明旗边和雪粒必须亮暗分离。\n\n年轻灰墙军户必须继承 c024ae01 的年龄、脸型、厚衬袄、旧甲片、冻血掌心、断矛/长矛残杆和普通军户身份。他不是具名英雄，也不再扶钟：他半倒在同一黑石女墙根部或墙边雪泥里，肩背贴墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛、短枪或长矛残杆，脱手武器斜滑在前景雪泥里。旁边同一口骨钟和同一钟架正在横摆，锁链拉紧、木架抖雪，钟面有 P016 昭明旧徽残缺风化痕。墙头有 P017 肃明黑日白翅旗在雪风中破损飘动。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、冷白撞门反光、雪雾和斜下方攻城压力。\n\n16:9 横屏电影参考帧。前景是脱手断矛或长矛残杆、撑地手、雪泥和暗红冻血边；中景是年轻军户半倒在黑石女墙边，肩背撞墙，脸被头盔/围巾/阴影和风雪半遮但不变形；上方或侧后是同一钟架和正在横摆的同一口骨钟，钟缘和旧徽残痕有冷亮轮廓；背景为同一墙头守军、肃明旗、墙外火点、雪雾、军阵和攻城压力。脱手武器、撑地手、肩背贴墙姿态、横摆骨钟必须清楚；风雪不能糊掉身体重心。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R003 继承 R002 的单墙、单钟、同钟架方向，是撞门震钟后的同一墙头身体代价，不是新场景。墙外兽族和伴生兽只是背景连续性，权重低于 c024ae01 士兵身份。\n\nReference image instructions: 生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r003e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\nNegative prompt: 全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、扶钟姿势、跪着摆拍、手掌贴钟圣物化、英雄摆拍、糊脸、手指融化、甲片粘连、钟架变形、正脸变形特写、面部美化、儿童化脸型、孤立道具特写、没有墙头地面、泛化骷髅兵"
       },
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -7169,16 +7253,20 @@
           "lighting, weather, and time of day visible in-frame"
         ],
         "composition_layers": {
-          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
-          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
-          "background": "location depth, weather/time, exits, walls, crowd pressure, or environmental continuity anchors"
+          "foreground": "脱手断矛或长矛残杆、撑地手、雪泥、暗红冻血边和冷白雪雾亮部",
+          "midground": "半倒在黑石女墙边的年轻灰墙军户，肩背撞墙，脸被头盔、围巾、阴影和风雪半遮",
+          "background": "同一钟架和横摆骨钟、附近守军、同一墙外攻城压力、雪雾和低位火点"
         },
         "qc_checks": [
           "16:9 canvas, minimum 3840x2160",
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
-          "no watermarks, modern UI, random text, or wrong faction symbols"
+          "no watermarks, modern UI, random text, or wrong faction symbols",
+          "R001-R004 share one wall, one gate, one bell frame, one damaged warning bell, one battlefield space",
+          "P017 Suming wall flags inherit the approved root emblem and are not redesigned",
+          "P016 Zhaoming old emblem appears only as damaged weathered residual marks on the warning bell",
+          "low-key high-contrast lighting with a clear cold-white gate-impact highlight; not uniformly grey-black"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -7193,11 +7281,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -7206,11 +7294,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       }
     },
     {
@@ -7235,15 +7323,19 @@
           "ONE_WALL_ONE_BELL_FRAME",
           "C020",
           "C021",
-          "E01_C020"
+          "E01_C020",
+          "P016",
+          "P017",
+          "RULE_SC001_FOUR_FRAMES_ONE_SPACE",
+          "RULE_LOW_KEY_HIGH_CONTRAST_NOT_GREY"
         ],
         "usage": [
           "SC001-SH003",
           "I2V",
           "首帧"
         ],
-        "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-        "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+        "approval_status": "ready_for_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
+        "generation_status": "needs_regeneration_after_user_same_space_emblem_light_lock_2026-06-08",
         "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
         "display_name": "SC001-SH003 首帧参考帧",
         "reference_inputs": [
@@ -7316,10 +7408,30 @@
             "reference_scope": "episode_asset",
             "role": "episode_siege_state_and_readability_lock",
             "lock_usage": "锁定第01集暴雪攻城状态、火雪分离、墙外兽族攻城剪影和远景可读性。"
+          },
+          {
+            "asset_id": "P016",
+            "display_name": "昭明日月星盘徽章与朱赤旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p016m.png",
+            "reference_scope": "series_master",
+            "role": "zhaoming_old_emblem_symbol_lock",
+            "lock_usage": "锁定警钟/骨钟上的昭明旧徽残痕：只能继承 P016 根徽章并做风化、破损、遮挡，不得重画新徽章。"
+          },
+          {
+            "asset_id": "P017",
+            "display_name": "肃明清明黑日白翅徽章与旗帜基础母版",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p017m.png",
+            "reference_scope": "series_master",
+            "role": "suming_wall_flag_symbol_lock",
+            "lock_usage": "锁定墙头肃明黑日白翅旗帜：只能继承 P017 根徽章并做破损、雪遮、低可读旗面，不得重画新徽章。"
           }
         ],
         "reference_input_policy": "Reference inputs are production metadata for the generator operator. They must be uploaded or linked as images/control layers when available, but their ids, paths, source refs, and usage notes must not be copied into model_visible_prompt.",
-        "prompt_revision": "sc001-same-wall-single-bell-continuity-v9-2026-06-08",
+        "prompt_revision": "e01_r004-same-space-p016-p017-light-v12-2026-06-08",
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
@@ -7327,11 +7439,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "landscape_contract_status": {
           "contract_class": "video_frame_reference",
@@ -7340,11 +7452,11 @@
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
-          "action_required": "none_current_reference_candidate_ready_for_user_qc",
-          "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+          "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+          "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
           "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
           "checked_at": "2026-06-08",
-          "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+          "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
         },
         "output_path": "01/assets/reference-frames/r004e01.png",
         "inheritance_contract": {
@@ -7352,22 +7464,23 @@
           "generator_requirement": "must use approved episode character/location cards and their series masters as references before producing shot frames",
           "visible_prompt_lock": "参考帧继承硬锁：画面中的具名角色必须继承已批准角色母卡和本集状态卡，画面中的地点必须继承已批准场景母卡和本集场景卡；参考帧只调整镜头、调度、光线和动作，不允许替换角色身份或重造空间。",
           "qc_rejection_rule": "reject if any named character identity or location geography drifts from approved upstream assets"
-        }
+        },
+        "reference_frame_update_note": "User lock added: four frames share one space; C020/C021 beast inheritance; c024ae01 and c004m character inheritance; P017 Suming wall flags; P016 weathered Zhaoming old emblem on damaged warning bell; low-key high-contrast lighting with clear cold-white gate-impact highlight."
       },
       "model_visible_prompt": {
-        "visible_goal": "创建 SC001-SH003 首帧：同一墙头同一只钟旁，薛临墙把墙头注意力从钟拉回门线和枪线。",
-        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。",
-        "subject_content": "薛临墙保持全局身份：中年粗粝墙师/守墙老兵，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，暗灰旧甲和厚围巾。他在同一口骨钟旁压住黑石女墙，身体沿同一女墙线前倾，低声急促但不慌；年轻军户可在钟旁低位背景继续扶钟。画面必须同时读到同一钟架、同一女墙、墙外斜下方攻来的兽族和伴生兽。",
-        "composition_motion": "镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有攻墙兽族和伴生兽。",
-        "visible_continuity": "R004 继承 R002/R003 的单墙、单钟、同钟架方向。薛临墙身份必须继承 C004 全局与 E01_C004 状态；兽族背景继承 C020/C021/E01_C020。旧徽只保留不可读淡金断屑。",
-        "negative_prompt": "不要把薛临墙画成华甲将军、不要换脸、不要英雄海报、不要第二道城墙、第二个钟架、钟架方向变化、城外人族、完整圆形徽章、圣光、过曝火盆、文字、UI 标记。"
+        "visible_goal": "创建 SC001-SH003 首帧 r004e01.png：同一城墙头、同一钟架旁，薛临墙继承 C004/c004m 与 E01_C004/c004e01，压住黑石女墙把注意力从警钟拉回城门线和枪线，低声提醒敌人逼近。",
+        "style_quality": "超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 薛临墙中近景不能灰糊：额骨、鼻梁、冻裂手背、旧甲片、锁甲边、枪线、钟缘和肃明旗边必须有冷白硬边；暗红火光只做低位边缘光，背景军阵和雪山退后。",
+        "subject_content": "薛临墙保持 C004 全局身份：五十岁上下人族边墙老墙师/现场指挥者，宽厚低重心，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，祖传旧昭明帝国甲有明光甲/锁甲结构和几乎不可辨的 P016 昭明残徽磨损痕。他在同一口破损风化警钟/骨钟旁压住黑石女墙，身体沿同一女墙线前倾，嘴部短促开口，低声急促但不慌。年轻军户可在钟旁低位背景半倒墙边，武器已脱手。画面必须同时读到同一钟架、同一女墙、P017 肃明黑日白翅旗、墙外斜下方攻来的 C020/C021 兽族和伴生兽、以及城门撞击点的冷白反光。",
+        "composition_motion": "16:9 横屏电影参考帧。镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有同一方向攻来的兽族和伴生兽。手、侧脸、短促口型、枪线、肃明旗、骨钟空间锚点和下方城门撞击冷白亮部必须可读；脸可半暗，但不能用风雪或暗部遮掩变形。",
+        "visible_continuity": "四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R004 与 R003 是同一墙头空间，只是主体转到薛临墙；薛临墙身份必须继承 C004 全局与 E01_C004 状态，不可画成华甲将军、武侠宗师或年轻武将。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、把薛临墙画成华甲将军、换脸、年轻化、英雄海报、老宗师姿势、口型融化、脸部花屏、眼鼻漂移、手指糊成团、背景枪线糊成灰块、骨钟消失、肃明旗消失"
       },
       "copy_ready": {
-        "positive_prompt": "创建 SC001-SH003 首帧：同一墙头同一只钟旁，薛临墙把墙头注意力从钟拉回门线和枪线。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n薛临墙保持全局身份：中年粗粝墙师/守墙老兵，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，暗灰旧甲和厚围巾。他在同一口骨钟旁压住黑石女墙，身体沿同一女墙线前倾，低声急促但不慌；年轻军户可在钟旁低位背景继续扶钟。画面必须同时读到同一钟架、同一女墙、墙外斜下方攻来的兽族和伴生兽。\n\n镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有攻墙兽族和伴生兽。\n\nR004 继承 R002/R003 的单墙、单钟、同钟架方向。薛临墙身份必须继承 C004 全局与 E01_C004 状态；兽族背景继承 C020/C021/E01_C020。旧徽只保留不可读淡金断屑。",
-        "negative_prompt": "不要把薛临墙画成华甲将军、不要换脸、不要英雄海报、不要第二道城墙、第二个钟架、钟架方向变化、城外人族、完整圆形徽章、圣光、过曝火盆、文字、UI 标记。",
-        "reference_image_instructions": "生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。",
-        "chatgpt_image_prompt": "创建 SC001-SH003 首帧：同一墙头同一只钟旁，薛临墙把墙头注意力从钟拉回门线和枪线。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n薛临墙保持全局身份：中年粗粝墙师/守墙老兵，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，暗灰旧甲和厚围巾。他在同一口骨钟旁压住黑石女墙，身体沿同一女墙线前倾，低声急促但不慌；年轻军户可在钟旁低位背景继续扶钟。画面必须同时读到同一钟架、同一女墙、墙外斜下方攻来的兽族和伴生兽。\n\n镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有攻墙兽族和伴生兽。\n\nR004 继承 R002/R003 的单墙、单钟、同钟架方向。薛临墙身份必须继承 C004 全局与 E01_C004 状态；兽族背景继承 C020/C021/E01_C020。旧徽只保留不可读淡金断屑。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要把薛临墙画成华甲将军、不要换脸、不要英雄海报、不要第二道城墙、第二个钟架、钟架方向变化、城外人族、完整圆形徽章、圣光、过曝火盆、文字、UI 标记。",
-        "gemini_image_prompt": "创建 SC001-SH003 首帧：同一墙头同一只钟旁，薛临墙把墙头注意力从钟拉回门线和枪线。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕。冷白暴雪天光压出黑石巨墙大暗面，黑墙负补光形成大面积暗块；低位暗红火光只勾兽族毛皮、旧铁、盾缘、钟缘、守军肩线、枪尖和雪雾，不做圣光、不做过曝火盆。真实镜头高度、真实墙体尺度、真实身体重量和接触反作用。\n\n薛临墙保持全局身份：中年粗粝墙师/守墙老兵，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，暗灰旧甲和厚围巾。他在同一口骨钟旁压住黑石女墙，身体沿同一女墙线前倾，低声急促但不慌；年轻军户可在钟旁低位背景继续扶钟。画面必须同时读到同一钟架、同一女墙、墙外斜下方攻来的兽族和伴生兽。\n\n镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有攻墙兽族和伴生兽。\n\nR004 继承 R002/R003 的单墙、单钟、同钟架方向。薛临墙身份必须继承 C004 全局与 E01_C004 状态；兽族背景继承 C020/C021/E01_C020。旧徽只保留不可读淡金断屑。\n\n参考图使用要求：生成前必须引用 C020/c020m.png、C021/c021m.png、E01_C020/c020e01.png、E01_L007、E01_P021 与对应参考帧；R002/R003/R004 必须继承 R001 同一面黑石城墙、同一钟架方向、同一口骨钟。若模型生成第二道城墙、第二个钟架、兽族泛化或钟架转向，必须判退。\n\n负面提示：不要把薛临墙画成华甲将军、不要换脸、不要英雄海报、不要第二道城墙、第二个钟架、钟架方向变化、城外人族、完整圆形徽章、圣光、过曝火盆、文字、UI 标记。"
+        "positive_prompt": "创建 SC001-SH003 首帧 r004e01.png：同一城墙头、同一钟架旁，薛临墙继承 C004/c004m 与 E01_C004/c004e01，压住黑石女墙把注意力从警钟拉回城门线和枪线，低声提醒敌人逼近。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 薛临墙中近景不能灰糊：额骨、鼻梁、冻裂手背、旧甲片、锁甲边、枪线、钟缘和肃明旗边必须有冷白硬边；暗红火光只做低位边缘光，背景军阵和雪山退后。\n\n薛临墙保持 C004 全局身份：五十岁上下人族边墙老墙师/现场指挥者，宽厚低重心，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，祖传旧昭明帝国甲有明光甲/锁甲结构和几乎不可辨的 P016 昭明残徽磨损痕。他在同一口破损风化警钟/骨钟旁压住黑石女墙，身体沿同一女墙线前倾，嘴部短促开口，低声急促但不慌。年轻军户可在钟旁低位背景半倒墙边，武器已脱手。画面必须同时读到同一钟架、同一女墙、P017 肃明黑日白翅旗、墙外斜下方攻来的 C020/C021 兽族和伴生兽、以及城门撞击点的冷白反光。\n\n16:9 横屏电影参考帧。镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有同一方向攻来的兽族和伴生兽。手、侧脸、短促口型、枪线、肃明旗、骨钟空间锚点和下方城门撞击冷白亮部必须可读；脸可半暗，但不能用风雪或暗部遮掩变形。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R004 与 R003 是同一墙头空间，只是主体转到薛临墙；薛临墙身份必须继承 C004 全局与 E01_C004 状态，不可画成华甲将军、武侠宗师或年轻武将。",
+        "negative_prompt": "全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、把薛临墙画成华甲将军、换脸、年轻化、英雄海报、老宗师姿势、口型融化、脸部花屏、眼鼻漂移、手指糊成团、背景枪线糊成灰块、骨钟消失、肃明旗消失",
+        "reference_image_instructions": "生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r004e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。",
+        "chatgpt_image_prompt": "创建 SC001-SH003 首帧 r004e01.png：同一城墙头、同一钟架旁，薛临墙继承 C004/c004m 与 E01_C004/c004e01，压住黑石女墙把注意力从警钟拉回城门线和枪线，低声提醒敌人逼近。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 薛临墙中近景不能灰糊：额骨、鼻梁、冻裂手背、旧甲片、锁甲边、枪线、钟缘和肃明旗边必须有冷白硬边；暗红火光只做低位边缘光，背景军阵和雪山退后。\n\n薛临墙保持 C004 全局身份：五十岁上下人族边墙老墙师/现场指挥者，宽厚低重心，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，祖传旧昭明帝国甲有明光甲/锁甲结构和几乎不可辨的 P016 昭明残徽磨损痕。他在同一口破损风化警钟/骨钟旁压住黑石女墙，身体沿同一女墙线前倾，嘴部短促开口，低声急促但不慌。年轻军户可在钟旁低位背景半倒墙边，武器已脱手。画面必须同时读到同一钟架、同一女墙、P017 肃明黑日白翅旗、墙外斜下方攻来的 C020/C021 兽族和伴生兽、以及城门撞击点的冷白反光。\n\n16:9 横屏电影参考帧。镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有同一方向攻来的兽族和伴生兽。手、侧脸、短促口型、枪线、肃明旗、骨钟空间锚点和下方城门撞击冷白亮部必须可读；脸可半暗，但不能用风雪或暗部遮掩变形。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R004 与 R003 是同一墙头空间，只是主体转到薛临墙；薛临墙身份必须继承 C004 全局与 E01_C004 状态，不可画成华甲将军、武侠宗师或年轻武将。\n\n参考图使用要求：生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r004e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\n负面提示：全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、把薛临墙画成华甲将军、换脸、年轻化、英雄海报、老宗师姿势、口型融化、脸部花屏、眼鼻漂移、手指糊成团、背景枪线糊成灰块、骨钟消失、肃明旗消失",
+        "gemini_image_prompt": "创建 SC001-SH003 首帧 r004e01.png：同一城墙头、同一钟架旁，薛临墙继承 C004/c004m 与 E01_C004/c004e01，压住黑石女墙把注意力从警钟拉回城门线和枪线，低声提醒敌人逼近。\n\n超写实电影级低魔东方史诗，16:9 横屏宽银幕，3840x2160。低调高反差，但不是全画面灰黑。冷白暴雪天光压出黑石巨墙大暗面；城门撞击点形成明确冷白亮部，碎冰、雪雾和木屑反光成为画面明暗中心。低位暗红火光只做边缘光，勾出攻城车、巨兽角、兽族肩背、破旗、钟架、骨钟、枪线和守军肩背轮廓。背景雪山和远处军阵降低对比退后，画面不能平均发灰，不能主体不亮。真实镜头高度、真实墙体尺度、真实古代材质、真实身体重量和接触反作用。 薛临墙中近景不能灰糊：额骨、鼻梁、冻裂手背、旧甲片、锁甲边、枪线、钟缘和肃明旗边必须有冷白硬边；暗红火光只做低位边缘光，背景军阵和雪山退后。\n\n薛临墙保持 C004 全局身份：五十岁上下人族边墙老墙师/现场指挥者，宽厚低重心，风雪打湿的黑发束起，粗眉、胡茬、冻裂宽手，祖传旧昭明帝国甲有明光甲/锁甲结构和几乎不可辨的 P016 昭明残徽磨损痕。他在同一口破损风化警钟/骨钟旁压住黑石女墙，身体沿同一女墙线前倾，嘴部短促开口，低声急促但不慌。年轻军户可在钟旁低位背景半倒墙边，武器已脱手。画面必须同时读到同一钟架、同一女墙、P017 肃明黑日白翅旗、墙外斜下方攻来的 C020/C021 兽族和伴生兽、以及城门撞击点的冷白反光。\n\n16:9 横屏电影参考帧。镜头在 R003 同一墙头位置向薛临墙转移，不换墙、不换钟、不换钟架方向。钟架保持左侧/背景同向锚点，女墙斜向退进，城外只有同一方向攻来的兽族和伴生兽。手、侧脸、短促口型、枪线、肃明旗、骨钟空间锚点和下方城门撞击冷白亮部必须可读；脸可半暗，但不能用风雪或暗部遮掩变形。\n\n四张图必须是同一处锁喉关暴雪攻城空间：同一面黑石巨墙、同一座城门、同一处城门撞击点、同一墙头走道、同一钟架、同一口破损风化警钟/骨钟、同一组墙头肃明旗和同一片墙外雪山军阵。R001/R002 从城外朝向城墙和城门；R003/R004 在同一墙头，只是机位转到士兵和薛临墙。视角可变，空间关系不能变。 兽族士兵和伴生兽必须继承 C020 北境攻城兵种群像模板、C021 北境共生兽关系模板和 E01_C020 序幕攻城状态卡：多兵种、多伴生兽、攻城职能清楚，不能泛化成单一种类兽人或骷髅兵。 徽章继承硬锁：墙头旗帜必须继承 P017 肃明/清明黑日白翅徽章与旗帜母版，只能做暴雪、破损、低可读旗面和局部遮挡，不能重新设计。破损、损坏、风化的警钟/骨钟表面必须继承 P016 昭明日月星盘旧徽章母版，只能是裂缝、铜锈、雪泥和剥落留下的残缺旧浮雕/残痕，不能画成完整发光徽章，不能重画新符号。需要精确符号时按 P016/P017 参考图、线控或后合成执行。 R004 与 R003 是同一墙头空间，只是主体转到薛临墙；薛临墙身份必须继承 C004 全局与 E01_C004 状态，不可画成华甲将军、武侠宗师或年轻武将。\n\nReference image instructions: 生成前必须加载并引用这些上游图像/控制层：C020 assets/characters/c020m.png、C021 assets/characters/c021m.png、E01_C020 01/assets/characters/c020e01.png、E01_L007 01/assets/locations/l007e01.png、E01_P021 01/assets/props/p021e01.png、P016 assets/props/p016m.png、P017 assets/props/p017m.png；R003 还必须引用 E01_C024A 01/assets/characters/c024ae01.png，R004 还必须引用 C004 assets/characters/c004m.png 与 E01_C004 01/assets/characters/c004e01.png。四张输出必须在同一空间，最终写入 01/assets/reference-frames/r004e01.png。判退条件：任一画面全灰全黑、主体不亮、撞击点不清楚、骨钟不可见、徽章被重新设计、旗帜不是 P017 派生、警钟旧徽不是 P016 残痕、出现第二墙/第二钟/空间跳转/兽族泛化。\n\nNegative prompt: 全画面灰黑、平均低对比、脏灰画面、主体不亮、撞击点不清楚、骨钟不可见、雪雾覆盖全画面、暗部糊成一片、低清晰度、第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、另一边城门、城外人族、兽族看镜头列队、完全对称正面城门海报、纯骨钟特写、完整发光徽章、随机新徽章、重画肃明徽章、重画昭明旧徽章、神圣金光、魔法光柱、过曝 bloom、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、现代建筑、现代武器、文字、UI 标记、把薛临墙画成华甲将军、换脸、年轻化、英雄海报、老宗师姿势、口型融化、脸部花屏、眼鼻漂移、手指糊成团、背景枪线糊成灰块、骨钟消失、肃明旗消失"
       },
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -7392,7 +7505,11 @@
           "foreground, midground, and background are visibly separated",
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
-          "no watermarks, modern UI, random text, or wrong faction symbols"
+          "no watermarks, modern UI, random text, or wrong faction symbols",
+          "R001-R004 share one wall, one gate, one bell frame, one damaged warning bell, one battlefield space",
+          "P017 Suming wall flags inherit the approved root emblem and are not redesigned",
+          "P016 Zhaoming old emblem appears only as damaged weathered residual marks on the warning bell",
+          "low-key high-contrast lighting with a clear cold-white gate-impact highlight; not uniformly grey-black"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -7407,11 +7524,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -7420,11 +7537,11 @@
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
         "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
-        "action_required": "none_current_reference_candidate_ready_for_user_qc",
-        "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
+        "action_required": "regenerate_after_user_same_space_emblem_light_lock",
+        "qc_status": "needs_regeneration_after_user_same_space_emblem_light_lock",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
         "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "continuity_lock": "R001-R004 must share the same wall/gate/bell/flags/battlefield; use P017 Suming wall flags and P016 weathered old Zhaoming emblem on the damaged warning bell; lighting must be low-key high-contrast with clear cold-white gate-impact highlight, not uniformly grey-black."
       }
     },
     {

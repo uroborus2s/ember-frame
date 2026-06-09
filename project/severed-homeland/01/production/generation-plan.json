@@ -96,9 +96,9 @@
       "first_frame_ref": "01/assets/reference-frames/r001e01.png",
       "last_frame_ref": "01/assets/reference-frames/r002e01.png",
       "audio_refs": [
-        "voiceover:北墙五百年，血从未干。"
+        "voiceover:肃明历1226年，北境十三部落联盟大举入寇。"
       ],
-      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一钟架方向、同一口骨钟，以及攻城方低机位到墙头45度转向的连续运动。",
+      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一城门、同一钟架方向和同一口骨钟，以墙外低机位前推、第一次撞门震钟作为转场；不再要求到墙头转向。",
       "required_assets": [
         "E01_L007",
         "E01_P021",
@@ -132,10 +132,11 @@
       "first_frame_ref": "01/assets/reference-frames/r003e01.png",
       "last_frame_ref": "",
       "audio_refs": [
+        "voiceover:北关五百载，白骨未成尘。",
         "sfx:broken_spear",
         "sfx:snow_wolf_distant"
       ],
-      "rationale": "断矛、冻血和旧日月刻痕需要参考帧锁定可读性。",
+      "rationale": "新版 R003 需要锁定年轻军户被撞门余震晃倒、半倒墙边、武器脱手、旁边骨钟横摆的身体代价瞬间；旧扶钟首帧需要重生。",
       "required_assets": [
         "E01_P021",
         "E01_C024A",
@@ -152,7 +153,8 @@
       ],
       "risks": [
         "needs_config",
-        "blood_readability"
+        "blood_readability",
+        "reference_frame_regeneration"
       ]
     },
     {

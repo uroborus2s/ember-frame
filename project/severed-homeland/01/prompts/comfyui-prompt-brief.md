@@ -8,13 +8,17 @@ English: This delivery pack covers only episode 01 `SC001-SH001` through `SC001-
 
 ## Creative Update / 创作更新
 
-中文：SC001 开场改为斜侧攻城升镜。首帧应是攻城方斜后侧低机位，兽潮从左前向右后斜推城门，黑石墙不正面居中；尾帧应是同一面外墙的墙头外沿中景偏近，骨钟、黑石女墙、守军肩背和枪线可读，镜头仍面向同一个墙外攻城面，墙外兽潮仍在斜下方背景可见。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条升镜中读：“北墙五百年，血从未干。”
+中文：SC001 开场改为墙外正向偏斜攻城前推，不再要求模型完成升到墙头后的转向。首帧应是墙外攻城方向低机位，约七成正向读城门压力、三成斜向给纵深；兽潮、攻城车或破门猛犸压向同一面黑石城门。尾帧仍保持同一墙外方向，攻城车木梁或铁包巨角第一次重撞城门，雪雾冲画面，墙头同一钟架和同一口骨钟在上方或侧上方横摆。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条前推中只读时代事件：“肃明历1226年，北境十三部落联盟大举入寇。”；“北关五百载，白骨未成尘。”改放 `SC001-SH002` 末尾。
 
-English: SC001 now uses a diagonal siege-side lift. The first frame should be a low diagonal rear-side siege angle, with the beast tide pushing from front-left toward the gate at rear-right and the black wall not centered frontally; the last frame should be an exterior-edge wall-top medium-near composition on the same wall face, with bone bell, blackstone parapet, defender shoulders and spear line readable, while the camera still faces the same exterior siege side and the exterior beast tide remains visible below on a diagonal. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. The voiceover reads during this lift: "For five hundred years, the northern wall's blood has never dried."
+English: SC001 now uses an exterior front-biased siege push, and no longer asks the model to complete a turn after climbing to the wall top. The first frame should be a low exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth, with the beast tide, siege cart or gate-breaking mammoth pressing toward the same blackstone gate. The last frame keeps the same exterior direction as a siege-cart beam or iron-wrapped horn hits the gate for the first time, snow haze blasts into frame, and the same wall-top bell frame and same bone bell swing above or upper-side. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. This push only reads the era-event voiceover: "In Suming year 1226, the northern thirteen-tribe alliance invades in force."; "At the northern pass, five hundred years of bones have not turned to dust." lands at the end of `SC001-SH002`.
 
-中文：`r001e01.png` 和 `r002e01.png` 已按新版构图更新并通过视觉检查，可作为 `SC001-SH001` 的 FLF2V 首尾帧交付位。该镜头时长改为 `3.5s / 84 frames @ 24fps`。
+中文：`r001e01.png` 和 `r002e01.png` 若仍是上一版墙头转向构图，需要按本版“墙外前推 + 撞门震钟”重新确认或重生。该镜头时长保持 `3.5s / 84 frames @ 24fps`。
 
-English: `r001e01.png` and `r002e01.png` have been updated to the revised composition and visually checked, and may be used as the FLF2V first/last-frame delivery slots for `SC001-SH001`. The shot duration is now `3.5s / 84 frames @ 24fps`.
+English: If `r001e01.png` and `r002e01.png` still reflect the previous wall-top turning composition, they must be rechecked or regenerated for this exterior push plus gate-impact bell-shock plan. The shot duration remains `3.5s / 84 frames @ 24fps`.
+
+中文：`SC001-SH002` 废弃“年轻军户扶钟”构图。新版 `r003e01.png` 必须重生为：年轻军户被撞门余震晃倒，半倒在同一黑石女墙边，武器脱手滑进雪泥，旁边同一口骨钟横摆。人物脸被头盔、围巾、阴影和风雪半遮，不做正脸表情，重点是身体失衡、武器脱手和钟仍在响。
+
+English: `SC001-SH002` drops the young soldier bracing-the-bell composition. The new `r003e01.png` must be regenerated as the young soldier knocked down by the gate-impact aftershock, half-collapsed beside the same blackstone parapet, weapon slipping into snow mud, with the same bone bell swinging beside him. His face is half hidden by helmet, scarf, shadow and blizzard, with the focus on body imbalance, dropped weapon and the still-ringing bell.
 
 中文：薛临墙台词已改为更像战场现场提醒的短句：“敌人上来了。”剧本明确语气为压低、急促但不慌，像把墙头所有人的视线从骨钟拉回门线。视频模型只表现短促开口和战场提醒状态，精确台词留给字幕和配音。
 
@@ -28,16 +32,22 @@ English: The following unified cinematography grammar is for prompt authors and 
 
 | Shot | 光影策略 / Lighting Strategy |
 | --- | --- |
-| `SC001-SH001` | 中文：斜侧攻城建立镜头需要最大环境纵深。冷白暴雪天光压出黑墙巨型剪影，黑墙负补光吞掉墙面和兽潮大暗面，远处暗红火线低位反打雪雾、烟尘、攻城队列、破旗、巨角、骨钟边缘和守军肩线。<br>English: The diagonal siege-establishing shot needs maximum environmental depth. Cold blizzard sky light silhouettes the black wall, black-wall negative fill swallows the wall face and beast tide's large shadow masses, and distant dark-red firelines low-counterlight snow haze, smoke, siege ranks, torn banners, horn edges, bone-bell edge and defender shoulder lines. |
-| `SC001-SH002` | 中文：身体代价近景收窄光源。冷雪反光进钟裂，黑墙负补光压低人物，远火只在冻血、手指和骨钟裂边留下弱暖边，不做大场面火光。<br>English: The bodily-cost close shot narrows the light sources. Cold snow bounce enters bell cracks, black-wall negative fill presses the figure down, and distant fire leaves only a weak warm edge on frozen blood, fingers and bell cracks, not broad battlefield glow. |
+| `SC001-SH001` | 中文：墙外攻城建立镜头需要明确亮部层级，而不是整体压灰。裂云低角度冷白带淡金天光切出城墙、攻城车、巨兽和骨钟轮廓；撞门雪雾是最亮区域；低位暗红火点只做边缘反打；黑石墙保留大面积负补光暗面。<br>English: The exterior siege-establishing shot needs a clear highlight hierarchy rather than global greyness. Low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine, beast and bone-bell silhouettes; the gate-impact snow haze is the brightest zone; low dark-red fire points only edge-counterlight forms; the blackstone wall keeps large negative-fill shadow masses. |
+| `SC001-SH002` | 中文：身体代价近景用精致轮廓光解决“脏暗”。左上或侧后裂云冷白带淡金天光给钟架、锁链、头盔、肩甲和脱手武器轮廓；撞门方向冷白雪雾反光是亮部中心；低位暗红火只勾手指、武器边缘、钟缘和冻血；黑墙负补光压脸和暗面。<br>English: The bodily-cost close shot solves muddy darkness with refined rim light. Storm-break cold-white light with a faint pale-gold edge from upper-left or side-back rims the bell frame, chains, helmet, shoulder armor and dropped weapon; cold-white snow-haze bounce from the gate-impact direction is the highlight center; low dark-red fire only edges fingers, weapon, bell rim and frozen blood; black-wall negative fill presses face and dark side. |
 | `SC001-SH003` | 中文：战场口令中近景强调人物可读性。半张脸被黑墙吞没，远火低位暖边只切出侧脸、手和旧甲片，雪雾分离枪线和门线，不形成英雄逆光。<br>English: The command close-medium shot prioritizes character readability. Half the face is swallowed by the black wall, low distant fire cuts only the side profile, hand and old armor plates, and snow haze separates spear line and gate line without heroic backlight. |
+
+## Video Quality Lock / 视频画质锁
+
+中文：SC001 的“脏暗、模糊、花屏”问题必须在构图和 prompt 两层处理。构图上要求前景、中景、背景明确分层，关键脸、手、武器、钟架、城门和兽潮轮廓可读；光影上用明确亮部中心和轮廓光解决灰暗，不靠全局提亮。雪雾只允许做体积层、撞击亮部和隐藏剪切点，不能糊成覆盖细节的灰白罩。ComfyUI 负面提示必须包含：视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化、甲片粘连、关键轮廓糊掉。
+
+English: SC001 must solve muddy darkness, blur and video glitches at both composition and prompt levels. Composition requires clear foreground/midground/background separation and readable key faces, hands, weapons, bell frame, gate and beast silhouettes; lighting solves darkness with a clear highlight center and rim light, not global brightening. Snow haze is only volumetric depth, impact highlight and hidden cut point, never a grey-white veil over detail. ComfyUI negative prompts must include video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers, fused armor plates and blurred key silhouettes.
 
 ## Shot Method / 镜头方法
 
 | Shot | Method | Reference Inputs | Audio |
 | --- | --- | --- | --- |
-| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（新版斜侧攻城首帧）, `01/assets/reference-frames/r002e01.png`（新版城头中景偏近尾帧） | 旁白 / voiceover |
-| `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png` | 断矛、冻血、远处战声 / broken spear, frozen blood, distant battle |
+| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（墙外正向偏斜攻城首帧）, `01/assets/reference-frames/r002e01.png`（同一墙外方向撞门震钟尾帧） | 旁白 / voiceover |
+| `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png`（必须重生为半倒墙边、武器脱手、骨钟横摆） | 断矛、冻血、远处战声 / broken spear, frozen blood, distant battle |
 | `SC001-SH003` | `I2V` | `01/assets/reference-frames/r004e01.png` | 薛临墙台词 / Xue Linqiang line |
 
 ## ComfyUI Reference Binding / ComfyUI 参考图接入
@@ -68,8 +78,8 @@ English: Production should use `01/prompts/comfyui-render-prompts.md` directly. 
 
 ## Asset Use Rules / 资产使用规则
 
-- 中文：`E01_R001` 和 `E01_R002` 是已更新通过的 `SC001-SH001` 首尾帧交付位；`E01_R003` 和 `E01_R004` 可继续作为 `SC001-SH002`、`SC001-SH003` 的 I2V 首帧。
-- English: `E01_R001` and `E01_R002` are the updated and accepted first/last-frame delivery slots for `SC001-SH001`; `E01_R003` and `E01_R004` may continue as the I2V first frames for `SC001-SH002` and `SC001-SH003`.
+- 中文：`E01_R001` 和 `E01_R002` 需要按“墙外正向偏斜攻城 + 撞门震钟”重新确认；`E01_R003` 旧扶钟构图已废弃，必须重生后再作为 `SC001-SH002` 的 I2V 首帧；`E01_R004` 可继续作为 `SC001-SH003` 的 I2V 首帧。
+- English: `E01_R001` and `E01_R002` must be rechecked against the exterior front-biased siege plus gate-impact bell-shock plan; the old bracing-the-bell `E01_R003` composition is superseded and must be regenerated before use as the `SC001-SH002` I2V first frame; `E01_R004` may continue as the `SC001-SH003` I2V first frame.
 - 中文：`C020/c020m.png`、`C021/c021m.png`、`E01_C020/c020e01.png` 必须作为图片节点接入，分别锁兽族多兵种、伴生兽多样性和本集暴雪状态；只写在 prompt 里无效。
 - English: `C020/c020m.png`, `C021/c021m.png`, and `E01_C020/c020e01.png` must be connected as image nodes, locking beast troop variety, companion-beast diversity and episode blizzard state respectively; prompt text alone is not sufficient.
 - 中文：`E01_C004`、`E01_C020`、`E01_C024A` 是角色状态卡，只能作为身份、服装、材质参考，不作为视频首帧。
