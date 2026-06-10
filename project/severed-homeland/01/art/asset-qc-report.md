@@ -58,3 +58,101 @@ B04_E01_STYLE 已完成并通过协调端视觉 QC。SC001 开场四张参考帧
 - B03_E01_PROPS_COSTUMES：SC001 警钟/钟架道具已可用；其他道具服装按 episode manifest 继续 QC。
 - B05_E01_REFERENCE_FRAMES：SC001 R001-R004 已生成候选，待用户视觉 QC 后转 final approved；其他场次参考帧仍按后续批次执行。
 - B06_E01_SHOT_OVERRIDES：等待 SC001 参考帧用户 QC 与 ComfyUI 镜头测试反馈后再做精修。
+
+## SC002-SH004 参考帧候选 / 2026-06-10
+
+结论：`SC002-SH004` 所需 FLF2V 首帧与终帧已按 imagegen-task 隔离流程生成候选，并写入 canonical 路径。两张图用于锁定“粮袋被拖上押车 -> 粮车离开后空门槛”的首尾状态，待用户视觉 QC 后再转 final approved。
+
+### 已生成
+
+- `E01_R008` -> `01/assets/reference-frames/r008e01.png`，3840x2160 PNG RGB，无 alpha。画面读到前景祖牌小盒/冷白虫蜡手印，中景粮袋、奴兵与押车动作，背景家人和门槛压力。
+- `E01_R009` -> `01/assets/reference-frames/r009e01.png`，3840x2160 PNG RGB，无 alpha。画面读到前景祖牌小盒/冷白虫蜡手印/空门槛，中景跪坐妇人与孩子，背景远去车辙和清晨冷雾。
+
+### 保留历史
+
+- `01/assets/reference-frames/history/r008e01.imagegen-task-source-20260610.png`：1672x941 生图源，来自隔离 imagegen-task 线程。
+- `01/assets/reference-frames/history/r009e01.current-thread-source-20260610.png`：1672x941 生图源，来自当前线程内置 imagegen 兜底。
+
+### QC 状态
+
+- 通过：PNG 格式、16:9 横屏、canonical 3840x2160、无透明背景、前中后景分层可读。
+- 通过：继承 `E01_F001`、`E01_F005`、`E01_C017`、`E01_C023`、`E01_L003`、`E01_P008` 和 `E01_R001` 的风格/角色/场景/道具/材质方向。
+- 待确认：两张 canonical 图由 1672x941 生图源重采样到 3840x2160，当前标记为 `generated_candidate_pending_user_qc_2026-06-10`，需要用户视觉 QC 后再批准为 final。
+
+## SC002-SH003 参考帧候选 / 2026-06-10
+
+结论：`SC002-SH003` 所需 I2V 首帧已按 imagegen-task 隔离流程生成候选，并写入 canonical 路径。画面用于锁定“粮税小吏翻开白册并以族谱/封牌重新定义家粮归属，妇人护粮时被奴兵扣住”的制度动作，待用户视觉 QC 后再转 final approved。
+
+### 已生成
+
+- `E01_R007` -> `01/assets/reference-frames/r007e01.png`，3840x2160 PNG RGB，无 alpha。画面读到前景白册、节状手指、粮牌/虫蜡封印和湿木检查桌，中景粮税小吏、被扣住的妇人和奴兵层级，背景金河粮袋墙、检查口、低位村民和清晨冷雾。
+
+### 保留历史
+
+- `01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png`：1672x941 生图源，来自隔离 imagegen-task 线程。
+- `01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png`：1672x941 备用生图源，来自当前线程内置 imagegen 兜底，仅作审计保留，未选为 canonical。
+
+### QC 状态
+
+- 通过：PNG 格式、16:9 横屏、canonical 3840x2160、无透明背景、前中后景分层可读。
+- 通过：白册册页没有生成随机可读文字，保留为空白/线框/后合成区域。
+- 通过：继承 `E01_F001`、`E01_F005`、`E01_C016B`、`E01_C017`、`E01_C023`、`E01_L003`、`E01_P003` 和 `E01_P008` 的风格、角色、场景、道具和材质方向。
+- 待确认：canonical 图由 1672x941 生图源重采样到 3840x2160，当前标记为 `generated_candidate_pending_user_qc_2026-06-10`，需要用户视觉 QC 后再批准为 final。
+
+## SC002 上游角色卡补齐 / 2026-06-10
+
+结论：`SC002` 所需的粮税小吏与混血奴兵分集角色卡已经补齐到 canonical 路径，用于后续 SC002 参考帧继承。两张图都先标记为候选，等待用户视觉 QC 后再转 final approved。
+
+### 已生成或提升
+
+- `E01_C016B` -> `01/assets/characters/c016be01.png`，3072x2048 PNG RGB，无 alpha。画面保留虫形税吏脸部结构、白主色短官袍、账吏帽、白册夹板、骨算盘和粮牌检查道具，避免误读成人族账房。
+- `E01_C017` -> `01/assets/characters/c017e01.png`，2048x2048 PNG RGB，无 alpha。画面保留混血奴兵的人族直立轮廓、虫蜡甲片、骨白腕绑、暗色军袍/护布和低位马尾役使标记。
+
+### 保留历史
+
+- `01/assets/characters/history/c016be01.imagegen-task-source-20260610.png`：1536x1024 生图源，来自隔离 imagegen-task 线程。
+- `01/assets/characters/history/c017e01.v002.png`：2048x2048 历史候选源，本轮提升为 canonical。
+
+### QC 状态
+
+- 通过：两张角色卡继承全局 `C016`、`C017` 和 `K004` 的角色/服制层级方向。
+- 通过：`E01_C016B` 可以支撑 `SC002-SH001`、`SC002-SH003` 的粮税小吏镜头；`E01_C017` 可以支撑 `SC002-SH002`、`SC002-SH004` 的奴兵执行动作。
+- 待确认：当前状态为 `pending_user_visual_qc_2026-06-10`，需要用户视觉 QC 后再批准为 final。
+
+## SC002-SH001/SH002 参考帧候选 / 2026-06-10
+
+结论：`SC002-SH001` 与 `SC002-SH002` 所需 I2V 首帧已按 imagegen-task 隔离流程生成候选，并写入 canonical 路径。至此 `SC002-SH001/SH002/SH003/SH004` 所需参考帧候选已齐备，全部等待用户视觉 QC。
+
+### 已生成
+
+- `E01_R005` -> `01/assets/reference-frames/r005e01.png`，3840x2160 PNG RGB，无 alpha。画面读到前景征粮检查桌、白衣虫形粮税小吏、骨算盘、白册夹板和粮牌，中景排队村民，背景金河粮仓墙、粮袋和清晨冷雾。
+- `E01_R006` -> `01/assets/reference-frames/r006e01.png`，3840x2160 PNG RGB，无 alpha。画面读到祖牌小盒、空粮罐线索、儿童手印、泥门槛和奴兵扣腕压力，背景保留粮袋、低位人群和清晨冷雾。
+
+### 保留历史
+
+- `01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png`：1672x941 生图源，来自隔离 imagegen-task 线程。
+- `01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png`：1672x941 生图源，来自隔离 imagegen-task 线程。
+
+### QC 状态
+
+- 通过：PNG 格式、16:9 横屏、canonical 3840x2160、无透明背景、前中后景分层可读。
+- 通过：`E01_R005` 继承 `E01_C016B`、`E01_L003`、`E01_P008` 和 `E01_F001`；`E01_R006` 继承 `E01_C017`、`E01_C023`、`E01_P008`、`E01_L003` 和 `E01_F001`。
+- 待确认：两张 canonical 图由 1672x941 生图源重采样到 3840x2160，当前标记为 `generated_candidate_pending_user_qc_2026-06-10`，需要用户视觉 QC 后再批准为 final。
+
+## SC003-SH001/SH002/SH003/SH004 提示词完成 / 2026-06-10
+
+结论：`SC003` 四个分镜所需参考帧提示词已经完成并标记为 `prompt_complete_ready_for_dispatch_2026-06-10`。本轮只完成提示词与调度状态，不生成 `SC003` 图片。
+
+### 已完成提示词资产
+
+- `E01_R010` -> `01/assets/reference-frames/r010e01.png`，`SC003-SH001`。
+- `E01_R011` -> `01/assets/reference-frames/r011e01.png`，`SC003-SH002`。
+- `E01_R012` -> `01/assets/reference-frames/r012e01.png`，`SC003-SH003`。
+- `E01_R013` -> `01/assets/reference-frames/r013e01.png`，`SC003-SH004` 首帧。
+- `E01_R014` -> `01/assets/reference-frames/r014e01.png`，`SC003-SH004` 终帧。
+
+### QC 状态
+
+- 通过：五条 prompt 记录保留 `video_generation_reference_frame`、16:9、无 alpha、4K 参考帧格式要求。
+- 通过：提示词继承已有角色、地点、道具、服装、风格和 R001 质感锁，且保留随机文字/徽记禁止规则。
+- 未生成：`E01_R010` 至 `E01_R014` 尚无 canonical 图片文件，后续需要单独 imagegen-task 派发生成。

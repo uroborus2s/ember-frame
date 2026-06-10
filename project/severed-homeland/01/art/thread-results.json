@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "sc001_sh002_sh003_reference_frames_generated_pending_user_qc_2026-06-10",
+  "status": "sc002_generated_candidates_and_sc003_prompts_complete_pending_user_qc_2026-06-10",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -498,6 +498,68 @@
       "user_confirmation": "User confirmed all three character assets pass."
     },
     {
+      "batch_id": "SC002_SH004_E01_REFERENCE_FRAMES",
+      "thread_id": "019eb18d-9329-7ec2-b3d7-5c71281e01b2",
+      "thread_ids": {
+        "r008_imagegen_task": "019eb18d-9329-7ec2-b3d7-5c71281e01b2",
+        "r009_imagegen_task_created_no_output": "019eb18e-023a-79b1-9445-4ae2546b4b85",
+        "current_thread_builtin_fallback": "019eb189-50fb-7893-9687-8b621fa2e68b"
+      },
+      "status": "generated_candidates_pending_user_visual_qc_2026-06-10",
+      "created_files": [
+        "01/assets/reference-frames/r008e01.png",
+        "01/assets/reference-frames/r009e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r008e01.imagegen-task-source-20260610.png",
+        "01/assets/reference-frames/history/r009e01.current-thread-source-20260610.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "R008 clean imagegen-task thread completed and produced the selected source image.",
+        "R009 clean imagegen-task thread completed without a usable imageGeneration output in read_thread; coordinator used current-thread built-in imagegen fallback with the same isolated prompt package.",
+        "Built-in imagegen native outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC."
+      ],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
+        "foreground ancestor box/cold-white wax hands, midground grain sack and slave soldier, background family/threshold are readable",
+        "visual continuity follows E01_F001/E01_F005, E01_C017, E01_C023, E01_L003, E01_P008 and R001 material standard",
+        "pending user visual QC before final approved",
+        "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
+        "foreground ancestor box/cold-white wax handprint and empty threshold, midground kneeling family, background cart ruts/cold mist are readable",
+        "visual continuity follows E01_F001/E01_F005, E01_C023, E01_L003, E01_P008 and R001 material standard",
+        "pending user visual QC before final approved"
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R008",
+          "output_path": "01/assets/reference-frames/r008e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "b77ecd1932a2ba9da4230fd00070dcce0ca39f7836d0a10ce874aa2af0ab32d6",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r008e01.imagegen-task-source-20260610.png"
+        },
+        {
+          "asset_id": "E01_R009",
+          "output_path": "01/assets/reference-frames/r009e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "bcddd9b524d8cdf8021a0315633c69627da5cd918b6c76df2feef158868420b3",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r009e01.current-thread-source-20260610.png"
+        }
+      ],
+      "reference_inputs": [
+        "E01_F001",
+        "E01_F005",
+        "E01_C017",
+        "E01_C023",
+        "E01_L003",
+        "E01_P008",
+        "E01_R001"
+      ],
+      "completed_at": "2026-06-10"
+    },
+    {
       "batch_id": "SC001_E01_REFERENCE_FRAMES_SH002_SH003_2026_06_10",
       "thread_ids": {
         "r003_imagegen_task_refused": "019eb178-1ec4-7612-b8ce-02b3fca35f4d",
@@ -562,6 +624,237 @@
         "P017"
       ],
       "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC002_SH003_E01_REFERENCE_FRAME",
+      "thread_id": "019eb1b3-f276-7991-8a87-88436520aac9",
+      "thread_ids": {
+        "r007_imagegen_task": "019eb1b3-f276-7991-8a87-88436520aac9",
+        "current_thread_builtin_fallback": "019eb1ac-5910-7910-b641-5f1edab7cce9"
+      },
+      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "created_files": [
+        "01/assets/reference-frames/r007e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
+        "01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "R007 clean imagegen-task thread completed and produced the selected source image.",
+        "Current-thread built-in fallback was generated while waiting and retained only in history; canonical output uses the imagegen-task source.",
+        "Native imagegen outputs were 1672x941; canonical project file was resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidate pending user visual QC.",
+        "E01_C016B has local image files available but older metadata elsewhere may still carry blocked/rejected wording; this run used the existing visual file as a reference input."
+      ],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
+        "foreground white register, segmented fingers, grain token and wax/seal props are readable without model-generated text",
+        "midground grain tax clerk, restrained woman and slave soldier hierarchy is readable",
+        "background Jinhe grain depot, grain sacks, low civilians and cold morning depot pressure are readable",
+        "visual continuity follows E01_F001, E01_F005, E01_C016B, E01_C017, E01_C023, E01_L003, E01_P003 and E01_P008",
+        "pending user visual QC before final approved"
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R007",
+          "output_path": "01/assets/reference-frames/r007e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "f3efb509a26c3bef85d5ec6164562746cf1ebd990a3aac0d31fefb0c6d90a501",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
+          "source_sha256": "8a293b2d9893dbc6f7fb664edad8d857b1890b106b39cb8697061ff242b81074",
+          "alternate_history_file": "01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png",
+          "alternate_sha256": "a88014c2a82e3d9f40d6bc0085a4cff531ba5eca4df56769abd543f50fe10583"
+        }
+      ],
+      "reference_inputs": [
+        "E01_F001",
+        "E01_F005",
+        "E01_C016B",
+        "E01_C017",
+        "E01_C023",
+        "E01_L003",
+        "E01_P003",
+        "E01_P008"
+      ],
+      "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC002_E01_UPSTREAM_CHARACTER_CARDS_2026_06_10",
+      "thread_ids": {
+        "c016b_imagegen_task": "019eb1d0-c78c-7420-9669-39ceb6f625f0",
+        "c017_promoted_from_history": "01/assets/characters/history/c017e01.v002.png"
+      },
+      "status": "generated_or_promoted_candidates_pending_user_visual_qc_2026-06-10",
+      "created_files": [
+        "01/assets/characters/c016be01.png",
+        "01/assets/characters/c017e01.png"
+      ],
+      "history_files": [
+        "01/assets/characters/history/c016be01.imagegen-task-source-20260610.png",
+        "01/assets/characters/history/c017e01.v002.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "C016B was generated with compressed references inherited from C016, K004, and E01_F001.",
+        "C017 reused an existing history candidate that passed parent visual check for the mixed slave soldier role.",
+        "Both character cards remain pending user visual QC before final approval."
+      ],
+      "qc_notes": [
+        "C016B preserves insect clerk identity, white official costume hierarchy, register board, bone abacus, grain tags, and non-human facial structure.",
+        "C017 preserves mixed human/slave-soldier body logic, wrist-binding state, dark armor/cloth hierarchy, and low ponytail role marker.",
+        "Character cards were prepared before SC002 frame generation as upstream references."
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_C016B",
+          "output_path": "01/assets/characters/c016be01.png",
+          "dimensions": "3072x2048",
+          "sha256": "5f2239c8f0d7eaf21feb7f452cee9a2d2d638b1e39bad00c8a41b10c78b325b7",
+          "source_dimensions": "1536x1024",
+          "source_history_file": "01/assets/characters/history/c016be01.imagegen-task-source-20260610.png",
+          "source_sha256": "e96e77dd9f34e99c95f6730f999448aa5e27454d5fa28c705a97a764a0982c0e"
+        },
+        {
+          "asset_id": "E01_C017",
+          "output_path": "01/assets/characters/c017e01.png",
+          "dimensions": "2048x2048",
+          "sha256": "183973960ce7c963a638606a73797a9374996a80a5526a82febabc8cc1c4c218",
+          "source_dimensions": "2048x2048",
+          "source_history_file": "01/assets/characters/history/c017e01.v002.png",
+          "source_sha256": "183973960ce7c963a638606a73797a9374996a80a5526a82febabc8cc1c4c218"
+        }
+      ],
+      "reference_inputs": [
+        "C016",
+        "C017",
+        "K004",
+        "E01_F001"
+      ],
+      "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC002_SH001_E01_REFERENCE_FRAME",
+      "thread_id": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92",
+      "thread_ids": {
+        "r005_imagegen_task": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92"
+      },
+      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "created_files": [
+        "01/assets/reference-frames/r005e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
+        "Treat as candidate pending user visual QC before final approval."
+      ],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source.",
+        "Foreground tax table, white insect clerk, bone abacus, grain tags, and white register props are readable.",
+        "Background Jinhe grain depot wall, grain sacks, queue pressure, mud, and cold morning mist are readable.",
+        "Visual continuity follows E01_C016B, E01_L003, E01_P008, E01_F001, and R001 material standard."
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R005",
+          "output_path": "01/assets/reference-frames/r005e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "c5cf80da6a050d9264f5c3af1895743d5f0c4e1d632300af6f1ccb59dfe3c31f",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png",
+          "source_sha256": "feea344c8219c2ce285022d1c9c4348c2c5df10de430992037dbeac3cce81315"
+        }
+      ],
+      "reference_inputs": [
+        "E01_C016B",
+        "E01_L003",
+        "E01_P008",
+        "E01_F001"
+      ],
+      "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC002_SH002_E01_REFERENCE_FRAME",
+      "thread_id": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090",
+      "thread_ids": {
+        "r006_imagegen_task": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090"
+      },
+      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "created_files": [
+        "01/assets/reference-frames/r006e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
+        "Treat as candidate pending user visual QC before final approval."
+      ],
+      "qc_notes": [
+        "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source.",
+        "Foreground ancestor tablet box, empty grain jar cue, child handprint, threshold mud, and slave-soldier wrist-binding pressure are readable.",
+        "Background grain sacks, depot pressure, low figures, and cold morning atmosphere remain readable without random text.",
+        "Visual continuity follows E01_C017, E01_C023, E01_P008, E01_L003, E01_F001, and R001 material standard."
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R006",
+          "output_path": "01/assets/reference-frames/r006e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "fa7e17ac709165b036ef7ad1f7964846791980b11972befeb0b80feea18ab997",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png",
+          "source_sha256": "22c003bb26c464f28f644b7ce927331e854137ac564039b411e4ffe14a4a8eb1"
+        }
+      ],
+      "reference_inputs": [
+        "E01_C017",
+        "E01_C023",
+        "E01_P008",
+        "E01_L003",
+        "E01_F001"
+      ],
+      "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC003_SH001_SH004_E01_PROMPT_COMPLETION",
+      "thread_id": null,
+      "status": "prompts_complete_ready_for_dispatch_2026-06-10",
+      "created_files": [],
+      "history_files": [],
+      "blocked_items": [],
+      "warnings": [
+        "Prompt-only completion: no SC003 images were generated in this run.",
+        "R010-R014 output files remain absent until a future generation dispatch."
+      ],
+      "qc_notes": [
+        "E01_R010 through E01_R014 retain video_generation_reference_frame format contracts, 16:9 canvas, and model-visible prompt/copy-ready prompt packages.",
+        "SC003 prompt records inherit existing character, prop, location, style, and texture-lock references through production_metadata.reference_inputs.",
+        "Prompt status was changed from generic ready/blocked metadata to prompt_complete_ready_for_dispatch for SC003-SH001/SH002/SH003/SH004."
+      ],
+      "prompt_assets": [
+        "E01_R010",
+        "E01_R011",
+        "E01_R012",
+        "E01_R013",
+        "E01_R014"
+      ],
+      "reference_inputs": [
+        "E01_F001",
+        "E01_F005",
+        "E01_C002",
+        "E01_C011",
+        "E01_P002",
+        "E01_K002",
+        "E01_L014",
+        "E01_P009"
+      ],
+      "completed_at": "2026-06-10"
     }
   ],
   "blocked_jobs": [
@@ -577,7 +870,7 @@
     },
     {
       "batch_id": "B01_E01_CHARACTERS",
-      "status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "status": "partially_resolved_2026-06-10_remaining_items_blocked",
       "blocked_items": [
         {
           "asset_id": "E01_C001",
@@ -628,18 +921,6 @@
           "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
         },
         {
-          "asset_id": "E01_C016B",
-          "output_path": "01/assets/characters/c016be01.png",
-          "required_reference": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/characters/c016m.png",
-          "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
-        },
-        {
-          "asset_id": "E01_C017",
-          "output_path": "01/assets/characters/c017e01.png",
-          "required_reference": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/characters/c017m.png",
-          "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
-        },
-        {
           "asset_id": "E01_C018",
           "output_path": "01/assets/characters/c018e01.png",
           "required_reference": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/characters/c018m.png",
@@ -670,7 +951,11 @@
           "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
         }
       ],
-      "reason": "Hard reference image binding is mandatory but unavailable in the worker image-generation interface."
+      "reason": "Hard reference image binding is mandatory but unavailable in the worker image-generation interface.",
+      "resolved_items_2026_06_10": [
+        "E01_C016B",
+        "E01_C017"
+      ]
     },
     {
       "batch_id": "B02_E01_LOCATIONS",
@@ -688,9 +973,13 @@
     "E01_L001B and E01_L001C required one correction pass each to mask text-like marks before approval.",
     "SC001-SH002/SH003 R003/R004 generated as 3840x2160 PNG candidates pending user visual QC.",
     "SC001 R003/R004 share the same wall-top bell-frame space, with history sources retained under 01/assets/reference-frames/history/.",
-    "R003 has residual age/readability risk: wall soldier reads older/heavier-armored than ideal young conscript."
+    "R003 has residual age/readability risk: wall soldier reads older/heavier-armored than ideal young conscript.",
+    "SC002-SH003 E01_R007 generated via imagegen-task child thread and saved as 3840x2160 PNG candidate pending user visual QC.",
+    "E01_C016B generated and E01_C017 promoted before SC002 frame generation.",
+    "SC002-SH001/SH002 E01_R005/E01_R006 generated via imagegen-task and saved as 3840x2160 PNG candidates pending user visual QC.",
+    "SC003-SH001/SH002/SH003/SH004 prompt records E01_R010-E01_R014 checked and marked prompt_complete_ready_for_dispatch; no image generation requested for SC003 in this run."
   ],
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-06-10T22:07:02+08:00",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
