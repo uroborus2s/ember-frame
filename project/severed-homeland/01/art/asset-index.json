@@ -4,7 +4,7 @@
   "episode_id": "01",
   "scope": "episode01_art_room_assets",
   "approval_status": "approved_by_user_request_2026-06-07",
-  "image_generation_status": "style_batch_complete_downstream_ready_2026-06-07",
+  "image_generation_status": "partial_reference_frames_generated_pending_user_qc_2026-06-10",
   "counts": {
     "character": 15,
     "location": 6,
@@ -4942,10 +4942,10 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+      "approval_status": "pending_user_visual_qc_after_imagegen_task_2026-06-10",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-10",
       "design_summary": "SC001-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
-      "generation_method": "I2V",
+      "generation_method": "imagegen-task_with_current_thread_builtin_selection_2026-06-10",
       "priority": "high",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -5003,12 +5003,12 @@
         "target_minimum_resolution": "3840x2160",
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "existing_file_sha256": "a7b746e4d04bceb63c99f1dfc0afba282eed1cf584ec413e455718a8e1c6b441",
         "action_required": "none_current_reference_candidate_ready_for_user_qc",
         "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
-        "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "checked_at": "2026-06-10",
+        "continuity_lock": "SC001 R001-R004 share one black-stone wall, one bell frame, one damaged bell, one wall-top direction, one gate-impact line, and one exterior attack direction."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -5016,12 +5016,12 @@
         "target_minimum_resolution": "3840x2160",
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "existing_file_sha256": "a7b746e4d04bceb63c99f1dfc0afba282eed1cf584ec413e455718a8e1c6b441",
         "action_required": "none_current_reference_candidate_ready_for_user_qc",
         "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
-        "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "checked_at": "2026-06-10",
+        "continuity_lock": "SC001 R001-R004 share one black-stone wall, one bell frame, one damaged bell, one wall-top direction, one gate-impact line, and one exterior attack direction."
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -5032,7 +5032,7 @@
       "sc001_task_status": {
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R003",
         "status": "generated_candidate_pending_user_qc",
-        "updated_at": "2026-06-08",
+        "updated_at": "2026-06-10",
         "output_path": "01/assets/reference-frames/r003e01.png",
         "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
         "depends_on_assets": [
@@ -5046,23 +5046,66 @@
           "C021"
         ],
         "blocked_by_assets": [],
-        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation.",
+        "history_files": [
+          "01/assets/reference-frames/history/r003e01.v001.png"
+        ],
+        "thread_ids": {
+          "imagegen_task_refused": "019eb178-1ec4-7612-b8ce-02b3fca35f4d",
+          "current_thread_builtin_imagegen": "019eb16c-09dd-7863-9e6d-a4c025af6882"
+        },
+        "source_file_status": {
+          "native_generated_dimensions": "1672x941",
+          "canonical_resample_dimensions": "3840x2160",
+          "source_sha256": "cd9a5f65b95fe911510a4b20387430ff831f17729556b55498845f8e652e19aa",
+          "source_history_files": [
+            "01/assets/reference-frames/history/r003e01.v001.png"
+          ]
+        }
       },
       "sc001_qc_status": {
         "status": "generated_candidate_internal_qc_passed_pending_user_review",
-        "checked_at": "2026-06-08",
-        "image_sha256": "54796b323e3781a23710c6007ad9ff87833a2ec7220bf9a6805e2902830ea2eb",
+        "checked_at": "2026-06-10",
+        "image_sha256": "a7b746e4d04bceb63c99f1dfc0afba282eed1cf584ec413e455718a8e1c6b441",
+        "history_files": [
+          "01/assets/reference-frames/history/r003e01.v001.png"
+        ],
+        "warnings": [
+          "Clean imagegen-task thread refused the injury/aftershock prompt; coordinator used current-thread built-in image generation with the same compressed reference package.",
+          "Native generated source was 1672x941 and was resampled to 3840x2160 for the canonical project file.",
+          "Residual visual risk: wall soldier reads older/heavier-armored than the ideal young conscript; pending user visual QC."
+        ],
         "qc_gate": [
           "16:9 PNG, 3840x2160, no alpha.",
-          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
-          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
-          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
-          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
-          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+          "R001-R004 read as one continuous black-stone wall-top space with one bell frame and one damaged bell.",
+          "Bell-frame direction, torn wall flag placement, cold gate-impact glow, snow mountains, and exterior attack direction remain spatially continuous.",
+          "No second wall, duplicate bell frame, duplicate gate, modern object, UI text, complete glowing emblem, or redesigned symbol is visible.",
+          "Texture standard follows approved R001/R002 de-particleized realistic material standard."
+        ],
+        "qc_notes": [
+          "3840x2160 PNG RGB/no-alpha after canonical resample from 1672x941 source.",
+          "Same black-stone wall-top, wooden bell frame, damaged bone bell, torn wall flag, cold gate-impact glow, and wall-exterior attack direction are readable.",
+          "Foreground/midground/background separation is clear; material standard follows R001/R002 cold blizzard lighting without yellow glitter or digital speckle.",
+          "Pending user visual QC before approval."
         ]
       },
       "texture_standard_ref": "E01_R001",
-      "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture"
+      "texture_standard_requirement": "must match approved R001/R002 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
+      "history_files": [
+        "01/assets/reference-frames/history/r003e01.v001.png"
+      ],
+      "thread_ids": {
+        "imagegen_task_refused": "019eb178-1ec4-7612-b8ce-02b3fca35f4d",
+        "current_thread_builtin_imagegen": "019eb16c-09dd-7863-9e6d-a4c025af6882"
+      },
+      "source_file_status": {
+        "native_generated_dimensions": "1672x941",
+        "canonical_resample_dimensions": "3840x2160",
+        "source_sha256": "cd9a5f65b95fe911510a4b20387430ff831f17729556b55498845f8e652e19aa",
+        "source_history_files": [
+          "01/assets/reference-frames/history/r003e01.v001.png"
+        ]
+      }
     },
     {
       "asset_id": "E01_R004",
@@ -5089,10 +5132,10 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "pending_user_qc_after_same_space_rework_2026-06-08",
-      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-08",
+      "approval_status": "pending_user_visual_qc_after_imagegen_task_2026-06-10",
+      "generation_status": "generated_candidate_same_wall_single_bell_lock_2026-06-10",
       "design_summary": "SC001-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
-      "generation_method": "I2V",
+      "generation_method": "imagegen-task_with_current_thread_builtin_selection_2026-06-10",
       "priority": "medium",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -5148,12 +5191,12 @@
         "target_minimum_resolution": "3840x2160",
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "existing_file_sha256": "db27c08885e1fcd66a1f2f3a19709915d719b24b4a5d9b0c44c15b86c7495ff0",
         "action_required": "none_current_reference_candidate_ready_for_user_qc",
         "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
-        "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "checked_at": "2026-06-10",
+        "continuity_lock": "SC001 R001-R004 share one black-stone wall, one bell frame, one damaged bell, one wall-top direction, one gate-impact line, and one exterior attack direction."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -5161,12 +5204,12 @@
         "target_minimum_resolution": "3840x2160",
         "existing_file_status": "exists",
         "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "existing_file_sha256": "db27c08885e1fcd66a1f2f3a19709915d719b24b4a5d9b0c44c15b86c7495ff0",
         "action_required": "none_current_reference_candidate_ready_for_user_qc",
         "qc_status": "generated_candidate_internal_qc_passed_pending_user_review",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
-        "checked_at": "2026-06-08",
-        "continuity_lock": "SC001 R001-R004 must share one wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and frame orientation."
+        "checked_at": "2026-06-10",
+        "continuity_lock": "SC001 R001-R004 share one black-stone wall, one bell frame, one damaged bell, one wall-top direction, one gate-impact line, and one exterior attack direction."
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -5177,7 +5220,7 @@
       "sc001_task_status": {
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R004",
         "status": "generated_candidate_pending_user_qc",
-        "updated_at": "2026-06-08",
+        "updated_at": "2026-06-10",
         "output_path": "01/assets/reference-frames/r004e01.png",
         "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
         "depends_on_assets": [
@@ -5190,23 +5233,72 @@
           "E01_C020"
         ],
         "blocked_by_assets": [],
-        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation."
+        "continuity_lock": "R001-R004 share one black-stone wall, one bell frame, one bell; R002/R003/R004 inherit R001 bell position and orientation.",
+        "history_files": [
+          "01/assets/reference-frames/history/r004e01.v001.png",
+          "01/assets/reference-frames/history/r004e01.v002.png"
+        ],
+        "thread_ids": {
+          "imagegen_task_alt_completed": "019eb18a-4b79-7553-81a5-08d87cdd4218",
+          "current_thread_builtin_selected": "019eb16c-09dd-7863-9e6d-a4c025af6882"
+        },
+        "source_file_status": {
+          "native_generated_dimensions": "1672x941",
+          "canonical_resample_dimensions": "3840x2160",
+          "source_sha256": "e0bc736e936739d9e8ca43444bea5a2f07b9da74dd34b004df03f8cfffb04a97",
+          "source_history_files": [
+            "01/assets/reference-frames/history/r004e01.v001.png",
+            "01/assets/reference-frames/history/r004e01.v002.png"
+          ]
+        }
       },
       "sc001_qc_status": {
         "status": "generated_candidate_internal_qc_passed_pending_user_review",
-        "checked_at": "2026-06-08",
-        "image_sha256": "97e0e9749c520a47876e0265997e30d401d9b8117e46bd7dfd82ac5eddcad614",
+        "checked_at": "2026-06-10",
+        "image_sha256": "db27c08885e1fcd66a1f2f3a19709915d719b24b4a5d9b0c44c15b86c7495ff0",
+        "history_files": [
+          "01/assets/reference-frames/history/r004e01.v001.png",
+          "01/assets/reference-frames/history/r004e01.v002.png"
+        ],
+        "warnings": [
+          "Clean imagegen-task thread produced an alternate source retained as history/r004e01.v002.png, but coordinator selected the current-thread fallback because wall-top geometry, bell-frame direction, and lighting match R003 more closely.",
+          "Native generated source was 1672x941 and was resampled to 3840x2160 for the canonical project file.",
+          "Pending user visual QC before approval."
+        ],
         "qc_gate": [
           "16:9 PNG, 3840x2160, no alpha.",
-          "R001-R004 must read as one space: one continuous black-stone wall, one wall-top bell frame, one broken bell.",
-          "R002/R003/R004 bell-frame orientation must inherit R001 wall-top direction.",
-          "No second exterior wall, distant fortress, duplicate gate, duplicate bell frame, or exterior human soldiers.",
-          "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
-          "Old empire mark only as faint broken dull-gold residue; no complete circle, sun, moon, badge, or glow."
+          "R001-R004 read as one continuous black-stone wall-top space with one bell frame and one damaged bell.",
+          "Bell-frame direction, torn wall flag placement, cold gate-impact glow, snow mountains, and exterior attack direction remain spatially continuous.",
+          "No second wall, duplicate bell frame, duplicate gate, modern object, UI text, complete glowing emblem, or redesigned symbol is visible.",
+          "Texture standard follows approved R001/R002 de-particleized realistic material standard."
+        ],
+        "qc_notes": [
+          "3840x2160 PNG RGB/no-alpha after canonical resample from 1672x941 source.",
+          "Xue Linqiang remains on the same wall-top as R003 with the same parapet line, wooden bell frame, damaged bone bell, torn flag, cold gate-impact glow, and exterior attack direction.",
+          "Age, rough hand, old armor, topknot, mouth shape, and low forward command posture are readable.",
+          "Material standard follows R001/R002/R003 cold blizzard lighting without yellow glitter or digital speckle.",
+          "Pending user visual QC before approval."
         ]
       },
       "texture_standard_ref": "E01_R001",
-      "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture"
+      "texture_standard_requirement": "must match approved R001/R002 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
+      "history_files": [
+        "01/assets/reference-frames/history/r004e01.v001.png",
+        "01/assets/reference-frames/history/r004e01.v002.png"
+      ],
+      "thread_ids": {
+        "imagegen_task_alt_completed": "019eb18a-4b79-7553-81a5-08d87cdd4218",
+        "current_thread_builtin_selected": "019eb16c-09dd-7863-9e6d-a4c025af6882"
+      },
+      "source_file_status": {
+        "native_generated_dimensions": "1672x941",
+        "canonical_resample_dimensions": "3840x2160",
+        "source_sha256": "e0bc736e936739d9e8ca43444bea5a2f07b9da74dd34b004df03f8cfffb04a97",
+        "source_history_files": [
+          "01/assets/reference-frames/history/r004e01.v001.png",
+          "01/assets/reference-frames/history/r004e01.v002.png"
+        ]
+      }
     },
     {
       "asset_id": "E01_R005",
@@ -9236,19 +9328,21 @@
   ],
   "qc_summary": {
     "status": "planning_qc_passed_pending_user_review",
-    "generated_images": 0,
+    "generated_images": 2,
     "thread_count": 0,
     "validations": [
       "JSON structure planned against art-room schemas",
       "short filenames reserved",
       "no history/version output paths",
       "all prompt records split production metadata and model-visible prompt",
-      "image generation blocked pending user approval"
+      "image generation blocked pending user approval",
+      "SC001-SH002/SH003 R003/R004 generated as 3840x2160 PNG candidates pending user visual QC",
+      "SC001 R003/R004 native imagegen outputs were 1672x941 and resampled to 3840x2160 canonical files"
     ],
     "contract_repair_status": "passed",
     "planning_fields_present": true,
     "prompt_copy_ready_present": true,
-    "image_generation_status": "blocked_pending_user_art_approval",
+    "image_generation_status": "partial_reference_frames_generated_pending_user_qc_2026-06-10",
     "style_batch": {
       "status": "complete_qc_passed",
       "completed_at": "2026-06-07",
@@ -9265,9 +9359,9 @@
       ]
     }
   },
-  "updated_at": "2026-06-08",
+  "updated_at": "2026-06-10",
   "sc001_opening_readiness": {
-    "status": "reference_frames_generated_candidate_pending_user_qc",
+    "status": "reference_frames_r003_r004_generated_candidate_pending_user_qc_2026-06-10",
     "checked_at": "2026-06-08",
     "confirmed_assets": [
       "E01_F001",
@@ -9281,8 +9375,11 @@
     "rework_required_assets": [],
     "blocked_reference_frames": [],
     "character_rework_run_dir": "01/art/runs/2026-06-07-sc001-character-rework",
-    "next_step": "Generate E01_R001-E01_R004 and QC them for 16:9 resolution, no alpha, continuity, and black-wall thumbnail readability.",
-    "candidate_assets_pending_user_qc": [],
+    "next_step": "User visual QC for E01_R003 and E01_R004, then director-room prompt refresh for SC001.",
+    "candidate_assets_pending_user_qc": [
+      "E01_R003",
+      "E01_R004"
+    ],
     "approved_character_assets": [
       "E01_C004",
       "E01_C020",
@@ -9294,6 +9391,6 @@
       "E01_R003",
       "E01_R004"
     ],
-    "updated_at": "2026-06-08"
+    "updated_at": "2026-06-10"
   }
 }

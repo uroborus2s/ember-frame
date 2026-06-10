@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "targeted_location_scene_cards_completed_with_remaining_batches_preserved_2026-06-07",
+  "status": "sc001_sh002_sh003_reference_frames_generated_pending_user_qc_2026-06-10",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -496,6 +496,72 @@
         }
       ],
       "user_confirmation": "User confirmed all three character assets pass."
+    },
+    {
+      "batch_id": "SC001_E01_REFERENCE_FRAMES_SH002_SH003_2026_06_10",
+      "thread_ids": {
+        "r003_imagegen_task_refused": "019eb178-1ec4-7612-b8ce-02b3fca35f4d",
+        "r004_imagegen_task_alt_completed": "019eb18a-4b79-7553-81a5-08d87cdd4218",
+        "current_thread_builtin_selected": "019eb16c-09dd-7863-9e6d-a4c025af6882"
+      },
+      "status": "generated_candidates_pending_user_visual_qc_2026-06-10",
+      "created_files": [
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/reference-frames/r004e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r003e01.v001.png",
+        "01/assets/reference-frames/history/r004e01.v001.png",
+        "01/assets/reference-frames/history/r004e01.v002.png"
+      ],
+      "blocked_items": [],
+      "warnings": [
+        "R003 clean imagegen-task thread refused the injury/aftershock prompt; coordinator used current-thread built-in imagegen fallback with the same isolated prompt package.",
+        "R004 clean imagegen-task thread produced an alternate image retained in history; coordinator selected current-thread fallback because same-wall geometry and lighting better matched R003.",
+        "Native imagegen outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC.",
+        "R003 residual risk: soldier reads older/heavier-armored than target young wall conscript."
+      ],
+      "qc_notes": [
+        "R003: same black-stone wall-top, wooden bell frame, damaged bone bell, torn wall flag, cold gate-impact glow, and exterior attack direction are readable.",
+        "R004: Xue Linqiang remains on the same wall-top as R003 with matching parapet line, bell frame, damaged bell, torn flag, cold gate-impact glow, and exterior attack direction.",
+        "Both files are 3840x2160 PNG RGB/no-alpha after canonical resample from 1672x941 source.",
+        "Both preserve the R001/R002 cold blizzard material standard without visible yellow glitter or digital speckle.",
+        "Pending user visual QC before final approval."
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R003",
+          "output_path": "01/assets/reference-frames/r003e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "a7b746e4d04bceb63c99f1dfc0afba282eed1cf584ec413e455718a8e1c6b441",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r003e01.v001.png",
+          "source_sha256": "cd9a5f65b95fe911510a4b20387430ff831f17729556b55498845f8e652e19aa"
+        },
+        {
+          "asset_id": "E01_R004",
+          "output_path": "01/assets/reference-frames/r004e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "db27c08885e1fcd66a1f2f3a19709915d719b24b4a5d9b0c44c15b86c7495ff0",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r004e01.v001.png",
+          "source_sha256": "e0bc736e936739d9e8ca43444bea5a2f07b9da74dd34b004df03f8cfffb04a97",
+          "alternate_history_file": "01/assets/reference-frames/history/r004e01.v002.png",
+          "alternate_sha256": "6629477aaf6e6b2cf874ab8ed1c0d934ea9aba147b7efd202a325a71aa18f440"
+        }
+      ],
+      "reference_inputs": [
+        "E01_R001",
+        "E01_R002",
+        "E01_R003",
+        "E01_C004",
+        "E01_C024A",
+        "E01_L007",
+        "E01_P021",
+        "P016",
+        "P017"
+      ],
+      "completed_at": "2026-06-10"
     }
   ],
   "blocked_jobs": [
@@ -619,9 +685,12 @@
     "All B04 canonical files use exact planned short filenames and output paths.",
     "Targeted location scene cards E01_L007, E01_L003, and E01_L014 are now canonical 3840x2160 PNG RGB/no-alpha files and passed parent visual QC.",
     "Targeted location scene cards E01_L001A, E01_L001B, and E01_L001C are now canonical 3840x2160 PNG RGB/no-alpha files and passed parent visual QC.",
-    "E01_L001B and E01_L001C required one correction pass each to mask text-like marks before approval."
+    "E01_L001B and E01_L001C required one correction pass each to mask text-like marks before approval.",
+    "SC001-SH002/SH003 R003/R004 generated as 3840x2160 PNG candidates pending user visual QC.",
+    "SC001 R003/R004 share the same wall-top bell-frame space, with history sources retained under 01/assets/reference-frames/history/.",
+    "R003 has residual age/readability risk: wall soldier reads older/heavier-armored than ideal young conscript."
   ],
-  "updated_at": "2026-06-08",
+  "updated_at": "2026-06-10",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -755,5 +824,27 @@
       "E01_R004"
     ],
     "started_at": "2026-06-08"
+  },
+  "sc001_opening_qc_2026_06_10": {
+    "status": "r003_r004_generated_candidates_pending_user_qc",
+    "generated_assets": [
+      "E01_R003",
+      "E01_R004"
+    ],
+    "created_files": [
+      "01/assets/reference-frames/r003e01.png",
+      "01/assets/reference-frames/r004e01.png"
+    ],
+    "history_files": [
+      "01/assets/reference-frames/history/r003e01.v001.png",
+      "01/assets/reference-frames/history/r004e01.v001.png",
+      "01/assets/reference-frames/history/r004e01.v002.png"
+    ],
+    "checked_at": "2026-06-10",
+    "notes": [
+      "R003 and R004 preserve the same wall-top bell-frame space as R001/R002/R003 continuity requirements.",
+      "R003 residual age/readability risk remains pending user visual QC.",
+      "R004 selected file keeps the same bell-frame direction and dark cold lighting better than the isolated-thread alternate."
+    ]
   }
 }
