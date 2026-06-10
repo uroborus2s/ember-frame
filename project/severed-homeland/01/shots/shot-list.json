@@ -41,13 +41,13 @@
       "scene_id": "SC001",
       "order": 2,
       "purpose": "把战争规模压到一个年轻军户的身体代价",
-      "subject": "同一墙头年轻军户、同一横摆骨钟、脱手断矛或长矛残杆、不可读淡金旧徽断屑",
-      "visible_action": "年轻灰墙军户被撞门余震晃到，半倒在 R002 同一墙头黑石女墙边，肩背撞墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛或长矛残杆，武器脱手斜滑进前景雪泥。旁边同一口裂开的骨钟仍在横摆，锁链拉紧、木架抖雪；旧徽区域只剩被裂缝、铜锈和雪泥吃掉的不可读淡金断屑。墙外兽族和伴生兽仍在同一面墙下朝城门压上来。",
-      "shot_size": "tight medium with insert emphasis",
-      "camera_angle": "human eye-level, slightly canted by impact",
-      "camera_movement": "small aftershock handheld feel, slight push to dropped weapon, body collapse and swinging bell",
+      "subject": "门楼后墙边年轻灰墙军户、门楼同一悬挂警钟、脱手断矛或长矛残杆、不可读淡金旧徽断屑",
+      "visible_action": "年轻灰墙军户被撞门余震晃到，半倒在同一门楼后墙边，肩背撞上黑石后墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛或长矛残杆，武器脱手后斜滑进前景雪泥。门楼内同一口悬挂警钟（骨钟）仍在横摆，锁链拉紧、木架抖落积雪；钟架旁旧徽区域只剩被裂缝、铜锈和雪泥吃掉的不可读淡金断屑。画面另一侧通向门楼外，杀声、撞门余震和雪雾压进来，兽族只作为门外压力与剪影，不把机位误读成城外开阔战场。",
+      "shot_size": "gatehouse interior tight medium with foreground weapon insert",
+      "camera_angle": "inside the gatehouse at waist-to-eye height, canted by impact toward the back wall",
+      "camera_movement": "门楼内手持余震感短促晃动后稳住，从前景脱手残矛斜滑带到年轻军户失衡的肩背，再轻推到同一悬挂警钟横摆；机位始终留在门楼内，不越过女墙。",
       "duration_seconds": 1.8,
-      "audio_note": "撞门余震、武器脱手滑进雪泥、钟链抖动、远处兽潮和雪狼骑啸声；镜头末尾落旁白。",
+      "audio_note": "撞门余震、武器脱手滑进雪泥、钟链横摆、木架抖雪和门楼外撼天杀声叠在一起；镜头末尾落旁白。",
       "dialogue_or_subtitle": "旁白：北关五百载，白骨未成尘。",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
@@ -60,21 +60,32 @@
       "risk_flags": [
         "blood_readability",
         "short_duration",
-        "reference_frame_regeneration"
-      ]
+        "reference_frame_regeneration",
+        "same_gatehouse_geometry",
+        "bell_position_consistency"
+      ],
+      "composition": {
+        "zh": "横屏门楼内近中景按“前景武器、中景军户、后景警钟”三层组织：前景断矛或长矛残杆斜插进雪泥，形成从右前到左后的动线；中景年轻灰墙军户半倒在黑石后墙边，肩背贴墙、手撑雪泥；后景同一口悬挂警钟固定在门楼木架下方横摆，锁链与旧徽断屑在画面上侧可读。门楼外开口只作为侧向雪雾和杀声来源，不抢走门楼内空间关系。",
+        "en": "Landscape gatehouse interior tight-medium organized in three layers: foreground weapon, midground soldier, background bell. The broken spear or long-pole remnant cuts diagonally through snow mud from front-right toward rear-left; the young grey-wall soldier is half-collapsed against the black-stone back wall, shoulder on stone and hand in snow mud; the same suspended alarm bell holds its fixed position under the gatehouse timber frame in the background, with chain and old-emblem fragments readable near the upper frame. The exterior opening remains only a side source of snow haze and battle noise, never taking over the interior geography."
+      },
+      "lighting_design": {
+        "zh": "暴雪冷天光从女墙与门楼外开口斜切进来，勾出钟链、木架积雪、黑石墙缝、雪泥和断矛湿边；门楼内背墙保持冷灰暗部，让年轻军户的肩背和撑地手靠侧逆光读形。横摆警钟在后墙投下轻微移动阴影，旧徽断屑只保留淡金小反光。低处可有极弱火盆或门内反射的暖边，但不能盖过雪夜冷压迫。",
+        "en": "Cold blizzard skylight cuts in diagonally from the parapet and gatehouse exterior opening, edging the bell chain, snow on timber, black-stone cracks, snow mud and wet spear break. The back wall stays in cool grey shadow so the young soldier shoulder and bracing hand read through side-backlight. The swinging alarm bell casts a slight moving shadow on the rear wall, while old-emblem fragments keep only tiny dull-gold glints. A very weak brazier or interior bounce may add a low warm edge, but it must not overpower the cold siege pressure."
+      },
+      "camera_movement_en": "A short handheld aftershock inside the gatehouse settles from the foreground dropped spear sliding through snow mud to the soldier losing balance against the back wall, then makes a small push to the same suspended alarm bell swinging. The camera remains inside the gatehouse and never crosses the parapet."
     },
     {
       "shot_id": "SC001-SH003",
       "scene_id": "SC001",
       "order": 3,
       "purpose": "用薛临墙低声战场提醒建立守墙人的现实主义基调",
-      "subject": "同一墙头薛临墙、同一摇晃警钟、门线与枪位",
-      "visible_action": "薛临墙在 R003 同一口骨钟旁压住黑石女墙，扫过摇晃警钟、门闩和枪线，低声急促但不慌地把墙头所有人的视线从骨钟拉回门线；墙外斜下方仍是同一批朝墙攻来的兽族和伴生兽。",
+      "subject": "同一门楼女墙前方的薛临墙、后方同一摇晃警钟和靠后墙年轻军户、墙外攻城兽族士兵",
+      "visible_action": "同一门楼的另一角度：薛临墙站在女墙前方、面对城外方向的墙头，灰石厚衬袄和祖传旧甲片吃着雪光，粗大冻裂的手压住黑石女墙。他先扫过身后仍在摇晃的同一口门楼悬挂警钟（骨钟）和靠在后墙边喘息的年轻军户，再把视线拽回城外；墙外斜下方是攻城的兽族士兵、伴生兽和撞门器具在雪雾中逼近。他低声急促但不慌地提醒墙头所有人别盯警钟，回到城外枪位和门线。",
       "shot_size": "medium close-up",
-      "camera_angle": "side profile at wall height",
-      "camera_movement": "small locked push to his hand and mouth",
+      "camera_angle": "wall-height rear three-quarter from the gatehouse side, looking past Xue Linqiang toward the exterior parapet and attackers",
+      "camera_movement": "从门楼后侧三分位锁住薛临墙、女墙和后方警钟，先让背景警钟横摆掠过浅焦，再跟随薛临墙的目光和压墙的手小幅移向城外枪位；终点仍保留后方警钟和年轻军户的空间锚点。",
       "duration_seconds": 1.9,
-      "audio_note": "薛临墙台词低声、急促但不慌，压过风声；切出时保留骨钟尾音。",
+      "audio_note": "薛临墙台词低声、急促但不慌，压过风声与门外杀声；后方同一警钟尾音仍在，切出时让钟声被墙外兽族逼近声吞没。",
       "dialogue_or_subtitle": "薛临墙：敌人上来了。",
       "continuity_refs": [
         "CHAR_XUE_LINQIANG",
@@ -85,8 +96,20 @@
         "E01_C020"
       ],
       "risk_flags": [
-        "dialogue_sync"
-      ]
+        "dialogue_sync",
+        "same_gatehouse_geometry",
+        "bell_position_consistency",
+        "background_character_continuity"
+      ],
+      "composition": {
+        "zh": "横屏中近景用前中后三层锁定同一门楼：前景是黑石女墙、枪线和城外雪雾边缘；中景薛临墙占一侧三分位，身体面向城外，冻裂手压墙，口部和眼神可读但不做英雄仰拍；后景门楼内同一口悬挂警钟仍在原木架位置横摆，年轻军户靠在后墙边形成上一镜连续性。墙外兽族士兵只从女墙外斜下方读成逼近队列和局部兵器，不挤掉薛临墙的调度重点。",
+        "en": "The landscape medium close-up locks the same gatehouse in foreground, midground and background. Foreground holds black-stone parapet, spear line and the edge of exterior snow haze; midground places Xue Linqiang on one third, body facing outward, cracked hand on the wall, mouth and eyes readable without heroic low-angle exaggeration; background keeps the same suspended alarm bell swinging in its fixed timber-frame position, with the young soldier leaning against the rear wall for continuity from the previous shot. The attacking orc soldiers outside read from below the parapet as an approaching formation and partial weapons, never crowding out Xue command focus."
+      },
+      "lighting_design": {
+        "zh": "城外暴雪冷逆光从薛临墙正前方和女墙外侧打进来，切出他的肩背、粗麻墙巾、旧甲片边和压墙手的冻裂纹；门楼后方警钟和年轻军户落在稍暗冷灰背景里，但钟链、木架雪和后墙轮廓仍可读。警钟横摆的阴影短暂扫过后墙与薛临墙肩侧，强化同一门楼余震。面部只给窄侧光和雪地反光，不做美化柔光。",
+        "en": "Cold blizzard backlight from the exterior front and parapet side cuts Xue shoulder, coarse wall scarf, worn armor edge and cracked hand on stone. The gatehouse bell and young soldier behind him sit in a slightly darker cool-grey background, while chain, timber snow and back-wall contour remain readable. The swinging bell shadow briefly passes over the rear wall and Xue shoulder edge, reinforcing the same gatehouse aftershock. His face receives only narrow side light and snow bounce, never beauty soft light."
+      },
+      "camera_movement_en": "A locked rear-three-quarter gatehouse-side frame holds Xue, the parapet and the bell behind him. The background alarm bell first swings through shallow focus, then the camera follows Xue gaze and hand a small distance toward the exterior spear line, ending with the bell and young soldier still kept as spatial anchors."
     },
     {
       "shot_id": "SC002-SH001",
