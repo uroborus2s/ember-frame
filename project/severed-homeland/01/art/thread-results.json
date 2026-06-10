@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "sc002_generated_candidates_and_sc003_prompts_complete_pending_user_qc_2026-06-10",
+  "status": "sc002_storyboard_assets_rejected_pending_regeneration_2026-06-11",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -505,7 +505,7 @@
         "r009_imagegen_task_created_no_output": "019eb18e-023a-79b1-9445-4ae2546b4b85",
         "current_thread_builtin_fallback": "019eb189-50fb-7893-9687-8b621fa2e68b"
       },
-      "status": "generated_candidates_pending_user_visual_qc_2026-06-10",
+      "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
       "created_files": [
         "01/assets/reference-frames/r008e01.png",
         "01/assets/reference-frames/r009e01.png"
@@ -514,21 +514,30 @@
         "01/assets/reference-frames/history/r008e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r009e01.current-thread-source-20260610.png"
       ],
-      "blocked_items": [],
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
       "warnings": [
         "R008 clean imagegen-task thread completed and produced the selected source image.",
         "R009 clean imagegen-task thread completed without a usable imageGeneration output in read_thread; coordinator used current-thread built-in imagegen fallback with the same isolated prompt package.",
-        "Built-in imagegen native outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC."
+        "Built-in imagegen native outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC.",
+        "Do not use this SC002 batch output for video or director-room prompt refresh.",
+        "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax hands, midground grain sack and slave soldier, background family/threshold are readable",
         "visual continuity follows E01_F001/E01_F005, E01_C017, E01_C023, E01_L003, E01_P008 and R001 material standard",
-        "pending user visual QC before final approved",
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax handprint and empty threshold, midground kneeling family, background cart ruts/cold mist are readable",
         "visual continuity follows E01_F001/E01_F005, E01_C023, E01_L003, E01_P008 and R001 material standard",
-        "pending user visual QC before final approved"
+        "2026-06-11 re-audit failed: SC002 character inheritance and body-metrics requirements were not met."
       ],
       "final_files": [
         {
@@ -557,7 +566,10 @@
         "E01_P008",
         "E01_R001"
       ],
-      "completed_at": "2026-06-10"
+      "completed_at": "2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
       "batch_id": "SC001_E01_REFERENCE_FRAMES_SH002_SH003_2026_06_10",
@@ -632,7 +644,7 @@
         "r007_imagegen_task": "019eb1b3-f276-7991-8a87-88436520aac9",
         "current_thread_builtin_fallback": "019eb1ac-5910-7910-b641-5f1edab7cce9"
       },
-      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
       "created_files": [
         "01/assets/reference-frames/r007e01.png"
       ],
@@ -640,12 +652,22 @@
         "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png"
       ],
-      "blocked_items": [],
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
       "warnings": [
         "R007 clean imagegen-task thread completed and produced the selected source image.",
         "Current-thread built-in fallback was generated while waiting and retained only in history; canonical output uses the imagegen-task source.",
         "Native imagegen outputs were 1672x941; canonical project file was resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidate pending user visual QC.",
-        "E01_C016B has local image files available but older metadata elsewhere may still carry blocked/rejected wording; this run used the existing visual file as a reference input."
+        "E01_C016B has local image files available but older metadata elsewhere may still carry blocked/rejected wording; this run used the existing visual file as a reference input.",
+        "Do not use this SC002 batch output for video or director-room prompt refresh.",
+        "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
@@ -653,7 +675,7 @@
         "midground grain tax clerk, restrained woman and slave soldier hierarchy is readable",
         "background Jinhe grain depot, grain sacks, low civilians and cold morning depot pressure are readable",
         "visual continuity follows E01_F001, E01_F005, E01_C016B, E01_C017, E01_C023, E01_L003, E01_P003 and E01_P008",
-        "pending user visual QC before final approved"
+        "2026-06-11 re-audit failed: SC002 character inheritance and body-metrics requirements were not met."
       ],
       "final_files": [
         {
@@ -678,7 +700,10 @@
         "E01_P003",
         "E01_P008"
       ],
-      "completed_at": "2026-06-10"
+      "completed_at": "2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
       "batch_id": "SC002_E01_UPSTREAM_CHARACTER_CARDS_2026_06_10",
@@ -686,7 +711,7 @@
         "c016b_imagegen_task": "019eb1d0-c78c-7420-9669-39ceb6f625f0",
         "c017_promoted_from_history": "01/assets/characters/history/c017e01.v002.png"
       },
-      "status": "generated_or_promoted_candidates_pending_user_visual_qc_2026-06-10",
+      "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
       "created_files": [
         "01/assets/characters/c016be01.png",
         "01/assets/characters/c017e01.png"
@@ -695,16 +720,27 @@
         "01/assets/characters/history/c016be01.imagegen-task-source-20260610.png",
         "01/assets/characters/history/c017e01.v002.png"
       ],
-      "blocked_items": [],
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
       "warnings": [
         "C016B was generated with compressed references inherited from C016, K004, and E01_F001.",
         "C017 reused an existing history candidate that passed parent visual check for the mixed slave soldier role.",
-        "Both character cards remain pending user visual QC before final approval."
+        "Both character cards remain pending user visual QC before final approval.",
+        "Do not use this SC002 batch output for video or director-room prompt refresh.",
+        "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
       "qc_notes": [
         "C016B preserves insect clerk identity, white official costume hierarchy, register board, bone abacus, grain tags, and non-human facial structure.",
         "C017 preserves mixed human/slave-soldier body logic, wrist-binding state, dark armor/cloth hierarchy, and low ponytail role marker.",
-        "Character cards were prepared before SC002 frame generation as upstream references."
+        "Character cards were prepared before SC002 frame generation as upstream references.",
+        "2026-06-11 re-audit failed: SC002 character inheritance and body-metrics requirements were not met."
       ],
       "final_files": [
         {
@@ -732,7 +768,10 @@
         "K004",
         "E01_F001"
       ],
-      "completed_at": "2026-06-10"
+      "completed_at": "2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "prior_status_2026_06_10": "generated_or_promoted_qc_passed_for_sc002_storyboard_2026-06-10",
+      "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
       "batch_id": "SC002_SH001_E01_REFERENCE_FRAME",
@@ -740,23 +779,34 @@
       "thread_ids": {
         "r005_imagegen_task": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92"
       },
-      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
       "created_files": [
         "01/assets/reference-frames/r005e01.png"
       ],
       "history_files": [
         "01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png"
       ],
-      "blocked_items": [],
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
       "warnings": [
         "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
-        "Treat as candidate pending user visual QC before final approval."
+        "Treat as candidate pending user visual QC before final approval.",
+        "Do not use this SC002 batch output for video or director-room prompt refresh.",
+        "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source.",
         "Foreground tax table, white insect clerk, bone abacus, grain tags, and white register props are readable.",
         "Background Jinhe grain depot wall, grain sacks, queue pressure, mud, and cold morning mist are readable.",
-        "Visual continuity follows E01_C016B, E01_L003, E01_P008, E01_F001, and R001 material standard."
+        "Visual continuity follows E01_C016B, E01_L003, E01_P008, E01_F001, and R001 material standard.",
+        "2026-06-11 re-audit failed: SC002 character inheritance and body-metrics requirements were not met."
       ],
       "final_files": [
         {
@@ -775,7 +825,10 @@
         "E01_P008",
         "E01_F001"
       ],
-      "completed_at": "2026-06-10"
+      "completed_at": "2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
       "batch_id": "SC002_SH002_E01_REFERENCE_FRAME",
@@ -783,23 +836,34 @@
       "thread_ids": {
         "r006_imagegen_task": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090"
       },
-      "status": "generated_candidate_pending_user_qc_2026-06-10",
+      "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
       "created_files": [
         "01/assets/reference-frames/r006e01.png"
       ],
       "history_files": [
         "01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png"
       ],
-      "blocked_items": [],
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
       "warnings": [
         "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
-        "Treat as candidate pending user visual QC before final approval."
+        "Treat as candidate pending user visual QC before final approval.",
+        "Do not use this SC002 batch output for video or director-room prompt refresh.",
+        "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source.",
         "Foreground ancestor tablet box, empty grain jar cue, child handprint, threshold mud, and slave-soldier wrist-binding pressure are readable.",
         "Background grain sacks, depot pressure, low figures, and cold morning atmosphere remain readable without random text.",
-        "Visual continuity follows E01_C017, E01_C023, E01_P008, E01_L003, E01_F001, and R001 material standard."
+        "Visual continuity follows E01_C017, E01_C023, E01_P008, E01_L003, E01_F001, and R001 material standard.",
+        "2026-06-11 re-audit failed: SC002 character inheritance and body-metrics requirements were not met."
       ],
       "final_files": [
         {
@@ -819,7 +883,10 @@
         "E01_L003",
         "E01_F001"
       ],
-      "completed_at": "2026-06-10"
+      "completed_at": "2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
       "batch_id": "SC003_SH001_SH004_E01_PROMPT_COMPLETION",
@@ -855,6 +922,89 @@
         "E01_P009"
       ],
       "completed_at": "2026-06-10"
+    },
+    {
+      "batch_id": "SC003_STORYBOARD_REFERENCE_FRAMES",
+      "status": "generated_candidates_with_director_room_qc_2026-06-11",
+      "created_files": [
+        "01/assets/reference-frames/r010e01.png",
+        "01/assets/reference-frames/r011e01.png",
+        "01/assets/reference-frames/r012e01.png",
+        "01/assets/reference-frames/r013e01.png",
+        "01/assets/reference-frames/r014e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r010e01.imagegen-task-source-20260611.png",
+        "01/assets/reference-frames/history/r011e01.imagegen-task-source-20260611.png",
+        "01/assets/reference-frames/history/r012e01.imagegen-task-source-20260611.png",
+        "01/assets/reference-frames/history/r013e01.imagegen-task-source-20260611.png",
+        "01/assets/reference-frames/history/r014e01.imagegen-task-source-20260611.png"
+      ],
+      "source_threads": [
+        {
+          "asset_id": "E01_R010",
+          "shot_id": "SC003-SH001",
+          "thread_id": "019eb23e-df85-7510-ab4f-e7a2bc6595bd",
+          "source_file": "/Users/uroborus/.codex/generated_images/019eb23e-df85-7510-ab4f-e7a2bc6595bd/ig_081a9c3db9f09c6e016a29890470188196bf641c93b4030e4a.png",
+          "canonical_file": "01/assets/reference-frames/r010e01.png",
+          "history_file": "01/assets/reference-frames/history/r010e01.imagegen-task-source-20260611.png",
+          "visual_status": "accepted",
+          "production_status": "needs_native_4k_regenerate_recommended"
+        },
+        {
+          "asset_id": "E01_R011",
+          "shot_id": "SC003-SH002",
+          "thread_id": "019eb240-05be-75c1-8298-04cc8cb83a98",
+          "source_file": "/Users/uroborus/.codex/generated_images/019eb240-05be-75c1-8298-04cc8cb83a98/ig_006a40f55ef9ec07016a29894bf36c8191a80f136655e7bb1a.png",
+          "canonical_file": "01/assets/reference-frames/r011e01.png",
+          "history_file": "01/assets/reference-frames/history/r011e01.imagegen-task-source-20260611.png",
+          "visual_status": "accepted",
+          "production_status": "needs_native_4k_regenerate_recommended"
+        },
+        {
+          "asset_id": "E01_R012",
+          "shot_id": "SC003-SH003",
+          "thread_id": "019eb241-7378-7a41-abdb-bb173c4786e9",
+          "source_file": "/Users/uroborus/.codex/generated_images/019eb241-7378-7a41-abdb-bb173c4786e9/ig_027eb28db313655f016a2989b0bd908191b2a0ff06c0b83947.png",
+          "canonical_file": "01/assets/reference-frames/r012e01.png",
+          "history_file": "01/assets/reference-frames/history/r012e01.imagegen-task-source-20260611.png",
+          "visual_status": "needs_prompt_tuning",
+          "production_status": "needs_prompt_tuning_and_native_4k_regenerate"
+        },
+        {
+          "asset_id": "E01_R013",
+          "shot_id": "SC003-SH004",
+          "thread_id": "019eb243-6cd7-7b60-a70c-23188dba5d10",
+          "source_file": "/Users/uroborus/.codex/generated_images/019eb243-6cd7-7b60-a70c-23188dba5d10/ig_03989a0717808883016a298a2e817481919515856cc03c6bac.png",
+          "canonical_file": "01/assets/reference-frames/r013e01.png",
+          "history_file": "01/assets/reference-frames/history/r013e01.imagegen-task-source-20260611.png",
+          "visual_status": "needs_prompt_tuning",
+          "production_status": "needs_prompt_tuning_and_native_4k_regenerate"
+        },
+        {
+          "asset_id": "E01_R014",
+          "shot_id": "SC003-SH004",
+          "thread_id": "019eb244-c20f-7093-94f1-614b9dad1c96",
+          "source_file": "/Users/uroborus/.codex/generated_images/019eb244-c20f-7093-94f1-614b9dad1c96/ig_095ce25855122ebf016a298c3833d4819193f2db7f01014bab.png",
+          "canonical_file": "01/assets/reference-frames/r014e01.png",
+          "history_file": "01/assets/reference-frames/history/r014e01.imagegen-task-source-20260611.png",
+          "visual_status": "accepted_with_lighting_tuning_recommended",
+          "production_status": "needs_native_4k_regenerate_recommended"
+        }
+      ],
+      "warnings": [
+        "Canonical files were resampled to 3840x2160 from 1672x941 imagegen outputs; use as layout/storyboard candidates, not native-detail final video frames.",
+        "E01_R012 and E01_R013 require prompt tuning before native 4K regeneration.",
+        "E01_R014 benefits from lighter environment hierarchy: soft top-side daylight, restrained white-wax information light, no sacred overexposure."
+      ],
+      "qc_notes": [
+        "Art Room visual QC: R010, R011, and R014 satisfy core shot narrative as layout candidates.",
+        "Director Room review completed by agent 019eb264-3676-7743-8be9-5f42711c52ab.",
+        "SC003-SH004 includes an additional discovered terminal-frame source thread 019eb244-c20f-7093-94f1-614b9dad1c96, because FLF2V requires first and last frame references."
+      ],
+      "dispatched_at": "2026-06-11",
+      "completed_at": "2026-06-11T00:45:00+08:00",
+      "report": "01/art/reports/sc003-storyboard-asset-qc-2026-06-11.md"
     }
   ],
   "blocked_jobs": [
@@ -943,16 +1093,19 @@
           "output_path": "01/assets/characters/c027e01.png",
           "required_reference": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/characters/c025m.png",
           "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
-        },
-        {
-          "asset_id": "E01_C023",
-          "output_path": "01/assets/characters/c023e01.png",
-          "required_reference": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/characters/c025m.png",
-          "reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
         }
       ],
       "reason": "Hard reference image binding is mandatory but unavailable in the worker image-generation interface.",
       "resolved_items_2026_06_10": [
+        "E01_C023"
+      ],
+      "sc002_scope_note": "E01_C016B and E01_C017 were removed from SC002 resolved scope after user visual QC; E01_C023 remains only a candidate dependency pending reintegration QC.",
+      "sc002_resolved_items_removed_from_blocked_items_2026_06_10": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_C023"
+      ],
+      "sc002_revoked_resolved_items_2026_06_11": [
         "E01_C016B",
         "E01_C017"
       ]
@@ -962,6 +1115,30 @@
       "status": "resolved_by_single_asset_retries_2026-06-07",
       "blocked_items": [],
       "reason": "All listed B02 location blocked items were resolved by single-asset retries with parent QC."
+    },
+    {
+      "batch_id": "SC002_STORYBOARD_REGENERATION",
+      "status": "blocked_pending_regeneration_2026-06-11",
+      "blocked_items": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
+      "related_blocked_items": [
+        "E01_C018"
+      ],
+      "candidate_dependencies_requiring_recheck": [
+        "E01_C023",
+        "E01_L003",
+        "E01_P003",
+        "E01_P008"
+      ],
+      "reason": "User visual QC rejected C016B/C017 identity inheritance and body metrics; R005-R009 cannot be used for video.",
+      "audit_report": "01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md"
     }
   ],
   "validation_notes": [
@@ -977,9 +1154,14 @@
     "SC002-SH003 E01_R007 generated via imagegen-task child thread and saved as 3840x2160 PNG candidate pending user visual QC.",
     "E01_C016B generated and E01_C017 promoted before SC002 frame generation.",
     "SC002-SH001/SH002 E01_R005/E01_R006 generated via imagegen-task and saved as 3840x2160 PNG candidates pending user visual QC.",
-    "SC003-SH001/SH002/SH003/SH004 prompt records E01_R010-E01_R014 checked and marked prompt_complete_ready_for_dispatch; no image generation requested for SC003 in this run."
+    "SC003-SH001/SH002/SH003/SH004 prompt records E01_R010-E01_R014 checked and marked prompt_complete_ready_for_dispatch; no image generation requested for SC003 in this run.",
+    "SC002 reference frames verified as 3840x2160 PNG RGB/no-alpha with foreground, midground, and background readability.",
+    "SC002 2026-06-10 handoff approval revoked after user visual QC found identity inheritance and body-metrics failures.",
+    "Do not use E01_R005-E01_R009 for video until C016B/C017 and the reference frames are regenerated and re-audited.",
+    "SC003 R010-R014 retrieved from child threads and saved to canonical 3840x2160 PNG paths with 1672x941 sources retained in history.",
+    "Director Room reviewed SC003 assets: R010/R011/R014 accepted for layout; R012/R013 require prompt tuning; all should be native-4K regenerated before final video production."
   ],
-  "updated_at": "2026-06-10T22:07:02+08:00",
+  "updated_at": "2026-06-11T00:00:00+08:00",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -1135,5 +1317,104 @@
       "R003 residual age/readability risk remains pending user visual QC.",
       "R004 selected file keeps the same bell-frame direction and dark cold lighting better than the isolated-thread alternate."
     ]
+  },
+  "sc002_storyboard_final_qc_2026_06_10": {
+    "status": "superseded_rejected_after_user_visual_qc_2026-06-11",
+    "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+    "reviewed_at": "2026-06-10T23:20:00+08:00",
+    "approved_dependency_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C023",
+      "E01_L003",
+      "E01_P003",
+      "E01_P008"
+    ],
+    "approved_reference_frames": [
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "imagegen_task_thread_ids": {
+      "E01_C016B": "019eb1d0-c78c-7420-9669-39ceb6f625f0",
+      "E01_R005": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92",
+      "E01_R006": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090",
+      "E01_R007": "019eb1b3-f276-7991-8a87-88436520aac9",
+      "E01_R008": "019eb18d-9329-7ec2-b3d7-5c71281e01b2",
+      "E01_R009": "019eb18e-023a-79b1-9445-4ae2546b4b85"
+    },
+    "note": "R009 clean imagegen-task thread produced no usable retrievable output; canonical R009 uses the same isolated prompt with current-thread fallback, source retained in history.",
+    "superseded_by": "sc002_identity_failure_audit_2026_06_11",
+    "revocation_note": "Previous SC002 approval was incorrect: user visual QC identified C016B/C017 identity inheritance and body-metrics failures; R005-R009 are blocked."
+  },
+  "sc002_identity_failure_audit_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_inheritance_2026-06-11",
+    "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+    "reviewed_at": "2026-06-11T00:00:00+08:00",
+    "audit_report": "01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md",
+    "rejected_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "blocked_related_assets": [
+      "E01_C018"
+    ],
+    "candidate_dependencies_requiring_recheck": [
+      "E01_C023",
+      "E01_L003",
+      "E01_P003",
+      "E01_P008"
+    ],
+    "required_next_generation_order": [
+      "Regenerate E01_C016B with strict C016/K004 inheritance and 190-210cm body metrics.",
+      "Regenerate E01_C017 with strict C017/K004 inheritance and 170-200cm mixed-blood body metrics.",
+      "Keep E01_C018 blocked until 200-230cm pure-insect soldier scale QC passes for later scenes.",
+      "Regenerate R005-R009 only after C016B/C017 pass strict user/art-room QC."
+    ],
+    "video_handoff_status": "blocked_do_not_start_video_from_current_R005_R009"
+  },
+  "sc003_storyboard_asset_qc_2026_06_11": {
+    "status": "reference_candidates_generated_director_room_review_complete",
+    "canonical_files": [
+      "01/assets/reference-frames/r010e01.png",
+      "01/assets/reference-frames/r011e01.png",
+      "01/assets/reference-frames/r012e01.png",
+      "01/assets/reference-frames/r013e01.png",
+      "01/assets/reference-frames/r014e01.png"
+    ],
+    "history_files": [
+      "01/assets/reference-frames/history/r010e01.imagegen-task-source-20260611.png",
+      "01/assets/reference-frames/history/r011e01.imagegen-task-source-20260611.png",
+      "01/assets/reference-frames/history/r012e01.imagegen-task-source-20260611.png",
+      "01/assets/reference-frames/history/r013e01.imagegen-task-source-20260611.png",
+      "01/assets/reference-frames/history/r014e01.imagegen-task-source-20260611.png"
+    ],
+    "source_dimensions": "1672x941",
+    "canonical_dimensions": "3840x2160",
+    "director_room_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+    "accepted_for_layout": [
+      "E01_R010",
+      "E01_R011",
+      "E01_R014"
+    ],
+    "needs_prompt_tuning": [
+      "E01_R012",
+      "E01_R013"
+    ],
+    "native_4k_regeneration_recommended": [
+      "E01_R010",
+      "E01_R011",
+      "E01_R012",
+      "E01_R013",
+      "E01_R014"
+    ],
+    "report": "01/art/reports/sc003-storyboard-asset-qc-2026-06-11.md"
   }
 }

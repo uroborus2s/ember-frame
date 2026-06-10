@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "approval_status": "approved_by_user_request_2026-06-07",
-  "image_generation_status": "sc002_generated_candidates_and_sc003_prompts_complete_pending_user_qc_2026-06-10",
+  "image_generation_status": "sc002_storyboard_assets_rejected_pending_regeneration_2026-06-11",
   "source_inputs": [
     "bible/characters.md",
     "bible/scenes.md",
@@ -1034,8 +1034,8 @@
         "SC002-SH001",
         "SC002-SH003"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_parent_qc_passed_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "canonical_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "金河序幕中把粮和清明籍绑定的粮税小吏，蜡灰青官服、高账吏帽、粮牌和骨算盘必须区别于人族账房。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -1091,18 +1091,18 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "3072x2048",
-        "action_required": "pending_user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "3072x2048",
-        "action_required": "pending_user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "inheritance_contract": {
@@ -1140,12 +1140,12 @@
         "visible_prompt_lock": "模板继承锁：必须使用全剧肃明基层虫吏模板和清明院服制层级板作为参考。虫脸本体、复眼质感、白主色短官袍、账吏帽、白册夹板、粮牌检查工具和冷静制度感必须稳定；第一集金河状态只允许改变粮仓带征粮动作、局部尘土、账册道具和站位。不得把粮税小吏画成人族官差、不得弱化虫族头面结构、不得和奴兵或村民混装。",
         "qc_rejection_rule": "reject single-identity face locking on template/crowd assets, reject generic duplicated crowd figures, reject wrong source category, and reject any visible drift from required role, costume, species, geography, or class boundaries"
       },
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
+      "qc_status": "failed_identity_inheritance_and_body_metrics_qc_2026-06-11",
       "history_files": [
         "01/assets/characters/history/c016be01.v001.png",
         "01/assets/characters/history/c016be01.imagegen-task-source-20260610.png"
       ],
-      "current_canonical_file_status": "generated_candidate_3072x2048_png_2026-06-10",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
       "final_sha256": "5f2239c8f0d7eaf21feb7f452cee9a2d2d638b1e39bad00c8a41b10c78b325b7",
       "final_dimensions": "3072x2048",
       "source_sha256": "e96e77dd9f34e99c95f6730f999448aa5e27454d5fa28c705a97a764a0982c0e",
@@ -1154,7 +1154,49 @@
       "generation_source": "imagegen_task_child_thread",
       "generation_thread_id": "019eb1d0-c78c-7420-9669-39ceb6f625f0",
       "completed_at": "2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "status": "blocked_pending_sc002_identity_regeneration_2026-06-11",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_identity_inheritance_and_body_metrics_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "用户视觉 QC 指出粮税小吏没有充分继承角色设定，现有图不能作为 SC002 官吏身份锁。",
+          "必须锁定 190-210cm 粮仓基层虫吏：拉长体量、复眼、骨白颊壳、暗绿颈部软膜、节状手指，而不是通用白衣虫官或人族账房。",
+          "SC002 要求高账吏帽、白册夹板、骨算盘、粮牌、秤钩与量粮姿态同时可读，并与奴兵/纯虫族小兵层级一眼分开。"
+        ],
+        "corrective_requirements": [
+          "先重新生成 E01_C016B 角色卡，必须带身高/尺度参照，不得只做漂亮设定板。",
+          "模型可见提示词必须明确：低阶粮税虫吏，190-210cm，蜡灰青短官袍，高账吏帽，白册夹板，骨算盘，粮牌，秤钩，暗绿颈部软膜，节状手指。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "用户视觉 QC 指出粮税小吏没有充分继承角色设定，现有图不能作为 SC002 官吏身份锁。",
+        "必须锁定 190-210cm 粮仓基层虫吏：拉长体量、复眼、骨白颊壳、暗绿颈部软膜、节状手指，而不是通用白衣虫官或人族账房。",
+        "SC002 要求高账吏帽、白册夹板、骨算盘、粮牌、秤钩与量粮姿态同时可读，并与奴兵/纯虫族小兵层级一眼分开。"
+      ],
+      "corrective_requirements": [
+        "先重新生成 E01_C016B 角色卡，必须带身高/尺度参照，不得只做漂亮设定板。",
+        "模型可见提示词必须明确：低阶粮税虫吏，190-210cm，蜡灰青短官袍，高账吏帽，白册夹板，骨算盘，粮牌，秤钩，暗绿颈部软膜，节状手指。"
+      ],
+      "next_action": "regenerate_with_strict_character_inheritance_body_metrics_and_scale_reference",
+      "body_metrics": {
+        "height": "约190到210厘米",
+        "weight_build": "粮仓基层虫吏，体量拉长、动作细碎，非战斗身形",
+        "body_ratio": "长臂适合量粮和拨算盘，官袍遮住细长躯干",
+        "silhouette": "蜡灰青官袍、高账吏帽、骨算盘、秤钩和粮牌形成征粮剪影",
+        "scale_refs": [
+          "站在粮袋墙前高过人族账房",
+          "秤钩约半臂长",
+          "与押车奴兵职责分明"
+        ]
+      }
     },
     {
       "asset_id": "E01_C017",
@@ -1184,8 +1226,8 @@
         "SC004-SH001",
         "SC006-SH003"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "promoted_from_history_candidate_parent_qc_passed_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "canonical_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "奴兵负责扣腕、押车、封门和执行抓捕，不承担开册职责；人族轮廓与虫化甲片并存，后脑低位金钱马尾可见。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -1244,18 +1286,18 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "promoted_history_candidate_png",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "2048x2048",
-        "action_required": "pending_user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "promoted_history_candidate_png",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "2048x2048",
-        "action_required": "pending_user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "inheritance_contract": {
@@ -1293,12 +1335,12 @@
         "visible_prompt_lock": "模板继承锁：必须使用全剧混血奴兵模板和清明院服制层级板作为参考。人族直立轮廓、局部虫蜡甲片、蜡灰青短军袍、暗绿黑护布、骨白腕绑、黑日烙牌、编号木牌、气味牌和低位金钱马尾必须稳定；第一集只允许改变扣腕、押车、封门、执行抓捕的动作状态和局部污损。不得把奴兵画成官吏、纯虫族小兵或具名主角脸。",
         "qc_rejection_rule": "reject single-identity face locking on template/crowd assets, reject generic duplicated crowd figures, reject wrong source category, and reject any visible drift from required role, costume, species, geography, or class boundaries"
       },
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
+      "qc_status": "failed_identity_inheritance_and_body_metrics_qc_2026-06-11",
       "history_files": [
         "01/assets/characters/history/c017e01.v001.png",
         "01/assets/characters/history/c017e01.v002.png"
       ],
-      "current_canonical_file_status": "promoted_history_candidate_2048x2048_png_2026-06-10",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
       "final_sha256": "183973960ce7c963a638606a73797a9374996a80a5526a82febabc8cc1c4c218",
       "final_dimensions": "2048x2048",
       "source_sha256": "183973960ce7c963a638606a73797a9374996a80a5526a82febabc8cc1c4c218",
@@ -1307,7 +1349,49 @@
       "generation_source": "promoted_existing_history_candidate",
       "generation_thread_id": null,
       "completed_at": "2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "status": "blocked_pending_sc002_identity_regeneration_2026-06-11",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_identity_inheritance_and_body_metrics_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "用户视觉 QC 指出现有奴兵不符合角色继承与身高/体型要求，当前图读成普通人族灰甲押解兵。",
+          "必须锁定 170-200cm 混血清污军户：人形轮廓保留，但要有虫蜡斑、膜褶、硬化指节、虫化甲片、骨白腕绑、编号牌和低位小辫。",
+          "奴兵只执行扣腕、押车、拖粮，不承担开册职责；必须与 200-230cm 纯虫族小兵明显区分。"
+        ],
+        "corrective_requirements": [
+          "先重新生成 E01_C017 角色卡，必须显示混血奴兵与纯虫族小兵的差异。",
+          "模型可见提示词必须明确：170-200cm 混血清污军户，保留人手动作，但有虫蜡斑、膜褶、硬化指节、虫化甲片、骨白腕绑、拖绳、编号牌、低位小辫。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "用户视觉 QC 指出现有奴兵不符合角色继承与身高/体型要求，当前图读成普通人族灰甲押解兵。",
+        "必须锁定 170-200cm 混血清污军户：人形轮廓保留，但要有虫蜡斑、膜褶、硬化指节、虫化甲片、骨白腕绑、编号牌和低位小辫。",
+        "奴兵只执行扣腕、押车、拖粮，不承担开册职责；必须与 200-230cm 纯虫族小兵明显区分。"
+      ],
+      "corrective_requirements": [
+        "先重新生成 E01_C017 角色卡，必须显示混血奴兵与纯虫族小兵的差异。",
+        "模型可见提示词必须明确：170-200cm 混血清污军户，保留人手动作，但有虫蜡斑、膜褶、硬化指节、虫化甲片、骨白腕绑、拖绳、编号牌、低位小辫。"
+      ],
+      "next_action": "regenerate_with_strict_character_inheritance_body_metrics_and_scale_reference",
+      "body_metrics": {
+        "height": "约170到200厘米范围",
+        "weight_build": "混血清污军户，保留人族体量差异，肩胸有硬化蜡布和虫化甲片",
+        "body_ratio": "人手动作仍可读，指节硬壳和低位小辫标出役使身份",
+        "silhouette": "蜡灰青短军袍、腕绑、拖绳和编号牌形成扣腕押车层级",
+        "scale_refs": [
+          "可与人族成人同高或略高",
+          "一只手扣住儿童手腕时必须显示尺度压迫",
+          "与纯虫族小兵相比更近人形"
+        ]
+      }
     },
     {
       "asset_id": "E01_C018",
@@ -1335,7 +1419,7 @@
         "SC006-SH003",
         "SC006-SH008"
       ],
-      "approval_status": "rejected_current_output_identity_drift_2026-06-07",
+      "approval_status": "not_approved_pending_pure_insect_soldier_scale_review_2026-06-11",
       "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
       "design_summary": "纯虫族小兵只负责封旧井、药屋外圈和钩镰堵路；低伏、反关节腿和外圈封锁线必须与官吏/奴兵区分。",
       "precision_control": false,
@@ -1442,12 +1526,39 @@
         "visible_prompt_lock": "模板继承锁：必须使用全剧纯虫族小兵模板和清明院服制层级板作为参考。低伏胸背硬化、反关节腿、爪足、窄复眼、骨白护颚、短矛或钩镰、折叠短刃、暗绿束具和白翅覆黑日牌必须稳定；第一集只允许改变封路、旧井外圈、药屋外圈和压阵动作。不得画成人形士兵、奴兵或官吏。",
         "qc_rejection_rule": "reject single-identity face locking on template/crowd assets, reject generic duplicated crowd figures, reject wrong source category, and reject any visible drift from required role, costume, species, geography, or class boundaries"
       },
-      "qc_status": "blocked_after_identity_drift_rejection_2026-06-07",
+      "qc_status": "blocked_pending_pure_insect_soldier_body_metrics_qc_2026-06-11",
       "history_files": [
         "01/assets/characters/history/c018e01.v001.png"
       ],
       "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
+      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references.",
+      "status": "blocked_pending_pure_insect_soldier_identity_scale_qc_2026-06-11",
+      "body_metrics": {
+        "height": "约200到230厘米",
+        "weight_build": "纯虫族基层武力，低伏强壮，反关节腿和爪足明显",
+        "body_ratio": "上身前压、腿反关节，护颚和短矛拉低重心",
+        "silhouette": "旧铁束具、暗绿绳带、骨白护颚、短矛或钩镰形成封路剪影",
+        "scale_refs": [
+          "明显高于混血奴兵",
+          "堵井或药屋外圈时身体占据门口尺度",
+          "不能拿白册开令"
+        ]
+      },
+      "rejection_reasons": [
+        "用户指出纯虫族士兵也必须按体型要求复核；当前资产不得替代奴兵或官吏进入 SC002。",
+        "后续必须以 200-230cm、低伏强壮、反关节腿、爪足、窄复眼、骨白护颚、短矛/钩镰作为硬锁。"
+      ],
+      "corrective_requirements": [
+        "保留阻断状态，后续纯虫族小兵必须按 200-230cm、低伏强壮、反关节腿、爪足、窄复眼、骨白护颚、短矛/钩镰重新复核。",
+        "不得用 E01_C018 替代奴兵，也不得让纯虫族小兵开白册或执行粮税官吏职责。"
+      ],
+      "sc002_storyboard_qc": {
+        "status": "not_part_of_current_sc002_handoff_but_blocked_for_identity_scale_review_2026-06-11",
+        "approval_status": "not_approved_for_sc002_or_later_video_use_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "note": "SC002 当前核心参考帧不应使用纯虫族小兵替代奴兵；该角色保留为后续场次阻断项。"
+      }
     },
     {
       "asset_id": "E01_C020",
@@ -1978,8 +2089,8 @@
         "SC002-SH002",
         "SC002-SH004"
       ],
-      "approval_status": "rejected_current_output_identity_drift_2026-06-07",
-      "generation_status": "blocked_hard_reference_image_binding_unavailable_2026-06-07",
+      "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "generation_status": "canonical_file_candidate_recheck_required_with_regenerated_sc002_2026-06-11",
       "design_summary": "从全局普通人族平民群像模板、人族地域服装差异板和金河粮磨区地理锁派生，只记录第01集金河粮仓带家庭被征粮状态；不继承逃难流民母卡。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2037,18 +2148,18 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "inheritance_contract": {
@@ -2097,12 +2208,30 @@
         "visible_prompt_lock": "群像模板继承锁：必须使用全剧普通人族平民群像模板、人族地域服装差异板和金河粮磨区地理参考作为共同母本。金河粮仓带劳动结构、老人、妇人、孩子、祖牌、过冬粮、粮牌、空布袋、手推车、麦金褪色衣和河泥褐补丁必须稳定；第一集只允许改变征粮压迫、护粮动作、队列、局部污损和站位。不得继承逃难流民母卡，不得把金河家庭画成无来源灾民或同款乞讨队伍。",
         "qc_rejection_rule": "reject single-identity face locking on template/crowd assets, reject generic duplicated crowd figures, reject wrong source category, and reject any visible drift from required role, costume, species, geography, or class boundaries"
       },
-      "qc_status": "blocked_after_identity_drift_rejection_2026-06-07",
+      "qc_status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
       "history_files": [
         "01/assets/characters/history/c023e01.v001.png"
       ],
-      "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Blocked: available image generation capability in this thread cannot attach/use local master reference images as hard visual references."
+      "current_canonical_file_status": "canonical_sc002_dependency_card_2048x2048_png_2026-06-10",
+      "status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "final_sha256": "a77cb7fbdf136acdc692e6a3be2bdad9dd00421f217d77f9e7fa54c64ed4fabd",
+      "final_dimensions": "2048x2048",
+      "has_alpha": false,
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+        "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "art-room coordinator re-audit",
+        "scope": "SC002 dependency retained as candidate only",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "visual_notes": [
+          "本资产未被本次用户反馈直接判废，但 SC002 整包批准已撤销。",
+          "必须等 E01_C016B、E01_C017 和 R005-R009 重做后一起复审，不能单独作为 SC002 视频放行依据。"
+        ]
+      },
+      "next_action": "recheck_with_regenerated_SC002_character_cards_and_reference_frames"
     },
     {
       "asset_id": "E01_L007",
@@ -2269,8 +2398,8 @@
         "SC002-SH001",
         "SC002-SH004"
       ],
-      "approval_status": "parent_qc_passed_2026-06-07",
-      "generation_status": "complete_qc_passed_2026-06-07",
+      "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "generation_status": "canonical_file_candidate_recheck_required_with_regenerated_sc002_2026-06-11",
       "design_summary": "本集只使用粮袋墙、泥路、门槛和粮税检查处；麦金冷雾、湿木褐、河泥褐和虫蜡白对比。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -2328,17 +2457,17 @@
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "none"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "scene_reference_card",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "canonical_image_present_parent_qc_passed",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "none"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "inheritance_contract": {
         "version": "episode-inheritance-hard-lock-v1-2026-06-07",
@@ -2350,12 +2479,11 @@
         "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
         "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
       },
-      "qc_status": "blocked_after_location_drift_rejection_2026-06-07",
+      "qc_status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
       "history_files": [
         "01/assets/locations/history/l003e01.v003.png"
       ],
-      "current_canonical_file_status": "missing_until_retry_after_rejected_output_moved_to_history_2026-06-07",
-      "blocked_reason": "Hard visual reference use is mandatory. The required master/style images exist on disk, but the available image-generation interface in this worker cannot attach or bind local absolute-path reference images as hard references, so text-only generation is forbidden.",
+      "current_canonical_file_status": "canonical_sc002_dependency_card_3840x2160_png_2026-06-10",
       "final_sha256": "65711036b0dce3d40bab5d765e9b45ab7bf13ea961d4cddf73a9abb7596d5750",
       "parent_qc_review": {
         "reviewed_at": "2026-06-07",
@@ -2367,7 +2495,25 @@
           "parent promoted reviewed v003 to canonical after child thread stalled",
           "inherits L003 Jinhe granary/wet-wood dock/grain-sack checkpoint master geography"
         ]
-      }
+      },
+      "status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "final_dimensions": "3840x2160",
+      "has_alpha": false,
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+        "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "art-room coordinator re-audit",
+        "scope": "SC002 dependency retained as candidate only",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "visual_notes": [
+          "本资产未被本次用户反馈直接判废，但 SC002 整包批准已撤销。",
+          "必须等 E01_C016B、E01_C017 和 R005-R009 重做后一起复审，不能单独作为 SC002 视频放行依据。"
+        ]
+      },
+      "next_action": "recheck_with_regenerated_SC002_character_cards_and_reference_frames"
     },
     {
       "asset_id": "E01_L014",
@@ -2994,8 +3140,8 @@
         "SC002-SH002",
         "SC002-SH004"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "path_repaired_qc_passed_pending_manifest_finalize_2026-06-07",
+      "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "generation_status": "canonical_file_candidate_recheck_required_with_regenerated_sc002_2026-06-11",
       "design_summary": "粮牌、虫蜡封条、祖牌小盒、粮缸和押车绳要让制度如何写没家门可见。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -3049,20 +3195,41 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
-      }
+      },
+      "qc_status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+      "status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "current_canonical_file_status": "canonical_sc002_dependency_card_2048x2048_png_2026-06-10",
+      "final_sha256": "653674d51233c1110e25ed6a577303717b59d378dea61dcf9d66f8c19a755ee7",
+      "final_dimensions": "2048x2048",
+      "has_alpha": false,
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+        "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "art-room coordinator re-audit",
+        "scope": "SC002 dependency retained as candidate only",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "visual_notes": [
+          "本资产未被本次用户反馈直接判废，但 SC002 整包批准已撤销。",
+          "必须等 E01_C016B、E01_C017 和 R005-R009 重做后一起复审，不能单独作为 SC002 视频放行依据。"
+        ]
+      },
+      "next_action": "recheck_with_regenerated_SC002_character_cards_and_reference_frames"
     },
     {
       "asset_id": "E01_P009",
@@ -3269,8 +3436,8 @@
         "SC006-SH004",
         "SC006-SH007"
       ],
-      "approval_status": "approved_by_user_request_2026-06-07",
-      "generation_status": "path_repaired_qc_passed_pending_manifest_finalize_2026-06-07",
+      "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "generation_status": "canonical_file_candidate_recheck_required_with_regenerated_sc002_2026-06-11",
       "design_summary": "白册需要空白板和可后合成区域；不要让模型生成文字。",
       "precision_control": false,
       "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
@@ -3328,20 +3495,41 @@
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
       },
       "landscape_contract_status": {
         "contract_class": "master_reference_card",
         "target_aspect_ratio": "asset_defined_reference_card",
         "target_minimum_resolution": "2048x2048",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_master_reference_card_when_unblocked",
+        "existing_file_status": "canonical_sc002_dependency_card_png",
+        "existing_file_dimensions": "2048x2048",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "landscape_regeneration_required": false
-      }
+      },
+      "qc_status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+      "status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+      "current_canonical_file_status": "canonical_sc002_dependency_card_2048x2048_png_2026-06-10",
+      "final_sha256": "b4cf28bf3c1762bb7bc97dfe822816a2d473798202a21d4f84cfc1501bc629ea",
+      "final_dimensions": "2048x2048",
+      "has_alpha": false,
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "candidate_dependency_recheck_required_with_regenerated_sc002_2026-06-11",
+        "approval_status": "candidate_dependency_pending_sc002_reintegration_qc_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "art-room coordinator re-audit",
+        "scope": "SC002 dependency retained as candidate only",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "visual_notes": [
+          "本资产未被本次用户反馈直接判废，但 SC002 整包批准已撤销。",
+          "必须等 E01_C016B、E01_C017 和 R005-R009 重做后一起复审，不能单独作为 SC002 视频放行依据。"
+        ]
+      },
+      "next_action": "recheck_with_regenerated_SC002_character_cards_and_reference_frames"
     },
     {
       "asset_id": "E01_P004",
@@ -5335,8 +5523,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "SC002-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -5390,22 +5578,22 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
-      "current_canonical_file_status": "generated_candidate_3840x2160_png_2026-06-10",
+      "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
       "final_sha256": "c5cf80da6a050d9264f5c3af1895743d5f0c4e1d632300af6f1ccb59dfe3c31f",
       "final_dimensions": "3840x2160",
       "source_sha256": "feea344c8219c2ce285022d1c9c4348c2c5df10de430992037dbeac3cce81315",
@@ -5414,10 +5602,39 @@
       "generation_source": "imagegen_task_child_thread",
       "generation_thread_id": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92",
       "completed_at": "2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00",
+      "updated_at": "2026-06-10T23:20:00+08:00",
       "history_files": [
         "01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png"
-      ]
+      ],
+      "status": "blocked_pending_sc002_reference_frame_regeneration_2026-06-11",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "上游 E01_C016B 身份和体型继承未通过，SC002-SH001 官吏建立镜头不能放行。",
+          "画面必须重锁粮袋墙上半画面、村民眼高慢推、高位基层粮税小吏、白册/骨算盘/粮牌制度中心。"
+        ],
+        "corrective_requirements": [
+          "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+          "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "上游 E01_C016B 身份和体型继承未通过，SC002-SH001 官吏建立镜头不能放行。",
+        "画面必须重锁粮袋墙上半画面、村民眼高慢推、高位基层粮税小吏、白册/骨算盘/粮牌制度中心。"
+      ],
+      "corrective_requirements": [
+        "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+        "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+      ],
+      "next_action": "regenerate_after_E01_C016B_and_E01_C017_pass_strict_identity_body_metrics_qc"
     },
     {
       "asset_id": "E01_R006",
@@ -5441,8 +5658,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "SC002-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -5497,22 +5714,22 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
-      "current_canonical_file_status": "generated_candidate_3840x2160_png_2026-06-10",
+      "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
       "final_sha256": "fa7e17ac709165b036ef7ad1f7964846791980b11972befeb0b80feea18ab997",
       "final_dimensions": "3840x2160",
       "source_sha256": "22c003bb26c464f28f644b7ce927331e854137ac564039b411e4ffe14a4a8eb1",
@@ -5521,10 +5738,39 @@
       "generation_source": "imagegen_task_child_thread",
       "generation_thread_id": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090",
       "completed_at": "2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00",
+      "updated_at": "2026-06-10T23:20:00+08:00",
       "history_files": [
         "01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png"
-      ]
+      ],
+      "status": "blocked_pending_sc002_reference_frame_regeneration_2026-06-11",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "奴兵手臂和腕甲读成普通人族士兵局部，未继承混血奴兵虫蜡、膜褶、硬化指节和骨白腕绑。",
+          "SC002-SH002 的压迫关系依赖扣腕手和儿童手印，角色身份失败即镜头失败。"
+        ],
+        "corrective_requirements": [
+          "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+          "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "奴兵手臂和腕甲读成普通人族士兵局部，未继承混血奴兵虫蜡、膜褶、硬化指节和骨白腕绑。",
+        "SC002-SH002 的压迫关系依赖扣腕手和儿童手印，角色身份失败即镜头失败。"
+      ],
+      "corrective_requirements": [
+        "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+        "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+      ],
+      "next_action": "regenerate_after_E01_C016B_and_E01_C017_pass_strict_identity_body_metrics_qc"
     },
     {
       "asset_id": "E01_R007",
@@ -5554,8 +5800,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "SC002-SH003 的 I2V 首帧参考帧：白册前景、小吏点族谱行、封牌落下、妇人护粮被奴兵扣腕，锁定清明籍话术如何把家粮写成官粮。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -5614,27 +5860,27 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "generated_candidate_png",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "pending_user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "texture_standard_ref": "E01_F001/E01_F005",
       "texture_standard_requirement": "de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "current_canonical_file_status": "generated_candidate_3840x2160_png_2026-06-10",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
       "history_files": [
         "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png"
       ],
       "imagegen_task_result": {
-        "status": "generated_candidate_pending_user_qc_2026-06-10",
+        "status": "ready_for_sc002_storyboard_handoff_2026-06-10",
         "selected_source": "imagegen_task_thread",
         "selected_thread_id": "019eb1b3-f276-7991-8a87-88436520aac9",
         "selected_source_history_file": "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
@@ -5646,7 +5892,7 @@
         "canonical_output_path": "01/assets/reference-frames/r007e01.png",
         "canonical_dimensions": "3840x2160",
         "canonical_sha256": "f3efb509a26c3bef85d5ec6164562746cf1ebd990a3aac0d31fefb0c6d90a501",
-        "qc_status": "pending_user_visual_qc_2026-06-10",
+        "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
         "generated_at": "2026-06-10",
         "notes": [
           "Imagegen-task clean child thread completed and produced the selected source image.",
@@ -5654,7 +5900,39 @@
           "Native output was 1672x941 and canonical file was resampled to 3840x2160 PNG RGB for the episode reference-frame contract."
         ]
       },
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc"
+      "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+      "status": "blocked_pending_sc002_reference_frame_regeneration_2026-06-11",
+      "final_sha256": "f3efb509a26c3bef85d5ec6164562746cf1ebd990a3aac0d31fefb0c6d90a501",
+      "final_dimensions": "3840x2160",
+      "has_alpha": false,
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "粮税小吏偏高阶蓝袍虫官，奴兵读成人族重甲役兵；官吏开册、奴兵扣腕的层级没有被正确继承。",
+          "必须重新满足前景白册/节状手指/粮牌/虫蜡封条，中景小吏/妇人/奴兵，背景粮袋墙/低位村民的三层构图。"
+        ],
+        "corrective_requirements": [
+          "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+          "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "粮税小吏偏高阶蓝袍虫官，奴兵读成人族重甲役兵；官吏开册、奴兵扣腕的层级没有被正确继承。",
+        "必须重新满足前景白册/节状手指/粮牌/虫蜡封条，中景小吏/妇人/奴兵，背景粮袋墙/低位村民的三层构图。"
+      ],
+      "corrective_requirements": [
+        "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+        "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+      ],
+      "next_action": "regenerate_after_E01_C016B_and_E01_C017_pass_strict_identity_body_metrics_qc"
     },
     {
       "asset_id": "E01_R008",
@@ -5678,8 +5956,8 @@
         "FLF2V",
         "首帧"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "SC002-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -5734,29 +6012,29 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "status": "generated_candidate_pending_user_qc",
+      "status": "blocked_pending_sc002_reference_frame_regeneration_2026-06-11",
       "generation_result": {
-        "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "approval_status": "pending_user_visual_qc_2026-06-10",
+        "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
         "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
         "existing_file_dimensions": "3840x2160",
         "native_source_dimensions": "1672x941",
         "canonical_resample": "sips -z 2160 3840",
-        "action_required": "user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "generated_at": "2026-06-10",
         "source_mode": "imagegen-task-clean-thread-output-selected",
         "imagegen_task_thread_id": "019eb18d-9329-7ec2-b3d7-5c71281e01b2",
@@ -5765,7 +6043,7 @@
         "final_sha256": "b77ecd1932a2ba9da4230fd00070dcce0ca39f7836d0a10ce874aa2af0ab32d6",
         "source_sha256": "f40afcb3ea96bd15f138b06f54e77ff715f0303caf2af39a7d348a5c25aa4efa"
       },
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
+      "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax hands, midground grain sack and slave soldier, background family/threshold are readable",
@@ -5776,7 +6054,37 @@
         "01/assets/reference-frames/history/r008e01.imagegen-task-source-20260610.png"
       ],
       "final_sha256": "b77ecd1932a2ba9da4230fd00070dcce0ca39f7836d0a10ce874aa2af0ab32d6",
-      "updated_at": "2026-06-10"
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
+      "final_dimensions": "3840x2160",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "拖粮者仍是普通人族士兵形象，未继承混血奴兵身份和体型。",
+          "画面色彩偏灰冷灾民营，未充分满足 SC002 麦金、河泥褐、湿木灰、虫蜡白的制度色差。"
+        ],
+        "corrective_requirements": [
+          "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+          "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "拖粮者仍是普通人族士兵形象，未继承混血奴兵身份和体型。",
+        "画面色彩偏灰冷灾民营，未充分满足 SC002 麦金、河泥褐、湿木灰、虫蜡白的制度色差。"
+      ],
+      "corrective_requirements": [
+        "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+        "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+      ],
+      "next_action": "regenerate_after_E01_C016B_and_E01_C017_pass_strict_identity_body_metrics_qc"
     },
     {
       "asset_id": "E01_R009",
@@ -5800,8 +6108,8 @@
         "FLF2V",
         "终帧"
       ],
-      "approval_status": "pending_user_visual_qc_2026-06-10",
-      "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
+      "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+      "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
       "design_summary": "SC002-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -5856,29 +6164,29 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
+        "existing_file_status": "final_sc002_storyboard_reference_png",
         "existing_file_dimensions": "3840x2160",
-        "action_required": "user_visual_qc_before_final_approval"
+        "action_required": "none_for_sc002_storyboard_handoff"
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "status": "generated_candidate_pending_user_qc",
+      "status": "blocked_pending_sc002_reference_frame_regeneration_2026-06-11",
       "generation_result": {
-        "generation_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "approval_status": "pending_user_visual_qc_2026-06-10",
+        "generation_status": "generated_file_rejected_pending_regeneration_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
         "existing_file_status": "exists_png_canonical_resampled_from_imagegen_source",
         "existing_file_dimensions": "3840x2160",
         "native_source_dimensions": "1672x941",
         "canonical_resample": "sips -z 2160 3840",
-        "action_required": "user_visual_qc_before_final_approval",
+        "action_required": "none_for_sc002_storyboard_handoff",
         "generated_at": "2026-06-10",
         "source_mode": "current-thread-built-in-imagegen-fallback-selected",
         "imagegen_task_thread_id": "019eb18e-023a-79b1-9445-4ae2546b4b85",
@@ -5887,7 +6195,7 @@
         "final_sha256": "bcddd9b524d8cdf8021a0315633c69627da5cd918b6c76df2feef158868420b3",
         "source_sha256": "6cbafbb9168fd6a4796dca04fbbcb776fb9c1c16b2d01c8d2ace444c280be7e6"
       },
-      "qc_status": "candidate_passed_basic_parent_qc_pending_user_visual_qc",
+      "qc_status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax handprint and empty threshold, midground kneeling family, background cart ruts/cold mist are readable",
@@ -5898,7 +6206,37 @@
         "01/assets/reference-frames/history/r009e01.current-thread-source-20260610.png"
       ],
       "final_sha256": "bcddd9b524d8cdf8021a0315633c69627da5cd918b6c76df2feef158868420b3",
-      "updated_at": "2026-06-10"
+      "updated_at": "2026-06-10T23:20:00+08:00",
+      "current_canonical_file_status": "rejected_retained_for_audit_not_for_video_2026-06-11",
+      "final_dimensions": "3840x2160",
+      "has_alpha": false,
+      "approval_scope": "SC002 storyboard/reference-frame handoff only",
+      "sc002_storyboard_qc": {
+        "status": "failed_sc002_storyboard_character_inheritance_qc_2026-06-11",
+        "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+        "reviewed_at": "2026-06-11T00:00:00+08:00",
+        "reviewer": "user visual QC plus art-room coordinator re-audit",
+        "scope": "SC002-SH001 through SC002-SH004 storyboard assets",
+        "previous_2026_06_10_handoff_approval_revoked": true,
+        "failure_reasons": [
+          "作为 SC002-SH004 终帧，必须与通过 QC 的首帧 R008 成对交付；当前 R008 失败，因此 R009 不能单独用于视频制作。",
+          "终帧需要在新首帧通过后复审同一门槛、祖牌盒、虫蜡手印、空粮车辙和冷雾方向。"
+        ],
+        "corrective_requirements": [
+          "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+          "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+        ],
+        "blocking_status": "not_allowed_for_director_room_prompt_refresh_or_video_generation"
+      },
+      "rejection_reasons": [
+        "作为 SC002-SH004 终帧，必须与通过 QC 的首帧 R008 成对交付；当前 R008 失败，因此 R009 不能单独用于视频制作。",
+        "终帧需要在新首帧通过后复审同一门槛、祖牌盒、虫蜡手印、空粮车辙和冷雾方向。"
+      ],
+      "corrective_requirements": [
+        "R005-R009 必须在 C016B/C017 重新生成并通过身份、身高和层级 QC 后再重做。",
+        "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
+      ],
+      "next_action": "regenerate_after_E01_C016B_and_E01_C017_pass_strict_identity_body_metrics_qc"
     },
     {
       "asset_id": "E01_R010",
@@ -5921,8 +6259,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "prompt_complete_for_generation_dispatch_2026-06-10",
-      "generation_status": "prompt_complete_ready_for_dispatch_2026-06-10",
+      "approval_status": "sc003_accepted_needs_native_4k_regenerate_recommended_2026-06-11",
+      "generation_status": "generated_candidate_canonical_3840x2160_resampled_from_imagegen_task_source_2026-06-11",
       "design_summary": "SC003-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -5975,24 +6313,50 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "prompt_contract_checked_no_image_generated_2026-06-10",
+      "qc_status": "visual_accepted_for_sc003_layout_needs_native_4k_regenerate_2026-06-11",
       "prompt_completion_status": "sc003_sh001_sh004_prompt_complete_no_image_generated_2026-06-10",
-      "current_canonical_file_status": "not_generated_prompt_only_2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "current_canonical_file_status": "generated_3840x2160_resampled_from_1672x941_source_2026-06-11",
+      "updated_at": "2026-06-11T00:45:00+08:00",
+      "status": "sc003_accepted_needs_native_4k_regenerate_recommended_2026-06-11",
+      "source_thread_id": "019eb23e-df85-7510-ab4f-e7a2bc6595bd",
+      "thread_id": "019eb23e-df85-7510-ab4f-e7a2bc6595bd",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb23e-df85-7510-ab4f-e7a2bc6595bd/ig_081a9c3db9f09c6e016a29890470188196bf641c93b4030e4a.png",
+      "history_files": [
+        "01/assets/reference-frames/history/r010e01.imagegen-task-source-20260611.png"
+      ],
+      "image_file_dimensions": {
+        "canonical": "3840x2160",
+        "source": "1672x941",
+        "native_4k_status": "resampled_not_native_4k"
+      },
+      "director_room_review": {
+        "reviewed_at": "2026-06-11T00:45:00+08:00",
+        "review_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+        "visual_status": "accepted",
+        "production_status": "needs_native_4k_regenerate_recommended",
+        "notes": "雨夜油布图桌、旧驿残图和朱赤红线由南缘斜钉向北境可读；锁定左下低位油灯暖窄侧光与右上月白雨夜冷反光。",
+        "lighting_note": "不需新增光效；保留油灯暖侧光擦纸纤维、红线绒毛、铜钉和湿木，冷反光只点水滴与油布折痕。",
+        "negative_lighting_constraints": [
+          "不要红线魔法发光",
+          "不要现代地图字",
+          "不要全局灰黑欠曝",
+          "不要圣光束"
+        ]
+      }
     },
     {
       "asset_id": "E01_R011",
@@ -6016,8 +6380,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "prompt_complete_for_generation_dispatch_2026-06-10",
-      "generation_status": "prompt_complete_ready_for_dispatch_2026-06-10",
+      "approval_status": "sc003_accepted_needs_native_4k_regenerate_recommended_2026-06-11",
+      "generation_status": "generated_candidate_canonical_3840x2160_resampled_from_imagegen_task_source_2026-06-11",
       "design_summary": "SC003-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -6072,24 +6436,50 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "prompt_contract_checked_no_image_generated_2026-06-10",
+      "qc_status": "visual_accepted_for_sc003_layout_needs_native_4k_regenerate_2026-06-11",
       "prompt_completion_status": "sc003_sh001_sh004_prompt_complete_no_image_generated_2026-06-10",
-      "current_canonical_file_status": "not_generated_prompt_only_2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "current_canonical_file_status": "generated_3840x2160_resampled_from_1672x941_source_2026-06-11",
+      "updated_at": "2026-06-11T00:45:00+08:00",
+      "status": "sc003_accepted_needs_native_4k_regenerate_recommended_2026-06-11",
+      "source_thread_id": "019eb240-05be-75c1-8298-04cc8cb83a98",
+      "thread_id": "019eb240-05be-75c1-8298-04cc8cb83a98",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb240-05be-75c1-8298-04cc8cb83a98/ig_006a40f55ef9ec07016a29894bf36c8191a80f136655e7bb1a.png",
+      "history_files": [
+        "01/assets/reference-frames/history/r011e01.imagegen-task-source-20260611.png"
+      ],
+      "image_file_dimensions": {
+        "canonical": "3840x2160",
+        "source": "1672x941",
+        "native_4k_status": "resampled_not_native_4k"
+      },
+      "director_room_review": {
+        "reviewed_at": "2026-06-11T00:45:00+08:00",
+        "review_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+        "visual_status": "accepted",
+        "production_status": "needs_native_4k_regenerate_recommended",
+        "notes": "顾怀章与遮面晏南枝在图桌两侧对峙成立，暖油灯与月白玉片冷反光成立；红线政治边界可在最终生成中再稍强化。",
+        "lighting_note": "顾怀章吃左侧暖侧光；晏南枝只吃玉片窄冷反光，勾指节、面纱边和下颌线。",
+        "negative_lighting_constraints": [
+          "不要华丽揭全脸",
+          "不要美颜柔光",
+          "不要神圣背光",
+          "不要广泛恐怖底光"
+        ]
+      }
     },
     {
       "asset_id": "E01_R012",
@@ -6113,8 +6503,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "prompt_complete_for_generation_dispatch_2026-06-10",
-      "generation_status": "prompt_complete_ready_for_dispatch_2026-06-10",
+      "approval_status": "sc003_needs_prompt_tuning_needs_prompt_tuning_and_native_4k_regenerate_2026-06-11",
+      "generation_status": "generated_candidate_canonical_3840x2160_resampled_from_imagegen_task_source_2026-06-11",
       "design_summary": "SC003-SH003 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -6168,24 +6558,51 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "prompt_contract_checked_no_image_generated_2026-06-10",
+      "qc_status": "needs_prompt_tuning_before_native_4k_regenerate_2026-06-11",
       "prompt_completion_status": "sc003_sh001_sh004_prompt_complete_no_image_generated_2026-06-10",
-      "current_canonical_file_status": "not_generated_prompt_only_2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "current_canonical_file_status": "generated_3840x2160_resampled_from_1672x941_source_2026-06-11",
+      "updated_at": "2026-06-11T00:45:00+08:00",
+      "status": "sc003_needs_prompt_tuning_needs_prompt_tuning_and_native_4k_regenerate_2026-06-11",
+      "source_thread_id": "019eb241-7378-7a41-abdb-bb173c4786e9",
+      "thread_id": "019eb241-7378-7a41-abdb-bb173c4786e9",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb241-7378-7a41-abdb-bb173c4786e9/ig_027eb28db313655f016a2989b0bd908191b2a0ff06c0b83947.png",
+      "history_files": [
+        "01/assets/reference-frames/history/r012e01.imagegen-task-source-20260611.png"
+      ],
+      "image_file_dimensions": {
+        "canonical": "3840x2160",
+        "source": "1672x941",
+        "native_4k_status": "resampled_not_native_4k"
+      },
+      "director_room_review": {
+        "reviewed_at": "2026-06-11T00:45:00+08:00",
+        "review_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+        "visual_status": "needs_prompt_tuning",
+        "production_status": "needs_prompt_tuning_and_native_4k_regenerate",
+        "notes": "半卷血牒、推卷手和未接指尖成立；但空隙偏大，红线未足够清楚成为被推过的边界，玉片高光偏法器星芒，晏南枝衣料有白纱化连续性风险。",
+        "lighting_note": "左侧低位油灯窄侧光掠血牒，突出破损纸纤维、潮痕、旧蜡封和暗红旧印；右后方月白玉片只给指尖一条冷边。",
+        "negative_lighting_constraints": [
+          "不要手指接触血牒",
+          "不要大空隙",
+          "不要玉片魔法星光",
+          "不要血牒圣旨化发光",
+          "不要血腥化"
+        ]
+      }
     },
     {
       "asset_id": "E01_R013",
@@ -6208,8 +6625,8 @@
         "FLF2V",
         "首帧"
       ],
-      "approval_status": "prompt_complete_for_generation_dispatch_2026-06-10",
-      "generation_status": "prompt_complete_ready_for_dispatch_2026-06-10",
+      "approval_status": "sc003_needs_prompt_tuning_needs_prompt_tuning_and_native_4k_regenerate_2026-06-11",
+      "generation_status": "generated_candidate_canonical_3840x2160_resampled_from_imagegen_task_source_2026-06-11",
       "design_summary": "SC003-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -6262,24 +6679,51 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "prompt_contract_checked_no_image_generated_2026-06-10",
+      "qc_status": "needs_prompt_tuning_before_native_4k_regenerate_2026-06-11",
       "prompt_completion_status": "sc003_sh001_sh004_prompt_complete_no_image_generated_2026-06-10",
-      "current_canonical_file_status": "not_generated_prompt_only_2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "current_canonical_file_status": "generated_3840x2160_resampled_from_1672x941_source_2026-06-11",
+      "updated_at": "2026-06-11T00:45:00+08:00",
+      "status": "sc003_needs_prompt_tuning_needs_prompt_tuning_and_native_4k_regenerate_2026-06-11",
+      "source_thread_id": "019eb243-6cd7-7b60-a70c-23188dba5d10",
+      "thread_id": "019eb243-6cd7-7b60-a70c-23188dba5d10",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb243-6cd7-7b60-a70c-23188dba5d10/ig_03989a0717808883016a298a2e817481919515856cc03c6bac.png",
+      "history_files": [
+        "01/assets/reference-frames/history/r013e01.imagegen-task-source-20260611.png"
+      ],
+      "image_file_dimensions": {
+        "canonical": "3840x2160",
+        "source": "1672x941",
+        "native_4k_status": "resampled_not_native_4k"
+      },
+      "director_room_review": {
+        "reviewed_at": "2026-06-11T00:45:00+08:00",
+        "review_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+        "visual_status": "needs_prompt_tuning",
+        "production_status": "needs_prompt_tuning_and_native_4k_regenerate",
+        "notes": "红线北端被雨滴打湿成立；但晏南枝手和玉片抢焦，红线北端未稳定占上三分之一，与终帧封锁线方向的匹配切关系不够强。",
+        "lighting_note": "压暗油灯，只保留低位暖边照红线纤维和水滴边缘；右上月白冷反光勾纸裂与晏南枝虚焦剪影。",
+        "negative_lighting_constraints": [
+          "不要玉片发光抢戏",
+          "不要人物成为主焦",
+          "不要梦幻溶解",
+          "不要皇座幻象",
+          "不要亮灯过曝"
+        ]
+      }
     },
     {
       "asset_id": "E01_R014",
@@ -6302,8 +6746,8 @@
         "FLF2V",
         "终帧"
       ],
-      "approval_status": "prompt_complete_for_generation_dispatch_2026-06-10",
-      "generation_status": "prompt_complete_ready_for_dispatch_2026-06-10",
+      "approval_status": "sc003_accepted_with_lighting_tuning_recommended_needs_native_4k_regenerate_recommended_2026-06-11",
+      "generation_status": "generated_candidate_canonical_3840x2160_resampled_from_imagegen_task_source_2026-06-11",
       "design_summary": "SC003-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -6356,24 +6800,50 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "not_generated_prompt_ready",
-        "existing_file_dimensions": null,
-        "action_required": "generate_4k_scene_or_video_reference_from_completed_prompt"
+        "existing_file_status": "canonical_3840x2160_resampled_from_1672x941_source_2026-06-11",
+        "existing_file_dimensions": "3840x2160 canonical PNG; source imagegen output 1672x941",
+        "action_required": "Use as storyboard/layout candidate only; regenerate native 4K for final I2V/FLF2V unless production explicitly accepts resampled candidate."
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "prompt_contract_checked_no_image_generated_2026-06-10",
+      "qc_status": "visual_accepted_lighting_tuning_recommended_needs_native_4k_regenerate_2026-06-11",
       "prompt_completion_status": "sc003_sh001_sh004_prompt_complete_no_image_generated_2026-06-10",
-      "current_canonical_file_status": "not_generated_prompt_only_2026-06-10",
-      "updated_at": "2026-06-10T22:07:02+08:00"
+      "current_canonical_file_status": "generated_3840x2160_resampled_from_1672x941_source_2026-06-11",
+      "updated_at": "2026-06-11T00:45:00+08:00",
+      "status": "sc003_accepted_with_lighting_tuning_recommended_needs_native_4k_regenerate_recommended_2026-06-11",
+      "source_thread_id": "019eb244-c20f-7093-94f1-614b9dad1c96",
+      "thread_id": "019eb244-c20f-7093-94f1-614b9dad1c96",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb244-c20f-7093-94f1-614b9dad1c96/ig_095ce25855122ebf016a298c3833d4819193f2db7f01014bab.png",
+      "history_files": [
+        "01/assets/reference-frames/history/r014e01.imagegen-task-source-20260611.png"
+      ],
+      "image_file_dimensions": {
+        "canonical": "3840x2160",
+        "source": "1672x941",
+        "native_4k_status": "resampled_not_native_4k"
+      },
+      "director_room_review": {
+        "reviewed_at": "2026-06-11T00:45:00+08:00",
+        "review_agent_id": "019eb264-3676-7743-8be9-5f42711c52ab",
+        "visual_status": "accepted_with_lighting_tuning_recommended",
+        "production_status": "needs_native_4k_regenerate_recommended",
+        "notes": "残阳坳村口封锁线、检查桌、旧井、药屋外圈、后山出口、白蜡旗和村民队列基本可读；需轻微强化环境层级。",
+        "lighting_note": "柔和偏顶侧阴天主光压住人群，白蜡旗和虫蜡冷白只作为封锁线信息光，土褐地面和旧木药屋保留侧向纹理。",
+        "negative_lighting_constraints": [
+          "白蜡旗不要圣光化",
+          "不要过曝成纯白墙",
+          "不要扁平纪录照光",
+          "不要让旗帜遮掉检查桌与旧井地理关系"
+        ]
+      }
     },
     {
       "asset_id": "E01_R015",
@@ -9129,10 +9599,13 @@
   "audit_notes": [
     "Required art-room planning fields were added to every asset.",
     "Creation order follows style references, episode state cards, precision assets, reference frames, then shot overrides.",
-    "Dependencies keep series master asset IDs when parent_asset_id exists and derive shot-frame dependencies from usage overlap."
+    "Dependencies keep series master asset IDs when parent_asset_id exists and derive shot-frame dependencies from usage overlap.",
+    "2026-06-10: SC002 dependency cards and R005-R009 reference frames passed art-room visual QC for SC002 storyboard handoff.",
+    "2026-06-10: E01_C023 old blocked/rejected metadata was superseded by canonical-file visual QC for SC002-only use.",
+    "2026-06-11: SC002 storyboard approval revoked after user visual QC. C016B/C017 identity inheritance and body metrics failed; R005-R009 cannot be used for video."
   ],
   "status": "updated_2026-06-07",
-  "updated_at": "2026-06-10T22:07:02+08:00",
+  "updated_at": "2026-06-11T00:00:00+08:00",
   "sc001_opening_readiness": {
     "status": "reference_frames_generated_candidate_pending_user_qc",
     "checked_at": "2026-06-08",
@@ -9162,5 +9635,42 @@
       "E01_R004"
     ],
     "updated_at": "2026-06-08"
+  },
+  "sc002_storyboard_qc": {
+    "status": "failed_user_visual_qc_identity_inheritance_2026-06-11",
+    "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
+    "reviewed_at": "2026-06-11T00:00:00+08:00",
+    "reviewer": "user visual QC plus art-room coordinator re-audit",
+    "revoked_dependency_assets": [
+      "E01_C016B",
+      "E01_C017"
+    ],
+    "blocked_related_assets": [
+      "E01_C018"
+    ],
+    "rejected_reference_frames": [
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "candidate_dependencies_requiring_recheck": [
+      "E01_C023",
+      "E01_L003",
+      "E01_P003",
+      "E01_P008"
+    ],
+    "hard_requirements": [
+      "白册官吏、混血奴兵、纯虫族小兵必须在体型、服装、职责和动作上一眼可分。",
+      "官吏开册，奴兵扣腕，虫兵封路；不能互换职责。",
+      "C016B 必须锁 190-210cm 基层粮税虫吏，C017 必须锁 170-200cm 混血清污军户，C018 必须锁 200-230cm 纯虫族小兵。"
+    ],
+    "audit_report": "01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md",
+    "video_handoff_status": "blocked_do_not_start_video_from_current_R005_R009"
+  },
+  "sc003_storyboard_qc": {
+    "status": "reference_candidates_generated_with_director_room_review_2026-06-11",
+    "report": "01/art/reports/sc003-storyboard-asset-qc-2026-06-11.md"
   }
 }
