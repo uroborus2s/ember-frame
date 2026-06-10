@@ -1005,6 +1005,88 @@
       "dispatched_at": "2026-06-11",
       "completed_at": "2026-06-11T00:45:00+08:00",
       "report": "01/art/reports/sc003-storyboard-asset-qc-2026-06-11.md"
+    },
+    {
+      "batch_id": "SC003_STORYBOARD_REFERENCE_FRAMES_REDO_2026_06_11",
+      "thread_id": null,
+      "source_generation_id": "019eb25d-e472-7af2-8228-182bf7e2e6c4",
+      "status": "passed_for_sc003_video_candidate_after_redo_2026-06-11",
+      "created_files": [
+        "01/assets/reference-frames/r010e01.png",
+        "01/assets/reference-frames/r011e01.png",
+        "01/assets/reference-frames/r012e01.png",
+        "01/assets/reference-frames/r013e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r010e01.before-redo-20260611.png",
+        "01/assets/reference-frames/history/r011e01.before-redo-20260611.png",
+        "01/assets/reference-frames/history/r012e01.before-redo-20260611.png",
+        "01/assets/reference-frames/history/r013e01.before-redo-20260611.png",
+        "01/assets/reference-frames/history/r010e01.redo-source-20260611.png",
+        "01/assets/reference-frames/history/r011e01.redo-source-20260611.png",
+        "01/assets/reference-frames/history/r012e01.redo-source-20260611.png",
+        "01/assets/reference-frames/history/r013e01.redo-source-20260611.png"
+      ],
+      "source_files": [
+        "/Users/uroborus/.codex/generated_images/019eb25d-e472-7af2-8228-182bf7e2e6c4/ig_01e4aeed7071b80b016a299ff0462c8191bfc98dc4c6bc6149.png",
+        "/Users/uroborus/.codex/generated_images/019eb25d-e472-7af2-8228-182bf7e2e6c4/ig_01e4aeed7071b80b016a29a04f84508191b06867f4e5e918d7.png",
+        "/Users/uroborus/.codex/generated_images/019eb25d-e472-7af2-8228-182bf7e2e6c4/ig_01e4aeed7071b80b016a29a1cdf8c8819193e5ec144402c0e0.png",
+        "/Users/uroborus/.codex/generated_images/019eb25d-e472-7af2-8228-182bf7e2e6c4/ig_01e4aeed7071b80b016a29a231fda88191ae26e9b2dfc54f12.png"
+      ],
+      "scores": [
+        {
+          "asset_id": "E01_R010",
+          "shot_id": "SC003-SH001",
+          "director_requirement_score": 92,
+          "art_quality_score": 91,
+          "status": "passed",
+          "note": "通过：旧驿残图、朱赤红线、低位油灯暖侧光、右上冷雨反光和前中后景层次成立。",
+          "lighting_note": "保留左下低位油灯暖窄侧光、右上冷雨反光和四角负补光；禁止红线发光或全局提亮。",
+          "sha256": "ba736d80f1c40858ddf53f67d3ecddb840f7068db5094942a407816a5aaa0e76"
+        },
+        {
+          "asset_id": "E01_R011",
+          "shot_id": "SC003-SH002",
+          "director_requirement_score": 84,
+          "art_quality_score": 88,
+          "status": "passed",
+          "note": "通过：顾怀章/晏南枝对峙、暖灯/冷雨分区和红线关系成立；视频阶段需压低玉片亮度。",
+          "lighting_note": "保留顾怀章暖侧光和晏南枝窄冷反光，但把玉片压成冷边信息；禁止圣光背光、美颜柔光和华丽揭面。",
+          "sha256": "5366e5c72d6ab0ba38a43097ef9573fd0f754f86095ff1f13a6bbd76138542df"
+        },
+        {
+          "asset_id": "E01_R012",
+          "shot_id": "SC003-SH003",
+          "director_requirement_score": 88,
+          "art_quality_score": 90,
+          "status": "passed",
+          "note": "通过：血牒、红线、指尖停顿和未接触空隙构成清楚动作因果，旧蜡封和潮湿纸面材质成立。",
+          "lighting_note": "让暖光到冷光交界落在红线与未接触空隙处；血牒只吃侧光显材质，不能圣旨化发光。",
+          "sha256": "c4d50ce1a08e0be2364de6acbc7d2c54389c25725ca7baa05730466cece34d20"
+        },
+        {
+          "asset_id": "E01_R013",
+          "shot_id": "SC003-SH004",
+          "director_requirement_score": 86,
+          "art_quality_score": 88,
+          "status": "passed",
+          "note": "通过：仍在南方图桌空间，红线北端、线钉、湿纸和晏南枝侧后方虚焦边缘可读；视频阶段强化水滴和线端。",
+          "lighting_note": "压暗油灯，只保留红线纤维和水滴边缘的低位暖边；右上冷反光给纸裂和晏南枝剪影窄边。",
+          "sha256": "c2280bed1900db28ba23728dae85c497fdc8a61e36328889e31a8c4e010e8aa4"
+        }
+      ],
+      "warnings": [
+        "E01_R011: reduce jade brightness and keep the red cord/Gu hand/Yan veiled reaction as the story center.",
+        "E01_R013: strengthen the raindrop and north-end red-cord position during I2V/FLF2V prompting.",
+        "All four canonical PNG files are resampled from 1672x941 sources; native 4K regeneration remains preferable for final production detail."
+      ],
+      "qc_notes": [
+        "Art Room QC: R010-R013 now satisfy SC003 core shot narrative as four-image video candidates.",
+        "Director Room lighting review: no broad added effect is needed; only narrow, motivated light accents should be preserved or micro-tuned.",
+        "R014 is not counted in this four-image redo because the user identified it as unrelated to the requested SC003 four-image review scope."
+      ],
+      "completed_at": "2026-06-11T01:58:48+08:00",
+      "report": "01/art/reports/sc003-storyboard-redo-qc-2026-06-11.md"
     }
   ],
   "blocked_jobs": [
@@ -1159,9 +1241,12 @@
     "SC002 2026-06-10 handoff approval revoked after user visual QC found identity inheritance and body-metrics failures.",
     "Do not use E01_R005-E01_R009 for video until C016B/C017 and the reference frames are regenerated and re-audited.",
     "SC003 R010-R014 retrieved from child threads and saved to canonical 3840x2160 PNG paths with 1672x941 sources retained in history.",
-    "Director Room reviewed SC003 assets: R010/R011/R014 accepted for layout; R012/R013 require prompt tuning; all should be native-4K regenerated before final video production."
+    "Director Room reviewed SC003 assets: R010/R011/R014 accepted for layout; R012/R013 require prompt tuning; all should be native-4K regenerated before final video production.",
+    "SC003 R010-R013 redone in current thread, written to canonical 3840x2160 PNG RGB/no-alpha paths, and rescored as passed for video candidate use.",
+    "SC003 redo excludes E01_R014 from the four-image score; R014 remains a separate SH004 terminal transition candidate.",
+    "Director-room lighting policy for SC003 redo: preserve warm side light, narrow cool rain/jade bounce, and negative fill; reduce R011 jade prominence and strengthen R013 red-line raindrop."
   ],
-  "updated_at": "2026-06-11T00:00:00+08:00",
+  "updated_at": "2026-06-11T01:58:48+08:00",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -1416,5 +1501,86 @@
       "E01_R014"
     ],
     "report": "01/art/reports/sc003-storyboard-asset-qc-2026-06-11.md"
+  },
+  "sc003_storyboard_redo_qc_2026_06_11": {
+    "status": "passed_for_sc003_video_candidate_after_redo_2026-06-11",
+    "reviewed_at": "2026-06-11T01:58:48+08:00",
+    "scope_note": "Only E01_R010-E01_R013 are included in this four-image redo score; E01_R014 remains an SC003-SH004 terminal transition candidate and is excluded from this score.",
+    "report": "01/art/reports/sc003-storyboard-redo-qc-2026-06-11.md",
+    "canonical_files": [
+      "01/assets/reference-frames/r010e01.png",
+      "01/assets/reference-frames/r011e01.png",
+      "01/assets/reference-frames/r012e01.png",
+      "01/assets/reference-frames/r013e01.png"
+    ],
+    "history_files": [
+      "01/assets/reference-frames/history/r010e01.before-redo-20260611.png",
+      "01/assets/reference-frames/history/r011e01.before-redo-20260611.png",
+      "01/assets/reference-frames/history/r012e01.before-redo-20260611.png",
+      "01/assets/reference-frames/history/r013e01.before-redo-20260611.png",
+      "01/assets/reference-frames/history/r010e01.redo-source-20260611.png",
+      "01/assets/reference-frames/history/r011e01.redo-source-20260611.png",
+      "01/assets/reference-frames/history/r012e01.redo-source-20260611.png",
+      "01/assets/reference-frames/history/r013e01.redo-source-20260611.png"
+    ],
+    "source_generation_id": "019eb25d-e472-7af2-8228-182bf7e2e6c4",
+    "source_dimensions": "1672x941",
+    "canonical_dimensions": "3840x2160",
+    "average_director_score": 87.5,
+    "average_art_score": 89.25,
+    "passed_assets": [
+      "E01_R010",
+      "E01_R011",
+      "E01_R012",
+      "E01_R013"
+    ],
+    "lighting_policy": "Use existing director-room light logic: low warm side light for texture, narrow cool rain/jade bounce for edges, negative fill for humid darkness; no sacred backlight, magic route glow, broad horror bottom light, or Tyndall hiding story information.",
+    "video_stage_notes": [
+      "E01_R011: reduce jade brightness and keep the red cord/Gu hand/Yan veiled reaction as the story center.",
+      "E01_R013: strengthen the raindrop and north-end red-cord position during I2V/FLF2V prompting.",
+      "All four canonical PNG files are resampled from 1672x941 sources; native 4K regeneration remains preferable for final production detail."
+    ],
+    "scores": [
+      {
+        "asset_id": "E01_R010",
+        "shot_id": "SC003-SH001",
+        "director_requirement_score": 92,
+        "art_quality_score": 91,
+        "status": "passed",
+        "note": "通过：旧驿残图、朱赤红线、低位油灯暖侧光、右上冷雨反光和前中后景层次成立。",
+        "lighting_note": "保留左下低位油灯暖窄侧光、右上冷雨反光和四角负补光；禁止红线发光或全局提亮。",
+        "sha256": "ba736d80f1c40858ddf53f67d3ecddb840f7068db5094942a407816a5aaa0e76"
+      },
+      {
+        "asset_id": "E01_R011",
+        "shot_id": "SC003-SH002",
+        "director_requirement_score": 84,
+        "art_quality_score": 88,
+        "status": "passed",
+        "note": "通过：顾怀章/晏南枝对峙、暖灯/冷雨分区和红线关系成立；视频阶段需压低玉片亮度。",
+        "lighting_note": "保留顾怀章暖侧光和晏南枝窄冷反光，但把玉片压成冷边信息；禁止圣光背光、美颜柔光和华丽揭面。",
+        "sha256": "5366e5c72d6ab0ba38a43097ef9573fd0f754f86095ff1f13a6bbd76138542df"
+      },
+      {
+        "asset_id": "E01_R012",
+        "shot_id": "SC003-SH003",
+        "director_requirement_score": 88,
+        "art_quality_score": 90,
+        "status": "passed",
+        "note": "通过：血牒、红线、指尖停顿和未接触空隙构成清楚动作因果，旧蜡封和潮湿纸面材质成立。",
+        "lighting_note": "让暖光到冷光交界落在红线与未接触空隙处；血牒只吃侧光显材质，不能圣旨化发光。",
+        "sha256": "c4d50ce1a08e0be2364de6acbc7d2c54389c25725ca7baa05730466cece34d20"
+      },
+      {
+        "asset_id": "E01_R013",
+        "shot_id": "SC003-SH004",
+        "director_requirement_score": 86,
+        "art_quality_score": 88,
+        "status": "passed",
+        "note": "通过：仍在南方图桌空间，红线北端、线钉、湿纸和晏南枝侧后方虚焦边缘可读；视频阶段强化水滴和线端。",
+        "lighting_note": "压暗油灯，只保留红线纤维和水滴边缘的低位暖边；右上冷反光给纸裂和晏南枝剪影窄边。",
+        "sha256": "c2280bed1900db28ba23728dae85c497fdc8a61e36328889e31a8c4e010e8aa4"
+      }
+    ]
   }
 }
