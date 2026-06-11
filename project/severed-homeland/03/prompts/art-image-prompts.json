@@ -126,7 +126,7 @@
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
-          "target_minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+          "target_minimum_resolution": "4096x2304",
           "existing_file_status": "exists",
           "existing_file_dimensions": "1672x941",
           "existing_file_sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5",
@@ -157,7 +157,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -183,7 +183,7 @@
           "no watermarks, modern UI, random text, or wrong faction symbols"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "3840x2160 preferred; the built-in image generator may return a lower 16:9 size and should be recorded honestly before downstream production scaling.",
+        "minimum_resolution_notes": "4096x2304 required; the built-in image generator may return a lower 16:9 size and should be recorded honestly before downstream production scaling.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"

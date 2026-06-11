@@ -8232,11 +8232,12 @@
   "landscape_delivery_contract": {
     "aspect_ratio": "16:9",
     "minimum_resolution": "3840x2160",
-    "scope": "location/scene cards, video reference frames, shot overrides, and F005 composition board only",
+    "reference_frame_minimum_resolution": "4096x2304",
+    "scope": "location/scene cards, shot overrides, and F005 composition board use minimum_resolution; video reference frames use reference_frame_minimum_resolution",
     "existing_thread_policy": "legacy thread outputs for master references remain usable as reference/QC evidence; only scene/video items require landscape generation before video production use"
   },
   "asset_delivery_contract": {
     "contract_version": "typed-art-asset-output-contract-v2-2026-06-06",
-    "rule": "Do not force character, costume, neutral prop, emblem, or general style master cards into landscape. Force landscape only for location/scene cards, reference frames, shot overrides, and F005 composition board."
+    "rule": "Do not force character, costume, neutral prop, emblem, or general style master cards into landscape. Location/scene cards, shot overrides, and F005 composition board use 16:9 landscape at 3840x2160; reference frames use 16:9 landscape at 4096x2304."
   }
 }

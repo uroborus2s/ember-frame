@@ -39,7 +39,7 @@ The required deliverable is one video-generation reference frame for the I2V sho
 {
   "deliverable_kind": "video_generation_reference_frame",
   "file_format": "png",
-  "minimum_resolution": "3840x2160",
+  "minimum_resolution": "4096x2304",
   "background_policy": "video_frame",
   "alpha_policy": "forbidden",
   "canvas_aspect_ratio": "16:9",
@@ -60,7 +60,7 @@ The required deliverable is one video-generation reference frame for the I2V sho
 
 ## Current Candidate Note
 
-The built-in imagegen candidate is saved at `12/assets/reference-frames/r024e12.png` with actual resolution `1672x941`. It passes the targeted composition/continuity read but remains below the 4K reference-frame contract. Before final ComfyUI/video handoff, regenerate or upscale to `3840x2160` or higher and re-run QC.
+The built-in imagegen candidate is saved at `12/assets/reference-frames/r024e12.png` with actual resolution `1672x941`. It passes the targeted composition/continuity read but remains below the `4096x2304` reference-frame contract. Before final ComfyUI/video handoff, regenerate or upscale to `4096x2304` and re-run QC.
 
 ## Additional Scope: SC002-SH001
 
@@ -98,7 +98,7 @@ Output format for both assets:
 {
   "deliverable_kind": "video_generation_reference_frame",
   "file_format": "png",
-  "minimum_resolution": "3840x2160",
+  "minimum_resolution": "4096x2304",
   "background_policy": "video_frame",
   "alpha_policy": "forbidden",
   "canvas_aspect_ratio": "16:9",

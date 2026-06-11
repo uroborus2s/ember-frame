@@ -23,7 +23,7 @@ Output format:
 {
   "deliverable_kind": "video_generation_reference_frame",
   "file_format": "png",
-  "minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+  "minimum_resolution": "4096x2304",
   "background_policy": "video_frame",
   "alpha_policy": "forbidden",
   "canvas_aspect_ratio": "16:9",

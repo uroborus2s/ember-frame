@@ -16712,7 +16712,8 @@
   "landscape_delivery_contract": {
     "aspect_ratio": "16:9",
     "minimum_resolution": "3840x2160",
-    "scope": "scene/location cards, video reference frames, shot overrides, and F005 composition board only",
+    "reference_frame_minimum_resolution": "4096x2304",
+    "scope": "scene/location cards, shot overrides, and F005 composition board use minimum_resolution; episode reference frames use reference_frame_minimum_resolution",
     "existing_png_policy": "master reference PNGs may remain portrait/square/reference-card assets; only scene/video assets must be regenerated for landscape use",
     "existing_png_counts": {
       "existing_master_reference_below_minimum_needs_non_format_qc": 2,
@@ -16739,6 +16740,7 @@
     "scene_and_video_contract": {
       "canvas_aspect_ratio": "16:9",
       "minimum_resolution": "3840x2160",
+      "reference_frame_minimum_resolution": "4096x2304",
       "required_for": [
         "location_master_scene_card",
         "location_episode_scene_card",

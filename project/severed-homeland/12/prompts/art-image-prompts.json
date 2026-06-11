@@ -112,7 +112,7 @@
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
-          "target_minimum_resolution": "3840x2160",
+          "target_minimum_resolution": "4096x2304",
           "existing_file_status": "exists",
           "existing_file_dimensions": "3840x2160",
           "existing_file_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
@@ -138,7 +138,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -156,7 +156,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "minimum 3840x2160 after canonical export",
+          "required 4096x2304 after canonical export",
           "foreground, midground, and background are visibly separated",
           "alliance fragment remains the primary subject",
           "no transparent or isolated card background",
@@ -272,7 +272,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -290,7 +290,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "minimum 3840x2160 after canonical export",
+          "required 4096x2304 after canonical export",
           "foreground, midground, and background are visibly separated",
           "crimson mineral-salt pouch remains the primary subject",
           "no transparent or isolated card background",
@@ -474,7 +474,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -492,7 +492,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "minimum 3840x2160 after final video handoff upscale/regeneration",
+          "required 4096x2304 after final video handoff upscale/regeneration",
           "foreground, midground, and background are visibly separated",
           "half-height exit remains the primary spatial read",
           "Shen Weisang remains the primary subject",
@@ -504,7 +504,7 @@
       "asset_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
-        "target_minimum_resolution": "3840x2160",
+        "target_minimum_resolution": "4096x2304",
         "existing_file_status": "exists_below_4k_contract",
         "existing_file_dimensions": "1672x941",
         "existing_file_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
@@ -521,7 +521,7 @@
         "final_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
         "notes": [
           "Visual beat is readable: half-height collapsed exit, Shen Weisang low in the center axis, companion escape pressure, distant Bai Yi silhouette.",
-          "Built-in imagegen result is below the 3840x2160 reference-frame contract and needs 4K upscale or regeneration before final video handoff.",
+          "Built-in imagegen result is below the 4096x2304 reference-frame contract and needs upscale or regeneration before final video handoff.",
           "Alliance/blood-record marks are treated as abstract non-readable residue; precision prop/text pass remains required if close-up readability is needed."
         ]
       }
@@ -693,7 +693,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -710,7 +710,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "3840x2160 canonical delivery file",
+          "4096x2304 canonical delivery file",
           "foreground, midground, and background are visibly separated",
           "Lu Qingli, Shen Weisang, Yan Nanzhi, half-height exit, and alliance fragment are readable",
           "no transparent or isolated card background",
@@ -887,7 +887,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -904,7 +904,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "3840x2160 canonical delivery file",
+          "4096x2304 canonical delivery file",
           "same geography as first frame",
           "foreground, midground, and background are visibly separated",
           "Lu Qingli's trapped cloth/tool action and Shen Weisang's movement are readable",

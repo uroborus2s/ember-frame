@@ -31,7 +31,7 @@
 
 ## 技术校验
 
-- `E01_R005`-`E01_R009` 均为 `3840x2160` PNG，无 alpha，满足 16:9 video reference frame 合同。
+- `E01_R005`-`E01_R009` 均为 `3840x2160` PNG、无 alpha；按当前 16:9 video reference frame 合同，最终交付前需重生或升采样到 `4096x2304`。
 - `E01_C016B`, `E01_C017`, `E01_C023`, `E01_L003`, `E01_P003`, `E01_P008` 均为 PNG，无 alpha，满足各自卡片最低尺寸要求。
 - `01/art/asset-index.json`、`01/art/asset-manifest.json`、`01/prompts/art-image-prompts.json` 和 `01/art/thread-results.json` 已写回 SC002 范围内通过状态。
 - 未发现需要重做的 SC002 分镜资产；当前无 blocked image job。

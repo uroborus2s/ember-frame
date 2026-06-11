@@ -22,7 +22,7 @@
 
 ## Warning
 
-The built-in image generator returned `1672x941`, below the preferred `3840x2160` art-room reference-frame target. Treat this as a composition/reference asset or upscale/regenerate before final high-resolution video production.
+The built-in image generator returned `1672x941`, below the `4096x2304` art-room reference-frame target. Treat this as a composition/reference asset or upscale/regenerate before final high-resolution video production.
 
 ## History
 

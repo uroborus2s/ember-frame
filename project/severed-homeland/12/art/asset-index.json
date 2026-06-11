@@ -69,7 +69,7 @@
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
         "file_format": "png",
-        "minimum_resolution": "3840x2160",
+        "minimum_resolution": "4096x2304",
         "background_policy": "video_frame",
         "alpha_policy": "forbidden",
         "canvas_aspect_ratio": "16:9",
@@ -87,7 +87,7 @@
         },
         "qc_checks": [
           "16:9 PNG reference frame",
-          "minimum 3840x2160 after canonical export",
+          "required 4096x2304 after canonical export",
           "foreground, midground, and background are visibly separated",
           "alliance fragment remains the primary subject",
           "no transparent or isolated card background",

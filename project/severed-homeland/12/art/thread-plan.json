@@ -39,7 +39,7 @@
           "output_format": {
             "deliverable_kind": "video_generation_reference_frame",
             "file_format": "png",
-            "minimum_resolution": "3840x2160 UHD minimum; 4096px long-edge target for cinematic reference frames",
+            "minimum_resolution": "4096x2304",
             "background_policy": "video_frame",
             "alpha_policy": "forbidden",
             "canvas_aspect_ratio": "16:9",
@@ -58,7 +58,7 @@
             "qc_checks": [
               "canonical file uses the exact planned short filename and output path",
               "basename without extension is 20 characters or fewer",
-              "16:9 canvas, minimum 3840x2160",
+              "16:9 canvas, required 4096x2304",
               "foreground, midground, and background are visibly separated",
               "alliance fragment remains the primary subject",
               "no transparent or isolated card background",
@@ -112,7 +112,7 @@
           "output_format": {
             "deliverable_kind": "video_generation_reference_frame",
             "file_format": "png",
-            "minimum_resolution": "3840x2160 UHD minimum; 4096px long-edge target for cinematic reference frames",
+            "minimum_resolution": "4096x2304",
             "background_policy": "video_frame",
             "alpha_policy": "forbidden",
             "canvas_aspect_ratio": "16:9",
@@ -130,7 +130,7 @@
             "qc_checks": [
               "canonical file uses the exact planned short filename and output path",
               "basename without extension is 20 characters or fewer",
-              "16:9 canvas, minimum 3840x2160 before final video handoff",
+              "16:9 canvas, required 4096x2304 before final video handoff",
               "foreground, midground, and background are visibly separated",
               "no transparent or isolated card background",
               "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
@@ -185,7 +185,7 @@
           "output_format": {
             "deliverable_kind": "video_generation_reference_frame",
             "file_format": "png",
-            "minimum_resolution": "3840x2160 UHD minimum; 4096px long-edge target for cinematic reference frames",
+            "minimum_resolution": "4096x2304",
             "background_policy": "video_frame",
             "alpha_policy": "forbidden",
             "canvas_aspect_ratio": "16:9",
@@ -203,7 +203,7 @@
             "qc_checks": [
               "canonical file uses the exact planned short filename and output path",
               "basename without extension is 20 characters or fewer",
-              "16:9 canvas, minimum 3840x2160 before final video handoff",
+              "16:9 canvas, required 4096x2304 before final video handoff",
               "foreground, midground, and background are visibly separated",
               "no transparent or isolated card background",
               "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
@@ -260,7 +260,7 @@
           "output_format": {
             "deliverable_kind": "video_generation_reference_frame",
             "file_format": "png",
-            "minimum_resolution": "3840x2160 UHD minimum",
+            "minimum_resolution": "4096x2304",
             "background_policy": "video_frame",
             "alpha_policy": "forbidden",
             "canvas_aspect_ratio": "16:9",
@@ -274,7 +274,7 @@
               "background": "broken tower interior, half-height exit, hanging alliance fragment, Lu Mi and Bai Yi pressure silhouettes, windblown snow"
             },
             "qc_checks": [
-              "3840x2160 canonical delivery file",
+              "4096x2304 canonical delivery file",
               "alpha forbidden",
               "foreground/midground/background separation",
               "wide-scene information budget respected"
@@ -329,7 +329,7 @@
           "output_format": {
             "deliverable_kind": "video_generation_reference_frame",
             "file_format": "png",
-            "minimum_resolution": "3840x2160 UHD minimum",
+            "minimum_resolution": "4096x2304",
             "background_policy": "video_frame",
             "alpha_policy": "forbidden",
             "canvas_aspect_ratio": "16:9",
@@ -343,7 +343,7 @@
               "background": "same half-height exit, alliance fragment, Lu Mi and Bai Yi positions simplified by snow"
             },
             "qc_checks": [
-              "3840x2160 canonical delivery file",
+              "4096x2304 canonical delivery file",
               "alpha forbidden",
               "same geography as first frame",
               "foreground/midground/background separation"

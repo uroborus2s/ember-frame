@@ -55,14 +55,14 @@ Passed:
 
 Cautions:
 
-- Actual file resolution is `1672x941`, below the target `3840x2160` reference-frame contract.
+- Actual file resolution is `1672x941`, below the target `4096x2304` reference-frame contract.
 - The blood-record/alliance fragment area uses abstract generated marks. Treat them as non-final texture only; any close-up or precise symbol/text beat still requires line control, redraw, or post-composite.
 
 ## Contract Status
 
 `generated_candidate_internal_qc_passed_pending_4k_contract`
 
-The image is usable as a composition and continuity candidate for `SC003-SH002`, but final video handoff should regenerate or upscale to `3840x2160` or higher and re-run QC.
+The image is usable as a composition and continuity candidate for `SC003-SH002`, but final video handoff should regenerate or upscale to `4096x2304` and re-run QC.
 
 ## SC002-SH001 Assets
 

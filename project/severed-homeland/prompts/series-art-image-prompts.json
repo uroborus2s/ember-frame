@@ -95,7 +95,7 @@
     },
     "output_format_schema_normalized": true,
     "composition_layers_shape": "object_with_foreground_midground_background",
-    "project_defined_canvas_note": "Global bible-level master cards and boards use project_defined reference-card layout at 2048x2048 px minimum; scene cards, video reference frames, shot overrides, and F005 carry their own 16:9 landscape 3840x2160 contract.",
+    "project_defined_canvas_note": "Global bible-level master cards and boards use project_defined reference-card layout at 2048x2048 px minimum; scene cards, shot overrides, and F005 carry their own 16:9 landscape 3840x2160 contract; video reference frames use a 16:9 landscape 4096x2304 contract.",
     "style_reference_data_required_for_style_assets": true,
     "style_reference_data_fields": [
       "color_palette",
@@ -29985,13 +29985,14 @@
   "landscape_delivery_contract": {
     "aspect_ratio": "16:9",
     "minimum_resolution": "3840x2160",
-    "scope": "scene/location cards, video reference frames, shot overrides, and F005 composition board only",
+    "reference_frame_minimum_resolution": "4096x2304",
+    "scope": "scene/location cards, shot overrides, and F005 composition board use minimum_resolution; video reference frames use reference_frame_minimum_resolution",
     "existing_png_policy": "copy_ready/output_format for master cards no longer forces landscape regeneration; existing master PNGs remain reference inputs unless normal QC fails"
   },
   "asset_delivery_contract": {
     "contract_version": "typed-art-asset-output-contract-v2-2026-06-06",
     "master_reference_policy": "character, costume, prop, emblem, and general style prompts are reference-card prompts; they may use project_defined portrait/square/multi-view layouts and must not be treated as final video frames.",
-    "landscape_policy": "location cards, reference frames, shot overrides, and F005 composition prompts must use 16:9 landscape output.",
+    "landscape_policy": "location cards, shot overrides, and F005 composition prompts must use 16:9 landscape output at 3840x2160; reference frames must use 16:9 landscape output at 4096x2304.",
     "existing_png_counts": {
       "existing_master_reference_below_minimum_needs_non_format_qc": 2,
       "existing_master_reference_available_no_landscape_regeneration_required": 38,

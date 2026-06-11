@@ -17,7 +17,7 @@
 
 QC checks:
 
-- 16:9 landscape video reference-frame contract satisfied at 3840x2160.
+- Current 16:9 landscape video reference-frame contract target is `4096x2304`; the existing 3840x2160 file should be regenerated or upscaled before final handoff.
 - Foreground, midground, and background are visibly separated.
 - 沈维桑 remains the central read, with left-shoulder pressure and the prison-cart threat readable.
 - 沈照眠, the pushed prison cart, mixed slave soldiers, white-register clerk, Bai Yi, village gate, old well, and fireline are present as inherited visual elements.
