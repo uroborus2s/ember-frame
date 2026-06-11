@@ -9,14 +9,14 @@
 - `E01_C016B` -> `01/assets/characters/c016be01.png`，直接复制 `assets/characters/c016m.png`。
 - `E01_C017` -> `01/assets/characters/c017e01.png`，直接复制 `assets/characters/c017m.png`。
 
-这次处理优先满足“脸型、头壳、复眼、颈膜、混血甲片、低位辫发等全局身份不漂移”。两张图仍为候选，等待用户视觉 QC；`R005`-`R009` 仍然阻断，不能直接进入视频制作。
+这次处理优先满足“脸型、头壳、复眼、颈膜、混血甲片、低位辫发等全局身份不漂移”。但 2026-06-11 用户视觉 QC 已继续退回当前候选：角色一致性与身高差仍未达标。两张图不再是“等待确认”，而是必须按同地平线比例条重生；`R005`-`R009` 继续阻断，不能直接进入视频制作。
 
 ## 文件记录
 
 | 资产 | 当前 canonical | 来源 | 当前状态 |
 | --- | --- | --- | --- |
-| `E01_C016B` | `01/assets/characters/c016be01.png` | `assets/characters/c016m.png` | `global_master_rebuild_candidate_pending_user_visual_qc_2026-06-11` |
-| `E01_C017` | `01/assets/characters/c017e01.png` | `assets/characters/c017m.png` | `global_master_rebuild_candidate_pending_user_visual_qc_2026-06-11` |
+| `E01_C016B` | `01/assets/characters/c016be01.png` | `assets/characters/c016m.png` | `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11` |
+| `E01_C017` | `01/assets/characters/c017e01.png` | `assets/characters/c017m.png` | `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11` |
 
 ## 历史保留
 

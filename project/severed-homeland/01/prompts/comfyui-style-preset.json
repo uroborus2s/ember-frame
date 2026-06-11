@@ -55,7 +55,7 @@
       "global_negative_en": "modern clothing, modern warehouse, firearms, sci-fi UI, human-accountant grain tax clerk, mixed clerk and slave-soldier duties, random readable text, random emblems, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, plastic sacks, over-smoothed skin, influencer face, exaggerated crying, gore spectacle, video smearing, glitches, compression blocks, melted fingers.",
       "continuity_rules": [
         "SC002 is one Jinhe grain-depot taxation sequence: clerk opens and reads the register, slave soldiers only enforce grip and cart movement, families remain low at household thresholds.",
-        "Use R005-R009 as video reference frame candidates pending user visual QC; character, location and prop cards are identity/material/control references only.",
+        "R005-R009 failed user visual QC and must not be loaded into ComfyUI; regenerate at 4096x2304 after the same-ground C025/C017/C016/C018/C019 height-scale lock is satisfied.",
         "Video prompts may show speaking state, but exact dialogue remains in script, audio and subtitles.",
         "Every shot must preserve foreground, midground and background layers and a named lighting type/direction."
       ],
@@ -81,8 +81,8 @@
           "lighting_role_en": "Low morning backlight cuts cart silhouettes and air, side light grazes mud water, ruts, tablet box and sacks, and woman and child receive only soft light."
         }
       ],
-      "config_status": "needs_config",
-      "reference_frame_status": "R005-R009 generated candidates pending user visual QC",
+      "config_status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "reference_frame_status": "R005-R009 failed user visual QC; regenerate at 4096x2304 after identity-height relock",
       "config_placeholders": [
         "PLACEHOLDER_VIDEO_CHECKPOINT",
         "PLACEHOLDER_IMAGE_CHECKPOINT",
@@ -140,5 +140,24 @@
         "PLACEHOLDER_COMFYUI_WORKFLOW_TEMPLATE"
       ]
     }
-  ]
+  ],
+  "updated_at": "2026-06-11T18:45:00+08:00",
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "effective_from": "2026-06-11T18:45:00+08:00",
+    "blocked_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C018",
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "required_scale_ladder": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline.",
+    "next_action": "Regenerate C016B/C017/C018 state cards with same-ground scale lineup, then regenerate R005-R009 at 4096x2304 before any ComfyUI/video handoff.",
+    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md"
+  }
 }

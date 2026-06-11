@@ -91,15 +91,16 @@
           "operator_note": "ComfyUI cannot read image file names from prompt text. These three references must be loaded through image nodes and connected to the configured reference/IPAdapter branch."
         },
         "camera_direction_lock": {
-          "path": "attacker-side diagonal lift along the same exterior wall face",
-          "landing": "exterior-edge wall top beside the same bone bell and parapet",
-          "view_direction": "still looking toward the same exterior siege side through merlons or along the exterior wall line",
+          "path": "attacker-side centered exterior low push toward the same blackstone gate",
+          "landing": "closer exterior gate-impact endpoint at the same gate, with gatehouse bell sound only and no required visible bell",
+          "view_direction": "still looking from the exterior siege side toward the same wall and gate, preserving centered epic pressure and real depth",
           "forbidden": [
             "crossing over the wall crown to view the city or rear side",
             "turning the wall into a horizontal barrier attacked from both sides",
             "showing beast attackers inside the wall",
             "making rear-wall thickness the main view",
-            "180-degree turn"
+            "180-degree turn",
+            "forcing a visible bell or bell frame into SH001 as a hard requirement"
           ]
         },
         "motion_bucket": "PLACEHOLDER_LOW_MEDIUM_MOTION",
@@ -110,7 +111,8 @@
           "duration_seconds": 8,
           "denoise": 0.45,
           "cfg_range_note": "Start around 4.5; keep first/last-frame continuity stronger than action extrapolation.",
-          "status": "needs_config_pending_user_visual_qc"
+          "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+          "c018_reference_rule": "Use C018 at low support weight for armed route-blocking perimeter only; first/last frames remain strongest."
         }
       },
       "config_status": "needs_config",
@@ -121,14 +123,18 @@
         "last_frame r009e01.png",
         "style references f001e01/f005e01",
         "optional slave-soldier and prop references c017e01/p008e01 below first/last-frame strength",
-        "output_path"
+        "output_path",
+        "SC002-SH004 pure insect armed perimeter reference c018e01 below first/last-frame strength"
       ],
       "sc002_node_binding_hints": [
         "SC002-SH004 r008e01.png -> PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
         "SC002-SH004 r009e01.png -> PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
         "Use the same rear-threshold composition across first and last frame; cart leaves laterally and the camera does not chase.",
-        "c017e01/p008e01 references are supporting identity/material inputs only, lower than first/last frames."
-      ]
+        "c017e01/p008e01 references are supporting identity/material inputs only, lower than first/last frames.",
+        "SC002-SH004 c018e01 -> PLACEHOLDER_CHARACTER_REFERENCE_NODE -> PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH, low weight 0.28, preserve armed route-blocking silhouettes without overriding r008/r009"
+      ],
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff"
     },
     {
       "workflow_family": "i2v_reference",
@@ -187,7 +193,8 @@
           },
           "denoise_range": "0.38-0.42",
           "cfg_range_note": "Start around 5.0; lower if I2V frame adherence or skin/hand stability degrades.",
-          "status": "needs_config_pending_user_visual_qc"
+          "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+          "c018_reference_rule": "Use C018 at low support weight for armed perimeter guards only. Primary I2V frame remains the strongest control."
         }
       },
       "config_status": "needs_config",
@@ -199,7 +206,8 @@
         "optional character references c016be01/c017e01/c023e01 as identity/material references only",
         "optional location reference l003e01",
         "optional prop references p003e01/p008e01",
-        "output_path"
+        "output_path",
+        "optional pure insect armed perimeter reference c018e01 as body-scale/weapon-role reference only"
       ],
       "sc002_node_binding_hints": [
         "SC002-SH001 r005e01.png -> PLACEHOLDER_I2V_IMAGE_NODE",
@@ -207,8 +215,11 @@
         "SC002-SH003 r007e01.png -> PLACEHOLDER_I2V_IMAGE_NODE",
         "c016be01/c017e01/c023e01 -> PLACEHOLDER_CHARACTER_REFERENCE_NODE -> PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH, lower than I2V first frame",
         "l003e01 -> PLACEHOLDER_LOCATION_REFERENCE_NODE, material/geography only",
-        "p003e01/p008e01 -> PLACEHOLDER_PROP_REFERENCE_NODE, line-control/material only; no readable text generation"
-      ]
+        "p003e01/p008e01 -> PLACEHOLDER_PROP_REFERENCE_NODE, line-control/material only; no readable text generation",
+        "c018e01 -> PLACEHOLDER_CHARACTER_REFERENCE_NODE -> PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH, low weight 0.28, only for pure insect armed route-blocking scale; never for wrist grip or register work"
+      ],
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff"
     }
   ],
   "shots": [
@@ -292,14 +303,14 @@
         "fps": 24,
         "duration": "3.5s",
         "denoise": 0.45,
-        "motion": "controlled exterior front-biased low push toward the same gate, slight tilt-up, first gate impact and bone-bell shock; no 90-degree turn, no rear/opposite-side reveal, no both-side attack reading, no wall pass-through, no 180-degree turn"
+        "motion": "controlled centered exterior low push toward the same gate, slight tilt-up, stronger first gate impact and gatehouse bell sound; visible bell body or bell frame is not required; no 90-degree turn, no rear/opposite-side reveal, no both-side attack reading, no wall pass-through, no 180-degree turn"
       },
-      "reference_frame_status": "R001/R002 prompt plan now uses exterior gate pressure and first gate-impact bell shock; regenerate frames if existing images still imply wall-top turn or rear-side reveal.",
-      "status": "needs_config",
+      "reference_frame_status": "R001 current centered exterior epic style is approved as texture standard; R002 needs closer gate and stronger first-impact edit. Gatehouse bell is audio-only for SH001, so visible bell or bell frame is not required in R001/R002.",
+      "status": "needs_config_and_r002_closer_gate_impact_edit",
       "production_metadata": {
         "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
         "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
-        "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
+        "reference_frame_status": "R001 canonical remains the centered exterior epic texture standard. R002 must be edited or regenerated closer to the gate with stronger impact while preserving current realism; SH001 bell is gatehouse audio only."
       }
     },
     {
@@ -849,5 +860,44 @@
     "PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
     "PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
     "PLACEHOLDER_STYLE_REFERENCE_NODE"
-  ]
+  ],
+  "updated_at": "2026-06-11T18:45:00+08:00",
+  "sc002_same_ground_height_scale_handoff_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "required_asset": "01/assets/characters/c018e01.png",
+    "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "effective_from": "2026-06-11T18:45:00+08:00",
+    "blocked_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C018",
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "required_scale_ladder": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline.",
+    "next_action": "Regenerate C016B/C017/C018 state cards with same-ground scale lineup, then regenerate R005-R009 at 4096x2304 before any ComfyUI/video handoff.",
+    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md"
+  },
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "effective_from": "2026-06-11T18:45:00+08:00",
+    "blocked_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C018",
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "required_scale_ladder": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline.",
+    "next_action": "Regenerate C016B/C017/C018 state cards with same-ground scale lineup, then regenerate R005-R009 at 4096x2304 before any ComfyUI/video handoff.",
+    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md"
+  }
 }

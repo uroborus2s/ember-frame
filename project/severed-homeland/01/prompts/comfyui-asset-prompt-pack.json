@@ -247,9 +247,9 @@
       "asset_id": "E01_R001",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r001e01.png",
-      "status": "needs_recheck",
-      "prompt_hint_zh": "SC001-SH001 首帧：墙外攻城方向低机位正向偏斜，七成正向读城门压力、三成斜向给纵深；兽族/伴生兽、攻城车或破门猛犸压向同一面黑石城门，远处墙头小钟只是锚点。",
-      "prompt_hint_en": "SC001-SH001 first frame: low front-biased exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth; beast troops/companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate, with the tiny wall-top bell only as an anchor.",
+      "status": "current_style_approved_texture_standard",
+      "prompt_hint_zh": "SC001-SH001 首帧：城外攻城方向低机位正中对称史诗建立镜头；兽族/伴生兽、攻城车或破门猛犸压向同一面黑石城门。骨钟在门楼内，只作为钟声存在，不要求画面露钟。",
+      "prompt_hint_en": "SC001-SH001 first frame: low exterior centered symmetrical epic establishing siege shot; beast troops/companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. The bone bell is inside the gatehouse as sound only, with no on-screen bell required.",
       "comfyui_role": "first_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -260,15 +260,17 @@
           "first frame"
         ],
         "composition_layers": {
-          "foreground": "front-biased low beast siege shoulders, torn banners, old iron shields, siege-cart beams, snow-mud footsteps and partial beast horn or mammoth form",
-          "midground": "same blackstone wall and gate with frontal pressure and slight oblique depth",
-          "background": "small wall-top bone bell and defender silhouettes, mountains, snow haze and distant firelines"
+          "foreground": "low exterior siege pressure, beast shoulders, torn banners, old iron shields, siege-cart beams, snow-mud footsteps and partial beast horn or mammoth form",
+          "midground": "same blackstone wall and gate with centered frontal epic pressure and real depth",
+          "background": "gatehouse mass, defender silhouettes, mountains, snow haze and distant firelines; bell sound source remains inside the gatehouse and does not need visible bell body"
         },
         "minimum_resolution": "4096x2304",
         "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
         "qc_checks": [
           "4K reference-image precision: required 4096x2304 16:9 cinematic plate, with no preview-resolution downsampling",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "SC001-SH001 first shot: one wall, one gate, same exterior attack direction; centered symmetrical epic composition is allowed.",
+          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent."
         ]
       },
       "usage": [
@@ -279,7 +281,12 @@
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
-        "RULE_SIEGE_LOCAL_CAUSALITY"
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
+        "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "texture_standard_ref": "self",
       "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard."
@@ -288,9 +295,9 @@
       "asset_id": "E01_R002",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r002e01.png",
-      "status": "ready",
-      "prompt_hint_zh": "SC001-SH001 终帧：同一墙外方向的第一次重撞城门；攻城车木梁或铁包巨角撞门，雪雾亮部、门闩震动、同一墙头骨钟横摆，禁止越墙到背面。",
-      "prompt_hint_en": "SC001-SH001 last frame: first heavy gate impact from the same exterior direction; siege-cart beam or iron-wrapped horn hits the gate, snow-haze highlight, gate-bar shock and the same wall-top bone bell swinging, with no crossing behind the wall.",
+      "status": "closer_gate_impact_candidate_generated_pending_user_qc",
+      "prompt_hint_zh": "SC001-SH001 终帧：同一墙外方向、正中中轴压力下更近靠近城门；攻城车木梁或铁包巨角第一次重撞城门，雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光更浓烈。骨钟在门楼内，只需要钟声，不要求画面露钟。",
+      "prompt_hint_en": "SC001-SH001 last frame: same exterior direction and centered-axis pressure, closer to the gate; a siege-cart beam or iron-wrapped horn makes the first heavy gate impact, with stronger snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection. The bone bell is inside the gatehouse as sound only, with no on-screen bell required.",
       "comfyui_role": "last_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -301,15 +308,17 @@
           "last frame"
         ],
         "composition_layers": {
-          "foreground": "gate-impact snow blast, siege-cart beam or iron-wrapped horn, old timber, blackstone edge and low fire rim",
-          "midground": "same blackstone gate, shaken bars, wall face and impact debris",
-          "background": "same wall-top bell frame and bone bell swinging above or upper-side, small defender silhouettes and blizzard"
+          "foreground": "closer gate-impact snow blast, siege-cart beam or iron-wrapped horn, old timber, ice splinters, blackstone edge and low fire rim",
+          "midground": "same blackstone gate, shaken bars, wall face and dense impact debris",
+          "background": "gatehouse mass, small defender silhouettes, blizzard and distant firelines; bell sound source remains offscreen/inside gatehouse, with no visible bell frame required"
         },
         "minimum_resolution": "4096x2304",
         "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
         "qc_checks": [
           "4K reference-image precision: required 4096x2304 16:9 cinematic plate, with no preview-resolution downsampling",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "SC001-SH001 first shot: one wall, one gate, same exterior attack direction; centered symmetrical epic composition is allowed.",
+          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent."
         ]
       },
       "usage": [
@@ -320,10 +329,19 @@
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "PROP_BONE_BELL",
-        "RULE_SIEGE_LOCAL_CAUSALITY"
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
+        "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
+        "C020",
+        "C021",
+        "E01_C020"
       ],
       "texture_standard_ref": "E01_R001",
-      "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard."
+      "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
+      "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
+      "candidate_file_resolution": "4096x2304",
+      "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e",
+      "candidate_status": "generated_pending_user_visual_qc_not_canonical"
     },
     {
       "asset_id": "E01_R003",
@@ -752,7 +770,69 @@
         "PROP_WHITE_WAX_FLAGS",
         "OPTIONAL_TRANSITION_TARGET"
       ]
+    },
+    {
+      "asset_id": "E01_C016B",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c016be01.png",
+      "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_hint_zh": "粮税小吏身份锁：全局 C016 母卡直继承，骨白面壳、暗色复眼、细触须、白蜡高账吏帽；只开册/点税，不持兵器、不扣腕。",
+      "prompt_hint_en": "Grain-tax clerk identity lock: exact global C016 inheritance with bone-white face shell, dark compound eyes, thin feelers and wax-white accountant hat; opens/registers tax only, never armed, never gripping wrists.",
+      "comfyui_role": "character_identity_reference"
+    },
+    {
+      "asset_id": "E01_C017",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c017e01.png",
+      "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_hint_zh": "混血奴兵动作锁：170-200cm 人形骨架，五指人手、硬化甲片、骨白腕绑，低后背只有一根极细金钱尾辫；只扣腕/牵绳/搬粮，不开册，不变纯虫族爪。",
+      "prompt_hint_en": "Mixed slave-soldier action lock: 170-200cm human upright skeleton, five-finger human hand, hardened chitin plates, bone-white wrist binding and one very thin low money-tail braid; grips/ropes/moves grain only, never opening registers or becoming pure insect claws.",
+      "comfyui_role": "character_identity_and_hand_reference"
+    },
+    {
+      "asset_id": "E01_C018",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c018e01.png",
+      "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_hint_zh": "纯虫族小兵封路锁：200-230cm 非人虫身、反关节腿、爪足、短矛/钩镰；只持械封路警戒，不开册、不扣腕、不搬粮。",
+      "prompt_hint_en": "Pure insect infantry route-blocking lock: 200-230cm nonhuman insect body, reverse-jointed legs, claw feet, short spear or hook-sickle; armed perimeter only, never register work, wrist grip or grain handling.",
+      "comfyui_role": "character_scale_weapon_perimeter_reference"
     }
   ],
-  "asset_metadata_warning": "E01_R001-E01_R004 are generated 4K same-space SC001 candidate reference images and are synchronized with 01/art/asset-index.json and asset-manifest.json as generated_candidate_pending_user_qc. E01_R010-E01_R013 are high-score approved SC003 primary I2V reference frames for the current motion-test pass. E01_R014 is only an optional Canyangao blockade match target for later edit or approved FLF2V tail testing, not part of the current SC003 room I2V pass."
+  "asset_metadata_warning": "E01_R001 keeps the approved centered exterior epic siege style and is the texture standard. E01_R002 now has a closer gate-impact candidate at 01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png pending user visual QC; canonical r002e01.png has not been replaced. SC001-SH001 uses gatehouse bell sound only, with no visible bell or bell frame required in R001/R002. E01_R003 still needs regeneration for the new half-collapsed wall-side soldier frame, and E01_R010-E01_R013 remain high-score approved SC003 primary I2V reference frames.",
+  "updated_at": "2026-06-11T17:41:57+08:00",
+  "sc002_same_ground_height_scale_handoff_2026_06_11": {
+    "status": "blocked_user_visual_qc_failed_identity_height_scale_relock_required",
+    "role_lock": "C016B official inherits global insect face/white hat and opens register; C017 slave soldier grips/moves grain with five fingers and one thin low money-tail braid; C018 pure insect infantry towers over humans on the same ground and blocks routes with weapons."
+  },
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "frame_use_rule": "Do not use current SC002 R005-R009 candidates for video production; regenerate at 4096x2304 after identity and same-ground height-scale relock.",
+    "prompt_lock": "2026-06-11 用户视觉 QC 退回后的重生硬锁：SC002 参考帧必须先让角色身份和身高差一眼成立。使用同一泥地/同一车道地平线：C025 村民为普通人族低位基准，C017 奴兵为 175-185cm 代表体量且保留五指硬化人手与低位金钱尾辫，C016B 粮税虫吏为 195-205cm 画面代表值并只开册下令，C018 纯虫族小兵为 215-230cm 站立等效并只持短矛/钩镰封路。所有脚底、靴底、爪足或地面接触点必须落在同一可读泥地平面；如果角色低伏或弯腰，仍必须通过肩高、头壳、兵器、门框或旁站基准证明其真实等效身高。",
+    "negative_lock": "不要继续使用 2026-06-11 被用户退回的 SC002 候选帧作为通过参考；不要让官吏、奴兵、纯虫族小兵和普通人族同身高；不要让 C016B 站桌子、检查台、粮袋、台阶或车板造高；不要让 C017 变纯虫族爪手或普通人族士兵；不要让 C018 缺兵器、搬粮、扣腕或开册；不要用透视、裁切、前景放大、低伏遮挡来掩盖身高差。",
+    "scale_consistency_lock": {
+      "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+      "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+      "required_scale_ladder": [
+        "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+        "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+        "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+        "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+        "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+      ],
+      "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+      "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+      "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+      "rejection_rules": [
+        "reject if C016, C017, C018 and C025 read as the same height class",
+        "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+        "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+        "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+        "reject if C019 does not read broader/heavier than C018 when present",
+        "reject if C025 civilians gain insect traits or military gear",
+        "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+      ]
+    }
+  }
 }

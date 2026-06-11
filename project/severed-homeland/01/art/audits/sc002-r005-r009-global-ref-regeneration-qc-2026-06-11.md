@@ -2,7 +2,7 @@
 
 日期：2026-06-11
 
-结论：C016B/C017 已先从全局主卡直接重建，R005-R009 已基于可见硬参考重新生成并覆盖 canonical。当前状态是美术部候选通过，等待用户视觉 QC；在用户确认前不建议直接进视频制作。
+结论已被用户视觉 QC 退回：C016B/C017 直接继承全局主卡与 R005-R009 可见硬参考仍未满足角色一致性和身高差设定。当前状态为 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`，不得进入视频制作。有效退回审计见 `01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md`。
 
 | Asset | Shot | 用途 | 导演要求 | 美术合格度 | 格式 | SHA256 |
 | --- | --- | --- | ---: | ---: | --- | --- |

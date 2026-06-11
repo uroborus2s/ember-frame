@@ -20,7 +20,7 @@
         "SC001-SH002",
         "SC001-SH003"
       ],
-      "dependency": "needs border wall, bone bell, Xue Linqiang and localized siege reference frames"
+      "dependency": "needs border wall, same exterior gate direction, gatehouse bell sound, Xue Linqiang and localized siege reference frames"
     },
     {
       "group_id": "G02_jinhe_levy",
@@ -96,9 +96,11 @@
       "first_frame_ref": "01/assets/reference-frames/r001e01.png",
       "last_frame_ref": "01/assets/reference-frames/r002e01.png",
       "audio_refs": [
-        "voiceover:肃明一千两百二十六年，北方大雪。"
+        "voiceover:肃明一千两百二十六年，北方大雪。",
+        "sfx:low_gate_impact",
+        "sfx:gatehouse_bone_bell_offscreen"
       ],
-      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一城门、同一钟架方向和同一口骨钟，以墙外低机位前推、第一次撞门震钟作为转场；不再要求到墙头转向。",
+      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一城门和同一墙外朝向；保留当前正中对称史诗攻城建立风格，以墙外低机位前推、R002 更近靠近城门的第一次重撞和门楼内骨钟声作为转场。第一镜不强制画面出现骨钟或钟架，不再要求到墙头转向。",
       "required_assets": [
         "E01_L007",
         "E01_P021",
@@ -110,16 +112,17 @@
       ],
       "continuity_locks": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
-        "PROP_BONE_BELL",
         "RULE_SIEGE_LOCAL_CAUSALITY",
-        "ONE_WALL_ONE_BELL_FRAME",
+        "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
+        "GATEHOUSE_BELL_AUDIO_ONLY_LOCK",
         "C020_C021_E01_C020_BEAST_ALLIANCE_LOCK"
       ],
       "risks": [
         "needs_config",
         "wide_battlefield_layering",
         "high_motion",
-        "direction_continuity"
+        "direction_continuity",
+        "r002_needs_closer_stronger_gate_impact"
       ]
     },
     {
@@ -215,13 +218,14 @@
       "risks": [
         "needs_config",
         "crowd_layering",
-        "pending_user_visual_qc"
+        "blocked_user_visual_qc_failed_identity_height_scale",
+        "user_visual_qc_failed_identity_height_scale_2026-06-11"
       ],
-      "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-      "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+      "reference_frame_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
       "composition_lock": {
-        "zh": "横屏远景按上下层级构图：粮袋墙占上半画面并压低天空，粮税小吏站在检查台高位偏中，白册夹板、骨算盘和粮牌形成亮色制度中心；村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。",
-        "en": "Landscape wide composition built on vertical hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands high near center on the inspection platform, and the white register board, bone abacus and grain tags form the bright bureaucratic center; villagers are compressed into a low band, while the cart lane recedes from front-right to rear-left for depot depth."
+        "zh": "横屏远景按同一泥地上的真实身高差构图：粮袋墙占上半画面并压低天空，粮税小吏站在车道泥地偏中位置，凭 190-210cm 虫族身高压过村民，白册夹板、骨算盘和粮牌形成亮色制度中心；纯虫族小兵 200-230cm 持械封住车道边缘，村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。",
+        "en": "Landscape wide composition built on true same-ground height hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands near center on the same muddy cart lane and towers over villagers through his 190-210 cm insect-official body, while the white register board, bone abacus and grain tags form the bright bureaucratic center; 200-230 cm pure insect infantry hold weapons at the lane edges, villagers are compressed into a low band, and the cart lane recedes from front-right to rear-left for depot depth."
       },
       "camera_lock": {
         "zh": "从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。",
@@ -230,6 +234,31 @@
       "lighting_plan": {
         "zh": "柔和清晨冷雾作主环境光，低角度逆光穿过粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦过麻布、湿木和河泥纹理；虫蜡白只作为白册和粮牌的小亮点。少量丁达尔光用于粮尘纵深，不能做成特效光柱。",
         "en": "Soft morning cold haze acts as the ambient key. Low-angle backlight passes through grain dust to rim the sack wall, clerk hat and register board, while a narrow side light grazes burlap, wet wood and river-mud texture; insect-wax white stays as small highlights on the register and grain tags. Subtle Tyndall light may deepen grain-dust space, never becoming VFX beams."
+      },
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "identity_height_scale_lock_2026_06_11": {
+        "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+        "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+        "required_scale_ladder": [
+          "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+          "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+          "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+          "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+          "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+        ],
+        "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+        "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+        "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+        "rejection_rules": [
+          "reject if C016, C017, C018 and C025 read as the same height class",
+          "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+          "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+          "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+          "reject if C019 does not read broader/heavier than C018 when present",
+          "reject if C025 civilians gain insect traits or military gear",
+          "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+        ]
       }
     },
     {
@@ -258,10 +287,11 @@
       "risks": [
         "needs_config",
         "child_sensitivity",
-        "pending_user_visual_qc"
+        "blocked_user_visual_qc_failed_identity_height_scale",
+        "user_visual_qc_failed_identity_height_scale_2026-06-11"
       ],
-      "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-      "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+      "reference_frame_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
       "composition_lock": {
         "zh": "门槛压迫特写组用斜线构图：前景是倒出的半斗杂粮、湿泥和祖牌小盒，画面一侧切入奴兵骨白腕绑和扣腕手，孩子手印落在虫蜡封条上；老人和孩子只给局部姿态，不做猎奇正脸。背景保留粮袋墙和低位人群的模糊压力。",
         "en": "The coercive threshold close-up uses diagonal pressure: foreground holds spilled half-measure grain, wet mud and the ancestral tablet box; one side of frame cuts in the slave soldier bone-white wrist binding and gripping hand, with the child handprint on the insect-wax seal. Elder and child are shown as partial body language, not exploitative front faces. Background keeps a blurred pressure of grain sacks and low crowd."
@@ -273,6 +303,31 @@
       "lighting_plan": {
         "zh": "门外清晨柔光托住人物安全感，窄侧光从门槛斜切，强化湿泥、木缸、粗布、祖牌盒和奴兵腕绑纹理；虫蜡封条上有小面积冷白顶光，制造制度压迫，但避开孩子眼窝。底光只允许作为泥水反光的极弱火场感，不大面积使用。",
         "en": "Soft morning light from outside preserves restraint around the people, while a narrow side light cuts across the threshold to strengthen wet mud, wooden jar, coarse cloth, tablet box and slave-soldier wrist-binding textures. A small cold-white top light sits on the insect-wax seal to create bureaucratic oppression without darkening the child eye sockets. Bottom light is only a faint mud-water reflection, never broad."
+      },
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "identity_height_scale_lock_2026_06_11": {
+        "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+        "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+        "required_scale_ladder": [
+          "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+          "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+          "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+          "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+          "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+        ],
+        "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+        "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+        "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+        "rejection_rules": [
+          "reject if C016, C017, C018 and C025 read as the same height class",
+          "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+          "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+          "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+          "reject if C019 does not read broader/heavier than C018 when present",
+          "reject if C025 civilians gain insect traits or military gear",
+          "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+        ]
       }
     },
     {
@@ -311,10 +366,11 @@
       "risks": [
         "needs_config",
         "dialogue_sync",
-        "pending_user_visual_qc"
+        "blocked_user_visual_qc_failed_identity_height_scale",
+        "user_visual_qc_failed_identity_height_scale_2026-06-11"
       ],
-      "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-      "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+      "reference_frame_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
       "composition_lock": {
         "zh": "检查桌中景按“前景证据、中景执行、背景压力”三层构图：前景高细节是白册册页、节状手指、粮牌、虫蜡封条、骨算盘和湿木桌沿；中景是粮税小吏高帽、被扣妇人、奴兵扣腕和粮袋侧面；背景只保留粮袋墙、检查口、低位村民和清晨冷雾。",
         "en": "The medium inspection-table shot uses three layers: foreground evidence, midground enforcement, background pressure. Foreground high detail holds register pages, segmented fingers, grain tag, insect-wax seal, bone abacus and wet-wood table edge; midground holds the clerk tall hat, pinned woman, slave-soldier grip and grain sack side; background keeps only grain-sack wall, inspection opening, low villagers and morning cold haze."
@@ -326,6 +382,31 @@
       "lighting_plan": {
         "zh": "虫蜡白顶光压在白册和小吏脸壳上，形成冷酷制度感，并故意让小吏眼窝更暗；但用窄侧光擦亮节状手指、妇人手腕、旧木桌纹、粮袋麻布和奴兵皮甲，保证皮肤/甲片/石木纹理可读。小槌落点可用小面积硬光，逆光只给高帽、肩线和冷雾轮廓，避免圣光化。",
         "en": "Cold insect-wax top light presses onto the register and clerk face shell, creating a cruel bureaucratic feeling and deliberately darkening the clerk eye sockets; a narrow side light still grazes segmented fingers, the woman wrist, old table grain, burlap sack and slave-soldier leather armor so skin, armor and wood textures remain readable. The seal-hammer landing point may take a small hard highlight; backlight only rims hat, shoulders and cold haze, never becoming sacred."
+      },
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "identity_height_scale_lock_2026_06_11": {
+        "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+        "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+        "required_scale_ladder": [
+          "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+          "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+          "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+          "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+          "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+        ],
+        "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+        "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+        "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+        "rejection_rules": [
+          "reject if C016, C017, C018 and C025 read as the same height class",
+          "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+          "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+          "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+          "reject if C019 does not read broader/heavier than C018 when present",
+          "reject if C025 civilians gain insect traits or military gear",
+          "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+        ]
       }
     },
     {
@@ -353,10 +434,11 @@
       "risks": [
         "needs_config",
         "emotion_overstatement",
-        "pending_user_visual_qc"
+        "blocked_user_visual_qc_failed_identity_height_scale",
+        "user_visual_qc_failed_identity_height_scale_2026-06-11"
       ],
-      "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-      "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+      "reference_frame_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
       "composition_lock": {
         "zh": "FLF2V 首帧到终帧使用同一门槛后方三分构图：首帧前景是祖牌小盒、虫蜡冷白手印和泥水，粮袋正被拖上车；中景妇人与孩子低在门槛，奴兵和车轮横向离开；终帧车已退到远处冷雾里，前景仍是空门槛、祖牌盒和车辙，家门还在但家粮不在。",
         "en": "The FLF2V first-to-last frames use the same rear-threshold thirds composition: first frame foreground holds tablet box, cold-white wax handprint and mud water as grain sacks are dragged onto the cart; midground keeps woman and child low at the threshold while slave soldiers and cart wheels exit laterally. By the last frame the cart recedes into cold haze, foreground remains empty threshold, tablet box and wheel ruts: the doorway stands but household grain is gone."
@@ -368,6 +450,31 @@
       "lighting_plan": {
         "zh": "清晨低角逆光从押车离开的方向打出粮袋、车轮、奴兵肩线和冷雾轮廓，增加电影感和空气感；侧光掠过泥水、车辙、祖牌盒和麻袋，强化触感。妇人和孩子只吃柔和天光，不用硬光审判；虫蜡手印保持小面积冷白亮点。丁达尔光只沿车道给纵深，不能盖住家门。",
         "en": "Low morning backlight from the cart-exit direction rims sacks, wheels, slave-soldier shoulders and cold haze for cinema and air; side light skims mud water, wheel ruts, tablet box and burlap for tactile texture. Woman and child receive only soft sky light, not hard judgmental light; the insect-wax handprint stays a small cold-white highlight. Tyndall light only follows the cart lane for depth and must not cover the doorway."
+      },
+      "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "identity_height_scale_lock_2026_06_11": {
+        "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+        "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+        "required_scale_ladder": [
+          "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+          "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+          "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+          "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+          "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+        ],
+        "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+        "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+        "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+        "rejection_rules": [
+          "reject if C016, C017, C018 and C025 read as the same height class",
+          "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+          "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+          "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+          "reject if C019 does not read broader/heavier than C018 when present",
+          "reject if C025 civilians gain insect traits or military gear",
+          "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+        ]
       }
     },
     {
@@ -1297,5 +1404,35 @@
         "hand_detail"
       ]
     }
-  ]
+  ],
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "frame_use_rule": "Do not use current SC002 R005-R009 candidates for video production; regenerate at 4096x2304 after identity and same-ground height-scale relock.",
+    "prompt_lock": "2026-06-11 用户视觉 QC 退回后的重生硬锁：SC002 参考帧必须先让角色身份和身高差一眼成立。使用同一泥地/同一车道地平线：C025 村民为普通人族低位基准，C017 奴兵为 175-185cm 代表体量且保留五指硬化人手与低位金钱尾辫，C016B 粮税虫吏为 195-205cm 画面代表值并只开册下令，C018 纯虫族小兵为 215-230cm 站立等效并只持短矛/钩镰封路。所有脚底、靴底、爪足或地面接触点必须落在同一可读泥地平面；如果角色低伏或弯腰，仍必须通过肩高、头壳、兵器、门框或旁站基准证明其真实等效身高。",
+    "negative_lock": "不要继续使用 2026-06-11 被用户退回的 SC002 候选帧作为通过参考；不要让官吏、奴兵、纯虫族小兵和普通人族同身高；不要让 C016B 站桌子、检查台、粮袋、台阶或车板造高；不要让 C017 变纯虫族爪手或普通人族士兵；不要让 C018 缺兵器、搬粮、扣腕或开册；不要用透视、裁切、前景放大、低伏遮挡来掩盖身高差。",
+    "scale_consistency_lock": {
+      "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+      "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+      "required_scale_ladder": [
+        "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+        "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+        "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+        "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+        "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+      ],
+      "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+      "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+      "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+      "rejection_rules": [
+        "reject if C016, C017, C018 and C025 read as the same height class",
+        "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+        "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+        "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+        "reject if C019 does not read broader/heavier than C018 when present",
+        "reject if C025 civilians gain insect traits or military gear",
+        "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+      ]
+    }
+  }
 }

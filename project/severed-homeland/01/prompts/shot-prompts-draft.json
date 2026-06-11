@@ -9,14 +9,15 @@
     {
       "shot_id": "SC001-SH001",
       "generation_method": "FLF2V",
-      "prompt_zh": "锁喉关外墙暴雪夜，镜头从墙外攻城方向低机位正向偏斜建立兽潮压城：C020/C021/E01_C020 兽族与伴生兽、攻城车或破门猛犸压向同一面黑石城门；裂云冷白带淡金天光从左上或侧后切出城墙、攻城器械、巨兽轮廓和骨钟边缘，撞门瞬间冷白雪雾成为最亮区域，低位暗红火点只做边缘反打。镜头低位前推并轻微上仰，终点是第一次重撞城门和骨钟横摆，不越过墙头、不转到墙后。全程只有一面城墙、一个城门、一个钟架、一口钟。",
-      "prompt_en": "Blizzard at Suohou Gate outer wall. The camera begins outside the wall from a low front-biased oblique siege angle: C020/C021/E01_C020 beast troops and companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. Storm-break cold-white sky light with a faint pale-gold edge cuts the wall, siege engine, beast silhouettes and bone-bell rim from upper-left or side-back; the cold-white snow blast at impact is the brightest zone, with low dark-red fire only as edge counterlight. The camera pushes low and tilts slightly up, ending on the first heavy gate impact and swinging bell, without crossing the wall or turning behind it. One wall, one gate, one bell frame, one bell throughout.",
-      "negative_prompt_notes_zh": "不要第二道城墙、远处城墙、第二个钟架、第二只钟、钟架方向变化、90度转向、越墙到背面、城墙两边都被攻击、城外人族、兽族看镜头列队、完全对称正面城门、纯骨钟特写、完整圆形徽章、全画面灰黑、雪雾糊成灰白罩、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群。",
-      "negative_prompt_notes_en": "No second wall, distant wall, second bell frame, second bell, changed bell-frame direction, 90-degree turn, crossing behind the wall, both sides under attack, humans outside the wall, beast troops posing toward camera, perfectly symmetrical frontal gate, pure bell close-up, complete circular emblem, uniformly grey-black image, snow haze as grey veil, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass.",
+      "prompt_zh": "锁喉关外墙暴雪夜，镜头从墙外攻城方向低机位正中对称、略带纵深地建立兽潮压城：C020/C021/E01_C020 兽族与伴生兽、攻城车或破门猛犸压向同一面黑石城门。保留 R001/R002 当前正中史诗攻城建立镜头气质；裂云冷白带淡金天光从左上或侧后切出城墙、攻城器械和巨兽轮廓，低位暗红火点只做边缘反打。镜头低位前推并轻微上仰，尾帧更近靠近城门，第一次重撞时冷白雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光成为最强动作中心。骨钟不需要出现在画面中，钟声从门楼内部传出，不越过墙头、不转到墙后。全程只有一面城墙、一个城门、同一墙外攻城方向。",
+      "prompt_en": "Blizzard at Suohou Gate outer wall. The camera begins outside the wall from a low centered frontal epic siege angle with slight depth: C020/C021/E01_C020 beast troops and companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. Preserve the current R001/R002 centered epic exterior siege look. Storm-break cold-white sky light with a faint pale-gold edge cuts the wall, siege engine and beast silhouettes from upper-left or side-back, with low dark-red fire only as edge counterlight. The camera pushes low and tilts slightly up; the tail frame moves closer to the gate, and the first heavy impact makes cold-white snow blast, ice splinters, old timber chips, shaking gate bars and blackstone edge reflections the strongest action center. The bone bell does not need to appear on screen; its sound comes from inside the gatehouse. Do not cross the wall or turn behind it. One wall, one gate and one exterior attack direction throughout.",
+      "negative_prompt_notes_zh": "不要第二道城墙、远处城墙、第二个城门、90度转向、越墙到背面、城墙两边都被攻击、城内侧兽潮、城外人族、兽族看镜头列队、纯骨钟特写、强行把骨钟或钟架画成画面主体、完整圆形徽章、全画面灰黑、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群。",
+      "negative_prompt_notes_en": "No second wall, distant wall, second gate, 90-degree turn, crossing behind the wall, both sides under attack, beast attackers inside the wall, humans outside the wall, beast troops posing toward camera, pure bell close-up, forcing a visible bell or bell frame to become the main subject, complete circular emblem, uniformly grey-black image, snow haze as grey veil, impact away from the gate, dim impact point, missing ice/timber debris, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass.",
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
-        "PROP_BONE_BELL",
-        "ONE_WALL_ONE_BELL_FRAME",
+        "RULE_SIEGE_LOCAL_CAUSALITY",
+        "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
+        "GATEHOUSE_BELL_AUDIO_ONLY_LOCK",
         "C020",
         "C021",
         "E01_C020"
@@ -883,5 +884,35 @@
         "PROP_WHITE_REGISTER"
       ]
     }
-  ]
+  ],
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "frame_use_rule": "Do not use current SC002 R005-R009 candidates for video production; regenerate at 4096x2304 after identity and same-ground height-scale relock.",
+    "prompt_lock": "2026-06-11 用户视觉 QC 退回后的重生硬锁：SC002 参考帧必须先让角色身份和身高差一眼成立。使用同一泥地/同一车道地平线：C025 村民为普通人族低位基准，C017 奴兵为 175-185cm 代表体量且保留五指硬化人手与低位金钱尾辫，C016B 粮税虫吏为 195-205cm 画面代表值并只开册下令，C018 纯虫族小兵为 215-230cm 站立等效并只持短矛/钩镰封路。所有脚底、靴底、爪足或地面接触点必须落在同一可读泥地平面；如果角色低伏或弯腰，仍必须通过肩高、头壳、兵器、门框或旁站基准证明其真实等效身高。",
+    "negative_lock": "不要继续使用 2026-06-11 被用户退回的 SC002 候选帧作为通过参考；不要让官吏、奴兵、纯虫族小兵和普通人族同身高；不要让 C016B 站桌子、检查台、粮袋、台阶或车板造高；不要让 C017 变纯虫族爪手或普通人族士兵；不要让 C018 缺兵器、搬粮、扣腕或开册；不要用透视、裁切、前景放大、低伏遮挡来掩盖身高差。",
+    "scale_consistency_lock": {
+      "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+      "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+      "required_scale_ladder": [
+        "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+        "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+        "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+        "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+        "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+      ],
+      "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+      "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+      "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+      "rejection_rules": [
+        "reject if C016, C017, C018 and C025 read as the same height class",
+        "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+        "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+        "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+        "reject if C019 does not read broader/heavier than C018 when present",
+        "reject if C025 civilians gain insect traits or military gear",
+        "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+      ]
+    }
+  }
 }

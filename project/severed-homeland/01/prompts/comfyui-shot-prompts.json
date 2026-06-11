@@ -90,12 +90,12 @@
         },
         "first_frame_ref": "01/assets/reference-frames/r001e01.png",
         "last_frame_ref": "01/assets/reference-frames/r002e01.png",
-        "reference_frame_status": "R001 and R002 have been updated and visually checked for the revised SH001 FLF2V scheme: R001 is a low diagonal rear-side siege first frame, and R002 is a wall-top medium-near last frame with bone bell, defenders and exterior siege visible below.",
+        "reference_frame_status": "R001/R002 follow the current centered exterior epic siege style. R001 is the approved exterior establishing texture/composition reference; R002 should be regenerated or edited closer to the gate with stronger first-impact snow/debris while keeping the same centered exterior direction. Visible bell/bell frame is not required in SH001; bell sound comes from inside the gatehouse.",
         "audio_refs": [
           "voiceover:肃明一千两百二十六年，北方大雪。",
-          "sfx:bone_bell_crack",
+          "sfx:gatehouse_bone_bell_offscreen",
           "sfx:blizzard",
-          "sfx:low_gate_impact"
+          "sfx:strong_low_gate_impact"
         ],
         "workflow_hint": "flf2v_transition",
         "source_refs": [
@@ -106,14 +106,14 @@
         ],
         "continuity_refs": [
           "LOC_SUOHOU_GATE_OUTER_WALL",
-          "PROP_BONE_BELL",
           "RULE_SIEGE_LOCAL_CAUSALITY",
-          "ONE_WALL_ONE_BELL_FRAME",
+          "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
+          "GATEHOUSE_BELL_AUDIO_ONLY_LOCK",
           "C020",
           "C021",
           "E01_C020"
         ],
-        "reference_frame_update_note": "R001/R002 are now authored as an exterior front-biased siege push and first gate-impact/bell-shock endpoint. One wall, one gate, one bell frame, one bell; camera must not turn behind the wall, cross to the rear/opposite side, or make the wall read as attacked from both sides.",
+        "reference_frame_update_note": "R001/R002 are locked to the current centered exterior epic siege style: one wall, one gate, same outside-facing direction. R002 must move closer to the gate and intensify the impact. The bone bell is an offscreen/in-gatehouse sound source for SH001, not a required visible object.",
         "production_metadata": {
           "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
           "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
@@ -121,18 +121,18 @@
         }
       },
       "model_visible_prompt": {
-        "visible_goal_zh": "在暴雪中建立锁喉关正面偏斜攻城压力：首帧从墙外攻城方向低机位正向偏斜看城门和黑石巨墙，兽潮、攻城车或破门猛犸压向城门；尾帧仍保持同一墙外方向，用第一次重撞城门、骨钟横摆和雪雾冲画面作为切入墙头身体代价的转场。",
-        "visible_goal_en": "Establish Suohou Gate siege pressure in blizzard with a front-biased exterior angle: the first frame looks from outside the wall at a low, slightly oblique angle toward the gate and blackstone wall as the beast tide, siege cart or gate-breaking mammoth presses forward; the last frame keeps the same exterior-side direction and uses the first heavy gate impact, swinging bone bell and snow blast as the transition into wall-top bodily cost.",
-        "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。画面不能全灰全黑：裂云低角度冷白带一点淡金的天光从左上或侧后方切出城墙、攻城车、巨兽轮廓和骨钟边缘；撞门瞬间的冷白雪雾是最亮区域，低位暗红火点只做边缘反打，黑石墙保留大面积负补光暗面，形成精美但残酷的高反差战争质感。",
-        "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. The image must not become uniformly grey or black: low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine, beast silhouettes and bone-bell rim from upper-left or side-back; the cold-white snow blast at the gate impact is the brightest zone, low dark-red fire points provide only edge counterlight, and the blackstone wall keeps large negative-fill shadow masses for refined but brutal high-contrast war lighting.",
-        "subject_content_zh": "首帧是墙外攻城方向的低机位正向偏斜构图，约七成正向读城门压力、三成斜向给纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。尾帧仍是同一墙外方向：攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰和黑石边缘被震开；墙头同一钟架和同一口骨钟在上方或侧上方横摆，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。",
-        "subject_content_en": "The first frame is a low, front-biased exterior siege composition, about seventy percent frontal gate pressure and thirty percent oblique depth; the same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. The last frame keeps the same exterior-side direction: the siege-cart beam or iron-wrapped horn hits the gate for the first time, shaking gate bars, old timber, snow dust, ice splinters and blackstone edges; the same wall-top bell frame and same bone bell swing above or upper-side, with defenders only as small silhouettes and spear-line shapes. The inner side, opposite gate and second wall do not open up.",
-        "composition_motion_zh": "使用首尾参考帧约束“墙外低机位前推 + 撞门震钟”而不是飞到墙后。镜头从兽潮和攻城车后方低位缓慢前推，略微上仰读城门高度；中段只做轻微避让破旗、烟柱和巨兽肩背的真实运动，终点压到撞门瞬间。骨钟横摆、雪雾白亮冲画面和钟声裂响作为隐藏剪切点，下一镜切到同一口骨钟旁被震倒的年轻军户。不做 90 度转向，不越过墙脊，不进入城内。",
-        "composition_motion_en": "Use the first and last frames to constrain an exterior low push plus gate impact and bell shock, not a flight behind the wall. The camera starts low behind the beast tide and siege engine, slowly pushes forward and tilts slightly up to read the gate height; the middle only makes small physical adjustments around torn banners, smoke columns and beast shoulders, ending on the gate-impact moment. The swinging bell, bright snow-haze blast and cracked bell sound are the hidden cut point into the next shot beside the same bell and the young soldier knocked down by the shock. No 90-degree turn, no crossing the wall crown, no entering the interior side.",
-        "visible_continuity_zh": "人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和城门前方；R001/R002 必须保持同一墙外方向、同一城门、同一钟架、同一口骨钟。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持多兵种和多伴生兽形态。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二钟架、第二口钟、完整发光旧徽。前景兽潮、中景城门、背景钟架必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。",
-        "visible_continuity_en": "Human defenders on the wall top are only small silhouettes and spear-line shapes, while beast attackers stay only outside the same wall and in front of the same gate; R001/R002 must preserve the same exterior direction, same gate, same bell frame and same bone bell. Beast soldiers and companion beasts must inherit the three loaded beast reference images and preserve varied troop and companion-beast types. Never read the wall as attacked from both sides; no beast attackers inside the wall, opposite gate, second bell frame, second bell, or complete glowing old emblem. Foreground beast tide, midground gate and background bell frame must stay clearly layered; snow haze must not become a grey veil, and key silhouettes must not be eaten by video smearing or glitches.",
-        "negative_prompt_zh": "不要现代服饰、枪械、科幻 UI、塑料 CG、正面完全对称城门海报、左右完全对称军阵、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个钟架、第二只钟、城门方向跳变、兽族看镜头列队、纯骨钟特写、完整发光徽章、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确亮部中心、雪雾糊成灰白罩、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。",
-        "negative_prompt_en": "avoid modern clothing, firearms, sci-fi UI, plastic CGI, perfectly symmetrical frontal-gate poster frame, perfectly symmetrical ranks, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second bell frame, second bell, gate direction jump, beast troops posing toward camera, pure bone-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear highlight center, snow haze as grey veil, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles."
+        "visible_goal_zh": "在暴雪中建立锁喉关正中对称史诗攻城压力：首帧从墙外攻城方向低机位看城门和黑石巨墙，兽潮、攻城车或破门猛犸压向城门；尾帧仍保持同一墙外方向，更近靠近城门，用第一次重撞城门、浓烈雪雾和碎冰木屑冲画面作为转场。骨钟不要求出现在画面中，钟声从门楼内部传出。",
+        "visible_goal_en": "Establish Suohou Gate siege pressure in blizzard with the current centered exterior epic composition: the first frame looks from outside the wall at a low frontal angle toward the gate and blackstone wall as the beast tide, siege cart or gate-breaking mammoth presses forward; the last frame keeps the same exterior-side direction, moves closer to the gate, and uses the first heavy gate impact, dense snow blast, ice and timber debris as the transition. The bone bell does not need to appear on screen; its sound comes from inside the gatehouse.",
+        "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。保持 R001/R002 当前的真实材质、正中史诗攻城构图、冷白暴雪、黑石墙大暗面和低位暗红火边缘。画面不能全灰全黑；裂云低角度冷白带一点淡金的天光切出城墙、攻城车和巨兽轮廓；尾帧撞门瞬间的冷白雪雾、碎冰、木屑和门闩震动应成为最强动作亮部。",
+        "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Preserve the current R001/R002 tactile realism, centered epic siege composition, cold blizzard, blackstone wall shadow masses and low dark-red fire edge light. The image must not become uniformly grey or black; low storm-break sky light with a faint pale-gold edge cuts the wall, siege engine and beast silhouettes; in the tail frame the cold-white snow blast, ice splinters, timber chips and shaking gate bars at impact should become the strongest action highlight.",
+        "subject_content_zh": "首帧和尾帧都保持墙外攻城方向的低机位正中对称史诗构图，允许轻微透视纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。尾帧比首帧更近靠近城门：攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰、木屑和黑石边缘被更浓烈地震开。骨钟在门楼内部，只通过钟声存在，画面不强制出现钟架或钟体。城内侧、另一边城门、第二道城墙不展开。",
+        "subject_content_en": "Both first and last frames keep the low centered exterior epic siege composition, with only slight perspective depth. The same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. The last frame moves closer to the gate: the siege-cart beam or iron-wrapped horn hits the gate for the first time, violently shaking gate bars, old timber, snow dust, ice splinters, timber chips and blackstone edges. The bone bell is inside the gatehouse and exists through sound only; no visible bell frame or bell body is required. The inner side, opposite gate and second wall do not open up.",
+        "composition_motion_zh": "使用首尾参考帧约束“墙外低机位正中前推 + 更强撞门冲击”。镜头从兽潮和攻城车后方低位缓慢前推，略微上仰读城门高度；终点压到城门更近处，撞击瞬间让雪雾白亮、碎冰、旧木屑和门闩震动冲出画面。门楼内骨钟声和撞门低频作为隐藏剪切点，下一镜可进入墙头空间。不做 90 度转向，不越过墙脊，不进入城内。",
+        "composition_motion_en": "Use the first and last frames to constrain a low centered exterior push plus stronger gate impact. The camera starts low behind the beast tide and siege engine, slowly pushes forward and tilts slightly up to read the gate height; it ends closer to the gate as bright snow haze, ice splinters, old timber chips and shaking gate bars burst from the impact. The offscreen gatehouse bell sound and low gate impact are the hidden cut point into the following wall-top space. No 90-degree turn, no crossing the wall crown, no entering the interior side.",
+        "visible_continuity_zh": "人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和同一城门前方；R001/R002 必须保持同一墙外方向、同一城门、正中史诗攻城构图和同一真实材质。骨钟/钟架不要求在第一镜画面中出现，钟声来自门楼内部。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二城门、第二道墙、完整发光旧徽。前景兽潮、中景城门和背景墙体/旗帜必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。",
+        "visible_continuity_en": "Human defenders on the wall top are only small silhouettes and spear-line shapes, while beast attackers stay only outside the same wall and in front of the same gate. R001/R002 must preserve the same exterior direction, same gate, centered epic siege composition and tactile realism. The bell frame or bell body does not need to appear in SH001; the bell sound comes from inside the gatehouse. Never read the wall as attacked from both sides; no beast attackers inside the wall, opposite gate, second gate, second wall or complete glowing old emblem. Foreground beast tide, midground gate and background wall/flags must stay clearly layered; snow haze must not become a grey veil, and key silhouettes must not be eaten by video smearing or glitches.",
+        "negative_prompt_zh": "不要现代服饰、枪械、科幻 UI、塑料 CG、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个城门、城门方向跳变、兽族看镜头列队、强行把可见骨钟或钟架做成画面主体、纯骨钟特写、完整发光徽章、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确撞击亮部中心、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、画面中文字、随机字幕。",
+        "negative_prompt_en": "avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second gate, gate direction jump, beast troops posing toward camera, forcing a visible bell or bell frame to become the main subject, pure bone-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear gate-impact highlight center, snow haze as grey veil, impact away from the gate, dim impact point, missing ice/timber debris, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, text in image, random subtitles."
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
@@ -144,7 +144,7 @@
         "seed_policy": "lock_after_first_approved_motion_test",
         "denoise": 0.45,
         "frame_count": 84,
-        "motion_notes": "controlled same-side diagonal siege lift to exterior-edge wall-top bone bell; camera remains facing the exterior siege side; no crossing to rear/opposite wall side, no frontal push, no wall pass-through, no 180-degree turn"
+        "motion_notes": "controlled same-side centered exterior siege push to a closer stronger gate-impact endpoint; camera remains facing the exterior siege side; bell is audio-only from inside the gatehouse for SH001; no crossing to rear/opposite wall side, no wall pass-through, no 90/180-degree turn"
       },
       "status": "needs_config"
     },
@@ -403,10 +403,12 @@
           "assets/locations/l003m.png",
           "assets/characters/c016m.png",
           "assets/props/p003m.png",
-          "assets/props/p008m.png"
+          "assets/props/p008m.png",
+          "01/assets/characters/c018e01.png",
+          "assets/characters/c018m.png"
         ],
         "reference_image_binding": {
-          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use character, location and prop cards only as identity/material/control references, not as I2V/FLF2V scene frames.",
+          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use C016B/C017/C018 character cards only as role, body-scale and material references below the primary scene frame. Role lock: official opens register, slave soldier grips/moves grain, pure insect infantry holds weapons and blocks routes.",
           "primary_image_nodes": [
             {
               "path": "01/assets/reference-frames/r005e01.png",
@@ -471,13 +473,29 @@
               "node_hint": "PLACEHOLDER_PROP_REFERENCE_NODE",
               "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
               "suggested_weight": 0.35
+            },
+            {
+              "path": "01/assets/characters/c018e01.png",
+              "role": "pure_insect_armed_perimeter_and_scale_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.28,
+              "usage_lock": "C018 only locks 200-230cm pure insect armed route-blocking guards with short spear or hook-sickle; never use it for clerk register work, wrist grip, rope handling or sack loading."
+            },
+            {
+              "path": "assets/characters/c018m.png",
+              "role": "pure_insect_master_species_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.22,
+              "usage_lock": "Low-weight species backup for C018 only; must remain below primary I2V/FLF2V frame strength."
             }
           ]
         },
         "first_frame_ref": "01/assets/reference-frames/r005e01.png",
         "last_frame_ref": "",
-        "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+        "reference_frame_status": "generated_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
         "audio_refs": [
           "sfx:grain_abacus",
           "sfx:cart_wheel_distant",
@@ -496,21 +514,23 @@
           "CHAR_GRAIN_TAX_CLERK",
           "PROP_WHITE_REGISTER",
           "PROP_GRAIN_TAG"
-        ]
+        ],
+        "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
       },
       "model_visible_prompt": {
         "visible_goal_zh": "从锁喉关战争压力切到金河征粮制度：用粮袋墙、小吏高位、低位村民和白册夹板建立“粮食已被制度占领”的空间秩序。",
         "visible_goal_en": "Cut from border war pressure into the Jinhe grain-tax system: use the grain-sack wall, high clerk position, low villagers and white register board to establish that grain has already been occupied by bureaucracy.",
         "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。SC002 保持麦金、河泥褐、湿木灰和虫蜡白的材质分离；光线必须有明确光型和方向，不能全局灰暗。柔和清晨冷雾作主环境光，低角度逆光穿过粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦过麻布、湿木和河泥纹理；虫蜡白只作为白册和粮牌的小亮点。少量丁达尔光用于粮尘纵深，不能做成特效光柱。",
         "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. SC002 preserves material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white; lighting must have a clear type and direction, never global greyness. Soft morning cold haze acts as the ambient key. Low-angle backlight passes through grain dust to rim the sack wall, clerk hat and register board, while a narrow side light grazes burlap, wet wood and river-mud texture; insect-wax white stays as small highlights on the register and grain tags. Subtle Tyndall light may deepen grain-dust space, never becoming VFX beams.",
-        "subject_content_zh": "清晨麦金冷雾里，金河粮袋堆成墙，检查台上的虫族粮税小吏穿蜡灰青短官袍、戴高账吏帽，胸前白册夹板、骨算盘、粮牌和旧铁秤钩随动作轻晃；村民排在低处，粮车和湿木检查口保持成组轮廓。",
-        "subject_content_en": "In wheat-gold cold morning haze, Jinhe grain sacks form a wall. The insect grain tax clerk on the inspection platform wears a wax-grey-blue short robe and tall account hat; the white register board, bone abacus, grain tags and old iron scale hook sway lightly on his chest. Villagers queue low, while carts and the wet-wood inspection gate remain grouped silhouettes.",
-        "composition_motion_zh": "横屏远景按上下层级构图：粮袋墙占上半画面并压低天空，粮税小吏站在检查台高位偏中，白册夹板、骨算盘和粮牌形成亮色制度中心；村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。",
-        "composition_motion_en": "Landscape wide composition built on vertical hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands high near center on the inspection platform, and the white register board, bone abacus and grain tags form the bright bureaucratic center; villagers are compressed into a low band, while the cart lane recedes from front-right to rear-left for depot depth. A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift.",
-        "visible_continuity_zh": "粮税小吏必须是虫族低阶官僚，不是人族账房或普通衙役；白册只显示留白、浅刻线或后合成区域，不生成可读文字。粮仓不能变成现代仓库或灰色灾民营，麦金、河泥褐、湿木灰和虫蜡白要分材质。",
-        "visible_continuity_en": "The grain tax clerk must remain an insect low-ranking bureaucrat, not a human accountant or ordinary magistrate; the white register only shows blank areas, shallow guide lines or post-composite spaces, no readable text. The depot must not become a modern warehouse or grey refugee camp; wheat gold, river-mud brown, wet wood grey and insect-wax white stay materially separated.",
-        "negative_prompt_zh": "不要现代仓库、现代服饰、枪械、科幻 UI、人族账房先生版小吏、欢乐蒸汽朋克、全画面灰色灾民营、无主光方向、过度丁达尔光柱、魔法光柱、过曝 bloom、随机可读白册文字、随机徽记、黄色闪粉、数字颗粒、全局假锐化、塑料麻袋、远景群众逐个清晰、视频涂抹、花屏、压缩块。",
-        "negative_prompt_en": "avoid modern warehouse, modern clothing, firearms, sci-fi UI, human-accountant clerk, cheerful steampunk, all-grey refugee camp, missing key-light direction, excessive Tyndall beams, magic light shafts, overexposed bloom, random readable register text, random emblems, yellow glitter, digital speckle, global fake sharpening, plastic sacks, individually sharp distant crowd, video smearing, glitches, compression blocks."
+        "subject_content_zh": "清晨麦金冷雾里，金河粮袋堆成墙，虫族粮税小吏站在同一条车道泥地上，继承 C016 骨白面壳、暗色复眼、细触须和白蜡高账吏帽，胸前白册夹板、骨算盘、粮牌和旧铁秤钩随动作轻晃；混血奴兵只在低位押粮或牵绳；纯虫族小兵体型高于奴兵和村民，持短矛或钩镰在车道边封路警戒，形成紧张冲突氛围。",
+        "subject_content_en": "In wheat-gold cold morning haze, Jinhe grain sacks form a wall. The insect grain tax clerk stands on the same muddy cart lane and keeps the C016 bone-white face shell, dark compound eyes, thin feelers and wax-white tall accountant hat; the white register board, bone abacus, grain tags and old iron scale hook sway lightly on his chest. Mixed slave soldiers stay low as rope or grain enforcers. Pure insect infantry, taller than slave soldiers and villagers, hold short spears or hook-sickles at the lane edges as an armed route-blocking perimeter, creating tension.",
+        "composition_motion_zh": "横屏远景按同一泥地上的真实身高差构图：粮袋墙占上半画面并压低天空，粮税小吏站在车道泥地偏中位置，凭 190-210cm 虫族身高压过村民，白册夹板、骨算盘和粮牌形成亮色制度中心；纯虫族小兵 200-230cm 持械封住车道边缘，村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。",
+        "composition_motion_en": "Landscape wide composition built on true same-ground height hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands near center on the same muddy cart lane and towers over villagers through his 190-210 cm insect-official body, while the white register board, bone abacus and grain tags form the bright bureaucratic center; 200-230 cm pure insect infantry hold weapons at the lane edges, villagers are compressed into a low band, and the cart lane recedes from front-right to rear-left for depot depth. A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift.",
+        "visible_continuity_zh": "粮税小吏必须继承全局 C016 虫族官吏的骨白面壳、暗色复眼、细触须和白蜡高账吏帽，不得变成人族账房或普通衙役；纯虫族小兵只负责持械封路，不开册、不扣腕、不搬粮；混血奴兵只负责低位押粮/搬运。白册只显示留白、浅刻线或后合成区域，不生成可读文字。粮仓不能变成现代仓库或灰色灾民营，麦金、河泥褐、湿木灰和虫蜡白要分材质。",
+        "visible_continuity_en": "The grain tax clerk must inherit the global C016 insect official identity: bone-white face shell, dark compound eyes, thin feelers and wax-white tall accountant hat, not a human accountant or ordinary magistrate. Pure insect infantry only block routes with weapons and never open registers, grip wrists or move grain; mixed slave soldiers only enforce below or move grain. The white register only shows blank areas, shallow guide lines or post-composite spaces, never readable text. The depot must not become a modern warehouse or grey refugee camp; wheat gold, river-mud brown, wet wood grey and insect-wax white stay materially separated.",
+        "negative_prompt_zh": "不要现代仓库、现代服饰、枪械、科幻 UI、人族账房先生版小吏、欢乐蒸汽朋克、全画面灰色灾民营、无主光方向、过度丁达尔光柱、魔法光柱、过曝 bloom、随机可读白册文字、随机徽记、黄色闪粉、数字颗粒、全局假锐化、塑料麻袋、远景群众逐个清晰、视频涂抹、花屏、压缩块、不要纯虫族缺少兵器、不要纯虫族开册、不要纯虫族替奴兵搬粮、不要奴兵变成纯虫族爪手、不要官吏站桌子、站检查台、站平台、站粮袋或用垫高物造身高差",
+        "negative_prompt_en": "avoid modern warehouse, modern clothing, firearms, sci-fi UI, human-accountant clerk, cheerful steampunk, all-grey refugee camp, missing key-light direction, excessive Tyndall beams, magic light shafts, overexposed bloom, random readable register text, random emblems, yellow glitter, digital speckle, global fake sharpening, plastic sacks, individually sharp distant crowd, video smearing, glitches, compression blocks, pure insect guards without weapons, pure insect guards opening registers, pure insect guards moving grain, slave soldiers turning into clawed pure insects, clerk standing on a table, inspection platform, stage, grain sacks or any height-boosting object"
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
@@ -524,7 +544,9 @@
         "frame_count": 144,
         "motion_notes": "A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift."
       },
-      "status": "needs_config"
+      "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_revision": "sc002_c018_armed_guard_redo_handoff_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
     },
     {
       "production_metadata": {
@@ -545,10 +567,12 @@
           "01/assets/reference-frames/r006e01.png",
           "assets/characters/c017m.png",
           "assets/characters/c023m.png",
-          "assets/props/p008m.png"
+          "assets/props/p008m.png",
+          "01/assets/characters/c018e01.png",
+          "assets/characters/c018m.png"
         ],
         "reference_image_binding": {
-          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use character, location and prop cards only as identity/material/control references, not as I2V/FLF2V scene frames.",
+          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use C016B/C017/C018 character cards only as role, body-scale and material references below the primary scene frame. Role lock: official opens register, slave soldier grips/moves grain, pure insect infantry holds weapons and blocks routes.",
           "primary_image_nodes": [
             {
               "path": "01/assets/reference-frames/r006e01.png",
@@ -606,13 +630,29 @@
               "node_hint": "PLACEHOLDER_PROP_REFERENCE_NODE",
               "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
               "suggested_weight": 0.35
+            },
+            {
+              "path": "01/assets/characters/c018e01.png",
+              "role": "pure_insect_armed_perimeter_and_scale_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.28,
+              "usage_lock": "C018 only locks 200-230cm pure insect armed route-blocking guards with short spear or hook-sickle; never use it for clerk register work, wrist grip, rope handling or sack loading."
+            },
+            {
+              "path": "assets/characters/c018m.png",
+              "role": "pure_insect_master_species_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.22,
+              "usage_lock": "Low-weight species backup for C018 only; must remain below primary I2V/FLF2V frame strength."
             }
           ]
         },
         "first_frame_ref": "01/assets/reference-frames/r006e01.png",
         "last_frame_ref": "",
-        "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+        "reference_frame_status": "generated_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
         "audio_refs": [
           "sfx:grain_mud",
           "sfx:child_breath",
@@ -631,21 +671,23 @@
           "PROP_ANCESTRAL_TABLET_BOX",
           "PROP_INSECT_WAX_SEAL",
           "JINHE_HOUSEHOLD_CIVILIANS"
-        ]
+        ],
+        "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
       },
       "model_visible_prompt": {
         "visible_goal_zh": "把征粮制度压到家庭门槛：半斗杂粮、祖牌小盒、孩子虫蜡手印和奴兵扣腕同框，让“家门被写没”变成可见动作。",
         "visible_goal_en": "Push the grain-tax system onto the household threshold: half-measure grain, ancestral tablet box, child wax handprint and slave-soldier grip share the frame so the erasure of the household becomes a visible action.",
         "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。SC002 保持麦金、河泥褐、湿木灰和虫蜡白的材质分离；光线必须有明确光型和方向，不能全局灰暗。门外清晨柔光托住人物安全感，窄侧光从门槛斜切，强化湿泥、木缸、粗布、祖牌盒和奴兵腕绑纹理；虫蜡封条上有小面积冷白顶光，制造制度压迫，但避开孩子眼窝。底光只允许作为泥水反光的极弱火场感，不大面积使用。",
         "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. SC002 preserves material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white; lighting must have a clear type and direction, never global greyness. Soft morning light from outside preserves restraint around the people, while a narrow side light cuts across the threshold to strengthen wet mud, wooden jar, coarse cloth, tablet box and slave-soldier wrist-binding textures. A small cold-white top light sits on the insect-wax seal to create bureaucratic oppression without darkening the child eye sockets. Bottom light is only a faint mud-water reflection, never broad.",
-        "subject_content_zh": "混血奴兵的骨白腕绑和手从侧面压入画面，掀倒空粮缸，只滚出半斗杂粮；老人护住祖牌小盒被按进泥里，孩子小手被迫按上虫蜡封条。衣物是金河农户旧粗布和劳动补丁，表演克制、沉重、不血腥。",
-        "subject_content_en": "A mixed-blood slave soldier hand with bone-white wrist binding presses into frame from the side, tipping an empty grain jar that releases only half a measure of grain. An elder guarding the ancestral tablet box is forced into mud, and a child hand is pressed onto an insect-wax seal. Clothes are Jinhe coarse work cloth with repairs; performance is restrained, heavy and non-gory.",
+        "subject_content_zh": "混血奴兵的骨白腕绑和五指硬化人手从侧面压入画面，明确扣住成年村民前臂或袖口，不抓脚踝、不抓小腿；祖牌小盒压在门槛边，冷白虫蜡上留着孩子五指手印。背景外道上有一名纯虫族小兵持短矛或钩镰站成模糊封路剪影，体型明显高于奴兵和村民。衣物是金河农户旧粗布和劳动补丁，表演克制、沉重、不血腥。",
+        "subject_content_en": "A mixed-blood slave soldier hand with bone-white wrist binding and five hardened human fingers presses into frame from the side, clearly gripping an adult villager forearm or sleeve cuff, not an ankle, leg or bare foot. The ancestral tablet box sits low by the threshold, and a cold-white wax surface carries a child's five-finger palm print. In the exterior lane background, a taller pure insect infantry guard holds a short spear or hook-sickle as a blurred route-blocking silhouette. Clothes are Jinhe coarse work cloth with repairs; performance is restrained, heavy and non-gory.",
         "composition_motion_zh": "门槛压迫特写组用斜线构图：前景是倒出的半斗杂粮、湿泥和祖牌小盒，画面一侧切入奴兵骨白腕绑和扣腕手，孩子手印落在虫蜡封条上；老人和孩子只给局部姿态，不做猎奇正脸。背景保留粮袋墙和低位人群的模糊压力。手持后退一步，跟随粮缸被掀、老人护盒和手被按下的真实接触反作用；运动短、低、近，动作完成后立刻稳住。",
         "composition_motion_en": "The coercive threshold close-up uses diagonal pressure: foreground holds spilled half-measure grain, wet mud and the ancestral tablet box; one side of frame cuts in the slave soldier bone-white wrist binding and gripping hand, with the child handprint on the insect-wax seal. Elder and child are shown as partial body language, not exploitative front faces. Background keeps a blurred pressure of grain sacks and low crowd. A one-step handheld pullback follows the real contact reaction of the jar tipped over, the elder guarding the box and the hand pressed down; the move is short, low and close, settling as soon as the action lands.",
-        "visible_continuity_zh": "奴兵只负责扣腕、押车、执行，不开册；祖牌小盒、粮牌封蜡和粮缸属于家庭/制度道具线。儿童威胁必须克制，不能出现直观伤害、血腥或猎奇表情。",
-        "visible_continuity_en": "The slave soldier only grips, carts and enforces, never opens the register; the ancestral tablet box, grain-tag wax and jar belong to the household/system prop line. Child threat must stay restrained, with no explicit harm, gore or exploitative expression.",
-        "negative_prompt_zh": "不要直观伤害儿童、不要血腥、不要恐怖片底光大面积照脸、不要奴兵变纯怪物、不要奴兵开白册、不要祖牌盒变成华丽祭器、不要现代陶瓷或塑料桶、不要随机文字、不要猎奇正脸、不要夸张哭喊、不要全画面硬闪光、不要黄色闪粉、数字颗粒、视频涂抹、手指融化、道具粘连。",
-        "negative_prompt_en": "avoid explicit child harm, gore, broad horror bottom-light on faces, pure-monster slave soldier, slave soldier opening the register, ornate shrine-like tablet box, modern ceramic or plastic bucket, random text, exploitative front faces, exaggerated crying, full-frame hard flash, yellow glitter, digital speckle, video smearing, melted fingers, fused props."
+        "visible_continuity_zh": "奴兵只负责扣腕、押车、执行，不开册；祖牌小盒、粮牌封蜡和粮缸属于家庭/制度道具线。儿童威胁必须克制，不能出现直观伤害、血腥或猎奇表情。 扣腕对象必须读成成人前臂或袖口，不能读成脚踝、小腿或裸足；纯虫族小兵只在背景持械封路，不执行扣腕。",
+        "visible_continuity_en": "The slave soldier only grips, carts and enforces, never opens the register; the ancestral tablet box, grain-tag wax and jar belong to the household/system prop line. Child threat must stay restrained, with no explicit harm, gore or exploitative expression. The grip target must read as an adult forearm or sleeve cuff, never an ankle, leg or bare foot; pure insect infantry only blocks the background lane with a weapon and never performs the grip.",
+        "negative_prompt_zh": "不要直观伤害儿童、不要血腥、不要恐怖片底光大面积照脸、不要奴兵变纯怪物、不要奴兵开白册、不要祖牌盒变成华丽祭器、不要现代陶瓷或塑料桶、不要随机文字、不要猎奇正脸、不要夸张哭喊、不要全画面硬闪光、不要黄色闪粉、数字颗粒、视频涂抹、手指融化、道具粘连、不要抓脚踝、不要抓小腿、不要把被抓对象画成裸足、不要纯虫族爪子执行扣腕、不要纯虫族缺少兵器",
+        "negative_prompt_en": "avoid explicit child harm, gore, broad horror bottom-light on faces, pure-monster slave soldier, slave soldier opening the register, ornate shrine-like tablet box, modern ceramic or plastic bucket, random text, exploitative front faces, exaggerated crying, full-frame hard flash, yellow glitter, digital speckle, video smearing, melted fingers, fused props., grabbing an ankle, grabbing a leg, bare foot as grip target, pure insect claw performing the grip, pure insect guards without weapons"
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
@@ -659,7 +701,9 @@
         "frame_count": 168,
         "motion_notes": "A one-step handheld pullback follows the real contact reaction of the jar tipped over, the elder guarding the box and the hand pressed down; the move is short, low and close, settling as soon as the action lands."
       },
-      "status": "needs_config"
+      "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_revision": "sc002_c018_armed_guard_redo_handoff_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
     },
     {
       "production_metadata": {
@@ -684,10 +728,12 @@
           "assets/characters/c017m.png",
           "assets/characters/c023m.png",
           "assets/props/p003m.png",
-          "assets/props/p008m.png"
+          "assets/props/p008m.png",
+          "01/assets/characters/c018e01.png",
+          "assets/characters/c018m.png"
         ],
         "reference_image_binding": {
-          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use character, location and prop cards only as identity/material/control references, not as I2V/FLF2V scene frames.",
+          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use C016B/C017/C018 character cards only as role, body-scale and material references below the primary scene frame. Role lock: official opens register, slave soldier grips/moves grain, pure insect infantry holds weapons and blocks routes.",
           "primary_image_nodes": [
             {
               "path": "01/assets/reference-frames/r007e01.png",
@@ -773,13 +819,29 @@
               "node_hint": "PLACEHOLDER_PROP_REFERENCE_NODE",
               "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
               "suggested_weight": 0.35
+            },
+            {
+              "path": "01/assets/characters/c018e01.png",
+              "role": "pure_insect_armed_perimeter_and_scale_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.28,
+              "usage_lock": "C018 only locks 200-230cm pure insect armed route-blocking guards with short spear or hook-sickle; never use it for clerk register work, wrist grip, rope handling or sack loading."
+            },
+            {
+              "path": "assets/characters/c018m.png",
+              "role": "pure_insect_master_species_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.22,
+              "usage_lock": "Low-weight species backup for C018 only; must remain below primary I2V/FLF2V frame strength."
             }
           ]
         },
         "first_frame_ref": "01/assets/reference-frames/r007e01.png",
         "last_frame_ref": "",
-        "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+        "reference_frame_status": "generated_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
         "audio_refs": [
           "dialogue:grain_tax_clerk_001",
           "dialogue:woman_001",
@@ -801,21 +863,23 @@
           "PROP_INSECT_WAX_SEAL",
           "JINHE_HOUSEHOLD_CIVILIANS",
           "text_not_model_generated"
-        ]
+        ],
+        "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
       },
       "model_visible_prompt": {
         "visible_goal_zh": "让“查清明籍”的话术变成可见制度动作：白册、族谱行留白、节状手指、封牌和被扣妇人一起说明家粮被写成官粮。",
         "visible_goal_en": "Turn the Qingming-register speech into a visible bureaucratic action: the register, blank genealogy rows, segmented finger, seal tag and pinned woman show household grain being rewritten as state grain.",
         "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。SC002 保持麦金、河泥褐、湿木灰和虫蜡白的材质分离；光线必须有明确光型和方向，不能全局灰暗。虫蜡白顶光压在白册和小吏脸壳上，形成冷酷制度感，并故意让小吏眼窝更暗；但用窄侧光擦亮节状手指、妇人手腕、旧木桌纹、粮袋麻布和奴兵皮甲，保证皮肤/甲片/石木纹理可读。小槌落点可用小面积硬光，逆光只给高帽、肩线和冷雾轮廓，避免圣光化。",
         "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. SC002 preserves material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white; lighting must have a clear type and direction, never global greyness. Cold insect-wax top light presses onto the register and clerk face shell, creating a cruel bureaucratic feeling and deliberately darkening the clerk eye sockets; a narrow side light still grazes segmented fingers, the woman wrist, old table grain, burlap sack and slave-soldier leather armor so skin, armor and wood textures remain readable. The seal-hammer landing point may take a small hard highlight; backlight only rims hat, shoulders and cold haze, never becoming sacred.",
-        "subject_content_zh": "粮税小吏翻开白册，节状手指点过族谱行留白，封牌小槌落在粮袋旁；妇人护住过冬粮被奴兵从侧后扣住手腕或前臂。小吏高位冷静，奴兵低位执行，妇人和村民被压低。册页只允许留白、浅刻线、遮罩或后合成区域，不能生成随机可读字。",
-        "subject_content_en": "The grain tax clerk opens the white register, segmented finger crossing blank genealogy rows, and a seal-tag hammer lands beside the grain sack. A woman guarding winter grain is gripped at wrist or forearm from side-rear by a slave soldier. The clerk stays high and calm, the soldier executes below, and woman and villagers are compressed low. Register pages only allow blank space, shallow guide lines, masks or post-composite areas, never random readable text.",
+        "subject_content_zh": "粮税小吏继承 C016 骨白面壳和暗色复眼，翻开白册，节状手指点过族谱行留白，封牌小槌落在粮袋旁；妇人护住过冬粮被混血奴兵从侧后扣住手腕或前臂。小吏高位冷静，奴兵低位执行，纯虫族小兵在背景车道边持短矛或钩镰封路警戒，体型明显高于奴兵和村民。册页只允许留白、浅刻线、遮罩或后合成区域，不能生成随机可读字。",
+        "subject_content_en": "The grain tax clerk keeps the C016 bone-white face shell and dark compound eyes, opens the white register, segmented finger crossing blank genealogy rows, and a seal-tag hammer lands beside the grain sack. A woman guarding winter grain is gripped at wrist or forearm from side-rear by a mixed slave soldier. Pure insect infantry guards stand in the background lane with short spears or hook-sickles, visibly taller than slave soldiers and villagers. The clerk stays high and calm, the slave soldier executes below, and woman and villagers are compressed low. Register pages only allow blank space, shallow guide lines, masks or post-composite areas, never random readable text.",
         "composition_motion_zh": "检查桌中景按“前景证据、中景执行、背景压力”三层构图：前景高细节是白册册页、节状手指、粮牌、虫蜡封条、骨算盘和湿木桌沿；中景是粮税小吏高帽、被扣妇人、奴兵扣腕和粮袋侧面；背景只保留粮袋墙、检查口、低位村民和清晨冷雾。静态制度镜头，正面略高于桌沿，只有手、封牌小槌、妇人护粮和奴兵扣腕移动；台词只表现说话状态，不让模型生成字幕或口型精确文字。",
         "composition_motion_en": "The medium inspection-table shot uses three layers: foreground evidence, midground enforcement, background pressure. Foreground high detail holds register pages, segmented fingers, grain tag, insect-wax seal, bone abacus and wet-wood table edge; midground holds the clerk tall hat, pinned woman, slave-soldier grip and grain sack side; background keeps only grain-sack wall, inspection opening, low villagers and morning cold haze. A locked bureaucratic frame, frontal and slightly above table edge; only hands, seal-hammer, the woman guarding grain and slave-soldier grip move. Dialogue is only a speaking state, with no generated subtitles or exact lip text.",
-        "visible_continuity_zh": "官吏、奴兵、金河家庭三种身份层级必须分明；白册、粮牌、虫蜡封条和骨算盘是制度道具，不是魔法特效。视频只表现说话状态，精确对白来自字幕和配音。",
-        "visible_continuity_en": "Clerk, slave soldier and Jinhe household identities must remain distinct; the white register, grain tag, insect-wax seal and bone abacus are bureaucratic props, not magic effects. Video only shows speaking state; exact dialogue belongs to subtitles and voice.",
-        "negative_prompt_zh": "不要混淆官吏和奴兵职责、不要人族账房版小吏、不要白册随机可读文字、不要字幕入画、不要封牌变魔法符、不要奴兵抢主位、不要妇人变华丽贵族、不要全画面顶光黑眼窝导致脸不可读、不要圣光逆光、不要大面积底光、不要过硬假舞台光、不要黄色闪粉、数字颗粒、塑料皮肤、手指融化、脸部花屏、道具比例漂移。",
-        "negative_prompt_en": "avoid mixing clerk and slave-soldier duties, human-accountant clerk, random readable register text, subtitles in frame, magic-symbol seal tag, slave soldier taking the main official position, woman turning into an ornate noble, full-frame top light making faces unreadable, sacred backlight, broad bottom light, fake hard stage lighting, yellow glitter, digital speckle, plastic skin, melted fingers, face glitches, drifting prop scale."
+        "visible_continuity_zh": "官吏、奴兵、纯虫族小兵、金河家庭四种身份层级必须分明：官吏开册，奴兵扣腕，纯虫族持械封路，家庭护粮低位受压。白册、粮牌、虫蜡封条和骨算盘是制度道具，不是魔法特效。视频只表现说话状态，精确对白来自字幕和配音。",
+        "visible_continuity_en": "Clerk, slave soldier, pure insect infantry and Jinhe household identities must remain distinct: the clerk records, slave soldier grips, pure insect infantry block routes with weapons, and the household protects grain from a low position. The white register, grain tag, insect-wax seal and bone abacus are bureaucratic props, not magic effects. Video only shows speaking state; exact dialogue belongs to subtitles and voice.",
+        "negative_prompt_zh": "不要混淆官吏和奴兵职责、不要人族账房版小吏、不要白册随机可读文字、不要字幕入画、不要封牌变魔法符、不要奴兵抢主位、不要妇人变华丽贵族、不要全画面顶光黑眼窝导致脸不可读、不要圣光逆光、不要大面积底光、不要过硬假舞台光、不要黄色闪粉、数字颗粒、塑料皮肤、手指融化、脸部花屏、道具比例漂移、不要纯虫族开册或扣腕、不要纯虫族缺少兵器、不要混淆官吏奴兵虫兵职责",
+        "negative_prompt_en": "avoid mixing clerk and slave-soldier duties, human-accountant clerk, random readable register text, subtitles in frame, magic-symbol seal tag, slave soldier taking the main official position, woman turning into an ornate noble, full-frame top light making faces unreadable, sacred backlight, broad bottom light, fake hard stage lighting, yellow glitter, digital speckle, plastic skin, melted fingers, face glitches, drifting prop scale., pure insect opening register or gripping wrist, pure insect guards without weapons, mixed clerk/slave/insect duties"
       },
       "workflow_family": "i2v_reference",
       "parameter_profile": {
@@ -829,7 +893,9 @@
         "frame_count": 168,
         "motion_notes": "A locked bureaucratic frame, frontal and slightly above table edge; only hands, seal-hammer, the woman guarding grain and slave-soldier grip move. Dialogue is only a speaking state, with no generated subtitles or exact lip text."
       },
-      "status": "needs_config"
+      "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_revision": "sc002_c018_armed_guard_redo_handoff_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
     },
     {
       "production_metadata": {
@@ -851,10 +917,12 @@
           "01/assets/reference-frames/r009e01.png",
           "assets/characters/c017m.png",
           "assets/characters/c023m.png",
-          "assets/props/p008m.png"
+          "assets/props/p008m.png",
+          "01/assets/characters/c018e01.png",
+          "assets/characters/c018m.png"
         ],
         "reference_image_binding": {
-          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use character, location and prop cards only as identity/material/control references, not as I2V/FLF2V scene frames.",
+          "operator_note": "ComfyUI cannot read image paths from prompt text. Load SC002 reference frames through image nodes first; use C016B/C017/C018 character cards only as role, body-scale and material references below the primary scene frame. Role lock: official opens register, slave soldier grips/moves grain, pure insect infantry holds weapons and blocks routes.",
           "primary_image_nodes": [
             {
               "path": "01/assets/reference-frames/r008e01.png",
@@ -918,13 +986,29 @@
               "node_hint": "PLACEHOLDER_PROP_REFERENCE_NODE",
               "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
               "suggested_weight": 0.35
+            },
+            {
+              "path": "01/assets/characters/c018e01.png",
+              "role": "pure_insect_armed_perimeter_and_scale_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.28,
+              "usage_lock": "C018 only locks 200-230cm pure insect armed route-blocking guards with short spear or hook-sickle; never use it for clerk register work, wrist grip, rope handling or sack loading."
+            },
+            {
+              "path": "assets/characters/c018m.png",
+              "role": "pure_insect_master_species_reference",
+              "node_hint": "PLACEHOLDER_CHARACTER_REFERENCE_NODE",
+              "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+              "suggested_weight": 0.22,
+              "usage_lock": "Low-weight species backup for C018 only; must remain below primary I2V/FLF2V frame strength."
             }
           ]
         },
         "first_frame_ref": "01/assets/reference-frames/r008e01.png",
         "last_frame_ref": "01/assets/reference-frames/r009e01.png",
-        "reference_frame_status": "generated_candidate_pending_user_qc_2026-06-10",
-        "reference_frame_qc_status": "pending_user_visual_qc_2026-06-10",
+        "reference_frame_status": "generated_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "reference_frame_qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
         "audio_refs": [
           "voiceover:jinhe_household_erased",
           "sfx:cart_wheel_mud",
@@ -945,21 +1029,23 @@
           "PROP_ANCESTRAL_TABLET_BOX",
           "PROP_INSECT_WAX_SEAL",
           "JINHE_HOUSEHOLD_CIVILIANS"
-        ]
+        ],
+        "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
       },
       "model_visible_prompt": {
         "visible_goal_zh": "用押车离开完成征粮制度结果：粮袋被拖走，祖牌小盒和虫蜡手印留在泥里，旁白落下“良户成逃籍”。",
         "visible_goal_en": "Complete the result of the grain-tax system through the cart leaving: sacks are dragged away, ancestral tablet box and wax handprint remain in mud, and voiceover lands that a lawful household becomes fugitive registry.",
         "style_quality_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。SC002 保持麦金、河泥褐、湿木灰和虫蜡白的材质分离；光线必须有明确光型和方向，不能全局灰暗。清晨低角逆光从押车离开的方向打出粮袋、车轮、奴兵肩线和冷雾轮廓，增加电影感和空气感；侧光掠过泥水、车辙、祖牌盒和麻袋，强化触感。妇人和孩子只吃柔和天光，不用硬光审判；虫蜡手印保持小面积冷白亮点。丁达尔光只沿车道给纵深，不能盖住家门。",
         "style_quality_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. SC002 preserves material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white; lighting must have a clear type and direction, never global greyness. Low morning backlight from the cart-exit direction rims sacks, wheels, slave-soldier shoulders and cold haze for cinema and air; side light skims mud water, wheel ruts, tablet box and burlap for tactile texture. Woman and child receive only soft sky light, not hard judgmental light; the insect-wax handprint stays a small cold-white highlight. Tyndall light only follows the cart lane for depth and must not cover the doorway.",
-        "subject_content_zh": "押车奴兵把粮袋拖上木车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边，孩子手印仍粘着虫蜡白。首帧读到粮袋刚被拖上车，终帧读到粮车离开后的空门槛、车辙和冷雾，情绪克制，不做英雄追车或夸张哭喊。",
-        "subject_content_en": "Slave soldiers drag grain sacks onto a wooden cart, wheel cutting mud beside the ancestral tablet box; the woman kneels at the threshold, the child handprint still cold-white with wax. First frame reads sacks just loaded onto the cart; last frame reads the empty threshold, wheel ruts and cold haze after the cart leaves. Emotion stays restrained, with no heroic chase or exaggerated crying.",
+        "subject_content_zh": "混血押车奴兵用五指硬化人手和绳索把粮袋搬上木车，车轮从祖牌小盒旁压过泥水；纯虫族小兵持短矛或钩镰分列车道两侧封路警戒，体型高于奴兵和村民，不搬粮、不扣腕。妇人跪在门槛边，孩子手印仍粘着虫蜡白。首帧读到粮袋刚被搬上车，终帧读到粮车离开后的空门槛、车辙和冷雾，情绪克制，不做英雄追车或夸张哭喊。",
+        "subject_content_en": "Mixed slave soldiers use hardened five-finger human hands and ropes to load grain sacks onto a wooden cart, wheel cutting mud beside the ancestral tablet box. Pure insect infantry stand on both sides of the cart lane with short spears or hook-sickles, taller than slave soldiers and villagers, enforcing the perimeter without moving sacks or gripping wrists. The woman kneels at the threshold, the child handprint still cold-white with wax. First frame reads sacks just loaded onto the cart; last frame reads the empty threshold, wheel ruts and cold haze after the cart leaves. Emotion stays restrained, with no heroic chase or exaggerated crying.",
         "composition_motion_zh": "FLF2V 首帧到终帧使用同一门槛后方三分构图：首帧前景是祖牌小盒、虫蜡冷白手印和泥水，粮袋正被拖上车；中景妇人与孩子低在门槛，奴兵和车轮横向离开；终帧车已退到远处冷雾里，前景仍是空门槛、祖牌盒和车辙，家门还在但家粮不在。粮车和奴兵横向离开，镜头不追车，固定在家门后方并极慢后收，强调“粮走了，家留空”；尾段让车轮声盖过哭声。",
         "composition_motion_en": "The FLF2V first-to-last frames use the same rear-threshold thirds composition: first frame foreground holds tablet box, cold-white wax handprint and mud water as grain sacks are dragged onto the cart; midground keeps woman and child low at the threshold while slave soldiers and cart wheels exit laterally. By the last frame the cart recedes into cold haze, foreground remains empty threshold, tablet box and wheel ruts: the doorway stands but household grain is gone. The cart and slave soldiers exit laterally while the camera does not chase; it holds behind the household threshold with a very slow pullback, stressing that grain leaves while the home remains hollow. Wheel sound overtakes crying at the end.",
-        "visible_continuity_zh": "首尾帧必须保持同一门槛、同一祖牌小盒、同一押车方向和同一清晨冷雾；粮车可以离开画面纵深，但镜头不能追成动作片。家门留空是结尾信息。",
-        "visible_continuity_en": "First and last frames must preserve the same threshold, same ancestral tablet box, same cart-exit direction and same morning cold haze; the cart may recede into depth, but the camera must not turn it into an action chase. The hollow doorway is the final information.",
-        "negative_prompt_zh": "不要追车英雄镜头、不要押车变战车、不要现代车轮、不要夸张哭喊、不要大面积底光火场感、不要圣光式逆光、不要车离开后换地理、不要祖牌盒消失、不要孩子手印变血手印、不要粮袋漂浮、不要泥水塑料感、不要黄色闪粉、数字颗粒、过度丁达尔光、视频涂抹、花屏、压缩块、人物融化。",
-        "negative_prompt_en": "avoid heroic cart chase, cart becoming a war chariot, modern wheels, exaggerated crying, broad fire-like bottom light, sacred backlight, geography changing after cart leaves, missing tablet box, child handprint turning bloody, floating sacks, plastic mud water, yellow glitter, digital speckle, excessive Tyndall beams, video smearing, glitches, compression blocks, melting figures."
+        "visible_continuity_zh": "首尾帧必须保持同一门槛、同一祖牌小盒、同一押车方向、同一纯虫族持械封路线和同一清晨冷雾；粮车可以离开画面纵深，但镜头不能追成动作片。纯虫族不搬粮、不扣腕，只维持封路压力。家门留空是结尾信息。",
+        "visible_continuity_en": "First and last frames must preserve the same threshold, same ancestral tablet box, same cart-exit direction, same pure-insect armed perimeter and same morning cold haze; the cart may recede into depth, but the camera must not turn it into an action chase. Pure insect infantry never move sacks or grip wrists; they only maintain route-blocking pressure. The hollow doorway is the final information.",
+        "negative_prompt_zh": "不要追车英雄镜头、不要押车变战车、不要现代车轮、不要夸张哭喊、不要大面积底光火场感、不要圣光式逆光、不要车离开后换地理、不要祖牌盒消失、不要孩子手印变血手印、不要粮袋漂浮、不要泥水塑料感、不要黄色闪粉、数字颗粒、过度丁达尔光、视频涂抹、花屏、压缩块、人物融化、不要纯虫族搬粮、不要纯虫族缺少兵器、不要奴兵变纯虫族爪手",
+        "negative_prompt_en": "avoid heroic cart chase, cart becoming a war chariot, modern wheels, exaggerated crying, broad fire-like bottom light, sacred backlight, geography changing after cart leaves, missing tablet box, child handprint turning bloody, floating sacks, plastic mud water, yellow glitter, digital speckle, excessive Tyndall beams, video smearing, glitches, compression blocks, melting figures., pure insect soldiers moving sacks, pure insect guards without weapons, slave soldiers turning into clawed pure insects"
       },
       "workflow_family": "flf2v_transition",
       "parameter_profile": {
@@ -973,7 +1059,9 @@
         "frame_count": 192,
         "motion_notes": "The cart and slave soldiers exit laterally while the camera does not chase; it holds behind the household threshold with a very slow pullback, stressing that grain leaves while the home remains hollow. Wheel sound overtakes crying at the end."
       },
-      "status": "needs_config"
+      "status": "needs_config_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "prompt_revision": "sc002_c018_armed_guard_redo_handoff_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
     },
     {
       "production_metadata": {
@@ -1557,5 +1645,41 @@
       "status": "needs_config_motion_test_optional_match_target"
     }
   ],
-  "coverage_note": "SC003-SH001 through SC003-SH004 now use approved R010-R013 primary I2V reference frames with optimized beat-by-beat action, camera motion, lighting design, bilingual final prompts and motion-test status on 2026-06-11."
+  "coverage_note": "SC003-SH001 through SC003-SH004 now use approved R010-R013 primary I2V reference frames with optimized beat-by-beat action, camera motion, lighting design, bilingual final prompts and motion-test status on 2026-06-11.",
+  "updated_at": "2026-06-11T10:58:00+08:00",
+  "sc002_same_ground_height_scale_handoff_2026_06_11": {
+    "status": "blocked_user_visual_qc_failed_identity_height_scale_relock_required",
+    "role_lock": "C016B official inherits global insect face/white hat and opens register; C017 mixed slave soldiers grip/move grain with five-finger hardened human hands and one thin low money-tail braid; C018 pure insect infantry towers over humans on the same ground and blocks routes with weapons.",
+    "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_until_user_confirms_2026-06-11"
+  },
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "frame_use_rule": "Do not use current SC002 R005-R009 candidates for video production; regenerate at 4096x2304 after identity and same-ground height-scale relock.",
+    "prompt_lock": "2026-06-11 用户视觉 QC 退回后的重生硬锁：SC002 参考帧必须先让角色身份和身高差一眼成立。使用同一泥地/同一车道地平线：C025 村民为普通人族低位基准，C017 奴兵为 175-185cm 代表体量且保留五指硬化人手与低位金钱尾辫，C016B 粮税虫吏为 195-205cm 画面代表值并只开册下令，C018 纯虫族小兵为 215-230cm 站立等效并只持短矛/钩镰封路。所有脚底、靴底、爪足或地面接触点必须落在同一可读泥地平面；如果角色低伏或弯腰，仍必须通过肩高、头壳、兵器、门框或旁站基准证明其真实等效身高。",
+    "negative_lock": "不要继续使用 2026-06-11 被用户退回的 SC002 候选帧作为通过参考；不要让官吏、奴兵、纯虫族小兵和普通人族同身高；不要让 C016B 站桌子、检查台、粮袋、台阶或车板造高；不要让 C017 变纯虫族爪手或普通人族士兵；不要让 C018 缺兵器、搬粮、扣腕或开册；不要用透视、裁切、前景放大、低伏遮挡来掩盖身高差。",
+    "scale_consistency_lock": {
+      "version": "character-consistency-height-scale-lock-v1-2026-06-11",
+      "source": "bible/characters.md functional-role height locks plus user visual QC rejection on 2026-06-11",
+      "required_scale_ladder": [
+        "C025 ordinary human baseline: children 105-145cm, youths 145-165cm, ordinary adults 160-190cm, elders visually shorter from stoop.",
+        "C017 mixed slave soldier: canon range 170-200cm; SC002 representative should read 175-185cm and always below the selected C016/C018 on screen.",
+        "C016 low insect official: canon range 190-210cm; representative screen height about 200cm, taller than villagers and C017 by true body height, narrow and non-combat.",
+        "C018 pure insect infantry: canon range 200-230cm; representative standing-equivalent about 220cm, visibly taller and more alien than C016/C017/C025, armed perimeter only.",
+        "C019 heavy insect soldier: canon range 220-260cm; representative about 245cm, broader and heavier than C018, shield-wall or gate-pressure only."
+      ],
+      "same_ground_rule": "Feet, soles, claws or ground-contact points must align on one visible baseline or one continuous muddy ground plane; height difference may not be created by tables, platforms, stairs, grain sacks, carts, threshold steps, foreground enlargement, lens distortion or crop tricks.",
+      "camera_rule": "For cards, include one same-ground scale lineup strip with ruler ticks or doorway/human baseline. For reference frames, keep camera distance and ground plane readable enough that C025/C017/C016/C018/C019 hierarchy can be checked without guessing.",
+      "role_boundary_rule": "C016 opens/registers/orders, C017 grips/moves grain with five hardened human fingers, C018 blocks routes with weapons, C019 guards gates with shield mass, C025 remains ordinary humans with no insect features.",
+      "rejection_rules": [
+        "reject if C016, C017, C018 and C025 read as the same height class",
+        "reject if C017 becomes a pure insect, metal-glove guard, ordinary human soldier or loses the low money-tail braid/hardened five-finger hand",
+        "reject if C016 becomes a human accountant, blue high official, priest, slave soldier or combat soldier",
+        "reject if C018 lacks reverse-jointed legs, claw feet, pure-insect body or visible spear/hook-sickle when guarding",
+        "reject if C019 does not read broader/heavier than C018 when present",
+        "reject if C025 civilians gain insect traits or military gear",
+        "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
+      ]
+    }
+  }
 }

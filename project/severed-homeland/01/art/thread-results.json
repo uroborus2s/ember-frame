@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "sc002_r005_r009_generated_candidates_pending_user_visual_qc_2026-06-11",
+  "status": "sc002_user_visual_qc_failed_identity_height_scale_relock_required_2026-06-11",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -526,7 +526,7 @@
       "warnings": [
         "R008 clean imagegen-task thread completed and produced the selected source image.",
         "R009 clean imagegen-task thread completed without a usable imageGeneration output in read_thread; coordinator used current-thread built-in imagegen fallback with the same isolated prompt package.",
-        "Built-in imagegen native outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC.",
+        "Built-in imagegen native outputs were 1672x941; canonical project files were resampled to the old 3840x2160 episode delivery size. Treat as candidates pending user visual QC.",
         "Do not use this SC002 batch output for video or director-room prompt refresh.",
         "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
       ],
@@ -592,7 +592,7 @@
       "warnings": [
         "R003 clean imagegen-task thread refused the injury/aftershock prompt; coordinator used current-thread built-in imagegen fallback with the same isolated prompt package.",
         "R004 clean imagegen-task thread produced an alternate image retained in history; coordinator selected current-thread fallback because same-wall geometry and lighting better matched R003.",
-        "Native imagegen outputs were 1672x941; canonical project files were resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidates pending user visual QC.",
+        "Native imagegen outputs were 1672x941; canonical project files were resampled to the old 3840x2160 episode delivery size. Treat as candidates pending user visual QC.",
         "R003 residual risk: soldier reads older/heavier-armored than target young wall conscript."
       ],
       "qc_notes": [
@@ -664,7 +664,7 @@
       "warnings": [
         "R007 clean imagegen-task thread completed and produced the selected source image.",
         "Current-thread built-in fallback was generated while waiting and retained only in history; canonical output uses the imagegen-task source.",
-        "Native imagegen outputs were 1672x941; canonical project file was resampled to 3840x2160 to satisfy the episode reference-frame file contract. Treat as candidate pending user visual QC.",
+        "Native imagegen outputs were 1672x941; canonical project file was resampled to the old 3840x2160 episode delivery size. Treat as candidate pending user visual QC.",
         "E01_C016B has local image files available but older metadata elsewhere may still carry blocked/rejected wording; this run used the existing visual file as a reference input.",
         "Do not use this SC002 batch output for video or director-room prompt refresh.",
         "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
@@ -796,7 +796,7 @@
         "E01_R009"
       ],
       "warnings": [
-        "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
+        "Native imagegen output was 1672x941; canonical file was resampled to the old 3840x2160 episode delivery size.",
         "Treat as candidate pending user visual QC before final approval.",
         "Do not use this SC002 batch output for video or director-room prompt refresh.",
         "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
@@ -853,7 +853,7 @@
         "E01_R009"
       ],
       "warnings": [
-        "Native imagegen output was 1672x941; canonical file was resampled to 3840x2160 to satisfy the episode reference-frame file contract.",
+        "Native imagegen output was 1672x941; canonical file was resampled to the old 3840x2160 episode delivery size.",
         "Treat as candidate pending user visual QC before final approval.",
         "Do not use this SC002 batch output for video or director-room prompt refresh.",
         "Regenerate after C016B and C017 pass strict identity, body-metrics, and role-hierarchy QC."
@@ -1323,7 +1323,7 @@
         "01/assets/reference-frames/history/r006e01.rejected-no-child-handprint-source-20260611.png"
       ],
       "art_room_qc_status": "passed_art_room_visual_qc_pending_user_visual_qc_2026-06-11",
-      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
       "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
       "report": "01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
       "notes": [
@@ -1354,6 +1354,110 @@
         "Episode-specific SC004 register/checkpoint behavior remains in metadata and downstream prompts; this card still awaits user visual QC before video handoff."
       ],
       "completed_at": "2026-06-11T08:58:07+08:00"
+    },
+    {
+      "batch_id": "SC002_R005_R009_SAME_GROUND_HEIGHT_SCALE_REDO_20260611",
+      "thread_ids": {
+        "e01_r005": "019eb5d4-68d1-7152-ae47-e138060ed50e",
+        "e01_r006": "019eb5d8-c86c-70b0-9fa9-b81489fd60ba",
+        "e01_r007": "019eb602-4409-78e3-a429-5650834022a9",
+        "e01_r008": "019eb5e6-0b4e-7e41-991d-41c1104c478c",
+        "e01_r009": "019eb5ec-3050-7431-8cd8-8c1f97d333bf"
+      },
+      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "created_files": [
+        "01/assets/reference-frames/r005e01.png",
+        "01/assets/reference-frames/r006e01.png",
+        "01/assets/reference-frames/r007e01.png",
+        "01/assets/reference-frames/r008e01.png",
+        "01/assets/reference-frames/r009e01.png"
+      ],
+      "history_files": [
+        "01/assets/reference-frames/history/r005e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r006e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r007e01.rejected-black-hat-before-c016-white-hat-redo-20260611.png",
+        "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
+        "01/assets/reference-frames/history/r007e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r008e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r009e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png"
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R005",
+          "output_path": "01/assets/reference-frames/r005e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "dc53080a6cdcbabdd2b600f8a86104b25cb49e6d8d2ec38a65f1e0c2ab02374a",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
+          "source_sha256": "0e8f7adc0bc3b85da1a0e31b8e263a637017916822f2a14c905965507e2eec3e",
+          "thread_id": "019eb5d4-68d1-7152-ae47-e138060ed50e"
+        },
+        {
+          "asset_id": "E01_R006",
+          "output_path": "01/assets/reference-frames/r006e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "099c08d5f1db84fd9336dbbc82a97b4cd25f5b8e1ed762ead30822e7df83e566",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
+          "source_sha256": "e5e98b7e1d85b40b39e78ee32d510b8d3a431979f2fa47debe9d666a09c989be",
+          "thread_id": "019eb5d8-c86c-70b0-9fa9-b81489fd60ba"
+        },
+        {
+          "asset_id": "E01_R007",
+          "output_path": "01/assets/reference-frames/r007e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "470b43633bab7433b073fdf8f2866e5b5aac2d3d6a483b2636371ddf1fb46122",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
+          "source_sha256": "639ee53f24a841bcb0a0ef0add235c9b34b3f297a4b2916df12e940c14f325a8",
+          "thread_id": "019eb602-4409-78e3-a429-5650834022a9"
+        },
+        {
+          "asset_id": "E01_R008",
+          "output_path": "01/assets/reference-frames/r008e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "44e30566752e64f44149fce22c99d4b4548fcec8034af292f410ab1d7b730a97",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
+          "source_sha256": "954ffbd2e1f8624f36b61eacfce2c9027005fd012424936cafd272bcd1e8aa04",
+          "thread_id": "019eb5e6-0b4e-7e41-991d-41c1104c478c"
+        },
+        {
+          "asset_id": "E01_R009",
+          "output_path": "01/assets/reference-frames/r009e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "3e6cc59cec970feac327256778b0a0df8aea8290605eb22dee57160fe477679e",
+          "source_dimensions": "1672x941",
+          "source_history_file": "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
+          "source_sha256": "7f2cd9ba3dee3f8788ad0955e83232c3545a9d3970fcd97de18db730c1ba98af",
+          "thread_id": "019eb5ec-3050-7431-8cd8-8c1f97d333bf"
+        }
+      ],
+      "qc_notes": [
+        "R005-R009 were regenerated or replaced after the user rejected incorrect C016/C017 inheritance and body metrics.",
+        "C016/C018 height is now specified and audited as true same-ground height difference, not table/platform/stair/grain-sack elevation.",
+        "C017 hand requirement is audited as five hardened human fingers, with one thin low money-tail braid.",
+        "C018 pure insect soldiers are present as armed route-blocking pressure where required.",
+        "R007 has a minor residual risk: a readable environment cloth sign should not be carried into video/post text layers."
+      ],
+      "reference_inputs": [
+        "C016",
+        "E01_C016B",
+        "E01_C017",
+        "E01_C018",
+        "E01_L003",
+        "E01_P003",
+        "E01_P008",
+        "E01_F005"
+      ],
+      "completed_at": "2026-06-11T17:41:57+08:00",
+      "next_action": "wait_for_user_visual_qc_before_video_production"
     }
   ],
   "blocked_jobs": [
@@ -1496,7 +1600,7 @@
         "E01_R008",
         "E01_R009"
       ],
-      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11"
+      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11"
     },
     {
       "batch_id": "SC004_SH001_R015",
@@ -1579,7 +1683,7 @@
     "2026-06-11: R005-R009 regenerated after C016B/C017 global master rebuild; canonical files are 3840x2160 PNG RGB without alpha.",
     "2026-06-11: Art-room QC passed the new R005-R009 as candidates only; user visual QC is required before video production."
   ],
-  "updated_at": "2026-06-11T09:24:00+08:00",
+  "updated_at": "2026-06-11T18:45:00+08:00",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -1953,7 +2057,7 @@
         "remaining_risk": "Global C017 master is a series template and must still be user-approved as the episode state card before R006/R008/R009 regeneration."
       }
     ],
-    "video_handoff_status": "R005-R009 remain blocked pending user visual QC and regeneration"
+    "video_handoff_status": "R005-R009 remain blocked after failed user visual QC; regenerate at 4096x2304 after identity-height relock"
   },
   "sc003_storyboard_highscore_qc_2026_06_11": {
     "status": "passed_highscore_target_92_director_95plus_art_2026-06-11",
@@ -2217,8 +2321,8 @@
     "same_space_zone_asset_id": "E01_L001A"
   },
   "sc002_r005_r009_global_ref_regeneration_2026_06_11": {
-    "status": "generated_candidate_parent_art_room_qc_passed_pending_user_visual_qc_2026-06-11",
-    "approval_status": "candidate_pending_user_visual_qc_after_sc002_global_ref_regeneration_2026-06-11",
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
     "reviewed_at": "2026-06-11T03:20:00+08:00",
     "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
     "report": "01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
@@ -2348,7 +2452,8 @@
         ]
       }
     },
-    "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11"
+    "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+    "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff"
   },
   "e01_c016a_global_master_rebuild_2026_06_11": {
     "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
@@ -2411,5 +2516,160 @@
     "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
     "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
     "updated_at": "2026-06-11T09:24:00+08:00"
+  },
+  "sc002_c018_armed_guard_redo_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "approval_status": "candidate_pending_user_visual_qc",
+    "reviewed_at": "2026-06-11T09:55:00+08:00",
+    "report": "01/art/reports/sc002-c018-armed-guard-redo-qc-2026-06-11.md",
+    "audit_report": "01/art/audits/sc002-c018-armed-guard-redo-qc-2026-06-11.md",
+    "character_cards": [
+      {
+        "asset_id": "E01_C016B",
+        "output_path": "01/assets/characters/c016be01.png",
+        "status": "retained_exact_global_C016_master_as_identity_lock",
+        "rejected_prompt_candidate": "01/assets/characters/history/c016be01.sc002-grain-tax-candidate-rejected-face-risk-20260611.png"
+      },
+      {
+        "asset_id": "E01_C017",
+        "output_path": "01/assets/characters/c017e01.png",
+        "status": "generated_candidate_with_readable_five_finger_hardened_hand",
+        "source_history_file": "01/assets/characters/history/c017e01.sc002-hand-scale-source-20260611.png"
+      },
+      {
+        "asset_id": "E01_C018",
+        "output_path": "01/assets/characters/c018e01.png",
+        "status": "generated_candidate_as_armed_pure_insect_perimeter_guard",
+        "source_history_file": "01/assets/characters/history/c018e01.armed-guard-scale-source-20260611.png"
+      }
+    ],
+    "reference_frames": [
+      {
+        "asset_id": "E01_R005",
+        "shot": "SC002-SH001",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "481e110459c45248bff291a084a54807ee2562f09fd63c9a4179a988ddbf240c",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.c018-armed-guard-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-c018-armed-guard-redo-20260611.png",
+        "qc": {
+          "shot": "SC002-SH001",
+          "use": "I2V 首帧",
+          "director_requirement_score": 93,
+          "art_fit_score": 94,
+          "notes": [
+            "粮袋墙压住上半画面，检查台、泥路、低位村民和金河粮仓空间可读。",
+            "C016B 仍以全局 C016 母卡为脸型锁，画面中负责开册/点税，不持兵器。",
+            "新增 C018 纯虫族持矛/钩镰在车道边封路，身高和体型明显压过 C017 奴兵与村民。"
+          ]
+        }
+      },
+      {
+        "asset_id": "E01_R006",
+        "shot": "SC002-SH002",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "2fc3205e5b1bbd71c7134bafdeda634625bdcc9c83b7c91596a19626580e63e7",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.c017-wrist-c018-guard-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.rejected-foot-ankle-risk-before-wrist-correction-20260611.png",
+        "qc": {
+          "shot": "SC002-SH002",
+          "use": "I2V 首帧",
+          "director_requirement_score": 95,
+          "art_fit_score": 95,
+          "notes": [
+            "扣腕手为 C017 混血奴兵五指人手，硬化甲片、骨白腕绑和真实握压都清楚。",
+            "抓握对象已修正为成人前臂/袖口，不再读成脚踝或小腿。",
+            "祖牌盒、冷白虫蜡儿童手印、湿泥和散粮位于前景主焦点。",
+            "C018 纯虫族只在背景持械封路，没有替代奴兵执行扣腕动作。"
+          ]
+        }
+      },
+      {
+        "asset_id": "E01_R007",
+        "shot": "SC002-SH003",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "9a4ab8df3144f50eeb0f12d6d95af239e9347351ab131b0c20b867993143ed66",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.c016-table-c018-guard-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-c018-armed-guard-redo-20260611.png",
+        "qc": {
+          "shot": "SC002-SH003",
+          "use": "I2V 首帧",
+          "director_requirement_score": 94,
+          "art_fit_score": 94,
+          "notes": [
+            "前景白册、骨算盘、税牌、秤钩、虫蜡和湿桌面形成证据层。",
+            "中景 C016B 开册点税，C017 奴兵扣腕，职责清楚没有互换。",
+            "背景 C018 持兵器压住粮袋墙/车道边缘，形成制度冲突和体型威压。"
+          ]
+        }
+      },
+      {
+        "asset_id": "E01_R008",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 首帧",
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "cebcba0c74bca387cfa78e8835146a46e714e243881cf721bf728585f8bd3be3",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.c018-armed-guard-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-c018-armed-guard-redo-20260611.png",
+        "qc": {
+          "shot": "SC002-SH004",
+          "use": "FLF2V 首帧",
+          "director_requirement_score": 95,
+          "art_fit_score": 95,
+          "notes": [
+            "同一门槛后方机位成立，祖牌盒、儿童蜡手印、散粮和车辙是最大前景。",
+            "C017 奴兵负责搬粮/绳索，手部仍是人形五指硬化手，不是虫爪。",
+            "C018 纯虫族持械分列车道两侧，体型高于奴兵，制造外圈封路压力。"
+          ]
+        }
+      },
+      {
+        "asset_id": "E01_R009",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 终帧",
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "04be4bfb44c8cd324b7f12d93bb3e67126316987f198675d5cb67d1157d29b81",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.c018-armed-guard-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-c018-armed-guard-redo-20260611.png",
+        "qc": {
+          "shot": "SC002-SH004",
+          "use": "FLF2V 终帧",
+          "director_requirement_score": 95,
+          "art_fit_score": 95,
+          "notes": [
+            "与 R008 维持同轴门槛构图，空门槛、祖牌盒、儿童蜡手印和车辙是主叙事。",
+            "粮车远去后，C018 持械守卫退到车道边远景，仍保持体型差和压迫感。",
+            "画面没有重新拉近扣腕或官吏，符合终帧空场要求。"
+          ]
+        }
+      }
+    ],
+    "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+    "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff"
+  },
+  "sc002_user_visual_qc_rejection_2026_06_11": {
+    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "reported_issue": "角色一致性仍未满足，包括身高差设定。",
+    "effective_from": "2026-06-11T18:45:00+08:00",
+    "blocked_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C018",
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "required_scale_ladder": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline.",
+    "next_action": "Regenerate C016B/C017/C018 state cards with same-ground scale lineup, then regenerate R005-R009 at 4096x2304 before any ComfyUI/video handoff.",
+    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md"
   }
 }

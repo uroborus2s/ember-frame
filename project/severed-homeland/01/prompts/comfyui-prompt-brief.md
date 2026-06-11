@@ -2,9 +2,9 @@
 
 ## Scope / 范围
 
-中文：本交付包覆盖第01集 `SC001-SH001` 到 `SC001-SH003` 的锁喉关外墙暴雪序幕、`SC002-SH001` 到 `SC002-SH004` 的金河粮仓征粮制度段，以及 `SC003-SH001` 到 `SC003-SH004` 的南方红线密室段。SC001 四张 4K 横屏参考图可用于 ComfyUI 视频生成；SC002 已接入 `r005e01.png` 到 `r009e01.png` 候选参考帧，待用户视觉 QC 后进入小批量试渲；SC003 的 `r010e01.png` 到 `r013e01.png` 已通过高分复评并可作为主 I2V 参考帧；`r014e01.png` 仅作为后续残阳坳封锁线匹配目标保留。
+中文：本交付包覆盖第01集 `SC001-SH001` 到 `SC001-SH003` 的锁喉关外墙暴雪序幕、`SC002-SH001` 到 `SC002-SH004` 的金河粮仓征粮制度段，以及 `SC003-SH001` 到 `SC003-SH004` 的南方红线密室段。SC001 四张 4K 横屏参考图可用于 ComfyUI 视频生成；SC002 的 `r005e01.png` 到 `r009e01.png` 当前候选已被用户视觉 QC 退回，原因是角色一致性与身高差仍未满足。SC002 在重新生成前不得进入小批量试渲：下一轮必须先按 `C025 -> C017 -> C016 -> C018 -> C019` 同地平线比例链重生角色状态卡，再按 `4096x2304` 重生 R005-R009；SC003 的 `r010e01.png` 到 `r013e01.png` 已通过高分复评并可作为主 I2V 参考帧；`r014e01.png` 仅作为后续残阳坳封锁线匹配目标保留。
 
-English: This delivery pack covers episode 01 `SC001-SH001` through `SC001-SH003`, the Suohou Gate blizzard prologue, `SC002-SH001` through `SC002-SH004`, the Jinhe grain-depot taxation sequence, and `SC003-SH001` through `SC003-SH004`, the southern red-line room sequence. Four SC001 4K landscape reference images can be used for ComfyUI video generation; SC002 now binds candidate reference frames `r005e01.png` through `r009e01.png`, pending user visual QC before small-batch test rendering; SC003 `r010e01.png` through `r013e01.png` have passed high-score review and may be used as primary I2V reference frames; `r014e01.png` is retained only as a later Canyangao blockade match target.
+English: This delivery pack covers episode 01 `SC001-SH001` through `SC001-SH003`, the Suohou Gate blizzard prologue, `SC002-SH001` through `SC002-SH004`, the Jinhe grain-depot taxation sequence, and `SC003-SH001` through `SC003-SH004`, the southern red-line room sequence. Four SC001 4K landscape reference images can be used for ComfyUI video generation; SC002 candidate frames `r005e01.png` through `r009e01.png` have failed user visual QC because character identity and height hierarchy still do not hold. SC002 must not enter test rendering until episode character cards are rebuilt against the `C025 -> C017 -> C016 -> C018 -> C019` same-ground scale ladder and R005-R009 are regenerated at `4096x2304`; SC003 `r010e01.png` through `r013e01.png` have passed high-score review and may be used as primary I2V reference frames; `r014e01.png` is retained only as a later Canyangao blockade match target.
 
 ## Texture Standard / 质感标准
 
@@ -14,13 +14,13 @@ English: `r001e01.png` has been replaced with the latest fortress_battle_far_vie
 
 ## Creative Update / 创作更新
 
-中文：SC001 开场改为墙外正向偏斜攻城前推，不再要求模型完成升到墙头后的转向。首帧应是墙外攻城方向低机位，约七成正向读城门压力、三成斜向给纵深；兽潮、攻城车或破门猛犸压向同一面黑石城门。尾帧仍保持同一墙外方向，攻城车木梁或铁包巨角第一次重撞城门，雪雾冲画面，墙头同一钟架和同一口骨钟在上方或侧上方横摆。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条前推中只读精炼时代事件：“肃明一千两百二十六年，北方大雪。”；“敌已叩关。”改放 `SC001-SH002` 末尾。
+中文：SC001 开场改为墙外正中对称史诗攻城前推，不再要求模型完成升到墙头后的转向。首帧保留 R001/R002 当前画面样式：城外攻城方向低机位、正中对称、同一面黑石墙和同一座城门，兽潮、攻城车或破门猛犸压向城门。尾帧仍保持同一墙外方向和同一中轴压力，镜头更近靠近城门，攻城车木梁或铁包巨角第一次重撞城门，雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光更浓烈。骨钟在门楼里，第一镜只需要钟声，不要求钟体或同一钟架出现在画面中。禁止越过墙脊看向城内或另一侧，禁止把城墙读成两侧都被攻击的横墙。旁白在这条前推中只读精炼时代事件：“肃明一千两百二十六年，北方大雪。”；“敌已叩关。”改放 `SC001-SH002` 末尾。
 
-English: SC001 now uses an exterior front-biased siege push, and no longer asks the model to complete a turn after climbing to the wall top. The first frame should be a low exterior siege angle, about seventy percent frontal gate pressure and thirty percent oblique depth, with the beast tide, siege cart or gate-breaking mammoth pressing toward the same blackstone gate. The last frame keeps the same exterior direction as a siege-cart beam or iron-wrapped horn hits the gate for the first time, snow haze blasts into frame, and the same wall-top bell frame and same bone bell swing above or upper-side. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. This push only reads the refined era-event voiceover: "In Suming year one thousand two hundred twenty-six, heavy snow falls in the north."; "The enemy has reached the pass." lands at the end of `SC001-SH002`.
+English: SC001 now uses a centered exterior epic siege push, and no longer asks the model to complete a turn after climbing to the wall top. The first frame keeps the current R001/R002 image language: a low exterior siege angle, centered symmetry, the same blackstone wall and the same gate, with the beast tide, siege cart or gate-breaking mammoth pressing toward the gate. The last frame keeps the same exterior direction and central-axis pressure, moves closer to the gate, and shows a siege-cart beam or iron-wrapped horn hitting the gate for the first time, with stronger snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection. The bone bell is inside the gatehouse; this first shot needs only the bell sound, with no visible bell body or same bell frame required. Do not cross over the wall crown to the inner or opposite side, and do not read the wall as a horizontal barrier attacked from both sides. This push only reads the refined era-event voiceover: "In Suming year one thousand two hundred twenty-six, heavy snow falls in the north."; "The enemy has reached the pass." lands at the end of `SC001-SH002`.
 
-中文：`r001e01.png` 和 `r002e01.png` 若仍是上一版墙头转向构图，需要按本版“墙外前推 + 撞门震钟”重新确认或重生。该镜头时长保持 `3.5s / 84 frames @ 24fps`。
+中文：`r001e01.png` 的正中对称城外史诗建立风格通过并作为质感标准保留；`r002e01.png` 需要按“同一墙外方向 + 更近城门 + 更强撞门冲击 + 门楼内钟声”修改或重生。该镜头时长保持 `3.5s / 84 frames @ 24fps`。
 
-English: If `r001e01.png` and `r002e01.png` still reflect the previous wall-top turning composition, they must be rechecked or regenerated for this exterior push plus gate-impact bell-shock plan. The shot duration remains `3.5s / 84 frames @ 24fps`.
+English: The centered exterior epic-establishing style of `r001e01.png` is approved as the texture standard; `r002e01.png` needs an edit or regeneration for the same exterior direction, a closer gate endpoint, stronger gate-impact force and gatehouse bell sound. The shot duration remains `3.5s / 84 frames @ 24fps`.
 
 中文：`SC001-SH002` 废弃“年轻军户扶钟”构图。新版 `r003e01.png` 必须重生为：年轻军户被撞门余震晃倒，半倒在同一黑石女墙边，武器脱手滑进雪泥，旁边同一口骨钟横摆。人物脸被头盔、围巾、阴影和风雪半遮，不做正脸表情，重点是身体失衡、武器脱手和钟仍在响。
 
@@ -42,7 +42,7 @@ English: The following unified cinematography grammar is for prompt authors and 
 
 | Shot | 光影策略 / Lighting Strategy |
 | --- | --- |
-| `SC001-SH001` | 中文：墙外攻城建立镜头需要明确亮部层级，而不是整体压灰。裂云低角度冷白带淡金天光切出城墙、攻城车、巨兽和骨钟轮廓；撞门雪雾是最亮区域；低位暗红火点只做边缘反打；黑石墙保留大面积负补光暗面。<br>English: The exterior siege-establishing shot needs a clear highlight hierarchy rather than global greyness. Low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine, beast and bone-bell silhouettes; the gate-impact snow haze is the brightest zone; low dark-red fire points only edge-counterlight forms; the blackstone wall keeps large negative-fill shadow masses. |
+| `SC001-SH001` | 中文：墙外正中对称攻城建立镜头需要明确亮部层级，而不是整体压灰。裂云低角度冷白带淡金天光切出城墙、攻城车、巨兽和城门轮廓；撞门雪雾、碎冰和旧木屑是最亮区域；低位暗红火点只做边缘反打；黑石墙保留大面积负补光暗面。骨钟只作为门楼内钟声，不要求出现在第一镜画面里。<br>English: The centered exterior siege-establishing shot needs a clear highlight hierarchy rather than global greyness. Low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine, beast and gate silhouettes; the gate-impact snow haze, ice splinters and old timber chips are the brightest zone; low dark-red fire points only edge-counterlight forms; the blackstone wall keeps large negative-fill shadow masses. The bone bell exists as gatehouse sound only and is not required on-screen in the first shot. |
 | `SC001-SH002` | 中文：身体代价近景用精致轮廓光解决“脏暗”。左上或侧后裂云冷白带淡金天光给钟架、锁链、头盔、肩甲和脱手武器轮廓；撞门方向冷白雪雾反光是亮部中心；低位暗红火只勾手指、武器边缘、钟缘和冻血；黑墙负补光压脸和暗面。<br>English: The bodily-cost close shot solves muddy darkness with refined rim light. Storm-break cold-white light with a faint pale-gold edge from upper-left or side-back rims the bell frame, chains, helmet, shoulder armor and dropped weapon; cold-white snow-haze bounce from the gate-impact direction is the highlight center; low dark-red fire only edges fingers, weapon, bell rim and frozen blood; black-wall negative fill presses face and dark side. |
 | `SC001-SH003` | 中文：战场口令中近景强调人物可读性。半张脸被黑墙吞没，远火低位暖边只切出侧脸、手和旧甲片，雪雾分离枪线和门线，不形成英雄逆光。<br>English: The command close-medium shot prioritizes character readability. Half the face is swallowed by the black wall, low distant fire cuts only the side profile, hand and old armor plates, and snow haze separates spear line and gate line without heroic backlight. |
 | `SC002-SH001` | 中文：征粮建立镜头用柔和清晨冷雾托住真实感，低角度逆光穿粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦麻袋、湿木和河泥纹理；丁达尔光只做纵深。<br>English: The grain-tax establishing shot uses soft morning cold haze for realism, low-angle backlight through grain dust to rim the sack wall, clerk hat and register board, and narrow side light to graze burlap, wet wood and river-mud texture; Tyndall light only adds depth. |
@@ -56,15 +56,15 @@ English: The following unified cinematography grammar is for prompt authors and 
 
 ## Video Quality Lock / 视频画质锁
 
-中文：SC001 的“脏暗、模糊、花屏”问题必须在构图和 prompt 两层处理。构图上要求前景、中景、背景明确分层，关键脸、手、武器、钟架、城门和兽潮轮廓可读；光影上用明确亮部中心和轮廓光解决灰暗，不靠全局提亮。雪雾只允许做体积层、撞击亮部和隐藏剪切点，不能糊成覆盖细节的灰白罩。ComfyUI 负面提示必须包含：粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化、甲片粘连、关键轮廓糊掉。
+中文：SC001 的“脏暗、模糊、花屏”问题必须在构图和 prompt 两层处理。构图上要求前景、中景、背景明确分层，第一镜关键城门、撞击点、兽潮和城墙轮廓可读；第二、三镜再强调脸、手、武器和钟架空间。光影上用明确亮部中心和轮廓光解决灰暗，不靠全局提亮。雪雾只允许做体积层、撞击亮部和隐藏剪切点，不能糊成覆盖细节的灰白罩。ComfyUI 负面提示必须包含：粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、糊脸、手指融化、甲片粘连、关键轮廓糊掉。
 
-English: SC001 must solve muddy darkness, blur and video glitches at both composition and prompt levels. Composition requires clear foreground/midground/background separation and readable key faces, hands, weapons, bell frame, gate and beast silhouettes; lighting solves darkness with a clear highlight center and rim light, not global brightening. Snow haze is only volumetric depth, impact highlight and hidden cut point, never a grey-white veil over detail. ComfyUI negative prompts must include particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers, fused armor plates and blurred key silhouettes.
+English: SC001 must solve muddy darkness, blur and video glitches at both composition and prompt levels. Composition requires clear foreground/midground/background separation; in the first shot, the key gate, impact point, beast tide and wall silhouettes must read, while faces, hands, weapons and bell-frame space become priorities in shots two and three. Lighting solves darkness with a clear highlight center and rim light, not global brightening. Snow haze is only volumetric depth, impact highlight and hidden cut point, never a grey-white veil over detail. ComfyUI negative prompts must include particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred faces, melted fingers, fused armor plates and blurred key silhouettes.
 
 ## Shot Method / 镜头方法
 
 | Shot | Method | Reference Inputs | Audio |
 | --- | --- | --- | --- |
-| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（墙外正向偏斜攻城首帧）, `01/assets/reference-frames/r002e01.png`（同一墙外方向撞门震钟尾帧） | 旁白 / voiceover |
+| `SC001-SH001` | `FLF2V, 3.5s / 84f` | `01/assets/reference-frames/r001e01.png`（墙外正中对称史诗攻城首帧）, `01/assets/reference-frames/r002e01.png`（同一墙外方向、更近城门、更强撞击尾帧；门楼内钟声，画面不强制露钟） | 旁白 + 门楼内钟声 / voiceover + gatehouse bell sound |
 | `SC001-SH002` | `I2V` | `01/assets/reference-frames/r003e01.png`（必须重生为半倒墙边、武器脱手、骨钟横摆） | 断矛、冻血、远处战声 / broken spear, frozen blood, distant battle |
 | `SC001-SH003` | `I2V` | `01/assets/reference-frames/r004e01.png` | 薛临墙台词 / Xue Linqiang line |
 | `SC002-SH001` | `I2V, 6s / 144f` | `01/assets/reference-frames/r005e01.png` | 粮袋、骨算盘、押车远声 / grain sacks, bone abacus, distant cart |
@@ -100,20 +100,21 @@ English: SH001 first/last frames are the primary constraints; the three beast re
 
 | Image | Path | Node Role | Suggested Use |
 | --- | --- | --- | --- |
-| SC002-SH001 first frame | `01/assets/reference-frames/r005e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Primary I2V frame; locks grain wall, clerk height, low villagers and morning haze. |
-| SC002-SH002 first frame | `01/assets/reference-frames/r006e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Primary I2V frame; locks threshold, tablet box, handprint and restrained child-risk framing. |
-| SC002-SH003 first frame | `01/assets/reference-frames/r007e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Primary I2V frame; locks register/table hierarchy, clerk, pinned woman and seal action. |
-| SC002-SH004 first frame | `01/assets/reference-frames/r008e01.png` | `PLACEHOLDER_FIRST_FRAME_IMAGE_NODE` | FLF2V start; grain sacks being loaded, tablet box and handprint in foreground. |
-| SC002-SH004 last frame | `01/assets/reference-frames/r009e01.png` | `PLACEHOLDER_LAST_FRAME_IMAGE_NODE` | FLF2V endpoint; empty threshold, cart receding into cold haze. |
+| SC002-SH001 first frame | `01/assets/reference-frames/r005e01.png` | `BLOCKED_DO_NOT_LOAD` | User visual QC failed; regenerate at 4096x2304 after identity and same-ground height-scale relock. |
+| SC002-SH002 first frame | `01/assets/reference-frames/r006e01.png` | `BLOCKED_DO_NOT_LOAD` | User visual QC failed; regenerate at 4096x2304 after identity and same-ground height-scale relock. |
+| SC002-SH003 first frame | `01/assets/reference-frames/r007e01.png` | `BLOCKED_DO_NOT_LOAD` | User visual QC failed; regenerate at 4096x2304 after identity and same-ground height-scale relock. |
+| SC002-SH004 first frame | `01/assets/reference-frames/r008e01.png` | `BLOCKED_DO_NOT_LOAD` | User visual QC failed; regenerate at 4096x2304 after identity and same-ground height-scale relock. |
+| SC002-SH004 last frame | `01/assets/reference-frames/r009e01.png` | `BLOCKED_DO_NOT_LOAD` | User visual QC failed; regenerate at 4096x2304 after identity and same-ground height-scale relock. |
 | Grain tax clerk | `01/assets/characters/c016be01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Identity and wardrobe/material reference only; do not use as scene frame. |
-| Slave soldier | `01/assets/characters/c017e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Identity, wrist binding and leather/armor material reference only. |
+| Slave soldier | `01/assets/characters/c017e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Identity, wrist binding and five-finger hardened hand reference only. |
+| Pure insect infantry | `01/assets/characters/c018e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Armed perimeter, weapon and height-scale reference only; do not use for register work, wrist grip or sack handling. |
 | Jinhe depot | `01/assets/locations/l003e01.png` | `PLACEHOLDER_LOCATION_REFERENCE_NODE` | Geography/material reference; not a replacement for shot reference frames. |
 | White register | `01/assets/props/p003e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | Prop/line-control reference; model must not generate readable text. |
 | Grain tag, wax and tablet box | `01/assets/props/p008e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | Prop/material reference for wax, grain tag, tablet box, jar and cart rope. |
 
-中文：`E01_C023` 金河家庭状态卡在索引中仍有 blocked 状态，不能作为唯一身份锁。SC002 当前以 R005-R009 视频参考帧锁住家庭姿态和门槛状态；如果后续要提高家庭脸部连续性，需要先完成 `E01_C023` 用户视觉 QC。
+中文：`E01_C023` 金河家庭状态卡在索引中仍有 blocked 状态，不能作为唯一身份锁。SC002 当前 R005-R009 视频参考帧也已被用户视觉 QC 退回，不能继续锁家庭姿态或门槛状态；如果后续要提高家庭脸部连续性，需要先完成 `E01_C023` 用户视觉 QC，并在新 R005-R009 中同步重验。`E01_C018` 在 SC002 中只负责纯虫族持械封路和体型压迫，不得替代 C017 奴兵执行扣腕/搬粮，也不得替代 C016B 官吏开册。
 
-English: `E01_C023`, the Jinhe household state card, still has a blocked status in the index and must not be the sole identity lock. SC002 currently uses R005-R009 video reference frames to lock family posture and threshold state; if stronger family face continuity is needed later, complete user visual QC for `E01_C023` first.
+English: `E01_C023`, the Jinhe household state card, still has a blocked status in the index and must not be the sole identity lock. SC002 R005-R009 video reference frames have also failed user visual QC and cannot continue locking family posture or threshold state; if stronger family face continuity is needed later, complete user visual QC for `E01_C023` and recheck it in the regenerated R005-R009 set. In SC002, `E01_C018` only supplies pure insect armed route-blocking and height pressure; it must never replace C017 slave-soldier wrist grip/grain handling or C016B register work.
 
 ### SC003 Reference Binding / SC003 参考图接入
 
@@ -138,10 +139,10 @@ English: Production should use `01/prompts/comfyui-render-prompts.md` directly. 
 
 ## Asset Use Rules / 资产使用规则
 
-- 中文：`E01_R001` 和 `E01_R002` 需要按“墙外正向偏斜攻城 + 撞门震钟”重新确认；`E01_R003` 旧扶钟构图已废弃，必须重生后再作为 `SC001-SH002` 的 I2V 首帧；`E01_R004` 可继续作为 `SC001-SH003` 的 I2V 首帧。
-- English: `E01_R001` and `E01_R002` must be rechecked against the exterior front-biased siege plus gate-impact bell-shock plan; the old bracing-the-bell `E01_R003` composition is superseded and must be regenerated before use as the `SC001-SH002` I2V first frame; `E01_R004` may continue as the `SC001-SH003` I2V first frame.
-- 中文：`E01_R005` 到 `E01_R009` 已作为 SC002 参考帧候选写入 canonical 路径。它们可以用于 SC002 提示词和 workflow 绑定，但在用户视觉 QC 前不得标记为 final approved。
-- English: `E01_R005` through `E01_R009` are written to canonical paths as SC002 reference-frame candidates. They may be used for SC002 prompts and workflow binding, but must not be marked final approved before user visual QC.
+- 中文：`E01_R001` 保留当前墙外正中对称史诗攻城风格并作为质感标准；`E01_R002` 需要按“同一墙外方向 + 更近城门 + 更强撞门冲击 + 门楼内钟声”修改，不要求画面出现骨钟或钟架；`E01_R003` 旧扶钟构图已废弃，必须重生后再作为 `SC001-SH002` 的 I2V 首帧；`E01_R004` 可继续作为 `SC001-SH003` 的 I2V 首帧。
+- English: `E01_R001` keeps the current centered exterior epic siege style and remains the texture standard; `E01_R002` needs an edit for the same exterior direction, closer gate endpoint, stronger gate impact and gatehouse bell sound, with no on-screen bell or bell frame required; the old bracing-the-bell `E01_R003` composition is superseded and must be regenerated before use as the `SC001-SH002` I2V first frame; `E01_R004` may continue as the `SC001-SH003` I2V first frame.
+- 中文：`E01_R005` 到 `E01_R009` 已被用户视觉 QC 退回，不能用于 SC002 提示词、workflow 绑定、小批量试渲或正式视频生产。下一轮必须先完成角色同地平线比例锁，再按 `4096x2304` 重生。
+- English: `E01_R005` through `E01_R009` have failed user visual QC and must not be used for SC002 prompts, workflow binding, test rendering or final video production. The next pass must first complete the same-ground character scale lock, then regenerate the frames at `4096x2304`.
 - 中文：`E01_R010` 到 `E01_R013` 已通过 SC003 高分复评并进入 I2V motion test 准备状态；`E01_R014` 只保留为后续封锁线匹配目标。本轮仍缺具体模型和 workflow 配置，因此状态不是 `ready`。
 - English: `E01_R010` through `E01_R013` have passed SC003 high-score review and are ready for I2V motion-test setup; `E01_R014` is retained only as a later blockade-line match target. This pass still lacks concrete model and workflow configuration, so status is not `ready`.
 - 中文：`C020/c020m.png`、`C021/c021m.png`、`E01_C020/c020e01.png` 必须作为图片节点接入，分别锁兽族多兵种、伴生兽多样性和本集暴雪状态；只写在 prompt 里无效。
@@ -153,6 +154,6 @@ English: Production should use `01/prompts/comfyui-render-prompts.md` directly. 
 
 ## Unresolved Config / 待决配置
 
-中文：项目尚未提供 ComfyUI checkpoint、LoRA、ControlNet、IPAdapter preset、workflow template 或 node ID；因此 `SC001-SH001` 到 `SC003-SH004` 仍不能标记为 `ready`。SC002 还需要用户视觉 QC 确认 R005-R009 候选参考帧；SC003 已完成 `r010e01.png` 到 `r013e01.png` 高分视觉 QC，下一步需要补齐配置并做 I2V motion QC；`r014e01.png` 不进入本轮密室 I2V。
+中文：项目尚未提供 ComfyUI checkpoint、LoRA、ControlNet、IPAdapter preset、workflow template 或 node ID；因此 `SC001-SH001` 到 `SC003-SH004` 仍不能标记为 `ready`。SC002 当前不是等待确认，而是用户视觉 QC 未通过；必须重生 C016B/C017/C018 状态卡与 R005-R009 参考帧后再谈 ComfyUI 绑定。SC003 已完成 `r010e01.png` 到 `r013e01.png` 高分视觉 QC，下一步需要补齐配置并做 I2V motion QC；`r014e01.png` 不进入本轮密室 I2V。
 
-English: The project does not provide ComfyUI checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template, or node IDs; therefore `SC001-SH001` through `SC003-SH004` still cannot be marked `ready`. SC002 also requires user visual QC for R005-R009 candidate reference frames; SC003 has completed high-score visual QC for `r010e01.png` through `r013e01.png`; next it needs configuration and I2V motion QC, while `r014e01.png` stays outside this room I2V pass.
+English: The project does not provide ComfyUI checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template, or node IDs; therefore `SC001-SH001` through `SC003-SH004` still cannot be marked `ready`. SC002 is not pending approval anymore; it failed user visual QC and must rebuild C016B/C017/C018 state cards and R005-R009 reference frames before any ComfyUI binding. SC003 has completed high-score visual QC for `r010e01.png` through `r013e01.png`; next it needs configuration and I2V motion QC, while `r014e01.png` stays outside this room I2V pass.

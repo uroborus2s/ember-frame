@@ -4,13 +4,19 @@
 
 B04_E01_STYLE 已完成并通过协调端视觉 QC。SC001 开场四张参考帧已经写入 canonical 路径，当前状态是同一空间候选版待用户视觉 QC；ComfyUI 交付包可以按这组候选帧继续做镜头级测试，但在用户确认前不标记 final approved。
 
-SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `E01_C016B` 与 `E01_C017` 已从全局主卡直接重建，`E01_R005`-`E01_R009` 已重新生成并通过美术部候选复审，当前等待用户视觉 QC；用户确认前仍不建议进入视频制作或 director-room prompt refresh。详细失败复核见 `01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md`，新版候选复审见 `01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md`。
+SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后生成的 `E01_C016B`、`E01_C017`、`E01_C018` 与 `E01_R005`-`E01_R009` 候选也已被用户视觉 QC 退回：角色一致性仍未满足，身高差设定不成立。当前有效状态不是“等待确认”，而是 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`；不得进入视频制作、ComfyUI 小批量试渲或 director-room prompt refresh。详细失败复核见 `01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md`，本轮退回审计见 `01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md`。
 
-补充：2026-06-11 第一轮 prompt-only 重做候选因全局脸型/物种结构继承不足被拒，未写入项目。当前 `E01_C016B` 与 `E01_C017` 已改为直接从全局母卡 `C016`、`C017` 派生，状态为 `global_master_rebuild_candidate_pending_user_visual_qc_2026-06-11`。详细记录见 `01/art/audits/c016b-c017-global-inheritance-rebuild-2026-06-11.md`。
+补充：2026-06-11 第一轮 prompt-only 重做候选因全局脸型/物种结构继承不足被拒，未写入项目。后续直接从全局母卡 `C016`、`C017` 派生的候选仍未通过本轮用户视觉 QC；下一轮必须先按 `C025 -> C017 -> C016 -> C018 -> C019` 同地平线比例链重生角色状态卡，再按 `4096x2304` 重生 SC002 参考帧。详细记录见 `01/art/audits/c016b-c017-global-inheritance-rebuild-2026-06-11.md`。
+
+## SC002 角色一致性与身高差用户退回 / 2026-06-11
+
+结论：当前 `E01_R005`-`E01_R009` 不能作为视频参考帧使用。重生前必须执行以下硬尺度：`C025` 为普通人族基准；`C017` 为 170-200cm 混血奴兵，SC002 代表值 175-185cm；`C016` 为 190-210cm 基层虫吏，SC002 代表值 195-205cm；`C018` 为 200-230cm 纯虫族小兵，SC002 站立等效 215-230cm；`C019` 为 220-260cm 中阶重甲虫士兵。
+
+验收规则：角色卡必须有脚底同线比例条；参考帧必须在同一泥地/同一车道地平线上读出身高差；不得用桌台、检查台、台阶、粮袋、车板、门槛、前景放大、镜头畸变、裁切或低伏遮挡制造假身高。只要官吏、奴兵、纯虫族小兵和普通人族读成同一身高阶层，或发生职责互换，即失败。
 
 ## SC002 角色继承失败撤销历史 / 2026-06-11
 
-结论：本节记录 2026-06-10 放行结论被撤销时的历史状态。该状态已被 2026-06-11 的 C016B/C017 全局主卡重建和 R005-R009 新候选复审取代；当前有效结论见下方“SC002 R005-R009 全局角色继承重做复审”。
+结论：本节记录 2026-06-10 放行结论被撤销时的历史状态。后续 2026-06-11 的 C016B/C017 全局主卡重建和 R005-R009 新候选复审也已被用户视觉 QC 继续退回；当前有效结论见上方“SC002 角色一致性与身高差用户退回”。
 
 ### 历史失败资产
 
@@ -31,7 +37,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ## SC001 开场资产收口 / 2026-06-08
 
-结论：SC001 开场 3 个镜头所需的第一集上游分集资产中，风格、场景、道具、兽族攻城母卡、伴生兽母卡和三张关键人物状态卡可用于当前参考帧制作。E01_R001-E01_R004 已经生成同一空间候选版，重点锁定为同一段锁喉关黑石城墙、同一个墙头警钟、同一个钟架方向、同一场人族守城与兽族联盟攻城。
+结论：SC001 开场 3 个镜头所需的第一集上游分集资产中，风格、场景、道具、兽族攻城母卡、伴生兽母卡和三张关键人物状态卡可用于当前参考帧制作。E01_R001-E01_R004 已经生成同一空间候选版；最新硬锁改为：R001/R002 保持同一段锁喉关黑石城墙、同一个城门、同一墙外攻城方向和门楼内钟声，第一镜不强制画出骨钟或钟架；R003/R004 可在后续墙头/门楼空间揭示同一口警钟。
 
 ### 已确认可用
 
@@ -52,16 +58,16 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ### 已生成的参考帧候选
 
-- E01_R001 -> 01/assets/reference-frames/r001e01.png，SC001-SH001 FLF2V 首帧：攻城方斜后侧低机位，兽族联军与伴生兽从左前向右后压向锁喉关黑石巨墙；墙头警钟只是远处目标锚点。
-- E01_R002 -> 01/assets/reference-frames/r002e01.png，SC001-SH001 FLF2V 终帧：镜头沿 R001 同一段城墙斜向爬升后转向墙头，一半是人族墙头守军与同一口破裂警钟，一半俯看城外兽族与伴生兽攻城方向。
-- E01_R003 -> 01/assets/reference-frames/r003e01.png，SC001-SH002 I2V 首帧：同一钟架旁，年轻军户扶住被震响的破钟，墙外兽潮仍在同一方向压近。
+- E01_R001 -> 01/assets/reference-frames/r001e01.png，SC001-SH001 FLF2V 首帧：城外攻城方向低机位正中对称史诗建立镜头，兽族联军、伴生兽、攻城车或破门猛犸压向同一面黑石城门；当前风格通过并作为质感标准。
+- E01_R002 -> 01/assets/reference-frames/r002e01.png，SC001-SH001 FLF2V 终帧：保持 R001 同一墙外方向和正中中轴压力，更近靠近城门，第一次重撞城门；雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光要更浓烈。骨钟在门楼内，只需要钟声，不要求画面露出钟体或钟架。
+- E01_R003 -> 01/assets/reference-frames/r003e01.png，SC001-SH002 I2V 首帧：同一钟架旁，年轻军户被撞门余震晃倒、半倒墙边、武器脱手，旁边破钟横摆，墙外兽潮仍在同一方向压近。
 - E01_R004 -> 01/assets/reference-frames/r004e01.png，SC001-SH003 I2V 首帧：同一墙头与同一钟架旁，薛临墙在钟边下达战场命令，身后仍能读出人族墙头和城外攻城压力。
 
 任务包：`01/art/runs/2026-06-07-sc001-reference-frame-dispatch/task-plan.json`。
 
-当前状态：`generated_candidate_pending_user_qc`。四张图已经可以进入 ComfyUI 交付包测试；如果用户确认画面关系通过，再把 E01_R001-E01_R004 标记为 final approved。
+当前状态：`E01_R001` 当前风格通过并作为质感标准；`E01_R002` 已生成 closer gate + stronger impact 候选 `01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png`，canonical `r002e01.png` 尚未覆盖，需用户视觉确认后再进入正式 FLF2V；`E01_R003` 旧扶钟构图已废弃，必须重生后再作为 SC001-SH002 首帧；`E01_R004` 可继续作为 SC001-SH003 候选首帧。
 
-持续 QC 锁定：四张参考帧必须保持 16:9 PNG，4096x2304，无 alpha，无水印，无随机可读文字；R001-R004 只能有同一段黑石城墙、同一个钟架、同一口破裂警钟。旧帝国徽章只能是残缺、暗淡、旧金色的表面残痕，不允许完整圆形徽章、发光日月徽章或随机可读文字。
+持续 QC 锁定：四张参考帧必须保持 16:9 PNG，4096x2304，无 alpha，无水印，无随机可读文字；R001/R002 只能有同一段黑石城墙、同一个城门和同一墙外攻城方向，门楼内钟声不要求画面露钟；R003/R004 才负责在墙头/门楼空间延续同一口破裂警钟。旧帝国徽章只能是残缺、暗淡、旧金色的表面残痕，不允许完整圆形徽章、发光日月徽章或随机可读文字。
 
 ## 已完成
 
@@ -126,7 +132,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ## SC002 上游角色卡补齐 / 2026-06-10
 
-结论：`SC002` 所需的粮税小吏与混血奴兵分集角色卡已经补齐到 canonical 路径，用于后续 SC002 参考帧继承。两张图都先标记为候选，等待用户视觉 QC 后再转 final approved。
+结论已失效：`SC002` 所需的粮税小吏与混血奴兵分集角色卡曾补齐到 canonical 路径，用于后续 SC002 参考帧继承；但 2026-06-11 用户视觉 QC 已继续退回角色一致性和身高差问题。两张图不得再视为待确认候选，必须按同地平线比例条重生。
 
 ### 已生成或提升
 
@@ -146,7 +152,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ## SC002-SH001/SH002 参考帧候选 / 2026-06-10
 
-结论：`SC002-SH001` 与 `SC002-SH002` 所需 I2V 首帧已按 imagegen-task 隔离流程生成候选，并写入 canonical 路径。至此 `SC002-SH001/SH002/SH003/SH004` 所需参考帧候选已齐备，全部等待用户视觉 QC。
+结论已失效：`SC002-SH001` 与 `SC002-SH002` 所需 I2V 首帧曾按 imagegen-task 隔离流程生成候选，并写入 canonical 路径；但 R005-R009 当前候选已被用户视觉 QC 退回，不再是“等待确认”，必须重生。
 
 ### 已生成
 
@@ -264,7 +270,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ## SC002 分镜资产历史失效记录 / 2026-06-10
 
-结论已失效：`SC002-SH001` 到 `SC002-SH004` 所需分镜参考帧和上游依赖资产曾在 2026-06-10 被错误标记为可交付。2026-06-11 用户视觉 QC 后，该结论撤销；这是历史记录。当前有效状态已更新为 `r005_r009_regenerated_candidate_after_global_master_rebuild_2026-06-11`，等待用户视觉 QC。
+结论已失效：`SC002-SH001` 到 `SC002-SH004` 所需分镜参考帧和上游依赖资产曾在 2026-06-10 被错误标记为可交付。2026-06-11 用户视觉 QC 后，该结论撤销；后续 `r005_r009_regenerated_candidate_after_global_master_rebuild_2026-06-11` 也已被用户继续退回。当前有效状态为 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`。
 
 ### 历史依赖资产记录
 
@@ -289,7 +295,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ## SC002 R005-R009 全局角色继承重做复审 / 2026-06-11
 
-结论：`E01_C016B` 与 `E01_C017` 已先从全局主卡直接重建，随后 `E01_R005`-`E01_R009` 已按 SC002 导演要求重新生成并覆盖 canonical 路径。当前状态为美术部候选通过，等待用户视觉 QC；用户确认前仍不建议直接进入视频制作。
+结论已失效：`E01_C016B` 与 `E01_C017` 曾先从全局主卡直接重建，随后 `E01_R005`-`E01_R009` 曾按 SC002 导演要求重新生成并覆盖 canonical 路径；但用户视觉 QC 已继续退回，角色一致性与身高差仍未达标。当前状态为 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`，不得进入视频制作。
 
 ### 已重做候选
 
@@ -313,7 +319,7 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 
 ### 当前限制
 
-- 本轮不是最终用户批准，只是美术部候选通过。
+- 本轮已被用户视觉 QC 退回，不能再视为美术部候选通过。
 - `E01_C018` 纯虫族小兵仍保持阻塞，不得把本轮 SC002 结论外推到含 C018 的镜头。
 - 详细报告见 `01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md`；审计副本见 `01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md`。
 
@@ -342,3 +348,60 @@ SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后 `
 - 白册官吏、混血奴兵、纯虫族小兵和残阳坳村民必须层级分明。
 - 前景、中景、背景必须清楚分离；远处人群/士兵/屋顶/石墙只能成组概括，不能粒子化或等细节铺满全画面。
 - 禁止随机文字、随机徽记、现代元素、透明背景、设定卡背景、全局灰雾、AI speckle、假锐化和视觉信息过载。
+
+# SC002 C018 持械封路重做复审 / 2026-06-11
+
+结论：上一轮 SC002 R005-R009 候选因用户视觉 QC 指出官吏脸型/身高、奴兵手部和纯虫族士兵缺失问题，已撤销视频放行。新版已经重新生成并覆盖 canonical 路径；当前为美术部内部硬项通过、等待用户最终视觉确认，未得到用户确认前不要直接进入视频制作。
+
+## 本轮硬性修正
+
+- `E01_C016B`：canonical 保留为全局 `C016` 母卡直继承，用精确母卡锁住脸型、复眼、骨白面壳、触须和白蜡官帽；本轮 prompt-only C016B 生成图因有脸型漂移风险，仅保留在 history，不作为正向身份锁。
+- `E01_C017`：重做为混血奴兵扣腕/押车状态卡，重点补清五指人手、硬化指节、骨白腕绑和 170-200cm 人形体态。
+- `E01_C018`：重做为纯虫族小兵持械封路状态卡，锁定 200-230cm、非人虫身、反关节腿、爪足、短矛/钩镰和外圈警戒职责。
+- `E01_R005`-`E01_R009`：全部加入 C018 持兵器警戒/封路，明确“官吏开册、奴兵扣腕/搬粮、虫兵封路”的层级。
+
+## 新版参考帧评分
+
+| Asset | Shot | 用途 | 导演要求 | 美术合格度 | 关键通过项 |
+| --- | --- | --- | ---: | ---: | --- |
+| `E01_R005` | `SC002-SH001` | I2V 首帧 | 93 | 94 | 粮袋墙压住上半画面，检查台、泥路、低位村民和金河粮仓空间可读。 |
+| `E01_R006` | `SC002-SH002` | I2V 首帧 | 95 | 95 | 扣腕手为 C017 混血奴兵五指人手，硬化甲片、骨白腕绑和真实握压都清楚。 |
+| `E01_R007` | `SC002-SH003` | I2V 首帧 | 94 | 94 | 前景白册、骨算盘、税牌、秤钩、虫蜡和湿桌面形成证据层。 |
+| `E01_R008` | `SC002-SH004` | FLF2V 首帧 | 95 | 95 | 同一门槛后方机位成立，祖牌盒、儿童蜡手印、散粮和车辙是最大前景。 |
+| `E01_R009` | `SC002-SH004` | FLF2V 终帧 | 95 | 95 | 与 R008 维持同轴门槛构图，空门槛、祖牌盒、儿童蜡手印和车辙是主叙事。 |
+
+## 当前文件
+
+- `01/assets/characters/c016be01.png`
+- `01/assets/characters/c017e01.png`
+- `01/assets/characters/c018e01.png`
+- `01/assets/reference-frames/r005e01.png`
+- `01/assets/reference-frames/r006e01.png`
+- `01/assets/reference-frames/r007e01.png`
+- `01/assets/reference-frames/r008e01.png`
+- `01/assets/reference-frames/r009e01.png`
+
+全部 current reference frames 已重采样为 3840x2160 PNG、无 alpha。C017/C018 角色卡也已为 3840x2160 PNG、无 alpha；C016B 当前 canonical 沿用 3840x2160 的全局母卡继承文件。
+
+## 保留历史
+
+- `01/assets/characters/history/c016be01.sc002-grain-tax-candidate-rejected-face-risk-20260611.png`
+- `01/assets/characters/history/c017e01.before-user-hand-scale-redo-20260611.png`
+- `01/assets/characters/history/c017e01.sc002-hand-scale-source-20260611.png`
+- `01/assets/characters/history/c018e01.before-armed-guard-scale-redo-20260611.png`
+- `01/assets/characters/history/c018e01.armed-guard-scale-source-20260611.png`
+- `01/assets/reference-frames/history/r005e01.before-c018-armed-guard-redo-20260611.png`
+- `01/assets/reference-frames/history/r006e01.before-c018-armed-guard-redo-20260611.png`
+- `01/assets/reference-frames/history/r006e01.rejected-foot-ankle-risk-before-wrist-correction-20260611.png`
+- `01/assets/reference-frames/history/r007e01.before-c018-armed-guard-redo-20260611.png`
+- `01/assets/reference-frames/history/r008e01.before-c018-armed-guard-redo-20260611.png`
+- `01/assets/reference-frames/history/r009e01.before-c018-armed-guard-redo-20260611.png`
+- `01/assets/reference-frames/history/r005e01.c018-armed-guard-source-20260611.png`
+- `01/assets/reference-frames/history/r006e01.c017-wrist-c018-guard-source-20260611.png`
+- `01/assets/reference-frames/history/r007e01.c016-table-c018-guard-source-20260611.png`
+- `01/assets/reference-frames/history/r008e01.c018-armed-guard-source-20260611.png`
+- `01/assets/reference-frames/history/r009e01.c018-armed-guard-source-20260611.png`
+
+## 视频交付限制
+
+当前状态不是待确认候选，而是用户视觉 QC 未通过。下一轮必须先重生 C016B/C017/C018 状态卡并加入同地平线比例条，再按 `4096x2304` 重生 `E01_R005`-`E01_R009`；重生完成前 `SC002` 标记为 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`。
