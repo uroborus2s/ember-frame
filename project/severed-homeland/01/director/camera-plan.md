@@ -20,17 +20,17 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 
 - 镜头：`SC002-SH001` 到 `SC002-SH004`
 - 景别：横屏远景建立粮袋墙，中近景读制度流程，门槛特写读家庭被写没。
-- 光线：清晨麦金冷雾、湿木褐、虫蜡白；不要拍成灰色灾民营。
-- 运镜：粮袋和押车保持横向运动，家庭门槛保持纵深不动，形成“粮走了，家留空”的反差。
+- 光线：清晨麦金冷雾不能被拍成灰色灾民营。SC002 的光线按制度动作逐镜头变化：SH001 用柔光冷雾加低角逆光建立粮尘空气感，窄侧光切出麻袋、湿木和河泥纹理；SH002 用门槛侧光压出泥、木缸、祖牌盒和奴兵腕绑触感，虫蜡小顶光只落在封条，不照黑孩子眼窝；SH003 用虫蜡白顶光压住白册和小吏脸壳，配合窄侧光读手指、皮肤、旧木、麻布和皮甲，硬光只给封牌落点；SH004 用清晨逆光切出押车离开的轮廓和空气感，侧光擦车辙、泥水和麻袋，妇人与孩子只吃柔和天光。
+- 运镜：粮袋和押车保持横向运动，家庭门槛保持纵深不动，形成“粮走了，家留空”的反差。SH001 是村民眼高慢推进；SH002 是短手持后退一步；SH003 是静态制度镜头；SH004 是车走镜头不追、极慢后收。
 - 连续性：粮税小吏高账吏帽、白册夹板、骨算盘和粮牌必须明显；奴兵扣腕和押车，不承担开册职责。
 
 ### SC003 南方红线密室 / Southern Red-Line Room
 
 - 镜头：`SC003-SH001` 到 `SC003-SH004`
 - 景别：桌面特写、双人中近景、血牒手部插入、红线过渡。
-- 光线：雨夜油灯、湿暖低照；月白玉片只做手心冷反光。
-- 运镜：沿红线向北推，保持旧驿路线的方向感；不要给晏南枝正面华丽揭示。
-- 连续性：顾怀章在灯侧，晏南枝在阴影侧，红线始终位于两人之间。
+- 光线：雨夜油灯是主物理光源，但不能只写“湿暖”。SH001 用左下低位油灯窄侧光擦纸纤维、朱赤线绒毛、铜钉和湿木纹，右上雨夜月白冷反光只点水滴、油布折痕和地图裂缝；SH002 用顾怀章侧暖灯读老手、薄朱赤外袍、卷轴边和地图纸纹，晏南枝只吃玉片反弹的窄冷光，勾指节、面纱边、下颌线和冷灰衣料；SH003 用低位油灯掠过血牒破损纸纤维、潮痕、旧蜡封和暗红旧印，月白玉片冷边只落在未接的指尖和面纱下缘；SH004 压暗油灯，只留红线纤维和水滴暖边，转向残阳坳时让土褐与虫蜡冷白进入，但冷白只作为封锁线信息，不做圣光。
+- 运镜：SH001 从桌面斜上方沿红线真实速度慢推并轻微跟焦，不旋转地图、不升空、不让红线变导航光；SH002 低桌沿锁镜，只用手、指节、遮面下颌和极轻微跟焦推进，不追脸、不揭面；SH003 桌面高度极小幅推进后停在指尖与血牒的一指宽空隙，不让手突然抓卷；SH004 贴地图高度沿红线北端短匹配移动，用线条方向、亮度下降和雨声切人声接到村口封锁线，不做梦幻溶解或皇座幻象。
+- 连续性：顾怀章在灯侧，晏南枝在阴影侧，红线始终位于两人之间。月白玉片是冷反光和身份压力，不是法器；血牒是残缺旧证据，不是圣旨光效；南方潮湿暖暗必须与下一场残阳坳土褐/虫蜡冷白形成可读转场。
 
 ### SC004 残阳坳村口 / Canyangao Gate
 
@@ -63,14 +63,14 @@ English: The 16:9 frame is built around vertical hierarchy and threshold pressur
 | SC001-SH001 | exterior front-biased siege wide to gate-impact endpoint | low attacker-side gate height | low push and slight tilt-up to first gate impact and bell shock | cold storm-break sky, pale-gold edge, snow-blast highlight, dark-red fire rim, black-wall negative fill | voiceover rides the push; first frame must not be perfectly symmetrical, last frame must stay same exterior direction and avoid rear/opposite-side reveal |
 | SC001-SH002 | tight natural lens | low wall-side collapse height | aftershock handheld micro push to dropped weapon, half-collapsed body and swinging bell | cold storm-break rim, gate-impact snow bounce, low fire edge, black-wall negative fill | old sun-moon mark should be broken/dim, not glowing; young soldier is half-collapsed by the wall, not bracing the bell |
 | SC001-SH003 | compressed medium | wall chest height | locked push | black wall shadow, cold snow rim, fireline edge | Xue command is restraint, not hero pose |
-| SC002-SH001 | landscape wide | villager eye height | real-time push | morning grain haze | grain bags dominate upper frame |
-| SC002-SH002 | close threshold | waist height | one-step handheld pull | side doorway light | keep child hand sensitive and brief |
-| SC002-SH003 | medium table | table edge | locked | cold wax top light | official taller than civilians |
-| SC002-SH004 | wide pullback | threshold rear | cart moves, camera holds | pale morning backlight | family remains while grain exits |
-| SC003-SH001 | tabletop macro | overhead oblique | follows red line | oil-lamp warm | map direction south-to-north |
-| SC003-SH002 | medium two-shot | table edge | locked | warm lamp, cool jade | red line separates them |
-| SC003-SH003 | insert | table height | tiny push | warm low practical | stopped fingers carry hesitation |
-| SC003-SH004 | graphic close | map level | match move | rain-dim lamp | cut to checkpoint line |
+| SC002-SH001 | landscape wide | villager eye height | slow real-time push through grain dust | soft morning cold haze, low-angle backlight through dust, narrow side light on burlap/wet wood/mud, tiny wax-white highlights | grain bags dominate upper frame; subtle Tyndall depth only, no VFX beams |
+| SC002-SH002 | close threshold | waist height | one-step handheld pull with contact reaction | soft doorway fill, hard-narrow threshold side light on mud/wood/cloth, small wax-white top light on seal only | keep child hand sensitive and brief; avoid broad bottom light or horror face lighting |
+| SC002-SH003 | medium table | table edge | locked bureaucratic frame | cold wax top light on register and clerk shell, side light on fingers/skin/wood/burlap/armor, tiny hard highlight on seal strike | official taller than civilians; top light may darken clerk eye sockets, but action and props must remain readable |
+| SC002-SH004 | wide pullback | threshold rear | cart moves, camera holds then very slow pullback | pale low morning backlight for cart rim and haze, side light on ruts/mud/tablet box/sacks, soft sky fill on family | family remains while grain exits; Tyndall only along cart lane, not over doorway |
+| SC003-SH001 | tabletop establishing close-up | overhead oblique, south foreground to north depth | 0-2s near-still oil flicker and rain, 2-5s slow push north along red cord, 5-7s hold on northern droplet with one focus pull | low warm oil-lamp side skim from lower-left, cool moon-rain bounce upper-right, corner negative fill | paper fiber, cord fuzz, brass pins, wet wood and droplets separate; no modern map text or glowing route |
+| SC003-SH002 | medium two-shot | low table edge, red cord dividing Gu left and Yan right | locked frame; Gu hand presses map, Yan jade fingers tighten, one small focus shift hand-to-jade-to-cord, no face chase | warm lamp on Gu side, narrow moon-white jade/rain edge on Yan side, deeper negative fill at red cord | no glamorous face reveal; jade dimmer than cord and Gu hand; dialogue is audio/subtitle, not exact generated lips |
+| SC003-SH003 | hand insert close-up | table height, red cord foreground and genealogy midground | tiny push: Gu slides genealogy 2-3cm, stops before Yan fingertips, Gu hand retreats, 5-9s hold on untouched gap | low warm lamp grazing torn genealogy, cool jade edge on fingertips, warm-cool boundary on red cord and gap | one-finger gap remains visible; no sudden grab, no floating scroll, no sacred genealogy glow |
+| SC003-SH004 | graphic transition-start close-up | map level, red cord north end upper third | I2V from R013: droplet darkens cord, short map-level match move, exposure lowers for later edit; no forced FLF2V tail | dim low oil-lamp edge, cool rain bounce on droplet/paper/Yan silhouette, no early checkpoint light | road-to-blockade direction is prepared for edit; do not blend full village gate or R014 into this room shot |
 | SC004-SH001 | landscape wide | elevated village entry | pan geography | daylight plus wax white | lock table-well-medicine house-exits |
 | SC004-SH002 | medium procedure | table edge | static | cold white on register | bureaucratic calm |
 | SC004-SH003 | POV + MCU | Shen eye height | eye-line cuts | daylight, low contrast | show Shen reads before speaking |

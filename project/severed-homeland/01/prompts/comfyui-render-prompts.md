@@ -1,10 +1,10 @@
-# 第01集 SC001 ComfyUI 完整提示词
+# 第01集 SC001-SC003 ComfyUI 完整提示词
 
 ## 使用说明
 
-中文：本文件是可直接复制到 ComfyUI prompt 节点的分段组装版提示词。每个镜头复制一组 `positive_prompt` 和 `negative_prompt` 即可，不要再复制 JSON 字段名。中文和英文任选一套使用，不建议同一轮同时混用两套语言。
+中文：本文件是可直接复制到 ComfyUI prompt 节点的分段组装版提示词，当前覆盖 SC001、SC002 与 SC003。每个镜头复制一组 `positive_prompt` 和 `negative_prompt` 即可，不要再复制 JSON 字段名。中文和英文任选一套使用，不建议同一轮同时混用两套语言。
 
-English: This file contains sectioned, copy-ready assembled prompts for ComfyUI prompt nodes. Copy one `positive_prompt` and one `negative_prompt` per shot; do not copy JSON field names. Use either the Chinese or English pair for a render pass, not both languages mixed together.
+English: This file contains sectioned, copy-ready assembled prompts for ComfyUI prompt nodes, currently covering SC001, SC002 and SC003. Copy one `positive_prompt` and one `negative_prompt` per shot; do not copy JSON field names. Use either the Chinese or English pair for a render pass, not both languages mixed together.
 
 ## ComfyUI 图片节点配置 / Image Node Binding
 
@@ -282,4 +282,627 @@ modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plast
 
 **Shot Negative**
 avoid grandmaster pose, wuxia glow, divine heroic backlight, overexposed face light, ornate general armor, dialogue text in frame, exaggerated lip movement, melted mouth shape, face glitching, drifting eyes or nose, clumped fingers, background spear line blurred into grey blocks, video smearing, compression blocks, younger identity drift, missing bone bell.
+```
+
+## SC002 ComfyUI Handoff / SC002 可复制提示词
+
+中文：SC002 使用 R005-R009 候选参考帧，全部仍需用户视觉 QC 和 ComfyUI 模型/workflow 配置。I2V/FLF2V 首尾帧必须通过图片节点接入；角色、地点、道具卡只作为身份、材质或控制参考，不能替代视频场景帧。
+
+English: SC002 uses candidate reference frames R005-R009; all still require user visual QC and concrete ComfyUI model/workflow configuration. I2V/FLF2V first/last frames must be loaded through image nodes; character, location and prop cards are identity, material or control references only and must not replace scene video frames.
+
+| Asset | Path | Required Node Role | Suggested Binding |
+| --- | --- | --- | --- |
+| SH001 first frame | `01/assets/reference-frames/r005e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | I2V primary image input |
+| SH002 first frame | `01/assets/reference-frames/r006e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | I2V primary image input |
+| SH003 first frame | `01/assets/reference-frames/r007e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | I2V primary image input |
+| SH004 first frame | `01/assets/reference-frames/r008e01.png` | `PLACEHOLDER_FIRST_FRAME_IMAGE_NODE` | FLF2V primary first-frame input |
+| SH004 last frame | `01/assets/reference-frames/r009e01.png` | `PLACEHOLDER_LAST_FRAME_IMAGE_NODE` | FLF2V primary last-frame input |
+| 粮税小吏 / Grain tax clerk | `01/assets/characters/c016be01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | identity/material reference, lower than I2V frame |
+| 混血奴兵 / Slave soldier | `01/assets/characters/c017e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | identity/material reference, lower than I2V or FLF2V frames |
+| 金河粮仓 / Jinhe depot | `01/assets/locations/l003e01.png` | `PLACEHOLDER_LOCATION_REFERENCE_NODE` | geography/material reference |
+| 白册 / White register | `01/assets/props/p003e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | line-control/material reference; no readable generated text |
+| 粮牌封蜡祖牌 / Grain tag, wax, tablet box | `01/assets/props/p008e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | wax/tag/tablet/jar/cart-rope material reference |
+
+## SC002-SH001
+
+- Method: `I2V`
+- Duration: `6s`
+- First frame: `01/assets/reference-frames/r005e01.png`
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`
+- Output: `01/renders/raw/sc002-sh001.mp4`
+- Status: `generated_candidate_pending_user_qc_2026-06-10; pending_user_visual_qc_2026-06-10; needs_config`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕。金河粮仓清晨冷雾，麦金、河泥褐、湿木灰和虫蜡白分材质呈现，真实重心、真实速度、自然接触反作用。
+
+**目标**
+从锁喉关战争压力切到金河征粮制度：用粮袋墙、小吏高位、低位村民和白册夹板建立“粮食已被制度占领”的空间秩序。
+
+**光影**
+柔和清晨冷雾作主环境光，低角度逆光穿过粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦过麻布、湿木和河泥纹理；虫蜡白只作为白册和粮牌的小亮点。少量丁达尔光用于粮尘纵深，不能做成特效光柱。
+
+**画面内容**
+清晨麦金冷雾里，金河粮袋堆成墙，检查台上的虫族粮税小吏穿蜡灰青短官袍、戴高账吏帽，胸前白册夹板、骨算盘、粮牌和旧铁秤钩随动作轻晃；村民排在低处，粮车和湿木检查口保持成组轮廓。
+
+**构图与运镜**
+横屏远景按上下层级构图：粮袋墙占上半画面并压低天空，粮税小吏站在检查台高位偏中，白册夹板、骨算盘和粮牌形成亮色制度中心；村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。
+
+**约束**
+粮税小吏必须是虫族低阶官僚，不是人族账房或普通衙役；白册只显示留白、浅刻线或后合成区域，不生成可读文字。粮仓不能变成现代仓库或灰色灾民营，麦金、河泥褐、湿木灰和虫蜡白要分材质。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代仓库，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，画面中文字，随机字幕，随机徽记，随机可读白册文字，错误阵营服制，灰色灾民营，魔法光柱，圣光逆光，大面积恐怖底光，过曝 bloom，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块。
+
+**镜头负面**
+不要现代仓库、现代服饰、枪械、科幻 UI、人族账房先生版小吏、欢乐蒸汽朋克、全画面灰色灾民营、无主光方向、过度丁达尔光柱、魔法光柱、过曝 bloom、随机可读白册文字、随机徽记、黄色闪粉、数字颗粒、全局假锐化、塑料麻袋、远景群众逐个清晰、视频涂抹、花屏、压缩块。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Jinhe grain depot in morning cold haze, material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white, real body weight, real speed and natural contact reaction.
+
+**Goal**
+Cut from border war pressure into the Jinhe grain-tax system: use the grain-sack wall, high clerk position, low villagers and white register board to establish that grain has already been occupied by bureaucracy.
+
+**Lighting**
+Soft morning cold haze acts as the ambient key. Low-angle backlight passes through grain dust to rim the sack wall, clerk hat and register board, while a narrow side light grazes burlap, wet wood and river-mud texture; insect-wax white stays as small highlights on the register and grain tags. Subtle Tyndall light may deepen grain-dust space, never becoming VFX beams.
+
+**Visual Content**
+In wheat-gold cold morning haze, Jinhe grain sacks form a wall. The insect grain tax clerk on the inspection platform wears a wax-grey-blue short robe and tall account hat; the white register board, bone abacus, grain tags and old iron scale hook sway lightly on his chest. Villagers queue low, while carts and the wet-wood inspection gate remain grouped silhouettes.
+
+**Composition and Camera**
+Landscape wide composition built on vertical hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands high near center on the inspection platform, and the white register board, bone abacus and grain tags form the bright bureaucratic center; villagers are compressed into a low band, while the cart lane recedes from front-right to rear-left for depot depth. A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift.
+
+**Constraints**
+The grain tax clerk must remain an insect low-ranking bureaucrat, not a human accountant or ordinary magistrate; the white register only shows blank areas, shallow guide lines or post-composite spaces, no readable text. The depot must not become a modern warehouse or grey refugee camp; wheat gold, river-mud brown, wet wood grey and insect-wax white stay materially separated.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern warehouse, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, text in image, random subtitles, random emblems, random readable register text, wrong faction wardrobe, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks.
+
+**Shot Negative**
+avoid modern warehouse, modern clothing, firearms, sci-fi UI, human-accountant clerk, cheerful steampunk, all-grey refugee camp, missing key-light direction, excessive Tyndall beams, magic light shafts, overexposed bloom, random readable register text, random emblems, yellow glitter, digital speckle, global fake sharpening, plastic sacks, individually sharp distant crowd, video smearing, glitches, compression blocks.
+```
+
+## SC002-SH002
+
+- Method: `I2V`
+- Duration: `7s`
+- First frame: `01/assets/reference-frames/r006e01.png`
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`
+- Output: `01/renders/raw/sc002-sh002.mp4`
+- Status: `generated_candidate_pending_user_qc_2026-06-10; pending_user_visual_qc_2026-06-10; needs_config`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕。金河粮仓清晨冷雾，麦金、河泥褐、湿木灰和虫蜡白分材质呈现，真实重心、真实速度、自然接触反作用。
+
+**目标**
+把征粮制度压到家庭门槛：半斗杂粮、祖牌小盒、孩子虫蜡手印和奴兵扣腕同框，让“家门被写没”变成可见动作。
+
+**光影**
+门外清晨柔光托住人物安全感，窄侧光从门槛斜切，强化湿泥、木缸、粗布、祖牌盒和奴兵腕绑纹理；虫蜡封条上有小面积冷白顶光，制造制度压迫，但避开孩子眼窝。底光只允许作为泥水反光的极弱火场感，不大面积使用。
+
+**画面内容**
+混血奴兵的骨白腕绑和手从侧面压入画面，掀倒空粮缸，只滚出半斗杂粮；老人护住祖牌小盒被按进泥里，孩子小手被迫按上虫蜡封条。衣物是金河农户旧粗布和劳动补丁，表演克制、沉重、不血腥。
+
+**构图与运镜**
+门槛压迫特写组用斜线构图：前景是倒出的半斗杂粮、湿泥和祖牌小盒，画面一侧切入奴兵骨白腕绑和扣腕手，孩子手印落在虫蜡封条上；老人和孩子只给局部姿态，不做猎奇正脸。背景保留粮袋墙和低位人群的模糊压力。手持后退一步，跟随粮缸被掀、老人护盒和手被按下的真实接触反作用；运动短、低、近，动作完成后立刻稳住。
+
+**约束**
+奴兵只负责扣腕、押车、执行，不开册；祖牌小盒、粮牌封蜡和粮缸属于家庭/制度道具线。儿童威胁必须克制，不能出现直观伤害、血腥或猎奇表情。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代仓库，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，画面中文字，随机字幕，随机徽记，随机可读白册文字，错误阵营服制，灰色灾民营，魔法光柱，圣光逆光，大面积恐怖底光，过曝 bloom，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块。
+
+**镜头负面**
+不要直观伤害儿童、不要血腥、不要恐怖片底光大面积照脸、不要奴兵变纯怪物、不要奴兵开白册、不要祖牌盒变成华丽祭器、不要现代陶瓷或塑料桶、不要随机文字、不要猎奇正脸、不要夸张哭喊、不要全画面硬闪光、不要黄色闪粉、数字颗粒、视频涂抹、手指融化、道具粘连。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Jinhe grain depot in morning cold haze, material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white, real body weight, real speed and natural contact reaction.
+
+**Goal**
+Push the grain-tax system onto the household threshold: half-measure grain, ancestral tablet box, child wax handprint and slave-soldier grip share the frame so the erasure of the household becomes a visible action.
+
+**Lighting**
+Soft morning light from outside preserves restraint around the people, while a narrow side light cuts across the threshold to strengthen wet mud, wooden jar, coarse cloth, tablet box and slave-soldier wrist-binding textures. A small cold-white top light sits on the insect-wax seal to create bureaucratic oppression without darkening the child eye sockets. Bottom light is only a faint mud-water reflection, never broad.
+
+**Visual Content**
+A mixed-blood slave soldier hand with bone-white wrist binding presses into frame from the side, tipping an empty grain jar that releases only half a measure of grain. An elder guarding the ancestral tablet box is forced into mud, and a child hand is pressed onto an insect-wax seal. Clothes are Jinhe coarse work cloth with repairs; performance is restrained, heavy and non-gory.
+
+**Composition and Camera**
+The coercive threshold close-up uses diagonal pressure: foreground holds spilled half-measure grain, wet mud and the ancestral tablet box; one side of frame cuts in the slave soldier bone-white wrist binding and gripping hand, with the child handprint on the insect-wax seal. Elder and child are shown as partial body language, not exploitative front faces. Background keeps a blurred pressure of grain sacks and low crowd. A one-step handheld pullback follows the real contact reaction of the jar tipped over, the elder guarding the box and the hand pressed down; the move is short, low and close, settling as soon as the action lands.
+
+**Constraints**
+The slave soldier only grips, carts and enforces, never opens the register; the ancestral tablet box, grain-tag wax and jar belong to the household/system prop line. Child threat must stay restrained, with no explicit harm, gore or exploitative expression.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern warehouse, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, text in image, random subtitles, random emblems, random readable register text, wrong faction wardrobe, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks.
+
+**Shot Negative**
+avoid explicit child harm, gore, broad horror bottom-light on faces, pure-monster slave soldier, slave soldier opening the register, ornate shrine-like tablet box, modern ceramic or plastic bucket, random text, exploitative front faces, exaggerated crying, full-frame hard flash, yellow glitter, digital speckle, video smearing, melted fingers, fused props.
+```
+
+## SC002-SH003
+
+- Method: `I2V`
+- Duration: `7s`
+- First frame: `01/assets/reference-frames/r007e01.png`
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`
+- Output: `01/renders/raw/sc002-sh003.mp4`
+- Status: `generated_candidate_pending_user_qc_2026-06-10; pending_user_visual_qc_2026-06-10; needs_config`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕。金河粮仓清晨冷雾，麦金、河泥褐、湿木灰和虫蜡白分材质呈现，真实重心、真实速度、自然接触反作用。
+
+**目标**
+让“查清明籍”的话术变成可见制度动作：白册、族谱行留白、节状手指、封牌和被扣妇人一起说明家粮被写成官粮。
+
+**光影**
+虫蜡白顶光压在白册和小吏脸壳上，形成冷酷制度感，并故意让小吏眼窝更暗；但用窄侧光擦亮节状手指、妇人手腕、旧木桌纹、粮袋麻布和奴兵皮甲，保证皮肤/甲片/石木纹理可读。小槌落点可用小面积硬光，逆光只给高帽、肩线和冷雾轮廓，避免圣光化。
+
+**画面内容**
+粮税小吏翻开白册，节状手指点过族谱行留白，封牌小槌落在粮袋旁；妇人护住过冬粮被奴兵从侧后扣住手腕或前臂。小吏高位冷静，奴兵低位执行，妇人和村民被压低。册页只允许留白、浅刻线、遮罩或后合成区域，不能生成随机可读字。
+
+**构图与运镜**
+检查桌中景按“前景证据、中景执行、背景压力”三层构图：前景高细节是白册册页、节状手指、粮牌、虫蜡封条、骨算盘和湿木桌沿；中景是粮税小吏高帽、被扣妇人、奴兵扣腕和粮袋侧面；背景只保留粮袋墙、检查口、低位村民和清晨冷雾。静态制度镜头，正面略高于桌沿，只有手、封牌小槌、妇人护粮和奴兵扣腕移动；台词只表现说话状态，不让模型生成字幕或口型精确文字。
+
+**约束**
+官吏、奴兵、金河家庭三种身份层级必须分明；白册、粮牌、虫蜡封条和骨算盘是制度道具，不是魔法特效。视频只表现说话状态，精确对白来自字幕和配音。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代仓库，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，画面中文字，随机字幕，随机徽记，随机可读白册文字，错误阵营服制，灰色灾民营，魔法光柱，圣光逆光，大面积恐怖底光，过曝 bloom，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块。
+
+**镜头负面**
+不要混淆官吏和奴兵职责、不要人族账房版小吏、不要白册随机可读文字、不要字幕入画、不要封牌变魔法符、不要奴兵抢主位、不要妇人变华丽贵族、不要全画面顶光黑眼窝导致脸不可读、不要圣光逆光、不要大面积底光、不要过硬假舞台光、不要黄色闪粉、数字颗粒、塑料皮肤、手指融化、脸部花屏、道具比例漂移。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Jinhe grain depot in morning cold haze, material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white, real body weight, real speed and natural contact reaction.
+
+**Goal**
+Turn the Qingming-register speech into a visible bureaucratic action: the register, blank genealogy rows, segmented finger, seal tag and pinned woman show household grain being rewritten as state grain.
+
+**Lighting**
+Cold insect-wax top light presses onto the register and clerk face shell, creating a cruel bureaucratic feeling and deliberately darkening the clerk eye sockets; a narrow side light still grazes segmented fingers, the woman wrist, old table grain, burlap sack and slave-soldier leather armor so skin, armor and wood textures remain readable. The seal-hammer landing point may take a small hard highlight; backlight only rims hat, shoulders and cold haze, never becoming sacred.
+
+**Visual Content**
+The grain tax clerk opens the white register, segmented finger crossing blank genealogy rows, and a seal-tag hammer lands beside the grain sack. A woman guarding winter grain is gripped at wrist or forearm from side-rear by a slave soldier. The clerk stays high and calm, the soldier executes below, and woman and villagers are compressed low. Register pages only allow blank space, shallow guide lines, masks or post-composite areas, never random readable text.
+
+**Composition and Camera**
+The medium inspection-table shot uses three layers: foreground evidence, midground enforcement, background pressure. Foreground high detail holds register pages, segmented fingers, grain tag, insect-wax seal, bone abacus and wet-wood table edge; midground holds the clerk tall hat, pinned woman, slave-soldier grip and grain sack side; background keeps only grain-sack wall, inspection opening, low villagers and morning cold haze. A locked bureaucratic frame, frontal and slightly above table edge; only hands, seal-hammer, the woman guarding grain and slave-soldier grip move. Dialogue is only a speaking state, with no generated subtitles or exact lip text.
+
+**Constraints**
+Clerk, slave soldier and Jinhe household identities must remain distinct; the white register, grain tag, insect-wax seal and bone abacus are bureaucratic props, not magic effects. Video only shows speaking state; exact dialogue belongs to subtitles and voice.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern warehouse, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, text in image, random subtitles, random emblems, random readable register text, wrong faction wardrobe, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks.
+
+**Shot Negative**
+avoid mixing clerk and slave-soldier duties, human-accountant clerk, random readable register text, subtitles in frame, magic-symbol seal tag, slave soldier taking the main official position, woman turning into an ornate noble, full-frame top light making faces unreadable, sacred backlight, broad bottom light, fake hard stage lighting, yellow glitter, digital speckle, plastic skin, melted fingers, face glitches, drifting prop scale.
+```
+
+## SC002-SH004
+
+- Method: `FLF2V`
+- Duration: `8s`
+- First frame: `01/assets/reference-frames/r008e01.png`
+- Last frame: `01/assets/reference-frames/r009e01.png`
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`
+- Output: `01/renders/raw/sc002-sh004.mp4`
+- Status: `generated_candidate_pending_user_qc_2026-06-10; pending_user_visual_qc_2026-06-10; needs_config`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕。金河粮仓清晨冷雾，麦金、河泥褐、湿木灰和虫蜡白分材质呈现，真实重心、真实速度、自然接触反作用。
+
+**目标**
+用押车离开完成征粮制度结果：粮袋被拖走，祖牌小盒和虫蜡手印留在泥里，旁白落下“良户成逃籍”。
+
+**光影**
+清晨低角逆光从押车离开的方向打出粮袋、车轮、奴兵肩线和冷雾轮廓，增加电影感和空气感；侧光掠过泥水、车辙、祖牌盒和麻袋，强化触感。妇人和孩子只吃柔和天光，不用硬光审判；虫蜡手印保持小面积冷白亮点。丁达尔光只沿车道给纵深，不能盖住家门。
+
+**画面内容**
+押车奴兵把粮袋拖上木车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边，孩子手印仍粘着虫蜡白。首帧读到粮袋刚被拖上车，终帧读到粮车离开后的空门槛、车辙和冷雾，情绪克制，不做英雄追车或夸张哭喊。
+
+**构图与运镜**
+FLF2V 首帧到终帧使用同一门槛后方三分构图：首帧前景是祖牌小盒、虫蜡冷白手印和泥水，粮袋正被拖上车；中景妇人与孩子低在门槛，奴兵和车轮横向离开；终帧车已退到远处冷雾里，前景仍是空门槛、祖牌盒和车辙，家门还在但家粮不在。粮车和奴兵横向离开，镜头不追车，固定在家门后方并极慢后收，强调“粮走了，家留空”；尾段让车轮声盖过哭声。
+
+**约束**
+首尾帧必须保持同一门槛、同一祖牌小盒、同一押车方向和同一清晨冷雾；粮车可以离开画面纵深，但镜头不能追成动作片。家门留空是结尾信息。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代仓库，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，画面中文字，随机字幕，随机徽记，随机可读白册文字，错误阵营服制，灰色灾民营，魔法光柱，圣光逆光，大面积恐怖底光，过曝 bloom，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块。
+
+**镜头负面**
+不要追车英雄镜头、不要押车变战车、不要现代车轮、不要夸张哭喊、不要大面积底光火场感、不要圣光式逆光、不要车离开后换地理、不要祖牌盒消失、不要孩子手印变血手印、不要粮袋漂浮、不要泥水塑料感、不要黄色闪粉、数字颗粒、过度丁达尔光、视频涂抹、花屏、压缩块、人物融化。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Jinhe grain depot in morning cold haze, material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white, real body weight, real speed and natural contact reaction.
+
+**Goal**
+Complete the result of the grain-tax system through the cart leaving: sacks are dragged away, ancestral tablet box and wax handprint remain in mud, and voiceover lands that a lawful household becomes fugitive registry.
+
+**Lighting**
+Low morning backlight from the cart-exit direction rims sacks, wheels, slave-soldier shoulders and cold haze for cinema and air; side light skims mud water, wheel ruts, tablet box and burlap for tactile texture. Woman and child receive only soft sky light, not hard judgmental light; the insect-wax handprint stays a small cold-white highlight. Tyndall light only follows the cart lane for depth and must not cover the doorway.
+
+**Visual Content**
+Slave soldiers drag grain sacks onto a wooden cart, wheel cutting mud beside the ancestral tablet box; the woman kneels at the threshold, the child handprint still cold-white with wax. First frame reads sacks just loaded onto the cart; last frame reads the empty threshold, wheel ruts and cold haze after the cart leaves. Emotion stays restrained, with no heroic chase or exaggerated crying.
+
+**Composition and Camera**
+The FLF2V first-to-last frames use the same rear-threshold thirds composition: first frame foreground holds tablet box, cold-white wax handprint and mud water as grain sacks are dragged onto the cart; midground keeps woman and child low at the threshold while slave soldiers and cart wheels exit laterally. By the last frame the cart recedes into cold haze, foreground remains empty threshold, tablet box and wheel ruts: the doorway stands but household grain is gone. The cart and slave soldiers exit laterally while the camera does not chase; it holds behind the household threshold with a very slow pullback, stressing that grain leaves while the home remains hollow. Wheel sound overtakes crying at the end.
+
+**Constraints**
+First and last frames must preserve the same threshold, same ancestral tablet box, same cart-exit direction and same morning cold haze; the cart may recede into depth, but the camera must not turn it into an action chase. The hollow doorway is the final information.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern warehouse, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, text in image, random subtitles, random emblems, random readable register text, wrong faction wardrobe, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks.
+
+**Shot Negative**
+avoid heroic cart chase, cart becoming a war chariot, modern wheels, exaggerated crying, broad fire-like bottom light, sacred backlight, geography changing after cart leaves, missing tablet box, child handprint turning bloody, floating sacks, plastic mud water, yellow glitter, digital speckle, excessive Tyndall beams, video smearing, glitches, compression blocks, melting figures.
+```
+
+## SC003 Reference Binding / SC003 参考图接入
+
+中文：SC003 的四张核心密室参考帧 `r010e01.png` 到 `r013e01.png` 已通过高分复评，本轮直接作为主 I2V 图像输入。角色、地点和道具图片只接入 IPAdapter、Reference-only、Redux 或等价参考分支，权重必须低于主 I2V 帧。`r014e01.png` 是残阳坳封锁线匹配目标，只能用于后续剪辑或经明确批准后的 FLF2V 尾帧测试，不能混入本轮 SC003 密室 I2V。
+
+English: The four core SC003 room reference frames `r010e01.png` through `r013e01.png` have passed high-score review and should be loaded directly as primary I2V image inputs for this pass. Character, location and prop images should only feed IPAdapter, Reference-only, Redux or equivalent support branches at lower weight than the primary I2V frame. `r014e01.png` is the Canyangao blockade match target and may only be used for a later edit or explicitly approved FLF2V tail test; it must not be blended into this SC003 room I2V pass.
+
+| Image | Path | Node Role | Suggested Use |
+| --- | --- | --- | --- |
+| SC003-SH001 first frame | `01/assets/reference-frames/r010e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Approved primary I2V frame; locks map, red cord, oil lamp and rain edge. |
+| SC003-SH002 first frame | `01/assets/reference-frames/r011e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Approved primary I2V frame; locks Gu/Yan table divide and face-reveal control. |
+| SC003-SH003 first frame | `01/assets/reference-frames/r012e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Approved primary I2V frame; locks genealogy, stopped fingers and untouched gap. |
+| SC003-SH004 first frame | `01/assets/reference-frames/r013e01.png` | `PLACEHOLDER_I2V_IMAGE_NODE` | Approved primary I2V transition-start frame; locks red cord north end, droplet, dim oil lamp and line direction. |
+| SC003-SH004 optional match target | `01/assets/reference-frames/r014e01.png` | optional later `PLACEHOLDER_LAST_FRAME_IMAGE_NODE` | Use only after explicit approval for edit/FLF2V tail testing; do not feed into this I2V room pass. |
+| Yan Nanzhi state | `01/assets/characters/c002e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Identity, veil, robe and face-reveal-control support only. |
+| Gu Huaizhang state | `01/assets/characters/c011e01.png` | `PLACEHOLDER_CHARACTER_REFERENCE_NODE` | Identity, old-minister posture and hand material support only. |
+| Southern red-line room | `01/assets/locations/l014e01.png` | `PLACEHOLDER_LOCATION_REFERENCE_NODE` | Location and humid material reference only. |
+| Old relay map redline | `01/assets/props/p009e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | Map, red cord, paper and pin material reference only. |
+| Moon-white jade and blood genealogy | `01/assets/props/p002e01.png` | `PLACEHOLDER_PROP_REFERENCE_NODE` | Jade, genealogy, wax and old-paper material reference only. |
+## SC003-SH001 Red line map
+
+- Method: `I2V`
+- Duration: `7s / 168 frames @ 24fps`
+- First frame: `01/assets/reference-frames/r010e01.png`（approved highscore reference, use as primary I2V image input）
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`, `01/assets/style/f006e01.png`
+- Output: `01/renders/raw/sc003-sh001.mp4`
+- Status: `needs_config_motion_test`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕，视频生成优先保持已通过参考帧的构图、角色尺度和材质，不做重新构图。SC003 固定为雨夜南方红线空间：潮湿暖暗、朱赤红线、月白冷反光、真实纸纤维、蜡封、旧木、湿油布、水滴和布料材质。动作必须是低幅度、真实速度、可拍摄的微动；光源固定为左下低位油灯暖窄侧光、右上雨夜/月白冷反光、四角负补光，不新增圣光、魔法光束或舞台聚光。
+
+**目标**
+用桌面红线建立南方旧礼法把晏南枝推向北境的路线压力。
+
+**光影**
+低位油灯从左下擦过纸面，形成温暖窄侧光，凸出纸纤维、朱赤线绒毛、铜钉氧化边和湿木纹；右上雨夜月白冷反光只点水滴、油布折痕和地图裂缝。四角负补光压暗，保留潮湿暖暗，不做全局提亮。
+
+**画面内容与动作**
+参考帧构图保持不变：旧驿残图铺满横屏，朱赤红线从下方南缘斜向上方北境，铜钉、防潮卷轴筒、湿木桌沿和油布雨滴分层清楚。0-2 秒几乎静止，只允许油灯轻闪、雨滴敲油布和桌角水珠缓慢坠落；2-5 秒镜头沿红线向北极慢推进，焦点从下方线钉滑到上方北境水滴；5-7 秒停在红线北端和水滴，红线被水打湿略暗，但不发光。
+
+**构图与运镜**
+斜上俯角桌面特写，南缘在下方前景、北境在上方深处。运镜是低速真实前推，不旋转地图、不升空、不横摇搜索；跟焦只做一次，从南缘线钉到北境水滴。红线始终是物理绳线和政治压力，不变成导航线。
+
+**连续性约束**
+纸、线、铜、油布、旧木和水滴必须分材质；顾怀章只允许以画外袖缘或压角边缘存在，不能让人物手臂抢走红线。地图上不要生成可读现代文字，路线信息靠线、钉和水滴方向表达。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，随机可读文字，随机字幕，魔法光柱，神圣金光，过曝 bloom，广域恐怖底光，假舞台硬光，全局灰黑欠曝，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块，画面漂移，物体融化，参考帧构图被重做。
+
+**镜头负面**
+不要现代地图标注、清晰现代字体、电子导航线、高魔法发光路线、漂浮红线、地图旋转、升空俯拍、镜头穿桌、油灯变舞台聚光、丁达尔光柱遮住地图、塑料纸面、随机文字、全局提亮、全局灰黑欠曝。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Video generation must preserve the approved reference-frame composition, character scale and tactile materials instead of rebuilding the shot. SC003 is locked to the rainy southern red-line space: humid warm darkness, vermilion cord, moon-white cool reflections, real paper fibers, wax seal, old wood, wet oilcloth, droplets and cloth texture. Motion must stay small, real-time and filmable. The fixed lighting recipe is low warm narrow oil-lamp side light from lower-left, cool rainy moon-white bounce from upper-right, and corner negative fill, with no sacred light, magic beams or stage spotlight.
+
+**Goal**
+Establish the route pressure of southern old ritual pushing Yan Nanzhi toward the northern border through the tabletop red cord.
+
+**Lighting**
+A low oil lamp from lower-left skims the paper as warm narrow side light, revealing paper fibers, vermilion cord fuzz, oxidized brass-pin edges and wet wood grain. Cool moon-white rain bounce from upper-right only catches droplets, oilcloth folds and map cracks. Corner negative fill preserves humid warm darkness without global brightening.
+
+**Visual Content and Action**
+Keep the reference-frame composition intact: the damaged relay map fills the widescreen frame, the vermilion cord runs from the southern lower edge toward the northern upper depth, and brass pins, moisture-proof scroll tube, wet table edge and oilcloth rain droplets stay clearly layered. From 0-2s the frame is almost still, with only oil-lamp flicker, rain tapping oilcloth and a slow table-corner droplet. From 2-5s the camera pushes very slowly north along the cord, pulling focus from the lower brass pin to the northern rain dot. From 5-7s it settles on the cord north end and droplet; the wet cord darkens slightly but never glows.
+
+**Composition and Camera**
+Overhead-oblique tabletop close-up, with the southern edge in the lower foreground and the northern border receding upward. Use a slow real-time push only: no map rotation, no crane-up, no searching pan. Make a single focus pull from the southern pin to the northern rain dot. The cord remains physical rope and political pressure, never a navigation line.
+
+**Continuity Constraints**
+Paper, cord, brass, oilcloth, old wood and droplets must separate by material. Gu may only exist as an off-frame sleeve edge or map-corner pressure; no arm should steal focus from the cord. Do not generate readable modern text on the map; route information is carried by cord, pins and droplet direction.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, random readable text, random subtitles, magic light shafts, divine golden light, overexposed bloom, broad horror bottom light, fake hard stage lighting, flat grey underexposure, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks, drifting composition, melting objects, rebuilt reference-frame composition.
+
+**Shot Negative**
+avoid modern map labels, clean modern typography, electronic navigation line, high-magic glowing route, floating red cord, rotating map, crane-up aerial view, camera passing through the table, oil lamp becoming a stage spotlight, Tyndall beams hiding the map, plastic paper surface, random text, global brightening, flat grey underexposure.
+```
+
+## SC003-SH002 Evidence question
+
+- Method: `I2V`
+- Duration: `8s / 192 frames @ 24fps`
+- First frame: `01/assets/reference-frames/r011e01.png`（approved highscore reference, use as primary I2V image input）
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`, `01/assets/style/f006e01.png`
+- Output: `01/renders/raw/sc003-sh002.mp4`
+- Status: `needs_config_motion_test`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕，视频生成优先保持已通过参考帧的构图、角色尺度和材质，不做重新构图。SC003 固定为雨夜南方红线空间：潮湿暖暗、朱赤红线、月白冷反光、真实纸纤维、蜡封、旧木、湿油布、水滴和布料材质。动作必须是低幅度、真实速度、可拍摄的微动；光源固定为左下低位油灯暖窄侧光、右上雨夜/月白冷反光、四角负补光，不新增圣光、魔法光束或舞台聚光。
+
+**目标**
+交代旧臣把皇血证据压给晏南枝，同时保留她对证据能否换来北门的怀疑。
+
+**光影**
+顾怀章在左侧油灯暖侧光里，老手、朱赤衣纹、卷轴边和地图纸纹被擦亮；晏南枝在右侧阴影里，只吃玉片和雨夜的窄冷边，勾指节、面纱边、下颌线和冷灰衣料。红线附近加深负补光，形成两人之间的政治边界；不要美颜柔光揭全脸。
+
+**画面内容与动作**
+参考帧构图保持低桌沿双人中近景：顾怀章在左侧灯边压住旧驿图，晏南枝在右侧阴影后半步，红线横在两人之间。0-2 秒锁住两人的手和红线；2-4 秒顾怀章手掌微压地图，袖口轻微下沉，像把证据压到桌面；4-6 秒晏南枝握玉片的指节收紧半拍，下颌在面纱下极小幅度动，表现回答前的克制；6-8 秒焦点从顾怀章压图手滑到晏南枝玉片手，再回到红线边界。
+
+**构图与运镜**
+低桌沿锁镜，不追脸、不推成肖像、不做华丽揭面。只允许一次极轻微跟焦和人物呼吸微动；台词由音频/字幕完成，视频只表现弱口部状态和下颌克制，不生成精确口型文字。
+
+**连续性约束**
+晏南枝保持遮面、冷灰流亡外袍、黑发红线和克制站姿；顾怀章是旧臣压力，不是慈祥引路人。玉片亮度低于红线与顾怀章压图手，不能变法器；红线不能消失，二人站位不能互换。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，随机可读文字，随机字幕，魔法光柱，神圣金光，过曝 bloom，广域恐怖底光，假舞台硬光，全局灰黑欠曝，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块，画面漂移，物体融化，参考帧构图被重做。
+
+**镜头负面**
+不要晏南枝全脸华丽揭示、网红脸、现代妆容、艳俗宫装、玉片变法器、玉片强过红线、神圣逆光、魔法光柱、广域恐怖底光、油灯过曝、背景全黑吞掉动作、红线消失、两人站位互换、字幕入画、精确口型文字、脸部花屏、手指融化、衣料塑料感。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Video generation must preserve the approved reference-frame composition, character scale and tactile materials instead of rebuilding the shot. SC003 is locked to the rainy southern red-line space: humid warm darkness, vermilion cord, moon-white cool reflections, real paper fibers, wax seal, old wood, wet oilcloth, droplets and cloth texture. Motion must stay small, real-time and filmable. The fixed lighting recipe is low warm narrow oil-lamp side light from lower-left, cool rainy moon-white bounce from upper-right, and corner negative fill, with no sacred light, magic beams or stage spotlight.
+
+**Goal**
+Show the old minister pressing royal-blood evidence onto Yan while preserving her doubt about whether evidence can open the northern gate.
+
+**Lighting**
+Gu Huaizhang stays in warm oil-lamp side light on the left, grazing aged hand skin, vermilion robe grain, scroll edge and map paper. Yan Nanzhi stays in right-side shadow, receiving only a narrow cool edge from jade and rainy night on knuckles, veil edge, jawline and cold-grey cloth. Deepen negative fill around the red cord as the political boundary between them; no beauty soft light may reveal her full face.
+
+**Visual Content and Action**
+Keep the low table-edge two-shot from the reference frame: Gu Huaizhang is on the left lamp side pressing the old relay map, Yan Nanzhi is half a step back in right-side shadow, and the red cord lies between them. From 0-2s lock on both hands and the cord. From 2-4s Gu presses the map slightly and his sleeve lowers a fraction, as if pinning the evidence to the table. From 4-6s Yan tightens fingers around the jade by half a beat, with a tiny jaw movement under the veil before answering. From 6-8s focus shifts from Gu pressing hand to Yan jade hand, then returns to the red-cord boundary.
+
+**Composition and Camera**
+Locked low table-edge frame: do not chase faces, turn into a portrait, or glamorously reveal Yan. Allow only one very small focus shift and breath-level body motion. Dialogue is handled by audio/subtitles; video only shows weak speaking state and restrained jaw motion, never exact lip-text generation.
+
+**Continuity Constraints**
+Yan remains veiled, in cold-grey exile robe with black hair and red cord, holding a restrained ritual posture. Gu reads as old-minister pressure, not a kindly guide. The jade must stay dimmer than the red cord and Gu pressing hand and must not become a magic weapon. The red cord cannot disappear, and the two character positions cannot swap.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, random readable text, random subtitles, magic light shafts, divine golden light, overexposed bloom, broad horror bottom light, fake hard stage lighting, flat grey underexposure, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks, drifting composition, melting objects, rebuilt reference-frame composition.
+
+**Shot Negative**
+avoid full glamorous Yan face reveal, influencer face, modern makeup, vulgar palace costume, jade becoming a magic weapon, jade brighter than the cord, sacred backlight, magic light shafts, broad horror bottom light, overexposed oil lamp, background blackness swallowing action, missing red cord, swapped character positions, subtitles in frame, exact lip-text generation, face glitches, melted fingers, plastic cloth.
+```
+
+## SC003-SH003 Blood genealogy not taken
+
+- Method: `I2V`
+- Duration: `9s / 216 frames @ 24fps`
+- First frame: `01/assets/reference-frames/r012e01.png`（approved highscore reference, use as primary I2V image input）
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`, `01/assets/style/f006e01.png`
+- Output: `01/renders/raw/sc003-sh003.mp4`
+- Status: `needs_config_motion_test`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕，视频生成优先保持已通过参考帧的构图、角色尺度和材质，不做重新构图。SC003 固定为雨夜南方红线空间：潮湿暖暗、朱赤红线、月白冷反光、真实纸纤维、蜡封、旧木、湿油布、水滴和布料材质。动作必须是低幅度、真实速度、可拍摄的微动；光源固定为左下低位油灯暖窄侧光、右上雨夜/月白冷反光、四角负补光，不新增圣光、魔法光束或舞台聚光。
+
+**目标**
+把血牒、旧歌和晏南枝未接的手拍成希望与危险并存的停顿。
+
+**光影**
+左侧低位油灯掠过血牒，突出破损纸纤维、潮痕、旧蜡封、暗红旧印和桌面水痕；右侧阴影由月白玉片给指尖和面纱下缘一条窄冷边。暖光到冷光的交界必须落在红线与未接触空隙处，强调她没有接。
+
+**画面内容与动作**
+参考帧构图保持手部插入特写：前景红线虚焦横过下沿，中景半卷血牒、蜡封和一指宽空隙最清楚，右后方玉片只露小冷反光。0-3 秒顾怀章的手把半卷血牒从左侧暖灯区推过红线 2-3 厘米，纸边和蜡封轻擦湿桌；3-5 秒血牒在晏南枝指尖前停住，顾怀章的手退开；5-9 秒镜头保持在空隙上，晏南枝指尖只有微颤和呼吸带来的阴影，不触碰、不抓卷。
+
+**构图与运镜**
+桌面高度极小幅推进，终点落在“指尖没有接触血牒”的空隙。推进后保持静止，只允许火光、雨影、纸边停顿和呼吸微动；动作因果必须清楚，血牒不能漂浮，手不能突然跳变。
+
+**连续性约束**
+血牒是旧帝国合法性与旧债压力，不是胜利圣物；晏南枝的迟疑比道具更重要。中心空隙必须始终可见，纸纤维、蜡封、潮痕、桌面水迹、指节和面纱边缘必须清晰。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，随机可读文字，随机字幕，魔法光柱，神圣金光，过曝 bloom，广域恐怖底光，假舞台硬光，全局灰黑欠曝，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块，画面漂移，物体融化，参考帧构图被重做。
+
+**镜头负面**
+不要完整圣旨光效、皇权胜利感、血牒发光漂浮、手突然抓卷、指尖碰到血牒、空隙消失、手指融化、血腥奇观、随机可读文字、现代纸张、塑料蜡封、神圣逆光、魔法光柱、大面积底光、全局灰黑欠曝、视频涂抹、花屏。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Video generation must preserve the approved reference-frame composition, character scale and tactile materials instead of rebuilding the shot. SC003 is locked to the rainy southern red-line space: humid warm darkness, vermilion cord, moon-white cool reflections, real paper fibers, wax seal, old wood, wet oilcloth, droplets and cloth texture. Motion must stay small, real-time and filmable. The fixed lighting recipe is low warm narrow oil-lamp side light from lower-left, cool rainy moon-white bounce from upper-right, and corner negative fill, with no sacred light, magic beams or stage spotlight.
+
+**Goal**
+Render the blood genealogy, old song and Yan Nanzhi stopped hand as a pause where hope and danger coexist.
+
+**Lighting**
+A low oil lamp from the left grazes the genealogy, revealing torn paper fibers, moisture stains, old wax seal, dark-red old marks and water trails on the table. The right-side shadow receives only a narrow moon-white jade edge on fingertips and veil lower edge. The warm-to-cool boundary must fall on the red cord and untouched gap, stressing that she has not taken it.
+
+**Visual Content and Action**
+Keep the hand insert close-up from the reference frame: foreground red cord crosses the lower edge out of focus, midground half-rolled genealogy, wax seal and one-finger gap are the clearest information, and the rear-right jade appears only as a small cool reflection. From 0-3s Gu hand pushes the half-rolled genealogy 2-3 cm from warm left light across the red cord, with paper edge and wax seal scraping the wet table. From 3-5s the genealogy stops before Yan fingertips and Gu hand retreats. From 5-9s the shot holds on the gap; Yan fingertips show only a tiny tremor and breath shadow, never touching or grabbing the scroll.
+
+**Composition and Camera**
+Use a tiny table-height push whose endpoint is the gap where the fingertips do not touch the genealogy. After the push, hold still; allow only fire flicker, rain shadow, paper-edge settling and breath micro-motion. Action causality must stay clear: the genealogy cannot float and hands cannot jump.
+
+**Continuity Constraints**
+The genealogy is old-imperial legitimacy and debt pressure, not a triumphant sacred object; Yan hesitation matters more than the prop. The central gap must remain visible, with clear paper fibers, wax seal, moisture stains, table water trails, knuckles and veil edge.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, random readable text, random subtitles, magic light shafts, divine golden light, overexposed bloom, broad horror bottom light, fake hard stage lighting, flat grey underexposure, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks, drifting composition, melting objects, rebuilt reference-frame composition.
+
+**Shot Negative**
+avoid perfect sacred edict glow, triumphant royal legitimacy tone, glowing or floating genealogy, hand suddenly grabbing the scroll, fingertips touching the genealogy, disappearing gap, melted fingers, gore spectacle, random readable text, modern paper, plastic wax seal, sacred backlight, magic light shafts, broad bottom light, flat grey underexposure, video smearing, glitches.
+```
+
+## SC003-SH004 Road not necessarily throne
+
+- Method: `I2V`
+- Duration: `9s / 216 frames @ 24fps`
+- First frame: `01/assets/reference-frames/r013e01.png`（approved highscore reference, use as primary I2V image input）
+- Optional match target: `01/assets/reference-frames/r014e01.png`（only for later approved edit/FLF2V tail test, not part of this I2V pass）
+- Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`, `01/assets/style/f006e01.png`
+- Output: `01/renders/raw/sc003-sh004.mp4`
+- Status: `needs_config_motion_test_optional_match_target`
+
+### positive_prompt_zh
+
+```text
+**风格**
+超写实电影级低魔东方史诗，16:9 横屏宽银幕，视频生成优先保持已通过参考帧的构图、角色尺度和材质，不做重新构图。SC003 固定为雨夜南方红线空间：潮湿暖暗、朱赤红线、月白冷反光、真实纸纤维、蜡封、旧木、湿油布、水滴和布料材质。动作必须是低幅度、真实速度、可拍摄的微动；光源固定为左下低位油灯暖窄侧光、右上雨夜/月白冷反光、四角负补光，不新增圣光、魔法光束或舞台聚光。
+
+**目标**
+用红线北端的图形转场首镜，准备把“路”在剪辑中反转成残阳坳封锁线。
+
+**光影**
+雨夜油灯被压暗，只保留低位暖边照亮红线纤维和水滴边缘；右上月白冷反光给纸裂和晏南枝虚焦剪影一条窄冷边。尾端只让暖暗轻微下降，预留下一镜残阳坳土褐与虫蜡冷白的剪辑入口，不在本镜提前生成圣光封锁线。
+
+**画面内容与动作**
+参考帧构图保持红线北端特写：红线北端和线钉在上三分之一，雨滴压在朱赤线和北境纸纹交界，油灯暖边低而暗，晏南枝遮面剪影只在远侧边缘虚焦。0-3 秒雨滴在红线纤维上变重，朱赤线被水打湿更深；3-6 秒镜头贴地图高度沿线端做短距离匹配移动，纸裂和水滴边缘保持清楚；6-9 秒曝光轻微下落，雨声准备切到人声，画面仍停留在南方红线密室，不提前跳到村口。
+
+**构图与运镜**
+本轮按 R013 做 I2V 转场首镜，而不是强制 R013->R014 的 FLF2V。运镜是贴近地图的短匹配移动，线条方向为后续剪辑保留；不做梦幻溶解、不全黑、不出现皇座或村口完整画面。若后续要 FLF2V，必须先确认/重做正确的封锁线终帧，再接入尾帧节点。
+
+**连续性约束**
+旧帝国路线期待在这里开始转成制度封锁压力，但本镜仍属于 L014 南方雨夜图桌。线条方向、红线纤维、水滴边缘、纸裂和冷暖尾端必须清楚；晏南枝只读剪影和遮面，不完整揭脸。
+```
+
+### negative_prompt_zh
+
+```text
+**通用负面**
+现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，随机可读文字，随机字幕，魔法光柱，神圣金光，过曝 bloom，广域恐怖底光，假舞台硬光，全局灰黑欠曝，黄色闪粉，数字颗粒，全局高频假锐化，视频涂抹，花屏，压缩块，画面漂移，物体融化，参考帧构图被重做。
+
+**镜头负面**
+不要皇座幻象、梦幻溶解、字卡解释、红线发光变法阵、圣光式逆光、魔法光柱、过曝 bloom、全黑转场、线条方向断裂、提前跳到完整残阳坳村口、晏南枝完整正脸、随机文字、油灯舞台化、视频涂抹、花屏、R014 村口画面直接混入本镜。
+```
+
+### positive_prompt_en
+
+```text
+**Style**
+Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Video generation must preserve the approved reference-frame composition, character scale and tactile materials instead of rebuilding the shot. SC003 is locked to the rainy southern red-line space: humid warm darkness, vermilion cord, moon-white cool reflections, real paper fibers, wax seal, old wood, wet oilcloth, droplets and cloth texture. Motion must stay small, real-time and filmable. The fixed lighting recipe is low warm narrow oil-lamp side light from lower-left, cool rainy moon-white bounce from upper-right, and corner negative fill, with no sacred light, magic beams or stage spotlight.
+
+**Goal**
+Use the red-cord north-end transition-start shot to prepare an editorial reversal from road to the Canyangao checkpoint line.
+
+**Lighting**
+The rainy-night oil lamp is dimmed, leaving only a low warm edge on cord fibers and droplet rims. Cool moon-white bounce from upper-right gives paper cracks and Yan out-of-focus silhouette a narrow cold edge. At the tail, humid warm darkness drops slightly to leave an editorial opening for Canyangao earth brown and insect-wax cold white in the next shot; this shot must not generate sacred checkpoint light early.
+
+**Visual Content and Action**
+Keep the reference-frame close-up of the red cord north end: the cord end and pin sit near the upper third, a rain droplet presses on the boundary between vermilion fiber and northern paper grain, the oil-lamp warm edge is low and dim, and Yan veiled silhouette is only an out-of-focus far-edge weight. From 0-3s the droplet grows heavier on the cord fibers and the wet vermilion darkens. From 3-6s the camera makes a short map-level match move along the cord end while paper cracks and droplet rim stay readable. From 6-9s exposure lowers slightly and rain sound prepares to cut into crowd voice, but the image remains inside the southern red-line room and does not jump to the village gate early.
+
+**Composition and Camera**
+For this pass, use R013 as an I2V transition-start shot, not a forced R013-to-R014 FLF2V. The camera performs a short map-level match move, preserving line direction for a later edit. No dreamy dissolve, no full black, no throne vision, no complete village-gate image inside this shot. If a later FLF2V pass is needed, first approve or rebuild a correct blockade-line last frame before connecting it to the last-frame node.
+
+**Continuity Constraints**
+The old-imperial road expectation begins turning into bureaucratic blockade pressure here, but this shot still belongs to the L014 southern rainy-night map table. Line direction, cord fibers, droplet edge, paper cracks and the warm-cool tail must stay clear. Yan reads only as veiled silhouette, never full face.
+```
+
+### negative_prompt_en
+
+```text
+**Global Negative**
+modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, random readable text, random subtitles, magic light shafts, divine golden light, overexposed bloom, broad horror bottom light, fake hard stage lighting, flat grey underexposure, yellow glitter, digital speckle, global high-frequency fake sharpening, video smearing, glitches, compression blocks, drifting composition, melting objects, rebuilt reference-frame composition.
+
+**Shot Negative**
+avoid throne vision, dreamy dissolve, explanatory title card, red cord glowing into a magic array, sacred backlight, magic light shafts, overexposed bloom, full black transition, broken line direction, early jump to a complete Canyangao village gate, full Yan face reveal, random text, stage-like oil lamp, video smearing, glitches, R014 village-gate image blended directly into this shot.
 ```

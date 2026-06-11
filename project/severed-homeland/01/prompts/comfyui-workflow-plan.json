@@ -1,8 +1,8 @@
 {
-  "version": "director-room-comfyui-workflow-plan-v1-2026-06-08",
+  "version": "director-room-comfyui-workflow-plan-v1-2026-06-10",
   "project": "severed-homeland",
   "episode_id": "01",
-  "scope": "SC001",
+  "scope": "SC001-SC003",
   "workflow_families": [
     {
       "workflow_family": "flf2v_transition",
@@ -102,9 +102,33 @@
             "180-degree turn"
           ]
         },
-        "motion_bucket": "PLACEHOLDER_LOW_MEDIUM_MOTION"
+        "motion_bucket": "PLACEHOLDER_LOW_MEDIUM_MOTION",
+        "sc002_sh004": {
+          "aspect_ratio": "16:9",
+          "fps": 24,
+          "frame_count": 192,
+          "duration_seconds": 8,
+          "denoise": 0.45,
+          "cfg_range_note": "Start around 4.5; keep first/last-frame continuity stronger than action extrapolation.",
+          "status": "needs_config_pending_user_visual_qc"
+        }
       },
-      "config_status": "needs_config"
+      "config_status": "needs_config",
+      "sc002_required_inputs": [
+        "positive_prompt_zh_or_en for SC002-SH004 from comfyui-render-prompts.md",
+        "negative_prompt_zh_or_en for SC002-SH004 from comfyui-render-prompts.md",
+        "first_frame r008e01.png",
+        "last_frame r009e01.png",
+        "style references f001e01/f005e01",
+        "optional slave-soldier and prop references c017e01/p008e01 below first/last-frame strength",
+        "output_path"
+      ],
+      "sc002_node_binding_hints": [
+        "SC002-SH004 r008e01.png -> PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
+        "SC002-SH004 r009e01.png -> PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+        "Use the same rear-threshold composition across first and last frame; cart leaves laterally and the camera does not chase.",
+        "c017e01/p008e01 references are supporting identity/material inputs only, lower than first/last frames."
+      ]
     },
     {
       "workflow_family": "i2v_reference",
@@ -152,9 +176,39 @@
           "end_percent": 0.65,
           "operator_note": "For SH002 and SH003 these references are background continuity only; keep them lower than the human identity/first-frame reference."
         },
-        "motion_bucket": "PLACEHOLDER_LOW_MOTION"
+        "motion_bucket": "PLACEHOLDER_LOW_MOTION",
+        "sc002": {
+          "aspect_ratio": "16:9",
+          "fps": 24,
+          "shot_frame_counts": {
+            "SC002-SH001": 144,
+            "SC002-SH002": 168,
+            "SC002-SH003": 168
+          },
+          "denoise_range": "0.38-0.42",
+          "cfg_range_note": "Start around 5.0; lower if I2V frame adherence or skin/hand stability degrades.",
+          "status": "needs_config_pending_user_visual_qc"
+        }
       },
-      "config_status": "needs_config"
+      "config_status": "needs_config",
+      "sc002_required_inputs": [
+        "positive_prompt_zh_or_en from SC002 sections in comfyui-render-prompts.md",
+        "negative_prompt_zh_or_en from SC002 sections in comfyui-render-prompts.md",
+        "SC002 primary first frame r005/r006/r007",
+        "style references f001e01/f005e01",
+        "optional character references c016be01/c017e01/c023e01 as identity/material references only",
+        "optional location reference l003e01",
+        "optional prop references p003e01/p008e01",
+        "output_path"
+      ],
+      "sc002_node_binding_hints": [
+        "SC002-SH001 r005e01.png -> PLACEHOLDER_I2V_IMAGE_NODE",
+        "SC002-SH002 r006e01.png -> PLACEHOLDER_I2V_IMAGE_NODE",
+        "SC002-SH003 r007e01.png -> PLACEHOLDER_I2V_IMAGE_NODE",
+        "c016be01/c017e01/c023e01 -> PLACEHOLDER_CHARACTER_REFERENCE_NODE -> PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH, lower than I2V first frame",
+        "l003e01 -> PLACEHOLDER_LOCATION_REFERENCE_NODE, material/geography only",
+        "p003e01/p008e01 -> PLACEHOLDER_PROP_REFERENCE_NODE, line-control/material only; no readable text generation"
+      ]
     }
   ],
   "shots": [
@@ -382,12 +436,397 @@
         "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
         "reference_frame_status": "R001 canonical has been replaced with fortress_battle_far_view_war_aged_clean_4k.png from 019eac75 and is the texture standard for R002/R003/R004 and later scene assets."
       }
+    },
+    {
+      "shot_id": "SC003-SH001",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png",
+        "01/assets/locations/l014e01.png",
+        "01/assets/props/p009e01.png",
+        "assets/locations/l014m.png",
+        "assets/props/p009m.png",
+        "01/assets/reference-frames/r010e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "path": "01/assets/reference-frames/r010e01.png",
+          "role": "primary_i2v_first_frame",
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "weight": "primary",
+          "asset_status": "approved_highscore_reference_frame_2026-06-11",
+          "operator_note": "Primary I2V input. Keep above supporting reference cards; do not replace it with character/location/prop sheets."
+        },
+        {
+          "path": "01/assets/locations/l014e01.png",
+          "role": "location_or_geography_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/props/p009e01.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/locations/l014m.png",
+          "role": "location_or_geography_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/props/p009m.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        }
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC003-SH001",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC003-SH001",
+      "output_path": "01/renders/raw/sc003-sh001.mp4",
+      "parameter_profile": {
+        "frame_count": 168,
+        "fps": 24,
+        "duration": "7s",
+        "denoise": 0.34,
+        "motion": "斜上俯角桌面特写，南缘在下方前景、北境在上方深处。运镜是低速真实前推，不旋转地图、不升空、不横摇搜索；跟焦只做一次，从南缘线钉到北境水滴。红线始终是物理绳线和政治压力，不变成导航线。 / Overhead-oblique tabletop close-up, with the southern edge in the lower foreground and the northern border receding upward. Use a slow real-time push only: no map rotation, no crane-up, no searching pan. Make a single focus pull from the southern pin to the northern rain dot. The cord remains physical rope and political pressure, never a navigation line."
+      },
+      "reference_frame_status": "canonical_highscore_reference_frame_accepted_2026-06-11; r010e01.png approved for SC003-SH001 I2V motion test, director 94 / art 96",
+      "status": "needs_config_motion_test",
+      "reference_frame_qc_status": "accepted_highscore_target_2026-06-11_director_94_art_96"
+    },
+    {
+      "shot_id": "SC003-SH002",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png",
+        "01/assets/locations/l014e01.png",
+        "01/assets/characters/c011e01.png",
+        "01/assets/characters/c002e01.png",
+        "01/assets/costumes/k002e01.png",
+        "01/assets/props/p002e01.png",
+        "assets/characters/c011m.png",
+        "assets/characters/c002m.png",
+        "assets/costumes/k002m.png",
+        "assets/props/p002m.png",
+        "01/assets/reference-frames/r011e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "path": "01/assets/reference-frames/r011e01.png",
+          "role": "primary_i2v_first_frame",
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "weight": "primary",
+          "asset_status": "approved_highscore_reference_frame_2026-06-11",
+          "operator_note": "Primary I2V input. Keep above supporting reference cards; do not replace it with character/location/prop sheets."
+        },
+        {
+          "path": "01/assets/locations/l014e01.png",
+          "role": "location_or_geography_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/characters/c011e01.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/characters/c002e01.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/costumes/k002e01.png",
+          "role": "costume_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/props/p002e01.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/characters/c011m.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/characters/c002m.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/costumes/k002m.png",
+          "role": "costume_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/props/p002m.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        }
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC003-SH002",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC003-SH002",
+      "output_path": "01/renders/raw/sc003-sh002.mp4",
+      "parameter_profile": {
+        "frame_count": 192,
+        "fps": 24,
+        "duration": "8s",
+        "denoise": 0.35,
+        "motion": "低桌沿锁镜，不追脸、不推成肖像、不做华丽揭面。只允许一次极轻微跟焦和人物呼吸微动；台词由音频/字幕完成，视频只表现弱口部状态和下颌克制，不生成精确口型文字。 / Locked low table-edge frame: do not chase faces, turn into a portrait, or glamorously reveal Yan. Allow only one very small focus shift and breath-level body motion. Dialogue is handled by audio/subtitles; video only shows weak speaking state and restrained jaw motion, never exact lip-text generation."
+      },
+      "reference_frame_status": "canonical_highscore_reference_frame_accepted_2026-06-11; r011e01.png approved for SC003-SH002 I2V motion test, director 92 / art 96",
+      "status": "needs_config_motion_test",
+      "reference_frame_qc_status": "accepted_highscore_target_2026-06-11_director_92_art_96"
+    },
+    {
+      "shot_id": "SC003-SH003",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png",
+        "01/assets/characters/c011e01.png",
+        "01/assets/characters/c002e01.png",
+        "01/assets/props/p002e01.png",
+        "01/assets/props/p009e01.png",
+        "assets/characters/c011m.png",
+        "assets/characters/c002m.png",
+        "assets/props/p002m.png",
+        "assets/props/p009m.png",
+        "01/assets/reference-frames/r012e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "path": "01/assets/reference-frames/r012e01.png",
+          "role": "primary_i2v_first_frame",
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "weight": "primary",
+          "asset_status": "approved_highscore_reference_frame_2026-06-11",
+          "operator_note": "Primary I2V input. Keep above supporting reference cards; do not replace it with character/location/prop sheets."
+        },
+        {
+          "path": "01/assets/characters/c011e01.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/characters/c002e01.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/props/p002e01.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/props/p009e01.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/characters/c011m.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/characters/c002m.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/props/p002m.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/props/p009m.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        }
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC003-SH003",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC003-SH003",
+      "output_path": "01/renders/raw/sc003-sh003.mp4",
+      "parameter_profile": {
+        "frame_count": 216,
+        "fps": 24,
+        "duration": "9s",
+        "denoise": 0.33,
+        "motion": "桌面高度极小幅推进，终点落在“指尖没有接触血牒”的空隙。推进后保持静止，只允许火光、雨影、纸边停顿和呼吸微动；动作因果必须清楚，血牒不能漂浮，手不能突然跳变。 / Use a tiny table-height push whose endpoint is the gap where the fingertips do not touch the genealogy. After the push, hold still; allow only fire flicker, rain shadow, paper-edge settling and breath micro-motion. Action causality must stay clear: the genealogy cannot float and hands cannot jump."
+      },
+      "reference_frame_status": "canonical_highscore_reference_frame_accepted_2026-06-11; r012e01.png approved for SC003-SH003 I2V motion test, director 94 / art 96",
+      "status": "needs_config_motion_test",
+      "reference_frame_qc_status": "accepted_highscore_target_2026-06-11_director_94_art_96"
+    },
+    {
+      "shot_id": "SC003-SH004",
+      "workflow_family": "i2v_reference",
+      "asset_inputs": [
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/style/f006e01.png",
+        "01/assets/locations/l014e01.png",
+        "01/assets/characters/c002e01.png",
+        "01/assets/props/p009e01.png",
+        "assets/locations/l014m.png",
+        "assets/characters/c002m.png",
+        "assets/props/p009m.png",
+        "01/assets/reference-frames/r013e01.png"
+      ],
+      "image_node_bindings": [
+        {
+          "path": "01/assets/reference-frames/r013e01.png",
+          "role": "primary_i2v_first_frame",
+          "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+          "weight": "primary",
+          "asset_status": "approved_highscore_reference_frame_2026-06-11",
+          "operator_note": "Primary I2V input. Keep above supporting reference cards; do not replace it with character/location/prop sheets."
+        },
+        {
+          "path": "01/assets/locations/l014e01.png",
+          "role": "location_or_geography_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/characters/c002e01.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "01/assets/props/p009e01.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/locations/l014m.png",
+          "role": "location_or_geography_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/characters/c002m.png",
+          "role": "identity_or_wardrobe_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        },
+        {
+          "path": "assets/props/p009m.png",
+          "role": "prop_or_material_reference",
+          "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+          "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+          "suggested_weight": 0.35,
+          "operator_note": "Supporting identity/material/geography reference only; do not use this card as an I2V/FLF2V scene frame."
+        }
+      ],
+      "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC003-SH004",
+      "copy_prompt_ref": "01/prompts/comfyui-render-prompts.md#SC003-SH004",
+      "output_path": "01/renders/raw/sc003-sh004.mp4",
+      "parameter_profile": {
+        "frame_count": 216,
+        "fps": 24,
+        "duration": "9s",
+        "denoise": 0.36,
+        "motion": "本轮按 R013 做 I2V 转场首镜，而不是强制 R013->R014 的 FLF2V。运镜是贴近地图的短匹配移动，线条方向为后续剪辑保留；不做梦幻溶解、不全黑、不出现皇座或村口完整画面。若后续要 FLF2V，必须先确认/重做正确的封锁线终帧，再接入尾帧节点。 / For this pass, use R013 as an I2V transition-start shot, not a forced R013-to-R014 FLF2V. The camera performs a short map-level match move, preserving line direction for a later edit. No dreamy dissolve, no full black, no throne vision, no complete village-gate image inside this shot. If a later FLF2V pass is needed, first approve or rebuild a correct blockade-line last frame before connecting it to the last-frame node."
+      },
+      "reference_frame_status": "canonical_highscore_reference_frame_accepted_2026-06-11; r013e01.png approved for SC003-SH004 I2V transition-start motion test, director 93 / art 96; r014e01.png retained only as optional next-scene match target pending explicit transition approval",
+      "status": "needs_config_motion_test_optional_match_target",
+      "reference_frame_qc_status": "accepted_highscore_target_2026-06-11_director_93_art_96_for_r013; optional_r014_target_not_core_sc003_frame",
+      "optional_transition_target_ref": "01/assets/reference-frames/r014e01.png",
+      "optional_transition_target_note": "Use only for a later approved match-cut or FLF2V tail test; this I2V pass must stay in the red-line room."
     }
   ],
   "render_order": [
     "SC001-SH001",
     "SC001-SH002",
-    "SC001-SH003"
+    "SC001-SH003",
+    "SC002-SH001",
+    "SC002-SH002",
+    "SC002-SH003",
+    "SC002-SH004",
+    "SC003-SH001",
+    "SC003-SH002",
+    "SC003-SH003",
+    "SC003-SH004"
   ],
   "config_placeholders": [
     "PLACEHOLDER_VIDEO_CHECKPOINT",
@@ -404,6 +843,11 @@
     "PLACEHOLDER_I2V_WORKFLOW_TEMPLATE",
     "PLACEHOLDER_POSITIVE_PROMPT_NODE",
     "PLACEHOLDER_NEGATIVE_PROMPT_NODE",
-    "PLACEHOLDER_OUTPUT_NODE"
+    "PLACEHOLDER_OUTPUT_NODE",
+    "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+    "PLACEHOLDER_I2V_IMAGE_NODE",
+    "PLACEHOLDER_FIRST_FRAME_IMAGE_NODE",
+    "PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+    "PLACEHOLDER_STYLE_REFERENCE_NODE"
   ]
 }

@@ -2,7 +2,7 @@
   "version": "director-room-comfyui-asset-pack-v1-2026-06-08",
   "project": "severed-homeland",
   "episode_id": "01",
-  "scope": "SC001",
+  "scope": "SC001-SC003",
   "assets": [
     {
       "asset_id": "E01_F001",
@@ -458,7 +458,301 @@
         "SIEGE_BEAST_ALLIANCE",
         "COMPANION_BEAST_LOCK"
       ]
+    },
+    {
+      "asset_id": "E01_F006",
+      "asset_type": "style",
+      "file_path": "01/assets/style/f006e01.png",
+      "status": "ready",
+      "prompt_hint_zh": "第01集低魔与精确符号边界板；SC003 中红线、血牒、玉片只作物理证据和克制冷暖反光，不作魔法光效。",
+      "prompt_hint_en": "Episode 01 low-magic and precision-symbol boundary board; in SC003 the red cord, genealogy and jade are physical evidence and restrained warm/cool reflections, not magic effects.",
+      "comfyui_role": "style_reference",
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "continuity_refs": [
+        "LOW_MAGIC_BOUNDARY",
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_GENEALOGY"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_L014",
+      "asset_type": "location",
+      "file_path": "01/assets/locations/l014e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "南方红线密室场景卡；只作潮湿油布、旧驿图桌、低位油灯和红线密室材质/空间参考。",
+      "prompt_hint_en": "Southern red-line room scene card; support reference only for humid oilcloth, old relay-map table, low oil lamp and red-line room material/geography.",
+      "comfyui_role": "location_reference_image",
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH004"
+      ],
+      "continuity_refs": [
+        "LOC_SOUTHERN_REDLINE_ROOM"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_C002",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c002e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "晏南枝第01集遮面状态卡；只作身份、遮面、冷灰流亡外袍、黑发红线和不完整揭脸控制参考。",
+      "prompt_hint_en": "Yan Nanzhi episode 01 veiled state card; support reference only for identity, veil, cold-grey exile robe, black hair red cord and no-full-face-reveal control.",
+      "comfyui_role": "character_reference_image",
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "face_reveal_control"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_C011",
+      "asset_type": "character",
+      "file_path": "01/assets/characters/c011e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "顾怀章第01集南方旧臣状态卡；只作旧臣姿态、老手、薄朱赤衣料和卷轴压力参考。",
+      "prompt_hint_en": "Gu Huaizhang episode 01 southern old-minister state card; support reference only for old-minister posture, aged hands, thin vermilion cloth and scroll pressure.",
+      "comfyui_role": "character_reference_image",
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003"
+      ],
+      "continuity_refs": [
+        "CHAR_GU_HUAIZHANG"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_P009",
+      "asset_type": "prop",
+      "file_path": "01/assets/props/p009e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "南方旧驿残图红线道具卡；只作旧纸、朱赤红线、铜钉、防潮卷轴筒和地图方向参考，不作视频帧。",
+      "prompt_hint_en": "Southern old relay map redline prop card; support reference only for old paper, vermilion cord, brass pins, moisture-proof scroll tube and map direction, not a video frame.",
+      "comfyui_role": "prop_reference_image",
+      "usage": [
+        "SC003-SH001",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "continuity_refs": [
+        "PROP_OLD_RELAY_MAP_REDLINE"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_P002",
+      "asset_type": "prop",
+      "file_path": "01/assets/props/p002e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "月白玉片与半卷血牒状态卡；只作玉片冷反光、血牒旧纸、蜡封和潮痕材质参考，不可作圣物发光。",
+      "prompt_hint_en": "Moon-white jade and half blood-genealogy state card; support reference only for jade cool reflection, old genealogy paper, wax seal and damp stains, never sacred glow.",
+      "comfyui_role": "prop_reference_image",
+      "usage": [
+        "SC003-SH002",
+        "SC003-SH003"
+      ],
+      "continuity_refs": [
+        "PROP_MOON_WHITE_JADE",
+        "PROP_BLOOD_GENEALOGY"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_K002",
+      "asset_type": "costume",
+      "file_path": "01/assets/costumes/k002e01.png",
+      "status": "support_reference_only",
+      "prompt_hint_zh": "晏南枝第01集遮面流亡服装板；只作冷灰外袍、遮蔽轮廓、红线束发和不揭脸控制参考。",
+      "prompt_hint_en": "Yan Nanzhi episode 01 veiled exile costume board; support reference only for cold-grey robe, concealed silhouette, red-cord hair and no-full-face-reveal control.",
+      "comfyui_role": "costume_reference_image",
+      "usage": [
+        "SC003-SH002"
+      ],
+      "continuity_refs": [
+        "CHAR_YAN_NANZHI",
+        "face_reveal_control"
+      ],
+      "conditioning": {
+        "node_type": "Load Image -> reference/IPAdapter branch",
+        "node_hint": "PLACEHOLDER_REFERENCE_IMAGE_NODE",
+        "connect_to": "PLACEHOLDER_REFERENCE_OR_IPADAPTER_BRANCH",
+        "suggested_weight": 0.35,
+        "operator_note": "Support reference only; do not use as I2V/FLF2V primary scene frame."
+      }
+    },
+    {
+      "asset_id": "E01_R010",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r010e01.png",
+      "status": "approved_highscore_primary_i2v_2026-06-11",
+      "prompt_hint_zh": "SC003-SH001 高分通过主 I2V 参考帧；本轮直接作为视频图像输入，保持参考帧构图和微动作，不再标记缺失。",
+      "prompt_hint_en": "SC003-SH001 approved primary I2V frame: red-line map, oil lamp, rain edge. Use directly as the primary video image input for this pass; preserve the reference-frame composition and micro-motion. Approved in metadata for this motion-test pass.",
+      "comfyui_role": "primary_i2v_reference_frame",
+      "conditioning": {
+        "node_type": "Load Image -> primary I2V image input",
+        "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+        "connect_to": "I2V primary image input",
+        "suggested_weight": "primary",
+        "operator_note": "Approved high-score reference frame; keep this above all support reference cards."
+      },
+      "usage": [
+        "SC003-SH001",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "SC003_REFERENCE_FRAME_LOCK",
+        "SC003_APPROVED_I2V_REFERENCE_LOCK"
+      ]
+    },
+    {
+      "asset_id": "E01_R011",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r011e01.png",
+      "status": "approved_highscore_primary_i2v_2026-06-11",
+      "prompt_hint_zh": "SC003-SH002 高分通过主 I2V 参考帧；本轮直接作为视频图像输入，保持参考帧构图和微动作，不再标记缺失。",
+      "prompt_hint_en": "SC003-SH002 approved primary I2V frame: Gu/Yan table divide, red cord and no-full-face reveal. Use directly as the primary video image input for this pass; preserve the reference-frame composition and micro-motion. Approved in metadata for this motion-test pass.",
+      "comfyui_role": "primary_i2v_reference_frame",
+      "conditioning": {
+        "node_type": "Load Image -> primary I2V image input",
+        "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+        "connect_to": "I2V primary image input",
+        "suggested_weight": "primary",
+        "operator_note": "Approved high-score reference frame; keep this above all support reference cards."
+      },
+      "usage": [
+        "SC003-SH002",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "SC003_REFERENCE_FRAME_LOCK",
+        "SC003_APPROVED_I2V_REFERENCE_LOCK"
+      ]
+    },
+    {
+      "asset_id": "E01_R012",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r012e01.png",
+      "status": "approved_highscore_primary_i2v_2026-06-11",
+      "prompt_hint_zh": "SC003-SH003 高分通过主 I2V 参考帧；本轮直接作为视频图像输入，保持参考帧构图和微动作，不再标记缺失。",
+      "prompt_hint_en": "SC003-SH003 approved primary I2V frame: blood genealogy, stopped fingertips and untouched gap. Use directly as the primary video image input for this pass; preserve the reference-frame composition and micro-motion. Approved in metadata for this motion-test pass.",
+      "comfyui_role": "primary_i2v_reference_frame",
+      "conditioning": {
+        "node_type": "Load Image -> primary I2V image input",
+        "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+        "connect_to": "I2V primary image input",
+        "suggested_weight": "primary",
+        "operator_note": "Approved high-score reference frame; keep this above all support reference cards."
+      },
+      "usage": [
+        "SC003-SH003",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "SC003_REFERENCE_FRAME_LOCK",
+        "SC003_APPROVED_I2V_REFERENCE_LOCK"
+      ]
+    },
+    {
+      "asset_id": "E01_R013",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r013e01.png",
+      "status": "approved_highscore_primary_i2v_2026-06-11",
+      "prompt_hint_zh": "SC003-SH004 高分通过主 I2V 参考帧；本轮直接作为视频图像输入，保持参考帧构图和微动作，不再标记缺失。",
+      "prompt_hint_en": "SC003-SH004 approved primary I2V transition-start frame: red cord north end, droplet and dim lamp. Use directly as the primary video image input for this pass; preserve the reference-frame composition and micro-motion. Approved in metadata for this motion-test pass.",
+      "comfyui_role": "primary_i2v_reference_frame",
+      "conditioning": {
+        "node_type": "Load Image -> primary I2V image input",
+        "node_hint": "PLACEHOLDER_I2V_IMAGE_NODE",
+        "connect_to": "I2V primary image input",
+        "suggested_weight": "primary",
+        "operator_note": "Approved high-score reference frame; keep this above all support reference cards."
+      },
+      "usage": [
+        "SC003-SH004",
+        "I2V",
+        "first_frame"
+      ],
+      "continuity_refs": [
+        "SC003_REFERENCE_FRAME_LOCK",
+        "SC003_APPROVED_I2V_REFERENCE_LOCK"
+      ]
+    },
+    {
+      "asset_id": "E01_R014",
+      "asset_type": "reference_frame",
+      "file_path": "01/assets/reference-frames/r014e01.png",
+      "status": "optional_transition_match_target_pending_explicit_approval",
+      "prompt_hint_zh": "残阳坳封锁线匹配目标；不属于 SC003 四张核心密室 I2V 帧。本轮不要混入 SC003-SH004 密室镜头，只在后续剪辑或明确批准的 FLF2V 尾帧测试中使用。",
+      "prompt_hint_en": "Canyangao blockade match target; not one of the four core SC003 room I2V frames. Do not blend into the SC003-SH004 room shot in this pass; use only for later edit or explicitly approved FLF2V tail testing.",
+      "comfyui_role": "optional_later_match_target",
+      "conditioning": {
+        "node_type": "optional Load Image -> later FLF2V last-frame input after approval",
+        "node_hint": "OPTIONAL_PLACEHOLDER_LAST_FRAME_IMAGE_NODE",
+        "connect_to": "later approved FLF2V tail or edit reference only",
+        "suggested_weight": "unused_in_current_i2v_pass",
+        "operator_note": "Do not connect this image in the current SC003 I2V room pass."
+      },
+      "usage": [
+        "optional_later_SC003_to_SC004_match_cut",
+        "not_current_i2v"
+      ],
+      "continuity_refs": [
+        "LOC_CANYANGAO_GATE",
+        "PROP_WHITE_WAX_FLAGS",
+        "OPTIONAL_TRANSITION_TARGET"
+      ]
     }
   ],
-  "asset_metadata_warning": "E01_R001-E01_R004 are generated 4K same-space SC001 candidate reference images and are synchronized with 01/art/asset-index.json and asset-manifest.json as generated_candidate_pending_user_qc. They can be used for ComfyUI shot tests, but should not be marked final approved until user visual QC passes."
+  "asset_metadata_warning": "E01_R001-E01_R004 are generated 4K same-space SC001 candidate reference images and are synchronized with 01/art/asset-index.json and asset-manifest.json as generated_candidate_pending_user_qc. E01_R010-E01_R013 are high-score approved SC003 primary I2V reference frames for the current motion-test pass. E01_R014 is only an optional Canyangao blockade match target for later edit or approved FLF2V tail testing, not part of the current SC003 room I2V pass."
 }

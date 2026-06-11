@@ -1,8 +1,8 @@
 {
-  "version": "director-room-comfyui-style-v1-2026-06-08",
+  "version": "director-room-comfyui-style-v1-2026-06-10",
   "project": "severed-homeland",
   "episode_id": "01",
-  "scope": "SC001",
+  "scope": "SC001-SC003",
   "style_profiles": [
     {
       "profile_id": "e01_sc001_border_blizzard_realism",
@@ -36,6 +36,101 @@
         }
       ],
       "config_status": "needs_config",
+      "config_placeholders": [
+        "PLACEHOLDER_VIDEO_CHECKPOINT",
+        "PLACEHOLDER_IMAGE_CHECKPOINT",
+        "PLACEHOLDER_LORA_STACK",
+        "PLACEHOLDER_CONTROLNET",
+        "PLACEHOLDER_IPADAPTER_PRESET",
+        "PLACEHOLDER_COMFYUI_WORKFLOW_TEMPLATE"
+      ]
+    },
+    {
+      "profile_id": "e01_sc002_jinhe_grain_tax_realism",
+      "global_positive_prefix_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。金河粮仓清晨冷雾，麦金、河泥褐、湿木灰和虫蜡白分材质呈现，真实重心、真实速度、自然接触反作用。",
+      "global_positive_prefix_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Jinhe grain depot in morning cold haze, material separation between wheat gold, river-mud brown, wet wood grey and insect-wax white, real body weight, real speed and natural contact reaction.",
+      "global_positive_suffix_zh": "白册、族谱行、封牌、虫蜡痕和任何文字类区域只生成留白、浅刻线、遮罩或后合成空间，不生成随机可读文字。",
+      "global_positive_suffix_en": "White register, genealogy rows, seal tags, insect-wax traces and all text-like areas only generate blank space, shallow guide lines, masks or post-composite zones, never random readable text.",
+      "global_negative_zh": "现代服饰，现代仓库，枪械，科幻 UI，人族账房版粮税小吏，官吏和奴兵职责混淆，随机可读文字，随机徽记，灰色灾民营，魔法光柱，圣光逆光，大面积恐怖底光，过曝 bloom，黄色闪粉，数字颗粒，塑料麻袋，过度磨皮，网红脸，夸张哭喊，血腥奇观，视频涂抹，花屏，压缩块，手指融化。",
+      "global_negative_en": "modern clothing, modern warehouse, firearms, sci-fi UI, human-accountant grain tax clerk, mixed clerk and slave-soldier duties, random readable text, random emblems, grey refugee camp, magic light shafts, sacred backlight, broad horror bottom light, overexposed bloom, yellow glitter, digital speckle, plastic sacks, over-smoothed skin, influencer face, exaggerated crying, gore spectacle, video smearing, glitches, compression blocks, melted fingers.",
+      "continuity_rules": [
+        "SC002 is one Jinhe grain-depot taxation sequence: clerk opens and reads the register, slave soldiers only enforce grip and cart movement, families remain low at household thresholds.",
+        "Use R005-R009 as video reference frame candidates pending user visual QC; character, location and prop cards are identity/material/control references only.",
+        "Video prompts may show speaking state, but exact dialogue remains in script, audio and subtitles.",
+        "Every shot must preserve foreground, midground and background layers and a named lighting type/direction."
+      ],
+      "shot_lighting_strategy": [
+        {
+          "shot_id": "SC002-SH001",
+          "lighting_role_zh": "柔和清晨冷雾为主，低角逆光穿粮尘切轮廓，窄侧光擦麻袋、湿木和河泥，丁达尔光只做纵深。",
+          "lighting_role_en": "Soft morning cold haze is the base, low-angle backlight cuts silhouettes through grain dust, narrow side light grazes burlap, wet wood and river mud, and Tyndall light only adds depth."
+        },
+        {
+          "shot_id": "SC002-SH002",
+          "lighting_role_zh": "门槛侧光强化湿泥、木缸、粗布、祖牌盒和腕绑，虫蜡小顶光只压封条，底光只做泥水极弱反光。",
+          "lighting_role_en": "Threshold side light strengthens wet mud, wooden jar, coarse cloth, tablet box and wrist binding; tiny wax top light only presses the seal, and bottom light is only faint mud-water reflection."
+        },
+        {
+          "shot_id": "SC002-SH003",
+          "lighting_role_zh": "虫蜡白顶光压白册和小吏脸壳，窄侧光读手指、手腕、旧木、麻袋和皮甲，小面积硬光只给封牌落点。",
+          "lighting_role_en": "Cold wax top light presses the register and clerk face shell; narrow side light reads fingers, wrist, old wood, burlap and leather armor; small hard light only marks the seal strike."
+        },
+        {
+          "shot_id": "SC002-SH004",
+          "lighting_role_zh": "清晨低角逆光切押车轮廓和空气感，侧光擦泥水、车辙、祖牌盒和麻袋，妇人与孩子只吃柔光。",
+          "lighting_role_en": "Low morning backlight cuts cart silhouettes and air, side light grazes mud water, ruts, tablet box and sacks, and woman and child receive only soft light."
+        }
+      ],
+      "config_status": "needs_config",
+      "reference_frame_status": "R005-R009 generated candidates pending user visual QC",
+      "config_placeholders": [
+        "PLACEHOLDER_VIDEO_CHECKPOINT",
+        "PLACEHOLDER_IMAGE_CHECKPOINT",
+        "PLACEHOLDER_LORA_STACK",
+        "PLACEHOLDER_CONTROLNET",
+        "PLACEHOLDER_IPADAPTER_PRESET",
+        "PLACEHOLDER_COMFYUI_WORKFLOW_TEMPLATE"
+      ]
+    },
+    {
+      "profile_id": "e01_sc003_southern_redline_room_realism",
+      "global_positive_prefix_zh": "超写实电影级低魔东方史诗，16:9 横屏宽银幕。南方红线密室雨夜，潮湿暖暗、朱赤红线、旧纸、油布、水滴、月白玉片冷反光和低位油灯分材质呈现，真实手部微表演和真实镜头速度。",
+      "global_positive_prefix_en": "Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Southern red-line room on a rainy night, with humid warm darkness, vermilion red cord, old paper, oilcloth, droplets, moon-white jade cool reflection and low oil lamp separated by material, using real hand micro-performance and real camera speed.",
+      "global_positive_suffix_zh": "红线、血牒和月白玉片必须是物理证据与身份压力，不是魔法导航、圣旨光效或战斗法器；晏南枝不能完整华丽揭脸。",
+      "global_positive_suffix_en": "The red cord, blood genealogy and moon-white jade must remain physical evidence and identity pressure, not magic navigation, sacred edict glow or combat artifacts; Yan Nanzhi must not receive a full glamorous face reveal.",
+      "global_negative_zh": "现代地图字，清晰现代字体，电子导航线，红线魔法发光，血牒圣旨化，玉片法器化，皇座幻象，梦幻溶解，神圣逆光，魔法光柱，过曝 bloom，广域恐怖底光，全局灰黑欠曝，随机可读文字，视频涂抹，花屏，压缩块，手指融化，脸部花屏。",
+      "global_negative_en": "modern map text, clean modern typography, electronic navigation line, magical glowing red cord, sacred glowing genealogy, jade as magic weapon, throne vision, dreamy dissolve, sacred backlight, magic light shafts, overexposed bloom, broad horror bottom light, flat grey underexposure, random readable text, video smearing, glitches, compression blocks, melted fingers, face glitches.",
+      "continuity_rules": [
+        "SC003 is one humid southern red-line room sequence; R010-R013 are approved primary I2V room frames for the current motion-test pass.",
+        "Gu Huaizhang remains on the lamp side; Yan Nanzhi remains veiled on the shadow side; the red cord stays between them.",
+        "Use R010-R013 as primary I2V scene plates; character/location/prop cards remain support references only and must stay lower weight.",
+        "R014 is a Canyangao blockade match target only for later edit or approved FLF2V tail testing; do not blend it into the SC003 room I2V pass.",
+        "Video prompts may show speaking state, but exact dialogue remains in script, audio and subtitles."
+      ],
+      "shot_lighting_strategy": [
+        {
+          "shot_id": "SC003-SH001",
+          "lighting_role_zh": "低位油灯从左下擦纸纤维、朱赤线、铜钉和湿木；右上月白雨夜冷反光只点水滴、油布和地图裂缝。",
+          "lighting_role_en": "Low oil lamp from lower-left grazes paper fibers, red cord, brass pins and wet wood; upper-right moon-white rainy bounce only touches droplets, oilcloth and map cracks."
+        },
+        {
+          "shot_id": "SC003-SH002",
+          "lighting_role_zh": "顾怀章吃暖灯侧光，晏南枝只吃月白玉片窄冷反光，背景负补光压住湿暗，不揭全脸。",
+          "lighting_role_en": "Gu takes warm lamp side light, Yan only takes narrow cool jade bounce, and background negative fill keeps humid darkness without full face reveal."
+        },
+        {
+          "shot_id": "SC003-SH003",
+          "lighting_role_zh": "低位油灯掠血牒纸纤维、潮痕、旧蜡封；月白玉片只给未接指尖冷边，暖冷交界落在空隙。",
+          "lighting_role_en": "Low oil lamp grazes genealogy paper fibers, damp stains and old wax seal; moon-white jade only gives the stopped fingertips a cold edge, with warm-cool boundary on the gap."
+        },
+        {
+          "shot_id": "SC003-SH004",
+          "lighting_role_zh": "压暗油灯只留红线和水滴低位暖边，右上冷反光勾纸裂和晏南枝虚焦剪影；尾端只轻微降曝光，为后续剪辑进入残阳坳虫蜡冷白预留入口，不在本镜提前生成封锁线圣光。",
+          "lighting_role_en": "Dim the oil lamp to leave only low warm edges on cord and droplets, while upper-right cool bounce outlines paper cracks and Yan out-of-focus silhouette; the tail only lowers exposure slightly to prepare an edit into Canyangao insect-wax cold white, without generating sacred checkpoint light inside this shot."
+        }
+      ],
+      "config_status": "needs_config_motion_test",
+      "reference_frame_status": "R010-R013 high-score approved primary I2V reference frames for SC003; R014 optional later blockade match target only",
       "config_placeholders": [
         "PLACEHOLDER_VIDEO_CHECKPOINT",
         "PLACEHOLDER_IMAGE_CHECKPOINT",
