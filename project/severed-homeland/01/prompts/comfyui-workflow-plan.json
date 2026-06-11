@@ -19,7 +19,8 @@
         "beast_troop_master_reference",
         "companion_beast_master_reference",
         "episode_beast_state_reference",
-        "output_path"
+        "output_path",
+        "suming_flag_master_reference"
       ],
       "node_binding_hints": [
         "positive_prompt from comfyui-render-prompts.md -> PLACEHOLDER_POSITIVE_PROMPT_NODE",
@@ -32,7 +33,8 @@
         "assets/characters/c020m.png -> PLACEHOLDER_BEAST_TROOP_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.50",
         "assets/characters/c021m.png -> PLACEHOLDER_COMPANION_BEAST_MASTER_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.40",
         "01/assets/characters/c020e01.png -> PLACEHOLDER_EPISODE_BEAST_STATE_IMAGE_NODE -> PLACEHOLDER_BEAST_IPADAPTER_NODE, suggested weight 0.55",
-        "output_path -> PLACEHOLDER_OUTPUT_NODE"
+        "output_path -> PLACEHOLDER_OUTPUT_NODE",
+        "assets/props/p017m.png -> PLACEHOLDER_SUMING_FLAG_MASTER_IMAGE_NODE -> PLACEHOLDER_FLAG_REFERENCE_NODE, low weight or line/control reference for wall-hung defender banners only"
       ],
       "comfyui_node_chain": [
         "Load Image r001e01.png -> Image Resize/Crop 16:9 -> Wan first-last-frame video node 起始图像",
@@ -113,6 +115,12 @@
           "cfg_range_note": "Start around 4.5; keep first/last-frame continuity stronger than action extrapolation.",
           "status": "blocked_until_identity_height_scale_relock_reference_frames_regenerated_2026-06-11",
           "c018_reference_rule": "Use C018 at low support weight for armed route-blocking perimeter only; first/last frames remain strongest."
+        },
+        "flag_reference_weights": {
+          "P017_suming_flag_master": 0.35,
+          "start_percent": 0,
+          "end_percent": 1,
+          "operator_note": "Use only to lock wall-hung defender banner emblem language. Do not let it replace scene composition or create large foreground flags."
         }
       },
       "config_status": "needs_config",
@@ -237,7 +245,8 @@
         "01/assets/characters/c004e01.png",
         "assets/characters/c020m.png",
         "assets/characters/c021m.png",
-        "01/assets/characters/c020e01.png"
+        "01/assets/characters/c020e01.png",
+        "assets/props/p017m.png"
       ],
       "image_node_bindings": [
         {
@@ -293,6 +302,14 @@
           "start_percent": 0.65,
           "end_percent": 1,
           "operator_note": "Disable unless Xue Linqiang is visibly present in the SH001 tail frame."
+        },
+        {
+          "node_hint": "PLACEHOLDER_SUMING_FLAG_MASTER_IMAGE_NODE",
+          "path": "assets/props/p017m.png",
+          "role": "suming_insect_empire_wall_flag_master",
+          "connection": "PLACEHOLDER_FLAG_REFERENCE_NODE",
+          "suggested_weight": 0.35,
+          "operator_note": "Use to constrain visible wall-hung defender banners to P017 black-sun white-wing Suming flags; do not create extra foreground flags."
         }
       ],
       "prompt_record_ref": "01/prompts/comfyui-shot-prompts.json#SC001-SH001",
@@ -305,13 +322,22 @@
         "denoise": 0.45,
         "motion": "controlled centered exterior low push toward the same gate, slight tilt-up, stronger first gate impact and gatehouse bell sound; visible bell body or bell frame is not required; no 90-degree turn, no rear/opposite-side reveal, no both-side attack reading, no wall pass-through, no 180-degree turn"
       },
-      "reference_frame_status": "R001 current centered exterior epic style is approved as texture standard; R002 needs closer gate and stronger first-impact edit. Gatehouse bell is audio-only for SH001, so visible bell or bell frame is not required in R001/R002.",
-      "status": "needs_config_and_r002_closer_gate_impact_edit",
+      "reference_frame_status": "R001 centered exterior epic style is approved as texture standard; R002 canonical r002e01.png has been replaced with the user-approved closer gate-impact frame using P017 Suming wall flags. Gatehouse bell is audio-only for SH001, so visible bell or bell frame is not required in R001/R002.",
+      "status": "needs_config_reference_frames_static_approved",
       "production_metadata": {
         "texture_standard_ref": "01/assets/reference-frames/r001e01.png",
         "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
-        "reference_frame_status": "R001 canonical remains the centered exterior epic texture standard. R002 must be edited or regenerated closer to the gate with stronger impact while preserving current realism; SH001 bell is gatehouse audio only."
-      }
+        "reference_frame_status": "R001 and R002 canonical stills are approved for SC001-SH001 static handoff; R002 is closer to the gate, stronger on first impact, and uses P017 Suming wall flags. Formal FLF2V still requires concrete ComfyUI model/workflow configuration and motion QC.",
+        "flag_reference_ref": "assets/props/p017m.png",
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming insect empire black-sun white-wing flags.",
+        "r002_canonical_output_path": "01/assets/reference-frames/r002e01.png",
+        "r002_canonical_resolution": "4096x2304",
+        "r002_canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8"
+      },
+      "r002_canonical_output_path": "01/assets/reference-frames/r002e01.png",
+      "r002_canonical_resolution": "4096x2304",
+      "r002_canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+      "r002_prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png"
     },
     {
       "shot_id": "SC001-SH002",

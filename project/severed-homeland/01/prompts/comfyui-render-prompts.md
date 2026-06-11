@@ -89,13 +89,13 @@ English: The last frame is not connected directly to decode or video output node
 画面不能全灰全黑。裂云低角度冷白带一点淡金的天光从左上或侧后方切出城墙、攻城车和巨兽轮廓；撞门瞬间的冷白雪雾、碎冰、旧木屑和门闩震动是最强动作亮部，低位暗红火点只做边缘反打，黑石墙保留大面积负补光暗面，形成精美但残酷的高反差战争质感。
 
 **画面内容**
-首帧是墙外攻城方向的低机位正中对称史诗构图，允许轻微透视纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。尾帧仍是同一墙外方向：镜头比当前 R002 更近靠近城门，攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰、木屑和黑石边缘被更浓烈地震开；骨钟在门楼内部，画面不强制出现钟架或钟体，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。
+首帧是墙外攻城方向的低机位正中对称史诗构图，允许轻微透视纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。城墙上守城方垂挂旗帜必须继承 P017 肃明虫族帝国黑日白翅旗帜母版：污白旗布、黑日圆心、白色虫翼、黑色边饰和破损下摆。尾帧仍是同一墙外方向：镜头比当前 R002 更近靠近城门，攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰、木屑和黑石边缘被更浓烈地震开；骨钟在门楼内部，画面不强制出现钟架或钟体，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。
 
 **运镜**
 使用首尾参考帧约束“墙外低机位正中前推 + 更强撞门冲击”。镜头从兽潮和攻城车后方低位缓慢前推，略微上仰读城门高度；终点压到城门更近处，撞击瞬间让雪雾白亮、碎冰、旧木屑和门闩震动冲出画面。门楼内骨钟声和撞门低频作为隐藏剪切点，下一镜可进入墙头空间。不做 90 度转向，不越过墙脊，不进入城内。
 
 **约束**
-人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和城门前方；R001/R002 必须保持同一墙外方向、同一城门、当前正中史诗攻城构图和真实质感。骨钟/钟架不要求在第一镜画面中出现，钟声来自门楼内部。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持多兵种和多伴生兽形态。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二城门、第二道墙、完整发光旧徽。前景兽潮、中景城门、背景黑石墙和旗帜必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。
+人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和城门前方；R001/R002 必须保持同一墙外方向、同一城门、当前正中史诗攻城构图和真实质感。骨钟/钟架不要求在第一镜画面中出现，钟声来自门楼内部。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持多兵种和多伴生兽形态。墙上可见旗帜必须读成 P017 肃明虫族帝国黑日白翅旗帜，禁止通用人族王国旗、旧昭明旗或随机抽象徽章。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二城门、第二道墙、完整发光旧徽。前景兽潮、中景城门、背景黑石墙和旗帜必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。
 ```
 
 ### negative_prompt_zh
@@ -105,7 +105,7 @@ English: The last frame is not connected directly to decode or video output node
 现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。
 
 **镜头负面**
-不要现代服饰、枪械、科幻 UI、塑料 CG、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个城门、城门方向跳变、兽族看镜头列队、强行把可见骨钟或钟架做成画面主体、纯骨钟特写、完整发光徽章、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确撞击亮部中心、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
+不要现代服饰、枪械、科幻 UI、塑料 CG、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个城门、城门方向跳变、兽族看镜头列队、强行把可见骨钟或钟架做成画面主体、纯骨钟特写、完整发光徽章、错误阵营旗帜、通用人族王国旗、旧昭明旗、随机抽象徽章、肃明旗缺失、P017黑日白翅旗缺失、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确撞击亮部中心、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
 ```
 
 ### positive_prompt_en
@@ -121,7 +121,7 @@ Establish Suohou Gate siege pressure in blizzard with the current centered exter
 The image must not become uniformly grey or black. Low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine and beast silhouettes from upper-left or side-back; in the tail frame the cold-white snow blast, ice splinters, timber chips and shaking gate bars at impact should become the strongest action highlight, low dark-red fire points provide only edge counterlight, and the blackstone wall keeps large negative-fill shadow masses for refined but brutal high-contrast war lighting.
 
 **Visual Content**
-Both first and last frames keep the low centered exterior epic siege composition, with only slight perspective depth. The same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. The last frame moves closer to the gate: the siege-cart beam or iron-wrapped horn hits the gate for the first time, violently shaking gate bars, old timber, snow dust, ice splinters, timber chips and blackstone edges. The bone bell is inside the gatehouse and exists through sound only; no visible bell frame or bell body is required. The inner side, opposite gate and second wall do not open up.
+Both first and last frames keep the low centered exterior epic siege composition, with only slight perspective depth. The same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. Wall-hung defender banners must inherit the P017 Suming insect empire black-sun white-wing flag master: dirty off-white cloth, black sun center, white insect wings, black trim and torn lower tails. The last frame moves closer to the gate: the siege-cart beam or iron-wrapped horn hits the gate for the first time, violently shaking gate bars, old timber, snow dust, ice splinters, timber chips and blackstone edges. The bone bell is inside the gatehouse and exists through sound only; no visible bell frame or bell body is required. The inner side, opposite gate and second wall do not open up.
 
 **Camera / Motion**
 Use the first and last frames to constrain a low centered exterior push plus stronger gate impact. The camera starts low behind the beast tide and siege engine, slowly pushes forward and tilts slightly up to read the gate height; it ends closer to the gate as bright snow haze, ice splinters, old timber chips and shaking gate bars burst from the impact. The offscreen gatehouse bell sound and low gate impact are the hidden cut point into the following wall-top space. No 90-degree turn, no crossing the wall crown, no entering the interior side.

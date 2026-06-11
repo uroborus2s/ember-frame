@@ -248,8 +248,8 @@
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r001e01.png",
       "status": "current_style_approved_texture_standard",
-      "prompt_hint_zh": "SC001-SH001 首帧：城外攻城方向低机位正中对称史诗建立镜头；兽族/伴生兽、攻城车或破门猛犸压向同一面黑石城门。骨钟在门楼内，只作为钟声存在，不要求画面露钟。",
-      "prompt_hint_en": "SC001-SH001 first frame: low exterior centered symmetrical epic establishing siege shot; beast troops/companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. The bone bell is inside the gatehouse as sound only, with no on-screen bell required.",
+      "prompt_hint_zh": "SC001-SH001 首帧：城外攻城方向低机位正中对称史诗建立镜头；兽族/伴生兽、攻城车或破门猛犸压向同一面黑石城门。骨钟在门楼内，只作为钟声存在，不要求画面露钟。 墙上守城旗帜必须继承 P017 肃明虫族帝国黑日白翅旗帜，不可使用通用人族旗或随机徽章。",
+      "prompt_hint_en": "SC001-SH001 first frame: low exterior centered symmetrical epic establishing siege shot; beast troops/companion beasts, siege cart or gate-breaking mammoth press toward the same blackstone gate. The bone bell is inside the gatehouse as sound only, with no on-screen bell required. Wall-hung defender banners must inherit the P017 Suming insect empire black-sun white-wing flag design, not generic human banners or random emblems.",
       "comfyui_role": "first_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -270,7 +270,8 @@
           "4K reference-image precision: required 4096x2304 16:9 cinematic plate, with no preview-resolution downsampling",
           "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
           "SC001-SH001 first shot: one wall, one gate, same exterior attack direction; centered symmetrical epic composition is allowed.",
-          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent."
+          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent.",
+          "Visible wall-hung defender banners must match P017 Suming insect empire flags; reject wrong faction flags or random emblems."
         ]
       },
       "usage": [
@@ -286,7 +287,9 @@
         "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
         "C020",
         "C021",
-        "E01_C020"
+        "E01_C020",
+        "P017",
+        "P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK"
       ],
       "texture_standard_ref": "self",
       "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard."
@@ -295,9 +298,9 @@
       "asset_id": "E01_R002",
       "asset_type": "reference_frame",
       "file_path": "01/assets/reference-frames/r002e01.png",
-      "status": "closer_gate_impact_candidate_generated_pending_user_qc",
-      "prompt_hint_zh": "SC001-SH001 终帧：同一墙外方向、正中中轴压力下更近靠近城门；攻城车木梁或铁包巨角第一次重撞城门，雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光更浓烈。骨钟在门楼内，只需要钟声，不要求画面露钟。",
-      "prompt_hint_en": "SC001-SH001 last frame: same exterior direction and centered-axis pressure, closer to the gate; a siege-cart beam or iron-wrapped horn makes the first heavy gate impact, with stronger snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection. The bone bell is inside the gatehouse as sound only, with no on-screen bell required.",
+      "status": "canonical_replaced_with_suming_flag_closer_gate_impact_2026-06-11",
+      "prompt_hint_zh": "SC001-SH001 终帧：同一墙外方向、正中中轴压力下更近靠近城门；攻城车木梁或铁包巨角第一次重撞城门，雪雾、碎冰、旧木屑、门闩震动和黑石边缘反光更浓烈。骨钟在门楼内，只需要钟声，不要求画面露钟。 墙上守城旗帜必须继承 P017 肃明虫族帝国黑日白翅旗帜，不可使用通用人族旗或随机徽章。",
+      "prompt_hint_en": "SC001-SH001 last frame: same exterior direction and centered-axis pressure, closer to the gate; a siege-cart beam or iron-wrapped horn makes the first heavy gate impact, with stronger snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection. The bone bell is inside the gatehouse as sound only, with no on-screen bell required. Wall-hung defender banners must inherit the P017 Suming insect empire black-sun white-wing flag design, not generic human banners or random emblems.",
       "comfyui_role": "last_frame",
       "output_format": {
         "deliverable_kind": "video_reference_frame",
@@ -318,7 +321,8 @@
           "4K reference-image precision: required 4096x2304 16:9 cinematic plate, with no preview-resolution downsampling",
           "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
           "SC001-SH001 first shot: one wall, one gate, same exterior attack direction; centered symmetrical epic composition is allowed.",
-          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent."
+          "Gatehouse bell is audio-only for R001/R002; do not reject because visible bell body or bell frame is absent.",
+          "Visible wall-hung defender banners must match P017 Suming insect empire flags; reject wrong faction flags or random emblems."
         ]
       },
       "usage": [
@@ -334,14 +338,19 @@
         "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
         "C020",
         "C021",
-        "E01_C020"
+        "E01_C020",
+        "P017",
+        "P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK"
       ],
       "texture_standard_ref": "E01_R001",
       "texture_standard_source": "019eac75-d625-7291-bfd7-273ec630f1c3 latest fortress_battle_far_view_war_aged_clean_4k source image; canonical 01/assets/reference-frames/r001e01.png is the downstream texture standard.",
-      "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-      "candidate_file_resolution": "4096x2304",
-      "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e",
-      "candidate_status": "generated_pending_user_visual_qc_not_canonical"
+      "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+      "canonical_file_resolution": "4096x2304",
+      "canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+      "canonical_replaced": true,
+      "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+      "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+      "intermediate_cleanup": "closer-impact process PNGs deleted after formal promotion"
     },
     {
       "asset_id": "E01_R003",
@@ -799,8 +808,8 @@
       "comfyui_role": "character_scale_weapon_perimeter_reference"
     }
   ],
-  "asset_metadata_warning": "E01_R001 keeps the approved centered exterior epic siege style and is the texture standard. E01_R002 now has a closer gate-impact candidate at 01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png pending user visual QC; canonical r002e01.png has not been replaced. SC001-SH001 uses gatehouse bell sound only, with no visible bell or bell frame required in R001/R002. E01_R003 still needs regeneration for the new half-collapsed wall-side soldier frame, and E01_R010-E01_R013 remain high-score approved SC003 primary I2V reference frames.",
-  "updated_at": "2026-06-11T17:41:57+08:00",
+  "asset_metadata_warning": "E01_R001 keeps the approved centered exterior epic siege style and is the texture standard. E01_R002 canonical r002e01.png has been replaced with the user-approved Suming-flag closer gate-impact 4K frame; process candidate PNGs were deleted. SC001-SH001 uses gatehouse bell sound only, with no visible bell or bell frame required in R001/R002. Wall-hung defender banners must inherit P017 Suming insect empire black-sun white-wing flags.",
+  "updated_at": "2026-06-11T20:50:00+08:00",
   "sc002_same_ground_height_scale_handoff_2026_06_11": {
     "status": "blocked_user_visual_qc_failed_identity_height_scale_relock_required",
     "role_lock": "C016B official inherits global insect face/white hat and opens register; C017 slave soldier grips/moves grain with five fingers and one thin low money-tail braid; C018 pure insect infantry towers over humans on the same ground and blocks routes with weapons."

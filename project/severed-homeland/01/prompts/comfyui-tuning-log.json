@@ -1,6 +1,6 @@
 {
   "version": "1.0-director-room",
-  "status": "feedback_applied",
+  "status": "feedback_applied_r001_r002_current_style_hard_lock_updated",
   "iterations": [
     {
       "iteration_id": "sc001-post-asset-initial",
@@ -130,7 +130,7 @@
       "prompt_changes": [
         {
           "shot_id": "SC001-SH001",
-          "change": "Dropped the complex wall-top turn and rewrote the shot as an exterior front-biased low push to the first gate impact and bone-bell shock, reducing direction drift risk."
+          "change": "Dropped the complex wall-top turn and rewrote the shot as an exterior front-biased low push to the first gate impact and gatehouse bell sound, with visible bell no longer required in SH001, reducing direction drift risk."
         },
         {
           "shot_id": "SC001-SH002",
@@ -138,7 +138,7 @@
         },
         {
           "shot_id": "SC001-SH001",
-          "change": "Added cinematic highlight hierarchy: cold-white gate-impact snow haze as brightest zone, pale-gold/cold-white storm-break rim on wall/siege engine/beasts/bell, low dark-red fire edge, black-wall negative fill."
+          "change": "Added cinematic highlight hierarchy: cold-white gate-impact snow haze as brightest zone, pale-gold/cold-white storm-break rim on wall/siege engine/beasts/gate, low dark-red fire edge, black-wall negative fill."
         },
         {
           "shot_id": "SC001-SH002",
@@ -160,7 +160,6 @@
         }
       ],
       "unresolved_issues": [
-        "Regenerate or recheck r002e01.png to match the same-exterior gate-impact bell-shock endpoint.",
         "Regenerate r003e01.png from the updated image prompt before final SC001-SH002 I2V render.",
         "Run a small ComfyUI render test to confirm the image no longer reads muddy, dark and uniformly grey, and that the shot has a clear highlight center and key-light direction."
       ]
@@ -212,6 +211,56 @@
         "Generate and visually QC r010e01.png through r014e01.png before formal SC003 I2V/FLF2V rendering.",
         "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs remain unconfigured."
       ]
+    },
+    {
+      "iteration_id": "sc001-sh001-r001-r002-current-style-hard-lock-update",
+      "source_feedback": [
+        "User clarified to judge only the first-shot tail frame; the supplied two images are for later shots.",
+        "User asked to preserve current R001/R002 style: both outside facing the wall, centered symmetrical epic establishing shot, one wall and one gate.",
+        "User clarified that the bone bell / same bell frame does not need to appear in SC001-SH001; only gatehouse bell sound is needed, with the bell inside the gatehouse.",
+        "User requested R002 tail-frame modification: closer to the gate, stronger impact, while preserving the current texture and realism."
+      ],
+      "changed_shots": [
+        "SC001-SH001"
+      ],
+      "prompt_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Approved R001/R002 current centered exterior epic siege style as the hard visual direction: same exterior attack side, one blackstone wall, one gate, centered symmetry allowed."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Removed visible bone bell / same bell frame as a first-shot visual hard requirement; the bell is inside the gatehouse and exists as audio only in SH001."
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "change": "Updated R002 requirement to closer gate endpoint and stronger first impact with cold-white snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection."
+        }
+      ],
+      "parameter_changes": [
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "reference_frame_status",
+          "old_value": "same-exterior gate-impact endpoint with visible bell implied under the superseded rule",
+          "new_value": "R001 approved as current centered exterior epic texture standard; canonical R002 replaced with 4096x2304 closer gate, stronger impact and P017 Suming flags; visible bell not required"
+        },
+        {
+          "shot_id": "SC001-SH001",
+          "parameter": "camera_direction_lock",
+          "old_value": "exterior front-biased / diagonal wording with visible bell-frame endpoint risk",
+          "new_value": "same exterior centered low push to closer gate impact; gatehouse bell sound only; no rear/opposite-side reveal"
+        }
+      ],
+      "unresolved_issues": [
+        "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs are still not configured."
+      ],
+      "resolved_issues": [
+        "Canonical r002e01.png replaced with the user-approved Suming-flag closer gate-impact 4K frame; process PNGs deleted."
+      ],
+      "r002_canonical_output_path": "01/assets/reference-frames/r002e01.png",
+      "r002_canonical_resolution": "4096x2304",
+      "r002_canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+      "r002_prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png"
     }
   ]
 }

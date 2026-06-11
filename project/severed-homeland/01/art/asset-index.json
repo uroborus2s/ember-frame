@@ -5386,7 +5386,9 @@
         "C021",
         "E01_C020",
         "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
-        "RULE_GATEHOUSE_BELL_AUDIO_ONLY"
+        "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
+        "P017",
+        "P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK"
       ],
       "usage": [
         "SC001-SH001",
@@ -5407,7 +5409,8 @@
         "E01_F005",
         "E01_C020",
         "E01_L007",
-        "E01_P021"
+        "E01_P021",
+        "P017"
       ],
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
@@ -5458,7 +5461,8 @@
         "qc_status": "current_style_approved_pending_final_video_qc",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
         "checked_at": "2026-06-11",
-        "continuity_lock": "SC001 R001/R002 lock one black-stone wall, one gate, same exterior attack direction, centered epic establishing style; gatehouse bone bell is audio-only for SH001."
+        "continuity_lock": "SC001 R001/R002 lock one black-stone wall, one gate, same exterior attack direction, centered epic establishing style; gatehouse bone bell is audio-only for SH001.",
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming/Qingming black-sun white-wing insect empire flag design; no generic human kingdom banners or random emblems."
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
@@ -5471,7 +5475,8 @@
         "qc_status": "current_style_approved_pending_final_video_qc",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R001",
         "checked_at": "2026-06-11",
-        "continuity_lock": "SC001 R001/R002 lock one black-stone wall, one gate, same exterior attack direction, centered epic establishing style; gatehouse bone bell is audio-only for SH001."
+        "continuity_lock": "SC001 R001/R002 lock one black-stone wall, one gate, same exterior attack direction, centered epic establishing style; gatehouse bone bell is audio-only for SH001.",
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming/Qingming black-sun white-wing insect empire flag design; no generic human kingdom banners or random emblems."
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -5492,7 +5497,8 @@
           "E01_L007",
           "E01_P021",
           "C020",
-          "C021"
+          "C021",
+          "P017"
         ],
         "blocked_by_assets": [],
         "continuity_lock": "R001/R002 share one black-stone wall, one gate, same exterior attack direction and centered epic style; gatehouse bell is audio-only in SH001.",
@@ -5513,7 +5519,8 @@
           "The gatehouse bone bell is audio-only in SC001-SH001; visible bell body or bell frame is not required in R001/R002.",
           "No second exterior wall, duplicate gate, rear/opposite-side reveal, both-side attack reading, or beast attackers inside the wall.",
           "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
-          "Old empire mark only as faint broken dull-gold residue if visible; no complete circle, sun, moon, badge, or glow."
+          "Old empire mark only as faint broken dull-gold residue if visible; no complete circle, sun, moon, badge, or glow.",
+          "Wall flags visible on the defending side must read as P017 Suming insect empire flags: dirty off-white cloth, black sun/dark disk, white insect-wing emblem and black trim; reject generic banners or wrong faction symbols."
         ]
       },
       "actual_file_resolution": "4096x1840",
@@ -5530,7 +5537,7 @@
       "source_refs": [
         "01/production/generation-plan.json#SC001-SH001-A",
         "01/shots/shot-list.json#SC001-SH001",
-        "needs_asset:episode01/reference-frames/sc001_sh001_closer_gate_impact_tail.png"
+        "01/assets/reference-frames/r002e01.png#canonical-suming-flag-closer-gate-impact-2026-06-11"
       ],
       "continuity_refs": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
@@ -5540,20 +5547,22 @@
         "C021",
         "E01_C020",
         "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
-        "RULE_GATEHOUSE_BELL_AUDIO_ONLY"
+        "RULE_GATEHOUSE_BELL_AUDIO_ONLY",
+        "P017",
+        "P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK"
       ],
       "usage": [
         "SC001-SH001",
         "FLF2V",
         "终帧"
       ],
-      "approval_status": "pending_user_qc_for_closer_gate_impact_candidate_2026-06-11",
-      "generation_status": "closer_gate_impact_candidate_generated_2026-06-11_canonical_not_replaced",
-      "design_summary": "SC001-SH001 的终帧参考帧：同一墙外方向、更近城门、更强第一次撞门冲击。骨钟只作为门楼内钟声存在，不要求画面露出钟体或钟架。",
+      "approval_status": "user_approved_suming_flag_closer_gate_impact_canonical_2026-06-11",
+      "generation_status": "canonical_replaced_with_suming_flag_closer_gate_impact_2026-06-11",
+      "design_summary": "SC001-SH001 的正式终帧参考帧：同一墙外方向、更近城门、更强第一次撞门冲击，墙上守城旗帜为 P017 肃明虫族帝国旗。骨钟只作为门楼内钟声存在，不要求画面露出钟体或钟架。",
       "generation_method": "FLF2V",
       "priority": "high",
       "precision_control": false,
-      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001, .v002 suffixes.",
+      "history_policy": "Current approved image lives only at output_path; prior canonical is archived in history/ and process candidates are deleted after approval.",
       "creation_order": 41,
       "creation_phase": "reference_frames",
       "depends_on_assets": [
@@ -5561,12 +5570,13 @@
         "E01_F005",
         "E01_C020",
         "E01_L007",
-        "E01_P021"
+        "E01_P021",
+        "P017"
       ],
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "file_path": "01/assets/reference-frames/r002e01.png",
-      "status": "closer_gate_impact_candidate_generated_pending_user_qc",
+      "status": "canonical_replaced_with_suming_flag_closer_gate_impact_2026-06-11",
       "prompt_id": "PROMPT_E01_R002",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -5606,32 +5616,40 @@
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
         "existing_file_status": "exists",
-        "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-        "action_required": "user_review_closer_gate_impact_candidate_before_replacing_canonical_r002e01",
-        "qc_status": "closer_gate_impact_candidate_generated_pending_user_review",
+        "existing_file_dimensions": "4096x2304",
+        "existing_file_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+        "action_required": "none_canonical_r002e01_replaced_pending_flf2v_motion_qc",
+        "qc_status": "canonical_suming_flag_closer_gate_impact_static_qc_approved_pending_flf2v_motion_qc",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
         "checked_at": "2026-06-11",
         "continuity_lock": "SC001 R002 must stay in the same exterior direction, move closer to the gate, and strengthen the first gate impact; visible bell or bell frame is not required in SH001.",
-        "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-        "candidate_dimensions": "4096x2304",
-        "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e"
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming/Qingming black-sun white-wing insect empire flag design; no generic human kingdom banners or random emblems.",
+        "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+        "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+        "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+        "intermediate_cleanup": "closer-impact process PNGs deleted from reference-frames root per user request"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
         "existing_file_status": "exists",
-        "existing_file_dimensions": "3840x2160",
-        "existing_file_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
-        "action_required": "user_review_closer_gate_impact_candidate_before_replacing_canonical_r002e01",
-        "qc_status": "closer_gate_impact_candidate_generated_pending_user_review",
+        "existing_file_dimensions": "4096x2304",
+        "existing_file_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+        "action_required": "none_canonical_r002e01_replaced_pending_flf2v_motion_qc",
+        "qc_status": "canonical_suming_flag_closer_gate_impact_static_qc_approved_pending_flf2v_motion_qc",
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
         "checked_at": "2026-06-11",
         "continuity_lock": "SC001 R002 must stay in the same exterior direction, move closer to the gate, and strengthen the first gate impact; visible bell or bell frame is not required in SH001.",
-        "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-        "candidate_dimensions": "4096x2304",
-        "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e"
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming/Qingming black-sun white-wing insect empire flag design; no generic human kingdom banners or random emblems.",
+        "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+        "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+        "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+        "intermediate_cleanup": "closer-impact process PNGs deleted from reference-frames root per user request"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -5641,10 +5659,10 @@
       },
       "sc001_task_status": {
         "task_id": "SC001_E01_REFERENCE_FRAMES:E01_R002",
-        "status": "closer_gate_impact_candidate_generated_pending_user_qc",
+        "status": "canonical_replaced_with_suming_flag_closer_gate_impact_pending_flf2v_motion_qc",
         "updated_at": "2026-06-11",
         "output_path": "01/assets/reference-frames/r002e01.png",
-        "required_output": "3840x2160 PNG, 16:9, no alpha, video_generation_reference_frame",
+        "required_output": "4096x2304 PNG, 16:9, no alpha, video_generation_reference_frame",
         "depends_on_assets": [
           "E01_F001",
           "E01_F005",
@@ -5652,19 +5670,24 @@
           "E01_L007",
           "E01_P021",
           "C020",
-          "C021"
+          "C021",
+          "P017"
         ],
         "blocked_by_assets": [],
         "continuity_lock": "R002 must remain same exterior direction, closer to the gate, with stronger first-impact snow haze, ice, timber chips, gate-bar shock and blackstone edge reflection; no visible bell required.",
-        "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-        "candidate_file_resolution": "4096x2304",
-        "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e",
-        "canonical_replaced": false
+        "canonical_replaced": true,
+        "flag_lock": "Wall-hung defender banners must inherit P017 Suming/Qingming black-sun white-wing insect empire flag design; no generic human kingdom banners or random emblems.",
+        "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+        "canonical_file_resolution": "4096x2304",
+        "canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+        "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+        "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+        "intermediate_cleanup": "closer-impact candidate PNGs removed from reference-frames root after approval"
       },
       "sc001_qc_status": {
-        "status": "closer_gate_impact_candidate_generated_pending_user_review",
+        "status": "canonical_suming_flag_closer_gate_impact_static_qc_approved_pending_flf2v_motion_qc",
         "checked_at": "2026-06-11",
-        "image_sha256": "0ed4235cb18199f6116e00b49caeee7a614c170a8f19420ddfe061ae630a7f27",
+        "image_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
         "qc_gate": [
           "16:9 PNG, no alpha, no watermark, no random readable text.",
           "R001/R002 must read as one exterior space: one black-stone wall, one gate, and the same exterior attack direction toward the wall.",
@@ -5673,20 +5696,28 @@
           "No second exterior wall, duplicate gate, rear/opposite-side reveal, both-side attack reading, or beast attackers inside the wall.",
           "Beast soldiers and companion beasts must inherit C020/c020m.png, C021/c021m.png, and E01_C020/c020e01.png with multiple troop/beast types.",
           "Old empire mark only as faint broken dull-gold residue if visible; no complete circle, sun, moon, badge, or glow.",
-          "R002 must be closer to the gate than the current candidate and make the first impact the strongest visual event.",
-          "The gate impact must emphasize cold-white snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection while preserving the current realistic texture standard."
+          "R002 canonical now sits closer to the gate and makes the first impact the strongest visual event.",
+          "The canonical gate impact emphasizes cold-white snow haze, ice splinters, old timber chips, gate-bar shock and blackstone edge reflection while preserving the current realistic texture standard.",
+          "Wall flags visible on the defending side must read as P017 Suming insect empire flags: dirty off-white cloth, black sun/dark disk, white insect-wing emblem and black trim; reject generic banners or wrong faction symbols."
         ],
-        "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-        "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e"
+        "image_resolution": "4096x2304",
+        "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+        "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+        "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+        "intermediate_cleanup": "approved candidate promoted to r002e01.png and process PNGs deleted"
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture; visible bell body or bell frame is not required in SH001",
-      "candidate_output_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611-4k.png",
-      "candidate_source_path": "01/assets/reference-frames/r002e01.closer-impact-candidate-20260611.png",
-      "candidate_file_resolution": "4096x2304",
-      "candidate_sha256": "f0f60ee67dc727853fc4eddaabfff822d53bbefa383b96edb9cfc27e0bb3e72e",
-      "candidate_status": "generated_pending_user_visual_qc_not_canonical",
-      "candidate_generation_note": "Closer gate-impact candidate preserving R001/R002 centered exterior epic realism; stronger snow haze, ice splinters, timber chips, gate-bar shock and blackstone edge reflection; visible bell not required."
+      "actual_file_resolution": "4096x2304",
+      "actual_file_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+      "canonical_output_path": "01/assets/reference-frames/r002e01.png",
+      "canonical_file_resolution": "4096x2304",
+      "canonical_sha256": "0f28acc8bfb68b7574e9bec66917ccf21d0c754b3819c52b4952df59c7b0e2d8",
+      "canonical_replaced": true,
+      "canonical_replaced_at": "2026-06-11T20:50:00+08:00",
+      "prior_canonical_history_path": "01/assets/reference-frames/history/r002e01.before-suming-flag-closer-impact-replace-20260611.png",
+      "intermediate_cleanup": "Deleted r002e01 closer-impact candidate PNGs after promoting the Suming-flag corrected 4K image to canonical.",
+      "canonical_generation_note": "User approved the Suming-flag corrected closer gate-impact version as formal R002; process PNGs were deleted after promotion."
     },
     {
       "asset_id": "E01_R003",

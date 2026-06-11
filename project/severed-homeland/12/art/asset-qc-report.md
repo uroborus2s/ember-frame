@@ -25,7 +25,7 @@
 ## SC002-SH003 Notes
 
 - Local master reference images were not attached to the isolated imagegen-task; inheritance was prompt-guided and parent-reviewed.
-- Source image was 1672x941; canonical output was upsampled to 3840x2160 for the reference-frame contract.
+- Source image was 1672x941; canonical output was upsampled to 3840x2160 as the old 3840x2160 delivery size.
 - Any exact multi-clan marks or sun-moon emblems still require line control, mask, or post-composite if later shots need precision.
 
 ## SC002-SH003 History
@@ -95,7 +95,7 @@ Passed:
 
 Cautions:
 
-- Source imagegen candidates were `1672x941`; canonical files were upscaled to `3840x2160` for the reference-frame contract.
+- Source imagegen candidates were `1672x941`; canonical files were upscaled to `3840x2160` as the old 3840x2160 delivery size.
 - Local master reference images were not attached to the isolated imagegen-task; inheritance was prompt-guided and parent-reviewed.
 - Exact multi-clan marks, sun-moon emblems, blood-record details, or readable prop inscriptions still require line control, mask, redraw, or post-composite if later shots need precision.
 - The first unsafe wording attempt was blocked by image safety; final reusable prompts use non-graphic wording such as `red-brown weathering`, `small utility tool`, and `old record bundle`.

@@ -100,7 +100,7 @@
         "sfx:low_gate_impact",
         "sfx:gatehouse_bone_bell_offscreen"
       ],
-      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一城门和同一墙外朝向；保留当前正中对称史诗攻城建立风格，以墙外低机位前推、R002 更近靠近城门的第一次重撞和门楼内骨钟声作为转场。第一镜不强制画面出现骨钟或钟架，不再要求到墙头转向。",
+      "rationale": "使用 R001/R002 首尾参考帧锁定同一面锁喉关黑石墙、同一城门和同一墙外朝向；保留当前正中对称史诗攻城建立风格，以墙外低机位前推、R002 更近靠近城门的第一次重撞和门楼内骨钟声作为转场。守城方墙上挂旗必须继承 P017 肃明虫族帝国黑日白翅旗帜母版。第一镜不强制画面出现骨钟或钟架，不再要求到墙头转向。",
       "required_assets": [
         "E01_L007",
         "E01_P021",
@@ -108,14 +108,16 @@
         "C021",
         "E01_C020",
         "E01_R001",
-        "E01_R002"
+        "E01_R002",
+        "P017"
       ],
       "continuity_locks": [
         "LOC_SUOHOU_GATE_OUTER_WALL",
         "RULE_SIEGE_LOCAL_CAUSALITY",
         "ONE_WALL_ONE_GATE_CENTERED_EXTERIOR_LOCK",
         "GATEHOUSE_BELL_AUDIO_ONLY_LOCK",
-        "C020_C021_E01_C020_BEAST_ALLIANCE_LOCK"
+        "C020_C021_E01_C020_BEAST_ALLIANCE_LOCK",
+        "P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK"
       ],
       "risks": [
         "needs_config",
