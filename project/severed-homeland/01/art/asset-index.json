@@ -4,7 +4,7 @@
   "episode_id": "01",
   "scope": "episode01_art_room_assets",
   "approval_status": "approved_by_user_request_2026-06-07",
-  "image_generation_status": "sc002_reference_frames_failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+  "image_generation_status": "sc002_r005_r009_regenerated_candidate_pending_user_visual_qc_2026-06-11",
   "counts": {
     "character": 15,
     "location": 6,
@@ -6114,7 +6114,10 @@
         "01/shots/shot-list.json#SC002-SH001",
         "needs_asset:episode01/reference-frames/sc002_sh001_jinhe_grain_wall.png",
         "imagegen-task:019eb5d4-68d1-7152-ae47-e138060ed50e",
-        "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
+        "imagegen-current-thread:019eb648-4271-7b23-9938-54a07edd83ea",
+        "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png"
       ],
       "continuity_refs": [
         "LOC_JINHE_GRAIN_DEPOT",
@@ -6131,8 +6134,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "generation_status": "generated_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+      "generation_status": "generated_candidate_from_built_in_image_gen_identity_height_regeneration_2026-06-11",
       "design_summary": "SC002-SH001 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -6152,7 +6155,7 @@
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "file_path": "01/assets/reference-frames/r005e01.png",
-      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
       "prompt_id": "PROMPT_E01_R005",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6179,10 +6182,12 @@
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "reject if C025/C017/C016/C018/C019 role-height ladder is not readable on the same ground plane",
+          "reject if C016 official, C017 mixed slave soldier, C018 pure insect infantry, C019 heavy insect soldier, or C025 ordinary humans exchange roles, species traits, hands, weapons, clothing, or body scale"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
+        "minimum_resolution_notes": "Canonical R005-R009 identity-height regeneration candidates are saved as 4096x2304 PNG plates; user visual QC is still required before video handoff.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"
@@ -6191,21 +6196,21 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -6215,17 +6220,17 @@
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "current_canonical_file_status": "current_candidate_after_same_ground_height_scale_redo_2026-06-11",
-      "final_sha256": "dc53080a6cdcbabdd2b600f8a86104b25cb49e6d8d2ec38a65f1e0c2ab02374a",
-      "final_dimensions": "3840x2160",
-      "source_sha256": "0e8f7adc0bc3b85da1a0e31b8e263a637017916822f2a14c905965507e2eec3e",
+      "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+      "current_canonical_file_status": "current_identity_height_regeneration_candidate_pending_user_visual_qc_2026-06-11",
+      "final_sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+      "final_dimensions": "4096x2304",
+      "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
       "source_dimensions": "1672x941",
-      "source_history_file": "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
-      "generation_source": "isolated_imagegen_task_same_ground_height_scale_redo_2026-06-11",
-      "generation_thread_id": "019eb1d4-ad94-7de2-8b7f-ff7c92cf1d92",
-      "completed_at": "2026-06-11T17:41:57+08:00",
-      "updated_at": "2026-06-11T18:30:00+08:00",
+      "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+      "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+      "completed_at": "2026-06-11T22:39:28+08:00",
+      "updated_at": "2026-06-11T22:39:28+08:00",
       "history_files": [
         "01/assets/reference-frames/history/r005e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r005e01.before-global-ref-redo-20260611.png",
@@ -6233,53 +6238,83 @@
         "01/assets/reference-frames/history/r005e01.c018-armed-guard-source-20260611.png",
         "01/assets/reference-frames/history/r005e01.before-c018-armed-guard-redo-20260611.png",
         "01/assets/reference-frames/history/r005e01.before-same-ground-height-redo-20260611.png",
-        "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png"
       ],
       "has_alpha": false,
       "approval_scope": "SC002 storyboard/reference-frame handoff only",
       "sc002_storyboard_qc": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH001",
         "use": "I2V 首帧",
-        "director_requirement_score": 90,
-        "art_fit_score": 91,
-        "qc_notes": [
-          "C016B 虫族粮税小吏的骨白脸壳、白官袍、高帽和登记道具可读，没有变成人族账房。",
-          "粮袋墙、检查台、低位村民带和前右到后左的泥路/河岸空间层次可读。",
-          "可接受风险：左侧天空仍有开口，视频阶段应保持粮袋墙压迫感，不要再扩天空。"
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-      "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-same-ground-height-redo-20260611.png",
-      "reviewed_at": "2026-06-11T17:41:57+08:00",
-      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+      "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+      "reviewed_at": "2026-06-11T22:39:28+08:00",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
       "sc002_regeneration_qc_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH001",
         "use": "I2V 首帧",
-        "director_requirement_score": 90,
-        "art_fit_score": 91,
-        "qc_notes": [
-          "C016B 虫族粮税小吏的骨白脸壳、白官袍、高帽和登记道具可读，没有变成人族账房。",
-          "粮袋墙、检查台、低位村民带和前右到后左的泥路/河岸空间层次可读。",
-          "可接受风险：左侧天空仍有开口，视频阶段应保持粮袋墙压迫感，不要再扩天空。"
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "previous_rejection_reasons_2026_06_11": [
         "User rejected previous SC002 candidates: C016B face/height did not read as the global insect official.",
@@ -6291,36 +6326,72 @@
         "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
       ],
       "generation_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generation_status": "generated_candidate_from_visible_global_master_refs_2026-06-11",
-        "output_path": "01/assets/reference-frames/r005e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "d5b23ab2229b641d600d342f599f68adb6e78c0c89fe8b342cb95e7878b22d22",
-        "source_dimensions": "1672x941",
-        "source_sha256": "515a63aebcfe7255b4b60d9586aff54e83fce93c437799ab564243287b7f5849",
-        "source_history_file": "01/assets/reference-frames/history/r005e01.imagegen-global-ref-source-20260611.png",
-        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-global-ref-redo-20260611.png",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
-        "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11"
-      },
-      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH001",
         "use": "I2V 首帧",
-        "director_requirement_score": 93,
-        "art_fit_score": 94,
-        "notes": [
-          "粮袋墙压住上半画面，检查台、泥路、低位村民和金河粮仓空间可读。",
-          "C016B 仍以全局 C016 母卡为脸型锁，画面中负责开册/点税，不持兵器。",
-          "新增 C018 纯虫族持矛/钩镰在车道边封路，身高和体型明显压过 C017 奴兵与村民。"
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
+      },
+      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH001",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "corrective_requirements": [
         "C016 must inherit the global insect official face shell, white wax accountant hat, robe, and 190-210cm body scale.",
@@ -6333,48 +6404,86 @@
         "职责不可互换：C016B 只开册下令，C017 只扣腕/搬粮/押车且为五指硬化人手，C018 只持短矛或钩镰封路，C025 只能是普通人族。"
       ],
       "imagegen_task_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "selected_source": "imagegen_task_thread",
-        "selected_thread_id": "019eb5d4-68d1-7152-ae47-e138060ed50e",
-        "selected_source_history_file": "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
-        "selected_source_dimensions": "1672x941",
-        "selected_source_sha256": "0e8f7adc0bc3b85da1a0e31b8e263a637017916822f2a14c905965507e2eec3e",
-        "canonical_output_path": "01/assets/reference-frames/r005e01.png",
-        "canonical_dimensions": "3840x2160",
-        "canonical_sha256": "dc53080a6cdcbabdd2b600f8a86104b25cb49e6d8d2ec38a65f1e0c2ab02374a",
-        "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generated_at": "2026-06-11",
-        "notes": [
-          "Same-ground height-scale redo after user rejection of C016/C017 inheritance and body metrics.",
-          "Canonical project file was resampled to 3840x2160 PNG RGB as the old 3840x2160 episode delivery size.",
-          "Video production remains blocked until user visual QC confirms the candidates."
-        ]
-      },
-      "sc002_same_ground_height_scale_redo_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T17:41:57+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH001",
         "use": "I2V 首帧",
         "output_path": "01/assets/reference-frames/r005e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "dc53080a6cdcbabdd2b600f8a86104b25cb49e6d8d2ec38a65f1e0c2ab02374a",
-        "source_history_file": "01/assets/reference-frames/history/r005e01.same-ground-height-source-20260611.png",
-        "source_sha256": "0e8f7adc0bc3b85da1a0e31b8e263a637017916822f2a14c905965507e2eec3e",
-        "thread_id": "019eb5d4-68d1-7152-ae47-e138060ed50e",
-        "qc_notes": [
-          "C016 继承全局虫族官吏的骨白面壳、暗色复眼、白蜡高账吏帽和白袍。",
-          "C016、C018 与村民在同一泥地平面，靠真实身高差形成压迫，没有站桌、站台或站粮袋造高。",
-          "C018 持兵器封住车道边缘，C017 低位执行，职责层级清楚。"
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "residual_risks": [],
-        "report": "01/art/reports/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "audit_report": "01/art/audits/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+        "selected_source": "built_in_image_gen_current_thread",
+        "selected_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "canonical_output_path": "01/assets/reference-frames/r005e01.png",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "selected_source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "selected_source_dimensions": "1672x941",
+        "selected_source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "generated_at": "2026-06-11",
+        "notes": [
+          "Generated after user requested R005-R009 regeneration to resolve role consistency and height-scale failure.",
+          "Original built-in imagegen source was preserved in history, then canonical PNG was resampled to 4096x2304.",
+          "Do not start video handoff until user visually confirms the new candidates."
         ]
+      },
+      "sc002_same_ground_height_scale_redo_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH001",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "scale_consistency_lock_2026_06_11": {
         "version": "character-consistency-height-scale-lock-v1-2026-06-11",
@@ -6398,6 +6507,40 @@
           "reject if C025 civilians gain insect traits or military gear",
           "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
         ]
+      },
+      "sc002_identity_height_regeneration_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH001",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "17df4711f93f56e5e677e91a85c96d3801e0c815802caaf1079237903aee74c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "fe3653321259e2857652b31289790e751380f29aed787b3aaeda3b7b1e93f407",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 白衣粮税虫吏、C017 人形奴兵、C018 纯虫族武装封路者和 C025 普通村民分层可读。",
+          "C016 高于 C017 与村民，C018 在车道边形成更高的武装压迫。",
+          "内部注意：左侧 C018 靠近粮袋墙/仓口边缘，视频前仍建议用户重点看同地平线读数。"
+        ],
+        "residual_risks": [
+          "左侧 C018 靠近仓口边缘，需用户确认没有被误读为站在台阶或粮袋上。"
+        ],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       }
     },
     {
@@ -6412,7 +6555,10 @@
         "01/shots/shot-list.json#SC002-SH002",
         "needs_asset:episode01/reference-frames/sc002_sh002_threshold_handprint.png",
         "imagegen-task:019eb5d8-c86c-70b0-9fa9-b81489fd60ba",
-        "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
+        "imagegen-current-thread:019eb648-4271-7b23-9938-54a07edd83ea",
+        "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png"
       ],
       "continuity_refs": [
         "CHAR_SUMING_SLAVE_SOLDIER",
@@ -6429,8 +6575,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "generation_status": "generated_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+      "generation_status": "generated_candidate_from_built_in_image_gen_identity_height_regeneration_2026-06-11",
       "design_summary": "SC002-SH002 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -6451,7 +6597,7 @@
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "file_path": "01/assets/reference-frames/r006e01.png",
-      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
       "prompt_id": "PROMPT_E01_R006",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6478,10 +6624,12 @@
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "reject if C025/C017/C016/C018/C019 role-height ladder is not readable on the same ground plane",
+          "reject if C016 official, C017 mixed slave soldier, C018 pure insect infantry, C019 heavy insect soldier, or C025 ordinary humans exchange roles, species traits, hands, weapons, clothing, or body scale"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
+        "minimum_resolution_notes": "Canonical R005-R009 identity-height regeneration candidates are saved as 4096x2304 PNG plates; user visual QC is still required before video handoff.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"
@@ -6490,21 +6638,21 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -6514,17 +6662,17 @@
       },
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "current_canonical_file_status": "current_candidate_after_same_ground_height_scale_redo_2026-06-11",
-      "final_sha256": "099c08d5f1db84fd9336dbbc82a97b4cd25f5b8e1ed762ead30822e7df83e566",
-      "final_dimensions": "3840x2160",
-      "source_sha256": "e5e98b7e1d85b40b39e78ee32d510b8d3a431979f2fa47debe9d666a09c989be",
+      "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+      "current_canonical_file_status": "current_identity_height_regeneration_candidate_pending_user_visual_qc_2026-06-11",
+      "final_sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+      "final_dimensions": "4096x2304",
+      "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
       "source_dimensions": "1672x941",
-      "source_history_file": "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
-      "generation_source": "isolated_imagegen_task_same_ground_height_scale_redo_2026-06-11",
-      "generation_thread_id": "019eb1d2-4cb4-7ec2-ae44-d18e0bb46090",
-      "completed_at": "2026-06-11T17:41:57+08:00",
-      "updated_at": "2026-06-11T18:30:00+08:00",
+      "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+      "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+      "completed_at": "2026-06-11T22:39:28+08:00",
+      "updated_at": "2026-06-11T22:39:28+08:00",
       "history_files": [
         "01/assets/reference-frames/history/r006e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r006e01.before-global-ref-redo-20260611.png",
@@ -6535,56 +6683,82 @@
         "01/assets/reference-frames/history/r006e01.c017-wrist-c018-guard-source-20260611.png",
         "01/assets/reference-frames/history/r006e01.rejected-foot-ankle-risk-before-wrist-correction-20260611.png",
         "01/assets/reference-frames/history/r006e01.before-same-ground-height-redo-20260611.png",
-        "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png"
       ],
       "has_alpha": false,
       "approval_scope": "SC002 storyboard/reference-frame handoff only",
       "sc002_storyboard_qc": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH002",
         "use": "I2V 首帧",
-        "director_requirement_score": 93,
-        "art_fit_score": 94,
-        "qc_notes": [
-          "C017 混血奴兵的深灰蓝破制服、骨白腕绑、有机硬化指节、脸壳与长辫继承可读。",
-          "前景祖牌盒内的冷白虫蜡儿童手印清楚，替换了首版错误圆形封章。",
-          "扣腕/按压动作有真实接触压迫，儿童和家人只用局部身体语言呈现。"
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-      "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-same-ground-height-redo-20260611.png",
+      "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+      "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
       "rejected_history_files": [
         "01/assets/reference-frames/history/r006e01.rejected-no-child-handprint-source-20260611.png"
       ],
-      "reviewed_at": "2026-06-11T17:41:57+08:00",
-      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "reviewed_at": "2026-06-11T22:39:28+08:00",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
       "sc002_regeneration_qc_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH002",
         "use": "I2V 首帧",
-        "director_requirement_score": 93,
-        "art_fit_score": 94,
-        "qc_notes": [
-          "C017 混血奴兵的深灰蓝破制服、骨白腕绑、有机硬化指节、脸壳与长辫继承可读。",
-          "前景祖牌盒内的冷白虫蜡儿童手印清楚，替换了首版错误圆形封章。",
-          "扣腕/按压动作有真实接触压迫，儿童和家人只用局部身体语言呈现。"
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "previous_rejection_reasons_2026_06_11": [
         "User rejected previous SC002 candidates: C016B face/height did not read as the global insect official.",
@@ -6596,37 +6770,68 @@
         "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
       ],
       "generation_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generation_status": "generated_candidate_from_visible_global_master_refs_2026-06-11",
-        "output_path": "01/assets/reference-frames/r006e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "311feb50571dc4ae366838963ac6b983cabd7c97e5ef96fa0aa3c02a66d45389",
-        "source_dimensions": "1672x941",
-        "source_sha256": "64ae471dfcd4c3d1fdc5a70dd94132d507042d6913ec14ee0246de13e1cb99b5",
-        "source_history_file": "01/assets/reference-frames/history/r006e01.imagegen-global-ref-source-20260611.png",
-        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-global-ref-redo-20260611.png",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
-        "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11"
-      },
-      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH002",
         "use": "I2V 首帧",
-        "director_requirement_score": 95,
-        "art_fit_score": 95,
-        "notes": [
-          "扣腕手为 C017 混血奴兵五指人手，硬化甲片、骨白腕绑和真实握压都清楚。",
-          "抓握对象已修正为成人前臂/袖口，不再读成脚踝或小腿。",
-          "祖牌盒、冷白虫蜡儿童手印、湿泥和散粮位于前景主焦点。",
-          "C018 纯虫族只在背景持械封路，没有替代奴兵执行扣腕动作。"
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
+      },
+      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH002",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "corrective_requirements": [
         "C016 must inherit the global insect official face shell, white wax accountant hat, robe, and 190-210cm body scale.",
@@ -6639,48 +6844,82 @@
         "职责不可互换：C016B 只开册下令，C017 只扣腕/搬粮/押车且为五指硬化人手，C018 只持短矛或钩镰封路，C025 只能是普通人族。"
       ],
       "imagegen_task_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "selected_source": "imagegen_task_thread",
-        "selected_thread_id": "019eb5d8-c86c-70b0-9fa9-b81489fd60ba",
-        "selected_source_history_file": "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
-        "selected_source_dimensions": "1672x941",
-        "selected_source_sha256": "e5e98b7e1d85b40b39e78ee32d510b8d3a431979f2fa47debe9d666a09c989be",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH002",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+        "selected_source": "built_in_image_gen_current_thread",
+        "selected_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
         "canonical_output_path": "01/assets/reference-frames/r006e01.png",
-        "canonical_dimensions": "3840x2160",
-        "canonical_sha256": "099c08d5f1db84fd9336dbbc82a97b4cd25f5b8e1ed762ead30822e7df83e566",
-        "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "selected_source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "selected_source_dimensions": "1672x941",
+        "selected_source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
         "generated_at": "2026-06-11",
         "notes": [
-          "Same-ground height-scale redo after user rejection of C016/C017 inheritance and body metrics.",
-          "Canonical project file was resampled to 3840x2160 PNG RGB as the old 3840x2160 episode delivery size.",
-          "Video production remains blocked until user visual QC confirms the candidates."
+          "Generated after user requested R005-R009 regeneration to resolve role consistency and height-scale failure.",
+          "Original built-in imagegen source was preserved in history, then canonical PNG was resampled to 4096x2304.",
+          "Do not start video handoff until user visually confirms the new candidates."
         ]
       },
       "sc002_same_ground_height_scale_redo_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T17:41:57+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH002",
-        "use": "I2V 关键帧",
+        "use": "I2V 首帧",
         "output_path": "01/assets/reference-frames/r006e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "099c08d5f1db84fd9336dbbc82a97b4cd25f5b8e1ed762ead30822e7df83e566",
-        "source_history_file": "01/assets/reference-frames/history/r006e01.same-ground-height-source-20260611.png",
-        "source_sha256": "e5e98b7e1d85b40b39e78ee32d510b8d3a431979f2fa47debe9d666a09c989be",
-        "thread_id": "019eb5d8-c86c-70b0-9fa9-b81489fd60ba",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
         "qc_notes": [
-          "奴兵抓成人上臂/袖口，不再误抓脚踝。",
-          "奴兵手部读作五指硬化人形手，不是纯虫族爪手。",
-          "纯虫族士兵持兵器在同地面车道后方警戒，身高明显高于人族。"
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
         ],
         "residual_risks": [],
-        "report": "01/art/reports/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "audit_report": "01/art/audits/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "scale_consistency_lock_2026_06_11": {
         "version": "character-consistency-height-scale-lock-v1-2026-06-11",
@@ -6704,6 +6943,38 @@
           "reject if C025 civilians gain insect traits or military gear",
           "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
         ]
+      },
+      "sc002_identity_height_regeneration_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH002",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "f72e87390578f6ea5435050c4a58984d46d8dfbff7fa7834396e63eb7bd695a1",
+        "source_dimensions": "1672x941",
+        "source_sha256": "8b355fdafb4e46de54704dce0485aa45990680f1e4ae9b83c7aeaad776dad7c4",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "近景抓腕者为 C017 人形混血奴兵，五指硬化人手和低位辫子可读。",
+          "C018 只在门外泥道持武器封路，没有执行抓腕动作。",
+          "祖牌盒、散粮和冷白虫蜡手印保留为前景叙事锚点。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       }
     },
     {
@@ -6719,7 +6990,10 @@
         "imagegen-task:019eb1b3-f276-7991-8a87-88436520aac9",
         "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
         "imagegen-task:019eb602-4409-78e3-a429-5650834022a9",
-        "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png"
+        "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
+        "imagegen-current-thread:019eb648-4271-7b23-9938-54a07edd83ea",
+        "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png"
       ],
       "continuity_refs": [
         "CHAR_GRAIN_TAX_CLERK",
@@ -6744,8 +7018,8 @@
         "I2V",
         "首帧"
       ],
-      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "generation_status": "generated_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+      "generation_status": "generated_candidate_from_built_in_image_gen_identity_height_regeneration_2026-06-11",
       "design_summary": "SC002-SH003 的 I2V 首帧参考帧：白册前景、小吏点族谱行、封牌落下、妇人护粮被奴兵扣腕，锁定清明籍话术如何把家粮写成官粮。",
       "generation_method": "I2V",
       "priority": "medium",
@@ -6767,7 +7041,7 @@
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on the episode style boards plus visible SC002-SH003 identity, geography, prop, and hierarchy assets that appear in the same frame.",
       "file_path": "01/assets/reference-frames/r007e01.png",
-      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
       "prompt_id": "PROMPT_E01_R007",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6796,10 +7070,12 @@
           "grain tax clerk remains insect-bureaucrat, not human accountant or ordinary magistrate",
           "Suming clerk, slave soldier, and Jinhe civilians keep distinct hierarchy and wardrobe",
           "white register and genealogy rows contain no random readable text, only blank/line-control/post-composite areas",
-          "match the approved material standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved material standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "reject if C025/C017/C016/C018/C019 role-height ladder is not readable on the same ground plane",
+          "reject if C016 official, C017 mixed slave soldier, C018 pure insect infantry, C019 heavy insect soldier, or C025 ordinary humans exchange roles, species traits, hands, weapons, clothing, or body scale"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
+        "minimum_resolution_notes": "Canonical R005-R009 identity-height regeneration candidates are saved as 4096x2304 PNG plates; user visual QC is still required before video handoff.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"
@@ -6808,21 +7084,21 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -6832,7 +7108,7 @@
       },
       "texture_standard_ref": "E01_F001/E01_F005",
       "texture_standard_requirement": "de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
-      "current_canonical_file_status": "current_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "current_canonical_file_status": "current_identity_height_regeneration_candidate_pending_user_visual_qc_2026-06-11",
       "history_files": [
         "01/assets/reference-frames/history/r007e01.imagegen-task-source-20260610.png",
         "01/assets/reference-frames/history/r007e01.current-thread-fallback-20260610.png",
@@ -6842,80 +7118,134 @@
         "01/assets/reference-frames/history/r007e01.before-c018-armed-guard-redo-20260611.png",
         "01/assets/reference-frames/history/r007e01.rejected-black-hat-before-c016-white-hat-redo-20260611.png",
         "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
-        "01/assets/reference-frames/history/r007e01.before-same-ground-height-redo-20260611.png"
+        "01/assets/reference-frames/history/r007e01.before-same-ground-height-redo-20260611.png",
+        "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png"
       ],
       "imagegen_task_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "selected_source": "imagegen_task_thread",
-        "selected_thread_id": "019eb602-4409-78e3-a429-5650834022a9",
-        "selected_source_history_file": "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
-        "selected_source_dimensions": "1672x941",
-        "selected_source_sha256": "639ee53f24a841bcb0a0ef0add235c9b34b3f297a4b2916df12e940c14f325a8",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH003",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+        "selected_source": "built_in_image_gen_current_thread",
+        "selected_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
         "canonical_output_path": "01/assets/reference-frames/r007e01.png",
-        "canonical_dimensions": "3840x2160",
-        "canonical_sha256": "470b43633bab7433b073fdf8f2866e5b5aac2d3d6a483b2636371ddf1fb46122",
-        "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "selected_source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "selected_source_dimensions": "1672x941",
+        "selected_source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
         "generated_at": "2026-06-11",
         "notes": [
-          "Same-ground height-scale redo after user rejection of C016/C017 inheritance and body metrics.",
-          "Canonical project file was resampled to 3840x2160 PNG RGB as the old 3840x2160 episode delivery size.",
-          "Video production remains blocked until user visual QC confirms the candidates."
+          "Generated after user requested R005-R009 regeneration to resolve role consistency and height-scale failure.",
+          "Original built-in imagegen source was preserved in history, then canonical PNG was resampled to 4096x2304.",
+          "Do not start video handoff until user visually confirms the new candidates."
         ]
       },
-      "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "final_sha256": "470b43633bab7433b073fdf8f2866e5b5aac2d3d6a483b2636371ddf1fb46122",
-      "final_dimensions": "3840x2160",
+      "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+      "final_sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+      "final_dimensions": "4096x2304",
       "has_alpha": false,
-      "updated_at": "2026-06-11T18:30:00+08:00",
+      "updated_at": "2026-06-11T22:39:28+08:00",
       "approval_scope": "SC002 storyboard/reference-frame handoff only",
       "sc002_storyboard_qc": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH003",
         "use": "I2V 首帧",
-        "director_requirement_score": 92,
-        "art_fit_score": 93,
-        "qc_notes": [
-          "C016B 在桌后负责开册/指认，C017 只执行扣腕，职责和身高层级没有互换。",
-          "前景白册、骨算盘、虫蜡封片、祖牌盒和湿木桌边层次清楚；白册没有随机可读文字。",
-          "粮袋墙、河泥、检查口和低位家人压力仍继承 L003 金河粮仓空间。"
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
+      "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
       "source_dimensions": "1672x941",
-      "source_sha256": "639ee53f24a841bcb0a0ef0add235c9b34b3f297a4b2916df12e940c14f325a8",
-      "source_history_file": "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
-      "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.rejected-black-hat-before-c016-white-hat-redo-20260611.png",
-      "generation_source": "isolated_imagegen_task_same_ground_height_scale_redo_2026-06-11",
-      "completed_at": "2026-06-11T17:41:57+08:00",
-      "reviewed_at": "2026-06-11T17:41:57+08:00",
-      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+      "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+      "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+      "completed_at": "2026-06-11T22:39:28+08:00",
+      "reviewed_at": "2026-06-11T22:39:28+08:00",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
       "sc002_regeneration_qc_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH003",
         "use": "I2V 首帧",
-        "director_requirement_score": 92,
-        "art_fit_score": 93,
-        "qc_notes": [
-          "C016B 在桌后负责开册/指认，C017 只执行扣腕，职责和身高层级没有互换。",
-          "前景白册、骨算盘、虫蜡封片、祖牌盒和湿木桌边层次清楚；白册没有随机可读文字。",
-          "粮袋墙、河泥、检查口和低位家人压力仍继承 L003 金河粮仓空间。"
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "previous_rejection_reasons_2026_06_11": [
         "User rejected previous SC002 candidates: C016B face/height did not read as the global insect official.",
@@ -6927,36 +7257,68 @@
         "重做参考帧必须逐镜头复核导演要求：SH001 村民眼高慢推，SH002 门槛局部压迫，SH003 前景证据/中景执行/背景压力，SH004 同一门槛首尾帧。"
       ],
       "generation_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generation_status": "generated_candidate_from_visible_global_master_refs_2026-06-11",
-        "output_path": "01/assets/reference-frames/r007e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "fe31e036aa07c11a19b8a6825e3e3e9a6f6758d00702573fdf24e0f2164a7023",
-        "source_dimensions": "1672x941",
-        "source_sha256": "2fc12cc97996939ce4eaa4200776d53f69dc52a5604ceb606f5c7dcc0c1d9804",
-        "source_history_file": "01/assets/reference-frames/history/r007e01.imagegen-global-ref-source-20260611.png",
-        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-global-ref-redo-20260611.png",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
-        "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11"
-      },
-      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH003",
         "use": "I2V 首帧",
-        "director_requirement_score": 94,
-        "art_fit_score": 94,
-        "notes": [
-          "前景白册、骨算盘、税牌、秤钩、虫蜡和湿桌面形成证据层。",
-          "中景 C016B 开册点税，C017 奴兵扣腕，职责清楚没有互换。",
-          "背景 C018 持兵器压住粮袋墙/车道边缘，形成制度冲突和体型威压。"
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
+      },
+      "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH003",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "corrective_requirements": [
         "C016 must inherit the global insect official face shell, white wax accountant hat, robe, and 190-210cm body scale.",
@@ -6969,32 +7331,36 @@
         "职责不可互换：C016B 只开册下令，C017 只扣腕/搬粮/押车且为五指硬化人手，C018 只持短矛或钩镰封路，C025 只能是普通人族。"
       ],
       "sc002_same_ground_height_scale_redo_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T17:41:57+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH003",
         "use": "I2V 首帧",
         "output_path": "01/assets/reference-frames/r007e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "470b43633bab7433b073fdf8f2866e5b5aac2d3d6a483b2636371ddf1fb46122",
-        "source_history_file": "01/assets/reference-frames/history/r007e01.same-ground-c016-white-hat-source-20260611.png",
-        "source_sha256": "639ee53f24a841bcb0a0ef0add235c9b34b3f297a4b2916df12e940c14f325a8",
-        "thread_id": "019eb602-4409-78e3-a429-5650834022a9",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
         "qc_notes": [
-          "重做后 C016 高账吏帽恢复白蜡/骨白色，脸型回到窄长虫族官吏面壳。",
-          "C017 五指硬化手扣成人上臂/袖口，低位细金钱尾辫可读。",
-          "C018 持钩镰在同一泥地车道警戒，身高高于 C016 与人族。"
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
         ],
-        "residual_risks": [
-          "画面左侧环境布招有可读中文，需要后续视频/后期阶段避免继承随机文字。"
-        ],
-        "report": "01/art/reports/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "audit_report": "01/art/audits/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "scale_consistency_lock_2026_06_11": {
         "version": "character-consistency-height-scale-lock-v1-2026-06-11",
@@ -7018,6 +7384,39 @@
           "reject if C025 civilians gain insect traits or military gear",
           "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
         ]
+      },
+      "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+      "sc002_identity_height_regeneration_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH003",
+        "use": "I2V 首帧",
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "c819229d1adf2a70628106364a6ed90970284a1bb18122455e5cb11a3777e971",
+        "source_dimensions": "1672x941",
+        "source_sha256": "85ad975474e28795d44b001e9f8b5d79a4fb9634d5a7ae16c3ee848b5c9e3d37",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C016 保持白衣、高账吏帽、虫面壳和开册下令职责，未与 C018 混同。",
+          "C017 在一侧押解村民，仍为人形五指奴兵。",
+          "C018 在两侧持矛/钩镰封路，身高和体型明显压过 C017 与村民。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       }
     },
     {
@@ -7032,7 +7431,10 @@
         "01/shots/shot-list.json#SC002-SH004",
         "needs_asset:episode01/reference-frames/sc002_sh004_cart_start.png",
         "imagegen-task:019eb5e6-0b4e-7e41-991d-41c1104c478c",
-        "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
+        "imagegen-current-thread:019eb648-4271-7b23-9938-54a07edd83ea",
+        "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png"
       ],
       "continuity_refs": [
         "LOC_JINHE_GRAIN_DEPOT",
@@ -7049,8 +7451,8 @@
         "FLF2V",
         "首帧"
       ],
-      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "generation_status": "generated_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+      "generation_status": "generated_candidate_from_built_in_image_gen_identity_height_regeneration_2026-06-11",
       "design_summary": "SC002-SH004 的首帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -7070,7 +7472,7 @@
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "file_path": "01/assets/reference-frames/r008e01.png",
-      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
       "prompt_id": "PROMPT_E01_R008",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -7097,10 +7499,12 @@
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "reject if C025/C017/C016/C018/C019 role-height ladder is not readable on the same ground plane",
+          "reject if C016 official, C017 mixed slave soldier, C018 pure insect infantry, C019 heavy insect soldier, or C025 ordinary humans exchange roles, species traits, hands, weapons, clothing, or body scale"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
+        "minimum_resolution_notes": "Canonical R005-R009 identity-height regeneration candidates are saved as 4096x2304 PNG plates; user visual QC is still required before video handoff.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"
@@ -7109,21 +7513,21 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -7134,20 +7538,38 @@
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
       "generation_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generation_status": "generated_candidate_from_visible_global_master_refs_2026-06-11",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 首帧",
         "output_path": "01/assets/reference-frames/r008e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "1ef8abf0da3c86677472cd36dd8b370b3b4951fc9b2eac0be18b16191cf843c4",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
         "source_dimensions": "1672x941",
-        "source_sha256": "bbca08de94a6ceac8ae93e4a2f3a883fc12051a5c137d990b87a22b1d3e02074",
-        "source_history_file": "01/assets/reference-frames/history/r008e01.imagegen-global-ref-source-20260611.png",
-        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-global-ref-redo-20260611.png",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
-        "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11"
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax hands, midground grain sack and slave soldier, background family/threshold are readable",
@@ -7161,62 +7583,88 @@
         "01/assets/reference-frames/history/r008e01.c018-armed-guard-source-20260611.png",
         "01/assets/reference-frames/history/r008e01.before-c018-armed-guard-redo-20260611.png",
         "01/assets/reference-frames/history/r008e01.before-same-ground-height-redo-20260611.png",
-        "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png"
       ],
-      "final_sha256": "44e30566752e64f44149fce22c99d4b4548fcec8034af292f410ab1d7b730a97",
-      "updated_at": "2026-06-11T18:30:00+08:00",
-      "current_canonical_file_status": "current_candidate_after_same_ground_height_scale_redo_2026-06-11",
-      "final_dimensions": "3840x2160",
+      "final_sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+      "updated_at": "2026-06-11T22:39:28+08:00",
+      "current_canonical_file_status": "current_identity_height_regeneration_candidate_pending_user_visual_qc_2026-06-11",
+      "final_dimensions": "4096x2304",
       "has_alpha": false,
       "approval_scope": "SC002 storyboard/reference-frame handoff only",
       "sc002_storyboard_qc": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 首帧",
-        "director_requirement_score": 91,
-        "art_fit_score": 92,
-        "qc_notes": [
-          "R008 保持门槛后方 wide pullback 首帧，前景祖牌盒、虫蜡手印、湿泥与车辙最大最清楚。",
-          "C017 混血奴兵服制、发辫、腕绑和硬化手臂可读，正在拖粮袋向侧向粮车移动。",
-          "家人被压低在门槛边，粮车/车轮/粮袋在中景形成离家动作。"
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
+      "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
       "source_dimensions": "1672x941",
-      "source_sha256": "954ffbd2e1f8624f36b61eacfce2c9027005fd012424936cafd272bcd1e8aa04",
-      "source_history_file": "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
-      "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-same-ground-height-redo-20260611.png",
-      "generation_source": "isolated_imagegen_task_same_ground_height_scale_redo_2026-06-11",
-      "completed_at": "2026-06-11T17:41:57+08:00",
-      "reviewed_at": "2026-06-11T17:41:57+08:00",
-      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+      "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+      "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+      "completed_at": "2026-06-11T22:39:28+08:00",
+      "reviewed_at": "2026-06-11T22:39:28+08:00",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
       "sc002_regeneration_qc_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 首帧",
-        "director_requirement_score": 91,
-        "art_fit_score": 92,
-        "qc_notes": [
-          "R008 保持门槛后方 wide pullback 首帧，前景祖牌盒、虫蜡手印、湿泥与车辙最大最清楚。",
-          "C017 混血奴兵服制、发辫、腕绑和硬化手臂可读，正在拖粮袋向侧向粮车移动。",
-          "家人被压低在门槛边，粮车/车轮/粮袋在中景形成离家动作。"
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "previous_rejection_reasons_2026_06_11": [
         "User rejected previous SC002 candidates: C016B face/height did not read as the global insect official.",
@@ -7244,22 +7692,36 @@
         "source_sha256": "f40afcb3ea96bd15f138b06f54e77ff715f0303caf2af39a7d348a5c25aa4efa"
       },
       "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 首帧",
-        "director_requirement_score": 95,
-        "art_fit_score": 95,
-        "notes": [
-          "同一门槛后方机位成立，祖牌盒、儿童蜡手印、散粮和车辙是最大前景。",
-          "C017 奴兵负责搬粮/绳索，手部仍是人形五指硬化手，不是虫爪。",
-          "C018 纯虫族持械分列车道两侧，体型高于奴兵，制造外圈封路压力。"
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "corrective_requirements": [
         "C016 must inherit the global insect official face shell, white wax accountant hat, robe, and 190-210cm body scale.",
@@ -7272,48 +7734,82 @@
         "职责不可互换：C016B 只开册下令，C017 只扣腕/搬粮/押车且为五指硬化人手，C018 只持短矛或钩镰封路，C025 只能是普通人族。"
       ],
       "imagegen_task_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "selected_source": "imagegen_task_thread",
-        "selected_thread_id": "019eb5e6-0b4e-7e41-991d-41c1104c478c",
-        "selected_source_history_file": "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
-        "selected_source_dimensions": "1672x941",
-        "selected_source_sha256": "954ffbd2e1f8624f36b61eacfce2c9027005fd012424936cafd272bcd1e8aa04",
-        "canonical_output_path": "01/assets/reference-frames/r008e01.png",
-        "canonical_dimensions": "3840x2160",
-        "canonical_sha256": "44e30566752e64f44149fce22c99d4b4548fcec8034af292f410ab1d7b730a97",
-        "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generated_at": "2026-06-11",
-        "notes": [
-          "Same-ground height-scale redo after user rejection of C016/C017 inheritance and body metrics.",
-          "Canonical project file was resampled to 3840x2160 PNG RGB as the old 3840x2160 episode delivery size.",
-          "Video production remains blocked until user visual QC confirms the candidates."
-        ]
-      },
-      "sc002_same_ground_height_scale_redo_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T17:41:57+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 首帧",
         "output_path": "01/assets/reference-frames/r008e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "44e30566752e64f44149fce22c99d4b4548fcec8034af292f410ab1d7b730a97",
-        "source_history_file": "01/assets/reference-frames/history/r008e01.same-ground-height-source-20260611.png",
-        "source_sha256": "954ffbd2e1f8624f36b61eacfce2c9027005fd012424936cafd272bcd1e8aa04",
-        "thread_id": "019eb5e6-0b4e-7e41-991d-41c1104c478c",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
         "qc_notes": [
-          "门槛视角、祖牌盒、白蜡手印、粮袋装车和车辙关系清楚。",
-          "C017 执行搬运/压迫职责，低位细尾辫方向可读。",
-          "C018 持兵器守在同地面车道两侧，形成高于人族的封锁压力。"
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
         ],
         "residual_risks": [],
-        "report": "01/art/reports/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "audit_report": "01/art/audits/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+        "selected_source": "built_in_image_gen_current_thread",
+        "selected_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "canonical_output_path": "01/assets/reference-frames/r008e01.png",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "selected_source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "selected_source_dimensions": "1672x941",
+        "selected_source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "generated_at": "2026-06-11",
+        "notes": [
+          "Generated after user requested R005-R009 regeneration to resolve role consistency and height-scale failure.",
+          "Original built-in imagegen source was preserved in history, then canonical PNG was resampled to 4096x2304.",
+          "Do not start video handoff until user visually confirms the new candidates."
         ]
+      },
+      "sc002_same_ground_height_scale_redo_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 首帧",
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "scale_consistency_lock_2026_06_11": {
         "version": "character-consistency-height-scale-lock-v1-2026-06-11",
@@ -7337,6 +7833,39 @@
           "reject if C025 civilians gain insect traits or military gear",
           "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
         ]
+      },
+      "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+      "sc002_identity_height_regeneration_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 首帧",
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "09554aa900cc0a558e54e27303ada118516ab1ec221ebd1aa902535e8b95d48d",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2bef0e4313a890c1f5ac4fcb9531080fd37a80faf04b59dbbc9e01443d94274d",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "C017 负责推车、绳索和粮袋搬运，保持人形奴兵身份。",
+          "C018 分列门框和车道两侧持武器封路，没有搬粮。",
+          "祖牌盒、虫蜡手印、门槛、泥地车辙与 R009 形成同一轴线首尾关系。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       }
     },
     {
@@ -7351,7 +7880,10 @@
         "01/shots/shot-list.json#SC002-SH004",
         "needs_asset:episode01/reference-frames/sc002_sh004_empty_threshold_end.png",
         "imagegen-task:019eb5ec-3050-7431-8cd8-8c1f97d333bf",
-        "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
+        "imagegen-current-thread:019eb648-4271-7b23-9938-54a07edd83ea",
+        "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png"
       ],
       "continuity_refs": [
         "LOC_JINHE_GRAIN_DEPOT",
@@ -7368,8 +7900,8 @@
         "FLF2V",
         "终帧"
       ],
-      "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-      "generation_status": "generated_candidate_after_same_ground_height_scale_redo_2026-06-11",
+      "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+      "generation_status": "generated_candidate_from_built_in_image_gen_identity_height_regeneration_2026-06-11",
       "design_summary": "SC002-SH004 的终帧参考帧，用于审批后锁定镜头构图和资产组合。",
       "generation_method": "FLF2V",
       "priority": "high",
@@ -7389,7 +7921,7 @@
       "blocks_assets": [],
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "file_path": "01/assets/reference-frames/r009e01.png",
-      "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
+      "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
       "prompt_id": "PROMPT_E01_R009",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -7416,10 +7948,12 @@
           "no transparent or isolated card background",
           "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
           "no watermarks, modern UI, random text, or wrong faction symbols",
-          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation"
+          "match the approved R001 texture standard: de-particleized, no yellow glitter or digital speckle, clear physical material separation",
+          "reject if C025/C017/C016/C018/C019 role-height ladder is not readable on the same ground plane",
+          "reject if C016 official, C017 mixed slave soldier, C018 pure insect infantry, C019 heavy insect soldier, or C025 ordinary humans exchange roles, species traits, hands, weapons, clothing, or body scale"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
-        "minimum_resolution_notes": "4K reference image standard: use required 4096x2304 16:9 plates; never downsample canonical reference frames to preview resolution.",
+        "minimum_resolution_notes": "Canonical R005-R009 identity-height regeneration candidates are saved as 4096x2304 PNG plates; user visual QC is still required before video handoff.",
         "background_policy_notes": "video_frame_scene_context",
         "video_use_policy": "may be used as a landscape video/scene reference after QC",
         "format_contract_scope": "video_frame_reference"
@@ -7428,21 +7962,21 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "4096x2304",
-        "existing_file_status": "candidate_rejected_by_user_visual_qc_identity_height_scale_and_resolution_relock_required",
-        "existing_file_dimensions": "3840x2160",
-        "action_required": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
-        "updated_by": "identity_height_scale_relock_2026_06_11",
-        "updated_at": "2026-06-11T18:30:00+08:00"
+        "existing_file_status": "regenerated_canonical_candidate_4096x2304_identity_height_scale_relock_pending_user_visual_qc",
+        "existing_file_dimensions": "4096x2304",
+        "action_required": "user_visual_qc_before_video_handoff",
+        "updated_by": "r005_r009_identity_height_regeneration_2026_06_11",
+        "updated_at": "2026-06-11T22:39:28+08:00"
       },
       "inheritance_contract": {
         "version": "episode-frame-inherits-approved-assets-v1-2026-06-07",
@@ -7453,20 +7987,38 @@
       "texture_standard_ref": "E01_R001",
       "texture_standard_requirement": "must match approved R001 de-particleized realistic material standard; no yellow glitter, no digital speckle, no uniform grey grain texture",
       "generation_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "generation_status": "generated_candidate_from_visible_global_master_refs_2026-06-11",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 终帧",
         "output_path": "01/assets/reference-frames/r009e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "f809d35b44eb9627e65bd6736d85de21050501f8b87d45f1d1a379c3b49077f0",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
         "source_dimensions": "1672x941",
-        "source_sha256": "80e1f1788d80ea8a10ba6c7404228cc2f91d7489fa5e4d0ae44351a75c03bf57",
-        "source_history_file": "01/assets/reference-frames/history/r009e01.imagegen-global-ref-source-20260611.png",
-        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-global-ref-redo-20260611.png",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
-        "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11"
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+      "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
       "qc_notes": [
         "3840x2160 PNG RGB no alpha after canonical resample from 1672x941 source",
         "foreground ancestor box/cold-white wax handprint and empty threshold, midground kneeling family, background cart ruts/cold mist are readable",
@@ -7480,62 +8032,88 @@
         "01/assets/reference-frames/history/r009e01.c018-armed-guard-source-20260611.png",
         "01/assets/reference-frames/history/r009e01.before-c018-armed-guard-redo-20260611.png",
         "01/assets/reference-frames/history/r009e01.before-same-ground-height-redo-20260611.png",
-        "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png"
+        "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
+        "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png"
       ],
-      "final_sha256": "3e6cc59cec970feac327256778b0a0df8aea8290605eb22dee57160fe477679e",
-      "updated_at": "2026-06-11T18:30:00+08:00",
-      "current_canonical_file_status": "current_candidate_after_same_ground_height_scale_redo_2026-06-11",
-      "final_dimensions": "3840x2160",
+      "final_sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+      "updated_at": "2026-06-11T22:39:28+08:00",
+      "current_canonical_file_status": "current_identity_height_regeneration_candidate_pending_user_visual_qc_2026-06-11",
+      "final_dimensions": "4096x2304",
       "has_alpha": false,
       "approval_scope": "SC002 storyboard/reference-frame handoff only",
       "sc002_storyboard_qc": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 终帧",
-        "director_requirement_score": 94,
-        "art_fit_score": 94,
-        "qc_notes": [
-          "R009 与 R008 保持同一门槛后方三分构图、同一祖牌盒、同一虫蜡手印和车辙方向。",
-          "粮车已经退入冷雾，前景只剩空门槛、祖牌盒、手印和湿泥车辙；家人低在门槛边。",
-          "没有把奴兵或官吏重新拉回前景，符合终帧空场要求。"
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
-      "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
+      "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
       "source_dimensions": "1672x941",
-      "source_sha256": "7f2cd9ba3dee3f8788ad0955e83232c3545a9d3970fcd97de18db730c1ba98af",
-      "source_history_file": "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
-      "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-same-ground-height-redo-20260611.png",
-      "generation_source": "isolated_imagegen_task_same_ground_height_scale_redo_2026-06-11",
-      "completed_at": "2026-06-11T17:41:57+08:00",
-      "reviewed_at": "2026-06-11T17:41:57+08:00",
-      "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
+      "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+      "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+      "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+      "completed_at": "2026-06-11T22:39:28+08:00",
+      "reviewed_at": "2026-06-11T22:39:28+08:00",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
       "sc002_regeneration_qc_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T03:20:00+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 终帧",
-        "director_requirement_score": 94,
-        "art_fit_score": 94,
-        "qc_notes": [
-          "R009 与 R008 保持同一门槛后方三分构图、同一祖牌盒、同一虫蜡手印和车辙方向。",
-          "粮车已经退入冷雾，前景只剩空门槛、祖牌盒、手印和湿泥车辙；家人低在门槛边。",
-          "没有把奴兵或官吏重新拉回前景，符合终帧空场要求。"
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "previous_rejection_reasons_2026_06_11": [
         "User rejected previous SC002 candidates: C016B face/height did not read as the global insect official.",
@@ -7563,22 +8141,36 @@
         "source_sha256": "6cbafbb9168fd6a4796dca04fbbcb776fb9c1c16b2d01c8d2ace444c280be7e6"
       },
       "sc002_regeneration_qc_2026_06_11_c018_armed_guard_redo": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
         "use": "FLF2V 终帧",
-        "director_requirement_score": 95,
-        "art_fit_score": 95,
-        "notes": [
-          "与 R008 维持同轴门槛构图，空门槛、祖牌盒、儿童蜡手印和车辙是主叙事。",
-          "粮车远去后，C018 持械守卫退到车道边远景，仍保持体型差和压迫感。",
-          "画面没有重新拉近扣腕或官吏，符合终帧空场要求。"
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
         ],
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "corrective_requirements": [
         "C016 must inherit the global insect official face shell, white wax accountant hat, robe, and 190-210cm body scale.",
@@ -7591,48 +8183,82 @@
         "职责不可互换：C016B 只开册下令，C017 只扣腕/搬粮/押车且为五指硬化人手，C018 只持短矛或钩镰封路，C025 只能是普通人族。"
       ],
       "imagegen_task_result": {
-        "status": "blocked_pending_identity_height_scale_relock_regeneration_2026-06-11",
-        "selected_source": "imagegen_task_thread",
-        "selected_thread_id": "019eb5ec-3050-7431-8cd8-8c1f97d333bf",
-        "selected_source_history_file": "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
-        "selected_source_dimensions": "1672x941",
-        "selected_source_sha256": "7f2cd9ba3dee3f8788ad0955e83232c3545a9d3970fcd97de18db730c1ba98af",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 终帧",
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
+        "selected_source": "built_in_image_gen_current_thread",
+        "selected_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
         "canonical_output_path": "01/assets/reference-frames/r009e01.png",
-        "canonical_dimensions": "3840x2160",
-        "canonical_sha256": "3e6cc59cec970feac327256778b0a0df8aea8290605eb22dee57160fe477679e",
-        "qc_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+        "canonical_dimensions": "4096x2304",
+        "canonical_sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "selected_source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "selected_source_dimensions": "1672x941",
+        "selected_source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
         "generated_at": "2026-06-11",
         "notes": [
-          "Same-ground height-scale redo after user rejection of C016/C017 inheritance and body metrics.",
-          "Canonical project file was resampled to 3840x2160 PNG RGB as the old 3840x2160 episode delivery size.",
-          "Video production remains blocked until user visual QC confirms the candidates."
+          "Generated after user requested R005-R009 regeneration to resolve role consistency and height-scale failure.",
+          "Original built-in imagegen source was preserved in history, then canonical PNG was resampled to 4096x2304.",
+          "Do not start video handoff until user visually confirms the new candidates."
         ]
       },
       "sc002_same_ground_height_scale_redo_2026_06_11": {
-        "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "approval_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-        "reviewed_at": "2026-06-11T17:41:57+08:00",
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
         "shot": "SC002-SH004",
-        "use": "FLF2V 尾帧",
+        "use": "FLF2V 终帧",
         "output_path": "01/assets/reference-frames/r009e01.png",
-        "dimensions": "3840x2160",
-        "sha256": "3e6cc59cec970feac327256778b0a0df8aea8290605eb22dee57160fe477679e",
-        "source_history_file": "01/assets/reference-frames/history/r009e01.same-ground-height-source-20260611.png",
-        "source_sha256": "7f2cd9ba3dee3f8788ad0955e83232c3545a9d3970fcd97de18db730c1ba98af",
-        "thread_id": "019eb5ec-3050-7431-8cd8-8c1f97d333bf",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
         "qc_notes": [
-          "空门槛、祖牌盒、白蜡手印和车辙保留同一空间因果。",
-          "远处车道封锁和 C018 持械高体型仍可读，不把纯虫族降成人族尺度。",
-          "尾帧保持 household grain is gone 的空置结果，不引入英雄化追逐。"
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
         ],
         "residual_risks": [],
-        "report": "01/art/reports/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "audit_report": "01/art/audits/sc002-same-ground-height-scale-redo-qc-2026-06-11.md",
-        "video_handoff_status": "blocked_user_visual_qc_failed_identity_height_scale_do_not_start_video_2026-06-11",
-        "user_rejection_notes": [
-          "2026-06-11 用户反馈：角色一致性仍未满足，包括身高差设定；该候选结论撤销。",
-          "下一轮必须先重锁 C016/C017/C018/C019/C025 身份与比例，再按 4096x2304 重生参考帧。"
-        ]
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       },
       "scale_consistency_lock_2026_06_11": {
         "version": "character-consistency-height-scale-lock-v1-2026-06-11",
@@ -7656,6 +8282,39 @@
           "reject if C025 civilians gain insect traits or military gear",
           "reject if apparent height comes from platform, table, stairs, grain sacks, cart bed, foreground scale or crouch hiding true standing-equivalent height"
         ]
+      },
+      "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+      "sc002_identity_height_regeneration_2026_06_11": {
+        "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+        "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+        "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+        "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+        "reviewed_at": "2026-06-11T22:39:28+08:00",
+        "shot": "SC002-SH004",
+        "use": "FLF2V 终帧",
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "4096x2304",
+        "sha256": "b00bc5141aac92cb03d02a0d1e50c51cc840bd72d750d4a13e7c0a3f44717117",
+        "source_dimensions": "1672x941",
+        "source_sha256": "10eb5147647b4dc3e654c780d52d205e305cd5c4d3d71feaac2a400418fa0be8",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.identity-height-regeneration-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-identity-height-regeneration-20260611.png",
+        "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+        "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+        "identity_locks": [
+          "C016: 195-205cm white-robed insect grain-tax official, register/order only.",
+          "C017: 175-185cm mixed slave soldier, human upright body, five hardened human fingers, low money-tail braid.",
+          "C018: 215-230cm pure insect infantry, reverse-jointed legs, claw feet, short spear or hook-sickle, armed perimeter only.",
+          "C025: ordinary human villagers, no insect traits, baseline scale."
+        ],
+        "same_ground_rule": "All visible boots, soles, claw feet, contact shadows, cart wheels and threshold cues must be read on one continuous muddy ground plane; no table/platform/sack/cart-bed/foreground trick may create height.",
+        "qc_notes": [
+          "与 R008 保持同一门槛轴线、祖牌盒、虫蜡手印和泥地车辙方向。",
+          "C017 退到远处粮车附近，C018 仍作为更高的武装封路轮廓。",
+          "画面重心转为空门槛与被拖走后的冷清结果。"
+        ],
+        "residual_risks": [],
+        "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
       }
     },
     {
@@ -13849,9 +14508,9 @@
     },
     "sc004_sh001_status": "blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11",
     "sc002_status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
-    "sc002_next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff"
+    "sc002_next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff"
   },
-  "updated_at": "2026-06-11T18:45:00+08:00",
+  "updated_at": "2026-06-11T22:39:28+08:00",
   "sc001_opening_readiness": {
     "status": "reference_frames_r003_r004_generated_candidate_pending_user_qc_2026-06-10",
     "checked_at": "2026-06-08",
@@ -14009,7 +14668,7 @@
       "C017 card and R006/R008 hand actions now require readable five-finger human hands with hardened chitin plates and bone-white wrist bindings.",
       "C018 pure insect infantry is restored as an armed perimeter/blocking role in R005-R009 with 200-230cm nonhuman body scale."
     ],
-    "next_action": "regenerate_reference_frame_at_4096x2304_with_identity_and_height_scale_lock_before_video_handoff",
+    "next_action": "user_visual_qc_r005_r009_identity_height_candidate_before_video_handoff",
     "required_scale_ladder_2026_06_11": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline."
   },
   "sc003_storyboard_qc": {
@@ -14135,7 +14794,7 @@
     "updated_at": "2026-06-11T09:24:00+08:00"
   },
   "sc002_user_visual_qc_rejection_2026_06_11": {
-    "status": "failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11",
+    "status": "reference_frame_rejection_superseded_by_r005_r009_regeneration_candidates_pending_user_visual_qc_2026-06-11",
     "reported_issue": "角色一致性仍未满足，包括身高差设定。",
     "effective_from": "2026-06-11T18:45:00+08:00",
     "blocked_assets": [
@@ -14149,7 +14808,44 @@
       "E01_R009"
     ],
     "required_scale_ladder": "C025 human baseline -> C017 mixed slave soldier -> C016 insect official -> C018 pure insect infantry -> C019 heavy insect soldier, all on the same ground-line baseline.",
-    "next_action": "Regenerate C016B/C017/C018 state cards with same-ground scale lineup, then regenerate R005-R009 at 4096x2304 before any ComfyUI/video handoff.",
-    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md"
+    "next_action": "User visual QC for regenerated R005-R009; keep video handoff blocked until confirmed.",
+    "audit_report": "01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md",
+    "superseded_for_reference_frames_at": "2026-06-11T22:39:28+08:00",
+    "current_reference_frame_assets": [
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "still_blocked_assets": [
+      "E01_C016B",
+      "E01_C017",
+      "E01_C018"
+    ]
+  },
+  "sc002_r005_r009_identity_height_regeneration_2026_06_11": {
+    "status": "regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11",
+    "approval_status": "pending_user_visual_qc_after_identity_height_regeneration_2026-06-11",
+    "qc_status": "parent_art_room_visual_qc_passed_pending_user_visual_qc_2026-06-11",
+    "generated_at": "2026-06-11T22:39:28+08:00",
+    "generation_source": "built_in_image_gen_current_thread_with_visible_role_reference_cards_2026-06-11",
+    "generation_thread_id": "019eb648-4271-7b23-9938-54a07edd83ea",
+    "assets": [
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "canonical_resolution": "4096x2304",
+    "role_locks": [
+      "C025 ordinary human baseline",
+      "C017 mixed slave soldier, five-finger human hand, 175-185cm representative scale",
+      "C016 white-robed insect grain-tax official, 195-205cm representative scale",
+      "C018 pure insect infantry, armed perimeter only, 215-230cm representative scale"
+    ],
+    "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_confirmed_2026-06-11",
+    "review_report": "01/art/reviews/sc002-r005-r009-identity-height-regeneration-review-2026-06-11.md"
   }
 }

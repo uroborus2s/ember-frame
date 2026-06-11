@@ -4,9 +4,30 @@
 
 B04_E01_STYLE 已完成并通过协调端视觉 QC。SC001 开场四张参考帧已经写入 canonical 路径，当前状态是同一空间候选版待用户视觉 QC；ComfyUI 交付包可以按这组候选帧继续做镜头级测试，但在用户确认前不标记 final approved。
 
-SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后生成的 `E01_C016B`、`E01_C017`、`E01_C018` 与 `E01_R005`-`E01_R009` 候选也已被用户视觉 QC 退回：角色一致性仍未满足，身高差设定不成立。当前有效状态不是“等待确认”，而是 `failed_user_visual_qc_identity_height_scale_relock_required_2026-06-11`；不得进入视频制作、ComfyUI 小批量试渲或 director-room prompt refresh。详细失败复核见 `01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md`，本轮退回审计见 `01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md`。
+SC002 分镜资产的 2026-06-10 放行结论已于 2026-06-11 撤销。随后生成的 `E01_C016B`、`E01_C017`、`E01_C018` 与 `E01_R005`-`E01_R009` 候选也已被用户视觉 QC 退回：角色一致性仍未满足，身高差设定不成立。详细失败复核见 `01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md`，本轮退回审计见 `01/art/audits/sc002-character-identity-height-scale-user-rejection-2026-06-11.md`。
 
-补充：2026-06-11 第一轮 prompt-only 重做候选因全局脸型/物种结构继承不足被拒，未写入项目。后续直接从全局母卡 `C016`、`C017` 派生的候选仍未通过本轮用户视觉 QC；下一轮必须先按 `C025 -> C017 -> C016 -> C018 -> C019` 同地平线比例链重生角色状态卡，再按 `4096x2304` 重生 SC002 参考帧。详细记录见 `01/art/audits/c016b-c017-global-inheritance-rebuild-2026-06-11.md`。
+当前更新：`E01_R005`-`E01_R009` 已按 `4096x2304` 重生并写入 canonical 路径，状态改为 `regenerated_candidate_pending_user_visual_qc_identity_height_scale_2026-06-11`。本轮内部复查重点是四类角色不再串线：`C016` 白衣粮税虫吏只开册下令，`C017` 人形混血奴兵以五指人手扣腕/搬粮，`C018` 纯虫族小兵只持武器封路，`C025` 仍为普通人族基准。新图仍需用户视觉 QC 后才能进入视频制作或 director-room prompt refresh；不得直接标记 final approved。
+
+补充：2026-06-11 第一轮 prompt-only 重做候选因全局脸型/物种结构继承不足被拒，未写入项目。后续直接从全局母卡 `C016`、`C017` 派生的候选也曾被本轮用户视觉 QC 继续退回；这些记录保留为历史失败依据。新一轮 R005-R009 重生复审见 `01/art/reviews/sc002-r005-r009-identity-height-regeneration-review-2026-06-11.md`。
+
+## SC002 R005-R009 角色/身高重生候选 / 2026-06-11
+
+结论：`E01_R005`-`E01_R009` 已重生为 4096x2304 PNG 候选。内部 QC 判断四类角色的职责、物种和身高层级已明显区别于旧版，但仍保持视频交付阻断，等待用户最终视觉确认。
+
+### 已生成
+
+- `E01_R005` -> `01/assets/reference-frames/r005e01.png`，4096x2304 PNG：C016 白衣官吏开册，C017 低位执行，C018 纯虫兵封路，C025 村民排队。
+- `E01_R006` -> `01/assets/reference-frames/r006e01.png`，4096x2304 PNG：C017 五指人手扣腕，C018 在门外持武器封路，祖牌盒和虫蜡手印保留。
+- `E01_R007` -> `01/assets/reference-frames/r007e01.png`，4096x2304 PNG：C016 在证据桌后开册，C017 押解村民，C018 两侧武装压场。
+- `E01_R008` -> `01/assets/reference-frames/r008e01.png`，4096x2304 PNG：C017 搬粮/推车，C018 门框和车道两侧封路，前景祖牌盒与手印锁定。
+- `E01_R009` -> `01/assets/reference-frames/r009e01.png`，4096x2304 PNG：延续 R008 门槛轴线，粮车远去后保留空门槛、祖牌盒、虫蜡手印和 C018 远处封锁。
+
+### QC 状态
+
+- 通过：五张 canonical 均为 16:9、4096x2304、PNG、无 alpha。
+- 通过：角色职责未互换，C016/C017/C018/C025 四类身份在画面中可区分。
+- 通过：R008/R009 保持同一门槛轴线、同一祖牌盒、同一虫蜡手印和同一泥地车辙方向。
+- 待用户确认：R005 左侧 C018 靠近仓口/粮袋墙边缘，需确认不会被误读成靠台阶或粮袋制造身高差。
 
 ## SC002 角色一致性与身高差用户退回 / 2026-06-11
 
