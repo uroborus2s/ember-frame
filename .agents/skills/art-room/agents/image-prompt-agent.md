@@ -47,6 +47,18 @@ tool-neutral image prompts for background Codex threads.
   reference frames and shot overrides, require 16:9 scene composition with
   foreground, midground, and background; do not ask for transparent or isolated
   card backgrounds.
+- For scene-context location cards, establishing plates, video reference frames,
+  and shot overrides that are wide, distant, or group-heavy, carry the
+  `scene_information_budget` into `model_visible_prompt` and `copy_ready`.
+  State that the image is not a character sheet, unit showcase, architecture
+  inventory, weapon catalog, or emblem proof sheet. Limit high detail to 3-5
+  elements; describe distant subjects as grouped silhouettes and masses; use
+  atmosphere and depth to simplify small forms.
+- Wide scene negative prompts must reject equal-detail rendering, over-detailed
+  distant figures, granular crowd texture, particleized stone, noisy
+  micro-detail, AI speckle, smoke pretending to be architectural detail, sharp
+  individual distant miniatures, full-frame ultra-detail, cluttered battlefield
+  or city texture, and visual information overload.
 - Mark assets that require a prior reference image or cannot be generated safely.
 - Keep `output_path` pointed at the final confirmed asset location. If a prompt
   may produce multiple candidates, state that retained non-final candidates must

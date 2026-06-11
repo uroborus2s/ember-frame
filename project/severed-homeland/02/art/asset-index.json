@@ -4,7 +4,7 @@
   "episode_id": "02",
   "scope": "episode_art_assets",
   "approval_status": "pending_user_art_approval",
-  "image_generation_status": "not_started_pending_user_approval",
+  "image_generation_status": "partial_single_shot_generation_2026-06-10",
   "counts": {
     "style": 0,
     "character": 8,
@@ -3780,8 +3780,8 @@
         "SC002-SH002",
         "FLF2V"
       ],
-      "approval_status": "pending_user_art_approval",
-      "generation_status": "not_started_pending_user_approval",
+      "approval_status": "user_requested_single_shot_generation_2026-06-10",
+      "generation_status": "generated_canonical_written_2026-06-10",
       "design_summary": "沈维桑；奴兵推来押车，车上已经有几个被绑的村民；残阳坳村口",
       "generation_method": "FLF2V",
       "precision_control": true,
@@ -3808,7 +3808,7 @@
       "dependency_reason": "Reference frame depends on approved character, location, prop/costume, and style assets that appear in the same shot.",
       "priority": "medium",
       "file_path": "02/assets/reference-frames/r010e02.png",
-      "status": "blocked",
+      "status": "generated_qc_passed_single_shot_2026-06-10",
       "prompt_id": "PROMPT_E02_R010",
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -3845,18 +3845,26 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists_png",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none_qc_passed"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
-      }
+        "existing_file_status": "exists_png",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none_qc_passed",
+        "landscape_regeneration_required": false
+      },
+      "qc_status": "passed_manual_visual_qc_2026-06-10",
+      "history_files": [
+        "02/assets/reference-frames/history/r010e02.v001.png"
+      ],
+      "imagegen_task_run": "2026-06-10-sc002-sh002-imagegen-task",
+      "generated_original_source": "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/generated-original.png",
+      "existing_file_dimensions": "3840x2160"
     },
     {
       "asset_id": "E02_R011",

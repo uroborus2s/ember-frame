@@ -1,0 +1,43 @@
+{
+  "version": "art-room-e12-shot-sc002-sh003-style-continuity-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "12",
+  "scope": "targeted_single_shot_reference_frame",
+  "global_style": "hyper-realistic cinematic low-magic Eastern epic, 16:9 landscape widescreen drama",
+  "shot_style_rules": [
+    "Real body weight, contact reaction, and physical hand pressure must be visible.",
+    "Low magic appears as local worn gold-red traces in material cracks only.",
+    "The frame must avoid plastic CGI, over-smoothed faces, modern clothing, UI, visible dialogue text, and random readable glyphs.",
+    "The shot is a video reference frame with scene context, alpha forbidden, and no neutral card background."
+  ],
+  "palette": {
+    "dominant": [
+      "black stone",
+      "snow white",
+      "ice blue",
+      "old white stone"
+    ],
+    "accent": [
+      "dry blood dark red",
+      "worn vermilion",
+      "restrained old gold-red route traces",
+      "mist purple and cold grey sleeves",
+      "grey-blue Lu Qingli jacket",
+      "bone-white insect wax"
+    ],
+    "forbidden": [
+      "uniform grey-black haze",
+      "full-frame blue filter",
+      "gold magic glow",
+      "clean palace palette",
+      "modern medical white"
+    ]
+  },
+  "qc_rejection_rules": [
+    "Reject if the alliance fragment is not the primary readable subject.",
+    "Reject if generated text, UI, watermark, subtitle, or invented emblem appears.",
+    "Reject if the frame becomes a generic character poster or generic snowy ruin.",
+    "Reject if foreground, midground, and background are not separated.",
+    "Reject if low-magic traces become large spells, beams, or clean sacred glow."
+  ]
+}

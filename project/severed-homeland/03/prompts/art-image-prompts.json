@@ -1,0 +1,193 @@
+{
+  "version": "episode03-targeted-sc003-sh001-art-image-prompts-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "03",
+  "approval_status": "targeted_user_requested_generation",
+  "image_generation_status": "complete_qc_passed_targeted",
+  "prompt_contract": {
+    "production_metadata_separated_from_model_visible_prompt": true,
+    "model_visible_prompt_sections": [
+      "visible_goal",
+      "style_quality",
+      "subject_content",
+      "composition_motion",
+      "visible_continuity",
+      "negative_prompt"
+    ],
+    "copy_ready_fields_present": true,
+    "visible_prompt_must_not_include_asset_ids_paths_or_usage": true
+  },
+  "prompts": [
+    {
+      "prompt_id": "PROMPT_E03_R021",
+      "asset_id": "E03_R021",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "output_path": "03/assets/reference-frames/r021e03.png",
+      "production_metadata": {
+        "asset_id": "E03_R021",
+        "asset_subtype": "reference_frame",
+        "output_file": "r021e03.png",
+        "prompt_id": "PROMPT_E03_R021",
+        "display_name": "SC003-SH001 旧井废口首帧参考帧",
+        "source_refs": [
+          "03/script/final-script.md:L70-L87",
+          "03/shots/shot-list.json#SC003-SH001",
+          "03/storyboard/storyboard-plan.md#SC003-SH001",
+          "03/production/generation-plan.json#03-sc003-sh001"
+        ],
+        "continuity_refs": [
+          "LOC_OLD_WELL_RUINED_MOUTH",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LUO_QINGHE",
+          "CH_SUMING_SLAVE_SOLDIER",
+          "PROP_HALF_RELAY_TOKEN",
+          "FX_FIRE_SMOKE_ASH"
+        ],
+        "usage": [
+          "SC003-SH001",
+          "FLF2V",
+          "first_frame_reference"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "asset_type": "character",
+            "asset_subtype": "character_master_card",
+            "output_path": "assets/characters/c001m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_c001_shen_weisang.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "identity_body_costume_lock",
+            "lock_usage": "Lock Shen Weisang's hunter silhouette, costume palette, route pack, bow, and left-shoulder injury."
+          },
+          {
+            "asset_id": "C002",
+            "display_name": "晏南枝全剧主角身份卡",
+            "asset_type": "character",
+            "asset_subtype": "character_master_card",
+            "output_path": "assets/characters/c002m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_c002_yan_nanzhi.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "identity_body_costume_lock",
+            "lock_usage": "Lock Yan Nanzhi's fugitive robe, red-thread hair, restrained noble posture, and pale readable face/hands."
+          },
+          {
+            "asset_id": "C006",
+            "display_name": "罗青禾医者母亲身份卡",
+            "asset_type": "character",
+            "asset_subtype": "character_master_card",
+            "output_path": "assets/characters/c006m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_c006_luo_qinghe.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "inherited_trace_logic_only",
+            "lock_usage": "Use Luo Qinghe's herb/old-relay trace logic for the wall mark; do not show her alive in the present frame."
+          },
+          {
+            "asset_id": "C017",
+            "display_name": "混血奴兵清污军户模板",
+            "asset_type": "character",
+            "asset_subtype": "character_master_card",
+            "output_path": "assets/characters/c017m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_c017_slave_soldier.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "pursuer_role_tier_lock",
+            "lock_usage": "Lock the pursuer as a hybrid slave soldier with institutional servitude cues, not a pure insect soldier or official."
+          },
+          {
+            "asset_id": "L001",
+            "display_name": "残阳坳村落与药屋主场景卡",
+            "asset_type": "location",
+            "asset_subtype": "location_master_scene_card",
+            "output_path": "assets/locations/l001m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_l001_canyangao_well_space.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "old_well_fire_aftermath_geography_lock",
+            "lock_usage": "Lock the Canyangao old well, fire-aftermath village material, and old white-stone relay geography."
+          },
+          {
+            "asset_id": "P001",
+            "display_name": "半枚日月驿令道具卡",
+            "asset_type": "prop",
+            "asset_subtype": "prop_master_card",
+            "output_path": "assets/props/p001m.png",
+            "task_reference_path": "03/assets/temp/sc003-sh001-refpack/ref_p001_half_relay_token.jpg",
+            "reference_scope": "series_master_asset",
+            "role": "prop_scale_material_lock",
+            "lock_usage": "Lock the token as a worn half sun-moon relay token that triggers only broken old-route glints."
+          }
+        ],
+        "reference_input_policy": "Reference inputs are production metadata for the generator operator. In an imagegen-task, attach the compressed task references as images when available, but do not copy ids, paths, source refs, or usage notes into the model-visible prompt.",
+        "prompt_revision": "e03-r021-sc003-sh001-targeted-v1-2026-06-10",
+        "approval_status": "targeted_user_requested_generation",
+        "generation_status": "complete_qc_passed_targeted_2026-06-10",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must move to sibling history/ with .v001 suffixes.",
+        "asset_contract_status": {
+          "contract_class": "video_frame_reference",
+          "target_aspect_ratio": "16:9",
+          "target_minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+          "existing_file_status": "exists",
+          "existing_file_dimensions": "1672x941",
+          "existing_file_sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5",
+          "action_required": "none_for_targeted_prompt_generation; optional upscale before final video production"
+        },
+        "source_thread_id": "019eb194-896d-7470-990c-adfd64279d66",
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb194-896d-7470-990c-adfd64279d66/ig_08c3efa24d8c6ec1016a295d5f05e88191b709d231d6b079f3.png",
+        "actual_file_resolution": "1672x941",
+        "history_files": [
+          "03/assets/reference-frames/history/r021e03.v001-main-thread-alt-20260610.png"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建一张16:9横屏电影参考帧：午后火后旧井废口，两个逃亡者冲到旧井另一侧，旧井、白石井壁、隐藏暗门线索和追捕压力在同一画面里读清楚。",
+        "style_quality": "超写实电影级低魔东方史诗；真实镜头高度、真实身体重量、自然接触反作用。材质要可触摸：旧白石、焦木、草绳、草药灰、旧皮革、粗麻布、烟灰、磨损金属和半枚旧令。火光与烟灰压低对比，但局部暖光必须勾出人物轮廓；画面是午后火场余烬中的暖土褐、旧木褐、草药青、烟灰与旧白石，不要变成全灰黑。",
+        "subject_content": "主体是旧井废口和逃亡动作：年轻山路猎户带着贵族流亡少女冲到火后旧井另一侧。猎户是精瘦少年，灰褐猎衣、草药青内层、旧皮护腕、路线包、猎弓，左肩因旧伤略低；少女穿冷灰或雾紫流亡外袍，黑发红线束起，姿态仍有礼法训练但正在紧张奔逃。前景或近中景要能看见旧白石井壁上被草药灰遮住的刻痕，以及一只手或半枚旧令靠近石缝的动作。罗青禾不作为当前活人出现，只通过草药灰刻痕、医者遗留痕迹和旧井记忆被继承。远处井边有一个混血奴兵追到压力位置，蜡灰青短军袍、骨白腕绑、低位金钱马尾或抓捕器具可辨，但只是背景压力，不抢主体。",
+        "composition_motion": "16:9横屏远景建立镜头，平视贴近人物并有慢推感。前景：草药灰刻痕、旧白石井沿、半枚旧令或手部动作，保持清楚但不变成特写。中景：两名逃亡者从火后旧井一侧冲入并停向另一侧，身体重心和脚步方向真实可读。背景：旧井口、井架、草绳陷阱材料、焦梁、低矮暗门 seam、烟灰和奴兵追来的方向。前景、中景、背景必须分层；大形清楚，细节克制，远处人物和废墟只做分组轮廓。",
+        "visible_continuity": "保持低魔边界：半枚旧令只能引出短促、断续、很弱的金赤残纹反光，不能发成魔法光柱，不能完整开门，不能替代人物判断。旧井空间必须能看出火后残阳坳生活遗址，不是普通奇幻洞穴。肃明奴兵必须是混血清污军户层级，不能画成纯虫族士兵、官吏或白翳。火烟只用于空间层次和压力，不能遮住人物轮廓；不要把每块石头、每缕烟和远处碎屑画成同等细节。大形清楚、细节克制、远处对象成组。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、对白文字、乱码、随机徽记、随机符号、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、全画面灰黑、主体不亮、烟雾吞掉人物、无因果大火、魔法光柱、完整发光门、罗青禾作为当前活人站在画面中、奴兵变成纯虫族怪物或白衣官吏、错误阵营服制、透明背景、孤立设定板背景。不要 equal-detail rendering across the whole frame, over-detailed distant figures, granular ash texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload."
+      },
+      "copy_ready": {
+        "positive_prompt": "创建一张16:9横屏电影参考帧：午后火后旧井废口，两个逃亡者冲到旧井另一侧，旧井、白石井壁、隐藏暗门线索和追捕压力在同一画面里读清楚。\n\n超写实电影级低魔东方史诗；真实镜头高度、真实身体重量、自然接触反作用。材质要可触摸：旧白石、焦木、草绳、草药灰、旧皮革、粗麻布、烟灰、磨损金属和半枚旧令。火光与烟灰压低对比，但局部暖光必须勾出人物轮廓；画面是午后火场余烬中的暖土褐、旧木褐、草药青、烟灰与旧白石，不要变成全灰黑。\n\n主体是旧井废口和逃亡动作：年轻山路猎户带着贵族流亡少女冲到火后旧井另一侧。猎户是精瘦少年，灰褐猎衣、草药青内层、旧皮护腕、路线包、猎弓，左肩因旧伤略低；少女穿冷灰或雾紫流亡外袍，黑发红线束起，姿态仍有礼法训练但正在紧张奔逃。前景或近中景要能看见旧白石井壁上被草药灰遮住的刻痕，以及一只手或半枚旧令靠近石缝的动作。罗青禾不作为当前活人出现，只通过草药灰刻痕、医者遗留痕迹和旧井记忆被继承。远处井边有一个混血奴兵追到压力位置，蜡灰青短军袍、骨白腕绑、低位金钱马尾或抓捕器具可辨，但只是背景压力，不抢主体。\n\n16:9横屏远景建立镜头，平视贴近人物并有慢推感。前景：草药灰刻痕、旧白石井沿、半枚旧令或手部动作，保持清楚但不变成特写。中景：两名逃亡者从火后旧井一侧冲入并停向另一侧，身体重心和脚步方向真实可读。背景：旧井口、井架、草绳陷阱材料、焦梁、低矮暗门 seam、烟灰和奴兵追来的方向。前景、中景、背景必须分层；大形清楚，细节克制，远处人物和废墟只做分组轮廓。\n\n保持低魔边界：半枚旧令只能引出短促、断续、很弱的金赤残纹反光，不能发成魔法光柱，不能完整开门，不能替代人物判断。旧井空间必须能看出火后残阳坳生活遗址，不是普通奇幻洞穴。肃明奴兵必须是混血清污军户层级，不能画成纯虫族士兵、官吏或白翳。火烟只用于空间层次和压力，不能遮住人物轮廓；不要把每块石头、每缕烟和远处碎屑画成同等细节。大形清楚、细节克制、远处对象成组。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、对白文字、乱码、随机徽记、随机符号、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、全画面灰黑、主体不亮、烟雾吞掉人物、无因果大火、魔法光柱、完整发光门、罗青禾作为当前活人站在画面中、奴兵变成纯虫族怪物或白衣官吏、错误阵营服制、透明背景、孤立设定板背景。不要 equal-detail rendering across the whole frame, over-detailed distant figures, granular ash texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload.",
+        "reference_image_instructions": "生成时只使用本次随附压缩参考图来继承角色、地点、道具和材质：猎户少年、贵族流亡少女、医者遗留痕迹、混血奴兵、残阳坳旧井空间、半枚旧令。参考图负责锁定身份、服装、道具、空间和材质，不要把资产编号、文件路径或生产备注写入画面。",
+        "chatgpt_image_prompt": "请生成一张图像。只使用本次随附压缩参考图继承角色、地点、道具和材质；不要读取文件，不要把路径、资产编号或生产备注写入画面。\n\n正向要求：\n创建一张16:9横屏电影参考帧：午后火后旧井废口，两个逃亡者冲到旧井另一侧，旧井、白石井壁、隐藏暗门线索和追捕压力在同一画面里读清楚。\n\n超写实电影级低魔东方史诗；真实镜头高度、真实身体重量、自然接触反作用。材质要可触摸：旧白石、焦木、草绳、草药灰、旧皮革、粗麻布、烟灰、磨损金属和半枚旧令。火光与烟灰压低对比，但局部暖光必须勾出人物轮廓；画面是午后火场余烬中的暖土褐、旧木褐、草药青、烟灰与旧白石，不要变成全灰黑。\n\n主体是旧井废口和逃亡动作：年轻山路猎户带着贵族流亡少女冲到火后旧井另一侧。猎户是精瘦少年，灰褐猎衣、草药青内层、旧皮护腕、路线包、猎弓，左肩因旧伤略低；少女穿冷灰或雾紫流亡外袍，黑发红线束起，姿态仍有礼法训练但正在紧张奔逃。前景或近中景要能看见旧白石井壁上被草药灰遮住的刻痕，以及一只手或半枚旧令靠近石缝的动作。罗青禾不作为当前活人出现，只通过草药灰刻痕、医者遗留痕迹和旧井记忆被继承。远处井边有一个混血奴兵追到压力位置，蜡灰青短军袍、骨白腕绑、低位金钱马尾或抓捕器具可辨，但只是背景压力，不抢主体。\n\n16:9横屏远景建立镜头，平视贴近人物并有慢推感。前景：草药灰刻痕、旧白石井沿、半枚旧令或手部动作，保持清楚但不变成特写。中景：两名逃亡者从火后旧井一侧冲入并停向另一侧，身体重心和脚步方向真实可读。背景：旧井口、井架、草绳陷阱材料、焦梁、低矮暗门 seam、烟灰和奴兵追来的方向。前景、中景、背景必须分层；大形清楚，细节克制，远处人物和废墟只做分组轮廓。\n\n保持低魔边界：半枚旧令只能引出短促、断续、很弱的金赤残纹反光，不能发成魔法光柱，不能完整开门，不能替代人物判断。旧井空间必须能看出火后残阳坳生活遗址，不是普通奇幻洞穴。肃明奴兵必须是混血清污军户层级，不能画成纯虫族士兵、官吏或白翳。火烟只用于空间层次和压力，不能遮住人物轮廓；不要把每块石头、每缕烟和远处碎屑画成同等细节。大形清楚、细节克制、远处对象成组。\n\n反向要求：\n不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、对白文字、乱码、随机徽记、随机符号、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、全画面灰黑、主体不亮、烟雾吞掉人物、无因果大火、魔法光柱、完整发光门、罗青禾作为当前活人站在画面中、奴兵变成纯虫族怪物或白衣官吏、错误阵营服制、透明背景、孤立设定板背景。不要 equal-detail rendering across the whole frame, over-detailed distant figures, granular ash texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload.",
+        "gemini_image_prompt": "生成一张图像。只使用本次随附压缩参考图继承角色、地点、道具和材质；不要读取文件，不要把路径、资产编号或生产备注写入画面。\n\n画面要求：\n创建一张16:9横屏电影参考帧：午后火后旧井废口，两个逃亡者冲到旧井另一侧，旧井、白石井壁、隐藏暗门线索和追捕压力在同一画面里读清楚。\n\n超写实电影级低魔东方史诗；真实镜头高度、真实身体重量、自然接触反作用。材质要可触摸：旧白石、焦木、草绳、草药灰、旧皮革、粗麻布、烟灰、磨损金属和半枚旧令。火光与烟灰压低对比，但局部暖光必须勾出人物轮廓；画面是午后火场余烬中的暖土褐、旧木褐、草药青、烟灰与旧白石，不要变成全灰黑。\n\n主体是旧井废口和逃亡动作：年轻山路猎户带着贵族流亡少女冲到火后旧井另一侧。猎户是精瘦少年，灰褐猎衣、草药青内层、旧皮护腕、路线包、猎弓，左肩因旧伤略低；少女穿冷灰或雾紫流亡外袍，黑发红线束起，姿态仍有礼法训练但正在紧张奔逃。前景或近中景要能看见旧白石井壁上被草药灰遮住的刻痕，以及一只手或半枚旧令靠近石缝的动作。罗青禾不作为当前活人出现，只通过草药灰刻痕、医者遗留痕迹和旧井记忆被继承。远处井边有一个混血奴兵追到压力位置，蜡灰青短军袍、骨白腕绑、低位金钱马尾或抓捕器具可辨，但只是背景压力，不抢主体。\n\n16:9横屏远景建立镜头，平视贴近人物并有慢推感。前景：草药灰刻痕、旧白石井沿、半枚旧令或手部动作，保持清楚但不变成特写。中景：两名逃亡者从火后旧井一侧冲入并停向另一侧，身体重心和脚步方向真实可读。背景：旧井口、井架、草绳陷阱材料、焦梁、低矮暗门 seam、烟灰和奴兵追来的方向。前景、中景、背景必须分层；大形清楚，细节克制，远处人物和废墟只做分组轮廓。\n\n保持低魔边界：半枚旧令只能引出短促、断续、很弱的金赤残纹反光，不能发成魔法光柱，不能完整开门，不能替代人物判断。旧井空间必须能看出火后残阳坳生活遗址，不是普通奇幻洞穴。肃明奴兵必须是混血清污军户层级，不能画成纯虫族士兵、官吏或白翳。火烟只用于空间层次和压力，不能遮住人物轮廓；不要把每块石头、每缕烟和远处碎屑画成同等细节。大形清楚、细节克制、远处对象成组。\n\n避免：\n不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、对白文字、乱码、随机徽记、随机符号、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、全画面灰黑、主体不亮、烟雾吞掉人物、无因果大火、魔法光柱、完整发光门、罗青禾作为当前活人站在画面中、奴兵变成纯虫族怪物或白衣官吏、错误阵营服制、透明背景、孤立设定板背景。不要 equal-detail rendering across the whole frame, over-detailed distant figures, granular ash texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload."
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather/time, and fire-smoke state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "herb-ash-covered carved mark, old white stone edge, half relay token or hand beat",
+          "midground": "Shen Weisang and Yan Nanzhi running to the far side of the ruined old well",
+          "background": "ruined old-well mouth, well frame, low hidden-door seam, controlled fire-smoke pressure, distant slave soldier"
+        },
+        "qc_checks": [
+          "16:9 canvas",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, time of day, screen direction, and action state are readable",
+          "Shen Weisang and Yan Nanzhi remain readable without becoming close-up beauty portraits",
+          "Luo Qinghe appears only through inherited herb-ash mark evidence, not as a present living figure",
+          "distant repeated forms stay grouped and non-granular",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ],
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "minimum_resolution_notes": "3840x2160 preferred; the built-in image generator may return a lower 16:9 size and should be recorded honestly before downstream production scaling.",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      }
+    }
+  ]
+}

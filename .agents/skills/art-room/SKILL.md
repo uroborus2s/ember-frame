@@ -269,6 +269,78 @@ shot is explicitly a compositing element.
 QC must reject video reference frames that do not clearly separate foreground,
 midground, and background.
 
+## Scene Image Information Budget Bible
+
+Scene-context location cards, establishing plates, video reference frames, and
+shot overrides must control visual information before image generation starts.
+Wide shots and distant scenes fail when every soldier, banner, creature, wall
+block, weapon, and background object is treated as equally important. The result
+is particleized stone, granular crowd texture, noisy micro-detail, soft mush, or
+AI speckle.
+
+For distant establishing shots, epic wide shots, battlefields, cities, crowd
+scenes, fortress scenes, mountain passes, large interiors, and any scene with
+many repeated objects, Art Room must prioritize only three functions:
+
+```text
+large readable shapes
+lighting and atmosphere
+clear silhouettes and scale
+```
+
+These shots must not try to make every small object readable. They are not
+character sheets, unit showcases, architecture inventories, weapon catalogs, or
+emblem proof sheets.
+
+Before prompt generation, define a `scene_information_budget` for every
+wide/group-heavy scene asset:
+
+```text
+detail_priority:
+  highest_detail: only 3-5 elements, such as the central gate, main road,
+    nearest banners, hero silhouette, or largest creatures
+  medium_detail: important midground masses, readable light sources, major flags
+  low_detail: distant soldiers, wall guards, background towers, far terrain
+  impression_only: distant crowds, arrows, tiny weapons, parapet figures,
+    secondary banners, far vehicles or animals
+distance_simplification:
+  use grouped silhouettes, massing, haze, smoke, snow, rain, dust, fog, and
+  atmospheric perspective to simplify distant forms
+forbidden_detail_behavior:
+  no equal-detail rendering across the whole frame
+  no over-detailed distant figures
+  no full-frame ultra-detail
+  no visual information overload
+```
+
+The prompt rule is:
+
+```text
+big shapes clear, details restrained, distant subjects grouped,
+only a few nearby or central elements finely rendered
+```
+
+For wide scene prompts, include negative constraints against particleization and
+information overload:
+
+```text
+no equal-detail rendering across the whole frame,
+no over-detailed distant soldiers or crowd members,
+no granular crowd texture,
+no particleized stone,
+no noisy micro-detail,
+no AI speckle,
+no smoke pretending to be architectural detail,
+no distant objects rendered as sharp individual miniatures,
+no full-frame ultra-detail,
+no cluttered battlefield or city texture,
+no visual information overload.
+```
+
+QC must reject any wide scene frame where distant repeated forms become noisy
+particles, architecture becomes fake micro-texture, smoke is used as substitute
+structure, or the whole frame receives the same level of detail.
+
 ## Asset Versioning And History
 
 Generated art assets do not use version folders. Do not create directories such

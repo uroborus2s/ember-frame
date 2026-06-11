@@ -1,0 +1,919 @@
+{
+  "version": "art-room-e12-targeted-shot-prompts-v2-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "12",
+  "prompts": [
+    {
+      "production_metadata": {
+        "asset_id": "R12_SC002_SH003",
+        "asset_subtype": "reference_frame",
+        "output_file": "sc002-sh003.png",
+        "output_path": "12/assets/reference-frames/sc002-sh003.png",
+        "prompt_id": "PROMPT_R12_SC002_SH003",
+        "source_refs": [
+          "12/script/final-script.md:L50-L95",
+          "12/shots/shot-list.json#SC002-SH003",
+          "12/storyboard/storyboard-plan.md#SC002-SH003",
+          "12/director/camera-plan.md#SC002"
+        ],
+        "continuity_refs": [
+          "LOC_BROKEN_TOWER_STEPS",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LU_QINGLI",
+          "CH_LU_MI",
+          "CH_BAI_YI",
+          "PROP_BLOOD_RECORD",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_ALLIANCE_FRAGMENT",
+          "FX_SNOW_COLD_WIND"
+        ],
+        "usage": [
+          "SC002-SH003",
+          "reference_image_still",
+          "video_generation_reference_frame",
+          "director_room_prompt_refresh"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "L011",
+            "display_name": "坍塌烽燧季终逃亡场景卡",
+            "output_path": "assets/locations/l011m.png",
+            "role": "location_and_spatial_lock"
+          },
+          {
+            "asset_id": "P007",
+            "display_name": "月下盟书残页与多族印记道具卡",
+            "output_path": "assets/props/p007m.png",
+            "role": "primary_prop_lock"
+          },
+          {
+            "asset_id": "P002",
+            "display_name": "日月血牒与月白玉片道具卡",
+            "output_path": "assets/props/p002m.png",
+            "role": "secondary_prop_lock"
+          },
+          {
+            "asset_id": "P004",
+            "display_name": "虫蜡针与清明香追踪道具卡",
+            "output_path": "assets/props/p004m.png",
+            "role": "opposition_prop_lock"
+          },
+          {
+            "asset_id": "C003",
+            "display_name": "陆青砾墙下混裔身份卡",
+            "output_path": "assets/characters/c003m.png",
+            "role": "midground_reaction_identity_lock"
+          },
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "output_path": "assets/characters/c001m.png",
+            "role": "midground_hand_and_body_lock"
+          },
+          {
+            "asset_id": "C002",
+            "display_name": "晏南枝全剧主角身份卡",
+            "output_path": "assets/characters/c002m.png",
+            "role": "blood_record_hand_and_background_silhouette_lock"
+          },
+          {
+            "asset_id": "C007",
+            "display_name": "白翳清明院监察官身份卡",
+            "output_path": "assets/characters/c007m.png",
+            "role": "insect_wax_needle_owner_lock"
+          },
+          {
+            "asset_id": "C010",
+            "display_name": "鹿弥霜蹄鹿族萨满身份卡",
+            "output_path": "assets/characters/c010m.png",
+            "role": "background_wounded_rescue_context_lock"
+          },
+          {
+            "asset_id": "F003",
+            "display_name": "核心材质触感板",
+            "output_path": "assets/style/f003m.png",
+            "role": "material_texture_lock"
+          }
+        ],
+        "reference_input_policy": "Reference inputs are production metadata for the image operator. Do not copy local paths, source refs, or asset ids into the model-visible prompt body.",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001 suffixes.",
+        "generation_status": "complete_qc_passed_with_limitations_2026-06-10",
+        "qc_status": "passed_with_limitations_2026-06-10",
+        "source_thread_id": "019eb190-a8fe-7471-9a9c-e7b6b02e6266",
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb190-a8fe-7471-9a9c-e7b6b02e6266/ig_0cba57cc2625a03a016a295c64c06c81919fbe7d29d1af0cf2.png",
+        "source_generated_dimensions": "1672x941",
+        "canonical_dimensions": "3840x2160",
+        "final_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
+        "history_files": [
+          "12/assets/reference-frames/history/sc002-sh003.v001.png",
+          "12/assets/reference-frames/history/sc002-sh003.v002.png"
+        ],
+        "asset_contract_status": {
+          "contract_class": "video_frame_reference",
+          "target_aspect_ratio": "16:9",
+          "target_minimum_resolution": "3840x2160",
+          "existing_file_status": "exists",
+          "existing_file_dimensions": "3840x2160",
+          "existing_file_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
+          "qc_status": "passed_with_limitations_2026-06-10",
+          "checked_at": "2026-06-10",
+          "limitation": "Canonical was upsampled from a 1672x941 isolated imagegen-task source; local image reference attachments were not available in the isolated worker."
+        }
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建一张 16:9 横屏电影参考帧：断塔石阶上的盟书残页位于前景中轴，镜头俯视近景静止锁定，让残页承载本场信息；陆青砾愣住后带着笑骂的反应只在中景可读。",
+        "style_quality": "超写实电影级低魔东方史诗，真实古代材质，真实手部压力和接触反作用。低调高反差但不全灰黑；黑石、雪白、冰青、旧白石、干血暗红、少量磨损朱赤和金赤残痕必须材质分离清楚。风雪只做冷光和体积层，不遮住主体。",
+        "subject_content": "前景是一片湿冷破损的盟书残页，卡在裂开的黑石台阶和雪泥之间，边缘撕裂、潮痕、石拓感和旧债磨损清楚；残页上只有抽象破损的多族印记痕迹和日月裂纹感，不出现可读文字或新徽章。上右方一根骨白虫蜡针斜刺向残页边角，带洁净压迫感；下左方一只白皙克制的手按住碎裂血牒残段、月白玉片和红线，暗红血线顺着裂缝流向盟书缺角。中景陆青砾被落石卡住，灰蓝短袄、陶土内层、碎陶护符和黑木通行牌可读，她先愣住又带一点笑骂；沈维桑晒黑的猎户手把短刀塞给她并准备拉人。背景只保留断塔半人高出口、落石、雪风、晏南枝和白翳的对峙压力剪影。",
+        "composition_motion": "16:9 横屏；近景俯视插入镜头，静止锁定。前景残页、血牒、虫蜡针和手部最清楚；中景人物略浅景深但身份色和动作可读；背景断塔出口和对峙剪影降低细节。画面动线从虫蜡针指向残页，再由红线和裂缝指向陆青砾与出口，形成可读路线。",
+        "visible_continuity": "这里是旧帝国烽燧残塔内的断塔石阶，不是圣殿、宫殿、普通洞穴或空雪地。盟书不是皇族圣物，而是多族共同守边的残缺承诺；血牒不是完整神器；虫蜡针是清明院制度工具，不是现代注射器。沈维桑保持山路猎户身份，陆青砾保持墙下混裔少女身份，晏南枝保持流亡皇室旁支的克制姿态，白翳保持高瘦虫族监察官的洁净压迫。",
+        "negative_prompt": "可读文字，字幕，UI，水印，随机新徽章，现代符号，完整圣徽，皇族圣物海报，魔法光柱，全屏金光，现代注射器，毒针奇观，普通雪地，圣殿，宫殿，泛白圣洁画面，角色海报，人物正脸抢主体，盟书残页不清楚，残页离开前景，陆青砾消失，沈维桑变成王者或武侠宗师，白翳变成人类白衣官员，血牒变成完整神器，全画面灰黑，雪雾糊住主体，石头粒子化，噪点微细节，塑料 CGI，过度磨皮，现代服装，漂浮慢动作，僵硬摆拍，血腥奇观"
+      },
+      "copy_ready": {
+        "positive_prompt": "创建一张 16:9 横屏电影参考帧：断塔石阶上的盟书残页位于前景中轴，镜头俯视近景静止锁定，让残页承载本场信息；陆青砾愣住后带着笑骂的反应只在中景可读。超写实电影级低魔东方史诗，真实古代材质，真实手部压力和接触反作用。低调高反差但不全灰黑；黑石、雪白、冰青、旧白石、干血暗红、少量磨损朱赤和金赤残痕必须材质分离清楚。风雪只做冷光和体积层，不遮住主体。前景是一片湿冷破损的盟书残页，卡在裂开的黑石台阶和雪泥之间，边缘撕裂、潮痕、石拓感和旧债磨损清楚；残页上只有抽象破损的多族印记痕迹和日月裂纹感，不出现可读文字或新徽章。上右方一根骨白虫蜡针斜刺向残页边角，带洁净压迫感；下左方一只白皙克制的手按住碎裂血牒残段、月白玉片和红线，暗红血线顺着裂缝流向盟书缺角。中景陆青砾被落石卡住，灰蓝短袄、陶土内层、碎陶护符和黑木通行牌可读，她先愣住又带一点笑骂；沈维桑晒黑的猎户手把短刀塞给她并准备拉人。背景只保留断塔半人高出口、落石、雪风、晏南枝和白翳的对峙压力剪影。16:9 横屏；近景俯视插入镜头，静止锁定。前景残页、血牒、虫蜡针和手部最清楚；中景人物略浅景深但身份色和动作可读；背景断塔出口和对峙剪影降低细节。画面动线从虫蜡针指向残页，再由红线和裂缝指向陆青砾与出口，形成可读路线。这里是旧帝国烽燧残塔内的断塔石阶，不是圣殿、宫殿、普通洞穴或空雪地。盟书不是皇族圣物，而是多族共同守边的残缺承诺；血牒不是完整神器；虫蜡针是清明院制度工具，不是现代注射器。沈维桑保持山路猎户身份，陆青砾保持墙下混裔少女身份，晏南枝保持流亡皇室旁支的克制姿态，白翳保持高瘦虫族监察官的洁净压迫。",
+        "negative_prompt": "可读文字，字幕，UI，水印，随机新徽章，现代符号，完整圣徽，皇族圣物海报，魔法光柱，全屏金光，现代注射器，毒针奇观，普通雪地，圣殿，宫殿，泛白圣洁画面，角色海报，人物正脸抢主体，盟书残页不清楚，残页离开前景，陆青砾消失，沈维桑变成王者或武侠宗师，白翳变成人类白衣官员，血牒变成完整神器，全画面灰黑，雪雾糊住主体，石头粒子化，噪点微细节，塑料 CGI，过度磨皮，现代服装，漂浮慢动作，僵硬摆拍，血腥奇观",
+        "chatgpt_image_prompt": "创建一张 16:9 横屏电影参考帧：断塔石阶上的盟书残页位于前景中轴，镜头俯视近景静止锁定，让残页承载本场信息；陆青砾愣住后带着笑骂的反应只在中景可读。超写实电影级低魔东方史诗，真实古代材质，真实手部压力和接触反作用。低调高反差但不全灰黑；黑石、雪白、冰青、旧白石、干血暗红、少量磨损朱赤和金赤残痕必须材质分离清楚。风雪只做冷光和体积层，不遮住主体。前景是一片湿冷破损的盟书残页，卡在裂开的黑石台阶和雪泥之间，边缘撕裂、潮痕、石拓感和旧债磨损清楚；残页上只有抽象破损的多族印记痕迹和日月裂纹感，不出现可读文字或新徽章。上右方一根骨白虫蜡针斜刺向残页边角，带洁净压迫感；下左方一只白皙克制的手按住碎裂血牒残段、月白玉片和红线，暗红血线顺着裂缝流向盟书缺角。中景陆青砾被落石卡住，灰蓝短袄、陶土内层、碎陶护符和黑木通行牌可读，她先愣住又带一点笑骂；沈维桑晒黑的猎户手把短刀塞给她并准备拉人。背景只保留断塔半人高出口、落石、雪风、晏南枝和白翳的对峙压力剪影。16:9 横屏；近景俯视插入镜头，静止锁定。前景残页、血牒、虫蜡针和手部最清楚；中景人物略浅景深但身份色和动作可读；背景断塔出口和对峙剪影降低细节。画面动线从虫蜡针指向残页，再由红线和裂缝指向陆青砾与出口，形成可读路线。这里是旧帝国烽燧残塔内的断塔石阶，不是圣殿、宫殿、普通洞穴或空雪地。盟书不是皇族圣物，而是多族共同守边的残缺承诺；血牒不是完整神器；虫蜡针是清明院制度工具，不是现代注射器。沈维桑保持山路猎户身份，陆青砾保持墙下混裔少女身份，晏南枝保持流亡皇室旁支的克制姿态，白翳保持高瘦虫族监察官的洁净压迫。负面提示：可读文字，字幕，UI，水印，随机新徽章，现代符号，完整圣徽，皇族圣物海报，魔法光柱，全屏金光，现代注射器，毒针奇观，普通雪地，圣殿，宫殿，泛白圣洁画面，角色海报，人物正脸抢主体，盟书残页不清楚，残页离开前景，陆青砾消失，沈维桑变成王者或武侠宗师，白翳变成人类白衣官员，血牒变成完整神器，全画面灰黑，雪雾糊住主体，石头粒子化，噪点微细节，塑料 CGI，过度磨皮，现代服装，漂浮慢动作，僵硬摆拍，血腥奇观",
+        "gemini_image_prompt": "Create one 16:9 cinematic reference frame. Overhead close insert, static locked camera: the broken alliance fragment sits near the foreground center on cracked black-stone tower steps in snow-mud. Hyper-realistic cinematic low-magic Eastern epic; real ancient materials, real hand pressure and contact reaction; low-key high contrast, not uniformly grey-black. Keep black stone, snow white, ice blue, old white stone, dry blood dark red, worn vermilion, and restrained old gold-red traces physically separated. The alliance fragment is wet, torn, partly like old parchment and partly like a stone rubbing, with abstract damaged multi-clan seal traces and sun-moon crack marks only, no readable text and no newly invented emblem. From upper right, a slender bone-white insect-wax needle points toward the fragment edge. From lower left, a pale controlled hand presses a damaged blood-record strip, moon-white jade shard, and red thread; dark red blood line follows the crack toward the missing corner. Midground: Lu Qingli is trapped by fallen black stone, wearing a grey-blue short jacket, clay inner layer, broken pottery charm, and black wood pass; she is stunned then almost laughing. Shen Weisang's sun-browned hunter hand gives her a short knife and prepares to pull her out. Background: half-height broken tower exit, falling stones, snow wind, Yan Nanzhi and Bai Yi as pressure silhouettes. Keep foreground sharp, midground readable with shallow depth, background simplified. Negative: readable text, subtitles, UI, watermark, random emblem, modern symbols, complete holy emblem, royal sacred poster, magic beams, full gold glow, modern syringe, generic snowfield, temple, palace, character poster, alliance fragment unclear, full grey-black haze, plastic CGI, over-smoothed faces, modern clothing, stiff posing, gore spectacle."
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic close insert frame",
+          "overhead close shot",
+          "static locked camera",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "alliance fragment, snow-mud cracked step, insect-wax needle, blood-record strip, moon-white jade shard, red thread, and hands",
+          "midground": "Lu Qingli trapped by stone, Shen Weisang handing a short knife and pulling her out",
+          "background": "broken tower half-height exit, falling stones, snow wind, Yan Nanzhi and Bai Yi pressure silhouettes"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "minimum 3840x2160 after canonical export",
+          "foreground, midground, and background are visibly separated",
+          "alliance fragment remains the primary subject",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "low-magic traces stay local and material-bound"
+        ]
+      }
+    },
+    {
+      "production_metadata": {
+        "asset_id": "E12_R025",
+        "asset_subtype": "reference_frame",
+        "output_file": "r025e12.png",
+        "output_path": "12/assets/reference-frames/r025e12.png",
+        "prompt_id": "PROMPT_E12_R025",
+        "shot_id": "SC003-SH003",
+        "source_refs": [
+          "12/script/final-script.md:L96-L145",
+          "12/shots/shot-list.json#SC003-SH003",
+          "12/storyboard/storyboard-plan.md#SC003-SH003",
+          "12/director/camera-plan.md#SC003"
+        ],
+        "continuity_refs": [
+          "LOC_SNOW_SLOPE_ESCAPE_LINE",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LU_QINGLI",
+          "CH_LU_MI",
+          "CH_BAI_YI",
+          "PROP_BLOOD_RECORD",
+          "PROP_BROKEN_POTTERY_CHARM",
+          "PROP_BLOOD_SALT_POUCH",
+          "PROP_MULTI_CLAN_MARKS",
+          "PROP_ALLIANCE_FRAGMENT",
+          "FX_SNOW_COLD_WIND",
+          "FX_GOLD_RED_RELAY_LIGHT"
+        ],
+        "usage": [
+          "SC003-SH003",
+          "reference_image_still",
+          "video_generation_reference_frame",
+          "director_room_prompt_refresh"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "L011",
+            "display_name": "坍塌烽燧季终逃亡场景卡",
+            "output_path": "assets/locations/l011m.png",
+            "role": "snow_slope_escape_location_lock"
+          },
+          {
+            "asset_id": "P006",
+            "display_name": "鹿弥骨笛与血盐袋道具卡",
+            "output_path": "assets/props/p006m.png",
+            "role": "primary_prop_lock"
+          },
+          {
+            "asset_id": "P012",
+            "display_name": "墙下黑市通行牌与碎陶护符道具卡",
+            "output_path": "assets/props/p012m.png",
+            "role": "broken_pottery_charm_lock"
+          },
+          {
+            "asset_id": "P007",
+            "display_name": "月下盟书残页与多族印记道具卡",
+            "output_path": "assets/props/p007m.png",
+            "role": "alliance_fragment_lock"
+          },
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "output_path": "assets/characters/c001m.png",
+            "role": "midground_rescue_action_lock"
+          },
+          {
+            "asset_id": "C003",
+            "display_name": "陆青砾墙下混裔身份卡",
+            "output_path": "assets/characters/c003m.png",
+            "role": "midground_escape_identity_lock"
+          },
+          {
+            "asset_id": "C010",
+            "display_name": "鹿弥霜蹄鹿族萨满身份卡",
+            "output_path": "assets/characters/c010m.png",
+            "role": "prop_owner_context_lock"
+          },
+          {
+            "asset_id": "C007",
+            "display_name": "白翳清明院监察官身份卡",
+            "output_path": "assets/characters/c007m.png",
+            "role": "background_pursuit_pressure_lock"
+          }
+        ],
+        "reference_input_policy": "Reference inputs are production metadata for the image operator. Do not copy local paths, source refs, or asset ids into the model-visible prompt body.",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001 suffixes.",
+        "generation_status": "generated",
+        "qc_status": "qc_passed"
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建一张 16:9 横屏电影参考帧：俯视近景、静止锁定，前景中轴是一只暗红矿盐袋，旁边落着雪地药草袋，让道具承担鹿弥、北境迁徙和救援线索。",
+        "style_quality": "超写实电影级低魔东方史诗，真实古代材质，真实重量和接触反作用。冷深河青、湿木褐、蒸汽白、雪雾冷光，局部有旧烽燧金赤余烬；前景道具最清楚，中景人物略虚但动作可读，背景压低细节。",
+        "subject_content": "前景是一只约十厘米长、七厘米宽的小袋，旧兽皮缝制，骨木绳结和粗麻线磨损清楚，袋口松开后露出暗红矿盐晶体，少量晶体散入湿雪和泥中。旁边的雪地药草袋刚落下，旧布包、干草药茎、青玉扣或极光绿小珠可读。碎陶护符和盟书残页一角半埋在雪泥里，只呈现抽象破损印记和日月裂痕感，不生成可读文字。",
+        "composition_motion": "16:9 横屏；近景俯视插入镜头，静止锁定。前景暗红矿盐袋、药草袋、碎陶护符和残页最清楚；中景沈维桑以暖褐山路猎户服推扶灰蓝短袄的陆青砾 toward 半人高出口，动作真实有重量；背景是断塔裂阶、落石、雪雾、半人高旧烽燧出口和白袍追兵剪影。前景、中景、背景必须清晰分层。",
+        "visible_continuity": "这里是旧帝国烽燧残塔外的雪坡逃亡线，不是普通雪地、圣殿或大灾难全景。暗红矿盐袋是北境迁徙与救援道具，不是魔法炸弹、奢华圣物或游戏装备；药草袋是实用医疗包；盟书痕迹和多族印记只能抽象破损，适合后期线控或合成。画面主题是先救活人、再带走残缺证据。",
+        "negative_prompt": "可读文字，字幕，UI，水印，现代服装，现代背包，塑料 CGI，游戏装备发光，魔法爆炸，漂浮慢动作，僵硬摆拍，产品棚拍，透明背景，圣殿，宫殿，普通空雪地，巨大灾难全景，全屏金光，随机新徽章，完整清晰徽章，过度血腥，人物正脸抢主体，前景道具不清楚，背景同等细节，石头粒子化，雪粒噪点微细节，视觉信息过载"
+      },
+      "copy_ready": {
+        "positive_prompt": "Create one 16:9 cinematic reference frame for a hyper-realistic low-magic Eastern epic drama. Close overhead locked-off insert shot centered on a crimson mineral-salt pouch on a collapsing snow slope escape route. In the foreground, a small heavy pouch about 10 cm long and 7 cm wide, made of worn animal hide, stitched with bone-and-wood knots, dark crimson mineral crystals visible at the loosened mouth, a few crystals spilled into wet snow and mud. Beside it, a snow herb bag has just landed: weathered cloth, medicinal stems, a small jade-green bead, practical rescue use. A broken pottery charm and a torn alliance fragment are partly tucked into the snow near the pouch; their marks are abstract scars and damaged emblem-like impressions, not readable writing. Hyper-realistic cinematic texture, natural body weight and real contact reaction, restrained low-magic atmosphere, cold deep river teal, wet wood brown, steam white, and faint gold-red relay embers in the snow haze. Foreground prop is sharp and tactile. Midground, partially blurred but readable, a young traveler in warm brown practical mountain clothes guides a gray-blue-clad teenage runner toward a half-height exit. Background shows fractured steps, wet snow, falling grit, a broken old beacon tower entrance now only half a person high, and a white-robed pursuer's reaching silhouette softened by snow haze. Foreground, midground, and background must be clearly separated. The mood is urgent but controlled: rescue first, evidence second.",
+        "negative_prompt": "no readable text, no subtitles, no modern clothing, no plastic CGI, no game item glow, no floating slow motion, no stiff posed tableau, no spectacle injury, no over-detailed crowd, no full-frame ultra-detail, no particleized snow or stone, no fake micro-texture, no magical explosion, no symmetrical product shot, no transparent background, no random new emblem, no watermark, no UI",
+        "chatgpt_image_prompt": "Create one 16:9 cinematic reference frame for a hyper-realistic low-magic Eastern epic drama. Close overhead locked-off insert shot centered on a crimson mineral-salt pouch on a collapsing snow slope escape route. In the foreground, a small heavy pouch about 10 cm long and 7 cm wide, made of worn animal hide, stitched with bone-and-wood knots, dark crimson mineral crystals visible at the loosened mouth, a few crystals spilled into wet snow and mud. Beside it, a snow herb bag has just landed: weathered cloth, medicinal stems, a small jade-green bead, practical rescue use. A broken pottery charm and a torn alliance fragment are partly tucked into the snow near the pouch; their marks are abstract scars and damaged emblem-like impressions, not readable writing. Hyper-realistic cinematic texture, natural body weight and real contact reaction, restrained low-magic atmosphere, cold deep river teal, wet wood brown, steam white, and faint gold-red relay embers in the snow haze. Foreground prop is sharp and tactile. Midground, partially blurred but readable, a young traveler in warm brown practical mountain clothes guides a gray-blue-clad teenage runner toward a half-height exit. Background shows fractured steps, wet snow, falling grit, a broken old beacon tower entrance now only half a person high, and a white-robed pursuer's reaching silhouette softened by snow haze. Foreground, midground, and background must be clearly separated. The mood is urgent but controlled: rescue first, evidence second. Negative prompt: no readable text, no subtitles, no modern clothing, no plastic CGI, no game item glow, no floating slow motion, no stiff posed tableau, no spectacle injury, no over-detailed crowd, no full-frame ultra-detail, no particleized snow or stone, no fake micro-texture, no magical explosion, no symmetrical product shot, no transparent background, no random new emblem, no watermark, no UI.",
+        "gemini_image_prompt": "Create a 16:9 hyper-realistic cinematic reference frame. Overhead close insert, static locked camera: a crimson mineral-salt pouch is the central foreground object on wet snow and mud at a collapsing old beacon-tower escape route. The pouch is old animal hide, about palm sized, stitched with bone-and-wood knots, open enough to show dark crimson mineral crystals spilling into snow. A weathered snow herb bag with dried medicinal stems and a jade-green bead has just landed beside it. Add a broken pottery charm and torn alliance fragment half buried in snow, with abstract damaged marks only and no readable text. Use cold deep river teal, wet wood brown, steam white, and a small amount of old gold-red ember light. Midground is readable but shallow-focus: a warm-brown mountain traveler guides a gray-blue-clad teenage runner toward a half-height exit. Background has broken steps, falling grit, snow haze, the narrow old tower entrance, and a distant white-robed pursuer silhouette. Separate foreground, midground, and background clearly. Avoid modern items, readable text, watermarks, random emblems, magic explosion, product-shot symmetry, over-detailed background, particleized stone or snow, and transparent background."
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic close insert frame",
+          "overhead close shot",
+          "static locked camera",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "crimson mineral-salt pouch, snow herb bag, broken pottery charm, torn alliance fragment, wet snow, mud, and scattered dark red crystals",
+          "midground": "Shen Weisang guiding Lu Qingli toward the half-height collapsed exit",
+          "background": "snow-slope escape line, fractured steps, falling grit, old beacon tower entrance, and distant Bai Yi pursuit silhouette"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "minimum 3840x2160 after canonical export",
+          "foreground, midground, and background are visibly separated",
+          "crimson mineral-salt pouch remains the primary subject",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "collapse remains local and readable, not a noisy disaster panorama"
+        ]
+      }
+    },
+    {
+      "production_metadata": {
+        "asset_id": "E12_R024",
+        "asset_subtype": "reference_frame",
+        "output_file": "r024e12.png",
+        "output_path": "12/assets/reference-frames/r024e12.png",
+        "prompt_id": "PROMPT_E12_R024",
+        "shot_id": "SC003-SH002",
+        "scene_id": "SC003",
+        "segment_id": "12-sc003-sh002",
+        "generation_method": "I2V",
+        "source_refs": [
+          "12/script/final-script.md:L96-L145",
+          "12/shots/shot-list.json#SC003-SH002",
+          "12/storyboard/storyboard-plan.md#SC003-SH002",
+          "12/prompts/shot-prompts-draft.json#SC003-SH002"
+        ],
+        "continuity_refs": [
+          "LOC_SNOW_SLOPE_ESCAPE_LINE",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LU_QINGLI",
+          "CH_LU_MI",
+          "CH_BAI_YI",
+          "PROP_BLOOD_RECORD",
+          "PROP_BROKEN_POTTERY_CHARM",
+          "PROP_BLOOD_SALT_POUCH",
+          "PROP_MULTI_CLAN_MARKS",
+          "PROP_ALLIANCE_FRAGMENT",
+          "FX_SNOW_COLD_WIND",
+          "FX_GOLD_RED_RELAY_LIGHT"
+        ],
+        "usage": [
+          "SC003-SH002",
+          "I2V",
+          "first_frame_reference"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "output_path": "assets/characters/c001m.png",
+            "role": "identity_body_wardrobe_lock"
+          },
+          {
+            "asset_id": "C002",
+            "display_name": "晏南枝全剧主角身份卡",
+            "output_path": "assets/characters/c002m.png",
+            "role": "supporting_identity_lock"
+          },
+          {
+            "asset_id": "C003",
+            "display_name": "陆青砾墙下混裔身份卡",
+            "output_path": "assets/characters/c003m.png",
+            "role": "supporting_identity_lock"
+          },
+          {
+            "asset_id": "C010",
+            "display_name": "鹿弥霜蹄鹿族萨满身份卡",
+            "output_path": "assets/characters/c010m.png",
+            "role": "supporting_identity_lock"
+          },
+          {
+            "asset_id": "C007",
+            "display_name": "白翳清明院监察官身份卡",
+            "output_path": "assets/characters/c007m.png",
+            "role": "antagonist_pressure_lock"
+          },
+          {
+            "asset_id": "L011",
+            "display_name": "坍塌烽燧季终逃亡场景卡",
+            "output_path": "assets/locations/l011m.png",
+            "role": "geography_material_lighting_lock"
+          },
+          {
+            "asset_id": "P002",
+            "display_name": "日月血牒与月白玉片道具卡",
+            "output_path": "assets/props/p002m.png",
+            "role": "blood_record_prop_lock"
+          },
+          {
+            "asset_id": "P006",
+            "display_name": "鹿弥骨笛与血盐袋道具卡",
+            "output_path": "assets/props/p006m.png",
+            "role": "blood_salt_herb_bag_prop_lock"
+          },
+          {
+            "asset_id": "P007",
+            "display_name": "月下盟书残页与多族印记道具卡",
+            "output_path": "assets/props/p007m.png",
+            "role": "alliance_fragment_prop_lock"
+          },
+          {
+            "asset_id": "P012",
+            "display_name": "墙下黑市通行牌与碎陶护符道具卡",
+            "output_path": "assets/props/p012m.png",
+            "role": "broken_pottery_charm_prop_lock"
+          },
+          {
+            "asset_id": "F005",
+            "display_name": "16比9横屏构图与动作因果板",
+            "output_path": "assets/style/f005m.png",
+            "role": "widescreen_action_causality_lock"
+          }
+        ],
+        "creation_order": 24,
+        "creation_phase": "reference_frames",
+        "depends_on_assets": [
+          "C001",
+          "C002",
+          "C003",
+          "C007",
+          "C010",
+          "L011",
+          "P002",
+          "P006",
+          "P007",
+          "P012",
+          "F005"
+        ],
+        "blocks_assets": [
+          "12-sc003-sh002-i2v-render"
+        ],
+        "dependency_reason": "I2V first-frame reference must inherit approved character, location, prop, and widescreen action-causality masters.",
+        "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001 suffixes.",
+        "generation_status": "generated_candidate",
+        "qc_status": "internal_qc_passed_pending_4k_contract"
+      },
+      "scene_information_budget": {
+        "detail_priority": {
+          "highest_detail": [
+            "半人高坍塌出口的轮廓",
+            "沈维桑在中轴附近低身探路的动作",
+            "前景雪泥、手部、短刀或碎陶护符袋",
+            "裂缝边的血牒/盟书残页一角"
+          ],
+          "medium_detail": [
+            "晏南枝、陆青砾、鹿弥的紧张位置关系",
+            "断塔落石、裂阶、朱赤旗布和金赤残纹余烬"
+          ],
+          "low_detail": [
+            "远处白翳的白色压迫剪影",
+            "后景暴雪和塌落烽燧轮廓"
+          ],
+          "impression_only": [
+            "细小碎石、远处雪坡纹理、风中尘雾"
+          ]
+        },
+        "distance_simplification": "Use grouped silhouettes, haze, snow, dust, and atmospheric perspective for background collapse debris and distant pressure.",
+        "forbidden_detail_behavior": [
+          "no equal-detail rendering across the whole frame",
+          "no over-detailed distant snow or debris particles",
+          "no granular snow texture",
+          "no particleized stone",
+          "no noisy micro-detail",
+          "no visual information overload"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal": "创建一张16:9电影参考帧：雪坡逃亡线里，塔顶坠落后出口只剩半人高，沈维桑在中轴附近低身确认还能钻出的窄口，空间被落石、裂阶和暴雪压缩成必须立刻逃生的中景。",
+        "style_quality": "超写实电影级低魔东方史诗，横屏宽屏剧参考帧。真实雪泥、湿木、旧石、布料、皮革、油纸、碎陶和旧金属材质；真实身体重量、呼吸、接触反作用和紧急动作。主色是深河青、湿木褐、蒸汽白，局部朱赤旗布和微弱金赤余烬只做旧帝国残痕，不做魔法光柱。画面清晰、克制、寒冷、可拍摄。",
+        "subject_content": "沈维桑是主体：十七岁精瘦山路猎户，黑色短碎发，旧猎衣，草药青内层，左肩旧伤让肩线微低，手边有短刀和路尘。前景可见雪泥、手部、短刀、碎陶护符袋或血牒油纸一角；中景显示半人高坍塌出口、裂阶、落石和沈维桑的低身动作；旁侧或后方以较低细节保留陆青砾、晏南枝、鹿弥的逃生位置关系。远处白翳只作为虫蜡白压迫剪影，不抢主体。盟书残页或血牒裂缝只露出残缺一角和抽象多族印记，不生成可读文字。",
+        "composition_motion": "中景，微低角压迫空间，手持短跟的瞬间感。沈维桑贴近横屏中轴，身体朝半人高出口压低，视线和手势指向窄口；前景是手、道具和雪泥痕迹，中景是人物动作与坍塌出口，背景是雪坡入口、断塔压力和白翳追近方向。前景、中景、背景必须分层清楚，出口高度一眼读出只够半个人钻过。",
+        "visible_continuity": "继承季终坍塌烽燧空间：断塔、裂阶、雪泥、落石、尘雾、磨损朱赤旗布、金赤残纹余烬和盟书残页。继承沈维桑的窄长少年脸、黑色短碎发、旧猎户服、左肩旧伤、短刀和真实负重体态。继承晏南枝的雾紫冷灰流亡外袍、红线束发和血牒压力；继承陆青砾的灰蓝短袄、碎陶护符和敏捷矮小身形；继承鹿弥的鹿耳、短角或骨金角饰、血盐袋和雪地药草袋；继承白翳的高瘦虫族监察官、虫蜡白官服和冷静压迫。所有符号只做残缺纹样或遮挡印记，不能随机造字，不能把血牒画成发光圣物。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、乱码文字、随机可读文字、随机徽记、完整发光徽章、魔法光柱、神圣金光、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、血腥奇观化、透明背景、孤立角色卡、过亮奇幻海报、全画面灰黑、主体不亮、出口高度不清楚、出口变成大门、人物悬浮、雪雾糊成白墙、粒子化石头、颗粒化雪噪点、过度细节覆盖全画面、远处人物过度清晰、随机额外军队、把白翳画成普通人类、把鹿弥画成普通人类、把沈维桑画成熟男或王族。"
+      },
+      "copy_ready": {
+        "positive_prompt": "生成 1 张16:9横屏电影参考帧，超写实电影级低魔东方史诗。雪坡逃亡线里，塔顶坠落后出口只剩半人高；空间被落石、裂阶、断塔尘雾和暴雪压缩成必须立刻逃生的中景。沈维桑贴近横屏中轴，十七岁精瘦山路猎户，窄长少年脸，黑色短碎发，旧猎衣和草药青内层，左肩旧伤使肩线微低；他低身确认还能钻出的窄口，手边有短刀，身体重量真实，动作紧急但可读。中景，微低角压迫空间，手持短跟的瞬间感。前景是雪泥、手部、短刀、碎陶护符袋或血牒油纸一角；中景是半人高坍塌出口、裂阶、落石和沈维桑低身动作；背景是雪坡入口、坍塌烽燧、风雪和白翳追近方向。前景、中景、背景必须分层清楚，出口高度一眼读出只够半个人钻过。旁侧或后方以较低细节保留晏南枝、陆青砾、鹿弥的逃生位置关系。晏南枝穿雾紫冷灰流亡外袍，红线束发，守着血牒压力；陆青砾矮小敏捷，灰蓝短袄，带碎陶护符；鹿弥有鹿耳、短角或骨金角饰、血盐袋和雪地药草袋。远处白翳只作为两米以上高瘦虫族监察官的虫蜡白压迫剪影，不抢主体。继承季终坍塌烽燧空间，断塔、裂阶、雪泥、落石、尘雾、磨损朱赤旗布、微弱金赤残纹余烬和盟书残页。盟书残页或血牒裂缝只露出残缺一角和抽象多族印记，不生成可读文字，不把血牒画成发光圣物。主色深河青、湿木褐、蒸汽白，寒冷克制；局部朱赤旗布和微弱金赤余烬只做旧帝国残痕，不做魔法光柱。真实雪泥、湿木、旧石、布料、皮革、油纸、碎陶和旧金属材质；清晰、可拍摄、真实身体重量、真实接触反作用。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、乱码文字、随机可读文字、随机徽记、完整发光徽章、魔法光柱、神圣金光、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、血腥奇观化、透明背景、孤立角色卡、过亮奇幻海报、全画面灰黑、主体不亮、出口高度不清楚、出口变成大门、人物悬浮、雪雾糊成白墙、粒子化石头、颗粒化雪噪点、过度细节覆盖全画面、远处人物过度清晰、随机额外军队、把白翳画成普通人类、把鹿弥画成普通人类、把沈维桑画成熟男或王族。",
+        "chatgpt_image_prompt": "任务：只根据本消息中的图片提示词生成 1 张图片。不读取文件，不写文件，不搜索，不查看项目背景，不提交 Git。只调用生图工具并返回图片。\n\n图片提示词：生成 1 张16:9横屏电影参考帧，超写实电影级低魔东方史诗。雪坡逃亡线里，塔顶坠落后出口只剩半人高；空间被落石、裂阶、断塔尘雾和暴雪压缩成必须立刻逃生的中景。沈维桑贴近横屏中轴，十七岁精瘦山路猎户，窄长少年脸，黑色短碎发，旧猎衣和草药青内层，左肩旧伤使肩线微低；他低身确认还能钻出的窄口，手边有短刀，身体重量真实，动作紧急但可读。中景，微低角压迫空间，手持短跟的瞬间感。前景是雪泥、手部、短刀、碎陶护符袋或血牒油纸一角；中景是半人高坍塌出口、裂阶、落石和沈维桑低身动作；背景是雪坡入口、坍塌烽燧、风雪和白翳追近方向。前景、中景、背景必须分层清楚，出口高度一眼读出只够半个人钻过。旁侧或后方以较低细节保留晏南枝、陆青砾、鹿弥的逃生位置关系。晏南枝穿雾紫冷灰流亡外袍，红线束发，守着血牒压力；陆青砾矮小敏捷，灰蓝短袄，带碎陶护符；鹿弥有鹿耳、短角或骨金角饰、血盐袋和雪地药草袋。远处白翳只作为两米以上高瘦虫族监察官的虫蜡白压迫剪影，不抢主体。继承季终坍塌烽燧空间，断塔、裂阶、雪泥、落石、尘雾、磨损朱赤旗布、微弱金赤残纹余烬和盟书残页。盟书残页或血牒裂缝只露出残缺一角和抽象多族印记，不生成可读文字，不把血牒画成发光圣物。主色深河青、湿木褐、蒸汽白，寒冷克制；局部朱赤旗布和微弱金赤余烬只做旧帝国残痕，不做魔法光柱。真实雪泥、湿木、旧石、布料、皮革、油纸、碎陶和旧金属材质；清晰、可拍摄、真实身体重量、真实接触反作用。\n\n负面提示：不要现代服饰、现代建筑、枪械、科幻界面、水印、字幕、乱码文字、随机可读文字、随机徽记、完整发光徽章、魔法光柱、神圣金光、塑料CG、过度磨皮、网红脸、漂浮慢动作、僵硬摆拍、血腥奇观化、透明背景、孤立角色卡、过亮奇幻海报、全画面灰黑、主体不亮、出口高度不清楚、出口变成大门、人物悬浮、雪雾糊成白墙、粒子化石头、颗粒化雪噪点、过度细节覆盖全画面、远处人物过度清晰、随机额外军队、把白翳画成普通人类、把鹿弥画成普通人类、把沈维桑画成熟男或王族。",
+        "gemini_image_prompt": "生成 1 张16:9横屏电影参考帧，雪坡逃亡线里塔顶坠落后出口只剩半人高；沈维桑在中轴附近低身确认窄口，前景有雪泥、手部、短刀、碎陶护符袋或血牒油纸一角，中景有半人高坍塌出口、裂阶、落石和沈维桑低身动作，背景有雪坡入口、坍塌烽燧、风雪和白翳追近方向。超写实电影级低魔东方史诗，真实雪泥、湿木、旧石、布料、皮革、油纸、碎陶和旧金属材质，主色深河青、湿木褐、蒸汽白，局部朱赤旗布和微弱金赤余烬。保留晏南枝、陆青砾、鹿弥的逃生位置关系；盟书残页或血牒裂缝只露残缺一角和抽象多族印记，不生成可读文字。避免现代元素、水印、字幕、随机文字、随机徽记、魔法光柱、粒子化石头、颗粒化雪噪点、出口高度不清楚、主体不亮。"
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic medium frame",
+          "micro low-angle pressure framing",
+          "handheld short-follow feeling",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "snow mud, hand or short-knife trace, broken pottery charm pouch or blood-record oil-paper corner",
+          "midground": "Shen Weisang low near the half-height collapsed exit, broken steps, falling stones, readable escape action",
+          "background": "snow-slope entrance, collapsed beacon tower pressure, wind snow, distant Bai Yi pursuit silhouette"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "minimum 3840x2160 after final video handoff upscale/regeneration",
+          "foreground, midground, and background are visibly separated",
+          "half-height exit remains the primary spatial read",
+          "Shen Weisang remains the primary subject",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "collapse remains local and readable, not a noisy disaster panorama"
+        ]
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "exists_below_4k_contract",
+        "existing_file_dimensions": "1672x941",
+        "existing_file_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
+        "action_required": "upscale_or_regenerate_4k_before_final_video_handoff",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_4k_contract"
+      },
+      "generation_result": {
+        "status": "generated_candidate_internal_qc_passed_pending_4k_contract",
+        "generated_at": "2026-06-10",
+        "generation_mode": "imagegen-task",
+        "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb18b-167e-78a3-90ed-806a0b95a82a/ig_08c07ce7bdbbf0c7016a295c42bdc88191a1d78611a7de760d.png",
+        "final_candidate_path": "12/assets/reference-frames/r024e12.png",
+        "actual_file_resolution": "1672x941",
+        "final_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
+        "notes": [
+          "Visual beat is readable: half-height collapsed exit, Shen Weisang low in the center axis, companion escape pressure, distant Bai Yi silhouette.",
+          "Built-in imagegen result is below the 3840x2160 reference-frame contract and needs 4K upscale or regeneration before final video handoff.",
+          "Alliance/blood-record marks are treated as abstract non-readable residue; precision prop/text pass remains required if close-up readability is needed."
+        ]
+      }
+    },
+    {
+      "production_metadata": {
+        "asset_id": "E12_R001",
+        "asset_subtype": "reference_frame",
+        "output_file": "r001e12.png",
+        "output_path": "12/assets/reference-frames/r001e12.png",
+        "prompt_id": "PROMPT_E12_R001_SC002_SH001_FIRST_FRAME",
+        "shot_id": "SC002-SH001",
+        "scene_id": "SC002",
+        "segment_id": "12-sc002-sh001",
+        "generation_method": "FLF2V",
+        "source_refs": [
+          "12/production/generation-plan.json#SC002-SH001",
+          "12/shots/shot-list.json#SC002-SH001",
+          "12/storyboard/storyboard-plan.md#SC002-SH001",
+          "12/script/final-script.md:L50-L95"
+        ],
+        "continuity_refs": [
+          "LOC_BROKEN_TOWER_STEPS",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LU_QINGLI",
+          "CH_LU_MI",
+          "CH_BAI_YI",
+          "PROP_BLOOD_RECORD",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_ALLIANCE_FRAGMENT",
+          "FX_SNOW_COLD_WIND"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "FLF2V",
+          "first_frame_reference"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "output_path": "assets/characters/c001m.png",
+            "role": "Shen Weisang identity, hunter wardrobe, left-shoulder strain"
+          },
+          {
+            "asset_id": "C002",
+            "display_name": "晏南枝全剧主角身份卡",
+            "output_path": "assets/characters/c002m.png",
+            "role": "Yan Nanzhi fugitive robe, red-thread hair, upright posture"
+          },
+          {
+            "asset_id": "C003",
+            "display_name": "陆青砾墙下混裔身份卡",
+            "output_path": "assets/characters/c003m.png",
+            "role": "Lu Qingli grey-blue short jacket, small survivor body, pottery charm"
+          },
+          {
+            "asset_id": "C010",
+            "display_name": "鹿弥霜蹄鹿族萨满身份卡",
+            "output_path": "assets/characters/c010m.png",
+            "role": "Lu Mi deer-clan shaman features, bone flute and wounded support"
+          },
+          {
+            "asset_id": "C007",
+            "display_name": "白翳清明院监察官身份卡",
+            "output_path": "assets/characters/c007m.png",
+            "role": "Bai Yi distant insect-wax white institutional pressure"
+          },
+          {
+            "asset_id": "L011",
+            "display_name": "坍塌烽燧季终逃亡场景卡",
+            "output_path": "assets/locations/l011m.png",
+            "role": "broken tower, cracked steps, snow, exit, collapse material lock"
+          },
+          {
+            "asset_id": "P002",
+            "display_name": "日月血牒与月白玉片道具卡",
+            "output_path": "assets/props/p002m.png",
+            "role": "old record bundle and fragile evidence behavior"
+          },
+          {
+            "asset_id": "P004",
+            "display_name": "虫蜡针与清明香追踪道具卡",
+            "output_path": "assets/props/p004m.png",
+            "role": "slender pale inspection-tool pressure"
+          },
+          {
+            "asset_id": "P007",
+            "display_name": "月下盟书残页与多族印记道具卡",
+            "output_path": "assets/props/p007m.png",
+            "role": "alliance fragment and abstract multi-clan mark behavior"
+          }
+        ],
+        "creation_order": 1,
+        "creation_phase": "reference_frames",
+        "depends_on_assets": [
+          "C001",
+          "C002",
+          "C003",
+          "C007",
+          "C010",
+          "L011",
+          "P002",
+          "P004",
+          "P007",
+          "K001",
+          "K002",
+          "K004"
+        ],
+        "blocks_assets": [
+          "12-sc002-sh001-flf2v-first-frame"
+        ],
+        "dependency_reason": "FLF2V first-frame reference must inherit approved character, broken tower location, prop, costume, and season-finale style locks.",
+        "history_policy": "Only final approved image may live at output_path; retained imagegen source is archived under sibling history/ with .v001 suffix.",
+        "generation_status": "complete_4k_upscaled_from_imagegen_candidate",
+        "qc_status": "internal_qc_passed_with_notes"
+      },
+      "scene_information_budget": {
+        "detail_priority": {
+          "highest_detail": [
+            "Lu Qingli caught at the broken stair",
+            "Shen Weisang moving silhouette and limited left shoulder",
+            "half-height exit",
+            "hanging alliance fragment",
+            "foreground black stone, cloth, snow, and red-brown weathering"
+          ],
+          "medium_detail": [
+            "Yan Nanzhi upright pressure silhouette",
+            "Lu Mi with bone flute and deer-clan outline",
+            "Bai Yi distant white institutional silhouette"
+          ],
+          "low_detail": [
+            "background tower fractures",
+            "far rubble",
+            "distant snow and stone chips"
+          ],
+          "impression_only": [
+            "tiny debris",
+            "drifting snow",
+            "far cracks"
+          ]
+        },
+        "distance_simplification": "Use snow, haze, atmospheric perspective, grouped silhouettes, and massing to simplify distant forms.",
+        "forbidden_detail_behavior": [
+          "no equal-detail rendering across the whole frame",
+          "no over-detailed distant figures",
+          "no granular crowd texture",
+          "no particleized stone",
+          "no noisy micro-detail",
+          "no AI speckle",
+          "no visual information overload"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal": "Create a single 16:9 cinematic video-generation reference frame: the first frame for a landscape wide establishing shot inside a broken tower stairwell during a blizzard.",
+        "style_quality": "Hyper-realistic cinematic low-magic Eastern epic, natural lens perspective, physical black stone, wet snow, ice-blue cold light, dark red-brown weathered marks on stone and cloth, restrained old gold-red only on ancient evidence marks, high clarity without glossy plastic CGI.",
+        "subject_content": "Inside the broken tower, cracked black stone stairs split the space. Lu Qingli is a short, narrow-framed teenage wall-foot hybrid girl in a grey-blue short jacket and clay inner layer; her outer garment is caught under a fallen step, and she is urgently trying to free the cloth with a small utility tool. Shen Weisang is a lean seventeen-year-old hunter in warm grey-brown clothing with herb-green inner layer, old leather bracers, route pack, bow-shaped travel gear, and a visible limited left shoulder; he moves toward her to help. Yan Nanzhi stands nearby in a restrained cold-grey or mist-purple fugitive robe, black hair tied with a red thread, upright despite dust and snow. Lu Mi is a wounded-looking but non-graphic young deer-clan shaman farther back with deer ears, short antlers or bone-gold ornament, bone flute and herb pouch. Bai Yi appears as a distant tall clean white insect-official pressure silhouette with high hat and slender pale inspection tool. The fragile alliance fragment hangs near a broken wall edge, and the half-height exit is choked by snow.",
+        "composition_motion": "Eye-level landscape wide establishing composition, beginning of a slow push. Foreground carries jagged stair edge, torn cloth, wet snow and dark red-brown weathering. Midground carries Lu Qingli, Shen Weisang and Yan Nanzhi as the readable action triangle. Background clarifies the half-height exit, hanging alliance fragment, Lu Mi's weakening support and Bai Yi's pressure. This is a true establishing wide shot: big shapes clear, details restrained, distant subjects grouped, only a few nearby or central elements finely rendered.",
+        "visible_continuity": "Keep real body weight and contact reaction; no heroic magic solution. The old record bundle and alliance fragment are fragile evidence, not glowing holy objects. Gold-red marks are restrained and old; pale wax-white belongs to the clean institutional pressure. Maintain black stone, snow white, ice blue and muted red-brown as the scene palette.",
+        "negative_prompt": "No readable generated text, subtitles, UI, watermark, modern clothing, modern objects, plastic CGI, over-smoothed skin, floating slow motion, stiff posing, wrong faction symbols, glowing magic blast, gore, injury close-up, clean palace staircase, generic fantasy castle, equal-detail rendering across the whole frame, over-detailed distant figures, granular crowd texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload."
+      },
+      "copy_ready": {
+        "positive_prompt": "Create a single 16:9 cinematic video-generation reference frame: the first frame for a landscape wide establishing shot inside a broken tower stairwell during a blizzard. Hyper-realistic cinematic low-magic Eastern epic, natural lens perspective, physical black stone, wet snow, ice-blue cold light, dark red-brown weathered marks on stone and cloth, restrained old gold-red only on ancient evidence marks, high clarity without glossy plastic CGI. Inside the broken tower, cracked black stone stairs split the space. Lu Qingli is a short, narrow-framed teenage wall-foot hybrid girl in a grey-blue short jacket and clay inner layer; her outer garment is caught under a fallen step, and she is urgently trying to free the cloth with a small utility tool. Shen Weisang is a lean seventeen-year-old hunter in warm grey-brown clothing with herb-green inner layer, old leather bracers, route pack, bow-shaped travel gear, and a visible limited left shoulder; he moves toward her to help. Yan Nanzhi stands nearby in a restrained cold-grey or mist-purple fugitive robe, black hair tied with a red thread, upright despite dust and snow. Lu Mi is a wounded-looking but non-graphic young deer-clan shaman farther back with deer ears, short antlers or bone-gold ornament, bone flute and herb pouch. Bai Yi appears as a distant tall clean white insect-official pressure silhouette with high hat and slender pale inspection tool. The fragile alliance fragment hangs near a broken wall edge, and the half-height exit is choked by snow. Eye-level landscape wide establishing composition, beginning of a slow push. Foreground carries jagged stair edge, torn cloth, wet snow and dark red-brown weathering. Midground carries Lu Qingli, Shen Weisang and Yan Nanzhi as the readable action triangle. Background clarifies the half-height exit, hanging alliance fragment, Lu Mi's weakening support and Bai Yi's pressure. This is a true establishing wide shot: big shapes clear, details restrained, distant subjects grouped, only a few nearby or central elements finely rendered. Keep real body weight and contact reaction; no heroic magic solution. The old record bundle and alliance fragment are fragile evidence, not glowing holy objects. Gold-red marks are restrained and old; pale wax-white belongs to the clean institutional pressure. Maintain black stone, snow white, ice blue and muted red-brown as the scene palette.",
+        "negative_prompt": "No readable generated text, subtitles, UI, watermark, modern clothing, modern objects, plastic CGI, over-smoothed skin, floating slow motion, stiff posing, wrong faction symbols, glowing magic blast, gore, injury close-up, clean palace staircase, generic fantasy castle, equal-detail rendering across the whole frame, over-detailed distant figures, granular crowd texture, particleized stone, noisy micro-detail, AI speckle, smoke pretending to be architectural detail, distant objects rendered as sharp individual miniatures, full-frame ultra-detail, visual information overload.",
+        "chatgpt_image_prompt": "Task: Generate exactly one image only. Hard constraints: do not read files, do not write files, do not search, do not inspect any project background. Use only this prompt. Do not add visible text, subtitles, UI, watermarks, captions, logos, or labels. Image prompt: create a 16:9 cinematic first-frame reference for an eye-level landscape wide establishing shot inside a broken tower stairwell during a blizzard. Show cracked black stone stairs, Lu Qingli caught at the broken step and freeing her trapped outer garment with a small utility tool, Shen Weisang moving toward her with a limited left shoulder, Yan Nanzhi upright nearby, Lu Mi weakening in the back with deer-clan features and bone flute, Bai Yi as a distant tall white institutional pressure silhouette, a fragile alliance fragment near a broken wall edge, and a snow-choked half-height exit. Use dark red-brown weathered marks instead of graphic injury detail. Keep foreground/midground/background clear, big shapes readable, distant detail simplified, no magic solution, no readable text.",
+        "gemini_image_prompt": "Create one 16:9 hyper-realistic cinematic first-frame reference for video generation: a broken tower stairwell in a blizzard, eye-level landscape wide shot, Lu Qingli caught at the broken step freeing trapped cloth, Shen Weisang moving to help, Yan Nanzhi nearby, Lu Mi and Bai Yi as background pressure, half-height exit and fragile alliance fragment visible, black stone, snow white, ice blue and muted red-brown palette, no text, no UI, no magic blast."
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "eye-level landscape wide establishing composition",
+          "clear foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "broken stair edge, torn cloth, wet snow, red-brown weathering, and old evidence props",
+          "midground": "Lu Qingli caught at the stair, Shen Weisang moving toward her, Yan Nanzhi readable nearby",
+          "background": "broken tower interior, half-height exit, hanging alliance fragment, Lu Mi and Bai Yi pressure silhouettes, windblown snow"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "3840x2160 canonical delivery file",
+          "foreground, midground, and background are visibly separated",
+          "Lu Qingli, Shen Weisang, Yan Nanzhi, half-height exit, and alliance fragment are readable",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "wide-scene information budget respected"
+        ]
+      }
+    },
+    {
+      "production_metadata": {
+        "asset_id": "E12_R002",
+        "asset_subtype": "reference_frame",
+        "output_file": "r002e12.png",
+        "output_path": "12/assets/reference-frames/r002e12.png",
+        "prompt_id": "PROMPT_E12_R002_SC002_SH001_LAST_FRAME",
+        "shot_id": "SC002-SH001",
+        "scene_id": "SC002",
+        "segment_id": "12-sc002-sh001",
+        "generation_method": "FLF2V",
+        "source_refs": [
+          "12/production/generation-plan.json#SC002-SH001",
+          "12/shots/shot-list.json#SC002-SH001",
+          "12/storyboard/storyboard-plan.md#SC002-SH001",
+          "12/script/final-script.md:L50-L95"
+        ],
+        "continuity_refs": [
+          "LOC_BROKEN_TOWER_STEPS",
+          "CH_SHEN_WEISANG",
+          "CH_YAN_NANZHI",
+          "CH_LU_QINGLI",
+          "CH_LU_MI",
+          "CH_BAI_YI",
+          "PROP_BLOOD_RECORD",
+          "PROP_INSECT_WAX_NEEDLE",
+          "PROP_ALLIANCE_FRAGMENT",
+          "FX_SNOW_COLD_WIND"
+        ],
+        "usage": [
+          "SC002-SH001",
+          "FLF2V",
+          "last_frame_reference"
+        ],
+        "reference_inputs": [
+          {
+            "asset_id": "C001",
+            "display_name": "沈维桑全剧主角身份卡",
+            "output_path": "assets/characters/c001m.png",
+            "role": "Shen Weisang identity, hunter wardrobe, left-shoulder strain"
+          },
+          {
+            "asset_id": "C002",
+            "display_name": "晏南枝全剧主角身份卡",
+            "output_path": "assets/characters/c002m.png",
+            "role": "Yan Nanzhi fugitive robe, red-thread hair, upright posture"
+          },
+          {
+            "asset_id": "C003",
+            "display_name": "陆青砾墙下混裔身份卡",
+            "output_path": "assets/characters/c003m.png",
+            "role": "Lu Qingli grey-blue short jacket, small survivor body, pottery charm"
+          },
+          {
+            "asset_id": "C010",
+            "display_name": "鹿弥霜蹄鹿族萨满身份卡",
+            "output_path": "assets/characters/c010m.png",
+            "role": "Lu Mi deer-clan shaman features, bone flute and wounded support"
+          },
+          {
+            "asset_id": "C007",
+            "display_name": "白翳清明院监察官身份卡",
+            "output_path": "assets/characters/c007m.png",
+            "role": "Bai Yi distant insect-wax white institutional pressure"
+          },
+          {
+            "asset_id": "L011",
+            "display_name": "坍塌烽燧季终逃亡场景卡",
+            "output_path": "assets/locations/l011m.png",
+            "role": "broken tower, cracked steps, snow, exit, collapse material lock"
+          },
+          {
+            "asset_id": "P002",
+            "display_name": "日月血牒与月白玉片道具卡",
+            "output_path": "assets/props/p002m.png",
+            "role": "old record bundle and fragile evidence behavior"
+          },
+          {
+            "asset_id": "P004",
+            "display_name": "虫蜡针与清明香追踪道具卡",
+            "output_path": "assets/props/p004m.png",
+            "role": "slender pale inspection-tool pressure"
+          },
+          {
+            "asset_id": "P007",
+            "display_name": "月下盟书残页与多族印记道具卡",
+            "output_path": "assets/props/p007m.png",
+            "role": "alliance fragment and abstract multi-clan mark behavior"
+          }
+        ],
+        "creation_order": 2,
+        "creation_phase": "reference_frames",
+        "depends_on_assets": [
+          "E12_R001",
+          "C001",
+          "C002",
+          "C003",
+          "C007",
+          "C010",
+          "L011",
+          "P002",
+          "P004",
+          "P007",
+          "K001",
+          "K002",
+          "K004"
+        ],
+        "blocks_assets": [
+          "12-sc002-sh001-flf2v-last-frame"
+        ],
+        "dependency_reason": "FLF2V last-frame reference preserves E12_R001 geography while clarifying the slow-push endpoint pressure.",
+        "history_policy": "Only final approved image may live at output_path; retained imagegen source is archived under sibling history/ with .v001 suffix.",
+        "generation_status": "complete_4k_upscaled_from_sc002_sh001_wide_redo",
+        "qc_status": "internal_qc_passed_sc002_sh001_corrected"
+      },
+      "scene_information_budget": {
+        "detail_priority": {
+          "highest_detail": [
+            "Lu Qingli's trapped garment or rope buckle under stone",
+            "Lu Qingli's small utility-tool hand",
+            "Shen Weisang crossing toward her with limited left shoulder",
+            "half-height exit and hanging alliance fragment",
+            "foreground snow, cloth, stone and red-brown weathering"
+          ],
+          "medium_detail": [
+            "Yan Nanzhi nearby",
+            "Lu Mi weakening behind",
+            "Bai Yi distant white institutional silhouette"
+          ],
+          "low_detail": [
+            "far tower cracks",
+            "snow haze",
+            "secondary rubble"
+          ],
+          "impression_only": [
+            "tiny debris",
+            "drifting snow",
+            "far marks"
+          ]
+        },
+        "distance_simplification": "Keep distant figures and small debris grouped or atmospheric; do not sharpen every far object.",
+        "forbidden_detail_behavior": [
+          "no equal-detail rendering across the whole frame",
+          "no over-detailed distant figures",
+          "no granular crowd texture",
+          "no particleized stone",
+          "no noisy micro-detail",
+          "no AI speckle",
+          "no visual information overload"
+        ]
+      },
+      "model_visible_prompt": {
+        "visible_goal": "Create a single 16:9 cinematic video-generation reference frame: the last frame of an eye-level slow push for a landscape wide establishing shot inside an ancient ruined tower stairwell during heavy snow wind. This is still the establishing shot, not the next close rescue shot. Keep the camera wide enough to read the full geography.",
+        "style_quality": "Hyper-realistic cinematic low-magic Eastern epic, natural lens perspective, physical black stone, wet snow, ice-blue cold light, rust-brown weathered stains on old stone and cloth, restrained old gold-red color only as worn color residue, high clarity without glossy plastic CGI.",
+        "subject_content": "Inside the ruined tower, cracked black stone stairs divide the space. The low snow-choked exit remains clearly visible in the background. A fragile torn cloth fragment hangs high near a broken wall edge, with no writing, symbols, or readable marks. Lu Qingli is a short narrow-framed teenage wall-foot hybrid girl in a grey-blue short jacket and clay inner layer; her outer garment is pinned under a fallen stair edge, and she is using both hands to loosen the cloth knot and pull the fabric free by herself. Shen Weisang is visible near the central screen axis as a lean seventeen-year-old hunter in warm grey-brown clothing with herb-green inner layer, old leather bracers, route pack and bow-shaped travel gear; his left shoulder is held stiff, but he has not reached Lu Qingli yet. He remains separate from her, not touching her, not passing any object, and not becoming a close action pair. Yan Nanzhi stands nearby in a restrained cold-grey or mist-purple fugitive robe, black hair tied with a red thread, upright despite dust and snow. Lu Mi is a weakened young deer-clan shaman farther back with deer ears, short antlers or bone-gold ornament, bone flute and herb pouch. Bai Yi is only a distant tall clean white insect-official pressure silhouette near the exit side.",
+        "composition_motion": "Eye-level 16:9 landscape wide shot, slow-push endpoint but still a wide establishing frame. Foreground contains only jagged black stair edge, plain torn cloth, wet snow, rope fibers, and rust-brown weathered stone. No foreground papers, no visible writing, no symbolic markings. Midground carries Lu Qingli pinned at the step, Shen Weisang still separate from her near the center axis, and Yan Nanzhi as a readable pressure triangle. Background clearly shows the low exit, torn cloth fragment without marks, Lu Mi support and Bai Yi distant institutional pressure. Big shapes clear, details restrained, distant subjects grouped, only a few central elements finely rendered.",
+        "visible_continuity": "This is only the establishing beat. The visible event is Lu Qingli loosening her own trapped outer garment while the ruined tower geography and pressure are established. Do not show a later rescue exchange. Keep real body weight and contact reaction, no heroic magic solution. No glowing holy objects. Gold-red color is restrained and old; pale wax-white belongs to the clean institutional pressure. Maintain black stone, snow white, ice blue and muted rust-brown as the scene palette.",
+        "negative_prompt": "No readable generated text, writing, symbols, runes, calligraphy, glyphs, inscriptions, paper sheets, foreground scrolls, subtitles, UI, watermark, modern clothing, modern objects, plastic CGI, over-smoothed skin, floating slow motion, wrong faction symbols, glowing magic blast, clean palace staircase, generic fantasy castle, close rescue action, object exchange, characters touching, medium close-up, geography discontinuity, equal-detail rendering across the whole frame, over-detailed distant figures, granular snow texture, particleized stone, noisy micro-detail, AI speckle, full-frame ultra-detail, visual information overload."
+      },
+      "copy_ready": {
+        "positive_prompt": "Create a single 16:9 cinematic video-generation reference frame: the last frame of an eye-level slow push for a landscape wide establishing shot inside an ancient ruined tower stairwell during heavy snow wind. This is still the establishing shot, not the next close rescue shot. Keep the camera wide enough to read the full geography. Hyper-realistic cinematic low-magic Eastern epic, natural lens perspective, physical black stone, wet snow, ice-blue cold light, rust-brown weathered stains on old stone and cloth, restrained old gold-red color only as worn color residue, high clarity without glossy plastic CGI. Inside the ruined tower, cracked black stone stairs divide the space. The low snow-choked exit remains clearly visible in the background. A fragile torn cloth fragment hangs high near a broken wall edge, with no writing, symbols, or readable marks. Lu Qingli is a short narrow-framed teenage wall-foot hybrid girl in a grey-blue short jacket and clay inner layer; her outer garment is pinned under a fallen stair edge, and she is using both hands to loosen the cloth knot and pull the fabric free by herself. Shen Weisang is visible near the central screen axis as a lean seventeen-year-old hunter in warm grey-brown clothing with herb-green inner layer, old leather bracers, route pack and bow-shaped travel gear; his left shoulder is held stiff, but he has not reached Lu Qingli yet. He remains separate from her, not touching her, not passing any object, and not becoming a close action pair. Yan Nanzhi stands nearby in a restrained cold-grey or mist-purple fugitive robe, black hair tied with a red thread, upright despite dust and snow. Lu Mi is a weakened young deer-clan shaman farther back with deer ears, short antlers or bone-gold ornament, bone flute and herb pouch. Bai Yi is only a distant tall clean white insect-official pressure silhouette near the exit side. Eye-level 16:9 landscape wide shot, slow-push endpoint but still a wide establishing frame. Foreground contains only jagged black stair edge, plain torn cloth, wet snow, rope fibers, and rust-brown weathered stone. No foreground papers, no visible writing, no symbolic markings. Midground carries Lu Qingli pinned at the step, Shen Weisang still separate from her near the center axis, and Yan Nanzhi as a readable pressure triangle. Background clearly shows the low exit, torn cloth fragment without marks, Lu Mi support and Bai Yi distant institutional pressure. Big shapes clear, details restrained, distant subjects grouped, only a few central elements finely rendered. This is only the establishing beat. The visible event is Lu Qingli loosening her own trapped outer garment while the ruined tower geography and pressure are established. Do not show a later rescue exchange. Keep real body weight and contact reaction, no heroic magic solution. No glowing holy objects. Gold-red color is restrained and old; pale wax-white belongs to the clean institutional pressure. Maintain black stone, snow white, ice blue and muted rust-brown as the scene palette.",
+        "negative_prompt": "No readable generated text, writing, symbols, runes, calligraphy, glyphs, inscriptions, paper sheets, foreground scrolls, subtitles, UI, watermark, modern clothing, modern objects, plastic CGI, over-smoothed skin, floating slow motion, wrong faction symbols, glowing magic blast, clean palace staircase, generic fantasy castle, close rescue action, object exchange, characters touching, medium close-up, geography discontinuity, equal-detail rendering across the whole frame, over-detailed distant figures, granular snow texture, particleized stone, noisy micro-detail, AI speckle, full-frame ultra-detail, visual information overload.",
+        "chatgpt_image_prompt": "Task: Generate exactly one image only. Do not add visible text, captions, subtitles, UI, watermarks, logos, labels, glyphs, runes, documents with writing, paper sheets with marks, or inscription-like textures. Create a 16:9 cinematic last-frame reference for the eye-level slow push of the broken tower establishing shot. Keep Lu Qingli loosening her own trapped garment with both hands, Shen Weisang separate near the center axis and not touching or passing any object, Yan Nanzhi nearby, Lu Mi and Bai Yi as background pressure, the low snow-choked exit readable, and the camera wide enough to preserve geography.",
+        "gemini_image_prompt": "Create one 16:9 cinematic last-frame reference for the SC002-SH001 establishing shot: ancient ruined tower stairwell, heavy snow wind, Lu Qingli loosening her own trapped garment, Shen Weisang still separate near center axis, Yan Nanzhi nearby, Lu Mi and Bai Yi as background pressure, low exit readable, no text or symbols."
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "slightly closer slow-push endpoint",
+          "clear foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "trapped cloth or rope buckle, utility-tool hand, snow, red-brown weathering and broken stone",
+          "midground": "Lu Qingli caught and Shen Weisang crossing toward her while Yan Nanzhi remains readable",
+          "background": "same half-height exit, alliance fragment, Lu Mi and Bai Yi positions simplified by snow"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "3840x2160 canonical delivery file",
+          "same geography as first frame",
+          "foreground, midground, and background are visibly separated",
+          "Lu Qingli's trapped cloth/tool action and Shen Weisang's movement are readable",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "wide-scene information budget respected"
+        ]
+      }
+    }
+  ],
+  "scope": "targeted_reference_frames_sc002_sh001_sc003"
+}

@@ -33,6 +33,12 @@ specs from the scene bible, storyboard, camera plan, and continuity locks.
   16:9 or project-defined canvas, foreground/midground/background layers,
   camera distance, camera angle, screen direction, light, weather/time, and
   alpha forbidden.
+- For wide scenes, distant scenes, crowd scenes, battlefields, fortresses,
+  cities, mountain passes, large interiors, and any scene with many repeated
+  objects, add a `scene_information_budget`. It must define the 3-5
+  `highest_detail` elements, medium-detail masses, low-detail distant forms,
+  impression-only elements, distance simplification strategy, and forbidden
+  equal-detail behavior.
 - Preserve scene geography and screen direction.
 
 ## Required Artifacts

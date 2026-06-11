@@ -1,0 +1,426 @@
+{
+  "version": "art-room-e12-targeted-asset-manifest-v2-2026-06-10",
+  "episode_id": "12",
+  "scope": "targeted_reference_frames_sc002_sh001_sc003_sh002",
+  "assets": [
+    {
+      "asset_id": "R12_SC002_SH003",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "display_name": "SC002-SH003 alliance fragment insert reference",
+      "shot_id": "SC002-SH003",
+      "scene_id": "SC002",
+      "file": "sc002-sh003.png",
+      "output_path": "12/assets/reference-frames/sc002-sh003.png",
+      "prompt_id": "PROMPT_R12_SC002_SH003",
+      "creation_order": 14,
+      "creation_phase": "reference_frames",
+      "priority": "high",
+      "generation_method": "REFERENCE_IMAGE",
+      "generation_mode": "imagegen-task",
+      "status": "complete_qc_passed_with_limitations_2026-06-10",
+      "depends_on_assets": [
+        "C001",
+        "C002",
+        "C003",
+        "C007",
+        "C010",
+        "L011",
+        "P002",
+        "P004",
+        "P007",
+        "F003"
+      ],
+      "blocks_assets": [
+        "12-sc002-sh003-reference-image-still",
+        "SC002-SH003_video_generation"
+      ],
+      "dependency_reason": "Reference-image still must inherit the broken tower steps, alliance fragment, blood record, insect-wax needle, grounded rescue action, and approved character identity locks.",
+      "source_refs": [
+        "12/script/final-script.md:L50-L95",
+        "12/shots/shot-list.json#SC002-SH003",
+        "12/storyboard/storyboard-plan.md#SC002-SH003",
+        "12/prompts/art-image-prompts.json#PROMPT_R12_SC002_SH003"
+      ],
+      "continuity_refs": [
+        "LOC_BROKEN_TOWER_STEPS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_ALLIANCE_FRAGMENT",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "usage": [
+        "SC002-SH003",
+        "REFERENCE_IMAGE",
+        "reference_image_still"
+      ],
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic close insert frame",
+          "overhead close shot",
+          "static locked camera",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "alliance fragment, blood-record strip, moon-white jade shard, red thread, insect-wax needle, cracked black stone, and snow mud",
+          "midground": "Lu Qingli trapped by stone and Shen Weisang handing a short knife",
+          "background": "broken tower half-height exit, falling stones, snow wind, Yan Nanzhi and Bai Yi pressure silhouettes"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "minimum 3840x2160 after canonical export",
+          "foreground, midground, and background are visibly separated",
+          "alliance fragment remains the primary subject",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "low-magic traces stay local and material-bound"
+        ]
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "exists",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
+        "action_required": "none_for_targeted_art_room_handoff",
+        "qc_status": "passed_with_limitations_2026-06-10"
+      },
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001 suffixes.",
+      "generation_status": "complete_qc_passed_with_limitations_2026-06-10",
+      "qc_status": "passed_with_limitations_2026-06-10",
+      "source_thread_id": "019eb190-a8fe-7471-9a9c-e7b6b02e6266",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb190-a8fe-7471-9a9c-e7b6b02e6266/ig_0cba57cc2625a03a016a295c64c06c81919fbe7d29d1af0cf2.png",
+      "source_generated_dimensions": "1672x941",
+      "canonical_dimensions": "3840x2160",
+      "final_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
+      "history_files": [
+        "12/assets/reference-frames/history/sc002-sh003.v001.png",
+        "12/assets/reference-frames/history/sc002-sh003.v002.png"
+      ],
+      "generation_notes": [
+        "Generated through isolated imagegen-task thread using only the prepared prompt text.",
+        "A main-thread fallback candidate was retained as history v001 but not used as canonical.",
+        "The accepted imagegen-task source was retained as history v002 and upsampled to the canonical 3840x2160 PNG.",
+        "Local master reference images were not attached to the isolated imagegen-task; inheritance was enforced through prompt text and parent QC."
+      ]
+    },
+    {
+      "asset_id": "E12_R024",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "display_name": "SC003-SH002 half-height exit first-frame reference",
+      "shot_id": "SC003-SH002",
+      "scene_id": "SC003",
+      "file": "r024e12.png",
+      "output_path": "12/assets/reference-frames/r024e12.png",
+      "prompt_id": "PROMPT_E12_R024",
+      "creation_order": 24,
+      "creation_phase": "reference_frames",
+      "priority": "critical",
+      "generation_method": "I2V",
+      "generation_mode": "imagegen-task",
+      "status": "generated_candidate_internal_qc_passed_pending_4k_contract",
+      "depends_on_assets": [
+        "C001",
+        "C002",
+        "C003",
+        "C007",
+        "C010",
+        "L011",
+        "P002",
+        "P006",
+        "P007",
+        "P012",
+        "F005"
+      ],
+      "blocks_assets": [
+        "12-sc003-sh002-i2v-render"
+      ],
+      "dependency_reason": "I2V first-frame reference must inherit approved character, location, prop, and widescreen action-causality masters.",
+      "source_refs": [
+        "12/script/final-script.md:L96-L145",
+        "12/shots/shot-list.json#SC003-SH002",
+        "12/storyboard/storyboard-plan.md#SC003-SH002",
+        "12/prompts/art-image-prompts.json#PROMPT_E12_R024"
+      ],
+      "continuity_refs": [
+        "LOC_SNOW_SLOPE_ESCAPE_LINE",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_BROKEN_POTTERY_CHARM",
+        "PROP_BLOOD_SALT_POUCH",
+        "PROP_MULTI_CLAN_MARKS",
+        "PROP_ALLIANCE_FRAGMENT",
+        "FX_SNOW_COLD_WIND",
+        "FX_GOLD_RED_RELAY_LIGHT"
+      ],
+      "usage": [
+        "SC003-SH002",
+        "I2V",
+        "first_frame_reference"
+      ],
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic medium frame",
+          "micro low-angle pressure framing",
+          "handheld short-follow feeling",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "snow mud, hand or short-knife trace, broken pottery charm pouch or blood-record oil-paper corner",
+          "midground": "Shen Weisang low near the half-height collapsed exit, broken steps, falling stones, readable escape action",
+          "background": "snow-slope entrance, collapsed beacon tower pressure, wind snow, distant Bai Yi pursuit silhouette"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "minimum 3840x2160 after final video handoff upscale/regeneration",
+          "foreground, midground, and background are visibly separated",
+          "half-height exit remains the primary spatial read",
+          "Shen Weisang remains the primary subject",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem",
+          "collapse remains local and readable, not a noisy disaster panorama"
+        ]
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "exists_below_4k_contract",
+        "existing_file_dimensions": "1672x941",
+        "existing_file_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
+        "action_required": "upscale_or_regenerate_4k_before_final_video_handoff",
+        "qc_status": "generated_candidate_internal_qc_passed_pending_4k_contract"
+      },
+      "history_policy": "Only final approved image may live at output_path; retained intermediates must go to sibling history/ with .v001 suffixes."
+    },
+    {
+      "asset_id": "E12_R001",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "display_name": "SC002-SH001 first-frame reference",
+      "shot_id": "SC002-SH001",
+      "scene_id": "SC002",
+      "file": "r001e12.png",
+      "output_path": "12/assets/reference-frames/r001e12.png",
+      "prompt_id": "PROMPT_E12_R001_SC002_SH001_FIRST_FRAME",
+      "creation_order": 1,
+      "creation_phase": "reference_frames",
+      "priority": "critical",
+      "generation_method": "FLF2V",
+      "generation_mode": "imagegen-task",
+      "status": "complete_4k_upscaled_from_imagegen_candidate",
+      "depends_on_assets": [
+        "C001",
+        "C002",
+        "C003",
+        "C007",
+        "C010",
+        "L011",
+        "P002",
+        "P004",
+        "P007",
+        "K001",
+        "K002",
+        "K004"
+      ],
+      "blocks_assets": [
+        "12-sc002-sh001-flf2v-first-frame"
+      ],
+      "dependency_reason": "FLF2V first-frame reference must inherit approved character, broken tower location, prop, costume, and season-finale style locks.",
+      "source_refs": [
+        "12/production/generation-plan.json#SC002-SH001",
+        "12/shots/shot-list.json#SC002-SH001",
+        "12/storyboard/storyboard-plan.md#SC002-SH001",
+        "12/prompts/art-image-prompts.json#PROMPT_E12_R001_SC002_SH001_FIRST_FRAME"
+      ],
+      "continuity_refs": [
+        "LOC_BROKEN_TOWER_STEPS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_ALLIANCE_FRAGMENT",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "FLF2V",
+        "first_frame_reference"
+      ],
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "eye-level landscape wide establishing composition",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "broken stair edge, torn cloth, wet snow, red-brown weathering, and old evidence props",
+          "midground": "Lu Qingli caught at the stair, Shen Weisang moving toward her, Yan Nanzhi readable nearby",
+          "background": "broken tower interior, half-height exit, hanging alliance fragment, Lu Mi and Bai Yi pressure silhouettes, windblown snow"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "3840x2160 canonical delivery file",
+          "foreground, midground, and background are visibly separated",
+          "Lu Qingli, Shen Weisang, Yan Nanzhi, half-height exit, and alliance fragment are readable",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem"
+        ]
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "exists_4k_upscaled_from_imagegen_candidate",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "a04f1b6589e26dd96e963a6c5015cd17d68f17f99e751957a58252d9f8aa86a2",
+        "source_candidate_dimensions": "1672x941",
+        "source_candidate_sha256": "976ee185bcc8de9436991f300419df74aefc0faf56e598bb3b86ff957e114961",
+        "qc_status": "internal_qc_passed_with_notes"
+      },
+      "history_files": [
+        "12/assets/reference-frames/history/r001e12.v001-imagegen-source-20260610.png"
+      ],
+      "history_policy": "Only final approved image may live at output_path; retained imagegen source is archived under sibling history/ with .v001 suffix."
+    },
+    {
+      "asset_id": "E12_R002",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "display_name": "SC002-SH001 last-frame reference",
+      "shot_id": "SC002-SH001",
+      "scene_id": "SC002",
+      "file": "r002e12.png",
+      "output_path": "12/assets/reference-frames/r002e12.png",
+      "prompt_id": "PROMPT_E12_R002_SC002_SH001_LAST_FRAME",
+      "creation_order": 2,
+      "creation_phase": "reference_frames",
+      "priority": "critical",
+      "generation_method": "FLF2V",
+      "generation_mode": "imagegen-task",
+      "status": "complete_4k_upscaled_from_sc002_sh001_wide_redo",
+      "depends_on_assets": [
+        "E12_R001",
+        "C001",
+        "C002",
+        "C003",
+        "C007",
+        "C010",
+        "L011",
+        "P002",
+        "P004",
+        "P007",
+        "K001",
+        "K002",
+        "K004"
+      ],
+      "blocks_assets": [
+        "12-sc002-sh001-flf2v-last-frame"
+      ],
+      "dependency_reason": "FLF2V last-frame reference preserves E12_R001 geography while clarifying the slow-push endpoint pressure.",
+      "source_refs": [
+        "12/production/generation-plan.json#SC002-SH001",
+        "12/shots/shot-list.json#SC002-SH001",
+        "12/storyboard/storyboard-plan.md#SC002-SH001",
+        "12/prompts/art-image-prompts.json#PROMPT_E12_R002_SC002_SH001_LAST_FRAME"
+      ],
+      "continuity_refs": [
+        "LOC_BROKEN_TOWER_STEPS",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LU_QINGLI",
+        "CH_LU_MI",
+        "CH_BAI_YI",
+        "PROP_BLOOD_RECORD",
+        "PROP_INSECT_WAX_NEEDLE",
+        "PROP_ALLIANCE_FRAGMENT",
+        "FX_SNOW_COLD_WIND"
+      ],
+      "usage": [
+        "SC002-SH001",
+        "FLF2V",
+        "last_frame_reference"
+      ],
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "slightly closer slow-push endpoint",
+          "foreground/midground/background separation",
+          "lighting, weather, camera angle, and action state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "trapped cloth or rope buckle, utility-tool hand, snow, red-brown weathering and broken stone",
+          "midground": "Lu Qingli caught and Shen Weisang crossing toward her while Yan Nanzhi remains readable",
+          "background": "same half-height exit, alliance fragment, Lu Mi and Bai Yi positions simplified by snow"
+        },
+        "qc_checks": [
+          "16:9 PNG reference frame",
+          "3840x2160 canonical delivery file",
+          "same geography as first frame",
+          "foreground, midground, and background are visibly separated",
+          "Lu Qingli's trapped cloth/tool action and Shen Weisang's movement are readable",
+          "no transparent or isolated card background",
+          "no readable generated text, UI, watermark, or random new emblem"
+        ]
+      },
+      "asset_contract_status": {
+        "contract_class": "video_frame_reference",
+        "target_aspect_ratio": "16:9",
+        "target_minimum_resolution": "3840x2160",
+        "existing_file_status": "exists_4k_upscaled_from_imagegen_candidate",
+        "existing_file_dimensions": "3840x2160",
+        "existing_file_sha256": "b88855b01fae4d4d384d8c2a5b76a0cf2b3ebe1617cb3be21da832791f163992",
+        "source_candidate_dimensions": "1672x941",
+        "source_candidate_sha256": "2812e88e8f944403d7eb984d5909fa80ea88f7fb3da9a5930e402684e7b2401c",
+        "qc_status": "internal_qc_passed_sc002_sh001_corrected"
+      },
+      "history_files": [
+        "12/assets/reference-frames/history/r002e12.v001-imagegen-source-20260610.png",
+        "12/assets/reference-frames/history/r002e12.v002-before-sc002-sh001-wide-redo-20260610.png",
+        "12/assets/reference-frames/history/r002e12.v003-imagegen-source-wide-redo-20260610.png"
+      ],
+      "history_policy": "Only final approved image may live at output_path; retained imagegen source is archived under sibling history/ with .v001 suffix."
+    }
+  ]
+}

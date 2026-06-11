@@ -99,7 +99,7 @@
 |    51 | E01_R012  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C002, E01_C011, E01_P002                                                             | medium   |
 |    52 | E01_R013  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_L014, E01_P009                                                                       | high     |
 |    53 | E01_R014  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_L014, E01_P009                                                                       | high     |
-|    54 | E01_R015  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C017, E01_C018, E01_C027, E01_L001A, E01_P022, E01_K004, E01_K006                    | high     |
+|    54 | E01_R015  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C016A, E01_C017, E01_C018, E01_C027, E01_L001A, E01_P022, E01_K004, E01_K006          | high     |
 |    55 | E01_R016  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C016A, E01_L001A                                                                     | high     |
 |    56 | E01_R017  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C001, E01_K001                                                                       | high     |
 |    57 | E01_R018  | reference_frame              | reference_frames    | video_generation_reference_frame                  | 16:9  | video_frame                      | forbidden                                                                | E01_F001, E01_F005, E01_C005, E01_P005, E01_K003                                                             | high     |
@@ -137,3 +137,12 @@
 - 晏南枝是否保持遮面与身份压力，未提前华丽揭示。
 - 白册、旧驿暗号、血牒、日月纹是否采用后合成控制策略。
 - 镜头参考帧是否覆盖 generation-plan 的首帧/终帧需求，并清楚分离前景、中景和背景。
+
+## SC004-SH001 增量状态 / 2026-06-11
+
+- `E01_R015` 已补入白册官吏 `E01_C016A` 依赖；该镜头有检查桌、翻册声和制度位置，不能只依赖奴兵/虫兵/村民。
+- 残阳坳单一空间硬锁已升级：SC004-SC006 所有残阳坳参考帧都必须依赖全局 `L001` 主场景，并按 `E01_L001A/B/C` 在同一物理空间内取不同区域/机位。
+- `E01_C016A` 已由全局 `C016` 主卡精确复制重建到 `01/assets/characters/c016e01.png`，SHA-256 完全一致，白册官吏脸型继承阻断已解除。
+- `01/assets/reference-frames/r015e01.png` 尚未生成，当前状态为 `blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11`。
+- 阻塞原因：`E01_C017`、`E01_C018`、`E01_C027` 仍需 SC004 适用性或继承 QC；当前会话不能把本地参考图作为硬参考输入给生成器。
+- 已创建隔离生图提示包：`01/art/runs/2026-06-11-sc004-sh001-imagegen-task/e01_r015-prompt-package.md`。

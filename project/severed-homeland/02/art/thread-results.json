@@ -2,9 +2,40 @@
   "version": "art-room-episode02-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "02",
-  "image_generation_status": "not_started_pending_user_approval",
-  "threads": [],
-  "generated_files": [],
+  "image_generation_status": "partial_single_shot_generation_2026-06-10",
+  "threads": [
+    {
+      "run_id": "2026-06-10-sc002-sh002-imagegen-task",
+      "thread_id": null,
+      "tool": "imagegen-task via image_gen",
+      "batch_id": "single-sc002-sh002-reference-frame",
+      "status": "completed",
+      "asset_ids": [
+        "E02_R010"
+      ],
+      "notes": "Single isolated image generation requested by user; no Codex background thread was created for the larger Episode 02 blocked batch."
+    }
+  ],
+  "generated_files": [
+    {
+      "asset_id": "E02_R010",
+      "shot_id": "SC002-SH002",
+      "prompt_id": "PROMPT_E02_R010_IMAGEGEN_TASK_2026_06_10",
+      "output_path": "02/assets/reference-frames/r010e02.png",
+      "history_files": [
+        "02/assets/reference-frames/history/r010e02.v001.png"
+      ],
+      "run_artifacts": [
+        "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/prompt.md",
+        "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/prompt.json",
+        "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/generated-original.png"
+      ],
+      "source_generated_image": "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/generated-original.png",
+      "dimensions": "3840x2160",
+      "original_dimensions": "1672x941",
+      "status": "generated_qc_passed_single_shot_2026-06-10"
+    }
+  ],
   "blocked_items": [
     {
       "asset_id": "E02_C002",
@@ -169,11 +200,6 @@
     {
       "asset_id": "E02_R009",
       "output_path": "02/assets/reference-frames/r009e02.png",
-      "reason": "pending_user_art_approval_and_image_generation_not_launched"
-    },
-    {
-      "asset_id": "E02_R010",
-      "output_path": "02/assets/reference-frames/r010e02.png",
       "reason": "pending_user_art_approval_and_image_generation_not_launched"
     },
     {

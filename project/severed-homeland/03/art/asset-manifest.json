@@ -1,0 +1,176 @@
+{
+  "version": "episode03-targeted-sc003-sh001-art-room-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "03",
+  "scope": "targeted_sc003_sh001_reference_frame_only",
+  "status": "targeted_sc003_sh001_reference_frame_generated",
+  "approval_status": "targeted_user_requested_generation",
+  "image_generation_status": "complete_qc_passed_targeted",
+  "updated_at": "2026-06-10",
+  "filename_rules": {
+    "basename_max_chars": 20,
+    "canonical_output_only": true,
+    "no_version_directories": true,
+    "retained_intermediates": "sibling history/ directory with .v001, .v002 suffixes"
+  },
+  "counts": {
+    "reference_frame": 1
+  },
+  "source_inputs": [
+    "bible/characters.md",
+    "bible/scenes.md",
+    "bible/visual-style.md",
+    "03/script/final-script.md",
+    "03/director/camera-plan.md",
+    "03/shots/scene-breakdown.json",
+    "03/shots/shot-list.json",
+    "03/storyboard/storyboard-plan.md",
+    "03/continuity/visual-continuity-bible.json",
+    "03/production/generation-plan.json",
+    "03/prompts/shot-prompts-draft.json",
+    "assets/asset-index.json"
+  ],
+  "assets": [
+    {
+      "asset_id": "E03_R021",
+      "parent_asset_id": null,
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "file": "r021e03.png",
+      "basename": "r021e03",
+      "display_name": "SC003-SH001 旧井废口首帧参考帧",
+      "output_path": "03/assets/reference-frames/r021e03.png",
+      "source_refs": [
+        "03/script/final-script.md:L70-L87",
+        "03/shots/shot-list.json#SC003-SH001",
+        "03/storyboard/storyboard-plan.md#SC003-SH001",
+        "03/production/generation-plan.json#03-sc003-sh001"
+      ],
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "FLF2V",
+        "first_frame_reference"
+      ],
+      "generation_status": "complete_qc_passed_targeted_2026-06-10",
+      "approval_status": "targeted_user_requested_generation",
+      "design_summary": "16:9横屏旧井废口首帧参考帧：沈维桑和晏南枝冲到火后旧井另一侧，前景读出草药灰遮住的刻痕和半枚驿令动作，背景以奴兵追到井边形成压力。",
+      "creation_order": 21,
+      "creation_phase": "shot_reference_frames",
+      "depends_on_assets": [
+        "C001",
+        "C002",
+        "C006",
+        "C017",
+        "L001",
+        "P001",
+        "F002",
+        "F003"
+      ],
+      "blocks_assets": [
+        "SC003-SH001_director_prompt_refresh"
+      ],
+      "dependency_reason": "The frame inherits series character, location, prop, material, and regional color locks before becoming a shot-level video reference frame.",
+      "priority": "high",
+      "scene_information_budget": {
+        "detail_priority": {
+          "highest_detail": [
+            "Shen Weisang and Yan Nanzhi silhouettes and movement",
+            "ruined old-well mouth and old white-stone wall",
+            "herb-ash-covered carved mark plus half relay token or hand beat",
+            "distant slave soldier pressure source",
+            "warm fire-smoke rim light"
+          ],
+          "medium_detail": [
+            "well frame",
+            "grass rope trap material",
+            "charred beams",
+            "low hidden-door seam",
+            "stone edge and ash piles"
+          ],
+          "low_detail": [
+            "burned village residue",
+            "far debris",
+            "scattered tools",
+            "background wall breaks",
+            "distant smoke layers"
+          ],
+          "impression_only": [
+            "tiny rubble",
+            "far pursuer shapes",
+            "far fire pockets",
+            "secondary rope lines",
+            "distant blackened beams"
+          ]
+        },
+        "distance_simplification": "Use grouped silhouettes, haze, smoke, ash, and atmospheric perspective to simplify distant forms.",
+        "forbidden_detail_behavior": [
+          "no equal-detail rendering across the whole frame",
+          "no over-detailed distant figures",
+          "no granular ash or crowd texture",
+          "no particleized stone",
+          "no noisy micro-detail",
+          "no full-frame ultra-detail",
+          "no visual information overload"
+        ]
+      },
+      "output_format": {
+        "deliverable_kind": "video_generation_reference_frame",
+        "file_format": "png",
+        "minimum_resolution": "3840x2160 preferred; minimum 1920x1080 accepted for built-in imagegen",
+        "background_policy": "video_frame",
+        "alpha_policy": "forbidden",
+        "canvas_aspect_ratio": "16:9",
+        "required_views": [
+          "single cinematic frame matching project delivery ratio",
+          "clear camera distance and camera angle",
+          "screen direction and action state locked for the target shot",
+          "lighting, weather/time, and fire-smoke state visible in-frame"
+        ],
+        "composition_layers": {
+          "foreground": "herb-ash-covered carved mark, old white stone edge, half relay token or hand beat",
+          "midground": "Shen Weisang and Yan Nanzhi running to the far side of the ruined old well",
+          "background": "ruined old-well mouth, well frame, low hidden-door seam, controlled fire-smoke pressure, distant slave soldier"
+        },
+        "qc_checks": [
+          "16:9 canvas",
+          "foreground, midground, and background are visibly separated",
+          "no transparent or isolated card background",
+          "camera distance, angle, lighting, time of day, screen direction, and action state are readable",
+          "Shen Weisang and Yan Nanzhi remain readable without becoming close-up beauty portraits",
+          "Luo Qinghe appears only through inherited herb-ash mark evidence, not as a present living figure",
+          "distant repeated forms stay grouped and non-granular",
+          "no watermarks, modern UI, random text, or wrong faction symbols"
+        ],
+        "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
+        "background_policy_notes": "video_frame_scene_context",
+        "video_use_policy": "may be used as a landscape video/scene reference after QC",
+        "format_contract_scope": "video_frame_reference"
+      },
+      "history_policy": "Only final confirmed image may live at output_path; retained intermediates must move to 03/assets/reference-frames/history/ with .v001 suffixes."
+      ,
+      "source_thread_id": "019eb194-896d-7470-990c-adfd64279d66",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb194-896d-7470-990c-adfd64279d66/ig_08c3efa24d8c6ec1016a295d5f05e88191b709d231d6b079f3.png",
+      "final_sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5",
+      "final_dimensions": "1672x941",
+      "history_files": [
+        "03/assets/reference-frames/history/r021e03.v001-main-thread-alt-20260610.png"
+      ],
+      "qc_status": "passed_targeted_basic_visual_qc_2026-06-10",
+      "qc_notes": [
+        "16:9 landscape PNG, RGB/no alpha.",
+        "Foreground/midground/background separation is readable: old well and hidden doorway, two fugitives, distant pursuer, smoke and burned village background.",
+        "Luo Qinghe is not depicted as a current living person; inheritance appears as well/trace logic.",
+        "The output is below the preferred 3840x2160 reference-frame target because built-in imagegen returned 1672x941; keep this noted before downstream upscaling or ComfyUI use."
+      ]
+    }
+  ]
+}

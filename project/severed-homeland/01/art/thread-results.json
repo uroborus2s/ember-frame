@@ -2,7 +2,7 @@
   "version": "art-room-episode01-v1-2026-06-05",
   "project": "severed-homeland",
   "episode_id": "01",
-  "status": "sc002_storyboard_assets_rejected_pending_regeneration_2026-06-11",
+  "status": "sc002_r005_r009_generated_candidates_pending_user_visual_qc_2026-06-11",
   "threads": [
     {
       "batch_id": "B01_E01_CHARACTERS",
@@ -568,7 +568,7 @@
       ],
       "completed_at": "2026-06-10",
       "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
-      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "prior_status_2026_06_10": "revoked_previous_sc002_thread_status_2026_06_10",
       "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
@@ -702,7 +702,7 @@
       ],
       "completed_at": "2026-06-10",
       "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
-      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "prior_status_2026_06_10": "revoked_previous_sc002_thread_status_2026_06_10",
       "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
@@ -770,7 +770,7 @@
       ],
       "completed_at": "2026-06-10",
       "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
-      "prior_status_2026_06_10": "generated_or_promoted_qc_passed_for_sc002_storyboard_2026-06-10",
+      "prior_status_2026_06_10": "revoked_previous_sc002_thread_status_2026_06_10",
       "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
@@ -827,7 +827,7 @@
       ],
       "completed_at": "2026-06-10",
       "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
-      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "prior_status_2026_06_10": "revoked_previous_sc002_thread_status_2026_06_10",
       "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
@@ -885,7 +885,7 @@
       ],
       "completed_at": "2026-06-10",
       "approval_status": "rejected_after_user_visual_qc_identity_inheritance_2026-06-11",
-      "prior_status_2026_06_10": "generated_qc_passed_for_sc002_storyboard_2026-06-10",
+      "prior_status_2026_06_10": "revoked_previous_sc002_thread_status_2026_06_10",
       "revocation_note": "Previous SC002 thread result was invalidated by user visual QC: C016B/C017 identity inheritance and body metrics failed; current outputs are retained only for audit."
     },
     {
@@ -1169,6 +1169,191 @@
       ],
       "completed_at": "2026-06-11T02:38:23+08:00",
       "report": "01/art/reports/sc003-storyboard-highscore-qc-2026-06-11.md"
+    },
+    {
+      "batch_id": "SINGLE_E01_R015_SC004_SH001",
+      "thread_id": "not_created_current_turn_hard_reference_binding_unavailable",
+      "status": "blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11",
+      "created_files": [],
+      "history_files": [],
+      "warnings": [
+        "No image generation was attempted in this turn because R015 requires local image references as hard visual inputs.",
+        "Existing E01_L001A is a marked scene geography card with overlays, not a clean video-frame substitute for r015e01.png.",
+        "E01_C016A canonical image has been restored as an exact SHA-matching copy of global C016; remaining blockers are C017/C018/C027 SC004 QC and hard reference binding."
+      ],
+      "blocked_items": [
+        {
+          "batch_id": "SC004_SH001_R015",
+          "status": "blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11",
+          "blocked_items": [
+            "E01_R015"
+          ],
+          "target_output_path": "01/assets/reference-frames/r015e01.png",
+          "reason": "SC004-SH001 R015 still requires hard local reference-image binding plus SC004 QC for slave soldiers, pure insect soldiers, and the village crowd; E01_C016A official card missing-file blocker was resolved by exact C016 copy.",
+          "missing_or_unapproved_dependencies": [
+            {
+              "asset_id": "E01_C017",
+              "display_name": "混血奴兵第01集扣腕押车状态卡",
+              "output_path": "01/assets/characters/c017e01.png",
+              "status": "candidate_present_pending_sc004_slave_soldier_qc_2026-06-11",
+              "required_before_final_generation": true,
+              "reason": "Slave-soldier body metrics and identity must be re-approved or SC004-specific QC-passed before use in the establishing frame."
+            },
+            {
+              "asset_id": "E01_C018",
+              "display_name": "纯虫族小兵第01集封路状态卡",
+              "output_path": "01/assets/characters/c018e01.png",
+              "status": "candidate_present_pending_pure_insect_soldier_scale_review_2026-06-11",
+              "required_before_final_generation": true,
+              "reason": "Pure insect soldiers must remain 200-230cm, low-slung, reverse-jointed, and distinct from officials and slave soldiers."
+            },
+            {
+              "asset_id": "E01_C027",
+              "display_name": "残阳坳村民群像状态卡",
+              "output_path": "01/assets/characters/c027e01.png",
+              "status": "candidate_present_pending_sc004_villager_crowd_qc_2026-06-11",
+              "required_before_final_generation": true,
+              "reason": "Village crowd clothing and body scale must be approved so the queue does not become generic refugees or same-costume background noise."
+            }
+          ],
+          "report": "01/art/reports/sc004-sh001-asset-readiness-2026-06-11.md",
+          "prompt_package": "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/e01_r015-prompt-package.md",
+          "resolved_dependencies_2026_06_11": [
+            {
+              "asset_id": "E01_C016A",
+              "display_name": "白册官吏第01集残阳坳登记状态卡",
+              "output_path": "01/assets/characters/c016e01.png",
+              "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+              "resolution": "canonical file restored by direct byte-for-byte copy from global C016 master; SHA-256 matches assets/characters/c016m.png",
+              "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+              "dimensions": "3840x2160",
+              "required_before_final_generation": false,
+              "note": "Exact global-master copy removes the previous missing-file blocker and prevents prompt-only face drift; user visual QC is still recorded before video handoff."
+            }
+          ]
+        }
+      ],
+      "qc_notes": [
+        "Planning prompt now includes SC004-SH001 information budget and explicit foreground/midground/background separation.",
+        "Prompt dependencies now include white-register official tier via E01_C016A/C016 fallback context.",
+        "Canonical target remains missing and must not be marked ready until generated and visually QC-passed."
+      ],
+      "worker_result_path": "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/worker-result-E01_R015.json",
+      "resolved_dependencies_2026_06_11": [
+        {
+          "asset_id": "E01_C016A",
+          "display_name": "白册官吏第01集残阳坳登记状态卡",
+          "output_path": "01/assets/characters/c016e01.png",
+          "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+          "resolution": "canonical file restored by direct byte-for-byte copy from global C016 master; SHA-256 matches assets/characters/c016m.png",
+          "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+          "dimensions": "3840x2160",
+          "required_before_final_generation": false,
+          "note": "Exact global-master copy removes the previous missing-file blocker and prevents prompt-only face drift; user visual QC is still recorded before video handoff."
+        }
+      ]
+    },
+    {
+      "batch_id": "SC002_R005_R009_GLOBAL_REF_REGENERATION_2026_06_11",
+      "status": "generated_candidate_parent_art_room_qc_passed_pending_user_visual_qc_2026-06-11",
+      "generation_source": "built_in_image_gen_current_thread_with_visible_global_reference_images_after_c016b_c017_global_master_rebuild_2026-06-11",
+      "reviewed_at": "2026-06-11T03:20:00+08:00",
+      "dependency_assets": [
+        "E01_C016B",
+        "E01_C017",
+        "E01_C023",
+        "E01_L003",
+        "E01_P003",
+        "E01_P008",
+        "K004"
+      ],
+      "final_files": [
+        {
+          "asset_id": "E01_R005",
+          "output_path": "01/assets/reference-frames/r005e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "d5b23ab2229b641d600d342f599f68adb6e78c0c89fe8b342cb95e7878b22d22",
+          "source_dimensions": "1672x941",
+          "source_sha256": "515a63aebcfe7255b4b60d9586aff54e83fce93c437799ab564243287b7f5849",
+          "source_history_file": "01/assets/reference-frames/history/r005e01.imagegen-global-ref-source-20260611.png",
+          "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-global-ref-redo-20260611.png"
+        },
+        {
+          "asset_id": "E01_R006",
+          "output_path": "01/assets/reference-frames/r006e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "311feb50571dc4ae366838963ac6b983cabd7c97e5ef96fa0aa3c02a66d45389",
+          "source_dimensions": "1672x941",
+          "source_sha256": "64ae471dfcd4c3d1fdc5a70dd94132d507042d6913ec14ee0246de13e1cb99b5",
+          "source_history_file": "01/assets/reference-frames/history/r006e01.imagegen-global-ref-source-20260611.png",
+          "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-global-ref-redo-20260611.png"
+        },
+        {
+          "asset_id": "E01_R007",
+          "output_path": "01/assets/reference-frames/r007e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "fe31e036aa07c11a19b8a6825e3e3e9a6f6758d00702573fdf24e0f2164a7023",
+          "source_dimensions": "1672x941",
+          "source_sha256": "2fc12cc97996939ce4eaa4200776d53f69dc52a5604ceb606f5c7dcc0c1d9804",
+          "source_history_file": "01/assets/reference-frames/history/r007e01.imagegen-global-ref-source-20260611.png",
+          "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-global-ref-redo-20260611.png"
+        },
+        {
+          "asset_id": "E01_R008",
+          "output_path": "01/assets/reference-frames/r008e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "1ef8abf0da3c86677472cd36dd8b370b3b4951fc9b2eac0be18b16191cf843c4",
+          "source_dimensions": "1672x941",
+          "source_sha256": "bbca08de94a6ceac8ae93e4a2f3a883fc12051a5c137d990b87a22b1d3e02074",
+          "source_history_file": "01/assets/reference-frames/history/r008e01.imagegen-global-ref-source-20260611.png",
+          "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-global-ref-redo-20260611.png"
+        },
+        {
+          "asset_id": "E01_R009",
+          "output_path": "01/assets/reference-frames/r009e01.png",
+          "dimensions": "3840x2160",
+          "sha256": "f809d35b44eb9627e65bd6736d85de21050501f8b87d45f1d1a379c3b49077f0",
+          "source_dimensions": "1672x941",
+          "source_sha256": "80e1f1788d80ea8a10ba6c7404228cc2f91d7489fa5e4d0ae44351a75c03bf57",
+          "source_history_file": "01/assets/reference-frames/history/r009e01.imagegen-global-ref-source-20260611.png",
+          "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-global-ref-redo-20260611.png"
+        }
+      ],
+      "rejected_history_files": [
+        "01/assets/reference-frames/history/r006e01.rejected-no-child-handprint-source-20260611.png"
+      ],
+      "art_room_qc_status": "passed_art_room_visual_qc_pending_user_visual_qc_2026-06-11",
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11",
+      "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
+      "report": "01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
+      "notes": [
+        "C016B/C017 canonical files were direct global master copies before this frame regeneration.",
+        "R006 first retry was rejected because wax mark read as a round seal; replacement candidate has a clear child palm imprint.",
+        "Do not treat this run as final video approval until user visual QC confirms the new cards and frames."
+      ]
+    },
+    {
+      "batch_id": "SINGLE_E01_C016A_GLOBAL_MASTER_REBUILD_2026_06_11",
+      "thread_id": null,
+      "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+      "created_files": [
+        "01/assets/characters/c016e01.png"
+      ],
+      "compressed_reference_files": [
+        "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/refs/c016e01-ref.jpg"
+      ],
+      "source_files": [
+        "assets/characters/c016m.png"
+      ],
+      "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+      "source_sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+      "dimensions": "3840x2160",
+      "qc_notes": [
+        "Canonical E01_C016A image was rebuilt by direct copy from global C016 master to preserve the insect-official face shape exactly.",
+        "SHA-256 of 01/assets/characters/c016e01.png matches assets/characters/c016m.png, so no prompt-only redraw identity drift was introduced.",
+        "Episode-specific SC004 register/checkpoint behavior remains in metadata and downstream prompts; this card still awaits user visual QC before video handoff."
+      ],
+      "completed_at": "2026-06-11T08:58:07+08:00"
     }
   ],
   "blocked_jobs": [
@@ -1282,7 +1467,7 @@
     },
     {
       "batch_id": "SC002_STORYBOARD_REGENERATION",
-      "status": "blocked_pending_regeneration_2026-06-11",
+      "status": "resolved_to_candidate_pending_user_visual_qc_2026-06-11",
       "blocked_items": [
         "E01_C016B",
         "E01_C017",
@@ -1301,8 +1486,67 @@
         "E01_P003",
         "E01_P008"
       ],
-      "reason": "User visual QC rejected C016B/C017 identity inheritance and body metrics; R005-R009 cannot be used for video.",
-      "audit_report": "01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md"
+      "reason": "Previous blocked state was resolved by rebuilding C016B/C017 from global masters and regenerating R005-R009; user visual QC is still required before video.",
+      "audit_report": "01/art/audits/sc002-inheritance-failure-audit-2026-06-11.md",
+      "resolved_by": "SC002_R005_R009_GLOBAL_REF_REGENERATION_2026_06_11",
+      "resolved_reference_frames": [
+        "E01_R005",
+        "E01_R006",
+        "E01_R007",
+        "E01_R008",
+        "E01_R009"
+      ],
+      "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11"
+    },
+    {
+      "batch_id": "SC004_SH001_R015",
+      "status": "blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11",
+      "blocked_items": [
+        "E01_R015"
+      ],
+      "target_output_path": "01/assets/reference-frames/r015e01.png",
+      "reason": "SC004-SH001 R015 still requires hard local reference-image binding plus SC004 QC for slave soldiers, pure insect soldiers, and the village crowd; E01_C016A official card missing-file blocker was resolved by exact C016 copy.",
+      "missing_or_unapproved_dependencies": [
+        {
+          "asset_id": "E01_C017",
+          "display_name": "混血奴兵第01集扣腕押车状态卡",
+          "output_path": "01/assets/characters/c017e01.png",
+          "status": "candidate_present_pending_sc004_slave_soldier_qc_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Slave-soldier body metrics and identity must be re-approved or SC004-specific QC-passed before use in the establishing frame."
+        },
+        {
+          "asset_id": "E01_C018",
+          "display_name": "纯虫族小兵第01集封路状态卡",
+          "output_path": "01/assets/characters/c018e01.png",
+          "status": "candidate_present_pending_pure_insect_soldier_scale_review_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Pure insect soldiers must remain 200-230cm, low-slung, reverse-jointed, and distinct from officials and slave soldiers."
+        },
+        {
+          "asset_id": "E01_C027",
+          "display_name": "残阳坳村民群像状态卡",
+          "output_path": "01/assets/characters/c027e01.png",
+          "status": "candidate_present_pending_sc004_villager_crowd_qc_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Village crowd clothing and body scale must be approved so the queue does not become generic refugees or same-costume background noise."
+        }
+      ],
+      "report": "01/art/reports/sc004-sh001-asset-readiness-2026-06-11.md",
+      "prompt_package": "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/e01_r015-prompt-package.md",
+      "resolved_dependencies_2026_06_11": [
+        {
+          "asset_id": "E01_C016A",
+          "display_name": "白册官吏第01集残阳坳登记状态卡",
+          "output_path": "01/assets/characters/c016e01.png",
+          "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+          "resolution": "canonical file restored by direct byte-for-byte copy from global C016 master; SHA-256 matches assets/characters/c016m.png",
+          "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+          "dimensions": "3840x2160",
+          "required_before_final_generation": false,
+          "note": "Exact global-master copy removes the previous missing-file blocker and prevents prompt-only face drift; user visual QC is still recorded before video handoff."
+        }
+      ]
     }
   ],
   "validation_notes": [
@@ -1327,11 +1571,15 @@
     "SC003 R010-R013 redone in current thread, written to canonical 3840x2160 PNG RGB/no-alpha paths, and rescored as passed for video candidate use.",
     "SC003 redo excludes E01_R014 from the four-image score; R014 remains a separate SH004 terminal transition candidate.",
     "Director-room lighting policy for SC003 redo: preserve warm side light, narrow cool rain/jade bounce, and negative fill; reduce R011 jade prominence and strengthen R013 red-line raindrop.",
+    "C016B/C017 prompt-only candidates rejected after user global-inheritance review; not imported into project.",
+    "C016B/C017 canonical files rebuilt from exact global master cards, pending user visual QC.",
     "SC003 R010-R013 high-score optimization completed: all four meet director score >=92 and art score >95 as 3840x2160 PNG RGB/no-alpha candidates.",
     "SC003 high-score pass excludes E01_R014 from the four-image score; R014 remains a separate SH004 terminal transition candidate.",
-    "Director-room lighting policy for SC003 high-score pass: no broad additional light effect; preserve motivated warm side light, cool edge bounce, and negative fill."
+    "Director-room lighting policy for SC003 high-score pass: no broad additional light effect; preserve motivated warm side light, cool edge bounce, and negative fill.",
+    "2026-06-11: R005-R009 regenerated after C016B/C017 global master rebuild; canonical files are 3840x2160 PNG RGB without alpha.",
+    "2026-06-11: Art-room QC passed the new R005-R009 as candidates only; user visual QC is required before video production."
   ],
-  "updated_at": "2026-06-11T02:38:23+08:00",
+  "updated_at": "2026-06-11T09:24:00+08:00",
   "path_repair_status": {
     "version": "episode-output-routing-v1-2026-06-07",
     "repaired": true,
@@ -1668,6 +1916,45 @@
       }
     ]
   },
+  "c016b_c017_global_master_rebuild_2026_06_11": {
+    "status": "candidate_pending_user_visual_qc",
+    "reviewed_at": "2026-06-11T02:20:00+08:00",
+    "assets": [
+      {
+        "asset_id": "E01_C016B",
+        "output_path": "01/assets/characters/c016be01.png",
+        "source_master_asset_id": "C016",
+        "source_master_path": "assets/characters/c016m.png",
+        "final_dimensions": "3840x2160",
+        "final_sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+        "rejected_previous_history_file": "01/assets/characters/history/c016be01.v003.png",
+        "rejected_prompt_only_candidate": "/Users/uroborus/.codex/generated_images/019eb1fe-0fd9-79c3-be1d-eeff4ef34224/ig_0e81b3de853913eb016a29a5a1511c8191a60563a1d3a87828.png",
+        "notes": [
+          "Canonical image now directly matches global C016 master card hash, preventing prompt-only face drift.",
+          "This locks the global insect official face/head shell/compound eyes and reference-card structure.",
+          "Episode-specific grain-tax use is retained in metadata and downstream prompts; this image is not yet approved for SC002 video frames."
+        ],
+        "remaining_risk": "Global C016 master is a white-register official template rather than a newly rendered grain-tax-only variant; user visual approval is required before using it as SC002 dependency."
+      },
+      {
+        "asset_id": "E01_C017",
+        "output_path": "01/assets/characters/c017e01.png",
+        "source_master_asset_id": "C017",
+        "source_master_path": "assets/characters/c017m.png",
+        "final_dimensions": "3840x2160",
+        "final_sha256": "caaadfe246ba56ff64052c47e7a1c942d476d3e5e593387b0330ab37e0c83593",
+        "rejected_previous_history_file": "01/assets/characters/history/c017e01.v003.png",
+        "rejected_prompt_only_candidate": "/Users/uroborus/.codex/generated_images/019eb1fe-0fd9-79c3-be1d-eeff4ef34224/ig_0e81b3de853913eb016a29a696d610819189d8190199c4ce25.png",
+        "notes": [
+          "Canonical image now directly matches global C017 master card hash, preventing prompt-only face/body drift.",
+          "This locks the mixed-blood slave soldier scalp chitin, cheek plates, neck membrane, low braid, tags, rope, hardened hands, and cart-enforcement poses.",
+          "Episode-specific SC002 wrist-grip/cart use is retained in metadata and downstream prompts; this image is not yet approved for SC002 video frames."
+        ],
+        "remaining_risk": "Global C017 master is a series template and must still be user-approved as the episode state card before R006/R008/R009 regeneration."
+      }
+    ],
+    "video_handoff_status": "R005-R009 remain blocked pending user visual QC and regeneration"
+  },
   "sc003_storyboard_highscore_qc_2026_06_11": {
     "status": "passed_highscore_target_92_director_95plus_art_2026-06-11",
     "reviewed_at": "2026-06-11T02:38:23+08:00",
@@ -1750,5 +2037,379 @@
         "sha256": "60594e9d9659bee15cc173b1bc8f986767bebc8be9b5bc8d2e02f98be702bab1"
       }
     ]
+  },
+  "sc004_sh001_asset_build_2026_06_11": {
+    "status": "blocked_pending_remaining_reference_qc_and_hard_reference_binding_2026-06-11",
+    "asset_id": "E01_R015",
+    "canonical_file": "01/assets/reference-frames/r015e01.png",
+    "canonical_file_exists": false,
+    "created_files": [],
+    "history_files": [],
+    "read_source_summary": {
+      "global_scene_read": [
+        "L001 残阳坳村落与药屋主场景卡",
+        "E01_L001A 残阳坳村口封锁地理场景卡",
+        "bible/scenes.md#残阳坳",
+        "01/shots/shot-list.json#SC004-SH001"
+      ],
+      "character_cards_read": [
+        "C001 / E01_C001 沈维桑主角与第01集封村状态",
+        "C016 / E01_C016A 白册官吏层级与残阳坳登记状态",
+        "C017 / E01_C017 混血奴兵扣腕押车状态",
+        "C018 / E01_C018 纯虫族小兵封路状态",
+        "E01_C027 残阳坳村民群像状态"
+      ],
+      "shot_decision": "SC004-SH001 is a wide geography-establishing frame. Shen Weisang is continuity context rather than a readable hero focus; the image should prioritize checkpoint geography, official table position, slave-soldier queue control, pure-insect outer blockade, white-wax flags, and crowd massing."
+    },
+    "dependency_check": {
+      "present_reference_files": [
+        "01/assets/style/f001e01.png",
+        "01/assets/style/f005e01.png",
+        "01/assets/locations/l001ae01.png",
+        "01/assets/characters/c017e01.png",
+        "01/assets/characters/c018e01.png",
+        "01/assets/characters/c027e01.png",
+        "01/assets/props/p022e01.png",
+        "01/assets/costumes/k004e01.png",
+        "01/assets/costumes/k006e01.png",
+        "assets/characters/c001m.png",
+        "assets/characters/c016m.png",
+        "01/assets/characters/c016e01.png"
+      ],
+      "missing_or_unapproved_dependencies": [
+        {
+          "asset_id": "E01_C017",
+          "display_name": "混血奴兵第01集扣腕押车状态卡",
+          "output_path": "01/assets/characters/c017e01.png",
+          "status": "candidate_present_pending_sc004_slave_soldier_qc_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Slave-soldier body metrics and identity must be re-approved or SC004-specific QC-passed before use in the establishing frame."
+        },
+        {
+          "asset_id": "E01_C018",
+          "display_name": "纯虫族小兵第01集封路状态卡",
+          "output_path": "01/assets/characters/c018e01.png",
+          "status": "candidate_present_pending_pure_insect_soldier_scale_review_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Pure insect soldiers must remain 200-230cm, low-slung, reverse-jointed, and distinct from officials and slave soldiers."
+        },
+        {
+          "asset_id": "E01_C027",
+          "display_name": "残阳坳村民群像状态卡",
+          "output_path": "01/assets/characters/c027e01.png",
+          "status": "candidate_present_pending_sc004_villager_crowd_qc_2026-06-11",
+          "required_before_final_generation": true,
+          "reason": "Village crowd clothing and body scale must be approved so the queue does not become generic refugees or same-costume background noise."
+        }
+      ],
+      "resolved_dependencies_2026_06_11": [
+        {
+          "asset_id": "E01_C016A",
+          "display_name": "白册官吏第01集残阳坳登记状态卡",
+          "output_path": "01/assets/characters/c016e01.png",
+          "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+          "resolution": "canonical file restored by direct byte-for-byte copy from global C016 master; SHA-256 matches assets/characters/c016m.png",
+          "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+          "dimensions": "3840x2160",
+          "required_before_final_generation": false,
+          "note": "Exact global-master copy removes the previous missing-file blocker and prevents prompt-only face drift; user visual QC is still recorded before video handoff."
+        }
+      ]
+    },
+    "scene_information_budget": {
+      "detail_priority": {
+        "highest_detail": [
+          "village checkpoint table and white register position",
+          "three white-wax flags marking blocked exits",
+          "old well / medicine-house / back-hill exit geography triangle",
+          "nearest wrist-check queue and one clear slave-soldier enforcement action"
+        ],
+        "medium_detail": [
+          "white-register clerk silhouette at the table",
+          "mixed-blood slave soldiers holding the queue line",
+          "pure insect soldiers sealing the well and medicine-house outer ring",
+          "foreground village tools and confiscated baskets only where they support scale"
+        ],
+        "low_detail": [
+          "distant villagers",
+          "far roofs",
+          "background footpaths and field edges",
+          "secondary soldiers at outer exits"
+        ],
+        "impression_only": [
+          "far crowd faces",
+          "small weapons",
+          "tiny banner cloth texture",
+          "distant roof and hillside micro-detail"
+        ]
+      },
+      "distance_simplification": [
+        "use grouped silhouettes for far villagers and soldiers",
+        "use daylight haze and warm dust to separate distances",
+        "keep roofs, stone walls, and crops as readable masses instead of particle texture"
+      ],
+      "forbidden_detail_behavior": [
+        "no equal-detail rendering across the whole frame",
+        "no over-detailed distant soldiers or crowd members",
+        "no granular crowd texture",
+        "no particleized stone or roof texture",
+        "no noisy micro-detail",
+        "no AI speckle",
+        "no full-frame ultra-detail",
+        "no visual information overload"
+      ],
+      "prompt_rule": "big shapes clear, details restrained, distant subjects grouped, only nearby checkpoint table, flags, geography anchors, and nearest queue finely rendered"
+    },
+    "report": "01/art/reports/sc004-sh001-asset-readiness-2026-06-11.md",
+    "prompt_package": "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/e01_r015-prompt-package.md",
+    "thread_prompt": "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/e01_r015-thread-prompt.md",
+    "c016a_rebuild_status": {
+      "asset_id": "E01_C016A",
+      "display_name": "白册官吏第01集残阳坳登记状态卡",
+      "output_path": "01/assets/characters/c016e01.png",
+      "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+      "resolution": "canonical file restored by direct byte-for-byte copy from global C016 master; SHA-256 matches assets/characters/c016m.png",
+      "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+      "dimensions": "3840x2160",
+      "required_before_final_generation": false,
+      "note": "Exact global-master copy removes the previous missing-file blocker and prevents prompt-only face drift; user visual QC is still recorded before video handoff."
+    },
+    "scene_continuity_lock": {
+      "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+      "master_asset_id": "L001",
+      "master_output_path": "assets/locations/l001m.png",
+      "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+      "lock_kind": "canyangao_global_single_physical_space_lock",
+      "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+      "immutable_anchors": [
+        "village gate / village entrance",
+        "checkpoint table / white-register position",
+        "old well",
+        "Luo medicine house exterior and door axis",
+        "medicine-house interior door slit and medicine cabinet hidden compartment",
+        "back-hill exit and low-slope route",
+        "three white-wax flag blockade points",
+        "villager queue and enforcement lanes"
+      ],
+      "allowed_variation": [
+        "camera angle",
+        "camera distance",
+        "lens/focal length",
+        "foreground occlusion",
+        "time of day and weather",
+        "blockade props and crowd positions",
+        "local dirt, damage, smoke, and dressing"
+      ],
+      "forbidden_variation": [
+        "alternate village layout",
+        "detached medicine house unrelated to the village gate",
+        "old well moved to a new side",
+        "checkpoint table moved out of the L001 topology",
+        "back-hill exit or white-wax flags repositioned into a different map",
+        "medicine-house interior becoming an unrelated room",
+        "new landmark replacing L001 anchors"
+      ],
+      "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+      "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+      "updated_at": "2026-06-11T09:24:00+08:00"
+    },
+    "same_space_master_asset_id": "L001",
+    "same_space_zone_asset_id": "E01_L001A"
+  },
+  "sc002_r005_r009_global_ref_regeneration_2026_06_11": {
+    "status": "generated_candidate_parent_art_room_qc_passed_pending_user_visual_qc_2026-06-11",
+    "approval_status": "candidate_pending_user_visual_qc_after_sc002_global_ref_regeneration_2026-06-11",
+    "reviewed_at": "2026-06-11T03:20:00+08:00",
+    "audit_report": "01/art/audits/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
+    "report": "01/art/reports/sc002-r005-r009-global-ref-regeneration-qc-2026-06-11.md",
+    "generated_reference_frames": [
+      "E01_R005",
+      "E01_R006",
+      "E01_R007",
+      "E01_R008",
+      "E01_R009"
+    ],
+    "source_history_files": [
+      "01/assets/reference-frames/history/r005e01.imagegen-global-ref-source-20260611.png",
+      "01/assets/reference-frames/history/r006e01.imagegen-global-ref-source-20260611.png",
+      "01/assets/reference-frames/history/r007e01.imagegen-global-ref-source-20260611.png",
+      "01/assets/reference-frames/history/r008e01.imagegen-global-ref-source-20260611.png",
+      "01/assets/reference-frames/history/r009e01.imagegen-global-ref-source-20260611.png"
+    ],
+    "rejected_history_files": [
+      "01/assets/reference-frames/history/r006e01.rejected-no-child-handprint-source-20260611.png"
+    ],
+    "final_files": [
+      {
+        "asset_id": "E01_R005",
+        "output_path": "01/assets/reference-frames/r005e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "d5b23ab2229b641d600d342f599f68adb6e78c0c89fe8b342cb95e7878b22d22",
+        "source_dimensions": "1672x941",
+        "source_sha256": "515a63aebcfe7255b4b60d9586aff54e83fce93c437799ab564243287b7f5849",
+        "source_history_file": "01/assets/reference-frames/history/r005e01.imagegen-global-ref-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r005e01.before-global-ref-redo-20260611.png"
+      },
+      {
+        "asset_id": "E01_R006",
+        "output_path": "01/assets/reference-frames/r006e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "311feb50571dc4ae366838963ac6b983cabd7c97e5ef96fa0aa3c02a66d45389",
+        "source_dimensions": "1672x941",
+        "source_sha256": "64ae471dfcd4c3d1fdc5a70dd94132d507042d6913ec14ee0246de13e1cb99b5",
+        "source_history_file": "01/assets/reference-frames/history/r006e01.imagegen-global-ref-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r006e01.before-global-ref-redo-20260611.png"
+      },
+      {
+        "asset_id": "E01_R007",
+        "output_path": "01/assets/reference-frames/r007e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "fe31e036aa07c11a19b8a6825e3e3e9a6f6758d00702573fdf24e0f2164a7023",
+        "source_dimensions": "1672x941",
+        "source_sha256": "2fc12cc97996939ce4eaa4200776d53f69dc52a5604ceb606f5c7dcc0c1d9804",
+        "source_history_file": "01/assets/reference-frames/history/r007e01.imagegen-global-ref-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r007e01.before-global-ref-redo-20260611.png"
+      },
+      {
+        "asset_id": "E01_R008",
+        "output_path": "01/assets/reference-frames/r008e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "1ef8abf0da3c86677472cd36dd8b370b3b4951fc9b2eac0be18b16191cf843c4",
+        "source_dimensions": "1672x941",
+        "source_sha256": "bbca08de94a6ceac8ae93e4a2f3a883fc12051a5c137d990b87a22b1d3e02074",
+        "source_history_file": "01/assets/reference-frames/history/r008e01.imagegen-global-ref-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r008e01.before-global-ref-redo-20260611.png"
+      },
+      {
+        "asset_id": "E01_R009",
+        "output_path": "01/assets/reference-frames/r009e01.png",
+        "dimensions": "3840x2160",
+        "sha256": "f809d35b44eb9627e65bd6736d85de21050501f8b87d45f1d1a379c3b49077f0",
+        "source_dimensions": "1672x941",
+        "source_sha256": "80e1f1788d80ea8a10ba6c7404228cc2f91d7489fa5e4d0ae44351a75c03bf57",
+        "source_history_file": "01/assets/reference-frames/history/r009e01.imagegen-global-ref-source-20260611.png",
+        "previous_canonical_history_file": "01/assets/reference-frames/history/r009e01.before-global-ref-redo-20260611.png"
+      }
+    ],
+    "art_room_qc_summary": {
+      "E01_R005": {
+        "shot": "SC002-SH001",
+        "use": "I2V 首帧",
+        "director_requirement_score": 90,
+        "art_fit_score": 91,
+        "qc_notes": [
+          "C016B 虫族粮税小吏的骨白脸壳、白官袍、高帽和登记道具可读，没有变成人族账房。",
+          "粮袋墙、检查台、低位村民带和前右到后左的泥路/河岸空间层次可读。",
+          "可接受风险：左侧天空仍有开口，视频阶段应保持粮袋墙压迫感，不要再扩天空。"
+        ]
+      },
+      "E01_R006": {
+        "shot": "SC002-SH002",
+        "use": "I2V 首帧",
+        "director_requirement_score": 93,
+        "art_fit_score": 94,
+        "qc_notes": [
+          "C017 混血奴兵的深灰蓝破制服、骨白腕绑、有机硬化指节、脸壳与长辫继承可读。",
+          "前景祖牌盒内的冷白虫蜡儿童手印清楚，替换了首版错误圆形封章。",
+          "扣腕/按压动作有真实接触压迫，儿童和家人只用局部身体语言呈现。"
+        ]
+      },
+      "E01_R007": {
+        "shot": "SC002-SH003",
+        "use": "I2V 首帧",
+        "director_requirement_score": 92,
+        "art_fit_score": 93,
+        "qc_notes": [
+          "C016B 在桌后负责开册/指认，C017 只执行扣腕，职责和身高层级没有互换。",
+          "前景白册、骨算盘、虫蜡封片、祖牌盒和湿木桌边层次清楚；白册没有随机可读文字。",
+          "粮袋墙、河泥、检查口和低位家人压力仍继承 L003 金河粮仓空间。"
+        ]
+      },
+      "E01_R008": {
+        "shot": "SC002-SH004",
+        "use": "FLF2V 首帧",
+        "director_requirement_score": 91,
+        "art_fit_score": 92,
+        "qc_notes": [
+          "R008 保持门槛后方 wide pullback 首帧，前景祖牌盒、虫蜡手印、湿泥与车辙最大最清楚。",
+          "C017 混血奴兵服制、发辫、腕绑和硬化手臂可读，正在拖粮袋向侧向粮车移动。",
+          "家人被压低在门槛边，粮车/车轮/粮袋在中景形成离家动作。"
+        ]
+      },
+      "E01_R009": {
+        "shot": "SC002-SH004",
+        "use": "FLF2V 终帧",
+        "director_requirement_score": 94,
+        "art_fit_score": 94,
+        "qc_notes": [
+          "R009 与 R008 保持同一门槛后方三分构图、同一祖牌盒、同一虫蜡手印和车辙方向。",
+          "粮车已经退入冷雾，前景只剩空门槛、祖牌盒、手印和湿泥车辙；家人低在门槛边。",
+          "没有把奴兵或官吏重新拉回前景，符合终帧空场要求。"
+        ]
+      }
+    },
+    "video_handoff_status": "pending_user_visual_qc_do_not_start_video_until_user_confirms_2026-06-11"
+  },
+  "e01_c016a_global_master_rebuild_2026_06_11": {
+    "status": "global_c016_master_exact_copy_pending_user_visual_qc_2026-06-11",
+    "asset_id": "E01_C016A",
+    "source_asset_id": "C016",
+    "source_file": "assets/characters/c016m.png",
+    "created_files": [
+      "01/assets/characters/c016e01.png"
+    ],
+    "compressed_reference_files": [
+      "01/art/runs/2026-06-11-sc004-sh001-imagegen-task/refs/c016e01-ref.jpg"
+    ],
+    "sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+    "source_sha256": "8077026b3c884f8d9d0cba59f39e13987ce402fd0f41047cddd48a0fada656d0",
+    "dimensions": "3840x2160",
+    "generation_source": "direct_global_master_copy_no_prompt_only_generation",
+    "completed_at": "2026-06-11T08:58:07+08:00",
+    "qc_status": "candidate_global_c016_face_inheritance_locked_pending_user_visual_qc_2026-06-11",
+    "notes": [
+      "Canonical E01_C016A image was rebuilt by direct copy from global C016 master to preserve the insect-official face shape exactly.",
+      "SHA-256 of 01/assets/characters/c016e01.png matches assets/characters/c016m.png, so no prompt-only redraw identity drift was introduced.",
+      "Episode-specific SC004 register/checkpoint behavior remains in metadata and downstream prompts; this card still awaits user visual QC before video handoff."
+    ]
+  },
+  "canyangao_same_space_lock_2026_06_11": {
+    "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+    "master_asset_id": "L001",
+    "master_output_path": "assets/locations/l001m.png",
+    "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+    "lock_kind": "canyangao_global_single_physical_space_lock",
+    "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+    "immutable_anchors": [
+      "village gate / village entrance",
+      "checkpoint table / white-register position",
+      "old well",
+      "Luo medicine house exterior and door axis",
+      "medicine-house interior door slit and medicine cabinet hidden compartment",
+      "back-hill exit and low-slope route",
+      "three white-wax flag blockade points",
+      "villager queue and enforcement lanes"
+    ],
+    "allowed_variation": [
+      "camera angle",
+      "camera distance",
+      "lens/focal length",
+      "foreground occlusion",
+      "time of day and weather",
+      "blockade props and crowd positions",
+      "local dirt, damage, smoke, and dressing"
+    ],
+    "forbidden_variation": [
+      "alternate village layout",
+      "detached medicine house unrelated to the village gate",
+      "old well moved to a new side",
+      "checkpoint table moved out of the L001 topology",
+      "back-hill exit or white-wax flags repositioned into a different map",
+      "medicine-house interior becoming an unrelated room",
+      "new landmark replacing L001 anchors"
+    ],
+    "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+    "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+    "updated_at": "2026-06-11T09:24:00+08:00"
   }
 }

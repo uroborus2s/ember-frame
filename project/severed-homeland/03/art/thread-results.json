@@ -1,0 +1,47 @@
+{
+  "version": "episode03-targeted-sc003-sh001-thread-results-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "03",
+  "status": "complete_qc_passed_targeted",
+  "updated_at": "2026-06-10",
+  "threads": [
+    {
+      "thread_id": "019eb194-896d-7470-990c-adfd64279d66",
+      "batch_id": "B01_E03_SC003_SH001_REFERENCE_FRAME",
+      "status": "complete",
+      "output_count": 1,
+      "final_files": [
+        {
+          "asset_id": "E03_R021",
+          "prompt_id": "PROMPT_E03_R021",
+          "output_path": "03/assets/reference-frames/r021e03.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb194-896d-7470-990c-adfd64279d66/ig_08c3efa24d8c6ec1016a295d5f05e88191b709d231d6b079f3.png",
+          "dimensions": "1672x941",
+          "sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5"
+        }
+      ],
+      "history_files": [
+        {
+          "asset_id": "E03_R021",
+          "path": "03/assets/reference-frames/history/r021e03.v001-main-thread-alt-20260610.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb189-c575-7bf3-8c34-1f5b81c69645/ig_0885a0af07fb27c2016a295d87db8c81968a4d76d011ad7e4b.png",
+          "dimensions": "1672x941",
+          "sha256": "c31fb078fddcea83d7767b8dfdc570a9458f3b4caf534df570f87f8373c49a76",
+          "reason_retained": "Alternate main-thread candidate; useful but foreground hand/token became heavier than the establishing-shot priority."
+        }
+      ],
+      "blocked_items": [],
+      "qc_notes": [
+        "Projectless imagegen-task thread returned a generated image and did not require project file access.",
+        "Parent coordinator selected the projectless-thread candidate as canonical and archived the main-thread alternate.",
+        "Built-in imagegen returned 1672x941; record this as below preferred 3840x2160 before downstream upscaling or final video production."
+      ]
+    }
+  ],
+  "blocked_jobs": [],
+  "validation_notes": [
+    "Final canonical file exists at 03/assets/reference-frames/r021e03.png.",
+    "Retained alternate exists only under sibling history/ with a version suffix.",
+    "No generated draft remains in the canonical reference-frame directory besides the final file."
+  ]
+}

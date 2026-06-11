@@ -234,7 +234,8 @@
         "spatial_structure": "检查桌居中偏上，村民队列在下，旧井一侧，药屋外圈另一侧，后山出口由白蜡旗标出。",
         "action_zones": "检查桌、白册、白蜡旗、旧井方向、药屋外圈和村民排队扣腕动线是本卡动作区。",
         "camera_facing_zones": "宽镜先锁定检查桌、旧井、药屋、后山出口，再为后续禁歌和圆谎近景提供空间母本。",
-        "prohibited_elements": "禁止改变旧井、药屋、检查桌、后山出口相对位置，禁止现代村落、乞丐化贫困或空洞氛围图。"
+        "prohibited_elements": "禁止改变旧井、药屋、检查桌、后山出口相对位置，禁止现代村落、乞丐化贫困或空洞氛围图。\n\n额外禁止：不得把本区域画成脱离全局 L001 的另一个场景或独立空间。",
+        "global_same_space_rule": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。"
       },
       "episode_state": {
         "state": "必须一次锁定检查桌、旧井、药屋和后山出口相对位置；三支白蜡旗证明封村已布好。",
@@ -275,8 +276,50 @@
         "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
         "lock_scope": "geography, entrances/exits, spatial structure, landmark positions, materials, color system, and action zones are immutable; only episode camera/state may change",
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
-        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
-        "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。\n\n残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "reject if the shot appears to be outside or spatially inconsistent with global L001 Canyangao; reject any changed well/table/medicine-house/gate/back-hill topology",
+        "scene_space_lock_id": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_scene_asset_id": "L001",
+        "must_remain_inside_master_scene": true,
+        "same_space_lock": {
+          "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+          "master_asset_id": "L001",
+          "master_output_path": "assets/locations/l001m.png",
+          "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+          "lock_kind": "canyangao_global_single_physical_space_lock",
+          "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+          "immutable_anchors": [
+            "village gate / village entrance",
+            "checkpoint table / white-register position",
+            "old well",
+            "Luo medicine house exterior and door axis",
+            "medicine-house interior door slit and medicine cabinet hidden compartment",
+            "back-hill exit and low-slope route",
+            "three white-wax flag blockade points",
+            "villager queue and enforcement lanes"
+          ],
+          "allowed_variation": [
+            "camera angle",
+            "camera distance",
+            "lens/focal length",
+            "foreground occlusion",
+            "time of day and weather",
+            "blockade props and crowd positions",
+            "local dirt, damage, smoke, and dressing"
+          ],
+          "forbidden_variation": [
+            "alternate village layout",
+            "detached medicine house unrelated to the village gate",
+            "old well moved to a new side",
+            "checkpoint table moved out of the L001 topology",
+            "back-hill exit or white-wax flags repositioned into a different map",
+            "medicine-house interior becoming an unrelated room",
+            "new landmark replacing L001 anchors"
+          ],
+          "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+          "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+          "updated_at": "2026-06-11T09:24:00+08:00"
+        }
       },
       "output_format_requirements": {
         "canvas_aspect_ratio": "16:9",
@@ -284,16 +327,59 @@
         "composition_layers": {
           "foreground": "从全剧 L001 残阳坳母卡派生的近景层：村民低位队列、土褐泥地、白册检查桌前缘和生活工具尺度，保持旧驿村落生活秩序。",
           "midground": "从全剧 L001 母卡派生的中景层：检查桌、旧井、药屋外圈和三支白蜡旗标出的后山出口，三点关系必须同场可读。",
-          "background": "从全剧 L001 母卡继承的背景层：村口入口、低矮房屋、后山坡与封锁线，禁止改变旧井、药屋、检查桌、后山出口相对位置。"
+          "background": "从全剧 L001 母卡继承的背景层：村口入口、低矮房屋、后山坡与封锁线，禁止改变旧井、药屋、检查桌、后山出口相对位置。",
+          "same_space_lock": "所有层级必须从全局 L001 同一空间裁切或调度，不得用相似新场景替代。"
         },
         "camera_requirements": {
           "camera_distance": "先用宽镜锁定检查桌、旧井、药屋、后山出口，再派生近景动作区。",
           "camera_angle": "村口压迫横屏，检查桌居中偏上，村民低位。",
           "screen_direction": "沈维桑 POV 反复读取旧井、药屋、后山出口三点关系。",
           "light": "白天土褐日光，虫蜡旗和白册冷白突出。",
-          "weather_time": "白天封村，干冷土褐日光。"
+          "weather_time": "白天封村，干冷土褐日光。",
+          "space_rule": "只允许在 L001 空间内移动机位、焦段和遮挡，不允许改变村口/旧井/检查桌/药屋/后山出口相对关系。"
         }
-      }
+      },
+      "scene_continuity_lock": {
+        "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_asset_id": "L001",
+        "master_output_path": "assets/locations/l001m.png",
+        "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+        "lock_kind": "canyangao_global_single_physical_space_lock",
+        "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+        "immutable_anchors": [
+          "village gate / village entrance",
+          "checkpoint table / white-register position",
+          "old well",
+          "Luo medicine house exterior and door axis",
+          "medicine-house interior door slit and medicine cabinet hidden compartment",
+          "back-hill exit and low-slope route",
+          "three white-wax flag blockade points",
+          "villager queue and enforcement lanes"
+        ],
+        "allowed_variation": [
+          "camera angle",
+          "camera distance",
+          "lens/focal length",
+          "foreground occlusion",
+          "time of day and weather",
+          "blockade props and crowd positions",
+          "local dirt, damage, smoke, and dressing"
+        ],
+        "forbidden_variation": [
+          "alternate village layout",
+          "detached medicine house unrelated to the village gate",
+          "old well moved to a new side",
+          "checkpoint table moved out of the L001 topology",
+          "back-hill exit or white-wax flags repositioned into a different map",
+          "medicine-house interior becoming an unrelated room",
+          "new landmark replacing L001 anchors"
+        ],
+        "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+        "updated_at": "2026-06-11T09:24:00+08:00"
+      },
+      "same_space_master_asset_id": "L001",
+      "same_space_zone_asset_id": "E01_L001A"
     },
     {
       "asset_id": "E01_L001B",
@@ -309,7 +395,8 @@
         "spatial_structure": "药柜占一侧，暗格低位，门缝与封门奴兵爪足在外侧可见，药桌和药篮提供抓药遮掩。",
         "action_zones": "药柜暗格、旧驿暗号底板、草药篮、门缝冷白、罗青禾保护线和藏身视线是本卡动作区。",
         "camera_facing_zones": "药屋中景转门影，近景读暗格和门缝，背景保留门外封锁压力但不扩大成机关奇观。",
-        "prohibited_elements": "禁止药屋奇观机关、现代药房、改变暗格与门的位置关系或把药屋画成村口/旧井外景。"
+        "prohibited_elements": "禁止药屋奇观机关、现代药房、改变暗格与门的位置关系或把药屋画成村口/旧井外景。\n\n额外禁止：不得把本区域画成脱离全局 L001 的另一个场景或独立空间。",
+        "global_same_space_rule": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。"
       },
       "episode_state": {
         "state": "药屋内草药青暗光、药柜暗格、门缝冷白和旧驿暗号底板；罗青禾始终在门与暗格之间。",
@@ -350,8 +437,50 @@
         "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
         "lock_scope": "geography, entrances/exits, spatial structure, landmark positions, materials, color system, and action zones are immutable; only episode camera/state may change",
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
-        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
-        "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。\n\n残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "reject if the shot appears to be outside or spatially inconsistent with global L001 Canyangao; reject any changed well/table/medicine-house/gate/back-hill topology",
+        "scene_space_lock_id": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_scene_asset_id": "L001",
+        "must_remain_inside_master_scene": true,
+        "same_space_lock": {
+          "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+          "master_asset_id": "L001",
+          "master_output_path": "assets/locations/l001m.png",
+          "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+          "lock_kind": "canyangao_global_single_physical_space_lock",
+          "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+          "immutable_anchors": [
+            "village gate / village entrance",
+            "checkpoint table / white-register position",
+            "old well",
+            "Luo medicine house exterior and door axis",
+            "medicine-house interior door slit and medicine cabinet hidden compartment",
+            "back-hill exit and low-slope route",
+            "three white-wax flag blockade points",
+            "villager queue and enforcement lanes"
+          ],
+          "allowed_variation": [
+            "camera angle",
+            "camera distance",
+            "lens/focal length",
+            "foreground occlusion",
+            "time of day and weather",
+            "blockade props and crowd positions",
+            "local dirt, damage, smoke, and dressing"
+          ],
+          "forbidden_variation": [
+            "alternate village layout",
+            "detached medicine house unrelated to the village gate",
+            "old well moved to a new side",
+            "checkpoint table moved out of the L001 topology",
+            "back-hill exit or white-wax flags repositioned into a different map",
+            "medicine-house interior becoming an unrelated room",
+            "new landmark replacing L001 anchors"
+          ],
+          "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+          "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+          "updated_at": "2026-06-11T09:24:00+08:00"
+        }
       },
       "output_format_requirements": {
         "canvas_aspect_ratio": "16:9",
@@ -359,16 +488,59 @@
         "composition_layers": {
           "foreground": "从全剧 L001/药屋母卡派生的近景层：药桌、草药篮、药柜暗格低位、旧驿暗号底板边缘和门缝冷白光，保持药屋真实尺度。",
           "midground": "从全剧药屋空间派生的中景层：罗青禾活动线位于药柜与门之间，药柜、暗格、门框和遮掩动线必须清楚。",
-          "background": "从全剧 L001 母卡继承的背景层：门外封门奴兵爪足、药屋外圈和村口封锁冷白压力，禁止把药屋画成奇观机关房。"
+          "background": "从全剧 L001 母卡继承的背景层：门外封门奴兵爪足、药屋外圈和村口封锁冷白压力，禁止把药屋画成奇观机关房。",
+          "same_space_lock": "所有层级必须从全局 L001 同一空间裁切或调度，不得用相似新场景替代。"
         },
         "camera_requirements": {
           "camera_distance": "药屋内中景转门影，暗格和门缝近景从母卡室内空间派生。",
           "camera_angle": "低位药柜和门缝轴线，藏身空间不可过亮。",
           "screen_direction": "晏南枝从柜内看外，罗青禾在柜与门之间形成保护线。",
           "light": "室内草药青暗光，门缝虫蜡冷白切入。",
-          "weather_time": "封村当天室内暗光，外部冷白封锁压力进入门缝。"
+          "weather_time": "封村当天室内暗光，外部冷白封锁压力进入门缝。",
+          "space_rule": "只允许在 L001 空间内移动机位、焦段和遮挡，不允许改变村口/旧井/检查桌/药屋/后山出口相对关系。"
         }
-      }
+      },
+      "scene_continuity_lock": {
+        "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_asset_id": "L001",
+        "master_output_path": "assets/locations/l001m.png",
+        "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+        "lock_kind": "canyangao_global_single_physical_space_lock",
+        "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+        "immutable_anchors": [
+          "village gate / village entrance",
+          "checkpoint table / white-register position",
+          "old well",
+          "Luo medicine house exterior and door axis",
+          "medicine-house interior door slit and medicine cabinet hidden compartment",
+          "back-hill exit and low-slope route",
+          "three white-wax flag blockade points",
+          "villager queue and enforcement lanes"
+        ],
+        "allowed_variation": [
+          "camera angle",
+          "camera distance",
+          "lens/focal length",
+          "foreground occlusion",
+          "time of day and weather",
+          "blockade props and crowd positions",
+          "local dirt, damage, smoke, and dressing"
+        ],
+        "forbidden_variation": [
+          "alternate village layout",
+          "detached medicine house unrelated to the village gate",
+          "old well moved to a new side",
+          "checkpoint table moved out of the L001 topology",
+          "back-hill exit or white-wax flags repositioned into a different map",
+          "medicine-house interior becoming an unrelated room",
+          "new landmark replacing L001 anchors"
+        ],
+        "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+        "updated_at": "2026-06-11T09:24:00+08:00"
+      },
+      "same_space_master_asset_id": "L001",
+      "same_space_zone_asset_id": "E01_L001B"
     },
     {
       "asset_id": "E01_L001C",
@@ -384,7 +556,8 @@
         "spatial_structure": "旧井口与检查桌形成同一审讯轴线，药屋门框和封门牌在背景侧，村民被压到井边低处。",
         "action_zones": "旧井口、检查桌、白册/虫蜡针尺度物、药屋封门牌和沈维桑跨两点视线是本卡动作区。",
         "camera_facing_zones": "旧井、检查桌、药屋封门牌先同场确认，再派生井口和册页近景。",
-        "prohibited_elements": "禁止漂移旧井、药屋、检查桌相对方位，禁止现代审讯桌、空景奇观或把旧井画成独立古迹。"
+        "prohibited_elements": "禁止漂移旧井、药屋、检查桌相对方位，禁止现代审讯桌、空景奇观或把旧井画成独立古迹。\n\n额外禁止：不得把本区域画成脱离全局 L001 的另一个场景或独立空间。",
+        "global_same_space_rule": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。"
       },
       "episode_state": {
         "state": "旧井成为案件中心，药屋封门牌、检查桌、村口入口和旧井必须同场可读。",
@@ -427,8 +600,50 @@
         "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
         "lock_scope": "geography, entrances/exits, spatial structure, landmark positions, materials, color system, and action zones are immutable; only episode camera/state may change",
         "generator_requirement": "must attach or otherwise use the master image as a hard visual reference; block generation if reference image use is unavailable",
-        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。",
-        "qc_rejection_rule": "reject any visible spatial/geographic drift from the master scene card, even if lighting and atmosphere are attractive"
+        "visible_prompt_lock": "场景继承硬锁：必须把随附全剧场景母卡作为唯一空间母本；建筑或地貌结构、入口出口方向、标志性构件、相对位置、动线、材质、色彩系统和空间比例必须继承母卡。第一集场景卡只允许改变镜头距离、镜头高度、角度、天气、时间、局部封锁状态、人物调度、损毁痕迹和道具摆放；不得重造地点、不得改变地理关系、不得改变主建筑比例、不得新增现代构件、不得把同一地点画成另一个空间。只要空间布局或地标继承有任何肉眼可见漂移，生成即失败。\n\n残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "reject if the shot appears to be outside or spatially inconsistent with global L001 Canyangao; reject any changed well/table/medicine-house/gate/back-hill topology",
+        "scene_space_lock_id": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_scene_asset_id": "L001",
+        "must_remain_inside_master_scene": true,
+        "same_space_lock": {
+          "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+          "master_asset_id": "L001",
+          "master_output_path": "assets/locations/l001m.png",
+          "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+          "lock_kind": "canyangao_global_single_physical_space_lock",
+          "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+          "immutable_anchors": [
+            "village gate / village entrance",
+            "checkpoint table / white-register position",
+            "old well",
+            "Luo medicine house exterior and door axis",
+            "medicine-house interior door slit and medicine cabinet hidden compartment",
+            "back-hill exit and low-slope route",
+            "three white-wax flag blockade points",
+            "villager queue and enforcement lanes"
+          ],
+          "allowed_variation": [
+            "camera angle",
+            "camera distance",
+            "lens/focal length",
+            "foreground occlusion",
+            "time of day and weather",
+            "blockade props and crowd positions",
+            "local dirt, damage, smoke, and dressing"
+          ],
+          "forbidden_variation": [
+            "alternate village layout",
+            "detached medicine house unrelated to the village gate",
+            "old well moved to a new side",
+            "checkpoint table moved out of the L001 topology",
+            "back-hill exit or white-wax flags repositioned into a different map",
+            "medicine-house interior becoming an unrelated room",
+            "new landmark replacing L001 anchors"
+          ],
+          "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+          "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+          "updated_at": "2026-06-11T09:24:00+08:00"
+        }
       },
       "output_format_requirements": {
         "canvas_aspect_ratio": "16:9",
@@ -436,16 +651,98 @@
         "composition_layers": {
           "foreground": "从全剧 L001 旧井检查桌母卡派生的近景层：旧井口、检查桌边缘、白册/虫蜡针尺度物和被压低的人群，旧井必须成为案件中心。",
           "midground": "从全剧 L001 母卡派生的中景层：检查桌审讯轴线、药屋封门牌、沈维桑视线横跨两点的行动区，保留井口与检查桌关系。",
-          "background": "从全剧 L001 母卡继承的背景层：药屋门框、村口入口、封锁队列和午后硬光，禁止漂移旧井、药屋、检查桌相对方位。"
+          "background": "从全剧 L001 母卡继承的背景层：药屋门框、村口入口、封锁队列和午后硬光，禁止漂移旧井、药屋、检查桌相对方位。",
+          "same_space_lock": "所有层级必须从全局 L001 同一空间裁切或调度，不得用相似新场景替代。"
         },
         "camera_requirements": {
           "camera_distance": "旧井、检查桌、药屋封门牌先同场确认，再派生井口和册页近景。",
           "camera_angle": "井口与检查桌形成同一审讯轴线，人物被压低到井边。",
           "screen_direction": "白翳从村口入口直线进入检查桌，沈维桑与罗青禾隔人群相望。",
           "light": "午后硬光，虫蜡白逐渐压过土褐生活色。",
-          "weather_time": "午后旧井检查桌，封村压力增强。"
+          "weather_time": "午后旧井检查桌，封村压力增强。",
+          "space_rule": "只允许在 L001 空间内移动机位、焦段和遮挡，不允许改变村口/旧井/检查桌/药屋/后山出口相对关系。"
         }
-      }
+      },
+      "scene_continuity_lock": {
+        "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+        "master_asset_id": "L001",
+        "master_output_path": "assets/locations/l001m.png",
+        "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+        "lock_kind": "canyangao_global_single_physical_space_lock",
+        "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+        "immutable_anchors": [
+          "village gate / village entrance",
+          "checkpoint table / white-register position",
+          "old well",
+          "Luo medicine house exterior and door axis",
+          "medicine-house interior door slit and medicine cabinet hidden compartment",
+          "back-hill exit and low-slope route",
+          "three white-wax flag blockade points",
+          "villager queue and enforcement lanes"
+        ],
+        "allowed_variation": [
+          "camera angle",
+          "camera distance",
+          "lens/focal length",
+          "foreground occlusion",
+          "time of day and weather",
+          "blockade props and crowd positions",
+          "local dirt, damage, smoke, and dressing"
+        ],
+        "forbidden_variation": [
+          "alternate village layout",
+          "detached medicine house unrelated to the village gate",
+          "old well moved to a new side",
+          "checkpoint table moved out of the L001 topology",
+          "back-hill exit or white-wax flags repositioned into a different map",
+          "medicine-house interior becoming an unrelated room",
+          "new landmark replacing L001 anchors"
+        ],
+        "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+        "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+        "updated_at": "2026-06-11T09:24:00+08:00"
+      },
+      "same_space_master_asset_id": "L001",
+      "same_space_zone_asset_id": "E01_L001C"
     }
-  ]
+  ],
+  "canyangao_same_space_lock_2026_06_11": {
+    "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+    "master_asset_id": "L001",
+    "master_output_path": "assets/locations/l001m.png",
+    "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+    "lock_kind": "canyangao_global_single_physical_space_lock",
+    "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+    "immutable_anchors": [
+      "village gate / village entrance",
+      "checkpoint table / white-register position",
+      "old well",
+      "Luo medicine house exterior and door axis",
+      "medicine-house interior door slit and medicine cabinet hidden compartment",
+      "back-hill exit and low-slope route",
+      "three white-wax flag blockade points",
+      "villager queue and enforcement lanes"
+    ],
+    "allowed_variation": [
+      "camera angle",
+      "camera distance",
+      "lens/focal length",
+      "foreground occlusion",
+      "time of day and weather",
+      "blockade props and crowd positions",
+      "local dirt, damage, smoke, and dressing"
+    ],
+    "forbidden_variation": [
+      "alternate village layout",
+      "detached medicine house unrelated to the village gate",
+      "old well moved to a new side",
+      "checkpoint table moved out of the L001 topology",
+      "back-hill exit or white-wax flags repositioned into a different map",
+      "medicine-house interior becoming an unrelated room",
+      "new landmark replacing L001 anchors"
+    ],
+    "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+    "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+    "updated_at": "2026-06-11T09:24:00+08:00"
+  }
 }

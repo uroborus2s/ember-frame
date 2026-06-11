@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "02",
   "approval_status": "pending_user_art_approval",
-  "image_generation_status": "not_started_pending_user_approval",
+  "image_generation_status": "partial_single_shot_generation_2026-06-10",
   "prompt_contract": {
     "production_metadata_is_not_model_visible": true,
     "visible_prompt_sections": [
@@ -6300,42 +6300,50 @@
             "lock_usage": "锁定道具轮廓、尺度、材质、磨损、声音线索和精确符号或文字区域。"
           }
         ],
-        "reference_input_policy": "Reference inputs are production metadata for the generator operator. Upload or link them as images/control layers when available, but do not copy ids, paths, source refs, and usage notes into model_visible_prompt.",
-        "prompt_revision": "episode02-art-room-prompt-repair-v1",
-        "approval_status": "pending_user_art_approval",
-        "generation_status": "not_started_pending_user_approval",
+        "reference_input_policy": "This isolated imagegen-task run uses a clean text prompt only; no local file paths are included in the model-visible prompt.",
+        "prompt_revision": "imagegen-task-sc002-sh002-2026-06-10",
+        "approval_status": "user_requested_single_shot_generation_2026-06-10",
+        "generation_status": "generated_canonical_written_2026-06-10",
         "history_policy": "Only final approved image may live at output_path; retained intermediates must move to sibling history/ with .v001 suffixes.",
         "asset_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
           "target_minimum_resolution": "3840x2160",
-          "existing_file_status": "missing_or_not_png",
-          "existing_file_dimensions": null,
-          "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+          "existing_file_status": "exists_png",
+          "existing_file_dimensions": "3840x2160",
+          "action_required": "none_qc_passed"
         },
         "landscape_contract_status": {
           "contract_class": "video_frame_reference",
           "target_aspect_ratio": "16:9",
           "target_minimum_resolution": "3840x2160",
-          "existing_file_status": "missing_or_not_png",
-          "existing_file_dimensions": null,
-          "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
-        }
+          "existing_file_status": "exists_png",
+          "existing_file_dimensions": "3840x2160",
+          "action_required": "none_qc_passed",
+          "landscape_regeneration_required": false
+        },
+        "imagegen_task_run": "2026-06-10-sc002-sh002-imagegen-task",
+        "qc_status": "passed_manual_visual_qc_2026-06-10",
+        "history_files": [
+          "02/assets/reference-frames/history/r010e02.v001.png"
+        ],
+        "generated_original_source": "02/art/runs/2026-06-10-sc002-sh002-imagegen-task/generated-original.png",
+        "canonical_output_written": "02/assets/reference-frames/r010e02.png"
       },
       "model_visible_prompt": {
-        "visible_goal": "创建沈维桑的横屏电影参考画面",
-        "style_quality": "超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、火光、烟灰、旧木、草药、虫蜡、月白玉、纸册、旧金属和土褐布料都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果",
-        "subject_content": "画面主体：沈维桑。动作状态：奴兵推来押车，车上已经有几个被绑的村民。场景：残阳坳村口",
-        "composition_motion": "16:9横屏电影参考画面，最低分辨率1080；前景保留道具、手部、门槛、痕迹或证据，中景承接人物动作、接触反作用和阻挡关系，背景交代残阳坳村口的入口、出口、火烟、追捕压力或逃亡方向；机位：中景，微低角压迫空间，手持短跟；光照、天气、时间和画面方向必须可读，不能做成透明背景、设定板背景或孤立摆拍",
-        "visible_continuity": "硬锁：随附角色、场景、道具、服装和风格参考图用于锁定脸型体态、服装材质、空间地理、道具尺度、低魔边界和动作因果；白册、旁注、旧驿暗号、日月残纹、徽记和文字类痕迹必须使用线控、遮罩或后合成参考，不让模型随机造字",
-        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要透明背景、孤立设定板背景、错误阵营服制、随机文字、随机徽记、无因果大火或无真实接触反作用的大场面。"
+        "visible_goal": "生成一张 16:9 横屏电影参考帧，超写实电影级低魔东方史诗质感。场景是残阳坳村口火起时，微低角中景，像手持短跟拍到的一个紧张瞬间。画面主体是 17 岁沈维桑：精瘦长骨架，窄长少年脸，黑色短碎乱发，深黑眼，健康户外小麦褐肤色；穿灰褐短猎衣、草药青内层、旧皮护腕，带路线包、猎弓和短刀，左肩旧伤让肩线微沉。他贴近横屏中轴，被制度压力压住但眼神已转向右后方押车。",
+        "style_quality": "超写实电影级低魔东方史诗；火光与烟灰压低对比，局部暖橙火光勾出人物边缘，不能吞掉轮廓；虫蜡白、骨白、草药青、旧木褐、土褐布料都要有真实可触的材质。低魔只允许在虫蜡针或封条边缘有短促冷白反应，不能变成英雄法术。",
+        "subject_content": "中景右侧，两名混血奴兵推来窄木押车；他们穿蜡灰青短军袍、暗绿黑护布、骨白腕绑，有黑日烙牌、编号木牌和后脑低位细辫。押车由旧木车栏、湿缚网、磨损铜环和沉重车轮组成，能看出重量和推行惯性；车上几个被绑村民只作为分组轮廓和低头身体，不逐个刻画。押车前缘出现儿童尺度的沈照眠被推向木车，浅暖灰短襦、草药袋、烧焦深红发绳或虫蜡识别环至少有一处清楚可读。",
+        "composition_motion": "前景保留一只按住沈维桑肩臂的奴兵手、粗绳、泥地火灰、半截门槛或铜环，形成明确纵深。背景交代残阳坳村口空间：旧井、村门、检查桌、药屋侧墙火线和退路被封的方向。白册官吏在检查桌边持骨白白册和虫蜡封签，白翳作为两米以上高瘦虫族监察官站在井旁，虫蜡白官服、高筒官帽、冷白制度感形成静态压迫。外圈纯虫族小兵以暗绿甲壳、钩镰和军阶牌做清晰剪影封锁退路，不抢主体。",
+        "visible_continuity": "最高细节只给沈维桑、押车前缘、奴兵手和一处沈照眠亲情锚点；中等细节给白册官吏、白翳和旧井/检查桌；低细节给外圈虫族小兵和远处村民；火烟、村门与药屋侧墙用大块轮廓和烟灰层次处理。前景、中景、背景必须清楚分离，真实身体重量、真实接触反作用、可读屏幕方向。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、字幕、水印、随机可读文字、乱码、随机徽记、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、透明背景、设定板背景、错误阵营服制、无因果大火、无真实接触反作用的大场面。不要全画面等细节渲染，不要过度刻画远处人群，不要颗粒化石头、噪点化人群、AI speckle、烟雾伪装成建筑细节、远处物体像尖锐小模型、满屏超细节或视觉信息过载。"
       },
       "copy_ready": {
-        "positive_prompt": "创建沈维桑的横屏电影参考画面。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、火光、烟灰、旧木、草药、虫蜡、月白玉、纸册、旧金属和土褐布料都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n画面主体：沈维桑。动作状态：奴兵推来押车，车上已经有几个被绑的村民。场景：残阳坳村口。\n\n16:9横屏电影参考画面，最低分辨率1080；前景保留道具、手部、门槛、痕迹或证据，中景承接人物动作、接触反作用和阻挡关系，背景交代残阳坳村口的入口、出口、火烟、追捕压力或逃亡方向；机位：中景，微低角压迫空间，手持短跟；光照、天气、时间和画面方向必须可读，不能做成透明背景、设定板背景或孤立摆拍。\n\n硬锁：随附角色、场景、道具、服装和风格参考图用于锁定脸型体态、服装材质、空间地理、道具尺度、低魔边界和动作因果；白册、旁注、旧驿暗号、日月残纹、徽记和文字类痕迹必须使用线控、遮罩或后合成参考，不让模型随机造字。",
-        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要透明背景、孤立设定板背景、错误阵营服制、随机文字、随机徽记、无因果大火或无真实接触反作用的大场面。",
-        "reference_image_instructions": "生成时请同时上传或引用本资产记录列出的已批准参考图、控制图或线控层；参考图负责锁定身份、服装、道具、场景和风格，不要把资产编号、文件路径或生产备注写入画面。",
-        "chatgpt_image_prompt": "请生成一张图像。生成时请同时上传或引用本资产记录列出的已批准参考图、控制图或线控层；参考图负责锁定身份、服装、道具、场景和风格，不要把资产编号、文件路径或生产备注写入画面。\n\n正向要求：\n创建沈维桑的横屏电影参考画面。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、火光、烟灰、旧木、草药、虫蜡、月白玉、纸册、旧金属和土褐布料都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n画面主体：沈维桑。动作状态：奴兵推来押车，车上已经有几个被绑的村民。场景：残阳坳村口。\n\n16:9横屏电影参考画面，最低分辨率1080；前景保留道具、手部、门槛、痕迹或证据，中景承接人物动作、接触反作用和阻挡关系，背景交代残阳坳村口的入口、出口、火烟、追捕压力或逃亡方向；机位：中景，微低角压迫空间，手持短跟；光照、天气、时间和画面方向必须可读，不能做成透明背景、设定板背景或孤立摆拍。\n\n硬锁：随附角色、场景、道具、服装和风格参考图用于锁定脸型体态、服装材质、空间地理、道具尺度、低魔边界和动作因果；白册、旁注、旧驿暗号、日月残纹、徽记和文字类痕迹必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n反向要求：\n不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要透明背景、孤立设定板背景、错误阵营服制、随机文字、随机徽记、无因果大火或无真实接触反作用的大场面。",
-        "gemini_image_prompt": "生成图像。生成时请同时上传或引用本资产记录列出的已批准参考图、控制图或线控层；参考图负责锁定身份、服装、道具、场景和风格，不要把资产编号、文件路径或生产备注写入画面。\n\n画面要求：\n创建沈维桑的横屏电影参考画面。\n\n超写实电影级低魔东方史诗；真实身体重量、自然接触反作用、火光、烟灰、旧木、草药、虫蜡、月白玉、纸册、旧金属和土褐布料都要有可触摸的真实材质；低魔痕迹只做短促局部反应，不能替代行动因果。\n\n画面主体：沈维桑。动作状态：奴兵推来押车，车上已经有几个被绑的村民。场景：残阳坳村口。\n\n16:9横屏电影参考画面，最低分辨率1080；前景保留道具、手部、门槛、痕迹或证据，中景承接人物动作、接触反作用和阻挡关系，背景交代残阳坳村口的入口、出口、火烟、追捕压力或逃亡方向；机位：中景，微低角压迫空间，手持短跟；光照、天气、时间和画面方向必须可读，不能做成透明背景、设定板背景或孤立摆拍。\n\n硬锁：随附角色、场景、道具、服装和风格参考图用于锁定脸型体态、服装材质、空间地理、道具尺度、低魔边界和动作因果；白册、旁注、旧驿暗号、日月残纹、徽记和文字类痕迹必须使用线控、遮罩或后合成参考，不让模型随机造字。\n\n避免：\n不要现代服饰、现代建筑、枪械、科幻界面、水印、乱码文字、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、随机徽记或随机文字。不要透明背景、孤立设定板背景、错误阵营服制、随机文字、随机徽记、无因果大火或无真实接触反作用的大场面。"
+        "positive_prompt": "生成一张 16:9 横屏电影参考帧，超写实电影级低魔东方史诗质感。场景是残阳坳村口火起时，微低角中景，像手持短跟拍到的一个紧张瞬间。画面主体是 17 岁沈维桑：精瘦长骨架，窄长少年脸，黑色短碎乱发，深黑眼，健康户外小麦褐肤色；穿灰褐短猎衣、草药青内层、旧皮护腕，带路线包、猎弓和短刀，左肩旧伤让肩线微沉。他贴近横屏中轴，被制度压力压住但眼神已转向右后方押车。\n\n中景右侧，两名混血奴兵推来窄木押车；他们穿蜡灰青短军袍、暗绿黑护布、骨白腕绑，有黑日烙牌、编号木牌和后脑低位细辫。押车由旧木车栏、湿缚网、磨损铜环和沉重车轮组成，能看出重量和推行惯性；车上几个被绑村民只作为分组轮廓和低头身体，不逐个刻画。押车前缘出现儿童尺度的沈照眠被推向木车，浅暖灰短襦、草药袋、烧焦深红发绳或虫蜡识别环至少有一处清楚可读。\n\n背景交代残阳坳村口空间：旧井、村门、检查桌、药屋侧墙火线和退路被封的方向。白册官吏在检查桌边持骨白白册和虫蜡封签，白翳作为两米以上高瘦虫族监察官站在井旁，虫蜡白官服、高筒官帽、冷白制度感形成静态压迫。外圈纯虫族小兵以暗绿甲壳、钩镰和军阶牌做清晰剪影封锁退路，不抢主体。\n\n前景保留一只按住沈维桑肩臂的奴兵手、粗绳、泥地火灰、半截门槛或铜环，形成明确纵深。火光与烟灰压低对比，局部暖橙火光勾出人物边缘，不能吞掉轮廓；虫蜡白、骨白、草药青、旧木褐、土褐布料都要有真实可触的材质。低魔只允许在虫蜡针或封条边缘有短促冷白反应，不能变成英雄法术。\n\n信息预算：最高细节只给沈维桑、押车前缘、奴兵手和一处沈照眠亲情锚点；中等细节给白册官吏、白翳和旧井/检查桌；低细节给外圈虫族小兵和远处村民；火烟、村门与药屋侧墙用大块轮廓和烟灰层次处理。前景、中景、背景必须清楚分离，真实身体重量、真实接触反作用、可读屏幕方向。",
+        "negative_prompt": "不要现代服饰、现代建筑、枪械、科幻界面、字幕、水印、随机可读文字、乱码、随机徽记、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、透明背景、设定板背景、错误阵营服制、无因果大火、无真实接触反作用的大场面。不要全画面等细节渲染，不要过度刻画远处人群，不要颗粒化石头、噪点化人群、AI speckle、烟雾伪装成建筑细节、远处物体像尖锐小模型、满屏超细节或视觉信息过载。",
+        "reference_image_instructions": "本次 imagegen-task 不附带本地路径；画面继承已整理的角色、场景、道具和风格文字锁。",
+        "chatgpt_image_prompt": "请只根据以下提示词生成 1 张 16:9 横屏电影参考帧，不输出解释文字。生成一张 16:9 横屏电影参考帧，超写实电影级低魔东方史诗质感。场景是残阳坳村口火起时，微低角中景，像手持短跟拍到的一个紧张瞬间。画面主体是 17 岁沈维桑：精瘦长骨架，窄长少年脸，黑色短碎乱发，深黑眼，健康户外小麦褐肤色；穿灰褐短猎衣、草药青内层、旧皮护腕，带路线包、猎弓和短刀，左肩旧伤让肩线微沉。他贴近横屏中轴，被制度压力压住但眼神已转向右后方押车。中景右侧，两名混血奴兵推来窄木押车；他们穿蜡灰青短军袍、暗绿黑护布、骨白腕绑，有黑日烙牌、编号木牌和后脑低位细辫。押车由旧木车栏、湿缚网、磨损铜环和沉重车轮组成，能看出重量和推行惯性；车上几个被绑村民只作为分组轮廓和低头身体，不逐个刻画。押车前缘出现儿童尺度的沈照眠被推向木车，浅暖灰短襦、草药袋、烧焦深红发绳或虫蜡识别环至少有一处清楚可读。背景交代残阳坳村口空间：旧井、村门、检查桌、药屋侧墙火线和退路被封的方向。白册官吏在检查桌边持骨白白册和虫蜡封签，白翳作为两米以上高瘦虫族监察官站在井旁，虫蜡白官服、高筒官帽、冷白制度感形成静态压迫。外圈纯虫族小兵以暗绿甲壳、钩镰和军阶牌做清晰剪影封锁退路，不抢主体。前景保留一只按住沈维桑肩臂的奴兵手、粗绳、泥地火灰、半截门槛或铜环，形成明确纵深。火光与烟灰压低对比，局部暖橙火光勾出人物边缘，不能吞掉轮廓；虫蜡白、骨白、草药青、旧木褐、土褐布料都要有真实可触的材质。低魔只允许在虫蜡针或封条边缘有短促冷白反应，不能变成英雄法术。信息预算：最高细节只给沈维桑、押车前缘、奴兵手和一处沈照眠亲情锚点；中等细节给白册官吏、白翳和旧井/检查桌；低细节给外圈虫族小兵和远处村民；火烟、村门与药屋侧墙用大块轮廓和烟灰层次处理。前景、中景、背景必须清楚分离，真实身体重量、真实接触反作用、可读屏幕方向。避免：现代服饰、现代建筑、枪械、科幻界面、字幕、水印、随机可读文字、乱码、随机徽记、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、透明背景、设定板背景、错误阵营服制、无因果大火、无真实接触反作用的大场面、全画面等细节渲染、过度刻画远处人群、颗粒化石头、噪点化人群、AI speckle、烟雾伪装成建筑细节、远处物体像尖锐小模型、满屏超细节或视觉信息过载。",
+        "gemini_image_prompt": "生成 1 张 16:9 横屏电影参考帧。生成一张 16:9 横屏电影参考帧，超写实电影级低魔东方史诗质感。场景是残阳坳村口火起时，微低角中景，像手持短跟拍到的一个紧张瞬间。画面主体是 17 岁沈维桑：精瘦长骨架，窄长少年脸，黑色短碎乱发，深黑眼，健康户外小麦褐肤色；穿灰褐短猎衣、草药青内层、旧皮护腕，带路线包、猎弓和短刀，左肩旧伤让肩线微沉。他贴近横屏中轴，被制度压力压住但眼神已转向右后方押车。中景右侧，两名混血奴兵推来窄木押车；他们穿蜡灰青短军袍、暗绿黑护布、骨白腕绑，有黑日烙牌、编号木牌和后脑低位细辫。押车由旧木车栏、湿缚网、磨损铜环和沉重车轮组成，能看出重量和推行惯性；车上几个被绑村民只作为分组轮廓和低头身体，不逐个刻画。押车前缘出现儿童尺度的沈照眠被推向木车，浅暖灰短襦、草药袋、烧焦深红发绳或虫蜡识别环至少有一处清楚可读。背景交代残阳坳村口空间：旧井、村门、检查桌、药屋侧墙火线和退路被封的方向。白册官吏在检查桌边持骨白白册和虫蜡封签，白翳作为两米以上高瘦虫族监察官站在井旁，虫蜡白官服、高筒官帽、冷白制度感形成静态压迫。外圈纯虫族小兵以暗绿甲壳、钩镰和军阶牌做清晰剪影封锁退路，不抢主体。前景保留一只按住沈维桑肩臂的奴兵手、粗绳、泥地火灰、半截门槛或铜环，形成明确纵深。火光与烟灰压低对比，局部暖橙火光勾出人物边缘，不能吞掉轮廓；虫蜡白、骨白、草药青、旧木褐、土褐布料都要有真实可触的材质。低魔只允许在虫蜡针或封条边缘有短促冷白反应，不能变成英雄法术。信息预算：最高细节只给沈维桑、押车前缘、奴兵手和一处沈照眠亲情锚点；中等细节给白册官吏、白翳和旧井/检查桌；低细节给外圈虫族小兵和远处村民；火烟、村门与药屋侧墙用大块轮廓和烟灰层次处理。前景、中景、背景必须清楚分离，真实身体重量、真实接触反作用、可读屏幕方向。避免：现代服饰、现代建筑、枪械、科幻界面、字幕、水印、随机可读文字、乱码、随机徽记、塑料感、网红脸、过度磨皮、漂浮慢动作、僵硬摆拍、透明背景、设定板背景、错误阵营服制、无因果大火、无真实接触反作用的大场面、全画面等细节渲染、过度刻画远处人群、颗粒化石头、噪点化人群、AI speckle、烟雾伪装成建筑细节、远处物体像尖锐小模型、满屏超细节或视觉信息过载。"
       },
       "output_format": {
         "deliverable_kind": "video_generation_reference_frame",
@@ -6351,16 +6359,16 @@
           "lighting, weather, and time of day visible in-frame"
         ],
         "composition_layers": {
-          "foreground": "primary readable action, hands, props, threshold, or character beat required by the shot",
-          "midground": "supporting characters, set geometry, blocking line, or institutional pressure source",
-          "background": "location depth, weather/time, exits, walls, crowd pressure, fire/smoke, or environmental continuity anchors"
+          "foreground": "slave soldier hand, rope, ash, threshold, copper ring, and direct pressure on Shen Weisang",
+          "midground": "Shen Weisang, prison cart, slave soldiers, Shen Zhaomian at the cart edge",
+          "background": "Canyangao gate, old well, register table, fireline, Bai Yi, clerk, and outer insect-soldier blockade"
         },
         "qc_checks": [
-          "project delivery canvas, 16:9 landscape, minimum 3840x2160",
-          "foreground, midground, and background are visibly separated",
-          "no transparent or isolated card background",
-          "camera distance, angle, lighting, weather/time, screen direction, and action state are readable",
-          "no watermarks, modern UI, random text, or wrong faction symbols"
+          "16:9 landscape video frame, no transparent or card background",
+          "foreground, midground, and background visibly separated",
+          "Shen Weisang central, left shoulder injury readable, cart pressure readable",
+          "institution hierarchy readable without random text or symbols",
+          "distant crowd and soldiers grouped, no visual information overload"
         ],
         "canvas_aspect_ratio_notes": "16:9 landscape widescreen; required for scene, shot, or composition-board use",
         "minimum_resolution_notes": "3840x2160 px; required for landscape scene/video composition use",
@@ -6372,18 +6380,22 @@
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
+        "existing_file_status": "exists_png",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none_qc_passed"
       },
       "landscape_contract_status": {
         "contract_class": "video_frame_reference",
         "target_aspect_ratio": "16:9",
         "target_minimum_resolution": "3840x2160",
-        "existing_file_status": "missing_or_not_png",
-        "existing_file_dimensions": null,
-        "action_required": "generate_16x9_3840x2160_scene_or_video_reference"
-      }
+        "existing_file_status": "exists_png",
+        "existing_file_dimensions": "3840x2160",
+        "action_required": "none_qc_passed",
+        "landscape_regeneration_required": false
+      },
+      "approval_status": "user_requested_single_shot_generation_2026-06-10",
+      "generation_status": "generated_canonical_written_2026-06-10",
+      "status": "generated_qc_passed_single_shot_2026-06-10"
     },
     {
       "prompt_id": "PROMPT_E02_R011",

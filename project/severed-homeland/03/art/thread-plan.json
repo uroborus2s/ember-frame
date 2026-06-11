@@ -1,0 +1,90 @@
+{
+  "version": "episode03-targeted-sc003-sh001-thread-plan-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "03",
+  "status": "dispatched_and_completed_targeted",
+  "dispatch_status": "complete",
+  "dispatch_readiness": "single_target_prompt_ready",
+  "approval_status": "targeted_user_requested_generation",
+  "updated_at": "2026-06-10",
+  "history_policy": "Only final confirmed image may live at canonical output_path; retained non-final images go to sibling history/ with .v001 suffixes.",
+  "dispatch_policy": {
+    "imagegen_task_isolation": true,
+    "one_target_image_per_task": true,
+    "task_must_not_read_files": true,
+    "task_must_not_write_files": true,
+    "task_must_not_search": true,
+    "task_returns_image_only": true,
+    "parent_saves_and_qcs_output": true
+  },
+  "batches": [
+    {
+      "batch_id": "B01_E03_SC003_SH001_REFERENCE_FRAME",
+      "batch_type": "reference_frame",
+      "status": "complete_qc_passed_targeted_2026-06-10",
+      "prompt_ids": [
+        "PROMPT_E03_R021"
+      ],
+      "asset_ids": [
+        "E03_R021"
+      ],
+      "output_paths": [
+        "03/assets/reference-frames/r021e03.png"
+      ],
+      "creation_order": 21,
+      "creation_phase": "shot_reference_frames",
+      "depends_on_assets": [
+        "C001",
+        "C002",
+        "C006",
+        "C017",
+        "L001",
+        "P001",
+        "F002",
+        "F003"
+      ],
+      "blocks_assets": [
+        "SC003-SH001_director_prompt_refresh"
+      ],
+      "dependency_reason": "Shot frame depends on series master assets and compressed reference pack so identities, prop scale, location geography, and material language remain stable.",
+      "priority": "high",
+      "reference_pack": {
+        "compressed_total_size": "under 12MB",
+        "files": [
+          "03/assets/temp/sc003-sh001-refpack/ref_c001_shen_weisang.jpg",
+          "03/assets/temp/sc003-sh001-refpack/ref_c002_yan_nanzhi.jpg",
+          "03/assets/temp/sc003-sh001-refpack/ref_c006_luo_qinghe.jpg",
+          "03/assets/temp/sc003-sh001-refpack/ref_c017_slave_soldier.jpg",
+          "03/assets/temp/sc003-sh001-refpack/ref_l001_canyangao_well_space.jpg",
+          "03/assets/temp/sc003-sh001-refpack/ref_p001_half_relay_token.jpg"
+        ]
+      },
+      "thread_id": "019eb194-896d-7470-990c-adfd64279d66",
+      "thread_prompt": "Use imagegen-task isolation. Generate exactly one 16:9 cinematic reference frame from PROMPT_E03_R021 and the compressed reference images only. Do not read files, write files, search, inspect project background, or output analysis. Return only the generated image. The parent coordinator will save the selected final image to 03/assets/reference-frames/r021e03.png and record QC/results.",
+      "final_files": [
+        {
+          "asset_id": "E03_R021",
+          "output_path": "03/assets/reference-frames/r021e03.png",
+          "dimensions": "1672x941",
+          "sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5"
+        }
+      ],
+      "history_files": [
+        "03/assets/reference-frames/history/r021e03.v001-main-thread-alt-20260610.png"
+      ],
+      "output_format_contract": {
+        "deliverable_kinds": [
+          "video_generation_reference_frame"
+        ],
+        "file_format": "png",
+        "canvas_aspect_ratios": [
+          "16:9"
+        ],
+        "alpha_policies": [
+          "forbidden"
+        ],
+        "enforcement": "The prompt record output_format is binding; this is a video-frame reference, not an isolated card."
+      }
+    }
+  ]
+}

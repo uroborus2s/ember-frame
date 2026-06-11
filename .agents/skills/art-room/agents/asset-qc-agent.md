@@ -28,6 +28,13 @@ whether the generated assets are ready for Director Room prompt refresh.
   neutral plain backgrounds; video reference frames and shot overrides must be
   16:9 or project-defined scene frames with foreground, midground, and
   background layers, not isolated card sheets.
+- For wide, distant, or group-heavy scene images, verify the
+  `scene_information_budget` was followed. Reject the asset if the whole frame
+  has equal detail, distant soldiers or crowd members are over-detailed,
+  architecture becomes particleized stone or fake micro-texture, crowds become
+  granular mush, smoke substitutes for real structure, distant objects are sharp
+  individual miniatures, or the frame shows noisy micro-detail, AI speckle, or
+  visual information overload.
 - Verify that each ready asset exists at its canonical final path, and that any
   retained intermediate, rejected, or superseded images are listed as
   `history_files` under a sibling `history/` directory with filename suffixes

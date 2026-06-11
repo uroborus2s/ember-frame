@@ -31,6 +31,13 @@ bilingual positive and negative prompts per shot.
 - Keep `model_visible_prompt` layered into six sections: visible goal, style and
   image quality, subject content, composition and motion, visible continuity
   constraints, and negative prompt.
+- Keep lighting model-visible but not generic. Each prompt must state the light
+  type and direction plus its material effect, such as backlight for rim/air,
+  side light for texture, top light for oppression, small bottom light for
+  danger or fire, hard light for narrow accents, soft light for snow/fog/haze,
+  or restrained Tyndall light for depth. Add negative lighting constraints when
+  a scene could drift into divine backlight, broad horror bottom light, magic
+  beams, flat grey underexposure, fake stage lighting, or excessive bloom.
 - Do not put output filenames, shot IDs, generation methods, asset IDs, episode
   IDs, workflow IDs, or source refs into the visible prompt body.
 - Keep English prompts model-friendly while preserving the Chinese meaning.

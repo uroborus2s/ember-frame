@@ -264,8 +264,35 @@ agents/delivery-qc-agent.md
   plot, add new beats, or solve script problems by changing the script.
 - Keep shot IDs stable and machine-friendly. Use `SC###-SH###` unless the
   project already has a stronger convention.
-- Make every shot filmable: visible action, clear subject, camera plan, lighting
-  intent, audio note, continuity anchors, and generation method.
+- Make every shot filmable: visible action, clear subject, camera plan, shot
+  composition, lighting intent, audio note, continuity anchors, and generation
+  method.
+- Every shot-level camera, storyboard, generation, and prompt artifact must
+  name the lighting type, direction, story purpose, and material effect. Do not
+  leave lighting as a vague mood word such as "dark", "cinematic", "cold", or
+  "beautiful"; specify what the light does to faces, skin, armor, cloth, stone,
+  wood, dust, mist, smoke, snow, mud, paper, wax, or metal.
+- Use light types deliberately:
+  backlight increases cinema feeling, silhouettes, rim separation, air, mist,
+  dust, and spatial depth; side light strengthens skin, armor, cloth, wood,
+  stone, wall, mud, and prop texture; top light feels oppressive, cold and
+  cruel, but can blacken eye sockets, so use it knowingly; bottom light feels
+  eerie, dangerous, or fire-lit and must not be broad unless the scene truly
+  requires that effect; hard light is sharper and more dramatic but can look
+  fake, so reserve it for narrow story accents; soft light is more truthful and
+  translucent, especially for overcast snow, fog, morning haze, and sensitive
+  human beats; Tyndall light can deepen space but becomes "VFX taste" if
+  overdone; butterfly light suits close portrait emphasis and generally should
+  not be used for large battle or crowd scenes unless it is a commander portrait
+  or similarly controlled close-up.
+- Preserve lighting continuity over isolated beauty. Adjacent shots should share
+  believable time of day and source direction, but they must not all use the
+  same lighting recipe. Vary key/fill/rim balance according to story function,
+  subject distance, material texture, and emotional pressure.
+- Prompt outputs must include negative lighting constraints when relevant:
+  forbid broad horror bottom light, divine/sacred backlight, magic light shafts,
+  overexposed bloom, flat grey global underexposure, missing key direction,
+  fake hard stage lighting, and Tyndall beams that hide story information.
 - Separate the pre-asset shot package from the post-asset video production
   package. `shot-prompts-draft` is an intermediate artifact for Art Room asset
   planning; final prompt engineering happens after asset QC and produces

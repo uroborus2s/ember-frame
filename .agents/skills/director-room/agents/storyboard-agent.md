@@ -27,6 +27,11 @@ composition descriptions.
   `构图 / Composition`, `运镜手法 / Camera Movement`,
   `画面内容 / Visual Content`, `光线与色彩 / Lighting and Color`, and
   `连续性锚点 / Continuity Anchors`.
+- In `光线与色彩 / Lighting and Color`, specify the light type, direction,
+  story purpose, and material effect. Mention whether backlight, side light, top
+  light, bottom light, hard light, soft light, Tyndall light, or portrait
+  butterfly light is being used, and note the risk when a light type can make
+  the frame fake, muddy, over-oppressive, or VFX-like.
 
 ## Required Artifacts
 

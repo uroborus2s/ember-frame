@@ -37,7 +37,8 @@
     "金河平民和残阳坳村民都要保留地域、职业和家庭痕迹，不得同款破布灾民化。",
     "北境序幕只做局部因果和剪影，避免完整兽潮、巨兽奇观和高魔法战场。",
     "晏南枝第01集保持遮面与局部手部/眼神压力，不能提前华丽正脸身份揭示。",
-    "低魔痕迹只能作为月白玉片冷反光、旧驿暗号残纹、白册虫蜡纹等局部线索。"
+    "低魔痕迹只能作为月白玉片冷反光、旧驿暗号残纹、白册虫蜡纹等局部线索。",
+    "残阳坳单一空间硬锁：SC004-SC006 所有场景与镜头必须是全局 L001 场景内不同机位/焦段/遮挡，不得重造相似村口、药屋、旧井或后山出口。"
   ],
   "continuity_risks": [
     "白册文字和旧驿暗号若直接交给图像模型会随机造字，必须用空白板、遮罩或后合成。",
@@ -45,12 +46,54 @@
     "肃明官吏、奴兵和纯虫族小兵同场时容易被模型同质化，需要服装和体态分层。",
     "晏南枝在低光暗格中容易被过度美化或提前正脸化。",
     "儿童威胁镜头需要克制，避免受害奇观。",
-    "序幕战争和金河征粮容易膨胀为大场面，需坚持局部因果。"
+    "序幕战争和金河征粮容易膨胀为大场面，需坚持局部因果。",
+    "残阳坳若只按文字生成，容易把村口、药屋、旧井和后山出口拆成多个相似但不连续的地点；必须用 L001 主场景和 E01_L001A/B/C 区域卡硬参考。"
   ],
   "precision_asset_rules": [
     "白册、疑名、疑童、沈家旁注使用空白册页板和后期文字/符号合成。",
     "旧驿暗号和日月残纹使用线稿或透明 PNG/SVG 后合成，不让模型发明。",
     "红线地图不得出现现代地图文字；路线只用红线和材质方向表达。",
     "白蜡旗和肃明黑日白翅只做明确占位，正式徽记需用已批准符号系统。"
+  ],
+  "scene_space_locks": [
+    {
+      "version": "canyangao-global-single-space-lock-v1-2026-06-11",
+      "master_asset_id": "L001",
+      "master_output_path": "assets/locations/l001m.png",
+      "master_reference_absolute_path": "/Users/uroborus/AiProject/ember-frame/project/severed-homeland/assets/locations/l001m.png",
+      "lock_kind": "canyangao_global_single_physical_space_lock",
+      "global_space_definition": "残阳坳村口、旧井、检查桌、罗青禾药屋外圈、药屋内门缝/药柜暗格、后山出口和低坡路线是同一个 L001 物理场景的连续区域。",
+      "immutable_anchors": [
+        "village gate / village entrance",
+        "checkpoint table / white-register position",
+        "old well",
+        "Luo medicine house exterior and door axis",
+        "medicine-house interior door slit and medicine cabinet hidden compartment",
+        "back-hill exit and low-slope route",
+        "three white-wax flag blockade points",
+        "villager queue and enforcement lanes"
+      ],
+      "allowed_variation": [
+        "camera angle",
+        "camera distance",
+        "lens/focal length",
+        "foreground occlusion",
+        "time of day and weather",
+        "blockade props and crowd positions",
+        "local dirt, damage, smoke, and dressing"
+      ],
+      "forbidden_variation": [
+        "alternate village layout",
+        "detached medicine house unrelated to the village gate",
+        "old well moved to a new side",
+        "checkpoint table moved out of the L001 topology",
+        "back-hill exit or white-wax flags repositioned into a different map",
+        "medicine-house interior becoming an unrelated room",
+        "new landmark replacing L001 anchors"
+      ],
+      "visible_prompt_lock": "残阳坳单一空间硬锁：所有残阳坳镜头、场景卡、参考帧、近景和远景必须发生在全局 L001 残阳坳村落与药屋主场景卡的同一个物理空间内。村口、检查桌、旧井、药屋外圈、药屋内门缝/药柜暗格、后山出口、低坡路线、白蜡旗封锁点和村民队列只是同一空间的不同区域、机位、焦段或遮挡层。允许改变镜头角度、镜头距离、焦段、前景遮挡、光线时间、天气、人物调度、封锁道具和局部污损；不允许重造相似村口、另画一个药屋、把旧井移到新位置、把药屋内景变成独立房间、改变门/井/桌/出口/旗的相对方位，或把残阳坳画成另一个村庄。任何肉眼可见的空间拓扑漂移、地标替换、入口出口方向变化或同场关系断裂，都判定生成失败。",
+      "qc_rejection_rule": "Reject any Canyangao image that reads as a different place from L001, even if the character acting, lighting, or composition is attractive.",
+      "updated_at": "2026-06-11T09:24:00+08:00"
+    }
   ]
 }

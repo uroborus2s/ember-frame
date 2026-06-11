@@ -38,6 +38,8 @@ retry-specific, or diagnostic copies belong under
    - their `output_format` contract, including background policy, alpha policy,
      canvas ratio, required views, composition layers, minimum resolution, and
      QC checks;
+   - any `scene_information_budget` for wide, distant, group-heavy, battlefield,
+     city, fortress, mountain pass, or other large repeated-object scene assets;
    - continuity references;
    - creation order and dependencies from asset prep/manifest/thread plan;
    - short filename rule: basename without extension is 20 characters or fewer;
@@ -47,6 +49,11 @@ retry-specific, or diagnostic copies belong under
    - requirement that transparent cutouts and precision overlays preserve alpha
      intent, while video reference frames and shot overrides are scene frames
      with foreground, midground, and background layers;
+   - requirement that wide and distant scene images follow their information
+     budget: only 3-5 elements receive high detail, distant subjects remain
+     grouped silhouettes or masses, atmosphere simplifies small forms, and the
+     worker avoids particleized stone, granular crowd texture, noisy micro-detail,
+     AI speckle, full-frame ultra-detail, and visual information overload;
    - requirement that retained intermediate, rejected, or superseded images are
      moved to a sibling `history/` directory and named with filename suffixes
      such as `.v001`, `.v002`, never placed in version folders;

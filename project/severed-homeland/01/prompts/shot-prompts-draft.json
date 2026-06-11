@@ -84,10 +84,10 @@
     {
       "shot_id": "SC002-SH001",
       "generation_method": "I2V",
-      "prompt_zh": "金河粮仓带清晨，麦金色粮袋堆成高墙，粮税小吏穿蜡灰青官服、戴高账吏帽，胸前白册夹板、粮牌和骨算盘明显，村民低位排队，湿木褐、河泥褐和虫蜡白。",
-      "prompt_en": "Morning at Jinhe grain depot, wheat-gold grain sacks stacked into a wall, grain tax clerk in wax-grey-blue official robe and tall account hat, white register board, grain tags and bone abacus visible, villagers queued low, wet wood brown, river mud brown and insect-wax white.",
-      "negative_prompt_notes_zh": "不要蒸汽朋克欢乐感，不要人族账房先生外观，不要现代仓库。",
-      "negative_prompt_notes_en": "No cheerful steampunk, no human accountant look, no modern warehouse.",
+      "prompt_zh": "从锁喉关战争压力切到金河征粮制度：用粮袋墙、小吏高位、低位村民和白册夹板建立“粮食已被制度占领”的空间秩序。清晨麦金冷雾里，金河粮袋堆成墙，检查台上的虫族粮税小吏穿蜡灰青短官袍、戴高账吏帽，胸前白册夹板、骨算盘、粮牌和旧铁秤钩随动作轻晃；村民排在低处，粮车和湿木检查口保持成组轮廓。横屏远景按上下层级构图：粮袋墙占上半画面并压低天空，粮税小吏站在检查台高位偏中，白册夹板、骨算盘和粮牌形成亮色制度中心；村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。柔和清晨冷雾作主环境光，低角度逆光穿过粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦过麻布、湿木和河泥纹理；虫蜡白只作为白册和粮牌的小亮点。少量丁达尔光用于粮尘纵深，不能做成特效光柱。从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。",
+      "prompt_en": "Cut from border war pressure into the Jinhe grain-tax system: use the grain-sack wall, high clerk position, low villagers and white register board to establish that grain has already been occupied by bureaucracy. In wheat-gold cold morning haze, Jinhe grain sacks form a wall. The insect grain tax clerk on the inspection platform wears a wax-grey-blue short robe and tall account hat; the white register board, bone abacus, grain tags and old iron scale hook sway lightly on his chest. Villagers queue low, while carts and the wet-wood inspection gate remain grouped silhouettes. Landscape wide composition built on vertical hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands high near center on the inspection platform, and the white register board, bone abacus and grain tags form the bright bureaucratic center; villagers are compressed into a low band, while the cart lane recedes from front-right to rear-left for depot depth. Soft morning cold haze acts as the ambient key. Low-angle backlight passes through grain dust to rim the sack wall, clerk hat and register board, while a narrow side light grazes burlap, wet wood and river-mud texture; insect-wax white stays as small highlights on the register and grain tags. Subtle Tyndall light may deepen grain-dust space, never becoming VFX beams. A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift.",
+      "negative_prompt_notes_zh": "不要现代仓库、现代服饰、枪械、科幻 UI、人族账房先生版小吏、欢乐蒸汽朋克、全画面灰色灾民营、无主光方向、过度丁达尔光柱、魔法光柱、过曝 bloom、随机可读白册文字、随机徽记、黄色闪粉、数字颗粒、全局假锐化、塑料麻袋、远景群众逐个清晰、视频涂抹、花屏、压缩块。",
+      "negative_prompt_notes_en": "avoid modern warehouse, modern clothing, firearms, sci-fi UI, human-accountant clerk, cheerful steampunk, all-grey refugee camp, missing key-light direction, excessive Tyndall beams, magic light shafts, overexposed bloom, random readable register text, random emblems, yellow glitter, digital speckle, global fake sharpening, plastic sacks, individually sharp distant crowd, video smearing, glitches, compression blocks.",
       "continuity_refs": [
         "LOC_JINHE_GRAIN_DEPOT",
         "CHAR_GRAIN_TAX_CLERK",
@@ -97,15 +97,41 @@
         "LOC_JINHE_GRAIN_DEPOT",
         "CHAR_GRAIN_TAX_CLERK",
         "PROP_WHITE_REGISTER"
-      ]
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "清晨麦金冷雾里，金河粮袋堆成墙，检查台上的虫族粮税小吏穿蜡灰青短官袍、戴高账吏帽，胸前白册夹板、骨算盘、粮牌和旧铁秤钩随动作轻晃；村民排在低处，粮车和湿木检查口保持成组轮廓。",
+          "en": "In wheat-gold cold morning haze, Jinhe grain sacks form a wall. The insect grain tax clerk on the inspection platform wears a wax-grey-blue short robe and tall account hat; the white register board, bone abacus, grain tags and old iron scale hook sway lightly on his chest. Villagers queue low, while carts and the wet-wood inspection gate remain grouped silhouettes."
+        },
+        "composition": {
+          "zh": "横屏远景按上下层级构图：粮袋墙占上半画面并压低天空，粮税小吏站在检查台高位偏中，白册夹板、骨算盘和粮牌形成亮色制度中心；村民被压成下方窄带，押车通道从右前向左后退进，保留粮仓纵深。",
+          "en": "Landscape wide composition built on vertical hierarchy: the grain-sack wall occupies the upper half and suppresses the sky, the grain tax clerk stands high near center on the inspection platform, and the white register board, bone abacus and grain tags form the bright bureaucratic center; villagers are compressed into a low band, while the cart lane recedes from front-right to rear-left for depot depth."
+        },
+        "camera": {
+          "zh": "从村民眼高真实速度缓慢推进，推进时粮尘和人群只轻微让开，终点停在粮税小吏与白册夹板的层级关系上，不升空、不追美景。",
+          "en": "A slow real-time push from villager eye height; grain dust and crowd layers only part slightly as the camera moves, ending on the hierarchy between clerk and white register board, with no crane move or beauty-plate drift."
+        },
+        "lighting_color": {
+          "zh": "柔和清晨冷雾作主环境光，低角度逆光穿过粮尘切出粮袋墙、小吏高帽和白册轮廓，窄侧光擦过麻布、湿木和河泥纹理；虫蜡白只作为白册和粮牌的小亮点。少量丁达尔光用于粮尘纵深，不能做成特效光柱。",
+          "en": "Soft morning cold haze acts as the ambient key. Low-angle backlight passes through grain dust to rim the sack wall, clerk hat and register board, while a narrow side light grazes burlap, wet wood and river-mud texture; insect-wax white stays as small highlights on the register and grain tags. Subtle Tyndall light may deepen grain-dust space, never becoming VFX beams."
+        },
+        "style_continuity": {
+          "zh": "粮税小吏必须是虫族低阶官僚，不是人族账房或普通衙役；白册只显示留白、浅刻线或后合成区域，不生成可读文字。粮仓不能变成现代仓库或灰色灾民营，麦金、河泥褐、湿木灰和虫蜡白要分材质。",
+          "en": "The grain tax clerk must remain an insect low-ranking bureaucrat, not a human accountant or ordinary magistrate; the white register only shows blank areas, shallow guide lines or post-composite spaces, no readable text. The depot must not become a modern warehouse or grey refugee camp; wheat gold, river-mud brown, wet wood grey and insect-wax white stay materially separated."
+        },
+        "quality_intent": {
+          "zh": "去粒子化真实材质，前中后景分层清楚，光线服务制度压迫和材质触感，不靠随机文字或特效光解释剧情。",
+          "en": "De-particleized photoreal materials, clear foreground/midground/background separation, lighting serves bureaucratic pressure and tactile texture, never relying on random text or effect beams to explain the story."
+        }
+      }
     },
     {
       "shot_id": "SC002-SH002",
       "generation_method": "I2V",
-      "prompt_zh": "金河农户门槛，混血奴兵骨白腕绑的手掀倒空粮缸，老人护住祖牌小盒被按进泥里，孩子小手被迫按上虫蜡封条，旧衣有劳动补丁，情绪克制不猎奇。",
-      "prompt_en": "Jinhe household threshold, a mixed-blood slave soldier hand with bone-white wrist binding tips an empty grain jar, an elder protecting an ancestral tablet box is pressed into mud, a child hand forced onto an insect-wax seal, old work-clothes with repairs, restrained not exploitative.",
-      "negative_prompt_notes_zh": "不要直观伤害儿童，不要血腥，不要把奴兵画成纯怪物。",
-      "negative_prompt_notes_en": "No explicit child harm, no gore, do not render slave soldiers as pure monsters.",
+      "prompt_zh": "把征粮制度压到家庭门槛：半斗杂粮、祖牌小盒、孩子虫蜡手印和奴兵扣腕同框，让“家门被写没”变成可见动作。混血奴兵的骨白腕绑和手从侧面压入画面，掀倒空粮缸，只滚出半斗杂粮；老人护住祖牌小盒被按进泥里，孩子小手被迫按上虫蜡封条。衣物是金河农户旧粗布和劳动补丁，表演克制、沉重、不血腥。门槛压迫特写组用斜线构图：前景是倒出的半斗杂粮、湿泥和祖牌小盒，画面一侧切入奴兵骨白腕绑和扣腕手，孩子手印落在虫蜡封条上；老人和孩子只给局部姿态，不做猎奇正脸。背景保留粮袋墙和低位人群的模糊压力。门外清晨柔光托住人物安全感，窄侧光从门槛斜切，强化湿泥、木缸、粗布、祖牌盒和奴兵腕绑纹理；虫蜡封条上有小面积冷白顶光，制造制度压迫，但避开孩子眼窝。底光只允许作为泥水反光的极弱火场感，不大面积使用。手持后退一步，跟随粮缸被掀、老人护盒和手被按下的真实接触反作用；运动短、低、近，动作完成后立刻稳住。",
+      "prompt_en": "Push the grain-tax system onto the household threshold: half-measure grain, ancestral tablet box, child wax handprint and slave-soldier grip share the frame so the erasure of the household becomes a visible action. A mixed-blood slave soldier hand with bone-white wrist binding presses into frame from the side, tipping an empty grain jar that releases only half a measure of grain. An elder guarding the ancestral tablet box is forced into mud, and a child hand is pressed onto an insect-wax seal. Clothes are Jinhe coarse work cloth with repairs; performance is restrained, heavy and non-gory. The coercive threshold close-up uses diagonal pressure: foreground holds spilled half-measure grain, wet mud and the ancestral tablet box; one side of frame cuts in the slave soldier bone-white wrist binding and gripping hand, with the child handprint on the insect-wax seal. Elder and child are shown as partial body language, not exploitative front faces. Background keeps a blurred pressure of grain sacks and low crowd. Soft morning light from outside preserves restraint around the people, while a narrow side light cuts across the threshold to strengthen wet mud, wooden jar, coarse cloth, tablet box and slave-soldier wrist-binding textures. A small cold-white top light sits on the insect-wax seal to create bureaucratic oppression without darkening the child eye sockets. Bottom light is only a faint mud-water reflection, never broad. A one-step handheld pullback follows the real contact reaction of the jar tipped over, the elder guarding the box and the hand pressed down; the move is short, low and close, settling as soon as the action lands.",
+      "negative_prompt_notes_zh": "不要直观伤害儿童、不要血腥、不要恐怖片底光大面积照脸、不要奴兵变纯怪物、不要奴兵开白册、不要祖牌盒变成华丽祭器、不要现代陶瓷或塑料桶、不要随机文字、不要猎奇正脸、不要夸张哭喊、不要全画面硬闪光、不要黄色闪粉、数字颗粒、视频涂抹、手指融化、道具粘连。",
+      "negative_prompt_notes_en": "avoid explicit child harm, gore, broad horror bottom-light on faces, pure-monster slave soldier, slave soldier opening the register, ornate shrine-like tablet box, modern ceramic or plastic bucket, random text, exploitative front faces, exaggerated crying, full-frame hard flash, yellow glitter, digital speckle, video smearing, melted fingers, fused props.",
       "continuity_refs": [
         "CHAR_SUMING_SLAVE_SOLDIER",
         "PROP_ANCESTRAL_TABLET_BOX"
@@ -114,15 +140,41 @@
         "CHAR_SUMING_SLAVE_SOLDIER",
         "PROP_ANCESTRAL_TABLET_BOX",
         "PROP_insect_wax_seal"
-      ]
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "混血奴兵的骨白腕绑和手从侧面压入画面，掀倒空粮缸，只滚出半斗杂粮；老人护住祖牌小盒被按进泥里，孩子小手被迫按上虫蜡封条。衣物是金河农户旧粗布和劳动补丁，表演克制、沉重、不血腥。",
+          "en": "A mixed-blood slave soldier hand with bone-white wrist binding presses into frame from the side, tipping an empty grain jar that releases only half a measure of grain. An elder guarding the ancestral tablet box is forced into mud, and a child hand is pressed onto an insect-wax seal. Clothes are Jinhe coarse work cloth with repairs; performance is restrained, heavy and non-gory."
+        },
+        "composition": {
+          "zh": "门槛压迫特写组用斜线构图：前景是倒出的半斗杂粮、湿泥和祖牌小盒，画面一侧切入奴兵骨白腕绑和扣腕手，孩子手印落在虫蜡封条上；老人和孩子只给局部姿态，不做猎奇正脸。背景保留粮袋墙和低位人群的模糊压力。",
+          "en": "The coercive threshold close-up uses diagonal pressure: foreground holds spilled half-measure grain, wet mud and the ancestral tablet box; one side of frame cuts in the slave soldier bone-white wrist binding and gripping hand, with the child handprint on the insect-wax seal. Elder and child are shown as partial body language, not exploitative front faces. Background keeps a blurred pressure of grain sacks and low crowd."
+        },
+        "camera": {
+          "zh": "手持后退一步，跟随粮缸被掀、老人护盒和手被按下的真实接触反作用；运动短、低、近，动作完成后立刻稳住。",
+          "en": "A one-step handheld pullback follows the real contact reaction of the jar tipped over, the elder guarding the box and the hand pressed down; the move is short, low and close, settling as soon as the action lands."
+        },
+        "lighting_color": {
+          "zh": "门外清晨柔光托住人物安全感，窄侧光从门槛斜切，强化湿泥、木缸、粗布、祖牌盒和奴兵腕绑纹理；虫蜡封条上有小面积冷白顶光，制造制度压迫，但避开孩子眼窝。底光只允许作为泥水反光的极弱火场感，不大面积使用。",
+          "en": "Soft morning light from outside preserves restraint around the people, while a narrow side light cuts across the threshold to strengthen wet mud, wooden jar, coarse cloth, tablet box and slave-soldier wrist-binding textures. A small cold-white top light sits on the insect-wax seal to create bureaucratic oppression without darkening the child eye sockets. Bottom light is only a faint mud-water reflection, never broad."
+        },
+        "style_continuity": {
+          "zh": "奴兵只负责扣腕、押车、执行，不开册；祖牌小盒、粮牌封蜡和粮缸属于家庭/制度道具线。儿童威胁必须克制，不能出现直观伤害、血腥或猎奇表情。",
+          "en": "The slave soldier only grips, carts and enforces, never opens the register; the ancestral tablet box, grain-tag wax and jar belong to the household/system prop line. Child threat must stay restrained, with no explicit harm, gore or exploitative expression."
+        },
+        "quality_intent": {
+          "zh": "去粒子化真实材质，前中后景分层清楚，光线服务制度压迫和材质触感，不靠随机文字或特效光解释剧情。",
+          "en": "De-particleized photoreal materials, clear foreground/midground/background separation, lighting serves bureaucratic pressure and tactile texture, never relying on random text or effect beams to explain the story."
+        }
+      }
     },
     {
       "shot_id": "SC002-SH003",
       "generation_method": "I2V",
-      "prompt_zh": "粮税小吏在检查桌后翻白册，节状手指点族谱行，妇人护粮被奴兵扣住，封牌敲在粮袋旁，官吏高位冷静、奴兵低位执行、村民被压低。",
-      "prompt_en": "The grain tax clerk turns the white register behind the inspection table, segmented fingers pointing at genealogy rows, a woman guarding winter grain pinned by a slave soldier, seal tag struck beside grain sack, official high and calm, soldier executing below, villagers compressed low.",
-      "negative_prompt_notes_zh": "不要混淆官吏和奴兵职责，不要让白册出现乱字。",
-      "negative_prompt_notes_en": "Do not mix clerk and slave soldier roles, no random text on the register.",
+      "prompt_zh": "让“查清明籍”的话术变成可见制度动作：白册、族谱行留白、节状手指、封牌和被扣妇人一起说明家粮被写成官粮。粮税小吏翻开白册，节状手指点过族谱行留白，封牌小槌落在粮袋旁；妇人护住过冬粮被奴兵从侧后扣住手腕或前臂。小吏高位冷静，奴兵低位执行，妇人和村民被压低。册页只允许留白、浅刻线、遮罩或后合成区域，不能生成随机可读字。检查桌中景按“前景证据、中景执行、背景压力”三层构图：前景高细节是白册册页、节状手指、粮牌、虫蜡封条、骨算盘和湿木桌沿；中景是粮税小吏高帽、被扣妇人、奴兵扣腕和粮袋侧面；背景只保留粮袋墙、检查口、低位村民和清晨冷雾。虫蜡白顶光压在白册和小吏脸壳上，形成冷酷制度感，并故意让小吏眼窝更暗；但用窄侧光擦亮节状手指、妇人手腕、旧木桌纹、粮袋麻布和奴兵皮甲，保证皮肤/甲片/石木纹理可读。小槌落点可用小面积硬光，逆光只给高帽、肩线和冷雾轮廓，避免圣光化。静态制度镜头，正面略高于桌沿，只有手、封牌小槌、妇人护粮和奴兵扣腕移动；台词只表现说话状态，不让模型生成字幕或口型精确文字。",
+      "prompt_en": "Turn the Qingming-register speech into a visible bureaucratic action: the register, blank genealogy rows, segmented finger, seal tag and pinned woman show household grain being rewritten as state grain. The grain tax clerk opens the white register, segmented finger crossing blank genealogy rows, and a seal-tag hammer lands beside the grain sack. A woman guarding winter grain is gripped at wrist or forearm from side-rear by a slave soldier. The clerk stays high and calm, the soldier executes below, and woman and villagers are compressed low. Register pages only allow blank space, shallow guide lines, masks or post-composite areas, never random readable text. The medium inspection-table shot uses three layers: foreground evidence, midground enforcement, background pressure. Foreground high detail holds register pages, segmented fingers, grain tag, insect-wax seal, bone abacus and wet-wood table edge; midground holds the clerk tall hat, pinned woman, slave-soldier grip and grain sack side; background keeps only grain-sack wall, inspection opening, low villagers and morning cold haze. Cold insect-wax top light presses onto the register and clerk face shell, creating a cruel bureaucratic feeling and deliberately darkening the clerk eye sockets; a narrow side light still grazes segmented fingers, the woman wrist, old table grain, burlap sack and slave-soldier leather armor so skin, armor and wood textures remain readable. The seal-hammer landing point may take a small hard highlight; backlight only rims hat, shoulders and cold haze, never becoming sacred. A locked bureaucratic frame, frontal and slightly above table edge; only hands, seal-hammer, the woman guarding grain and slave-soldier grip move. Dialogue is only a speaking state, with no generated subtitles or exact lip text.",
+      "negative_prompt_notes_zh": "不要混淆官吏和奴兵职责、不要人族账房版小吏、不要白册随机可读文字、不要字幕入画、不要封牌变魔法符、不要奴兵抢主位、不要妇人变华丽贵族、不要全画面顶光黑眼窝导致脸不可读、不要圣光逆光、不要大面积底光、不要过硬假舞台光、不要黄色闪粉、数字颗粒、塑料皮肤、手指融化、脸部花屏、道具比例漂移。",
+      "negative_prompt_notes_en": "avoid mixing clerk and slave-soldier duties, human-accountant clerk, random readable register text, subtitles in frame, magic-symbol seal tag, slave soldier taking the main official position, woman turning into an ornate noble, full-frame top light making faces unreadable, sacred backlight, broad bottom light, fake hard stage lighting, yellow glitter, digital speckle, plastic skin, melted fingers, face glitches, drifting prop scale.",
       "continuity_refs": [
         "CHAR_GRAIN_TAX_CLERK",
         "CHAR_SUMING_SLAVE_SOLDIER",
@@ -132,15 +184,41 @@
         "CHAR_GRAIN_TAX_CLERK",
         "CHAR_SUMING_SLAVE_SOLDIER",
         "PROP_WHITE_REGISTER"
-      ]
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "粮税小吏翻开白册，节状手指点过族谱行留白，封牌小槌落在粮袋旁；妇人护住过冬粮被奴兵从侧后扣住手腕或前臂。小吏高位冷静，奴兵低位执行，妇人和村民被压低。册页只允许留白、浅刻线、遮罩或后合成区域，不能生成随机可读字。",
+          "en": "The grain tax clerk opens the white register, segmented finger crossing blank genealogy rows, and a seal-tag hammer lands beside the grain sack. A woman guarding winter grain is gripped at wrist or forearm from side-rear by a slave soldier. The clerk stays high and calm, the soldier executes below, and woman and villagers are compressed low. Register pages only allow blank space, shallow guide lines, masks or post-composite areas, never random readable text."
+        },
+        "composition": {
+          "zh": "检查桌中景按“前景证据、中景执行、背景压力”三层构图：前景高细节是白册册页、节状手指、粮牌、虫蜡封条、骨算盘和湿木桌沿；中景是粮税小吏高帽、被扣妇人、奴兵扣腕和粮袋侧面；背景只保留粮袋墙、检查口、低位村民和清晨冷雾。",
+          "en": "The medium inspection-table shot uses three layers: foreground evidence, midground enforcement, background pressure. Foreground high detail holds register pages, segmented fingers, grain tag, insect-wax seal, bone abacus and wet-wood table edge; midground holds the clerk tall hat, pinned woman, slave-soldier grip and grain sack side; background keeps only grain-sack wall, inspection opening, low villagers and morning cold haze."
+        },
+        "camera": {
+          "zh": "静态制度镜头，正面略高于桌沿，只有手、封牌小槌、妇人护粮和奴兵扣腕移动；台词只表现说话状态，不让模型生成字幕或口型精确文字。",
+          "en": "A locked bureaucratic frame, frontal and slightly above table edge; only hands, seal-hammer, the woman guarding grain and slave-soldier grip move. Dialogue is only a speaking state, with no generated subtitles or exact lip text."
+        },
+        "lighting_color": {
+          "zh": "虫蜡白顶光压在白册和小吏脸壳上，形成冷酷制度感，并故意让小吏眼窝更暗；但用窄侧光擦亮节状手指、妇人手腕、旧木桌纹、粮袋麻布和奴兵皮甲，保证皮肤/甲片/石木纹理可读。小槌落点可用小面积硬光，逆光只给高帽、肩线和冷雾轮廓，避免圣光化。",
+          "en": "Cold insect-wax top light presses onto the register and clerk face shell, creating a cruel bureaucratic feeling and deliberately darkening the clerk eye sockets; a narrow side light still grazes segmented fingers, the woman wrist, old table grain, burlap sack and slave-soldier leather armor so skin, armor and wood textures remain readable. The seal-hammer landing point may take a small hard highlight; backlight only rims hat, shoulders and cold haze, never becoming sacred."
+        },
+        "style_continuity": {
+          "zh": "官吏、奴兵、金河家庭三种身份层级必须分明；白册、粮牌、虫蜡封条和骨算盘是制度道具，不是魔法特效。视频只表现说话状态，精确对白来自字幕和配音。",
+          "en": "Clerk, slave soldier and Jinhe household identities must remain distinct; the white register, grain tag, insect-wax seal and bone abacus are bureaucratic props, not magic effects. Video only shows speaking state; exact dialogue belongs to subtitles and voice."
+        },
+        "quality_intent": {
+          "zh": "去粒子化真实材质，前中后景分层清楚，光线服务制度压迫和材质触感，不靠随机文字或特效光解释剧情。",
+          "en": "De-particleized photoreal materials, clear foreground/midground/background separation, lighting serves bureaucratic pressure and tactile texture, never relying on random text or effect beams to explain the story."
+        }
+      }
     },
     {
       "shot_id": "SC002-SH004",
       "generation_method": "FLF2V",
-      "prompt_zh": "押车奴兵把粮袋拖上车，车轮从祖牌小盒旁压过泥水，妇人与孩子停在门槛低处，家门仍在但粮袋离开，清晨背光、泥褐和褪麦金，动作真实沉重。",
-      "prompt_en": "Slave soldiers drag grain sacks onto the cart, cart wheel rolls through mud beside the ancestral tablet box, woman and child remain low at the threshold, doorway still standing while grain leaves, morning backlight, mud brown and faded wheat gold, heavy real motion.",
-      "negative_prompt_notes_zh": "不要追车英雄镜头，不要夸张哭喊，不要现代车轮。",
-      "negative_prompt_notes_en": "No heroic cart chase, no exaggerated crying, no modern wheels.",
+      "prompt_zh": "用押车离开完成征粮制度结果：粮袋被拖走，祖牌小盒和虫蜡手印留在泥里，旁白落下“良户成逃籍”。押车奴兵把粮袋拖上木车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边，孩子手印仍粘着虫蜡白。首帧读到粮袋刚被拖上车，终帧读到粮车离开后的空门槛、车辙和冷雾，情绪克制，不做英雄追车或夸张哭喊。FLF2V 首帧到终帧使用同一门槛后方三分构图：首帧前景是祖牌小盒、虫蜡冷白手印和泥水，粮袋正被拖上车；中景妇人与孩子低在门槛，奴兵和车轮横向离开；终帧车已退到远处冷雾里，前景仍是空门槛、祖牌盒和车辙，家门还在但家粮不在。清晨低角逆光从押车离开的方向打出粮袋、车轮、奴兵肩线和冷雾轮廓，增加电影感和空气感；侧光掠过泥水、车辙、祖牌盒和麻袋，强化触感。妇人和孩子只吃柔和天光，不用硬光审判；虫蜡手印保持小面积冷白亮点。丁达尔光只沿车道给纵深，不能盖住家门。粮车和奴兵横向离开，镜头不追车，固定在家门后方并极慢后收，强调“粮走了，家留空”；尾段让车轮声盖过哭声。",
+      "prompt_en": "Complete the result of the grain-tax system through the cart leaving: sacks are dragged away, ancestral tablet box and wax handprint remain in mud, and voiceover lands that a lawful household becomes fugitive registry. Slave soldiers drag grain sacks onto a wooden cart, wheel cutting mud beside the ancestral tablet box; the woman kneels at the threshold, the child handprint still cold-white with wax. First frame reads sacks just loaded onto the cart; last frame reads the empty threshold, wheel ruts and cold haze after the cart leaves. Emotion stays restrained, with no heroic chase or exaggerated crying. The FLF2V first-to-last frames use the same rear-threshold thirds composition: first frame foreground holds tablet box, cold-white wax handprint and mud water as grain sacks are dragged onto the cart; midground keeps woman and child low at the threshold while slave soldiers and cart wheels exit laterally. By the last frame the cart recedes into cold haze, foreground remains empty threshold, tablet box and wheel ruts: the doorway stands but household grain is gone. Low morning backlight from the cart-exit direction rims sacks, wheels, slave-soldier shoulders and cold haze for cinema and air; side light skims mud water, wheel ruts, tablet box and burlap for tactile texture. Woman and child receive only soft sky light, not hard judgmental light; the insect-wax handprint stays a small cold-white highlight. Tyndall light only follows the cart lane for depth and must not cover the doorway. The cart and slave soldiers exit laterally while the camera does not chase; it holds behind the household threshold with a very slow pullback, stressing that grain leaves while the home remains hollow. Wheel sound overtakes crying at the end.",
+      "negative_prompt_notes_zh": "不要追车英雄镜头、不要押车变战车、不要现代车轮、不要夸张哭喊、不要大面积底光火场感、不要圣光式逆光、不要车离开后换地理、不要祖牌盒消失、不要孩子手印变血手印、不要粮袋漂浮、不要泥水塑料感、不要黄色闪粉、数字颗粒、过度丁达尔光、视频涂抹、花屏、压缩块、人物融化。",
+      "negative_prompt_notes_en": "avoid heroic cart chase, cart becoming a war chariot, modern wheels, exaggerated crying, broad fire-like bottom light, sacred backlight, geography changing after cart leaves, missing tablet box, child handprint turning bloody, floating sacks, plastic mud water, yellow glitter, digital speckle, excessive Tyndall beams, video smearing, glitches, compression blocks, melting figures.",
       "continuity_refs": [
         "LOC_JINHE_GRAIN_DEPOT",
         "PROP_ANCESTRAL_TABLET_BOX"
@@ -149,74 +227,223 @@
         "LOC_JINHE_GRAIN_DEPOT",
         "CHAR_SUMING_SLAVE_SOLDIER",
         "PROP_ANCESTRAL_TABLET_BOX"
-      ]
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "押车奴兵把粮袋拖上木车，车轮从祖牌小盒旁压过泥水；妇人跪在门槛边，孩子手印仍粘着虫蜡白。首帧读到粮袋刚被拖上车，终帧读到粮车离开后的空门槛、车辙和冷雾，情绪克制，不做英雄追车或夸张哭喊。",
+          "en": "Slave soldiers drag grain sacks onto a wooden cart, wheel cutting mud beside the ancestral tablet box; the woman kneels at the threshold, the child handprint still cold-white with wax. First frame reads sacks just loaded onto the cart; last frame reads the empty threshold, wheel ruts and cold haze after the cart leaves. Emotion stays restrained, with no heroic chase or exaggerated crying."
+        },
+        "composition": {
+          "zh": "FLF2V 首帧到终帧使用同一门槛后方三分构图：首帧前景是祖牌小盒、虫蜡冷白手印和泥水，粮袋正被拖上车；中景妇人与孩子低在门槛，奴兵和车轮横向离开；终帧车已退到远处冷雾里，前景仍是空门槛、祖牌盒和车辙，家门还在但家粮不在。",
+          "en": "The FLF2V first-to-last frames use the same rear-threshold thirds composition: first frame foreground holds tablet box, cold-white wax handprint and mud water as grain sacks are dragged onto the cart; midground keeps woman and child low at the threshold while slave soldiers and cart wheels exit laterally. By the last frame the cart recedes into cold haze, foreground remains empty threshold, tablet box and wheel ruts: the doorway stands but household grain is gone."
+        },
+        "camera": {
+          "zh": "粮车和奴兵横向离开，镜头不追车，固定在家门后方并极慢后收，强调“粮走了，家留空”；尾段让车轮声盖过哭声。",
+          "en": "The cart and slave soldiers exit laterally while the camera does not chase; it holds behind the household threshold with a very slow pullback, stressing that grain leaves while the home remains hollow. Wheel sound overtakes crying at the end."
+        },
+        "lighting_color": {
+          "zh": "清晨低角逆光从押车离开的方向打出粮袋、车轮、奴兵肩线和冷雾轮廓，增加电影感和空气感；侧光掠过泥水、车辙、祖牌盒和麻袋，强化触感。妇人和孩子只吃柔和天光，不用硬光审判；虫蜡手印保持小面积冷白亮点。丁达尔光只沿车道给纵深，不能盖住家门。",
+          "en": "Low morning backlight from the cart-exit direction rims sacks, wheels, slave-soldier shoulders and cold haze for cinema and air; side light skims mud water, wheel ruts, tablet box and burlap for tactile texture. Woman and child receive only soft sky light, not hard judgmental light; the insect-wax handprint stays a small cold-white highlight. Tyndall light only follows the cart lane for depth and must not cover the doorway."
+        },
+        "style_continuity": {
+          "zh": "首尾帧必须保持同一门槛、同一祖牌小盒、同一押车方向和同一清晨冷雾；粮车可以离开画面纵深，但镜头不能追成动作片。家门留空是结尾信息。",
+          "en": "First and last frames must preserve the same threshold, same ancestral tablet box, same cart-exit direction and same morning cold haze; the cart may recede into depth, but the camera must not turn it into an action chase. The hollow doorway is the final information."
+        },
+        "quality_intent": {
+          "zh": "去粒子化真实材质，前中后景分层清楚，光线服务制度压迫和材质触感，不靠随机文字或特效光解释剧情。",
+          "en": "De-particleized photoreal materials, clear foreground/midground/background separation, lighting serves bureaucratic pressure and tactile texture, never relying on random text or effect beams to explain the story."
+        }
+      }
     },
     {
       "shot_id": "SC003-SH001",
       "generation_method": "I2V",
-      "prompt_zh": "南方红线密室雨夜桌面，旧驿残图铺满横屏，红线从南缘钉到北境，油布雨滴和油灯湿暖反光，纸面旧黄、朱赤红线、防潮卷轴质感。",
-      "prompt_en": "Rainy night tabletop in southern red-line room, damaged old relay map fills the widescreen frame, red cord pinned from southern edge to northern border, oilcloth rain drops and humid oil-lamp reflection, aged yellow paper, vermilion cord, moisture-proof scroll texture.",
-      "negative_prompt_notes_zh": "不要现代地图标注，不要高魔法发光路线，不要清晰现代字体。",
-      "negative_prompt_notes_en": "No modern map labels, no high-magic glowing route, no clean modern typography.",
+      "prompt_zh": "南方红线密室雨夜桌面建立特写，旧驿残图铺满16:9横屏，南缘在下方前景、北境在上方深处，朱赤红线从下三分之一斜向钉到上三分之一，铜钉、防潮卷轴筒、雨滴、油布边缘和潮湿木桌形成层次。低位油灯从左下侧擦过纸面，温暖窄侧光凸出泛黄纸纤维、红线绒毛、铜钉氧化边和湿木纹；右上方雨夜月白冷反光只点亮水滴、油布折痕和地图裂缝。镜头沿红线真实速度缓慢向北推进并轻微跟焦，红线只是物理线索，不发光、不导航、不出现现代地图字。",
+      "prompt_en": "Rainy-night tabletop establishing close-up in the southern red-line room, a damaged old relay map fills the 16:9 frame, south in the lower foreground and the northern border receding upward. A vermilion cord runs diagonally from the lower third to the upper third, with brass pins, moisture-proof scroll tube, rain droplets, oilcloth edge and wet wood table layered clearly. A low oil lamp from lower-left skims the paper as warm narrow side light, revealing aged paper fibers, cord fuzz, oxidized brass edges and wet wood grain; cool moon-white rain bounce from upper-right only lights droplets, oilcloth folds and map cracks. The camera slowly pushes north along the cord with a slight focus pull; the red cord is physical evidence, not glowing, not navigation magic, with no modern map text.",
+      "negative_prompt_notes_zh": "不要现代地图标注、不要清晰现代字体、不要电子导航线、不要高魔法发光路线、不要神圣金光、不要过曝 bloom、不要全局灰黑欠曝、不要没有主光方向、不要油灯变舞台聚光、不要丁达尔光柱遮住地图、不要塑料纸面、不要漂浮红线、不要随机文字、不要视频涂抹、花屏、压缩块、数字颗粒、黄色闪粉。",
+      "negative_prompt_notes_en": "avoid modern map labels, clean modern typography, electronic navigation line, high-magic glowing route, divine golden light, overexposed bloom, flat grey underexposure, missing key-light direction, oil lamp becoming stage spotlight, Tyndall beams hiding the map, plastic paper surface, floating red cord, random text, video smearing, glitches, compression blocks, digital speckle, yellow glitter.",
       "continuity_refs": [
         "LOC_SOUTHERN_REDLINE_ROOM",
-        "PROP_BLOOD_GENEALOGY"
+        "PROP_OLD_RELAY_MAP_REDLINE",
+        "PROP_BLOOD_GENEALOGY",
+        "text_not_model_generated"
       ],
       "required_assets": [
-        "LOC_SOUTHERN_REDLINE_ROOM",
-        "PROP_old_relay_map_redline"
-      ]
+        "E01_L014",
+        "E01_P009",
+        "F001",
+        "F005"
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "旧驿残图、朱赤红线、铜钉、防潮卷轴筒、雨滴、油布边缘和潮湿木桌。",
+          "en": "Rainy-night tabletop establishing close-up in the southern red-line room, a damaged old relay map fills the 16:9 frame, south in the lower foreground and the northern border receding upward."
+        },
+        "composition": {
+          "zh": "横屏桌面建立特写采用斜上俯角三层构图：旧驿残图占满画面，南缘在下方前景、北境在上方深处；朱赤红线从下三分之一斜向穿到上三分之一，铜钉和防潮卷轴筒压住节奏；油灯只在左下画外留下暖边，雨滴和油布边缘在右上形成冷湿边界。",
+          "en": "The tabletop establishing close-up uses an overhead-oblique three-layer composition: the damaged relay map fills the frame, south sits in the lower foreground and the northern border recedes upward; the vermilion cord runs diagonally from the lower third to the upper third, paced by brass pins and a moisture-proof scroll tube; the oil lamp stays just off lower-left as a warm edge, while rain dots and oilcloth at upper-right form a cool wet boundary."
+        },
+        "camera": {
+          "zh": "从桌面斜上方沿红线向北做真实速度缓慢推进，轻微跟焦从南缘线钉滑到北境水滴；不旋转地图、不升空、不让红线变成魔法导航光。",
+          "en": "A slow real-time push from overhead-oblique tabletop height follows the red cord north, with a slight focus pull from the southern pin to the rain dot near the northern mark; no map rotation, no crane-up, and no magical route glow."
+        },
+        "lighting_color": {
+          "zh": "低位油灯从左下侧擦过纸面，形成温暖窄侧光，凸出泛黄纸纤维、朱赤线绒毛、铜钉氧化边和湿木纹；右上方雨夜月白冷反光只点亮水滴、油布折痕和地图裂缝。四角用负补光压暗，保留潮湿暖暗，不做全局提亮。",
+          "en": "A low oil lamp from lower-left skims the paper as a warm narrow side light, revealing aged paper fibers, vermilion cord fuzz, oxidized brass-pin edges and wet wood grain; cool moon-white rain bounce from upper-right only lights droplets, oilcloth folds and map cracks. Negative fill darkens the corners, preserving humid warm darkness without global brightening."
+        },
+        "style_continuity": {
+          "zh": "南缘遗民的防潮油布、红线仪式和旧礼法残片必须可读；红线是物理路线和政治压力，不是魔法导航。",
+          "en": "Southern remnant oilcloth, red-cord ritual and old etiquette fragments must remain readable; the red cord is a physical route and political pressure, not magic navigation."
+        },
+        "quality_intent": {
+          "zh": "纸、线、铜、油布、木纹和水滴分材质，前景线钉、中景路线、远端北境标记清楚。",
+          "en": "Paper, cord, brass, oilcloth, wood grain and droplets separate by material; foreground pins, midground route and distant northern mark stay clear."
+        }
+      }
     },
     {
       "shot_id": "SC003-SH002",
       "generation_method": "I2V",
-      "prompt_zh": "顾怀章在油灯侧正衣袖，晏南枝遮面站在阴影侧，冷灰流亡外袍、黑发红线、手心月白玉片，红线横在两人之间，雨夜湿暖与玉片冷光对比。",
-      "prompt_en": "Gu Huaizhang by oil lamp straightens his sleeve, veiled Yan Nanzhi stands in shadow, cold-grey exile robe, black hair with red cord, moon-white jade in palm, red cord dividing them, humid warm rain night contrasted with cold jade light.",
-      "negative_prompt_notes_zh": "不要晏南枝全脸华丽揭示，不要艳俗宫装，不要现代妆容。",
-      "negative_prompt_notes_en": "No full glamorous Yan face reveal, no vulgar palace costume, no modern makeup.",
+      "prompt_zh": "南方红线密室桌边双人中近景，红线横在顾怀章和晏南枝之间。顾怀章在油灯侧三分位，身体略前压，袖口压住旧驿图，老手皮肤、薄朱赤外袍、卷轴边和地图纸纹被暖侧光擦亮；晏南枝在阴影侧后半步，遮面、冷灰流亡外袍、黑发红线和手中月白玉片形成冷色焦点。月白玉片反弹窄冷光，只勾出她的指节、面纱边、下颌线和衣料纹理，不完整揭脸。低桌沿锁镜，只有顾怀章压图的手、晏南枝收紧玉片的指节和遮面下颌微动；背景雨夜油布保持湿暗，红线是两人之间的政治边界。",
+      "prompt_en": "Southern red-line room table-edge two-shot medium close-up, the red cord lies between Gu Huaizhang and Yan Nanzhi. Gu holds the lamp-side third, leaning slightly forward, sleeve pressing the old relay map, with aged hand skin, thin vermilion robe, scroll edge and map paper grain grazed by warm side light; Yan stands half a step back in shadow, her veil, cold-grey exile robe, black hair with red cord and moon-white jade in hand forming the cool focal point. The jade returns a narrow cool light only on her knuckles, veil edge, jawline and cloth texture, never fully revealing her face. Locked low table-edge frame; only Gu pressing the map, Yan tightening fingers around the jade and slight movement under the veil carry the shot. Rainy oilcloth background stays humid dark, and the red cord is the political boundary between them.",
+      "negative_prompt_notes_zh": "不要晏南枝全脸华丽揭示、不要网红脸、不要现代妆容、不要艳俗宫装、不要玉片变法器、不要神圣逆光、不要魔法光柱、不要广域恐怖底光、不要油灯过曝、不要背景全黑吞掉动作、不要红线消失、不要两人站位互换、不要字幕入画、不要精确口型文字、不要视频涂抹、脸部花屏、手指融化、衣料塑料感。",
+      "negative_prompt_notes_en": "avoid full glamorous Yan face reveal, influencer face, modern makeup, vulgar palace costume, jade becoming a magic weapon, sacred backlight, magic light shafts, broad horror bottom light, overexposed oil lamp, background blackness swallowing action, missing red cord, swapped character positions, subtitles in frame, exact lip-text generation, video smearing, face glitches, melted fingers, plastic cloth.",
       "continuity_refs": [
         "CHAR_GU_HUAIZHANG",
         "CHAR_YAN_NANZHI",
-        "PROP_MOON_WHITE_JADE"
+        "PROP_MOON_WHITE_JADE",
+        "face_reveal_control",
+        "dialogue_not_model_text"
       ],
       "required_assets": [
-        "CHAR_GU_HUAIZHANG",
-        "CHAR_YAN_NANZHI",
-        "PROP_MOON_WHITE_JADE"
-      ]
+        "E01_C011",
+        "E01_C002",
+        "E01_K002",
+        "E01_P002",
+        "E01_L014",
+        "F006"
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "顾怀章灯侧压图，晏南枝阴影侧握月白玉片，红线隔在两人之间。",
+          "en": "Southern red-line room table-edge two-shot medium close-up, the red cord lies between Gu Huaizhang and Yan Nanzhi."
+        },
+        "composition": {
+          "zh": "桌边双人中近景以红线作画面分割：顾怀章在左侧/灯侧三分位，身体略前压，袖口和旧臣卷轴形成暖色重量；晏南枝在右侧/阴影侧后半步，遮面、冷灰外袍和月白玉片形成冷色焦点。红线横切或斜切两人之间，前景地图边缘、中景双手、背景雨夜油布形成三层空间。",
+          "en": "The table-edge two-shot uses the red cord as a dividing line: Gu Huaizhang holds the left/lamp-side third, leaning slightly forward, with sleeve and old-minister scroll carrying warm weight; Yan Nanzhi stays half a step back on the right/shadow side, her veil, cold-grey robe and moon-white jade forming the cool focal point. The red cord cuts horizontally or diagonally between them, with foreground map edge, midground hands and background rainy oilcloth as three spatial layers."
+        },
+        "camera": {
+          "zh": "低桌沿锁镜，靠顾怀章压图的手、晏南枝收紧玉片的指节和遮面下颌的微动推进；只做极轻微跟焦，不追脸、不做华丽揭面。",
+          "en": "Locked low table-edge frame driven by Gu pressing the map, Yan tightening fingers around the jade, and a slight movement under the veil; only a very small focus shift, with no face chase and no glamorous unveiling."
+        },
+        "lighting_color": {
+          "zh": "油灯从顾怀章侧面给暖侧光，擦出老手皮肤、薄朱赤外袍、卷轴边和地图纸纹；晏南枝只吃月白玉片反弹的窄冷光，勾出指节、面纱边、下颌线和冷灰衣料纹理。背景保持湿暗负补光，雨滴小高光提供空气感，不能用圣光或美颜柔光揭全脸。",
+          "en": "The oil lamp gives Gu a warm side light, grazing aged skin, thin vermilion robe, scroll edge and map paper grain; Yan receives only a narrow cool bounce from the moon-white jade, outlining knuckles, veil edge, jawline and cold-grey cloth texture. The background stays humid-dark with negative fill, small rain highlights add air, and no sacred backlight or beauty soft light reveals the whole face."
+        },
+        "style_continuity": {
+          "zh": "晏南枝保持遮面、冷灰流亡外袍、黑发红线和克制礼法站姿；顾怀章是旧臣压力，不是慈祥引路人。",
+          "en": "Yan Nanzhi keeps her veil, cold-grey exile robe, black hair with red cord and restrained ritual posture; Gu Huaizhang is old-minister pressure, not a kindly guide."
+        },
+        "quality_intent": {
+          "zh": "暖灯与冷玉分光源，皮肤、薄袍、面纱、玉片、纸纹和雨滴分材质。",
+          "en": "Warm lamp and cool jade stay separate as light sources, with skin, thin robe, veil, jade, paper grain and raindrops separated by material."
+        }
+      }
     },
     {
       "shot_id": "SC003-SH003",
       "generation_method": "I2V",
-      "prompt_zh": "半卷血牒从顾怀章灯侧推向晏南枝阴影，晏南枝指尖停在卷轴前没有接，门外旧歌被手捂住，纸面残缺、防潮包裹、旧臣礼法压力。",
-      "prompt_en": "Half blood genealogy slides from Gu lamp side toward Yan shadow, Yan fingertips stop before taking it, old song outside muffled by a hand, damaged paper, moisture-proof wrapping, pressure of old imperial ritual.",
-      "negative_prompt_notes_zh": "不要完整圣旨光效，不要正统万岁式英雄感。",
-      "negative_prompt_notes_en": "No perfect sacred edict glow, no triumphant legitimist hero tone.",
+      "prompt_zh": "南方红线密室手部插入特写，半卷血牒从顾怀章灯侧推过红线，破损纸纤维、潮痕、旧蜡封、暗红旧印和桌面水痕清晰；晏南枝指尖停在卷轴前一指宽空隙，没有接。前景红线虚焦横过下沿，中景血牒从左侧暖灯区滑向右侧阴影，右后方月白玉片只露一条冷白反光，勾出晏南枝指节和面纱下缘。低位油灯从左侧掠过纸面，阴影侧由玉片提供窄冷光，暖冷交界落在红线和未接触的空隙处。桌面高度极小幅推进后停住，只允许火光、雨影和呼吸微动，旧歌在画外被捂住。",
+      "prompt_en": "Southern red-line room hand insert close-up: the half-rolled blood genealogy slides from Gu Huaizhang lamp side across the red cord, with torn paper fibers, moisture stains, old wax seal, dark-red old marks and table water trails clearly visible; Yan Nanzhi fingertips stop one finger-width before the scroll and do not take it. Foreground red cord crosses the lower edge out of focus, midground genealogy moves from warm lamplight at left into right-side shadow, and the moon-white jade at rear-right appears only as a narrow cool reflection outlining Yan knuckles and veil lower edge. A low oil lamp grazes the paper from the left; the jade provides narrow cool light in shadow, and the warm-cool boundary falls on the red cord and untouched gap. A tiny table-height push lands and holds, allowing only fire flicker, rain shadow and breath micro-motion, while the old song is muffled offscreen.",
+      "negative_prompt_notes_zh": "不要完整圣旨光效、不要皇权胜利感、不要血牒发光漂浮、不要手突然抓卷、不要手指融化、不要血腥奇观、不要随机可读文字、不要现代纸张、不要塑料蜡封、不要神圣逆光、不要魔法光柱、不要大面积底光、不要全局灰黑欠曝、不要视频涂抹、花屏、压缩块、数字颗粒、黄色闪粉。",
+      "negative_prompt_notes_en": "avoid perfect sacred edict glow, triumphant royal legitimacy tone, glowing or floating genealogy, hand suddenly grabbing the scroll, melted fingers, gore spectacle, random readable text, modern paper, plastic wax seal, sacred backlight, magic light shafts, broad bottom light, flat grey underexposure, video smearing, glitches, compression blocks, digital speckle, yellow glitter.",
       "continuity_refs": [
         "PROP_BLOOD_GENEALOGY",
-        "CHAR_YAN_NANZHI"
+        "PROP_MOON_WHITE_JADE",
+        "CHAR_YAN_NANZHI",
+        "CHAR_GU_HUAIZHANG",
+        "no_contact_gap"
       ],
       "required_assets": [
-        "PROP_BLOOD_GENEALOGY",
-        "CHAR_YAN_NANZHI",
-        "CHAR_GU_HUAIZHANG"
-      ]
+        "E01_P002",
+        "E01_P009",
+        "E01_C002",
+        "E01_C011",
+        "F006"
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "半卷血牒、未接的指尖、红线、月白玉片冷反光和画外被捂住的旧歌。",
+          "en": "Southern red-line room hand insert close-up: the half-rolled blood genealogy slides from Gu Huaizhang lamp side across the red cord, with torn paper fibers, moisture stains, old wax seal, dark-red old marks and table water trails clearly visible; Yan Nanzhi fingertips stop one finger-width before the scroll and do not take it."
+        },
+        "composition": {
+          "zh": "手部插入特写以红线和血牒形成双重横向压力：前景红线虚焦横过下沿，中景半卷血牒从左侧暖灯区推向右侧阴影，晏南枝指尖停在卷轴前一指宽处；右后方月白玉片只露冷反光，顾怀章的手从左侧退开，画面中心是未接触的空隙。",
+          "en": "The hand insert close-up uses the red cord and genealogy as two horizontal pressures: foreground red cord crosses the lower edge out of focus, the half-rolled blood genealogy slides from warm lamplight at left toward right-side shadow, and Yan fingertips stop one finger-width before it; the moon-white jade appears only as a cool reflection in rear-right, Gu hand retreats from left, and the central subject is the untouched gap."
+        },
+        "camera": {
+          "zh": "从桌面高度做极小幅推进，停在“指尖没有接触血牒”的空隙上；推进后保持，允许火光、雨影和呼吸带来微动，不让手突然抓卷。",
+          "en": "A tiny table-height push lands on the gap where the fingertips do not touch the genealogy; after the push it holds, allowing only fire flicker, rain shadow and breath micro-motion, never letting the hand suddenly grab the scroll."
+        },
+        "lighting_color": {
+          "zh": "低位油灯从左侧掠过血牒，突出破损纸纤维、潮痕、旧蜡封、暗红旧印和桌面水痕；阴影侧由月白玉片提供很窄的冷反光，勾晏南枝指尖和面纱下缘。暖光到冷光的交界落在红线与空隙处，强调她没有接。禁止血牒圣旨化发光。",
+          "en": "A low oil lamp from the left grazes the genealogy, revealing torn paper fibers, moisture stains, old wax seal, dark-red old marks and table water trails; on the shadow side the moon-white jade provides a very narrow cool reflection on Yan fingertips and veil lower edge. The warm-to-cool boundary falls on the red cord and the gap, stressing that she has not taken it. The genealogy must never glow like a sacred edict."
+        },
+        "style_continuity": {
+          "zh": "血牒是旧帝国合法性与旧债压力，不是胜利圣物；晏南枝的迟疑必须比道具更重要。",
+          "en": "The blood genealogy is pressure from old-imperial legitimacy and old debt, not a victorious sacred object; Yan Nanzhi hesitation must matter more than the prop."
+        },
+        "quality_intent": {
+          "zh": "纸纤维、蜡封、潮痕、桌面水迹、指节和面纱边缘必须清晰，中心是未接触空隙。",
+          "en": "Paper fibers, wax seal, moisture stains, table water trails, knuckles and veil edge must stay clear, with the untouched gap as the center."
+        }
+      }
     },
     {
       "shot_id": "SC003-SH004",
       "generation_method": "FLF2V",
-      "prompt_zh": "红线北端被雨滴打湿，油灯压暗，晏南枝遮面剪影停在图外，画面从红线方向匹配切到残阳坳村口封锁线，表达路尽头不一定是皇座。",
-      "prompt_en": "The north end of the red cord dampens under rain, oil lamp dimmed, Yan veiled silhouette paused outside the map, frame match-cuts from red-line direction to Canyangao checkpoint line, suggesting the road does not necessarily end at a throne.",
-      "negative_prompt_notes_zh": "不要皇座幻象，不要字卡解释，不要过度梦幻转场。",
-      "negative_prompt_notes_en": "No throne vision, no explanatory title card, no overly dreamy transition.",
+      "prompt_zh": "南方红线密室图形过渡特写，红线北端位于画面上三分之一，雨滴压在朱赤红线和北境旧纸纹交界处，让红线变深、纸面水渍吃开。下方油灯暖边逐渐降低，只照亮红线纤维和水滴边缘；右上月白冷反光给纸面裂缝和晏南枝侧后方遮面剪影一条冷边。贴近地图高度沿红线北端短匹配移动，终帧让红线方向接到残阳坳村口封锁线或白蜡旗线条方向，形成“路”变“封锁”的视觉反转。暖暗逐步让位给土褐与虫蜡冷白，但冷白只读为制度封锁信息，不做圣光。",
+      "prompt_en": "Southern red-line room graphic transition close-up: the north end of the red cord sits in the upper third, with a rain droplet pressing on the boundary between vermilion cord and old northern paper grain, darkening the cord and spreading water stain into the page. A low warm lamp edge fades at the bottom, lighting only cord fibers and droplet rims; cool moon-white bounce from upper-right gives paper cracks and Yan veiled side-rear silhouette a narrow cold rim. A short map-level match move follows the red cord north, and the end frame aligns the cord direction with the Canyangao village checkpoint line or white-wax flag line, turning road into blockade. Humid warm darkness gradually yields to earth brown and insect-wax cold white, but the cold white reads only as bureaucratic blockade, never sacred light.",
+      "negative_prompt_notes_zh": "不要皇座幻象、不要梦幻溶解、不要字卡解释、不要红线发光变法阵、不要圣光式逆光、不要魔法光柱、不要过曝 bloom、不要全黑转场、不要线条方向断裂、不要跳到无关地点、不要晏南枝完整正脸、不要随机文字、不要油灯舞台化、不要视频涂抹、花屏、压缩块、数字颗粒、黄色闪粉。",
+      "negative_prompt_notes_en": "avoid throne vision, dreamy dissolve, explanatory title card, red cord glowing into magic array, sacred backlight, magic light shafts, overexposed bloom, full black transition, broken line direction, cut to unrelated geography, full Yan face reveal, random text, stage-like oil lamp, video smearing, glitches, compression blocks, digital speckle, yellow glitter.",
       "continuity_refs": [
         "LOC_SOUTHERN_REDLINE_ROOM",
-        "CHAR_YAN_NANZHI"
+        "CHAR_YAN_NANZHI",
+        "LOC_CANYANGAO_GATE",
+        "line_direction_match"
       ],
       "required_assets": [
-        "LOC_SOUTHERN_REDLINE_ROOM",
-        "LOC_CANYANGAO_GATE"
-      ]
+        "E01_L014",
+        "E01_P009",
+        "E01_C002",
+        "LOC_CANYANGAO_GATE",
+        "PROP_WHITE_WAX_FLAGS"
+      ],
+      "prompt_layers": {
+        "subject": {
+          "zh": "红线北端、水滴、压暗油灯、晏南枝虚焦剪影和村口封锁线方向。",
+          "en": "Southern red-line room graphic transition close-up: the north end of the red cord sits in the upper third, with a rain droplet pressing on the boundary between vermilion cord and old northern paper grain, darkening the cord and spreading water stain into the page."
+        },
+        "composition": {
+          "zh": "图形过渡特写把红线北端放在上三分之一，水滴压在红线和北境纸纹交界处；油灯暖边在下方逐渐降低，晏南枝遮面剪影只在侧后方虚焦压住画面边缘。终帧需要让红线方向与残阳坳村口封锁线/白蜡旗线条方向可匹配，形成“路”变“封锁”的视觉反转。",
+          "en": "The graphic transition close-up places the red cord north end in the upper third, with a droplet pressing on the boundary between cord and northern paper grain; the warm lamp edge lowers at the bottom, and Yan veiled silhouette stays out of focus at the rear side, weighting the frame edge. The end frame must match the red-line direction to the Canyangao checkpoint or white-wax flag line, turning road into blockade."
+        },
+        "camera": {
+          "zh": "贴近地图高度沿红线北端做短匹配移动，最后用线条方向、亮度下降和雨声切人声接到村口封锁线；不做梦幻溶解、不出现皇座幻象。",
+          "en": "A short map-level match move follows the north end of the red cord, using line direction, dimming exposure and rain-to-crowd audio to cut into the village checkpoint line; no dreamy dissolve and no throne vision."
+        },
+        "lighting_color": {
+          "zh": "雨夜油灯被压暗，只保留低位暖边照亮红线纤维和水滴边缘；右上月白冷反光给纸面裂缝和晏南枝剪影一条冷边。转场尾端让暖暗逐步让位给残阳坳土褐与虫蜡冷白，但冷白只作为封锁线信息，不做圣光。",
+          "en": "The rainy-night oil lamp dims, leaving only a low warm edge on cord fibers and droplet rims; cool moon-white bounce from upper-right gives paper cracks and Yan silhouette a narrow cold edge. At the transition tail, humid warm darkness yields to Canyangao earth brown and insect-wax cold white, but the cold white is blockade information, never sacred light."
+        },
+        "style_continuity": {
+          "zh": "旧帝国路线期待在这里转成制度封锁压力；不能把结尾做成复国胜利或神秘幻象。",
+          "en": "The old-imperial route expectation turns into bureaucratic blockade pressure here; the ending must not become royal restoration victory or mystical vision."
+        },
+        "quality_intent": {
+          "zh": "线条方向、红线纤维、水滴边缘、纸裂和冷暖转场必须清楚，转场信息不能被特效吞掉。",
+          "en": "Line direction, red-cord fibers, droplet edge, paper cracks and warm-to-cool transition must stay readable; transition information must not be swallowed by effects."
+        }
+      }
     },
     {
       "shot_id": "SC004-SH001",

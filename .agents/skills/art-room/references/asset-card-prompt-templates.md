@@ -193,6 +193,74 @@ composition_layers: foreground, midground, background
 camera_requirements: distance, angle, screen direction, light, weather/time
 ```
 
+## Scene Image Information Budget
+
+Use this section whenever a location card, establishing plate, video reference
+frame, or shot override is a wide scene, distant scene, crowd scene, battlefield,
+large city, fortress, mountain pass, mass interior, or any scene with many
+repeated small objects. The budget prevents image models from assigning equal
+importance to the whole frame.
+
+Add this optional design field to wide/group-heavy location and reference-frame
+records:
+
+```text
+scene_information_budget:
+  shot_scale: distant establishing wide shot | epic wide shot | large group scene | other
+  main_visual_functions:
+    - large readable shapes
+    - lighting and atmosphere
+    - clear silhouettes and scale
+  detail_priority:
+    highest_detail:
+      max_elements: 3-5
+      examples: central gate, main road, nearest banners, hero silhouette,
+        largest creatures, primary light source
+    medium_detail: midground masses, wall flags, readable fires, nearest groups
+    low_detail: distant soldiers, guards, background towers, far terrain
+    impression_only: distant crowds, arrows, tiny weapons, parapet figures,
+      far banners, secondary animals or vehicles
+  distance_simplification:
+    grouped_silhouettes: true
+    massing_over_individuals: true
+    atmospheric_perspective: fog, smoke, snow, rain, dust, haze, or depth falloff
+  forbidden_detail_behavior:
+    - equal-detail rendering across the whole frame
+    - over-detailed distant figures
+    - granular crowd texture
+    - particleized stone or architecture
+    - noisy micro-detail or AI speckle
+    - full-frame ultra-detail
+    - visual information overload
+```
+
+Wide scene prompts should state that the image is an establishing shot, not a
+character sheet, unit showcase, architecture inventory, weapon catalog, or
+emblem proof sheet. Only the `highest_detail` elements may receive fine detail;
+all other content must be simplified by distance, atmosphere, and grouping.
+
+Use this copy-ready wording pattern for wide scene prompts:
+
+```text
+This is a true distant establishing wide shot. Prioritize scale, atmosphere,
+composition, and silhouette clarity over small object detail. Keep strong depth
+layers. Only 3-5 elements may receive high detail. Distant people, creatures,
+vehicles, wall figures, weapons, and small banners must read as grouped
+silhouettes or masses, not individually readable miniatures. Let fog, smoke,
+snow, dust, rain, haze, and atmospheric perspective simplify small forms.
+```
+
+Wide scene negative prompts must include:
+
+```text
+no equal-detail rendering across the whole frame, no over-detailed distant
+soldiers or crowd members, no granular crowd texture, no particleized stone, no
+noisy micro-detail, no AI speckle, no smoke pretending to be architectural
+detail, no distant objects rendered as sharp individual miniatures, no
+full-frame ultra-detail, no cluttered battlefield or city texture, no visual
+information overload.
+```
+
 ## Image Output Format Contract
 
 Every asset plan, manifest record, image prompt record, thread prompt, and QC

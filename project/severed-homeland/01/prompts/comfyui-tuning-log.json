@@ -164,6 +164,54 @@
         "Regenerate r003e01.png from the updated image prompt before final SC001-SH002 I2V render.",
         "Run a small ComfyUI render test to confirm the image no longer reads muddy, dark and uniformly grey, and that the shot has a clear highlight center and key-light direction."
       ]
+    },
+    {
+      "iteration_id": "sc003-redline-room-composition-lighting-prompt-completion",
+      "source_feedback": [
+        "User asked whether episode 01 SC003 storyboard explanation, camera movement, prompts and per-frame composition were complete, and requested completion with stronger lighting and image quality/texture."
+      ],
+      "changed_shots": [
+        "SC003-SH001",
+        "SC003-SH002",
+        "SC003-SH003",
+        "SC003-SH004"
+      ],
+      "prompt_changes": [
+        {
+          "shot_id": "SC003-SH001",
+          "change": "Completed tabletop red-line map composition, oil-lamp/rain bounce lighting and bilingual prompt blocks."
+        },
+        {
+          "shot_id": "SC003-SH002",
+          "change": "Completed Gu/Yan table divide, warm lamp versus cool jade lighting, face-reveal control and bilingual prompt blocks."
+        },
+        {
+          "shot_id": "SC003-SH003",
+          "change": "Completed genealogy hand insert centered on the untouched gap, low oil-lamp paper texture, cool jade edge and bilingual prompt blocks."
+        },
+        {
+          "shot_id": "SC003-SH004",
+          "change": "Completed red-line-to-checkpoint FLF2V transition, dim oil lamp to insect-wax blockade lighting and bilingual prompt blocks."
+        }
+      ],
+      "parameter_changes": [
+        {
+          "shot_id": "SC003-SH001",
+          "parameter": "reference_frame_status",
+          "old_value": "needs_asset placeholder",
+          "new_value": "r010e01.png prompt complete, canonical PNG missing"
+        },
+        {
+          "shot_id": "SC003-SH004",
+          "parameter": "generation_method",
+          "old_value": "FLF2V placeholder",
+          "new_value": "FLF2V with r013/r014 prompt-complete missing first/last frames"
+        }
+      ],
+      "unresolved_issues": [
+        "Generate and visually QC r010e01.png through r014e01.png before formal SC003 I2V/FLF2V rendering.",
+        "Model checkpoint, LoRA, ControlNet, IPAdapter preset, workflow template and workflow node IDs remain unconfigured."
+      ]
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "version": "art-room-e12-shot-sc002-sh003-location-inheritance-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "12",
+  "scope": "targeted_single_shot_reference_frame",
+  "new_location_assets": [],
+  "inherited_location_locks": [
+    {
+      "continuity_id": "LOC_BROKEN_TOWER_STEPS",
+      "asset_id": "L011",
+      "output_path": "assets/locations/l011m.png",
+      "display_name": "坍塌烽燧季终逃亡场景卡",
+      "shot_usage": "foreground cracked black-stone steps, snow mud, falling stone, half-height exit, old gold-red route traces",
+      "visible_lock": "broken tower interior and split steps; not a generic snowfield, temple, cave, or palace"
+    }
+  ],
+  "scene_information_budget": {
+    "detail_priority": {
+      "highest_detail": [
+        "alliance fragment on cracked step",
+        "insect-wax needle tip",
+        "blood-record strip and red thread",
+        "Lu Qingli trapped reaction",
+        "half-height broken tower exit"
+      ],
+      "medium_detail": [
+        "Shen Weisang hand and short knife",
+        "Yan Nanzhi sleeve and blood-record pressure",
+        "Bai Yi white sleeve silhouette",
+        "falling stones and snow-mud texture"
+      ],
+      "low_detail": [
+        "background character silhouettes",
+        "distant broken tower interior",
+        "windblown snow"
+      ],
+      "impression_only": [
+        "distant rescue context",
+        "small debris",
+        "far route traces"
+      ]
+    },
+    "distance_simplification": "The frame is a close insert, so detail concentrates on the foreground prop and hands; background people stay readable by silhouette, costume color, and posture only.",
+    "forbidden_detail_behavior": [
+      "no equal-detail rendering across the whole frame",
+      "no noisy micro-detail on every stone",
+      "no granular snow speckle",
+      "no full-frame ultra-detail",
+      "no visual information overload"
+    ]
+  }
+}

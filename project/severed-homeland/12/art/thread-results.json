@@ -1,0 +1,123 @@
+{
+  "version": "art-room-e12-targeted-thread-results-v1-2026-06-10",
+  "episode_id": "12",
+  "scope": "targeted_reference_frames_sc002_sh001_sc003_sh002",
+  "results": [
+    {
+      "batch_id": "E12_SC002_SH003_REFERENCE_FRAME",
+      "generation_mode": "imagegen-task",
+      "codex_thread_id": "019eb190-a8fe-7471-9a9c-e7b6b02e6266",
+      "codex_thread_status": "completed",
+      "status": "complete_qc_passed_with_limitations_2026-06-10",
+      "assets": [
+        {
+          "asset_id": "R12_SC002_SH003",
+          "prompt_id": "PROMPT_R12_SC002_SH003",
+          "shot_id": "SC002-SH003",
+          "output_path": "12/assets/reference-frames/sc002-sh003.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb190-a8fe-7471-9a9c-e7b6b02e6266/ig_0cba57cc2625a03a016a295c64c06c81919fbe7d29d1af0cf2.png",
+          "source_imagegen_group_id": "019eb190-a8fe-7471-9a9c-e7b6b02e6266",
+          "history_files": [
+            "12/assets/reference-frames/history/sc002-sh003.v001.png",
+            "12/assets/reference-frames/history/sc002-sh003.v002.png"
+          ],
+          "source_generated_resolution": "1672x941",
+          "canonical_resolution": "3840x2160",
+          "file_sha256": "6568c20294e4262d24109ebd7dc6c97441710fb1c9325aa678b978f9d1fc1760",
+          "blocked_items": [],
+          "generation_status": "complete_qc_passed_with_limitations_2026-06-10",
+          "qc_status": "passed_with_limitations_2026-06-10"
+        }
+      ],
+      "retry_notes": [
+        "A main-thread fallback candidate completed before the clean projectless imagegen-task finished; it was retained as history v001 and not used as canonical.",
+        "The clean imagegen-task thread completed successfully and produced the accepted source retained as history v002."
+      ],
+      "parent_save_actions": [
+        "Copied main-thread fallback generated PNG to 12/assets/reference-frames/history/sc002-sh003.v001.png.",
+        "Copied accepted imagegen-task generated PNG to 12/assets/reference-frames/history/sc002-sh003.v002.png.",
+        "Resampled accepted source to 3840x2160 and wrote 12/assets/reference-frames/sc002-sh003.png."
+      ],
+      "warnings": [
+        "Local master reference images were not attached to the isolated imagegen-task; inheritance was prompt-guided and parent-reviewed.",
+        "The generated source was 1672x941 and was upsampled to 3840x2160 for the canonical file."
+      ]
+    },
+    {
+      "batch_id": "E12_SC003_SH002_REFERENCE_FRAME",
+      "generation_mode": "imagegen-task",
+      "codex_thread_id": null,
+      "codex_thread_status": "not_used_direct_builtin_imagegen_task",
+      "status": "generated_candidate_internal_qc_passed_pending_4k_contract",
+      "assets": [
+        {
+          "asset_id": "E12_R024",
+          "prompt_id": "PROMPT_E12_R024",
+          "shot_id": "SC003-SH002",
+          "output_path": "12/assets/reference-frames/r024e12.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb18b-167e-78a3-90ed-806a0b95a82a/ig_08c07ce7bdbbf0c7016a295c42bdc88191a1d78611a7de760d.png",
+          "source_imagegen_group_id": "019eb18b-167e-78a3-90ed-806a0b95a82a",
+          "history_files": [],
+          "actual_file_resolution": "1672x941",
+          "file_sha256": "5825b8cdc6a984f57e608a95db80a81dfc6b43e48a585cab2b4eb71b25b84ba1",
+          "blocked_items": [
+            {
+              "item": "4k_reference_frame_contract",
+              "reason": "Built-in imagegen produced 1672x941, below the 3840x2160 target for final video handoff."
+            }
+          ],
+          "retry_notes": []
+        }
+      ]
+    },
+    {
+      "batch_id": "E12_SC002_SH001_REFERENCE_FRAMES",
+      "generation_mode": "imagegen-task",
+      "codex_thread_id": null,
+      "codex_thread_status": "not_used_direct_builtin_imagegen_prompt_only_task",
+      "status": "complete_4k_upscaled_from_sc002_sh001_wide_redo",
+      "assets": [
+        {
+          "asset_id": "E12_R001",
+          "prompt_id": "PROMPT_E12_R001_SC002_SH001_FIRST_FRAME",
+          "shot_id": "SC002-SH001",
+          "output_path": "12/assets/reference-frames/r001e12.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb187-1383-77a1-9b5e-1a1274101db8/ig_0e236c528ca50e67016a295c9fe784819097056bc82f6b3af2.png",
+          "source_imagegen_group_id": "019eb187-1383-77a1-9b5e-1a1274101db8",
+          "history_files": [
+            "12/assets/reference-frames/history/r001e12.v001-imagegen-source-20260610.png"
+          ],
+          "actual_file_resolution": "3840x2160",
+          "source_candidate_resolution": "1672x941",
+          "file_sha256": "a04f1b6589e26dd96e963a6c5015cd17d68f17f99e751957a58252d9f8aa86a2",
+          "source_candidate_sha256": "976ee185bcc8de9436991f300419df74aefc0faf56e598bb3b86ff957e114961",
+          "blocked_items": [],
+          "retry_notes": [
+            "Initial direct wording around blood/knife pressure was safety-blocked; generation prompt was rewritten to non-graphic 'red-brown weathering' and 'small utility tool' while preserving shot intent."
+          ]
+        },
+        {
+          "asset_id": "E12_R002",
+          "prompt_id": "PROMPT_E12_R002_SC002_SH001_LAST_FRAME",
+          "shot_id": "SC002-SH001",
+          "output_path": "12/assets/reference-frames/r002e12.png",
+          "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb187-1383-77a1-9b5e-1a1274101db8/ig_0e236c528ca50e67016a296605ea108190a75be213e793af95.png",
+          "source_imagegen_group_id": "019eb187-1383-77a1-9b5e-1a1274101db8",
+          "history_files": [
+            "12/assets/reference-frames/history/r002e12.v001-imagegen-source-20260610.png",
+            "12/assets/reference-frames/history/r002e12.v002-before-sc002-sh001-wide-redo-20260610.png",
+            "12/assets/reference-frames/history/r002e12.v003-imagegen-source-wide-redo-20260610.png"
+          ],
+          "actual_file_resolution": "3840x2160",
+          "source_candidate_resolution": "1672x941",
+          "file_sha256": "b88855b01fae4d4d384d8c2a5b76a0cf2b3ebe1617cb3be21da832791f163992",
+          "source_candidate_sha256": "2812e88e8f944403d7eb984d5909fa80ea88f7fb3da9a5930e402684e7b2401c",
+          "blocked_items": [],
+          "retry_notes": [
+            "Redone after review: previous tail frame drifted toward SC002-SH002 rescue action. Corrected prompt keeps SC002-SH001 as the establishing slow-push endpoint: Lu Qingli handles her own trapped garment; Shen Weisang stays separate and no object exchange appears."
+          ]
+        }
+      ]
+    }
+  ]
+}

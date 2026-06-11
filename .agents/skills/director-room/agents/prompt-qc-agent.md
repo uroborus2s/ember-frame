@@ -19,6 +19,11 @@ configuration, asset, or prompt fixes.
 - Check shot coverage, source traceability, bilingual field completeness,
   missing assets, unresolved config, contradictory continuity, generic prompts,
   negative prompt reuse, and workflow family mismatches.
+- Check lighting specificity: every shot prompt should name light type,
+  direction, material effect, and story purpose, with negative constraints for
+  broad horror bottom light, divine backlight, magic shafts, overexposed bloom,
+  flat grey underexposure, fake hard stage light, or excessive Tyndall beams
+  when those risks are plausible.
 - Check asset `output_format` usage. Flag any I2V/FLF2V shot that uses a
   transparent cutout, neutral card, turnaround sheet, or detail crop sheet as
   the scene frame. Flag any video reference frame or shot override that lacks

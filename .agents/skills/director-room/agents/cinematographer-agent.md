@@ -19,6 +19,12 @@ feel, lighting, and visual texture for the shot list.
 - For each shot or shot family, specify shot size, angle, camera height,
   movement, lens feel, depth of field, lighting direction, color temperature,
   contrast, and practical light sources.
+- For each shot, name the light type and its material effect: backlight for rim,
+  air and depth; side light for skin, armor, cloth, wood, stone, mud and prop
+  texture; top light for oppression with eye-socket risk; bottom light only for
+  limited eerie, danger, or fire effects; hard light only for narrow dramatic
+  accents; soft light for overcast, snow, fog, morning haze, and sensitive human
+  beats; Tyndall light only for controlled depth, never VFX spectacle.
 - Preserve spatial geography and screen direction across connected shots.
 - Flag shots that need reference images, locked perspective, unusual motion, or
   lighting continuity support from art-room.

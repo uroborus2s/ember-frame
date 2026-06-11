@@ -1,0 +1,64 @@
+{
+  "version": "episode03-targeted-sc003-sh001-asset-index-v1-2026-06-10",
+  "project": "severed-homeland",
+  "episode_id": "03",
+  "scope": "targeted_sc003_sh001_reference_frame_only",
+  "approval_status": "targeted_basic_qc_passed",
+  "image_generation_status": "complete_qc_passed_targeted",
+  "updated_at": "2026-06-10",
+  "counts": {
+    "reference_frame": 1
+  },
+  "assets": [
+    {
+      "asset_id": "E03_R021",
+      "asset_type": "reference_frame",
+      "asset_subtype": "reference_frame",
+      "display_name": "SC003-SH001 旧井废口首帧参考帧",
+      "file": "r021e03.png",
+      "basename": "r021e03",
+      "output_path": "03/assets/reference-frames/r021e03.png",
+      "prompt_id": "PROMPT_E03_R021",
+      "source_thread_id": "019eb194-896d-7470-990c-adfd64279d66",
+      "source_generated_file": "/Users/uroborus/.codex/generated_images/019eb194-896d-7470-990c-adfd64279d66/ig_08c3efa24d8c6ec1016a295d5f05e88191b709d231d6b079f3.png",
+      "final_sha256": "9cbd549f5713f48072581c75ca8b7047baa5212f4ea712e39f15125a841d66a5",
+      "final_dimensions": "1672x941",
+      "history_files": [
+        "03/assets/reference-frames/history/r021e03.v001-main-thread-alt-20260610.png"
+      ],
+      "source_refs": [
+        "03/script/final-script.md:L70-L87",
+        "03/shots/shot-list.json#SC003-SH001",
+        "03/storyboard/storyboard-plan.md#SC003-SH001",
+        "03/production/generation-plan.json#03-sc003-sh001"
+      ],
+      "continuity_refs": [
+        "LOC_OLD_WELL_RUINED_MOUTH",
+        "CH_SHEN_WEISANG",
+        "CH_YAN_NANZHI",
+        "CH_LUO_QINGHE",
+        "CH_SUMING_SLAVE_SOLDIER",
+        "PROP_HALF_RELAY_TOKEN",
+        "FX_FIRE_SMOKE_ASH"
+      ],
+      "usage": [
+        "SC003-SH001",
+        "FLF2V",
+        "first_frame_reference"
+      ],
+      "generation_status": "complete_qc_passed_targeted_2026-06-10",
+      "qc_status": "passed_targeted_basic_visual_qc_2026-06-10",
+      "notes": [
+        "Chosen over the main-thread alternate because it gives clearer establishing-shot geography: old well, low hidden doorway, two-person movement direction, and distant slave-soldier pressure.",
+        "Below preferred 3840x2160 art-room reference-frame resolution; use as composition reference or upscale before final video generation."
+      ]
+    }
+  ],
+  "qc_summary": {
+    "passed": 1,
+    "blocked": 0,
+    "warnings": [
+      "Resolution is 1672x941, below preferred 3840x2160 reference-frame target."
+    ]
+  }
+}

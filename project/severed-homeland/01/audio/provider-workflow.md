@@ -31,6 +31,8 @@
 - 童声只允许自然短促，不卖萌，不成人化。
 - 官吏与白翳不靠吼制造压迫，压迫来自平直、洁净、确定性。
 - 句尾不能拖成唱腔，除非提示词明确要求旧歌或童谣质感。
+- 旁白不得为了贴短镜头使用 `ffmpeg atempo` 或同类后期加速；如果自然男播音时长超过旧镜头窗口，优先调整 picture lock、字幕窗口或音效铺底。
+- 第01集 Qwen3-TTS 旁白锁定 `voice=uncle_fu`、`language=chinese`、`temperature=0.45`、`top_k=25`、`top_p=0.8`、`repetition_penalty=1.05` 与 `provider-prompts.json` 的男中低音雄厚历史感提示词；d001、d002、d006、d010 必须使用同一语调与自然语速标准。
 
 ## 配乐 QC 规则
 
