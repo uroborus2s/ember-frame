@@ -73,6 +73,41 @@
               "type": "string"
             }
           },
+          "control_inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": ["role", "path", "node_binding_hint", "status"],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "scene_master",
+                    "first_frame",
+                    "last_frame",
+                    "ipadapter_reference",
+                    "controlnet_depth",
+                    "controlnet_lineart",
+                    "controlnet_canny",
+                    "openpose",
+                    "mask",
+                    "redraw_reference"
+                  ]
+                },
+                "path": {
+                  "type": "string"
+                },
+                "node_binding_hint": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["ready", "planned", "needs_config", "missing_asset", "blocked"]
+                }
+              }
+            }
+          },
           "output_path": {
             "type": "string"
           },

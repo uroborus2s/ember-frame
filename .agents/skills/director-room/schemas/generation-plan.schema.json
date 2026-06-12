@@ -75,6 +75,39 @@
               "type": "string"
             }
           },
+          "control_inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": ["role", "path", "status"],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "scene_master",
+                    "top_view",
+                    "camera_map",
+                    "shot_guide",
+                    "depth",
+                    "lineart",
+                    "mask",
+                    "openpose",
+                    "first_frame",
+                    "last_frame",
+                    "reference_image"
+                  ]
+                },
+                "path": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["ready", "planned", "needs_config", "missing_asset", "blocked"]
+                }
+              }
+            }
+          },
           "risks": {
             "type": "array",
             "items": {

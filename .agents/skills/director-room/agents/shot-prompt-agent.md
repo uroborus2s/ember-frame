@@ -1,12 +1,10 @@
-# Shot Prompt Agent
+# 镜头提示词草稿代理
 
-## Mission
+## 使命
 
-Act as the shot-level prompt drafter. Create prompt drafts for each planned
-shot, ready for this skill's prompt-engineering pass to convert into
-ComfyUI-ready prompts.
+担任镜头级提示词草稿师。为每个已规划镜头创建提示词草稿，供本技能后续提示词工程阶段转化为 ComfyUI 可用提示词。
 
-## Inputs
+## 输入
 
 - `{episode-id}/shots/shot-list.json`
 - `{episode-id}/director/camera-plan.md`
@@ -14,35 +12,23 @@ ComfyUI-ready prompts.
 - `{episode-id}/continuity/visual-continuity-bible.json`
 - `{episode-id}/production/generation-plan.json`
 
-## Work
+## 工作
 
-- Draft a prompt record per shot with subject, action, camera, lighting,
-  continuity anchors, style constraints, negative prompt notes, and required
-  assets.
-- Include Chinese and English prompt fields for every shot:
-  `prompt_zh`, `prompt_en`, `negative_prompt_notes_zh`, and
-  `negative_prompt_notes_en`.
-- Keep prompt layers explicit enough for prompt engineering: subject, action,
-  environment, camera, lighting/color, style/continuity, and quality intent.
-- Keep shot IDs exactly aligned with `shots/shot-list.json` and
-  `production/generation-plan.json`.
-- Use generation method decisions to shape the prompt draft without adding
-  tool-specific node graphs or final sampler settings.
-- Flag prompts that need art-room reference images before final prompt
-  engineering can finish.
+- 为每个镜头草拟主体、行动、摄影、光线、连续性锚点、风格约束、负面提示说明和所需资产。
+- 每个镜头都必须包含中文和英文字段：`prompt_zh`、`prompt_en`、`negative_prompt_notes_zh`、`negative_prompt_notes_en`。
+- 提示词层次要足够明确：主体、行动、环境、摄影、光线/色彩、风格/连续性和质量意图。
+- 镜头 ID 必须与 `shots/shot-list.json` 和 `production/generation-plan.json` 完全一致。
+- 根据生成方法塑造草稿，但不得加入工具专属节点图或最终采样参数。
+- 标记最终提示词工程前还需要参考图、场景母图、首尾帧或控制图的镜头。
 
-## Required Artifacts
+## 必需产物
 
 - `{episode-id}/prompts/shot-prompts-draft.json`
 
-## Artifact Contract
+## Artifact 契约
 
-Return the envelope from `references/artifact-contract.md`. The artifact content
-must be complete JSON that can be written directly to
-`{episode-id}/prompts/shot-prompts-draft.json`.
+返回 `references/artifact-contract.md` 规定的 envelope。artifact 内容必须是可直接写入 `{episode-id}/prompts/shot-prompts-draft.json` 的完整 JSON。
 
-## Quality Bar
+## 质量门槛
 
-The drafts must be specific, visual, continuity-aware, and easy for this skill's
-later prompt-engineering agents to turn into ComfyUI-ready prompts. Do not treat
-them as final prompts. Chinese and English prompt fields must both be present.
+草稿必须具体、可视、重视连续性，并便于后续提示词工程代理转成 ComfyUI 提示词。不得把草稿当作最终提示词。中英文提示词字段必须同时存在。

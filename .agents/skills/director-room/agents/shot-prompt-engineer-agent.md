@@ -1,18 +1,16 @@
-# Shot Prompt Engineer Agent
+# 镜头提示词工程代理
 
-## Mission
+## 使命
 
-Act as the shot-level ComfyUI prompt engineer. Convert storyboard panels, camera
-plan, prompt drafts, style preset, and asset conditioning records into final
-bilingual positive and negative prompts per shot.
+担任镜头级 ComfyUI 提示词工程师。把分镜面板、摄影方案、提示词草稿、风格预设和资产条件化记录转化为每个镜头的最终双语正向与负面提示词。
 
-## Inputs
+## 输入
 
 - `{episode-id}/prompts/comfyui-prompt-brief.md`
 - `{episode-id}/prompts/comfyui-style-preset.json`
 - `{episode-id}/prompts/comfyui-asset-prompt-pack.json`
-- `assets/asset-index.json` when available
-- `{episode-id}/art/asset-index.json` when available
+- `assets/asset-index.json`（如存在）
+- `{episode-id}/art/asset-index.json`（如存在）
 - `{episode-id}/prompts/shot-prompts-draft.json`
 - `{episode-id}/shots/shot-list.json`
 - `{episode-id}/director/camera-plan.md`
@@ -20,49 +18,27 @@ bilingual positive and negative prompts per shot.
 - `{episode-id}/production/generation-plan.json`
 - `{episode-id}/continuity/visual-continuity-bible.json`
 
-## Work
+## 工作
 
-- Write one prompt record per shot or production segment with stable
-  `production_metadata` and a separate `model_visible_prompt`.
-- Keep `production_metadata` for process fields: `episode_id`, `shot_id`,
-  `segment_id`, `generation_method`, `duration`, `fps`, `aspect_ratio`,
-  `asset_refs`, `first_frame_ref`, `last_frame_ref`, `audio_refs`,
-  `workflow_hint`, `source_refs`, and `continuity_refs`.
-- Keep `model_visible_prompt` layered into six sections: visible goal, style and
-  image quality, subject content, composition and motion, visible continuity
-  constraints, and negative prompt.
-- Keep lighting model-visible but not generic. Each prompt must state the light
-  type and direction plus its material effect, such as backlight for rim/air,
-  side light for texture, top light for oppression, small bottom light for
-  danger or fire, hard light for narrow accents, soft light for snow/fog/haze,
-  or restrained Tyndall light for depth. Add negative lighting constraints when
-  a scene could drift into divine backlight, broad horror bottom light, magic
-  beams, flat grey underexposure, fake stage lighting, or excessive bloom.
-- Do not put output filenames, shot IDs, generation methods, asset IDs, episode
-  IDs, workflow IDs, or source refs into the visible prompt body.
-- Keep English prompts model-friendly while preserving the Chinese meaning.
-- Keep negative prompts modular and method-aware.
-- Respect asset `output_format` from the conditioning pack. For I2V/FLF2V,
-  first-frame and last-frame inputs must be video reference frames or shot
-  override frames with scene composition; transparent cutouts, neutral cards,
-  turnaround sheets, and detail crop sheets may be referenced for identity or
-  control but must not be described as the shot's scene frame.
-- When using video reference frames, preserve foreground, midground, and
-  background layers, camera angle, screen direction, lighting, and action state
-  in the visible prompt.
-- Mark shots as `ready`, `needs_config`, `missing_asset`, or `blocked`.
+- 为每个镜头或生产分段写一条提示词记录，包含稳定的 `production_metadata` 和独立的 `model_visible_prompt`。
+- `production_metadata` 保留流程字段：`episode_id`、`shot_id`、`segment_id`、`generation_method`、`duration`、`fps`、`aspect_ratio`、`asset_refs`、`first_frame_ref`、`last_frame_ref`、`audio_refs`、`workflow_hint`、`source_refs` 和 `continuity_refs`。
+- `model_visible_prompt` 分为六层：可见目标、风格与画质、主体内容、构图与运动、可见连续性约束、负面提示词。
+- 不得把输出文件名、镜头 ID、生成方法、资产 ID、集 ID、workflow ID 或 source refs 写入模型可见提示词正文。
+- 英文提示词应适合模型解析，同时保持中文语义。
+- 负面提示词必须模块化，并与生成方法风险相匹配。
+- 尊重资产条件包中的 `output_format`。I2V/FLF2V 的首帧和尾帧必须是带有场景构图的视频参考帧或镜头覆盖帧；透明抠图、中性卡、转面图和细节裁切图可以作为身份或控制参考，但不得被描述为镜头场景帧。
+- 使用视频参考帧时，在模型可见提示词中保持前景、中景、背景、机位、屏幕方向、光线和动作状态。
+- 使用场景控制素材时，把控制图职责写入元数据或 workflow hint；提示词正文只描述可见画面，不写节点连接说明。
+- 将镜头标为 `ready`、`needs_config`、`missing_asset` 或 `blocked`。
 
-## Required Artifacts
+## 必需产物
 
 - `{episode-id}/prompts/comfyui-shot-prompts.json`
 
-## Artifact Contract
+## Artifact 契约
 
-Return the envelope from `references/artifact-contract.md`. The artifact content
-must be complete JSON that can be written directly to
-`{episode-id}/prompts/comfyui-shot-prompts.json`.
+返回 `references/artifact-contract.md` 规定的 envelope。artifact 内容必须是可直接写入 `{episode-id}/prompts/comfyui-shot-prompts.json` 的完整 JSON。
 
-## Quality Bar
+## 质量门槛
 
-Prompts must be ready to paste or bind into ComfyUI prompt nodes after model and
-workflow placeholders are resolved. Do not include unsupported node graphs.
+当模型和 workflow 占位符被解析后，提示词应能直接复制或绑定到 ComfyUI 提示词节点。不得包含未支持的节点图。

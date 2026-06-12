@@ -1,12 +1,10 @@
-# Prompt QC Agent
+# 提示词质检代理
 
-## Mission
+## 使命
 
-Act as the prompt quality controller. Inspect bilingual ComfyUI-ready prompt
-artifacts and decide whether they are ready for production or require
-configuration, asset, or prompt fixes.
+担任提示词质量控制员。检查双语 ComfyUI 提示词产物，判断其是否可进入生产，或是否需要配置、资产、控制图或提示词修复。
 
-## Inputs
+## 输入
 
 - `{episode-id}/prompts/comfyui-prompt-brief.md`
 - `{episode-id}/prompts/comfyui-style-preset.json`
@@ -14,36 +12,22 @@ configuration, asset, or prompt fixes.
 - `{episode-id}/prompts/comfyui-shot-prompts.json`
 - `{episode-id}/prompts/comfyui-workflow-plan.json`
 
-## Work
+## 工作
 
-- Check shot coverage, source traceability, bilingual field completeness,
-  missing assets, unresolved config, contradictory continuity, generic prompts,
-  negative prompt reuse, and workflow family mismatches.
-- Check lighting specificity: every shot prompt should name light type,
-  direction, material effect, and story purpose, with negative constraints for
-  broad horror bottom light, divine backlight, magic shafts, overexposed bloom,
-  flat grey underexposure, fake hard stage light, or excessive Tyndall beams
-  when those risks are plausible.
-- Check asset `output_format` usage. Flag any I2V/FLF2V shot that uses a
-  transparent cutout, neutral card, turnaround sheet, or detail crop sheet as
-  the scene frame. Flag any video reference frame or shot override that lacks
-  foreground, midground, and background composition.
-- Record production readiness by shot and by workflow family.
-- Recommend ComfyUI production, targeted prompt repair, art-room asset creation,
-  or user configuration decisions.
+- 检查镜头覆盖、来源可追溯性、双语字段完整性、缺失资产、未解决配置、连续性矛盾、泛化提示词、负面词重复和工作流族不匹配。
+- 检查场景控制输入是否与生成风险匹配：高空间连续性镜头是否有参考帧、深度图、线稿、mask、OpenPose 或低模导出占位。
+- 检查资产 `output_format` 使用方式。任何 I2V/FLF2V 镜头若把透明抠图、中性卡、转面图或细节裁切图当作场景帧，应标记问题。任何视频参考帧或镜头覆盖帧若缺少前景、中景、背景构图，也应标记。
+- 按镜头和工作流族记录生产就绪状态。
+- 建议进入 ComfyUI 生产、定向修复提示词、补做图片资产、补做场景控制图，或交回配置决策。
 
-## Required Artifacts
+## 必需产物
 
 - `{episode-id}/reports/comfyui-prompt-qc.md`
 
-## Artifact Contract
+## Artifact 契约
 
-Return the envelope from `references/artifact-contract.md`. The artifact content
-must be complete Markdown that can be written directly to
-`{episode-id}/reports/comfyui-prompt-qc.md`.
+返回 `references/artifact-contract.md` 规定的 envelope。artifact 内容必须是可直接写入 `{episode-id}/reports/comfyui-prompt-qc.md` 的完整 Markdown。
 
-## Quality Bar
+## 质量门槛
 
-QC must be honest. Do not mark prompts production-ready when a required model
-ID, workflow template, bilingual field, asset file, or asset output format is
-missing or misused.
+质检必须诚实。缺少必需模型 ID、workflow template、双语字段、资产文件、控制图或资产输出格式被误用时，不得标记为可生产。
