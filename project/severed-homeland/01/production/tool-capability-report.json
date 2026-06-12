@@ -1,0 +1,76 @@
+{
+  "version": "director-room-tool-capability-report-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001 reference frames r001-r004",
+  "checked_at": "2026-06-12",
+  "tools": {
+    "blender": {
+      "status": "blocked",
+      "available": false,
+      "checks": [
+        {
+          "method": "command -v blender",
+          "result": "not_found"
+        },
+        {
+          "method": "/Applications/Blender.app/Contents/MacOS/Blender",
+          "result": "not_found"
+        },
+        {
+          "method": "python3 import bpy",
+          "result": "No module named 'bpy'"
+        }
+      ],
+      "impact": "Cannot build blockout.blend or export top-view, camera-map, camera guides, depth maps, or lineart in this run."
+    },
+    "comfyui": {
+      "status": "needs_config",
+      "available": false,
+      "checks": [
+        {
+          "method": "command -v comfyui",
+          "result": "not_found"
+        },
+        {
+          "method": "curl http://127.0.0.1:8188/system_stats",
+          "result": "no_response"
+        }
+      ],
+      "impact": "Cannot execute local reproducible ComfyUI keyframe generation without server, checkpoint, workflow template, and node bindings."
+    },
+    "krita": {
+      "status": "available_not_invoked",
+      "available": true,
+      "path": "/Applications/Krita.app/Contents/MacOS/krita",
+      "impact": "Can be used later for masks, face, prop, and paint fixes after keyframe candidates exist."
+    },
+    "gimp": {
+      "status": "available_not_invoked",
+      "available": true,
+      "paths": [
+        "/opt/homebrew/bin/gimp",
+        "/Applications/GIMP.app/Contents/MacOS/gimp"
+      ],
+      "impact": "Can be used later for masks, face, prop, and paint fixes after keyframe candidates exist."
+    },
+    "python": {
+      "status": "available",
+      "available": true,
+      "path": "/opt/homebrew/bin/python3",
+      "missing_modules": [
+        "PIL",
+        "yaml"
+      ],
+      "impact": "Python can validate files and run utility scripts, but no image drawing fallback was used because requested control images must come from Blender."
+    }
+  },
+  "policy": {
+    "no_fake_tool_completion": true,
+    "do_not_overwrite_user_modified_reference_frames": [
+      "01/assets/reference-frames/r003e01.png",
+      "01/assets/reference-frames/r004e01.png"
+    ],
+    "blocked_outputs_are_not_ready": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "version": "shot-image-task-list-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scene_id": "SC001",
+  "status": "needs_config",
+  "write_policy": "Do not overwrite canonical 01/assets/reference-frames/r001e01.png through r004e01.png in generation runs. Write candidates under director-room shot candidate folders, then promote only after human/director QC.",
+  "tasks": [
+    {
+      "task_id": "SC001_R001_KEYFRAME_CANDIDATE",
+      "reference_slot": "r001e01.png",
+      "shot_id": "SC001-SH001",
+      "role": "first_frame",
+      "method": "ComfyUI_or_equivalent_image_generation",
+      "status": "blocked_waiting_for_blender_controls_and_comfyui_config",
+      "source_frame": "01/assets/reference-frames/r001e01.png",
+      "control_inputs": [
+        "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
+        "01/control/scene-packages/SC001/depth/r001_depth.png",
+        "01/control/scene-packages/SC001/lineart/r001_lineart.png"
+      ],
+      "candidate_output": "01/assets/director-room/shots/SC001-SH001/candidates/r001e01.candidate.png",
+      "positive_prompt_zh": "墙外低机位正中对称史诗攻城建立，同一面锁喉关黑石外墙和同一城门，兽族攻城队列和破门器械从暴雪中沿同一轴线压近，墙顶 P017 肃明旗和守军枪线只是小剪影，骨钟只作为门楼内部钟声不露出。",
+      "positive_prompt_en": "Low centered exterior epic siege establishing frame, same Suohou Gate blackstone outer wall and same gate, beast troops and siege engine pressing along one axis through blizzard, P017 Suming flags and defender spear lines only as small silhouettes, bone bell exists only as offscreen gatehouse sound.",
+      "negative_prompt_zh": "不要骨钟特写、不要越墙、不要第二墙第二门、不要城内侧兽潮、不要错误旗帜、不要全灰黑雪雾。",
+      "negative_prompt_en": "No bone-bell close-up, no crossing the wall, no second wall or second gate, no beast attackers inside the wall, no wrong flags, no uniformly grey-black snow haze."
+    },
+    {
+      "task_id": "SC001_R002_KEYFRAME_CANDIDATE",
+      "reference_slot": "r002e01.png",
+      "shot_id": "SC001-SH001",
+      "role": "last_frame",
+      "method": "ComfyUI_or_equivalent_image_generation",
+      "status": "blocked_waiting_for_blender_controls_and_comfyui_config",
+      "source_frame": "01/assets/reference-frames/r002e01.png",
+      "control_inputs": [
+        "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+        "01/control/scene-packages/SC001/depth/r002_depth.png",
+        "01/control/scene-packages/SC001/lineart/r002_lineart.png"
+      ],
+      "candidate_output": "01/assets/director-room/shots/SC001-SH001/candidates/r002e01.candidate.png",
+      "positive_prompt_zh": "同一墙外轴线更近靠近城门，攻城梁或铁包巨角第一次重撞同一木铁城门，冷白雪雾、碎冰、旧木屑、门闩震动成为最强亮部，墙顶仍是 P017 肃明旗。",
+      "positive_prompt_en": "Same exterior axis closer to the gate, siege beam or iron-wrapped horn hits the same timber-iron gate for the first time, cold-white snow blast, ice splinters, old timber chips and shaking gate bars become the strongest highlight, wall-top flags remain P017 Suming flags.",
+      "negative_prompt_zh": "不要转向、不要穿墙、不要进入城内、不要第二个城门、不要撞击点离开城门。",
+      "negative_prompt_en": "No turn, no wall pass-through, no entering the interior, no second gate, no impact point away from the gate."
+    },
+    {
+      "task_id": "SC001_R003_KEYFRAME_CANDIDATE",
+      "reference_slot": "r003e01.png",
+      "shot_id": "SC001-SH002",
+      "role": "first_frame",
+      "method": "ComfyUI_or_equivalent_image_generation",
+      "status": "blocked_waiting_for_blender_controls_and_comfyui_config",
+      "source_frame": "01/assets/reference-frames/r003e01.png",
+      "control_inputs": [
+        "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+        "01/control/scene-packages/SC001/depth/r003_depth.png",
+        "01/control/scene-packages/SC001/lineart/r003_lineart.png"
+      ],
+      "candidate_output": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+      "positive_prompt_zh": "门楼内近中景，前景断矛斜滑入雪泥，中景年轻灰墙军户被撞门余震震倒半靠黑石后墙，后景同一口骨钟挂在同一木架下横摆，钟链和木架积雪清楚，门外只给雪雾和杀声压力。",
+      "positive_prompt_en": "Gatehouse interior tight-medium frame: foreground broken spear slides diagonally through snow mud, midground young grey-wall soldier is knocked half-collapsed against the blackstone back wall by the gate impact, background same bone bell swings under the same timber frame, chain and snow on timber readable, exterior remains only snow haze and battle pressure.",
+      "negative_prompt_zh": "不要扶钟动作、不要换钟架、不要正脸英雄表情、不要城外开阔战场误读、不要第二墙。",
+      "negative_prompt_en": "No bell-bracing action, no changed bell frame, no heroic front-face expression, no reading as an open exterior battlefield, no second wall."
+    },
+    {
+      "task_id": "SC001_R004_KEYFRAME_CANDIDATE",
+      "reference_slot": "r004e01.png",
+      "shot_id": "SC001-SH003",
+      "role": "first_frame",
+      "method": "ComfyUI_or_equivalent_image_generation",
+      "status": "blocked_waiting_for_blender_controls_and_comfyui_config",
+      "source_frame": "01/assets/reference-frames/r004e01.png",
+      "control_inputs": [
+        "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
+        "01/control/scene-packages/SC001/depth/r004_depth.png",
+        "01/control/scene-packages/SC001/lineart/r004_lineart.png"
+      ],
+      "candidate_output": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+      "positive_prompt_zh": "门楼后侧三分位中近景，薛临墙压住同一黑石女墙面对墙外，冻裂手、粗麻墙巾、旧甲片和半暗侧脸可读，背景保留同一骨钟横摆和年轻军户低位半倒，墙外兽族只在女墙外斜下方形成压力。",
+      "positive_prompt_en": "Gatehouse-side rear-three-quarter medium close-up: Xue Linqiang presses the same blackstone parapet facing outward, cracked hand, coarse wall scarf, old armor plates and half-dark side profile readable, background keeps the same bone bell swinging and the young soldier low half-collapsed, exterior beast attackers only create pressure below the parapet.",
+      "negative_prompt_zh": "不要英雄仰拍、不要干净战神、不要背景骨钟消失、不要年轻军户站起、不要兽族挤进门楼内。",
+      "negative_prompt_en": "No heroic low-angle pose, no clean war-god styling, no disappearing background bell, no young soldier standing up, no beast attackers inside the gatehouse."
+    }
+  ]
+}

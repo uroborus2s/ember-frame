@@ -1,0 +1,84 @@
+{
+  "version": "scene-image-resource-index-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scene_id": "SC001",
+  "status": "blocked",
+  "resources": {
+    "scene_control_package": {
+      "scene_bible": "01/control/scene-packages/SC001/scene-bible.md",
+      "layout": "01/control/scene-packages/SC001/layout.yaml",
+      "blockout_plan": "01/control/scene-packages/SC001/blockout-plan.md",
+      "blender_script": "01/control/scene-packages/SC001/build_sc001_blockout.py",
+      "export_manifest": "01/control/scene-packages/SC001/blockout-export-manifest.json",
+      "space_audit": "01/control/scene-packages/SC001/space-audit.md"
+    },
+    "source_reference_frames": {
+      "r001": {
+        "path": "01/assets/reference-frames/r001e01.png",
+        "status": "existing_read_only",
+        "dimensions": "4096x2304"
+      },
+      "r002": {
+        "path": "01/assets/reference-frames/r002e01.png",
+        "status": "existing_read_only",
+        "dimensions": "4096x2304"
+      },
+      "r003": {
+        "path": "01/assets/reference-frames/r003e01.png",
+        "status": "existing_read_only_user_modified_not_overwritten",
+        "dimensions": "1672x940"
+      },
+      "r004": {
+        "path": "01/assets/reference-frames/r004e01.png",
+        "status": "existing_read_only_user_modified_not_overwritten",
+        "dimensions": "1672x941"
+      }
+    },
+    "expected_blender_outputs": {
+      "status": "blocked_blender_unavailable",
+      "top_view": "01/control/scene-packages/SC001/top-view.png",
+      "camera_map": "01/control/scene-packages/SC001/camera-map.png",
+      "shot_guides": [
+        "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r004_camera.png"
+      ],
+      "depth": [
+        "01/control/scene-packages/SC001/depth/r001_depth.png",
+        "01/control/scene-packages/SC001/depth/r002_depth.png",
+        "01/control/scene-packages/SC001/depth/r003_depth.png",
+        "01/control/scene-packages/SC001/depth/r004_depth.png"
+      ],
+      "lineart": [
+        "01/control/scene-packages/SC001/lineart/r001_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r002_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r003_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r004_lineart.png"
+      ]
+    },
+    "expected_scene_assets": {
+      "status": "not_generated",
+      "master_reference_front": "01/assets/director-room/scenes/SC001/master-reference-front.png",
+      "master_reference_reverse": "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+      "key_prop_placement": "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+      "blocking_overview": "01/assets/director-room/scenes/SC001/blocking-overview.png"
+    },
+    "expected_shot_assets": {
+      "status": "not_generated",
+      "SC001-SH001": {
+        "shot_scene_image": "01/assets/director-room/shots/SC001-SH001/shot-scene-image.png",
+        "director_reference": "01/assets/director-room/shots/SC001-SH001/director-reference.png"
+      },
+      "SC001-SH002": {
+        "shot_scene_image": "01/assets/director-room/shots/SC001-SH002/shot-scene-image.png",
+        "director_reference": "01/assets/director-room/shots/SC001-SH002/director-reference.png"
+      },
+      "SC001-SH003": {
+        "shot_scene_image": "01/assets/director-room/shots/SC001-SH003/shot-scene-image.png",
+        "director_reference": "01/assets/director-room/shots/SC001-SH003/director-reference.png"
+      }
+    }
+  }
+}

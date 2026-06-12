@@ -1,0 +1,127 @@
+{
+  "version": "director-room-review-ledger-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001 r001-r004 only",
+  "overall_status": "blocked",
+  "reviews": [
+    {
+      "artifact": "01/control/scene-packages/SC001/scene-bible.md",
+      "agent": "scene-coordinate-agent",
+      "score": 93,
+      "pass_line": 90,
+      "status": "passed",
+      "rework_count": 0,
+      "checks": [
+        "固定一墙一门、一门楼、一骨钟",
+        "明确 R001/R002 音源骨钟不露出规则",
+        "明确 R003/R004 同钟架可见规则",
+        "包含禁止项和上游来源"
+      ]
+    },
+    {
+      "artifact": "01/control/scene-packages/SC001/layout.yaml",
+      "agent": "scene-coordinate-agent",
+      "score": 94,
+      "pass_line": 90,
+      "status": "passed",
+      "rework_count": 0,
+      "checks": [
+        "记录坐标原点、单位、轴向和尺寸",
+        "固定城墙、城门、门楼、骨钟、旗帜、兽族进攻方向",
+        "记录人物站位与四个 R 帧机位",
+        "记录控制图输出路径"
+      ]
+    },
+    {
+      "artifact": "01/control/scene-packages/SC001/build_sc001_blockout.py",
+      "agent": "studio-tool-execution-agent",
+      "score": 88,
+      "pass_line": 85,
+      "status": "script_passed_execution_blocked",
+      "rework_count": 0,
+      "checks": [
+        "脚本可作为 Blender Python 后台入口",
+        "内嵌同一套 layout 坐标",
+        "包含四个摄像机和导出路径",
+        "未能在本机执行，因为 Blender 不可用"
+      ]
+    },
+    {
+      "artifact": "01/control/scene-packages/SC001/blockout-export-manifest.json",
+      "agent": "studio-tool-execution-agent",
+      "score": 45,
+      "pass_line": 85,
+      "status": "blocked",
+      "rework_count": 0,
+      "failed_checks": [
+        "未生成 blockout.blend",
+        "未生成 top-view.png",
+        "未生成 camera-map.png",
+        "未生成 shot guide/depth/lineart 控制图"
+      ],
+      "blocking_condition": "Blender executable not installed or not on PATH."
+    },
+    {
+      "artifact": "01/control/scene-packages/SC001/space-audit.md",
+      "agent": "main-coordinator",
+      "score": 70,
+      "pass_line": 85,
+      "status": "blocked_pending_visual_evidence",
+      "rework_count": 0,
+      "checks": [
+        "坐标级一墙一门通过",
+        "R001/R002 同轴推进通过",
+        "R003/R004 同门楼同骨钟坐标通过"
+      ],
+      "failed_checks": [
+        "缺少 Blender 顶视图和机位图",
+        "缺少导演视角图、深度图、线稿图"
+      ]
+    },
+    {
+      "artifact": "01/handoff/art-planning/shot-image-task-list.json",
+      "agent": "scene-image-resource-agent",
+      "score": 86,
+      "pass_line": 90,
+      "status": "needs_config",
+      "rework_count": 0,
+      "checks": [
+        "逐 R 帧任务拆分完成",
+        "明确不覆盖 canonical 参考帧",
+        "包含正负提示词和控制图依赖"
+      ],
+      "failed_checks": [
+        "缺少实际 Blender 控制图",
+        "缺少 ComfyUI 工作流配置"
+      ]
+    },
+    {
+      "artifact": "01/production/tool-capability-report.json",
+      "agent": "studio-tool-execution-agent",
+      "score": 91,
+      "pass_line": 85,
+      "status": "passed_as_capability_report",
+      "rework_count": 0,
+      "checks": [
+        "真实记录 Blender/ComfyUI 缺失",
+        "真实记录 Krita/GIMP 可用但未调用",
+        "未把未生成图片标记为 ready"
+      ]
+    },
+    {
+      "artifact": "01/reports/director-room-final-report.md",
+      "agent": "main-coordinator",
+      "score": 88,
+      "pass_line": 85,
+      "status": "passed_as_blocked_final_report",
+      "rework_count": 0,
+      "checks": [
+        "说明项目根、集 ID 和输入",
+        "列出已创建 artifact",
+        "说明工具阻塞和未生成项",
+        "记录后续修复路径"
+      ]
+    }
+  ]
+}

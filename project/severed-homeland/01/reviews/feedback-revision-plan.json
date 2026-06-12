@@ -1,0 +1,68 @@
+{
+  "version": "feedback-revision-plan-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001 r001-r004",
+  "status": "blocked",
+  "user_feedback_items": [
+    {
+      "id": "UF-SC001-001",
+      "request": "Write SC001 scene-bible.md",
+      "status": "done",
+      "output": "01/control/scene-packages/SC001/scene-bible.md"
+    },
+    {
+      "id": "UF-SC001-002",
+      "request": "Write SC001 layout.yaml with fixed dimensions, wall, gate, gatehouse, bell, flags, attack direction, character positions, and shot cameras",
+      "status": "done",
+      "output": "01/control/scene-packages/SC001/layout.yaml"
+    },
+    {
+      "id": "UF-SC001-003",
+      "request": "Generate Blender Python script",
+      "status": "done",
+      "output": "01/control/scene-packages/SC001/build_sc001_blockout.py"
+    },
+    {
+      "id": "UF-SC001-004",
+      "request": "Use Blender to build SC001 blockout scene",
+      "status": "blocked",
+      "blocked_by": "Blender executable unavailable"
+    },
+    {
+      "id": "UF-SC001-005",
+      "request": "Export top view, camera map, shot guides, depth, lineart from same Blender scene",
+      "status": "blocked",
+      "blocked_by": "Blender executable unavailable"
+    },
+    {
+      "id": "UF-SC001-006",
+      "request": "Audit whether the four storyboards come from the same space",
+      "status": "blocked_pending_blender_exports",
+      "output": "01/control/scene-packages/SC001/space-audit.md"
+    },
+    {
+      "id": "UF-SC001-007",
+      "request": "Send these images to ComfyUI / image generation tool for keyframes",
+      "status": "needs_config",
+      "blocked_by": [
+        "missing Blender control images",
+        "ComfyUI unavailable"
+      ],
+      "output": "01/handoff/art-planning/shot-image-task-list.json"
+    },
+    {
+      "id": "UF-SC001-008",
+      "request": "If masks, faces, or props need correction, send to Krita/GIMP",
+      "status": "not_invoked",
+      "reason": "No generated candidates exist yet"
+    }
+  ],
+  "next_unblock_actions": [
+    "Install Blender or provide the Blender executable path.",
+    "Run: blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
+    "Configure ComfyUI server, checkpoint, workflow template, and node bindings.",
+    "Generate candidates under 01/assets/director-room/shots/*/candidates/ without overwriting canonical reference frames.",
+    "Run Krita/GIMP only after keyframe candidates or masks exist."
+  ]
+}

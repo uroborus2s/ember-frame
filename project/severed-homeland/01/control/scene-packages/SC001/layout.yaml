@@ -1,0 +1,220 @@
+version: sc001-layout-v1-2026-06-12
+project: severed-homeland
+episode_id: "01"
+scene_id: SC001
+scope:
+  reference_frames:
+    - r001e01.png
+    - r002e01.png
+    - r003e01.png
+    - r004e01.png
+  source_reference_frames:
+    r001: 01/assets/reference-frames/r001e01.png
+    r002: 01/assets/reference-frames/r002e01.png
+    r003: 01/assets/reference-frames/r003e01.png
+    r004: 01/assets/reference-frames/r004e01.png
+coordinate_system:
+  origin: exterior_gate_threshold_center_ground
+  unit: meter
+  axes:
+    x: east_west_along_wall_positive_east
+    y: north_south_wall_depth_positive_inside_south_negative_exterior_north
+    z: up
+  screen_direction_lock:
+    exterior_attack: from_negative_y_to_positive_y_toward_gate
+    interior_gatehouse: positive_y_side_above_gate
+scene_dimensions:
+  width_x: 72.0
+  exterior_depth_negative_y: 90.0
+  interior_depth_positive_y: 18.0
+  max_height_z: 18.0
+fixed_architecture:
+  wall:
+    id: blackstone_outer_wall
+    type: blackstone_wall_with_parapet
+    center: [0.0, 0.0, 5.0]
+    size: [72.0, 5.0, 10.0]
+    locked: true
+  parapet_front:
+    id: exterior_parapet
+    center: [0.0, -2.35, 11.0]
+    size: [72.0, 0.8, 2.0]
+    locked: true
+  parapet_rear:
+    id: gatehouse_side_parapet
+    center: [0.0, 2.35, 11.0]
+    size: [72.0, 0.8, 2.0]
+    locked: true
+  gate:
+    id: central_blackstone_gate
+    opening_center: [0.0, -2.6, 3.6]
+    opening_size: [8.0, 1.2, 7.2]
+    door_center: [0.0, -2.9, 3.6]
+    door_size: [7.6, 0.45, 7.0]
+    impact_point: [0.0, -3.2, 3.2]
+    locked: true
+  gatehouse:
+    id: upper_gatehouse
+    center: [0.0, 5.25, 13.55]
+    footprint_min: [-7.0, 1.5, 10.2]
+    footprint_max: [7.0, 9.0, 17.0]
+    timber_frame_points:
+      - [-6.4, 2.0, 10.2]
+      - [6.4, 2.0, 10.2]
+      - [-6.4, 8.6, 10.2]
+      - [6.4, 8.6, 10.2]
+    locked: true
+fixed_props:
+  bone_bell:
+    id: prop_bone_bell_same_for_r003_r004
+    center: [-4.8, 5.7, 13.2]
+    radius: 0.85
+    height: 1.35
+    chain_top: [-4.8, 5.7, 15.25]
+    chain_bottom: [-4.8, 5.7, 13.9]
+    swing_axis: x
+    visible_in:
+      - r003
+      - r004
+    audio_only_in:
+      - r001
+      - r002
+    locked: true
+  bell_frame:
+    id: prop_bell_timber_frame
+    posts:
+      - [-5.9, 4.75, 10.25]
+      - [-3.7, 4.75, 10.25]
+      - [-5.9, 6.65, 10.25]
+      - [-3.7, 6.65, 10.25]
+    beam_center: [-4.8, 5.7, 15.4]
+    locked: true
+  gate_impact_beam:
+    id: siege_beam_or_mammoth_horn
+    start: [0.0, -23.0, 2.7]
+    end: [0.0, -3.3, 3.2]
+    visible_in:
+      - r001
+      - r002
+    locked: true
+  dropped_spear:
+    id: young_soldier_dropped_spear
+    start: [-2.6, 5.2, 10.35]
+    end: [-6.3, 7.9, 10.35]
+    visible_in:
+      - r003
+    locked: true
+flags:
+  source_asset: P017_SUMING_INSECT_EMPIRE_WALL_FLAG_LOCK
+  positions:
+    - id: left_wall_suming_flag
+      pole_base: [-18.0, -2.8, 10.2]
+      pole_top: [-18.0, -2.8, 14.4]
+      banner_plane_center: [-17.25, -3.05, 12.8]
+    - id: right_wall_suming_flag
+      pole_base: [18.0, -2.8, 10.2]
+      pole_top: [18.0, -2.8, 14.4]
+      banner_plane_center: [18.75, -3.05, 12.8]
+  locked: true
+attack_direction:
+  faction: northern_siege_beast_troops
+  vector: [0.0, 1.0, 0.0]
+  from_y: -90.0
+  to_gate_y: -3.2
+  main_axis_x: 0.0
+  allowed_lanes_x: [-18.0, 18.0]
+  forbidden:
+    - attackers_inside_wall_positive_y_beyond_gate
+    - second_gate
+    - second_wall
+    - attack_from_positive_y
+characters:
+  young_wall_soldier:
+    continuity_id: E01_C024A
+    position: [-4.2, 7.4, 10.45]
+    pose: half_collapsed_against_gatehouse_back_wall
+    facing_degrees: 240
+    visible_in:
+      - r003
+      - r004
+    locked: true
+  xue_linqiang:
+    continuity_id: CHAR_XUE_LINQIANG
+    position: [2.2, 0.6, 10.45]
+    hand_anchor: [1.85, -2.05, 10.95]
+    pose: hand_on_blackstone_parapet_facing_exterior
+    facing_degrees: 180
+    visible_in:
+      - r004
+    locked: true
+  defenders:
+    type: small_silhouettes_and_spear_line
+    line_start: [-28.0, -1.2, 10.65]
+    line_end: [28.0, -1.2, 10.65]
+    visible_in:
+      - r001
+      - r002
+      - r004
+shot_cameras:
+  r001:
+    maps_to_shot: SC001-SH001
+    role: first_frame
+    camera_id: CAM_R001_EXTERIOR_WIDE
+    position: [0.0, -68.0, 2.2]
+    target: [0.0, -1.8, 5.4]
+    focal_length_mm: 28
+    sensor_fit: HORIZONTAL
+    fov_note: low_centered_exterior_epic_establishing
+    output_paths:
+      camera_guide: 01/control/scene-packages/SC001/shot-guides/r001_camera.png
+      depth: 01/control/scene-packages/SC001/depth/r001_depth.png
+      lineart: 01/control/scene-packages/SC001/lineart/r001_lineart.png
+  r002:
+    maps_to_shot: SC001-SH001
+    role: last_frame
+    camera_id: CAM_R002_EXTERIOR_CLOSER_IMPACT
+    position: [0.0, -32.0, 3.1]
+    target: [0.0, -2.5, 4.1]
+    focal_length_mm: 35
+    sensor_fit: HORIZONTAL
+    fov_note: same_exterior_axis_closer_gate_impact
+    output_paths:
+      camera_guide: 01/control/scene-packages/SC001/shot-guides/r002_camera.png
+      depth: 01/control/scene-packages/SC001/depth/r002_depth.png
+      lineart: 01/control/scene-packages/SC001/lineart/r002_lineart.png
+  r003:
+    maps_to_shot: SC001-SH002
+    role: first_frame
+    camera_id: CAM_R003_GATEHOUSE_AFTERSHOCK
+    position: [-7.2, 5.15, 11.15]
+    target: [-4.55, 6.75, 11.65]
+    focal_length_mm: 35
+    sensor_fit: HORIZONTAL
+    fov_note: gatehouse_interior_weapon_soldier_bell_layers
+    output_paths:
+      camera_guide: 01/control/scene-packages/SC001/shot-guides/r003_camera.png
+      depth: 01/control/scene-packages/SC001/depth/r003_depth.png
+      lineart: 01/control/scene-packages/SC001/lineart/r003_lineart.png
+  r004:
+    maps_to_shot: SC001-SH003
+    role: first_frame
+    camera_id: CAM_R004_XUE_REAR_THREE_QUARTER
+    position: [-1.4, 5.2, 11.75]
+    target: [1.6, -0.8, 10.95]
+    focal_length_mm: 50
+    sensor_fit: HORIZONTAL
+    fov_note: gatehouse_side_xue_parapet_bell_background
+    output_paths:
+      camera_guide: 01/control/scene-packages/SC001/shot-guides/r004_camera.png
+      depth: 01/control/scene-packages/SC001/depth/r004_depth.png
+      lineart: 01/control/scene-packages/SC001/lineart/r004_lineart.png
+overview_outputs:
+  top_view: 01/control/scene-packages/SC001/top-view.png
+  camera_map: 01/control/scene-packages/SC001/camera-map.png
+locks:
+  - one_wall_one_gate_centered_exterior_lock
+  - gatehouse_bell_audio_only_for_r001_r002
+  - same_bone_bell_visible_for_r003_r004
+  - same_gatehouse_and_parapet_for_r003_r004
+  - p017_suming_flag_lock
+  - no_second_wall_no_second_gate_no_inside_beast_tide

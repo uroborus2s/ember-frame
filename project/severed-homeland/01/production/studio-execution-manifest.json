@@ -1,0 +1,119 @@
+{
+  "version": "director-room-studio-execution-manifest-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scope": "SC001 only; reference frames r001e01.png, r002e01.png, r003e01.png, r004e01.png",
+  "status": "blocked",
+  "steps": [
+    {
+      "order": 1,
+      "name": "write_scene_bible",
+      "status": "ready",
+      "outputs": [
+        "01/control/scene-packages/SC001/scene-bible.md"
+      ]
+    },
+    {
+      "order": 2,
+      "name": "write_layout_yaml",
+      "status": "ready",
+      "outputs": [
+        "01/control/scene-packages/SC001/layout.yaml"
+      ],
+      "locked_elements": [
+        "scene_dimensions",
+        "wall",
+        "gate",
+        "gatehouse",
+        "bone_bell",
+        "flags",
+        "beast_attack_direction",
+        "character_positions",
+        "four_reference_cameras"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "generate_blender_python_script",
+      "status": "ready",
+      "outputs": [
+        "01/control/scene-packages/SC001/build_sc001_blockout.py"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "run_blender_blockout",
+      "status": "blocked",
+      "attempted_command": "blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
+      "failure": "zsh:1: command not found: blender",
+      "outputs": [
+        {
+          "path": "01/control/scene-packages/SC001/blockout.blend",
+          "status": "blocked"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "name": "export_control_images_from_same_blender_scene",
+      "status": "blocked",
+      "blocked_by": "run_blender_blockout",
+      "expected_outputs": [
+        "01/control/scene-packages/SC001/top-view.png",
+        "01/control/scene-packages/SC001/camera-map.png",
+        "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
+        "01/control/scene-packages/SC001/depth/r001_depth.png",
+        "01/control/scene-packages/SC001/depth/r002_depth.png",
+        "01/control/scene-packages/SC001/depth/r003_depth.png",
+        "01/control/scene-packages/SC001/depth/r004_depth.png",
+        "01/control/scene-packages/SC001/lineart/r001_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r002_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r003_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r004_lineart.png"
+      ]
+    },
+    {
+      "order": 6,
+      "name": "same_space_audit",
+      "status": "blocked_pending_blender_exports",
+      "outputs": [
+        "01/control/scene-packages/SC001/space-audit.md"
+      ],
+      "completed_checks": [
+        "coordinate-level one-wall-one-gate check",
+        "camera-axis check for r001/r002",
+        "gatehouse-position check for r003/r004"
+      ]
+    },
+    {
+      "order": 7,
+      "name": "comfyui_or_image_generation_keyframes",
+      "status": "needs_config",
+      "blocked_by": [
+        "missing Blender-derived control images",
+        "ComfyUI server and workflow config unavailable"
+      ],
+      "outputs": [
+        {
+          "path": "01/handoff/art-planning/shot-image-task-list.json",
+          "status": "ready_as_task_list"
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "name": "krita_gimp_fix_masks_faces_props",
+      "status": "not_invoked",
+      "reason": "No generated keyframe candidates or masks exist yet; GIMP and Krita are available for later fix pass."
+    }
+  ],
+  "source_reference_frame_status": {
+    "r001e01.png": "read_only_existing",
+    "r002e01.png": "read_only_existing",
+    "r003e01.png": "read_only_existing_user_modified_not_overwritten",
+    "r004e01.png": "read_only_existing_user_modified_not_overwritten"
+  }
+}
