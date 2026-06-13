@@ -75,6 +75,8 @@
 
 2026-06-13 追加升级：SC001 已建立“带统一材质/贴图的场景母版”。`material-lock.json` 固定黑石、石缝、缺口、积雪边、旧木、木纹、铁箍、铆钉、昭明旧帝国金属警钟、破损日月星盘残徽、P017 旗帜和城内侧低细节背板的材质 ID。`master-reference-front.png`、`master-reference-reverse.png`、`key-prop-placement.png`、`blocking-overview.png` 与四个分镜控制图同源自升级后的 `blockout.blend`。城内侧背板只允许用于反向母版，不是完整城市场景；R003/R004 面向墙外时禁止出现房屋、街区、窗灯、城塔、第二道墙或第二个门。
 
+2026-06-14 下一版修复：SC001 R003/R004 的外侧敌军、警钟徽章和年轻军户状态已继续收紧。墙外攻城剪影必须继承 `C020`/`C021`/`E01_C020` 的兽族士兵与伴生兽关系，不得是人族军阵、通用单一兽人潮或无主怪物群；警钟残徽只继承 `P016` 昭明日月星盘残徽，`P018` 北境兽族联盟徽章只可用于攻城方器具或旗面远景细节，不能上钟；R003 年轻军户继承 `E01_C024A`，必须读作半睁眼、喘息、撑地、屈膝、靴底打滑的被震倒活人。
+
 ## 工具执行结果
 
 Blender：完成。实际使用路径：
@@ -89,8 +91,8 @@ ComfyUI：服务可用但模型缺失。`http://127.0.0.1:8188/system_stats` 返
 
 关键帧候选图：R003/R004 已生成 candidate，R001/R002 仍未生成。已写入：
 
-- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v004_after_metal_bell_space_microedit`
-- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v003_after_metal_bell_space_microedit`
+- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v005_after_open_eyes_c020_c021_p016_fix`
+- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v004_after_c020_c021_exterior_p016_fix`
 
 未写入以下 candidate 输出：
 
@@ -118,7 +120,7 @@ R003/R004 candidate QC 记录见 `01/reviews/sc001-r003-r004-candidate-qc-2026-0
 
 ## 用户反馈处理
 
-用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。本次追加处理了用户指出的三项问题：门楼面向墙外时不应出现房屋或城市，警钟应为五千年昭明旧帝国金属钟且残徽破损，R003 士兵应为被撞门余震震倒而非死亡。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
+用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。本次追加处理了用户指出的六项问题：门楼面向墙外时不应出现房屋或城市，警钟应为五千年昭明旧帝国金属钟且残徽破损，R003 士兵应为被撞门余震震倒而非死亡，墙外攻城剪影应继承 C020/C021/E01_C020 的兽族士兵与伴生兽，警钟残徽应继承全局 P016 且不得误用 P018，R003 士兵应继承 E01_C024A 并呈现半睁眼、喘息、撑地、屈膝、靴底打滑的活人被震倒状态。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
 
 本轮没有覆盖或修改现有 `01/assets/reference-frames/r001e01.png` 到 `r004e01.png`。其中 `r003e01.png`、`r004e01.png` 在工作区原本已有用户改动，本轮只读使用；新图只写入 director-room shot `candidates/`。
 

@@ -76,12 +76,15 @@ fixed_props:
     chain_bottom: [-4.8, 5.7, 13.9]
     swing_axis: x
     material: oxidized_dark_bronze_iron_with_old_repairs
+    emblem_source_asset: P016_ZHAOMING_SUN_MOON_ASTROLABE_AND_RED_FLAG_ROOT
     emblem_lock: broken_unreadable_zhaoming_sun_moon_astrolabe_fragments_only
+    attack_side_emblem_policy: P018_NORTHERN_BEAST_ALLIANCE_ALLOWED_ONLY_ON_DISTANT_ATTACKER_SHIELDS_HIDE_BANNERS_TACK_OR_SIEGE_GEAR_NEVER_ON_BELL
     forbidden_visuals:
       - clean_complete_emblem
       - ivory_or_bone_surface
       - museum_clean_restoration
       - random_new_crest
+      - p018_beast_alliance_emblem_on_bell
     visible_in:
       - r003
       - r004
@@ -147,22 +150,39 @@ environment_backplates:
     locked: true
 attack_direction:
   faction: northern_siege_beast_troops
+  source_assets:
+    - C020_NORTHERN_SIEGE_TROOP_GROUP
+    - C021_NORTHERN_COMPANION_BEAST_RELATIONSHIP
+    - E01_C020_EPISODE_SIEGE_STATE
   vector: [0.0, 1.0, 0.0]
   from_y: -90.0
   to_gate_y: -3.2
   main_axis_x: 0.0
   allowed_lanes_x: [-18.0, 18.0]
+  required_read:
+    - multi_branch_beast_soldiers
+    - bonded_companion_siege_beasts
+    - siege_function_clear_mammoth_rhino_oxen_wolf_riders_sappers_shield_wall
   forbidden:
     - attackers_inside_wall_positive_y_beyond_gate
     - second_gate
     - second_wall
     - attack_from_positive_y
+    - human_army_outside_wall
+    - generic_single_species_orc_horde
+    - ownerless_monster_pack
 characters:
   young_wall_soldier:
     continuity_id: E01_C024A
     position: [-4.2, 7.4, 10.45]
     pose: half_collapsed_against_gatehouse_back_wall
+    state_lock: alive_after_gate_impact_aftershock_half_open_or_squinting_eyes_visible_breath_splayed_bracing_hand_bent_knee_slipping_boot
     facing_degrees: 240
+    forbidden_read:
+      - closed_corpse_eyes
+      - limp_neck
+      - dead_face
+      - funeral_stillness
     visible_in:
       - r003
       - r004

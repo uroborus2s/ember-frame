@@ -30,7 +30,8 @@ TASKS = [
         "seed": 101001,
         "positive": (
             "cinematic dark fantasy production keyframe, low centered exterior siege establishing shot, "
-            "same blackstone fortress wall and same timber iron gate, beast troops and siege engine "
+            "same blackstone fortress wall and same timber iron gate, C020/C021/E01_C020 multi-branch beast "
+            "troops, bonded companion siege beasts and siege engine "
             "pressing through blizzard along one central axis, wall-top defender spear silhouettes, "
             "cold moonlit snow, sharp readable gate geometry, epic pressure, painterly realism"
         ),
@@ -50,7 +51,8 @@ TASKS = [
         "seed": 101002,
         "positive": (
             "cinematic dark fantasy production keyframe, closer exterior axis at the same fortress gate, "
-            "iron wrapped siege horn slamming the timber iron gate, snow blast, ice splinters, old wood chips, "
+            "C020/C021/E01_C020 beast siege line and bonded companion beast pressure, iron wrapped siege horn "
+            "slamming the timber iron gate, snow blast, ice splinters, old wood chips, "
             "shaking gate bars as bright focal detail, same blackstone wall, wall-top defender silhouettes, "
             "cold violent impact, painterly realism"
         ),
@@ -70,14 +72,16 @@ TASKS = [
         "seed": 101003,
         "positive": (
             "cinematic dark fantasy production keyframe, tight medium gatehouse interior, broken spear in foreground "
-            "sliding through dirty snow mud, young grey wall soldier knocked down alive by gate-impact aftershock, "
-            "bracing in snow mud and breathing, same five-thousand-year-old Zhaoming old-empire oxidized metal "
+            "sliding through dirty snow mud, E01_C024A young grey wall soldier knocked down alive by gate-impact "
+            "aftershock, half-open squinting eyes, visible cold breath, one splayed hand bracing in snow mud, "
+            "bent knee and slipping boot, same five-thousand-year-old Zhaoming old-empire oxidized metal "
             "alarm bell swinging under timber frame in background, diagonal chain, broken unreadable sun-moon "
-            "astrolabe emblem fragments, cold battle pressure outside as blizzard and smoke only, layered depth, painterly realism"
+            "astrolabe emblem fragments derived from P016 only, cold battle pressure outside as blizzard and smoke only, layered depth, painterly realism"
         ),
         "negative": (
             "heroic front face, bell bracing pose, changed bell frame, open exterior battlefield, second wall, "
-            "soldier dead, blood pool, soldier standing, clean armor, complete clean emblem, ivory or bone bell surface, "
+            "soldier dead, closed corpse eyes, limp neck, slack dead face, blood pool, soldier standing, clean armor, "
+            "complete clean emblem, P018 beast emblem on the bell, ivory or bone bell surface, "
             "houses, warm windows, city streets, city towers, text, logo, watermark, flat composition, missing bell"
         ),
     },
@@ -95,13 +99,15 @@ TASKS = [
             "gatehouse parapet, Xue Linqiang pressing the blackstone parapet and facing outward, cracked frozen hand, "
             "coarse wall scarf, old armor plates, half dark side profile, same five-thousand-year-old Zhaoming "
             "old-empire oxidized metal alarm bell swinging in background with broken unreadable sun-moon astrolabe "
-            "emblem fragments, exterior below the parapet is only blizzard, smoke, beast siege formation and siege "
-            "equipment pressure, painterly realism"
+            "emblem fragments derived from P016 only, exterior below the parapet is only blizzard, smoke, "
+            "C020/C021/E01_C020 multi-branch beast soldiers, bonded companion beasts, siege mammoths, rhinos, "
+            "oxen and siege equipment pressure, painterly realism"
         ),
         "negative": (
             "clean war god styling, heroic low angle, missing background bell, young soldier standing, beast attackers "
             "inside gatehouse, second wall, second gate, houses, warm windows, city streets, city towers, complete clean "
-            "emblem, ivory or bone bell surface, modern costume, text, logo, watermark, distorted face"
+            "emblem, P018 beast emblem on the bell, ivory or bone bell surface, human army outside, generic single-species "
+            "orc horde, ownerless monster pack, modern costume, text, logo, watermark, distorted face"
         ),
     },
 ]

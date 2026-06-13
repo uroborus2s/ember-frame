@@ -158,6 +158,8 @@ MATERIAL_LOCK = {
     "scene_id": "SC001",
     "principle": "All master references, shot guides, depth maps, and lineart exports are rendered from one Blender scene using the same locked material IDs and procedural texture/detail geometry.",
     "city_backplate_policy": "A low-detail city silhouette exists only for cityside reverse master continuity. When R003/R004 face outside from the gatehouse or wall-top, the exterior view must be battlefield snow haze, smoke, attackers and siege pressure only: no houses, warm windows, streets, city towers, second wall or second gate.",
+    "bell_emblem_policy": "The alarm-bell remnant emblem must derive only from P016 Zhaoming sun-moon astrolabe root art, as broken oxidized unreadable traces. P018 Northern Beast Alliance marks are forbidden on the bell.",
+    "attack_side_policy": "Exterior attackers must derive from C020, C021, and E01_C020. P018 marks are allowed only as distant attack-side shield, hide-banner, tack, or siege-equipment details.",
     "materials": {
         "blackstone": "main wall, parapets, gatehouse stone, procedural stone noise",
         "stone_joint": "dark mortar seams laid onto the wall and gatehouse back wall",
@@ -167,7 +169,7 @@ MATERIAL_LOCK = {
         "wood_dark": "plank seams, grain cuts, and weathering grooves",
         "old_iron": "gate straps, rivets, chains, spear metal, flag poles, old bell hardware",
         "ancient_bell_metal": "five-thousand-year-old Zhaoming old-empire metal alarm bell body; oxidized dark bronze/iron, cracks, dents, missing rim chips, old repairs",
-        "zhaoming_emblem_remnant": "broken unreadable fragments of the Zhaoming sun-moon astrolabe emblem on the bell; never a complete clean crest",
+        "zhaoming_emblem_remnant": "broken unreadable fragments derived from P016 Zhaoming sun-moon astrolabe emblem on the bell; never a complete clean crest and never P018",
         "flag": "P017 black banner base",
         "suming_wing": "P017 white wing marks",
         "city_shadow": "distant city silhouette backplate",
@@ -175,8 +177,8 @@ MATERIAL_LOCK = {
     },
     "shot_usage_lock": {
         "r001_r002": "front wall, central old wood gate, impact beam, flags, stone/snow/gate material layers",
-        "r003": "same gatehouse floor, dropped spear, young soldier knocked down alive by aftershock, ancient metal alarm bell swinging, bell frame, no houses/city outside",
-        "r004": "same gatehouse/parapet, Xue position, ancient metal alarm bell background, exterior battlefield snow haze only with no houses/city",
+        "r003": "same gatehouse floor, dropped spear, E01_C024A young soldier knocked down alive by aftershock with half-open eyes and bracing hand, ancient metal alarm bell swinging, bell frame, no houses/city outside",
+        "r004": "same gatehouse/parapet, Xue position, ancient metal alarm bell background, exterior battlefield snow haze with C020/C021/E01_C020 beast troops and companion beasts only, no houses/city",
     },
 }
 
@@ -576,7 +578,7 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
         cube(f"{side}_suming_black_flag", (x + (0.75 if x < 0 else -0.75), -3.05, 12.8), (1.5, 0.08, 1.1), materials["flag"])
         cube(f"{side}_suming_white_wing_mark", (x + (0.75 if x < 0 else -0.75), -3.12, 12.9), (0.95, 0.06, 0.16), materials["suming_wing"])
 
-    # Siege beam, beast silhouettes, defenders and spear line.
+    # Siege beam, C020/C021/E01_C020-inspired beast silhouettes, defenders and spear line.
     attack_arrow = line("attack_direction_arrow_main", (0, -86, 0.3), (0, -4, 0.3), materials["attack_arrow"], 0.10)
     attack_label = add_label("attack_direction_label", "BEAST ATTACK +Y", (0, -55, 0.18), 1.4, materials["attack_arrow"])
     attack_arrow["camera_map_helper"] = True
