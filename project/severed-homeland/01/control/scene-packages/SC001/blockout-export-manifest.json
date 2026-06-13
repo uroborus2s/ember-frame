@@ -6,86 +6,68 @@
   "tool": "Blender Python",
   "script": "project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
   "layout": "project/severed-homeland/01/control/scene-packages/SC001/layout.yaml",
-  "status": "blocked",
-  "blocked_reason": "Blender executable is not installed or not on PATH in this environment.",
-  "attempted_commands": [
-    {
-      "command": "command -v blender",
-      "result": "not_found"
-    },
-    {
-      "command": "test -x /Applications/Blender.app/Contents/MacOS/Blender",
-      "result": "not_found"
-    },
-    {
-      "command": "python3 import bpy",
-      "result": "No module named 'bpy'"
-    },
-    {
-      "command": "blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
-      "result": "zsh:1: command not found: blender"
-    }
-  ],
+  "status": "ready",
+  "error": null,
   "outputs": [
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/blockout.blend",
-      "status": "blocked"
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/top-view.png",
-      "status": "blocked"
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/camera-map.png",
-      "status": "blocked"
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r001_camera.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r002_camera.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r003_camera.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r004_camera.png",
-      "status": "blocked"
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r001_depth.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r002_depth.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r003_depth.png",
-      "status": "blocked"
-    },
-    {
-      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r004_depth.png",
-      "status": "blocked"
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/lineart/r001_lineart.png",
-      "status": "blocked"
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r002_depth.png",
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/lineart/r002_lineart.png",
-      "status": "blocked"
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r003_depth.png",
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/lineart/r003_lineart.png",
-      "status": "blocked"
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/shot-guides/r004_camera.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/control/scene-packages/SC001/depth/r004_depth.png",
+      "status": "ready"
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/lineart/r004_lineart.png",
-      "status": "blocked"
+      "status": "ready"
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "version": "comfyui-sc001-keyframe-run-v1",
+  "project": "severed-homeland",
+  "episode_id": "01",
+  "scene_id": "SC001",
+  "started_at": "2026-06-13T16:33:39+0800",
+  "comfyui_endpoint": "http://127.0.0.1:8188",
+  "checkpoint": "v2-1_768-ema-pruned.safetensors",
+  "mode": "img2img_from_blender_camera_guides",
+  "limitation": "ControlNet models are not installed, so depth and lineart are recorded but not connected as ControlNet inputs.",
+  "results": [],
+  "preflight": {
+    "system_stats": {
+      "system": {
+        "os": "darwin",
+        "ram_total": 34359738368,
+        "ram_free": 9284747264,
+        "comfyui_version": "0.24.0",
+        "required_frontend_version": "1.45.15",
+        "installed_templates_version": "0.9.98",
+        "required_templates_version": "0.9.98",
+        "comfy_package_versions": [
+          {
+            "name": "comfyui-frontend-package",
+            "installed": "1.45.15",
+            "required": "1.45.15"
+          },
+          {
+            "name": "comfyui-workflow-templates",
+            "installed": "0.9.98",
+            "required": "0.9.98"
+          },
+          {
+            "name": "comfyui-embedded-docs",
+            "installed": "0.5.3",
+            "required": "0.5.3"
+          },
+          {
+            "name": "comfy-kitchen",
+            "installed": "0.2.10",
+            "required": "0.2.10"
+          },
+          {
+            "name": "comfy-aimdo",
+            "installed": "0.4.9",
+            "required": "0.4.9"
+          }
+        ],
+        "python_version": "3.13.11 (main, Dec  9 2025, 20:26:22) [Clang 21.1.4 ]",
+        "pytorch_version": "2.12.0",
+        "embedded_python": false,
+        "argv": [
+          "main.py"
+        ]
+      },
+      "devices": [
+        {
+          "name": "mps",
+          "type": "mps",
+          "index": null,
+          "vram_total": 34359738368,
+          "vram_free": 9285189632,
+          "torch_vram_total": 34359738368,
+          "torch_vram_free": 9285189632
+        }
+      ]
+    },
+    "checkpoint_choices": [],
+    "checkpoint_visible": false,
+    "required_checkpoint": "v2-1_768-ema-pruned.safetensors",
+    "controlnet_choices": [],
+    "controlnet_available": false
+  },
+  "status": "failed",
+  "error": "RuntimeError('Checkpoint not visible to ComfyUI: v2-1_768-ema-pruned.safetensors')",
+  "finished_at": "2026-06-13T16:33:39+0800"
+}

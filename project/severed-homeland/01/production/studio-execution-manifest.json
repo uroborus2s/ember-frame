@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 only; reference frames r001e01.png, r002e01.png, r003e01.png, r004e01.png",
-  "status": "blocked",
+  "status": "blocked_comfyui_model_missing",
   "steps": [
     {
       "order": 1,
@@ -43,63 +43,128 @@
     {
       "order": 4,
       "name": "run_blender_blockout",
-      "status": "blocked",
-      "attempted_command": "blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
-      "failure": "zsh:1: command not found: blender",
+      "status": "ready",
+      "attempted_command": "/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
+      "result": "success",
       "outputs": [
         {
           "path": "01/control/scene-packages/SC001/blockout.blend",
-          "status": "blocked"
+          "status": "ready"
         }
       ]
     },
     {
       "order": 5,
       "name": "export_control_images_from_same_blender_scene",
-      "status": "blocked",
-      "blocked_by": "run_blender_blockout",
-      "expected_outputs": [
-        "01/control/scene-packages/SC001/top-view.png",
-        "01/control/scene-packages/SC001/camera-map.png",
-        "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
-        "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
-        "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
-        "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
-        "01/control/scene-packages/SC001/depth/r001_depth.png",
-        "01/control/scene-packages/SC001/depth/r002_depth.png",
-        "01/control/scene-packages/SC001/depth/r003_depth.png",
-        "01/control/scene-packages/SC001/depth/r004_depth.png",
-        "01/control/scene-packages/SC001/lineart/r001_lineart.png",
-        "01/control/scene-packages/SC001/lineart/r002_lineart.png",
-        "01/control/scene-packages/SC001/lineart/r003_lineart.png",
-        "01/control/scene-packages/SC001/lineart/r004_lineart.png"
+      "status": "ready",
+      "outputs": [
+        {
+          "path": "01/control/scene-packages/SC001/top-view.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/camera-map.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/depth/r001_depth.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/depth/r002_depth.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/depth/r003_depth.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/depth/r004_depth.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/lineart/r001_lineart.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/lineart/r002_lineart.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/lineart/r003_lineart.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/control/scene-packages/SC001/lineart/r004_lineart.png",
+          "status": "ready"
+        }
       ]
     },
     {
       "order": 6,
       "name": "same_space_audit",
-      "status": "blocked_pending_blender_exports",
+      "status": "ready",
       "outputs": [
         "01/control/scene-packages/SC001/space-audit.md"
       ],
       "completed_checks": [
         "coordinate-level one-wall-one-gate check",
         "camera-axis check for r001/r002",
-        "gatehouse-position check for r003/r004"
+        "gatehouse-position check for r003/r004",
+        "visual review of top-view and camera-map",
+        "visual review of four camera guides, four depth maps, and four lineart maps"
       ]
     },
     {
       "order": 7,
       "name": "comfyui_or_image_generation_keyframes",
-      "status": "needs_config",
+      "status": "blocked_comfyui_model_missing",
       "blocked_by": [
-        "missing Blender-derived control images",
-        "ComfyUI server and workflow config unavailable"
+        "ComfyUI checkpoint list is empty",
+        "ComfyUI ControlNet model list is empty",
+        "local stable-diffusion-webui SD2.1 files are broken symlinks"
       ],
+      "attempted_command": "python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
       "outputs": [
         {
           "path": "01/handoff/art-planning/shot-image-task-list.json",
           "status": "ready_as_task_list"
+        },
+        {
+          "path": "01/production/comfyui-sc001-keyframe-run.json",
+          "status": "failed_model_missing"
+        },
+        {
+          "path": "01/assets/director-room/shots/SC001-SH001/candidates/r001e01.candidate.png",
+          "status": "not_generated"
+        },
+        {
+          "path": "01/assets/director-room/shots/SC001-SH001/candidates/r002e01.candidate.png",
+          "status": "not_generated"
+        },
+        {
+          "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+          "status": "not_generated"
+        },
+        {
+          "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+          "status": "not_generated"
         }
       ]
     },

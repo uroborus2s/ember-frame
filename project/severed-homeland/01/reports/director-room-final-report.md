@@ -19,7 +19,14 @@
 - `01/control/scene-packages/SC001/layout.yaml`
 - `01/control/scene-packages/SC001/blockout-plan.md`
 - `01/control/scene-packages/SC001/build_sc001_blockout.py`
+- `01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py`
+- `01/control/scene-packages/SC001/blockout.blend`
 - `01/control/scene-packages/SC001/blockout-export-manifest.json`
+- `01/control/scene-packages/SC001/top-view.png`
+- `01/control/scene-packages/SC001/camera-map.png`
+- `01/control/scene-packages/SC001/shot-guides/r001_camera.png` 到 `r004_camera.png`
+- `01/control/scene-packages/SC001/depth/r001_depth.png` 到 `r004_depth.png`
+- `01/control/scene-packages/SC001/lineart/r001_lineart.png` 到 `r004_lineart.png`
 - `01/control/scene-packages/SC001/space-audit.md`
 - `01/control/scene-packages/SC001/masks/.gitkeep`
 
@@ -27,6 +34,7 @@
 
 - `01/production/tool-capability-report.json`
 - `01/production/studio-execution-manifest.json`
+- `01/production/comfyui-sc001-keyframe-run.json`
 
 美术规划交接包：
 
@@ -57,52 +65,60 @@
 - 城墙、城门、门楼、骨钟、旗帜、兽族进攻方向、人物站位和四个摄像机均已固定。
 - R001/R002 在墙外同轴推进；R003/R004 都在同一门楼/墙顶空间内，使用同一口骨钟和同一女墙关系。
 
+`space-audit.md` 结论为 `ready_passed`。顶视图、机位图、四张导演视角图、四张深度图和四张线稿图均来自同一个 Blender 场景，支持四个参考帧属于同一空间。
+
 ## 工具执行结果
 
-Blender：阻塞。当前环境没有 `blender` 命令，`/Applications/Blender.app/Contents/MacOS/Blender` 不存在，`python3 import bpy` 失败。因此未生成：
+Blender：完成。实际使用路径：
 
-- `blockout.blend`
-- `top-view.png`
-- `camera-map.png`
-- `shot-guides/r001_camera.png` 到 `r004_camera.png`
-- `depth/r001_depth.png` 到 `r004_depth.png`
-- `lineart/r001_lineart.png` 到 `r004_lineart.png`
+```bash
+/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py
+```
 
-ComfyUI：待配置。本机没有 `comfyui` 命令，`http://127.0.0.1:8188/system_stats` 无响应；项目也未提供 checkpoint、workflow template 或节点 ID。因此关键帧生成任务已写入任务单，但没有执行。
+已生成 `blockout.blend`、`top-view.png`、`camera-map.png`、四张 `shot-guides/*_camera.png`、四张 `depth/*_depth.png` 和四张 `lineart/*_lineart.png`。所有 PNG 为 1280x720。
 
-Krita/GIMP：可用但未调用。Krita 与 GIMP 已安装；由于没有生成关键帧候选图和 mask，本轮没有进行脸、道具或 mask 修正。
+ComfyUI：服务可用但模型缺失。`http://127.0.0.1:8188/system_stats` 返回 ComfyUI `0.24.0`，MPS 后端可见；但 `CheckpointLoaderSimple` 的 checkpoint 列表为空，`ControlNetLoader` 的 ControlNet 列表为空。本机发现的 `stable-diffusion-webui` SD2.1 权重文件是断链，临时接入 ComfyUI 后执行报错，随后已清理该失效符号链接。`run_sc001_comfyui_keyframes.py` 已写入并执行预检，结果记录在 `01/production/comfyui-sc001-keyframe-run.json`。
+
+关键帧候选图：未生成。未写入以下 candidate 输出：
+
+- `01/assets/director-room/shots/SC001-SH001/candidates/r001e01.candidate.png`
+- `01/assets/director-room/shots/SC001-SH001/candidates/r002e01.candidate.png`
+- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`
+- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`
+
+Krita/GIMP：可用但未调用。由于没有生成关键帧候选图和 mask，本轮没有进行脸、道具或 mask 修正。
 
 ## 评分
 
 | 员工/职责 | 分数 | 通过线 | 返工 | 状态 |
 | --- | ---: | ---: | ---: | --- |
 | scene-coordinate-agent / scene-bible | 93 | 90 | 0 | 通过 |
-| scene-coordinate-agent / layout.yaml | 94 | 90 | 0 | 通过 |
+| scene-coordinate-agent / layout.yaml | 95 | 90 | 1 | 通过 |
 | scene-coordinate-agent / blockout-plan | 90 | 85 | 0 | 通过 |
-| studio-tool-execution-agent / Blender script | 88 | 85 | 0 | 脚本通过 |
-| studio-tool-execution-agent / Blender execution | 45 | 85 | 0 | 阻塞 |
-| main-coordinator / same-space audit | 70 | 85 | 0 | 坐标级通过，视觉证据阻塞 |
-| scene-image-resource-agent / handoff and tasks | 86 | 90 | 0 | 待配置 |
-| studio-tool-execution-agent / capability report | 91 | 85 | 0 | 通过 |
+| studio-tool-execution-agent / Blender script | 92 | 85 | 3 | 已执行通过 |
+| studio-tool-execution-agent / Blender execution | 94 | 85 | 3 | 通过 |
+| main-coordinator / same-space audit | 90 | 85 | 1 | 通过 |
+| scene-image-resource-agent / handoff and tasks | 87 | 90 | 1 | ComfyUI 模型缺失 |
+| studio-tool-execution-agent / ComfyUI run report | 82 | 85 | 1 | 服务可达，模型缺失 |
+| studio-tool-execution-agent / capability report | 94 | 85 | 1 | 通过 |
 
-整体状态：`blocked`。阻塞原因不是文本规划缺失，而是本机缺少 Blender 与 ComfyUI 执行环境。
+整体状态：`blocked_comfyui_model_missing`。阻塞原因不是 SC001 空间规划或 Blender 控制图缺失，而是 ComfyUI 当前没有可执行 checkpoint；若要把深度图和线稿图接成 ControlNet，还需要安装对应 ControlNet 模型。
 
 ## 用户反馈处理
 
-用户要求的步骤 1、2、3 已完成。步骤 4、5 因 Blender 不可用阻塞；步骤 6 只完成坐标级审核，等待 Blender 导出图后才能完成视觉证据审核；步骤 7 因缺少控制图和 ComfyUI 配置为 `needs_config`；步骤 8 等待生成候选图后再由 Krita/GIMP 执行。
+用户要求的步骤 1、2、3、4、5、6 已完成。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；步骤 8 等待生成候选图后再由 Krita/GIMP 执行。
 
 本轮没有覆盖或修改现有 `01/assets/reference-frames/r001e01.png` 到 `r004e01.png`。其中 `r003e01.png`、`r004e01.png` 在工作区原本已有用户改动，本轮只读使用。
 
 ## 后续解除阻塞步骤
 
-1. 安装 Blender 或提供 Blender 可执行路径。
-2. 执行：
+1. 将一个真实可读的 SD/SDXL checkpoint 放入 `/Users/uroborus/AiProject/ComfyUI/models/checkpoints/`，或配置 ComfyUI 的额外模型路径。
+2. 如需使用本轮导出的 `depth/` 和 `lineart/` 作为 ControlNet 条件，将对应 depth/lineart ControlNet 模型放入 `/Users/uroborus/AiProject/ComfyUI/models/controlnet/`。
+3. 重新运行：
 
 ```bash
-blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py
+python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py
 ```
 
-3. 检查 `blockout-export-manifest.json` 是否变为 `ready`，并人工查看顶视图、机位图、导演视角图、深度图和线稿图。
-4. 配置 ComfyUI checkpoint、workflow template、ControlNet/深度/线稿节点、参考图节点和输出路径。
-5. 按 `shot-image-task-list.json` 生成候选关键帧，写入 candidate 目录，不直接覆盖 canonical 参考帧。
-6. 若候选图有 mask、脸、道具或旗帜错误，再用 Krita/GIMP 做局部修正。
+4. 生成候选图后写入 `01/assets/director-room/shots/*/candidates/`，不得直接覆盖 canonical 参考帧。
+5. 若候选图有 mask、脸、道具或旗帜错误，再用 Krita/GIMP 做局部修正。

@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "blocked",
+  "status": "control_ready_keyframes_blocked_model_missing",
   "resources": {
     "scene_control_package": {
       "scene_bible": "01/control/scene-packages/SC001/scene-bible.md",
@@ -36,7 +36,7 @@
       }
     },
     "expected_blender_outputs": {
-      "status": "blocked_blender_unavailable",
+      "status": "ready",
       "top_view": "01/control/scene-packages/SC001/top-view.png",
       "camera_map": "01/control/scene-packages/SC001/camera-map.png",
       "shot_guides": [
@@ -66,19 +66,50 @@
       "blocking_overview": "01/assets/director-room/scenes/SC001/blocking-overview.png"
     },
     "expected_shot_assets": {
-      "status": "not_generated",
+      "status": "blocked_comfyui_model_missing",
       "SC001-SH001": {
         "shot_scene_image": "01/assets/director-room/shots/SC001-SH001/shot-scene-image.png",
-        "director_reference": "01/assets/director-room/shots/SC001-SH001/director-reference.png"
+        "director_reference": "01/assets/director-room/shots/SC001-SH001/director-reference.png",
+        "candidates": [
+          {
+            "path": "01/assets/director-room/shots/SC001-SH001/candidates/r001e01.candidate.png",
+            "status": "not_generated_model_missing"
+          },
+          {
+            "path": "01/assets/director-room/shots/SC001-SH001/candidates/r002e01.candidate.png",
+            "status": "not_generated_model_missing"
+          }
+        ]
       },
       "SC001-SH002": {
         "shot_scene_image": "01/assets/director-room/shots/SC001-SH002/shot-scene-image.png",
-        "director_reference": "01/assets/director-room/shots/SC001-SH002/director-reference.png"
+        "director_reference": "01/assets/director-room/shots/SC001-SH002/director-reference.png",
+        "candidates": [
+          {
+            "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+            "status": "not_generated_model_missing"
+          }
+        ]
       },
       "SC001-SH003": {
         "shot_scene_image": "01/assets/director-room/shots/SC001-SH003/shot-scene-image.png",
-        "director_reference": "01/assets/director-room/shots/SC001-SH003/director-reference.png"
+        "director_reference": "01/assets/director-room/shots/SC001-SH003/director-reference.png",
+        "candidates": [
+          {
+            "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+            "status": "not_generated_model_missing"
+          }
+        ]
       }
+    },
+    "comfyui_execution": {
+      "status": "failed_model_missing",
+      "run_report": "01/production/comfyui-sc001-keyframe-run.json",
+      "script": "01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
+      "missing": [
+        "usable checkpoint in ComfyUI models/checkpoints",
+        "ControlNet depth/lineart model if depth and lineart controls must be connected"
+      ]
     }
   }
 }

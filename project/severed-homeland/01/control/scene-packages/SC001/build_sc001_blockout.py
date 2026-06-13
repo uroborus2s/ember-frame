@@ -63,34 +63,34 @@ CAMERAS = {
     },
     "r003": {
         "name": "CAM_R003_GATEHOUSE_AFTERSHOCK",
-        "position": (-7.2, 5.15, 11.15),
-        "target": (-4.55, 6.75, 11.65),
-        "focal_length": 35,
+        "position": (1.8, 2.3, 12.0),
+        "target": (-4.6, 6.3, 12.2),
+        "focal_length": 22,
     },
     "r004": {
         "name": "CAM_R004_XUE_REAR_THREE_QUARTER",
-        "position": (-1.4, 5.2, 11.75),
-        "target": (1.6, -0.8, 10.95),
-        "focal_length": 50,
+        "position": (-2.4, 3.4, 13.0),
+        "target": (2.1, -0.8, 12.0),
+        "focal_length": 30,
     },
 }
 
 MATERIALS = {
-    "blackstone": (0.045, 0.055, 0.065, 1.0),
-    "dark_wall": (0.018, 0.020, 0.024, 1.0),
+    "blackstone": (0.24, 0.29, 0.34, 1.0),
+    "dark_wall": (0.16, 0.18, 0.21, 1.0),
     "snow": (0.80, 0.88, 0.92, 1.0),
-    "old_wood": (0.21, 0.13, 0.08, 1.0),
-    "old_iron": (0.16, 0.17, 0.17, 1.0),
-    "bone": (0.68, 0.62, 0.50, 1.0),
-    "flag": (0.06, 0.06, 0.07, 1.0),
+    "old_wood": (0.42, 0.25, 0.12, 1.0),
+    "old_iron": (0.38, 0.39, 0.39, 1.0),
+    "bone": (0.88, 0.78, 0.55, 1.0),
+    "flag": (0.12, 0.12, 0.14, 1.0),
     "suming_wing": (0.86, 0.84, 0.77, 1.0),
-    "beast": (0.18, 0.12, 0.08, 1.0),
-    "human": (0.32, 0.34, 0.34, 1.0),
-    "xue": (0.42, 0.43, 0.40, 1.0),
-    "spear": (0.12, 0.12, 0.12, 1.0),
-    "camera_marker": (0.85, 0.18, 0.10, 1.0),
-    "attack_arrow": (0.72, 0.08, 0.05, 1.0),
-    "guide_blue": (0.10, 0.32, 0.80, 1.0),
+    "beast": (0.42, 0.22, 0.10, 1.0),
+    "human": (0.52, 0.58, 0.62, 1.0),
+    "xue": (0.72, 0.75, 0.68, 1.0),
+    "spear": (0.28, 0.28, 0.28, 1.0),
+    "camera_marker": (1.0, 0.08, 0.02, 1.0),
+    "attack_arrow": (1.0, 0.02, 0.00, 1.0),
+    "guide_blue": (0.02, 0.20, 1.0, 1.0),
     "depth_white": (1.0, 1.0, 1.0, 1.0),
 }
 
@@ -115,15 +115,26 @@ def reset_scene() -> None:
     scene.render.resolution_x = 1280
     scene.render.resolution_y = 720
     scene.render.fps = 24
-    scene.view_settings.view_transform = "Filmic"
-    scene.view_settings.look = "Medium High Contrast"
+    scene.view_settings.view_transform = "Standard"
+    scene.view_settings.look = "None"
+    scene.view_settings.exposure = 0
+    scene.view_settings.gamma = 1
     scene.world = bpy.data.worlds.new("SC001_WORLD") if not scene.world else scene.world
-    scene.world.color = (0.025, 0.032, 0.040)
+    scene.world.color = (0.42, 0.46, 0.50)
 
 
 def mat(name: str):
     material = bpy.data.materials.new(name)
-    material.diffuse_color = MATERIALS[name]
+    color = MATERIALS[name]
+    material.diffuse_color = color
+    material.use_nodes = True
+    nodes = material.node_tree.nodes
+    nodes.clear()
+    emission = nodes.new(type="ShaderNodeEmission")
+    emission.inputs["Color"].default_value = color
+    emission.inputs["Strength"].default_value = 0.9
+    output = nodes.new(type="ShaderNodeOutputMaterial")
+    material.node_tree.links.new(emission.outputs["Emission"], output.inputs["Surface"])
     return material
 
 
@@ -196,9 +207,11 @@ def add_camera(ref: str, spec: dict, materials: dict) -> bpy.types.Object:
     camera.data.sensor_fit = "HORIZONTAL"
     camera.data.dof.use_dof = False
     look_at(camera, spec["target"])
-    cube(f"{ref}_camera_marker", spec["position"], (1.1, 1.1, 1.1), materials["camera_marker"])
-    line(f"{ref}_camera_ray", spec["position"], spec["target"], materials["camera_marker"], 0.04)
-    add_label(f"{ref}_label", ref.upper(), (spec["position"][0], spec["position"][1], 0.18), 1.3, materials["camera_marker"])
+    marker = cube(f"{ref}_camera_marker", spec["position"], (1.6, 1.6, 1.6), materials["camera_marker"])
+    ray = line(f"{ref}_camera_ray", spec["position"], spec["target"], materials["camera_marker"], 0.09)
+    label = add_label(f"{ref}_label", ref.upper(), (spec["position"][0], spec["position"][1], 0.18), 2.6, materials["camera_marker"])
+    for helper in (marker, ray, label):
+        helper["camera_map_helper"] = True
     return camera
 
 
@@ -243,8 +256,10 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
         cube(f"{side}_suming_white_wing_mark", (x + (0.75 if x < 0 else -0.75), -3.12, 12.9), (0.95, 0.06, 0.16), materials["suming_wing"])
 
     # Siege beam, beast silhouettes, defenders and spear line.
-    line("attack_direction_arrow_main", (0, -86, 0.3), (0, -4, 0.3), materials["attack_arrow"], 0.10)
-    add_label("attack_direction_label", "BEAST ATTACK +Y", (0, -55, 0.18), 1.4, materials["attack_arrow"])
+    attack_arrow = line("attack_direction_arrow_main", (0, -86, 0.3), (0, -4, 0.3), materials["attack_arrow"], 0.10)
+    attack_label = add_label("attack_direction_label", "BEAST ATTACK +Y", (0, -55, 0.18), 1.4, materials["attack_arrow"])
+    attack_arrow["camera_map_helper"] = True
+    attack_label["camera_map_helper"] = True
     line("siege_beam_or_mammoth_horn", (0, -23, 2.7), (0, -3.3, 3.2), materials["old_wood"], 0.25)
     for i, x in enumerate((-14, -9, -4, 5, 10, 15)):
         cube(f"beast_silhouette_{i}", (x, -38 - i * 2.5, 1.1), (1.6, 2.4, 2.2), materials["beast"])
@@ -253,16 +268,20 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
         cube(f"defender_silhouette_{i}", (x, -0.7, 10.75), (0.42, 0.42, 0.9), materials["human"])
 
     # Character blocks and props.
-    cube("young_wall_soldier_half_collapsed", (-4.2, 7.4, 10.9), (0.8, 1.0, 0.9), materials["human"])
+    cube("young_wall_soldier_half_collapsed", (-4.2, 7.2, 12.25), (1.1, 1.1, 1.8), materials["human"])
     line("young_soldier_dropped_spear", (-2.6, 5.2, 10.35), (-6.3, 7.9, 10.35), materials["spear"], 0.045)
-    cube("xue_linqiang_body", (2.2, 0.6, 11.2), (0.8, 0.7, 1.5), materials["xue"])
-    line("xue_hand_to_parapet", (2.0, 0.25, 11.25), (1.85, -2.05, 10.95), materials["xue"], 0.06)
+    cube("xue_linqiang_body", (2.2, 0.0, 12.1), (0.9, 0.75, 2.0), materials["xue"])
+    line("xue_hand_to_parapet", (2.0, 0.1, 12.15), (1.85, -2.05, 10.95), materials["xue"], 0.06)
 
     # Shot identity labels in top view.
-    add_label("gate_label", "ONE GATE", (0, -4.4, 0.18), 1.2, materials["guide_blue"])
-    add_label("bell_label", "SAME BONE BELL", (-4.8, 5.7, 10.52), 0.75, materials["guide_blue"])
-    add_label("xue_label", "XUE", (2.2, 0.6, 10.55), 0.65, materials["guide_blue"])
-    add_label("soldier_label", "YOUNG SOLDIER", (-4.2, 7.4, 10.55), 0.65, materials["guide_blue"])
+    map_labels = [
+        add_label("gate_label", "ONE GATE", (0, -4.4, 0.18), 1.2, materials["guide_blue"]),
+        add_label("bell_label", "SAME BONE BELL", (-4.8, 5.7, 10.52), 0.75, materials["guide_blue"]),
+        add_label("xue_label", "XUE", (2.2, 0.6, 10.55), 0.65, materials["guide_blue"]),
+        add_label("soldier_label", "YOUNG SOLDIER", (-4.2, 7.4, 10.55), 0.65, materials["guide_blue"]),
+    ]
+    for label in map_labels:
+        label["camera_map_helper"] = True
 
     return objects
 
@@ -289,12 +308,12 @@ def setup_cameras(materials: dict) -> dict[str, bpy.types.Object]:
     cameras = {}
     for ref, spec in CAMERAS.items():
         cameras[ref] = add_camera(ref, spec, materials)
-    bpy.ops.object.camera_add(location=(0, -8, 88), rotation=(0, 0, 0))
+    bpy.ops.object.camera_add(location=(0, -36, 88), rotation=(0, 0, 0))
     top = bpy.context.object
     top.name = "CAM_TOP_VIEW"
     top.data.type = "ORTHO"
-    top.data.ortho_scale = 108
-    look_at(top, (0, -8, 0))
+    top.data.ortho_scale = 116
+    look_at(top, (0, -36, 0))
     cameras["top"] = top
     return cameras
 
@@ -307,40 +326,75 @@ def render_still(camera: bpy.types.Object, filepath: Path, *, freestyle: bool = 
     bpy.ops.render.render(write_still=True)
 
 
+def set_camera_map_helpers_visible(visible: bool) -> None:
+    for obj in bpy.context.scene.objects:
+        if obj.get("camera_map_helper"):
+            obj.hide_render = not visible
+
+
 def render_depth(camera: bpy.types.Object, filepath: Path) -> None:
     scene = bpy.context.scene
     scene.camera = camera
     scene.render.use_freestyle = False
-    scene.use_nodes = True
-    tree = scene.node_tree
-    tree.nodes.clear()
-    render_layers = tree.nodes.new(type="CompositorNodeRLayers")
-    normalize = tree.nodes.new(type="CompositorNodeNormalize")
-    invert = tree.nodes.new(type="CompositorNodeInvert")
-    output = tree.nodes.new(type="CompositorNodeOutputFile")
-    output.base_path = str(filepath.parent)
-    output.file_slots[0].path = filepath.stem + "_"
-    output.format.file_format = "PNG"
-    output.format.color_mode = "BW"
-    tree.links.new(render_layers.outputs["Depth"], normalize.inputs[0])
-    tree.links.new(normalize.outputs[0], invert.inputs[1])
-    tree.links.new(invert.outputs[0], output.inputs[0])
-    bpy.ops.render.render(write_still=False)
-    produced = filepath.parent / f"{filepath.stem}_0001.png"
-    if produced.exists():
-        if filepath.exists():
-            filepath.unlink()
-        shutil.move(str(produced), str(filepath))
-    scene.use_nodes = False
+    renderable = [
+        obj
+        for obj in bpy.context.scene.objects
+        if obj.type in {"MESH", "CURVE", "FONT"} and not obj.hide_render
+    ]
+    camera_forward = camera.matrix_world.to_quaternion() @ Vector((0.0, 0.0, -1.0))
+    depths = [
+        max(0.0, (obj.location - camera.location).dot(camera_forward))
+        for obj in renderable
+    ]
+    near = min(depths) if depths else 0.0
+    far = max(depths) if depths else 1.0
+    span = max(far - near, 0.001)
+    original_materials = {
+        obj.name: [slot.material for slot in obj.material_slots]
+        for obj in renderable
+    }
+    original_world_color = tuple(scene.world.color)
+    depth_materials = []
+    try:
+        for obj, depth in zip(renderable, depths):
+            shade = 1.0 - max(0.0, min(1.0, (depth - near) / span))
+            material = bpy.data.materials.new(f"depth_{obj.name}")
+            material.diffuse_color = (shade, shade, shade, 1.0)
+            material.use_nodes = True
+            nodes = material.node_tree.nodes
+            nodes.clear()
+            emission = nodes.new(type="ShaderNodeEmission")
+            emission.inputs["Color"].default_value = (shade, shade, shade, 1.0)
+            emission.inputs["Strength"].default_value = 1.0
+            output = nodes.new(type="ShaderNodeOutputMaterial")
+            material.node_tree.links.new(emission.outputs["Emission"], output.inputs["Surface"])
+            depth_materials.append(material)
+            obj.data.materials.clear()
+            obj.data.materials.append(material)
+        scene.world.color = (0.0, 0.0, 0.0)
+        scene.render.filepath = str(filepath)
+        bpy.ops.render.render(write_still=True)
+    finally:
+        for obj in renderable:
+            obj.data.materials.clear()
+            for material in original_materials.get(obj.name, []):
+                if material is not None:
+                    obj.data.materials.append(material)
+        for material in depth_materials:
+            bpy.data.materials.remove(material, do_unlink=True)
+        scene.world.color = original_world_color
 
 
 def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
     records = []
+    set_camera_map_helpers_visible(False)
     render_still(cameras["top"], OUTPUTS["top_view"])
     records.append({"path": str(OUTPUTS["top_view"].relative_to(REPO_ROOT)), "status": "ready"})
+    set_camera_map_helpers_visible(True)
     render_still(cameras["top"], OUTPUTS["camera_map"])
     records.append({"path": str(OUTPUTS["camera_map"].relative_to(REPO_ROOT)), "status": "ready"})
 
+    set_camera_map_helpers_visible(False)
     for ref in ("r001", "r002", "r003", "r004"):
         render_still(cameras[ref], OUTPUTS["shot_guides"][ref])
         records.append({"path": str(OUTPUTS["shot_guides"][ref].relative_to(REPO_ROOT)), "status": "ready"})
@@ -348,6 +402,7 @@ def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
         records.append({"path": str(OUTPUTS["depth"][ref].relative_to(REPO_ROOT)), "status": "ready"})
         render_still(cameras[ref], OUTPUTS["lineart"][ref], freestyle=True)
         records.append({"path": str(OUTPUTS["lineart"][ref].relative_to(REPO_ROOT)), "status": "ready"})
+    set_camera_map_helpers_visible(True)
     return records
 
 
@@ -372,6 +427,7 @@ def main() -> None:
     records: list[dict] = []
     try:
         reset_scene()
+        bpy.context.preferences.filepaths.save_version = 0
         materials = create_materials()
         build_scene(materials)
         setup_lighting()

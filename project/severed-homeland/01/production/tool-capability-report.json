@@ -3,30 +3,35 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 reference frames r001-r004",
-  "checked_at": "2026-06-12",
+  "checked_at": "2026-06-13",
   "tools": {
     "blender": {
-      "status": "blocked",
-      "available": false,
+      "status": "available_ready",
+      "available": true,
+      "path": "/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender",
+      "version": "5.1.2",
       "checks": [
         {
           "method": "command -v blender",
-          "result": "not_found"
+          "result": "/opt/homebrew/bin/blender wrapper found but pointed at a stale /Applications path"
         },
         {
-          "method": "/Applications/Blender.app/Contents/MacOS/Blender",
-          "result": "not_found"
+          "method": "/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender --background --python build_sc001_blockout.py",
+          "result": "success_with_escalated_local_app_access"
         },
         {
-          "method": "python3 import bpy",
-          "result": "No module named 'bpy'"
+          "method": "generated outputs",
+          "result": "blockout.blend, top-view.png, camera-map.png, four camera guides, four depth maps, and four lineart maps created from the same Blender scene"
         }
       ],
-      "impact": "Cannot build blockout.blend or export top-view, camera-map, camera guides, depth maps, or lineart in this run."
+      "impact": "SC001 low-poly scene and same-space control image package are ready."
     },
     "comfyui": {
-      "status": "needs_config",
-      "available": false,
+      "status": "server_available_model_missing",
+      "available": true,
+      "can_generate_keyframes": false,
+      "endpoint": "http://127.0.0.1:8188",
+      "version": "0.24.0",
       "checks": [
         {
           "method": "command -v comfyui",
@@ -34,10 +39,22 @@
         },
         {
           "method": "curl http://127.0.0.1:8188/system_stats",
-          "result": "no_response"
+          "result": "ok; ComfyUI 0.24.0 on MPS"
+        },
+        {
+          "method": "object_info/CheckpointLoaderSimple",
+          "result": "checkpoint list empty"
+        },
+        {
+          "method": "object_info/ControlNetLoader",
+          "result": "controlnet list empty"
+        },
+        {
+          "method": "local SD2.1 reuse attempt",
+          "result": "existing stable-diffusion-webui weight links are broken; temporary ComfyUI checkpoint symlink was removed"
         }
       ],
-      "impact": "Cannot execute local reproducible ComfyUI keyframe generation without server, checkpoint, workflow template, and node bindings."
+      "impact": "ComfyUI API is reachable, but keyframe generation cannot run until at least one usable checkpoint is installed; depth/lineart ControlNet use also requires ControlNet models."
     },
     "krita": {
       "status": "available_not_invoked",
@@ -62,7 +79,7 @@
         "PIL",
         "yaml"
       ],
-      "impact": "Python can validate files and run utility scripts, but no image drawing fallback was used because requested control images must come from Blender."
+      "impact": "Python can validate files and run the ComfyUI API helper script; image generation still depends on ComfyUI model availability."
     }
   },
   "policy": {

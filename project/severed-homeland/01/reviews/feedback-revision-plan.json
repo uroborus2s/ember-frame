@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 r001-r004",
-  "status": "blocked",
+  "status": "blocked_comfyui_model_missing",
   "user_feedback_items": [
     {
       "id": "UF-SC001-001",
@@ -26,30 +26,49 @@
     {
       "id": "UF-SC001-004",
       "request": "Use Blender to build SC001 blockout scene",
-      "status": "blocked",
-      "blocked_by": "Blender executable unavailable"
+      "status": "done",
+      "output": "01/control/scene-packages/SC001/blockout.blend"
     },
     {
       "id": "UF-SC001-005",
       "request": "Export top view, camera map, shot guides, depth, lineart from same Blender scene",
-      "status": "blocked",
-      "blocked_by": "Blender executable unavailable"
+      "status": "done",
+      "outputs": [
+        "01/control/scene-packages/SC001/top-view.png",
+        "01/control/scene-packages/SC001/camera-map.png",
+        "01/control/scene-packages/SC001/shot-guides/r001_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r002_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
+        "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
+        "01/control/scene-packages/SC001/depth/r001_depth.png",
+        "01/control/scene-packages/SC001/depth/r002_depth.png",
+        "01/control/scene-packages/SC001/depth/r003_depth.png",
+        "01/control/scene-packages/SC001/depth/r004_depth.png",
+        "01/control/scene-packages/SC001/lineart/r001_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r002_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r003_lineart.png",
+        "01/control/scene-packages/SC001/lineart/r004_lineart.png"
+      ]
     },
     {
       "id": "UF-SC001-006",
       "request": "Audit whether the four storyboards come from the same space",
-      "status": "blocked_pending_blender_exports",
+      "status": "done",
       "output": "01/control/scene-packages/SC001/space-audit.md"
     },
     {
       "id": "UF-SC001-007",
       "request": "Send these images to ComfyUI / image generation tool for keyframes",
-      "status": "needs_config",
+      "status": "blocked_comfyui_model_missing",
       "blocked_by": [
-        "missing Blender control images",
-        "ComfyUI unavailable"
+        "ComfyUI checkpoint list is empty",
+        "ComfyUI ControlNet model list is empty",
+        "local stable-diffusion-webui SD2.1 files are broken symlinks"
       ],
-      "output": "01/handoff/art-planning/shot-image-task-list.json"
+      "outputs": [
+        "01/handoff/art-planning/shot-image-task-list.json",
+        "01/production/comfyui-sc001-keyframe-run.json"
+      ]
     },
     {
       "id": "UF-SC001-008",
@@ -59,9 +78,9 @@
     }
   ],
   "next_unblock_actions": [
-    "Install Blender or provide the Blender executable path.",
-    "Run: blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
-    "Configure ComfyUI server, checkpoint, workflow template, and node bindings.",
+    "Install or expose at least one usable ComfyUI checkpoint under /Users/uroborus/AiProject/ComfyUI/models/checkpoints.",
+    "Install ControlNet depth/lineart models if the exported depth and lineart maps must be connected as ControlNet inputs.",
+    "Re-run: python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
     "Generate candidates under 01/assets/director-room/shots/*/candidates/ without overwriting canonical reference frames.",
     "Run Krita/GIMP only after keyframe candidates or masks exist."
   ]

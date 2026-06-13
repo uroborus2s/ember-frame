@@ -3,12 +3,21 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "needs_config",
+  "status": "blocked_comfyui_model_missing",
   "source": "01/handoff/art-planning/shot-image-task-list.json",
   "required_before_execution": [
-    "Blender-generated camera/depth/lineart controls must exist.",
-    "ComfyUI or equivalent image generation tool must be configured.",
+    "Blender-generated camera/depth/lineart controls exist and are ready.",
+    "ComfyUI server is reachable at http://127.0.0.1:8188.",
+    "Install or expose at least one usable checkpoint in ComfyUI models/checkpoints.",
+    "Install ControlNet depth/lineart models if depth and lineart controls must be connected as ControlNet inputs.",
     "Candidate outputs must not overwrite canonical source reference frames."
   ],
-  "task_list": "01/handoff/art-planning/shot-image-task-list.json"
+  "task_list": "01/handoff/art-planning/shot-image-task-list.json",
+  "execution_attempt": {
+    "script": "01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
+    "report": "01/production/comfyui-sc001-keyframe-run.json",
+    "status": "failed_model_missing",
+    "checkpoint_choices": [],
+    "controlnet_choices": []
+  }
 }
