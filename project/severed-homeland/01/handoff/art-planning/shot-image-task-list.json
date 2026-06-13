@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002",
+  "status": "r003_r004_promoted_to_reference_frames_r001_r002_comfyui_model_missing",
   "write_policy": "Do not overwrite canonical 01/assets/reference-frames/r001e01.png through r004e01.png in generation runs. Write candidates under director-room shot candidate folders, then promote only after human/director QC.",
   "shared_scene_master_inputs": [
     "01/assets/director-room/scenes/SC001/material-lock.json",
@@ -67,7 +67,7 @@
       "shot_id": "SC001-SH002",
       "role": "first_frame",
       "method": "ComfyUI_or_equivalent_image_generation",
-      "status": "generated_candidate_pending_user_visual_qc",
+      "status": "promoted_to_canonical_reference_frame_after_user_approval",
       "source_frame": "01/assets/reference-frames/r003e01.png",
       "control_inputs": [
         "01/control/scene-packages/SC001/shot-guides/r003_camera.png",
@@ -82,11 +82,11 @@
       "execution_attempt": {
         "status": "generated_by_codex_builtin_imagegen_after_comfyui_blocked",
         "generator": "Codex built-in image generation",
-        "source_output": "/Users/uroborus/.codex/generated_images/019ebc78-c455-7441-9064-709144313533/ig_052ce5bc6dd25a44016a2d8bf94428819b9961ef909fb96107.png",
+        "source_output": "/Users/uroborus/.codex/generated_images/019ebc78-c455-7441-9064-709144313533/ig_018782f7dae2d033016a2d9bd08a2081998a7b59b43b282291.png",
         "candidate_dimensions": "1672x940",
         "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
         "previous_comfyui_report": "01/production/comfyui-sc001-keyframe-run.json",
-        "notes": "Next-version micro-edit after user feedback about C020/C021 beast attackers, P016 bell emblem inheritance, and E01_C024A young soldier alive posture. Current v005 candidate keeps the exterior as blizzard/smoke battle pressure only, makes the soldier read as alive with half-open eyes, visible breath, splayed bracing hand, bent knee and slipping boot, and keeps the five-thousand-year-old oxidized metal Zhaoming alarm bell with only broken unreadable P016-derived emblem fragments. Previous v001/v002/v003/v004 candidates are archived or superseded under the shot candidates/history folder. Pending user visual QC before any canonical promotion."
+        "notes": "User approved the R003 space/action result, then requested style matching to R001/R002 because the previous image had too much particle noise, cheaper realism, and mismatched lighting. Current v006 style-matched image reduces digital grain and snow speck density, keeps low-key high-contrast R001/R002 lighting, preserves E01_C024A alive aftershock posture and the P016-derived old metal bell, and has been promoted to canonical 01/assets/reference-frames/r003e01.png. Previous v005 candidate was archived under the shot candidates/history folder before replacement."
       }
     },
     {
@@ -95,7 +95,7 @@
       "shot_id": "SC001-SH003",
       "role": "first_frame",
       "method": "ComfyUI_or_equivalent_image_generation",
-      "status": "generated_candidate_pending_user_visual_qc",
+      "status": "promoted_to_canonical_reference_frame_after_user_approval",
       "source_frame": "01/assets/reference-frames/r004e01.png",
       "control_inputs": [
         "01/control/scene-packages/SC001/shot-guides/r004_camera.png",
@@ -110,11 +110,11 @@
       "execution_attempt": {
         "status": "generated_by_codex_builtin_imagegen_after_comfyui_blocked",
         "generator": "Codex built-in image generation",
-        "source_output": "/Users/uroborus/.codex/generated_images/019ebc78-c455-7441-9064-709144313533/ig_052ce5bc6dd25a44016a2d8a0d87a8819b8b9e00f942ec0418.png",
+        "source_output": "/Users/uroborus/.codex/generated_images/019ebc78-c455-7441-9064-709144313533/ig_018782f7dae2d033016a2d9c622154819997388bfe5f3444e3.png",
         "candidate_dimensions": "1672x941",
         "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
         "previous_comfyui_report": "01/production/comfyui-sc001-keyframe-run.json",
-        "notes": "Next-version micro-edit after user feedback about exterior attackers needing C020/C021/E01_C020 beast soldiers plus companion beasts and the bell emblem needing P016 only. Current v004 candidate removes houses, streets, city lights, city towers, any second-wall read, human army reads, and generic single-species horde reads from the exterior-facing view, keeping only battlefield snow haze, smoke, C020/C021/E01_C020 beast siege pressure, companion beasts, and the same five-thousand-year-old oxidized metal Zhaoming alarm bell with broken unreadable P016-derived emblem fragments. Previous v001/v002/v003 candidates are archived or superseded under the shot candidates/history folder. Pending user visual QC before any canonical promotion."
+        "notes": "User approved the R004 space/action result, then requested style matching to R001/R002 because the previous image had too much particle noise, cheaper realism, and mismatched lighting. Current v005 style-matched image reduces digital grain and snow speck density, uses the R001/R002 cold storm-break sky and blackstone negative-fill lighting, preserves Xue, the same parapet, C020/C021/E01_C020 exterior beast siege pressure and the P016-derived old metal bell, and has been promoted to canonical 01/assets/reference-frames/r004e01.png. Previous v004 candidate was archived under the shot candidates/history folder before replacement."
       }
     }
   ]

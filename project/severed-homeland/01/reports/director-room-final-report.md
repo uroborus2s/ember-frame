@@ -77,6 +77,8 @@
 
 2026-06-14 下一版修复：SC001 R003/R004 的外侧敌军、警钟徽章和年轻军户状态已继续收紧。墙外攻城剪影必须继承 `C020`/`C021`/`E01_C020` 的兽族士兵与伴生兽关系，不得是人族军阵、通用单一兽人潮或无主怪物群；警钟残徽只继承 `P016` 昭明日月星盘残徽，`P018` 北境兽族联盟徽章只可用于攻城方器具或旗面远景细节，不能上钟；R003 年轻军户继承 `E01_C024A`，必须读作半睁眼、喘息、撑地、屈膝、靴底打滑的被震倒活人。
 
+2026-06-14 风格统一与正式替换：用户确认 R003/R004 的空间和内容已可用，但指出与 R001/R002 相比粒子感过强、真实感偏便宜、光影不一致。已用 Codex built-in image generation 以 R001/R002 为风格目标重做 R003/R004：降低雪粒和数字颗粒密度，去除廉价高频锐化和闪粉感，统一为 R001/R002 的冷白裂云光、黑石负补光、克制暖边和湿材质反光。用户已明确要求替换正式图，因此本轮已覆盖 `01/assets/reference-frames/r003e01.png` 和 `01/assets/reference-frames/r004e01.png`，并同步更新 director-room candidate mirror。
+
 ## 工具执行结果
 
 Blender：完成。实际使用路径：
@@ -89,10 +91,12 @@ Blender：完成。实际使用路径：
 
 ComfyUI：服务可用但模型缺失。`http://127.0.0.1:8188/system_stats` 返回 ComfyUI `0.24.0`，MPS 后端可见；但 `CheckpointLoaderSimple` 的 checkpoint 列表为空，`ControlNetLoader` 的 ControlNet 列表为空。本机发现的 `stable-diffusion-webui` SD2.1 权重文件是断链，临时接入 ComfyUI 后执行报错，随后已清理该失效符号链接。`run_sc001_comfyui_keyframes.py` 已写入并执行预检，结果记录在 `01/production/comfyui-sc001-keyframe-run.json`。2026-06-13 后续改用 Codex built-in image generation 对 R003/R004 先生成非 canonical candidate。
 
-关键帧候选图：R003/R004 已生成 candidate，R001/R002 仍未生成。已写入：
+关键帧候选图与正式帧：R003/R004 已生成风格统一版并晋升为正式 reference-frame，R001/R002 仍沿用既有正式参考帧且未生成新的 candidate。已写入：
 
-- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v005_after_open_eyes_c020_c021_p016_fix`
-- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v004_after_c020_c021_exterior_p016_fix`
+- `01/assets/reference-frames/r003e01.png`，1672x940，状态：`promoted_style_matched_final`，版本：`v006_style_matched_promoted`
+- `01/assets/reference-frames/r004e01.png`，1672x941，状态：`promoted_style_matched_final`，版本：`v005_style_matched_promoted`
+- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`promoted_to_canonical_reference_frame_after_user_approval`，版本：`v006_style_matched_promoted`
+- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`promoted_to_canonical_reference_frame_after_user_approval`，版本：`v005_style_matched_promoted`
 
 未写入以下 candidate 输出：
 
@@ -116,13 +120,13 @@ R003/R004 candidate QC 记录见 `01/reviews/sc001-r003-r004-candidate-qc-2026-0
 | imagegenpro / Codex image generation R003-R004 | 86 | 85 | 1 | candidate 已生成，待用户 QC |
 | studio-tool-execution-agent / capability report | 94 | 85 | 1 | 通过 |
 
-整体状态：`partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002`。阻塞原因不是 SC001 空间规划或 Blender 控制图缺失，而是 ComfyUI 当前没有可执行 checkpoint；若要把深度图和线稿图接成 ControlNet，还需要安装对应 ControlNet 模型。R003/R004 已有 Codex image generation candidate，可先做人工视觉 QC。
+整体状态：`r003_r004_promoted_to_reference_frames_r001_r002_comfyui_model_missing`。阻塞原因不是 SC001 空间规划或 Blender 控制图缺失，而是 ComfyUI 当前没有可执行 checkpoint；若要把深度图和线稿图接成 ControlNet，还需要安装对应 ControlNet 模型。R003/R004 已按用户确认晋升为正式 reference-frame；R001/R002 仍沿用既有正式参考帧。
 
 ## 用户反馈处理
 
-用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。本次追加处理了用户指出的六项问题：门楼面向墙外时不应出现房屋或城市，警钟应为五千年昭明旧帝国金属钟且残徽破损，R003 士兵应为被撞门余震震倒而非死亡，墙外攻城剪影应继承 C020/C021/E01_C020 的兽族士兵与伴生兽，警钟残徽应继承全局 P016 且不得误用 P018，R003 士兵应继承 E01_C024A 并呈现半睁眼、喘息、撑地、屈膝、靴底打滑的活人被震倒状态。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
+用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。本次追加处理了用户指出的七项问题：门楼面向墙外时不应出现房屋或城市，警钟应为五千年昭明旧帝国金属钟且残徽破损，R003 士兵应为被撞门余震震倒而非死亡，墙外攻城剪影应继承 C020/C021/E01_C020 的兽族士兵与伴生兽，警钟残徽应继承全局 P016 且不得误用 P018，R003 士兵应继承 E01_C024A 并呈现半睁眼、喘息、撑地、屈膝、靴底打滑的活人被震倒状态，R003/R004 风格应降低粒子感并统一到 R001/R002 的真实光影。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
 
-本轮没有覆盖或修改现有 `01/assets/reference-frames/r001e01.png` 到 `r004e01.png`。其中 `r003e01.png`、`r004e01.png` 在工作区原本已有用户改动，本轮只读使用；新图只写入 director-room shot `candidates/`。
+本轮未覆盖或修改 `01/assets/reference-frames/r001e01.png`、`01/assets/reference-frames/r002e01.png`。用户明确要求把优化后的 R003/R004 替换为正式图片，因此本轮已覆盖 `01/assets/reference-frames/r003e01.png`、`01/assets/reference-frames/r004e01.png`，并让 director-room shot `candidates/` 与正式帧保持同图。
 
 ## 后续解除阻塞步骤
 

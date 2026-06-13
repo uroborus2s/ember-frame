@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "scene_master_ready_r003_r004_candidates_pending_user_qc_r001_r002_blocked_model_missing",
+  "status": "scene_master_ready_r003_r004_promoted_r001_r002_blocked_model_missing",
   "resources": {
     "scene_control_package": {
       "scene_bible": "01/control/scene-packages/SC001/scene-bible.md",
@@ -26,12 +26,12 @@
       },
       "r003": {
         "path": "01/assets/reference-frames/r003e01.png",
-        "status": "existing_read_only_user_modified_not_overwritten",
+        "status": "promoted_style_matched_final_after_user_approval",
         "dimensions": "1672x940"
       },
       "r004": {
         "path": "01/assets/reference-frames/r004e01.png",
-        "status": "existing_read_only_user_modified_not_overwritten",
+        "status": "promoted_style_matched_final_after_user_approval",
         "dimensions": "1672x941"
       }
     },
@@ -88,7 +88,7 @@
       "city_backplate_policy": "cityside reverse master only; never visible in R003/R004 exterior-facing views; no exterior houses, streets, warm windows, city towers, second wall, or second gate"
     },
     "expected_shot_assets": {
-      "status": "partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002",
+      "status": "r003_r004_promoted_to_reference_frames_r001_r002_comfyui_model_missing",
       "SC001-SH001": {
         "shot_scene_image": "01/assets/director-room/shots/SC001-SH001/shot-scene-image.png",
         "director_reference": "01/assets/director-room/shots/SC001-SH001/director-reference.png",
@@ -109,11 +109,11 @@
         "candidates": [
           {
             "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-            "status": "generated_candidate_pending_user_visual_qc",
+            "status": "promoted_to_canonical_reference_frame_after_user_approval",
             "dimensions": "1672x940",
             "generator": "Codex built-in image generation",
             "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
-            "version": "v005_after_open_eyes_c020_c021_p016_fix"
+            "version": "v006_style_matched_promoted"
           }
         ]
       },
@@ -123,11 +123,11 @@
         "candidates": [
           {
             "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-            "status": "generated_candidate_pending_user_visual_qc",
+            "status": "promoted_to_canonical_reference_frame_after_user_approval",
             "dimensions": "1672x941",
             "generator": "Codex built-in image generation",
             "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
-            "version": "v004_after_c020_c021_exterior_p016_fix"
+            "version": "v005_style_matched_promoted"
           }
         ]
       }
@@ -142,14 +142,17 @@
       ]
     },
     "codex_imagegen_execution": {
-      "status": "partial_success_r003_r004_generated",
+      "status": "r003_r004_style_matched_and_promoted_to_reference_frames",
       "outputs": [
         "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-        "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png"
+        "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/reference-frames/r004e01.png"
       ],
       "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
-      "promotion_policy": "Do not overwrite canonical reference frames until user/director visual QC approves.",
-      "latest_fix_lock": "R003 uses E01_C024A alive aftershock posture with half-open eyes and bracing hand. R004 exterior attackers inherit C020/C021/E01_C020 beast troops and companion beasts. Alarm-bell remnants derive from P016 only; P018 is forbidden on the bell."
+      "promotion_policy": "Canonical reference frames were overwritten only after explicit user approval in this turn.",
+      "latest_fix_lock": "R003 uses E01_C024A alive aftershock posture with half-open eyes and bracing hand. R004 exterior attackers inherit C020/C021/E01_C020 beast troops and companion beasts. Alarm-bell remnants derive from P016 only; P018 is forbidden on the bell.",
+      "style_match_lock": "R003/R004 were regenerated to match R001/R002: reduced particle/noise density, no cheap digital grain, low-key high-contrast storm lighting, blackstone negative fill, physically plausible wet material highlights."
     }
   }
 }

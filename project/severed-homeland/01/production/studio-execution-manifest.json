@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 only; reference frames r001e01.png, r002e01.png, r003e01.png, r004e01.png",
-  "status": "partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002",
+  "status": "r003_r004_promoted_to_reference_frames_r001_r002_comfyui_model_missing",
   "steps": [
     {
       "order": 1,
@@ -187,19 +187,19 @@
       ],
       "attempted_command": "python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
       "codex_imagegen_execution": {
-        "status": "generated_r003_r004_candidates_pending_user_visual_qc",
+        "status": "generated_r003_r004_style_matched_and_promoted_to_reference_frames",
         "outputs": [
           {
             "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-            "status": "generated_candidate_pending_user_visual_qc",
+            "status": "promoted_to_canonical_reference_frame_after_user_approval",
             "dimensions": "1672x940",
-            "version": "v005_after_open_eyes_c020_c021_p016_fix"
+            "version": "v006_style_matched_promoted"
           },
           {
             "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-            "status": "generated_candidate_pending_user_visual_qc",
+            "status": "promoted_to_canonical_reference_frame_after_user_approval",
             "dimensions": "1672x941",
-            "version": "v004_after_c020_c021_exterior_p016_fix"
+            "version": "v005_style_matched_promoted"
           }
         ],
         "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
@@ -207,6 +207,11 @@
           "R003 soldier: E01_C024A alive aftershock posture, half-open eyes, visible breath, bracing hand, bent knee, slipping boot",
           "R004 exterior attackers: C020/C021/E01_C020 beast soldiers and companion beasts, not human army or generic single-species horde",
           "Alarm bell emblem: P016 broken Zhaoming sun-moon astrolabe remnant only; P018 forbidden on bell"
+        ],
+        "style_match_locks": [
+          "R003/R004 now match R001/R002 low-key high-contrast storm lighting",
+          "Reduced particle density, digital grain, glitter, cheap realism, and artificial sharpening",
+          "Promoted to canonical reference frames after explicit user approval"
         ]
       },
       "outputs": [
@@ -228,11 +233,19 @@
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-          "status": "generated_candidate_pending_user_visual_qc"
+          "status": "promoted_to_canonical_reference_frame_after_user_approval"
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-          "status": "generated_candidate_pending_user_visual_qc"
+          "status": "promoted_to_canonical_reference_frame_after_user_approval"
+        },
+        {
+          "path": "01/assets/reference-frames/r003e01.png",
+          "status": "promoted_style_matched_final"
+        },
+        {
+          "path": "01/assets/reference-frames/r004e01.png",
+          "status": "promoted_style_matched_final"
         }
       ]
     },
@@ -240,13 +253,13 @@
       "order": 9,
       "name": "krita_gimp_fix_masks_faces_props",
       "status": "waiting_user_visual_qc",
-      "reason": "R003/R004 candidates now exist. Krita/GIMP should only be invoked after user/director QC identifies masks, faces, props, flags, or wall-edge fixes."
+      "reason": "R003/R004 formal reference frames now exist. Krita/GIMP should only be invoked after user/director QC identifies masks, faces, props, flags, or wall-edge fixes."
     }
   ],
   "source_reference_frame_status": {
     "r001e01.png": "read_only_existing",
     "r002e01.png": "read_only_existing",
-    "r003e01.png": "read_only_existing_user_modified_not_overwritten",
-    "r004e01.png": "read_only_existing_user_modified_not_overwritten"
+    "r003e01.png": "promoted_style_matched_final_after_user_approval",
+    "r004e01.png": "promoted_style_matched_final_after_user_approval"
   }
 }

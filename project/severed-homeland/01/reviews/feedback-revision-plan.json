@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 r001-r004",
-  "status": "scene_master_ready_r003_r004_candidates_pending_user_qc_r001_r002_blocked_model_missing",
+  "status": "scene_master_ready_r003_r004_promoted_r001_r002_blocked_model_missing",
   "user_feedback_items": [
     {
       "id": "UF-SC001-001",
@@ -123,7 +123,7 @@
       "notes": [
         "R003 superseded version was v004_after_metal_bell_space_microedit, 1672x940.",
         "R004 superseded version was v003_after_metal_bell_space_microedit, 1672x941.",
-        "Canonical reference-frames remain untouched until user/director approval."
+        "Canonical reference-frames remained untouched at that stage until later user approval."
       ]
     },
     {
@@ -144,10 +144,32 @@
         "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
       ],
       "notes": [
-        "R003 current version is v005_after_open_eyes_c020_c021_p016_fix, 1672x940.",
-        "R004 current version is v004_after_c020_c021_exterior_p016_fix, 1672x941.",
+        "R003 superseded version was v005_after_open_eyes_c020_c021_p016_fix, 1672x940.",
+        "R004 superseded version was v004_after_c020_c021_exterior_p016_fix, 1672x941.",
         "P018 may appear only as distant attacker-side equipment or banner detail, never on the bell.",
-        "Canonical reference-frames remain untouched until user/director approval."
+        "Canonical reference-frames were still untouched in this step until later explicit user approval."
+      ]
+    },
+    {
+      "id": "UF-SC001-007C",
+      "request": "The R003/R004 images are spatially acceptable, but particle density is too high, realism feels cheap, and lighting differs from R001/R002; optimize both and replace the formal reference-frame images",
+      "status": "done_promoted_to_canonical_reference_frames",
+      "outputs": [
+        "01/assets/reference-frames/r003e01.png",
+        "01/assets/reference-frames/r004e01.png",
+        "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+        "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+        "01/handoff/art-planning/shot-image-task-list.json",
+        "01/handoff/art-planning/scene-image-resource-index.json",
+        "01/production/studio-execution-manifest.json",
+        "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
+        "01/reports/director-room-final-report.md"
+      ],
+      "notes": [
+        "R003 current version is v006_style_matched_promoted, 1672x940.",
+        "R004 current version is v005_style_matched_promoted, 1672x941.",
+        "Style match target was R001/R002: reduced particle/noise density, cleaner cinematic realism, low-key storm-break sky, blackstone negative fill, restrained warm accents and physically plausible wet material highlights.",
+        "Canonical reference-frames were overwritten only after explicit user approval."
       ]
     },
     {
@@ -162,7 +184,7 @@
     "Install ControlNet depth/lineart models if the exported depth and lineart maps must be connected as ControlNet inputs.",
     "Re-run: python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
     "Generate or approve remaining R001/R002 candidates without overwriting canonical reference frames.",
-    "Run user/director visual QC on R003/R004 candidates before any canonical promotion.",
+    "R003/R004 have been promoted to canonical reference frames; run future user/director QC only for local fixes or final episode-wide continuity.",
     "Run Krita/GIMP only after QC identifies concrete local fixes."
   ]
 }
