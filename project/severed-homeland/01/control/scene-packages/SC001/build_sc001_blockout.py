@@ -91,6 +91,13 @@ MATERIALS = {
     "camera_marker": (1.0, 0.08, 0.02, 1.0),
     "attack_arrow": (1.0, 0.02, 0.00, 1.0),
     "guide_blue": (0.02, 0.20, 1.0, 1.0),
+    "overview_wall": (0.04, 0.05, 0.06, 1.0),
+    "overview_gate": (0.10, 0.62, 1.0, 1.0),
+    "overview_gatehouse": (0.58, 0.22, 0.78, 1.0),
+    "overview_bell": (1.0, 0.82, 0.12, 1.0),
+    "overview_xue": (0.12, 0.82, 0.30, 1.0),
+    "overview_soldier": (0.08, 0.70, 0.88, 1.0),
+    "overview_flag": (0.02, 0.02, 0.02, 1.0),
     "depth_white": (1.0, 1.0, 1.0, 1.0),
 }
 
@@ -183,7 +190,7 @@ def line(name: str, start, end, material, bevel_depth: float = 0.035) -> bpy.typ
 
 
 def add_label(name: str, text: str, location, size: float, material) -> bpy.types.Object:
-    bpy.ops.object.text_add(location=location, rotation=(math.radians(90), 0, 0))
+    bpy.ops.object.text_add(location=location, rotation=(0, 0, 0))
     obj = bpy.context.object
     obj.name = name
     obj.data.body = text
@@ -191,6 +198,29 @@ def add_label(name: str, text: str, location, size: float, material) -> bpy.type
     obj.data.align_y = "CENTER"
     obj.data.size = size
     obj.data.materials.append(material)
+    return obj
+
+
+def mark_helpers(objects, helper_name: str) -> None:
+    for obj in objects:
+        obj[helper_name] = True
+
+
+def overview_cube(name: str, center, size, material) -> bpy.types.Object:
+    obj = cube(name, center, size, material)
+    obj["overview_helper"] = True
+    return obj
+
+
+def overview_label(name: str, text: str, location, size: float, material) -> bpy.types.Object:
+    obj = add_label(name, text, location, size, material)
+    obj["overview_helper"] = True
+    return obj
+
+
+def overview_line(name: str, start, end, material, bevel_depth: float = 0.12) -> bpy.types.Object:
+    obj = line(name, start, end, material, bevel_depth)
+    obj["overview_helper"] = True
     return obj
 
 
@@ -207,11 +237,22 @@ def add_camera(ref: str, spec: dict, materials: dict) -> bpy.types.Object:
     camera.data.sensor_fit = "HORIZONTAL"
     camera.data.dof.use_dof = False
     look_at(camera, spec["target"])
-    marker = cube(f"{ref}_camera_marker", spec["position"], (1.6, 1.6, 1.6), materials["camera_marker"])
-    ray = line(f"{ref}_camera_ray", spec["position"], spec["target"], materials["camera_marker"], 0.09)
-    label = add_label(f"{ref}_label", ref.upper(), (spec["position"][0], spec["position"][1], 0.18), 2.6, materials["camera_marker"])
-    for helper in (marker, ray, label):
-        helper["camera_map_helper"] = True
+    marker = cube(f"{ref}_camera_marker", (spec["position"][0], spec["position"][1], 18.8), (2.2, 2.2, 0.35), materials["camera_marker"])
+    ray = line(
+        f"{ref}_camera_ray",
+        (spec["position"][0], spec["position"][1], 18.7),
+        (spec["target"][0], spec["target"][1], 18.7),
+        materials["camera_marker"],
+        0.12,
+    )
+    label_positions = {
+        "r001": (-9.0, -67.0, 19.0),
+        "r002": (8.5, -34.5, 19.0),
+        "r003": (-12.0, 13.0, 19.0),
+        "r004": (12.0, 13.0, 19.0),
+    }
+    label = add_label(f"{ref}_label", ref.upper(), label_positions[ref], 2.6, materials["camera_marker"])
+    mark_helpers((marker, ray, label), "camera_map_helper")
     return camera
 
 
@@ -274,14 +315,32 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
     line("xue_hand_to_parapet", (2.0, 0.1, 12.15), (1.85, -2.05, 10.95), materials["xue"], 0.06)
 
     # Shot identity labels in top view.
-    map_labels = [
-        add_label("gate_label", "ONE GATE", (0, -4.4, 0.18), 1.2, materials["guide_blue"]),
-        add_label("bell_label", "SAME BONE BELL", (-4.8, 5.7, 10.52), 0.75, materials["guide_blue"]),
-        add_label("xue_label", "XUE", (2.2, 0.6, 10.55), 0.65, materials["guide_blue"]),
-        add_label("soldier_label", "YOUNG SOLDIER", (-4.2, 7.4, 10.55), 0.65, materials["guide_blue"]),
+    overview_z = 18.35
+    overview_items = [
+        overview_cube("overview_blackstone_wall_band", (0, 0, overview_z), (72, 5.8, 0.28), materials["overview_wall"]),
+        overview_cube("overview_gate_blue_lock", (0, -2.9, overview_z + 0.16), (9.0, 1.8, 0.32), materials["overview_gate"]),
+        overview_cube("overview_gatehouse_zone", (0, 5.25, overview_z + 0.08), (16.0, 8.8, 0.24), materials["overview_gatehouse"]),
+        overview_cube("overview_left_flag", (-18, -3.1, overview_z + 0.28), (2.4, 1.0, 0.32), materials["overview_flag"]),
+        overview_cube("overview_right_flag", (18, -3.1, overview_z + 0.28), (2.4, 1.0, 0.32), materials["overview_flag"]),
+        overview_cube("overview_xue_marker", (2.2, 0.6, overview_z + 0.5), (2.4, 2.0, 0.45), materials["overview_xue"]),
+        overview_cube("overview_young_soldier_marker", (-4.2, 7.2, overview_z + 0.5), (2.4, 2.0, 0.45), materials["overview_soldier"]),
+        overview_line("overview_attack_axis_red", (0, -86, overview_z + 0.55), (0, -4.4, overview_z + 0.55), materials["attack_arrow"], 0.18),
+        overview_line("overview_gate_impact_tick", (-4.8, -4.4, overview_z + 0.65), (4.8, -4.4, overview_z + 0.65), materials["attack_arrow"], 0.12),
+        overview_label("overview_scene_title", "SC001 ONE WALL / ONE GATE", (0, 17.0, overview_z + 0.7), 2.0, materials["guide_blue"]),
+        overview_label("overview_wall_label", "BLACKSTONE WALL", (-24, 0, overview_z + 0.7), 1.8, materials["suming_wing"]),
+        overview_label("overview_gate_label", "GATE", (0, -7.0, overview_z + 0.7), 2.0, materials["guide_blue"]),
+        overview_label("overview_gatehouse_label", "GATEHOUSE", (0, 11.2, overview_z + 0.7), 1.45, materials["suming_wing"]),
+        overview_label("overview_attack_label", "BEAST ATTACK ->", (-12.5, -46, overview_z + 0.7), 2.0, materials["attack_arrow"]),
+        overview_label("overview_xue_label", "XUE", (6.2, 1.3, overview_z + 0.7), 1.5, materials["overview_xue"]),
+        overview_label("overview_soldier_label", "YOUNG SOLDIER", (-12.0, 8.2, overview_z + 0.7), 1.35, materials["overview_soldier"]),
+        overview_label("overview_flag_label", "P017 FLAGS", (22, -5.8, overview_z + 0.7), 1.45, materials["suming_wing"]),
     ]
-    for label in map_labels:
-        label["camera_map_helper"] = True
+    bell_marker = cylinder("overview_bone_bell_marker", (-4.8, 5.7, overview_z + 0.75), 1.35, 0.42, materials["overview_bell"], vertices=32)
+    bell_marker["overview_helper"] = True
+    overview_items.append(bell_marker)
+    overview_items.append(overview_label("overview_bell_label", "BONE BELL", (-10.8, 4.8, overview_z + 0.9), 1.35, materials["overview_bell"]))
+    for obj in overview_items:
+        obj.hide_render = True
 
     return objects
 
@@ -308,12 +367,12 @@ def setup_cameras(materials: dict) -> dict[str, bpy.types.Object]:
     cameras = {}
     for ref, spec in CAMERAS.items():
         cameras[ref] = add_camera(ref, spec, materials)
-    bpy.ops.object.camera_add(location=(0, -36, 88), rotation=(0, 0, 0))
+    bpy.ops.object.camera_add(location=(0, -28, 88), rotation=(0, 0, 0))
     top = bpy.context.object
     top.name = "CAM_TOP_VIEW"
     top.data.type = "ORTHO"
-    top.data.ortho_scale = 116
-    look_at(top, (0, -36, 0))
+    top.data.ortho_scale = 145
+    look_at(top, (0, -28, 0))
     cameras["top"] = top
     return cameras
 
@@ -329,6 +388,12 @@ def render_still(camera: bpy.types.Object, filepath: Path, *, freestyle: bool = 
 def set_camera_map_helpers_visible(visible: bool) -> None:
     for obj in bpy.context.scene.objects:
         if obj.get("camera_map_helper"):
+            obj.hide_render = not visible
+
+
+def set_overview_helpers_visible(visible: bool) -> None:
+    for obj in bpy.context.scene.objects:
+        if obj.get("overview_helper"):
             obj.hide_render = not visible
 
 
@@ -388,13 +453,16 @@ def render_depth(camera: bpy.types.Object, filepath: Path) -> None:
 def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
     records = []
     set_camera_map_helpers_visible(False)
+    set_overview_helpers_visible(True)
     render_still(cameras["top"], OUTPUTS["top_view"])
     records.append({"path": str(OUTPUTS["top_view"].relative_to(REPO_ROOT)), "status": "ready"})
     set_camera_map_helpers_visible(True)
+    set_overview_helpers_visible(True)
     render_still(cameras["top"], OUTPUTS["camera_map"])
     records.append({"path": str(OUTPUTS["camera_map"].relative_to(REPO_ROOT)), "status": "ready"})
 
     set_camera_map_helpers_visible(False)
+    set_overview_helpers_visible(False)
     for ref in ("r001", "r002", "r003", "r004"):
         render_still(cameras[ref], OUTPUTS["shot_guides"][ref])
         records.append({"path": str(OUTPUTS["shot_guides"][ref].relative_to(REPO_ROOT)), "status": "ready"})
@@ -403,6 +471,7 @@ def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
         render_still(cameras[ref], OUTPUTS["lineart"][ref], freestyle=True)
         records.append({"path": str(OUTPUTS["lineart"][ref].relative_to(REPO_ROOT)), "status": "ready"})
     set_camera_map_helpers_visible(True)
+    set_overview_helpers_visible(True)
     return records
 
 
