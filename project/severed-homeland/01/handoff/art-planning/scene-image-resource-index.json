@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "scene_master_ready_keyframes_blocked_model_missing",
+  "status": "scene_master_ready_r003_r004_candidates_pending_user_qc_r001_r002_blocked_model_missing",
   "resources": {
     "scene_control_package": {
       "scene_bible": "01/control/scene-packages/SC001/scene-bible.md",
@@ -88,7 +88,7 @@
       "city_backplate_policy": "low_detail_backplate_only; not a second wall, second gate, or full city set"
     },
     "expected_shot_assets": {
-      "status": "blocked_comfyui_model_missing",
+      "status": "partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002",
       "SC001-SH001": {
         "shot_scene_image": "01/assets/director-room/shots/SC001-SH001/shot-scene-image.png",
         "director_reference": "01/assets/director-room/shots/SC001-SH001/director-reference.png",
@@ -109,7 +109,10 @@
         "candidates": [
           {
             "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-            "status": "not_generated_model_missing"
+            "status": "generated_candidate_pending_user_visual_qc",
+            "dimensions": "1672x940",
+            "generator": "Codex built-in image generation",
+            "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
           }
         ]
       },
@@ -119,7 +122,10 @@
         "candidates": [
           {
             "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-            "status": "not_generated_model_missing"
+            "status": "generated_candidate_pending_user_visual_qc",
+            "dimensions": "1672x941",
+            "generator": "Codex built-in image generation",
+            "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
           }
         ]
       }
@@ -132,6 +138,15 @@
         "usable checkpoint in ComfyUI models/checkpoints",
         "ControlNet depth/lineart model if depth and lineart controls must be connected"
       ]
+    },
+    "codex_imagegen_execution": {
+      "status": "partial_success_r003_r004_generated",
+      "outputs": [
+        "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+        "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png"
+      ],
+      "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
+      "promotion_policy": "Do not overwrite canonical reference frames until user/director visual QC approves."
     }
   }
 }

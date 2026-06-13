@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 only; reference frames r001e01.png, r002e01.png, r003e01.png, r004e01.png",
-  "status": "blocked_comfyui_model_missing",
+  "status": "partial_candidates_ready_r003_r004_comfyui_model_missing_for_r001_r002",
   "steps": [
     {
       "order": 1,
@@ -179,13 +179,29 @@
     {
       "order": 8,
       "name": "comfyui_or_image_generation_keyframes",
-      "status": "blocked_comfyui_model_missing",
-      "blocked_by": [
+      "status": "partial_ready_r003_r004_comfyui_model_missing_for_r001_r002",
+      "remaining_blocked_by": [
         "ComfyUI checkpoint list is empty",
         "ComfyUI ControlNet model list is empty",
         "local stable-diffusion-webui SD2.1 files are broken symlinks"
       ],
       "attempted_command": "python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
+      "codex_imagegen_execution": {
+        "status": "generated_r003_r004_candidates_pending_user_visual_qc",
+        "outputs": [
+          {
+            "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+            "status": "generated_candidate_pending_user_visual_qc",
+            "dimensions": "1672x940"
+          },
+          {
+            "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+            "status": "generated_candidate_pending_user_visual_qc",
+            "dimensions": "1672x941"
+          }
+        ],
+        "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
+      },
       "outputs": [
         {
           "path": "01/handoff/art-planning/shot-image-task-list.json",
@@ -205,19 +221,19 @@
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-          "status": "not_generated"
+          "status": "generated_candidate_pending_user_visual_qc"
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-          "status": "not_generated"
+          "status": "generated_candidate_pending_user_visual_qc"
         }
       ]
     },
     {
       "order": 9,
       "name": "krita_gimp_fix_masks_faces_props",
-      "status": "not_invoked",
-      "reason": "No generated keyframe candidates or masks exist yet; GIMP and Krita are available for later fix pass."
+      "status": "waiting_user_visual_qc",
+      "reason": "R003/R004 candidates now exist. Krita/GIMP should only be invoked after user/director QC identifies masks, faces, props, flags, or wall-edge fixes."
     }
   ],
   "source_reference_frame_status": {
