@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scope": "SC001 r001-r004",
-  "status": "blocked_comfyui_model_missing",
+  "status": "scene_master_ready_keyframes_blocked_model_missing",
   "user_feedback_items": [
     {
       "id": "UF-SC001-001",
@@ -65,6 +65,26 @@
         "01/control/scene-packages/SC001/camera-map.png",
         "01/control/scene-packages/SC001/build_sc001_blockout.py",
         "01/control/scene-packages/SC001/space-audit.md"
+      ]
+    },
+    {
+      "id": "UF-SC001-006B",
+      "request": "Upgrade SC001 into a scene master with shared materials and texture/detail layers so every camera uses the same art language",
+      "status": "done",
+      "outputs": [
+        "01/control/scene-packages/SC001/build_sc001_blockout.py",
+        "01/control/scene-packages/SC001/layout.yaml",
+        "01/assets/director-room/scenes/SC001/material-lock.json",
+        "01/assets/director-room/scenes/SC001/master-reference-front.png",
+        "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+        "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+        "01/assets/director-room/scenes/SC001/blocking-overview.png",
+        "01/control/scene-packages/SC001/blockout.blend",
+        "01/control/scene-packages/SC001/blockout-export-manifest.json"
+      ],
+      "notes": [
+        "City behind the wall is locked as a low-detail distant backplate, not a full city set.",
+        "Master images and r001-r004 control exports are rendered from the same Blender scene and material lock."
       ]
     },
     {

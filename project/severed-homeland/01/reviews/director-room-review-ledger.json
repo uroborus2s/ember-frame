@@ -36,44 +36,63 @@
     {
       "artifact": "01/control/scene-packages/SC001/build_sc001_blockout.py",
       "agent": "studio-tool-execution-agent",
-      "score": 92,
+      "score": 94,
       "pass_line": 85,
       "status": "passed_executed",
-      "rework_count": 3,
+      "rework_count": 4,
       "checks": [
         "脚本可作为 Blender Python 后台入口",
         "内嵌同一套 layout 坐标",
         "包含四个摄像机和导出路径",
-        "已成功生成同一个 blockout.blend 与全部控制图"
+        "包含三个材质母版摄像机和统一材质/程序化贴图层",
+        "已成功生成同一个 blockout.blend、全部控制图和场景母版图"
       ]
     },
     {
       "artifact": "01/control/scene-packages/SC001/blockout-export-manifest.json",
       "agent": "studio-tool-execution-agent",
-      "score": 94,
+      "score": 95,
       "pass_line": 85,
       "status": "passed",
-      "rework_count": 3,
+      "rework_count": 4,
       "checks": [
         "生成 blockout.blend",
         "生成 top-view.png",
         "生成 camera-map.png",
         "生成四张 shot guide、四张 depth 和四张 lineart 控制图",
+        "生成 material-lock.json、正反场景母版、关键道具关系图和调度母版图",
         "所有导出图来自同一个 Blender 场景"
       ]
     },
     {
       "artifact": "01/control/scene-packages/SC001/space-audit.md",
       "agent": "main-coordinator",
-      "score": 90,
+      "score": 92,
       "pass_line": 85,
       "status": "passed",
-      "rework_count": 1,
+      "rework_count": 2,
       "checks": [
         "坐标级一墙一门通过",
         "R001/R002 同轴推进通过",
         "R003/R004 同门楼同骨钟坐标通过",
-        "顶视图、机位图、导演视角图、深度图和线稿图均完成视觉证据审核"
+        "顶视图、机位图、导演视角图、深度图和线稿图均完成视觉证据审核",
+        "材质母版正反图、关键道具关系图和城市背板边界审核通过"
+      ]
+    },
+    {
+      "artifact": "01/assets/director-room/scenes/SC001/material-lock.json",
+      "agent": "scene-image-resource-agent",
+      "score": 91,
+      "pass_line": 90,
+      "status": "passed_scene_master_ready",
+      "rework_count": 2,
+      "checks": [
+        "material-lock.json 固定共享材质 ID",
+        "master-reference-front.png 锁定外墙、城门、旗帜和撞门雪雾",
+        "master-reference-reverse.png 锁定城内侧门楼背面和墙顶材质",
+        "key-prop-placement.png 锁定骨钟、钟架、断矛、年轻军户与薛临墙关系",
+        "blocking-overview.png 保留人工可读调度标注",
+        "城市背板为低细节远景，不构成第二空间"
       ]
     },
     {
@@ -128,13 +147,14 @@
     {
       "artifact": "01/reports/director-room-final-report.md",
       "agent": "main-coordinator",
-      "score": 90,
+      "score": 92,
       "pass_line": 85,
       "status": "passed_as_partial_final_report",
-      "rework_count": 1,
+      "rework_count": 2,
       "checks": [
         "说明项目根、集 ID 和输入",
         "列出已创建 artifact 和实际 Blender 输出",
+        "说明统一材质/贴图母版和城市背板边界",
         "说明 ComfyUI 模型阻塞和未生成项",
         "记录后续修复路径"
       ]

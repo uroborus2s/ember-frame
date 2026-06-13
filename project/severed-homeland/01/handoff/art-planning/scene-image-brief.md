@@ -17,13 +17,25 @@
 - `01/control/scene-packages/SC001/layout.yaml`
 - `01/control/scene-packages/SC001/blockout-plan.md`
 - `01/control/scene-packages/SC001/build_sc001_blockout.py`
+- `01/assets/director-room/scenes/SC001/material-lock.json`
 
 R001/R002 必须保持同一墙外攻城方向；R003/R004 必须使用同一门楼、同一骨钟、同一墙顶/女墙关系。若任何生图候选破坏空间关系，应先返修 `layout.yaml` 和 Blender 低模，而不是只改提示词。
 
+## 场景母版
+
+SC001 已从同一个 Blender 场景导出统一材质/贴图母版：
+
+- `01/assets/director-room/scenes/SC001/master-reference-front.png`
+- `01/assets/director-room/scenes/SC001/master-reference-reverse.png`
+- `01/assets/director-room/scenes/SC001/key-prop-placement.png`
+- `01/assets/director-room/scenes/SC001/blocking-overview.png`
+
+这些图和 R001-R004 的 `shot-guides`、`depth`、`lineart` 使用同一套材质锁。城墙后方城市只作为低细节远景背板使用，不是完整城市 set，也不得改变一墙一门的空间结构。
+
 ## 当前工具状态
 
-- Blender：不可用，本轮未能导出 `.blend`、顶视图、机位图、深度图和线稿图。
-- ComfyUI：本地服务和节点配置不可用，关键帧生成任务为 `needs_config`。
+- Blender：可用，已生成 `.blend`、顶视图、机位图、深度图、线稿图和统一材质/贴图场景母版。
+- ComfyUI：Web/API 可达，但 checkpoint 与 ControlNet 列表为空，关键帧生成任务为 `blocked_comfyui_model_missing`。
 - Krita/GIMP：已安装，可用于后续 mask、脸、道具、局部修图，但本轮没有生成候选图，因此未调用。
 
 ## 图片生成要求

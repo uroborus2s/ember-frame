@@ -23,10 +23,18 @@ from mathutils import Vector
 
 SCENE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCENE_DIR.parents[5]
+EPISODE_DIR = SCENE_DIR.parents[2]
+SCENE_ASSET_DIR = EPISODE_DIR / "assets" / "director-room" / "scenes" / "SC001"
 OUTPUTS = {
     "blend": SCENE_DIR / "blockout.blend",
     "top_view": SCENE_DIR / "top-view.png",
     "camera_map": SCENE_DIR / "camera-map.png",
+    "scene_assets": {
+        "master_reference_front": SCENE_ASSET_DIR / "master-reference-front.png",
+        "master_reference_reverse": SCENE_ASSET_DIR / "master-reference-reverse.png",
+        "key_prop_placement": SCENE_ASSET_DIR / "key-prop-placement.png",
+        "blocking_overview": SCENE_ASSET_DIR / "blocking-overview.png",
+    },
     "shot_guides": {
         "r001": SCENE_DIR / "shot-guides" / "r001_camera.png",
         "r002": SCENE_DIR / "shot-guides" / "r002_camera.png",
@@ -45,6 +53,7 @@ OUTPUTS = {
         "r003": SCENE_DIR / "lineart" / "r003_lineart.png",
         "r004": SCENE_DIR / "lineart" / "r004_lineart.png",
     },
+    "material_lock": SCENE_ASSET_DIR / "material-lock.json",
     "manifest": SCENE_DIR / "blockout-export-manifest.json",
 }
 
@@ -75,19 +84,51 @@ CAMERAS = {
     },
 }
 
+MASTER_CAMERAS = {
+    "master_front": {
+        "name": "CAM_MASTER_FRONT_TEXTURED_EXTERIOR",
+        "position": (0.0, -58.0, 7.2),
+        "target": (0.0, -1.8, 7.0),
+        "focal_length": 38,
+    },
+    "master_reverse": {
+        "name": "CAM_MASTER_REVERSE_CITYSIDE",
+        "position": (20.0, 18.5, 13.5),
+        "target": (0.0, 5.3, 12.3),
+        "focal_length": 34,
+    },
+    "key_prop": {
+        "name": "CAM_KEY_PROP_BELL_GATEHOUSE",
+        "position": (6.8, 1.0, 14.4),
+        "target": (-3.9, 5.8, 12.9),
+        "focal_length": 34,
+    },
+}
+
 MATERIALS = {
     "blackstone": (0.24, 0.29, 0.34, 1.0),
     "dark_wall": (0.16, 0.18, 0.21, 1.0),
+    "stone_joint": (0.055, 0.065, 0.075, 1.0),
+    "stone_chip": (0.08, 0.10, 0.12, 1.0),
     "snow": (0.80, 0.88, 0.92, 1.0),
+    "snow_edge": (0.92, 0.97, 1.0, 1.0),
+    "impact_snow": (0.72, 0.86, 0.94, 1.0),
     "old_wood": (0.42, 0.25, 0.12, 1.0),
+    "wood_dark": (0.20, 0.12, 0.07, 1.0),
+    "wood_light": (0.54, 0.35, 0.18, 1.0),
     "old_iron": (0.38, 0.39, 0.39, 1.0),
+    "iron_dark": (0.12, 0.13, 0.13, 1.0),
     "bone": (0.88, 0.78, 0.55, 1.0),
+    "bone_shadow": (0.42, 0.34, 0.20, 1.0),
     "flag": (0.12, 0.12, 0.14, 1.0),
     "suming_wing": (0.86, 0.84, 0.77, 1.0),
     "beast": (0.42, 0.22, 0.10, 1.0),
     "human": (0.52, 0.58, 0.62, 1.0),
     "xue": (0.72, 0.75, 0.68, 1.0),
     "spear": (0.28, 0.28, 0.28, 1.0),
+    "city_shadow": (0.10, 0.13, 0.16, 1.0),
+    "window_warm": (0.95, 0.55, 0.17, 1.0),
+    "smoke": (0.32, 0.36, 0.38, 1.0),
     "camera_marker": (1.0, 0.08, 0.02, 1.0),
     "attack_arrow": (1.0, 0.02, 0.00, 1.0),
     "guide_blue": (0.02, 0.20, 1.0, 1.0),
@@ -99,6 +140,44 @@ MATERIALS = {
     "overview_soldier": (0.08, 0.70, 0.88, 1.0),
     "overview_flag": (0.02, 0.02, 0.02, 1.0),
     "depth_white": (1.0, 1.0, 1.0, 1.0),
+}
+
+TEXTURE_NOISE = {
+    "blackstone": {"scale": 28, "detail": 9, "dark": 0.72, "light": 1.24},
+    "dark_wall": {"scale": 22, "detail": 7, "dark": 0.65, "light": 1.12},
+    "old_wood": {"scale": 18, "detail": 8, "dark": 0.70, "light": 1.35},
+    "bone": {"scale": 16, "detail": 5, "dark": 0.75, "light": 1.18},
+    "snow": {"scale": 34, "detail": 3, "dark": 0.92, "light": 1.08},
+    "city_shadow": {"scale": 14, "detail": 4, "dark": 0.80, "light": 1.15},
+}
+
+MATERIAL_LOCK = {
+    "version": "sc001-material-lock-v1",
+    "project": "severed-homeland",
+    "episode_id": "01",
+    "scene_id": "SC001",
+    "principle": "All master references, shot guides, depth maps, and lineart exports are rendered from one Blender scene using the same locked material IDs and procedural texture/detail geometry.",
+    "city_backplate_policy": "A low-detail city silhouette exists behind the wall as a locked backplate for reverse/interior compositions. It is not a second wall, second gate, or new story location.",
+    "materials": {
+        "blackstone": "main wall, parapets, gatehouse stone, procedural stone noise",
+        "stone_joint": "dark mortar seams laid onto the wall and gatehouse back wall",
+        "stone_chip": "chipped blackstone patches and cracks",
+        "snow_edge": "locked snow caps and wind streaks on ledges",
+        "old_wood": "gate, gatehouse floor, roof, posts, and bell frame",
+        "wood_dark": "plank seams, grain cuts, and weathering grooves",
+        "old_iron": "gate straps, rivets, chains, spear metal, flag poles",
+        "bone": "bone bell body",
+        "bone_shadow": "bone bell bands and scratches",
+        "flag": "P017 black banner base",
+        "suming_wing": "P017 white wing marks",
+        "city_shadow": "distant city silhouette backplate",
+        "window_warm": "small locked city window accents",
+    },
+    "shot_usage_lock": {
+        "r001_r002": "front wall, central old wood gate, impact beam, flags, stone/snow/gate material layers",
+        "r003": "same gatehouse floor, dropped spear, young soldier, bone bell, bell frame",
+        "r004": "same gatehouse/parapet, Xue position, bone bell background, city backplate only if angle reveals it",
+    },
 }
 
 
@@ -130,6 +209,15 @@ def reset_scene() -> None:
     scene.world.color = (0.42, 0.46, 0.50)
 
 
+def scaled_color(color, factor: float) -> tuple[float, float, float, float]:
+    return (
+        max(0.0, min(1.0, color[0] * factor)),
+        max(0.0, min(1.0, color[1] * factor)),
+        max(0.0, min(1.0, color[2] * factor)),
+        color[3],
+    )
+
+
 def mat(name: str):
     material = bpy.data.materials.new(name)
     color = MATERIALS[name]
@@ -138,7 +226,20 @@ def mat(name: str):
     nodes = material.node_tree.nodes
     nodes.clear()
     emission = nodes.new(type="ShaderNodeEmission")
-    emission.inputs["Color"].default_value = color
+    if name in TEXTURE_NOISE:
+        noise_config = TEXTURE_NOISE[name]
+        noise = nodes.new(type="ShaderNodeTexNoise")
+        noise.inputs["Scale"].default_value = noise_config["scale"]
+        noise.inputs["Detail"].default_value = noise_config["detail"]
+        ramp = nodes.new(type="ShaderNodeValToRGB")
+        ramp.color_ramp.elements[0].position = 0.22
+        ramp.color_ramp.elements[0].color = scaled_color(color, noise_config["dark"])
+        ramp.color_ramp.elements[1].position = 1.0
+        ramp.color_ramp.elements[1].color = scaled_color(color, noise_config["light"])
+        material.node_tree.links.new(noise.outputs["Fac"], ramp.inputs["Fac"])
+        material.node_tree.links.new(ramp.outputs["Color"], emission.inputs["Color"])
+    else:
+        emission.inputs["Color"].default_value = color
     emission.inputs["Strength"].default_value = 0.9
     output = nodes.new(type="ShaderNodeOutputMaterial")
     material.node_tree.links.new(emission.outputs["Emission"], output.inputs["Surface"])
@@ -169,6 +270,28 @@ def cylinder(name: str, center, radius: float, depth: float, material, vertices:
 
 def cone(name: str, center, radius1: float, radius2: float, depth: float, material, vertices: int = 32) -> bpy.types.Object:
     bpy.ops.mesh.primitive_cone_add(vertices=vertices, radius1=radius1, radius2=radius2, depth=depth, location=center)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(material)
+    return obj
+
+
+def sphere(name: str, center, radius: float, material, segments: int = 16) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=segments, ring_count=8, radius=radius, location=center)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(material)
+    return obj
+
+
+def torus(name: str, center, major_radius: float, minor_radius: float, material) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_torus_add(
+        major_segments=40,
+        minor_segments=8,
+        major_radius=major_radius,
+        minor_radius=minor_radius,
+        location=center,
+    )
     obj = bpy.context.object
     obj.name = name
     obj.data.materials.append(material)
@@ -248,12 +371,169 @@ def add_camera(ref: str, spec: dict, materials: dict) -> bpy.types.Object:
     label_positions = {
         "r001": (-9.0, -67.0, 19.0),
         "r002": (8.5, -34.5, 19.0),
-        "r003": (-12.0, 13.0, 19.0),
-        "r004": (12.0, 13.0, 19.0),
+        "r003": (-18.0, 10.8, 19.0),
+        "r004": (18.0, 10.8, 19.0),
     }
-    label = add_label(f"{ref}_label", ref.upper(), label_positions[ref], 2.6, materials["camera_marker"])
+    label_sizes = {
+        "r001": 2.6,
+        "r002": 2.6,
+        "r003": 2.2,
+        "r004": 2.2,
+    }
+    label = add_label(f"{ref}_label", ref.upper(), label_positions[ref], label_sizes[ref], materials["camera_marker"])
     mark_helpers((marker, ray, label), "camera_map_helper")
     return camera
+
+
+def add_plain_camera(spec: dict) -> bpy.types.Object:
+    bpy.ops.object.camera_add(location=spec["position"])
+    camera = bpy.context.object
+    camera.name = spec["name"]
+    camera.data.lens = spec["focal_length"]
+    camera.data.sensor_fit = "HORIZONTAL"
+    camera.data.dof.use_dof = False
+    look_at(camera, spec["target"])
+    return camera
+
+
+def add_wall_material_detail(materials: dict) -> None:
+    front_y = -2.58
+    rear_y = 2.58
+    for idx, z in enumerate((1.15, 2.35, 3.55, 4.75, 5.95, 7.15, 8.35, 9.55)):
+        cube(f"front_wall_horizontal_mortar_{idx}", (0, front_y, z), (71.0, 0.07, 0.055), materials["stone_joint"])
+        cube(f"rear_wall_horizontal_mortar_{idx}", (0, rear_y, z), (71.0, 0.07, 0.055), materials["stone_joint"])
+
+    for row_idx, z in enumerate((0.65, 1.85, 3.05, 4.25, 5.45, 6.65, 7.85, 9.05)):
+        offset = 0 if row_idx % 2 == 0 else 3
+        for col_idx, x in enumerate(range(-33 + offset, 34, 6)):
+            if -5.0 < x < 5.0 and z < 8.4:
+                continue
+            cube(
+                f"front_wall_vertical_mortar_{row_idx}_{col_idx}",
+                (x, front_y - 0.015, z),
+                (0.055, 0.09, 0.95),
+                materials["stone_joint"],
+            )
+
+    chip_specs = [
+        (-31, -2.62, 6.7, 1.2, 0.10, 0.42),
+        (-24, -2.62, 2.2, 0.9, 0.10, 0.36),
+        (-17, -2.62, 8.4, 1.5, 0.10, 0.50),
+        (-10, -2.62, 4.6, 0.8, 0.10, 0.30),
+        (11, -2.62, 5.9, 1.1, 0.10, 0.44),
+        (19, -2.62, 3.1, 1.4, 0.10, 0.38),
+        (27, -2.62, 7.3, 1.0, 0.10, 0.42),
+        (33, -2.62, 1.8, 0.7, 0.10, 0.26),
+    ]
+    for idx, (x, y, z, sx, sy, sz) in enumerate(chip_specs):
+        cube(f"front_wall_blackstone_chip_{idx}", (x, y, z), (sx, sy, sz), materials["stone_chip"])
+
+    for idx, x in enumerate((-33, -27, -21, -15, -8, 8, 15, 22, 29, 34)):
+        cube(
+            f"front_wall_snow_wind_streak_{idx}",
+            (x, -2.66, 10.05 - (idx % 3) * 0.45),
+            (0.38, 0.09, 1.05 + (idx % 2) * 0.5),
+            materials["snow_edge"],
+        )
+    cube("front_parapet_snow_cap_locked", (0, -2.88, 12.05), (72.0, 0.7, 0.18), materials["snow_edge"])
+    cube("rear_parapet_snow_cap_locked", (0, 2.88, 12.05), (72.0, 0.7, 0.18), materials["snow_edge"])
+
+
+def add_gate_material_detail(materials: dict) -> None:
+    for idx, x in enumerate((-3.1, -1.55, 0.0, 1.55, 3.1)):
+        cube(f"gate_vertical_plank_seam_{idx}", (x, -3.34, 3.6), (0.06, 0.11, 6.8), materials["wood_dark"])
+    for idx, z in enumerate((1.15, 2.05, 4.95, 6.05)):
+        cube(f"gate_horizontal_plank_cut_{idx}", (0, -3.35, z), (7.4, 0.10, 0.07), materials["wood_dark"])
+    for idx, z in enumerate((2.15, 5.15)):
+        cube(f"gate_iron_band_textured_{idx}", (0, -3.42, z), (8.3, 0.14, 0.22), materials["iron_dark"])
+        for rivet_idx, x in enumerate((-3.45, -2.25, -1.05, 1.05, 2.25, 3.45)):
+            cube(
+                f"gate_iron_rivet_{idx}_{rivet_idx}",
+                (x, -3.52, z),
+                (0.18, 0.09, 0.18),
+                materials["old_iron"],
+            )
+    for idx, x in enumerate((-2.7, -0.8, 1.15, 2.95)):
+        line(
+            f"gate_wood_grain_crack_{idx}",
+            (x, -3.56, 0.7 + idx * 0.55),
+            (x + 0.55, -3.56, 2.2 + idx * 0.74),
+            materials["wood_light"],
+            0.025,
+        )
+
+    for idx, (x, z, radius) in enumerate(((-1.8, 2.9, 0.7), (1.7, 3.2, 0.55), (0.0, 4.0, 0.85))):
+        sphere(f"gate_impact_snow_puff_{idx}", (x, -4.1 - idx * 0.18, z), radius, materials["impact_snow"], segments=12)
+
+
+def add_gatehouse_material_detail(materials: dict) -> None:
+    for idx, x in enumerate((-5.25, -3.5, -1.75, 0.0, 1.75, 3.5, 5.25)):
+        cube(f"gatehouse_floor_plank_seam_{idx}", (x, 5.25, 10.38), (0.05, 7.25, 0.06), materials["wood_dark"])
+    for idx, y in enumerate((2.6, 3.7, 4.8, 5.9, 7.0, 8.1)):
+        cube(f"gatehouse_roof_plank_shadow_{idx}", (0, y, 16.52), (14.4, 0.06, 0.08), materials["wood_dark"])
+    for idx, z in enumerate((11.7, 13.0, 14.3)):
+        cube(f"gatehouse_back_wall_mortar_{idx}", (0, 8.68, z), (13.2, 0.06, 0.05), materials["stone_joint"])
+    for idx, x in enumerate((-5.4, -2.7, 0.0, 2.7, 5.4)):
+        cube(f"gatehouse_back_wall_vertical_mortar_{idx}", (x, 8.65, 13.2), (0.05, 0.08, 5.0), materials["stone_joint"])
+
+    cube("gatehouse_roof_snow_cap", (0, 5.25, 17.08), (15.2, 8.35, 0.18), materials["snow_edge"])
+    cube("gatehouse_front_beam_snow_lip", (0, 1.78, 15.72), (13.8, 0.24, 0.12), materials["snow_edge"])
+    cube("gatehouse_back_beam_snow_lip", (0, 8.82, 15.72), (13.8, 0.24, 0.12), materials["snow_edge"])
+
+
+def add_bone_bell_material_detail(materials: dict) -> None:
+    for idx, (z, radius) in enumerate(((12.72, 0.72), (13.14, 0.62), (13.55, 0.48))):
+        torus(f"bone_bell_ring_band_{idx}", (-4.8, 5.7, z), radius, 0.035, materials["bone_shadow"])
+    scratch_specs = [
+        ((-5.22, 5.13, 13.68), (-5.36, 5.07, 12.75)),
+        ((-4.38, 5.18, 13.58), (-4.25, 5.10, 12.92)),
+        ((-5.05, 6.32, 13.42), (-5.22, 6.40, 12.72)),
+        ((-4.52, 6.30, 13.55), (-4.42, 6.38, 12.88)),
+    ]
+    for idx, (start, end) in enumerate(scratch_specs):
+        line(f"bone_bell_scratch_{idx}", start, end, materials["bone_shadow"], 0.025)
+
+
+def add_flag_material_detail(materials: dict) -> None:
+    flag_specs = [
+        ("left", -17.25, -3.18),
+        ("right", 18.75, -3.18),
+    ]
+    for side, x, y in flag_specs:
+        line(f"{side}_flag_wing_diagonal_top", (x - 0.55, y, 13.12), (x + 0.55, y, 12.72), materials["suming_wing"], 0.035)
+        line(f"{side}_flag_wing_diagonal_low", (x - 0.45, y, 12.68), (x + 0.38, y, 12.48), materials["suming_wing"], 0.028)
+        cube(f"{side}_flag_torn_lower_edge", (x, y, 12.24), (1.35, 0.05, 0.08), materials["stone_joint"])
+
+
+def add_city_backplate(materials: dict) -> None:
+    cube("city_backplate_low_wall", (0, 20.2, 2.3), (62.0, 0.75, 4.6), materials["city_shadow"])
+    tower_specs = [
+        (-30, 20.1, 4.9, 4.0, 0.8, 9.8),
+        (-21, 20.1, 5.9, 3.3, 0.8, 11.8),
+        (-12, 20.1, 4.4, 4.7, 0.8, 8.8),
+        (-3, 20.1, 6.4, 3.6, 0.8, 12.8),
+        (8, 20.1, 5.2, 4.2, 0.8, 10.4),
+        (18, 20.1, 6.0, 3.5, 0.8, 12.0),
+        (29, 20.1, 4.7, 4.8, 0.8, 9.4),
+    ]
+    for idx, (x, y, z, sx, sy, sz) in enumerate(tower_specs):
+        cube(f"city_silhouette_tower_{idx}", (x, y, z), (sx, sy, sz), materials["city_shadow"])
+        for win_idx, wz in enumerate((z + sz * 0.08, z + sz * 0.22, z + sz * 0.36)):
+            if win_idx == 1 and idx % 2:
+                continue
+            cube(f"city_window_{idx}_{win_idx}", (x + sx * 0.18, y - 0.43, wz), (0.28, 0.06, 0.22), materials["window_warm"])
+    for idx, x in enumerate((-25, -7, 12, 25)):
+        sphere(f"city_smoke_column_base_{idx}", (x, 19.5, 10.0 + idx * 0.45), 0.72, materials["smoke"], segments=12)
+        sphere(f"city_smoke_column_top_{idx}", (x + 0.8, 19.6, 11.4 + idx * 0.45), 0.95, materials["smoke"], segments=12)
+
+
+def add_master_material_detail_layer(materials: dict) -> None:
+    add_wall_material_detail(materials)
+    add_gate_material_detail(materials)
+    add_gatehouse_material_detail(materials)
+    add_bone_bell_material_detail(materials)
+    add_flag_material_detail(materials)
+    add_city_backplate(materials)
 
 
 def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
@@ -314,6 +594,8 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
     cube("xue_linqiang_body", (2.2, 0.0, 12.1), (0.9, 0.75, 2.0), materials["xue"])
     line("xue_hand_to_parapet", (2.0, 0.1, 12.15), (1.85, -2.05, 10.95), materials["xue"], 0.06)
 
+    add_master_material_detail_layer(materials)
+
     # Shot identity labels in top view.
     overview_z = 18.35
     overview_items = [
@@ -367,6 +649,8 @@ def setup_cameras(materials: dict) -> dict[str, bpy.types.Object]:
     cameras = {}
     for ref, spec in CAMERAS.items():
         cameras[ref] = add_camera(ref, spec, materials)
+    for ref, spec in MASTER_CAMERAS.items():
+        cameras[ref] = add_plain_camera(spec)
     bpy.ops.object.camera_add(location=(0, -28, 88), rotation=(0, 0, 0))
     top = bpy.context.object
     top.name = "CAM_TOP_VIEW"
@@ -395,6 +679,14 @@ def set_overview_helpers_visible(visible: bool) -> None:
     for obj in bpy.context.scene.objects:
         if obj.get("overview_helper"):
             obj.hide_render = not visible
+
+
+def write_material_lock() -> dict:
+    OUTPUTS["material_lock"].write_text(
+        json.dumps(MATERIAL_LOCK, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return {"path": str(OUTPUTS["material_lock"].relative_to(REPO_ROOT)), "status": "ready"}
 
 
 def render_depth(camera: bpy.types.Object, filepath: Path) -> None:
@@ -463,6 +755,21 @@ def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
 
     set_camera_map_helpers_visible(False)
     set_overview_helpers_visible(False)
+    scene_asset_pairs = [
+        ("master_front", "master_reference_front"),
+        ("master_reverse", "master_reference_reverse"),
+        ("key_prop", "key_prop_placement"),
+    ]
+    for camera_key, output_key in scene_asset_pairs:
+        render_still(cameras[camera_key], OUTPUTS["scene_assets"][output_key])
+        records.append({"path": str(OUTPUTS["scene_assets"][output_key].relative_to(REPO_ROOT)), "status": "ready"})
+    set_camera_map_helpers_visible(True)
+    set_overview_helpers_visible(True)
+    render_still(cameras["top"], OUTPUTS["scene_assets"]["blocking_overview"])
+    records.append({"path": str(OUTPUTS["scene_assets"]["blocking_overview"].relative_to(REPO_ROOT)), "status": "ready"})
+
+    set_camera_map_helpers_visible(False)
+    set_overview_helpers_visible(False)
     for ref in ("r001", "r002", "r003", "r004"):
         render_still(cameras[ref], OUTPUTS["shot_guides"][ref])
         records.append({"path": str(OUTPUTS["shot_guides"][ref].relative_to(REPO_ROOT)), "status": "ready"})
@@ -477,13 +784,15 @@ def export_all(cameras: dict[str, bpy.types.Object]) -> list[dict]:
 
 def write_manifest(status: str, records: list[dict], error: str | None = None) -> None:
     payload = {
-        "version": "sc001-blockout-export-manifest-v1",
+        "version": "sc001-blockout-export-manifest-v2",
         "project": "severed-homeland",
         "episode_id": "01",
         "scene_id": "SC001",
         "tool": "Blender Python",
         "script": str((SCENE_DIR / "build_sc001_blockout.py").relative_to(REPO_ROOT)),
         "layout": str((SCENE_DIR / "layout.yaml").relative_to(REPO_ROOT)),
+        "material_lock": str(OUTPUTS["material_lock"].relative_to(REPO_ROOT)),
+        "scene_asset_dir": str(SCENE_ASSET_DIR.relative_to(REPO_ROOT)),
         "status": status,
         "error": error,
         "outputs": records,
@@ -501,6 +810,7 @@ def main() -> None:
         build_scene(materials)
         setup_lighting()
         cameras = setup_cameras(materials)
+        records.append(write_material_lock())
         bpy.ops.wm.save_as_mainfile(filepath=str(OUTPUTS["blend"]))
         records.append({"path": str(OUTPUTS["blend"].relative_to(REPO_ROOT)), "status": "ready"})
         records.extend(export_all(cameras))

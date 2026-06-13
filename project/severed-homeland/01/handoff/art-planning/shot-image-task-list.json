@@ -5,6 +5,13 @@
   "scene_id": "SC001",
   "status": "blocked_comfyui_model_missing",
   "write_policy": "Do not overwrite canonical 01/assets/reference-frames/r001e01.png through r004e01.png in generation runs. Write candidates under director-room shot candidate folders, then promote only after human/director QC.",
+  "shared_scene_master_inputs": [
+    "01/assets/director-room/scenes/SC001/material-lock.json",
+    "01/assets/director-room/scenes/SC001/master-reference-front.png",
+    "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+    "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+    "01/assets/director-room/scenes/SC001/blocking-overview.png"
+  ],
   "tasks": [
     {
       "task_id": "SC001_R001_KEYFRAME_CANDIDATE",

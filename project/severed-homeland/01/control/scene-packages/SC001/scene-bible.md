@@ -51,6 +51,16 @@
 - 负补光：黑石墙和门楼暗面必须保留，不得全画面灰黑或无亮部中心。
 - 细节：雪泥、旧木屑、碎冰、门闩震动、钟链、木架积雪、旧甲片、冻裂手指必须真实触感。
 
+## 统一材质/贴图母版锁
+
+SC001 已升级为同一个 Blender 场景内的统一材质/程序化贴图母版。`material-lock.json` 固定黑石墙、石缝、缺口、积雪边、旧木门、木纹、铁箍、铆钉、骨钟、旗帜和低细节城市背板的材质 ID；母版图、四个分镜机位图、深度图和线稿图都从这套材质场景导出。
+
+- 正面场景母版：`01/assets/director-room/scenes/SC001/master-reference-front.png`，用于锁定外墙、城门、旗位、撞门雪雾和兽族进攻轴线的美术语言。
+- 反向场景母版：`01/assets/director-room/scenes/SC001/master-reference-reverse.png`，用于锁定城内侧/门楼背面的黑石、木构和雪边关系。
+- 关键道具关系图：`01/assets/director-room/scenes/SC001/key-prop-placement.png`，用于锁定骨钟、钟架、年轻军户、断矛和薛临墙所在门楼层级。
+- 调度母版图：`01/assets/director-room/scenes/SC001/blocking-overview.png`，用于人工确认一墙一门、四个机位、人物站位和攻击方向。
+- 城墙后方城市只允许作为低细节远景背板存在，服务城内侧方向的美术连续性；不得画成可进入的完整城市街区，也不得引入第二道墙、第二个门或城内侧兽潮。
+
 ## 禁止变更项
 
 - 禁止第二道城墙、第二个城门、城内侧兽潮、双向攻城、越过墙脊看另一边、90 度转向、180 度调头。
@@ -78,3 +88,11 @@
 - `lineart/r002_lineart.png`
 - `lineart/r003_lineart.png`
 - `lineart/r004_lineart.png`
+
+同一场景还必须导出统一材质/贴图母版图：
+
+- `01/assets/director-room/scenes/SC001/material-lock.json`
+- `01/assets/director-room/scenes/SC001/master-reference-front.png`
+- `01/assets/director-room/scenes/SC001/master-reference-reverse.png`
+- `01/assets/director-room/scenes/SC001/key-prop-placement.png`
+- `01/assets/director-room/scenes/SC001/blocking-overview.png`

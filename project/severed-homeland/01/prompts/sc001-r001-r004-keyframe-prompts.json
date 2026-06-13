@@ -7,6 +7,7 @@
   "source": "01/handoff/art-planning/shot-image-task-list.json",
   "required_before_execution": [
     "Blender-generated camera/depth/lineart controls exist and are ready.",
+    "SC001 material-lock and textured scene master references exist and are ready.",
     "ComfyUI server is reachable at http://127.0.0.1:8188.",
     "Install or expose at least one usable checkpoint in ComfyUI models/checkpoints.",
     "Install ControlNet depth/lineart models if depth and lineart controls must be connected as ControlNet inputs.",

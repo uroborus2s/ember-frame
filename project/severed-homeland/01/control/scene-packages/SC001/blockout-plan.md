@@ -6,22 +6,33 @@
 
 ## 搭建顺序
 
-1. 按 `layout.yaml` 建立坐标系、墙体、城门、女墙、门楼主体、门楼木架、钟架、骨钟、旗帜、攻城梁/猛犸角、兽族剪影、守军枪线。
+1. 按 `layout.yaml` 建立坐标系、墙体、城门、女墙、门楼主体、门楼木架、钟架、骨钟、旗帜、攻城梁/猛犸角、兽族剪影、守军枪线和低细节城内远景背板。
 2. 放置年轻军户、脱手断矛、薛临墙和墙顶守军剪影。
-3. 建立四个摄像机：
+3. 建立统一材质/程序化贴图层：黑石噪声、石缝、缺口、积雪边、木纹、门板缝、铁箍、铆钉、骨钟划痕、P017 白翅旗纹和城市背板暗窗。
+4. 建立四个分镜摄像机：
    - `CAM_R001_EXTERIOR_WIDE`
    - `CAM_R002_EXTERIOR_CLOSER_IMPACT`
    - `CAM_R003_GATEHOUSE_AFTERSHOCK`
    - `CAM_R004_XUE_REAR_THREE_QUARTER`
-4. 同场景导出顶视图和机位图，用于证明相对位置。
-5. 同场景逐摄像机导出导演视角图、深度图、线稿图。
-6. 写入 `blockout-export-manifest.json`，记录每个输出的生成状态、工具、输入和阻塞原因。
+5. 建立三个场景母版摄像机：
+   - `CAM_MASTER_FRONT_TEXTURED_EXTERIOR`
+   - `CAM_MASTER_REVERSE_CITYSIDE`
+   - `CAM_KEY_PROP_BELL_GATEHOUSE`
+6. 同场景导出顶视图和机位图，用于证明相对位置。
+7. 同场景导出材质母版图、关键道具关系图和调度母版图。
+8. 同场景逐分镜摄像机导出导演视角图、深度图、线稿图。
+9. 写入 `blockout-export-manifest.json` 和 `material-lock.json`，记录每个输出的生成状态、工具、输入和材质锁。
 
 ## 必须导出的文件
 
 - `blockout.blend`
 - `top-view.png`
 - `camera-map.png`
+- `01/assets/director-room/scenes/SC001/material-lock.json`
+- `01/assets/director-room/scenes/SC001/master-reference-front.png`
+- `01/assets/director-room/scenes/SC001/master-reference-reverse.png`
+- `01/assets/director-room/scenes/SC001/key-prop-placement.png`
+- `01/assets/director-room/scenes/SC001/blocking-overview.png`
 - `shot-guides/r001_camera.png`
 - `shot-guides/r002_camera.png`
 - `shot-guides/r003_camera.png`
@@ -47,10 +58,10 @@
 
 ## 当前执行状态
 
-本机当前未发现可执行 Blender：
+Blender 已通过本机实际路径执行：
 
-- `command -v blender`：无输出。
-- `/Applications/Blender.app/Contents/MacOS/Blender`：不存在。
-- `bpy` Python 模块：不可用。
+```bash
+/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py
+```
 
-因此本轮已生成可复跑的 Blender Python 脚本 `build_sc001_blockout.py`，但实际 `.blend` 和 PNG 导出必须等待 Blender 安装或路径配置后执行。不得把未生成的控制图标记为 `ready`。
+当前已生成 `blockout.blend`、`top-view.png`、`camera-map.png`、四个分镜的 `shot-guides`、`depth`、`lineart`，以及统一材质/贴图母版：`material-lock.json`、`master-reference-front.png`、`master-reference-reverse.png`、`key-prop-placement.png`、`blocking-overview.png`。所有导出图均来自同一个 Blender 场景。ComfyUI 关键帧生成仍因 checkpoint/ControlNet 模型缺失而阻塞。

@@ -1,14 +1,20 @@
 {
-  "version": "sc001-blockout-export-manifest-v1",
+  "version": "sc001-blockout-export-manifest-v2",
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
   "tool": "Blender Python",
   "script": "project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
   "layout": "project/severed-homeland/01/control/scene-packages/SC001/layout.yaml",
+  "material_lock": "project/severed-homeland/01/assets/director-room/scenes/SC001/material-lock.json",
+  "scene_asset_dir": "project/severed-homeland/01/assets/director-room/scenes/SC001",
   "status": "ready",
   "error": null,
   "outputs": [
+    {
+      "path": "project/severed-homeland/01/assets/director-room/scenes/SC001/material-lock.json",
+      "status": "ready"
+    },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/blockout.blend",
       "status": "ready"
@@ -19,6 +25,22 @@
     },
     {
       "path": "project/severed-homeland/01/control/scene-packages/SC001/camera-map.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/assets/director-room/scenes/SC001/master-reference-front.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/assets/director-room/scenes/SC001/key-prop-placement.png",
+      "status": "ready"
+    },
+    {
+      "path": "project/severed-homeland/01/assets/director-room/scenes/SC001/blocking-overview.png",
       "status": "ready"
     },
     {

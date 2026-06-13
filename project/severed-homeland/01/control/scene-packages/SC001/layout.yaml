@@ -116,6 +116,24 @@ flags:
       pole_top: [18.0, -2.8, 14.4]
       banner_plane_center: [18.75, -3.05, 12.8]
   locked: true
+environment_backplates:
+  city_behind_wall:
+    id: locked_low_detail_city_backplate
+    purpose: distant_texture_anchor_only_not_new_location
+    y_band: [19.5, 20.6]
+    x_span: [-31.0, 31.0]
+    height_z: [0.0, 12.8]
+    material_ids:
+      - city_shadow
+      - window_warm
+      - smoke
+    visible_policy: may_appear_in_reverse_or_high_wall_angles_only
+    forbidden:
+      - second_wall
+      - second_gate
+      - playable_city_street
+      - attackers_inside_city
+    locked: true
 attack_direction:
   faction: northern_siege_beast_troops
   vector: [0.0, 1.0, 0.0]
@@ -211,10 +229,53 @@ shot_cameras:
 overview_outputs:
   top_view: 01/control/scene-packages/SC001/top-view.png
   camera_map: 01/control/scene-packages/SC001/camera-map.png
+scene_master_outputs:
+  material_lock: 01/assets/director-room/scenes/SC001/material-lock.json
+  master_reference_front: 01/assets/director-room/scenes/SC001/master-reference-front.png
+  master_reference_reverse: 01/assets/director-room/scenes/SC001/master-reference-reverse.png
+  key_prop_placement: 01/assets/director-room/scenes/SC001/key-prop-placement.png
+  blocking_overview: 01/assets/director-room/scenes/SC001/blocking-overview.png
+scene_master_cameras:
+  master_front:
+    camera_id: CAM_MASTER_FRONT_TEXTURED_EXTERIOR
+    position: [0.0, -58.0, 7.2]
+    target: [0.0, -1.8, 7.0]
+    focal_length_mm: 38
+    role: textured_front_scene_master
+  master_reverse:
+    camera_id: CAM_MASTER_REVERSE_CITYSIDE
+    position: [20.0, 18.5, 13.5]
+    target: [0.0, 5.3, 12.3]
+    focal_length_mm: 34
+    role: textured_cityside_reverse_scene_master
+  key_prop:
+    camera_id: CAM_KEY_PROP_BELL_GATEHOUSE
+    position: [6.8, 1.0, 14.4]
+    target: [-3.9, 5.8, 12.9]
+    focal_length_mm: 34
+    role: bell_gatehouse_prop_relationship_master
+material_texture_lock:
+  source: 01/assets/director-room/scenes/SC001/material-lock.json
+  rule: same_blender_scene_same_material_ids_for_master_assets_and_r001_r004_control_exports
+  locked_material_ids:
+    - blackstone
+    - stone_joint
+    - stone_chip
+    - snow_edge
+    - old_wood
+    - wood_dark
+    - old_iron
+    - bone
+    - bone_shadow
+    - flag
+    - suming_wing
+    - city_shadow
 locks:
   - one_wall_one_gate_centered_exterior_lock
   - gatehouse_bell_audio_only_for_r001_r002
   - same_bone_bell_visible_for_r003_r004
   - same_gatehouse_and_parapet_for_r003_r004
   - p017_suming_flag_lock
+  - same_material_texture_lock_for_scene_master_and_shot_guides
+  - low_detail_city_backplate_not_full_city_set
   - no_second_wall_no_second_gate_no_inside_beast_tide

@@ -3,42 +3,47 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "needs_config",
+  "status": "scene_master_ready_keyframes_blocked_model_missing",
   "shared_control_inputs": [
     "01/control/scene-packages/SC001/layout.yaml",
     "01/control/scene-packages/SC001/top-view.png",
-    "01/control/scene-packages/SC001/camera-map.png"
+    "01/control/scene-packages/SC001/camera-map.png",
+    "01/assets/director-room/scenes/SC001/material-lock.json",
+    "01/assets/director-room/scenes/SC001/master-reference-front.png",
+    "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+    "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+    "01/assets/director-room/scenes/SC001/blocking-overview.png"
   ],
-  "shared_positive_zh": "低魔东方史诗、超写实电影质感、真实黑石边墙、暴雪冷白与淡金裂云边缘光、旧铁、旧木、雪泥、干血暗红局部信息。锁喉关同一面黑石外墙、同一城门、同一门楼、同一口骨钟；兽族攻城方向只从墙外北侧压向城门。",
-  "shared_positive_en": "Grounded low-magic Eastern epic, hyper-real cinematic tactile realism, blackstone border wall, cold blizzard light with faint pale-gold storm-break rim, old iron, old timber, snow mud and restrained dried-blood red details. Same Suohou Gate blackstone outer wall, same gate, same gatehouse, same bone bell; beast siege pressure comes only from the exterior north side toward the gate.",
+  "shared_positive_zh": "低魔东方史诗、超写实电影质感、真实黑石边墙、暴雪冷白与淡金裂云边缘光、旧铁、旧木、雪泥、干血暗红局部信息。锁喉关同一面黑石外墙、同一城门、同一门楼、同一口骨钟；兽族攻城方向只从墙外北侧压向城门；使用 SC001 material-lock 的黑石、石缝、积雪边、旧木门、铁件、骨钟和 P017 旗帜材质；城墙后方城市只作低细节远景背板。",
+  "shared_positive_en": "Grounded low-magic Eastern epic, hyper-real cinematic tactile realism, blackstone border wall, cold blizzard light with faint pale-gold storm-break rim, old iron, old timber, snow mud and restrained dried-blood red details. Same Suohou Gate blackstone outer wall, same gate, same gatehouse, same bone bell; beast siege pressure comes only from the exterior north side toward the gate; use SC001 material-lock for blackstone, mortar seams, snow edges, old timber gate, ironwork, bone bell and P017 flags; city behind the wall is only a low-detail distant backplate.",
   "shared_negative_zh": "不要第二道墙、第二城门、城内侧兽潮、双向攻城、越墙、穿墙、90度转向、180度调头、随机旗帜、人族旗替代肃明旗、骨钟位置漂移、钟架变形、人物漂浮、塑料CG、全画面灰黑、风雪糊掉关键轮廓。",
   "shared_negative_en": "Avoid second wall, second gate, beast attackers inside the wall, two-sided siege, crossing the wall, passing through the wall, 90-degree turn, 180-degree turn, random flags, human flags replacing Suming flags, drifting bell position, warped bell frame, floating characters, plastic CGI, uniformly grey-black image, snow haze obscuring key silhouettes.",
   "scene_prompts": [
     {
       "asset_id": "SC001_MASTER_FRONT",
       "target_path": "01/assets/director-room/scenes/SC001/master-reference-front.png",
-      "status": "blocked_waiting_for_blender_top_view_and_camera_map",
+      "status": "ready_rendered_from_blender_scene",
       "prompt_zh": "从墙外正面看锁喉关同一面黑石城门和门楼，暴雪中一墙一门，墙顶两侧 P017 肃明黑日白翅旗，小守军剪影和枪线，墙外攻城梁与兽族剪影沿同一轴线压近。",
       "prompt_en": "Front exterior view of the same Suohou Gate blackstone wall, gate and gatehouse in blizzard: one wall and one gate, P017 Suming black-sun white-wing flags on both wall-top sides, small defender silhouettes and spear lines, siege beam and beast silhouettes pressing along the same exterior axis."
     },
     {
       "asset_id": "SC001_MASTER_REVERSE",
       "target_path": "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
-      "status": "blocked_waiting_for_blender_top_view_and_camera_map",
+      "status": "ready_rendered_from_blender_scene",
       "prompt_zh": "门楼后侧与墙顶女墙关系图，同一骨钟挂在左后侧木架下，年轻军户半倒后墙边，薛临墙在女墙前面向墙外，画面强调同一门楼内部拓扑。",
       "prompt_en": "Reverse gatehouse-side reference: the same bone bell hangs under the left-rear timber frame, the young soldier is half-collapsed by the back wall, Xue Linqiang stands at the parapet facing outward, emphasizing the same gatehouse topology."
     },
     {
       "asset_id": "SC001_KEY_PROP_PLACEMENT",
       "target_path": "01/assets/director-room/scenes/SC001/key-prop-placement.png",
-      "status": "blocked_waiting_for_blender_control_images",
+      "status": "ready_rendered_from_blender_scene",
       "prompt_zh": "骨钟、钟链、木架、断矛、城门门闩、肃明旗、撞门梁和雪泥位置清楚的低模道具摆放图，服务 R003/R004 同钟架连续性。",
       "prompt_en": "Low-poly key prop placement showing bone bell, chain, timber frame, dropped spear, gate crossbar, Suming flags, impact beam and snow mud clearly, supporting R003/R004 same-bell-frame continuity."
     },
     {
       "asset_id": "SC001_BLOCKING_OVERVIEW",
       "target_path": "01/assets/director-room/scenes/SC001/blocking-overview.png",
-      "status": "blocked_waiting_for_blender_control_images",
+      "status": "ready_rendered_from_blender_scene",
       "prompt_zh": "顶视调度图：R001/R002 外侧同轴推进，R003 门楼内震倒军户，R004 门楼后侧看薛临墙，兽族进攻只从 y<0 压向城门。",
       "prompt_en": "Top-view blocking overview: R001/R002 exterior same-axis push, R003 gatehouse aftershock soldier, R004 gatehouse-side view of Xue, with beast attack only from y<0 toward the gate."
     }

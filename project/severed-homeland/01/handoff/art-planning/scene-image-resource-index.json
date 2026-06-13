@@ -3,7 +3,7 @@
   "project": "severed-homeland",
   "episode_id": "01",
   "scene_id": "SC001",
-  "status": "control_ready_keyframes_blocked_model_missing",
+  "status": "scene_master_ready_keyframes_blocked_model_missing",
   "resources": {
     "scene_control_package": {
       "scene_bible": "01/control/scene-packages/SC001/scene-bible.md",
@@ -59,11 +59,33 @@
       ]
     },
     "expected_scene_assets": {
-      "status": "not_generated",
-      "master_reference_front": "01/assets/director-room/scenes/SC001/master-reference-front.png",
-      "master_reference_reverse": "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
-      "key_prop_placement": "01/assets/director-room/scenes/SC001/key-prop-placement.png",
-      "blocking_overview": "01/assets/director-room/scenes/SC001/blocking-overview.png"
+      "status": "ready",
+      "material_lock": {
+        "path": "01/assets/director-room/scenes/SC001/material-lock.json",
+        "status": "ready",
+        "purpose": "locks shared material IDs and procedural texture/detail layers for all SC001 scene master and control exports"
+      },
+      "master_reference_front": {
+        "path": "01/assets/director-room/scenes/SC001/master-reference-front.png",
+        "status": "ready",
+        "dimensions": "1280x720"
+      },
+      "master_reference_reverse": {
+        "path": "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+        "status": "ready",
+        "dimensions": "1280x720"
+      },
+      "key_prop_placement": {
+        "path": "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+        "status": "ready",
+        "dimensions": "1280x720"
+      },
+      "blocking_overview": {
+        "path": "01/assets/director-room/scenes/SC001/blocking-overview.png",
+        "status": "ready",
+        "dimensions": "1280x720"
+      },
+      "city_backplate_policy": "low_detail_backplate_only; not a second wall, second gate, or full city set"
     },
     "expected_shot_assets": {
       "status": "blocked_comfyui_model_missing",

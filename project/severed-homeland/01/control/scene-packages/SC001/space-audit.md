@@ -6,6 +6,8 @@
 
 坐标级审核和视觉证据审核均通过。`layout.yaml` 把 R001/R002/R003/R004 锁定到同一个黑石城门、同一面外墙、同一座门楼和同一口骨钟；`blockout.blend`、顶视图、机位图、四张导演视角图、四张深度图和四张线稿图已由同一个 Blender 场景导出，可作为 SC001 四帧同空间证据。
 
+2026-06-13 追加审核：SC001 已升级为带统一材质/程序化贴图的场景母版。`material-lock.json`、`master-reference-front.png`、`master-reference-reverse.png`、`key-prop-placement.png`、`blocking-overview.png` 与四张分镜控制图全部由同一个升级后的 `blockout.blend` 导出，使用同一套黑石、石缝、积雪、旧木、铁件、骨钟、旗帜和低细节城市背板材质 ID。
+
 ## 坐标级审核
 
 | 项目 | 结果 | 证据 |
@@ -29,6 +31,8 @@
 | R004 薛临墙站位 | 通过 | `shot-guides/r004_camera.png` 保留薛临墙、女墙、墙外方向和后景骨钟空间锚点。 |
 | 深度图层级 | 通过 | `depth/r001_depth.png` 到 `depth/r004_depth.png` 与各自相机视角一致，未出现前后层级反转。 |
 | 线稿可用性 | 通过 | `lineart/r001_lineart.png` 到 `lineart/r004_lineart.png` 能读出墙、门、门楼、骨钟、人物块和攻击方向。 |
+| 场景材质母版 | 通过 | `master-reference-front.png` 锁定外墙/城门/旗帜/撞门雪雾；`master-reference-reverse.png` 锁定城内侧门楼背面和墙顶材质；`key-prop-placement.png` 锁定骨钟、钟架、断矛、年轻军户和薛临墙的门楼关系。 |
+| 城市背板边界 | 通过 | 城墙后方城市只作为 `city_shadow/window_warm/smoke` 低细节远景背板存在，未生成第二道墙、第二个城门或城内侧兽潮。 |
 
 ## 人工可读性返工
 
@@ -37,6 +41,8 @@
 ## 生成交接结论
 
 这四个分镜参考帧可以作为同一空间下的连续镜头交给 ComfyUI 或其他生图工具。当前限制不在空间证据，而在 ComfyUI 没有可用 checkpoint 和 ControlNet 模型；因此不得把关键帧候选图标记为已生成。
+
+带材质母版后的推荐生图顺序：先使用 `master-reference-front.png`、`master-reference-reverse.png` 和 `key-prop-placement.png` 统一场景材质，再按 R001-R004 的 `shot-guides`、`depth`、`lineart` 约束各自镜头。若生成结果中的石墙材质、门板铁件、骨钟或 P017 旗帜不一致，应回到同一场景母版和 `material-lock.json` 修正提示或参考图，而不是重画空间。
 
 ## 返工规则
 

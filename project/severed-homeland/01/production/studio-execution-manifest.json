@@ -118,6 +118,50 @@
     },
     {
       "order": 6,
+      "name": "upgrade_textured_scene_master",
+      "status": "ready",
+      "attempted_command": "/opt/homebrew/Caskroom/blender/5.1.2/Blender.app/Contents/MacOS/Blender --background --python project/severed-homeland/01/control/scene-packages/SC001/build_sc001_blockout.py",
+      "result": "success",
+      "outputs": [
+        {
+          "path": "01/assets/director-room/scenes/SC001/material-lock.json",
+          "status": "ready"
+        },
+        {
+          "path": "01/assets/director-room/scenes/SC001/master-reference-front.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/assets/director-room/scenes/SC001/master-reference-reverse.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/assets/director-room/scenes/SC001/key-prop-placement.png",
+          "status": "ready"
+        },
+        {
+          "path": "01/assets/director-room/scenes/SC001/blocking-overview.png",
+          "status": "ready"
+        }
+      ],
+      "locked_material_layers": [
+        "blackstone",
+        "stone_joint",
+        "stone_chip",
+        "snow_edge",
+        "old_wood",
+        "wood_dark",
+        "old_iron",
+        "bone",
+        "bone_shadow",
+        "flag",
+        "suming_wing",
+        "city_shadow"
+      ],
+      "city_backplate_policy": "low_detail_backplate_only_not_full_city_set"
+    },
+    {
+      "order": 7,
       "name": "same_space_audit",
       "status": "ready",
       "outputs": [
@@ -128,11 +172,12 @@
         "camera-axis check for r001/r002",
         "gatehouse-position check for r003/r004",
         "visual review of top-view and camera-map",
-        "visual review of four camera guides, four depth maps, and four lineart maps"
+        "visual review of four camera guides, four depth maps, and four lineart maps",
+        "visual review of textured scene master front/reverse, key prop placement, and blocking overview"
       ]
     },
     {
-      "order": 7,
+      "order": 8,
       "name": "comfyui_or_image_generation_keyframes",
       "status": "blocked_comfyui_model_missing",
       "blocked_by": [
@@ -169,7 +214,7 @@
       ]
     },
     {
-      "order": 8,
+      "order": 9,
       "name": "krita_gimp_fix_masks_faces_props",
       "status": "not_invoked",
       "reason": "No generated keyframe candidates or masks exist yet; GIMP and Krita are available for later fix pass."
