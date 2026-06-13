@@ -35,7 +35,7 @@ TASKS = [
             "cold moonlit snow, sharp readable gate geometry, epic pressure, painterly realism"
         ),
         "negative": (
-            "second wall, second gate, interior city view, attackers inside the wall, visible bone bell close up, "
+            "second wall, second gate, interior city view, attackers inside the wall, visible alarm bell close up, "
             "wrong banner, flat grey fog, clean modern architecture, text, logo, watermark, distorted perspective"
         ),
     },
@@ -70,13 +70,15 @@ TASKS = [
         "seed": 101003,
         "positive": (
             "cinematic dark fantasy production keyframe, tight medium gatehouse interior, broken spear in foreground "
-            "sliding through dirty snow mud, young grey wall soldier half collapsed against blackstone rear wall, "
-            "same bone bell swinging under timber frame in background, readable chain and snow on wood, cold battle "
-            "pressure outside as haze only, layered depth, painterly realism"
+            "sliding through dirty snow mud, young grey wall soldier knocked down alive by gate-impact aftershock, "
+            "bracing in snow mud and breathing, same five-thousand-year-old Zhaoming old-empire oxidized metal "
+            "alarm bell swinging under timber frame in background, diagonal chain, broken unreadable sun-moon "
+            "astrolabe emblem fragments, cold battle pressure outside as blizzard and smoke only, layered depth, painterly realism"
         ),
         "negative": (
             "heroic front face, bell bracing pose, changed bell frame, open exterior battlefield, second wall, "
-            "soldier standing, clean armor, text, logo, watermark, flat composition, missing bell"
+            "soldier dead, blood pool, soldier standing, clean armor, complete clean emblem, ivory or bone bell surface, "
+            "houses, warm windows, city streets, city towers, text, logo, watermark, flat composition, missing bell"
         ),
     },
     {
@@ -91,12 +93,15 @@ TASKS = [
         "positive": (
             "cinematic dark fantasy production keyframe, rear three quarter medium close shot inside the same "
             "gatehouse parapet, Xue Linqiang pressing the blackstone parapet and facing outward, cracked frozen hand, "
-            "coarse wall scarf, old armor plates, half dark side profile, same swinging bone bell and low collapsed "
-            "young soldier in background, beast pressure below outside the parapet, painterly realism"
+            "coarse wall scarf, old armor plates, half dark side profile, same five-thousand-year-old Zhaoming "
+            "old-empire oxidized metal alarm bell swinging in background with broken unreadable sun-moon astrolabe "
+            "emblem fragments, exterior below the parapet is only blizzard, smoke, beast siege formation and siege "
+            "equipment pressure, painterly realism"
         ),
         "negative": (
             "clean war god styling, heroic low angle, missing background bell, young soldier standing, beast attackers "
-            "inside gatehouse, second wall, second gate, modern costume, text, logo, watermark, distorted face"
+            "inside gatehouse, second wall, second gate, houses, warm windows, city streets, city towers, complete clean "
+            "emblem, ivory or bone bell surface, modern costume, text, logo, watermark, distorted face"
         ),
     },
 ]

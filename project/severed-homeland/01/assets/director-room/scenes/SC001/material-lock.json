@@ -4,7 +4,7 @@
   "episode_id": "01",
   "scene_id": "SC001",
   "principle": "All master references, shot guides, depth maps, and lineart exports are rendered from one Blender scene using the same locked material IDs and procedural texture/detail geometry.",
-  "city_backplate_policy": "A low-detail city silhouette exists behind the wall as a locked backplate for reverse/interior compositions. It is not a second wall, second gate, or new story location.",
+  "city_backplate_policy": "A low-detail city silhouette exists only for cityside reverse master continuity. When R003/R004 face outside from the gatehouse or wall-top, the exterior view must be battlefield snow haze, smoke, attackers and siege pressure only: no houses, warm windows, streets, city towers, second wall or second gate.",
   "materials": {
     "blackstone": "main wall, parapets, gatehouse stone, procedural stone noise",
     "stone_joint": "dark mortar seams laid onto the wall and gatehouse back wall",
@@ -12,9 +12,9 @@
     "snow_edge": "locked snow caps and wind streaks on ledges",
     "old_wood": "gate, gatehouse floor, roof, posts, and bell frame",
     "wood_dark": "plank seams, grain cuts, and weathering grooves",
-    "old_iron": "gate straps, rivets, chains, spear metal, flag poles",
-    "bone": "bone bell body",
-    "bone_shadow": "bone bell bands and scratches",
+    "old_iron": "gate straps, rivets, chains, spear metal, flag poles, old bell hardware",
+    "ancient_bell_metal": "five-thousand-year-old Zhaoming old-empire metal alarm bell body; oxidized dark bronze/iron, cracks, dents, missing rim chips, old repairs",
+    "zhaoming_emblem_remnant": "broken unreadable fragments of the Zhaoming sun-moon astrolabe emblem on the bell; never a complete clean crest",
     "flag": "P017 black banner base",
     "suming_wing": "P017 white wing marks",
     "city_shadow": "distant city silhouette backplate",
@@ -22,7 +22,7 @@
   },
   "shot_usage_lock": {
     "r001_r002": "front wall, central old wood gate, impact beam, flags, stone/snow/gate material layers",
-    "r003": "same gatehouse floor, dropped spear, young soldier, bone bell, bell frame",
-    "r004": "same gatehouse/parapet, Xue position, bone bell background, city backplate only if angle reveals it"
+    "r003": "same gatehouse floor, dropped spear, young soldier knocked down alive by aftershock, ancient metal alarm bell swinging, bell frame, no houses/city outside",
+    "r004": "same gatehouse/parapet, Xue position, ancient metal alarm bell background, exterior battlefield snow haze only with no houses/city"
   }
 }

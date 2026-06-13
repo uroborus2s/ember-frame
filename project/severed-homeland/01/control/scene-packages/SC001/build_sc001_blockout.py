@@ -118,8 +118,8 @@ MATERIALS = {
     "wood_light": (0.54, 0.35, 0.18, 1.0),
     "old_iron": (0.38, 0.39, 0.39, 1.0),
     "iron_dark": (0.12, 0.13, 0.13, 1.0),
-    "bone": (0.88, 0.78, 0.55, 1.0),
-    "bone_shadow": (0.42, 0.34, 0.20, 1.0),
+    "ancient_bell_metal": (0.18, 0.16, 0.13, 1.0),
+    "zhaoming_emblem_remnant": (0.55, 0.42, 0.22, 1.0),
     "flag": (0.12, 0.12, 0.14, 1.0),
     "suming_wing": (0.86, 0.84, 0.77, 1.0),
     "beast": (0.42, 0.22, 0.10, 1.0),
@@ -146,7 +146,7 @@ TEXTURE_NOISE = {
     "blackstone": {"scale": 28, "detail": 9, "dark": 0.72, "light": 1.24},
     "dark_wall": {"scale": 22, "detail": 7, "dark": 0.65, "light": 1.12},
     "old_wood": {"scale": 18, "detail": 8, "dark": 0.70, "light": 1.35},
-    "bone": {"scale": 16, "detail": 5, "dark": 0.75, "light": 1.18},
+    "ancient_bell_metal": {"scale": 18, "detail": 7, "dark": 0.72, "light": 1.16},
     "snow": {"scale": 34, "detail": 3, "dark": 0.92, "light": 1.08},
     "city_shadow": {"scale": 14, "detail": 4, "dark": 0.80, "light": 1.15},
 }
@@ -157,7 +157,7 @@ MATERIAL_LOCK = {
     "episode_id": "01",
     "scene_id": "SC001",
     "principle": "All master references, shot guides, depth maps, and lineart exports are rendered from one Blender scene using the same locked material IDs and procedural texture/detail geometry.",
-    "city_backplate_policy": "A low-detail city silhouette exists behind the wall as a locked backplate for reverse/interior compositions. It is not a second wall, second gate, or new story location.",
+    "city_backplate_policy": "A low-detail city silhouette exists only for cityside reverse master continuity. When R003/R004 face outside from the gatehouse or wall-top, the exterior view must be battlefield snow haze, smoke, attackers and siege pressure only: no houses, warm windows, streets, city towers, second wall or second gate.",
     "materials": {
         "blackstone": "main wall, parapets, gatehouse stone, procedural stone noise",
         "stone_joint": "dark mortar seams laid onto the wall and gatehouse back wall",
@@ -165,9 +165,9 @@ MATERIAL_LOCK = {
         "snow_edge": "locked snow caps and wind streaks on ledges",
         "old_wood": "gate, gatehouse floor, roof, posts, and bell frame",
         "wood_dark": "plank seams, grain cuts, and weathering grooves",
-        "old_iron": "gate straps, rivets, chains, spear metal, flag poles",
-        "bone": "bone bell body",
-        "bone_shadow": "bone bell bands and scratches",
+        "old_iron": "gate straps, rivets, chains, spear metal, flag poles, old bell hardware",
+        "ancient_bell_metal": "five-thousand-year-old Zhaoming old-empire metal alarm bell body; oxidized dark bronze/iron, cracks, dents, missing rim chips, old repairs",
+        "zhaoming_emblem_remnant": "broken unreadable fragments of the Zhaoming sun-moon astrolabe emblem on the bell; never a complete clean crest",
         "flag": "P017 black banner base",
         "suming_wing": "P017 white wing marks",
         "city_shadow": "distant city silhouette backplate",
@@ -175,8 +175,8 @@ MATERIAL_LOCK = {
     },
     "shot_usage_lock": {
         "r001_r002": "front wall, central old wood gate, impact beam, flags, stone/snow/gate material layers",
-        "r003": "same gatehouse floor, dropped spear, young soldier, bone bell, bell frame",
-        "r004": "same gatehouse/parapet, Xue position, bone bell background, city backplate only if angle reveals it",
+        "r003": "same gatehouse floor, dropped spear, young soldier knocked down alive by aftershock, ancient metal alarm bell swinging, bell frame, no houses/city outside",
+        "r004": "same gatehouse/parapet, Xue position, ancient metal alarm bell background, exterior battlefield snow haze only with no houses/city",
     },
 }
 
@@ -481,9 +481,9 @@ def add_gatehouse_material_detail(materials: dict) -> None:
     cube("gatehouse_back_beam_snow_lip", (0, 8.82, 15.72), (13.8, 0.24, 0.12), materials["snow_edge"])
 
 
-def add_bone_bell_material_detail(materials: dict) -> None:
+def add_alarm_bell_material_detail(materials: dict) -> None:
     for idx, (z, radius) in enumerate(((12.72, 0.72), (13.14, 0.62), (13.55, 0.48))):
-        torus(f"bone_bell_ring_band_{idx}", (-4.8, 5.7, z), radius, 0.035, materials["bone_shadow"])
+        torus(f"alarm_bell_ring_band_{idx}", (-4.8, 5.7, z), radius, 0.035, materials["zhaoming_emblem_remnant"])
     scratch_specs = [
         ((-5.22, 5.13, 13.68), (-5.36, 5.07, 12.75)),
         ((-4.38, 5.18, 13.58), (-4.25, 5.10, 12.92)),
@@ -491,7 +491,7 @@ def add_bone_bell_material_detail(materials: dict) -> None:
         ((-4.52, 6.30, 13.55), (-4.42, 6.38, 12.88)),
     ]
     for idx, (start, end) in enumerate(scratch_specs):
-        line(f"bone_bell_scratch_{idx}", start, end, materials["bone_shadow"], 0.025)
+        line(f"alarm_bell_crack_{idx}", start, end, materials["zhaoming_emblem_remnant"], 0.025)
 
 
 def add_flag_material_detail(materials: dict) -> None:
@@ -531,7 +531,7 @@ def add_master_material_detail_layer(materials: dict) -> None:
     add_wall_material_detail(materials)
     add_gate_material_detail(materials)
     add_gatehouse_material_detail(materials)
-    add_bone_bell_material_detail(materials)
+    add_alarm_bell_material_detail(materials)
     add_flag_material_detail(materials)
     add_city_backplate(materials)
 
@@ -561,13 +561,13 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
     cube("gatehouse_front_beam", (0, 2.0, 15.35), (14, 0.35, 0.35), materials["old_wood"])
     cube("gatehouse_back_beam", (0, 8.6, 15.35), (14, 0.35, 0.35), materials["old_wood"])
 
-    # Bell frame and bone bell.
+    # Bell frame and ancient Zhaoming metal alarm bell.
     for x in (-5.9, -3.7):
         for y in (4.75, 6.65):
             cube(f"bell_frame_post_{x}_{y}", (x, y, 12.7), (0.22, 0.22, 4.9), materials["old_wood"])
     cube("bell_frame_top_beam", (-4.8, 5.7, 15.4), (2.6, 2.2, 0.22), materials["old_wood"])
-    line("bone_bell_chain", (-4.8, 5.7, 15.25), (-4.8, 5.7, 13.9), materials["old_iron"], 0.025)
-    cone("same_bone_bell", (-4.8, 5.7, 13.2), 0.85, 0.45, 1.35, materials["bone"])
+    line("alarm_bell_chain", (-4.8, 5.7, 15.25), (-4.8, 5.7, 13.9), materials["old_iron"], 0.025)
+    cone("same_ancient_zhaoming_metal_alarm_bell", (-4.8, 5.7, 13.2), 0.85, 0.45, 1.35, materials["ancient_bell_metal"])
 
     # Flags and faction marks. The light wing stripe is a low-poly stand-in
     # for the P017 black-sun white-wing flag language.
@@ -617,7 +617,7 @@ def build_scene(materials: dict) -> dict[str, bpy.types.Object]:
         overview_label("overview_soldier_label", "YOUNG SOLDIER", (-12.0, 8.2, overview_z + 0.7), 1.35, materials["overview_soldier"]),
         overview_label("overview_flag_label", "P017 FLAGS", (22, -5.8, overview_z + 0.7), 1.45, materials["suming_wing"]),
     ]
-    bell_marker = cylinder("overview_bone_bell_marker", (-4.8, 5.7, overview_z + 0.75), 1.35, 0.42, materials["overview_bell"], vertices=32)
+    bell_marker = cylinder("overview_alarm_bell_marker", (-4.8, 5.7, overview_z + 0.75), 1.35, 0.42, materials["overview_bell"], vertices=32)
     bell_marker["overview_helper"] = True
     overview_items.append(bell_marker)
     overview_items.append(overview_label("overview_bell_label", "BONE BELL", (-10.8, 4.8, overview_z + 0.9), 1.35, materials["overview_bell"]))

@@ -66,14 +66,14 @@
 
 - 场景尺寸：东西向 72 米，墙外北向纵深 90 米，门楼内侧南向纵深 18 米，高度 18 米。
 - 坐标原点：城门外侧门槛中心，`x` 沿城墙，`y<0` 为墙外攻城方向，`y>0` 为门楼内侧，`z` 向上。
-- 城墙、城门、门楼、骨钟、旗帜、兽族进攻方向、人物站位和四个摄像机均已固定。
-- R001/R002 在墙外同轴推进；R003/R004 都在同一门楼/墙顶空间内，使用同一口骨钟和同一女墙关系。
+- 城墙、城门、门楼、昭明旧帝国金属警钟、旗帜、兽族进攻方向、人物站位和四个摄像机均已固定。
+- R001/R002 在墙外同轴推进；R003/R004 都在同一门楼/墙顶空间内，使用同一口昭明旧帝国金属警钟和同一女墙关系。
 
 `space-audit.md` 结论为 `ready_passed`。顶视图、机位图、四张导演视角图、四张深度图和四张线稿图均来自同一个 Blender 场景，支持四个参考帧属于同一空间。
 
-2026-06-13 人工复核指出首次 `top-view.png` 无法看出场景内容。已返工：`top-view.png` 和 `camera-map.png` 增加只在总览图出现的高对比平面标注层，明确显示黑石墙、城门、门楼、骨钟、年轻军户、薛临墙、P017 旗位、兽族攻击轴线和 R001/R002/R003/R004 机位；正式镜头图、深度图和线稿图仍隐藏这些标注层，避免污染 ComfyUI 控制输入。
+2026-06-13 人工复核指出首次 `top-view.png` 无法看出场景内容。已返工：`top-view.png` 和 `camera-map.png` 增加只在总览图出现的高对比平面标注层，明确显示黑石墙、城门、门楼、昭明旧金属警钟、年轻军户、薛临墙、P017 旗位、兽族攻击轴线和 R001/R002/R003/R004 机位；正式镜头图、深度图和线稿图仍隐藏这些标注层，避免污染 ComfyUI 控制输入。
 
-2026-06-13 追加升级：SC001 已建立“带统一材质/贴图的场景母版”。`material-lock.json` 固定黑石、石缝、缺口、积雪边、旧木、木纹、铁箍、铆钉、骨钟划痕、P017 旗帜和低细节城市背板的材质 ID。`master-reference-front.png`、`master-reference-reverse.png`、`key-prop-placement.png`、`blocking-overview.png` 与四个分镜控制图同源自升级后的 `blockout.blend`。城墙后方城市只作为低细节远景背板，不是完整城市场景，也不引入第二道墙或第二个门。
+2026-06-13 追加升级：SC001 已建立“带统一材质/贴图的场景母版”。`material-lock.json` 固定黑石、石缝、缺口、积雪边、旧木、木纹、铁箍、铆钉、昭明旧帝国金属警钟、破损日月星盘残徽、P017 旗帜和城内侧低细节背板的材质 ID。`master-reference-front.png`、`master-reference-reverse.png`、`key-prop-placement.png`、`blocking-overview.png` 与四个分镜控制图同源自升级后的 `blockout.blend`。城内侧背板只允许用于反向母版，不是完整城市场景；R003/R004 面向墙外时禁止出现房屋、街区、窗灯、城塔、第二道墙或第二个门。
 
 ## 工具执行结果
 
@@ -89,8 +89,8 @@ ComfyUI：服务可用但模型缺失。`http://127.0.0.1:8188/system_stats` 返
 
 关键帧候选图：R003/R004 已生成 candidate，R001/R002 仍未生成。已写入：
 
-- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v003_after_user_rejection`
-- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v002_after_user_rejection`
+- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v004_after_metal_bell_space_microedit`
+- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v003_after_metal_bell_space_microedit`
 
 未写入以下 candidate 输出：
 
@@ -118,7 +118,7 @@ R003/R004 candidate QC 记录见 `01/reviews/sc001-r003-r004-candidate-qc-2026-0
 
 ## 用户反馈处理
 
-用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
+用户要求的步骤 1、2、3、4、5、6 已完成。用户对顶视图不可读的反馈已处理，已重新导出可读版 `top-view.png` 和 `camera-map.png`。用户要求升级“带统一材质/贴图的场景母版”已处理，已从同一 Blender 场景导出材质锁、正反母版、关键道具关系图和调度母版图。步骤 7 已把控制图交给本地 ComfyUI API 预检并尝试执行，但因模型缺失失败；随后按用户要求用 Codex built-in image generation 生成 R003/R004 candidate。本次追加处理了用户指出的三项问题：门楼面向墙外时不应出现房屋或城市，警钟应为五千年昭明旧帝国金属钟且残徽破损，R003 士兵应为被撞门余震震倒而非死亡。步骤 8 等待用户/导演 QC 指出具体局部问题后再由 Krita/GIMP 执行。
 
 本轮没有覆盖或修改现有 `01/assets/reference-frames/r001e01.png` 到 `r004e01.png`。其中 `r003e01.png`、`r004e01.png` 在工作区原本已有用户改动，本轮只读使用；新图只写入 director-room shot `candidates/`。
 

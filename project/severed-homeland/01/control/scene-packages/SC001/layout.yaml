@@ -65,14 +65,23 @@ fixed_architecture:
       - [6.4, 8.6, 10.2]
     locked: true
 fixed_props:
-  bone_bell:
-    id: prop_bone_bell_same_for_r003_r004
+  ancient_zhaoming_metal_alarm_bell:
+    id: prop_ancient_zhaoming_metal_alarm_bell_same_for_r003_r004
+    previous_label: deprecated_old_bell_label_do_not_use
+    canonical_visual_name: zhaoming_old_empire_five_thousand_year_metal_alarm_bell
     center: [-4.8, 5.7, 13.2]
     radius: 0.85
     height: 1.35
     chain_top: [-4.8, 5.7, 15.25]
     chain_bottom: [-4.8, 5.7, 13.9]
     swing_axis: x
+    material: oxidized_dark_bronze_iron_with_old_repairs
+    emblem_lock: broken_unreadable_zhaoming_sun_moon_astrolabe_fragments_only
+    forbidden_visuals:
+      - clean_complete_emblem
+      - ivory_or_bone_surface
+      - museum_clean_restoration
+      - random_new_crest
     visible_in:
       - r003
       - r004
@@ -119,7 +128,7 @@ flags:
 environment_backplates:
   city_behind_wall:
     id: locked_low_detail_city_backplate
-    purpose: distant_texture_anchor_only_not_new_location
+    purpose: distant_texture_anchor_only_not_new_location_for_cityside_reverse_master
     y_band: [19.5, 20.6]
     x_span: [-31.0, 31.0]
     height_z: [0.0, 12.8]
@@ -127,12 +136,14 @@ environment_backplates:
       - city_shadow
       - window_warm
       - smoke
-    visible_policy: may_appear_in_reverse_or_high_wall_angles_only
+    visible_policy: cityside_reverse_master_only; never_visible_when_r003_or_r004_faces_exterior_negative_y
     forbidden:
       - second_wall
       - second_gate
       - playable_city_street
       - attackers_inside_city
+      - houses_or_warm_windows_in_exterior_wall_view
+      - city_towers_when_standing_on_gatehouse_looking_outside
     locked: true
 attack_direction:
   faction: northern_siege_beast_troops
@@ -265,17 +276,17 @@ material_texture_lock:
     - old_wood
     - wood_dark
     - old_iron
-    - bone
-    - bone_shadow
+    - ancient_bell_metal
+    - zhaoming_emblem_remnant
     - flag
     - suming_wing
     - city_shadow
 locks:
   - one_wall_one_gate_centered_exterior_lock
   - gatehouse_bell_audio_only_for_r001_r002
-  - same_bone_bell_visible_for_r003_r004
+  - same_ancient_zhaoming_metal_alarm_bell_visible_for_r003_r004
   - same_gatehouse_and_parapet_for_r003_r004
   - p017_suming_flag_lock
   - same_material_texture_lock_for_scene_master_and_shot_guides
-  - low_detail_city_backplate_not_full_city_set
+  - cityside_backplate_only_not_visible_in_exterior_views
   - no_second_wall_no_second_gate_no_inside_beast_tide

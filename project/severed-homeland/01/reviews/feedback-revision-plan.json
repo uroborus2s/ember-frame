@@ -83,7 +83,7 @@
         "01/control/scene-packages/SC001/blockout-export-manifest.json"
       ],
       "notes": [
-        "City behind the wall is locked as a low-detail distant backplate, not a full city set.",
+        "Cityside backplate is locked to the reverse scene master only, not a full city set and never visible in R003/R004 exterior-facing views.",
         "Master images and r001-r004 control exports are rendered from the same Blender scene and material lock."
       ]
     },
@@ -103,6 +103,27 @@
         "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
         "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
         "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
+      ]
+    },
+    {
+      "id": "UF-SC001-007A",
+      "request": "Fix R003/R004 candidate issues: no houses outside when looking from the gatehouse, the bell must be a five-thousand-year-old broken Zhaoming metal alarm bell, and the fallen soldier is alive after being knocked down by shock",
+      "status": "addressed_with_microedited_noncanonical_candidates",
+      "outputs": [
+        "01/storyboard/sc001-r003-r004-microedit-script-2026-06-13.md",
+        ".agents/skills/imagegenpro/SKILL.md",
+        "01/control/scene-packages/SC001/scene-bible.md",
+        "01/control/scene-packages/SC001/layout.yaml",
+        "01/assets/director-room/scenes/SC001/material-lock.json",
+        "01/handoff/art-planning/shot-image-task-list.json",
+        "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
+        "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
+        "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md"
+      ],
+      "notes": [
+        "R003 current version is v004_after_metal_bell_space_microedit, 1672x940.",
+        "R004 current version is v003_after_metal_bell_space_microedit, 1672x941.",
+        "Canonical reference-frames remain untouched until user/director approval."
       ]
     },
     {
