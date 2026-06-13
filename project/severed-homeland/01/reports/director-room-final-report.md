@@ -89,8 +89,8 @@ ComfyUI：服务可用但模型缺失。`http://127.0.0.1:8188/system_stats` 返
 
 关键帧候选图：R003/R004 已生成 candidate，R001/R002 仍未生成。已写入：
 
-- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`
-- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`
+- `01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png`，1672x941，状态：`generated_candidate_pending_user_visual_qc`，版本：`v003_after_user_rejection`
+- `01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png`，1672x940，状态：`generated_candidate_pending_user_visual_qc`，版本：`v002_after_user_rejection`
 
 未写入以下 candidate 输出：
 
