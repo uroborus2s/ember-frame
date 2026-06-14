@@ -187,29 +187,35 @@
       ],
       "attempted_command": "python3 project/severed-homeland/01/control/scene-packages/SC001/run_sc001_comfyui_keyframes.py",
       "codex_imagegen_execution": {
-        "status": "generated_r003_r004_style_matched_and_promoted_to_reference_frames",
+        "status": "generated_r003_rough_blackstone_weather_and_r004_bell_material_promoted_to_reference_frames",
         "outputs": [
           {
             "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-            "status": "promoted_to_canonical_reference_frame_after_user_approval",
-            "dimensions": "1672x940",
-            "version": "v006_style_matched_promoted"
+            "status": "ready_for_i2v_motion_test_pending_model_config",
+            "dimensions": "4096x2304",
+            "version": "v009_rough_blackstone_weather_promoted",
+            "sha256": "d785882dfaf19a8a5eded21213abc23d438c388588b173462b463f4180284bf1"
           },
           {
             "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-            "status": "promoted_to_canonical_reference_frame_after_user_approval",
-            "dimensions": "1672x941",
-            "version": "v005_style_matched_promoted"
+            "status": "ready_for_i2v_motion_test_pending_model_config",
+            "dimensions": "4096x2304",
+            "version": "v010_bell_material_promoted",
+            "sha256": "89663bec1182c2781d98f33f3d86b4d999f81d2e1b6344b0cc364bac412fb1c3"
           }
         ],
-        "qc_report": "01/reviews/sc001-r003-r004-candidate-qc-2026-06-13.md",
+        "qc_report": "01/reviews/sc001-r003-r004-video-readiness-qc-2026-06-14.md",
         "identity_locks": [
           "R003 soldier: E01_C024A alive aftershock posture, half-open eyes, visible breath, bracing hand, bent knee, slipping boot",
           "R004 exterior attackers: C020/C021/E01_C020 beast soldiers and companion beasts, not human army or generic single-species horde",
           "Alarm bell emblem: P016 broken Zhaoming sun-moon astrolabe remnant only; P018 forbidden on bell"
         ],
         "style_match_locks": [
-          "R003/R004 now match R001/R002 low-key high-contrast storm lighting",
+          "R003/R004 now match R001/R002/R004 low-key cold grey blizzard lighting",
+          "R003 gatehouse floor and wall use large matte rough blackstone blocks/slabs matching R004 parapet, with snow in deep seams; no broad glossy reflection, smooth blue/green brick, polished tile, black glass, metal floor or muddy exterior ground",
+          "R003 protagonist priority pass makes the young wall soldier read first, with the swinging old metal bell as secondary anchor",
+          "R003/R004 bell material pass distinguishes oxidized blackened bronze/dark iron from rough blackstone, worn black iron/leather armor, dark wet timber and snow/ice",
+          "R004 foreground wall-top uses rough blackstone fortress masonry matching R001/R002; exterior siege field is softened and secondary behind Xue Linqiang",
           "Reduced particle density, digital grain, glitter, cheap realism, and artificial sharpening",
           "Promoted to canonical reference frames after explicit user approval"
         ]
@@ -233,19 +239,19 @@
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH002/candidates/r003e01.candidate.png",
-          "status": "promoted_to_canonical_reference_frame_after_user_approval"
+          "status": "ready_for_i2v_motion_test_pending_model_config"
         },
         {
           "path": "01/assets/director-room/shots/SC001-SH003/candidates/r004e01.candidate.png",
-          "status": "promoted_to_canonical_reference_frame_after_user_approval"
+          "status": "ready_for_i2v_motion_test_pending_model_config"
         },
         {
           "path": "01/assets/reference-frames/r003e01.png",
-          "status": "promoted_style_matched_final"
+          "status": "ready_for_i2v_motion_test_pending_model_config"
         },
         {
           "path": "01/assets/reference-frames/r004e01.png",
-          "status": "promoted_style_matched_final"
+          "status": "ready_for_i2v_motion_test_pending_model_config"
         }
       ]
     },
@@ -259,7 +265,7 @@
   "source_reference_frame_status": {
     "r001e01.png": "read_only_existing",
     "r002e01.png": "read_only_existing",
-    "r003e01.png": "promoted_style_matched_final_after_user_approval",
-    "r004e01.png": "promoted_style_matched_final_after_user_approval"
+    "r003e01.png": "ready_for_i2v_motion_test_pending_model_config",
+    "r004e01.png": "ready_for_i2v_motion_test_pending_model_config"
   }
 }

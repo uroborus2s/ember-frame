@@ -34,9 +34,9 @@ English: `01/assets/reference-frames/r001e01.png` is the approved 4K first-frame
 
 ## SC001-SH001 FLF2V 节点配置 / FLF2V Node Setup
 
-中文：尾帧不是单独接到解码或视频节点的。`r002e01.png` 只接入 `Wan首尾帧视频` 的 `结束图像`，由该节点生成带首尾帧约束的 positive、negative 和 latent，再交给采样器。新版 R002 应是同一墙外方向、更近城门、更强第一次撞门并触发门楼内钟声的尾帧，不是墙头转向尾帧，也不要求画面露出骨钟。
+中文：尾帧不是单独接到解码或视频节点的。`r002e01.png` 只接入 `Wan首尾帧视频` 的 `结束图像`，由该节点生成带首尾帧约束的 positive、negative 和 latent，再交给采样器。新版 R002 应是同一墙外方向、更近城门、更强第一次撞门并触发门楼内钟声的尾帧，不是墙头转向尾帧，也不要求画面露出旧金属警钟。
 
-English: The last frame is not connected directly to decode or video output nodes. `r002e01.png` goes into the `end_image` input of the Wan first-last-frame video node; that node then produces conditioned positive, negative and latent outputs for the sampler. The new R002 should be the same-exterior-direction, closer-gate, stronger first-impact tail frame that triggers gatehouse bell sound, not a wall-top turning endpoint, and it does not require an on-screen bone bell.
+English: The last frame is not connected directly to decode or video output nodes. `r002e01.png` goes into the `end_image` input of the Wan first-last-frame video node; that node then produces conditioned positive, negative and latent outputs for the sampler. The new R002 should be the same-exterior-direction, closer-gate, stronger first-impact tail frame that triggers gatehouse old metal alarm-bell sound, not a wall-top turning endpoint, and it does not require an on-screen bell body.
 
 | Node                    | Setting / Connection                                                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -83,19 +83,19 @@ English: The last frame is not connected directly to decode or video output node
 超写实电影质感低魔东方史诗，16:9 横屏宽银幕。冷白暴雪边境，低调高反差，真实古代材质，真实重心、真实速度、自然呼吸、接触反作用。
 
 **目标**
-在暴雪中建立锁喉关正中对称史诗攻城压力：首帧从墙外攻城方向低机位看城门和黑石巨墙，兽潮、攻城车或破门猛犸压向城门；尾帧仍保持同一墙外方向和当前 R001/R002 的正中史诗构图，更近靠近城门，用第一次重撞城门、浓烈雪雾、碎冰和旧木屑冲画面作为切入墙头空间的转场。骨钟不要求出现在画面中，钟声从门楼内部传出。
+在暴雪中建立锁喉关正中对称史诗攻城压力：首帧从墙外攻城方向低机位看城门和黑石巨墙，兽潮、攻城车或破门猛犸压向城门；尾帧仍保持同一墙外方向和当前 R001/R002 的正中史诗构图，更近靠近城门，用第一次重撞城门、浓烈雪雾、碎冰和旧木屑冲画面作为切入墙头空间的转场。旧金属警钟不要求出现在画面中，钟声从门楼内部传出。
 
 **光影**
 画面不能全灰全黑。裂云低角度冷白带一点淡金的天光从左上或侧后方切出城墙、攻城车和巨兽轮廓；撞门瞬间的冷白雪雾、碎冰、旧木屑和门闩震动是最强动作亮部，低位暗红火点只做边缘反打，黑石墙保留大面积负补光暗面，形成精美但残酷的高反差战争质感。
 
 **画面内容**
-首帧是墙外攻城方向的低机位正中对称史诗构图，允许轻微透视纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。城墙上守城方垂挂旗帜必须继承 P017 肃明虫族帝国黑日白翅旗帜母版：污白旗布、黑日圆心、白色虫翼、黑色边饰和破损下摆。尾帧仍是同一墙外方向：镜头比当前 R002 更近靠近城门，攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰、木屑和黑石边缘被更浓烈地震开；骨钟在门楼内部，画面不强制出现钟架或钟体，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。
+首帧是墙外攻城方向的低机位正中对称史诗构图，允许轻微透视纵深；同一面锁喉关黑石巨墙和城门压在画面中后景，前景是继承已接入兽族参考图的兽族肩背、旧铁盾、破旗、雪泥脚步、攻城车木梁、巨角或破门猛犸局部。城墙上守城方垂挂旗帜必须继承 P017 肃明虫族帝国黑日白翅旗帜母版：污白旗布、黑日圆心、白色虫翼、黑色边饰和破损下摆。尾帧仍是同一墙外方向：镜头比当前 R002 更近靠近城门，攻城车木梁或铁包巨角第一次重撞城门，门闩、旧木、雪尘、碎冰、木屑和黑石边缘被更浓烈地震开；旧金属警钟在门楼内部，画面不强制出现钟架或钟体，守军只读成小剪影和枪线。城内侧、另一边城门、第二道城墙不展开。
 
 **运镜**
-使用首尾参考帧约束“墙外低机位正中前推 + 更强撞门冲击”。镜头从兽潮和攻城车后方低位缓慢前推，略微上仰读城门高度；终点压到城门更近处，撞击瞬间让雪雾白亮、碎冰、旧木屑和门闩震动冲出画面。门楼内骨钟声和撞门低频作为隐藏剪切点，下一镜可进入墙头空间。不做 90 度转向，不越过墙脊，不进入城内。
+使用首尾参考帧约束“墙外低机位正中前推 + 更强撞门冲击”。镜头从兽潮和攻城车后方低位缓慢前推，略微上仰读城门高度；终点压到城门更近处，撞击瞬间让雪雾白亮、碎冰、旧木屑和门闩震动冲出画面。门楼内旧金属警钟声和撞门低频作为隐藏剪切点，下一镜可进入墙头空间。不做 90 度转向，不越过墙脊，不进入城内。
 
 **约束**
-人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和城门前方；R001/R002 必须保持同一墙外方向、同一城门、当前正中史诗攻城构图和真实质感。骨钟/钟架不要求在第一镜画面中出现，钟声来自门楼内部。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持多兵种和多伴生兽形态。墙上可见旗帜必须读成 P017 肃明虫族帝国黑日白翅旗帜，禁止通用人族王国旗、旧昭明旗或随机抽象徽章。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二城门、第二道墙、完整发光旧徽。前景兽潮、中景城门、背景黑石墙和旗帜必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。
+人族守军在墙头只作为小剪影和枪线，兽族攻城方只在同一面城墙外侧和城门前方；R001/R002 必须保持同一墙外方向、同一城门、当前正中史诗攻城构图和真实质感。旧金属警钟/钟架不要求在第一镜画面中出现，钟声来自门楼内部。兽族士兵和伴生兽必须继承已接入图片节点的三张兽族参考图，保持多兵种和多伴生兽形态。墙上可见旗帜必须读成 P017 肃明虫族帝国黑日白翅旗帜，禁止通用人族王国旗、旧昭明旗或随机抽象徽章。禁止把城墙读成两边都被攻击的横墙，禁止墙内侧兽潮、另一边城门、第二城门、第二道墙、完整发光旧徽。前景兽潮、中景城门、背景黑石墙和旗帜必须分层清楚，雪雾不能糊成灰白罩，关键轮廓不能被视频涂抹或花屏吃掉。
 ```
 
 ### negative_prompt_zh
@@ -105,7 +105,7 @@ English: The last frame is not connected directly to decode or video output node
 现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。
 
 **镜头负面**
-不要现代服饰、枪械、科幻 UI、塑料 CG、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个城门、城门方向跳变、兽族看镜头列队、强行把可见骨钟或钟架做成画面主体、纯骨钟特写、完整发光徽章、错误阵营旗帜、通用人族王国旗、旧昭明旗、随机抽象徽章、肃明旗缺失、P017黑日白翅旗缺失、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确撞击亮部中心、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
+不要现代服饰、枪械、科幻 UI、塑料 CG、航拍感、游戏飞镜、飞到墙后、90度转向、穿墙、越过城墙看向另一边、城墙两侧都被攻击、后城墙厚度变主景、城内侧兽潮、180度调头、远处第二道城墙、第二个城门、城门方向跳变、兽族看镜头列队、强行把可见旧金属警钟或钟架做成画面主体、纯旧金属警钟特写、完整发光徽章、错误阵营旗帜、通用人族王国旗、旧昭明旗、随机抽象徽章、肃明旗缺失、P017黑日白翅旗缺失、神圣金光、魔法光柱、过曝 bloom、全画面灰黑、无明确撞击亮部中心、雪雾糊成灰白罩、撞击点不在城门、撞击点不亮、碎冰木屑不可见、粒子化噪点、黄色闪粉、数字颗粒、全局高频锐化、视频涂抹、花屏、压缩块、局部融化、关键轮廓糊掉、不可读兽群、镜头光斑滥用、漂浮慢动作、血腥奇观、画面中文字、随机字幕。
 ```
 
 ### positive_prompt_en
@@ -115,13 +115,13 @@ English: The last frame is not connected directly to decode or video output node
 Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction. Match the approved first-frame texture standard: de-particleized photoreal surfaces, no digital speckle, no yellow glitter, clear material separation and physically plausible cold-warm lighting.
 
 **Goal**
-Establish Suohou Gate siege pressure in blizzard with the current centered exterior epic composition: the first frame looks from outside the wall at a low frontal angle toward the gate and blackstone wall as the beast tide, siege cart or gate-breaking mammoth presses forward; the last frame keeps the same exterior-side direction, moves closer to the gate, and uses the first heavy gate impact, dense snow blast, ice and timber debris as the transition. The bone bell does not need to appear on screen; its sound comes from inside the gatehouse.
+Establish Suohou Gate siege pressure in blizzard with the current centered exterior epic composition: the first frame looks from outside the wall at a low frontal angle toward the gate and blackstone wall as the beast tide, siege cart or gate-breaking mammoth presses forward; the last frame keeps the same exterior-side direction, moves closer to the gate, and uses the first heavy gate impact, dense snow blast, ice and timber debris as the transition. The old metal alarm bell does not need to appear on screen; its sound comes from inside the gatehouse.
 
 **Lighting**
 The image must not become uniformly grey or black. Low storm-break sky light, cold white with a faint pale-gold edge, cuts the wall, siege engine and beast silhouettes from upper-left or side-back; in the tail frame the cold-white snow blast, ice splinters, timber chips and shaking gate bars at impact should become the strongest action highlight, low dark-red fire points provide only edge counterlight, and the blackstone wall keeps large negative-fill shadow masses for refined but brutal high-contrast war lighting.
 
 **Visual Content**
-Both first and last frames keep the low centered exterior epic siege composition, with only slight perspective depth. The same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. Wall-hung defender banners must inherit the P017 Suming insect empire black-sun white-wing flag master: dirty off-white cloth, black sun center, white insect wings, black trim and torn lower tails. The last frame moves closer to the gate: the siege-cart beam or iron-wrapped horn hits the gate for the first time, violently shaking gate bars, old timber, snow dust, ice splinters, timber chips and blackstone edges. The bone bell is inside the gatehouse and exists through sound only; no visible bell frame or bell body is required. The inner side, opposite gate and second wall do not open up.
+Both first and last frames keep the low centered exterior epic siege composition, with only slight perspective depth. The same Suohou Gate blackstone wall and gate dominate the middle and rear, while the foreground holds beast shoulders, old iron shields, torn banners, snow-mud footsteps, siege-cart beams, horns or partial gate-breaking mammoth forms inherited from the loaded beast references. Wall-hung defender banners must inherit the P017 Suming insect empire black-sun white-wing flag master: dirty off-white cloth, black sun center, white insect wings, black trim and torn lower tails. The last frame moves closer to the gate: the siege-cart beam or iron-wrapped horn hits the gate for the first time, violently shaking gate bars, old timber, snow dust, ice splinters, timber chips and blackstone edges. The old metal alarm bell is inside the gatehouse and exists through sound only; no visible bell frame or bell body is required. The inner side, opposite gate and second wall do not open up.
 
 **Camera / Motion**
 Use the first and last frames to constrain a low centered exterior push plus stronger gate impact. The camera starts low behind the beast tide and siege engine, slowly pushes forward and tilts slightly up to read the gate height; it ends closer to the gate as bright snow haze, ice splinters, old timber chips and shaking gate bars burst from the impact. The offscreen gatehouse bell sound and low gate impact are the hidden cut point into the following wall-top space. No 90-degree turn, no crossing the wall crown, no entering the interior side.
@@ -137,13 +137,13 @@ Human defenders on the wall top are only small silhouettes and spear-line shapes
 modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.
 
 **Shot Negative**
-avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second gate, gate direction jump, beast troops posing toward camera, forcing a visible bell or bell frame to become the main subject, pure bone-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear gate-impact highlight center, snow haze as grey veil, impact away from the gate, dim impact point, missing ice/timber debris, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles.
+avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, game-like flying camera, flying behind the wall, 90-degree turn, passing through the wall, crossing over the wall to the opposite side, both sides of the wall under attack, rear-wall thickness as the main subject, beast attackers inside the wall, 180-degree turn, distant second wall, second gate, gate direction jump, beast troops posing toward camera, forcing a visible bell or bell frame to become the main subject, pure alarm-bell close-up, complete glowing emblem, divine golden light, magic light beam, overexposed bloom, uniformly grey-black image, no clear gate-impact highlight center, snow haze as grey veil, impact away from the gate, dim impact point, missing ice/timber debris, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred key silhouettes, unreadable beast mass, excessive lens flare, floaty slow motion, gore spectacle, text in image, random subtitles.
 ```
 
 ## SC001-SH002
 
 - Method: `I2V`
-- First frame: `01/assets/reference-frames/r003e01.png`（旧“扶钟”构图已废弃，必须先重生为新版半倒墙边构图）
+- First frame: `01/assets/reference-frames/r003e01.png`（4096x2304 已修复正式帧：门楼粗糙哑光黑石砌块匹配 R004 女墙，天气光线匹配 R001/R002/R004，年轻军户被余震震倒但活着且主角优先、武器脱手、氧化旧金属警钟横摆）
 - Style refs: `01/assets/style/f001e01.png`, `01/assets/style/f005e01.png`
 - Output: `01/renders/raw/sc001-sh002.mp4`
 
@@ -154,19 +154,19 @@ avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, ga
 超写实电影质感低魔东方史诗大片，16:9 横屏宽银幕。冷白暴雪边境，低调高反差，真实古代材质，真实重心、真实速度、自然呼吸、接触反作用。
 
 **目标**
-把战场规模压到年轻灰墙军户的身体代价：撞门余震把他晃倒，他半倒在同一墙头黑石女墙边，肩背撞墙，武器从手中脱落滑进雪泥，旁边同一口骨钟仍在横摆。
+把战场规模压到年轻灰墙军户的身体代价：撞门余震把他晃倒，他半倒在同一墙头黑石女墙边，肩背撞墙，武器从手中脱落卡在粗糙黑石砌块和冰雪缝之间，旁边同一口氧化旧金属警钟仍在横摆；人物脸、手、甲片和重心读第一，钟体读第二。
 
 **光影**
-身体代价近景要有精美电影光影但不能暖化成英雄片。左上或侧后方裂云冷白带淡金天光给钟架、锁链、头盔、肩甲、脱手武器和雪粒清晰轮廓；撞门方向反射一团冷白雪雾亮部，低位暗红火光只勾手指、武器边缘、钟缘和冻血；黑石墙负补光压住暗面，让脸部半遮、身体姿态清楚，背景降对比退后。
+身体代价近景要匹配 R001/R002/R004 的同一场冷灰暴雪天气，不能暖化成英雄片，也不能出现室内强反光。门楼开口外是灰冷暴雪云层和漫射雪光，黑石墙负补光压住暗面；只让钟架、锁链、头盔、肩甲、脱手武器和雪粒有克制轮廓，禁止地面出现大面积镜面亮斑、黑玻璃反射或光滑湿砖反光。
 
 **画面内容**
-年轻灰墙军户被撞门震动晃到，半倒在黑石女墙根部或墙边雪泥里，肩背贴墙，身体重心失衡；一只手撑住墙边或雪泥，另一只手刚松开断矛、短枪或长矛残杆。脱手武器斜滑在前景雪泥里，旁边同一口骨钟和钟架正在横摆，锁链拉紧、木架抖雪。人物脸被头盔、围巾、阴影和风雪半遮，不做正脸表情；重点是身体被震倒、武器脱手、钟仍在响。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、雪雾和斜下方攻城压力，但不展开大场面。
+年轻灰墙军户被撞门震动晃到，半倒在黑石女墙根部或墙边冰雪缝里，肩背贴墙，身体重心失衡；一只手撑住墙边粗糙黑石或积雪缝，另一只手刚松开断矛、短枪或长矛残杆。脱手武器斜压在前景粗糙黑石砌块与雪缝上，旁边同一口氧化旧金属警钟和钟架正在横摆，锁链拉紧、木架抖雪。人物脸、手、甲片、靴底和支撑姿态必须比钟体更清楚；重点是身体被震倒、武器脱手、钟仍在响。墙面与地面是和 R004 女墙同材质的大块粗糙哑光黑石砌块：黑色玄武岩/黑石孔隙、深砌缝、崩边、块面高低不平、雪只卡在缝里和边角；不是青砖、陶瓷砖、光滑金属砖、黑玻璃、抛光石板、连续湿亮地面或城外烂泥。背景保留同一女墙、同一钟架方向、远处守军、墙外火点、雪雾和斜下方攻城压力，但不展开大场面。
 
 **运镜**
-以重新生成后的 R003 为首帧，镜头只做轻微余震手持和小幅压近。钟摆继续横晃，锁链微颤，脱手武器在雪泥里轻滑半寸，雪从木架和肩甲上抖落；人物不站起、不英雄化、不再主动扶钟。
+以重新生成后的 R003 为首帧，镜头只做轻微余震手持和小幅压近。钟摆继续横晃，锁链微颤，脱手武器只在黑石砌块雪缝里轻微卡动，雪从木架和肩甲上抖落；人物不站起、不英雄化、不再主动扶钟。
 
 **约束**
-骨钟仍在同一墙头警钟架，墙外战场方向不变；这条镜头承接 SH001 撞门震钟，不是新场景。墙外远景兽族和伴生兽继承已接入的兽族参考图，但权重低于年轻军户身份参考和 I2V 首帧。旧日月痕只能残缺、黯淡、被裂缝、铜锈和雪泥吃掉，不可发光或圣物化。脱手武器、撑地手、肩背贴墙姿态和横摆骨钟必须清楚；脸可以半遮但不能崩坏变形，风雪不能遮住身体重心。
+旧金属警钟仍在同一墙头警钟架，墙外战场方向不变；这条镜头承接 SH001 撞门震钟，不是新场景。墙外远景兽族和伴生兽继承已接入的兽族参考图，但权重低于年轻军户身份参考和 I2V 首帧。旧日月痕只能残缺、黯淡、被裂缝、铜锈和积雪吃掉，不可发光或圣物化。旧金属警钟必须读作氧化暗铜/黑铁弧面金属，有铆钉、环带、吊链、锈蚀、凹痕和旧修补痕，不能像黑石、陶土、骨头或塑料。脱手武器、撑地手、肩背贴墙姿态和横摆旧金属警钟必须清楚；脸可以半遮但不能崩坏变形，风雪不能遮住身体重心。
 ```
 
 ### negative_prompt_zh
@@ -176,7 +176,7 @@ avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, ga
 现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。
 
 **镜头负面**
-不要扶钟姿势、不要跪着摆拍、不要手掌贴钟圣物化、不要强光圣徽、不要英雄摆拍、不要神圣逆光、不要过曝 bloom、不要全画面灰黑、不要没有主光方向、不要雪雾糊成灰白罩、不要视频涂抹、不要花屏、不要压缩块、不要局部融化、不要糊脸、不要手指融化、不要甲片粘连、不要钟架变形、不要过度血腥、不要正脸变形特写、不要面部美化、不要儿童化脸型、不要现代甲胄、不要骨钟位置漂移、不要背景战场换方向、不要第二道墙、不要第二个钟架。
+不要扶钟姿势、不要跪着摆拍、不要手掌贴钟圣物化、不要强光圣徽、不要英雄摆拍、不要神圣逆光、不要过曝 bloom、不要全画面灰黑、不要没有主光方向、不要雪雾糊成灰白罩、不要视频涂抹、不要花屏、不要压缩块、不要局部融化、不要糊脸、不要手指融化、不要甲片粘连、不要钟架变形、不要过度血腥、不要正脸变形特写、不要面部美化、不要儿童化脸型、不要现代甲胄、不要旧金属警钟位置漂移、不要背景战场换方向、不要第二道墙、不要第二个钟架、不要青砖、不要陶瓷砖、不要光滑金属墙砖、不要黑石板像塑料或黑玻璃、不要抛光石板、不要镜面地面、不要大面积湿亮反光、不要墙顶变成城外烂泥、不要旧金属警钟像黑石/陶土/骨头/塑料。
 ```
 
 ### positive_prompt_en
@@ -186,19 +186,19 @@ avoid modern clothing, firearms, sci-fi UI, plastic CGI, aerial-game feeling, ga
 Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widescreen. Cold blizzard borderland, low-key high contrast, tactile period materials, real body weight, real speed, natural breathing and contact reaction. Match the approved first-frame texture standard: de-particleized photoreal surfaces, no digital speckle, no yellow glitter, clear material separation and physically plausible cold-warm lighting.
 
 **Goal**
-Compress the battlefield scale into the young grey-wall soldier's bodily cost: the gate-impact shock knocks him off balance, he half-collapses beside the same wall-top blackstone parapet with shoulder and back against the wall, his weapon slips from his hand into the snow mud, and the same bone bell still swings beside him.
+Compress the battlefield scale into the young grey-wall soldier's bodily cost: the gate-impact shock knocks him off balance, he half-collapses beside the same wall-top blackstone parapet with shoulder and back against the wall, his weapon catches across rough blackstone blocks and snow-filled seams, and the same oxidized old metal alarm bell still swings beside him. The soldier's face, hands, armor plates and unstable body weight read first; the bell reads second.
 
 **Lighting**
-The bodily-cost close shot needs refined cinematographic lighting without becoming a warm heroic plate. Storm-break cold-white sky light with a faint pale-gold edge from upper-left or side-back gives clean rims to bell frame, chains, helmet, shoulder armor, dropped weapon and snow grains; a cold-white snow-haze bounce from the gate-impact direction forms the key highlight, low dark-red fire only edges fingers, weapon, bell rim and frozen blood; blackstone negative fill presses the dark side so the face is half obscured while the body posture stays readable and the background drops in contrast.
+The bodily-cost close shot must match the same cold grey blizzard weather as R001/R002/R004, without becoming a warm heroic plate or a glossy interior set. Grey storm clouds and diffuse snow light outside the gatehouse opening set the light; blackstone negative fill presses the dark side. Keep only restrained rims on the bell frame, chains, helmet, shoulder armor, dropped weapon and snow grains. Do not create broad mirror highlights, black-glass reflections, shiny wet-brick glare or polished floor reflections.
 
 **Visual Content**
-The young grey-wall soldier no longer braces the bell. He is knocked off balance by the gate-impact shock, half-collapsed at the base of the blackstone parapet or in snow mud beside the wall, shoulder and back against stone, body weight visibly unstable; one hand braces against wall edge or snow mud, while the other has just released a broken spear, short spear or spear shaft. The dropped weapon slides diagonally through foreground snow mud, and the same bone bell and bell frame swing beside him with chain taut and wooden frame shedding snow. His face is half hidden by helmet, scarf, shadow and blizzard, not a readable front-face performance; the emphasis is the body knocked down, weapon slipping loose and bell still ringing. The background keeps the same parapet, same bell-frame direction, distant defenders, exterior fire points, snow haze and diagonal siege pressure below, without opening into a large battlefield tableau.
+The young grey-wall soldier no longer braces the bell. He is knocked off balance by the gate-impact shock, half-collapsed at the base of the blackstone parapet beside snow-filled seams, shoulder and back against stone, body weight visibly unstable; one hand braces against rough blackstone or packed snow while the other has just released a broken spear, short spear or spear shaft. The dropped weapon presses diagonally across rough matte blackstone blocks and snow seams, and the same oxidized old metal bell and bell frame swing beside him with chain taut and wooden frame shedding snow. His face, hands, armor plates, boot slip and bracing posture must stay clearer than the bell. The wall and floor use the same material language as the R004 parapet: large rough matte blackstone blocks, basalt pores, deep mortar seams, chipped raised edges, uneven block height, snow only caught in seams and corners; not blue-green bricks, ceramic tiles, polished metal slabs, black glass, continuous wet shine or exterior mud. The background keeps the same parapet, same bell-frame direction, distant defenders, exterior fire points, snow haze and diagonal siege pressure below, without opening into a large battlefield tableau.
 
 **Camera / Motion**
-Use the regenerated R003 as first frame, allowing only slight aftershock handheld feel and a small push-in. The bell continues to swing sideways, chains tremble, the dropped weapon slides a fraction through snow mud, and snow shakes off the wooden frame and shoulder armor; the soldier does not stand up, does not become heroic, and does not actively brace the bell.
+Use the regenerated R003 as first frame, allowing only slight aftershock handheld feel and a small push-in. The bell continues to swing sideways, chains tremble, the dropped weapon catches and shifts only slightly in the blackstone snow seams, and snow shakes off the wooden frame and shoulder armor; the soldier does not stand up, does not become heroic, and does not actively brace the bell.
 
 **Constraints**
-The bone bell remains in the same wall-top bell frame and the exterior battlefield direction does not change; this shot continues the gate-impact bell shock from SH001 and is not a new location. Distant exterior beast troops and companion beasts inherit the loaded beast references, but their weight stays below the young soldier identity reference and the I2V first frame. Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow mud, never glowing or sacred. Dropped weapon, bracing hand, shoulder-against-wall posture and swinging bone bell must stay clear; the face may be half obscured but cannot deform, and blizzard must not hide the body weight.
+The old metal alarm bell remains in the same wall-top bell frame and the exterior battlefield direction does not change; this shot continues the gate-impact bell shock from SH001 and is not a new location. Distant exterior beast troops and companion beasts inherit the loaded beast references, but their weight stays below the young soldier identity reference and the I2V first frame. Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow, never glowing or sacred. The bell must read as oxidized dark bronze/black iron curved metal with rivets, bands, chains, rust, dents and old repairs, not blackstone, clay, bone or plastic. Dropped weapon, bracing hand, shoulder-against-wall posture and swinging old metal bell must stay clear; the face may be half obscured but cannot deform, and blizzard must not hide the body weight.
 ```
 
 ### negative_prompt_en
@@ -208,7 +208,7 @@ The bone bell remains in the same wall-top bell frame and the exterior battlefie
 modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.
 
 **Shot Negative**
-avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object framing, bright sacred emblem, heroic posing, divine backlight, overexposed bloom, uniformly grey-black image, no key-light direction, snow haze as grey veil, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred face, melted fingers, fused armor plates, warped bell frame, excessive gore, deformed front-face close-up, beautified face, childlike face, modern armor, drifting bell position, background battlefield direction change, second wall, second bell frame.
+avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object framing, bright sacred emblem, heroic posing, divine backlight, overexposed bloom, uniformly grey-black image, no key-light direction, snow haze as grey veil, particle-like digital speckle, yellow glitter, global high-frequency sharpening, video smearing, glitching, compression blocks, local melting, blurred face, melted fingers, fused armor plates, warped bell frame, excessive gore, deformed front-face close-up, beautified face, childlike face, modern armor, drifting bell position, background battlefield direction change, second wall, second bell frame, blue-green bricks, ceramic tiles, smooth metallic wall bricks, polished stone slabs, mirror floor, broad wet shine, blackstone looking like plastic or black glass, wall-top turning into exterior mud, old metal bell looking like blackstone/clay/bone/plastic.
 ```
 
 ## SC001-SH003
@@ -227,18 +227,21 @@ avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object f
 **目标**
 表现薛临墙在同一墙头空间内低声提醒敌人逼近：他手压黑石墙缝，脸转向门线和枪线，嘴部只做短句开口状态，语气压低、急促但不慌。
 
+**主次**
+薛临墙必须是明确主体，中近景占画面右侧到中部主要面积；他的脸、冻裂手、旧甲片、肩背和粗麻墙巾保持最高细节。城外兽族攻城军阵、烟柱、山影和雪泥战场只作为远景压力，必须被风雪、距离和浅景深轻微虚化、降低对比，不得与主角同等清晰或抢夺视觉中心。
+
 **光影**
 战场口令中近景布光：重点是人物可读性和压迫，不做英雄逆光；冷白暴雪主光只给额骨、鼻梁和手背一点硬冷边，黑墙负补光吞掉半张脸和墙体，远处火线低位暖边更集中地切出侧脸、冻裂手和旧甲片，雪雾烟尘把枪线和门线分层。
 
 **画面内容**
-薛临墙占前景，冻裂粗手压住黑石女墙，骨钟在旁；他说短句时嘴部只轻开一次，呼吸在风雪里压住，眼线从骨钟转向门线，旧甲片和粗麻墙巾被风雪轻轻扯动，表演压低、实际、非英雄摆拍。墙头守军、枪线、门闩和墙外战场在中后景保持可读，几名守军随他的视线转向门线，火线暖边只服务于命令瞬间的脸、手、眼线和战场方向。
+薛临墙占前景，冻裂粗手压住粗糙黑石砌块女墙，旧金属警钟在旁；他说短句时嘴部只轻开一次，呼吸在风雪里压住，眼线从旧金属警钟转向门线，旧甲片和粗麻墙巾被风雪轻轻扯动，表演压低、实际、非英雄摆拍。墙顶与女墙材质必须是 R001/R002 同源的大块粗糙黑石砌块：粗大不规则矩形块、玄武岩/黑石孔隙、砌缝、缺角、冰壳、雪缝和少量湿冷边缘反光，整体仍是哑光矿物质感，不能是碎小石头、鹅卵石、噪点颗粒、随机砂砾、光滑青砖或金属板。旧金属警钟必须是氧化暗铜/黑铁弧面金属，有铆钉、环带、吊链、锈蚀、凹痕和旧修补痕，不能和黑石墙、甲片、旧木柱共享同一种裂纹和高反。墙头守军、枪线、门闩和墙外战场在中后景保持低对比可读，几名守军随他的视线转向门线，火线暖边只服务于命令瞬间的脸、手、眼线和战场方向。
 
 **运镜**
 以参考帧为首帧，做小幅锁定推进到手、嘴和眼线；镜头运动克制，不追随大动作，精确台词不进入画面文字。
 
 **约束**
-薛临墙不是华甲将军或武侠宗师；他是旧墙师，话短、低声、急促但不慌。骨钟、墙缝和枪线必须仍与前两镜同一空间。墙外远景兽族和伴生兽继承已接入的兽族攻城兵种母卡、伴生兽关系母卡和本集兽族状态卡，但权重低于薛临墙身份参考和 I2V 首帧。
-旧日月痕必须残缺、黯淡、被裂缝、铜锈和雪泥吃掉，不可发光或圣物化。手、侧脸、嘴部短促开口、枪线和骨钟空间锚点必须可读；脸可在半暗中，但不能用风雪或暗部遮掩变形。
+薛临墙不是华甲将军或武侠宗师；他是旧墙师，话短、低声、急促但不慌。旧金属警钟、墙缝和枪线必须仍与前两镜同一空间。墙外远景兽族和伴生兽继承已接入的兽族攻城兵种母卡、伴生兽关系母卡和本集兽族状态卡，但权重低于薛临墙身份参考和 I2V 首帧。
+旧日月痕必须残缺、黯淡、被裂缝、铜锈和雪泥吃掉，不可发光或圣物化。手、侧脸、嘴部短促开口、枪线和旧金属警钟空间锚点必须可读；脸可在半暗中，但不能用风雪或暗部遮掩变形。
 ```
 
 ### negative_prompt_zh
@@ -248,7 +251,7 @@ avoid bracing-the-bell pose, kneeling pose tableau, palm-on-bell sacred-object f
 现代服饰，现代建筑，现代武器，枪械，科幻 UI，塑料 CG，过度磨皮，网红脸，武侠强光，魔法光柱，神圣金光，过曝 bloom，镜头光斑滥用，漂浮慢动作，僵硬摆拍，血腥奇观，完整发光徽章，巨龙化猛犸，画面中文字，随机字幕，错误朝代盔甲。
 
 **镜头负面**
-不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要过曝脸光、不要华丽将军甲、不要台词文字入画、不要大幅口型夸张、不要口型融化、不要脸部花屏、不要眼鼻漂移、不要手指糊成团、不要背景枪线糊成灰块、不要视频涂抹、不要压缩块、不要角色变年轻、不要骨钟消失。
+不要老宗师姿势、不要武侠强光、不要神圣英雄逆光、不要过曝脸光、不要华丽将军甲、不要台词文字入画、不要大幅口型夸张、不要口型融化、不要脸部花屏、不要眼鼻漂移、不要手指糊成团、不要背景与主角同等清晰、不要城外军阵抢主体、不要背景枪线糊成灰块、不要墙顶碎小石头、不要鹅卵石质感、不要砂砾噪点、不要黑石砖像随机颗粒、不要墙砖光滑得像金属、不要青砖抛光、不要陶瓷砖、不要黑石和警钟/甲片同质化、不要旧金属警钟像石头/陶土/骨头/塑料、不要视频涂抹、不要压缩块、不要角色变年轻、不要旧金属警钟消失。
 ```
 
 ### positive_prompt_en
@@ -260,18 +263,21 @@ Hyper-realistic cinematic grounded low-magic Eastern epic, 16:9 landscape widesc
 **Goal**
 Show Xue Linqiang giving a low warning that the enemy is coming up in the same wall-top space: his hand presses the blackstone seam, face turned toward gate line and spear line, mouth only in a short speaking state, tone low, urgent but controlled.
 
+**Subject hierarchy**
+Xue Linqiang must be the clear subject in a close-medium foreground composition, occupying the right-to-center main image area. His face, frozen hand, old armor plates, shoulder mass and coarse wall scarf carry the richest detail. The exterior beast army, smoke columns, mountains and churned snow-mud battlefield remain distant pressure only, slightly softened by blizzard, depth and shallow focus, with lower contrast than the protagonist.
+
 **Lighting**
 Battlefield-command close-medium lighting: prioritize character readability and pressure, with no heroic backlight; cold blizzard key light gives only a hard cold edge on brow, nose bridge and hand back, black-wall negative fill swallows half the face and wall mass, low distant fireline more tightly cuts the side profile, cracked hand and old armor plates, and snow-smoke haze layers spear line and gate line.
 
 **Visual Content**
-Xue Linqiang fills the foreground, cracked broad hand pressing the blackstone parapet, bone bell beside him; as he speaks the short warning, his mouth opens only once, his breath stays low in the blizzard, his eye-line shifts from the bell toward the gate line, and old armor plates and coarse wall scarf tug lightly in the wind, with a low, practical, non-heroic performance. Wall defenders, spear line, gate bar and exterior battlefield remain readable in middle and background, with several defenders following his eye-line toward the gate, while the warm fire edge serves only the command moment's face, hand, eye-line and battlefield direction.
+Xue Linqiang fills the foreground, cracked broad hand pressing the rough blackstone parapet, old metal alarm bell beside him; as he speaks the short warning, his mouth opens only once, his breath stays low in the blizzard, his eye-line shifts from the old metal bell toward the gate line, and old armor plates and coarse wall scarf tug lightly in the wind, with a low, practical, non-heroic performance. The wall-top and parapet material must read as R001/R002-style rough blackstone masonry: large irregular dark blocks, basalt-like pores, deep mortar seams, chipped edges, ice glaze, snow caught in seams and only small wet edge highlights, still mostly matte mineral stone, not smooth blue brick, polished metal slab, tiny pebbles, gravel, dot noise or random grit. The old metal alarm bell must read as oxidized dark bronze/black iron curved metal with rivets, bands, hanging chains, rust, dents and old repair seams, not the same crack pattern as stone, armor or timber. Wall defenders, spear line, gate bar and exterior battlefield remain readable but lower-contrast in middle and background, with several defenders following his eye-line toward the gate, while the warm fire edge serves only the command moment's face, hand, eye-line and battlefield direction.
 
 **Camera / Motion**
 Use the reference image as first frame, with a small locked push toward hand, mouth and eye-line; camera motion stays restrained and does not follow large action, with no exact dialogue text in the image.
 
 **Constraints**
-Xue Linqiang is not an ornate general or wuxia master; he is an old wall master, speaking briefly, low, urgent but controlled. The bell, wall seam and spear line must remain in the same space as the previous two shots. Distant exterior beast troops and companion beasts inherit the loaded beast troop master, companion-beast master and episode beast-state references, with lower weight than the Xue Linqiang identity reference and the I2V first frame.
-Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow mud, never glowing or sacred. Hand, side profile, brief mouth opening, spear line and bone-bell spatial anchors must be readable; the face may stay in half-darkness but must not hide deformation behind snow or shadow.
+Xue Linqiang is not an ornate general or wuxia master; he is an old wall master, speaking briefly, low, urgent but controlled. The old metal bell, wall seam and spear line must remain in the same space as the previous two shots. Distant exterior beast troops and companion beasts inherit the loaded beast troop master, companion-beast master and episode beast-state references, with lower weight than the Xue Linqiang identity reference and the I2V first frame.
+Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow mud, never glowing or sacred. Hand, side profile, brief mouth opening, spear line and old-metal-bell spatial anchors must be readable; the face may stay in half-darkness but must not hide deformation behind snow or shadow.
 ```
 
 ### negative_prompt_en
@@ -281,7 +287,7 @@ Old sun-moon traces must be broken, dim, eaten by cracks, verdigris and snow mud
 modern clothing, modern architecture, modern weapons, firearms, sci-fi UI, plastic CGI, over-smoothed skin, influencer face, wuxia power glow, magic light beam, divine golden light, overexposed bloom, excessive lens flare, floaty slow motion, stiff posing, gore spectacle, complete glowing emblem, dragon-like mammoth, text in image, random subtitles, wrong-period armor.
 
 **Shot Negative**
-avoid grandmaster pose, wuxia glow, divine heroic backlight, overexposed face light, ornate general armor, dialogue text in frame, exaggerated lip movement, melted mouth shape, face glitching, drifting eyes or nose, clumped fingers, background spear line blurred into grey blocks, video smearing, compression blocks, younger identity drift, missing bone bell.
+avoid grandmaster pose, wuxia glow, divine heroic backlight, overexposed face light, ornate general armor, dialogue text in frame, exaggerated lip movement, melted mouth shape, face glitching, drifting eyes or nose, clumped fingers, background with equal clarity to protagonist, exterior army stealing focus, background spear line blurred into grey blocks, tiny pebble wall-top texture, gravel noise, random grit on blackstone blocks, smooth metallic wall bricks, polished blue slabs, ceramic tiles, homogeneous material shader across stone/bell/armor, old metal bell looking like stone/clay/bone/plastic, video smearing, compression blocks, younger identity drift, missing old metal bell.
 ```
 
 ## SC002 ComfyUI Handoff / SC002 可复制提示词
