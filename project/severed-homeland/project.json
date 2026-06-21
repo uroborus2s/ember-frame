@@ -1,0 +1,338 @@
+﻿{
+  "project_id": "severed-homeland",
+  "title": "断航故土",
+  "season": "season-01",
+  "current_status": "season_01_screenwriting_allusive_dialogue_polish_complete",
+  "created_at": "2026-06-02",
+  "updated_at": "2026-06-05",
+  "format": {
+    "type": "AI横屏宽屏剧",
+    "episode_count": 12,
+    "episode_duration": "3分30秒-5分钟",
+    "season_runtime": "约42-60分钟",
+    "target_audience": "喜欢东方史诗奇幻、逃亡护送、身份反转和强钩子短剧的观众"
+  },
+  "normalized_request": {
+    "seed": "全剧基础已从临时设定吸收并规范化为 story-original/bible/source/*、story-original/bible/source/outline/* 和 story-original/bible/source/synopsis/*。后续只以规范文件为 canon；旧剧本、旧分镜、旧资产、旧提示词、旧 ComfyUI 参数和旧渲染结果不作为 canon 读取或继承。",
+    "requested_outputs": [
+      "全剧基础 bible 重编",
+      "第一季全剧大纲",
+      "分集大纲索引",
+      "全剧梗概",
+      "项目记忆状态",
+      "第一季12集详细剧本",
+      "每集 brief、outline、script、critique、continuity、score、memory、logs",
+      "第一季全集95分目标精修 pass",
+      "第一季全集词顺口润色 pass",
+      "第一季全集隐语典故润色 pass"
+    ],
+    "genre": "低魔东方史诗护送短剧",
+    "tone": "冷峻、紧迫、制度压迫、政治阴谋、带历史伤口与故土重释；少量黑色幽默只作人物呼吸",
+    "story_style": "低魔东方史诗护送剧 + 制度悬疑 + 政治阴谋 + 大陆战争阴影；不采用诙谐幽默作为主类型，不把大陆争霸取代第一季护送主线",
+    "calendar_rule": "承接式纪年：旧时代用昭明历，新王朝用肃明历；旧王朝灭国于昭明历5249年，该年就是肃明历元年；第一季开端固定为肃明历1226年；不得再写帝国历1226年",
+    "video_readiness": "编剧部只记录可拍摄的叙事约束：控制角色数量、集中场景、使用明确视觉锚点和可表演动作；不生成图像提示词、视频提示词、ComfyUI 参数或后期交付物。",
+    "revision_budget": 2,
+    "current_stage": "season 01 allusive dialogue polish complete",
+    "episode_duration_rule": "每集 3 分 30 秒到 5 分钟",
+    "downstream_not_started": [
+      "director-room",
+      "art-room",
+      "ComfyUI production",
+      "audio/post-production"
+    ],
+    "allowed_next_stage": "director-room from allusive-dialogue-polished final scripts"
+  },
+  "assumptions": [
+    "第一季旧剧本不再作为 canon。全剧基础层以新的 series-outline、episode-outline-index、story-synopsis 和 bible 文件为准。",
+    "全剧基础清理已完成；进入第 01 集 episode mode 前，不读取 legacy/、旧 art/、旧 assets/、旧 prompts/ 或旧 01-12 生产内容作为 canon。",
+    "每集采用横屏宽屏剧结构：前30秒内建立钩子或时代危机，中段升级，结尾反转或悬念；单集时长为3分30秒到5分钟。",
+    "每集主要角色控制在3到5人，主要场景控制在2到4个，便于后续部门维持镜头和角色连续性。",
+    "本轮用户已确认基础剧情完成，允许从 series foundation 进入第一季全部 episode mode。",
+    "每集最终稿以3分30秒到5分钟横屏宽屏剧为目标，后续导演与美术部门需从编剧部剧本重新拆分镜头与资产需求。"
+  ],
+  "planned_department_sequence": [
+    "story-original",
+    "screenwriting",
+    "director-room",
+    "art-room",
+    "voice-room",
+    "music-room",
+    "prompt-room",
+    "video-production-room",
+    "edit-room",
+    "delivery-room"
+  ],
+  "artifacts": {
+    "world": "story-original/bible/source/world.md",
+    "geography": "story-original/bible/source/geography.md",
+    "factions": "story-original/bible/source/factions.md",
+    "timeline": "story-original/bible/source/timeline.md",
+    "characters": "story-original/bible/source/characters.md",
+    "scenes": "story-original/bible/source/scenes.md",
+    "continuity": "story-original/bible/source/continuity.md",
+    "visual_style": "story-original/bible/source/visual-style.md",
+    "series_outline": "story-original/bible/source/outline/series-outline.md",
+    "episode_outline_index": "story-original/bible/source/outline/episode-outline-index.md",
+    "story_synopsis": "story-original/bible/source/synopsis/story-synopsis.md",
+    "season_01_episode_outputs": {
+      "10": {
+        "brief": "screenwriting/10/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/10/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/10/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/10/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/10/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/10/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/10/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "11": {
+        "brief": "screenwriting/11/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/11/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/11/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/11/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/11/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/11/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/11/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "12": {
+        "brief": "screenwriting/12/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/12/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/12/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/12/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/12/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/12/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/12/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "01": {
+        "brief": "screenwriting/01/.history/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/01/.history/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/01/.history/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/01/.history/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/01/.history/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/01/.history/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/01/.history/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "02": {
+        "brief": "screenwriting/02/.history/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/02/.history/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/02/.history/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/02/.history/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/02/.history/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/02/.history/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/02/.history/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "03": {
+        "brief": "screenwriting/03/.history/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/03/.history/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/03/.history/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/03/.history/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/03/.history/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/03/.history/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/03/.history/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "04": {
+        "brief": "screenwriting/04/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/04/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/04/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/04/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/04/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/04/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/04/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "05": {
+        "brief": "screenwriting/05/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/05/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/05/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/05/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/05/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/05/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/05/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "06": {
+        "brief": "screenwriting/06/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/06/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/06/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/06/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/06/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/06/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/06/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "07": {
+        "brief": "screenwriting/07/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/07/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/07/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/07/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/07/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/07/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/07/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "08": {
+        "brief": "screenwriting/08/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/08/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/08/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/08/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/08/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/08/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/08/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      },
+      "09": {
+        "brief": "screenwriting/09/.work/from-root-episode-20260620/brief/episode-brief.md",
+        "outline": "screenwriting/09/.work/from-root-episode-20260620/script/episode-outline.md",
+        "script_v01": "screenwriting/09/.work/from-root-episode-20260620/script/script-v01.md",
+        "final_script": "screenwriting/09/.work/from-root-episode-20260620/script/final-script.md",
+        "critique": "screenwriting/09/.work/from-root-episode-20260620/reports/critique-v01.md",
+        "continuity": "screenwriting/09/.work/from-root-episode-20260620/reports/continuity-report.md",
+        "score": "screenwriting/09/.work/from-root-episode-20260620/reports/script-score.md",
+        "log": null
+      }
+    }
+  },
+  "warnings": [
+    "临时输入文件 背景.md 与旧编剧输入文件已按清理规则删除，后续不得作为正式输入引用。",
+    "legacy/ 只保留为归档，不作为编剧部或下游部门的剧情 canon。",
+    "第一季编剧部剧本文字已完成，但尚未启动 director-room、art-room、ComfyUI、音频、剪辑或后期流程。",
+    "第一季 95分目标精修已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从精修后的编剧部剧本重新启动。",
+    "第一季词顺口润色 pass 已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从词顺口润色后的编剧部剧本重新启动。",
+    "第一季隐语典故润色 pass 已完成；后续 director-room、art-room、ComfyUI、音频、剪辑和后期仍需从隐语典故润色后的编剧部剧本重新启动。"
+  ],
+  "production_mode": "season_01_screenwriting_allusive_dialogue_polish_complete",
+  "remake_policy": {
+    "keep_as_canon_inputs": [
+      "story-original/bible/source/world.md",
+      "story-original/bible/source/geography.md",
+      "story-original/bible/source/factions.md",
+      "story-original/bible/source/timeline.md",
+      "story-original/bible/source/characters.md",
+      "story-original/bible/source/scenes.md",
+      "story-original/bible/source/continuity.md",
+      "story-original/bible/source/visual-style.md",
+      "story-original/bible/source/outline/series-outline.md",
+      "story-original/bible/source/outline/episode-outline-index.md",
+      "story-original/bible/source/synopsis/story-synopsis.md"
+    ],
+    "discard_from_canon": [
+      "旧剧本",
+      "旧分镜",
+      "旧导演文件",
+      "旧资产图",
+      "旧资产提示词",
+      "旧视频提示词",
+      "旧 ComfyUI 参数",
+      "旧渲染结果"
+    ],
+    "legacy_archive": "legacy/",
+    "temporary_inputs_deleted": [
+      "背景.md",
+      "旧编剧输入文件"
+    ],
+    "cleanup_status": "completed_after_absorption_into_canonical_files",
+    "series_foundation_approval_required_before_episode_mode": false,
+    "episode_mode_status": "season_01_allusive_dialogue_polish_complete"
+  },
+  "season_01_95_point_polish": {
+    "target_score": 95,
+    "completed_at": "2026-06-05",
+    "decision": "pass",
+    "scores": {
+      "10": 96,
+      "11": 97,
+      "12": 97,
+      "01": 96,
+      "02": 96,
+      "03": 96,
+      "04": 96,
+      "05": 96,
+      "06": 96,
+      "07": 96,
+      "08": 96,
+      "09": 96
+    },
+    "average_score": 96.2,
+    "boundary": "编剧部故事侧精修；不输出 shot list、图片/视频提示词、ComfyUI、音频、剪辑、渲染或后期交付物。",
+    "latest_followup_pass": "season_01_dialogue_polish_complete"
+  },
+  "season_01_dialogue_polish": {
+    "target_score": 95,
+    "completed_at": "2026-06-05",
+    "decision": "pass",
+    "scores": {
+      "10": 96,
+      "11": 97,
+      "12": 97,
+      "01": 96,
+      "02": 96,
+      "03": 96,
+      "04": 96,
+      "05": 96,
+      "06": 96,
+      "07": 96,
+      "08": 96,
+      "09": 96
+    },
+    "dialogue_scores": {
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "01": 15,
+      "02": 15,
+      "03": 15,
+      "04": 15,
+      "05": 15,
+      "06": 15,
+      "07": 15,
+      "08": 15,
+      "09": 15
+    },
+    "average_score": 96.2,
+    "method": "将清明籍、封名、旧姓旁注、旧污、旧誓、旧账、无姓人、残缺证据等设定说明嵌入族谱、户籍、疑名、粮牌、官蜡、账本、讨债、守边旧盟等中国式历史语义。",
+    "boundary": "编剧部台词润色；不输出 shot list、图片/视频提示词、ComfyUI、音频、剪辑、渲染或后期交付物。",
+    "latest_followup_pass": "season_01_allusive_dialogue_polish_complete"
+  },
+  "season_01_allusive_dialogue_polish": {
+    "target_score": 95,
+    "completed_at": "2026-06-05",
+    "decision": "pass",
+    "scores": {
+      "10": 96,
+      "11": 97,
+      "12": 97,
+      "01": 96,
+      "02": 96,
+      "03": 96,
+      "04": 96,
+      "05": 96,
+      "06": 96,
+      "07": 96,
+      "08": 96,
+      "09": 96
+    },
+    "dialogue_scores": {
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "01": 15,
+      "02": 15,
+      "03": 15,
+      "04": 15,
+      "05": 15,
+      "06": 15,
+      "07": 15,
+      "08": 15,
+      "09": 15
+    },
+    "average_score": 96.2,
+    "method": "将月饼藏信、河不清、白莲香会等中国观众可直觉理解的典故语义，转译为本世界的月饼、金河、白墙、清明香、粮门、碎陶和盟书残页。",
+    "boundary": "编剧部隐语典故润色；不输出 shot list、图片/视频提示词、ComfyUI、音频、剪辑、渲染或后期交付物。"
+  }
+}
+

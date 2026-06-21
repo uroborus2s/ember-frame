@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Art Room Location Orientation Index",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["version", "scenes"],
+  "properties": {
+    "version": {"type": "string"},
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "scene_id",
+          "status",
+          "source_refs",
+          "scene_master_asset_id",
+          "scene_master_path",
+          "art_top_view_asset_id",
+          "art_top_view_path",
+          "orientation_grid_asset_id",
+          "orientation_grid_path",
+          "cells",
+          "shot_usage"
+        ],
+        "properties": {
+          "scene_id": {"type": "string", "minLength": 1},
+          "status": {
+            "type": "string",
+            "enum": ["ready", "warning", "blocked", "missing"]
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "scene_master_asset_id": {"type": "string"},
+          "scene_master_path": {
+            "type": "string",
+            "pattern": "^[0-9]{2}/assets/locations/"
+          },
+          "art_top_view_asset_id": {"type": "string"},
+          "art_top_view_path": {
+            "type": "string",
+            "pattern": "^[0-9]{2}/assets/locations/"
+          },
+          "orientation_grid_asset_id": {"type": "string"},
+          "orientation_grid_path": {
+            "type": "string",
+            "pattern": "^[0-9]{2}/assets/locations/"
+          },
+          "cells": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["NW", "N", "NE", "W", "C", "E", "SW", "S", "SE"],
+            "properties": {
+              "NW": {"$ref": "#/$defs/orientation_cell"},
+              "N": {"$ref": "#/$defs/orientation_cell"},
+              "NE": {"$ref": "#/$defs/orientation_cell"},
+              "W": {"$ref": "#/$defs/orientation_cell"},
+              "C": {"$ref": "#/$defs/orientation_cell"},
+              "E": {"$ref": "#/$defs/orientation_cell"},
+              "SW": {"$ref": "#/$defs/orientation_cell"},
+              "S": {"$ref": "#/$defs/orientation_cell"},
+              "SE": {"$ref": "#/$defs/orientation_cell"}
+            }
+          },
+          "shot_usage": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": ["shot_id", "camera_cell", "look_direction"],
+              "properties": {
+                "shot_id": {"type": "string"},
+                "camera_cell": {
+                  "type": "string",
+                  "enum": ["NW", "N", "NE", "W", "C", "E", "SW", "S", "SE"]
+                },
+                "look_direction": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "orientation_cell": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "camera_zone",
+        "look_direction",
+        "expected_visible_anchors",
+        "prohibited_drift",
+        "source_refs"
+      ],
+      "properties": {
+        "camera_zone": {"type": "string"},
+        "look_direction": {"type": "string"},
+        "expected_visible_anchors": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "prohibited_drift": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  }
+}

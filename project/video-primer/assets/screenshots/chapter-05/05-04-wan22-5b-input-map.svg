@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#101318"/>
+  <text x="40" y="52" fill="#e8eef7" font-size="30" font-family="Arial, sans-serif" font-weight="700">Wan2.2 5B TI2V input map from course JSON</text>
+  <text x="40" y="84" fill="#9aa7b8" font-size="18" font-family="Arial, sans-serif">Use this map to find what a beginner must edit first. It is parsed from docs/assets/workflows/wan22/video_wan2_2_5B_ti2v.json.</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5cc8ff"/>
+    </marker>
+    <style>
+      .box { fill: #171c24; stroke: #435166; stroke-width: 2; rx: 10; }
+      .edit { fill: #102923; stroke: #37d67a; stroke-width: 3; rx: 10; }
+      .model { fill: #221a10; stroke: #ffb547; stroke-width: 3; rx: 10; }
+      .run { fill: #251317; stroke: #ff5c77; stroke-width: 3; rx: 10; }
+      .title { fill: #f4f7fb; font: 700 20px Arial, sans-serif; }
+      .small { fill: #bac4d3; font: 16px Arial, sans-serif; }
+      .hint { fill: #8d9aab; font: 14px Arial, sans-serif; }
+      .num { fill: #101318; font: 700 20px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect x="40" y="120" width="300" height="120" class="model"/>
+  <circle cx="70" cy="150" r="18" fill="#ffb547"/><text x="64" y="157" class="num">1</text>
+  <text x="100" y="152" class="title">Model files</text>
+  <text x="70" y="185" class="small">UNET: wan2.2_ti2v_5B_fp16</text>
+  <text x="70" y="210" class="small">CLIP: umt5_xxl_fp8...</text>
+  <text x="70" y="233" class="small">VAE: wan2.2_vae</text>
+
+  <rect x="40" y="300" width="300" height="118" class="edit"/>
+  <circle cx="70" cy="330" r="18" fill="#37d67a"/><text x="64" y="337" class="num">2</text>
+  <text x="100" y="333" class="title">Reference image</text>
+  <text x="70" y="366" class="small">LoadImage: example.png</text>
+  <text x="70" y="392" class="hint">Replace with your own image or the course starter PNG.</text>
+
+  <rect x="420" y="120" width="380" height="145" class="edit"/>
+  <circle cx="450" cy="150" r="18" fill="#37d67a"/><text x="444" y="157" class="num">3</text>
+  <text x="480" y="153" class="title">Positive prompt</text>
+  <text x="450" y="188" class="small">Write: subject + action + scene + camera + style.</text>
+  <text x="450" y="216" class="hint">Example: black product on dark desk, slow rotation,</text>
+  <text x="450" y="239" class="hint">blue rim light, cinematic close-up.</text>
+
+  <rect x="420" y="300" width="380" height="118" class="edit"/>
+  <circle cx="450" cy="330" r="18" fill="#37d67a"/><text x="444" y="337" class="num">4</text>
+  <text x="480" y="333" class="title">Size and length</text>
+  <text x="450" y="366" class="small">Wan22ImageToVideoLatent</text>
+  <text x="450" y="392" class="hint">Default JSON: 1280 x 704, 121 frames, batch 1.</text>
+
+  <rect x="420" y="475" width="380" height="118" class="box"/>
+  <circle cx="450" cy="505" r="18" fill="#5cc8ff"/><text x="444" y="512" class="num">5</text>
+  <text x="480" y="508" class="title">Negative prompt</text>
+  <text x="450" y="541" class="small">Keep default at first run.</text>
+  <text x="450" y="568" class="hint">Only add clear problems later: text, watermark, blur.</text>
+
+  <rect x="870" y="170" width="330" height="160" class="run"/>
+  <circle cx="900" cy="200" r="18" fill="#ff5c77"/><text x="894" y="207" class="num">6</text>
+  <text x="930" y="203" class="title">Sampler</text>
+  <text x="900" y="238" class="small">Seed: 898471028164125</text>
+  <text x="900" y="264" class="small">Steps: 20, CFG: 5</text>
+  <text x="900" y="290" class="hint">For learning, change only one value each test.</text>
+
+  <rect x="870" y="390" width="330" height="130" class="box"/>
+  <circle cx="900" cy="420" r="18" fill="#5cc8ff"/><text x="894" y="427" class="num">7</text>
+  <text x="930" y="423" class="title">Video output</text>
+  <text x="900" y="458" class="small">CreateVideo: 24 fps</text>
+  <text x="900" y="484" class="small">SaveVideo: video/ComfyUI</text>
+
+  <path d="M340 180 C370 180 385 170 420 170" stroke="#5cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M340 360 C370 360 385 355 420 355" stroke="#5cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M800 190 C835 190 850 220 870 230" stroke="#5cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M800 360 C835 360 850 270 870 270" stroke="#5cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1035 330 L1035 390" stroke="#5cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="635" width="1160" height="48" fill="#17202b" stroke="#334155" stroke-width="1" rx="8"/>
+  <text x="60" y="666" fill="#d9e2ef" font-size="18" font-family="Arial, sans-serif">Beginner rule: first edit only 2, 3, 4 and 6. Do not rebuild nodes before the JSON can load and the missing model list is understood.</text>
+</svg>

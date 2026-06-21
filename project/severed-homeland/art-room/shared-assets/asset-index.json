@@ -1,0 +1,84 @@
+{
+  "project_id": "severed-homeland",
+  "owner": "art-room",
+  "contract": ".project/contracts/shared-visual-assets.md",
+  "last_updated": "2026-06-21",
+  "status": "ready",
+  "assets": [
+    {
+      "asset_id": "P016-zhaoming-emblem-flag-root",
+      "display_name": "昭明日月星盘徽章与朱赤旗帜基础母版",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "formal_asset": "art-room/shared-assets/props/p016m.png",
+      "version_repo": "art-room/.work/asset-versions/P016-zhaoming-emblem-flag-root/",
+      "source": "legacy top-level/assets/props/p016m.png",
+      "sha256": "3EA604DB7E3760C4A68346D4546DA371F2B30EF9A1F14D2766248FADE6A75C21",
+      "dimensions": "2160x3840",
+      "immutable_lock": true,
+      "usage": [
+        "昭明旧帝国根徽章旗帜",
+        "旧驿遗迹石刻",
+        "驿令/血牒/盟书/旗布统一符号",
+        "昭明相关服饰纹样和后合成母版"
+      ],
+      "derivative_rule": {
+        "output_spec_id": "OUT-PRECISION-OVERLAY",
+        "background_policy": "transparent_alpha",
+        "alpha_policy": "required",
+        "annotation_policy": "forbidden",
+        "control_role": "precision_overlay"
+      }
+    },
+    {
+      "asset_id": "P017-suming-emblem-flag-root",
+      "display_name": "肃明清明黑日白翅徽章与旗帜基础母版",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "formal_asset": "art-room/shared-assets/props/p017m.png",
+      "version_repo": "art-room/.work/asset-versions/P017-suming-emblem-flag-root/",
+      "source": "legacy top-level/assets/props/p017m.png",
+      "sha256": "2B5645D7A08967BCFA33BE53E516EA984B214E6E620F40116EF11891C79A41DB",
+      "dimensions": "2160x3840",
+      "immutable_lock": true,
+      "usage": [
+        "肃明/清明院根徽章旗帜",
+        "清明院白墙与白册章",
+        "官吏服制/军阶牌/烙牌统一符号",
+        "封条/虫蜡/旗帜后合成母版"
+      ],
+      "derivative_rule": {
+        "output_spec_id": "OUT-PRECISION-OVERLAY",
+        "background_policy": "transparent_alpha",
+        "alpha_policy": "required",
+        "annotation_policy": "forbidden",
+        "control_role": "precision_overlay"
+      }
+    },
+    {
+      "asset_id": "P018-beast-alliance-emblem-flag-root",
+      "display_name": "北境万兽部落联盟徽章与旗帜基础母版",
+      "asset_type": "prop",
+      "asset_subtype": "prop_master_card",
+      "formal_asset": "art-room/shared-assets/props/p018m.png",
+      "version_repo": "art-room/.work/asset-versions/P018-beast-alliance-emblem-flag-root/",
+      "source": "legacy top-level/assets/props/p018m.png",
+      "sha256": "149EDC23E9203B97A20853F0BEFBF9FFB5607B8AA68E57FED0F4F5B6293F420A",
+      "dimensions": "2160x3840",
+      "immutable_lock": true,
+      "usage": [
+        "北境万兽/部落联盟根徽章旗帜",
+        "北境服饰/盾鼓/皮帐/誓约绳统一符号",
+        "攻城器具和共生兽具识别",
+        "骨木旗帜和透明线控后合成母版"
+      ],
+      "derivative_rule": {
+        "output_spec_id": "OUT-PRECISION-OVERLAY",
+        "background_policy": "transparent_alpha",
+        "alpha_policy": "required",
+        "annotation_policy": "forbidden",
+        "control_role": "precision_overlay"
+      }
+    }
+  ]
+}

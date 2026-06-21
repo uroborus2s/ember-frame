@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Director Room Agent Package Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "summary", "director_order_ref", "artifacts", "next_actions", "warnings", "handoff"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["success", "warning", "blocked"]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "director_order_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path_role", "kind", "content"],
+        "properties": {
+          "path_role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": ["markdown", "json", "yaml"]
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["main_output_role", "section", "assumptions", "quality_notes", "needs_director_signature", "blocked_questions"],
+      "properties": {
+        "main_output_role": {
+          "type": "string",
+          "const": "director_package"
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quality_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "needs_director_signature": {
+          "type": "boolean",
+          "const": true
+        },
+        "blocked_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

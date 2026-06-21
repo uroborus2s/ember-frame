@@ -1,0 +1,469 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Art Room Asset Index",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["version", "assets"],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "asset_id",
+          "asset_type",
+          "asset_subtype",
+          "file",
+          "file_path",
+          "status",
+          "prompt_id",
+          "output_format"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string",
+            "enum": [
+              "character",
+              "location",
+              "prop",
+              "costume",
+              "style",
+              "reference_frame",
+              "control",
+              "storyboard"
+            ]
+          },
+          "asset_subtype": {
+            "type": "string",
+            "enum": [
+              "character_master_card",
+              "character_episode_state_card",
+              "prop_master_card",
+              "prop_episode_state_card",
+              "location_master_scene_card",
+              "location_episode_scene_card",
+              "location_scene_master_reference",
+              "location_art_top_view",
+              "location_orientation_grid_9",
+              "style_reference",
+              "reference_frame",
+              "shot_override",
+              "character_low_poly_proxy",
+              "prop_precision_overlay",
+              "location_low_poly_blockout",
+              "location_overhead_annotated_map",
+              "scene_character_blocking_chart",
+              "shot_character_blocking_chart",
+              "motion_path_guide",
+              "storyboard_motion_sheet",
+              "director_storyboard_board"
+            ]
+          },
+          "file": {
+            "type": "string",
+            "pattern": "^[^/]{1,20}\\.[^./]+$"
+          },
+          "file_path": {
+            "type": "string",
+            "pattern": "^(assets/|[0-9]{2}/assets/)",
+            "allOf": [
+              {
+                "not": {
+                  "pattern": "(^|/)(v[0-9]+|versions?|drafts?)(/|$)"
+                }
+              },
+              {
+                "not": {
+                  "pattern": "(^|/)history/"
+                }
+              },
+              {
+                "not": {
+                  "pattern": "\\.v[0-9]{3}\\.[^/]+$"
+                }
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ready", "warning", "missing", "blocked"]
+          },
+          "prompt_id": {
+            "type": "string"
+          },
+          "output_format": {
+            "$ref": "#/$defs/output_format"
+          },
+          "version_repo": {
+            "type": "string",
+            "pattern": "^art-room/\\.work/asset-versions/[^/]+/?$"
+          },
+          "discarded_files": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^art-room/\\.work/asset-versions/[^/]+/[0-9]{8}v[0-9]{4}\\.[^/]+$"
+            }
+          },
+          "history_files": {
+            "type": "array",
+            "deprecated": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "character"},
+                "asset_subtype": {"const": "character_master_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/characters/"}}}
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "character"},
+                "asset_subtype": {"const": "character_episode_state_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/characters/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "location"},
+                "asset_subtype": {"const": "location_master_scene_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/locations/"}}}
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "location"},
+                "asset_subtype": {"const": "location_episode_scene_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/locations/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "location"},
+                "asset_subtype": {"const": "location_scene_master_reference"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/locations/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "location"},
+                "asset_subtype": {"const": "location_art_top_view"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/locations/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "location"},
+                "asset_subtype": {"const": "location_orientation_grid_9"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/locations/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "prop"},
+                "asset_subtype": {"const": "prop_master_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/props/"}}}
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "prop"},
+                "asset_subtype": {"const": "prop_episode_state_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^[0-9]{2}/assets/props/"}}}
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "costume"},
+                "asset_subtype": {"const": "prop_master_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/costumes/"}}}
+          },
+          {
+            "if": {
+              "properties": {
+                "asset_type": {"const": "costume"},
+                "asset_subtype": {"const": "prop_episode_state_card"}
+              },
+              "required": ["asset_type", "asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/costumes/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "style_reference"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/style/"}}}
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "reference_frame"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/reference-frames/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "shot_override"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/shot-overrides/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "character_low_poly_proxy"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {"properties": {"file_path": {"pattern": "^assets/characters/"}}}
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "prop_precision_overlay"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^(assets/props/|assets/costumes/|[0-9]{2}/assets/control-refs/)"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "location_overhead_annotated_map"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/control-refs/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "location_low_poly_blockout"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/control-refs/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "scene_character_blocking_chart"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/blocking/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "shot_character_blocking_chart"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/blocking/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "motion_path_guide"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/blocking/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "storyboard_motion_sheet"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/storyboards/"}}
+            }
+          },
+          {
+            "if": {
+              "properties": {"asset_subtype": {"const": "director_storyboard_board"}},
+              "required": ["asset_subtype"]
+            },
+            "then": {
+              "properties": {"file_path": {"pattern": "^[0-9]{2}/assets/storyboards/"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "output_format": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "output_spec_id",
+        "deliverable_kind",
+        "file_format",
+        "minimum_resolution",
+        "background_policy",
+        "alpha_policy",
+        "annotation_policy",
+        "control_role",
+        "canvas_aspect_ratio",
+        "required_views",
+        "composition_layers",
+        "qc_checks"
+      ],
+      "properties": {
+        "output_spec_id": {
+          "type": "string",
+          "pattern": "^OUT-"
+        },
+        "deliverable_kind": {
+          "type": "string",
+          "enum": [
+            "neutral_master_card",
+            "episode_state_card",
+            "transparent_cutout",
+            "transparent_three_view",
+            "turnaround_sheet",
+            "detail_crop_sheet",
+            "low_poly_character_proxy",
+            "location_scene_card",
+            "location_scene_master_reference",
+            "location_overhead_annotated_map",
+            "location_low_poly_blockout",
+            "location_art_top_view",
+            "location_orientation_grid_9",
+            "scene_character_blocking_chart",
+            "shot_character_blocking_chart",
+            "motion_path_guide",
+            "storyboard_motion_sheet",
+            "director_storyboard_board",
+            "style_reference",
+            "video_reference_frame",
+            "shot_override_frame",
+            "precision_overlay"
+          ]
+        },
+        "file_format": {"type": "string", "enum": ["png", "jpg", "svg"]},
+        "minimum_resolution": {
+          "type": "string",
+          "pattern": "^([0-9]+x[0-9]+|project_defined)$"
+        },
+        "background_policy": {
+          "type": "string",
+          "enum": [
+            "neutral_plain",
+            "transparent_alpha",
+            "scene_context",
+            "video_frame",
+            "diagram_plain",
+            "low_poly_scene",
+            "annotated_control"
+          ]
+        },
+        "alpha_policy": {"type": "string", "enum": ["required", "forbidden", "optional"]},
+        "annotation_policy": {
+          "type": "string",
+          "enum": [
+            "forbidden",
+            "required",
+            "allowed_control_only",
+            "companion_json_only"
+          ]
+        },
+        "control_role": {
+          "type": "string",
+          "enum": [
+            "final_asset",
+            "control_reference",
+            "diagram",
+            "motion_guide",
+            "low_poly_proxy",
+            "precision_overlay"
+          ]
+        },
+        "canvas_aspect_ratio": {
+          "type": "string",
+          "enum": ["1:1", "3:2", "2:1", "4:5", "16:9", "9:16", "project_defined"]
+        },
+        "required_views": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string"}
+        },
+        "composition_layers": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": ["foreground", "midground", "background"],
+          "properties": {
+            "foreground": {"type": "string"},
+            "midground": {"type": "string"},
+            "background": {"type": "string"}
+          }
+        },
+        "qc_checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string"}
+        }
+      }
+    }
+  }
+}
