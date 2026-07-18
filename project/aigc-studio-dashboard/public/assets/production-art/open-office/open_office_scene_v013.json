@@ -1,0 +1,304 @@
+﻿{
+  "id": "open_office_v013",
+  "status": "clean-window-cutout-over-no-wobble-traffic-gif",
+  "size": [1536, 900],
+  "layers": {
+    "base": "open-office/v013-ai-video/street_traffic_no_tree_wobble_loop.gif",
+    "fixedStaffBase": "open-office/v013-ai-video/street_traffic_no_tree_wobble_loop.gif",
+    "foregroundCutout": "open-office/v012-clean-cutout/open_office_v012_office_clean_window_cutout.png",
+    "foreground": "open-office/candidates/open_office_foreground_occlusion_v002.png",
+    "walkableMask": "open-office/candidates/open_office_walkable_mask_v002.png",
+    "depthMap": "open-office/candidates/open_office_depth_map_v002.png",
+    "navDebug": "open-office/candidates/open_office_nav_debug_v002.png"
+  },
+  "camera": {
+    "type": "fixed-isometric-2.5d",
+    "zSort": "anchor-y",
+    "spriteScale": {
+      "yMin": 120,
+      "yMax": 820,
+      "scaleMin": 0.66,
+      "scaleMax": 1.1
+    }
+  },
+  "workflowRules": {
+    "taskAssignment": {
+      "controllerOnly": true,
+      "controllerRoleId": "main_controller",
+      "assignableTargetTypes": ["workstationSeat", "deskRowHandoffPoint"],
+      "normalStaffCanMove": false,
+      "qcCanAssignTasks": false
+    },
+    "handoffFlow": [
+      "main_controller leaves control desk",
+      "main_controller walks through nav graph to a row handoff point",
+      "task is assigned to the target workstation",
+      "main_controller returns to control desk or moves to next handoff point"
+    ],
+    "qcBehavior": {
+      "roleIds": ["qc_inspector_01", "qc_inspector_02"],
+      "loopPatrol": true,
+      "canStopAtRows": true,
+      "canAssignTasks": false
+    }
+  },
+  "people": [
+    {
+      "id": "main_controller",
+      "kind": "female_01",
+      "interactive": true,
+      "anchor": "control_home",
+      "mode": "idle_SE",
+      "targetId": "control_home"
+    },
+    {
+      "id": "qc_inspector_01",
+      "kind": "male_01",
+      "anchor": "qc_left_start",
+      "mode": "walk_NE",
+      "patrolRoute": "qc_left_loop",
+      "speed": 86,
+      "frameOffset": 2
+    },
+    {
+      "id": "qc_inspector_02",
+      "kind": "female_01",
+      "anchor": "qc_right_start",
+      "mode": "walk_NW",
+      "patrolRoute": "qc_right_loop",
+      "speed": 92,
+      "frameOffset": 5
+    }
+  ],
+  "officeTargets": [
+    {
+      "id": "control_home",
+      "label": "总控台",
+      "node": "control_home",
+      "idleMode": "idle_SE"
+    },
+    {
+      "id": "left_upper_row",
+      "label": "左上排派单",
+      "node": "left_upper_row_handoff",
+      "idleMode": "idle_NE"
+    },
+    {
+      "id": "left_lower_row",
+      "label": "左下排派单",
+      "node": "left_lower_row_handoff",
+      "idleMode": "idle_NE"
+    },
+    {
+      "id": "right_upper_row",
+      "label": "右上排派单",
+      "node": "right_upper_row_handoff",
+      "idleMode": "idle_NW"
+    },
+    {
+      "id": "right_lower_row",
+      "label": "右下排派单",
+      "node": "right_lower_row_handoff",
+      "idleMode": "idle_NW"
+    }
+  ],
+  "action": {
+    "status": "总控派单 / QC 巡检运行中"
+  },
+  "ambientFx": {
+    "windowTreeAnimation": {
+      "id": "city_window_motion_v007",
+      "enabled": false,
+      "framePattern": "open-office/v007-city-window/window_motion_frames/{frame}.png",
+      "mask": "open-office/v007-city-window/open_office_v007_window_mask.png",
+      "source": "open-office/v013-ai-video/street_traffic_no_tree_wobble_loop.gif",
+      "version": "v013_no_tree_wobble_traffic_gif",
+      "frameCount": 0,
+      "fps": 0,
+      "z": 16
+    },
+    "lightSweeps": [],
+    "shadowDrifts": [],
+    "screenGlows": [
+      {
+        "id": "back-wall-screens",
+        "x": 650,
+        "y": 55,
+        "w": 430,
+        "h": 95,
+        "z": 20,
+        "duration": 2.8,
+        "delay": -0.4
+      },
+      {
+        "id": "control-desk-screens",
+        "x": 650,
+        "y": 620,
+        "w": 240,
+        "h": 65,
+        "z": 36,
+        "duration": 2.2,
+        "delay": -0.9
+      }
+    ],
+    "requiresAlphaAssets": [
+      {
+        "id": "plant_wind_clusters",
+        "purpose": "植物随风摆动。需要从底图中切出带 alpha 的植物叶片层，再做 6-12 帧循环或 WebM alpha。"
+      },
+      {
+        "id": "staff_hand_work_loops",
+        "purpose": "固定员工手部/头部微动。需要按座位切局部 alpha 小帧，不再用 DOM 人物贴片。"
+      },
+      {
+        "id": "screen_video_loops",
+        "purpose": "电视和显示器播放内容。需要每组屏幕的透视四边形素材或 masked WebM。"
+      }
+    ]
+  },
+  "debug": {
+    "nav": false
+  },
+  "roles": {
+    "main_controller": {
+      "type": "movableController",
+      "startAnchor": "control_operator_home",
+      "homeNode": "control_home",
+      "allowedRoutes": ["control_to_left_rows", "control_to_right_rows", "control_to_back_wall"],
+      "canAssignTasks": true
+    },
+    "qc_inspector_01": {
+      "type": "patrol",
+      "startNode": "qc_left_start",
+      "patrolRoute": "qc_left_loop",
+      "canAssignTasks": false
+    },
+    "qc_inspector_02": {
+      "type": "patrol",
+      "startNode": "qc_right_start",
+      "patrolRoute": "qc_right_loop",
+      "canAssignTasks": false
+    }
+  },
+  "navigation": {
+    "defaultSpeed": 116,
+    "nodeRadius": 24,
+    "nodes": {
+      "control_home": { "x": 760, "y": 575, "z": 58 },
+      "center_lower": { "x": 780, "y": 560, "z": 58 },
+      "center_mid": { "x": 790, "y": 450, "z": 52 },
+      "center_upper": { "x": 800, "y": 330, "z": 45 },
+      "back_wall_service": { "x": 820, "y": 235, "z": 38 },
+      "left_lower_row_lane": { "x": 590, "y": 555, "z": 56 },
+      "left_lower_row_handoff": { "x": 500, "y": 585, "z": 58 },
+      "left_upper_row_lane": { "x": 545, "y": 365, "z": 47 },
+      "left_upper_row_handoff": { "x": 460, "y": 385, "z": 49 },
+      "right_lower_row_lane": { "x": 800, "y": 560, "z": 57 },
+      "right_lower_row_handoff": { "x": 795, "y": 595, "z": 59 },
+      "right_upper_row_lane": { "x": 875, "y": 390, "z": 49 },
+      "right_upper_row_handoff": { "x": 870, "y": 425, "z": 52 },
+      "qc_left_start": { "x": 575, "y": 575, "z": 58 },
+      "qc_left_turn_top": { "x": 680, "y": 345, "z": 46 },
+      "qc_right_start": { "x": 790, "y": 595, "z": 59 },
+      "qc_right_turn_top": { "x": 870, "y": 330, "z": 46 }
+    },
+    "edges": [
+      ["control_home", "center_lower"],
+      ["center_lower", "center_mid"],
+      ["center_mid", "center_upper"],
+      ["center_upper", "back_wall_service"],
+      ["center_lower", "left_lower_row_lane"],
+      ["left_lower_row_lane", "left_lower_row_handoff"],
+      ["left_upper_row_lane", "left_upper_row_handoff"],
+      ["left_upper_row_lane", "center_upper"],
+      ["center_lower", "right_lower_row_lane"],
+      ["right_lower_row_lane", "right_lower_row_handoff"],
+      ["right_lower_row_lane", "right_upper_row_lane"],
+      ["right_upper_row_lane", "right_upper_row_handoff"],
+      ["right_upper_row_lane", "center_upper"],
+      ["qc_left_start", "left_lower_row_lane"],
+      ["left_upper_row_lane", "qc_left_turn_top"],
+      ["qc_right_start", "right_lower_row_lane"],
+      ["right_upper_row_lane", "qc_right_turn_top"]
+    ],
+    "routes": {
+      "control_to_left_rows": ["control_home", "center_lower", "left_lower_row_lane", "left_upper_row_lane"],
+      "control_to_right_rows": ["control_home", "center_lower", "right_lower_row_lane", "right_upper_row_lane"],
+      "control_to_back_wall": ["control_home", "center_lower", "center_mid", "center_upper", "back_wall_service"]
+    },
+    "patrolRoutes": {
+      "qc_left_loop": ["qc_left_start", "left_lower_row_lane", "left_lower_row_handoff", "left_lower_row_lane", "center_lower", "center_mid", "center_upper", "left_upper_row_lane", "left_upper_row_handoff", "left_upper_row_lane", "qc_left_turn_top", "left_upper_row_lane", "center_upper", "center_mid", "center_lower", "left_lower_row_lane"],
+      "qc_right_loop": ["qc_right_start", "right_lower_row_lane", "right_lower_row_handoff", "right_lower_row_lane", "right_upper_row_lane", "right_upper_row_handoff", "right_upper_row_lane", "qc_right_turn_top", "right_upper_row_lane", "right_lower_row_lane"]
+    }
+  },
+  "walkablePolygons": [
+    [[85, 185], [610, 120], [1010, 120], [1475, 255], [1450, 760], [1195, 845], [520, 855], [80, 735]],
+    [[660, 610], [865, 600], [890, 820], [610, 820]],
+    [[675, 285], [900, 285], [890, 610], [660, 610]],
+    [[500, 300], [710, 270], [665, 625], [530, 630]],
+    [[870, 300], [1085, 340], [1030, 660], [860, 630]]
+  ],
+  "collisionZones": {
+    "control_desk": [[615, 610], [885, 610], [910, 735], [595, 735]],
+    "control_side_rack_left": [[535, 620], [610, 590], [615, 755], [540, 780]],
+    "control_side_rack_right": [[900, 595], [970, 620], [980, 780], [905, 755]],
+    "desk_row_left_upper": [[245, 260], [720, 185], [765, 290], [285, 370]],
+    "desk_row_left_lower": [[275, 455], [680, 365], [735, 485], [315, 590]],
+    "desk_row_right_upper": [[940, 300], [1375, 425], [1335, 535], [900, 410]],
+    "desk_row_right_lower": [[835, 510], [1230, 610], [1190, 735], [795, 620]],
+    "north_wall_furniture": [[320, 70], [1250, 60], [1465, 215], [280, 210]],
+    "left_wall_furniture": [[0, 170], [230, 175], [220, 365], [0, 420]],
+    "right_wall_furniture": [[1370, 210], [1536, 250], [1536, 675], [1395, 650]],
+    "bottom_left_entry_glass": [[365, 735], [520, 700], [535, 900], [345, 900]],
+    "bottom_right_glass": [[980, 710], [1165, 725], [1220, 900], [1000, 900]],
+    "corner_plants_left": [[0, 520], [140, 510], [135, 820], [0, 875]],
+    "corner_plants_right": [[1355, 535], [1536, 540], [1536, 900], [1365, 880]]
+  },
+  "anchors": {
+    "controlDesk": {
+      "control_chair": { "x": 760, "y": 735, "facing": "N", "z": 70 },
+      "control_operator_home": { "x": 760, "y": 575, "facing": "S", "z": 58 },
+      "control_keyboard": { "x": 760, "y": 665, "z": 66 },
+      "control_task_board": { "x": 760, "y": 625, "z": 64 }
+    },
+    "deskRowHandoffPoints": {
+      "left_upper_row": { "x": 460, "y": 385, "rowId": "left_upper", "z": 49 },
+      "left_lower_row": { "x": 500, "y": 585, "rowId": "left_lower", "z": 58 },
+      "right_upper_row": { "x": 1115, "y": 430, "rowId": "right_upper", "z": 52 },
+      "right_lower_row": { "x": 1060, "y": 625, "rowId": "right_lower", "z": 62 }
+    }
+  },
+  "seatAnchors": {
+    "left_upper_01": { "x": 305, "y": 365, "rowId": "left_upper", "facing": "NE", "genderSlot": "female", "z": 47 },
+    "left_upper_02": { "x": 415, "y": 342, "rowId": "left_upper", "facing": "NE", "genderSlot": "male", "z": 46 },
+    "left_upper_03": { "x": 525, "y": 318, "rowId": "left_upper", "facing": "NE", "genderSlot": "female", "z": 44 },
+    "left_upper_04": { "x": 625, "y": 295, "rowId": "left_upper", "facing": "NE", "genderSlot": "male", "z": 42 },
+    "left_upper_05": { "x": 715, "y": 275, "rowId": "left_upper", "facing": "NE", "genderSlot": "female", "z": 41 },
+    "left_lower_01": { "x": 335, "y": 590, "rowId": "left_lower", "facing": "NE", "genderSlot": "male", "z": 60 },
+    "left_lower_02": { "x": 430, "y": 560, "rowId": "left_lower", "facing": "NE", "genderSlot": "female", "z": 58 },
+    "left_lower_03": { "x": 530, "y": 535, "rowId": "left_lower", "facing": "NE", "genderSlot": "male", "z": 56 },
+    "left_lower_04": { "x": 625, "y": 505, "rowId": "left_lower", "facing": "NE", "genderSlot": "female", "z": 54 },
+    "left_lower_05": { "x": 705, "y": 485, "rowId": "left_lower", "facing": "NE", "genderSlot": "male", "z": 52 },
+    "right_upper_01": { "x": 965, "y": 385, "rowId": "right_upper", "facing": "NW", "genderSlot": "female", "z": 49 },
+    "right_upper_02": { "x": 1065, "y": 415, "rowId": "right_upper", "facing": "NW", "genderSlot": "male", "z": 51 },
+    "right_upper_03": { "x": 1165, "y": 445, "rowId": "right_upper", "facing": "NW", "genderSlot": "female", "z": 53 },
+    "right_upper_04": { "x": 1265, "y": 475, "rowId": "right_upper", "facing": "NW", "genderSlot": "male", "z": 55 },
+    "right_upper_05": { "x": 1350, "y": 500, "rowId": "right_upper", "facing": "NW", "genderSlot": "female", "z": 57 },
+    "right_lower_01": { "x": 855, "y": 590, "rowId": "right_lower", "facing": "NW", "genderSlot": "male", "z": 59 },
+    "right_lower_02": { "x": 955, "y": 620, "rowId": "right_lower", "facing": "NW", "genderSlot": "female", "z": 61 },
+    "right_lower_03": { "x": 1055, "y": 650, "rowId": "right_lower", "facing": "NW", "genderSlot": "male", "z": 63 },
+    "right_lower_04": { "x": 1155, "y": 675, "rowId": "right_lower", "facing": "NW", "genderSlot": "female", "z": 65 },
+    "right_lower_05": { "x": 1240, "y": 700, "rowId": "right_lower", "facing": "NW", "genderSlot": "male", "z": 67 }
+  },
+  "notes": [
+    "V008 layout: animated GIF backplate behind transparent office foreground cutout; no PNG frame loop in React.",
+    "Fixed staff should be baked into open_office_fixed_staff_v002.png after this layout passes visual QC.",
+    "The main controller is the only role that can move to row handoff points for task assignment.",
+    "QC inspectors patrol aisles only and must not trigger task assignment."
+  ]
+}
+
+
+
+
+

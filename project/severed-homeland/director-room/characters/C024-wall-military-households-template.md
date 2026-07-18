@@ -131,9 +131,28 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: group_voice_master_card_v001_preview_audio_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C024-GROUP-VOICELOCK-V001
+- 声音母卡用途：边墙普通军户群像声线规则；用于 P-01 守墙者、头领短令、少年军户喘息、妇人补甲和守墙生活噪声。
+- 核心听感：饥饿、冻伤、职责压身，但不是英雄军队；每一句都像省着力气活下去。
+- 声部分层：军户头领中低粗哑但不豪迈；少年军户气短、疼痛咬住；女性补甲者低声催促；老军户带风雪磨损；群声要散，不整齐喊口号。
+- 语速与停顿：短、急、省力；冻风和骨钟之后常有半拍迟滞。
+- 情绪层级：L0 低声守岗；L1 催促补墙；L2 撞门后压住慌；L3 饥冻疼痛；L4 头领短令，用职责压过恐惧。
+- 试声母句：
+  - `粮门不开，人先补墙。`
+  - `拉住床弩。`
+  - `别回头。`
+  - `骨钟响了。`
+- 禁用：热血冲锋、整齐军号、胜利呐喊、现代军人口令、夸张哭嚎、可识别真实演员或公众人物模仿。
+- qwen_speaker: `Uncle_Fu`
+- preview_audio_path: `director-room/characters/c024-group-voice-v001-preview.wav`
+- process_version_path: `voice-room/.work/asset-versions/C024-GROUP-VOICELOCK-V001/20260621v0001-preview.wav`
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_specs: mono WAV, 24 kHz, 2.400 seconds；低于项目最终 48 kHz 目标，只作群像头领声线试听候选，正式使用前需听审并按交付规格确认 / 重采样。
+- final_audio_status: blocked_pending_human_listening_qc_and_final_48khz_audio
+- 交付要求：P-01 头领喊话如可见口型，需生成 `C024-GROUP-VOICELOCK-V001` 下的分镜台词 wav 和口型时间；群声可用环境层，但不得盖住骨钟和粮门不开。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，2.400s；只可进入人工听审作为边墙军户头领 / 群像方向，不足以替代 P-01 “粮门不开，人先补墙”final。P-01 尚无分镜台词候选，目标 `P-01/assets/voice/P-01-VO-C024-HEAD-001.wav` 阻塞在听审、录制 / TTS 和粗口型时间。
 
 ## 5. 视频执行角色卡
 owner: video-production-room

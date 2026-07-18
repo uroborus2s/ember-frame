@@ -1,0 +1,67 @@
+{
+  "target": "Blender offline render + 2.5D playable office",
+  "rule": "No single painted background as source of truth. Blender scene owns geometry, materials, lights, camera, anchors, and render layers.",
+  "reference_style": {
+    "lighting": "bright sunlit office, large window light, soft realistic contact shadows",
+    "camera": "fixed isometric 2.5D camera",
+    "characters": "Chinese polished cartoon office staff"
+  },
+  "assets": [
+    {
+      "id": "room_shell",
+      "type": "model",
+      "must_model": ["floor", "walls", "windows", "glass partitions", "doors", "half walls"],
+      "materials": ["warm wall paint", "stone tile floor", "blue-tinted glass"],
+      "source": "custom Blender scene"
+    },
+    {
+      "id": "workstations",
+      "type": "model",
+      "must_model": ["straight desks", "curved control console", "meeting table", "chairs"],
+      "materials": ["wood PBR", "charcoal leather", "brushed metal"],
+      "source": "custom layout; replace individual props with free assets only if license is clear"
+    },
+    {
+      "id": "equipment",
+      "type": "model",
+      "must_model": ["monitors", "keyboards", "server racks", "lamps", "screen panels"],
+      "materials": ["black plastic", "emissive screen UI", "metal"],
+      "source": "custom Blender scene"
+    },
+    {
+      "id": "set_dressing",
+      "type": "model",
+      "must_model": ["plants", "shelves", "wall art", "papers", "small desk props"],
+      "materials": ["plant leaves", "ceramic pots", "paper", "screen art"],
+      "source": "custom now; free CC0 asset replacement later"
+    },
+    {
+      "id": "characters",
+      "type": "character",
+      "must_model": ["male base", "female base", "20 visual variants"],
+      "animations": ["walk", "sit", "typing", "idle"],
+      "source": "Blender generated base now; replace with rigged production characters later"
+    },
+    {
+      "id": "game_data",
+      "type": "data",
+      "must_author": ["seat anchors", "walk path", "blocked zones", "depth order", "foreground occluders"],
+      "source": "exported from Blender camera projection"
+    }
+  ],
+  "outputs": [
+    "public/assets/25d/office_base.png",
+    "public/assets/25d/office_shadow.png",
+    "public/assets/25d/office_foreground.png",
+    "public/assets/25d/office_glass.png",
+    "public/assets/25d/anchors.json",
+    "public/assets/25d/collision.json",
+    "public/assets/25d/characters/*"
+  ],
+  "acceptance": [
+    "The browser scene must use Blender-rendered layers, not a hand patched single image.",
+    "Characters may only stand on walk anchors and sit on seat anchors.",
+    "Desk lips, chair backs, half walls, and glass must be separate foreground/glass layers.",
+    "Build must pass."
+  ]
+}

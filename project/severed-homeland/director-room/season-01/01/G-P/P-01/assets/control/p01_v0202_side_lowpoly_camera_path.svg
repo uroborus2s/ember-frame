@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L11,5 z" fill="#b3261e"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L11,5 z" fill="#075ca8"/>
+    </marker>
+    <style>
+      text { font-family: Arial, "Microsoft YaHei", sans-serif; }
+      .label { font-size: 18px; fill: #1d1d1d; }
+      .small { font-size: 15px; fill: #444; }
+      .stone { fill: #34383c; stroke: #111; stroke-width: 4; }
+      .wood { fill: #513a28; stroke: #1d130c; stroke-width: 4; }
+      .person { fill: #58686f; stroke: #1b2930; stroke-width: 3; }
+      .camera { fill: #0b5ea8; stroke: #052f54; stroke-width: 3; }
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="#f5f1e8"/>
+  <text x="42" y="48" class="label" style="font-size:28px;font-weight:bold">P-01 v0202 side / low-poly blockout: depth, height, camera route</text>
+  <text x="42" y="78" class="small">Control-only. This is the director's staging map, not final rendered art.</text>
+
+  <line x1="80" y1="700" x2="1320" y2="700" stroke="#5b5145" stroke-width="5"/>
+  <text x="82" y="735" class="small">Y- rear / grain side</text>
+  <text x="1128" y="735" class="small">Y+ outside / beast impact</text>
+
+  <rect x="110" y="360" width="170" height="340" class="stone"/>
+  <rect x="138" y="468" width="114" height="190" class="wood"/>
+  <rect x="164" y="510" width="62" height="94" fill="#775c2b" stroke="#24180a" stroke-width="3"/>
+  <text x="94" y="335" class="label">locked grain door</text>
+  <text x="70" y="316" class="small">dead yellow sacks hidden behind, no rescue light</text>
+
+  <rect x="360" y="585" width="350" height="70" fill="#4b3727" stroke="#1e140d" stroke-width="4"/>
+  <circle cx="430" cy="620" r="30" fill="#333" stroke="#111" stroke-width="4"/>
+  <circle cx="646" cy="620" r="30" fill="#333" stroke="#111" stroke-width="4"/>
+  <text x="432" y="566" class="label">ballista / winch plane</text>
+
+  <circle cx="340" cy="594" r="22" class="person"/>
+  <rect x="326" y="612" width="28" height="74" class="person"/>
+  <line x1="354" y1="628" x2="430" y2="616" stroke="#58686f" stroke-width="8"/>
+  <text x="282" y="548" class="small">teen soldier, lower and foreground</text>
+
+  <circle cx="560" cy="560" r="21" class="person"/>
+  <rect x="546" y="580" width="28" height="82" class="person"/>
+  <circle cx="635" cy="555" r="21" class="person"/>
+  <rect x="621" y="575" width="28" height="87" class="person"/>
+  <circle cx="745" cy="545" r="25" fill="#46545c" stroke="#17242b" stroke-width="3"/>
+  <rect x="728" y="568" width="34" height="99" fill="#46545c" stroke="#17242b" stroke-width="3"/>
+  <text x="720" y="520" class="small">C024 leader higher by posture, pushes line forward</text>
+
+  <rect x="980" y="238" width="220" height="462" class="stone"/>
+  <rect x="1028" y="315" width="124" height="345" class="wood"/>
+  <text x="1000" y="208" class="label">outer black gate</text>
+  <line x1="1288" y1="492" x2="1184" y2="492" stroke="#b3261e" stroke-width="12" marker-end="url(#arrow-red)"/>
+  <text x="1122" y="455" class="small" fill="#8b1c16">impact deforms gate; beast stays offscreen</text>
+
+  <rect x="610" y="305" width="72" height="36" fill="#736858" stroke="#31291f" stroke-width="3"/>
+  <line x1="646" y1="342" x2="646" y2="416" stroke="#31291f" stroke-width="4"/>
+  <ellipse cx="646" cy="448" rx="48" ry="62" fill="#62574b" stroke="#2a241f" stroke-width="4"/>
+  <text x="570" y="276" class="label">bone bell</text>
+  <path d="M646 448 C690 430,700 470,652 492" fill="none" stroke="#b3261e" stroke-width="5" marker-end="url(#arrow-red)"/>
+  <text x="700" y="430" class="small" fill="#8b1c16">visible swing on impact</text>
+
+  <circle cx="190" cy="690" r="25" class="camera"/>
+  <text x="155" y="760" class="label" fill="#0b5ea8">camera 0.7m high</text>
+  <path d="M210 678 C430 548,640 382,1040 380" fill="none" stroke="#075ca8" stroke-width="6" marker-end="url(#arrow-blue)"/>
+  <path d="M210 678 C262 632,324 616,430 616" fill="none" stroke="#075ca8" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-blue)"/>
+  <path d="M210 678 C176 620,158 560,178 500" fill="none" stroke="#075ca8" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-blue)"/>
+  <text x="420" y="768" class="small" fill="#075ca8">Lens: compressed 65-85mm feeling. Keep grain door, soldiers, bell and outer gate in one depth stack.</text>
+
+  <text x="42" y="808" class="small">Primary staging idea: the audience stands inside with the hungry soldiers, looking past the unreachable grain door and winch toward the gate being hit from outside.</text>
+</svg>

@@ -15,9 +15,13 @@ director-room/{season-id}/{episode-id}/{shot-group-id}/{shot-id}/{shot-id}.md
 ```text
 image_prompt
 video_prompt
+video_timeline_prompt
+time_slice_prompts
+prompt_technique_refs
 negative_prompt
 asset_conditioning
 control_refs
+motion_prompt_map
 prompt_qc
 handoff_to_video
 ```

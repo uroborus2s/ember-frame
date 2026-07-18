@@ -1,0 +1,80 @@
+{
+  "manifest_id": "P-01-VOICE-TIMING-CANDIDATE-20260621",
+  "owner": "voice-room",
+  "status": "edit_candidate_48k_needs_human_listening_qc",
+  "shot_id": "P-01",
+  "cues": [
+    {
+      "audio_id": "P-01-VO-NAR001-001",
+      "shot_id": "P-01",
+      "voice_id": "NAR001-VOICELOCK-V001",
+      "text": "肃明历1226年冬，北方兽族联盟撞关。",
+      "start_time": 0.4,
+      "end_time": 3.2,
+      "target_duration_seconds": 2.8,
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-NAR001-001-candidate-48k.wav",
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-01-VO-NAR001-001/20260621v0002-candidate.wav",
+      "source_sample_rate": 24000,
+      "source_duration_seconds": 6.56,
+      "trimmed_duration_seconds": 6.085,
+      "lead_trim_seconds": 0.235,
+      "tail_trim_seconds": 0.24,
+      "speed_fit_rate": 2.173,
+      "output_sample_rate": 48000,
+      "output_channels": 1,
+      "output_duration_seconds": 2.8,
+      "lipsync_required": false,
+      "word_or_phrase_timing": [],
+      "qc_status": "edit_candidate_48k_from_24k_tts_needs_human_listening_qc",
+      "known_risks": [
+        "source_tts_was_24k_mono",
+        "speed_fit_used_for_director_timing_window",
+        "not_final_until_human_listening_director_approval"
+      ]
+    },
+    {
+      "audio_id": "P-01-VO-C024-HEAD-001",
+      "shot_id": "P-01",
+      "voice_id": "C024-GROUP-VOICELOCK-V001",
+      "text": "粮仓锁死！拉弩！退下去也是饿死！",
+      "start_time": 2.95,
+      "end_time": 5.25,
+      "target_duration_seconds": 2.3,
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-C024-HEAD-001-candidate-48k.wav",
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260621v0001-candidate.wav",
+      "source_sample_rate": 24000,
+      "source_duration_seconds": 5.04,
+      "trimmed_duration_seconds": 3.894,
+      "lead_trim_seconds": 0.554,
+      "tail_trim_seconds": 0.592,
+      "speed_fit_rate": 1.693,
+      "output_sample_rate": 48000,
+      "output_channels": 1,
+      "output_duration_seconds": 2.3,
+      "lipsync_required": true,
+      "word_or_phrase_timing": [
+        {
+          "text": "粮仓锁死",
+          "start": 2.95,
+          "end": 3.55
+        },
+        {
+          "text": "拉弩",
+          "start": 3.66,
+          "end": 4.0
+        },
+        {
+          "text": "退下去也是饿死",
+          "start": 4.08,
+          "end": 5.25
+        }
+      ],
+      "qc_status": "edit_candidate_48k_from_24k_tts_needs_human_listening_qc",
+      "known_risks": [
+        "source_tts_was_24k_mono",
+        "speed_fit_used_for_director_timing_window",
+        "not_final_until_human_listening_director_approval"
+      ]
+    }
+  ]
+}

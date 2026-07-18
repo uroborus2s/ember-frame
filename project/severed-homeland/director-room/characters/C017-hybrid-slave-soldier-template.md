@@ -103,9 +103,29 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: group_voice_master_card_v001_preview_audio_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C017-GROUP-VOICELOCK-V001
+- 声音母卡用途：混血奴兵群像声线规则；用于押人、搬粮、按住平民、短促服从回应和非语言喘息，不替代具名角色。
+- 核心听感：他们是被制度驱使的人，不是自愿精锐，也不是天然恶人；声音里有疲劳、克制和被训练出的短命令反射。
+- 音色锚点：中低到低声区，粗糙、压住气、短促；多人时分成两到三层，不允许所有奴兵同一音色。
+- 物种 / 身体质感：可有硬化指节、扣腕和甲片摩擦的动作声；人声仍保留人族骨架，不做纯虫族嘶鸣。
+- 语速与停顿：听令后立即动作，话少；可用短促气口、靴底、铁扣和布甲摩擦代替台词。
+- 情绪层级：L0 沉默服从；L1 短促驱赶；L2 用力按住；L3 被哭喊刺到但不能反抗；L4 极短迟疑，随即被命令盖过去。
+- 试声母句：
+  - `退后。`
+  - `手。`
+  - `按住。`
+  - `别看。`
+- 禁用：热血士兵喊杀、整齐军队口号、怪物咆哮、匪徒调笑、现代安保口吻、可识别真实演员或公众人物模仿。
+- qwen_speaker: `Dylan`
+- preview_audio_path: `director-room/characters/c017-group-voice-v001-preview.wav`
+- process_version_path: `voice-room/.work/asset-versions/C017-GROUP-VOICELOCK-V001/20260621v0001-preview.wav`
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_specs: mono WAV, 24 kHz, 3.680 seconds；低于项目最终 48 kHz 目标，只作群像声线试听候选，正式使用前需听审并按交付规格确认 / 重采样。
+- final_audio_status: blocked_pending_human_listening_qc_and_final_48khz_audio
+- 交付要求：P-02/P-03 优先用非语言动作声和短令；若出现可辨台词，需与 C016 虫吏声线明显区分。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，3.680s；当前 G-P 不需要 C017 清晰对白，只需要扣腕、拖拽、铁环、布甲和用力气口等动作层。未人工听审前不得把该 preview 当作奴兵 final 人声；若后续需短令，必须另录并与 C016 虫吏区分。
 
 ## 5. 视频执行角色卡
 owner: video-production-room

@@ -86,6 +86,7 @@ status: preview
 - 通过目标：可信、可跟随、信息清楚，平但不空，冷但不机械。
 - 人工听审重点：是否还有表演感、煽情感、宣传片腔；是否把“肃明历一二二六年”和“白册”读清楚；句尾是否稳定。
 - 当前风险：试听版为 24 kHz，低于项目最终 48 kHz 目标；可作母样 preview，不得冒充最终交付音频。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，21.040s；P-01 分镜候选 `voice-room/.work/asset-versions/G-P/P-01-VO-NAR001-001/20260621v0001-candidate.wav` 存在，实测 24 kHz mono，5.280s，可进入人工听审和切头尾候选；未人工听审、未转 48 kHz 前不得标为 `P-01/assets/voice/P-01-VO-NAR001-001.wav` final。
 - 下一步：人工听审通过后再标记为 locked；若觉得 `uncle_fu` 太有生活感，可用同一提示词改试更冷的 speaker 版本。
 
 ## 6. 冲突与变更记录

@@ -1,7 +1,7 @@
 # 《断航故土》项目总文档
 
 managed_by: project-office
-last_updated: 2026-06-20
+last_updated: 2026-06-21
 status: draft_needs_user_confirmation
 
 本文件只记录项目稳定规格和最终成果要求，不记录过程讨论。目录、交接和返工规则见 `project-management.md`；长期复用经验见 `project-memory.md`。
@@ -10,7 +10,7 @@ status: draft_needs_user_confirmation
 
 - project_id: severed-homeland
 - 项目类型：AI 剧 / 系列化影像项目
-- 当前阶段：故事原著 locked，编剧 in_progress，导演分镜 not_started
+- 当前阶段：故事原著 locked，编剧 in_progress；第 01 集 G-P 导演分镜已 `director_signed`，下游制作启动中；最终交付规格仍待确认
 - 当前正式角色入口：`director-room/characters/`
 
 ## 2. 画面规格

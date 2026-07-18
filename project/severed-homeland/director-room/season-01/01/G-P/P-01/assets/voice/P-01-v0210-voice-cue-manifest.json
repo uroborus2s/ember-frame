@@ -1,0 +1,70 @@
+{
+  "manifest_id": "P-01-VOICE-CUE-V0210-20260622",
+  "owner": "voice-room",
+  "status": "director_review_candidate",
+  "shot_id": "P-01",
+  "script_fix": {
+    "old_line_withdrawn": "粮仓封了！回弩位！门破了，都得死！",
+    "failure_reason": [
+      "用户复审指出'粮仓封了'仍只是状态，不是因果",
+      "普通观众不知道角色为什么要说粮仓，也不知道它为什么会导致回弩位",
+      "台词必须先制止当前动作，再解释原因，再给出新的动作命令"
+    ],
+    "new_line": "别跑！铁栅锁了！粮仓拿不到！回弩位，守门！",
+    "new_line_function": "制止下跑 -> 解释铁栅锁死 -> 解释粮仓不可达 -> 命令回到床弩位守门"
+  },
+  "cues": [
+    {
+      "dialogue_id": "P-01-VO-NAR001-001",
+      "speaker_character_id": "NAR001",
+      "voice_id": "NAR001-VOICELOCK-V001",
+      "text": "肃明历1226年冬，北方兽族联盟撞关。",
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-NAR001-001-v0208-doc-separated-48k.wav",
+      "start_time": 0.85,
+      "end_time": 6.20,
+      "lipsync_required": false,
+      "qc_status": "reused_from_v0208"
+    },
+    {
+      "dialogue_id": "P-01-VO-C024-HEAD-001",
+      "speaker_character_id": "C024-GROUP-VOICELOCK-V001",
+      "voice_id": "C024-GROUP-VOICELOCK-V001",
+      "text": "别跑！铁栅锁了！粮仓拿不到！回弩位，守门！",
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-C024-HEAD-001-v0210-direct-cause-48k.wav",
+      "start_time": 6.85,
+      "end_time": 11.37,
+      "lipsync_required": true,
+      "emotion": "urgent_wall_top_command_not_heroic",
+      "pause": "five command beats with short breath gaps",
+      "breath": "short, hard, legible",
+      "word_or_phrase_timing": [
+        { "text": "别跑", "start": 6.85, "end": 7.50 },
+        { "text": "铁栅锁了", "start": 7.65, "end": 8.70 },
+        { "text": "粮仓拿不到", "start": 8.85, "end": 9.91 },
+        { "text": "回弩位", "start": 10.06, "end": 10.68 },
+        { "text": "守门", "start": 10.83, "end": 11.37 }
+      ],
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260622v0210-short-candidate.wav",
+      "rejected_candidate": {
+        "path": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260622v0210-candidate.wav",
+        "reason": "8.16 seconds; full wording was too long for 12 second P-01 without harming clarity"
+      },
+      "qc_status": "48k_candidate_ready_for_user_review",
+      "known_risks": [
+        "Qwen3-TTS candidate still needs human listening judgment for performance quality",
+        "low-poly preview has no reliable close-up lip motion; lip sync is rough only"
+      ]
+    }
+  ],
+  "mix_qc": {
+    "audio_mix": "director-room/season-01/01/G-P/P-01/assets/edit/P-01-v0210-direct-cause-audio-mix-20260622.wav",
+    "mix_duration_seconds": 12.0,
+    "sample_rate": 48000,
+    "channels": 2,
+    "machine_level_check": {
+      "nar_segment_dbfs": -24.2,
+      "bridge_segment_dbfs": -46.8,
+      "c024_segment_dbfs": -15.5
+    }
+  }
+}

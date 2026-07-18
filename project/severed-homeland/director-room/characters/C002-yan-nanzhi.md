@@ -161,6 +161,7 @@ status: draft_voice_master_card_v001
 - process_version_path: `voice-room/.work/asset-versions/C002-VOICELOCK-V001/20260621v0001-preview.wav`
 - preview_audio_status: `generated_preview_needs_human_listening_qc`
 - preview_audio_specs: mono WAV, 24 kHz, 11.440 seconds；低于项目最终 48 kHz 目标，只作母音色试听候选，正式使用前需听审并按交付规格确认 / 重采样。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，11.440s；可进入人工听审作为 C002 母音色 preview，但不是 P-04 final。P-04 只需带伤喘息 / 疼痛气口，目标 `P-04/assets/voice/P-04-VO-C002-BREATH-001.wav` 尚未生成，需另切或重录。
 - audition_text: `我死了，血牒还在。疼。好，那就先按疼算。半夜也是命。先把人拉上来。我湿了还能走。`
 - qwen3_tts_prompt_zh: `标准中文电影台词，18岁女性，清冷明亮，旧礼训练明显，字句端正但不能播音腔；早期像把恐惧收进礼法里，疼痛和动摇时出现真实短气；不要娇弱公主，不要仙侠空灵腔，不要现代少女腔，不要尖叫；尾音稳定，关键短句放低、放近、清楚。`
 - generation_params:

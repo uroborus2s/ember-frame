@@ -171,6 +171,7 @@ status: draft_voice_master_card_v001
 - process_version_path: `voice-room/.work/asset-versions/C001-VOICELOCK-V001/20260621v0001-preview.wav`
 - preview_audio_status: `generated_preview_needs_human_listening_qc`
 - preview_audio_specs: mono WAV, 24 kHz, 14.480 seconds；低于项目最终 48 kHz 目标，只作母音色试听候选，正式使用前需听审并按交付规格确认 / 重采样。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，14.480s；可进入人工听审作为 C001 母音色 preview，但不是 P-05 final。P-05 仅允许可选极轻气口，目标 `P-05/assets/voice/P-05-VO-C001-BREATH-001.wav` 尚未生成；若导演决定无气口，应在分镜交接标记 `omitted_by_design`。
 - audition_text: `先活着。疼就说。没用，但我能知道你什么时候会倒。先把她送出去，名字的事，活着再说。还账。`
 - qwen3_tts_prompt_zh: `标准中文电影台词，17岁山路少年男声，低中声区，干净但带山风烟火的轻微涩感；少话、压住疼和怒，越急越低，不要喊，不要热血少年战神腔，不要成熟将领嗓，不要现代吐槽；短句清楚，气口自然，尾音收住。`
 - generation_params:

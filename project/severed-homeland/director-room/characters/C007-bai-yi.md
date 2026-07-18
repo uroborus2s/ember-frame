@@ -107,9 +107,29 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: voice_master_card_v001_preview_audio_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C007-VOICELOCK-V001
+- 声音母卡用途：白翳全季追捕线与清明院上层压迫声线；用于 P-04 可见下令、白册压令、后续追捕令读法和口型时间，不替代分镜台词 cue。
+- 核心听感：慢、轻、准，像在校对一份已经判死的档案；越危险越温和，绝不嘶吼、怪物化或表演变态杀手。
+- 音色锚点：成年偏低男声 / 近中低声区，干净、薄、冷，气息收得很窄；尾音短，字缝留白，不拖戏。
+- 物种质感：可有极轻的虫蜡干涩、喉后薄膜感和几乎听不见的硬质摩擦，但仍必须像可被审讯记录的官署人声，不能变成怪物声效。
+- 语速与停顿：慢于普通追兵，短句之间有纸页翻动般的停顿；下令时不提高音量，只缩短句子。
+- 情绪层级：L0 温和确认；L1 轻声纠错；L2 冷静下令；L3 旧名被触及时极短失温；L4 处决性结论，声音更轻而非更响。
+- 试声母句：
+  - `女犯北窜。`
+  - `沿旧驿查。`
+  - `活口入册，死名留白。`
+  - `你把旧路念出来了。`
+- 禁用：怒吼、尖笑、妖魔低吼、现代刑侦腔、舞台反派腔、过度磁性男主音、可识别真实演员或公众人物模仿。
+- qwen_speaker: `Uncle_Fu`
+- preview_audio_path: `director-room/characters/c007-voice-v001-preview.wav`
+- process_version_path: `voice-room/.work/asset-versions/C007-VOICELOCK-V001/20260621v0001-preview.wav`
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_specs: mono WAV, 24 kHz, 9.040 seconds；低于项目最终 48 kHz 目标，只作母音色试听候选，正式使用前需听审并按交付规格确认 / 重采样。
+- final_audio_status: blocked_pending_human_listening_qc_and_final_48khz_audio
+- 交付要求：正式分镜音频目标按项目规格确认；preview 可先 24 kHz，但进入视频口型和成片前必须通过人工听审并确认采样率 / 响度 / 口型时间。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，9.040s；P-04 分镜候选 `voice-room/.work/asset-versions/G-P/P-04-VO-C007-BAIYI-001/20260621v0001-candidate.wav` 存在，实测 24 kHz mono，3.920s，可进入人工听审和“女犯北窜 / 沿旧驿查”两段切分候选；两者均未人工听审，不得标 final。最终目标仍为 `P-04/assets/voice/P-04-VO-C007-BAIYI-001.wav`。
 
 ## 5. 视频执行角色卡
 owner: video-production-room

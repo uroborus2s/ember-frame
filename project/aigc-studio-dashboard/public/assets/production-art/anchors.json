@@ -1,0 +1,301 @@
+{
+  "size": [
+    1536,
+    900
+  ],
+  "layers": {
+    "base": "scene/office_base.png",
+    "shadow": "scene/office_shadow.png",
+    "foreground": "scene/office_foreground.png",
+    "glass": "scene/office_glass.png",
+    "walkableMask": "scene/walkable_mask.png",
+    "depthMap": "scene/depth_map.png",
+    "topViewControl": "scene/top_view_control.png"
+  },
+  "occluders": {
+    "left_console_lip": {
+      "src": "scene/occluders/left_console_lip.png",
+      "z": 42
+    },
+    "left_console_desk_edge": {
+      "src": "scene/occluders/left_console_desk_edge.png",
+      "z": 43
+    },
+    "left_chair_back": {
+      "src": "scene/occluders/left_chair_back.png",
+      "z": 44
+    },
+    "left_chair_seat_front": {
+      "src": "scene/occluders/left_chair_seat_front.png",
+      "z": 45
+    },
+    "meeting_table_front": {
+      "src": "scene/occluders/meeting_table_front.png",
+      "z": 45
+    },
+    "control_console_lip": {
+      "src": "scene/occluders/control_console_lip.png",
+      "z": 47
+    },
+    "desk_edge_mask": {
+      "src": "scene/occluders/desk_edge_mask.png",
+      "z": 48
+    },
+    "chair_back_control": {
+      "src": "scene/occluders/chair_back_control.png",
+      "z": 49
+    },
+    "chair_seat_front_mask": {
+      "src": "scene/occluders/chair_seat_front_mask.png",
+      "z": 50
+    },
+    "recording_booth_front": {
+      "src": "scene/occluders/recording_booth_front.png",
+      "z": 55
+    },
+    "glass_wall_mid": {
+      "src": "scene/occluders/glass_wall_mid.png",
+      "z": 50
+    }
+  },
+  "sceneOccluders": [
+    "glass_wall_mid",
+    "recording_booth_front"
+  ],
+  "walkNodes": {
+    "walk_a": {
+      "x": 520,
+      "y": 522
+    },
+    "walk_b": {
+      "x": 475,
+      "y": 524
+    },
+    "walk_c": {
+      "x": 435,
+      "y": 526
+    },
+    "walk_d": {
+      "x": 398,
+      "y": 528
+    }
+  },
+  "walkEdges": [
+    [
+      "walk_a",
+      "walk_b"
+    ],
+    [
+      "walk_b",
+      "walk_c"
+    ],
+    [
+      "walk_c",
+      "walk_d"
+    ],
+    [
+      "walk_d",
+      "seat_left_console"
+    ]
+  ],
+  "seats": [
+    {
+      "id": "seat_control",
+      "label": "control console seat",
+      "approach": {
+        "x": 435,
+        "y": 526
+      },
+      "sit": {
+        "x": 1008,
+        "y": 705
+      },
+      "facing": "NE",
+      "z": 46,
+      "occluders": [
+        "control_console_lip",
+        "desk_edge_mask",
+        "chair_back_control",
+        "chair_seat_front_mask"
+      ],
+      "animations": {
+        "sit": "sit_NE",
+        "seated": "typing_NE",
+        "stand": "stand_NE"
+      }
+    },
+    {
+      "id": "seat_left_console",
+      "label": "left console seat",
+      "approach": {
+        "x": 398,
+        "y": 528
+      },
+      "stand": {
+        "x": 398,
+        "y": 528,
+        "widthPct": 4.8,
+        "z": 41
+      },
+      "sit": {
+        "x": 405,
+        "y": 500
+      },
+      "facing": "NE",
+      "z": 40,
+      "occluders": [
+        "left_chair_back"
+      ],
+      "transitionOccluders": [
+        "left_chair_seat_front"
+      ],
+      "animations": {
+        "sit": "sit_control",
+        "seated": "typing_control",
+        "stand": "stand_control"
+      }
+    },
+    {
+      "id": "seat_meeting_a",
+      "label": "meeting seat A",
+      "approach": {
+        "x": 430,
+        "y": 690
+      },
+      "sit": {
+        "x": 380,
+        "y": 735
+      },
+      "facing": "NE",
+      "z": 42,
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "animations": {
+        "sit": "sit_NE",
+        "seated": "typing_NE",
+        "stand": "stand_NE"
+      }
+    },
+    {
+      "id": "seat_meeting_b",
+      "label": "meeting seat B",
+      "approach": {
+        "x": 580,
+        "y": 690
+      },
+      "sit": {
+        "x": 550,
+        "y": 735
+      },
+      "facing": "NW",
+      "z": 43,
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "animations": {
+        "sit": "sit_NW",
+        "seated": "typing_NW",
+        "stand": "stand_NW"
+      }
+    }
+  ],
+  "action": {
+    "idleLabel": "入座",
+    "activeLabel": "起身",
+    "status": "production-art 分层场景 + 透明动作帧",
+    "targetAnchor": "seat_left_console",
+    "targetMode": "typing_control",
+    "returnAnchor": "walk_a"
+  },
+  "anchors": {
+    "walk_a": {
+      "name": "walk_a",
+      "x": 520,
+      "y": 522,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_b": {
+      "name": "walk_b",
+      "x": 475,
+      "y": 524,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_c": {
+      "name": "walk_c",
+      "x": 435,
+      "y": 526,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_d": {
+      "name": "walk_d",
+      "x": 398,
+      "y": 528,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "seat_control": {
+      "name": "seat_control",
+      "x": 1008,
+      "y": 705,
+      "widthPct": 5.5,
+      "z": 46
+    },
+    "seat_left_console": {
+      "name": "seat_left_console",
+      "x": 405,
+      "y": 500,
+      "widthPct": 4.8,
+      "z": 40
+    },
+    "seat_meeting_a": {
+      "name": "seat_meeting_a",
+      "x": 380,
+      "y": 735,
+      "widthPct": 4.7,
+      "z": 42
+    },
+    "seat_meeting_b": {
+      "name": "seat_meeting_b",
+      "x": 550,
+      "y": 735,
+      "widthPct": 4.5,
+      "z": 43
+    },
+    "staff_a": {
+      "name": "staff_a",
+      "x": 695,
+      "y": 540,
+      "widthPct": 4.3,
+      "z": 35
+    },
+    "producer": {
+      "name": "producer",
+      "x": 610,
+      "y": 648,
+      "widthPct": 4.5,
+      "z": 36
+    }
+  },
+  "walkPath": [
+    "walk_a",
+    "walk_b",
+    "walk_c",
+    "walk_d",
+    "seat_left_console"
+  ],
+  "people": [
+    {
+      "id": "lead",
+      "kind": "female_01",
+      "anchor": "seat_left_console",
+      "mode": "typing_control",
+      "z": 40,
+      "interactive": true,
+      "initialPhase": "seated"
+    }
+  ]
+}

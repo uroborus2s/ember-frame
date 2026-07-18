@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L11,5 z" fill="#b3261e"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L11,5 z" fill="#075ca8"/>
+    </marker>
+    <marker id="arrow-black" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L11,5 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: Arial, "Microsoft YaHei", sans-serif; }
+      .label { font-size: 18px; fill: #1d1d1d; }
+      .small { font-size: 15px; fill: #444; }
+      .tiny { font-size: 13px; fill: #555; }
+      .wall { fill: #2b2d30; stroke: #111; stroke-width: 5; }
+      .stone { fill: #3d4145; stroke: #151515; stroke-width: 4; }
+      .wood { fill: #4a3728; stroke: #1d130d; stroke-width: 4; }
+      .platform { fill: #b8b0a1; stroke: #5b5145; stroke-width: 4; }
+      .grain { fill: #2f2b23; stroke: #15120f; stroke-width: 4; }
+      .soldier { fill: #57666d; stroke: #1f2b30; stroke-width: 3; }
+      .civil { fill: #6c756d; stroke: #283028; stroke-width: 3; }
+      .camera { fill: #0b5ea8; stroke: #052f54; stroke-width: 3; }
+      .fail { fill: #b3261e; }
+    </style>
+  </defs>
+  <rect width="1400" height="900" fill="#f5f1e8"/>
+  <text x="42" y="48" class="label" style="font-size:28px;font-weight:bold">P-01 v0202 overhead blocking: gate impact / locked grain / forced ballista</text>
+  <text x="42" y="78" class="small">Control-only diagram. Final image/video must not render labels, arrows, IDs, blue lines, UI, or text.</text>
+
+  <text x="640" y="118" class="label" fill="#b3261e">Y+ outside / northern beast impact direction</text>
+  <line x1="700" y1="86" x2="700" y2="170" stroke="#b3261e" stroke-width="10" marker-end="url(#arrow-red)"/>
+  <path d="M600 80 C645 112,755 112,800 80" fill="none" stroke="#8b1c16" stroke-width="5" stroke-dasharray="10 8"/>
+  <text x="815" y="92" class="small" fill="#8b1c16">C021 offscreen pressure: horn shadow / impact only, never main subject</text>
+
+  <rect x="80" y="165" width="1240" height="115" class="wall"/>
+  <rect x="560" y="130" width="280" height="190" class="wood"/>
+  <rect x="604" y="162" width="192" height="126" fill="#181818" stroke="#787878" stroke-width="4"/>
+  <text x="604" y="225" fill="#eee" font-size="20">OUTER BLACK GATE</text>
+  <text x="548" y="346" class="small">gate must shake, flex, shed snow; never open</text>
+
+  <rect x="180" y="355" width="1040" height="315" class="platform"/>
+  <text x="570" y="395" class="label">inner wall platform: trapped soldiers between closed grain and outside impact</text>
+
+  <rect x="120" y="520" width="230" height="130" class="grain"/>
+  <rect x="155" y="548" width="70" height="70" fill="#7b5e2b" stroke="#21180a" stroke-width="2"/>
+  <rect x="230" y="548" width="70" height="70" fill="#5a421b" stroke="#21180a" stroke-width="2"/>
+  <text x="105" y="696" class="label">LOCKED GRAIN DOOR</text>
+  <text x="100" y="720" class="small">behind soldiers, visible but unreachable; dead yellow slit only</text>
+
+  <rect x="488" y="563" width="360" height="92" class="wood"/>
+  <circle cx="542" cy="609" r="28" fill="#343434" stroke="#111" stroke-width="4"/>
+  <circle cx="794" cy="609" r="28" fill="#343434" stroke="#111" stroke-width="4"/>
+  <rect x="590" y="540" width="154" height="46" fill="#2a2723" stroke="#111" stroke-width="3"/>
+  <text x="545" y="700" class="label">ballista + frozen winch</text>
+  <line x1="690" y1="565" x2="715" y2="280" stroke="#463321" stroke-width="7" marker-end="url(#arrow-black)"/>
+  <text x="730" y="470" class="small">taut rope line to weapon</text>
+
+  <circle cx="445" cy="610" r="24" class="soldier"/>
+  <text x="272" y="614" class="small">teen wall soldier at winch, blood-wrapped hand</text>
+  <circle cx="530" cy="500" r="19" class="soldier"/>
+  <circle cx="604" cy="486" r="19" class="soldier"/>
+  <circle cx="685" cy="492" r="19" class="soldier"/>
+  <circle cx="760" cy="512" r="19" class="soldier"/>
+  <circle cx="872" cy="488" r="22" fill="#445159" stroke="#142027" stroke-width="3"/>
+  <text x="890" y="493" class="small">C024 leader: forces retreating soldiers back to ballista</text>
+  <path d="M880 494 C835 524,790 548,742 574" fill="none" stroke="#222" stroke-width="5" marker-end="url(#arrow-black)"/>
+
+  <rect x="648" y="355" width="94" height="36" fill="#6f6558" stroke="#31291f" stroke-width="3"/>
+  <text x="754" y="380" class="small">bone bell overhead; should swing in frame, not sit still</text>
+
+  <circle cx="326" cy="738" r="26" class="camera"/>
+  <text x="246" y="784" class="label" fill="#0b5ea8">CAM C0 low 0.7m</text>
+  <text x="216" y="808" class="small">inside-left near grain/winch, long lens compression toward gate</text>
+  <path d="M346 724 C470 616,552 470,680 258" fill="none" stroke="#075ca8" stroke-width="6" marker-end="url(#arrow-blue)"/>
+  <path d="M346 724 C300 650,238 610,190 582" fill="none" stroke="#075ca8" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-blue)"/>
+  <path d="M346 724 C426 678,500 636,626 608" fill="none" stroke="#075ca8" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-blue)"/>
+  <text x="870" y="760" class="small" fill="#075ca8">Sightline must include: left locked grain door + foreground winch + hanging bell + distant gate.</text>
+
+  <rect x="1045" y="555" width="205" height="85" fill="#e7e2d7" stroke="#756d5f" stroke-width="3"/>
+  <text x="1060" y="585" class="small">DO NOT CENTER</text>
+  <text x="1060" y="610" class="small">monster body or heroic charge</text>
+
+  <text x="42" y="848" class="small">Scale lock: gate massive; all soldiers human scale; teen shorter/leaner than adults; C024 leader slightly dominant by posture, not superhuman. Grain door sits behind the soldiers at Y-, outer impact comes from Y+.</text>
+</svg>

@@ -1,0 +1,72 @@
+{
+  "manifest_id": "P-01-VOICE-CUE-V0209-20260622",
+  "owner": "voice-room",
+  "status": "director_review_candidate",
+  "shot_id": "P-01",
+  "script_fix": {
+    "old_line_withdrawn": "粮仓锁死！拉弩！退下去也是饿死！",
+    "failure_reason": [
+      "台词三段信息因果不清，观众无法理解粮仓锁死、拉弩和退下去死之间的必然关系",
+      "旧句听感别扭，像把设定和命令硬连在一起",
+      "v0208 声音处理虽非数字静音，但 C024 声音身份和现场声遮挡仍可能导致听感不清"
+    ],
+    "new_line": "粮仓封了！回弩位！门破了，都得死！",
+    "new_line_function": "退路 / 粮仓方向封死 -> 军户必须回到床弩位 -> 城门破则全墙人都会死"
+  },
+  "cues": [
+    {
+      "dialogue_id": "P-01-VO-NAR001-001",
+      "speaker_character_id": "NAR001",
+      "voice_id": "NAR001-VOICELOCK-V001",
+      "text": "肃明历1226年冬，北方兽族联盟撞关。",
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-NAR001-001-v0208-doc-separated-48k.wav",
+      "start_time": 0.85,
+      "end_time": 6.20,
+      "lipsync_required": false,
+      "emotion": "documentary_cold_historical_fact",
+      "pause": "single sentence, stable ending",
+      "breath": "low and steady",
+      "qc_status": "reused_from_v0208"
+    },
+    {
+      "dialogue_id": "P-01-VO-C024-HEAD-001",
+      "speaker_character_id": "C024-GROUP-VOICELOCK-V001",
+      "voice_id": "C024-GROUP-VOICELOCK-V001",
+      "text": "粮仓封了！回弩位！门破了，都得死！",
+      "audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-C024-HEAD-001-v0209-causal-command-48k.wav",
+      "start_time": 6.85,
+      "end_time": 11.93,
+      "lipsync_required": true,
+      "emotion": "wall_top_command_pressed_by_fear_and_duty",
+      "pause": "four short command beats",
+      "breath": "clear breath between command beats, no heroic shout",
+      "word_or_phrase_timing": [
+        { "text": "粮仓封了", "start": 6.90, "end": 7.95 },
+        { "text": "回弩位", "start": 8.55, "end": 9.40 },
+        { "text": "门破了", "start": 10.05, "end": 10.85 },
+        { "text": "都得死", "start": 11.05, "end": 11.90 }
+      ],
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260622v0209-short-candidate.wav",
+      "rejected_candidate": {
+        "path": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260622v0209-candidate.wav",
+        "reason": "7.04 seconds; text was too long for P-01 without compressing speech"
+      },
+      "qc_status": "48k_candidate_ready_for_user_review",
+      "known_risks": [
+        "Qwen3-TTS candidate still needs human listening judgment for performance quality",
+        "low-poly preview has no reliable close-up lip motion; lip sync is rough only"
+      ]
+    }
+  ],
+  "mix_qc": {
+    "audio_mix": "director-room/season-01/01/G-P/P-01/assets/edit/P-01-v0209-script-fix-audio-mix-20260622.wav",
+    "mix_duration_seconds": 12.0,
+    "sample_rate": 48000,
+    "channels": 2,
+    "machine_level_check": {
+      "nar_segment_dbfs": -20.0,
+      "bridge_segment_dbfs": -41.3,
+      "c024_segment_dbfs": -17.6
+    }
+  }
+}

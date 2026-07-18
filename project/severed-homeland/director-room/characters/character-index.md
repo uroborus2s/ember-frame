@@ -17,9 +17,10 @@ screenwriting_last_updated: 2026-06-20
 - 编剧部、美术部、配音部、视频生成部只能在各自区块补写，不得覆盖已锁定的源头 Canon。
 - 2026-06-20 编剧部已完成 C001-C026 的 `Section 2. 编剧影视化角色卡`；配音部与视频生成部区块仍由对应部门后续填写。
 - 2026-06-20 编剧部已将原著 Bible 中的身高体重、体量轮廓、脸/头部特征、服装材质、固定道具和姿态动作同步进 C001-C026 的 `Section 2`，作为导演和美术继续细化前的影视首读锚点。
-- 2026-06-21 美术部已按用户最新要求把 C001-C026 的 `Section 3. 美术视觉角色卡` 统一升级为透明 V2 角色生产板规格：五视角全身转面、六表情、色板 / 材质 / 道具格；当前同目录 `c###m.png` 为旧包 RGB 参考图，透明 alpha 最终图仍待参考生图覆盖。
+- 2026-06-21 美术部已按用户最新要求把 C001-C026 的 `Section 3. 美术视觉角色卡` 统一升级为透明 V2 角色生产板规格：五视角全身转面、六表情、色板 / 材质 / 道具格；当前同目录 `c###m.png` 均已复核为 3840x2160 RGBA alpha 透明 V2 正式角色母图。
 - 2026-06-21 配音部已完成 C001/C002 的 `Section 4. 配音声音角色卡`、Qwen3-TTS 生成提示词和角色声音母样 preview；正式可见试听文件与角色卡同目录存放，下游优先读取角色卡 Section 4。
 - 2026-06-21 配音部已完成 NAR001 纪录片旁白声音母卡、Qwen3-TTS 生成提示词和旁白母样 preview；NAR001 不是剧情人物，作为 voice role 归口在本目录，供旁白 cue 复用。
+- 2026-06-21 按 G-P 角色卡闸门，已补齐 C007/C016/C017/C021/C024/C025 的 `Section 4. 配音声音角色卡` 文本锁；C007/C016/C017/C024/C025 已生成角色卡同目录 preview，C021 已生成角色卡同目录 48 kHz stereo 声效方向 preview，全部仍待人工听审和最终规格确认。
 - 若下游认为源头 Canon 不足，必须在角色卡 `Section 6. 冲突与变更记录` 或项目办公室返工入口提出 `needs_story_source_fix`。
 
 ## 本轮补强说明
@@ -34,6 +35,12 @@ screenwriting_last_updated: 2026-06-20
 | --- | --- | --- | --- | --- |
 | C001 | 沈维桑 | `C001-VOICELOCK-V001` | `c001-voice-v001-preview.wav` | preview_audio_visible_with_character_card |
 | C002 | 晏南枝 | `C002-VOICELOCK-V001` | `c002-voice-v001-preview.wav` | preview_audio_visible_with_character_card |
+| C007 | 白翳 | `C007-VOICELOCK-V001` | `c007-voice-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc |
+| C016 | 肃明基层虫吏层级模板 | `C016-VOICELOCK-V001` | `c016-voice-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc |
+| C017 | 混血奴兵清污军户模板 | `C017-GROUP-VOICELOCK-V001` | `c017-group-voice-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc |
+| C021 | 北境共生兽关系模板 | `C021-CREATURE-SFXLOCK-V001` | `c021-creature-sfx-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc_final_mix_pending |
+| C024 | 边墙普通军户群像模板 | `C024-GROUP-VOICELOCK-V001` | `c024-group-voice-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc |
+| C025 | 普通人族平民群像模板 | `C025-GROUP-VOICELOCK-V001` | `c025-group-voice-v001-preview.wav` | preview_audio_generated_needs_human_listening_qc |
 | NAR001 | 纪录片旁白 | `NAR001-VOICELOCK-V001` | `nar001-voice-v001-preview.wav` | preview_audio_visible_with_character_card_needs_human_listening_qc |
 
 ## 已建角色卡

@@ -1,4 +1,4 @@
-﻿# 导演部门调度工作流
+# 导演部门调度工作流
 
 总导演代理是导演部内部唯一主创者、命令发布者和最终裁决者。员工子任务是总导演的手和脚，不是平行主创；不得继续派生员工，不得向用户发问，不得写共享文件，只返回 artifact envelope。
 
@@ -70,12 +70,14 @@ Artifact 契约：
 
 - 接收项目办公室导演启动包。
 - 启动包完整性校验通过后，运行 `director-agent`。
-- 总导演签署 `director-agent` 的导演阐述后，运行 `scene-breakdown-agent` 与 `visual-continuity-agent`。
+- 总导演签署 `director-agent` 的导演阐述后，运行 `director-academy-agent`，把导演技法、外部学习源和本集风险转成非任意镜头规则。
+- 总导演签署 `director-academy-agent` 的导演学院规则后，运行 `scene-breakdown-agent` 与 `visual-continuity-agent`。
 - 总导演签署两者执行稿后，运行 `shot-planner-agent`。
 - 总导演签署 `shot-planner-agent` 后，运行 `scene-coordinate-agent`，形成每个分镜文件的空间调度内容。
 - 总导演签署 `scene-coordinate-agent` 后，运行 `cinematographer-agent`。
 - 总导演签署 `cinematographer-agent` 后，运行 `storyboard-agent`。
-- 总导演逐个签署 `storyboard-agent` 的分镜文件后，运行 `handoff-package-agent`。
+- `storyboard-agent` 完成分镜文件草案后，运行 `storyboard-doctor-agent`、`transition-doctor-agent` 和 `audience-blind-qc-agent`。
+- 总导演逐个签署通过分镜医生、转场医生和观众盲测 QC 的分镜文件后，运行 `handoff-package-agent`。
 - 总导演签署 `handoff-package-agent` 后，运行 `director-qc-agent`。
 - 若存在人工审核反馈，运行 `user-feedback-triage-agent`，再把返工项退回受影响员工。
 - 所有内容被总导演签署后，总导演代理装配一个按季、集、分镜组、分镜文件存放的导演部当前正式包。
@@ -102,8 +104,8 @@ Artifact 契约：
 镜头和分镜必须先整体连续规划，再进入后续部门生产。
 
 - `shot-planner-agent` 必须一次性整体处理本集所有场景与镜头，产出分镜组、分镜 ID、顺序和基础镜头信息；不得按单镜头孤立派工生成镜头顺序。
-- `storyboard-agent` 必须一次性整体处理本集分镜计划，并把每个分镜装配成一个完整文件，确保相邻分镜的轴线、机位、动作方向、视线方向、光线、道具状态和角色站位连续。
-- 总导演代理只有在完整分镜组索引和全部分镜文件被总导演签署后，才能把导演部当前正式包交给后续生产环节。
+- `storyboard-agent` 必须一次性整体处理本集分镜计划，并把每个分镜装配成一个完整文件，确保相邻分镜的轴线、机位、动作方向、视线方向、光线、道具状态、角色站位、入镜状态、出镜状态和转场动机连续。
+- 总导演代理只有在完整分镜组索引、全部分镜文件、分镜医生诊断、转场医生合同和观众盲测 QC 被总导演签署后，才能把导演部当前正式包交给后续生产环节。
 - 后续部门可以拆分逐镜头执行，但不得重排镜头、重设场景、重放角色或改变道具位置。
 
 ## 空间调度
@@ -127,7 +129,7 @@ Artifact 契约：
 
 1. 读取员工 envelope。
 2. 验证导演启动包、分镜层级结构和必需字段。
-3. 检查来源追溯、导演命题、镜头目的、观众感受、连续性、空间证据和分镜文件完整性。
+3. 检查来源追溯、导演命题、镜头目的、观众感受、连续性、空间证据、导演学院规则、分镜医生诊断、转场医生合同、观众盲测 QC 和分镜文件完整性。
 4. 按员工评分量表给出 0 到 100 分。
 5. 达到通过线后进入总导演签署判断。
 6. 未达到通过线，或达到通过线但总导演仍不满意时，把评审记录退回同一员工重做。

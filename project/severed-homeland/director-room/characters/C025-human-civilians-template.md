@@ -131,9 +131,29 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: group_voice_master_card_v001_preview_audio_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C025-GROUP-VOICELOCK-V001
+- 声音母卡用途：普通人族平民、老人、母亲、儿童和粮仓带群众的声线规则；用于 P-02 征粮暴政、P-03 白墙验声和后续金河 / 残阳坳平民场景。
+- 核心听感：普通人仍在生产生活中被制度压住；不是统一逃难哭声，也不是现代灾民纪录片口吻。
+- 声部分层：儿童声小、直、容易被流程截断；母亲声压低、急、不能大段煽情；老人气弱但要护粮；成人平民有劳动粗糙感和饥饿短气。
+- 语速与停顿：被点名时停顿变长；哭喊要被木牌、册页、虫蜡动作打断，不能放任成煽情独白。
+- 情绪层级：L0 排队忍耐；L1 小声请求；L2 护粮 / 护孩子；L3 惊惧压低；L4 旧歌或旧声被触发，声音更轻更危险。
+- P-03 儿童旧歌规则：配音部 2026-06-21 提出可录制锁定建议 `白芷晒，薄荷晾，陈皮翻一翻。`；第三字“晒”附近轻轻滑出旧调，随即被虫蜡针和流程打断。总导演审核前只可用于试唱 / 口型预演，不得标 final；识别童仍必须像孩子，不得怪物化或神秘化。
+- 试声母句：
+  - `这袋是孩子的。`
+  - `别按他。`
+  - `我会念。`
+  - `晒药名……先晒白芷。`
+- 禁用：统一哭墙、现代纪录片受访口吻、儿童尖叫堆叠、恐怖童谣化、网感台词、可识别真实演员或公众人物模仿。
+- qwen_speaker: `Vivian`
+- preview_audio_path: `director-room/characters/c025-group-voice-v001-preview.wav`
+- process_version_path: `voice-room/.work/asset-versions/C025-GROUP-VOICELOCK-V001/20260621v0002-preview.wav`
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_specs: mono WAV, 24 kHz, 3.680 seconds；低于项目最终 48 kHz 目标，只作平民 / 儿童群像声线试听候选，正式使用前需听审并按交付规格确认 / 重采样。v0001 因时长过短保留为过程候选，不晋升。
+- final_audio_status: blocked_pending_song_text_human_listening_qc_and_final_48khz_audio
+- 交付要求：P-02/P-03 需先锁儿童旧歌 / 晒药名文本、母亲反应和小吏压制时间；正式音频必须分离儿童、母亲、老人和群声层，便于视频口型和剪辑避让。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，3.680s；过程 `v0001` 实测 0.240s，继续保留为过短失败候选，不晋升。P-02 老人 / 儿童、P-03 儿童旧歌 / 识别童 / 母亲均尚无分镜 final；需按儿童、母亲、老人和群声分层重录或切分，不能用同一 preview 混成 final。
 
 ## 5. 视频执行角色卡
 owner: video-production-room

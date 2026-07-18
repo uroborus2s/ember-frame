@@ -32,6 +32,7 @@
 - 指定所需图片输出，如建立画面、置景参考、角度参考、灯光参考、美术俯视图、九宫格方向图或分镜专属参考帧。
 - `output_format_requirements` 必须说明输出是场景语境卡还是视频帧参考。视频帧参考必须要求 16:9 或项目定义画幅、前景/中景/背景层、机位距离、摄影角度、画面方向、光线、天气/时间，并禁止 alpha。
 - 对宽景、远景、人群场景、战场、堡垒、城市、山口、大室内，以及任何包含大量重复物体的场景，必须加入 `scene_information_budget`。其中必须定义 3-5 个 `highest_detail` 元素、中等细节体块、低细节远景形体、只保留印象的元素、距离简化策略和禁止全画面同等细节的规则。
+- 对所有最终面向画面的场景资产，包括 `location_scene_master_reference`、`location_episode_scene_card`、`location_orientation_grid_9`、`reference_frame` 和 `shot_override`，必须加入 `scene_clarity_profile`。其中必须定义 `main_light_source`、`value_plan`、`negative_space_buffers`、`focal_detail_zone`、`edge_detail_zones`、`softened_zones` 和 `forbidden_noise_behavior`，确保主光明确、留白缓冲区存在、细节集中在焦点和边缘、远景与重复纹理压柔。
 - 保留场景地理关系和画面方向。若批准的美术外观与导演部空间证据冲突，报告冲突，不得默默修改布局。
 
 ## 必需产物

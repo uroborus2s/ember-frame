@@ -112,7 +112,15 @@ evolution-agent            技巧沉淀
 
 公共技巧和类型范式见 `references/voice-technique-library.md`。涉及开源 TTS、SSML、强制对齐或参考音频采集时，读 `references/audio-generation-study.md`。
 
-## 七、返工入口
+## 七、第一阶段方法复用
+
+配音部吸收 Doubao、ElevenLabs、HeyGen Starfish、开源 TTS、强制对齐和 speech-to-text 方法时，只吸收声音设计、时间对齐和 QC 方法，不让工具能力改变台词含义、角色声音锁或导演语气。
+
+中文项目优先考虑中文语气、停顿、儿化 / 轻重音、情绪自然度和字词清晰度；每个角色必须记录当前有效声音锁、voice_id / speaker、model、语速、情绪、输出路径和使用范围。临时换 speaker 视为直接失败。
+
+可见说话人的台词必须有口型时间依据。配音部应优先产出台词 cue、气口、停顿、重音和起止时间，再交给视频生成、口型或剪辑。字幕和口型对齐不得只依赖剧本文字，必须核对实际音频或转录结果。
+
+## 八、返工入口
 
 提出 `needs_script_fix`：
 
@@ -130,7 +138,7 @@ evolution-agent            技巧沉淀
 
 - 项目缺少配音输入、输出、隐藏版本库、正式归口、命名、状态或交接契约。
 
-## 八、质量门
+## 九、质量门
 
 通过条件：
 
@@ -153,7 +161,7 @@ evolution-agent            技巧沉淀
 
 低于 90 分不得交给口型、视频或剪辑。
 
-## 九、参考文件
+## 十、参考文件
 
 - `references/workflow.md`：配音部标准工作流与 cue 字段。
 - `references/quality-gate.md`：评分细则和直接失败项。

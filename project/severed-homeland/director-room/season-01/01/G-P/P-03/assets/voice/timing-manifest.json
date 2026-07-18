@@ -1,0 +1,130 @@
+{
+  "manifest_id": "P-03-VOICE-TIMING-CANDIDATE-20260621",
+  "owner": "voice-room",
+  "status": "edit_candidate_48k_needs_human_listening_qc",
+  "shot_id": "P-03",
+  "cues": [
+    {
+      "audio_id": "P-03-VO-C025-CHILD-001",
+      "shot_id": "P-03",
+      "voice_id": "C025-GROUP-VOICELOCK-V001-child",
+      "text": "白芷晒，薄荷晾，陈皮翻一翻。",
+      "start_time": 0.2,
+      "end_time": 1.65,
+      "target_duration_seconds": 1.45,
+      "audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C025-CHILD-001-candidate-48k.wav",
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-03-VO-C025-CHILD-001/20260621v0001-candidate.wav",
+      "source_sample_rate": 24000,
+      "source_duration_seconds": 5.44,
+      "trimmed_duration_seconds": 3.861,
+      "lead_trim_seconds": 0.897,
+      "tail_trim_seconds": 0.682,
+      "speed_fit_rate": 2.662,
+      "output_sample_rate": 48000,
+      "output_channels": 1,
+      "output_duration_seconds": 1.45,
+      "lipsync_required": true,
+      "word_or_phrase_timing": [
+        {
+          "text": "白芷",
+          "start": 0.2,
+          "end": 0.48
+        },
+        {
+          "text": "晒",
+          "start": 0.48,
+          "end": 0.62
+        },
+        {
+          "text": "薄荷晾",
+          "start": 0.65,
+          "end": 1.02
+        },
+        {
+          "text": "陈皮翻一翻",
+          "start": 1.05,
+          "end": 1.65
+        }
+      ],
+      "qc_status": "edit_candidate_48k_from_24k_tts_needs_human_listening_qc",
+      "known_risks": [
+        "source_tts_was_24k_mono",
+        "speed_fit_used_for_director_timing_window",
+        "not_final_until_human_listening_director_approval"
+      ]
+    },
+    {
+      "audio_id": "P-03-VO-C025-IDCHILD-001",
+      "shot_id": "P-03",
+      "voice_id": "C025-GROUP-VOICELOCK-V001-recognition-child",
+      "text": "他会旧歌。",
+      "start_time": 1.8,
+      "end_time": 2.45,
+      "target_duration_seconds": 0.65,
+      "audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C025-IDCHILD-001-candidate-48k.wav",
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-03-VO-C025-IDCHILD-001/20260621v0001-candidate.wav",
+      "source_sample_rate": 24000,
+      "source_duration_seconds": 1.92,
+      "trimmed_duration_seconds": 1.191,
+      "lead_trim_seconds": 0.523,
+      "tail_trim_seconds": 0.206,
+      "speed_fit_rate": 1.833,
+      "output_sample_rate": 48000,
+      "output_channels": 1,
+      "output_duration_seconds": 0.65,
+      "lipsync_required": true,
+      "word_or_phrase_timing": [
+        {
+          "text": "他会旧歌",
+          "start": 1.8,
+          "end": 2.45
+        }
+      ],
+      "qc_status": "edit_candidate_48k_from_24k_tts_needs_human_listening_qc",
+      "known_risks": [
+        "source_tts_was_24k_mono",
+        "speed_fit_used_for_director_timing_window",
+        "not_final_until_human_listening_director_approval"
+      ]
+    },
+    {
+      "audio_id": "P-03-VO-C016-CLERK-001",
+      "shot_id": "P-03",
+      "voice_id": "C016-VOICELOCK-V001",
+      "text": "带走，教成识别童。",
+      "start_time": 3.75,
+      "end_time": 5.1,
+      "target_duration_seconds": 1.35,
+      "audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C016-CLERK-001-candidate-48k.wav",
+      "source_candidate": "voice-room/.work/asset-versions/G-P/P-03-VO-C016-CLERK-001/20260621v0001-candidate.wav",
+      "source_sample_rate": 24000,
+      "source_duration_seconds": 3.84,
+      "trimmed_duration_seconds": 2.723,
+      "lead_trim_seconds": 0.701,
+      "tail_trim_seconds": 0.416,
+      "speed_fit_rate": 2.017,
+      "output_sample_rate": 48000,
+      "output_channels": 1,
+      "output_duration_seconds": 1.35,
+      "lipsync_required": true,
+      "word_or_phrase_timing": [
+        {
+          "text": "带走",
+          "start": 3.75,
+          "end": 4.1
+        },
+        {
+          "text": "教成识别童",
+          "start": 4.16,
+          "end": 5.1
+        }
+      ],
+      "qc_status": "edit_candidate_48k_from_24k_tts_needs_human_listening_qc",
+      "known_risks": [
+        "source_tts_was_24k_mono",
+        "speed_fit_used_for_director_timing_window",
+        "not_final_until_human_listening_director_approval"
+      ]
+    }
+  ]
+}

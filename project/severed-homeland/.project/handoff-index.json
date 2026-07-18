@@ -1,3 +1,173 @@
 {
-  "handoffs": []
+  "updated_at": "2026-06-21",
+  "handoffs": [
+    {
+      "id": "HO-20260621-GP-DIR-ART",
+      "source_department": "director-room",
+      "target_department": "art-room",
+      "handoff_files": [
+        "director-room/season-01/01/G-P/group-main.md",
+        "director-room/season-01/01/G-P/P-01/P-01.md",
+        "director-room/season-01/01/G-P/P-02/P-02.md",
+        "director-room/season-01/01/G-P/P-03/P-03.md",
+        "director-room/season-01/01/G-P/P-04/P-04.md",
+        "director-room/season-01/01/G-P/P-05/P-05.md",
+        "director-room/characters/"
+      ],
+      "status": "formal_reference_frames_all_approved",
+      "quality_gate": "G-P director_signed; P-01 to P-05 latest formal reference frames are promoted. P-02 C017 pressing-actor retake passed, and P-04 v0005 escape-motion retake passed with C007 off the exit axis.",
+      "known_risks": [
+        "P-02 pressing actor must clearly be C017 hybrid slave soldier, not a C025 adult civilian or unidentified executor",
+        "P-04 escape route must read as rear door to rain eave/side alley toward the old post road, with C007 off the exit axis",
+        "P-05 C001 must remain a 17-year-old Shen Weisang, not an older hunter",
+        "P-05 must preserve Canyang'ao spatial continuity with A group"
+      ],
+      "blocked_items": [
+        "Remaining low-poly/detail control assets",
+        "Per-shot precision overlays",
+        "Any later visual drift must be returned to director-room for retake order before replacing formal frames"
+      ],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-PROMPT",
+      "source_department": "director-room",
+      "target_department": "prompt-room",
+      "handoff_files": [
+        "director-room/season-01/01/G-P/P-01/P-01.md",
+        "director-room/season-01/01/G-P/P-02/P-02.md",
+        "director-room/season-01/01/G-P/P-03/P-03.md",
+        "director-room/season-01/01/G-P/P-04/P-04.md",
+        "director-room/season-01/01/G-P/P-05/P-05.md"
+      ],
+      "status": "video_shoot_prompt_package_ready_for_video_preflight",
+      "quality_gate": "prompt-room completed P-01 to P-05 copy-ready video shoot prompt packages from the latest promoted formal reference frames. Final prompts must not invent model IDs, LoRA IDs, ControlNet names, IPAdapter presets, or sampling parameters",
+      "known_risks": [
+        "Do not invent model IDs, LoRA IDs, ControlNet names, IPAdapter presets, or sampling parameters",
+        "P-02 must keep C017 as the child-hand pressing executor, C016 as registrar/commander, and C025 as failed protecting mother"
+      ],
+      "blocked_items": [],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-VOICE",
+      "source_department": "director-room",
+      "target_department": "voice-room",
+      "handoff_files": [
+        "screenwriting/01/screenwriting-main.md",
+        "director-room/season-01/01/G-P/P-01/P-01.md",
+        "director-room/season-01/01/G-P/P-02/P-02.md",
+        "director-room/season-01/01/G-P/P-03/P-03.md",
+        "director-room/season-01/01/G-P/P-04/P-04.md",
+        "director-room/season-01/01/G-P/P-05/P-05.md",
+        "director-room/characters/"
+      ],
+      "status": "g_p_rewrite_voice_required",
+      "quality_gate": "voice-room may fill Section 4 only; C007/C016/C017/C024/C025 previews are generated, C021 has a 48 kHz stereo SFX preview. G-P director cut preview v0001 five Microsoft Huihui explanation narration cues are withdrawn by director. User review rejected v0002; all affected v0002 dialogue candidates are now withdrawn as final candidates. New required cues: P-01 NAR001 '肃明历1226年冬，北方兽族联盟撞关。', P-01 C024 '粮仓锁死！拉弩！退下去也是饿死！', P-02 C016 '边墙缺粮，今天一粒不留。藏粮的，全户入册。', P-02 C017 '把孩子手按上去。', P-03 C025 '他会旧歌。', P-03 C016 '带走，教成识别童。', P-04 C007 '她带着旧驿血牒往北逃。封旧驿，活捉。'. These are not final until director listening QC, line cutting, approved voice locks, layered stems, and final spec confirmation return them to assets/voice/ or shot assets.",
+      "known_risks": [
+        "G-P uses sparse speech and sound cues; do not let generated video create precise dialogue"
+      ],
+      "blocked_items": [
+        "C001/C002/NAR001 preview listening QC",
+        "C007/C016/C017/C024/C025 preview listening QC and line cutting",
+        "C021 SFX preview listening QC, layered stems, and final mix",
+        "Final wav files in assets/voice/",
+        "P-03 child song recording, separated identify/clerk/mother cues, timing, and final audio",
+        "P-04 C007 preview and listening QC"
+      ],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-MUSIC",
+      "source_department": "director-room",
+      "target_department": "music-room",
+      "handoff_files": [
+        "director-room/season-01/01/episode-director-main.md",
+        "director-room/season-01/01/G-P/group-main.md",
+        "director-room/season-01/01/G-P/P-01/P-01.md",
+        "director-room/season-01/01/G-P/P-02/P-02.md",
+        "director-room/season-01/01/G-P/P-03/P-03.md",
+        "director-room/season-01/01/G-P/P-04/P-04.md",
+        "director-room/season-01/01/G-P/P-05/P-05.md"
+      ],
+      "status": "score_preview_generated_final_stems_pending",
+      "quality_gate": "music-room may fill Section 5 only; G-P sound should prioritize bone bell, ledger, wax needle, book hinge, gong, rain, and room tone over full melody. G-P director cut preview v0001 has a 48 kHz stereo procedural score preview under music-room/.work/asset-versions/G-P-MX-preview/20260621v0001/. C021 preview and the new score are direction checks only and still need final layered SFX/stems, listening QC, and final mix",
+      "known_risks": [
+        "Do not over-score the cold open; E-03 is the first allowed emotional rise"
+      ],
+      "blocked_items": [
+        "Final music and sound-effect audio files in assets/music/ or shot assets",
+        "C021 layered SFX stems and final mix"
+      ],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-VIDEO",
+      "source_department": "director-room",
+      "target_department": "video-production-room",
+      "handoff_files": [
+        "director-room/season-01/01/G-P/P-01/P-01.md",
+        "director-room/season-01/01/G-P/P-02/P-02.md",
+        "director-room/season-01/01/G-P/P-03/P-03.md",
+        "director-room/season-01/01/G-P/P-04/P-04.md",
+        "director-room/season-01/01/G-P/P-05/P-05.md"
+      ],
+      "status": "g_p_v0002_failed_dialogue_visual_storytelling_rewrite_required",
+      "quality_gate": "video-production-room generated formal visual source candidates under video-production-room/.work/asset-versions/. P-05 old front-face drift candidate is withdrawn; P-05 v0006 face-lock and v0007 no-audio visual assembly passed director identity QC. P-01 v0101/v0102 failed because the grain gate opened into a warm storage cave/sack pile, so they are withdrawn. User review on 2026-06-21 rejected edit-room director cut preview v0002: P-01 reads like a static reference image, the old lines are too opaque, and war invasion / forced grain levy / child indoctrination / old-road pursuit are not carried by visible action. v0002 is now failed diagnostic evidence, not a clarity proof. Next pass requires rewritten direct dialogue, final 24fps/4K source retakes or approved source shots, clear start/end states, weight shift, contact points, tail frames or motion guide, final audio/lipsync/precision overlays, final packaging/QC, edit handoff, and director approval. These are director QC candidates only, not approved {shot-id}.mp4 files. Withdrawn P-02 v0004 and P-04 v0003/v0004 frames cannot be used as first_frame/style/identity.",
+      "known_risks": [
+        "P-01 to P-04 must not become spectacle-only shots",
+        "P-05 must bridge to A-01 without losing Canyang'ao geography"
+      ],
+      "blocked_items": [
+        "Final per-shot voice/music/sound audio",
+        "Motion retake with start/end states, weight shift, contact points, tail frames or motion guide",
+        "Precision overlays for text/symbol/map/book assets",
+        "Remaining low-poly/detail control assets",
+        "Final packaging and QC toolchain for approved videos",
+        "P-03 child song final audio and timing",
+        "P-04 C007 voice_id lock"
+      ],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-EDIT",
+      "source_department": "director-room",
+      "target_department": "edit-room",
+      "handoff_files": [
+        "director-room/season-01/01/episode-director-main.md",
+        "director-room/season-01/01/G-P/group-main.md"
+      ],
+      "status": "v0002_failed_diagnostic_waiting_rewrite",
+      "quality_gate": "edit-room generated G-P director cut preview v0002 under edit-room/.work/asset-versions/G-P-edit-preview/20260621v0002-clarity-rewrite/: 31.000s, 1024x576, 24fps, project voice candidates, subtitles, and music preview. v0001 five explanation narration cues are withdrawn. User review rejected v0002 as still unreadable; it is now failed diagnostic evidence, not a narrative clarity proof. Formal edit approval waits for rewritten direct dialogue, final video sources, final voice, final music/SFX stems, precision overlays, and director QC. Cold open causal chain must remain intact through visible action, not subtitles or opaque lines",
+      "known_risks": [
+        "Do not cut any of the four institutional harm actions just to accelerate pacing"
+      ],
+      "blocked_items": [
+        "Final G-P approved videos",
+        "Final NAR001 / C024 / C016 / C025 / C007 voice cues and listening QC",
+        "Final music and SFX stems",
+        "Precision overlays"
+      ],
+      "approval_owner": "director-room"
+    },
+    {
+      "id": "HO-20260621-GP-DIR-DELIVERY",
+      "source_department": "director-room",
+      "target_department": "delivery-room",
+      "handoff_files": [
+        "project-spec.md",
+        ".project/final-approval-gate.md"
+      ],
+      "status": "waiting_for_edit_approved",
+      "quality_gate": "delivery-room starts final QC only after director-approved edit preview; final specs unresolved items must be confirmed before final export",
+      "known_risks": [
+        "Frame rate, codec, bitrate, audio loudness, channel layout, subtitle requirement, and final container are not confirmed"
+      ],
+      "blocked_items": [
+        "Director-approved edit preview",
+        "Final delivery spec decisions"
+      ],
+      "approval_owner": "director-room + project-office"
+    }
+  ]
 }

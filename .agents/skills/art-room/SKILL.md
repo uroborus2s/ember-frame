@@ -156,6 +156,7 @@ TECH-PRECISION-01 精确标志 / 文字 / 纹章后合成
 TECH-CINE-01 色彩剧本 / 情绪色彩弧线
 TECH-CINE-02 大片级美术层级设计
 TECH-CINE-03 温情电影触感设计
+TECH-CINE-04 通透清晰场景光影层级
 TECH-ANIM-01 动画角色吸引力与形状语言
 TECH-ANIM-02 主题化视觉开发流程
 TECH-ANIM-03 2D 经典造型到 3D 资产的翻译
@@ -164,6 +165,14 @@ TECH-ANIM-03 2D 经典造型到 3D 资产的翻译
 美术部在产出 `asset-manifest.json` 和 `art-image-prompts.json` 时，应让用户能看懂“为什么这张图选择这些技巧”，并能把 `copy_ready` 提示词直接复制到支持参考图、遮罩或结构控制的图像模型中使用。
 
 学习商业大片、温情电影、迪士尼动画、福克斯 / Blue Sky 系动画和开源文生图项目时，美术部只吸收可复用的制作方法、质量标准和设计逻辑，不复制受版权保护的具体角色、画面、分镜、标志或专有风格名。提示词中禁止写“某某电影同款”“某某角色风格”“in Disney/Pixar/Fox style”等侵权式风格指令；应改写成可执行的原创设计原则，例如“高可读轮廓、情绪色彩弧线、温暖生活质感、清晰形状对比、夸张但可信的体块”。
+
+## 第一阶段方法复用
+
+美术部吸收外部视觉风格方法时，必须把风格变成项目内可检查的视觉合同，而不是风格词堆砌。视觉合同至少落到：色彩范围、主光方向、材质语言、形状语言、构图密度、信息预算、角色轮廓、场景锚点和禁用风格。
+
+图片模型经验只进入美术方法层：参考图角色分层、多参考权重、I2I / 局部重绘、线稿 / 深度 / 遮罩控制、精确文字后合成、候选图审美筛选和 QC。美术部不得把模型第一次生成的漂亮结果反向改写角色、场景或道具 canon。
+
+当使用 FLUX、BFL 或其他图片模型方法时，美术部只输出 tool-neutral 视觉资产要求和图片提示词简报；具体 provider、采样参数、节点图和 API 调用属于后续工具执行，不写入美术正式结论。
 
 ## 部门边界
 
@@ -659,6 +668,85 @@ no visual information overload.
 ```
 
 如果宽景中远处重复形体变成噪点，建筑变成假微纹理，烟雾被当作结构替代，或整张画面同等精细，QC 必须拒绝。
+
+## 场景通透清晰圣经
+
+场景上下文 location card、场景母参考、九宫格方向参考、视频参考帧和 shot override 必须在生图前定义 `scene_clarity_profile`。该规则用于避免用户指出的噪音多、不通透、不清晰、暗部脏灰、全画面碎纹理和焦点不明确问题。它和 `scene_information_budget` 配合使用：信息预算决定“哪些内容有细节”，通透清晰规则决定“光从哪里来、眼睛在哪里休息、细节集中在哪里”。
+
+用户提供的短视频截图类参考只能作为构图、光影、层次和发布观感参考。截图里的小图会因为缩小展示、平台压缩和锐化而隐藏许多原图瑕疵；美术部不得把手机 UI、水印、压缩伪清晰或截图黑边当作最终画面目标。真正要吸收的是：
+
+```text
+明确主光源:
+  每张最终场景图必须有可说清楚的主光方向、色温、强弱和照亮对象。
+
+大明暗关系:
+  先用 3-5 个大色块 / 明度组组织画面，避免全图落在脏灰中间调。
+
+留白式缓冲区:
+  使用天空、雾面、墙面、地面、窗光、暗部或干净空气作为视觉休息区。
+
+焦点和边缘细节:
+  最高细节只放在视觉焦点、前景关键物、建筑轮廓、屋檐、门窗、道具边缘和叙事锚点。
+
+远景和非焦点变柔:
+  背景、远景、人群、树叶、石纹、书册、瓦片和重复物体使用体块、剪影和大气透视简化。
+```
+
+`scene_clarity_profile` 至少包含：
+
+```text
+main_light_source:
+  主光来自哪里，照亮什么，阴影落在哪里。
+
+value_plan:
+  3-5 个主要明暗 / 色块关系，必须包含焦点亮区或焦点对比区。
+
+negative_space_buffers:
+  至少 1-3 个干净缓冲区，说明它们是天空、雾、墙、地面、窗光、暗部还是纯色块。
+
+focal_detail_zone:
+  1-2 个最高细节区域，说明为什么观众应该看这里。
+
+edge_detail_zones:
+  屋檐、窗棂、门框、书架、道路边线、桌沿、道具轮廓等用于制造清晰感的边缘区域。
+
+softened_zones:
+  需要压柔、降噪或只保留印象的远景、背景和重复纹理。
+
+forbidden_noise_behavior:
+  禁止全画面同等锐利、全画幅超细节、暗部脏灰、颗粒化纹理、AI speckle、过度锐化和 JPEG 伪影。
+```
+
+场景提示词必须包含可执行的正向约束：
+
+```text
+clear main light source, clean air, large readable value groups,
+negative-space buffer areas, restrained micro-details,
+highest detail only at the focal point and important edges,
+softened background, atmospheric perspective, clean shadows,
+crisp silhouettes without noisy texture.
+```
+
+场景负向提示词必须按需追加：
+
+```text
+no noisy micro-detail, no AI speckle, no dirty texture, no muddy gray shadows,
+no full-frame ultra-detail, no equal-detail rendering across the whole frame,
+no oversharpened grain, no jpeg artifacts, no chaotic repeated texture,
+no smoke pretending to be detail, no every-surface ornamentation,
+no low-contrast haze swallowing the subject.
+```
+
+QC 必须拒绝以下场景图：
+
+```text
+看不出主光源或主光与阴影逻辑互相矛盾
+没有任何留白 / 干净空气 / 暗部 / 天空 / 地面缓冲区
+每个角落都堆满同等细节，主体被背景纹理吞掉
+暗部脏灰、远景颗粒化、树叶 / 石纹 / 书册 / 瓦片变成噪点
+靠后期锐化制造假清晰，边缘毛刺明显
+只有截图缩小后好看，原图 100% 检查时不清晰、不干净
+```
 
 ## 资产版本与历史
 

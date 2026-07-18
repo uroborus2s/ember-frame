@@ -257,6 +257,119 @@ forbidden_rendered_guides:
 QC：
 镜头运动必须有起点、过程和终点。随机漂移、无目的绕行、自动变焦、突然换景、主体丢失、屏幕方向错误、环绕半径乱变、手持晃到动作不可读，直接失败。
 
+### VID-TIMELINE-PROMPT-01 分秒时间轴提示词
+
+用途：
+把短视频平台常见的“0s-2s / 2s-5s / 5s-7s”分段提示词转成分镜、提示词和视频生成部都能执行的镜头节拍。它适合宏大运镜、穿越空间、追逐、角色近景微表情和需要一镜到底感的镜头。
+
+定位：
+
+```text
+时间轴提示词只负责表达导演意图和节拍；
+不能替代首帧、尾帧、角色参考、场景母图、motion map、camera path、深度图或低模预演；
+超过 5 秒的时间轴提示词必须拆成多个生成段，再由剪辑部拼接；
+红线、箭头、字幕、UI 和路线标注只能作为控制说明，不得进入最终画面。
+```
+
+准入：
+
+```text
+导演签署区已有镜头目的、观众感受、起点状态、终点状态和转场关系；
+美术资产区已有通过 QC 的首帧 / 场景参考 / 角色状态；
+复杂运镜已有 MOTION-MAP-* 或 camera_path；
+近景微表情已有表情边界、身份锁和禁止夸张变形项；
+提示词区把模型可见提示词和制作元数据分开。
+```
+
+分镜拆分规则：
+
+```text
+timeline_prompt:
+  global_lens_style:
+    画幅、镜头感、焦段、光线、色彩、质感、速度基调
+  shot_anchor:
+    主体、场景中心锚点、路线终点、观众注意点
+  route_or_motion_ref:
+    motion map / camera path / 首尾帧 / 低模预演 / 参考图路径
+  time_slices:
+    - slice_id: S01-A
+      time_range: 0s-2s
+      storyboard_fragment:
+        本段在分镜里的叙事功能
+      start_state:
+        本段起点的角色、场景、镜头和情绪状态
+      end_state:
+        本段终点的角色、场景、镜头和情绪状态
+      camera_beat:
+        镜头运动、速度曲线、景别变化、焦点变化
+      action_beat:
+        角色动作、道具互动、重心或环境运动
+      expression_beat:
+        眼神、嘴角、呼吸、停顿等微表情变化；无近景时写 none
+      control_refs:
+        首帧、尾帧、motion map、pose、depth、lineart、mask
+      model_visible_prompt:
+        可直接给模型的短提示词，只写画面里应发生的事
+      negative_prompt:
+        禁止漂移、禁止 UI/红线/箭头/文字、水印和错误动作
+      edit_out:
+        本段推荐出点、接下一段的动作/视线/声音/构图依据
+```
+
+宏大运镜提示词骨架：
+
+```text
+global_lens_style:
+  cinematic aerial establishing shot, wide lens, high detail environment,
+  clear route through the space, stable subject and landmarks.
+
+time_slices:
+  0s-2s:
+    camera starts from a high wide view, gliding forward along the marked route,
+    establishing terrain, water, roads and the distant final landmark.
+  2s-5s:
+    camera descends and accelerates, passing over foreground structures,
+    keeping the destination landmark locked in the upper frame.
+  5s-8s:
+    camera threads through gates, bridges or streets, parallax increases,
+    foreground elements pass by without blocking the route.
+  8s-12s:
+    camera rises and eases out toward the final landmark,
+    ending on a readable heroic wide composition.
+```
+
+近景微表情提示词骨架：
+
+```text
+global_lens_style:
+  intimate close-up, shallow depth of field, stable identity, soft key light,
+  very subtle facial performance, no exaggerated expression.
+
+time_slices:
+  0s-1s:
+    eyes remain still, breath barely visible, lips relaxed.
+  1s-2.5s:
+    eyelids soften, gaze slowly shifts toward the camera, mouth corners move slightly.
+  2.5s-4s:
+    a restrained smile almost appears then fades, breathing calms, head movement minimal.
+```
+
+分镜落地：
+
+```text
+导演签署区:
+  只写镜头目的、观众视线、运镜走向、微表情边界和 QC，不写模型参数。
+
+提示词区:
+  写 timeline_prompt、time_slice_prompts、model_visible_prompt、negative_prompt、control_refs。
+
+视频生成区:
+  把 time_slices 转成 segment_plan；每段 2-5 秒，写首尾帧、控制图、工具、参数、失败重跑策略。
+```
+
+QC：
+时间轴提示词必须能被拆成可生成的短段。若出现以下问题直接失败：分秒描述只堆形容词、没有 start_state/end_state、没有镜头起点终点、没有接剪依据、微表情超过模型可控范围、红线箭头或字幕进入画面、长镜头一次生成导致角色或空间漂移。
+
 ### VID-ACTION-01 动作重心和受力拆解
 
 用途：
@@ -349,12 +462,16 @@ QC：
 控制需求: 通过 QC 的首帧、通过 QC 的尾帧、pose / motion guide
 
 镜头类型: 复杂运镜
-优先技巧: VID-PREVIS-01, VID-MOTION-01, VID-DEPTH-01
-控制需求: camera path、低模、深度、线稿、分段
+优先技巧: VID-PREVIS-01, VID-MOTION-01, VID-TIMELINE-PROMPT-01, VID-DEPTH-01
+控制需求: camera path、低模、深度、线稿、分段、time_slices
 
 镜头类型: 多人调度 / 打斗 / 追逐
-优先技巧: VID-PREVIS-01, VID-ACTION-01, VID-SEG-01, VID-DEPTH-01
-控制需求: 站位图、pose、低模、动作故事板
+优先技巧: VID-PREVIS-01, VID-ACTION-01, VID-SEG-01, VID-TIMELINE-PROMPT-01, VID-DEPTH-01
+控制需求: 站位图、pose、低模、动作故事板、time_slices
+
+镜头类型: 近景微表情 / 细微表演
+优先技巧: VID-I2V-01, VID-SEG-01, VID-TIMELINE-PROMPT-01
+控制需求: 通过 QC 的首帧、角色状态卡、表情边界、低运动强度、2-4 秒短段
 
 镜头类型: 对白口型
 优先技巧: LIP-SYNC-01, LIP-SHOT-01, VID-SEG-01

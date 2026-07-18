@@ -1,0 +1,217 @@
+{
+  "package_id": "VOICE-GP-RETAKE-LIPSYNC-20260621",
+  "owner": "voice-room",
+  "status": "timed_48k_edit_candidates_written_final_pending_human_listening_qc",
+  "episode_id": "01",
+  "storyboard_group_id": "G-P",
+  "quality_gate": {
+    "threshold_for_final_handoff": 90,
+    "candidate_assets_written": true,
+    "final_assets_written": false,
+    "current_result": "edit_candidates_ok_for_timeline_test_final_blocked_pending_human_listening_qc",
+    "sample_rate_note": "Source TTS was 24 kHz mono. Candidate files were trimmed, time-fit to director windows, and upsampled to 48 kHz mono PCM WAV."
+  },
+  "manifest_sources": {
+    "aggregate_timing_manifest": "voice-room/.work/asset-versions/G-P/runs/20260621-gp-retake-timed-48k-manifest.json",
+    "per_shot_assets_voice_manifests": "director-room/season-01/01/G-P/P-01..P-05/assets/voice/timing-manifest.json"
+  },
+  "cues": [
+    {
+      "audio_id": "P-01-VO-NAR001-001",
+      "shot_id": "P-01",
+      "speaker_character_id": "NAR001",
+      "voice_id": "NAR001-VOICELOCK-V001",
+      "text": "肃明历1226年冬，北方兽族联盟撞关。",
+      "lipsync_required": false,
+      "target_start": 0.4,
+      "target_end": 3.2,
+      "target_duration_seconds": 2.8,
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-NAR001-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-01-VO-NAR001-001/20260621v0002-candidate.wav",
+      "source_duration_seconds": 6.56,
+      "speed_fit_rate": 2.173,
+      "qc_score": 86,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc"
+    },
+    {
+      "audio_id": "P-01-VO-C024-HEAD-001",
+      "shot_id": "P-01",
+      "speaker_character_id": "C024",
+      "voice_id": "C024-GROUP-VOICELOCK-V001",
+      "text": "粮仓锁死！拉弩！退下去也是饿死！",
+      "lipsync_required": true,
+      "target_start": 2.95,
+      "target_end": 5.25,
+      "target_duration_seconds": 2.3,
+      "word_or_phrase_timing": [
+        {"text": "粮仓锁死", "start": 2.95, "end": 3.55},
+        {"text": "拉弩", "start": 3.66, "end": 4.0},
+        {"text": "退下去也是饿死", "start": 4.08, "end": 5.25}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-01/assets/voice/P-01-VO-C024-HEAD-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-01-VO-C024-HEAD-001/20260621v0001-candidate.wav",
+      "source_duration_seconds": 5.04,
+      "speed_fit_rate": 1.693,
+      "qc_score": 82,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc"
+    },
+    {
+      "audio_id": "P-02-VO-C016-CLERK-001",
+      "shot_id": "P-02",
+      "speaker_character_id": "C016",
+      "voice_id": "C016-VOICELOCK-V001",
+      "text": "边墙缺粮，今天一粒不留。藏粮的，全户入册。",
+      "lipsync_required": true,
+      "target_start": 0.3,
+      "target_end": 3.6,
+      "target_duration_seconds": 3.3,
+      "word_or_phrase_timing": [
+        {"text": "边墙缺粮", "start": 0.3, "end": 0.95},
+        {"text": "今天一粒不留", "start": 0.98, "end": 1.78},
+        {"text": "藏粮的，全户入册", "start": 2.16, "end": 3.6}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-02/assets/voice/P-02-VO-C016-CLERK-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-02-VO-C016-CLERK-001/20260621v0002-candidate.wav",
+      "source_duration_seconds": 10.48,
+      "speed_fit_rate": 2.621,
+      "qc_score": 78,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc_priority"
+    },
+    {
+      "audio_id": "P-02-VO-C017-ENFORCER-001",
+      "shot_id": "P-02",
+      "speaker_character_id": "C017",
+      "voice_id": "C017-GROUP-VOICELOCK-V001",
+      "text": "把孩子手按上去。",
+      "lipsync_required": true,
+      "target_start": 3.75,
+      "target_end": 4.85,
+      "target_duration_seconds": 1.1,
+      "word_or_phrase_timing": [
+        {"text": "把孩子手按上去", "start": 3.75, "end": 4.85}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-02/assets/voice/P-02-VO-C017-ENFORCER-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-02-VO-C017-ENFORCER-001/20260621v0001-candidate.wav",
+      "source_duration_seconds": 2.08,
+      "speed_fit_rate": 1.127,
+      "qc_score": 86,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc"
+    },
+    {
+      "audio_id": "P-03-VO-C025-CHILD-001",
+      "shot_id": "P-03",
+      "speaker_character_id": "C025-child",
+      "voice_id": "C025-GROUP-VOICELOCK-V001-child",
+      "text": "白芷晒，薄荷晾，陈皮翻一翻。",
+      "lipsync_required": true,
+      "target_start": 0.2,
+      "target_end": 1.65,
+      "target_duration_seconds": 1.45,
+      "word_or_phrase_timing": [
+        {"text": "白芷", "start": 0.2, "end": 0.48},
+        {"text": "晒", "start": 0.48, "end": 0.62, "note": "旧调触发点，第三字滑旧调"},
+        {"text": "薄荷晾", "start": 0.65, "end": 1.02},
+        {"text": "陈皮翻一翻", "start": 1.05, "end": 1.65}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C025-CHILD-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-03-VO-C025-CHILD-001/20260621v0001-candidate.wav",
+      "source_duration_seconds": 5.44,
+      "speed_fit_rate": 2.662,
+      "qc_score": 72,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc_priority"
+    },
+    {
+      "audio_id": "P-03-VO-C025-IDCHILD-001",
+      "shot_id": "P-03",
+      "speaker_character_id": "C025-recognition-child",
+      "voice_id": "C025-GROUP-VOICELOCK-V001-recognition-child",
+      "text": "他会旧歌。",
+      "lipsync_required": true,
+      "target_start": 1.8,
+      "target_end": 2.45,
+      "target_duration_seconds": 0.65,
+      "word_or_phrase_timing": [
+        {"text": "他会旧歌", "start": 1.8, "end": 2.45}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C025-IDCHILD-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-03-VO-C025-IDCHILD-001/20260621v0001-candidate.wav",
+      "source_duration_seconds": 1.92,
+      "speed_fit_rate": 1.833,
+      "qc_score": 84,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc"
+    },
+    {
+      "audio_id": "P-03-VO-C016-CLERK-001",
+      "shot_id": "P-03",
+      "speaker_character_id": "C016",
+      "voice_id": "C016-VOICELOCK-V001",
+      "text": "带走，教成识别童。",
+      "lipsync_required": true,
+      "target_start": 3.75,
+      "target_end": 5.1,
+      "target_duration_seconds": 1.35,
+      "word_or_phrase_timing": [
+        {"text": "带走", "start": 3.75, "end": 4.1},
+        {"text": "教成识别童", "start": 4.16, "end": 5.1}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-03/assets/voice/P-03-VO-C016-CLERK-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-03-VO-C016-CLERK-001/20260621v0001-candidate.wav",
+      "source_duration_seconds": 3.84,
+      "speed_fit_rate": 2.017,
+      "qc_score": 82,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc"
+    },
+    {
+      "audio_id": "P-04-VO-C007-BAIYI-001",
+      "shot_id": "P-04",
+      "speaker_character_id": "C007",
+      "voice_id": "C007-VOICELOCK-V001",
+      "text": "她带着旧驿血牒往北逃。封旧驿，活捉。",
+      "lipsync_required": true,
+      "target_start": 2.5,
+      "target_end": 5.35,
+      "target_duration_seconds": 2.85,
+      "word_or_phrase_timing": [
+        {"text": "她带着旧驿血牒", "start": 2.5, "end": 3.55},
+        {"text": "往北逃", "start": 3.64, "end": 4.16},
+        {"text": "封旧驿，活捉", "start": 4.3, "end": 5.35}
+      ],
+      "candidate_audio_path": "director-room/season-01/01/G-P/P-04/assets/voice/P-04-VO-C007-BAIYI-001-candidate-48k.wav",
+      "candidate_specs": "48 kHz mono PCM WAV, upsampled from 24 kHz TTS source",
+      "source_candidate_path": "voice-room/.work/asset-versions/G-P/P-04-VO-C007-BAIYI-001/20260621v0002-candidate.wav",
+      "source_duration_seconds": 9.04,
+      "speed_fit_rate": 2.53,
+      "qc_score": 76,
+      "edit_status": "ok_for_edit_timing_candidate",
+      "final_status": "blocked_pending_human_listening_qc_priority"
+    }
+  ],
+  "no_dialogue_shots": [
+    {
+      "shot_id": "P-05",
+      "lipsync_required": false,
+      "voice_manifest_path": "director-room/season-01/01/G-P/P-05/assets/voice/timing-manifest.json",
+      "status": "no_dialogue_no_lipsync_music_sfx_pending",
+      "notes": "无对白、无旁白、无可读唇形；沈维桑鼻息默认 omitted_by_design。"
+    }
+  ],
+  "listening_priority": [
+    "P-02-VO-C016-CLERK-001",
+    "P-03-VO-C025-CHILD-001",
+    "P-04-VO-C007-BAIYI-001"
+  ]
+}

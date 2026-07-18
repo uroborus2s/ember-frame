@@ -10,6 +10,7 @@
 2. [系统架构](system-architecture.md)
 3. [模块边界](module-boundaries.md)
 4. [MVP 任务清单](mvp-task-list.md)
+5. [镜头参考绑定与震撼风格生产方案](shot-reference-binding-plan.md)
 
 ## 与现有仓库的关系
 

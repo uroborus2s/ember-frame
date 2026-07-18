@@ -13,6 +13,7 @@
 风格漂移 -> 风格板、材质板、色彩板、风格参考图
 局部错误 -> 遮罩重绘、局部参考、精确覆盖层
 信息过载 -> 信息预算、远景简化、负向约束
+噪音不通透 -> 明确主光、留白缓冲、焦点/边缘细节分配、负向降噪
 ```
 
 每个技巧都必须被记录到资产或提示词的 `technique_profile` 中：
@@ -644,6 +645,65 @@ emotional object:
 QC：
 温情不是磨皮和泛黄滤镜。若画面没有可触摸的生活细节、人物尺度和关系道具，只是柔焦漂亮图，必须重做。
 
+### TECH-CINE-04 通透清晰场景光影层级
+
+用途：
+解决生成图噪音多、不通透、不清晰、暗部脏灰、全画面碎纹理和焦点不明确的问题。让场景图呈现出用户提供的参考截图那样的清楚主光、干净空气、明确明暗层次和集中细节，但不复制手机 UI、水印、黑边或平台压缩痕迹。
+
+适用资产：
+`location_scene_master_reference`、`location_episode_scene_card`、`location_orientation_grid_9`、`reference_frame`、`shot_override`、建立镜头、室内 / 院落 / 街巷 / 城市场景和任何最终面向画面的场景图。
+
+重要判断：
+短视频截图里的四宫格小图看起来清晰，常常是因为缩小展示隐藏了原图毛刺。美术部要学习其画面组织方式，而不是把截图当作像素质量证明。生成图必须同时通过原图 100% 清洁度检查和缩略图可读性检查。
+
+`scene_clarity_profile`：
+
+```text
+main_light_source:
+  主光方向、色温、强弱、照亮对象和阴影落点。
+
+value_plan:
+  3-5 个主要明暗 / 色块组，例如窗光亮区、焦点中间调、稳定暗部、远景雾面。
+
+negative_space_buffers:
+  1-3 个让眼睛休息的干净区域，例如天空、雾、墙面、地面、窗光、暗部或纯色块。
+
+focal_detail_zone:
+  1-2 个最高细节区域，只放在叙事焦点、主道具、入口、桌案、门楼、中心锚点或人物附近。
+
+edge_detail_zones:
+  用屋檐、门窗、书架、桌沿、道路边线、建筑轮廓和道具边缘制造清晰感。
+
+softened_zones:
+  远景、人群、树叶、石纹、书册、瓦片、烟雾和重复纹理只保留体块、剪影或大气透视。
+
+texture_budget:
+  不允许全画面微纹理；纹理密度必须从焦点向外递减。
+```
+
+提示词要点：
+
+```text
+clear main light source, clean air, large readable value groups,
+negative-space buffer areas, restrained micro-details,
+highest detail only at the focal point and important edges,
+softened background, atmospheric perspective, clean shadows,
+crisp silhouettes without noisy texture.
+```
+
+负向约束：
+
+```text
+no noisy micro-detail, no AI speckle, no dirty texture, no muddy gray shadows,
+no full-frame ultra-detail, no equal-detail rendering across the whole frame,
+no oversharpened grain, no jpeg artifacts, no chaotic repeated texture,
+no smoke pretending to be detail, no every-surface ornamentation,
+no low-contrast haze swallowing the subject.
+```
+
+QC：
+如果看不出主光源、没有留白式缓冲区、每个角落同等高细节、主体被背景纹理吞掉、暗部脏灰、远景颗粒化、树叶 / 石纹 / 书册 / 瓦片变成噪点，或者只在缩略图里看着清晰而原图 100% 脏乱，必须拒绝。
+
 ### TECH-ANIM-01 动画角色吸引力与形状语言
 
 来源启发：
@@ -787,13 +847,18 @@ QC：
 
 资产类型: location_orientation_grid_9
 优先技巧: TECH-SCENE-02
-可选技巧: TECH-SCENE-01, TECH-STRUCT-02
-必须输出: 九格同场景、中心锚点、每格可见锚点、禁止漂移项
+可选技巧: TECH-SCENE-01, TECH-STRUCT-02, TECH-CINE-04
+必须输出: 九格同场景、中心锚点、每格可见锚点、禁止漂移项、统一主光和干净缓冲区
+
+资产类型: location_scene_master_reference / establishing scene / location_episode_scene_card
+优先技巧: TECH-CINE-04, TECH-CINE-02
+可选技巧: TECH-CINE-01, TECH-REF-02, TECH-STRUCT-02
+必须输出: 主光源、明暗大关系、留白式缓冲区、焦点/边缘细节、远景压柔、负向降噪
 
 资产类型: reference_frame / shot_override
-优先技巧: TECH-STORY-01, TECH-MOTION-01, TECH-CINE-02
+优先技巧: TECH-STORY-01, TECH-MOTION-01, TECH-CINE-02, TECH-CINE-04
 可选技巧: TECH-REF-01, TECH-REF-03, TECH-STRUCT-02, TECH-CAMERA-01, TECH-CANVAS-01
-必须输出: 16:9、前中后景、镜头方向、动作状态、禁止导引线入画
+必须输出: 16:9、前中后景、镜头方向、动作状态、主光源、留白缓冲区、焦点/边缘细节、禁止导引线入画
 
 资产类型: style_reference
 优先技巧: TECH-REF-02, TECH-CINE-01, TECH-ANIM-02
@@ -806,9 +871,9 @@ QC：
 必须输出: 精确覆盖层或线稿控制，不依赖模型自由绘制
 
 资产类型: warm emotional scene / family interior
-优先技巧: TECH-CINE-03, TECH-CINE-01
+优先技巧: TECH-CINE-03, TECH-CINE-01, TECH-CINE-04
 可选技巧: TECH-CANVAS-01, TECH-EDIT-01
-必须输出: 人物尺度、触感道具、生活痕迹、柔和但不糊的光影
+必须输出: 人物尺度、触感道具、生活痕迹、柔和但不糊的光影、干净空气和低噪暗部
 
 资产类型: animated feature character group
 优先技巧: TECH-ANIM-01, TECH-ANIM-03
@@ -867,6 +932,12 @@ Image 5 = mask:
   no equal-detail rendering across the whole frame, no over-detailed distant figures,
   no granular crowd texture, no particleized stone, no AI speckle,
   no visual information overload.
+
+场景通透清晰:
+  no noisy micro-detail, no dirty texture, no muddy gray shadows,
+  no oversharpened grain, no jpeg artifacts, no chaotic repeated texture,
+  no smoke pretending to be detail, no every-surface ornamentation,
+  no low-contrast haze swallowing the subject.
 ```
 
 ## 交接要求

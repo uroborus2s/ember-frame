@@ -1,3 +1,5 @@
+DO NOT send optional commentary
+
 # Ember Frame Agent Rules
 
 这些规则适用于本仓库内的所有 Codex/agent 工作，优先级高于临时习惯和个人偏好。

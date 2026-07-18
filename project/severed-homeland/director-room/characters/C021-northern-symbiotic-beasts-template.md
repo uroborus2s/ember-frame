@@ -108,9 +108,29 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: creature_sound_master_card_v001_preview_sfx_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C021-CREATURE-SFXLOCK-V001
+- 声音母卡用途：北境共生兽群像的低鸣、喘息、冲门、骨铃回应和战场消耗声；用于 P-01 门外冲击来源，也用于后续北境人兽关系。
+- 核心听感：共生兽不是无主怪物或游戏 Boss；声音必须读出被驭兽者、骨笛、血盐和战争消耗牵住的关系。
+- 声音层级：远处低频体量、近处骨铃 / 绳环 / 甲片、兽息、雪地踩踏、门体受压分层制作；不能只用单一怪兽吼叫。
+- 物种差异：霜狼偏急促鼻息与短低鸣；牦牛 /猛犸偏胸腔低频和雪地重步；飞龙偏翼膜与风切；甲龟偏壳体摩擦和慢低振。
+- P-01 使用规则：门外巨兽只作为冲击来源，声音重点是门体震动、骨钟失稳、军户反应和粮门不开；兽吼不得抢走军户主体。
+- 情绪层级：L0 远处压迫；L1 受令靠近；L2 撞击；L3 受伤喘息；L4 人兽关系的短暂回应，不能奇观化。
+- 试声母句 / 声音 cue：
+  - `远处低鸣 + 骨铃一响`
+  - `雪下重步接门体受压`
+  - `受伤喘息被骨笛压住`
+  - `冲门后低频余震，不连续咆哮`
+- 禁用：奇幻巨龙长吼、电子游戏 Boss 音效、纯怪兽片奇观、电子合成尖啸、与驭兽者关系无关的随机兽潮。
+- preview_audio_path: `director-room/characters/c021-creature-sfx-v001-preview.wav`
+- process_version_path: `music-room/.work/asset-versions/C021-CREATURE-SFXLOCK-V001/20260621v0001-preview.wav`
+- preview_audio_specs: 48 kHz stereo PCM WAV, 8.000s, preview only
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_director_note: 小样只验证“远处低频体量 + 骨铃 / 绳环回应 + 门体受压 + 雪地质感”的听感方向；不能替代分层 stem、终混或成片声效。
+- final_audio_status: blocked_pending_human_listening_qc_layered_stems_and_final_mix
+- 交付要求：正式声效需分层文件或可拆 cue；进入视频前必须确认不会覆盖骨钟、床弩、军户喊声和粮门声桥；若听审发现兽吼奇观化、低频盖对白或失去驭兽者关系，退回音乐 / 声效部重做。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 与过程版本均存在，实测 48 kHz stereo PCM WAV，8.000s；只可进入人工听审作为方向小样，不是 P-01 final。P-01 终混需拆分 `low_body_pressure`、`bone_bell_rope`、`gate_stone_stress`、`snow_heavy_steps`、`creature_breath_pain`、`blizzard_roomtone` 等 stem，并在头领喊声、骨钟、床弩绞盘和粮门声桥处下沉避让。
 
 ## 5. 视频执行角色卡
 owner: video-production-room
@@ -142,3 +162,11 @@ status: draft
 - affects_source_canon: false
 - required_return_department: none
 - status: ready_transparent_v2
+
+- date: 2026-06-21
+- department: music-room + voice-room
+- section: Section 4 配音声音角色卡
+- change_summary: c021_creature_sfx_preview_generated_20260621：按导演要求补齐 C021 北境共生兽的可听预览声效；过程版本归入音乐部隐藏版本库，角色卡同目录放置可听 preview。该小样只用于声音方向和角色卡闸门，不替代分层 stem、人工听审、终混或成片声效。
+- affects_source_canon: false
+- required_return_department: voice-room + music-room
+- status: preview_audio_generated_needs_human_listening_qc

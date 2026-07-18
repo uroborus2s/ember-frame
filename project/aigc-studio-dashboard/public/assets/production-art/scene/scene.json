@@ -1,0 +1,1218 @@
+{
+  "size": [
+    1536,
+    900
+  ],
+  "layers": {
+    "base": "scene/office_base.png",
+    "fixedStaffBase": "scene/office_fixed_staff.png",
+    "shadow": "scene/office_shadow.png",
+    "foreground": "scene/office_foreground.png",
+    "glass": "scene/office_glass.png",
+    "walkableMask": "scene/walkable_mask.png",
+    "depthMap": "scene/depth_map.png",
+    "topViewControl": "scene/top_view_control.png"
+  },
+  "occluders": {
+    "left_console_lip": {
+      "src": "scene/occluders/left_console_lip.png",
+      "z": 42
+    },
+    "left_console_desk_edge": {
+      "src": "scene/occluders/left_console_desk_edge.png",
+      "z": 43
+    },
+    "left_chair_back": {
+      "src": "scene/occluders/left_chair_back.png",
+      "z": 44
+    },
+    "left_chair_seat_front": {
+      "src": "scene/occluders/left_chair_seat_front.png",
+      "z": 45
+    },
+    "meeting_table_front": {
+      "src": "scene/occluders/meeting_table_front.png",
+      "z": 45
+    },
+    "control_console_lip": {
+      "src": "scene/occluders/control_console_lip.png",
+      "z": 47
+    },
+    "desk_edge_mask": {
+      "src": "scene/occluders/desk_edge_mask.png",
+      "z": 48
+    },
+    "chair_back_control": {
+      "src": "scene/occluders/chair_back_control.png",
+      "z": 49
+    },
+    "chair_seat_front_mask": {
+      "src": "scene/occluders/chair_seat_front_mask.png",
+      "z": 50
+    },
+    "recording_booth_front": {
+      "src": "scene/occluders/recording_booth_front.png",
+      "z": 55
+    },
+    "glass_wall_mid": {
+      "src": "scene/occluders/glass_wall_mid.png",
+      "z": 50
+    }
+  },
+  "sceneOccluders": [
+    "glass_wall_mid",
+    "recording_booth_front"
+  ],
+  "navNodes": {
+    "hall_left": {
+      "x": 390,
+      "y": 590,
+      "widthPct": 4.8,
+      "z": 44
+    },
+    "hall_mid": {
+      "x": 535,
+      "y": 600,
+      "widthPct": 4.8,
+      "z": 47
+    },
+    "hall_right": {
+      "x": 720,
+      "y": 610,
+      "widthPct": 4.8,
+      "z": 50
+    },
+    "door_project": {
+      "x": 720,
+      "y": 595,
+      "widthPct": 4.6,
+      "z": 52
+    },
+    "door_screenplay": {
+      "x": 610,
+      "y": 600,
+      "widthPct": 4.6,
+      "z": 50
+    },
+    "door_director": {
+      "x": 520,
+      "y": 610,
+      "widthPct": 4.7,
+      "z": 48
+    },
+    "door_art": {
+      "x": 405,
+      "y": 600,
+      "widthPct": 4.8,
+      "z": 45
+    },
+    "door_prompt": {
+      "x": 430,
+      "y": 700,
+      "widthPct": 4.8,
+      "z": 45
+    },
+    "door_video": {
+      "x": 860,
+      "y": 690,
+      "widthPct": 5.2,
+      "z": 52
+    },
+    "door_edit": {
+      "x": 650,
+      "y": 740,
+      "widthPct": 5,
+      "z": 48
+    }
+  },
+  "navEdges": [
+    [
+      "hall_left",
+      "hall_mid"
+    ],
+    [
+      "hall_mid",
+      "hall_right"
+    ],
+    [
+      "hall_right",
+      "door_project"
+    ],
+    [
+      "hall_mid",
+      "door_screenplay"
+    ],
+    [
+      "hall_mid",
+      "door_director"
+    ],
+    [
+      "hall_left",
+      "door_art"
+    ],
+    [
+      "hall_left",
+      "door_prompt"
+    ],
+    [
+      "hall_right",
+      "door_video"
+    ],
+    [
+      "hall_right",
+      "door_edit"
+    ]
+  ],
+  "collisionZones": [
+    {
+      "id": "outer_walls",
+      "kind": "blocked",
+      "polygon": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1536,
+          "y": 0
+        },
+        {
+          "x": 1536,
+          "y": 260
+        },
+        {
+          "x": 1180,
+          "y": 260
+        },
+        {
+          "x": 1180,
+          "y": 900
+        },
+        {
+          "x": 0,
+          "y": 900
+        }
+      ]
+    },
+    {
+      "id": "top_workstation_room",
+      "kind": "room_boundary",
+      "polygon": [
+        {
+          "x": 500,
+          "y": 10
+        },
+        {
+          "x": 970,
+          "y": 105
+        },
+        {
+          "x": 905,
+          "y": 285
+        },
+        {
+          "x": 520,
+          "y": 235
+        },
+        {
+          "x": 480,
+          "y": 90
+        }
+      ]
+    },
+    {
+      "id": "left_console_room",
+      "kind": "room_boundary",
+      "polygon": [
+        {
+          "x": 185,
+          "y": 320
+        },
+        {
+          "x": 535,
+          "y": 335
+        },
+        {
+          "x": 560,
+          "y": 520
+        },
+        {
+          "x": 190,
+          "y": 560
+        }
+      ]
+    },
+    {
+      "id": "meeting_room",
+      "kind": "room_boundary",
+      "polygon": [
+        {
+          "x": 250,
+          "y": 585
+        },
+        {
+          "x": 620,
+          "y": 575
+        },
+        {
+          "x": 690,
+          "y": 830
+        },
+        {
+          "x": 335,
+          "y": 900
+        }
+      ]
+    },
+    {
+      "id": "bottom_console_room",
+      "kind": "room_boundary",
+      "polygon": [
+        {
+          "x": 770,
+          "y": 545
+        },
+        {
+          "x": 1225,
+          "y": 585
+        },
+        {
+          "x": 1215,
+          "y": 805
+        },
+        {
+          "x": 835,
+          "y": 805
+        }
+      ]
+    }
+  ],
+  "triggers": [
+    {
+      "id": "enter_project",
+      "type": "room-enter",
+      "node": "door_project",
+      "room": "project"
+    },
+    {
+      "id": "enter_screenplay",
+      "type": "room-enter",
+      "node": "door_screenplay",
+      "room": "screenplay"
+    },
+    {
+      "id": "enter_director",
+      "type": "room-enter",
+      "node": "door_director",
+      "room": "director"
+    },
+    {
+      "id": "enter_art",
+      "type": "room-enter",
+      "node": "door_art",
+      "room": "art"
+    },
+    {
+      "id": "enter_prompt",
+      "type": "room-enter",
+      "node": "door_prompt",
+      "room": "prompt"
+    },
+    {
+      "id": "enter_video",
+      "type": "room-enter",
+      "node": "door_video",
+      "room": "video"
+    },
+    {
+      "id": "enter_edit",
+      "type": "room-enter",
+      "node": "door_edit",
+      "room": "edit"
+    }
+  ],
+  "gameMarkers": [
+    {
+      "id": "seat_top_01",
+      "kind": "seat",
+      "point": {
+        "x": 585,
+        "y": 166
+      }
+    },
+    {
+      "id": "seat_top_02",
+      "kind": "seat",
+      "point": {
+        "x": 675,
+        "y": 144
+      }
+    },
+    {
+      "id": "seat_top_03",
+      "kind": "seat",
+      "point": {
+        "x": 790,
+        "y": 162
+      }
+    },
+    {
+      "id": "seat_top_04",
+      "kind": "seat",
+      "point": {
+        "x": 610,
+        "y": 213
+      }
+    },
+    {
+      "id": "seat_top_05",
+      "kind": "seat",
+      "point": {
+        "x": 710,
+        "y": 226
+      }
+    },
+    {
+      "id": "seat_top_06",
+      "kind": "seat",
+      "point": {
+        "x": 850,
+        "y": 228
+      }
+    },
+    {
+      "id": "seat_left_console",
+      "kind": "seat",
+      "point": {
+        "x": 391,
+        "y": 433
+      }
+    },
+    {
+      "id": "seat_bottom_console",
+      "kind": "seat",
+      "point": {
+        "x": 1008,
+        "y": 690
+      }
+    },
+    {
+      "id": "seat_meeting_01",
+      "kind": "seat",
+      "point": {
+        "x": 350,
+        "y": 705
+      }
+    },
+    {
+      "id": "seat_meeting_02",
+      "kind": "seat",
+      "point": {
+        "x": 450,
+        "y": 695
+      }
+    },
+    {
+      "id": "seat_meeting_03",
+      "kind": "seat",
+      "point": {
+        "x": 535,
+        "y": 756
+      }
+    },
+    {
+      "id": "seat_meeting_04",
+      "kind": "seat",
+      "point": {
+        "x": 385,
+        "y": 827
+      }
+    },
+    {
+      "id": "seat_meeting_05",
+      "kind": "seat",
+      "point": {
+        "x": 463,
+        "y": 845
+      }
+    },
+    {
+      "id": "seat_meeting_06",
+      "kind": "seat",
+      "point": {
+        "x": 580,
+        "y": 802
+      }
+    }
+  ],
+  "seatActors": [
+    {
+      "id": "designer_female_01",
+      "seat": "seat_top_01",
+      "gender": "female",
+      "anchor": {
+        "x": 585,
+        "y": 166
+      },
+      "facing": "monitor_back",
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 2.8,
+      "z": 34,
+      "body": "scene/seated/designer_female_01/body.png",
+      "hands": [
+        "scene/seated/designer_female_01/hands_00.png",
+        "scene/seated/designer_female_01/hands_01.png",
+        "scene/seated/designer_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 2.8
+    },
+    {
+      "id": "editor_male_01",
+      "seat": "seat_top_02",
+      "gender": "male",
+      "anchor": {
+        "x": 675,
+        "y": 144
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/editor_male_01/body.png",
+      "hands": [
+        "scene/seated/editor_male_01/hands_00.png",
+        "scene/seated/editor_male_01/hands_01.png",
+        "scene/seated/editor_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 2.75,
+      "z": 33,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 2.75
+    },
+    {
+      "id": "artist_female_01",
+      "seat": "seat_top_03",
+      "gender": "female",
+      "anchor": {
+        "x": 790,
+        "y": 162
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/artist_female_01/body.png",
+      "hands": [
+        "scene/seated/artist_female_01/hands_00.png",
+        "scene/seated/artist_female_01/hands_01.png",
+        "scene/seated/artist_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 2.85,
+      "z": 34,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 2.85
+    },
+    {
+      "id": "prompt_male_01",
+      "seat": "seat_top_04",
+      "gender": "male",
+      "anchor": {
+        "x": 610,
+        "y": 213
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/prompt_male_01/body.png",
+      "hands": [
+        "scene/seated/prompt_male_01/hands_00.png",
+        "scene/seated/prompt_male_01/hands_01.png",
+        "scene/seated/prompt_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 3.1,
+      "z": 37,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.1
+    },
+    {
+      "id": "producer_female_01",
+      "seat": "seat_top_05",
+      "gender": "female",
+      "anchor": {
+        "x": 710,
+        "y": 226
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/producer_female_01/body.png",
+      "hands": [
+        "scene/seated/producer_female_01/hands_00.png",
+        "scene/seated/producer_female_01/hands_01.png",
+        "scene/seated/producer_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 3.1,
+      "z": 38,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.1
+    },
+    {
+      "id": "engineer_male_01",
+      "seat": "seat_top_06",
+      "gender": "male",
+      "anchor": {
+        "x": 850,
+        "y": 228
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/engineer_male_01/body.png",
+      "hands": [
+        "scene/seated/engineer_male_01/hands_00.png",
+        "scene/seated/engineer_male_01/hands_01.png",
+        "scene/seated/engineer_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 3,
+      "z": 38,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3
+    },
+    {
+      "id": "control_female_01",
+      "seat": "seat_left_console",
+      "gender": "female",
+      "anchor": {
+        "x": 391,
+        "y": 433
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/control_female_01/body.png",
+      "hands": [
+        "scene/seated/control_female_01/hands_00.png",
+        "scene/seated/control_female_01/hands_01.png",
+        "scene/seated/control_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "left_chair_back",
+        "left_console_lip"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 3.55,
+      "z": 42,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.55
+    },
+    {
+      "id": "control_male_01",
+      "seat": "seat_bottom_console",
+      "gender": "male",
+      "anchor": {
+        "x": 1008,
+        "y": 690
+      },
+      "facing": "monitor_back",
+      "body": "scene/seated/control_male_01/body.png",
+      "hands": [
+        "scene/seated/control_male_01/hands_00.png",
+        "scene/seated/control_male_01/hands_01.png",
+        "scene/seated/control_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "chair_back_control",
+        "control_console_lip"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 4,
+      "z": 46,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 4
+    },
+    {
+      "id": "writer_female_01",
+      "seat": "seat_meeting_01",
+      "gender": "female",
+      "anchor": {
+        "x": 350,
+        "y": 705
+      },
+      "facing": "table_back",
+      "body": "scene/seated/writer_female_01/body.png",
+      "hands": [
+        "scene/seated/writer_female_01/hands_00.png",
+        "scene/seated/writer_female_01/hands_01.png",
+        "scene/seated/writer_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 3.25,
+      "z": 43,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.25
+    },
+    {
+      "id": "director_male_01",
+      "seat": "seat_meeting_02",
+      "gender": "male",
+      "anchor": {
+        "x": 450,
+        "y": 695
+      },
+      "facing": "table_back",
+      "body": "scene/seated/director_male_01/body.png",
+      "hands": [
+        "scene/seated/director_male_01/hands_00.png",
+        "scene/seated/director_male_01/hands_01.png",
+        "scene/seated/director_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 3.2,
+      "z": 43,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.2
+    },
+    {
+      "id": "qc_female_01",
+      "seat": "seat_meeting_03",
+      "gender": "female",
+      "anchor": {
+        "x": 535,
+        "y": 756
+      },
+      "facing": "table_back",
+      "body": "scene/seated/qc_female_01/body.png",
+      "hands": [
+        "scene/seated/qc_female_01/hands_00.png",
+        "scene/seated/qc_female_01/hands_01.png",
+        "scene/seated/qc_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 3.35,
+      "z": 44,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.35
+    },
+    {
+      "id": "sound_male_01",
+      "seat": "seat_meeting_04",
+      "gender": "male",
+      "anchor": {
+        "x": 385,
+        "y": 827
+      },
+      "facing": "table_back",
+      "body": "scene/seated/sound_male_01/body.png",
+      "hands": [
+        "scene/seated/sound_male_01/hands_00.png",
+        "scene/seated/sound_male_01/hands_01.png",
+        "scene/seated/sound_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 3.55,
+      "z": 46,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.55
+    },
+    {
+      "id": "delivery_female_01",
+      "seat": "seat_meeting_05",
+      "gender": "female",
+      "anchor": {
+        "x": 463,
+        "y": 845
+      },
+      "facing": "table_back",
+      "body": "scene/seated/delivery_female_01/body.png",
+      "hands": [
+        "scene/seated/delivery_female_01/hands_00.png",
+        "scene/seated/delivery_female_01/hands_01.png",
+        "scene/seated/delivery_female_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1025
+      ],
+      "widthPct": 3.55,
+      "z": 47,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.55
+    },
+    {
+      "id": "ops_male_01",
+      "seat": "seat_meeting_06",
+      "gender": "male",
+      "anchor": {
+        "x": 580,
+        "y": 802
+      },
+      "facing": "table_back",
+      "body": "scene/seated/ops_male_01/body.png",
+      "hands": [
+        "scene/seated/ops_male_01/hands_00.png",
+        "scene/seated/ops_male_01/hands_01.png",
+        "scene/seated/ops_male_01/hands_02.png"
+      ],
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "ready": true,
+      "frameSize": [
+        1448,
+        1086
+      ],
+      "origin": [
+        724,
+        1026
+      ],
+      "widthPct": 3.45,
+      "z": 46,
+      "renderMode": "vector-2.5d",
+      "spriteOrigin": [
+        40,
+        70
+      ],
+      "spriteWidthPct": 3.45
+    }
+  ],
+  "walkNodes": {
+    "walk_a": {
+      "x": 520,
+      "y": 522
+    },
+    "walk_b": {
+      "x": 475,
+      "y": 524
+    },
+    "walk_c": {
+      "x": 435,
+      "y": 526
+    },
+    "walk_d": {
+      "x": 398,
+      "y": 528
+    }
+  },
+  "walkEdges": [],
+  "seats": [
+    {
+      "id": "seat_control",
+      "label": "control console seat",
+      "approach": {
+        "x": 435,
+        "y": 526
+      },
+      "sit": {
+        "x": 1008,
+        "y": 705
+      },
+      "facing": "NE",
+      "z": 46,
+      "occluders": [
+        "control_console_lip",
+        "desk_edge_mask",
+        "chair_back_control",
+        "chair_seat_front_mask"
+      ],
+      "animations": {
+        "sit": "sit_NE",
+        "seated": "typing_NE",
+        "stand": "stand_NE"
+      }
+    },
+    {
+      "id": "seat_left_console",
+      "label": "left console seat",
+      "approach": {
+        "x": 398,
+        "y": 528
+      },
+      "stand": {
+        "x": 398,
+        "y": 528,
+        "widthPct": 4.8,
+        "z": 41
+      },
+      "sit": {
+        "x": 405,
+        "y": 500
+      },
+      "facing": "NE",
+      "z": 40,
+      "occluders": [
+        "left_chair_back"
+      ],
+      "transitionOccluders": [
+        "left_chair_seat_front"
+      ],
+      "animations": {
+        "sit": "sit_control",
+        "seated": "typing_control",
+        "stand": "stand_control"
+      }
+    },
+    {
+      "id": "seat_meeting_a",
+      "label": "meeting seat A",
+      "approach": {
+        "x": 430,
+        "y": 690
+      },
+      "sit": {
+        "x": 380,
+        "y": 735
+      },
+      "facing": "NE",
+      "z": 42,
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "animations": {
+        "sit": "sit_NE",
+        "seated": "typing_NE",
+        "stand": "stand_NE"
+      }
+    },
+    {
+      "id": "seat_meeting_b",
+      "label": "meeting seat B",
+      "approach": {
+        "x": 580,
+        "y": 690
+      },
+      "sit": {
+        "x": 550,
+        "y": 735
+      },
+      "facing": "NW",
+      "z": 43,
+      "occluders": [
+        "meeting_table_front"
+      ],
+      "animations": {
+        "sit": "sit_NW",
+        "seated": "typing_NW",
+        "stand": "stand_NW"
+      }
+    }
+  ],
+  "action": {
+    "idleLabel": "移动",
+    "activeLabel": "移动中",
+    "status": "手动选择办公室移动，工位人员固定办公",
+    "targetAnchor": "walk_a",
+    "targetMode": "idle_SW",
+    "returnAnchor": "walk_a"
+  },
+  "officeTargets": [
+    {
+      "id": "project",
+      "label": "总控制片室",
+      "node": "door_project",
+      "idleMode": "idle_SW"
+    },
+    {
+      "id": "screenplay",
+      "label": "编剧室",
+      "node": "door_screenplay",
+      "idleMode": "idle_NE"
+    },
+    {
+      "id": "director",
+      "label": "导演室",
+      "node": "door_director",
+      "idleMode": "idle_NE"
+    },
+    {
+      "id": "art",
+      "label": "美术资产室",
+      "node": "door_art",
+      "idleMode": "idle_SE"
+    },
+    {
+      "id": "prompt",
+      "label": "提示词工坊",
+      "node": "door_prompt",
+      "idleMode": "idle_NE"
+    },
+    {
+      "id": "video",
+      "label": "本地模型机房",
+      "node": "door_video",
+      "idleMode": "idle_NW"
+    },
+    {
+      "id": "edit",
+      "label": "剪辑与 QC 室",
+      "node": "door_edit",
+      "idleMode": "idle_NW"
+    }
+  ],
+  "anchors": {
+    "walk_a": {
+      "name": "walk_a",
+      "x": 520,
+      "y": 522,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_b": {
+      "name": "walk_b",
+      "x": 475,
+      "y": 524,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_c": {
+      "name": "walk_c",
+      "x": 435,
+      "y": 526,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "walk_d": {
+      "name": "walk_d",
+      "x": 398,
+      "y": 528,
+      "widthPct": 4.8,
+      "z": 41
+    },
+    "seat_control": {
+      "name": "seat_control",
+      "x": 1008,
+      "y": 705,
+      "widthPct": 5.5,
+      "z": 46
+    },
+    "seat_left_console": {
+      "name": "seat_left_console",
+      "x": 405,
+      "y": 500,
+      "widthPct": 4.8,
+      "z": 40
+    },
+    "seat_meeting_a": {
+      "name": "seat_meeting_a",
+      "x": 380,
+      "y": 735,
+      "widthPct": 4.7,
+      "z": 42
+    },
+    "seat_meeting_b": {
+      "name": "seat_meeting_b",
+      "x": 550,
+      "y": 735,
+      "widthPct": 4.5,
+      "z": 43
+    },
+    "staff_a": {
+      "name": "staff_a",
+      "x": 695,
+      "y": 540,
+      "widthPct": 4.3,
+      "z": 35
+    },
+    "producer": {
+      "name": "producer",
+      "x": 610,
+      "y": 648,
+      "widthPct": 4.5,
+      "z": 36
+    }
+  },
+  "walkPath": [
+    "walk_a",
+    "walk_b",
+    "walk_c",
+    "walk_d",
+    "seat_left_console"
+  ],
+  "people": [
+    {
+      "id": "lead",
+      "kind": "female_01",
+      "anchor": "hall_mid",
+      "mode": "idle_SW",
+      "interactive": true,
+      "targetId": "project"
+    }
+  ]
+}

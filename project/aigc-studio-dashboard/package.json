@@ -1,0 +1,26 @@
+{
+  "name": "aigc-studio-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "validate:open-office-nav": "node scripts/validate_open_office_nav.mjs",
+    "validate:scene": "node scripts/validate_scene_package.mjs",
+    "validate:scene:release": "node scripts/validate_scene_package.mjs --release"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.8.5",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.185.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.61.1",
+    "vite": "^6.0.7"
+  }
+}

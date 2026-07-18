@@ -1,0 +1,152 @@
+{
+  "size": [
+    1672,
+    941
+  ],
+  "action": {
+    "idleLabel": "入座",
+    "activeLabel": "起身",
+    "status": "合法路径 + 真实工位遮挡",
+    "targetAnchor": "seat_control",
+    "targetMode": "typing",
+    "returnAnchor": "walk_a"
+  },
+  "anchors": {
+    "walk_a": {
+      "name": "walk_a",
+      "x": 912,
+      "y": 545,
+      "widthPct": 4.5,
+      "z": 30
+    },
+    "walk_b": {
+      "name": "walk_b",
+      "x": 982,
+      "y": 608,
+      "widthPct": 4.8,
+      "z": 32
+    },
+    "walk_c": {
+      "name": "walk_c",
+      "x": 1046,
+      "y": 680,
+      "widthPct": 5.0,
+      "z": 36
+    },
+    "seat_control": {
+      "name": "seat_control",
+      "x": 1101,
+      "y": 812,
+      "widthPct": 6.4,
+      "z": 44
+    },
+    "seat_left_console": {
+      "name": "seat_left_console",
+      "x": 417,
+      "y": 535,
+      "widthPct": 4.8,
+      "z": 40
+    },
+    "seat_meeting_a": {
+      "name": "seat_meeting_a",
+      "x": 438,
+      "y": 810,
+      "widthPct": 4.7,
+      "z": 42
+    },
+    "seat_meeting_b": {
+      "name": "seat_meeting_b",
+      "x": 586,
+      "y": 790,
+      "widthPct": 4.5,
+      "z": 43
+    },
+    "staff_a": {
+      "name": "staff_a",
+      "x": 752,
+      "y": 566,
+      "widthPct": 4.3,
+      "z": 28
+    },
+    "staff_b": {
+      "name": "staff_b",
+      "x": 640,
+      "y": 668,
+      "widthPct": 4.5,
+      "z": 29
+    }
+  },
+  "walkPath": [
+    "walk_a",
+    "walk_b",
+    "walk_c",
+    "seat_control"
+  ],
+  "navmesh": [
+    [
+      866,
+      502
+    ],
+    [
+      1138,
+      586
+    ],
+    [
+      1180,
+      836
+    ],
+    [
+      940,
+      836
+    ],
+    [
+      654,
+      674
+    ]
+  ],
+  "people": [
+    {
+      "id": "lead",
+      "kind": "female_01",
+      "anchor": "walk_a",
+      "mode": "walk",
+      "z": 40,
+      "interactive": true
+    },
+    {
+      "id": "console_editor",
+      "kind": "male_01",
+      "anchor": "seat_left_console",
+      "mode": "typing",
+      "z": 41
+    },
+    {
+      "id": "meeting_producer",
+      "kind": "female_01",
+      "anchor": "seat_meeting_a",
+      "mode": "typing",
+      "z": 42
+    },
+    {
+      "id": "meeting_pipeline",
+      "kind": "male_01",
+      "anchor": "seat_meeting_b",
+      "mode": "typing",
+      "z": 43
+    },
+    {
+      "id": "tech",
+      "kind": "male_01",
+      "anchor": "staff_a",
+      "mode": "idle",
+      "z": 35
+    },
+    {
+      "id": "producer",
+      "kind": "female_01",
+      "anchor": "staff_b",
+      "mode": "idle",
+      "z": 36
+    }
+  ]
+}

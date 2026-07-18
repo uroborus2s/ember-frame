@@ -105,9 +105,29 @@ status: ready_transparent_v2
 ## 4. 配音声音角色卡
 owner: voice-room
 source: Section 1 源头 Canon + Section 2 编剧影视化角色卡
-status: draft
+status: voice_master_card_v001_preview_audio_generated_needs_human_listening_qc
 
-（待配音部填写。）
+- voice_id: C016-VOICELOCK-V001
+- 声音母卡用途：肃明基层虫吏 / 粮税小吏模板；用于 P-02 征粮下令、P-03 验声流程和所有白册 / 木牌 / 虫蜡登记动作。
+- 核心听感：制度机器的小齿轮，不像大反派，不享受暴力；他说话像念表格、校数字、盖蜡印。
+- 音色锚点：中高到中声区，干、薄、硬，带一点鼻腔和甲质边缘；句尾常向下压，像把人名压进册页。
+- 物种质感：可叠极轻虫蜡摩擦或口器边缘感，但主体仍是可辨官话；不能变成嘶嘶怪声。
+- 语速与停顿：短促、机械、流程化；每个命令之间像打勾，停顿比情绪更冷。
+- 情绪层级：L0 例行宣读；L1 催促；L2 纠错；L3 冷处理哭喊；L4 盖章定案，不升高音量。
+- 试声母句：
+  - `边墙冬粮急调。`
+  - `按掌。`
+  - `立木牌。`
+  - `旧声，重验。`
+- 禁用：县衙喜剧腔、奸笑、咆哮、纯虫族怪物声、现代播音腔、可识别真实演员或公众人物模仿。
+- qwen_speaker: `Uncle_Fu`
+- preview_audio_path: `director-room/characters/c016-voice-v001-preview.wav`
+- process_version_path: `voice-room/.work/asset-versions/C016-VOICELOCK-V001/20260621v0003-preview.wav`
+- preview_audio_status: generated_preview_needs_human_listening_qc
+- preview_audio_specs: mono WAV, 24 kHz, 14.480 seconds；低于项目最终 48 kHz 目标，只作母音色试听候选，正式使用前需听审并按交付规格确认 / 重采样。v0001/v0002 因时长过短保留为过程候选，不晋升。
+- final_audio_status: blocked_pending_human_listening_qc_and_final_48khz_audio
+- 交付要求：P-02/P-03 如出现可见口型，必须先生成或录制 C016 试声，通过听审后再切分分镜台词 wav；最终进入视频前需口型时间表。
+- G-P audio_gate_file_qc_20260621：角色入口 preview 文件存在，实测 24 kHz mono PCM WAV，14.480s；过程 `v0001` 实测 0.160s、`v0002` 实测 1.120s，继续保留为过短失败候选，不晋升。P-02 分镜候选 `voice-room/.work/asset-versions/G-P/P-02-VO-C016-CLERK-001/20260621v0001-candidate.wav` 存在，实测 24 kHz mono，6.880s，可进入人工听审和三段口型切分；P-03 “入识别册”尚无分镜候选。
 
 ## 5. 视频执行角色卡
 owner: video-production-room

@@ -102,6 +102,10 @@ last_frame_ref
 audio_range
 motion_goal
 camera_goal
+timeline_prompt_ref
+time_slice_prompt
+expression_beat
+route_or_motion_ref
 overlap_or_handle_frames
 edit_point
 ```
